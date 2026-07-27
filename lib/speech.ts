@@ -24,39 +24,32 @@ export function speak(text: string, lang: string): void {
   const prefix = lang.split("-")[0];
   let voice: SpeechSynthesisVoice | null = null;
 
-  // Try exact match first
-  for (let i = 0; i < voices.length; i++) {
-    const v = voices[i];
-    const vl = v.lang.replace("_", "-");
-    if (vl === lang || vl === lang.toLowerCase()) {
-      voice = v;
-      break;
-    }
-  }
+  const tryFindVoice = (): SpeechSynthesisVoice | null => {
+    const currentVoices = window.speechSynthesis.getVoices();
+    if (!currentVoices.length) return null;
 
-  // Try prefix match
-  if (!voice) {
-    for (let j = 0; j < voices.length; j++) {
-      if (voices[j].lang.startsWith(prefix)) {
-        voice = voices[j];
-        break;
+    const candidates = currentVoices.filter((v) => {
+      const vl = v.lang.replace("_", "-").toLowerCase();
+      const vp = vl.split("-")[0];
+      if (prefix === "zh") {
+        return (
+          vl === lang ||
+          vl.startsWith(`${prefix}-`) ||
+          vp === "zh" ||
+          vp === "cmn"
+        );
       }
-    }
-  }
-
-  if (voice) utter.voice = voice;
-
-  // Chinese fallback via Google TTS
-  if (lang.startsWith("zh") && !voice) {
-    const url =
-      "https://translate.google.com/translate_tts?ie=UTF-8&q=" +
-      encodeURIComponent(text) +
-      "&tl=zh-CN&client=tw-ob";
-    const audio = new Audio(url);
-    audio.play().catch(() => {
-      setTimeout(() => window.speechSynthesis.speak(utter), 80);
+      return vl === lang || vl.startsWith(`${prefix}-`);
     });
-  } else {
-    setTimeout(() => window.speechSynthesis.speak(utter), 80);
+
+    return candidates[0] || null;
+  };
+
+  voice = tryFindVoice();
+
+  if (voice) {
+    utter.voice = voice;
   }
+
+  window.speechSynthesis.speak(utter);
 }
