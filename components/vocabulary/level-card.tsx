@@ -39,11 +39,11 @@ export function LevelCard({ level, index }: LevelCardProps) {
             </div>
           )}
           <CardContent className="p-0">
-            <div className="relative h-40 w-full overflow-hidden bg-gradient-to-br from-indigo-100 to-purple-100 dark:from-indigo-950/40 dark:to-purple-950/20">
+            <div className="relative h-56 w-full overflow-hidden bg-gradient-to-br from-indigo-100 to-purple-100 dark:from-indigo-950/40 dark:to-purple-950/20 sm:h-64">
               <img
-                src={`https://image.pollinations.ai/prompt/${encodeURIComponent(level.items[0]?.imageKeyword || level.id)}?width=600&height=400&nologo=true`}
+                src={`https://image.pollinations.ai/prompt/${encodeURIComponent(level.items[0]?.imageKeyword || level.id)}?width=800&height=500&nologo=true`}
                 alt={level.title}
-                className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                className="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
                 onError={(e) => {
                   const target = e.target as HTMLImageElement;
                   target.style.display = "none";

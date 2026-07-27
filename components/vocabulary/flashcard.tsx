@@ -40,11 +40,11 @@ export function Flashcard({ item, cardNumber, total }: FlashcardProps) {
             className="absolute inset-0 flex flex-col items-center justify-center rounded-3xl border border-border bg-card p-6 text-center shadow-xl"
             style={{ backfaceVisibility: "hidden" }}
           >
-            <div className="relative mb-3 h-32 w-full overflow-hidden rounded-xl bg-gradient-to-br from-indigo-100 to-purple-100 dark:from-indigo-950/40 dark:to-purple-950/20">
+            <div className="relative mb-4 h-40 w-full overflow-hidden rounded-xl bg-gradient-to-br from-indigo-100 to-purple-100 dark:from-indigo-950/40 dark:to-purple-950/20 sm:h-48">
               <img
-                src={`https://image.pollinations.ai/prompt/${encodeURIComponent(item.imageKeyword || item.english)}?width=600&height=400&nologo=true`}
+                src={`https://image.pollinations.ai/prompt/${encodeURIComponent(item.imageKeyword || item.english)}?width=800&height=500&nologo=true`}
                 alt={item.english}
-                className="h-full w-full object-cover"
+                className="h-full w-full object-cover object-center"
                 onError={(e) => {
                   const target = e.target as HTMLImageElement;
                   target.style.display = "none";
@@ -68,11 +68,11 @@ export function Flashcard({ item, cardNumber, total }: FlashcardProps) {
               transform: "rotateY(180deg)",
             }}
           >
-            <div className="relative mb-3 h-32 w-full overflow-hidden rounded-xl bg-gradient-to-br from-indigo-100 to-purple-100 dark:from-indigo-950/40 dark:to-purple-950/20">
+            <div className="relative mb-4 h-40 w-full overflow-hidden rounded-xl bg-gradient-to-br from-indigo-100 to-purple-100 dark:from-indigo-950/40 dark:to-purple-950/20 sm:h-48">
               <img
-                src={`https://image.pollinations.ai/prompt/${encodeURIComponent(item.imageKeyword || item.english)}?width=600&height=400&nologo=true`}
+                src={`https://image.pollinations.ai/prompt/${encodeURIComponent(item.imageKeyword || item.english)}?width=800&height=500&nologo=true`}
                 alt={item.english}
-                className="h-full w-full object-cover"
+                className="h-full w-full object-cover object-center"
                 onError={(e) => {
                   const target = e.target as HTMLImageElement;
                   target.style.display = "none";
