@@ -6,6 +6,7 @@ export const dialogues: Dialogue[] = [
     title: "At the Restaurant",
     description: "Ordering food and drinks at a restaurant.",
     emoji: "🍽️",
+    scenario: "Two guests are ordering food and drinks at a restaurant.",
     lines: [
       {
         speaker: "Waiter",
@@ -56,6 +57,7 @@ export const dialogues: Dialogue[] = [
     title: "Shopping for Clothes",
     description: "Buying clothes at a shopping mall.",
     emoji: "🛍️",
+    scenario: "A customer is shopping for clothes and asks for assistance.",
     lines: [
       {
         speaker: "Shop Assistant",
@@ -100,6 +102,7 @@ export const dialogues: Dialogue[] = [
     title: "At the Airport",
     description: "Checking in and going through security.",
     emoji: "✈️",
+    scenario: "A traveler checks in at the airport and receives a boarding pass.",
     lines: [
       {
         speaker: "Agent",
@@ -150,6 +153,7 @@ export const dialogues: Dialogue[] = [
     title: "At the Doctor",
     description: "Visiting the doctor when feeling unwell.",
     emoji: "👨‍⚕️",
+    scenario: "A patient visits the doctor with cold symptoms.",
     lines: [
       {
         speaker: "Doctor",
