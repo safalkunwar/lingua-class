@@ -1,6 +1,8 @@
 // ============= VOCABULARY =============
 export interface VocabItem {
   english: string;
+  word: string;
+  partOfSpeech: string;
   breakdown: string;
   chinese: string;
   pinyin: string;
@@ -10,6 +12,15 @@ export interface VocabItem {
   detailsZh: string;
   exampleEn: string;
   exampleZh: string;
+  definitionEn: string;
+  definitionZh: string;
+  examples: { en: string; zh: string }[];
+  collocations: string[];
+  synonyms: string[];
+  antonyms: string[];
+  commonMistakes: { mistake: string; correction: string }[];
+  level: string;
+  category: string;
 }
 
 // ============= PHRASES (daily-use) =============
@@ -39,6 +50,7 @@ export interface Dialogue {
   description: string;
   emoji: string;
   scenario?: string;
+  scenario: string;
   lines: DialogueLine[];
 }
 
@@ -94,3 +106,4 @@ export interface Level {
   tasks: Task[];
   diagrams: Diagram[];
 }
+

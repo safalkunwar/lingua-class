@@ -169,6 +169,16 @@ export function QuizRunner({ items, allItems, onComplete, onRestart }: QuizRunne
                 {current.correct.chinese}
               </p>
               <p className="mt-1 text-base text-muted-foreground">
+          <Card className="mb-6">
+            <CardContent className="p-8 text-center">
+              <div className="mb-3 text-5xl">{current.correct.emoji}</div>
+              <h2 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">
+                What is the English for
+              </h2>
+              <p className="mt-2 text-4xl font-extrabold text-pink-500">
+                {current.correct.chinese}
+              </p>
+              <p className="mt-1 text-lg text-muted-foreground">
                 {current.correct.pinyin}
               </p>
             </CardContent>
@@ -208,3 +218,4 @@ export function QuizRunner({ items, allItems, onComplete, onRestart }: QuizRunne
     </div>
   );
 }
+
