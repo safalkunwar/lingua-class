@@ -21,12 +21,12 @@ export function Flashcard({ item, cardNumber, total }: FlashcardProps) {
 
   return (
     <div className="flex flex-col items-center">
-      <p className="mb-4 text-sm text-muted-foreground">
+      <p className="mb-6 text-base text-muted-foreground">
         Card {cardNumber + 1} of {total}
       </p>
 
       <div
-        className="relative h-[420px] w-full max-w-md cursor-pointer"
+        className="relative h-[520px] w-full max-w-lg cursor-pointer"
         style={{ perspective: "1200px" }}
         onClick={handleFlip}
       >
@@ -37,12 +37,12 @@ export function Flashcard({ item, cardNumber, total }: FlashcardProps) {
           style={{ transformStyle: "preserve-3d" }}
         >
           <div
-            className="absolute inset-0 flex flex-col items-center justify-center rounded-3xl border border-border bg-card p-6 text-center shadow-xl"
+            className="absolute inset-0 flex flex-col items-center justify-center rounded-3xl border border-border bg-card p-8 text-center shadow-xl"
             style={{ backfaceVisibility: "hidden" }}
           >
-            <div className="relative mb-4 h-40 w-full overflow-hidden rounded-xl bg-gradient-to-br from-indigo-100 to-purple-100 dark:from-indigo-950/40 dark:to-purple-950/20 sm:h-48">
+            <div className="relative mb-5 h-52 w-full overflow-hidden rounded-xl bg-gradient-to-br from-indigo-100 to-purple-100 dark:from-indigo-950/40 dark:to-purple-950/20 sm:h-60">
               <img
-                src={`https://image.pollinations.ai/prompt/${encodeURIComponent(item.imageKeyword || item.english)}?width=800&height=500&nologo=true`}
+                src={`https://image.pollinations.ai/prompt/${encodeURIComponent(item.imageKeyword || item.english)}?width=900&height=600&nologo=true`}
                 alt={item.english}
                 className="h-full w-full object-cover object-center"
                 onError={(e) => {
@@ -51,26 +51,26 @@ export function Flashcard({ item, cardNumber, total }: FlashcardProps) {
                 }}
               />
             </div>
-            <div className="mb-4 text-5xl">{item.emoji}</div>
-            <h2 className="mb-3 text-4xl font-extrabold">{item.english}</h2>
-            <div className="rounded-lg bg-muted px-4 py-1.5 font-mono text-sm text-muted-foreground">
+            <div className="mb-5 text-6xl">{item.emoji}</div>
+            <h2 className="mb-4 text-5xl font-extrabold">{item.english}</h2>
+            <div className="rounded-lg bg-muted px-5 py-2 font-mono text-base text-muted-foreground">
               [{item.breakdown}]
             </div>
-            <p className="mt-5 text-sm text-muted-foreground">
+            <p className="mt-6 text-base text-muted-foreground">
               Click to reveal translation
             </p>
           </div>
 
           <div
-            className="absolute inset-0 flex flex-col items-center justify-center rounded-3xl border border-indigo-200 bg-gradient-to-br from-indigo-50 to-purple-50 p-6 text-center shadow-xl dark:border-indigo-500/30 dark:from-indigo-950/40 dark:to-purple-950/20"
+            className="absolute inset-0 flex flex-col items-center justify-center rounded-3xl border border-indigo-200 bg-gradient-to-br from-indigo-50 to-purple-50 p-8 text-center shadow-xl dark:border-indigo-500/30 dark:from-indigo-950/40 dark:to-purple-950/20"
             style={{
               backfaceVisibility: "hidden",
               transform: "rotateY(180deg)",
             }}
           >
-            <div className="relative mb-4 h-40 w-full overflow-hidden rounded-xl bg-gradient-to-br from-indigo-100 to-purple-100 dark:from-indigo-950/40 dark:to-purple-950/20 sm:h-48">
+            <div className="relative mb-5 h-52 w-full overflow-hidden rounded-xl bg-gradient-to-br from-indigo-100 to-purple-100 dark:from-indigo-950/40 dark:to-purple-950/20 sm:h-60">
               <img
-                src={`https://image.pollinations.ai/prompt/${encodeURIComponent(item.imageKeyword || item.english)}?width=800&height=500&nologo=true`}
+                src={`https://image.pollinations.ai/prompt/${encodeURIComponent(item.imageKeyword || item.english)}?width=900&height=600&nologo=true`}
                 alt={item.english}
                 className="h-full w-full object-cover object-center"
                 onError={(e) => {
@@ -79,19 +79,19 @@ export function Flashcard({ item, cardNumber, total }: FlashcardProps) {
                 }}
               />
             </div>
-            <div className="mb-4 text-5xl">{item.emoji}</div>
-            <h2 className="mb-2 text-4xl font-extrabold text-pink-500">
+            <div className="mb-5 text-6xl">{item.emoji}</div>
+            <h2 className="mb-3 text-5xl font-extrabold text-pink-500">
               {item.chinese}
             </h2>
-            <p className="mb-4 text-lg text-muted-foreground">{item.pinyin}</p>
-            <div className="max-w-sm rounded-xl bg-card/80 p-4 backdrop-blur-sm">
-              <p className="text-sm font-medium">{item.detailsEn}</p>
-              <p className="mt-1 text-xs text-muted-foreground">{item.detailsZh}</p>
+            <p className="mb-5 text-xl text-muted-foreground">{item.pinyin}</p>
+            <div className="max-w-sm rounded-xl bg-card/80 p-5 backdrop-blur-sm">
+              <p className="text-base font-medium">{item.detailsEn}</p>
+              <p className="mt-1 text-sm text-muted-foreground">{item.detailsZh}</p>
             </div>
             <Button
               variant="ghost"
               size="sm"
-              className="mt-3 gap-2"
+              className="mt-4 gap-2"
               onClick={(e) => {
                 e.stopPropagation();
                 speakChinese(item.chinese);
@@ -104,7 +104,7 @@ export function Flashcard({ item, cardNumber, total }: FlashcardProps) {
         </motion.div>
       </div>
 
-      <div className="mt-4 flex gap-2">
+      <div className="mt-6 flex gap-2">
         <Button variant="outline" size="sm" onClick={handleFlip} className="gap-2">
           <RotateCw className="h-4 w-4" />
           Flip Card
