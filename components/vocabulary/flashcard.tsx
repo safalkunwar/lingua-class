@@ -79,19 +79,19 @@ export function Flashcard({ item, cardNumber, total }: FlashcardProps) {
                 }}
               />
             </div>
-            <div className="mb-5 text-6xl">{item.emoji}</div>
-            <h2 className="mb-3 text-5xl font-extrabold text-pink-500">
+            <div className="mb-6 text-7xl">{item.emoji}</div>
+            <h2 className="mb-4 text-6xl font-extrabold text-pink-600 drop-shadow-md dark:text-pink-400">
               {item.chinese}
             </h2>
-            <p className="mb-5 text-xl text-muted-foreground">{item.pinyin}</p>
-            <div className="max-w-sm rounded-xl bg-card/80 p-5 backdrop-blur-sm">
-              <p className="text-base font-medium">{item.detailsEn}</p>
-              <p className="mt-1 text-sm text-muted-foreground">{item.detailsZh}</p>
+            <p className="mb-6 text-2xl font-medium text-foreground/90">{item.pinyin}</p>
+            <div className="max-w-sm rounded-xl bg-card/90 p-6 backdrop-blur-sm border border-border">
+              <p className="text-lg font-medium">{item.detailsEn}</p>
+              <p className="mt-2 text-base text-muted-foreground">{item.detailsZh}</p>
             </div>
             <Button
               variant="ghost"
               size="sm"
-              className="mt-4 gap-2"
+              className="mt-5 gap-2"
               onClick={(e) => {
                 e.stopPropagation();
                 speakChinese(item.chinese);
