@@ -49,7 +49,6 @@ export interface Dialogue {
   title: string;
   description: string;
   emoji: string;
-  scenario?: string;
   scenario: string;
   lines: DialogueLine[];
 }
