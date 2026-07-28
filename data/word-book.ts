@@ -446,7 +446,7 @@ export const wordBook: WordBookTopic[] = [
         definitionEn: "A drawing showing places and directions.",
         definitionZh: "显示地点和方向的地图。",
         detailsEn: "Useful for asking directions: 'Where is ... on the map?'",
-        detailsZh: "问路时有用："Where is ... on the map?"",
+        detailsZh: "问路时有用：\"Where is ... on the map?\"",
         exampleEn: "Look at the map, please.",
         exampleZh: "请看地图。",
         examples: [
@@ -1467,5 +1467,1616 @@ export const wordBook: WordBookTopic[] = [
         memoryTrick: "Get + together = get together = 聚会."
       }
     ]
+  },
+  {
+    id: "home",
+    title: "Home & House",
+    emoji: "🏠",
+    description: "Rooms, furniture, appliances, and household items.",
+    color: "from-blue-400 to-indigo-400",
+    words: [
+      {
+        id: "hm-1", topic: "Home", level: "A1", category: "Rooms",
+        english: "Kitchen", word: "kitchen", partOfSpeech: "noun",
+        breakdown: "KICH-en", chinese: "厨房", pinyin: "chú fáng",
+        emoji: "🍳", imageKeyword: "kitchen room",
+        definitionEn: "The room where you cook food.",
+        definitionZh: "你做饭的房间。",
+        detailsEn: "Common: kitchen cabinet, kitchen sink, modern kitchen.",
+        detailsZh: "常见搭配：kitchen cabinet、kitchen sink、modern kitchen。",
+        exampleEn: "She cooked in the kitchen.",
+        exampleZh: "她在厨房做饭了。",
+        examples: [
+          { en: "The kitchen is clean.", zh: "厨房很干净。" },
+          { en: "I left the keys in the kitchen.", zh: "我把钥匙落在厨房了。" }
+        ],
+        collocations: ["kitchen cabinet", "kitchen sink", "modern kitchen", "kitchen table"],
+        synonyms: ["cookroom"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'kitchen' for dining only", correction: "Kitchen = 厨房 (cook); dining room = 餐厅 (eat)." }],
+        pronunciationTips: "Two syllables: KICH-en. Stress the first.",
+        memoryTrick: "Kit + chen. Kitchen = 厨房 (cook place)."
+      },
+      {
+        id: "hm-2", topic: "Home", level: "A1", category: "Rooms",
+        english: "Bedroom", word: "bedroom", partOfSpeech: "noun",
+        breakdown: "BED-room", chinese: "卧室", pinyin: "wò shì",
+        emoji: "🛏️", imageKeyword: "bedroom bed",
+        definitionEn: "The room where you sleep.",
+        definitionZh: "你睡觉的房间。",
+        detailsEn: "Common: master bedroom, bedroom door, bedroom window.",
+        detailsZh: "常见搭配：master bedroom、bedroom door、bedroom window。",
+        exampleEn: "My bedroom is small.",
+        exampleZh: "我的卧室很小。",
+        examples: [
+          { en: "She decorated her bedroom.", zh: "她装饰了卧室。" },
+          { en: "The bedroom is upstairs.", zh: "卧室在楼上。" }
+        ],
+        collocations: ["master bedroom", "bedroom door", "bedroom window", "bedroom furniture"],
+        synonyms: ["sleeping room"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'bedroom' for any private room", correction: "Bedroom = 卧室 (sleep); study = 书房 (work)." }],
+        pronunciationTips: "Two syllables: BED-room. Stress the first.",
+        memoryTrick: "Bed + room. A room with a bed."
+      },
+      {
+        id: "hm-3", topic: "Home", level: "A2", category: "Furniture",
+        english: "Table", word: "table", partOfSpeech: "noun",
+        breakdown: "TAY-bul", chinese: "桌子", pinyin: "zhuō zi",
+        emoji: "🪑", imageKeyword: "dining table",
+        definitionEn: "A piece of furniture with a flat top and legs.",
+        definitionZh: "有平坦顶部和腿的家具。",
+        detailsEn: "Common: dining table, coffee table, round table.",
+        detailsZh: "常见搭配：dining table、coffee table、round table。",
+        exampleEn: "The table is wooden.",
+        exampleZh: "桌子是木头的。",
+        examples: [
+          { en: "Set the table for dinner.", zh: "摆好餐桌准备晚饭。" },
+          { en: "The table seats six.", zh: "这张桌子坐六个人。" }
+        ],
+        collocations: ["dining table", "coffee table", "round table", "table lamp"],
+        synonyms: ["desk", "counter"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'table' for desks only", correction: "Table = 桌子 (general); desk = 书桌 (work)." }],
+        pronunciationTips: "Two syllables: TAY-bul. Stress the first.",
+        memoryTrick: "Table = 桌子. T (table) + able (可用的) = usable surface."
+      },
+      {
+        id: "hm-4", topic: "Home", level: "A2", category: "Furniture",
+        english: "Sofa", word: "sofa", partOfSpeech: "noun",
+        breakdown: "SO-fuh", chinese: "沙发", pinyin: "shā fā",
+        emoji: "🛋️", imageKeyword: "living room sofa",
+        definitionEn: "A long comfortable seat for more than one person.",
+        definitionZh: "供多人使用的长舒适座位。",
+        detailsEn: "Common: sofa bed, leather sofa, sit on the sofa.",
+        detailsZh: "常见搭配：sofa bed、leather sofa、sit on the sofa。",
+        exampleEn: "The sofa is very comfortable.",
+        exampleZh: "沙发很舒服。",
+        examples: [
+          { en: "We watched TV on the sofa.", zh: "我们在沙发上看电视。" },
+          { en: "The sofa is too small.", zh: "沙发太小了。" }
+        ],
+        collocations: ["sofa bed", "leather sofa", "sit on the sofa", "sofa cover"],
+        synonyms: ["couch", "settee"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'sofa' for chairs", correction: "Sofa = 沙发 (multi-person); chair = 椅子 (single)." }],
+        pronunciationTips: "Two syllables: SO-fuh. Stress the first.",
+        memoryTrick: "Sofa = 沙发. So (于是) + fa (发) = sit and relax."
+      },
+      {
+        id: "hm-5", topic: "Home", level: "A2", category: "Appliances",
+        english: "Refrigerator", word: "refrigerator", partOfSpeech: "noun",
+        breakdown: "ri-FRIG-er-ay-ter", chinese: "冰箱", pinyin: "bīng xiāng",
+        emoji: "❄️", imageKeyword: "refrigerator fridge",
+        definitionEn: "An appliance that keeps food cold.",
+        definitionZh: "保持食物凉爽的设备。",
+        detailsEn: "Common: fridge, refrigerator door, refrigerator temperature.",
+        detailsZh: "常见搭配：fridge、refrigerator door、refrigerator temperature。",
+        exampleEn: "The refrigerator is full.",
+        exampleZh: "冰箱满了。",
+        examples: [
+          { en: "Put the milk in the refrigerator.", zh: "把牛奶放进冰箱。" },
+          { en: "The refrigerator broke.", zh: "冰箱坏了。" }
+        ],
+        collocations: ["refrigerator door", "refrigerator temperature", "mini refrigerator", "refrigerator magnet"],
+        synonyms: ["fridge"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'refrigerator' in casual speech always", correction: "Use 'fridge' in casual speech; 'refrigerator' is formal." }],
+        pronunciationTips: "Five syllables: ri-FRIG-er-ay-ter. Stress the second.",
+        memoryTrick: "Refrigera + tor. Keep food cold (冷冻) in this tor (machine)."
+      },
+      {
+        id: "hm-6", topic: "Home", level: "A1", category: "Appliances",
+        english: "Television", word: "television", partOfSpeech: "noun",
+        breakdown: "TEL-uh-VIZH-un", chinese: "电视", pinyin: "diàn shì",
+        emoji: "📺", imageKeyword: "television tv",
+        definitionEn: "A device for watching shows.",
+        definitionZh: "观看节目的设备。",
+        detailsEn: "Common: watch television, TV remote, television screen.",
+        detailsZh: "常见搭配：watch television、TV remote、television screen。",
+        exampleEn: "We watched television last night.",
+        exampleZh: "我们昨晚看电视了。",
+        examples: [
+          { en: "The television is too loud.", zh: "电视太吵了。" },
+          { en: "Turn off the television.", zh: "关掉电视。" }
+        ],
+        collocations: ["watch television", "television screen", "television remote", "television show"],
+        synonyms: ["TV"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'TV' and 'television' interchangeably without formality note", correction: "'TV' is informal; 'television' is formal." }],
+        pronunciationTips: "Four syllables: TEL-uh-VIZH-un. Stress the third.",
+        memoryTrick: "Tele (远) + vision (看见)。Far see = TV."
+      },
+      {
+        id: "hm-7", topic: "Home", level: "B1", category: "Repairs",
+        english: "Renovate", word: "renovate", partOfSpeech: "verb",
+        breakdown: "REN-uh-vayt", chinese: "装修；翻新", pinyin: "zhuāng xiū; fān xīn",
+        emoji: "🔨", imageKeyword: "home renovation",
+        definitionEn: "To repair and improve a building.",
+        definitionZh: "修理和改善建筑物。",
+        detailsEn: "Common: renovate the kitchen, renovate a house, home renovation.",
+        detailsZh: "常见搭配：renovate the kitchen、renovate a house、home renovation。",
+        exampleEn: "They renovated the old house.",
+        exampleZh: "他们翻新了老房子。",
+        examples: [
+          { en: "Renovation took three months.", zh: "装修用了三个月。" },
+          { en: "She wants to renovate her apartment.", zh: "她想装修她的公寓。" }
+        ],
+        collocations: ["renovate the kitchen", "home renovation", "renovate a house", "renovation project"],
+        synonyms: ["restore", "remodel", "repair"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'renovate' for cleaning", correction: "Renovate = 装修 (structural); clean = 清洁." }],
+        pronunciationTips: "Stress the second syllable: REN-uh-vayt.",
+        memoryTrick: "Re + novate. Re (again) + novate (new) = make new again."
+      },
+      {
+        id: "hm-8", topic: "Home", level: "B1", category: "Utilities",
+        english: "Mortgage", word: "mortgage", partOfSpeech: "noun / verb",
+        breakdown: "MAWR-gij", chinese: "抵押贷款", pinyin: "dǐ yā dài kuǎn",
+        emoji: "🏦", imageKeyword: "mortgage house",
+        definitionEn: "A loan for buying property.",
+        definitionZh: "购买财产的贷款。",
+        detailsEn: "Common: pay the mortgage, mortgage rate, mortgage payment.",
+        detailsZh: "常见搭配：pay the mortgage、mortgage rate、mortgage payment。",
+        exampleEn: "The mortgage is expensive.",
+        exampleZh: "抵押贷款很贵。",
+        examples: [
+          { en: "They paid off their mortgage.", zh: "他们还清了抵押贷款。" },
+          { en: "Mortgage rates rose.", zh: "抵押贷款利率上升了。" }
+        ],
+        collocations: ["pay the mortgage", "mortgage rate", "mortgage payment", "mortgage loan"],
+        synonyms: ["loan", "home loan"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'mortgage' for rent", correction: "Mortgage = 抵押贷款 (buying); rent = 租金 (leasing)." }],
+        pronunciationTips: "Two syllables: MAWR-gij. Stress the first.",
+        memoryTrick: "Mort (死亡) + gage (抵押)。A pledge until death = long-term loan."
+      }
+    ]
+  },
+  {
+    id: "nature-outdoors",
+    title: "Nature & Outdoors",
+    emoji: "🌲",
+    description: "Animals, plants, weather, landscapes, and outdoor activities.",
+    color: "from-emerald-400 to-green-400",
+    words: [
+      {
+        id: "no-1", topic: "Nature", level: "A1", category: "Animals",
+        english: "Dog", word: "dog", partOfSpeech: "noun",
+        breakdown: "dawg", chinese: "狗", pinyin: "gǒu",
+        emoji: "🐶", imageKeyword: "cute dog",
+        definitionEn: "A common pet animal that barks.",
+        definitionZh: "常见的会叫的宠物动物。",
+        detailsEn: "Common: pet dog, dog walk, dog food.",
+        detailsZh: "常见搭配：pet dog、dog walk、dog food。",
+        exampleEn: "I have a dog.",
+        exampleZh: "我有一只狗。",
+        examples: [
+          { en: "The dog is friendly.", zh: "狗很友好。" },
+          { en: "She walks her dog daily.", zh: "她每天遛狗。" }
+        ],
+        collocations: ["pet dog", "dog walk", "dog food", "dog owner"],
+        synonyms: ["canine", "puppy"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'dog' for all canines", correction: "Dog = 狗; wolf = 狼." }],
+        pronunciationTips: "One syllable: dawg. Like 'log' with 'd'.",
+        memoryTrick: "Dog = 狗. D + og (欧歌) = dog barks."
+      },
+      {
+        id: "no-2", topic: "Nature", level: "A1", category: "Animals",
+        english: "Cat", word: "cat", partOfSpeech: "noun",
+        breakdown: "kat", chinese: "猫", pinyin: "māo",
+        emoji: "🐱", imageKeyword: "cute cat",
+        definitionEn: "A small pet animal that meows.",
+        definitionZh: "会喵喵叫的小宠物动物。",
+        detailsEn: "Common: pet cat, cat food, cat nap.",
+        detailsZh: "常见搭配：pet cat、cat food、cat nap。",
+        exampleEn: "The cat is sleeping.",
+        exampleZh: "猫在睡觉。",
+        examples: [
+          { en: "Cats like milk.", zh: "猫喜欢牛奶。" },
+          { en: "She adopted a cat.", zh: "她领养了一只猫。" }
+        ],
+        collocations: ["pet cat", "cat food", "cat nap", "cat owner"],
+        synonyms: ["feline", "kitten"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'cat' for all felines", correction: "Cat = 猫; tiger = 老虎." }],
+        pronunciationTips: "One syllable: kat. Like 'hat' with 'c'.",
+        memoryTrick: "Cat = 猫. C + at (在) = cat is at home."
+      },
+      {
+        id: "no-3", topic: "Nature", level: "A2", category: "Plants",
+        english: "Tree", word: "tree", partOfSpeech: "noun",
+        breakdown: "tree", chinese: "树", pinyin: "shù",
+        emoji: "🌳", imageKeyword: "big tree",
+        definitionEn: "A tall plant with a trunk and branches.",
+        definitionZh: "有树干和树枝的高大植物。",
+        detailsEn: "Common: fruit tree, climb a tree, tree house.",
+        detailsZh: "常见搭配：fruit tree、climb a tree、tree house。",
+        exampleEn: "The tree is very tall.",
+        exampleZh: "树很高。",
+        examples: [
+          { en: "Birds live in the tree.", zh: "鸟住在树上。" },
+          { en: "We planted a tree.", zh: "我们种了一棵树。" }
+        ],
+        collocations: ["fruit tree", "climb a tree", "tree house", "family tree"],
+        synonyms: ["plant", "shrub"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'tree' for bushes", correction: "Tree = 树 (tall); bush = 灌木 (short)." }],
+        pronunciationTips: "One syllable: tree. Long 'ee'.",
+        memoryTrick: "Tree = 树. Green and tall."
+      },
+      {
+        id: "no-4", topic: "Nature", level: "A1", category: "Weather",
+        english: "Sun", word: "sun", partOfSpeech: "noun",
+        breakdown: "sun", chinese: "太阳", pinyin: "tài yáng",
+        emoji: "☀️", imageKeyword: "bright sun",
+        definitionEn: "The star that gives us light and heat.",
+        definitionZh: "给我们光和热的星球。",
+        detailsEn: "Common: sunny day, sun shines, sun protection.",
+        detailsZh: "常见搭配：sunny day、sun shines、sun protection。",
+        exampleEn: "The sun is bright today.",
+        exampleZh: "太阳今天很亮。",
+        examples: [
+          { en: "The sun rises in the east.", zh: "太阳从东方升起。" },
+          { en: "Protect your skin from the sun.", zh: "保护皮肤免受太阳伤害。" }
+        ],
+        collocations: ["sunny day", "sun shines", "sun protection", "morning sun"],
+        synonyms: ["star", "sunlight"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'sun' for 'son'", correction: "Sun = 太阳 (star); son = 儿子 (child)." }],
+        pronunciationTips: "One syllable: sun. Short 'u'.",
+        memoryTrick: "Sun = 太阳. Son (儿子) of the sky."
+      },
+      {
+        id: "no-5", topic: "Nature", level: "A2", category: "Activities",
+        english: "Camping", word: "camping", partOfSpeech: "noun",
+        breakdown: "KAM-ping", chinese: "露营", pinyin: "lù yíng",
+        emoji: "⛺", imageKeyword: "tent camping",
+        definitionEn: "Staying outdoors in a tent.",
+        definitionZh: "在帐篷里待在户外。",
+        detailsEn: "Common: go camping, camping site, camping gear.",
+        detailsZh: "常见搭配：go camping、camping site、camping gear。",
+        exampleEn: "We went camping last weekend.",
+        exampleZh: "我们上周末去露营了。",
+        examples: [
+          { en: "Camping is fun in summer.", zh: "夏天露营很有趣。" },
+          { en: "She enjoys camping.", zh: "她喜欢露营。" }
+        ],
+        collocations: ["go camping", "camping site", "camping gear", "camping trip"],
+        synonyms: ["outdoors", "tenting"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'camp' only for military", correction: "Camp = 营地; camping = 露营 (recreational)." }],
+        pronunciationTips: "Two syllables: KAM-ping. Stress the first.",
+        memoryTrick: "Camp + ing. Camp (营地) + ing (进行中) = camping."
+      }
+    ]
+  },
+  {
+    id: "language-communication",
+    title: "Language & Communication",
+    emoji: "💬",
+    description: "Speaking, writing, languages, and communication skills.",
+    color: "from-cyan-400 to-blue-400",
+    words: [
+      {
+        id: "lc-1", topic: "Language", level: "A1", category: "Speaking",
+        english: "Speak", word: "speak", partOfSpeech: "verb",
+        breakdown: "speek", chinese: "说（语言）", pinyin: "shuō (yǔ yán)",
+        emoji: "🗣️", imageKeyword: "person speaking",
+        definitionEn: "To say words using your voice.",
+        definitionZh: "用你的声音说出词语。",
+        detailsEn: "Common: speak English, speak loudly, speak to someone.",
+        detailsZh: "常见搭配：speak English、speak loudly、speak to someone。",
+        exampleEn: "I speak a little Spanish.",
+        exampleZh: "我会说一点西班牙语。",
+        examples: [
+          { en: "Speak clearly, please.", zh: "请清楚地说话。" },
+          { en: "She speaks three languages.", zh: "她会说三种语言。" }
+        ],
+        collocations: ["speak English", "speak loudly", "speak to someone", "speak up"],
+        synonyms: ["talk", "say"], antonyms: ["listen"],
+        commonMistakes: [{ mistake: "Using 'speak' for 'talk' always", correction: "Speak = 说 (formal/ language); talk = 谈话 (casual)." }],
+        pronunciationTips: "One syllable: speek. Long 'ee'.",
+        memoryTrick: "Speak = 说. Speech + k. Speak your mind."
+      },
+      {
+        id: "lc-2", topic: "Language", level: "A2", category: "Writing",
+        english: "Letter", word: "letter", partOfSpeech: "noun",
+        breakdown: "LET-er", chinese: "信；字母", pinyin: "xìn; zì mǔ",
+        emoji: "✉️", imageKeyword: "mail letter",
+        definitionEn: "A written message; also a symbol of the alphabet.",
+        definitionZh: "书面信息；也指字母表中的符号。",
+        detailsEn: "Common: write a letter, love letter, capital letter.",
+        detailsZh: "常见搭配：write a letter、love letter、capital letter。",
+        exampleEn: "She wrote a letter.",
+        exampleZh: "她写了一封信。",
+        examples: [
+          { en: "I got a letter from my friend.", zh: "我收到了朋友的信。" },
+          { en: "The letter 'A' is first.", zh: "字母'A'排第一。" }
+        ],
+        collocations: ["write a letter", "love letter", "capital letter", "open letter"],
+        synonyms: ["message", "epistle"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'letter' for email always", correction: "Letter = 信 (physical); email = 电子邮件 (digital)." }],
+        pronunciationTips: "Two syllables: LET-er. Stress the first.",
+        memoryTrick: "Let + ter. Let (让) + ter (特) = let me send a letter."
+      },
+      {
+        id: "lc-3", topic: "Language", level: "B1", category: "Grammar",
+        english: "Grammar", word: "grammar", partOfSpeech: "noun",
+        breakdown: "GRAM-er", chinese: "语法", pinyin: "yǔ fǎ",
+        emoji: "📖", imageKeyword: "grammar book",
+        definitionEn: "The rules for how words are used in a language.",
+        definitionZh: "语言中词语使用的规则。",
+        detailsEn: "Common: English grammar, grammar rules, grammar check.",
+        detailsZh: "常见搭配：English grammar、grammar rules、grammar check。",
+        exampleEn: "Grammar is important.",
+        exampleZh: "语法很重要。",
+        examples: [
+          { en: "She teaches grammar.", zh: "她教语法。" },
+          { en: "Check your grammar.", zh: "检查你的语法。" }
+        ],
+        collocations: ["English grammar", "grammar rules", "grammar check", "grammar book"],
+        synonyms: ["syntax", "structure"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'grammar' for vocabulary", correction: "Grammar = 语法 (rules); vocabulary = 词汇 (words)." }],
+        pronunciationTips: "Two syllables: GRAM-er. Stress the first.",
+        memoryTrick: "Gram + mar. Gram (gram) + mar (妈) = mom teaches grammar."
+      },
+      {
+        id: "lc-4", topic: "Language", level: "B2", category: "Vocabulary",
+        english: "Vocabulary", word: "vocabulary", partOfSpeech: "noun",
+        breakdown: "voh-KAB-yuh-ler-ee", chinese: "词汇", pinyin: "cí huì",
+        emoji: "📚", imageKeyword: "vocabulary words",
+        definitionEn: "All the words known and used by a person.",
+        definitionZh: "一个人知道和使用的所有词语。",
+        detailsEn: "Common: build vocabulary, vocabulary list, academic vocabulary.",
+        detailsZh: "常见搭配：build vocabulary、vocabulary list、academic vocabulary。",
+        exampleEn: "Reading improves vocabulary.",
+        exampleZh: "阅读提高词汇量。",
+        examples: [
+          { en: "Learn new vocabulary daily.", zh: "每天学习新词汇。" },
+          { en: "Her vocabulary is huge.", zh: "她的词汇量很大。" }
+        ],
+        collocations: ["build vocabulary", "vocabulary list", "academic vocabulary", "vocabulary size"],
+        synonyms: ["lexicon", "word stock"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'vocabulary' for single words", correction: "Vocabulary = 词汇 (collection); word = 单词 (single)." }],
+        pronunciationTips: "Five syllables: voh-KAB-yuh-ler-ee. Stress the second.",
+        memoryTrick: "Vocab + ulary. Vocab (词语) + ulary (memory tool) = vocabulary."
+      }
+    ]
+  },
+  {
+    id: "science-technology",
+    title: "Science & Technology",
+    emoji: "🔬",
+    description: "Science terms, computers, internet, and modern tech.",
+    color: "from-violet-400 to-indigo-400",
+    words: [
+      {
+        id: "st-1", topic: "Science", level: "A2", category: "Physics",
+        english: "Energy", word: "energy", partOfSpeech: "noun",
+        breakdown: "EN-er-jee", chinese: "能量", pinyin: "néng liàng",
+        emoji: "⚡", imageKeyword: "energy power",
+        definitionEn: "The ability to do work or produce heat.",
+        definitionZh: "做功或产生热量的能力。",
+        detailsEn: "Common: renewable energy, solar energy, energy saving.",
+        detailsZh: "常见搭配：renewable energy、solar energy、energy saving。",
+        exampleEn: "Solar energy is clean.",
+        exampleZh: "太阳能是清洁的。",
+        examples: [
+          { en: "Energy comes from the sun.", zh: "能量来自太阳。" },
+          { en: "Save energy at home.", zh: "在家节约能源。" }
+        ],
+        collocations: ["renewable energy", "solar energy", "energy saving", "clean energy"],
+        synonyms: ["power", "strength"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'energy' for electricity always", correction: "Energy = 能量 (general); electricity = 电力 (specific)." }],
+        pronunciationTips: "Three syllables: EN-er-jee. Stress the first.",
+        memoryTrick: "En + er + gy. En (give) + er (人) + gy (give energy)."
+      },
+      {
+        id: "st-2", topic: "Science", level: "B1", category: "Chemistry",
+        english: "Experiment", word: "experiment", partOfSpeech: "noun / verb",
+        breakdown: "ik-SPER-i-ment", chinese: "实验", pinyin: "shí yàn",
+        emoji: "🧪", imageKeyword: "science experiment",
+        definitionEn: "A test to discover something.",
+        definitionZh: "为发现某事而进行的测试。",
+        detailsEn: "Common: do an experiment, science experiment, experiment result.",
+        detailsZh: "常见搭配：do an experiment、science experiment、experiment result。",
+        exampleEn: "The experiment succeeded.",
+        exampleZh: "实验成功了。",
+        examples: [
+          { en: "Do an experiment in class.", zh: "在课堂上做实验。" },
+          { en: "The experiment failed.", zh: "实验失败了。" }
+        ],
+        collocations: ["do an experiment", "science experiment", "experiment result", "experiment procedure"],
+        synonyms: ["test", "trial"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'test' for all experiments", correction: "Experiment = 实验 (scientific); test = 测试 (general)." }],
+        pronunciationTips: "Stress the second syllable: ik-SPER-i-ment.",
+        memoryTrick: "Ex + per + i + ment. Ex (out) + per (try) = try out = experiment."
+      },
+      {
+        id: "st-3", topic: "Technology", level: "A1", category: "Internet",
+        english: "Computer", word: "computer", partOfSpeech: "noun",
+        breakdown: "kuhm-PYOO-ter", chinese: "电脑", pinyin: "diàn nǎo",
+        emoji: "💻", imageKeyword: "desktop computer",
+        definitionEn: "An electronic device for processing data.",
+        definitionZh: "处理数据的电子设备。",
+        detailsEn: "Common: use a computer, laptop computer, computer screen.",
+        detailsZh: "常见搭配：use a computer、laptop computer、computer screen。",
+        exampleEn: "I work on my computer.",
+        exampleZh: "我用电脑工作。",
+        examples: [
+          { en: "The computer is new.", zh: "电脑是新的。" },
+          { en: "She bought a computer.", zh: "她买了一台电脑。" }
+        ],
+        collocations: ["use a computer", "laptop computer", "computer screen", "computer game"],
+        synonyms: ["PC", "laptop"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'computer' for calculators", correction: "Computer = 电脑 (general); calculator = 计算器 (math only)." }],
+        pronunciationTips: "Stress the second syllable: kuhm-PYOO-ter.",
+        memoryTrick: "Com (共同) + put (放) + er (人)。共同放数据的人 = computer."
+      },
+      {
+        id: "st-4", topic: "Technology", level: "B1", category: "Internet",
+        english: "Software", word: "software", partOfSpeech: "noun",
+        breakdown: "SORFT-wair", chinese: "软件", pinyin: "ruǎn jiàn",
+        emoji: "💿", imageKeyword: "software app",
+        definitionEn: "Programs and data used by computers.",
+        definitionZh: "计算机使用的程序和数据。",
+        detailsEn: "Common: install software, software update, software engineer.",
+        detailsZh: "常见搭配：install software、software update、software engineer。",
+        exampleEn: "The software is free.",
+        exampleZh: "软件是免费的。",
+        examples: [
+          { en: "Install the software now.", zh: "现在安装软件。" },
+          { en: "Software updates are ready.", zh: "软件更新准备好了。" }
+        ],
+        collocations: ["install software", "software update", "software engineer", "software development"],
+        synonyms: ["program", "application"], antonyms: ["hardware"],
+        commonMistakes: [{ mistake: "Using 'software' for hardware", correction: "Software = 软件 (programs); hardware = 硬件 (physical)." }],
+        pronunciationTips: "Two syllables: SORFT-wair. Stress the first.",
+        memoryTrick: "Soft (软的) + ware (ware)。Soft ware = software."
+      }
+    ]
+  },
+  {
+    id: "arts-culture",
+    title: "Arts & Culture",
+    emoji: "🎨",
+    description: "Art, music, museums, books, and cultural activities.",
+    color: "from-pink-400 to-purple-400",
+    words: [
+      {
+        id: "ac-1", topic: "Arts", level: "A2", category: "Visual Art",
+        english: "Painting", word: "painting", partOfSpeech: "noun",
+        breakdown: "PAYNT-ing", chinese: "绘画；画作", pinyin: "huì huà; huà zuò",
+        emoji: "🖼️", imageKeyword: "canvas painting",
+        definitionEn: "A picture made with paint.",
+        definitionZh: "用颜料做的图画。",
+        detailsEn: "Common: oil painting, painting class, wall painting.",
+        detailsZh: "常见搭配：oil painting、painting class、wall painting。",
+        exampleEn: "She loves painting.",
+        exampleZh: "她喜欢绘画。",
+        examples: [
+          { en: "The painting is beautiful.", zh: "画很漂亮。" },
+          { en: "He is learning painting.", zh: "他在学画画。" }
+        ],
+        collocations: ["oil painting", "painting class", "wall painting", "painting tool"],
+        synonyms: ["artwork", "picture"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'paint' as noun for finished work", correction: "Paint = 颜料 (material); painting = 画作 (finished)." }],
+        pronunciationTips: "Two syllables: PAINT-ing. Stress the first.",
+        memoryTrick: "Paint + ing. The art of painting."
+      },
+      {
+        id: "ac-2", topic: "Arts", level: "B1", category: "Music",
+        english: "Piano", word: "piano", partOfSpeech: "noun",
+        breakdown: "pee-AN-oh", chinese: "钢琴", pinyin: "gāng qín",
+        emoji: "🎹", imageKeyword: "piano keyboard",
+        definitionEn: "A large musical instrument with black and white keys.",
+        definitionZh: "有黑白键的大型乐器。",
+        detailsEn: "Common: play the piano, piano lesson, piano music.",
+        detailsZh: "常见搭配：play the piano、piano lesson、piano music。",
+        exampleEn: "She plays the piano well.",
+        exampleZh: "她钢琴弹得好。",
+        examples: [
+          { en: "The piano is in the hall.", zh: "钢琴在大厅里。" },
+          { en: "He practices piano daily.", zh: "他每天练习钢琴。" }
+        ],
+        collocations: ["play the piano", "piano lesson", "piano music", "piano recital"],
+        synonyms: ["keyboard", "instrument"], antonyms: [],
+        commonMistakes: [{ mistake: "Dropping 'the' before piano", correction: "Use 'the piano' when playing." }],
+        pronunciationTips: "Three syllables: pee-AN-oh. Stress the second.",
+        memoryTrick: "Piano = 钢琴. Pi (音) + ano (安诺) = piano sounds."
+      },
+      {
+        id: "ac-3", topic: "Culture", level: "A2", category: "Museums",
+        english: "Museum", word: "museum", partOfSpeech: "noun",
+        breakdown: "myoo-ZEE-um", chinese: "博物馆", pinyin: "bó wù guǎn",
+        emoji: "🏛️", imageKeyword: "museum building",
+        definitionEn: "A building where important objects are kept.",
+        definitionZh: "保存重要物品的建筑。",
+        detailsEn: "Common: visit a museum, art museum, museum ticket.",
+        detailsZh: "常见搭配：visit a museum、art museum、museum ticket。",
+        exampleEn: "The museum is open today.",
+        exampleZh: "博物馆今天开放。",
+        examples: [
+          { en: "We visited the museum.", zh: "我们参观了博物馆。" },
+          { en: "Museum entry is free.", zh: "博物馆免费进入。" }
+        ],
+        collocations: ["visit a museum", "art museum", "museum ticket", "museum exhibit"],
+        synonyms: ["gallery", "exhibition"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'museum' for galleries only", correction: "Museum = 博物馆 (collections); gallery = 画廊 (art sales)." }],
+        pronunciationTips: "Three syllables: myoo-ZEE-um. Stress the second.",
+        memoryTrick: "Muse (缪斯) + um (地方)。A place for muses (arts)."
+      },
+      {
+        id: "ac-4", topic: "Culture", level: "B1", category: "Books",
+        english: "Literature", word: "literature", partOfSpeech: "noun",
+        breakdown: "LIT-er-uh-chur", chinese: "文学", pinyin: "wén xué",
+        emoji: "📖", imageKeyword: "literature books",
+        definitionEn: "Written works with artistic value.",
+        definitionZh: "具有艺术价值的书面作品。",
+        detailsEn: "Common: English literature, study literature, modern literature.",
+        detailsZh: "常见搭配：English literature、study literature、modern literature。",
+        exampleEn: "She studies literature.",
+        exampleZh: "她研究文学。",
+        examples: [
+          { en: "Literature reflects culture.", zh: "文学反映文化。" },
+          { en: "He loves classic literature.", zh: "他喜欢古典文学。" }
+        ],
+        collocations: ["English literature", "study literature", "modern literature", "literature review"],
+        synonyms: ["writing", "books"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'literature' for any reading", correction: "Literature = 文学 (artistic); reading = 阅读 (general)." }],
+        pronunciationTips: "Four syllables: LIT-er-uh-chur. Stress the first.",
+        memoryTrick: "Liter (字母) + ature. Written art = literature."
+      }
+    ]
+  },
+  {
+    id: "business-career",
+    title: "Business & Career",
+    emoji: "💼",
+    description: "Work, office, career, meetings, and business English.",
+    color: "from-slate-400 to-gray-400",
+    words: [
+      {
+        id: "bc-1", topic: "Business", level: "A2", category: "Office",
+        english: "Office", word: "office", partOfSpeech: "noun",
+        breakdown: "OF-is", chinese: "办公室", pinyin: "bàn gōng shì",
+        emoji: "🏢", imageKeyword: "office building",
+        definitionEn: "A place where people work.",
+        definitionZh: "人们工作的地方。",
+        detailsEn: "Common: work in an office, office hours, office manager.",
+        detailsZh: "常见搭配：work in an office、office hours、office manager。",
+        exampleEn: "I work in an office.",
+        exampleZh: "我在办公室工作。",
+        examples: [
+          { en: "The office is downtown.", zh: "办公室在市中心。" },
+          { en: "She left the office early.", zh: "她早离开了办公室。" }
+        ],
+        collocations: ["work in an office", "office hours", "office manager", "office space"],
+        synonyms: ["workplace", "bureau"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'office' for home work", correction: "Office = 办公室 (company); home office = 家庭办公室." }],
+        pronunciationTips: "Two syllables: OF-is. Stress the first.",
+        memoryTrick: "Off + ice. Off (离开) + ice (冰) = leave the cold office."
+      },
+      {
+        id: "bc-2", topic: "Business", level: "B1", category: "Tasks",
+        english: "Task", word: "task", partOfSpeech: "noun",
+        breakdown: "task", chinese: "任务", pinyin: "rèn wù",
+        emoji: "📋", imageKeyword: "work task",
+        definitionEn: "A piece of work to be done.",
+        definitionZh: "要做的工作。",
+        detailsEn: "Common: complete a task, daily tasks, task list.",
+        detailsZh: "常见搭配：complete a task、daily tasks、task list。",
+        exampleEn: "The task is difficult.",
+        exampleZh: "任务很难。",
+        examples: [
+          { en: "Finish the task now.", zh: "现在完成任务。" },
+          { en: "She has many tasks.", zh: "她有很多任务。" }
+        ],
+        collocations: ["complete a task", "daily tasks", "task list", "main task"],
+        synonyms: ["job", "duty", "assignment"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'task' for jobs always", correction: "Task = 任务 (specific); job = 工作 (general)." }],
+        pronunciationTips: "One syllable: task. Like 'mask' with 't'.",
+        memoryTrick: "Task = 任务. T (work) + ask = ask someone to do a task."
+      },
+      {
+        id: "bc-3", topic: "Business", level: "B1", category: "Team",
+        english: "Colleague", word: "colleague", partOfSpeech: "noun",
+        breakdown: "KOL-eeg", chinese: "同事", pinyin: "tóng shì",
+        emoji: "👨‍💼", imageKeyword: "office colleagues",
+        definitionEn: "A person you work with.",
+        definitionZh: "和你一起工作的人。",
+        detailsEn: "Common: work colleague, former colleague, colleague meeting.",
+        detailsZh: "常见搭配：work colleague、former colleague、colleague meeting。",
+        exampleEn: "My colleague helped me.",
+        exampleZh: "我的同事帮了我。",
+        examples: [
+          { en: "She is a great colleague.", zh: "她是位很棒的同事。" },
+          { en: "Colleagues can become friends.", zh: "同事可以成为朋友。" }
+        ],
+        collocations: ["work colleague", "former colleague", "colleague meeting", "trusted colleague"],
+        synonyms: ["coworker", "peer"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'classmate' for work", correction: "Colleague = 同事; classmate = 同学." }],
+        pronunciationTips: "Two syllables: KOL-eeg. Stress the first.",
+        memoryTrick: "Col + league. You are in the same league (team)."
+      },
+      {
+        id: "bc-4", topic: "Business", level: "B2", category: "Career",
+        english: "Promotion", word: "promotion", partOfSpeech: "noun",
+        breakdown: "pro-MO-tion", chinese: "晋升；推广", pinyin: "jìn shēng; tuī guǎng",
+        emoji: "📈", imageKeyword: "job promotion",
+        definitionEn: "A move to a higher position; also marketing activity.",
+        definitionZh: "升到更高职位；也指促销活动。",
+        detailsEn: "Common: get a promotion, job promotion, sales promotion.",
+        detailsZh: "常见搭配：get a promotion、job promotion、sales promotion。",
+        exampleEn: "She got a promotion.",
+        exampleZh: "她晋升了。",
+        examples: [
+          { en: "He deserves a promotion.", zh: "他值得晋升。" },
+          { en: "The promotion ends Friday.", zh: "促销周五结束。" }
+        ],
+        collocations: ["get a promotion", "job promotion", "sales promotion", "promotion campaign"],
+        synonyms: ["advancement", "advertising"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'promotion' for demotion", correction: "Promotion = 晋升; demotion = 降职." }],
+        pronunciationTips: "Stress the second syllable: pro-MO-tion.",
+        memoryTrick: "Pro (forward) + motion (move). Move forward = promotion."
+      },
+      {
+        id: "bc-5", topic: "Business", level: "B1", category: "Meetings",
+        english: "Agenda", word: "agenda", partOfSpeech: "noun",
+        breakdown: "uh-JEN-duh", chinese: "议程", pinyin: "yì chéng",
+        emoji: "📝", imageKeyword: "meeting agenda",
+        definitionEn: "A list of topics to discuss in a meeting.",
+        definitionZh: "会议中要讨论的主题清单。",
+        detailsEn: "Common: meeting agenda, agenda item, set the agenda.",
+        detailsZh: "常见搭配：meeting agenda、agenda item、set the agenda。",
+        exampleEn: "What is the agenda?",
+        exampleZh: "议程是什么？",
+        examples: [
+          { en: "The agenda has five items.", zh: "议程有五个项目。" },
+          { en: "Send the agenda before the meeting.", zh: "开会前发送议程。" }
+        ],
+        collocations: ["meeting agenda", "agenda item", "set the agenda", "agenda for"],
+        synonyms: ["schedule", "plan"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'agenda' as singular only", correction: "Agenda is plural in Latin, but singular in English." }],
+        pronunciationTips: "Three syllables: uh-JEN-duh. Stress the second.",
+        memoryTrick: "A + gen + da. A (list) + gen (生成) + da (拿) = list to take."
+      },
+      {
+        id: "bc-6", topic: "Business", level: "A2", category: "Tasks",
+        english: "Deadline", word: "deadline", partOfSpeech: "noun",
+        breakdown: "DED-lyne", chinese: "截止日期", pinyin: "jié zhǐ rì qī",
+        emoji: "⏰", imageKeyword: "deadline calendar",
+        definitionEn: "The latest time by which something must be finished.",
+        definitionZh: "必须完成某事的最晚时间。",
+        detailsEn: "Common: meet a deadline, tight deadline, deadline approaches.",
+        detailsZh: "常见搭配：meet a deadline、tight deadline、deadline approaches。",
+        exampleEn: "The deadline is Friday.",
+        exampleZh: "截止日期是周五。",
+        examples: [
+          { en: "She met the deadline.", zh: "她赶上了截止日期。" },
+          { en: "We need more time for the deadline.", zh: "截止日期快到了。" }
+        ],
+        collocations: ["meet a deadline", "tight deadline", "deadline approaches", "deadline pressure"],
+        synonyms: ["time limit", "due date"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'deadline' casually", correction: "Deadline is formal/work-related." }],
+        pronunciationTips: "Two syllables: DED-lyne. Stress the first.",
+        memoryTrick: "Dead + line. A line you must cross before it's dead (too late)."
+      },
+      {
+        id: "bc-7", topic: "Business", level: "B1", category: "Finance",
+        english: "Budget", word: "budget", partOfSpeech: "noun / verb",
+        breakdown: "BUDJ-it", chinese: "预算", pinyin: "yù suàn",
+        emoji: "💵", imageKeyword: "budget planning",
+        definitionEn: "A plan for how much money to spend.",
+        definitionZh: "花钱的计划。",
+        detailsEn: "Common: annual budget, budget plan, stick to a budget.",
+        detailsZh: "常见搭配：annual budget、budget plan、stick to a budget。",
+        exampleEn: "We need a budget.",
+        exampleZh: "我们需要一个预算。",
+        examples: [
+          { en: "The budget is tight.", zh: "预算很紧。" },
+          { en: "She budgets carefully.", zh: "她小心地做预算。" }
+        ],
+        collocations: ["annual budget", "budget plan", "stick to a budget", "budget meeting"],
+        synonyms: ["plan", "allowance"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'budget' for price always", correction: "Budget = 预算 (plan); price = 价格 (cost)." }],
+        pronunciationTips: "Two syllables: BUDJ-it. Stress the first.",
+        memoryTrick: "Bud + get. Get a bud (sprout) of money for your plan."
+      },
+      {
+        id: "bc-8", topic: "Career", level: "B2", category: "Jobs",
+        english: "Resume", word: "resume", partOfSpeech: "noun",
+        breakdown: "REZ-oo-may", chinese: "简历", pinyin: "jiǎn lì",
+        emoji: "📄", imageKeyword: "resume document",
+        definitionEn: "A document summarizing your work experience.",
+        definitionZh: "总结你工作经历的文件。",
+        detailsEn: "Common: write a resume, resume template, resume skills.",
+        detailsZh: "常见搭配：write a resume、resume template、resume skills。",
+        exampleEn: "Update your resume.",
+        exampleZh: "更新你的简历。",
+        examples: [
+          { en: "She sent her resume.", zh: "她发送了简历。" },
+          { en: "The resume looks professional.", zh: "简历看起来很专业。" }
+        ],
+        collocations: ["write a resume", "resume template", "resume skills", "resume builder"],
+        synonyms: ["CV", "curriculum vitae"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'CV' in American contexts", correction: "Resume = 简历 (US); CV = 学术简历 (UK/academic)." }],
+        pronunciationTips: "Three syllables: REZ-oo-may. Stress the first.",
+        memoryTrick: "Re + sume (总结). Re (again) + sume = sum up your life = resume."
+      }
+    ]
+  },
+  {
+    id: "personal-growth",
+    title: "Personal Growth & Mindfulness",
+    emoji: "🌱",
+    description: "Self-improvement, habits, goals, and mental health.",
+    color: "from-lime-400 to-green-400",
+    words: [
+      {
+        id: "pg-1", topic: "Growth", level: "B1", category: "Improvement",
+        english: "Improve", word: "improve", partOfSpeech: "verb",
+        breakdown: "im-PROOVE", chinese: "改善；提高", pinyin: "gǎi shàn; tí gāo",
+        emoji: "📈", imageKeyword: "improvement graph",
+        definitionEn: "To make something better.",
+        definitionZh: "使某事更好。",
+        detailsEn: "Common: improve skills, improve English, improve health.",
+        detailsZh: "常见搭配：improve skills、improve English、improve health。",
+        exampleEn: "I want to improve my speaking.",
+        exampleZh: "我想提高我的口语。",
+        examples: [
+          { en: "Practice improves skills.", zh: "练习提高技能。" },
+          { en: "She improved her score.", zh: "她提高了分数。" }
+        ],
+        collocations: ["improve skills", "improve English", "improve health", "improve performance"],
+        synonyms: ["better", "enhance", "upgrade"], antonyms: ["worsen", "decline"],
+        commonMistakes: [{ mistake: "Using 'improve' for people directly", correction: "Improve skills/health/performance; use 'improve yourself' for personal growth." }],
+        pronunciationTips: "Stress the second syllable: im-PROOVE.",
+        memoryTrick: "Im (in) + prove (证明). Prove in = improve."
+      },
+      {
+        id: "pg-2", topic: "Growth", level: "A2", category: "Habits",
+        english: "Habit", word: "habit", partOfSpeech: "noun",
+        breakdown: "HAB-it", chinese: "习惯", pinyin: "xí guàn",
+        emoji: "🔄", imageKeyword: "daily habit",
+        definitionEn: "Something you do regularly.",
+        definitionZh: "你定期做的事情。",
+        detailsEn: "Common: good habit, bad habit, break a habit.",
+        detailsZh: "常见搭配：good habit、bad habit、break a habit。",
+        exampleEn: "Reading is a good habit.",
+        exampleZh: "阅读是好习惯。",
+        examples: [
+          { en: "She has a morning habit.", zh: "她有晨间习惯。" },
+          { en: "Break the bad habit.", zh: "改掉坏习惯。" }
+        ],
+        collocations: ["good habit", "bad habit", "break a habit", "daily habit"],
+        synonyms: ["routine", "practice"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'habit' only negatively", correction: "Habits can be good or bad." }],
+        pronunciationTips: "Two syllables: HAB-it. Stress the first.",
+        memoryTrick: "Habit = 习惯. Have + it. You have it regularly."
+      },
+      {
+        id: "pg-3", topic: "Mindfulness", level: "B1", category: "Focus",
+        english: "Focus", word: "focus", partOfSpeech: "verb / noun",
+        breakdown: "FO-kus", chinese: "集中；重点", pinyin: "jí zhōng; zhòng diǎn",
+        emoji: "🎯", imageKeyword: "focus target",
+        definitionEn: "To concentrate; the center of attention.",
+        definitionZh: "集中；注意力的中心。",
+        detailsEn: "Common: focus on, lose focus, focus energy.",
+        detailsZh: "常见搭配：focus on、lose focus、focus energy。",
+        exampleEn: "Focus on your goals.",
+        exampleZh: "专注于你的目标。",
+        examples: [
+          { en: "She focused deeply.", zh: "她很专注。" },
+          { en: "The focus is on quality.", zh: "重点在质量上。" }
+        ],
+        collocations: ["focus on", "lose focus", "focus energy", "main focus"],
+        synonyms: ["concentrate", "attention"], antonyms: ["distract"],
+        commonMistakes: [{ mistake: "Using 'focus' without 'on'", correction: "Focus on something." }],
+        pronunciationTips: "Two syllables: FO-kus. Stress the first.",
+        memoryTrick: "Focus = 焦点. Fo (火) + cus (ocus) = fire at the center."
+      },
+      {
+        id: "pg-4", topic: "Mindfulness", level: "B2", category: "Mental",
+        english: "Resilience", word: "resilience", partOfSpeech: "noun",
+        breakdown: "rih-ZIL-yens", chinese: "韧性；恢复力", pinyin: "rèn xìng; huī fù lì",
+        emoji: "🧘", imageKeyword: "mental resilience",
+        definitionEn: "The ability to recover from difficulties.",
+        definitionZh: "从困难中恢复的能力。",
+        detailsEn: "Common: emotional resilience, build resilience, mental resilience.",
+        detailsZh: "常见搭配：emotional resilience、build resilience、mental resilience。",
+        exampleEn: "She showed great resilience.",
+        exampleZh: "她展现了极大的韧性。",
+        examples: [
+          { en: "Resilience helps in hard times.", zh: "韧性帮助度过困难时期。" },
+          { en: "Build resilience through practice.", zh: "通过练习建立韧性。" }
+        ],
+        collocations: ["emotional resilience", "build resilience", "mental resilience", "resilience skills"],
+        synonyms: ["toughness", "strength"], antonyms: ["weakness", "fragility"],
+        commonMistakes: [{ mistake: "Using 'resistance' for emotions", correction: "Resilience = 韧性 (bounce back); resistance = 抵抗力 (fight)." }],
+        pronunciationTips: "Three syllables: rih-ZIL-yens. Stress the second.",
+        memoryTrick: "Re (again) + sil (silk) + ience. Bounce back like silk."
+      }
+    ]
+  },
+  {
+    id: "culture-travel",
+    title: "Culture & Travel Deep Dive",
+    emoji: "🌍",
+    description: "Customs, traditions, sightseeing, and travel experiences.",
+    color: "from-teal-400 to-cyan-400",
+    words: [
+      {
+        id: "ct-1", topic: "Culture", level: "B1", category: "Customs",
+        english: "Tradition", word: "tradition", partOfSpeech: "noun",
+        breakdown: "truh-DISH-un", chinese: "传统", pinyin: "chuán tǒng",
+        emoji: "🏮", imageKeyword: "cultural tradition",
+        definitionEn: "A custom or belief passed down through generations.",
+        definitionZh: "代代相传的习俗或信仰。",
+        detailsEn: "Common: family tradition, cultural tradition, break tradition.",
+        detailsZh: "常见搭配：family tradition、cultural tradition、break tradition。",
+        exampleEn: "It is a family tradition.",
+        exampleZh: "这是一个家庭传统。",
+        examples: [
+          { en: "The tradition continues.", zh: "传统继续着。" },
+          { en: "She respects tradition.", zh: "她尊重传统。" }
+        ],
+        collocations: ["family tradition", "cultural tradition", "break tradition", "local tradition"],
+        synonyms: ["custom", "practice"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'tradition' for trends", correction: "Tradition = 传统 (old); trend = 潮流 (new)." }],
+        pronunciationTips: "Three syllables: truh-DISH-un. Stress the second.",
+        memoryTrick: "Tra + dition. Tra (transfer) + dition (give) = pass down."
+      },
+      {
+        id: "ct-2", topic: "Travel", level: "A2", category: "Sightseeing",
+        english: "Sightseeing", word: "sightseeing", partOfSpeech: "noun",
+        breakdown: "SITE-see-ing", chinese: "观光", pinyin: "guān guāng",
+        emoji: "📸", imageKeyword: "sightseeing tour",
+        definitionEn: "Visiting interesting places as a tourist.",
+        definitionZh: "作为游客参观有趣的地方。",
+        detailsEn: "Common: go sightseeing, sightseeing tour, sightseeing bus.",
+        detailsZh: "常见搭配：go sightseeing、sightseeing tour、sightseeing bus。",
+        exampleEn: "We went sightseeing in Paris.",
+        exampleZh: "我们在巴黎观光了。",
+        examples: [
+          { en: "Sightseeing is fun.", zh: "观光很有趣。" },
+          { en: "Book a sightseeing tour.", zh: "预订观光旅游。" }
+        ],
+        collocations: ["go sightseeing", "sightseeing tour", "sightseeing bus", "sightseeing spot"],
+        synonyms: ["tourism", " touring"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'sight' only for vision", correction: "Sight = 视觉 (seeing); sightseeing = 观光 (tourism)." }],
+        pronunciationTips: "Three syllables: SITE-see-ing. Stress the first.",
+        memoryTrick: "Sight + seeing. Seeing sights = sightseeing."
+      },
+      {
+        id: "ct-3", topic: "Culture", level: "A1", category: "Customs",
+        english: "Custom", word: "custom", partOfSpeech: "noun",
+        breakdown: "KUS-tum", chinese: "习俗", pinyin: "xí sú",
+        emoji: "🎎", imageKeyword: "cultural custom",
+        definitionEn: "A traditional way of doing things.",
+        definitionZh: "做某事的传统方式。",
+        detailsEn: "Common: local custom, follow custom, traditional custom.",
+        detailsZh: "常见搭配：local custom、follow custom、traditional custom。",
+        exampleEn: "It is a local custom.",
+        exampleZh: "这是一个当地习俗。",
+        examples: [
+          { en: "Customs vary by country.", zh: "习俗因国家而异。" },
+          { en: "Follow the local custom.", zh: "遵循当地习俗。" }
+        ],
+        collocations: ["local custom", "follow custom", "traditional custom", "customary practice"],
+        synonyms: ["tradition", "habit"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'costume' for custom", correction: "Custom = 习俗; costume = 服装." }],
+        pronunciationTips: "Two syllables: KUS-tum. Stress the first.",
+        memoryTrick: "Custom = 习俗. Cus (customers) + tom (people) = people's habit."
+      },
+      {
+        id: "ct-4", topic: "Travel", level: "B1", category: "Planning",
+        english: "Itinerary", word: "itinerary", partOfSpeech: "noun",
+        breakdown: "eye-tin-er-air-ee", chinese: "行程", pinyin: "xíng chéng",
+        emoji: "🗺️", imageKeyword: "travel itinerary",
+        definitionEn: "A plan of where to go and when.",
+        definitionZh: "去哪里和什么时候的计划。",
+        detailsEn: "Common: travel itinerary, day itinerary, change itinerary.",
+        detailsZh: "常见搭配：travel itinerary、day itinerary、change itinerary。",
+        exampleEn: "The itinerary is full.",
+        exampleZh: "行程很满。",
+        examples: [
+          { en: "Check the itinerary.", zh: "查看行程。" },
+          { en: "She changed the itinerary.", zh: "她更改了行程。" }
+        ],
+        collocations: ["travel itinerary", "day itinerary", "change itinerary", "detailed itinerary"],
+        synonyms: ["plan", "schedule", "route"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'schedule' always", correction: "Itinerary = 行程 (travel); schedule = 时间表 (general)." }],
+        pronunciationTips: "Five syllables: eye-tin-er-air-ee. Stress the fourth.",
+        memoryTrick: "I + tiner + ary. I (我) + tiner (旅行) + ary (形容词). My travel plan."
+      }
+    ]
+  },
+  {
+    id: "digital-life",
+    title: "Digital Life & Internet",
+    emoji: "🌐",
+    description: "Internet, social media, apps, and online activities.",
+    color: "from-blue-400 to-indigo-400",
+    words: [
+      {
+        id: "dl-1", topic: "Digital", level: "A1", category: "Internet",
+        english: "Internet", word: "internet", partOfSpeech: "noun",
+        breakdown: "IN-ter-net", chinese: "互联网", pinyin: "hù lián wǎng",
+        emoji: "🌐", imageKeyword: "internet network",
+        definitionEn: "The global system of connected computers.",
+        definitionZh: "全球计算机连接系统。",
+        detailsEn: "Common: on the internet, use the internet, internet connection.",
+        detailsZh: "常见搭配：on the internet、use the internet、internet connection。",
+        exampleEn: "I found it on the internet.",
+        exampleZh: "我在网上找到了它。",
+        examples: [
+          { en: "The internet is slow.", zh: "网速很慢。" },
+          { en: "Use the internet carefully.", zh: "小心使用互联网。" }
+        ],
+        collocations: ["on the internet", "use the internet", "internet connection", "internet safety"],
+        synonyms: ["web", "net"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'internet' with capital always", correction: "Internet = 互联网 (modern usage, lowercase)." }],
+        pronunciationTips: "Three syllables: IN-ter-net. Stress the first.",
+        memoryTrick: "Inter (between) + net (网). Network between computers."
+      },
+      {
+        id: "dl-2", topic: "Digital", level: "A2", category: "Social",
+        english: "Post", word: "post", partOfSpeech: "verb / noun",
+        breakdown: "pohst", chinese: "发布；帖子", pinyin: "fā bù; tiě zǐ",
+        emoji: "📱", imageKeyword: "social media post",
+        definitionEn: "To publish something online; also the published item.",
+        definitionZh: "在网上发布某物；也指发布的内容。",
+        detailsEn: "Common: post a photo, social media post, blog post.",
+        detailsZh: "常见搭配：post a photo、social media post、blog post。",
+        exampleEn: "She posted a photo.",
+        exampleZh: "她发布了一张照片。",
+        examples: [
+          { en: "I post on Instagram daily.", zh: "我每天在Instagram上发帖。" },
+          { en: "The post went viral.", zh: "帖子爆红了。" }
+        ],
+        collocations: ["post a photo", "social media post", "blog post", "post comment"],
+        synonyms: ["publish", "share"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'post' for mail only", correction: "Post = 发布 (online); mail = 邮寄 (physical)." }],
+        pronunciationTips: "One syllable: pohst. Like 'post' mail with 'o'.",
+        memoryTrick: "Post = 发布. Post (邮件) online = post."
+      },
+      {
+        id: "dl-3", topic: "Digital", level: "A2", category: "Apps",
+        english: "App", word: "app", partOfSpeech: "noun",
+        breakdown: "ap", chinese: "应用程序", pinyin: "yìng yòng chéng xù",
+        emoji: "📲", imageKeyword: "mobile app",
+        definitionEn: "A software program for a phone or computer.",
+        definitionZh: "用于手机或计算机的软件程序。",
+        detailsEn: "Common: download an app, app store, mobile app.",
+        detailsZh: "常见搭配：download an app、app store、mobile app。",
+        exampleEn: "This app is useful.",
+        exampleZh: "这个应用很有用。",
+        examples: [
+          { en: "Download the app now.", zh: "现在下载应用。" },
+          { en: "The app is free.", zh: "应用是免费的。" }
+        ],
+        collocations: ["download an app", "app store", "mobile app", "app developer"],
+        synonyms: ["application", "software"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'app' for websites", correction: "App = 应用 (software); website = 网站 (browser)." }],
+        pronunciationTips: "One syllable: ap. Short 'a'.",
+        memoryTrick: "App = 应用. Application shortened to app."
+      },
+      {
+        id: "dl-4", topic: "Digital", level: "B1", category: "Communication",
+        english: "Notification", word: "notification", partOfSpeech: "noun",
+        breakdown: "noh-tif-i-KAY-shun", chinese: "通知", pinyin: "tōng zhī",
+        emoji: "🔔", imageKeyword: "phone notification",
+        definitionEn: "An alert or message from an app or website.",
+        definitionZh: "来自应用或网站的提醒或消息。",
+        detailsEn: "Common: push notification, notification center, turn off notifications.",
+        detailsZh: "常见搭配：push notification、notification center、turn off notifications。",
+        exampleEn: "I got a notification.",
+        exampleZh: "我收到了一条通知。",
+        examples: [
+          { en: "Turn off notifications.", zh: "关闭通知。" },
+          { en: "The notification said 'hello'.", zh: "通知说'你好'。" }
+        ],
+        collocations: ["push notification", "notification center", "turn off notifications", "receive notification"],
+        synonyms: ["alert", "message"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'message' for all alerts", correction: "Notification = 通知 (alert); message = 消息 (content)." }],
+        pronunciationTips: "Five syllables: noh-tif-i-KAY-shun. Stress the fourth.",
+        memoryTrick: "Notif (通知) + ication (名词后缀). Notification = 通知."
+      }
+    ]
+  },
+  {
+    id: "animals-nature",
+    title: "Animals & Nature",
+    emoji: "🐾",
+    description: "Animals, plants, seasons, and the natural world.",
+    color: "from-green-400 to-emerald-400",
+    words: [
+      {
+        id: "an-1", topic: "Animals", level: "A1", category: "Pets",
+        english: "Dog", word: "dog", partOfSpeech: "noun",
+        breakdown: "dawg", chinese: "狗", pinyin: "gǒu",
+        emoji: "🐶", imageKeyword: "cute dog",
+        definitionEn: "A common pet animal.",
+        definitionZh: "常见的宠物动物。",
+        detailsEn: "Common: pet dog, dog walk, dog food.",
+        detailsZh: "常见搭配：pet dog、dog walk、dog food。",
+        exampleEn: "I have a dog.",
+        exampleZh: "我有一只狗。",
+        examples: [
+          { en: "The dog is friendly.", zh: "狗很友好。" },
+          { en: "She walks her dog daily.", zh: "她每天遛狗。" }
+        ],
+        collocations: ["pet dog", "dog walk", "dog food", "dog owner"],
+        synonyms: ["canine", "puppy"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'dog' for all canines", correction: "Dog = 狗; wolf = 狼." }],
+        pronunciationTips: "One syllable: dawg.",
+        memoryTrick: "Dog = 狗. D + og (欧歌) = dog barks."
+      },
+      {
+        id: "an-2", topic: "Animals", level: "A1", category: "Pets",
+        english: "Cat", word: "cat", partOfSpeech: "noun",
+        breakdown: "kat", chinese: "猫", pinyin: "māo",
+        emoji: "🐱", imageKeyword: "cute cat",
+        definitionEn: "A small pet animal.",
+        definitionZh: "小宠物动物。",
+        detailsEn: "Common: pet cat, cat food, cat nap.",
+        detailsZh: "常见搭配：pet cat、cat food、cat nap。",
+        exampleEn: "The cat is sleeping.",
+        exampleZh: "猫在睡觉。",
+        examples: [
+          { en: "Cats like milk.", zh: "猫喜欢牛奶。" },
+          { en: "She adopted a cat.", zh: "她领养了一只猫。" }
+        ],
+        collocations: ["pet cat", "cat food", "cat nap", "cat owner"],
+        synonyms: ["feline", "kitten"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'cat' for all felines", correction: "Cat = 猫; tiger = 老虎." }],
+        pronunciationTips: "One syllable: kat.",
+        memoryTrick: "Cat = 猫. C + at (在) = cat is at home."
+      },
+      {
+        id: "an-3", topic: "Animals", level: "A2", category: "Wild",
+        english: "Elephant", word: "elephant", partOfSpeech: "noun",
+        breakdown: "EL-uh-fant", chinese: "大象", pinyin: "dà xiàng",
+        emoji: "🐘", imageKeyword: "elephant animal",
+        definitionEn: "A very large animal with a trunk.",
+        definitionZh: "有长鼻的非常大的动物。",
+        detailsEn: "Common: African elephant, elephant herd, elephant trunk.",
+        detailsZh: "常见搭配：African elephant、elephant herd、elephant trunk。",
+        exampleEn: "The elephant is huge.",
+        exampleZh: "大象很大。",
+        examples: [
+          { en: "Elephants have long trunks.", zh: "大象有长鼻子。" },
+          { en: "We saw an elephant at the zoo.", zh: "我们在动物园看到了大象。" }
+        ],
+        collocations: ["African elephant", "elephant herd", "elephant trunk", "elephant sanctuary"],
+        synonyms: ["mammal"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'elephant' for 'trunk' only", correction: "Elephant = 大象 (animal); trunk = 象鼻." }],
+        pronunciationTips: "Three syllables: EL-uh-fant. Stress the first.",
+        memoryTrick: "Ele + phant. Ele (large) + phant (phant = fan) = big fan animal = elephant."
+      },
+      {
+        id: "an-4", topic: "Nature", level: "A1", category: "Plants",
+        english: "Flower", word: "flower", partOfSpeech: "noun",
+        breakdown: "FLOW-er", chinese: "花", pinyin: "huā",
+        emoji: "🌸", imageKeyword: "colorful flower",
+        definitionEn: "The colorful part of a plant.",
+        definitionZh: "植物上色彩鲜艳的部分。",
+        detailsEn: "Common: beautiful flower, flower shop, flower garden.",
+        detailsZh: "常见搭配：beautiful flower、flower shop、flower garden。",
+        exampleEn: "She picked a flower.",
+        exampleZh: "她摘了一朵花。",
+        examples: [
+          { en: "The flower smells good.", zh: "花闻起来很香。" },
+          { en: "Flowers bloom in spring.", zh: "花在春天盛开。" }
+        ],
+        collocations: ["beautiful flower", "flower shop", "flower garden", "flower bouquet"],
+        synonyms: ["blossom", "bloom"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'flour' (面粉) for 'flower' (花)", correction: "Flower = 花 (plant); flour = 面粉 (baking)." }],
+        pronunciationTips: "Two syllables: FLOW-er. Stress the first.",
+        memoryTrick: "Flower = 花. Flow + er. Flowers flow with color."
+      },
+      {
+        id: "an-5", topic: "Nature", level: "A2", category: "Landscape",
+        english: "River", word: "river", partOfSpeech: "noun",
+        breakdown: "RIV-er", chinese: "河流", pinyin: "hé liú",
+        emoji: "🏞️", imageKeyword: "flowing river",
+        definitionEn: "A large natural flow of water.",
+        definitionZh: "大的天然水流。",
+        detailsEn: "Common: cross the river, river bank, river water.",
+        detailsZh: "常见搭配：cross the river、river bank、river water。",
+        exampleEn: "The river is long.",
+        exampleZh: "河流很长。",
+        examples: [
+          { en: "We swam in the river.", zh: "我们在河里游泳了。" },
+          { en: "The river flows to the sea.", zh: "河流流向大海。" }
+        ],
+        collocations: ["cross the river", "river bank", "river water", "river cruise"],
+        synonyms: ["stream", "creek"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'river' for lakes", correction: "River = 河流 (flowing); lake = 湖 (still)." }],
+        pronunciationTips: "Two syllables: RIV-er. Stress the first.",
+        memoryTrick: "River = 河流. Riv (rive) + er. Water  riv er = river."
+      },
+      {
+        id: "an-6", topic: "Nature", level: "A1", category: "Weather",
+        english: "Cloud", word: "cloud", partOfSpeech: "noun",
+        breakdown: "klowd", chinese: "云", pinyin: "yún",
+        emoji: "☁️", imageKeyword: "fluffy cloud",
+        definitionEn: "A visible mass of water in the sky.",
+        definitionZh: "天空中可见的水的聚集。",
+        detailsEn: "Common: white cloud, cloud cover, under a cloud.",
+        detailsZh: "常见搭配：white cloud、cloud cover、under a cloud。",
+        exampleEn: "The cloud is white.",
+        exampleZh: "云是白色的。",
+        examples: [
+          { en: "Clouds bring rain.", zh: "云带来雨。" },
+          { en: "Look at that cloud!", zh: "看那片云！" }
+        ],
+        collocations: ["white cloud", "cloud cover", "under a cloud", "cloudy sky"],
+        synonyms: ["vapor", "fog"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'cloud' for 'clown'", correction: "Cloud = 云; clown = 小丑." }],
+        pronunciationTips: "One syllable: klowd. Like 'loud' with 'c'.",
+        memoryTrick: "Cloud = 云. Cl (cloud) + oud (large) = large white cloud."
+      }
+    ]
+  },
+  {
+    id: "food-drink",
+    title: "Food & Drink",
+    emoji: "🍕",
+    description: "Meals, snacks, drinks, cooking, and dining out.",
+    color: "from-orange-400 to-red-400",
+    words: [
+      {
+        id: "fd-1", topic: "Food", level: "A1", category: "Meals",
+        english: "Breakfast", word: "breakfast", partOfSpeech: "noun",
+        breakdown: "BREK-fast", chinese: "早餐", pinyin: "zǎo cān",
+        emoji: "🥞", imageKeyword: "breakfast food",
+        definitionEn: "The first meal of the day.",
+        definitionZh: "一天中的第一餐。",
+        detailsEn: "Common: eat breakfast, have breakfast, breakfast menu.",
+        detailsZh: "常见搭配：eat breakfast、have breakfast、breakfast menu。",
+        exampleEn: "I eat breakfast at 7.",
+        exampleZh: "我7点吃早餐。",
+        examples: [
+          { en: "Breakfast is important.", zh: "早餐很重要。" },
+          { en: "We had breakfast together.", zh: "我们一起吃了早餐。" }
+        ],
+        collocations: ["eat breakfast", "have breakfast", "breakfast menu", "breakfast time"],
+        synonyms: ["morning meal"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'breakfast' as verb", correction: "Breakfast as verb is rare: 'We breakfasted early'." }],
+        pronunciationTips: "Two syllables: BREK-fast. Stress the first.",
+        memoryTrick: "Break + fast. Break the fast (night) = morning meal."
+      },
+      {
+        id: "fd-2", topic: "Food", level: "A2", category: "Taste",
+        english: "Delicious", word: "delicious", partOfSpeech: "adjective",
+        breakdown: "dih-LISH-us", chinese: "美味的", pinyin: "měi wèi de",
+        emoji: "😋", imageKeyword: "delicious food",
+        definitionEn: "Tasting very good.",
+        definitionZh: "味道非常好。",
+        detailsEn: "Common: delicious food, absolutely delicious, delicious meal.",
+        detailsZh: "常见搭配：delicious food、absolutely delicious、delicious meal。",
+        exampleEn: "The food is delicious.",
+        exampleZh: "食物很美味。",
+        examples: [
+          { en: "This is a delicious cake.", zh: "这是美味的蛋糕。" },
+          { en: "She cooked a delicious dinner.", zh: "她做了美味的晚餐。" }
+        ],
+        collocations: ["delicious food", "absolutely delicious", "delicious meal", "delicious taste"],
+        synonyms: ["tasty", "yummy", "flavorful"], antonyms: ["disgusting", "terrible"],
+        commonMistakes: [{ mistake: "Using 'delicious' for non-food things often", correction: "Primarily for food; for experiences use 'wonderful'." }],
+        pronunciationTips: "Stress the second syllable: dih-LISH-us.",
+        memoryTrick: "De + lish + ious. De (very) + lish (立食) = very tasty."
+      },
+      {
+        id: "fd-3", topic: "Food", level: "B1", category: "Ingredients",
+        english: "Ingredient", word: "ingredient", partOfSpeech: "noun",
+        breakdown: "in-GREE-dee-ent", chinese: "食材；成分", pinyin: "shí cái; chéng fèn",
+        emoji: "🧄", imageKeyword: "food ingredients",
+        definitionEn: "One of the substances used to make a dish.",
+        definitionZh: "用来制作菜肴的物质之一。",
+        detailsEn: "Common: fresh ingredients, main ingredient, secret ingredient.",
+        detailsZh: "常见搭配：fresh ingredients、main ingredient、secret ingredient。",
+        exampleEn: "Fresh ingredients make better food.",
+        exampleZh: "新鲜食材做出更好的食物。",
+        examples: [
+          { en: "What are the ingredients?", zh: "食材是什么？" },
+          { en: "She listed all ingredients.", zh: "她列出了所有食材。" }
+        ],
+        collocations: ["fresh ingredients", "main ingredient", "secret ingredient", "organic ingredients"],
+        synonyms: ["component", "element"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'ingredient' for recipes only", correction: "Use for food, cosmetics, or mixtures." }],
+        pronunciationTips: "Stress the second syllable: in-GREE-dee-ent.",
+        memoryTrick: "In + gredient. In (enter) + gredient (gradual) = 食材 gradual进入 dish."
+      },
+      {
+        id: "fd-4", topic: "Food", level: "A2", category: "Restaurant",
+        english: "Menu", word: "menu", partOfSpeech: "noun",
+        breakdown: "MEN-yoo", chinese: "菜单", pinyin: "cài dān",
+        emoji: "📋", imageKeyword: "restaurant menu",
+        definitionEn: "A list of dishes available at a restaurant.",
+        definitionZh: "餐厅供应的菜肴清单。",
+        detailsEn: "Common: read the menu, menu options, special menu.",
+        detailsZh: "常见搭配：read the menu、menu options、special menu。",
+        exampleEn: "Can I see the menu?",
+        exampleZh: "能看一下菜单吗？",
+        examples: [
+          { en: "The menu has many options.", zh: "菜单有很多选择。" },
+          { en: "She checked the menu.", zh: "她看了菜单。" }
+        ],
+        collocations: ["read the menu", "menu options", "special menu", "menu board"],
+        synonyms: ["list", "card"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'menu' for food itself", correction: "Menu = 菜单; food = 食物." }],
+        pronunciationTips: "Two syllables: MEN-yoo. Stress the first.",
+        memoryTrick: "Menu = 菜单. Men (people) + u (you) = list for you."
+      },
+      {
+        id: "fd-5", topic: "Food", level: "A1", category: "Meals",
+        english: "Water", word: "water", partOfSpeech: "noun",
+        breakdown: "WAW-ter", chinese: "水", pinyin: "shuǐ",
+        emoji: "💧", imageKeyword: "glass of water",
+        definitionEn: "A clear liquid we drink.",
+        definitionZh: "我们喝的清澈液体。",
+        detailsEn: "Common: drink water, bottle of water, warm water.",
+        detailsZh: "常见搭配：drink water、bottle of water、warm water。",
+        exampleEn: "I need some water.",
+        exampleZh: "我需要一些水。",
+        examples: [
+          { en: "Water is essential for life.", zh: "水对生命至关重要。" },
+          { en: "Can I have water?", zh: "能给我点水吗？" }
+        ],
+        collocations: ["drink water", "bottle of water", "warm water", "fresh water"],
+        synonyms: ["H2O"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'water' as verb casually", correction: "'Water' as verb means to give water: 'water the plants'." }],
+        pronunciationTips: "Two syllables: WAW-ter. Stress the first.",
+        memoryTrick: "Water = 水. What you drink."
+      },
+      {
+        id: "fd-6", topic: "Food", level: "A2", category: "Taste",
+        english: "Spicy", word: "spicy", partOfSpeech: "adjective",
+        breakdown: "SPY-see", chinese: "辣的", pinyin: "là de",
+        emoji: "🌶️", imageKeyword: "spicy food",
+        definitionEn: "Having a strong, hot taste.",
+        definitionZh: "有强烈辣味的。",
+        detailsEn: "Common: spicy food, very spicy, love spicy.",
+        detailsZh: "常见搭配：spicy food、very spicy、love spicy。",
+        exampleEn: "This curry is too spicy.",
+        exampleZh: "这个咖喱太辣了。",
+        examples: [
+          { en: "I like spicy food.", zh: "我喜欢辣的食物。" },
+          { en: "Is this dish spicy?", zh: "这道菜辣吗？" }
+        ],
+        collocations: ["spicy food", "very spicy", "spicy dish", "spicy soup"],
+        synonyms: ["hot", "pungent"], antonyms: ["mild", "bland"],
+        commonMistakes: [{ mistake: "Using 'hot' only for temperature", correction: "'Spicy' is for taste; 'hot' can mean temperature or spice." }],
+        pronunciationTips: "Two syllables: SPY-see. Stress the first.",
+        memoryTrick: "Spice + y. Full of spice."
+      },
+      {
+        id: "fd-7", topic: "Food", level: "B1", category: "Meals",
+        english: "Buffet", word: "buffet", partOfSpeech: "noun",
+        breakdown: "boo-FAY", chinese: "自助餐", pinyin: "zì zhù cān",
+        emoji: "🍱", imageKeyword: "buffet table",
+        definitionEn: "A meal where you serve yourself.",
+        definitionZh: "自己取餐的一餐。",
+        detailsEn: "Common: all-you-can-eat buffet, breakfast buffet, buffet dinner.",
+        detailsZh: "常见搭配：all-you-can-eat buffet、breakfast buffet、buffet dinner。",
+        exampleEn: "We ate at a buffet.",
+        exampleZh: "我们在自助餐厅吃了饭。",
+        examples: [
+          { en: "The buffet has many options.", zh: "自助餐有很多选择。" },
+          { en: "Avoid overeating at buffets.", zh: "在自助餐避免暴饮暴食。" }
+        ],
+        collocations: ["all-you-can-eat buffet", "breakfast buffet", "buffet dinner", "buffet style"],
+        synonyms: ["self-service meal"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'buffet' as verb for hitting", correction: "Buffet (verb) = 连续击打; buffet (noun) = 自助餐." }],
+        pronunciationTips: "Two syllables: boo-FAY. Stress the second.",
+        memoryTrick: "Buffet = 自助餐. Buff (many) + et (small) = many small dishes."
+      },
+      {
+        id: "fd-8", topic: "Food", level: "A2", category: "Shopping",
+        english: "Grocery", word: "grocery", partOfSpeech: "noun",
+        breakdown: "GRO-suh-ree", chinese: "食品杂货", pinyin: "shí pǐn zá huò",
+        emoji: "🛒", imageKeyword: "grocery shopping",
+        definitionEn: "Food and household items bought at a store.",
+        definitionZh: "在商店购买的食品和家居用品。",
+        detailsEn: "Common: grocery store, do groceries, grocery list.",
+        detailsZh: "常见搭配：grocery store、do groceries、grocery list。",
+        exampleEn: "I need to buy groceries.",
+        exampleZh: "我需要买食品杂货。",
+        examples: [
+          { en: "The grocery store is nearby.", zh: "食品杂货店在附近。" },
+          { en: "Let's do the groceries online.", zh: "我们在线购买食品杂货吧。" }
+        ],
+        collocations: ["grocery store", "grocery list", "do groceries", "grocery shopping"],
+        synonyms: ["food shop", "supermarket"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'grocery' to mean the store", correction: "Use 'grocery store' or 'groceries' for items." }],
+        pronunciationTips: "Three syllables: GRO-suh-ree. Stress the first.",
+        memoryTrick: "Grocery = grow + er + y. Food that grows comes from the grocery."
+      }
+    ]
+  },
+  {
+    id: "travel-transport",
+    title: "Travel & Transport",
+    emoji: "✈️",
+    description: "Airports, hotels, directions, tickets, and travel essentials.",
+    color: "from-sky-400 to-blue-400",
+    words: [
+      {
+        id: "tt-1", topic: "Travel", level: "A1", category: "Directions",
+        english: "Map", word: "map", partOfSpeech: "noun",
+        breakdown: "map", chinese: "地图", pinyin: "dì tú",
+        emoji: "🗺️", imageKeyword: "world map",
+        definitionEn: "A drawing showing places and directions.",
+        definitionZh: "显示地点和方向的地图。",
+        detailsEn: "Common: look at the map, map application, on the map.",
+        detailsZh: "常见搭配：look at the map、map application、on the map。",
+        exampleEn: "Look at the map, please.",
+        exampleZh: "请看地图。",
+        examples: [
+          { en: "The map shows the airport.", zh: "地图上标有机场。" },
+          { en: "I have a map on my phone.", zh: "我手机上有地图。" }
+        ],
+        collocations: ["look at the map", "map application", "on the map", "map of"],
+        synonyms: ["chart", "plan"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'map' for GPS only", correction: "Use 'map' for both paper and digital versions." }],
+        pronunciationTips: "One syllable: map.",
+        memoryTrick: "Map = 地图. M + ap. Maps have apps."
+      },
+      {
+        id: "tt-2", topic: "Travel", level: "A2", category: "Transport",
+        english: "Train", word: "train", partOfSpeech: "noun / verb",
+        breakdown: "trayn", chinese: "火车；训练", pinyin: "huǒ chē; xùn liàn",
+        emoji: "🚆", imageKeyword: "train station",
+        definitionEn: "A large vehicle on rails; also to teach skills.",
+        definitionZh: "在轨道上的大型交通工具；也指培训技能。",
+        detailsEn: "Common: take a train, train station, train ticket.",
+        detailsZh: "常见搭配：take a train、train station、train ticket。",
+        exampleEn: "I take the train to work.",
+        exampleZh: "我坐火车上班。",
+        examples: [
+          { en: "The train is punctual.", zh: "火车很准时。" },
+          { en: "She trains new staff.", zh: "她培训新员工。" }
+        ],
+        collocations: ["take the train", "train station", "train ticket", "high-speed train"],
+        synonyms: ["rail", "locomotive"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'train' for subway only", correction: "Train = 火车; subway/metro = 地铁." }],
+        pronunciationTips: "One syllable: trayn. Long 'a'.",
+        memoryTrick: "Train = 火车. T + rain (rain). Trains run like the rain."
+      },
+      {
+        id: "tt-3", topic: "Travel", level: "A2", category: "Lodging",
+        english: "Hotel", word: "hotel", partOfSpeech: "noun",
+        breakdown: "ho-TEL", chinese: "酒店", pinyin: "jiǔ diàn",
+        emoji: "🏨", imageKeyword: "hotel building",
+        definitionEn: "A place where you pay to stay.",
+        definitionZh: "旅行时付费住宿的地方。",
+        detailsEn: "Common: book a hotel, hotel room, luxury hotel.",
+        detailsZh: "常见搭配：book a hotel、hotel room、luxury hotel。",
+        exampleEn: "The hotel is clean.",
+        exampleZh: "酒店很干净。",
+        examples: [
+          { en: "We stayed at a hotel.", zh: "我们住了一家酒店。" },
+          { en: "The hotel offers breakfast.", zh: "酒店提供早餐。" }
+        ],
+        collocations: ["book a hotel", "hotel room", "luxury hotel", "hotel lobby"],
+        synonyms: ["inn", "motel", "resort"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'hotel' for apartments", correction: "Hotel = 酒店 (short stay); apartment = 公寓 (long stay)." }],
+        pronunciationTips: "Two syllables: ho-TEL. Stress the second.",
+        memoryTrick: "Ho + tel. Ho (hello) + tel (telephone) = hotel (call to book)."
+      },
+      {
+        id: "tt-4", topic: "Travel", level: "B1", category: "Tickets",
+        english: "Reservation", word: "reservation", partOfSpeech: "noun",
+        breakdown: "rez-er-VAY-shun", chinese: "预订", pinyin: "yù dìng",
+        emoji: "🎫", imageKeyword: "hotel reservation",
+        definitionEn: "An arrangement to have a seat, room, or ticket at a future time.",
+        definitionZh: "提前安排座位、房间或票。",
+        detailsEn: "Common: make a reservation, hotel reservation, flight reservation.",
+        detailsZh: "常见搭配：make a reservation、hotel reservation、flight reservation。",
+        exampleEn: "I made a dinner reservation.",
+        exampleZh: "我预订了晚餐。",
+        examples: [
+          { en: "Do you have a reservation?", zh: "您有预订吗？" },
+          { en: "The reservation is under my name.", zh: "预订在我的名下。" }
+        ],
+        collocations: ["make a reservation", "hotel reservation", "flight reservation", "confirm reservation"],
+        synonyms: ["booking"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'reservation' for tickets without booking", correction: "Reservation = 预订 (seat/room); ticket = 票." }],
+        pronunciationTips: "Stress the third syllable: rez-er-VAY-shun.",
+        memoryTrick: "Re + serve + ation. Reserve a seat in advance."
+      },
+      {
+        id: "tt-5", topic: "Travel", level: "A1", category: "Directions",
+        english: "Airport", word: "airport", partOfSpeech: "noun",
+        breakdown: "AIR-port", chinese: "机场", pinyin: "jī chǎng",
+        emoji: "✈️", imageKeyword: "airport terminal",
+        definitionEn: "A place where planes take off and land.",
+        definitionZh: "飞机起降的地方。",
+        detailsEn: "Common: at the airport, airport security, airport terminal.",
+        detailsZh: "常见搭配：at the airport、airport security、airport terminal。",
+        exampleEn: "We arrived at the airport early.",
+        exampleZh: "我们很早就到了机场。",
+        examples: [
+          { en: "The airport is far away.", zh: "机场很远。" },
+          { en: "She works at the airport.", zh: "她在机场工作。" }
+        ],
+        collocations: ["at the airport", "airport security", "airport terminal", "international airport"],
+        synonyms: ["airfield", "aerodrome"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'airport' for heliports", correction: "Airport = 机场 for planes; heliport = 直升机停机坪." }],
+        pronunciationTips: "Two syllables: AIR-port. Stress the first.",
+        memoryTrick: "Air + port. A port (harbor) for airplanes (air)."
+      },
+      {
+        id: "tt-6", topic: "Travel", level: "A2", category: "Transport",
+        english: "Subway", word: "subway", partOfSpeech: "noun",
+        breakdown: "SUB-way", chinese: "地铁", pinyin: "dì tiě",
+        emoji: "🚇", imageKeyword: "subway train",
+        definitionEn: "An underground train system.",
+        definitionZh: "城市中的地下火车系统。",
+        detailsEn: "Common: take the subway, subway station, subway map.",
+        detailsZh: "常见搭配：take the subway、subway station、subway map。",
+        exampleEn: "I take the subway to work.",
+        exampleZh: "我坐地铁上班。",
+        examples: [
+          { en: "The subway is fast.", zh: "地铁很快。" },
+          { en: "Which subway line goes downtown?", zh: "哪条地铁线去市中心？" }
+        ],
+        collocations: ["take the subway", "subway station", "subway map", "subway line"],
+        synonyms: ["metro", "underground", "tube"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'subway' for all underground trains", correction: "American: subway; British: underground." }],
+        pronunciationTips: "Two syllables: SUB-way. Stress the first.",
+        memoryTrick: "Sub (under) + way (road). A road under the city."
+      }
+    ]
+  },
+  {
+    id: "health-wellness",
+    title: "Health & Wellness",
+    emoji: "🏥",
+    description: "Body parts, illnesses, medicine, hospitals, and healthy habits.",
+    color: "from-teal-400 to-cyan-400",
+    words: [
+      {
+        id: "hw-1", topic: "Health", level: "A1", category: "Body",
+        english: "Head", word: "head", partOfSpeech: "noun",
+        breakdown: "hed", chinese: "头", pinyin: "tóu",
+        emoji: "🧑", imageKeyword: "person head",
+        definitionEn: "The top part of the human body.",
+        definitionZh: "人体的顶部。",
+        detailsEn: "Common: head of the table, headache, head injury.",
+        detailsZh: "常见搭配：head of the table、headache、head injury。",
+        exampleEn: "She nodded her head.",
+        exampleZh: "她点了点头。",
+        examples: [
+          { en: "He hurt his head.", zh: "他伤到了头。" },
+          { en: "Wear a helmet on your head.", zh: "头上戴头盔。" }
+        ],
+        collocations: ["head of the table", "headache", "head injury", "head teacher"],
+        synonyms: ["top", "crown"], antonyms: ["foot"],
+        commonMistakes: [{ mistake: "Using 'head' for leader always", correction: "Head = 头 (body); head of company = 负责人." }],
+        pronunciationTips: "One syllable: hed.",
+        memoryTrick: "Head = 头. He + ad. He (人) + ad (广告放上头) = head."
+      },
+      {
+        id: "hw-2", topic: "Health", level: "A2", category: "Symptoms",
+        english: "Fever", word: "fever", partOfSpeech: "noun",
+        breakdown: "FEE-ver", chinese: "发烧", pinyin: "fā shāo",
+        emoji: "🌡️", imageKeyword: "fever thermometer",
+        definitionEn: "An abnormally high body temperature.",
+        definitionZh: "异常的体温升高。",
+        detailsEn: "Common: have a fever, high fever, break a fever.",
+        detailsZh: "常见搭配：have a fever、high fever、break a fever。",
+        exampleEn: "He has a fever today.",
+        exampleZh: "他今天发烧了。",
+        examples: [
+          { en: "The fever broke after medicine.", zh: "吃了药后烧退了。" },
+          { en: "Check for fever.", zh: "检查是否发烧。" }
+        ],
+        collocations: ["have a fever", "high fever", "break a fever", "fever temperature"],
+        synonyms: ["temperature", "pyrexia"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'fever' for cold only", correction: "Fever is high temperature from any cause." }],
+        pronunciationTips: "Two syllables: FEE-ver. Stress the first.",
+        memoryTrick: "Fever = 发烧. Feels like fire burning inside."
+      },
+      {
+        id: "hw-3", topic: "Health", level: "A1", category: "Medicine",
+        english: "Medicine", word: "medicine", partOfSpeech: "noun",
+        breakdown: "MED-i-sin", chinese: "药", pinyin: "yào",
+        emoji: "💊", imageKeyword: "medicine pills",
+        definitionEn: "A substance used to treat illness.",
+        definitionZh: "用于治疗疾病的物质。",
+        detailsEn: "Common: take medicine, cold medicine, medicine cabinet.",
+        detailsZh: "常见搭配：take medicine、cold medicine、medicine cabinet。",
+        exampleEn: "Take your medicine.",
+        exampleZh: "吃药。",
+        examples: [
+          { en: "The doctor gave her medicine.", zh: "医生给了她药。" },
+          { en: "Store medicine safely.", zh: "安全存放药品。" }
+        ],
+        collocations: ["take medicine", "cold medicine", "medicine cabinet", "prescribe medicine"],
+        synonyms: ["drug", "medication", "remedy"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'medicines' plural for a single pill", correction: "Use 'medicine' as uncountable for the substance." }],
+        pronunciationTips: "Three syllables: MED-i-sin. Stress the first.",
+        memoryTrick: "Med + icine. Medical + icine = medicine."
+      },
+      {
+        id: "hw-4", topic: "Health", level: "A2", category: "Body",
+        english: "Tooth", word: "tooth", partOfSpeech: "noun",
+        breakdown: "tooth", chinese: "牙齿", pinyin: "yá chǐ",
+        emoji: "🦷", imageKeyword: "tooth smile",
+        definitionEn: "One of the hard white objects in your mouth.",
+        definitionZh: "你嘴里坚硬的白色物体之一。",
+        detailsEn: "Common: brush your teeth, toothache, lose a tooth.",
+        detailsZh: "常见搭配：brush your teeth、toothache、lose a tooth。",
+        exampleEn: "My tooth hurts.",
+        exampleZh: "我牙疼。",
+        examples: [
+          { en: "Brush your teeth twice daily.", zh: "每天刷两次牙。" },
+          { en: "She lost a baby tooth.", zh: "她掉了一颗乳牙。" }
+        ],
+        collocations: ["brush your teeth", "toothache", "lose a tooth", "baby tooth"],
+        synonyms: ["molar", "incisor"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'tooth' for plural", correction: "Plural is 'teeth'." }],
+        pronunciationTips: "One syllable: tooth. Like 'boot' with 't'.",
+        memoryTrick: "Tooth = 牙齿. T + ooth (out) = stick out from mouth."
+      },
+      {
+        id: "hw-5", topic: "Health", level: "A1", category: "Illness",
+        english: "Cough", word: "cough", partOfSpeech: "verb / noun",
+        breakdown: "kawf", chinese: "咳嗽", pinyin: "ké sou",
+        emoji: "😷", imageKeyword: "coughing person",
+        definitionEn: "To force air out of the lungs.",
+        definitionZh: "把空气从肺部逼出。",
+        detailsEn: "Common: have a cough, dry cough, bad cough.",
+        detailsZh: "常见搭配：have a cough、dry cough、bad cough。",
+        exampleEn: "I have a bad cough.",
+        exampleZh: "我咳嗽得很厉害。",
+        examples: [
+          { en: "She coughed all night.", zh: "她咳嗽了一整夜。" },
+          { en: "Cough drops help.", zh: "润喉糖有帮助。" }
+        ],
+        collocations: ["have a cough", "dry cough", "cough medicine", "cough drops"],
+        synonyms: ["cold", "tickle"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'cough' for sneezing", correction: "Cough = 咳嗽; sneeze = 打喷嚏." }],
+        pronunciationTips: "One syllable: kawf. Like 'off' with 'c'.",
+        memoryTrick: "Cough = 咳嗽. Onomatopoeia: 'cough' sounds like coughing."
+      },
+      {
+        id: "hw-6", topic: "Wellness", level: "B1", category: "Exercise",
+        english: "Exercise", word: "exercise", partOfSpeech: "noun / verb",
+        breakdown: "EK-ser-syz", chinese: "锻炼", pinyin: "duàn liàn",
+        emoji: "🏃", imageKeyword: "person exercising",
+        definitionEn: "Physical activity to improve health.",
+        definitionZh: "为改善健康而进行的体育活动。",
+        detailsEn: "Common: do exercise, regular exercise, morning exercise.",
+        detailsZh: "常见搭配：do exercise、regular exercise、morning exercise。",
+        exampleEn: "Exercise keeps you healthy.",
+        exampleZh: "锻炼让你保持健康。",
+        examples: [
+          { en: "Morning exercise is good.", zh: "晨间锻炼很好。" },
+          { en: "She exercises daily.", zh: "她每天锻炼。" }
+        ],
+        collocations: ["do exercise", "regular exercise", "morning exercise", "exercise routine"],
+        synonyms: ["workout", "activity"], antonyms: ["sedentary"],
+        commonMistakes: [{ mistake: "Using 'sport' for all activity", correction: "Exercise = 锻炼; sport = 体育运动." }],
+        pronunciationTips: "Stress the first syllable: EK-ser-syz.",
+        memoryTrick: "Ex (extra) + ercise (锻炼) = extra training."
+      }
+    ]
   }
-]
+];
+
+
+
