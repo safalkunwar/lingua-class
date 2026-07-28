@@ -21,6 +21,31 @@ export interface VocabItem {
   commonMistakes: { mistake: string; correction: string }[];
   level: string;
   category: string;
+  comparative?: string;
+  superlative?: string;
+  pronunciationTips?: string;
+  memoryTrick?: string;
+}
+
+// ============= WORD BOOK EXTENSION =============
+export interface WordBookItem extends Omit<VocabItem, "level" | "category"> {
+  id: string;
+  topic: string;
+  level: string;
+  category: string;
+  comparative?: string;
+  superlative?: string;
+  pronunciationTips?: string;
+  memoryTrick?: string;
+}
+
+export interface WordBookTopic {
+  id: string;
+  title: string;
+  emoji: string;
+  description: string;
+  color: string;
+  words: WordBookItem[];
 }
 
 // ============= PHRASES (daily-use) =============
