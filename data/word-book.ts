@@ -1442,11 +1442,11 @@ export const wordBook: WordBookTopic[] = [
     id: "friends",
     title: "Friends & Social Life",
     emoji: "👥",
-    description: "Social plans, relationships, celebrations, and casual conversation.",
-    color: "from-emerald-400 to-teal-400",
-    words: [
-      {
-        id: "fr-2", topic: "Friends", level: "B1", category: "Events",
+     description: "Social plans, relationships, celebrations, and casual conversation.",
+     color: "from-emerald-400 to-teal-400",
+     words: [
+       {
+         id: "fr-social-2", topic: "Friends", level: "B1", category: "Events",
         english: "Get together", word: "get together", partOfSpeech: "phrasal verb",
         breakdown: "get to-geth-er", chinese: "聚会", pinyin: "jù huì",
         emoji: "🎉", imageKeyword: "party friends",
@@ -1949,11 +1949,11 @@ export const wordBook: WordBookTopic[] = [
     id: "arts-culture",
     title: "Arts & Culture",
     emoji: "🎨",
-    description: "Art, music, museums, books, and cultural activities.",
-    color: "from-pink-400 to-purple-400",
-    words: [
-      {
-        id: "ac-1", topic: "Arts", level: "A2", category: "Visual Art",
+     description: "Art, music, museums, books, and cultural activities.",
+     color: "from-pink-400 to-purple-400",
+     words: [
+       {
+         id: "ac-arts-1", topic: "Arts", level: "A2", category: "Visual Art",
         english: "Painting", word: "painting", partOfSpeech: "noun",
         breakdown: "PAYNT-ing", chinese: "绘画；画作", pinyin: "huì huà; huà zuò",
         emoji: "🖼️", imageKeyword: "canvas painting",
@@ -2402,14 +2402,14 @@ export const wordBook: WordBookTopic[] = [
     ]
   },
   {
-    id: "digital-life",
-    title: "Digital Life & Internet",
-    emoji: "🌐",
-    description: "Internet, social media, apps, and online activities.",
-    color: "from-blue-400 to-indigo-400",
-    words: [
-      {
-        id: "dl-1", topic: "Digital", level: "A1", category: "Internet",
+     id: "digital-life",
+     title: "Digital Life & Internet",
+     emoji: "🌐",
+     description: "Internet, social media, apps, and online activities.",
+     color: "from-blue-400 to-indigo-400",
+     words: [
+       {
+         id: "dl-digital-1", topic: "Digital", level: "A1", category: "Internet",
         english: "Internet", word: "internet", partOfSpeech: "noun",
         breakdown: "IN-ter-net", chinese: "互联网", pinyin: "hù lián wǎng",
         emoji: "🌐", imageKeyword: "internet network",
@@ -2429,8 +2429,8 @@ export const wordBook: WordBookTopic[] = [
         pronunciationTips: "Three syllables: IN-ter-net. Stress the first.",
         memoryTrick: "Inter (between) + net (网). Network between computers."
       },
-      {
-        id: "dl-2", topic: "Digital", level: "A2", category: "Social",
+         {
+           id: "dl-digital-2", topic: "Digital", level: "A2", category: "Social",
         english: "Post", word: "post", partOfSpeech: "verb / noun",
         breakdown: "pohst", chinese: "发布；帖子", pinyin: "fā bù; tiě zǐ",
         emoji: "📱", imageKeyword: "social media post",
@@ -2450,8 +2450,8 @@ export const wordBook: WordBookTopic[] = [
         pronunciationTips: "One syllable: pohst. Like 'post' mail with 'o'.",
         memoryTrick: "Post = 发布. Post (邮件) online = post."
       },
-      {
-        id: "dl-3", topic: "Digital", level: "A2", category: "Apps",
+         {
+           id: "dl-digital-3", topic: "Digital", level: "A2", category: "Apps",
         english: "App", word: "app", partOfSpeech: "noun",
         breakdown: "ap", chinese: "应用程序", pinyin: "yìng yòng chéng xù",
         emoji: "📲", imageKeyword: "mobile app",
@@ -2471,8 +2471,8 @@ export const wordBook: WordBookTopic[] = [
         pronunciationTips: "One syllable: ap. Short 'a'.",
         memoryTrick: "App = 应用. Application shortened to app."
       },
-      {
-        id: "dl-4", topic: "Digital", level: "B1", category: "Communication",
+         {
+           id: "dl-digital-4", topic: "Digital", level: "B1", category: "Communication",
         english: "Notification", word: "notification", partOfSpeech: "noun",
         breakdown: "noh-tif-i-KAY-shun", chinese: "通知", pinyin: "tōng zhī",
         emoji: "🔔", imageKeyword: "phone notification",

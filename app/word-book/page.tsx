@@ -81,8 +81,20 @@ export default function WordBookPage() {
           </div>
         </motion.div>
 
+        {filteredTopics.length === 0 && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="text-center py-20"
+          >
+            <div className="text-6xl mb-4">🔍</div>
+            <h3 className="text-2xl font-bold mb-2">No words found</h3>
+            <p className="text-muted-foreground">Try adjusting your search or level filter.</p>
+          </motion.div>
+        )}
+
         <Tabs defaultValue={filteredTopics[0]?.id || ""} className="w-full">
-          <TabsList className="mb-6 flex-wrap justify-center">
+          <TabsList className="mb-6 flex-wrap justify-center gap-2">
             {filteredTopics.map((topic) => (
               <TabsTrigger
                 key={topic.id}
@@ -335,7 +347,21 @@ export default function WordBookPage() {
                   )}
                 </div>
 
-                <div className="mt-8 flex justify-center gap-3">
+                <div className="mt-8 flex flex-wrap justify-center gap-3">
+                  <Button
+                    onClick={() => {
+                      const currentIndex = selectedWord.topic.words.findIndex(
+                        (w: any) => w.id === selectedWord.word.id
+                      );
+                      const prevIndex = currentIndex > 0 ? currentIndex - 1 : selectedWord.topic.words.length - 1;
+                      setSelectedWord({
+                        word: selectedWord.topic.words[prevIndex],
+                        topic: selectedWord.topic,
+                      });
+                    }}
+                  >
+                    ← Previous
+                  </Button>
                   <Button onClick={() => setSelectedWord(null)}>Close</Button>
                   <Button
                     variant="outline"
@@ -343,15 +369,14 @@ export default function WordBookPage() {
                       const currentIndex = selectedWord.topic.words.findIndex(
                         (w: any) => w.id === selectedWord.word.id
                       );
-                      if (currentIndex < selectedWord.topic.words.length - 1) {
-                        setSelectedWord({
-                          word: selectedWord.topic.words[currentIndex + 1],
-                          topic: selectedWord.topic,
-                        });
-                      }
+                      const nextIndex = currentIndex < selectedWord.topic.words.length - 1 ? currentIndex + 1 : 0;
+                      setSelectedWord({
+                        word: selectedWord.topic.words[nextIndex],
+                        topic: selectedWord.topic,
+                      });
                     }}
                   >
-                    Next Word →
+                    Next →
                   </Button>
                 </div>
               </div>
