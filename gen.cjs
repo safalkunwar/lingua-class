@@ -2,7 +2,6 @@ const fs = require("fs");
 const path = require("path");
 const dir = "data/levels";
 
-// Compact word format: [word, pos, breakdown, zh, pinyin, emoji, img, defEn, defZh, [exEn, exZh], [exEn2, exZh2], collocs(sym;sep), syn(sym), ant(sym), [mistake, correction]]
 function W(w, pos, br, zh, py, em, img, dEn, dZh, exs, col, syn, ant, mis) {
   const examples = exs.map(e => `{ en: ${Q(e[0])}, zh: ${Q(e[1])} }`).join(", ");
   const mistakes = (mis||[]).map(m => `{ mistake: ${Q(m[0])}, correction: ${Q(m[1])} }`).join(", ");
