@@ -59,7 +59,7 @@
 - **Data:** `data/conversations.ts`
 - **Types:** `types/conversations.ts`
 - **Pages:** `app/conversations/page.tsx`, `app/conversations/[id]/page.tsx`
-- **Status:** Production ready — 34 topics
+- **Status:** Production ready — 39 topics
 
 **Topics included:**
 1. Meeting Someone for the First Time (A2, 15 min)
@@ -95,6 +95,10 @@
 31. At the Laundromat (A1, 10 min)
 32. At the Pet Store (A1, 10 min)
 33. At the Library (A1, 10 min)
+34. At the Pharmacy (A1, 10 min)
+35. Taking a Taxi (A1, 10 min)
+36. At the Hair Salon (A1, 10 min)
+37. Coffee Shop Meeting (A1, 10 min)
 
 **Each topic includes:**
 - Vocabulary Preview

@@ -4085,5 +4085,499 @@ export const conversations: ConversationTopic[] = [
         "Ask about closing time"
       ]
     }
+  },
+  {
+    id: "pharmacy",
+    title: "At the Pharmacy",
+    emoji: "💊",
+    description: "Buying medicine, asking for advice, and understanding labels.",
+    color: "from-green-400 to-emerald-400",
+    level: "A1",
+    estimatedTime: "10 min",
+    vocabularyPreview: [
+      { word: "Medicine", phonetic: "/ˈmedəsən/", chinese: "药", partOfSpeech: "noun" },
+      { word: "Prescription", phonetic: "/prɪˈskrɪpʃn/", chinese: "处方", partOfSpeech: "noun" },
+      { word: "Symptom", phonetic: "/ˈsɪmptəm/", chinese: "症状", partOfSpeech: "noun" },
+      { word: "Dosage", phonetic: "/ˈdoʊsɪdʒ/", chinese: "剂量", partOfSpeech: "noun" },
+      { word: "Side effects", phonetic: "/ˈsaɪd ɪfekts/", chinese: "副作用", partOfSpeech: "noun" },
+      { word: "Generic", phonetic: "/dʒəˈnerɪk/", chinese: "非品牌的", partOfSpeech: "adjective" }
+    ],
+    conversation: [
+      { speaker: "Customer", line: "Hi, I have a prescription to fill." },
+      { speaker: "Pharmacist", line: "Sure. Do you have the prescription with you?" },
+      { speaker: "Customer", line: "Yes, here it is. It's for antibiotics." },
+      { speaker: "Pharmacist", line: "Okay, this will take about 15 minutes. Do you have any allergies?" },
+      { speaker: "Customer", line: "No, I don't. How should I take this medicine?" },
+      { speaker: "Pharmacist", line: "Take one pill three times a day with food. Here's the leaflet with all the details." },
+      { speaker: "Customer", line: "Thank you. Are there any side effects I should know about?" },
+      { speaker: "Pharmacist", line: "Some people feel sleepy. If that happens, just rest. And drink plenty of water." }
+    ],
+    chineseTranslation: [
+      { speaker: "顾客", line: "嗨，我有个处方要配药。" },
+      { speaker: "药剂师", line: "好的。您带处方了吗？" },
+      { speaker: "顾客", line: "带了。这是抗生素的处方。" },
+      { speaker: "药剂师", line: "好的，大约需要15分钟。您有过敏史吗？" },
+      { speaker: "顾客", line: "没有的。这个药怎么服用？" },
+      { speaker: "药剂师", line: "每天三次，每次一片，饭后服用。这是说明书，里面有所有详情。" },
+      { speaker: "顾客", line: "谢谢。有什么副作用需要注意吗？" },
+      { speaker: "药剂师", line: "有些人会感到困倦。如果出现这种情况，休息一下。多喝水。" }
+    ],
+    usefulExpressions: [
+      { expression: "I have a prescription to fill", meaning: "我有个处方要配药", usage: "在药房配药" },
+      { expression: "Take one pill...", meaning: "吃一片...", usage: "说明服药方法" },
+      { expression: "With food", meaning: "饭后", usage: "说明服药时间" },
+      { expression: "Side effects", meaning: "副作用", usage: "询问药物反应" },
+      { expression: "Drink plenty of water", meaning: "多喝水", usage: "健康建议" }
+    ],
+    grammarFocus: [
+      {
+        title: "Modal Verbs for Advice",
+        explanation: "用 'should' 和 'can' 给出建议。",
+        examples: [
+          "You should take it with food.",
+          "You can take it twice a day.",
+          "You should drink plenty of water."
+        ]
+      },
+      {
+        title: "Present Simple for Instructions",
+        explanation: "用一般现在时说明步骤。",
+        examples: [
+          "Take one pill three times a day.",
+          "Store in a cool place.",
+          "Do not exceed the dosage."
+        ]
+      }
+    ],
+    collocationsAndChunks: [
+      { chunk: "Fill a prescription", meaning: "配药", example: "I need to fill this prescription." },
+      { chunk: "Take one pill", meaning: "吃一片", example: "Take one pill three times a day." },
+      { chunk: "Side effects", meaning: "副作用", example: "Are there any side effects?" }
+    ],
+    pronunciationTips: [
+      { tip: "Prescription → /prɪˈskrɪpʃn/", example: "Stress on second syllable" },
+      { tip: "Dosage → /ˈdoʊsɪdʒ/", example: "Stress on first syllable" }
+    ],
+    commonMistakes: [
+      {
+        mistake: "'I have a medicine'",
+        correction: "'I have a prescription' 或 'I need medicine'",
+        explanation: "处方是 'prescription'；药是 'medicine'。"
+      }
+    ],
+    rolePlayPractice: [
+      {
+        scenario: "You have a headache and go to the pharmacy. Describe your symptom, get medicine, and ask about dosage and side effects.",
+        prompts: [
+          "Tell the pharmacist your symptom",
+          "Show your prescription if you have one",
+          "Ask about dosage",
+          "Ask about side effects",
+          "Thank them and leave"
+        ]
+      }
+    ],
+    vocabularyExpansion: [
+      {
+        word: "Allergy",
+        synonyms: ["Reaction", "Sensitivity"],
+        antonyms: [],
+        example: "I have an allergy to penicillin."
+      },
+      {
+        word: "Generic",
+        synonyms: ["Non-brand", "Standard"],
+        antonyms: ["Brand name"],
+        example: "Is there a generic version?"
+      }
+    ],
+    shadowingPractice: [
+      "Hi, I have a prescription to fill.",
+      "Take one pill three times a day with food.",
+      "Are there any side effects I should know about?",
+      "Some people feel sleepy.",
+      "Drink plenty of water."
+    ],
+    speakingChallenge: {
+      instruction: "Practice at a pharmacy: get medicine, ask about dosage, side effects, and storage. Use 'I have a prescription', 'How should I take', and 'Are there any side effects'.",
+      hints: [
+        "State your symptom",
+        "Show prescription if needed",
+        "Ask how to take the medicine",
+        "Ask about side effects",
+        "Confirm the dosage"
+      ]
+    }
+  },
+  {
+    id: "taxi-ride",
+    title: "Taking a Taxi",
+    emoji: "🚕",
+    description: "Getting a taxi, giving directions, and paying the fare.",
+    color: "from-yellow-400 to-amber-400",
+    level: "A1",
+    estimatedTime: "10 min",
+    vocabularyPreview: [
+      { word: "Taxi", phonetic: "/ˈtæksi/", chinese: "出租车", partOfSpeech: "noun" },
+      { word: "Destination", phonetic: "/ˌdestɪˈneɪʃn/", chinese: "目的地", partOfSpeech: "noun" },
+      { word: "Fare", phonetic: "/fer/", chinese: "车费", partOfSpeech: "noun" },
+      { word: "Traffic", phonetic: "/ˈtræfɪk/", chinese: "交通", partOfSpeech: "noun" },
+      { word: "Drop off", phonetic: "/drɒp ɒf/", chinese: "放下", partOfSpeech: "phrasal verb" },
+      { word: "Change", phonetic: "/tʃeɪndʒ/", chinese: "零钱", partOfSpeech: "noun" }
+    ],
+    conversation: [
+      { speaker: "Passenger", line: "Hi, can you take me to the airport?" },
+      { speaker: "Driver", line: "Sure. That's about 20 minutes. Is that okay?" },
+      { speaker: "Passenger", line: "Yes, that's fine. How much is the fare?" },
+      { speaker: "Driver", line: "Approximately $25, depending on traffic." },
+      { speaker: "Passenger", line: "Okay. Can you drop me at Terminal 2?" },
+      { speaker: "Driver", line: "Of course. Do you have a preferred route?" },
+      { speaker: "Passenger", line: "No, whatever is fastest. I'm in a hurry." },
+      { speaker: "Driver", line: "No problem. We'll take the highway. Here's your receipt. Have a great flight!" }
+    ],
+    chineseTranslation: [
+      { speaker: "乘客", line: "嗨，你能送我去机场吗？" },
+      { speaker: "司机", line: "当然。大约20分钟。可以吗？" },
+      { speaker: "乘客", line: "好的。车费多少钱？" },
+      { speaker: "司机", line: "大约25美元，取决于交通状况。" },
+      { speaker: "乘客", line: "好的。你能在2号航站楼让我下车吗？" },
+      { speaker: "司机", line: "当然。您有偏好的路线吗？" },
+      { speaker: "乘客", line: "没有，最快就行。我很匆忙。" },
+      { speaker: "司机", line: "没问题。我们走高速公路。这是您的收据。祝您飞行愉快！" }
+    ],
+    usefulExpressions: [
+      { expression: "Can you take me to...?", meaning: "你能送我去...吗？", usage: "打车时说明目的地" },
+      { expression: "How much is the fare?", meaning: "车费多少钱？", usage: "询问费用" },
+      { expression: "Approximately...", meaning: "大约...", usage: "估计费用或时间" },
+      { expression: "Drop me at...", meaning: "在...让我下车", usage: "指定下车地点" },
+      { expression: "In a hurry", meaning: "很匆忙", usage: "说明赶时间" }
+    ],
+    grammarFocus: [
+      {
+        title: "Modal Verbs for Requests",
+        explanation: "用 'Can you...?' 礼貌请求。",
+        examples: [
+          "Can you take me to the airport?",
+          "Can you drive faster?",
+          "Can you drop me at Terminal 2?"
+        ]
+      },
+      {
+        title: "Comparative Adjectives",
+        explanation: "用比较级描述更快、更短等。",
+        examples: [
+          "The highway is faster.",
+          "This route is shorter.",
+          "It's better to avoid downtown."
+        ]
+      }
+    ],
+    collocationsAndChunks: [
+      { chunk: "Take me to", meaning: "送我去", example: "Can you take me to the airport?" },
+      { chunk: "How much is the fare", meaning: "车费多少钱", example: "How much is the fare?" },
+      { chunk: "Drop me at", meaning: "在...让我下车", example: "Drop me at Terminal 2, please." }
+    ],
+    pronunciationTips: [
+      { tip: "Destination → /ˌdestɪˈneɪʃn/", example: "Stress on 'nay'" },
+      { tip: "Approximately → /əˈprɒksɪmətli/", example: "Stress on second syllable" }
+    ],
+    commonMistakes: [
+      {
+        mistake: "'Can you take I to...?'",
+        correction: "'Can you take me to...?'",
+        explanation: "动词后要用宾格 'me'，不是主格 'I'。"
+      }
+    ],
+    rolePlayPractice: [
+      {
+        scenario: "You need to get to the airport. Call a taxi, give the destination, discuss the route, and pay the driver.",
+        prompts: [
+          "Call the taxi",
+          "State your destination",
+          "Ask about the fare",
+          "Choose a route",
+          "Pay and thank the driver"
+        ]
+      }
+    ],
+    vocabularyExpansion: [
+      {
+        word: "Fare",
+        synonyms: ["Price", "Cost"],
+        antonyms: [],
+        example: "The fare is approximately $25."
+      },
+      {
+        word: "Traffic",
+        synonyms: ["Congestion", "Vehicles"],
+        antonyms: [],
+        example: "The traffic is heavy today."
+      }
+    ],
+    shadowingPractice: [
+      "Hi, can you take me to the airport?",
+      "That's about 20 minutes. Is that okay?",
+      "How much is the fare?",
+      "Can you drop me at Terminal 2?",
+      "Have a great flight!"
+    ],
+    speakingChallenge: {
+      instruction: "Practice taking a taxi to 3 places: the airport, a hotel, and a restaurant. Use 'Can you take me to', ask about fare, and say 'drop me at'.",
+      hints: [
+        "Ask the taxi to come to your location",
+        "State your destination clearly",
+        "Ask about the fare",
+        "Choose a route if asked",
+        "Pay and say thank you"
+      ]
+    }
+  },
+  {
+    id: "hair-salon",
+    title: "At the Hair Salon",
+    emoji: "💇",
+    description: "Booking an appointment, describing what you want, and paying for services.",
+    color: "from-pink-400 to-rose-400",
+    level: "A1",
+    estimatedTime: "10 min",
+    vocabularyPreview: [
+      { word: "Appointment", phonetic: "/əˈpɔɪntmənt/", chinese: "预约", partOfSpeech: "noun" },
+      { word: "Haircut", phonetic: "/ˈherkʌt/", chinese: "理发", partOfSpeech: "noun" },
+      { word: "Color", phonetic: "/ˈkʌlər/", chinese: "染色", partOfSpeech: "noun" },
+      { word: "Style", phonetic: "/staɪl/", chinese: "发型", partOfSpeech: "noun" },
+      { word: "Blow-dry", phonetic: "/bloʊ draɪ/", chinese: "吹干", partOfSpeech: "verb" },
+      { word: "Tip", phonetic: "/tɪp/", chinese: "小费", partOfSpeech: "noun" }
+    ],
+    conversation: [
+      { speaker: "Customer", line: "Hi, I'd like to make an appointment for a haircut." },
+      { speaker: "Receptionist", line: "Sure. Do you prefer a male or female stylist?" },
+      { speaker: "Customer", line: "It doesn't matter. What time do you have available?" },
+      { speaker: "Receptionist", line: "We have 2 PM and 4 PM today. Which works for you?" },
+      { speaker: "Customer", line: "2 PM is perfect. Can I also get my hair colored?" },
+      { speaker: "Receptionist", line: "Of course. I'll schedule that after the haircut. It will be about 2 hours total." },
+      { speaker: "Customer", line: "That's fine. How much will it be?" },
+      { speaker: "Receptionist", line: "Haircut is $30, color is $50. Total is $80 plus tax." }
+    ],
+    chineseTranslation: [
+      { speaker: "顾客", line: "嗨，我想预约理发。" },
+      { speaker: "前台", line: "好的。您偏好男发型师还是女发型师？" },
+      { speaker: "顾客", line: "都可以。你们今天有什么时间？" },
+      { speaker: "前台", line: "我们今天有2点和4点。您哪个时间方便？" },
+      { speaker: "顾客", line: "2点完美。我还可以染发吗？" },
+      { speaker: "前台", line: "当然。我安排在理发后进行。总共大约2小时。" },
+      { speaker: "顾客", line: "没问题。总共多少钱？" },
+      { speaker: "前台", line: "理发30美元，染发50美元。总共80美元加税。" }
+    ],
+    usefulExpressions: [
+      { expression: "I'd like to make an appointment", meaning: "我想预约", usage: "预约服务" },
+      { expression: "What time do you have available?", meaning: "你们有什么时间？", usage: "询问可用时间" },
+      { expression: "That works for me", meaning: "那个时间可以", usage: "确认时间" },
+      { expression: "Total is...", meaning: "总共...", usage: "告知总价" },
+      { expression: "Plus tax", meaning: "加税", usage: "说明额外费用" }
+    ],
+    grammarFocus: [
+      {
+        title: "Present Simple for Preferences",
+        explanation: "用一般现在时表达偏好。",
+        examples: [
+          "I prefer a female stylist.",
+          "It doesn't matter to me.",
+          "I want a short haircut."
+        ]
+      },
+      {
+        title: "Modal Verbs for Offers",
+        explanation: "用 'Can I...?' 和 'Do you have...?' 询问。",
+        examples: [
+          "Can I also get my hair colored?",
+          "Do you have any tips for dry hair?",
+          "Can I book for Saturday?"
+        ]
+      }
+    ],
+    collocationsAndChunks: [
+      { chunk: "Make an appointment", meaning: "预约", example: "I'd like to make an appointment." },
+      { chunk: "Haircut", meaning: "理发", example: "I need a haircut." },
+      { chunk: "Plus tax", meaning: "加税", example: "Total is $80 plus tax." }
+    ],
+    pronunciationTips: [
+      { tip: "Appointment → /əˈpɔɪntmənt/", example: "Stress on second syllable" },
+      { tip: "Stylist → /ˈstaɪlɪst/", example: "Stress on first syllable" }
+    ],
+    commonMistakes: [
+      {
+        mistake: "'I want make an appointment'",
+        correction: "'I'd like to make an appointment'",
+        explanation: "预约时用 'I'd like to' 更礼貌。"
+      }
+    ],
+    rolePlayPractice: [
+      {
+        scenario: "You want a haircut and color. Call the salon, book an appointment, describe what you want, and ask about the price.",
+        prompts: [
+          "Call and greet",
+          "Ask for an appointment",
+          "Choose a time",
+          "Describe what you want",
+          "Ask about the total price"
+        ]
+      }
+    ],
+    vocabularyExpansion: [
+      {
+        word: "Stylist",
+        synonyms: ["Hairdresser", "Beautician"],
+        antonyms: [],
+        example: "My stylist is very creative."
+      },
+      {
+        word: "Blow-dry",
+        synonyms: ["Dry hair", "Style"],
+        antonyms: [],
+        example: "Can you blow-dry my hair?"
+      }
+    ],
+    shadowingPractice: [
+      "Hi, I'd like to make an appointment for a haircut.",
+      "We have 2 PM and 4 PM today.",
+      "Can I also get my hair colored?",
+      "It will be about 2 hours total.",
+      "Total is $80 plus tax."
+    ],
+    speakingChallenge: {
+      instruction: "Practice booking a hair salon appointment. Use 'I'd like to make an appointment', ask about availability, and confirm the price.",
+      hints: [
+        "Call or visit the salon",
+        "Choose a service: haircut, color, or both",
+        "Pick an available time",
+        "Ask about the price",
+        "Confirm your appointment"
+      ]
+    }
+  },
+  {
+    id: "coffee-shop-meeting",
+    title: "Coffee Shop Meeting",
+    emoji: "☕",
+    description: "Meeting someone for coffee, ordering together, and making plans.",
+    color: "from-amber-400 to-orange-400",
+    level: "A1",
+    estimatedTime: "10 min",
+    vocabularyPreview: [
+      { word: "Meeting", phonetic: "/ˈmiːtɪŋ/", chinese: "见面", partOfSpeech: "noun" },
+      { word: "Catch up", phonetic: "/kætʃ ʌp/", chinese: "叙旧", partOfSpeech: "phrasal verb" },
+      { word: "Recommend", phonetic: "/ˌrekəˈmend/", chinese: "推荐", partOfSpeech: "verb" },
+      { word: "Treat", phonetic: "/triːt/", chinese: "请客", partOfSpeech: "noun / verb" },
+      { word: "Bill", phonetic: "/bɪl/", chinese: "账单", partOfSpeech: "noun" },
+      { word: "Split", phonetic: "/splɪt/", chinese: "分摊", partOfSpeech: "verb" }
+    ],
+    conversation: [
+      { speaker: "Anna", line: "Hey! Long time no see. How have you been?" },
+      { speaker: "Ben", line: "I've been good! Let's catch up over coffee." },
+      { speaker: "Anna", line: "Great idea! Do you know a good place around here?" },
+      { speaker: "Ben", line: "Yes, there's a nice café just around the corner. I'll treat you this time." },
+      { speaker: "Anna", line: "Oh, you don't have to! But thank you." },
+      { speaker: "Ben", line: "No problem. I insist. What would you like to drink?" },
+      { speaker: "Anna", line: "I'll have a latte, please. And maybe a croissant?" },
+      { speaker: "Waiter", line: "Here you go. That'll be $12 total." },
+      { speaker: "Ben", line: "Keep the change. Thanks for meeting me!" }
+    ],
+    chineseTranslation: [
+      { speaker: "Anna", line: "嘿！好久不见。你最近怎么样？" },
+      { speaker: "Ben", line: "我很好！我们喝咖啡叙叙旧吧。" },
+      { speaker: "Anna", line: "好主意！这附近有什么好地方吗？" },
+      { speaker: "Ben", line: "有的，转角处有一家不错的咖啡馆。这次我请客。" },
+      { speaker: "Anna", line: "哦，你不必的！不过谢谢。" },
+      { speaker: "Ben", line: "没关系。我坚持。你想喝点什么？" },
+      { speaker: "Anna", line: "我要一杯拿铁，谢谢。也许还要一个牛角包？" },
+      { speaker: "服务员", line: "给您。总共12美元。" },
+      { speaker: "Ben", line: "不用找了。谢谢你来见我！" }
+    ],
+    usefulExpressions: [
+      { expression: "Long time no see", meaning: "好久不见", usage: "久别重逢时使用" },
+      { expression: "Catch up", meaning: "叙旧", usage: "和朋友分享近况" },
+      { expression: "I'll treat you", meaning: "我请客", usage: "主动买单" },
+      { expression: "Keep the change", meaning: "不用找了", usage: "给小费或付款时" },
+      { expression: "I insist", meaning: "我坚持", usage: "礼貌地坚持自己的提议" }
+    ],
+    grammarFocus: [
+      {
+        title: "Present Perfect for Recent News",
+        explanation: "用现在完成时分享最近的消息。",
+        examples: [
+          "I have been busy.",
+          "I have just returned.",
+          "How have you been?"
+        ]
+      },
+      {
+        title: "Conditional Offers with 'I'll'",
+        explanation: "用 'I'll...' 提出建议或付款。",
+        examples: [
+          "I'll treat you this time.",
+          "I'll pay the bill.",
+          "I'll order for us."
+        ]
+      }
+    ],
+    collocationsAndChunks: [
+      { chunk: "Long time no see", meaning: "好久不见", example: "Long time no see! How are you?" },
+      { chunk: "Catch up", meaning: "叙旧", example: "Let's catch up over coffee." },
+      { chunk: "I'll treat you", meaning: "我请客", example: "I'll treat you this time." }
+    ],
+    pronunciationTips: [
+      { tip: "Long time no see → /lɔːŋ taɪm noʊ siː/", example: "Friendly, relaxed speech" },
+      { tip: "Keep the change → /kiːp ðə tʃeɪndʒ/", example: "Quick, natural phrase" }
+    ],
+    commonMistakes: [
+      {
+        mistake: "'I'll treat you' 直接说",
+        correction: "先说 'Oh, you don't have to' 然后再说 'I insist' 更礼貌",
+        explanation: "中文里请客很直接，英文通常先推辞一下再坚持。"
+      }
+    ],
+    rolePlayPractice: [
+      {
+        scenario: "You meet an old friend at a café. Catch up on each other's lives, order drinks, and insist on treating them.",
+        prompts: [
+          "Greet them warmly",
+          "Suggest catching up over coffee",
+          "Choose a café",
+          "Order drinks and food",
+          "Insist on treating them"
+        ]
+      }
+    ],
+    vocabularyExpansion: [
+      {
+        word: "Recommend",
+        synonyms: ["Suggest", "Advise"],
+        antonyms: [],
+        example: "I recommend the latte."
+      },
+      {
+        word: "Catch up",
+        synonyms: ["Update", "Fill in"],
+        antonyms: [],
+        example: "Let's catch up on everything."
+      }
+    ],
+    shadowingPractice: [
+      "Long time no see! How have you been?",
+      "Let's catch up over coffee.",
+      "I'll treat you this time.",
+      "I'll have a latte, please.",
+      "Keep the change. Thanks for meeting me!"
+    ],
+    speakingChallenge: {
+      instruction: "Practice meeting a friend for coffee. Use 'Long time no see', 'catch up', 'I'll treat you', and 'Keep the change'.",
+      hints: [
+        "Start with a warm greeting",
+        "Suggest catching up",
+        "Choose a drink and food",
+        "Insist on paying",
+        "End with a friendly goodbye"
+      ]
+    }
   }
 ];
