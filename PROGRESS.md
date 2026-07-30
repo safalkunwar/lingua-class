@@ -130,8 +130,8 @@
 - Writing module
 - Image Guessing Game module (`/image-guessing`)
   - Playful ESL activity inspired by Hot Seat and action games
-  - Categories: Animals and Actions, Daily Actions, Playful Scenes, Food and Cooking, Weather and Seasons
-  - 50 total guessing prompts with realistic inline SVG illustrations
+  - Categories: Animals and Actions, Daily Actions, Playful Scenes, Food and Cooking, Weather and Seasons, Sports and Games, Hobbies and Leisure, School and Learning
+  - 80 total guessing prompts with realistic inline SVG illustrations
   - Hints, acceptable alternatives, score tracking
   - A1/A2 leveled for Chinese beginners
   - Improved dialogue-based UI with teacher prompts and speech bubbles

@@ -584,9 +584,332 @@ export const imageGuessingCategories: ImageGuessCategory[] = [
         hint: "Leaves fall from trees and the air is crisp.",
         category: "weather",
         level: "A1",
-        alternatives: ["fall"]
-,
+        alternatives: ["fall"],
         image: imageGuessingSvgs["ws-10"],
+      }
+    ]
+  },
+  {
+    id: "sports-games",
+    title: "Sports and Games",
+    description: "Guess the sport or game. Play, score, win, and have fun!",
+    emoji: "⚽",
+    items: [
+      {
+        id: "sg-1",
+        emoji: "⚽",
+        answer: "playing soccer",
+        hint: "You kick this round ball with your feet.",
+        category: "sports",
+        level: "A1",
+        alternatives: ["kicking"],
+        image: imageGuessingSvgs["sg-1"],
+      },
+      {
+        id: "sg-2",
+        emoji: "🏀",
+        answer: "playing basketball",
+        hint: "You throw this orange ball into a high hoop.",
+        category: "sports",
+        level: "A1",
+        alternatives: ["shooting"],
+        image: imageGuessingSvgs["sg-2"],
+      },
+      {
+        id: "sg-3",
+        emoji: "🎾",
+        answer: "playing tennis",
+        hint: "You hit this small yellow ball with a racket.",
+        category: "sports",
+        level: "A2",
+        alternatives: ["serving"],
+        image: imageGuessingSvgs["sg-3"],
+      },
+      {
+        id: "sg-4",
+        emoji: "🏆",
+        answer: "winning",
+        hint: "You receive this shiny cup when you come first.",
+        category: "sports",
+        level: "A1",
+        alternatives: ["victory"],
+        image: imageGuessingSvgs["sg-4"],
+      },
+      {
+        id: "sg-5",
+        emoji: "🏃",
+        answer: "running",
+        hint: "You move fast on your feet.",
+        category: "sports",
+        level: "A1",
+        alternatives: ["jogging"],
+        image: imageGuessingSvgs["sg-5"],
+      },
+      {
+        id: "sg-6",
+        emoji: "🏊",
+        answer: "swimming",
+        hint: "You move through water with your arms and legs.",
+        category: "sports",
+        level: "A1",
+        alternatives: ["floating"],
+        image: imageGuessingSvgs["sg-6"],
+      },
+      {
+        id: "sg-7",
+        emoji: "🚴",
+        answer: "cycling",
+        hint: "You ride a bike with two wheels.",
+        category: "sports",
+        level: "A2",
+        alternatives: ["biking"],
+        image: imageGuessingSvgs["sg-7"],
+      },
+      {
+        id: "sg-8",
+        emoji: "🏋️",
+        answer: "exercising",
+        hint: "You lift weights to get stronger.",
+        category: "sports",
+        level: "A2",
+        alternatives: ["training"],
+        image: imageGuessingSvgs["sg-8"],
+      },
+      {
+        id: "sg-9",
+        emoji: "🧗",
+        answer: "climbing",
+        hint: "You go up a wall or mountain.",
+        category: "sports",
+        level: "A2",
+        alternatives: ["scaling"],
+        image: imageGuessingSvgs["sg-9"],
+      },
+      {
+        id: "sg-10",
+        emoji: "🎯",
+        answer: "aiming",
+        hint: "You try to hit the center of the target.",
+        category: "sports",
+        level: "A2",
+        alternatives: ["targeting"],
+        image: imageGuessingSvgs["sg-10"],
+      }
+    ]
+  },
+  {
+    id: "hobbies-leisure",
+    title: "Hobbies and Leisure",
+    description: "Guess the fun activities people do in their free time.",
+    emoji: "🎨",
+    items: [
+      {
+        id: "hl-1",
+        emoji: "🎨",
+        answer: "painting",
+        hint: "You use brushes and colors on paper or canvas.",
+        category: "hobbies",
+        level: "A1",
+        alternatives: ["drawing"],
+        image: imageGuessingSvgs["hl-1"],
+      },
+      {
+        id: "hl-2",
+        emoji: "🎸",
+        answer: "playing guitar",
+        hint: "You strum strings on this musical instrument.",
+        category: "hobbies",
+        level: "A2",
+        alternatives: ["strumming"],
+        image: imageGuessingSvgs["hl-2"],
+      },
+      {
+        id: "hl-3",
+        emoji: "📷",
+        answer: "taking photos",
+        hint: "You capture moments with a camera.",
+        category: "hobbies",
+        level: "A1",
+        alternatives: ["photographing"],
+        image: imageGuessingSvgs["hl-3"],
+      },
+      {
+        id: "hl-4",
+        emoji: "🎬",
+        answer: "watching a movie",
+        hint: "You sit and look at a story on a screen.",
+        category: "hobbies",
+        level: "A1",
+        alternatives: ["viewing"],
+        image: imageGuessingSvgs["hl-4"],
+      },
+      {
+        id: "hl-5",
+        emoji: "🧩",
+        answer: "doing puzzles",
+        hint: "You fit pieces together to make a picture.",
+        category: "hobbies",
+        level: "A1",
+        alternatives: ["solving"],
+        image: imageGuessingSvgs["hl-5"],
+      },
+      {
+        id: "hl-6",
+        emoji: "🎭",
+        answer: "acting",
+        hint: "You pretend to be someone else on stage.",
+        category: "hobbies",
+        level: "A2",
+        alternatives: ["performing"],
+        image: imageGuessingSvgs["hl-6"],
+      },
+      {
+        id: "hl-7",
+        emoji: "🏕️",
+        answer: "camping",
+        hint: "You sleep outside in a tent.",
+        category: "hobbies",
+        level: "A2",
+        alternatives: ["outdoors"],
+        image: imageGuessingSvgs["hl-7"],
+      },
+      {
+        id: "hl-8",
+        emoji: "🎮",
+        answer: "gaming",
+        hint: "You play video games on a screen.",
+        category: "hobbies",
+        level: "A1",
+        alternatives: ["playing"],
+        image: imageGuessingSvgs["hl-8"],
+      },
+      {
+        id: "hl-9",
+        emoji: "🧶",
+        answer: "knitting",
+        hint: "You make cloth with two needles and yarn.",
+        category: "hobbies",
+        level: "A2",
+        alternatives: ["crafting"],
+        image: imageGuessingSvgs["hl-9"],
+      },
+      {
+        id: "hl-10",
+        emoji: "🌱",
+        answer: "gardening",
+        hint: "You plant flowers or vegetables in the soil.",
+        category: "hobbies",
+        level: "A2",
+        alternatives: ["planting"],
+        image: imageGuessingSvgs["hl-10"],
+      }
+    ]
+  },
+  {
+    id: "school-learning",
+    title: "School and Learning",
+    description: "Guess the school actions. Study, write, read, and learn!",
+    emoji: "📚",
+    items: [
+      {
+        id: "sl-1",
+        emoji: "✏️",
+        answer: "writing",
+        hint: "You use a pencil or pen on paper.",
+        category: "school",
+        level: "A1",
+        alternatives: ["drawing"],
+        image: imageGuessingSvgs["sl-1"],
+      },
+      {
+        id: "sl-2",
+        emoji: "📖",
+        answer: "reading",
+        hint: "You look at words in a book.",
+        category: "school",
+        level: "A1",
+        alternatives: ["studying"],
+        image: imageGuessingSvgs["sl-2"],
+      },
+      {
+        id: "sl-3",
+        emoji: "🧮",
+        answer: "counting",
+        hint: "You say numbers in order.",
+        category: "school",
+        level: "A1",
+        alternatives: ["calculating"],
+        image: imageGuessingSvgs["sl-3"],
+      },
+      {
+        id: "sl-4",
+        emoji: "🎓",
+        answer: "graduating",
+        hint: "You finish school and get a certificate.",
+        category: "school",
+        level: "A2",
+        alternatives: ["completing"],
+        image: imageGuessingSvgs["sl-4"],
+      },
+      {
+        id: "sl-5",
+        emoji: "📝",
+        answer: "taking notes",
+        hint: "You write down important words from the teacher.",
+        category: "school",
+        level: "A1",
+        alternatives: ["writing notes"],
+        image: imageGuessingSvgs["sl-5"],
+      },
+      {
+        id: "sl-6",
+        emoji: "🙋",
+        answer: "raising hand",
+        hint: "You lift your hand to answer the teacher.",
+        category: "school",
+        level: "A1",
+        alternatives: ["asking"],
+        image: imageGuessingSvgs["sl-6"],
+      },
+      {
+        id: "sl-7",
+        emoji: "🧪",
+        answer: "doing experiments",
+        hint: "You mix things in a science lab.",
+        category: "school",
+        level: "A2",
+        alternatives: ["testing"],
+        image: imageGuessingSvgs["sl-7"],
+      },
+      {
+        id: "sl-8",
+        emoji: "🖍️",
+        answer: "coloring",
+        hint: "You fill shapes with crayons or markers.",
+        category: "school",
+        level: "A1",
+        alternatives: ["filling"],
+        image: imageGuessingSvgs["sl-8"],
+      },
+      {
+        id: "sl-9",
+        emoji: "📢",
+        answer: "presenting",
+        hint: "You stand in front of the class and speak.",
+        category: "school",
+        level: "A2",
+        alternatives: ["showing"],
+        image: imageGuessingSvgs["sl-9"],
+      },
+      {
+        id: "sl-10",
+        emoji: "🎒",
+        answer: "carrying a backpack",
+        hint: "You wear this bag full of books to school.",
+        category: "school",
+        level: "A1",
+        alternatives: ["packing"],
+        image: imageGuessingSvgs["sl-10"],
       }
     ]
   }
