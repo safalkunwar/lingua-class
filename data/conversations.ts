@@ -1995,5 +1995,629 @@ export const conversations: ConversationTopic[] = [
         "End with a friendly goodbye"
       ]
     }
+  },
+  {
+    id: "coffee-shop-basics",
+    title: "At the Coffee Shop",
+    emoji: "☕",
+    description: "Ordering drinks, customizing your order, and paying at a café.",
+    color: "from-amber-400 to-orange-400",
+    level: "A1",
+    estimatedTime: "10 min",
+    vocabularyPreview: [
+      { word: "Coffee", phonetic: "/ˈkɒfi/", chinese: "咖啡", partOfSpeech: "noun" },
+      { word: "Tea", phonetic: "/tiː/", chinese: "茶", partOfSpeech: "noun" },
+      { word: "Medium", phonetic: "/ˈmiːdiəm/", chinese: "中杯", partOfSpeech: "noun" },
+      { word: "Large", phonetic: "/lɑːrdʒ/", chinese: "大杯", partOfSpeech: "adjective" },
+      { word: "To go", phonetic: "/tuː ɡoʊ/", chinese: "带走", partOfSpeech: "phrase" },
+      { word: "Here", phonetic: "/hɪr/", chinese: "这里喝", partOfSpeech: "adverb" }
+    ],
+    conversation: [
+      { speaker: "Barista", line: "Hi! What can I get for you?" },
+      { speaker: "Customer", line: "Hi, I'd like a medium latte, please." },
+      { speaker: "Barista", line: "Sure. Hot or iced?" },
+      { speaker: "Customer", line: "Iced, please. And can I have it to go?" },
+      { speaker: "Barista", line: "Absolutely. Would you like any food with that?" },
+      { speaker: "Customer", line: "No, just the coffee, thank you." },
+      { speaker: "Barista", line: "That'll be $4.50. Name for the cup?" },
+      { speaker: "Customer", line: "It's under Anna. Thank you!" },
+      { speaker: "Barista", line: "Thanks, Anna! Your order will be ready in 2 minutes." }
+    ],
+    chineseTranslation: [
+      { speaker: "咖啡师", line: "嗨！您想喝点什么？" },
+      { speaker: "顾客", line: "嗨，我想要一杯中杯拿铁，谢谢。" },
+      { speaker: "咖啡师", line: "好的。热的还是冰的？" },
+      { speaker: "顾客", line: "冰的，谢谢。而且我要带走。" },
+      { speaker: "咖啡师", line: "当然。需要配点吃的吗？" },
+      { speaker: "顾客", line: "不用了，只要咖啡，谢谢。" },
+      { speaker: "咖啡师", line: "总共4.50美元。请问怎么称呼？" },
+      { speaker: "顾客", line: "安娜。" },
+      { speaker: "咖啡师", line: "谢谢安娜！您的订单2分钟后就好。" }
+    ],
+    usefulExpressions: [
+      { expression: "What can I get for you?", meaning: "您想点什么？", usage: "店员询问顾客" },
+      { expression: "I'd like...", meaning: "我想要...", usage: "礼貌点单" },
+      { expression: "Hot or iced?", meaning: "热的还是冰的？", usage: "询问温度" },
+      { expression: "To go / For here", meaning: "带走 / 这里喝", usage: "选择用餐方式" },
+      { expression: "That'll be...", meaning: "总共...", usage: "告知价格" },
+      { expression: "Name for the cup?", meaning: "请问怎么称呼？", usage: "询问订单姓名" }
+    ],
+    grammarFocus: [
+      {
+        title: "Polite Requests with 'I'd like'",
+        explanation: "用 'I'd like...' (I would like) 礼貌点单。",
+        examples: [
+          "I'd like a coffee.",
+          "I'd like it iced.",
+          "I'd like it to go."
+        ]
+      },
+      {
+        title: "Yes/No Questions with 'Would you'",
+        explanation: "店员常用 'Would you like...?' 询问额外需求。",
+        examples: [
+          "Would you like milk?",
+          "Would you like a receipt?"
+        ]
+      }
+    ],
+    collocationsAndChunks: [
+      { chunk: "I'd like", meaning: "我想要", example: "I'd like a latte, please." },
+      { chunk: "To go", meaning: "带走", example: "Can I get this to go?" },
+      { chunk: "For here", meaning: "在这里吃", example: "For here or to go?" }
+    ],
+    pronunciationTips: [
+      { tip: "I'd like → /aɪd laɪk/", example: "Contraction sounds natural" },
+      { tip: "That'll be → /ðætəl biː/", example: "Quick speech for pricing" }
+    ],
+    commonMistakes: [
+      {
+        mistake: "说 'I want...' 点单",
+        correction: "更礼貌的说法是 'I'd like...'",
+        explanation: "在服务行业，'I'd like' 比 'I want' 更礼貌合适。"
+      }
+    ],
+    rolePlayPractice: [
+      {
+        scenario: "You are at a coffee shop. Order a drink, specify hot/iced and size, and ask for it to go.",
+        prompts: [
+          "Greet the barista",
+          "Order your drink",
+          "Choose hot or iced",
+          "Say 'to go'",
+          "Confirm your name"
+        ]
+      }
+    ],
+    vocabularyExpansion: [
+      {
+        word: "Espresso",
+        synonyms: ["Short coffee", "Strong coffee"],
+        antonyms: [],
+        example: "I'd like an espresso, please."
+      },
+      {
+        word: "Pastry",
+        synonyms: ["Baked good", "Snack"],
+        antonyms: [],
+        example: "Can I see the pastries?"
+      }
+    ],
+    shadowingPractice: [
+      "Hi! What can I get for you?",
+      "I'd like a medium latte, please.",
+      "Hot or iced?",
+      "Iced, please. To go.",
+      "That'll be $4.50. Name for the cup?"
+    ],
+    speakingChallenge: {
+      instruction: "Practice ordering at a coffee shop 3 times with different drinks: latte, americano, and iced tea. Use 'I'd like', specify size, and say 'to go'.",
+      hints: [
+        "Start with 'Hi'",
+        "Use 'I'd like...'",
+        "Choose hot or iced",
+        "Remember to say 'thank you'"
+      ]
+    }
+  },
+  {
+    id: "phone-calls-basics",
+    title: "Making Phone Calls",
+    emoji: "📞",
+    description: "Answering calls, leaving messages, and basic phone etiquette.",
+    color: "from-indigo-400 to-blue-400",
+    level: "A1",
+    estimatedTime: "10 min",
+    vocabularyPreview: [
+      { word: "Hello?", phonetic: "/həˈloʊ/", chinese: "喂？", partOfSpeech: "interjection" },
+      { word: "Can I speak to...?", phonetic: "/kæn aɪ spiːk tuː/", chinese: "我能和...说话吗？", partOfSpeech: "question" },
+      { word: "Hold on", phonetic: "/hoʊld ɒn/", chinese: "请稍等", partOfSpeech: "phrase" },
+      { word: "Message", phonetic: "/ˈmesɪdʒ/", chinese: "留言", partOfSpeech: "noun" },
+      { word: "Call back", phonetic: "/kɔːl bæk/", chinese: "回电话", partOfSpeech: "phrasal verb" },
+      { word: "Busy", phonetic: "/ˈbɪzi/", chinese: "忙", partOfSpeech: "adjective" }
+    ],
+    conversation: [
+      { speaker: "Receptionist", line: "Hello, Smith & Co. How can I help you?" },
+      { speaker: "Caller", line: "Hi, can I speak to Mr. Johnson, please?" },
+      { speaker: "Receptionist", line: "I'm sorry, he's in a meeting. Can I take a message?" },
+      { speaker: "Caller", line: "Yes, please. Tell him Sarah called about the report." },
+      { speaker: "Receptionist", line: "Sure. Does he need to call you back?" },
+      { speaker: "Caller", line: "Yes, that would be great. My number is 555-0142." },
+      { speaker: "Receptionist", line: "Thank you. I'll make sure he calls you back." },
+      { speaker: "Caller", line: "Thanks a lot. Goodbye!" }
+    ],
+    chineseTranslation: [
+      { speaker: "前台", line: "您好，这里是Smith公司。有什么可以帮您？" },
+      { speaker: "来电者", line: "您好，我能和约翰逊先生通话吗？" },
+      { speaker: "前台", line: "抱歉，他在开会。需要我帮您留言吗？" },
+      { speaker: "来电者", line: "好的。请告诉他萨拉打来关于报告的事。" },
+      { speaker: "前台", line: "好的。他需要给您回电话吗？" },
+      { speaker: "来电者", line: "是的，那就太好了。我的号码是555-0142。" },
+      { speaker: "前台", line: "谢谢。我会确保他给您回电话。" },
+      { speaker: "来电者", line: "非常感谢。再见！" }
+    ],
+    usefulExpressions: [
+      { expression: "Can I speak to...?", meaning: "我能和...说话吗？", usage: "打电话时想找某人" },
+      { expression: "Hold on", meaning: "请稍等", usage: "让对方等待" },
+      { expression: "Take a message", meaning: "留言", usage: "对方不在时帮对方记录信息" },
+      { expression: "Call back", meaning: "回电话", usage: "请求对方回电" },
+      { expression: "I'll make sure...", meaning: "我保证...", usage: "承诺转达某事" }
+    ],
+    grammarFocus: [
+      {
+        title: "Polite Phone Questions",
+        explanation: "打电话时用 'Can I speak to...?' 或 'May I speak to...?' 礼貌询问。",
+        examples: [
+          "Can I speak to John?",
+          "May I speak to the manager?",
+          "Is this 555-0199?"
+        ]
+      },
+      {
+        title: "Present Continuous for Ongoing Actions",
+        explanation: "用现在进行时描述正在进行的动作。",
+        examples: [
+          "He's in a meeting.",
+          "She's on another line.",
+          "They're busy right now."
+        ]
+      }
+    ],
+    collocationsAndChunks: [
+      { chunk: "Can I speak to", meaning: "我能和...说话吗", example: "Can I speak to Sarah?" },
+      { chunk: "Hold on", meaning: "请稍等", example: "Hold on, let me check." },
+      { chunk: "Take a message", meaning: "留言", example: "Can I take a message?" },
+      { chunk: "Call back", meaning: "回电话", example: "I'll call you back later." }
+    ],
+    pronunciationTips: [
+      { tip: "Can I speak to → /kæn aɪ spiːk tuː/", example: "Natural, polite phone phrase" },
+      { tip: "Hold on → /hoʊld ɒn/", example: "Quick transition" }
+    ],
+    commonMistakes: [
+      {
+        mistake: "打电话时说 'I want to talk to...'",
+        correction: "更礼貌的说法是 'Can I speak to...?'",
+        explanation: "电话用语通常更正式，'Can I speak to...?' 是标准说法。"
+      }
+    ],
+    rolePlayPractice: [
+      {
+        scenario: "You call a restaurant to make a reservation. The line is busy, so you leave a message with your name, phone number, and time.",
+        prompts: [
+          "Answer the phone politely",
+          "Ask to make a reservation",
+          "Handle the 'busy' situation",
+          "Leave your name and number",
+          "Say goodbye"
+        ]
+      }
+    ],
+    vocabularyExpansion: [
+      {
+        word: "Reservation",
+        synonyms: ["Booking", "Appointment"],
+        antonyms: [],
+        example: "I'd like to make a reservation."
+      },
+      {
+        word: "Voicemail",
+        synonyms: ["Answering machine", "Message system"],
+        antonyms: [],
+        example: "Please leave a message after the beep."
+      }
+    ],
+    shadowingPractice: [
+      "Hello, Smith & Co. How can I help you?",
+      "Can I speak to Mr. Johnson, please?",
+      "I'm sorry, he's in a meeting.",
+      "Can I take a message?",
+      "I'll make sure he calls you back. Goodbye!"
+    ],
+    speakingChallenge: {
+      instruction: "Practice making a phone call to schedule a doctor's appointment. Use 'Can I speak to...', 'hold on', and 'call back'.",
+      hints: [
+        "Start with a polite greeting",
+        "Ask for the doctor or receptionist",
+        "Give your name and reason for calling",
+        "Confirm the appointment time",
+        "Say thank you and goodbye"
+      ]
+    }
+  },
+  {
+    id: "bank-basics",
+    title: "At the Bank",
+    emoji: "🏦",
+    description: "Opening an account, checking balance, and basic banking transactions.",
+    color: "from-emerald-400 to-green-400",
+    level: "A1",
+    estimatedTime: "12 min",
+    vocabularyPreview: [
+      { word: "Account", phonetic: "/əˈkaʊnt/", chinese: "账户", partOfSpeech: "noun" },
+      { word: "Balance", phonetic: "/ˈbæləns/", chinese: "余额", partOfSpeech: "noun" },
+      { word: "Deposit", phonetic: "/dɪˈpɒzɪt/", chinese: "存款", partOfSpeech: "verb / noun" },
+      { word: "Withdraw", phonetic: "/wɪðˈdrɔː/", chinese: "取款", partOfSpeech: "verb" },
+      { word: "Credit card", phonetic: "/ˈkredɪt kɑːrd/", chinese: "信用卡", partOfSpeech: "noun" },
+      { word: "Receipt", phonetic: "/rɪˈsiːt/", chinese: "收据", partOfSpeech: "noun" }
+    ],
+    conversation: [
+      { speaker: "Customer", line: "Hello, I'd like to open a new account." },
+      { speaker: "Banker", line: "Of course! What type of account would you like?" },
+      { speaker: "Customer", line: "I need a savings account, please." },
+      { speaker: "Banker", line: "Great choice. Do you have your ID and proof of address?" },
+      { speaker: "Customer", line: "Yes, here they are. How much should I deposit to start?" },
+      { speaker: "Banker", line: "You can start with any amount. Can I see your ID, please?" },
+      { speaker: "Customer", line: "Sure, here is my passport." },
+      { speaker: "Banker", line: "Thank you. Your account is now open. Here is your receipt." },
+      { speaker: "Customer", line: "Thank you very much for your help!" }
+    ],
+    chineseTranslation: [
+      { speaker: "顾客", line: "您好，我想开一个新账户。" },
+      { speaker: "银行职员", line: "当然！您想开什么类型的账户？" },
+      { speaker: "顾客", line: "我想开一个储蓄账户，谢谢。" },
+      { speaker: "银行职员", line: "不错的选择。您有身份证和地址证明吗？" },
+      { speaker: "顾客", line: "有的，在这里。初始存款需要多少？" },
+      { speaker: "银行职员", line: "任何金额都可以。请出示您的身份证。" },
+      { speaker: "顾客", line: "好的，这是我的护照。" },
+      { speaker: "银行职员", line: "谢谢。您的账户已经开了。这是您的收据。" },
+      { speaker: "顾客", line: "非常感谢您的帮助！" }
+    ],
+    usefulExpressions: [
+      { expression: "I'd like to open...", meaning: "我想开...", usage: "申请开户" },
+      { expression: "What type of...?", meaning: "什么类型的...？", usage: "询问选项" },
+      { expression: "Can I see your...?", meaning: "能看看您的...吗？", usage: "请求查看证件" },
+      { expression: "Here you go", meaning: "给你", usage: "递东西时" },
+      { expression: "Savings account", meaning: "储蓄账户", usage: "银行术语" }
+    ],
+    grammarFocus: [
+      {
+        title: "Polite Requests with 'I'd like'",
+        explanation: "用 'I'd like to...' 礼貌表达需求。",
+        examples: [
+          "I'd like to open an account.",
+          "I'd like to check my balance.",
+          "I'd like to withdraw some money."
+        ]
+      },
+      {
+        title: "Modal Verb 'Can' for Permission",
+        explanation: "用 'Can I...?' 礼貌请求允许。",
+        examples: [
+          "Can I see your ID?",
+          "Can I use the ATM?",
+          "Can I deposit cash here?"
+        ]
+      }
+    ],
+    collocationsAndChunks: [
+      { chunk: "Open an account", meaning: "开户", example: "I'd like to open a savings account." },
+      { chunk: "Check my balance", meaning: "查余额", example: "Can I check my balance?" },
+      { chunk: "Make a deposit", meaning: "存款", example: "I want to make a deposit." }
+    ],
+    pronunciationTips: [
+      { tip: "I'd like → /aɪd laɪk/", example: "Soft d sound, natural flow" },
+      { tip: "Savings account → /ˈseɪvɪŋz əˈkaʊnt/", example: "'Savings' has two syllables" }
+    ],
+    commonMistakes: [
+      {
+        mistake: "'Open a bank' instead of 'open an account'",
+        correction: "Correct: 'open an account'",
+        explanation: "银行是 'bank'；你开的是 'account'（账户）。"
+      }
+    ],
+    rolePlayPractice: [
+      {
+        scenario: "You go to a bank to open your first savings account. Talk to the banker, provide your documents, and ask about the minimum deposit.",
+        prompts: [
+          "Greet the banker",
+          "State what you want to do",
+          "Provide ID and address proof",
+          "Ask about the minimum deposit",
+          "Thank them and leave"
+        ]
+      }
+    ],
+    vocabularyExpansion: [
+      {
+        word: "Deposit",
+        synonyms: ["Payment", "Investment"],
+        antonyms: ["Withdrawal"],
+        example: "I'd like to make a deposit."
+      },
+      {
+        word: "Balance",
+        synonyms: ["Amount", "Total"],
+        antonyms: ["Debt"],
+        example: "What is my account balance?"
+      }
+    ],
+    shadowingPractice: [
+      "Hello, I'd like to open a new account.",
+      "What type of account would you like?",
+      "I need a savings account, please.",
+      "Do you have your ID and proof of address?",
+      "Thank you very much for your help!"
+    ],
+    speakingChallenge: {
+      instruction: "Practice opening a bank account and making a deposit. Use 'I'd like', 'Can I see', and 'Here you go'.",
+      hints: [
+        "Say what type of account you want",
+        "Have your ID ready",
+        "Ask about minimum deposit",
+        "Confirm the account is open"
+      ]
+    }
+  },
+  {
+    id: "doctor-visit",
+    title: "Visiting a Doctor",
+    emoji: "🏥",
+    description: "Describing symptoms, understanding advice, and basic medical conversation.",
+    color: "from-teal-400 to-cyan-400",
+    level: "A1",
+    estimatedTime: "12 min",
+    vocabularyPreview: [
+      { word: "Sick", phonetic: "/sɪk/", chinese: "生病的", partOfSpeech: "adjective" },
+      { word: "Headache", phonetic: "/ˈhedeɪk/", chinese: "头痛", partOfSpeech: "noun" },
+      { word: "Fever", phonetic: "/ˈfiːvər/", chinese: "发烧", partOfSpeech: "noun" },
+      { word: "Medicine", phonetic: "/ˈmedəsən/", chinese: "药", partOfSpeech: "noun" },
+      { word: "Rest", phonetic: "/rest/", chinese: "休息", partOfSpeech: "verb / noun" },
+      { word: "Appointment", phonetic: "/əˈpɔɪntmənt/", chinese: "预约", partOfSpeech: "noun" }
+    ],
+    conversation: [
+      { speaker: "Doctor", line: "Hello, what seems to be the problem?" },
+      { speaker: "Patient", line: "Hi, I have a bad headache and I feel dizzy." },
+      { speaker: "Doctor", line: "How long have you had these symptoms?" },
+      { speaker: "Patient", line: "Since yesterday. I also have a slight fever." },
+      { speaker: "Doctor", line: "Let me check your temperature. Open your mouth, please." },
+      { speaker: "Patient", line: "Is it serious?" },
+      { speaker: "Doctor", line: "Nothing too serious. You have a mild infection. I recommend rest and this medicine." },
+      { speaker: "Patient", line: "How often should I take it?" },
+      { speaker: "Doctor", line: "Take one pill three times a day after meals. Drink plenty of water and rest well." },
+      { speaker: "Patient", line: "Thank you, Doctor. I'll do that." }
+    ],
+    chineseTranslation: [
+      { speaker: "医生", line: "您好，哪里不舒服？" },
+      { speaker: "病人", line: "您好，我头痛得很厉害，还觉得头晕。" },
+      { speaker: "医生", line: "这些症状持续多久了？" },
+      { speaker: "病人", line: "从昨天开始的。我还稍微有点发烧。" },
+      { speaker: "医生", line: "让我量一下体温。请张开嘴。" },
+      { speaker: "病人", line: "严重吗？" },
+      { speaker: "医生", line: "不严重。你有轻微感染。我建议休息并吃这个药。" },
+      { speaker: "病人", line: "我应该多久吃一次？" },
+      { speaker: "医生", line: "饭后每天三次，每次一片。多喝水，好好休息。" },
+      { speaker: "病人", line: "谢谢医生。我会的。" }
+    ],
+    usefulExpressions: [
+      { expression: "What seems to be the problem?", meaning: "哪里不舒服？", usage: "医生询问病情" },
+      { expression: "I have a...", meaning: "我有...", usage: "描述症状" },
+      { expression: "How long...?", meaning: "持续多久了？", usage: "询问持续时间" },
+      { expression: "Take one pill...", meaning: "吃一片...", usage: "说明服药方法" },
+      { expression: "Drink plenty of water", meaning: "多喝水", usage: "医生建议" }
+    ],
+    grammarFocus: [
+      {
+        title: "Present Perfect for Duration",
+        explanation: "用现在完成时表示从过去持续到现在的状态。",
+        examples: [
+          "I have had a headache for two days.",
+          "I have been feeling dizzy since morning.",
+          "How long have you had the fever?"
+        ]
+      },
+      {
+        title: "Modal Verb 'Should' for Advice",
+        explanation: "用 'should' 给出建议。",
+        examples: [
+          "You should rest.",
+          "You should drink more water.",
+          "You should see a doctor."
+        ]
+      }
+    ],
+    collocationsAndChunks: [
+      { chunk: "I have a headache", meaning: "我头痛", example: "I have a terrible headache." },
+      { chunk: "How long...?", meaning: "多久了？", example: "How long have you been sick?" },
+      { chunk: "Take one pill", meaning: "吃一片药", example: "Take one pill three times a day." },
+      { chunk: "Plenty of water", meaning: "大量的水", example: "Drink plenty of water." }
+    ],
+    pronunciationTips: [
+      { tip: "What seems to be → /wɒt siːmz tu biː/", example: "Linking 'seems to'" },
+      { tip: "Three times a day → /θriː taɪmz ə deɪ/", example: "Fast, natural speech" }
+    ],
+    commonMistakes: [
+      {
+        mistake: "'I have a headache since yesterday'",
+        correction: "'I have had a headache since yesterday'",
+        explanation: "表示从过去持续到现在，用现在完成时 'have had'。"
+      }
+    ],
+    rolePlayPractice: [
+      {
+        scenario: "You are not feeling well. Visit a doctor, describe your symptoms, ask about the cause, and follow the doctor's advice.",
+        prompts: [
+          "Greet the doctor",
+          "Describe your symptoms",
+          "Answer questions about duration",
+          "Ask for the diagnosis",
+          "Repeat the advice"
+        ]
+      }
+    ],
+    vocabularyExpansion: [
+      {
+        word: "Symptom",
+        synonyms: ["Sign", "Indication"],
+        antonyms: [],
+        example: "What symptoms do you have?"
+      },
+      {
+        word: "Prescription",
+        synonyms: ["Doctor's order", "Medication"],
+        antonyms: [],
+        example: "I need to fill my prescription."
+      }
+    ],
+    shadowingPractice: [
+      "Hello, what seems to be the problem?",
+      "I have a bad headache and I feel dizzy.",
+      "How long have you had these symptoms?",
+      "Take one pill three times a day after meals.",
+      "Drink plenty of water and rest well."
+    ],
+    speakingChallenge: {
+      instruction: "Practice visiting a doctor for three different problems: a cold, a stomachache, and a sore throat. Use 'I have a...' and ask 'What should I do?'.",
+      hints: [
+        "Start with 'Hello, what seems to be the problem?'",
+        "Describe your symptom",
+        "Ask how long it has lasted",
+        "Follow the advice"
+      ]
+    }
+  },
+  {
+    id: "making-appointments",
+    title: "Making Appointments",
+    emoji: "📅",
+    description: "Scheduling, rescheduling, and confirming appointments by phone or in person.",
+    color: "from-purple-400 to-indigo-400",
+    level: "A1",
+    estimatedTime: "10 min",
+    vocabularyPreview: [
+      { word: "Appointment", phonetic: "/əˈpɔɪntmənt/", chinese: "预约", partOfSpeech: "noun" },
+      { word: "Available", phonetic: "/əˈveɪləbl/", chinese: "有空的", partOfSpeech: "adjective" },
+      { word: "Time slot", phonetic: "/taɪm slɒt/", chinese: "时间段", partOfSpeech: "noun" },
+      { word: "Confirm", phonetic: "/kənˈfɜːrm/", chinese: "确认", partOfSpeech: "verb" },
+      { word: "Reschedule", phonetic: "/riːˈʃedjuːl/", chinese: "改期", partOfSpeech: "verb" },
+      { word: "Cancellation", phonetic: "/ˌkænsəˈleɪʃn/", chinese: "取消", partOfSpeech: "noun" }
+    ],
+    conversation: [
+      { speaker: "Receptionist", line: "Good morning! How can I help you?" },
+      { speaker: "Customer", line: "Hi, I'd like to make an appointment, please." },
+      { speaker: "Receptionist", line: "Sure. What day works best for you?" },
+      { speaker: "Customer", line: "Do you have anything available on Friday morning?" },
+      { speaker: "Receptionist", line: "Let me check. Yes, we have 10:00 and 11:30." },
+      { speaker: "Customer", line: "11:30 is perfect. Thank you!" },
+      { speaker: "Receptionist", line: "Great. Can I get your name and phone number please?" },
+      { speaker: "Customer", line: "My name is Lisa, and my number is 555-0199." },
+      { speaker: "Receptionist", line: "Thank you, Lisa! Your appointment is confirmed for Friday at 11:30." }
+    ],
+    chineseTranslation: [
+      { speaker: "前台", line: "早上好！有什么可以帮您？" },
+      { speaker: "顾客", line: "您好，我想预约。" },
+      { speaker: "前台", line: "好的。您哪天方便？" },
+      { speaker: "顾客", line: "周五上午有空吗？" },
+      { speaker: "前台", line: "让我看看。有的，10点和11:30有空。" },
+      { speaker: "顾客", line: "11:30完美。谢谢！" },
+      { speaker: "前台", line: "好的。请问怎么称呼？电话号码是多少？" },
+      { speaker: "顾客", line: "我叫丽莎，电话是555-0199。" },
+      { speaker: "前台", line: "谢谢丽莎！您的预约已确认，周五11:30。" }
+    ],
+    usefulExpressions: [
+      { expression: "I'd like to make an appointment", meaning: "我想预约", usage: "预约时使用" },
+      { expression: "What day works best for you?", meaning: "您哪天方便？", usage: "询问可用时间" },
+      { expression: "Do you have anything available...?", meaning: "...有空吗？", usage: "询问可用时段" },
+      { expression: "That works for me", meaning: "那个时间对我可以", usage: "确认时间" },
+      { expression: "Your appointment is confirmed", meaning: "预约已确认", usage: "确认预约" }
+    ],
+    grammarFocus: [
+      {
+        title: "Modal Verbs for Possibility and Offers",
+        explanation: "用 'Can I...?' 和 'Do you have...?' 询问是否可能。",
+        examples: [
+          "Can I make an appointment?",
+          "Do you have anything available on Monday?",
+          "Can I speak to the manager?"
+        ]
+      },
+      {
+        title: "Present Simple for Scheduled Events",
+        explanation: "用一般现在时描述已知安排。",
+        examples: [
+          "My appointment is on Friday.",
+          "The meeting starts at 10:00.",
+          "I have a dental appointment tomorrow."
+        ]
+      }
+    ],
+    collocationsAndChunks: [
+      { chunk: "Make an appointment", meaning: "预约", example: "I'd like to make an appointment." },
+      { chunk: "Do you have anything available", meaning: "有空吗", example: "Do you have anything available tomorrow?" },
+      { chunk: "Works for me", meaning: "对我可以", example: "10:00 works for me." }
+    ],
+    pronunciationTips: [
+      { tip: "I'd like → /aɪd laɪk/", example: "Natural, polite request" },
+      { tip: "Available → /əˈveɪləbl/", example: "Stress on second syllable" }
+    ],
+    commonMistakes: [
+      {
+        mistake: "'Make an appointment with the doctor' 说成 'make a doctor appointment'",
+        correction: "两种都可以，但 'make an appointment with the doctor' 更常见",
+        explanation: "注意 'appointment' 前面通常用 'an'。"
+      }
+    ],
+    rolePlayPractice: [
+      {
+        scenario: "You need to schedule a dentist appointment. Call the clinic, ask for Friday, confirm 11:30, and write down the details.",
+        prompts: [
+          "Call and greet",
+          "Ask to make an appointment",
+          "Suggest a day",
+          "Choose an available time",
+          "Confirm your name and time"
+        ]
+      }
+    ],
+    vocabularyExpansion: [
+      {
+        word: "Schedule",
+        synonyms: ["Plan", "Timetable"],
+        antonyms: ["Cancel"],
+        example: "I need to schedule a meeting."
+      },
+      {
+        word: "Available",
+        synonyms: ["Free", "Open"],
+        antonyms: ["Busy", "Unavailable"],
+        example: "Is the doctor available on Tuesday?"
+      }
+    ],
+    shadowingPractice: [
+      "Hi, I'd like to make an appointment, please.",
+      "What day works best for you?",
+      "Do you have anything available on Friday morning?",
+      "11:30 is perfect.",
+      "Your appointment is confirmed for Friday at 11:30."
+    ],
+    speakingChallenge: {
+      instruction: "Practice scheduling three appointments: a dentist, a hairdresser, and a massage. Use 'I'd like to make an appointment' and 'Do you have anything available...?'.",
+      hints: [
+        "Call or visit in person",
+        "Ask for availability",
+        "Pick a time that works",
+        "Confirm the appointment",
+        "Thank them politely"
+      ]
+    }
   }
 ];
