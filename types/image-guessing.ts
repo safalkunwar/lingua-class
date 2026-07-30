@@ -3,7 +3,7 @@ export interface ImageGuessItem {
   emoji: string;
   answer: string;
   hint: string;
-  category: "animals" | "actions" | "daily-life";
+  category: "animals" | "actions" | "daily-life" | "food" | "weather";
   level: "A1" | "A2";
   alternatives?: string[];
 }

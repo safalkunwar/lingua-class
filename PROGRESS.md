@@ -130,8 +130,8 @@
 - Writing module
 - Image Guessing Game module (`/image-guessing`)
   - Playful ESL activity inspired by Hot Seat and action games
-  - Categories: Animals and Actions, Daily Actions, Playful Scenes
-  - 24 total guessing prompts with emoji visuals
+  - Categories: Animals and Actions, Daily Actions, Playful Scenes, Food and Cooking, Weather and Seasons
+  - 50 total guessing prompts with emoji visuals
   - Hints, acceptable alternatives, score tracking
   - A1/A2 leveled for Chinese beginners
 - Student/Teacher dashboards

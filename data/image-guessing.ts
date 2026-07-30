@@ -78,6 +78,24 @@ export const imageGuessingCategories: ImageGuessCategory[] = [
         category: "animals",
         level: "A2",
         alternatives: ["fluttering"]
+      },
+      {
+        id: "aa-9",
+        emoji: "🐇",
+        answer: "hopping",
+        hint: "This animal has long ears and moves in bounces.",
+        category: "animals",
+        level: "A1",
+        alternatives: ["jumping"]
+      },
+      {
+        id: "aa-10",
+        emoji: "🐢",
+        answer: "crawling",
+        hint: "This animal is very slow and carries a shell on its back.",
+        category: "animals",
+        level: "A1",
+        alternatives: ["walking slowly"]
       }
     ]
   },
@@ -158,6 +176,24 @@ export const imageGuessingCategories: ImageGuessCategory[] = [
         category: "actions",
         level: "A1",
         alternatives: ["cleaning"]
+      },
+      {
+        id: "da-9",
+        emoji: "🎮",
+        answer: "playing games",
+        hint: "You do this for fun with a controller or phone.",
+        category: "actions",
+        level: "A1",
+        alternatives: ["gaming"]
+      },
+      {
+        id: "da-10",
+        emoji: "🍳",
+        answer: "cooking",
+        hint: "You do this in the kitchen when you make food.",
+        category: "actions",
+        level: "A1",
+        alternatives: ["preparing food"]
       }
     ]
   },
@@ -238,6 +274,220 @@ export const imageGuessingCategories: ImageGuessCategory[] = [
         category: "daily-life",
         level: "A2",
         alternatives: ["launching"]
+      },
+      {
+        id: "ps-9",
+        emoji: "🎨",
+        answer: "painting",
+        hint: "You do this with brushes and colors on paper.",
+        category: "daily-life",
+        level: "A1",
+        alternatives: ["drawing"]
+      },
+      {
+        id: "ps-10",
+        emoji: "🏊",
+        answer: "swimming",
+        hint: "You do this in water using your arms and legs.",
+        category: "daily-life",
+        level: "A1",
+        alternatives: ["floating"]
+      }
+    ]
+  },
+  {
+    id: "food-cooking",
+    title: "Food and Cooking",
+    description: "Guess the food and cooking actions. Eat, bake, chop, and more!",
+    emoji: "👨‍🍳",
+    items: [
+      {
+        id: "fc-1",
+        emoji: "🍞",
+        answer: "baking bread",
+        hint: "You put this in the oven and it gets warm and golden.",
+        category: "food",
+        level: "A1",
+        alternatives: ["toasting"]
+      },
+      {
+        id: "fc-2",
+        emoji: "🥗",
+        answer: "making a salad",
+        hint: "You mix fresh vegetables in a bowl.",
+        category: "food",
+        level: "A1",
+        alternatives: ["preparing salad"]
+      },
+      {
+        id: "fc-3",
+        emoji: "🍳",
+        answer: "frying eggs",
+        hint: "You cook these in a pan with oil.",
+        category: "food",
+        level: "A2",
+        alternatives: ["cooking breakfast"]
+      },
+      {
+        id: "fc-4",
+        emoji: "🍕",
+        answer: "eating pizza",
+        hint: "This round food has cheese and sauce on top.",
+        category: "food",
+        level: "A1",
+        alternatives: ["having pizza"]
+      },
+      {
+        id: "fc-5",
+        emoji: "🥤",
+        answer: "drinking juice",
+        hint: "You sip this from a straw.",
+        category: "food",
+        level: "A1",
+        alternatives: ["sipping"]
+      },
+      {
+        id: "fc-6",
+        emoji: "🍪",
+        answer: "eating cookies",
+        hint: "These are sweet and crunchy baked treats.",
+        category: "food",
+        level: "A1",
+        alternatives: ["snacking"]
+      },
+      {
+        id: "fc-7",
+        emoji: "🍎",
+        answer: "washing fruit",
+        hint: "You hold this under water before eating.",
+        category: "food",
+        level: "A1",
+        alternatives: ["rinsing"]
+      },
+      {
+        id: "fc-8",
+        emoji: "🧁",
+        answer: "baking cupcakes",
+        hint: "These small cakes have frosting on top.",
+        category: "food",
+        level: "A2",
+        alternatives: ["decorating"]
+      },
+      {
+        id: "fc-9",
+        emoji: "☕",
+        answer: "drinking coffee",
+        hint: "You sip this hot drink in the morning.",
+        category: "food",
+        level: "A1",
+        alternatives: ["tasting"]
+      },
+      {
+        id: "fc-10",
+        emoji: "🍳",
+        answer: "cooking dinner",
+        hint: "You prepare this meal in the evening.",
+        category: "food",
+        level: "A1",
+        alternatives: ["making dinner"]
+      }
+    ]
+  },
+  {
+    id: "weather-seasons",
+    title: "Weather and Seasons",
+    description: "Guess the weather and seasons. Sunny, rainy, snow, and more!",
+    emoji: "🌤️",
+    items: [
+      {
+        id: "ws-1",
+        emoji: "☀️",
+        answer: "sunny",
+        hint: "The sky is clear and bright.",
+        category: "weather",
+        level: "A1",
+        alternatives: ["bright"]
+      },
+      {
+        id: "ws-2",
+        emoji: "🌧️",
+        answer: "raining",
+        hint: "Water falls from the sky and you need an umbrella.",
+        category: "weather",
+        level: "A1",
+        alternatives: ["showering"]
+      },
+      {
+        id: "ws-3",
+        emoji: "❄️",
+        answer: "snowing",
+        hint: "White flakes fall from the sky and cover the ground.",
+        category: "weather",
+        level: "A1",
+        alternatives: ["blizzard"]
+      },
+      {
+        id: "ws-4",
+        emoji: "🌈",
+        answer: "rainbow",
+        hint: "This appears in the sky after the rain.",
+        category: "weather",
+        level: "A1",
+        alternatives: ["colorful sky"]
+      },
+      {
+        id: "ws-5",
+        emoji: "🌬️",
+        answer: "windy",
+        hint: "The air moves fast and trees sway.",
+        category: "weather",
+        level: "A1",
+        alternatives: ["breezy"]
+      },
+      {
+        id: "ws-6",
+        emoji: "☁️",
+        answer: "cloudy",
+        hint: "The sky is covered with soft white puffs.",
+        category: "weather",
+        level: "A1",
+        alternatives: ["overcast"]
+      },
+      {
+        id: "ws-7",
+        emoji: "🌪️",
+        answer: "stormy",
+        hint: "There is strong wind, rain, and thunder.",
+        category: "weather",
+        level: "A2",
+        alternatives: ["tornado"]
+      },
+      {
+        id: "ws-8",
+        emoji: "🔥",
+        answer: "hot",
+        hint: "The sun is strong and you feel warm.",
+        category: "weather",
+        level: "A1",
+        alternatives: ["burning"]
+      },
+      {
+        id: "ws-9",
+        emoji: "🧥",
+        answer: "cold",
+        hint: "You wear a thick coat and gloves.",
+        category: "weather",
+        level: "A1",
+        alternatives: ["freezing"]
+      },
+      {
+        id: "ws-10",
+        emoji: "🍂",
+        answer: "autumn",
+        hint: "Leaves fall from trees and the air is crisp.",
+        category: "weather",
+        level: "A1",
+        alternatives: ["fall"]
       }
     ]
   }
