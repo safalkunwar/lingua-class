@@ -12,7 +12,7 @@
 - **Status:** Production ready
 
 **Features:**
-- 147 words across 28 topics
+- 160 words across 30 topics
 - C1 Professional Skills (6 words)
 - C2 Advanced Communication (6 words)
 - Level filters updated to support A1, A2, B1, B2, C1, C2
@@ -25,20 +25,20 @@
 - Responsive design with animations
 
 **Topics included:**
-1. Daily Life (17 words)
-2. Travel (4 words)
-3. Work & Business (8 words)
-4. Shopping (10 words)
+1. Daily Life (15 words)
+2. Travel (9 words)
+3. Work & Business (6 words)
+4. Shopping (5 words)
 5. Friends & Social Life (4 words)
 6. Restaurants & Food (5 words)
 7. Airport (5 words)
 8. Education (4 words)
 9. Health (4 words)
 10. Weather (4 words)
-11. Technology (1 word)
-12. PTE IELTS Academic (1 word)
+11. Technology (4 words)
+12. PTE IELTS Academic (6 words)
 13. Home & House (8 words)
-14. Nature & Outdoors (8 words)
+14. Nature & Outdoors (5 words)
 15. Language & Communication (4 words)
 16. Science & Technology (4 words)
 17. Arts & Culture (4 words)
@@ -49,6 +49,8 @@
 22. Food & Drink (8 words)
 23. Travel & Transport (6 words)
 24. Health & Wellness (6 words)
+25. Professional Skills (6 words)
+26. Advanced Communication (6 words)
 
 #### 2. Conversations Module (Completed)
 - **Route:** `/conversations`
