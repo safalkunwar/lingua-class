@@ -1405,6 +1405,69 @@ export const wordBook: WordBookTopic[] = [
         commonMistakes: [{ mistake: "Using 'mobile' instead of 'smartphone'", correction: "Mobile = 移动的; smartphone = 智能手机 with apps." }],
         pronunciationTips: "Stress the first syllable: SMART-phone.",
         memoryTrick: "Smart + phone. A phone that is smart."
+      },
+      {
+        id: "tc-2", topic: "Technology", level: "A2", category: "Devices",
+        english: "Laptop", word: "laptop", partOfSpeech: "noun",
+        breakdown: "LAP-top", chinese: "笔记本电脑", pinyin: "bǐ jì běn diàn nǎo",
+        emoji: "💻", imageKeyword: "laptop computer",
+        definitionEn: "A portable personal computer.",
+        definitionZh: "便携式个人电脑。",
+        detailsEn: "Common: open laptop, laptop charger, laptop bag, work on a laptop.",
+        detailsZh: "常见搭配：open laptop、laptop charger、laptop bag、work on a laptop。",
+        exampleEn: "I take my laptop to school.",
+        exampleZh: "我带笔记本电脑去学校。",
+        examples: [
+          { en: "Her laptop is very fast.", zh: "她的电脑很快。" },
+          { en: "Don't forget your laptop charger.", zh: "别忘了带电脑充电器。" }
+        ],
+        collocations: ["open laptop", "laptop charger", "laptop bag", "use laptop"],
+        synonyms: ["notebook", "portable computer"], antonyms: ["desktop"],
+        commonMistakes: [{ mistake: "Using 'computer' only for desktops", correction: "A laptop is also a computer." }],
+        pronunciationTips: "Stress the first syllable: LAP-top.",
+        memoryTrick: "Lap + top. A computer that fits on your lap."
+      },
+      {
+        id: "tc-3", topic: "Technology", level: "A2", category: "Devices",
+        english: "Charge", word: "charge", partOfSpeech: "verb / noun",
+        breakdown: "chahrj", chinese: "充电", pinyin: "chōng diàn",
+        emoji: "🔋", imageKeyword: "battery charging",
+        definitionEn: "To add electrical power to a battery.",
+        definitionZh: "为电池添加电力。",
+        detailsEn: "Common: charge phone, charge laptop, battery charge.",
+        detailsZh: "常见搭配：charge phone、charge laptop、battery charge。",
+        exampleEn: "I need to charge my phone.",
+        exampleZh: "我需要给手机充电。",
+        examples: [
+          { en: "Charge the device overnight.", zh: "整夜充电。" },
+          { en: "The battery won't charge.", zh: "电池充不了电。" }
+        ],
+        collocations: ["charge phone", "charge laptop", "battery charge", "fast charge"],
+        synonyms: ["power up", "recharge"], antonyms: ["drain", "discharge"],
+        commonMistakes: [{ mistake: "Using 'fill' instead of 'charge' for batteries", correction: "'Charge' is specific to electricity/batteries." }],
+        pronunciationTips: "Like 'large' with 'ch': chahrj.",
+        memoryTrick: "Charge = 充电. Put energy in."
+      },
+      {
+        id: "tc-4", topic: "Technology", level: "A2", category: "Internet",
+        english: "Browser", word: "browser", partOfSpeech: "noun",
+        breakdown: "BROW-zer", chinese: "浏览器", pinyin: "liú lǎn qì",
+        emoji: "🌐", imageKeyword: "web browser",
+        definitionEn: "Software for accessing the internet.",
+        definitionZh: "访问互联网的软件。",
+        detailsEn: "Common: web browser, browser tab, browser app.",
+        detailsZh: "常见搭配：web browser、browser tab、browser app。",
+        exampleEn: "Which browser do you use?",
+        exampleZh: "你用哪个浏览器？",
+        examples: [
+          { en: "Chrome is a popular browser.", zh: "Chrome是流行的浏览器。" },
+          { en: "Open a new browser tab.", zh: "打开一个新的浏览器标签页。" }
+        ],
+        collocations: ["web browser", "browser tab", "browser app", "browser extension"],
+        synonyms: ["web browser", "internet explorer"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'explorer' as the generic word", correction: "'Browser' is the standard term." }],
+        pronunciationTips: "Stress the first syllable: BROW-zer.",
+        memoryTrick: "Browse + er. A tool that browses the web."
       }
     ]
   },
@@ -1435,6 +1498,112 @@ export const wordBook: WordBookTopic[] = [
         commonMistakes: [{ mistake: "Using 'analyse' spelling inconsistently", correction: "American English: analyze; British English: analyse." }],
         pronunciationTips: "Stress the first syllable: AN-uh-lyze.",
         memoryTrick: "A + nalyze = A + 分析. You give something an analysis."
+      },
+      {
+        id: "ac-2", topic: "Academic", level: "B2", category: "Speaking",
+        english: "Fluency", word: "fluency", partOfSpeech: "noun",
+        breakdown: "FLOO-en-see", chinese: "流利", pinyin: "liú lì",
+        emoji: "🗣️", imageKeyword: "speaking fluently",
+        definitionEn: "The ability to speak smoothly and easily.",
+        definitionZh: "流畅自如地说话的能力。",
+        detailsEn: "Common: spoken fluency, fluency in English, develop fluency.",
+        detailsZh: "常见：spoken fluency、fluency in English、develop fluency。",
+        exampleEn: "Her fluency in English is impressive.",
+        exampleZh: "她的英语流利度令人印象深刻。",
+        examples: [
+          { en: "Practice improves fluency.", zh: "练习提高流利度。" },
+          { en: "He lacks fluency in speech.", zh: "他说话缺乏流利度。" }
+        ],
+        collocations: ["spoken fluency", "fluency in", "develop fluency", "fluency practice"],
+        synonyms: ["flow", "smoothness", "ease"], antonyms: ["hesitation", "struggle"],
+        commonMistakes: [{ mistake: "'Fluency' is only about speed", correction: "It also includes smoothness and coherence." }],
+        pronunciationTips: "Stress the first syllable: FLOO-en-see.",
+        memoryTrick: "Flu + ency. Flowing speech without blocks."
+      },
+      {
+        id: "ac-3", topic: "Academic", level: "B2", category: "Writing",
+        english: "Paraphrase", word: "paraphrase", partOfSpeech: "verb / noun",
+        breakdown: "PAIR-uh-frayz", chinese: "改写", pinyin: "gǎi xiě",
+        emoji: "📝", imageKeyword: "paraphrasing text",
+        definitionEn: "To express meaning using different words.",
+        definitionZh: "用不同词语表达意思。",
+        detailsEn: "Common: paraphrase the text, paraphrase in your own words.",
+        detailsZh: "常见：paraphrase the text、paraphrase in your own words。",
+        exampleEn: "Please paraphrase this sentence.",
+        exampleZh: "请改写这句话。",
+        examples: [
+          { en: "She paraphrased the author.", zh: "她改写了作者的话。" },
+          { en: "Good paraphrasing shows understanding.", zh: "好的改写体现理解。" }
+        ],
+        collocations: ["paraphrase text", "paraphrase sentence", "paraphrase in own words", "paraphrase quote"],
+        synonyms: ["rephrase", "rewrite", "restate"], antonyms: ["copy", "plagiarize"],
+        commonMistakes: [{ mistake: "Copying words while claiming to paraphrase", correction: "Use different structure and synonyms." }],
+        pronunciationTips: "Stress the second syllable: PAIR-uh-frayz.",
+        memoryTrick: "Para + phrase. Say the phrase differently."
+      },
+      {
+        id: "ac-4", topic: "Academic", level: "B2", category: "Writing",
+        english: "Coherence", word: "coherence", partOfSpeech: "noun",
+        breakdown: "koh-HERE-ens", chinese: "连贯性", pinyin: "lián guàn xìng",
+        emoji: "🔗", imageKeyword: "coherent writing",
+        definitionEn: "Logical and consistent connection between ideas.",
+        definitionZh: "观点之间的逻辑一致连接。",
+        detailsEn: "Common: text coherence, logical coherence, maintain coherence.",
+        detailsZh: "常见：text coherence、logical coherence、maintain coherence。",
+        exampleEn: "Coherence is important in essays.",
+        exampleZh: "连贯性在文章中很重要。",
+        examples: [
+          { en: "The essay lacks coherence.", zh: "文章缺乏连贯性。" },
+          { en: "She improved coherence with transitions.", zh: "她用连接词提高了连贯性。" }
+        ],
+        collocations: ["text coherence", "logical coherence", "maintain coherence", "coherence in writing"],
+        synonyms: ["consistency", "logic", "flow"], antonyms: ["incoherence", "chaos"],
+        commonMistakes: [{ mistake: "Confusing coherence with cohesion", correction: "Coherence = logical ideas; cohesion = linking words." }],
+        pronunciationTips: "Stress the second syllable: koh-HERE-ens.",
+        memoryTrick: "Co = together, here = stand. Ideas that stand together."
+      },
+      {
+        id: "ac-5", topic: "Academic", level: "B2", category: "Speaking",
+        english: "Lecture", word: "lecture", partOfSpeech: "noun / verb",
+        breakdown: "LEK-cher", chinese: "讲座", pinyin: "jiǎng zuò",
+        emoji: "🎓", imageKeyword: "university lecture",
+        definitionEn: "A formal educational talk or speech.",
+        definitionZh: "正式的教育性讲话。",
+        detailsEn: "Common: attend a lecture, lecture hall, give a lecture.",
+        detailsZh: "常见：attend a lecture、lecture hall、give a lecture。",
+        exampleEn: "The lecture starts at 9.",
+        exampleZh: "讲座9点开始。",
+        examples: [
+          { en: "I missed the first lecture.", zh: "我错过了第一堂课。" },
+          { en: "He lectures on economics.", zh: "他讲经济学。" }
+        ],
+        collocations: ["attend lecture", "lecture hall", "give lecture", "guest lecture"],
+        synonyms: ["seminar", "talk", "class"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'lesson' for university talks", correction: "'Lecture' is for formal academic talks." }],
+        pronunciationTips: "Stress the first syllable: LEK-cher.",
+        memoryTrick: "Lect + ure. A talk for learning."
+      },
+      {
+        id: "ac-6", topic: "Academic", level: "B2", category: "Writing",
+        english: "Hypothesis", word: "hypothesis", partOfSpeech: "noun",
+        breakdown: "hye-POTH-uh-sis", chinese: "假设", pinyin: "jiǎ shè",
+        emoji: "🧪", imageKeyword: "scientific hypothesis",
+        definitionEn: "A proposed explanation made as a starting point for investigation.",
+        definitionZh: "作为调查起点的拟议解释。",
+        detailsEn: "Common: test a hypothesis, scientific hypothesis, working hypothesis.",
+        detailsZh: "常见：test a hypothesis、scientific hypothesis、working hypothesis。",
+        exampleEn: "The hypothesis was proven wrong.",
+        exampleZh: "假设被证明是错误的。",
+        examples: [
+          { en: "She wrote a clear hypothesis.", zh: "她写了一个清晰的假设。" },
+          { en: "Scientists test hypotheses.", zh: "科学家检验假设。" }
+        ],
+        collocations: ["test hypothesis", "scientific hypothesis", "working hypothesis", "hypothesis testing"],
+        synonyms: ["theory", "guess", "proposition"], antonyms: ["fact", "proof"],
+        commonMistakes: [{ mistake: "Plural is 'hypothesises'", correction: "Plural is 'hypotheses'." }],
+        pronunciationTips: "Stress the third syllable: hye-POTH-uh-sis.",
+        memoryTrick: "Hypo = under, thesis = placing. An educated guess placed before proof.",
+        superlative: "hypotheses"
       }
     ]
   },
@@ -1464,7 +1633,112 @@ export const wordBook: WordBookTopic[] = [
         synonyms: ["meet up", "gather"], antonyms: [],
         commonMistakes: [{ mistake: "Using for formal meetings", correction: "Use 'meeting' for work; use 'get together' for friends/family." }],
         pronunciationTips: "Link smoothly: get-to-GETH-er. Stress 'geth'.",
-        memoryTrick: "Get + together = get together = 聚会."
+         memoryTrick: "Get + together = get together = 聚会."
+      },
+      {
+        id: "fr-social-3", topic: "Friends", level: "A2", category: "Relationships",
+        english: "Trust", word: "trust", partOfSpeech: "noun / verb",
+        breakdown: "trust", chinese: "信任", pinyin: "xìn rèn",
+        emoji: "🤝", imageKeyword: "trust between friends",
+        definitionEn: "Firm belief in reliability of someone.",
+        definitionZh: "对某人可靠性的坚定信念。",
+        detailsEn: "Common: gain trust, build trust, lose trust.",
+        detailsZh: "常见：gain trust、build trust、lose trust。",
+        exampleEn: "Trust is important in friendship.",
+        exampleZh: "信任在友谊中很重要。",
+        examples: [
+          { en: "I trust my best friend.", zh: "我信任我最好的朋友。" },
+          { en: "It takes time to build trust.", zh: "建立信任需要时间。" }
+        ],
+        collocations: ["build trust", "gain trust", "lose trust", "mutual trust"],
+        synonyms: ["confidence", "faith"], antonyms: ["distrust", "suspicion"],
+        commonMistakes: [{ mistake: "'Trust' only as a noun", correction: "As a verb: 'I trust you.' As a noun: 'I have trust in you.'" }],
+        pronunciationTips: "One syllable: trust.",
+        memoryTrick: "Trust = 信任. Like 戳思特 — deeply trust."
+      },
+      {
+        id: "fr-social-4", topic: "Friends", level: "B1", category: "Support",
+        english: "Supportive", word: "supportive", partOfSpeech: "adjective",
+        breakdown: "suh-POR-tiv", chinese: "支持的", pinyin: "zhī chí de",
+        emoji: "💪", imageKeyword: "supportive friend",
+        definitionEn: "Giving encouragement or help.",
+        definitionZh: "给予鼓励或帮助。",
+        detailsEn: "Common: supportive friend, supportive family, be supportive.",
+        detailsZh: "常见：supportive friend、supportive family、be supportive。",
+        exampleEn: "She is very supportive.",
+        exampleZh: "她很支持人。",
+        examples: [
+          { en: "My parents are supportive.", zh: "我父母很支持我。" },
+          { en: "Be supportive of your friends.", zh: "支持你的朋友。" }
+        ],
+        collocations: ["be supportive", "supportive friend", "supportive family", "very supportive"],
+        synonyms: ["encouraging", "helpful"], antonyms: ["unsupportive", "hostile"],
+        commonMistakes: [{ mistake: "Using 'support' as the adjective", correction: "Use 'supportive' for the adjective form." }],
+        pronunciationTips: "Stress the second syllable: suh-POR-tiv.",
+        memoryTrick: "Support + ive. A person who gives support."
+      },
+      {
+        id: "fr-social-5", topic: "Friends", level: "A2", category: "Relationships",
+        english: "Memory", word: "memory", partOfSpeech: "noun",
+        breakdown: "MEM-er-ee", chinese: "回忆", pinyin: "huí yì",
+        emoji: "📸", imageKeyword: "shared memories",
+        definitionEn: "Something remembered from the past.",
+        definitionZh: "过去记得的事情。",
+        detailsEn: "Common: childhood memory, happy memory, memory of.",
+        detailsZh: "常见：childhood memory、happy memory、memory of。",
+        exampleEn: "I have a good memory of that trip.",
+        exampleZh: "我对那次旅行有美好的回忆。",
+        examples: [
+          { en: "That is a great memory.", zh: "那是美好的回忆。" },
+          { en: "She has a strong memory.", zh: "她记忆力很好。" }
+        ],
+        collocations: ["childhood memory", "happy memory", "memory of", "precious memory"],
+        synonyms: ["recollection", "remembrance"], antonyms: ["forgetfulness"],
+        commonMistakes: [{ mistake: "Using 'memories' for ability", correction: "'Memory' = ability; 'memories' = specific events." }],
+        pronunciationTips: "Stress the first syllable: MEM-er-ee.",
+        memoryTrick: "Mem + ory. Remember + y = memory."
+      },
+      {
+        id: "fr-social-6", topic: "Friends", level: "A2", category: "Relationships",
+        english: "Loyalty", word: "loyalty", partOfSpeech: "noun",
+        breakdown: "LOY-al-tee", chinese: "忠诚", pinyin: "zhōng chéng",
+        emoji: "🛡️", imageKeyword: "loyalty symbol",
+        definitionEn: "The quality of being faithful and devoted.",
+        definitionZh: "忠诚和奉献的品质。",
+        detailsEn: "Common: show loyalty, loyalty to friends, loyalty program.",
+        detailsZh: "常见：show loyalty、loyalty to friends、loyalty program。",
+        exampleEn: "His loyalty to friends is strong.",
+        exampleZh: "他对朋友的忠诚很强。",
+        examples: [
+          { en: "Loyalty is a great quality.", zh: "忠诚是很棒的品质。" },
+          { en: "They value loyalty in a friend.", zh: "他们重视朋友的忠诚。" }
+        ],
+        collocations: ["show loyalty", "loyalty to", "loyalty program", "loyalty and trust"],
+        synonyms: ["faithfulness", "devotion"], antonyms: ["betrayal", "disloyalty"],
+        commonMistakes: [{ mistake: "Using 'loyal' as a noun", correction: "'Loyalty' is the noun." }],
+        pronunciationTips: "Stress the second syllable: LOY-al-tee.",
+        memoryTrick: "Loyal + ty. The state of being loyal."
+      },
+      {
+        id: "fr-social-7", topic: "Friends", level: "A2", category: "Social",
+        english: "Invite", word: "invite", partOfSpeech: "verb",
+        breakdown: "in-VYT", chinese: "邀请", pinyin: "yāo qǐng",
+        emoji: "💌", imageKeyword: "party invitation",
+        definitionEn: "To ask someone to come to an event.",
+        definitionZh: "邀请某人参加活动。",
+        detailsEn: "Common: invite to dinner, invite someone over, invite friends.",
+        detailsZh: "常见：invite to dinner、invite someone over、invite friends。",
+        exampleEn: "I invited her to my party.",
+        exampleZh: "我邀请她来我的派对。",
+        examples: [
+          { en: "Did you invite Tom?", zh: "你邀请汤姆了吗？" },
+          { en: "We invited them over for dinner.", zh: "我们邀请他们过来吃晚饭。" }
+        ],
+        collocations: ["invite to", "invite over", "invite friends", "invite someone"],
+        synonyms: ["ask", "request"], antonyms: ["exclude", "dismiss"],
+        commonMistakes: [{ mistake: "Using 'invite for' instead of 'invite to'", correction: "Say 'invite someone to something.'" }],
+        pronunciationTips: "Stress the second syllable: in-VYT.",
+        memoryTrick: "In + vite. Send in an invitation."
       }
     ]
   },
