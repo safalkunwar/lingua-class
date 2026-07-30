@@ -3592,5 +3592,498 @@ export const conversations: ConversationTopic[] = [
         "Suggest activities based on weather"
       ]
     }
+  },
+  {
+    id: "meeting-neighbors",
+    title: "Meeting New Neighbors",
+    emoji: "🏘️",
+    description: "Introducing yourself, small talk, and being friendly with new neighbors.",
+    color: "from-emerald-400 to-teal-400",
+    level: "A1",
+    estimatedTime: "10 min",
+    vocabularyPreview: [
+      { word: "Neighbor", phonetic: "/ˈneɪbər/", chinese: "邻居", partOfSpeech: "noun" },
+      { word: "Building", phonetic: "/ˈbɪldɪŋ/", chinese: "公寓楼", partOfSpeech: "noun" },
+      { word: "Floor", phonetic: "/flɔːr/", chinese: "楼层", partOfSpeech: "noun" },
+      { word: "Introduce", phonetic: "/ˌɪntrəˈduːs/", chinese: "介绍", partOfSpeech: "verb" },
+      { word: "Welcome", phonetic: "/ˈwelkəm/", chinese: "欢迎", partOfSpeech: "verb / adjective" },
+      { word: "Get to know", phonetic: "/ɡet tuː noʊ/", chinese: "认识", partOfSpeech: "phrase" }
+    ],
+    conversation: [
+      { speaker: "Anna", line: "Hi! I just moved in next door. I'm Anna." },
+      { speaker: "Neighbor", line: "Welcome to the building! I'm Mike, from 2B." },
+      { speaker: "Anna", line: "Nice to meet you, Mike! Is it a quiet building?" },
+      { speaker: "Neighbor", line: "Yes, everyone here is friendly. What floor are you on?" },
+      { speaker: "Anna", line: "I'm on 3A. I brought cookies. Would you like one?" },
+      { speaker: "Neighbor", line: "That's so kind of you! Thank you very much." },
+      { speaker: "Anna", line: "If you need anything, just knock. Welcome again!" },
+      { speaker: "Neighbor", line: "You too! Let me know if you need help moving anything." }
+    ],
+    chineseTranslation: [
+      { speaker: "Anna", line: "嗨！我刚刚搬来隔壁。我是Anna。" },
+      { speaker: "邻居", line: "欢迎来到这栋楼！我是Mike，2B的。" },
+      { speaker: "Anna", line: "很高兴认识你，Mike！这栋楼安静吗？" },
+      { speaker: "邻居", line: "是的，这里的人都很好。你在几楼？" },
+      { speaker: "Anna", line: "我在3A。我带了饼干。你要一个吗？" },
+      { speaker: "邻居", line: "你真好！非常感谢。" },
+      { speaker: "Anna", line: "如果需要什么，随时敲门。再次欢迎你！" },
+      { speaker: "邻居", line: "你也是！如果需要帮忙搬东西，告诉我。" }
+    ],
+    usefulExpressions: [
+      { expression: "I just moved in", meaning: "我刚搬来", usage: "告诉邻居你是新搬来的" },
+      { expression: "Nice to meet you", meaning: "很高兴认识你", usage: "第一次见面时使用" },
+      { expression: "Would you like...?", meaning: "你想要...吗？", usage: "礼貌提供东西" },
+      { expression: "That's so kind of you", meaning: "你真好", usage: "感谢别人的好意" },
+      { expression: "Let me know if...", meaning: "如果需要...请告诉我", usage: "主动提供帮助" }
+    ],
+    grammarFocus: [
+      {
+        title: "Present Perfect for Recent Actions",
+        explanation: "用现在完成时表示刚刚发生的动作。",
+        examples: [
+          "I just moved in.",
+          "I have just arrived.",
+          "I have brought cookies."
+        ]
+      },
+      {
+        title: "Conditional Offers with 'Would you like'",
+        explanation: "用 'Would you like...?' 礼貌地提供东西或帮助。",
+        examples: [
+          "Would you like a cookie?",
+          "Would you like some water?",
+          "Would you like me to help?"
+        ]
+      }
+    ],
+    collocationsAndChunks: [
+      { chunk: "Just moved in", meaning: "刚搬来", example: "I just moved in next door." },
+      { chunk: "Nice to meet you", meaning: "很高兴认识你", example: "Nice to meet you, Mike!" },
+      { chunk: "That's so kind of you", meaning: "你真好", example: "That's so kind of you!" }
+    ],
+    pronunciationTips: [
+      { tip: "Neighbor → /ˈneɪbər/", example: "Stress on first syllable" },
+      { tip: "Would you like → /wʊd juː laɪk/", example: "Polite offer" }
+    ],
+    commonMistakes: [
+      {
+        mistake: "'I moved in yesterday' 用一般过去时",
+        correction: "用现在完成时 'I have just moved in' 更自然",
+        explanation: "表示刚刚发生的动作对现在有影响，用现在完成时。"
+      }
+    ],
+    rolePlayPractice: [
+      {
+        scenario: "You meet your new neighbor in the hallway. Introduce yourself, ask about the building, and offer a small gift.",
+        prompts: [
+          "Greet them warmly",
+          "Introduce yourself",
+          "Ask about the building",
+          "Offer a small gift",
+          "Exchange contact info"
+        ]
+      }
+    ],
+    vocabularyExpansion: [
+      {
+        word: "Friendly",
+        synonyms: ["Nice", "Kind", "Welcoming"],
+        antonyms: ["Unfriendly", "Cold"],
+        example: "Everyone here is friendly."
+      },
+      {
+        word: "Building",
+        synonyms: ["Apartment building", "Block"],
+        antonyms: [],
+        example: "It's a tall building."
+      }
+    ],
+    shadowingPractice: [
+      "Hi! I just moved in next door. I'm Anna.",
+      "Welcome to the building! I'm Mike, from 2B.",
+      "Nice to meet you, Mike!",
+      "I brought cookies. Would you like one?",
+      "That's so kind of you!"
+    ],
+    speakingChallenge: {
+      instruction: "Practice introducing yourself to a new neighbor. Use 'I just moved in', 'Nice to meet you', and offer something small.",
+      hints: [
+        "Start with a friendly greeting",
+        "Say which apartment you're in",
+        "Ask about the building",
+        "Offer a small gift or help",
+        "End with a warm goodbye"
+      ]
+    }
+  },
+  {
+    id: "at-laundromat",
+    title: "At the Laundromat",
+    emoji: "🧺",
+    description: "Washing clothes, asking about machines, and basic laundromat conversation.",
+    color: "from-cyan-400 to-blue-400",
+    level: "A1",
+    estimatedTime: "10 min",
+    vocabularyPreview: [
+      { word: "Laundry", phonetic: "/ˈlɔːndri/", chinese: "洗衣", partOfSpeech: "noun" },
+      { word: "Machine", phonetic: "/məˈʃiːn/", chinese: "机器", partOfSpeech: "noun" },
+      { word: "Detergent", phonetic: "/dɪˈtɜːrdʒənt/", chinese: "洗衣粉", partOfSpeech: "noun" },
+      { word: "Dryer", phonetic: "/ˈdraɪər/", chinese: "烘干机", partOfSpeech: "noun" },
+      { word: "Change", phonetic: "/tʃeɪndʒ/", chinese: "零钱", partOfSpeech: "noun" },
+      { word: "Spin", phonetic: "/spɪn/", chinese: "甩干", partOfSpeech: "verb" }
+    ],
+    conversation: [
+      { speaker: "Customer", line: "Hi, how much is a wash and dry cycle?" },
+      { speaker: "Attendant", line: "A wash is $2 and dry is $1.50. Machines take quarters." },
+      { speaker: "Customer", line: "Do you sell detergent here?" },
+      { speaker: "Attendant", line: "Yes, right here. $1 per box. Do you need change for the machine?" },
+      { speaker: "Customer", line: "Yes, please. Can you break a $20 bill?" },
+      { speaker: "Attendant", line: "Sure. Here are your quarters. The wash cycle takes 30 minutes." },
+      { speaker: "Customer", line: "Thank you! Can I use my phone while I wait?" },
+      { speaker: "Attendant", line: "Of course. There's free Wi-Fi. Password is on the wall." }
+    ],
+    chineseTranslation: [
+      { speaker: "顾客", line: "嗨，洗衣烘干一次多少钱？" },
+      { speaker: "店员", line: "洗2美元，烘1.50美元。机器用25美分硬币。" },
+      { speaker: "顾客", line: "你们这里卖洗衣粉吗？" },
+      { speaker: "店员", line: "有的，就在这里。每盒1美元。您需要换零钱吗？" },
+      { speaker: "顾客", line: "是的，请。能帮我破开20美元吗？" },
+      { speaker: "店员", line: "好的。这是您的25美分硬币。洗衣周期30分钟。" },
+      { speaker: "顾客", line: "谢谢！我等待的时候可以用手机吗？" },
+      { speaker: "店员", line: "当然。这里有免费Wi-Fi。密码在墙上。" }
+    ],
+    usefulExpressions: [
+      { expression: "How much is...?", meaning: "...多少钱？", usage: "询问价格" },
+      { expression: "Do you sell...?", meaning: "你们卖...吗？", usage: "询问是否出售商品" },
+      { expression: "Can you break a...?", meaning: "能帮我破开...吗？", usage: "请求换零钱" },
+      { expression: "Here are your...", meaning: "这是您的...", usage: "给予物品" },
+      { expression: "Free Wi-Fi", meaning: "免费Wi-Fi", usage: "告知免费服务" }
+    ],
+    grammarFocus: [
+      {
+        title: "Questions with 'How much'",
+        explanation: "用 'How much...?' 询问价格。",
+        examples: [
+          "How much is a wash?",
+          "How much is detergent?",
+          "How much change do you need?"
+        ]
+      },
+      {
+        title: "Polite Requests with 'Can you'",
+        explanation: "用 'Can you...?' 礼貌请求帮助。",
+        examples: [
+          "Can you break a $20 bill?",
+          "Can you show me how to use it?",
+          "Can I use your phone?"
+        ]
+      }
+    ],
+    collocationsAndChunks: [
+      { chunk: "Wash and dry", meaning: "洗衣烘干", example: "I need a wash and dry cycle." },
+      { chunk: "Break a bill", meaning: "破开钱", example: "Can you break a $20 bill?" },
+      { chunk: "Free Wi-Fi", meaning: "免费Wi-Fi", example: "There's free Wi-Fi here." }
+    ],
+    pronunciationTips: [
+      { tip: "Detergent → /dɪˈtɜːrdʒənt/", example: "Stress on second syllable" },
+      { tip: "Quarters → /ˈkwɔːrtərz/", example: "Stress on first syllable" }
+    ],
+    commonMistakes: [
+      {
+        mistake: "'How much are a wash and dry?'",
+        correction: "'How much is a wash and dry cycle?'",
+        explanation: "把整个服务看作一个整体，用单数 'is'。"
+      }
+    ],
+    rolePlayPractice: [
+      {
+        scenario: "You need to wash your clothes at a laundromat. Ask about prices, buy detergent, get change, and ask about Wi-Fi.",
+        prompts: [
+          "Ask about wash and dry prices",
+          "Ask if they sell detergent",
+          "Get change for the machine",
+          "Ask about Wi-Fi",
+          "Thank them"
+        ]
+      }
+    ],
+    vocabularyExpansion: [
+      {
+        word: "Cycle",
+        synonyms: ["Session", "Round"],
+        antonyms: [],
+        example: "The wash cycle takes 30 minutes."
+      },
+      {
+        word: "Change",
+        synonyms: ["Coins", "Small bills"],
+        antonyms: [],
+        example: "Do you have change for the machine?"
+      }
+    ],
+    shadowingPractice: [
+      "Hi, how much is a wash and dry cycle?",
+      "Do you sell detergent here?",
+      "Can you break a $20 bill?",
+      "The wash cycle takes 30 minutes.",
+      "There's free Wi-Fi. Password is on the wall."
+    ],
+    speakingChallenge: {
+      instruction: "Practice at a laundromat: ask prices, buy detergent, get change, and ask about amenities. Use 'How much', 'Do you sell', and 'Can you'.",
+      hints: [
+        "Ask about wash and dry prices",
+        "Buy detergent if needed",
+        "Get change for quarters",
+        "Ask about Wi-Fi or seating"
+      ]
+    }
+  },
+  {
+    id: "pet-store",
+    title: "At the Pet Store",
+    emoji: "🐾",
+    description: "Buying pet food, asking about pets, and talking to pet store staff.",
+    color: "from-orange-400 to-amber-400",
+    level: "A1",
+    estimatedTime: "10 min",
+    vocabularyPreview: [
+      { word: "Pet", phonetic: "/pet/", chinese: "宠物", partOfSpeech: "noun" },
+      { word: "Dog food", phonetic: "/dɒɡ fuːd/", chinese: "狗粮", partOfSpeech: "noun" },
+      { word: "Cat food", phonetic: "/kæt fuːd/", chinese: "猫粮", partOfSpeech: "noun" },
+      { word: "Leash", phonetic: "/liːʃ/", chinese: "牵引绳", partOfSpeech: "noun" },
+      { word: "Cage", phonetic: "/keɪdʒ/", chinese: "笼子", partOfSpeech: "noun" },
+      { word: "Toy", phonetic: "/tɔɪ/", chinese: "玩具", partOfSpeech: "noun" }
+    ],
+    conversation: [
+      { speaker: "Customer", line: "Hi, I'm looking for dog food for a small puppy." },
+      { speaker: "Staff", line: "Sure! What brand do you usually buy?" },
+      { speaker: "Customer", line: "I'm not sure. This is my first puppy." },
+      { speaker: "Staff", line: "No problem! I recommend this one. It's good for puppies." },
+      { speaker: "Customer", line: "Great. Do you have any toys for small dogs?" },
+      { speaker: "Staff", line: "Yes, right here. Also, don't forget a leash and a collar." },
+      { speaker: "Customer", line: "Perfect. How much is everything together?" },
+      { speaker: "Staff", line: "That'll be $35. Would you like a bag?" },
+      { speaker: "Customer", line: "Yes, please. Thank you for your help!" }
+    ],
+    chineseTranslation: [
+      { speaker: "顾客", line: "嗨，我想找小狗的狗粮。" },
+      { speaker: "店员", line: "好的！您通常买什么品牌？" },
+      { speaker: "顾客", line: "我不确定。这是我第一次养小狗。" },
+      { speaker: "店员", line: "没问题！我推荐这款。它适合小狗。" },
+      { speaker: "顾客", line: "太好了。你们有小狗的玩具吗？" },
+      { speaker: "店员", line: "有的，在这里。还有，别忘了牵引绳和项圈。" },
+      { speaker: "顾客", line: "完美。总共多少钱？" },
+      { speaker: "店员", line: "总共35美元。您需要袋子吗？" },
+      { speaker: "顾客", line: "好的，谢谢。非常感谢你的帮助！" }
+    ],
+    usefulExpressions: [
+      { expression: "I'm looking for...", meaning: "我在找...", usage: "在商店寻找商品" },
+      { expression: "What brand...?", meaning: "什么品牌...？", usage: "询问品牌" },
+      { expression: "I recommend...", meaning: "我推荐...", usage: "店员推荐商品" },
+      { expression: "Don't forget...", meaning: "别忘了...", usage: "提醒顾客" },
+      { expression: "That'll be...", meaning: "总共...", usage: "告知总价" }
+    ],
+    grammarFocus: [
+      {
+        title: "Present Continuous for Current Actions",
+        explanation: "用现在进行时表示当前正在进行的动作。",
+        examples: [
+          "I'm looking for dog food.",
+          "I'm buying a gift.",
+          "What are you looking for?"
+        ]
+      },
+      {
+        title: "Imperative for Suggestions",
+        explanation: "用祈使句给出建议。",
+        examples: [
+          "Don't forget a leash.",
+          "Try this one.",
+          "Take this coupon."
+        ]
+      }
+    ],
+    collocationsAndChunks: [
+      { chunk: "I'm looking for", meaning: "我在找", example: "I'm looking for dog food." },
+      { chunk: "Don't forget", meaning: "别忘了", example: "Don't forget a leash." },
+      { chunk: "That'll be", meaning: "总共", example: "That'll be $35." }
+    ],
+    pronunciationTips: [
+      { tip: "Puppy → /ˈpʌpi/", example: "Stress on first syllable" },
+      { tip: "Leash → /liːʃ/", example: "Long 'e' sound" }
+    ],
+    commonMistakes: [
+      {
+        mistake: "'I look for dog food' 用一般现在时",
+        correction: "用现在进行时 'I'm looking for...' 表示当前正在寻找",
+        explanation: "表示当前的动作通常用现在进行时。"
+      }
+    ],
+    rolePlayPractice: [
+      {
+        scenario: "You just got a new puppy and need supplies. Go to the pet store, ask for food recommendations, and buy a toy and leash.",
+        prompts: [
+          "Enter and greet the staff",
+          "Say you need puppy food",
+          "Ask for recommendations",
+          "Choose a toy and leash",
+          "Pay and say thank you"
+        ]
+      }
+    ],
+    vocabularyExpansion: [
+      {
+        word: "Puppy",
+        synonyms: ["Young dog", "Pup"],
+        antonyms: [],
+        example: "The puppy is very cute."
+      },
+      {
+        word: "Collar",
+        synonyms: ["Neck band", "Leash attachment"],
+        antonyms: [],
+        example: "Don't forget a collar for your dog."
+      }
+    ],
+    shadowingPractice: [
+      "Hi, I'm looking for dog food for a small puppy.",
+      "I'm not sure. This is my first puppy.",
+      "I recommend this one. It's good for puppies.",
+      "Don't forget a leash and a collar.",
+      "That'll be $35. Would you like a bag?"
+    ],
+    speakingChallenge: {
+      instruction: "Practice buying supplies for a new pet. Use 'I'm looking for', 'I recommend', and 'Don't forget'. Include food, toys, and accessories.",
+      hints: [
+        "Start with 'I'm looking for'",
+        "Ask for recommendations",
+        "Choose items",
+        "Ask about price",
+        "Say thank you"
+      ]
+    }
+  },
+  {
+    id: "library-visit",
+    title: "At the Library",
+    emoji: "📚",
+    description: "Finding books, asking for help, and using library services.",
+    color: "from-indigo-400 to-purple-400",
+    level: "A1",
+    estimatedTime: "10 min",
+    vocabularyPreview: [
+      { word: "Library", phonetic: "/ˈlaɪbreri/", chinese: "图书馆", partOfSpeech: "noun" },
+      { word: "Book", phonetic: "/bʊk/", chinese: "书", partOfSpeech: "noun" },
+      { word: "Membership", phonetic: "/ˈmembərʃɪp/", chinese: "会员证", partOfSpeech: "noun" },
+      { word: "Borrow", phonetic: "/ˈbɒroʊ/", chinese: "借阅", partOfSpeech: "verb" },
+      { word: "Return", phonetic: "/rɪˈtɜːrn/", chinese: "归还", partOfSpeech: "verb" },
+      { word: "Fine", phonetic: "/faɪn/", chinese: "罚款", partOfSpeech: "noun" }
+    ],
+    conversation: [
+      { speaker: "Visitor", line: "Hi, I'd like to borrow a book about gardening." },
+      { speaker: "Librarian", line: "Sure! Do you have a library card?" },
+      { speaker: "Visitor", line: "No, I don't. How do I get one?" },
+      { speaker: "Librarian", line: "I just need your ID and address. It's free." },
+      { speaker: "Visitor", line: "Here you go. How many books can I borrow?" },
+      { speaker: "Librarian", line: "You can borrow up to 5 books for 3 weeks." },
+      { speaker: "Visitor", line: "Great! And what time do you close?" },
+      { speaker: "Librarian", line: "We close at 8 PM on weekdays and 5 PM on weekends." }
+    ],
+    chineseTranslation: [
+      { speaker: "访客", line: "嗨，我想借一本关于园艺的书。" },
+      { speaker: "图书管理员", line: "好的！您有借书证吗？" },
+      { speaker: "访客", line: "没有。我要怎么办理？" },
+      { speaker: "图书管理员", line: "我只需要您的身份证和地址。免费的。" },
+      { speaker: "访客", line: "给你。我能借多少本书？" },
+      { speaker: "图书管理员", line: "您最多可以借5本，为期3周。" },
+      { speaker: "访客", line: "太好了！你们几点关门？" },
+      { speaker: "图书管理员", line: "工作日晚上8点关门，周末下午5点。" }
+    ],
+    usefulExpressions: [
+      { expression: "I'd like to borrow...", meaning: "我想借...", usage: "在图书馆借书" },
+      { expression: "Do you have a...?", meaning: "您有...吗？", usage: "询问证件" },
+      { expression: "How many...?", meaning: "多少...？", usage: "询问数量" },
+      { expression: "Up to...", meaning: "最多...", usage: "表示上限" },
+      { expression: "Here you go", meaning: "给你", usage: "递东西时" }
+    ],
+    grammarFocus: [
+      {
+        title: "Modal Verbs for Permission",
+        explanation: "用 'Can I...?' 或 'Could I...?' 礼貌请求许可。",
+        examples: [
+          "Can I borrow this book?",
+          "Could I use the computer?",
+          "Can I renew my books?"
+        ]
+      },
+      {
+        title: "Present Simple for Schedules",
+        explanation: "用一般现在时描述固定安排。",
+        examples: [
+          "The library closes at 8 PM.",
+          "The bus arrives at 9.",
+          "The movie starts at 7."
+        ]
+      }
+    ],
+    collocationsAndChunks: [
+      { chunk: "I'd like to borrow", meaning: "我想借", example: "I'd like to borrow a book." },
+      { chunk: "Library card", meaning: "借书证", example: "Do you have a library card?" },
+      { chunk: "Up to 5 books", meaning: "最多5本", example: "You can borrow up to 5 books." }
+    ],
+    pronunciationTips: [
+      { tip: "Library → /ˈlaɪbreri/", example: "Stress on first syllable" },
+      { tip: "Borrow → /ˈbɒroʊ/", example: "Stress on first syllable" }
+    ],
+    commonMistakes: [
+      {
+        mistake: "'I want to borrow a book' 直接表达需求",
+        correction: "更礼貌的说法是 'I'd like to borrow...'",
+        explanation: "在图书馆等服务场所用更礼貌的表达。"
+      }
+    ],
+    rolePlayPractice: [
+      {
+        scenario: "You go to the library to borrow books. Get a membership card, find a book, ask about borrowing limits, and check the closing time.",
+        prompts: [
+          "Ask about getting a library card",
+          "Provide your information",
+          "Ask what books you can borrow",
+          "Find a book on your topic",
+          "Ask about closing time"
+        ]
+      }
+    ],
+    vocabularyExpansion: [
+      {
+        word: "Membership",
+        synonyms: ["Enrollment", "Registration"],
+        antonyms: [],
+        example: "Library membership is free."
+      },
+      {
+        word: "Renew",
+        synonyms: ["Extend", "Prolong"],
+        antonyms: [],
+        example: "Can I renew my books online?"
+      }
+    ],
+    shadowingPractice: [
+      "Hi, I'd like to borrow a book about gardening.",
+      "Do you have a library card?",
+      "I just need your ID and address. It's free.",
+      "You can borrow up to 5 books for 3 weeks.",
+      "We close at 8 PM on weekdays."
+    ],
+    speakingChallenge: {
+      instruction: "Practice visiting a library: get a card, borrow books, ask about due dates, and check hours. Use 'I'd like to', 'Do you have', and 'How many'.",
+      hints: [
+        "Start with 'Hi, I'd like to borrow...'",
+        "Get a library card if needed",
+        "Ask about borrowing limits",
+        "Check when books are due",
+        "Ask about closing time"
+      ]
+    }
   }
 ];
