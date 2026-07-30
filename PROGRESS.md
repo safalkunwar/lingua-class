@@ -59,7 +59,7 @@
 - **Data:** `data/conversations.ts`
 - **Types:** `types/conversations.ts`
 - **Pages:** `app/conversations/page.tsx`, `app/conversations/[id]/page.tsx`
-- **Status:** Production ready — 20 topics
+- **Status:** Production ready — 25 topics
 
 **Topics included:**
 1. Meeting Someone for the First Time (A2, 15 min)
@@ -83,6 +83,9 @@
 19. At the Bank (A1, 12 min)
 20. Visiting a Doctor (A1, 12 min)
 21. Making Appointments (A1, 10 min)
+22. At the Hotel (A1, 12 min)
+23. At the Post Office (A1, 10 min)
+24. At the Gym (A1, 10 min)
 
 **Each topic includes:**
 - Vocabulary Preview

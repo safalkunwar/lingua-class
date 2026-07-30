@@ -2619,5 +2619,380 @@ export const conversations: ConversationTopic[] = [
         "Thank them politely"
       ]
     }
+  },
+  {
+    id: "hotel-checkin",
+    title: "At the Hotel",
+    emoji: "🏨",
+    description: "Checking in, asking about amenities, and checking out at a hotel.",
+    color: "from-blue-400 to-indigo-400",
+    level: "A1",
+    estimatedTime: "12 min",
+    vocabularyPreview: [
+      { word: "Reservation", phonetic: "/ˌrezərˈveɪʃn/", chinese: "预订", partOfSpeech: "noun" },
+      { word: "Check in", phonetic: "/tʃek ɪn/", chinese: "办理入住", partOfSpeech: "phrase" },
+      { word: "Room", phonetic: "/ruːm/", chinese: "房间", partOfSpeech: "noun" },
+      { word: "Key", phonetic: "/kiː/", chinese: "钥匙/房卡", partOfSpeech: "noun" },
+      { word: "Breakfast", phonetic: "/ˈbrekfəst/", chinese: "早餐", partOfSpeech: "noun" },
+      { word: "Check out", phonetic: "/tʃek aʊt/", chinese: "办理退房", partOfSpeech: "phrase" }
+    ],
+    conversation: [
+      { speaker: "Receptionist", line: "Good afternoon! Welcome to the Grand Hotel. Do you have a reservation?" },
+      { speaker: "Guest", line: "Yes, under the name Thompson. I booked a double room for three nights." },
+      { speaker: "Receptionist", line: "Let me check... Yes, here it is. Could I see your ID and credit card, please?" },
+      { speaker: "Guest", line: "Sure, here you go." },
+      { speaker: "Receptionist", line: "Thank you. Your room is 305 on the third floor. Breakfast is served from 7 to 10 in the restaurant downstairs." },
+      { speaker: "Guest", line: "Perfect. Is Wi-Fi free?" },
+      { speaker: "Receptionist", line: "Yes, the password is on the back of your key card. Enjoy your stay!" },
+      { speaker: "Guest", line: "Thank you so much!" }
+    ],
+    chineseTranslation: [
+      { speaker: "前台", line: "下午好！欢迎来到格兰德酒店。您有预订吗？" },
+      { speaker: "客人", line: "有的，姓汤普森。我订了一个双人间，住三晚。" },
+      { speaker: "前台", line: "让我查一下... 是的，找到了。请出示您的身份证和信用卡好吗？" },
+      { speaker: "客人", line: "好的，给您。" },
+      { speaker: "前台", line: "谢谢。您的房间是305，在三楼。早餐在7点到10点 downstairs 餐厅供应。" },
+      { speaker: "客人", line: "太好了。Wi-Fi免费吗？" },
+      { speaker: "前台", line: "是的，密码在房卡背面。祝您入住愉快！" },
+      { speaker: "客人", line: "非常感谢！" }
+    ],
+    usefulExpressions: [
+      { expression: "I have a reservation under...", meaning: "我有预订，名字是...", usage: "办理入住时说明预订信息" },
+      { expression: "Could I see your...?", meaning: "能看看您的...吗？", usage: "请求查看证件" },
+      { expression: "Here you go", meaning: "给你", usage: "递东西时" },
+      { expression: "Breakfast is served from...", meaning: "早餐供应时间从...", usage: "告知服务时间" },
+      { expression: "Enjoy your stay", meaning: "祝您入住愉快", usage: "酒店员工常用语" }
+    ],
+    grammarFocus: [
+      {
+        title: "Present Perfect for Recent Actions",
+        explanation: "用现在完成时表示刚刚完成的动作。",
+        examples: [
+          "I have booked a room.",
+          "I have just arrived.",
+          "Has the room been cleaned?"
+        ]
+      },
+      {
+        title: "Prepositions of Place",
+        explanation: "用介词描述位置。",
+        examples: [
+          "The room is on the third floor.",
+          "The restaurant is downstairs.",
+          "The elevator is next to the lobby."
+        ]
+      }
+    ],
+    collocationsAndChunks: [
+      { chunk: "Have a reservation", meaning: "有预订", example: "I have a reservation under Smith." },
+      { chunk: "Check in", meaning: "办理入住", example: "What time is check-in?" },
+      { chunk: "Check out", meaning: "办理退房", example: "Check-out time is 11 AM." }
+    ],
+    pronunciationTips: [
+      { tip: "Reservation → /ˌrezərˈveɪʃn/", example: "Four syllables, stress on 'vey'" },
+      { tip: "Here you go → /hɪr ju ɡoʊ/", example: "Fast, natural speech" }
+    ],
+    commonMistakes: [
+      {
+        mistake: "'I check in' instead of 'I'd like to check in'",
+        correction: "更礼貌的说法是 'I'd like to check in, please'",
+        explanation: "办理入住时通常用更礼貌的表达。"
+      }
+    ],
+    rolePlayPractice: [
+      {
+        scenario: "You arrive at a hotel for a 3-night stay. Check in, ask about breakfast time, Wi-Fi, and the room location.",
+        prompts: [
+          "Tell them you have a reservation",
+          "Provide your name and ID",
+          "Ask about breakfast and Wi-Fi",
+          "Thank them and go to your room"
+        ]
+      }
+    ],
+    vocabularyExpansion: [
+      {
+        word: "Lobby",
+        synonyms: ["Reception", "Entrance hall"],
+        antonyms: [],
+        example: "I'll meet you in the lobby."
+      },
+      {
+        word: "Amenity",
+        synonyms: ["Facility", "Service"],
+        antonyms: [],
+        example: "The hotel has many amenities."
+      }
+    ],
+    shadowingPractice: [
+      "Do you have a reservation?",
+      "Yes, under the name Thompson.",
+      "Your room is 305 on the third floor.",
+      "Breakfast is served from 7 to 10.",
+      "Enjoy your stay!"
+    ],
+    speakingChallenge: {
+      instruction: "Practice checking into a hotel for a 2-night stay. Use 'I have a reservation', ask about breakfast, Wi-Fi, and checkout time.",
+      hints: [
+        "State your reservation name",
+        "Show your ID",
+        "Ask about amenities",
+        "Confirm your room number"
+      ]
+    }
+  },
+  {
+    id: "post-office",
+    title: "At the Post Office",
+    emoji: "📮",
+    description: "Sending letters and packages, buying stamps, and mailing items.",
+    color: "from-red-400 to-pink-400",
+    level: "A1",
+    estimatedTime: "10 min",
+    vocabularyPreview: [
+      { word: "Stamp", phonetic: "/stæmp/", chinese: "邮票", partOfSpeech: "noun" },
+      { word: "Envelope", phonetic: "/ˈenvəloʊp/", chinese: "信封", partOfSpeech: "noun" },
+      { word: "Package", phonetic: "/ˈpækɪdʒ/", chinese: "包裹", partOfSpeech: "noun" },
+      { word: "Mail", phonetic: "/meɪl/", chinese: "邮寄", partOfSpeech: "verb / noun" },
+      { word: "Delivery", phonetic: "/dɪˈlɪvəri/", chinese: "派送", partOfSpeech: "noun" },
+      { word: "Address", phonetic: "/əˈdres/", chinese: "地址", partOfSpeech: "noun" }
+    ],
+    conversation: [
+      { speaker: "Customer", line: "Hello, I'd like to mail this package, please." },
+      { speaker: "Clerk", line: "Sure. Where are you sending it?" },
+      { speaker: "Customer", line: "To Japan. It's a gift for my friend." },
+      { speaker: "Clerk", line: "Okay. Is it a regular or express delivery?" },
+      { speaker: "Customer", line: "How much is express delivery?" },
+      { speaker: "Clerk", line: "Express is $25 for 3-5 days. Regular is $10 for 2 weeks." },
+      { speaker: "Customer", line: "I'll take regular delivery, please. Can I also buy some stamps?" },
+      { speaker: "Clerk", line: "Of course. How many stamps do you need?" },
+      { speaker: "Customer", line: "10, please. And can you write the address on it for me?" },
+      { speaker: "Clerk", line: "Sure. Here is your receipt." },
+      { speaker: "Customer", line: "Thank you very much!" }
+    ],
+    chineseTranslation: [
+      { speaker: "顾客", line: "您好，我想寄这个包裹。" },
+      { speaker: "店员", line: "好的。您寄到哪里？" },
+      { speaker: "顾客", line: "寄到日本。这是给我朋友的礼物。" },
+      { speaker: "店员", line: "好的。是普通寄送还是快递？" },
+      { speaker: "顾客", line: "快递多少钱？" },
+      { speaker: "店员", line: "快递是25美元，3-5天送达。普通是10美元，2周送达。" },
+      { speaker: "顾客", line: "我寄普通快递。我还想买一些邮票。" },
+      { speaker: "店员", line: "当然。您需要多少张邮票？" },
+      { speaker: "顾客", line: "10张。而且能帮我写上地址吗？" },
+      { speaker: "店员", line: "好的。这是您的收据。" },
+      { speaker: "顾客", line: "非常感谢！" }
+    ],
+    usefulExpressions: [
+      { expression: "I'd like to mail...", meaning: "我想寄...", usage: "在邮局寄东西" },
+      { expression: "Regular / Express delivery", meaning: "普通/快递", usage: "选择邮寄方式" },
+      { expression: "How much is...?", meaning: "...多少钱？", usage: "询问价格" },
+      { expression: "Can I buy...?", meaning: "我能买...吗？", usage: "请求购买" },
+      { expression: "Here is your receipt", meaning: "这是您的收据", usage: "给予收据" }
+    ],
+    grammarFocus: [
+      {
+        title: "Questions with 'How much'",
+        explanation: "用 'How much...?' 询问不可数名词的价格或数量。",
+        examples: [
+          "How much is express delivery?",
+          "How much water do you drink?",
+          "How much time do you need?"
+        ]
+      },
+      {
+        title: "Polite Offers with 'Can I'",
+        explanation: "用 'Can I...?' 礼貌地请求帮助或确认。",
+        examples: [
+          "Can I buy stamps here?",
+          "Can I track my package?",
+          "Can I have a receipt?"
+        ]
+      }
+    ],
+    collocationsAndChunks: [
+      { chunk: "Mail a package", meaning: "寄包裹", example: "I'd like to mail this package." },
+      { chunk: "Express delivery", meaning: "快递", example: "How much is express delivery?" },
+      { chunk: "Here is your receipt", meaning: "这是您的收据", example: "Thank you, here is your receipt." }
+    ],
+    pronunciationTips: [
+      { tip: "Package → /ˈpækɪdʒ/", example: "Stress on first syllable" },
+      { tip: "Delivery → /dɪˈlɪvəri/", example: "Stress on second syllable" }
+    ],
+    commonMistakes: [
+      {
+        mistake: "'I want to mail...' 直接表达需求",
+        correction: "更礼貌的说法是 'I'd like to mail...'",
+        explanation: "服务场所通常用更礼貌的表达方式。"
+      }
+    ],
+    rolePlayPractice: [
+      {
+        scenario: "You need to send a birthday gift to your friend in another country. Go to the post office, choose delivery speed, buy stamps, and mail it.",
+        prompts: [
+          "Greet the clerk",
+          "Say what you want to mail",
+          "Choose delivery type",
+          "Buy stamps",
+          "Get a receipt"
+        ]
+      }
+    ],
+    vocabularyExpansion: [
+      {
+        word: "Postage",
+        synonyms: ["Mailing cost", "Shipping fee"],
+        antonyms: [],
+        example: "The postage is $5."
+      },
+      {
+        word: "Tracking",
+        synonyms: ["Monitoring", "Following"],
+        antonyms: [],
+        example: "Can I track my package online?"
+      }
+    ],
+    shadowingPractice: [
+      "Hello, I'd like to mail this package, please.",
+      "Where are you sending it?",
+      "How much is express delivery?",
+      "I'll take regular delivery, please.",
+      "Here is your receipt."
+    ],
+    speakingChallenge: {
+      instruction: "Practice mailing three items: a letter, a postcard, and a package. Use 'I'd like to mail...' and ask about delivery options.",
+      hints: [
+        "Start with 'Hello'",
+        "Say where you're sending it",
+        "Ask about delivery speed",
+        "Buy stamps if needed"
+      ]
+    }
+  },
+  {
+    id: "at-the-gym-beginner",
+    title: "At the Gym",
+    emoji: "🏋️",
+    description: "Asking about gym membership, using equipment, and talking to trainers.",
+    color: "from-green-400 to-emerald-400",
+    level: "A1",
+    estimatedTime: "10 min",
+    vocabularyPreview: [
+      { word: "Membership", phonetic: "/ˈmembərʃɪp/", chinese: "会员资格", partOfSpeech: "noun" },
+      { word: "Trainer", phonetic: "/ˈtreɪnər/", chinese: "教练", partOfSpeech: "noun" },
+      { word: "Treadmill", phonetic: "/ˈtredmɪl/", chinese: "跑步机", partOfSpeech: "noun" },
+      { word: "Weights", phonetic: "/weɪts/", chinese: "哑铃/重物", partOfSpeech: "noun" },
+      { word: "Mat", phonetic: "/mæt/", chinese: "垫子", partOfSpeech: "noun" },
+      { word: "Workout", phonetic: "/ˈwɜːrkaʊt/", chinese: "锻炼", partOfSpeech: "noun" }
+    ],
+    conversation: [
+      { speaker: "Member", line: "Hi, I'm interested in a gym membership." },
+      { speaker: "Trainer", line: "Great! We have monthly and yearly plans. Which one do you prefer?" },
+      { speaker: "Member", line: "Can I start with a monthly plan?" },
+      { speaker: "Trainer", line: "Of course. That's $40 per month. Do you need a personal trainer?" },
+      { speaker: "Member", line: "Yes, please. I'm new to working out." },
+      { speaker: "Trainer", line: "No problem! I can show you around. Let's start with a warm-up on the treadmill." },
+      { speaker: "Member", line: "Sounds good. How long should I warm up?" },
+      { speaker: "Trainer", line: "About 10 minutes. Then we'll do some weights. Do you have comfortable shoes?" },
+      { speaker: "Member", line: "Yes, I brought my running shoes." },
+      { speaker: "Trainer", line: "Perfect! Let's get started." }
+    ],
+    chineseTranslation: [
+      { speaker: "会员", line: "嗨，我想了解健身房会员。" },
+      { speaker: "教练", line: "太好了！我们有月度和年度计划。您选哪个？" },
+      { speaker: "会员", line: "我能先从月度计划开始吗？" },
+      { speaker: "教练", line: "当然。月费40美元。您需要私人教练吗？" },
+      { speaker: "会员", line: "是的，请。我是健身新手。" },
+      { speaker: "教练", line: "没问题！我可以带您参观。我们先在跑步机上热身。" },
+      { speaker: "会员", line: "听起来不错。我应该热身多久？" },
+      { speaker: "教练", line: "大约10分钟。然后我们做一些重量训练。您有舒服的鞋子吗？" },
+      { speaker: "会员", line: "有的，我带了跑鞋。" },
+      { speaker: "教练", line: "完美！我们开始吧。" }
+    ],
+    usefulExpressions: [
+      { expression: "I'm interested in...", meaning: "我对...感兴趣", usage: "表达兴趣或询问信息" },
+      { expression: "Can I start with...?", meaning: "我能从...开始吗？", usage: "请求开始方式" },
+      { expression: "I'm new to...", meaning: "我是...新手", usage: "说明经验水平" },
+      { expression: "Show me around", meaning: "带我参观", usage: "请求熟悉环境" },
+      { expression: "Let's get started", meaning: "我们开始吧", usage: "开始活动" }
+    ],
+    grammarFocus: [
+      {
+        title: "Present Continuous for Future Plans",
+        explanation: "用现在进行时表示已安排好的计划。",
+        examples: [
+          "I'm starting with a monthly plan.",
+          "I'm working out tomorrow.",
+          "What are you doing at the gym?"
+        ]
+      },
+      {
+        title: "Modal Verbs for Requests and Offers",
+        explanation: "用 'Can I...?' 和 'Do you need...?' 礼貌询问。",
+        examples: [
+          "Can I start with a monthly plan?",
+          "Do you need a personal trainer?",
+          "Can I use the treadmill?"
+        ]
+      }
+    ],
+    collocationsAndChunks: [
+      { chunk: "Gym membership", meaning: "健身房会员", example: "I'd like a gym membership." },
+      { chunk: "Personal trainer", meaning: "私人教练", example: "Do you have a personal trainer?" },
+      { chunk: "Work out", meaning: "锻炼", example: "I work out three times a week." }
+    ],
+    pronunciationTips: [
+      { tip: "Membership → /ˈmembərʃɪp/", example: "Stress on first syllable" },
+      { tip: "Treadmill → /ˈtredmɪl/", example: "Stress on first syllable" }
+    ],
+    commonMistakes: [
+      {
+        mistake: "'I interest in...'",
+        correction: "正确的是 'I'm interested in...'",
+        explanation: "'Interested' 是形容词，前面需要加 'am'。"
+      }
+    ],
+    rolePlayPractice: [
+      {
+        scenario: "You join a gym for the first time. Talk to the trainer about membership options, ask for a tour, and schedule your first workout.",
+        prompts: [
+          "Express interest in membership",
+          "Choose a plan",
+          "Ask for a trainer",
+          "Get a tour of the gym",
+          "Schedule your first session"
+        ]
+      }
+    ],
+    vocabularyExpansion: [
+      {
+        word: "Membership",
+        synonyms: ["Subscription", "Enrollment"],
+        antonyms: [],
+        example: "A monthly membership is $40."
+      },
+      {
+        word: "Workout",
+        synonyms: ["Exercise", "Training"],
+        antonyms: [],
+        example: "I have a workout every morning."
+      }
+    ],
+    shadowingPractice: [
+      "Hi, I'm interested in a gym membership.",
+      "Can I start with a monthly plan?",
+      "I'm new to working out.",
+      "Let's start with a warm-up on the treadmill.",
+      "Let's get started!"
+    ],
+    speakingChallenge: {
+      instruction: "Practice joining a gym and talking to a trainer. Use 'I'm interested in', 'Can I start with', and 'I'm new to'.",
+      hints: [
+        "Ask about membership plans",
+        "Choose monthly or yearly",
+        "Ask for a trainer if you're new",
+        "Confirm the price"
+      ]
+    }
   }
 ];
