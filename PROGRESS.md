@@ -12,7 +12,7 @@
 - **Status:** Production ready
 
 **Features:**
-- 160 words across 30 topics
+- 160 words across 28 topics
 - C1 Professional Skills (6 words)
 - C2 Advanced Communication (6 words)
 - Level filters updated to support A1, A2, B1, B2, C1, C2
