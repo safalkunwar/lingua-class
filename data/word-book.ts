@@ -863,7 +863,91 @@ export const wordBook: WordBookTopic[] = [
         synonyms: ["gathering", "celebration"], antonyms: [],
         commonMistakes: [{ mistake: "Using 'party' only for nightlife", correction: "It can be any celebration, including family parties." }],
         pronunciationTips: "Stress the first syllable: PAR-tee.",
-        memoryTrick: "Party = 派对. Par = 派, ty = 队. A team for celebration."
+         memoryTrick: "Party = 派对. Par = 派, ty = 队. A team for celebration."
+      },
+      {
+        id: "fr-5", topic: "Friends", level: "A2", category: "Social",
+        english: "Conversation", word: "conversation", partOfSpeech: "noun",
+        breakdown: "kon-ver-SAY-shun", chinese: "对话", pinyin: "duì huà",
+        emoji: "💬", imageKeyword: "people talking",
+        definitionEn: "An informal talk between two or more people.",
+        definitionZh: "两个人或更多人之间的非正式交谈。",
+        detailsEn: "Common: have a conversation, start a conversation, casual conversation.",
+        detailsZh: "常见：have a conversation、start a conversation、casual conversation。",
+        exampleEn: "We had a great conversation.",
+        exampleZh: "我们聊得很开心。",
+        examples: [
+          { en: "The conversation turned to travel.", zh: "对话转到了旅行。" },
+          { en: "She started a conversation with me.", zh: "她和我开始聊天。" }
+        ],
+        collocations: ["have conversation", "start conversation", "casual conversation", "conversation with"],
+        synonyms: ["chat", "talk", "discussion"], antonyms: ["silence"],
+        commonMistakes: [{ mistake: "Using 'conversation' as a verb", correction: "Use 'have a conversation' or 'talk to someone'." }],
+        pronunciationTips: "Stress the third syllable: kon-ver-SAY-shun.",
+        memoryTrick: "Conversa = turn together. Talking back and forth."
+      },
+      {
+        id: "fr-6", topic: "Friends", level: "A1", category: "Social",
+        english: "Chat", word: "chat", partOfSpeech: "noun / verb",
+        breakdown: "chat", chinese: "闲聊", pinyin: "xián liáo",
+        emoji: "💭", imageKeyword: "casual chat",
+        definitionEn: "A friendly, informal conversation.",
+        definitionZh: "友好、非正式的交谈。",
+        detailsEn: "Common: have a chat, chat with friends, quick chat.",
+        detailsZh: "常见：have a chat、chat with friends、quick chat。",
+        exampleEn: "We had a quick chat.",
+        exampleZh: "我们 quick chat 了一下。",
+        examples: [
+          { en: "I chatted with my neighbor.", zh: "我和邻居聊了聊。" },
+          { en: "Let us have a chat.", zh: "我们聊聊吧。" }
+        ],
+        collocations: ["have chat", "chat with", "quick chat", "chat about"],
+        synonyms: ["talk", "conversation", "gossip"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'chat' for formal meetings", correction: "Chat is informal; use 'meeting' for formal settings." }],
+        pronunciationTips: "One syllable: chat. Like 'cat' with 'ch'.",
+        memoryTrick: "Chat = 聊天. Friendly talk, like a cat purring."
+      },
+      {
+        id: "fr-7", topic: "Friends", level: "B1", category: "Relationships",
+        english: "Friendship", word: "friendship", partOfSpeech: "noun",
+        breakdown: "FREND-ship", chinese: "友谊", pinyin: "yǒu yì",
+        emoji: "🤝", imageKeyword: "friendship bond",
+        definitionEn: "The state of being friends with someone.",
+        definitionZh: "与某人成为朋友的状态。",
+        detailsEn: "Common: build friendship, strong friendship, lifelong friendship.",
+        detailsZh: "常见：build friendship、strong friendship、lifelong friendship。",
+        exampleEn: "Their friendship is strong.",
+        exampleZh: "他们的友谊很深厚。",
+        examples: [
+          { en: "Friendship takes time to build.", zh: "友谊需要时间培养。" },
+          { en: "She values friendship highly.", zh: "她高度重视友谊。" }
+        ],
+        collocations: ["build friendship", "strong friendship", "lifelong friendship", "friendship with"],
+        synonyms: ["companionship", "relationship"], antonyms: ["enmity"],
+        commonMistakes: [{ mistake: "Using 'friend' as a noun for the concept", correction: "'Friendship' is the noun for the relationship." }],
+        pronunciationTips: "Stress the first syllable: FREND-ship.",
+        memoryTrick: "Friend + ship. The ship that carries friends together."
+      },
+      {
+        id: "fr-8", topic: "Friends", level: "A2", category: "Social",
+        english: "Neighbor", word: "neighbor", partOfSpeech: "noun",
+        breakdown: "NAY-ber", chinese: "邻居", pinyin: "lín jū",
+        emoji: "🏘️", imageKeyword: "neighbor house",
+        definitionEn: "A person who lives near you.",
+        definitionZh: "住在你附近的人。",
+        detailsEn: "Common: next-door neighbor, friendly neighbor, neighborly.",
+        detailsZh: "常见：next-door neighbor、friendly neighbor、neighborly。",
+        exampleEn: "My neighbor is very kind.",
+        exampleZh: "我的邻居很友善。",
+        examples: [
+          { en: "We borrowed sugar from our neighbor.", zh: "我们向邻居借了糖。" },
+          { en: "The neighbor helped with the package.", zh: "邻居帮忙拿了包裹。" }
+        ],
+        collocations: ["next-door neighbor", "friendly neighbor", "neighborly", "neighbor neighborhood"],
+        synonyms: ["resident", "local"], antonyms: [],
+        commonMistakes: [{ mistake: "'Neighbour' spelling", correction: "American English: neighbor. British: neighbour." }],
+        pronunciationTips: "Stress the first syllable: NAY-ber.",
+        memoryTrick: "Neigh = near, bor = bear. A near-by resident."
       }
     ]
   },
@@ -1185,7 +1269,91 @@ export const wordBook: WordBookTopic[] = [
         synonyms: ["hypothesis", "idea"], antonyms: ["practice", "fact"],
         commonMistakes: [{ mistake: "Confusing theory with hypothesis", correction: "A theory is broader and usually tested; a hypothesis is a proposed explanation." }],
         pronunciationTips: "Three syllables: THEE-uh-ree. Stress first.",
-        memoryTrick: "Theory = 理论. Theo (神) + ry (人) = god-level idea."
+         memoryTrick: "Theory = 理论. Theo (神) + ry (人) = god-level idea."
+      },
+      {
+        id: "ed-5", topic: "Education", level: "A2", category: "Academic",
+        english: "Teacher", word: "teacher", partOfSpeech: "noun",
+        breakdown: "TEE-cher", chinese: "老师", pinyin: "lǎo shī",
+        emoji: "👩‍🏫", imageKeyword: "teacher classroom",
+        definitionEn: "A person who teaches students.",
+        definitionZh: "教学生的人。",
+        detailsEn: "Common: English teacher, history teacher, favorite teacher.",
+        detailsZh: "常见：English teacher、history teacher、favorite teacher。",
+        exampleEn: "She is my math teacher.",
+        exampleZh: "她是我的数学老师。",
+        examples: [
+          { en: "Who is your favorite teacher?", zh: "你最喜欢的老师是谁？" },
+          { en: "The teacher explained it well.", zh: "老师解释得很好。" }
+        ],
+        collocations: ["English teacher", "classroom teacher", "music teacher", "science teacher"],
+        synonyms: ["instructor", "educator"], antonyms: ["student"],
+        commonMistakes: [{ mistake: "Using 'teach' for people", correction: "'Teacher' is the person; 'teach' is the action." }],
+        pronunciationTips: "Stress the first syllable: TEE-cher.",
+        memoryTrick: "Teach + er. One who teaches."
+      },
+      {
+        id: "ed-6", topic: "Education", level: "A1", category: "Academic",
+        english: "Student", word: "student", partOfSpeech: "noun",
+        breakdown: "STOO-dent", chinese: "学生", pinyin: "xué shēng",
+        emoji: "🎒", imageKeyword: "student studying",
+        definitionEn: "A person who is studying at a school or university.",
+        definitionZh: "在学校或大学学习的人。",
+        detailsEn: "Common: university student, student life, international student.",
+        detailsZh: "常见：university student、student life、international student。",
+        exampleEn: "I am a university student.",
+        exampleZh: "我是大学生。",
+        examples: [
+          { en: "She is a straight-A student.", zh: "她是优等生。" },
+          { en: "The students are listening.", zh: "学生们在听讲。" }
+        ],
+        collocations: ["university student", "international student", "student life", "medical student"],
+        synonyms: ["learner", "pupil"], antonyms: ["teacher"],
+        commonMistakes: [{ mistake: "Using 'pupil' for all learners", correction: "'Student' is general; 'pupil' is often for younger learners." }],
+        pronunciationTips: "Stress the first syllable: STOO-dent.",
+        memoryTrick: "Study + ent. One who studies."
+      },
+      {
+        id: "ed-7", topic: "Education", level: "B1", category: "Academic",
+        english: "Knowledge", word: "knowledge", partOfSpeech: "noun",
+        breakdown: "NOL-ij", chinese: "知识", pinyin: "zhī shi",
+        emoji: "📚", imageKeyword: "knowledge books",
+        definitionEn: "Information and skills acquired through experience or education.",
+        definitionZh: "通过经验或教育获得的信息和技能。",
+        detailsEn: "Common: general knowledge, subject knowledge, advance knowledge.",
+        detailsZh: "常见：general knowledge、subject knowledge、advance knowledge。",
+        exampleEn: "Knowledge is power.",
+        exampleZh: "知识就是力量。",
+        examples: [
+          { en: "He has deep knowledge of AI.", zh: "他对AI有深入了解。" },
+          { en: "Books increase knowledge.", zh: "书籍增长知识。" }
+        ],
+        collocations: ["general knowledge", "subject knowledge", "advance knowledge", "practical knowledge"],
+        synonyms: ["understanding", "wisdom"], antonyms: ["ignorance"],
+        commonMistakes: [{ mistake: "Using 'knowledgements'", correction: "The noun is 'knowledge'; 'knowledgements' is incorrect." }],
+        pronunciationTips: "Stress the first syllable: NOL-ij.",
+        memoryTrick: "Know + ledge. What you know sits on the ledge of your mind."
+      },
+      {
+        id: "ed-8", topic: "Education", level: "B1", category: "Academic",
+        english: "Lecture", word: "lecture", partOfSpeech: "noun / verb",
+        breakdown: "LEK-cher", chinese: "讲座", pinyin: "jiǎng zuò",
+        emoji: "🎓", imageKeyword: "university lecture",
+        definitionEn: "A formal educational talk or speech.",
+        definitionZh: "正式的教育性讲话。",
+        detailsEn: "Common: attend a lecture, lecture hall, give a lecture.",
+        detailsZh: "常见：attend a lecture、lecture hall、give a lecture。",
+        exampleEn: "The lecture starts at 9.",
+        exampleZh: "讲座9点开始。",
+        examples: [
+          { en: "I missed the first lecture.", zh: "我错过了第一堂课。" },
+          { en: "He lectures on economics.", zh: "他讲经济学。" }
+        ],
+        collocations: ["attend lecture", "lecture hall", "give lecture", "guest lecture"],
+        synonyms: ["seminar", "talk", "class"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'lesson' for university talks", correction: "'Lecture' is for formal academic talks." }],
+        pronunciationTips: "Stress the first syllable: LEK-cher.",
+        memoryTrick: "Lect + ure. A talk for learning."
       }
     ]
   },
@@ -1278,7 +1446,91 @@ export const wordBook: WordBookTopic[] = [
         synonyms: ["drug", "treatment", "medication"], antonyms: [],
         commonMistakes: [{ mistake: "Using 'medication' for every drug", correction: "'Medicine' is general; 'medication' is more clinical." }],
         pronunciationTips: "Stress the first syllable: MED-i-sin. Three syllables.",
-        memoryTrick: "Medicine = med + icine. Med = medical, icine sounds like 药."
+         memoryTrick: "Medicine = med + icine. Med = medical, icine sounds like 药."
+      },
+      {
+        id: "hl-5", topic: "Health", level: "A2", category: "Medical",
+        english: "Doctor", word: "doctor", partOfSpeech: "noun",
+        breakdown: "DOK-ter", chinese: "医生", pinyin: "yī shēng",
+        emoji: "👨‍⚕️", imageKeyword: "doctor medical",
+        definitionEn: "A person who treats sick people.",
+        definitionZh: "治疗病人的人。",
+        detailsEn: "Common: see a doctor, family doctor, doctor appointment.",
+        detailsZh: "常见：see a doctor、family doctor、doctor appointment。",
+        exampleEn: "I need to see a doctor.",
+        exampleZh: "我需要看医生。",
+        examples: [
+          { en: "The doctor gave her medicine.", zh: "医生给了她药。" },
+          { en: "Ask the doctor for advice.", zh: "问医生寻求建议。" }
+        ],
+        collocations: ["see doctor", "family doctor", "doctor appointment", "doctor visit"],
+        synonyms: ["physician", "surgeon"], antonyms: ["patient"],
+        commonMistakes: [{ mistake: "Using 'doc' in formal settings", correction: "'Doc' is informal; use 'doctor' in formal contexts." }],
+        pronunciationTips: "Stress the first syllable: DOK-ter.",
+        memoryTrick: "Doctor = 医生. Someone with a doctorate."
+      },
+      {
+        id: "hl-6", topic: "Health", level: "A2", category: "Medical",
+        english: "Hospital", word: "hospital", partOfSpeech: "noun",
+        breakdown: "HOS-pi-tl", chinese: "医院", pinyin: "yī yuàn",
+        emoji: "🏥", imageKeyword: "hospital building",
+        definitionEn: "A place where sick people are treated.",
+        definitionZh: "治疗病人的地方。",
+        detailsEn: "Common: go to hospital, hospital bed, hospital staff.",
+        detailsZh: "常见：go to hospital、hospital bed、hospital staff。",
+        exampleEn: "She went to the hospital.",
+        exampleZh: "她去了医院。",
+        examples: [
+          { en: "He is still in the hospital.", zh: "他还在医院。" },
+          { en: "The hospital is nearby.", zh: "医院在附近。" }
+        ],
+        collocations: ["go to hospital", "hospital bed", "hospital staff", "hospital visit"],
+        synonyms: ["clinic", "medical center"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'hotel' instead of 'hospital'", correction: "'Hospital' is for medical care; 'hotel' is for sleep." }],
+        pronunciationTips: "Stress the first syllable: HOS-pi-tl.",
+        memoryTrick: "Hospit = host + ital. Hosts the ill."
+      },
+      {
+        id: "hl-7", topic: "Health", level: "B1", category: "Medical",
+        english: "Checkup", word: "checkup", partOfSpeech: "noun",
+        breakdown: "CHEK-up", chinese: "体检", pinyin: "tǐ jiǎn",
+        emoji: "🩺", imageKeyword: "medical checkup",
+        definitionEn: "A general medical examination.",
+        definitionZh: "常规医学检查。",
+        detailsEn: "Common: regular checkup, medical checkup, annual checkup.",
+        detailsZh: "常见：regular checkup、medical checkup、annual checkup。",
+        exampleEn: "I go for a checkup every year.",
+        exampleZh: "我每年做一次体检。",
+        examples: [
+          { en: "The checkup showed good health.", zh: "体检显示健康良好。" },
+          { en: "Schedule a checkup with your doctor.", zh: "和医生预约体检。" }
+        ],
+        collocations: ["regular checkup", "medical checkup", "annual checkup", "health checkup"],
+        synonyms: ["examination", "screening"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'check up' as two words for noun", correction: "Use 'checkup' as one word for the noun." }],
+        pronunciationTips: "Stress the first syllable: CHEK-up.",
+        memoryTrick: "Check + up. Check your health status."
+      },
+      {
+        id: "hl-8", topic: "Health", level: "B1", category: "Medical",
+        english: "Symptom", word: "symptom", partOfSpeech: "noun",
+        breakdown: "SIMP-tuhm", chinese: "症状", pinyin: "zhèng zhuàng",
+        emoji: "🤒", imageKeyword: "symptoms signs",
+        definitionEn: "A physical sign of an illness.",
+        definitionZh: "疾病的物理迹象。",
+        detailsEn: "Common: mild symptom, serious symptom, early symptom.",
+        detailsZh: "常见：mild symptom、serious symptom、early symptom。",
+        exampleEn: "Fever is a common symptom.",
+        exampleZh: "发烧是常见症状。",
+        examples: [
+          { en: "What symptoms do you have?", zh: "你有什么症状？" },
+          { en: "The symptoms disappeared.", zh: "症状消失了。" }
+        ],
+        collocations: ["mild symptom", "serious symptom", "early symptom", "symptom of"],
+        synonyms: ["sign", "indication"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'symptom' for feelings only", correction: "It refers to observable or measurable signs of illness." }],
+        pronunciationTips: "Stress the first syllable: SIMP-tuhm.",
+        memoryTrick: "Sym = together, ptom = fall. Signs that fall together from an illness."
       }
     ]
   },
@@ -1374,7 +1626,70 @@ export const wordBook: WordBookTopic[] = [
         comparative: "milder", superlative: "mildest",
         commonMistakes: [{ mistake: "Using 'soft' for weather", correction: "Use 'mild' for weather; 'soft' is for textures or voices." }],
         pronunciationTips: "One syllable: mylehd. Like 'child' with 'm'.",
-        memoryTrick: "Mild = 温和的. Sounds like ‘ma il de’ — mother (妈) is gentle (温和)."
+         memoryTrick: "Mild = 温和的. Sounds like ‘ma il de’ — mother (妈) is gentle (温和)."
+      },
+      {
+        id: "wt-5", topic: "Weather", level: "A2", category: "Conditions",
+        english: "Storm", word: "storm", partOfSpeech: "noun / verb",
+        breakdown: "storm", chinese: "暴风雨", pinyin: "bào fēng yǔ",
+        emoji: "⛈️", imageKeyword: "thunderstorm",
+        definitionEn: "A violent weather event with wind and rain.",
+        definitionZh: "伴有大风和雨的剧烈天气事件。",
+        detailsEn: "Common: thunderstorm, snowstorm, sandstorm, ride out a storm.",
+        detailsZh: "常见：thunderstorm、snowstorm、sandstorm、ride out a storm。",
+        exampleEn: "A storm is coming.",
+        exampleZh: "暴风雨要来了。",
+        examples: [
+          { en: "The storm caused damage.", zh: "暴风雨造成了破坏。" },
+          { en: "We rode out the storm.", zh: "我们挺过了暴风雨。" }
+        ],
+        collocations: ["thunderstorm", "snowstorm", "sandstorm", "brainstorm"],
+        synonyms: ["tempest", "gale"], antonyms: ["calm"],
+        commonMistakes: [{ mistake: "'He stormed out' for weather", correction: "As a verb 'stormed' means anger; noun is the weather event." }],
+        pronunciationTips: "One syllable: storm.",
+        memoryTrick: "Storm = 暴风雨. Violent weather storm."
+      },
+      {
+        id: "wt-6", topic: "Weather", level: "A1", category: "Conditions",
+        english: "Cloudy", word: "cloudy", partOfSpeech: "adjective",
+        breakdown: "KLOUD-ee", chinese: "多云的", pinyin: "duō yún de",
+        emoji: "☁️", imageKeyword: "cloudy sky",
+        definitionEn: "Covered with or characterized by clouds.",
+        definitionZh: "被云覆盖或以云为特征。",
+        detailsEn: "Common: cloudy day, cloudy weather, get cloudy.",
+        detailsZh: "常见：cloudy day、cloudy weather、get cloudy。",
+        exampleEn: "It is cloudy today.",
+        exampleZh: "今天多云。",
+        examples: [
+          { en: "It might turn cloudy later.", zh: "之后可能转阴。" },
+          { en: "Cloudy weather is cool.", zh: "多云天气很凉爽。" }
+        ],
+        collocations: ["cloudy day", "cloudy weather", "turn cloudy", "mostly cloudy"],
+        synonyms: ["overcast", "grey"], antonyms: ["clear", "sunny"],
+        commonMistakes: [{ mistake: "Using 'clouded' for weather", correction: "Use 'cloudy' for weather; 'clouded' is for judgment or minds." }],
+        pronunciationTips: "Stress the first syllable: KLOUD-ee.",
+        memoryTrick: "Cloud + y. Full of clouds."
+      },
+      {
+        id: "wt-7", topic: "Weather", level: "B1", category: "Climate",
+        english: "Forecast", word: "forecast", partOfSpeech: "noun / verb",
+        breakdown: "FOR-cast", chinese: "预报", pinyin: "yù bào",
+        emoji: "📈", imageKeyword: "weather forecast",
+        definitionEn: "A prediction about future weather.",
+        definitionZh: "对未来天气的预测。",
+        detailsEn: "Common: weather forecast, accurate forecast, forecast for tomorrow.",
+        detailsZh: "常见：weather forecast、accurate forecast、forecast for tomorrow。",
+        exampleEn: "Check the forecast before hiking.",
+        exampleZh: "远足前查看天气预报。",
+        examples: [
+          { en: "The forecast was wrong.", zh: "天气预报错了。" },
+          { en: "Forecast calls for sun.", zh: "天气预报说是晴天。" }
+        ],
+        collocations: ["weather forecast", "accurate forecast", "forecast for", "weather prediction"],
+        synonyms: ["prediction", "outlook"], antonyms: [],
+        commonMistakes: [{ mistake: "Using for only weather", correction: "It can predict sales, trends, and more." }],
+        pronunciationTips: "Stress the first syllable: FOR-cast.",
+        memoryTrick: "Fore = forward, cast = project. Project forward = predict."
       }
     ]
   },
@@ -2122,7 +2437,91 @@ export const wordBook: WordBookTopic[] = [
         synonyms: ["lexicon", "word stock"], antonyms: [],
         commonMistakes: [{ mistake: "Using 'vocabulary' for single words", correction: "Vocabulary = 词汇 (collection); word = 单词 (single)." }],
         pronunciationTips: "Five syllables: voh-KAB-yuh-ler-ee. Stress the second.",
-        memoryTrick: "Vocab + ulary. Vocab (词语) + ulary (memory tool) = vocabulary."
+         memoryTrick: "Vocab + ulary. Vocab (词语) + ulary (memory tool) = vocabulary."
+      },
+      {
+        id: "lc-5", topic: "Language", level: "A1", category: "Communication",
+        english: "Hello", word: "hello", partOfSpeech: "noun / interjection",
+        breakdown: "heh-LOH", chinese: "你好", pinyin: "nǐ hǎo",
+        emoji: "👋", imageKeyword: "hello greeting",
+        definitionEn: "A greeting or expression of goodwill.",
+        definitionZh: "问候或良好意愿的表达。",
+        detailsEn: "Common: say hello, hello there, hello everyone.",
+        detailsZh: "常见：say hello、hello there、hello everyone。",
+        exampleEn: "Hello, how are you?",
+        exampleZh: "你好，你好吗？",
+        examples: [
+          { en: "She said hello cheerfully.", zh: "她愉快地问好。" },
+          { en: "Hello from the other side.", zh: "另一边的问候。" }
+        ],
+        collocations: ["say hello", "hello there", "hello everyone", "hello again"],
+        synonyms: ["greeting", "hi"], antonyms: ["goodbye"],
+        commonMistakes: [{ mistake: "Using only in formal settings", correction: "'Hello' is versatile: casual and formal." }],
+        pronunciationTips: "Stress the second syllable: heh-LOH.",
+        memoryTrick: "Hello = 你好. An ancient greeting meaning whole/healthy."
+      },
+      {
+        id: "lc-6", topic: "Language", level: "A2", category: "Communication",
+        english: "Listen", word: "listen", partOfSpeech: "verb",
+        breakdown: "LIS-en", chinese: "听", pinyin: "tīng",
+        emoji: "👂", imageKeyword: "listening person",
+        definitionEn: "To give attention to sound or speech.",
+        definitionZh: "注意听声音或讲话。",
+        detailsEn: "Common: listen to music, listen carefully, listen up.",
+        detailsZh: "常见：listen to music、listen carefully、listen up。",
+        exampleEn: "I listen to podcasts daily.",
+        exampleZh: "我每天听播客。",
+        examples: [
+          { en: "Listen carefully.", zh: "仔细听。" },
+          { en: "She listens well.", zh: "她听得很认真。" }
+        ],
+        collocations: ["listen to", "listen carefully", "listen up", "listen to music"],
+        synonyms: ["hear", "pay attention"], antonyms: ["ignore"],
+        commonMistakes: [{ mistake: "'Listen something'", correction: "'Listen TO something'." }],
+        pronunciationTips: "One syllable: LIS-en.",
+        memoryTrick: "Listen = 听. Implies active attention."
+      },
+      {
+        id: "lc-7", topic: "Language", level: "B1", category: "Writing",
+        english: "Essay", word: "essay", partOfSpeech: "noun",
+        breakdown: "ES-ay", chinese: "文章", pinyin: "wén zhāng",
+        emoji: "📝", imageKeyword: "essay writing",
+        definitionEn: "A short piece of writing on a subject.",
+        definitionZh: "关于某一主题的短文。",
+        detailsEn: "Common: write an essay, argumentative essay, essay topic.",
+        detailsZh: "常见：write an essay、argumentative essay、essay topic。",
+        exampleEn: "I wrote an essay about climate change.",
+        exampleZh: "我写了一篇关于气候变化的文章。",
+        examples: [
+          { en: "Her essay won a prize.", zh: "她的文章获奖了。" },
+          { en: "The essay is 500 words.", zh: "文章500字。" }
+        ],
+        collocations: ["write essay", "argumentative essay", "essay topic", "essay writing"],
+        synonyms: ["article", "composition"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'story' for academic writing", correction: "'Essay' is structured and argumentative; 'story' is narrative." }],
+        pronunciationTips: "Stress the first syllable: ES-ay.",
+        memoryTrick: "Essay = S + say. A written piece that says something."
+      },
+      {
+        id: "lc-8", topic: "Language", level: "B1", category: "Communication",
+        english: "Spelling", word: "spelling", partOfSpeech: "noun",
+        breakdown: "SPEL-ing", chinese: "拼写", pinyin: "pīn xiě",
+        emoji: "✍️", imageKeyword: "spelling words",
+        definitionEn: "The way a word is written.",
+        definitionZh: "单词的书写方式。",
+        detailsEn: "Common: correct spelling, spelling mistake, spelling bee.",
+        detailsZh: "常见：correct spelling、spelling mistake、spelling bee。",
+        exampleEn: "The spelling is tricky.",
+        exampleZh: "这个拼写很棘手。",
+        examples: [
+          { en: "Check the spelling.", zh: "检查拼写。" },
+          { en: "She won the spelling bee.", zh: "她赢得了拼写比赛。" }
+        ],
+        collocations: ["correct spelling", "spelling mistake", "spelling bee", "spelling test"],
+        synonyms: ["orthography"], antonyms: [],
+        commonMistakes: [{ mistake: "'Spelling' as a verb", correction: "Use 'spell' as a verb: 'How do you spell it?'" }],
+        pronunciationTips: "Stress the first syllable: SPEL-ing.",
+        memoryTrick: "Spell + ing. The act of spelling."
       }
     ]
   },
@@ -2215,7 +2614,92 @@ export const wordBook: WordBookTopic[] = [
         synonyms: ["program", "application"], antonyms: ["hardware"],
         commonMistakes: [{ mistake: "Using 'software' for hardware", correction: "Software = 软件 (programs); hardware = 硬件 (physical)." }],
         pronunciationTips: "Two syllables: SORFT-wair. Stress the first.",
-        memoryTrick: "Soft (软的) + ware (ware)。Soft ware = software."
+         memoryTrick: "Soft (软的) + ware (ware)。Soft ware = software."
+      },
+      {
+        id: "st-5", topic: "Science", level: "A2", category: "Technology",
+        english: "Innovation", word: "innovation", partOfSpeech: "noun",
+        breakdown: "in-uh-VAY-shun", chinese: "创新", pinyin: "chuàng xīn",
+        emoji: "💡", imageKeyword: "innovation idea",
+        definitionEn: "A new method, idea, or product.",
+        definitionZh: "新方法、想法或产品。",
+        detailsEn: "Common: technological innovation, drive innovation, innovation hub.",
+        detailsZh: "常见：technological innovation、drive innovation、innovation hub。",
+        exampleEn: "Innovation drives growth.",
+        exampleZh: "创新驱动增长。",
+        examples: [
+          { en: "The company values innovation.", zh: "公司重视创新。" },
+          { en: "She led the innovation team.", zh: "她领导创新团队。" }
+        ],
+        collocations: ["technological innovation", "drive innovation", "innovation hub", "innovation culture"],
+        synonyms: ["invention", "creativity", "novelty"], antonyms: ["tradition"],
+        commonMistakes: [{ mistake: "'Innovation' for small changes", correction: "It implies something significantly new." }],
+        pronunciationTips: "Stress the fourth syllable: in-uh-VAY-shun.",
+        memoryTrick: "In + nova + tion. A new thing that comes in."
+      },
+      {
+        id: "st-6", topic: "Science", level: "A2", category: "Research",
+        english: "Data", word: "data", partOfSpeech: "noun",
+        breakdown: "DAY-tuh", chinese: "数据", pinyin: "shù jù",
+        emoji: "📊", imageKeyword: "data analysis",
+        definitionEn: "Facts and statistics collected for reference.",
+        definitionZh: "收集供参考的事实和统计资料。",
+        detailsEn: "Common: collect data, analyze data, big data.",
+        detailsZh: "常见：collect data、analyze data、big data。",
+        exampleEn: "We need more data.",
+        exampleZh: "我们需要更多数据。",
+        examples: [
+          { en: "The data supports the theory.", zh: "数据支持理论。" },
+          { en: "She analyzed the data.", zh: "她分析了数据。" }
+        ],
+        collocations: ["collect data", "analyze data", "big data", "data analysis"],
+        synonyms: ["information", "statistics", "facts"], antonyms: [],
+        commonMistakes: [{ mistake: "'Data is' in formal writing", correction: "Formal: 'Data are'; informal: 'Data is'." }],
+        pronunciationTips: "Stress the first syllable: DAY-tuh.",
+        memoryTrick: "Data = 数据. Facts you can count."
+      },
+      {
+        id: "st-7", topic: "Science", level: "B1", category: "Research",
+        english: "Research", word: "research", partOfSpeech: "noun / verb",
+        breakdown: "REE-surch", chinese: "研究", pinyin: "yán jiū",
+        emoji: "🔬", imageKeyword: "research lab",
+        definitionEn: "Systematic investigation to establish facts.",
+        definitionZh: "为建立事实而进行的系统性调查。",
+        detailsEn: "Common: conduct research, research paper, research findings.",
+        detailsZh: "常见：conduct research、research paper、research findings。",
+        exampleEn: "She is doing research.",
+        exampleZh: "她正在做研究。",
+        examples: [
+          { en: "The research shows benefits.", zh: "研究显示好处。" },
+          { en: "He published his research.", zh: "他发表了他的研究。" }
+        ],
+        collocations: ["conduct research", "research paper", "research findings", "research method"],
+        synonyms: ["study", "investigation", "analysis"], antonyms: [],
+        commonMistakes: [{ mistake: "'Do a research'", correction: "Use 'conduct research' or 'do research' without 'a'." }],
+        pronunciationTips: "Stress the first syllable: REE-surch.",
+        memoryTrick: "Re + search. Search again systematically."
+      },
+      {
+        id: "st-8", topic: "Science", level: "B1", category: "Technology",
+        english: "Hypothesis", word: "hypothesis", partOfSpeech: "noun",
+        breakdown: "hye-POTH-uh-sis", chinese: "假说", pinyin: "jiǎ shuō",
+        emoji: "🧪", imageKeyword: "scientific hypothesis",
+        definitionEn: "An educated guess before testing.",
+        definitionZh: "测试前的有根据的猜测。",
+        detailsEn: "Common: test a hypothesis, scientific hypothesis, working hypothesis.",
+        detailsZh: "常见：test a hypothesis、scientific hypothesis、working hypothesis。",
+        exampleEn: "The hypothesis was proven wrong.",
+        exampleZh: "假说被证明是错的。",
+        examples: [
+          { en: "She proposed a hypothesis.", zh: "她提出了一个假说。" },
+          { en: "Test the hypothesis carefully.", zh: "仔细检验假说。" }
+        ],
+        collocations: ["test hypothesis", "scientific hypothesis", "working hypothesis", "hypothesis testing"],
+        synonyms: ["theory", "guess", "proposition"], antonyms: ["fact"],
+        commonMistakes: [{ mistake: "Plural is 'hypothesises'", correction: "Plural is 'hypotheses'." }],
+        pronunciationTips: "Stress the third syllable: hye-POTH-uh-sis.",
+        memoryTrick: "Hypo = under, thesis = placing. A guess placed before proof.",
+        superlative: "hypotheses"
       }
     ]
   },
@@ -2308,7 +2792,91 @@ export const wordBook: WordBookTopic[] = [
         synonyms: ["writing", "books"], antonyms: [],
         commonMistakes: [{ mistake: "Using 'literature' for any reading", correction: "Literature = 文学 (artistic); reading = 阅读 (general)." }],
         pronunciationTips: "Four syllables: LIT-er-uh-chur. Stress the first.",
-        memoryTrick: "Liter (字母) + ature. Written art = literature."
+         memoryTrick: "Liter (字母) + ature. Written art = literature."
+      },
+      {
+        id: "ac-5", topic: "Arts", level: "A2", category: "Music",
+        english: "Music", word: "music", partOfSpeech: "noun",
+        breakdown: "MYOO-zik", chinese: "音乐", pinyin: "yīn yuè",
+        emoji: "🎵", imageKeyword: "musical notes",
+        definitionEn: "Vocal or instrumental sounds combined.",
+        definitionZh: "结合的人声或乐器声。",
+        detailsEn: "Common: listen to music, play music, music genre.",
+        detailsZh: "常见：listen to music、play music、music genre。",
+        exampleEn: "I enjoy listening to music.",
+        exampleZh: "我喜欢听音乐。",
+        examples: [
+          { en: "Music relaxes me.", zh: "音乐让我放松。" },
+          { en: "She plays music professionally.", zh: "她专业演奏音乐。" }
+        ],
+        collocations: ["listen to music", "play music", "music genre", "music festival"],
+        synonyms: ["melody", "harmony"], antonyms: ["silence"],
+        commonMistakes: [{ mistake: "'Listen music'", correction: "Use 'listen TO music'." }],
+        pronunciationTips: "Stress the first syllable: MYOO-zik.",
+        memoryTrick: "Music = 音乐. Muse + ic. Inspired by the muse."
+      },
+      {
+        id: "ac-6", topic: "Arts", level: "B1", category: "Culture",
+        english: "Theater", word: "theater", partOfSpeech: "noun",
+        breakdown: "THEE-uh-ter", chinese: "剧院", pinyin: "jù yuàn",
+        emoji: "🎭", imageKeyword: "theater stage",
+        definitionEn: "A building where plays are performed.",
+        definitionZh: "上演戏剧的建筑。",
+        detailsEn: "Common: go to the theater, theater performance, movie theater.",
+        detailsZh: "常见：go to the theater、theater performance、movie theater。",
+        exampleEn: "We went to the theater.",
+        exampleZh: "我们去了剧院。",
+        examples: [
+          { en: "The theater is downtown.", zh: "剧院在市中心。" },
+          { en: "She works in theater.", zh: "她在剧院工作。" }
+        ],
+        collocations: ["go to theater", "theater performance", "movie theater", "theater arts"],
+        synonyms: ["cinema", "auditorium", "playhouse"], antonyms: [],
+        commonMistakes: [{ mistake: "'Theatre' spelling", correction: "American English: theater. British: theatre. Both are correct." }],
+        pronunciationTips: "Stress the first syllable: THEE-uh-ter.",
+        memoryTrick: "Thea = god, ter = place. A place for the performing arts."
+      },
+      {
+        id: "ac-7", topic: "Arts", level: "B1", category: "Culture",
+        english: "Exhibition", word: "exhibition", partOfSpeech: "noun",
+        breakdown: "ek-suh-BISH-un", chinese: "展览", pinyin: "zhǎn lǎn",
+        emoji: "🖼️", imageKeyword: "art exhibition",
+        definitionEn: "A public display of art or items.",
+        definitionZh: "艺术品或物品的公开展览。",
+        detailsEn: "Common: art exhibition, exhibition hall, exhibition center.",
+        detailsZh: "常见：art exhibition、exhibition hall、exhibition center。",
+        exampleEn: "The exhibition opens Monday.",
+        exampleZh: "展览周一开幕。",
+        examples: [
+          { en: "She curated the exhibition.", zh: "她策划了这个展览。" },
+          { en: "The exhibition attracted many visitors.", zh: "展览吸引了很多游客。" }
+        ],
+        collocations: ["art exhibition", "exhibition hall", "exhibition center", "exhibition opening"],
+        synonyms: ["display", "show", "gallery"], antonyms: [],
+        commonMistakes: [{ mistake: "'Exhibition' for private showings", correction: "It implies a public display." }],
+        pronunciationTips: "Stress the third syllable: ek-suh-BISH-un.",
+        memoryTrick: "Ex + hibit + ion. Ex = out, hibit = hold. Hold out for public view."
+      },
+      {
+        id: "ac-8", topic: "Arts", level: "A2", category: "Culture",
+        english: "Artist", word: "artist", partOfSpeech: "noun",
+        breakdown: "AR-tist", chinese: "艺术家", pinyin: "yì shù jiā",
+        emoji: "🎨", imageKeyword: "artist painting",
+        definitionEn: "A person who creates art.",
+        definitionZh: "创造艺术的人。",
+        detailsEn: "Common: visual artist, digital artist, artist residency.",
+        detailsZh: "常见：visual artist、digital artist、artist residency。",
+        exampleEn: "She is a talented artist.",
+        exampleZh: "她是一位有才华的艺术家。",
+        examples: [
+          { en: "The artist painted the mural.", zh: "艺术家画了壁画。" },
+          { en: "Every artist needs inspiration.", zh: "每位艺术家都需要灵感。" }
+        ],
+        collocations: ["visual artist", "digital artist", "artist residency", "artist community"],
+        synonyms: ["painter", "creator", "designer"], antonyms: [],
+        commonMistakes: [{ mistake: "'Art' for people", correction: "'Artist' is the person; 'art' is the work." }],
+        pronunciationTips: "Stress the first syllable: AR-tist.",
+        memoryTrick: "Art + ist. One who makes art."
       }
     ]
   },
@@ -2578,7 +3146,91 @@ export const wordBook: WordBookTopic[] = [
         synonyms: ["toughness", "strength"], antonyms: ["weakness", "fragility"],
         commonMistakes: [{ mistake: "Using 'resistance' for emotions", correction: "Resilience = 韧性 (bounce back); resistance = 抵抗力 (fight)." }],
         pronunciationTips: "Three syllables: rih-ZIL-yens. Stress the second.",
-        memoryTrick: "Re (again) + sil (silk) + ience. Bounce back like silk."
+         memoryTrick: "Re (again) + sil (silk) + ience. Bounce back like silk."
+      },
+      {
+        id: "pg-5", topic: "Growth", level: "B1", category: "Goals",
+        english: "Goal", word: "goal", partOfSpeech: "noun",
+        breakdown: "gohl", chinese: "目标", pinyin: "mù biāo",
+        emoji: "🎯", imageKeyword: "goal target",
+        definitionEn: "Something you aim to achieve.",
+        definitionZh: "你想要达成的某件事。",
+        detailsEn: "Common: set a goal, achieve a goal, long-term goal.",
+        detailsZh: "常见：set a goal、achieve a goal、long-term goal。",
+        exampleEn: "My goal is to learn English.",
+        exampleZh: "我的目标是学英语。",
+        examples: [
+          { en: "She achieved her goal.", zh: "她实现了目标。" },
+          { en: "Set realistic goals.", zh: "设定现实的目标。" }
+        ],
+        collocations: ["set goal", "achieve goal", "long-term goal", "goal setting"],
+        synonyms: ["aim", "target", "objective"], antonyms: [],
+        commonMistakes: [{ mistake: "'My goal is to travel' missing verb", correction: "Correct: 'My goal is to travel.'" }],
+        pronunciationTips: "One syllable: gohl.",
+        memoryTrick: "Goal = 目标. Like a goal in soccer."
+      },
+      {
+        id: "pg-6", topic: "Growth", level: "B1", category: "Motivation",
+        english: "Motivation", word: "motivation", partOfSpeech: "noun",
+        breakdown: "moh-tuh-VAY-shun", chinese: "动力", pinyin: "dòng lì",
+        emoji: "🔥", imageKeyword: "motivation energy",
+        definitionEn: "The reason or enthusiasm for doing something.",
+        definitionZh: "做某事的理由或热情。",
+        detailsEn: "Common: lack motivation, boost motivation, intrinsic motivation.",
+        detailsZh: "常见：lack motivation、boost motivation、intrinsic motivation。",
+        exampleEn: "I need more motivation.",
+        exampleZh: "我需要更多动力。",
+        examples: [
+          { en: "Her motivation is inspiring.", zh: "她的动力很激励人。" },
+          { en: "What is your motivation?", zh: "你的动力是什么？" }
+        ],
+        collocations: ["lack motivation", "boost motivation", "intrinsic motivation", "motivation for"],
+        synonyms: ["drive", "enthusiasm", "inspiration"], antonyms: ["apathy"],
+        commonMistakes: [{ mistake: "'Motivate' as a noun", correction: "'Motivation' is the noun; 'motivate' is the verb." }],
+        pronunciationTips: "Stress the fourth syllable: moh-tuh-VAY-shun.",
+        memoryTrick: "Motive + action. Motive behind the action."
+      },
+      {
+        id: "pg-7", topic: "Growth", level: "A2", category: "Progress",
+        english: "Progress", word: "progress", partOfSpeech: "noun / verb",
+        breakdown: "PROG-ress", chinese: "进步", pinyin: "jìn bù",
+        emoji: "📈", imageKeyword: "progress chart",
+        definitionEn: "Forward or onward movement toward a goal.",
+        definitionZh: "朝向目标的前进或发展。",
+        detailsEn: "Common: make progress, track progress, slow progress.",
+        detailsZh: "常见：make progress、track progress、slow progress。",
+        exampleEn: "You are making progress.",
+        exampleZh: "你在进步。",
+        examples: [
+          { en: "The project shows progress.", zh: "项目显示进展。" },
+          { en: "We need to assess progress.", zh: "我们需要评估进展。" }
+        ],
+        collocations: ["make progress", "track progress", "slow progress", "progress toward"],
+        synonyms: ["advancement", "improvement"], antonyms: ["stagnation", "regression"],
+        commonMistakes: [{ mistake: "'Progress' as 'process'", correction: "'Progress' = movement forward; 'process' = series of steps." }],
+        pronunciationTips: "Stress the first syllable: PROG-ress.",
+        memoryTrick: "Pro = forward, gress = step. Step forward."
+      },
+      {
+        id: "pg-8", topic: "Growth", level: "A2", category: "Habits",
+        english: "Discipline", word: "discipline", partOfSpeech: "noun / verb",
+        breakdown: "DIS-uh-plin", chinese: "纪律；自律", pinyin: "jí lǜ; zì lǜ",
+        emoji: "🧠", imageKeyword: "self discipline",
+        definitionEn: "The practice of training yourself to follow rules.",
+        definitionZh: "训练自己遵守规则的做法。",
+        detailsEn: "Common: self-discipline, mental discipline, strict discipline.",
+        detailsZh: "常见：self-discipline、mental discipline、strict discipline。",
+        exampleEn: "Discipline leads to success.",
+        exampleZh: "自律带来成功。",
+        examples: [
+          { en: "She has great discipline.", zh: "她很自律。" },
+          { en: "You need discipline to study.", zh: "学习需要自律。" }
+        ],
+        collocations: ["self-discipline", "mental discipline", "strict discipline", "discipline and focus"],
+        synonyms: ["self-control", "order"], antonyms: ["chaos"],
+        commonMistakes: [{ mistake: "Using 'discipline' only as punishment", correction: "It also means self-control and training." }],
+        pronunciationTips: "Three syllables: DIS-uh-plin. Stress the first.",
+        memoryTrick: "Dis (away) + ci (say) + pline (line). Keep away from chaos = discipline."
       }
     ]
   },
@@ -2671,7 +3323,49 @@ export const wordBook: WordBookTopic[] = [
         synonyms: ["plan", "schedule", "route"], antonyms: [],
         commonMistakes: [{ mistake: "Using 'schedule' always", correction: "Itinerary = 行程 (travel); schedule = 时间表 (general)." }],
         pronunciationTips: "Five syllables: eye-tin-er-air-ee. Stress the fourth.",
-        memoryTrick: "I + tiner + ary. I (我) + tiner (旅行) + ary (形容词). My travel plan."
+         memoryTrick: "I + tiner + ary. I (我) + tiner (旅行) + ary (形容词). My travel plan."
+      },
+      {
+        id: "ct-5", topic: "Culture", level: "A2", category: "Travel",
+        english: "Culture", word: "culture", partOfSpeech: "noun",
+        breakdown: "KUL-cher", chinese: "文化", pinyin: "wén huà",
+        emoji: "🏛️", imageKeyword: "cultural symbol",
+        definitionEn: "The customs, arts, and achievements of a group.",
+        definitionZh: "一个群体的习俗、艺术和成就。",
+        detailsEn: "Common: local culture, cultural difference, culture shock.",
+        detailsZh: "常见：local culture、cultural difference、culture shock。",
+        exampleEn: "I love learning about culture.",
+        exampleZh: "我喜欢了解文化。",
+        examples: [
+          { en: "The culture is fascinating.", zh: "文化很迷人。" },
+          { en: "She studies ancient culture.", zh: "她研究古代文化。" }
+        ],
+        collocations: ["local culture", "cultural difference", "culture shock", "culture shock"],
+        synonyms: ["civilization", "society"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'culture' for nationality only", correction: "Culture includes arts, customs, and achievements." }],
+        pronunciationTips: "Two syllables: KUL-cher. Stress the first.",
+        memoryTrick: "Cult + ure. Cultivate (培养) + ure (名词后缀) = nurtured way of life."
+      },
+      {
+        id: "ct-6", topic: "Travel", level: "A2", category: "Planning",
+        english: "Guidebook", word: "guidebook", partOfSpeech: "noun",
+        breakdown: "GIDE-book", chinese: "旅游指南", pinyin: "lǚ yóu zhǐ nán",
+        emoji: "📒", imageKeyword: "travel guidebook",
+        definitionEn: "A book with information about a place.",
+        definitionZh: "提供某地信息的书。",
+        detailsEn: "Common: travel guidebook, city guidebook, online guidebook.",
+        detailsZh: "常见：travel guidebook、city guidebook、online guidebook。",
+        exampleEn: "I bought a guidebook for Tokyo.",
+        exampleZh: "我买了东京的旅游指南。",
+        examples: [
+          { en: "The guidebook recommended a hotel.", zh: "指南推荐了一家酒店。" },
+          { en: "Read the guidebook before traveling.", zh: "旅行前阅读指南。" }
+        ],
+        collocations: ["travel guidebook", "city guidebook", "online guidebook", "guidebook recommendation"],
+        synonyms: ["handbook", "manual"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'guide' for the book", correction: "'Guide' is the person; 'guidebook' is the book." }],
+        pronunciationTips: "Two syllables: GIDE-book. Stress the first.",
+        memoryTrick: "Guide + book. A book that guides you."
       }
     ]
   },
@@ -2764,7 +3458,91 @@ export const wordBook: WordBookTopic[] = [
         synonyms: ["alert", "message"], antonyms: [],
         commonMistakes: [{ mistake: "Using 'message' for all alerts", correction: "Notification = 通知 (alert); message = 消息 (content)." }],
         pronunciationTips: "Five syllables: noh-tif-i-KAY-shun. Stress the fourth.",
-        memoryTrick: "Notif (通知) + ication (名词后缀). Notification = 通知."
+         memoryTrick: "Notif (通知) + ication (名词后缀). Notification = 通知."
+      },
+      {
+        id: "dl-digital-5", topic: "Digital", level: "A2", category: "Internet",
+        english: "Website", word: "website", partOfSpeech: "noun",
+        breakdown: "WEBS-ite", chinese: "网站", pinyin: "wǎng zhàn",
+        emoji: "🌍", imageKeyword: "website browser",
+        definitionEn: "A set of pages on the internet.",
+        definitionZh: "互联网上的一组页面。",
+        detailsEn: "Common: visit a website, website design, website builder.",
+        detailsZh: "常见：visit a website、website design、website builder。",
+        exampleEn: "The website is down.",
+        exampleZh: "网站打不开了。",
+        examples: [
+          { en: "Visit our website for more.", zh: "访问我们的网站了解更多。" },
+          { en: "The website loads slowly.", zh: "网站加载很慢。" }
+        ],
+        collocations: ["visit website", "website design", "website builder", "official website"],
+        synonyms: ["site", "portal"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'webpage' for the whole site", correction: "Website = 网站 (collection); webpage = 网页 (single page)." }],
+        pronunciationTips: "Two syllables: WEBS-ite. Stress the first.",
+        memoryTrick: "Web + site. A site on the web."
+      },
+      {
+        id: "dl-digital-6", topic: "Digital", level: "B1", category: "Communication",
+        english: "Social media", word: "social media", partOfSpeech: "noun",
+        breakdown: "SOH-shul MEE-dee-uh", chinese: "社交媒体", pinyin: "shè jiāo méi tǐ",
+        emoji: "📱", imageKeyword: "social media apps",
+        definitionEn: "Websites and apps for social networking.",
+        definitionZh: "用于社交网络的网站和应用。",
+        detailsEn: "Common: on social media, social media account, social media post.",
+        detailsZh: "常见：on social media、social media account、social media post。",
+        exampleEn: "She is famous on social media.",
+        exampleZh: "她在社交媒体上很火。",
+        examples: [
+          { en: "Social media connects people.", zh: "社交媒体连接人们。" },
+          { en: "Check your social media.", zh: "查看你的社交媒体。" }
+        ],
+        collocations: ["on social media", "social media account", "social media post", "social media marketing"],
+        synonyms: ["networking sites", "online platforms"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'social network' for all platforms", correction: "Social media = 社交媒体 (content sharing)." }],
+        pronunciationTips: "Stress the first words: SOH-shul MEE-dee-uh.",
+        memoryTrick: "Social + media. Media for social interaction."
+      },
+      {
+        id: "dl-digital-7", topic: "Digital", level: "A2", category: "Apps",
+        english: "Download", word: "download", partOfSpeech: "verb / noun",
+        breakdown: "DOWN-lohd", chinese: "下载", pinyin: "xià zài",
+        emoji: "⬇️", imageKeyword: "download file",
+        definitionEn: "To copy data from the internet to a device.",
+        definitionZh: "将数据从互联网复制到设备。",
+        detailsEn: "Common: download app, download file, download speed.",
+        detailsZh: "常见：download app、download file、download speed。",
+        exampleEn: "Download the file now.",
+        exampleZh: "现在下载文件。",
+        examples: [
+          { en: "I downloaded the app.", zh: "我下载了应用。" },
+          { en: "The download failed.", zh: "下载失败了。" }
+        ],
+        collocations: ["download app", "download file", "download speed", "download data"],
+        synonyms: ["save", "transfer"], antonyms: ["upload"],
+        commonMistakes: [{ mistake: "'Downloade' spelling", correction: "Download, not downloade." }],
+        pronunciationTips: "Stress the second syllable: DOWN-lohd.",
+        memoryTrick: "Down + load. Bring data down from the cloud."
+      },
+      {
+        id: "dl-digital-8", topic: "Digital", level: "B1", category: "Online",
+        english: "Streaming", word: "streaming", partOfSpeech: "noun / verb",
+        breakdown: "STREE-ming", chinese: "流媒体", pinyin: "liú méi tǐ",
+        emoji: "📺", imageKeyword: "streaming video",
+        definitionEn: "Watching or listening to content online.",
+        definitionZh: "在线观看或收听内容。",
+        detailsEn: "Common: video streaming, streaming service, live streaming.",
+        detailsZh: "常见：video streaming、streaming service、live streaming。",
+        exampleEn: "I enjoy streaming movies.",
+        exampleZh: "我喜欢在线看电影。",
+        examples: [
+          { en: "Streaming is very popular.", zh: "流媒体很流行。" },
+          { en: "He started streaming games.", zh: "他开始直播游戏。" }
+        ],
+        collocations: ["video streaming", "streaming service", "live streaming", "streaming platform"],
+        synonyms: ["broadcasting", "online viewing"], antonyms: ["downloading"],
+        commonMistakes: [{ mistake: "Using 'streaming' for downloading", correction: "Streaming = 流媒体 (online); download = 下载 (offline)." }],
+        pronunciationTips: "Stress the first syllable: STREE-ming.",
+        memoryTrick: "Stream + ing. Continuous flow like a stream."
       }
     ]
   },
