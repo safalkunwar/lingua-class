@@ -12,7 +12,7 @@
 - **Status:** Production ready
 
 **Features:**
-- 197 words across 28 topics
+- 209 words across 28 topics
 - C1 Professional Skills (6 words)
 - C2 Advanced Communication (6 words)
 - Level filters updated to support A1, A2, B1, B2, C1, C2
@@ -28,10 +28,10 @@
 1. Daily Life (15 words)
 2. Travel (9 words)
 3. Work & Business (6 words)
-4. Shopping (5 words)
+4. Shopping (8 words)
 5. Friends & Social Life (8 words)
-6. Restaurants & Food (5 words)
-7. Airport (5 words)
+6. Restaurants & Food (8 words)
+7. Airport (8 words)
 8. Education (8 words)
 9. Health (8 words)
 10. Weather (7 words)
@@ -39,7 +39,7 @@
 12. PTE IELTS Academic (6 words)
 13. Friends (6 words)
 14. Home & House (8 words)
-15. Nature & Outdoors (5 words)
+15. Nature & Outdoors (8 words)
 16. Language & Communication (8 words)
 17. Science & Technology (8 words)
 18. Arts & Culture (8 words)

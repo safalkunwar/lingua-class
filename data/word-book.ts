@@ -770,7 +770,70 @@ export const wordBook: WordBookTopic[] = [
         synonyms: ["deal", "discount"], antonyms: [],
         commonMistakes: [{ mistake: "Using 'bargain' as an adjective", correction: "Use 'bargain price' or 'bargain deal'; 'bargain' is mainly noun/verb." }],
         pronunciationTips: "Stress the first syllable: BAR-guhn.",
-        memoryTrick: "Bar + gain. You gain something at the bar (market) by bargaining."
+         memoryTrick: "Bar + gain. You gain something at the bar (market) by bargaining."
+      },
+      {
+        id: "sh-6", topic: "Shopping", level: "A2", category: "Actions",
+        english: "Refund", word: "refund", partOfSpeech: "noun / verb",
+        breakdown: "REE-fund", chinese: "退款", pinyin: "tuì kuǎn",
+        emoji: "💵", imageKeyword: "refund money",
+        definitionEn: "Money returned when returning a purchase.",
+        definitionZh: "退货时返还的钱。",
+        detailsEn: "Common: ask for a refund, full refund, refund policy.",
+        detailsZh: "常见：ask for a refund、full refund、refund policy。",
+        exampleEn: "I got a full refund.",
+        exampleZh: "我获得了全额退款。",
+        examples: [
+          { en: "Can I get a refund?", zh: "我能退款吗？" },
+          { en: "The refund took two weeks.", zh: "退款花了两周。" }
+        ],
+        collocations: ["ask for a refund", "full refund", "refund policy", "get a refund"],
+        synonyms: ["reimbursement", "repayment"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'return' for money only", correction: "'Return' = 退货; 'refund' = 退款 (money back)." }],
+        pronunciationTips: "Stress the first syllable: REE-fund.",
+        memoryTrick: "Re + fund. Money sent back to your fund."
+      },
+      {
+        id: "sh-7", topic: "Shopping", level: "A2", category: "Payment",
+        english: "Cash", word: "cash", partOfSpeech: "noun",
+        breakdown: "kash", chinese: "现金", pinyin: "xiàn jīn",
+        emoji: "💵", imageKeyword: "cash money",
+        definitionEn: "Money in the form of coins or bills.",
+        definitionZh: "硬币或纸币形式的钱。",
+        detailsEn: "Common: pay in cash, cash only, cash card.",
+        detailsZh: "常见：pay in cash、cash only、cash card。",
+        exampleEn: "Do you accept cash?",
+        exampleZh: "你们收现金吗？",
+        examples: [
+          { en: "I paid in cash.", zh: "我用现金付的。" },
+          { en: "No cash accepted here.", zh: "这里不收现金。" }
+        ],
+        collocations: ["pay in cash", "cash only", "cash card", "cash transaction"],
+        synonyms: ["money", "currency"], antonyms: ["card", "credit"],
+        commonMistakes: [{ mistake: "Using 'cash' as a verb", correction: "'Cash' is mainly a noun; verb use is rare." }],
+        pronunciationTips: "One syllable: kash. Like 'cash' in 'cash register'.",
+        memoryTrick: "Cash = 现金. Sounds like  cache (储存) — stored money."
+      },
+      {
+        id: "sh-8", topic: "Shopping", level: "A2", category: "Actions",
+        english: "Browse", word: "browse", partOfSpeech: "verb",
+        breakdown: "browz", chinese: "浏览", pinyin: "liú lǎn",
+        emoji: "🛍️", imageKeyword: "browsing shops",
+        definitionEn: "To look through things casually.",
+        definitionZh: "随意查看物品。",
+        detailsEn: "Common: browse the store, browse online, window browse.",
+        detailsZh: "常见：browse the store、browse online、window browse。",
+        exampleEn: "I like browsing bookstores.",
+        exampleZh: "我喜欢浏览书店。",
+        examples: [
+          { en: "She browsed the dresses.", zh: "她浏览了连衣裙。" },
+          { en: "I browse online shops daily.", zh: "我每天浏览网店。" }
+        ],
+        collocations: ["browse the store", "browse online", "browse shops", "window browse"],
+        synonyms: ["look through", "scan"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'search' instead of 'browse'", correction: "'Browse' = casual looking; 'search' = with purpose." }],
+        pronunciationTips: "One syllable: browz. Like 'browse' with 'ow'.",
+        memoryTrick: "Browse = 浏览. Like a cow grazing (browse) through fields."
       }
     ]
   },
@@ -1062,7 +1125,70 @@ export const wordBook: WordBookTopic[] = [
         synonyms: ["stay", "pause"], antonyms: ["leave", "go"],
         commonMistakes: [{ mistake: "Using 'wait on someone' incorrectly", correction: "In American English, 'wait on' can mean serve; in British English it's 'wait for'." }],
         pronunciationTips: "One syllable: wayt. Like 'weight' without 'e'.",
-        memoryTrick: "Wait = 等待. Imagine a waiter (wait + er) waiting on you."
+         memoryTrick: "Wait = 等待. Imagine a waiter (wait + er) waiting on you."
+      },
+      {
+        id: "rt-6", topic: "Restaurants", level: "A1", category: "Payment",
+        english: "Tip", word: "tip", partOfSpeech: "noun / verb",
+        breakdown: "tip", chinese: "小费", pinyin: "xiǎo fèi",
+        emoji: "💰", imageKeyword: "restaurant tip",
+        definitionEn: "Extra money given for service.",
+        definitionZh: "为服务额外给的钱。",
+        detailsEn: "Common: leave a tip, tip the waiter, generous tip.",
+        detailsZh: "常见：leave a tip、tip the waiter、generous tip。",
+        exampleEn: "We left a 20% tip.",
+        exampleZh: "我们留下了20%的小费。",
+        examples: [
+          { en: "The service was great, so we tipped well.", zh: "服务很好，所以我们给了不少小费。" },
+          { en: "Is tipping required here?", zh: "这里需要给小费吗？" }
+        ],
+        collocations: ["leave a tip", "tip the waiter", "generous tip", "tip money"],
+        synonyms: ["gratuity", "bonus"], antonyms: [],
+        commonMistakes: [{ mistake: "Tipping too much or too little", correction: "In the US, 15-20% is standard." }],
+        pronunciationTips: "One syllable: tip. Like 'tip' of a finger.",
+        memoryTrick: "Tip = 小费. Extra money on top."
+      },
+      {
+        id: "rt-7", topic: "Restaurants", level: "A2", category: "Dining",
+        english: "Order", word: "order", partOfSpeech: "verb / noun",
+        breakdown: "OR-der", chinese: "点餐；订单", pinyin: "diǎn cān; dìng dān",
+        emoji: "📝", imageKeyword: "ordering food",
+        definitionEn: "To request food; also the request itself.",
+        definitionZh: "请求食物；也指请求本身。",
+        detailsEn: "Common: order food, place an order, order drinks.",
+        detailsZh: "常见：order food、place an order、order drinks。",
+        exampleEn: "I ordered the pasta.",
+        exampleZh: "我点了意面。",
+        examples: [
+          { en: "Can I take your order?", zh: "我可以为您点餐了吗？" },
+          { en: "The order took 20 minutes.", zh: "订单花了20分钟。" }
+        ],
+        collocations: ["order food", "place an order", "order drinks", "take order"],
+        synonyms: ["request", "book"], antonyms: [],
+        commonMistakes: [{ mistake: "'Can I order you?'", correction: "Say 'Can I take your order?'" }],
+        pronunciationTips: "Stress the first syllable: OR-der.",
+        memoryTrick: "Order = 点餐. Arrange your food in order."
+      },
+      {
+        id: "rt-8", topic: "Restaurants", level: "A2", category: "Dining",
+        english: "Waiter", word: "waiter", partOfSpeech: "noun",
+        breakdown: "WAY-ter", chinese: "服务员", pinyin: "fú wù yuán",
+        emoji: "🧑‍🍳", imageKeyword: "restaurant waiter",
+        definitionEn: "A person who serves food in a restaurant.",
+        definitionZh: "在餐厅里供应食物的人。",
+        detailsEn: "Common: call the waiter, waiter service, head waiter.",
+        detailsZh: "常见：call the waiter、waiter service、head waiter。",
+        exampleEn: "The waiter brought the menu.",
+        exampleZh: "服务员拿来了菜单。",
+        examples: [
+          { en: "Can we have the waiter?", zh: "我们能叫服务员吗？" },
+          { en: "The waiter was very friendly.", zh: "服务员很友好。" }
+        ],
+        collocations: ["call the waiter", "waiter service", "head waiter", "waiter tip"],
+        synonyms: ["server", "attendant"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'waiter' for all staff", correction: "Waiter = male server; waitress = female; server = gender neutral." }],
+        pronunciationTips: "Two syllables: WAY-ter. Stress the first.",
+        memoryTrick: "Wait + er. A person who waits on you."
       }
     ]
   },
@@ -1176,7 +1302,70 @@ export const wordBook: WordBookTopic[] = [
         synonyms: ["takeoff", "leaving"], antonyms: ["arrival"],
         commonMistakes: [{ mistake: "Using 'leave' in announcements", correction: "Airports use 'departure', not 'leaving'." }],
         pronunciationTips: "Stress the second syllable: di-PAR-ture.",
-        memoryTrick: "Departure = depart + ure. Depart means to leave; ure makes it a noun."
+         memoryTrick: "Departure = depart + ure. Depart means to leave; ure makes it a noun."
+      },
+      {
+        id: "ap-6", topic: "Airport", level: "A2", category: "Process",
+        english: "Delay", word: "delay", partOfSpeech: "noun / verb",
+        breakdown: "di-LAY", chinese: "延误", pinyin: "yán wù",
+        emoji: "⏱️", imageKeyword: "flight delay",
+        definitionEn: "When something happens later than planned.",
+        definitionZh: "某事比计划晚发生。",
+        detailsEn: "Common: flight delay, delay announcement, delay due to weather.",
+        detailsZh: "常见：flight delay、delay announcement、delay due to weather。",
+        exampleEn: "There is a 2-hour delay.",
+        exampleZh: "延误了2小时。",
+        examples: [
+          { en: "The flight was delayed.", zh: "航班延误了。" },
+          { en: "Delay caused by weather.", zh: "因天气延误。" }
+        ],
+        collocations: ["flight delay", "delay announcement", "delay due to", "delay period"],
+        synonyms: ["postponement", "wait"], antonyms: ["on time"],
+        commonMistakes: [{ mistake: "Using 'late' for official announcements", correction: "Airports use 'delay'; 'late' is casual." }],
+        pronunciationTips: "Stress the second syllable: di-LAY.",
+        memoryTrick: "De + lay. De (down) + lay (放) = put it down later."
+      },
+      {
+        id: "ap-7", topic: "Airport", level: "A1", category: "Documents",
+        english: "Passport", word: "passport", partOfSpeech: "noun",
+        breakdown: "PASS-port", chinese: "护照", pinyin: "hù zhào",
+        emoji: "🛂", imageKeyword: "passport document",
+        definitionEn: "Official document for international travel.",
+        definitionZh: "国际旅行的官方证件。",
+        detailsEn: "Required at borders. Keep it safe.",
+        detailsZh: "在边境需要出示。请妥善保管。",
+        exampleEn: "Don't forget your passport.",
+        exampleZh: "别忘了带护照。",
+        examples: [
+          { en: "My passport expires next year.", zh: "我的护照明年过期。" },
+          { en: "Passport control is on the left.", zh: "护照检查在左边。" }
+        ],
+        collocations: ["valid passport", "renew passport", "passport control", "passport photo"],
+        synonyms: ["travel document"], antonyms: [],
+        commonMistakes: [{ mistake: "Calling it 护照本 constantly", correction: "Just say passport." }],
+        pronunciationTips: "Stress first syllable: PASS-port.",
+        memoryTrick: "Pass + port. You pass through ports with it."
+      },
+      {
+        id: "ap-8", topic: "Airport", level: "A1", category: "Documents",
+        english: "Luggage", word: "luggage", partOfSpeech: "noun",
+        breakdown: "LUG-ij", chinese: "行李", pinyin: "xíng lǐ",
+        emoji: "🧳", imageKeyword: "airport luggage",
+        definitionEn: "Bags and cases you travel with.",
+        definitionZh: "你旅行时携带的包和箱子。",
+        detailsEn: "Common: carry-on luggage, checked luggage, luggage claim.",
+        detailsZh: "常见：carry-on luggage、checked luggage、luggage claim。",
+        exampleEn: "My luggage is heavy.",
+        exampleZh: "我的行李很重。",
+        examples: [
+          { en: "How many pieces of luggage?", zh: "几件行李？" },
+          { en: "Luggage claim is over there.", zh: "行李提取处在那。" }
+        ],
+        collocations: ["carry-on luggage", "checked luggage", "luggage claim", "luggage tag"],
+        synonyms: ["bags", "suitcases"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'baggage' and 'luggage' interchangeably", correction: "Both are fine; 'luggage' is more common in travel." }],
+        pronunciationTips: "Two syllables: LUG-ij. Stress the first.",
+        memoryTrick: "Lug = carry, age = thing. Carry things = luggage."
       }
     ]
   },
@@ -2344,7 +2533,70 @@ export const wordBook: WordBookTopic[] = [
         synonyms: ["outdoors", "tenting"], antonyms: [],
         commonMistakes: [{ mistake: "Using 'camp' only for military", correction: "Camp = 营地; camping = 露营 (recreational)." }],
         pronunciationTips: "Two syllables: KAM-ping. Stress the first.",
-        memoryTrick: "Camp + ing. Camp (营地) + ing (进行中) = camping."
+         memoryTrick: "Camp + ing. Camp (营地) + ing (进行中) = camping."
+      },
+      {
+        id: "no-6", topic: "Nature", level: "A1", category: "Animals",
+        english: "Bird", word: "bird", partOfSpeech: "noun",
+        breakdown: "burd", chinese: "鸟", pinyin: "niǎo",
+        emoji: "🐦", imageKeyword: "small bird",
+        definitionEn: "A small animal with wings that can fly.",
+        definitionZh: "有翅膀会飞的小动物。",
+        detailsEn: "Common: pet bird, bird nest, bird watching.",
+        detailsZh: "常见：pet bird、bird nest、bird watching。",
+        exampleEn: "I heard a bird singing.",
+        exampleZh: "我听到一只鸟在唱歌。",
+        examples: [
+          { en: "The bird flew away.", zh: "鸟飞走了。" },
+          { en: "Birds build nests in spring.", zh: "鸟儿春天筑巢。" }
+        ],
+        collocations: ["pet bird", "bird nest", "bird watching", "bird species"],
+        synonyms: ["fowl", "avian"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'bird' for all flying animals", correction: "Bird = 鸟; bat = 蝙蝠 (mammal)." }],
+        pronunciationTips: "One syllable: burd. Like 'word' with 'b'.",
+        memoryTrick: "Bird = 鸟. B + ird (ird) = bird flies."
+      },
+      {
+        id: "no-7", topic: "Nature", level: "A2", category: "Plants",
+        english: "Flower", word: "flower", partOfSpeech: "noun",
+        breakdown: "FLOW-er", chinese: "花", pinyin: "huā",
+        emoji: "🌸", imageKeyword: "colorful flower",
+        definitionEn: "The colorful part of a plant.",
+        definitionZh: "植物的彩色部分。",
+        detailsEn: "Common: flower garden, flower shop, flower bouquet.",
+        detailsZh: "常见：flower garden、flower shop、flower bouquet。",
+        exampleEn: "She picked a flower.",
+        exampleZh: "她摘了一朵花。",
+        examples: [
+          { en: "The flowers are blooming.", zh: "花在盛开。" },
+          { en: "He bought flowers for mom.", zh: "他给妈妈买了花。" }
+        ],
+        collocations: ["flower garden", "flower shop", "flower bouquet", "flower power"],
+        synonyms: ["blossom", "bloom"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'flour' instead of 'flower'", correction: "Flour = 面粉; flower = 花." }],
+        pronunciationTips: "Two syllables: FLOW-er. Stress the first.",
+        memoryTrick: "Flow + er. A flower flows with beauty."
+      },
+      {
+        id: "no-8", topic: "Nature", level: "A2", category: "Landscapes",
+        english: "Mountain", word: "mountain", partOfSpeech: "noun",
+        breakdown: "MOUN-ten", chinese: "山", pinyin: "shān",
+        emoji: "🏔️", imageKeyword: "mountain landscape",
+        definitionEn: "A very high hill or natural elevation.",
+        definitionZh: "非常高的山丘或自然高地。",
+        detailsEn: "Common: climb a mountain, mountain view, mountain range.",
+        detailsZh: "常见：climb a mountain、mountain view、mountain range。",
+        exampleEn: "The mountain is covered in snow.",
+        exampleZh: "山被雪覆盖。",
+        examples: [
+          { en: "We hiked the mountain.", zh: "我们徒步登山了。" },
+          { en: "The view from the mountain was amazing.", zh: "从山顶看景色很美。" }
+        ],
+        collocations: ["climb a mountain", "mountain view", "mountain range", "mountain climbing"],
+        synonyms: ["peak", "hill", "summit"], antonyms: ["valley"],
+        commonMistakes: [{ mistake: "Using 'mountain' for small hills", correction: "Mountain = 大山; hill = 小山." }],
+        pronunciationTips: "Two syllables: MOUN-ten. Stress the first.",
+        memoryTrick: "Mount + ain. A mountain is a mount (mount) + ain (large)."
       }
     ]
   },
