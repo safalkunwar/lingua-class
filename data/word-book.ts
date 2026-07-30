@@ -3072,7 +3072,277 @@ export const wordBook: WordBookTopic[] = [
         synonyms: ["workout", "activity"], antonyms: ["sedentary"],
         commonMistakes: [{ mistake: "Using 'sport' for all activity", correction: "Exercise = 锻炼; sport = 体育运动." }],
         pronunciationTips: "Stress the first syllable: EK-ser-syz.",
-        memoryTrick: "Ex (extra) + ercise (锻炼) = extra training."
+         memoryTrick: "Ex (extra) + ercise (锻炼) = extra training."
+      }
+    ]
+  },
+  {
+    id: "professional-skills",
+    title: "Professional Skills",
+    emoji: "💼",
+    description: "Workplace strategy, leadership language, and high-level professional communication.",
+    color: "from-indigo-400 to-purple-400",
+    words: [
+      {
+        id: "ps-1", topic: "Professional Skills", level: "C1", category: "Strategy",
+        english: "Encompass", word: "encompass", partOfSpeech: "verb",
+        breakdown: "en-KUM-puhss", chinese: "包括", pinyin: "bāo kuò",
+        emoji: "🔄", imageKeyword: "inclusion diagram",
+        definitionEn: "To include comprehensively; surround.",
+        definitionZh: "全面包括；包围。",
+        detailsEn: "Common: encompasses multiple areas, encompass all aspects.",
+        detailsZh: "常见搭配：encompass multiple areas、encompass all aspects。",
+        exampleEn: "The course encompasses grammar and speaking.",
+        exampleZh: "这门课程包括语法和口语。",
+        examples: [
+          { en: "The report encompasses all departments.", zh: "这份报告涵盖所有部门。" },
+          { en: "Her skills encompass both design and code.", zh: "她的技能涵盖设计和编程。" }
+        ],
+        collocations: ["encompass all", "encompass multiple", "encompass areas"],
+        synonyms: ["include", "cover", "comprise"], antonyms: ["exclude", "omit"],
+        commonMistakes: [{ mistake: "Using 'encompass' for simple lists", correction: "Use 'include' for simple lists; 'encompass' implies full coverage." }],
+        pronunciationTips: "Stress second syllable: en-KUM-puhss.",
+        memoryTrick: "Com = 全部, pass = 通过. Pass through all = encompass everything."
+      },
+      {
+        id: "ps-2", topic: "Professional Skills", level: "C1", category: "Strategy",
+        english: "Ubiquitous", word: "ubiquitous", partOfSpeech: "adjective",
+        breakdown: "yoo-BIK-wi-tuhs", chinese: "无处不在的", pinyin: "wú chù bù zài de",
+        emoji: "🌐", imageKeyword: "omnipresent network",
+        definitionEn: "Present everywhere at the same time.",
+        definitionZh: "同时在各个地方都存在。",
+        detailsEn: "Common: ubiquitous technology, ubiquitous access.",
+        detailsZh: "常见搭配：ubiquitous technology、ubiquitous access。",
+        exampleEn: "Smartphones are ubiquitous today.",
+        exampleZh: "智能手机今天无处不在。",
+        examples: [
+          { en: "Coffee shops are ubiquitous in the city.", zh: "城市里到处是咖啡店。" },
+          { en: "GPS has become ubiquitous.", zh: "GPS已经无处不在。" }
+        ],
+        collocations: ["ubiquitous technology", "ubiquitous access", "ubiquitous presence"],
+        synonyms: ["omnipresent", "pervasive"], antonyms: ["rare", "scarce"],
+        commonMistakes: [{ mistake: "Using 'ubiquitous' for common objects casually", correction: "Reserve for things that are truly everywhere." }],
+        pronunciationTips: "Stress second syllable: yoo-BIK-wi-tuhs.",
+        memoryTrick: "Ubi =  everywhere, quit = exit, ous = adjective. Everywhere = ubiquitous."
+      },
+      {
+        id: "ps-3", topic: " Professional Skills", level: "C1", category: "Leadership",
+        english: "Pragmatic", word: "pragmatic", partOfSpeech: "adjective",
+        breakdown: "praɡ-MA-tik", chinese: "务实的", pinyin: "wù shí de",
+        emoji: "🎯", imageKeyword: "practical planning",
+        definitionEn: "Dealing with things practically rather than theoretically.",
+        definitionZh: "务实地处理事情，而非理论化。",
+        detailsEn: "Common: pragmatic approach, pragmatic solution, pragmatic view.",
+        detailsZh: "常见搭配：pragmatic approach、pragmatic solution、pragmatic view。",
+        exampleEn: "We need a pragmatic solution.",
+        exampleZh: "我们需要一个务实的解决方案。",
+        examples: [
+          { en: "She is pragmatic about deadlines.", zh: "她对截止日期很务实。" },
+          { en: "A pragmatic plan is easier to execute.", zh: "务实的计划更容易执行。" }
+        ],
+        collocations: ["pragmatic approach", "pragmatic solution", "pragmatic view", "pragmatic person"],
+        synonyms: ["practical", "realistic"], antonyms: ["idealistic", "impractical"],
+        commonMistakes: [{ mistake: "Using 'pragmatic' for people only", correction: "It can describe plans, solutions, or attitudes." }],
+        pronunciationTips: "Stress second syllable: praɡ-MA-tik.",
+        memoryTrick: "Pragma = action. Practical action = pragmatic."
+      },
+      {
+        id: "ps-4", topic: "Professional Skills", level: "C1", category: "Strategy",
+        english: "Paradigm", word: "paradigm", partOfSpeech: "noun",
+        breakdown: "PAR-uh-dyme", chinese: "范式", pinyin: "fàn shì",
+        emoji: "🧩", imageKeyword: "paradigm model",
+        definitionEn: "A typical example, model, or way of thinking.",
+        definitionZh: "典型例子、模型或思维方式。",
+        detailsEn: "Common: paradigm shift, new paradigm, paradigm example.",
+        detailsZh: "常见搭配：paradigm shift、new paradigm、paradigm example。",
+        exampleEn: "Remote work created a paradigm shift.",
+        exampleZh: "远程工作造成了一次范式转换。",
+        examples: [
+          { en: "This theory offers a new paradigm.", zh: "这个理论提供了新范式。" },
+          { en: "The industry needs a paradigm change.", zh: "这个行业需要范式改变。" }
+        ],
+        collocations: ["paradigm shift", "paradigm change", "paradigm example", "new paradigm"],
+        synonyms: ["model", "framework", "pattern"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'paradigm' for simple examples", correction: "It implies a fundamental model or pattern." }],
+        pronunciationTips: "Stress first syllable: PAR-uh-dyme.",
+        memoryTrick: "Para = beside, digma = example. A model to place beside reality."
+      },
+      {
+        id: "ps-5", topic: "Professional Skills", level: "C1", category: "Strategy",
+        english: "Leverage", word: "leverage", partOfSpeech: "verb / noun",
+        breakdown: "LEV-er-ij", chinese: "利用", pinyin: "lì yòng",
+        emoji: "⚖️", imageKeyword: "leverage balance",
+        definitionEn: "To use something to maximum advantage.",
+        definitionZh: "将某物利用到最大优势。",
+        detailsEn: "Common: leverage resources, leverage data, leverage network.",
+        detailsZh: "常见搭配：leverage resources、leverage data、leverage network。",
+        exampleEn: "We can leverage our data to improve sales.",
+        exampleZh: "我们可以利用数据提升销售。",
+        examples: [
+          { en: "Leverage your strengths.", zh: "发挥你的优势。" },
+          { en: "They leveraged social media for growth.", zh: "他们利用社交媒体促进增长。" }
+        ],
+        collocations: ["leverage resources", "leverage data", "leverage network", "leverage skills"],
+        synonyms: ["utilize", "exploit", "harness"], antonyms: ["ignore", "waste"],
+        commonMistakes: [{ mistake: "Using 'leverage' as only a noun", correction: "Common as a verb: 'We should leverage...'" }],
+        pronunciationTips: "Stress first syllable: LEV-er-ij.",
+        memoryTrick: "Lever = 杠杆. Use leverage (杠杆) to lift more."
+      },
+      {
+        id: "ps-6", topic: "Professional Skills", level: "C1", category: "Leadership",
+        english: "Mitigate", word: "mitigate", partOfSpeech: "verb",
+        breakdown: "MIT-i-ɡeɪt", chinese: "减轻", pinyin: "jiǎn qīng",
+        emoji: "🛡️", imageKeyword: "risk mitigation",
+        definitionEn: "To make something less severe, serious, or painful.",
+        definitionZh: "使某事不那么严重、激烈或痛苦。",
+        detailsEn: "Common: mitigate risks, mitigate damage, mitigate impact.",
+        detailsZh: "常见搭配：mitigate risks、mitigate damage、mitigate impact。",
+        exampleEn: "We need to mitigate the risks.",
+        exampleZh: "我们需要降低风险。",
+        examples: [
+          { en: "Tree planting mitigates climate change.", zh: "植树 mitigates 气候变化。" },
+          { en: "Measures were taken to mitigate failure.", zh: "采取措施减轻失败影响。" }
+        ],
+        collocations: ["mitigate risks", "mitigate damage", "mitigate impact", "mitigate effects"],
+        synonyms: ["reduce", "lessen", "alleviate"], antonyms: ["worsen", "exacerbate"],
+        commonMistakes: [{ mistake: "Using 'reduce' when you mean 'mitigate'", correction: "'Mitigate' implies making something bad less severe." }],
+        pronunciationTips: "Stress first syllable: MIT-i-ɡeɪt.",
+        memoryTrick: "Miti =  minimization. Make it smaller = mitigate."
+      }
+    ]
+  },
+  {
+    id: "advanced-communication",
+    title: "Advanced Communication",
+    emoji: "🎓",
+    description: "Sophisticated expression, discourse analysis, and academic discussion.",
+    color: "from-violet-400 to-fuchsia-400",
+    words: [
+      {
+        id: "ac-1", topic: "Advanced Communication", level: "C2", category: "Discourse",
+        english: "Discourse", word: "discourse", partOfSpeech: "noun",
+        breakdown: "DIS-kors", chinese: "话语", pinyin: "huà yǔ",
+        emoji: "💬", imageKeyword: "academic speech",
+        definitionEn: "Written or spoken communication or debate.",
+        definitionZh: "书面或口头交流或辩论。",
+        detailsEn: "Common: political discourse, academic discourse, discourse analysis.",
+        detailsZh: "常见搭配：political discourse、academic discourse、discourse analysis。",
+        exampleEn: "Political discourse shapes public opinion.",
+        exampleZh: "政治话语塑造公众舆论。",
+        examples: [
+          { en: "Academic discourse requires evidence.", zh: "学术话语需要证据。" },
+          { en: "The discourse around AI is evolving.", zh: "关于AI的话语正在演变。" }
+        ],
+        collocations: ["political discourse", "academic discourse", "discourse analysis", "discourse community"],
+        synonyms: ["conversation", "discussion", "text"], antonyms: ["silence"],
+        commonMistakes: [{ mistake: "Using 'discourse' for casual chat", correction: "Use for formal or analytical communication." }],
+        pronunciationTips: "Stress first syllable: DIS-kors.",
+        memoryTrick: "Dis = apart, course = path. A structured path of words."
+      },
+      {
+        id: "ac-2", topic: "Advanced Communication", level: "C2", category: "Practice",
+        english: "Praxis", word: "praxis", partOfSpeech: "noun",
+        breakdown: "PRAK-sis", chinese: "实践", pinyin: "shí jiàn",
+        emoji: "🔄", imageKeyword: "theory practice cycle",
+        definitionEn: "The practical application of a theory or method.",
+        definitionZh: "理论或方法的实际应用。",
+        detailsEn: "Common: theory and praxis, praxis-oriented, critical praxis.",
+        detailsZh: "常见搭配：theory and praxis、praxis-oriented、critical praxis。",
+        exampleEn: "There is a gap between theory and praxis.",
+        exampleZh: "理论和实践之间有差距。",
+        examples: [
+          { en: "Praxis transforms ideas into action.", zh: "实践将想法转化为行动。" },
+          { en: "Critical praxis examines power structures.", zh: "批判实践审视权力结构。" }
+        ],
+        collocations: ["theory and praxis", "praxis-oriented", "critical praxis", "praxis research"],
+        synonyms: ["practice", "application", "execution"], antonyms: ["theory"],
+        commonMistakes: [{ mistake: "Using 'practice' when 'praxis' is intended", correction: "'Praxis' specifically links theory to action." }],
+        pronunciationTips: "Stress first syllable: PRAK-sis.",
+        memoryTrick: "Pract + is. Practice that is intentional and theory-linked."
+      },
+      {
+        id: "ac-3", topic: "Advanced Communication", level: "C2", category: "Reasoning",
+        english: "Dialectic", word: "dialectic", partOfSpeech: "noun / adjective",
+        breakdown: "dy-uh-LEK-tik", chinese: "辩证法", pinyin: "biàn zhèng fǎ",
+        emoji: "⚖️", imageKeyword: "dialectic debate",
+        definitionEn: "Logical discussion or reasoning through opposing ideas.",
+        definitionZh: "通过对立观点进行逻辑讨论或推理。",
+        detailsEn: "Common: dialectic method, dialectic reasoning, dialectic materialism.",
+        detailsZh: "常见搭配：dialectic method、dialectic reasoning、dialectic materialism。",
+        exampleEn: "The dialectic reveals deeper truths.",
+        exampleZh: "辩证法揭示更深层的真理。",
+        examples: [
+          { en: "Dialectic reasoning compares opposites.", zh: "辩证推理比较对立面。" },
+          { en: "He used a dialectic approach.", zh: "他使用了辩证方法。" }
+        ],
+        collocations: ["dialectic method", "dialectic reasoning", "dialectic approach", "dialectic materialism"],
+        synonyms: ["logic", "argumentation", "debate"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'dialectic' for any debate", correction: "It specifically involves thesis-antithesis-synthesis." }],
+        pronunciationTips: "Stress second syllable: dy-uh-LEK-tik.",
+        memoryTrick: "Dia = through, legein = speak. Speaking through opposites to find truth."
+      },
+      {
+        id: "ac-4", topic: "Advanced Communication", level: "C2", category: "Analysis",
+        english: "Exacerbate", word: "exacerbate", partOfSpeech: "verb",
+        breakdown: "iɡˈzæsərbeɪt", chinese: "加剧", pinyin: "jiā jù",
+        emoji: "🔥", imageKeyword: "worsening crisis",
+        definitionEn: "To make a problem or situation worse.",
+        definitionZh: "使问题或情况更糟。",
+        detailsEn: "Common: exacerbate tensions, exacerbate the problem, exacerbate inequality.",
+        detailsZh: "常见搭配：exacerbate tensions、exacerbate the problem、exacerbate inequality。",
+        exampleEn: "Rising prices exacerbate poverty.",
+        exampleZh: "物价上涨加剧了贫困。",
+        examples: [
+          { en: "The comment exacerbated the conflict.", zh: "评论加剧了冲突。" },
+          { en: "Stress can exacerbate illness.", zh: "压力可能加重病情。" }
+        ],
+        collocations: ["exacerbate tensions", "exacerbate the problem", "exacerbate inequality", "exacerbate symptoms"],
+        synonyms: ["worsen", "aggravate", "intensify"], antonyms: ["alleviate", "mitigate", "ameliorate"],
+        commonMistakes: [{ mistake: "Using 'exaggerate' instead", correction: "'Exacerbate' means worsen; 'exaggerate' means overstate." }],
+        pronunciationTips: "Stress third syllable: iɡˈzæsərbeɪt.",
+        memoryTrick: "Ex = out, acerb = sour, ate = make. Make more sour = make worse."
+      },
+      {
+        id: "ac-5", topic: "Advanced Communication", level: "C2", category: "Analysis",
+        english: "Ameliorate", word: "ameliorate", partOfSpeech: "verb",
+        breakdown: "əˈmiːliəreɪt", chinese: "改善", pinyin: "gǎi shàn",
+        emoji: "🌤️", imageKeyword: "improving conditions",
+        definitionEn: "To make something bad better; improve.",
+        definitionZh: "使不好的东西变好；改善。",
+        detailsEn: "Common: ameliorate conditions, ameliorate poverty, ameliorate effects.",
+        detailsZh: "常见搭配：ameliorate conditions、ameliorate poverty、ameliorate effects。",
+        exampleEn: "Policies should ameliorate inequality.",
+        exampleZh: "政策应改善不平等。",
+        examples: [
+          { en: "Education can ameliorate social problems.", zh: "教育可以改善社会问题。" },
+          { en: "Donations ameliorated the disaster damage.", zh: "捐款减轻了灾难损害。" }
+        ],
+        collocations: ["ameliorate conditions", "ameliorate poverty", "ameliorate effects", "ameliorate suffering"],
+        synonyms: ["improve", "alleviate", "relieve"], antonyms: ["worsen", "deteriorate"],
+        commonMistakes: [{ mistake: "Using 'improve' when 'ameliorate' is intended", correction: "'Ameliorate' implies making a bad situation less severe." }],
+        pronunciationTips: "Stress third syllable: əˈmiːliəreɪt.",
+        memoryTrick: "A = to, melio = better, ate = make. Make better = ameliorate."
+      },
+      {
+        id: "ac-6", topic: "Advanced Communication", level: "C2", category: "Reasoning",
+        english: "Epistemology", word: "epistemology", partOfSpeech: "noun",
+        breakdown: "ɪˌpɪstəˈmɒlədʒi", chinese: "认识论", pinyin: "rèn shí lùn",
+        emoji: "🧠", imageKeyword: "knowledge theory",
+        definitionEn: "The study of knowledge and justified belief.",
+        definitionZh: "关于知识和合理信念的研究。",
+        detailsEn: "Common: epistemology of science, social epistemology.",
+        detailsZh: "常见搭配：epistemology of science、social epistemology。",
+        exampleEn: "Epistemology asks: how do we know?",
+        exampleZh: "认识论问：我们如何知道？",
+        examples: [
+          { en: "She studies epistemology and logic.", zh: "她研究认识论和逻辑。" },
+          { en: "Epistemology underpins scientific method.", zh: "认识论是科学方法论的基础。" }
+        ],
+        collocations: ["epistemology of", "social epistemology", "epistemology study", "epistemology theory"],
+        synonyms: ["theory of knowledge", "gnosiology"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'epistemology' in casual conversation", correction: "Reserve for academic or philosophical contexts." }],
+        pronunciationTips: "Stress sixth syllable: ɪˌpɪstəˈmɒlədʒi.",
+        memoryTrick: "Episteme = knowledge, ology = study. Study of knowledge."
       }
     ]
   }
