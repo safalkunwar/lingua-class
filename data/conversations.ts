@@ -2994,5 +2994,603 @@ export const conversations: ConversationTopic[] = [
         "Confirm the price"
       ]
     }
+  },
+  {
+    id: "supermarket-shopping",
+    title: "At the Supermarket",
+    emoji: "🛒",
+    description: "Finding items, asking for help, and checking out at a grocery store.",
+    color: "from-green-400 to-lime-400",
+    level: "A1",
+    estimatedTime: "10 min",
+    vocabularyPreview: [
+      { word: "Cart", phonetic: "/kɑːrt/", chinese: "购物车", partOfSpeech: "noun" },
+      { word: "Aisle", phonetic: "/aɪl/", chinese: "过道", partOfSpeech: "noun" },
+      { word: "Checkout", phonetic: "/ˈtʃekaʊt/", chinese: "收银台", partOfSpeech: "noun" },
+      { word: "Receipt", phonetic: "/rɪˈsiːt/", chinese: "收据", partOfSpeech: "noun" },
+      { word: "Cashier", phonetic: "/kæˈʃɪr/", chinese: "收银员", partOfSpeech: "noun" },
+      { word: "Plastic bag", phonetic: "/ˈplæstɪk bæɡ/", chinese: "塑料袋", partOfSpeech: "noun" }
+    ],
+    conversation: [
+      { speaker: "Customer", line: "Excuse me, where are the apples?" },
+      { speaker: "Staff", line: "They're in aisle 3, next to the oranges." },
+      { speaker: "Customer", line: "Thank you. Do you have any organic apples?" },
+      { speaker: "Staff", line: "Yes, right here. They're on sale today." },
+      { speaker: "Customer", line: "Great! I'll take a bag of those, please." },
+      { speaker: "Cashier", line: "That'll be $5.99. Would you like a plastic bag?" },
+      { speaker: "Customer", line: "No, I brought my own. Thank you!" },
+      { speaker: "Cashier", line: "Here's your receipt. Have a great day!" }
+    ],
+    chineseTranslation: [
+      { speaker: "顾客", line: "打扰一下，苹果在哪里？" },
+      { speaker: "员工", line: "在3号过道，橘子旁边。" },
+      { speaker: "顾客", line: "谢谢。你们有有机苹果吗？" },
+      { speaker: "员工", line: "有的，就在这里。今天特价。" },
+      { speaker: "顾客", line: "太好了！我要一袋。" },
+      { speaker: "收银员", line: "总共5.99美元。您需要塑料袋吗？" },
+      { speaker: "顾客", line: "不用了，我自己带了。谢谢！" },
+      { speaker: "收银员", line: "这是您的收据。祝您愉快！" }
+    ],
+    usefulExpressions: [
+      { expression: "Where are the...?", meaning: "...在哪里？", usage: "在超市询问商品位置" },
+      { expression: "They're in aisle...", meaning: "在...过道", usage: "指路" },
+      { expression: "I'll take...", meaning: "我要...", usage: "决定购买" },
+      { expression: "Would you like...?", meaning: "您需要...吗？", usage: "收银员询问" },
+      { expression: "Here's your receipt", meaning: "这是您的收据", usage: "给予收据" }
+    ],
+    grammarFocus: [
+      {
+        title: "Questions with 'Where'",
+        explanation: "用 'Where...?' 询问位置。",
+        examples: [
+          "Where are the apples?",
+          "Where is the checkout?",
+          "Where can I find bread?"
+        ]
+      },
+      {
+        title: "Simple Future with 'I'll'",
+        explanation: "用 'I'll...' (I will) 表达决定。",
+        examples: [
+          "I'll take a bag.",
+          "I'll get the milk.",
+          "I'll pay by card."
+        ]
+      }
+    ],
+    collocationsAndChunks: [
+      { chunk: "Where are the...", meaning: "...在哪里", example: "Where are the apples?" },
+      { chunk: "I'll take...", meaning: "我要...", example: "I'll take a bag of apples." },
+      { chunk: "Here's your receipt", meaning: "这是您的收据", example: "Here's your receipt. Thank you!" }
+    ],
+    pronunciationTips: [
+      { tip: "Aisle → /aɪl/", example: "Sounds like 'I'll'" },
+      { tip: "Receipt → /rɪˈsiːt/", example: "Stress on second syllable" }
+    ],
+    commonMistakes: [
+      {
+        mistake: "'I want...' 直接表达需求",
+        correction: "更礼貌的说法是 'I'll take...'",
+        explanation: "购物时用 'I'll take' 表示决定购买更自然。"
+      }
+    ],
+    rolePlayPractice: [
+      {
+        scenario: "You need to buy ingredients for dinner. Go to the supermarket, find the items, ask for help if needed, and check out.",
+        prompts: [
+          "Take a cart",
+          "Find the items on your list",
+          "Ask a staff member for help",
+          "Choose items",
+          "Pay at the checkout"
+        ]
+      }
+    ],
+    vocabularyExpansion: [
+      {
+        word: "Organic",
+        synonyms: ["Natural", "Chemical-free"],
+        antonyms: ["Processed"],
+        example: "Do you have organic vegetables?"
+      },
+      {
+        word: "Checkout",
+        synonyms: ["Cash register", "Payment counter"],
+        antonyms: [],
+        example: "The checkout is on the left."
+      }
+    ],
+    shadowingPractice: [
+      "Excuse me, where are the apples?",
+      "I'll take a bag of those, please.",
+      "Would you like a plastic bag?",
+      "No, I brought my own.",
+      "Here's your receipt. Have a great day!"
+    ],
+    speakingChallenge: {
+      instruction: "Practice shopping for 5 items at a supermarket. Use 'Where are...', 'I'll take', and 'Here's your receipt'.",
+      hints: [
+        "Start by taking a cart",
+        "Ask for directions to each item",
+        "Choose brands or sizes",
+        "Pay at the checkout"
+      ]
+    }
+  },
+  {
+    id: "public-transport",
+    title: "Taking Public Transport",
+    emoji: "🚌",
+    description: "Buying tickets, asking about stops, and taking buses or trains.",
+    color: "from-sky-400 to-blue-400",
+    level: "A1",
+    estimatedTime: "10 min",
+    vocabularyPreview: [
+      { word: "Bus stop", phonetic: "/bʌs stɒp/", chinese: "公交站", partOfSpeech: "noun" },
+      { word: "Ticket", phonetic: "/ˈtɪkɪt/", chinese: "票", partOfSpeech: "noun" },
+      { word: "Station", phonetic: "/ˈsteɪʃn/", chinese: "车站", partOfSpeech: "noun" },
+      { word: "Platform", phonetic: "/ˈplætfɔːrm/", chinese: "站台", partOfSpeech: "noun" },
+      { word: "Transfer", phonetic: "/trænsˈfɜːr/", chinese: "换乘", partOfSpeech: "verb / noun" },
+      { word: "Schedule", phonetic: "/ˈskedʒuːl/", chinese: "时刻表", partOfSpeech: "noun" }
+    ],
+    conversation: [
+      { speaker: "Passenger", line: "Excuse me, does this bus go to Central Station?" },
+      { speaker: "Driver", line: "Yes, it does. That'll be $2.50, please." },
+      { speaker: "Passenger", line: "Here you go. Do I need to transfer anywhere?" },
+      { speaker: "Driver", line: "No, this bus goes straight there. Enjoy your ride!" },
+      { speaker: "Passenger", line: "Thank you. Is there a stop near the museum?" },
+      { speaker: "Driver", line: "Yes, the next stop is Main Street, which is right in front of the museum." }
+    ],
+    chineseTranslation: [
+      { speaker: "乘客", line: "打扰一下，这趟公交车去中央车站吗？" },
+      { speaker: "司机", line: "是的。请付2.50美元。" },
+      { speaker: "乘客", line: "给你。我需要在哪里换乘吗？" },
+      { speaker: "司机", line: "不用，这趟车直达。祝您旅途愉快！" },
+      { speaker: "乘客", line: "谢谢。博物馆附近有站吗？" },
+      { speaker: "司机", line: "有的，下一站就是主街，就在博物馆前面。" }
+    ],
+    usefulExpressions: [
+      { expression: "Does this bus go to...?", meaning: "这趟车去...吗？", usage: "询问公交路线" },
+      { expression: "That'll be...", meaning: "总共...", usage: "告知价格" },
+      { expression: "Do I need to transfer?", meaning: "我需要换乘吗？", usage: "询问是否需要换乘" },
+      { expression: "Right in front of", meaning: "就在...前面", usage: "描述位置" },
+      { expression: "Enjoy your ride", meaning: "旅途愉快", usage: "司机常用语" }
+    ],
+    grammarFocus: [
+      {
+        title: "Yes/No Questions with 'Does'",
+        explanation: "用 'Does...?' 询问第三人称单数的事实。",
+        examples: [
+          "Does this bus go to the airport?",
+          "Does the train stop at Central?",
+          "Does it run every 10 minutes?"
+        ]
+      },
+      {
+        title: "Prepositions of Place",
+        explanation: "用介词描述位置。",
+        examples: [
+          "The museum is next to the park.",
+          "The stop is in front of the museum.",
+          "The station is on Main Street."
+        ]
+      }
+    ],
+    collocationsAndChunks: [
+      { chunk: "Go straight", meaning: "直达", example: "This bus goes straight there." },
+      { chunk: "Right in front of", meaning: "就在...前面", example: "The museum is right in front of the stop." },
+      { chunk: "Do I need to transfer", meaning: "我需要换乘吗", example: "Do I need to transfer anywhere?" }
+    ],
+    pronunciationTips: [
+      { tip: "That'll be → /ðætəl biː/", example: "Contraction sounds natural" },
+      { tip: "Right in front of → /raɪt ɪn frʌnt ʌv/", example: "Fast, connected speech" }
+    ],
+    commonMistakes: [
+      {
+        mistake: "'I need transfer'",
+        correction: "'I need to transfer' 或 'Do I need to transfer?'",
+        explanation: "'Transfer' 作动词时前面要加 'to'。"
+      }
+    ],
+    rolePlayPractice: [
+      {
+        scenario: "You need to get from the bus stop to the museum. Ask the driver about the route, ticket price, and what stop to get off at.",
+        prompts: [
+          "Check if the bus goes to the museum",
+          "Buy a ticket",
+          "Ask if you need to transfer",
+          "Ask which stop to get off at",
+          "Thank the driver"
+        ]
+      }
+    ],
+    vocabularyExpansion: [
+      {
+        word: "Schedule",
+        synonyms: ["Timetable", "Plan"],
+        antonyms: [],
+        example: "What time is the next bus?"
+      },
+      {
+        word: "Platform",
+        synonyms: ["Track", "Terminal"],
+        antonyms: [],
+        example: "The train leaves from platform 3."
+      }
+    ],
+    shadowingPractice: [
+      "Excuse me, does this bus go to Central Station?",
+      "That'll be $2.50, please.",
+      "Do I need to transfer anywhere?",
+      "The next stop is Main Street.",
+      "Thank you. Enjoy your ride!"
+    ],
+    speakingChallenge: {
+      instruction: "Practice taking public transport to 3 destinations: the museum, the park, and the shopping mall. Ask about routes, prices, and stops.",
+      hints: [
+        "Start with 'Does this bus go to...?'",
+        "Ask the ticket price",
+        "Confirm if you need to transfer",
+        "Ask which stop to get off at"
+      ]
+    }
+  },
+  {
+    id: "internet-social-media",
+    title: "Internet and Social Media",
+    emoji: "📱",
+    description: "Talking about social media, online activities, and digital habits.",
+    color: "from-blue-400 to-cyan-400",
+    level: "A1",
+    estimatedTime: "10 min",
+    vocabularyPreview: [
+      { word: "Post", phonetic: "/poʊst/", chinese: "帖子", partOfSpeech: "noun / verb" },
+      { word: "Follow", phonetic: "/ˈfɒloʊ/", chinese: "关注", partOfSpeech: "verb" },
+      { word: "Like", phonetic: "/laɪk/", chinese: "点赞", partOfSpeech: "verb" },
+      { word: "Comment", phonetic: "/ˈkɒment/", chinese: "评论", partOfSpeech: "noun / verb" },
+      { word: "Share", phonetic: "/ʃer/", chinese: "分享", partOfSpeech: "verb" },
+      { word: "Online", phonetic: "/ˈɒnlaɪn/", chinese: "在线的", partOfSpeech: "adjective" }
+    ],
+    conversation: [
+      { speaker: "Anna", line: "Did you see my new post on Instagram?" },
+      { speaker: "Ben", line: "Not yet! What did you post?" },
+      { speaker: "Anna", line: "I posted a photo of my trip. Can you like and comment?" },
+      { speaker: "Ben", line: "Sure! I'll do it now. How many followers do you have now?" },
+      { speaker: "Anna", line: "I have 500 followers. I'm trying to post more often." },
+      { speaker: "Ben", line: "That's great! Should I share your post with my friends?" },
+      { speaker: "Anna", line: "Yes, please! The more shares, the better." }
+    ],
+    chineseTranslation: [
+      { speaker: "安娜", line: "你看到我Instagram上的新帖子了吗？" },
+      { speaker: "本", line: "还没！你发了什么？" },
+      { speaker: "安娜", line: "我发了一张旅行的照片。你能点赞和评论吗？" },
+      { speaker: "本", line: "当然！我现在就做。你现在有多少粉丝了？" },
+      { speaker: "安娜", line: "我有500个粉丝。我尽量更频繁地发帖。" },
+      { speaker: "本", line: "太棒了！我应该把你的帖子分享给朋友吗？" },
+      { speaker: "安娜", line: "好的，请！分享越多越好。" }
+    ],
+    usefulExpressions: [
+      { expression: "Did you see my post?", meaning: "你看到我的帖子了吗？", usage: "询问是否看到社交媒体内容" },
+      { expression: "Can you like and comment?", meaning: "你能点赞和评论吗？", usage: "请求互动" },
+      { expression: "Post more often", meaning: "更频繁地发帖", usage: "描述发布频率" },
+      { expression: "The more... the better", meaning: "越多越好", usage: "表达偏好" },
+      { expression: "Share with...", meaning: "分享给...", usage: "转发内容" }
+    ],
+    grammarFocus: [
+      {
+        title: "Present Perfect for Recent Actions",
+        explanation: "用现在完成时询问刚刚发生的动作。",
+        examples: [
+          "Have you seen my post?",
+          "I have just posted a photo.",
+          "How many followers have you gained?"
+        ]
+      },
+      {
+        title: "Comparative Structure: The more... the better",
+        explanation: "用 'The more... the better' 表达越多越好。",
+        examples: [
+          "The more shares, the better.",
+          "The more likes, the better.",
+          "The more often, the better."
+        ]
+      }
+    ],
+    collocationsAndChunks: [
+      { chunk: "Post a photo", meaning: "发照片", example: "I posted a photo on Instagram." },
+      { chunk: "Like and comment", meaning: "点赞和评论", example: "Can you like and comment?" },
+      { chunk: "The more... the better", meaning: "越多越好", example: "The more shares, the better." }
+    ],
+    pronunciationTips: [
+      { tip: "Followers → /ˈfɒloʊərz/", example: "Stress on first syllable" },
+      { tip: "The more... the better → /ðə mɔːr... ðə ˈbetər/", example: "Connected speech" }
+    ],
+    commonMistakes: [
+      {
+        mistake: "'Did you post my photo?'",
+        correction: "'Did you see my post?' 或 'Have you seen my post?'",
+        explanation: "'See' 表示看到；'Post' 表示发布。"
+      }
+    ],
+    rolePlayPractice: [
+      {
+        scenario: "You and a friend are talking about social media. Ask about their posts, offer to like and share, and discuss your own online habits.",
+        prompts: [
+          "Ask if they saw your post",
+          "Offer to like and comment",
+          "Ask about their follower count",
+          "Suggest sharing each other's posts",
+          "Talk about posting frequency"
+        ]
+      }
+    ],
+    vocabularyExpansion: [
+      {
+        word: "Hashtag",
+        synonyms: ["Tag", "Keyword"],
+        antonyms: [],
+        example: "Don't forget to use hashtags."
+      },
+      {
+        word: "Story",
+        synonyms: ["Update", "Temporary post"],
+        antonyms: [],
+        example: "I posted a story on Instagram."
+      }
+    ],
+    shadowingPractice: [
+      "Did you see my new post?",
+      "I posted a photo of my trip.",
+      "Can you like and comment?",
+      "How many followers do you have?",
+      "The more shares, the better!"
+    ],
+    speakingChallenge: {
+      instruction: "Practice talking about social media with a friend. Use 'post', 'like', 'follow', and 'share'. Discuss your favorite platforms and posting habits.",
+      hints: [
+        "Ask about their latest post",
+        "Offer to like and comment",
+        "Ask about follower count",
+        "Suggest sharing posts",
+        "Talk about posting frequency"
+      ]
+    }
+  },
+  {
+    id: "asking-for-help",
+    title: "Asking for Help",
+    emoji: "🙋",
+    description: "Polite ways to ask for help in shops, streets, and public places.",
+    color: "from-yellow-400 to-amber-400",
+    level: "A1",
+    estimatedTime: "10 min",
+    vocabularyPreview: [
+      { word: "Help", phonetic: "/help/", chinese: "帮助", partOfSpeech: "noun / verb" },
+      { word: "Can you...?", phonetic: "/kæn juː/", chinese: "你能...吗？", partOfSpeech: "question" },
+      { word: "Excuse me", phonetic: "/ɪkˈskuːz miː/", chinese: "打扰一下", partOfSpeech: "phrase" },
+      { word: "Lost", phonetic: "/lɒst/", chinese: "迷路了", partOfSpeech: "adjective" },
+      { word: "Problem", phonetic: "/ˈprɒbləm/", chinese: "问题", partOfSpeech: "noun" },
+      { word: "Thank you", phonetic: "/θæŋk juː/", chinese: "谢谢", partOfSpeech: "phrase" }
+    ],
+    conversation: [
+      { speaker: "Tourist", line: "Excuse me, I'm lost. Can you help me find the museum?" },
+      { speaker: "Local", line: "Of course. It's just two blocks straight ahead. Turn left at the traffic light." },
+      { speaker: "Tourist", line: "Thank you! Is it open on Sundays?" },
+      { speaker: "Local", line: "Yes, it opens at 10 AM. You have plenty of time." },
+      { speaker: "Tourist", line: "You're very kind. Thank you for your help!" }
+    ],
+    chineseTranslation: [
+      { speaker: "游客", line: "打扰一下，我迷路了。你能帮我找博物馆吗？" },
+      { speaker: "当地人", line: "当然。直走两个街区，在红绿灯处左转。" },
+      { speaker: "游客", line: "谢谢！它周日开门吗？" },
+      { speaker: "当地人", line: "是的，上午10点开门。你时间很充裕。" },
+      { speaker: "游客", line: "你真好。非常感谢你的帮助！" }
+    ],
+    usefulExpressions: [
+      { expression: "Can you help me...?", meaning: "你能帮我...吗？", usage: "礼貌请求帮助" },
+      { expression: "I'm lost", meaning: "我迷路了", usage: "说明自己迷路" },
+      { expression: "Can you show me...?", meaning: "你能告诉我...吗？", usage: "请求指路或演示" },
+      { expression: "Plenty of time", meaning: "时间充裕", usage: "表示时间足够" },
+      { expression: "Thank you for your help", meaning: "谢谢你的帮助", usage: "感谢帮助" }
+    ],
+    grammarFocus: [
+      {
+        title: "Polite Requests with 'Can you'",
+        explanation: "用 'Can you...?' 礼貌请求帮助。",
+        examples: [
+          "Can you help me?",
+          "Can you show me the way?",
+          "Can you repeat that, please?"
+        ]
+      },
+      {
+        title: "Simple Past for Location",
+        explanation: "用一般过去时描述过去的地点。",
+        examples: [
+          "I lost my way.",
+          "I left my bag at home.",
+          "I missed the bus."
+        ]
+      }
+    ],
+    collocationsAndChunks: [
+      { chunk: "Can you help me", meaning: "你能帮我吗", example: "Can you help me find the museum?" },
+      { chunk: "I'm lost", meaning: "我迷路了", example: "I'm lost. Can you help me?" },
+      { chunk: "Thank you for your help", meaning: "谢谢你的帮助", example: "Thank you for your help!" }
+    ],
+    pronunciationTips: [
+      { tip: "Can you → /kæn juː/", example: "Natural, polite request" },
+      { tip: "Thank you for your help → /θæŋk juː fər jʊr help/", example: "Connected speech" }
+    ],
+    commonMistakes: [
+      {
+        mistake: "'Help me!'",
+        correction: "'Can you help me, please?'",
+        explanation: "增加 'Can you' 和 'please' 会让请求更礼貌。"
+      }
+    ],
+    rolePlayPractice: [
+      {
+        scenario: "You are lost in a new city. Ask a local for help finding your hotel. Ask about distance, transportation, and time.",
+        prompts: [
+          "Get their attention politely",
+          "Explain that you're lost",
+          "Ask for directions",
+          "Ask how far it is",
+          "Thank them sincerely"
+        ]
+      }
+    ],
+    vocabularyExpansion: [
+      {
+        word: "Direction",
+        synonyms: ["Guidance", "Way"],
+        antonyms: [],
+        example: "Can you give me directions to the station?"
+      },
+      {
+        word: "Traffic light",
+        synonyms: ["Signal", "Stop light"],
+        antonyms: [],
+        example: "Turn left at the traffic light."
+      }
+    ],
+    shadowingPractice: [
+      "Excuse me, I'm lost. Can you help me find the museum?",
+      "Of course. It's just two blocks straight ahead.",
+      "Turn left at the traffic light.",
+      "Is it open on Sundays?",
+      "Thank you for your help!"
+    ],
+    speakingChallenge: {
+      instruction: "Practice asking for help in 3 situations: finding a museum, asking for a restroom, and asking someone to take a photo for you.",
+      hints: [
+        "Start with 'Excuse me'",
+        "Say 'Can you help me?'",
+        "Explain what you need",
+        "Always say 'Thank you'"
+      ]
+    }
+  },
+  {
+    id: "weather-chat",
+    title: "Talking About Weather",
+    emoji: "🌤️",
+    description: "Describing weather, making predictions, and using weather in small talk.",
+    color: "from-sky-400 to-blue-400",
+    level: "A1",
+    estimatedTime: "10 min",
+    vocabularyPreview: [
+      { word: "Sunny", phonetic: "/ˈsʌni/", chinese: "晴朗的", partOfSpeech: "adjective" },
+      { word: "Rainy", phonetic: "/ˈreɪni/", chinese: "下雨的", partOfSpeech: "adjective" },
+      { word: "Cold", phonetic: "/koʊld/", chinese: "冷的", partOfSpeech: "adjective" },
+      { word: "Warm", phonetic: "/wɔːrm/", chinese: "温暖的", partOfSpeech: "adjective" },
+      { word: "Forecast", phonetic: "/ˈfɔːrkæst/", chinese: "天气预报", partOfSpeech: "noun" },
+      { word: "Temperature", phonetic: "/ˈtemprətʃər/", chinese: "温度", partOfSpeech: "noun" }
+    ],
+    conversation: [
+      { speaker: "Anna", line: "It's a beautiful sunny day today." },
+      { speaker: "Ben", line: "Yes, it's warm and sunny. Perfect for a picnic!" },
+      { speaker: "Anna", line: "What's the forecast for tomorrow?" },
+      { speaker: "Ben", line: "It says it will be rainy and cold. We should bring jackets." },
+      { speaker: "Anna", line: "Good idea. I don't like rainy days." },
+      { speaker: "Ben", line: "Me neither. But we need rain for the plants!" },
+      { speaker: "Anna", line: "That's true. Let's enjoy the sun today." }
+    ],
+    chineseTranslation: [
+      { speaker: "Anna", line: "今天天气真好，阳光明媚。" },
+      { speaker: "Ben", line: "是的，温暖又晴朗。非常适合野餐！" },
+      { speaker: "Anna", line: "明天天气预报怎么说？" },
+      { speaker: "Ben", line: "说明天会下雨，很冷。我们应该带夹克。" },
+      { speaker: "Anna", line: "好主意。我不喜欢下雨天。" },
+      { speaker: "Ben", line: "我也不喜欢。但是植物需要雨水！" },
+      { speaker: "Anna", line: "没错。我们今天好好享受阳光吧。" }
+    ],
+    usefulExpressions: [
+      { expression: "It's sunny/rainy/cold", meaning: "天气晴朗/下雨/冷", usage: "描述天气" },
+      { expression: "What's the forecast?", meaning: "天气预报怎么说？", usage: "询问天气预测" },
+      { expression: "Perfect for...", meaning: "非常适合...", usage: "表达适合做某事" },
+      { expression: "Me neither", meaning: "我也不", usage: "表示同意对方的否定观点" },
+      { expression: "Let's...", meaning: "让我们...", usage: "提出建议" }
+    ],
+    grammarFocus: [
+      {
+        title: "Present Tense for Weather",
+        explanation: "用一般现在时描述当前天气。",
+        examples: [
+          "It's sunny today.",
+          "It's raining outside.",
+          "It's cold in winter."
+        ]
+      },
+      {
+        title: "Future with 'Will'",
+        explanation: "用 'will' 预测未来天气。",
+        examples: [
+          "It will rain tomorrow.",
+          "It will be cold next week.",
+          "The temperature will drop."
+        ]
+      }
+    ],
+    collocationsAndChunks: [
+      { chunk: "It's sunny", meaning: "天气晴朗", example: "It's sunny today." },
+      { chunk: "What's the forecast", meaning: "天气预报", example: "What's the forecast for tomorrow?" },
+      { chunk: "Me neither", meaning: "我也不", example: "I don't like rain. Me neither." }
+    ],
+    pronunciationTips: [
+      { tip: "Sunny → /ˈsʌni/", example: "Double 'n', stress on first syllable" },
+      { tip: "Forecast → /ˈfɔːrkæst/", example: "Stress on first syllable" }
+    ],
+    commonMistakes: [
+      {
+        mistake: "'Today is rainy'",
+        correction: "'It's rainy today'",
+        explanation: "描述天气用 'It's...'，不是直接说 'Today is...'"
+      }
+    ],
+    rolePlayPractice: [
+      {
+        scenario: "You meet your neighbor outside. Talk about today's weather, tomorrow's forecast, and plan an outdoor activity together.",
+        prompts: [
+          "Comment on today's weather",
+          "Ask about tomorrow's forecast",
+          "Express your preference",
+          "Suggest an activity",
+          "Agree on a plan"
+        ]
+      }
+    ],
+    vocabularyExpansion: [
+      {
+        word: "Forecast",
+        synonyms: ["Prediction", "Outlook"],
+        antonyms: [],
+        example: "The forecast says it will rain."
+      },
+      {
+        word: "Temperature",
+        synonyms: ["Heat", "Cold"],
+        antonyms: [],
+        example: "The temperature is dropping."
+      }
+    ],
+    shadowingPractice: [
+      "It's a beautiful sunny day today.",
+      "What's the forecast for tomorrow?",
+      "It says it will be rainy and cold.",
+      "We need rain for the plants!",
+      "Let's enjoy the sun today."
+    ],
+    speakingChallenge: {
+      instruction: "Practice talking about weather for a week. Use 'It's...', 'It will...', and 'Me neither'. Compare weather in different cities.",
+      hints: [
+        "Start with today's weather",
+        "Use adjectives like sunny, rainy, cold",
+        "Ask about tomorrow's forecast",
+        "Express likes and dislikes",
+        "Suggest activities based on weather"
+      ]
+    }
   }
 ];
