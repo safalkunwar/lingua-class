@@ -12,7 +12,7 @@
 - **Status:** Production ready
 
 **Features:**
-- 209 words across 28 topics
+- 213 words across 28 topics
 - C1 Professional Skills (6 words)
 - C2 Advanced Communication (6 words)
 - Level filters updated to support A1, A2, B1, B2, C1, C2
@@ -35,7 +35,7 @@
 8. Education (8 words)
 9. Health (8 words)
 10. Weather (7 words)
-11. Technology (4 words)
+11. Technology (8 words)
 12. PTE IELTS Academic (6 words)
 13. Friends (6 words)
 14. Home & House (8 words)

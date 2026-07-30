@@ -1972,6 +1972,90 @@ export const wordBook: WordBookTopic[] = [
         commonMistakes: [{ mistake: "Using 'explorer' as the generic word", correction: "'Browser' is the standard term." }],
         pronunciationTips: "Stress the first syllable: BROW-zer.",
         memoryTrick: "Browse + er. A tool that browses the web."
+      },
+      {
+        id: "tc-5", topic: "Technology", level: "A2", category: "Internet",
+        english: "Internet", word: "internet", partOfSpeech: "noun",
+        breakdown: "IN-ter-net", chinese: "互联网", pinyin: "hù lián wǎng",
+        emoji: "🌐", imageKeyword: "internet network",
+        definitionEn: "The global system of connected computers.",
+        definitionZh: "全球计算机连接系统。",
+        detailsEn: "Common: on the internet, use the internet, internet connection.",
+        detailsZh: "常见：on the internet、use the internet、internet connection。",
+        exampleEn: "I found it on the internet.",
+        exampleZh: "我在网上找到了它。",
+        examples: [
+          { en: "The internet is slow.", zh: "网速很慢。" },
+          { en: "Use the internet carefully.", zh: "小心使用互联网。" }
+        ],
+        collocations: ["on the internet", "use the internet", "internet connection", "internet safety"],
+        synonyms: ["web", "net"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'internet' with capital always", correction: "Internet = 互联网 (modern usage, lowercase)." }],
+        pronunciationTips: "Three syllables: IN-ter-net. Stress the first.",
+        memoryTrick: "Inter (between) + net (网). Network between computers."
+      },
+      {
+        id: "tc-6", topic: "Technology", level: "A2", category: "Apps",
+        english: "App", word: "app", partOfSpeech: "noun",
+        breakdown: "ap", chinese: "应用程序", pinyin: "yìng yòng chéng xù",
+        emoji: "📲", imageKeyword: "mobile app",
+        definitionEn: "A software program for a phone or computer.",
+        definitionZh: "用于手机或计算机的软件程序。",
+        detailsEn: "Common: download an app, app store, mobile app.",
+        detailsZh: "常见：download an app、app store、mobile app。",
+        exampleEn: "This app is useful.",
+        exampleZh: "这个应用很有用。",
+        examples: [
+          { en: "Download the app now.", zh: "现在下载应用。" },
+          { en: "The app is free.", zh: "应用是免费的。" }
+        ],
+        collocations: ["download an app", "app store", "mobile app", "app developer"],
+        synonyms: ["application", "software"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'app' for websites", correction: "App = 应用 (software); website = 网站 (browser)." }],
+        pronunciationTips: "One syllable: ap. Short 'a'.",
+        memoryTrick: "App = 应用. Application shortened to app."
+      },
+      {
+        id: "tc-7", topic: "Technology", level: "A1", category: "Devices",
+        english: "Screen", word: "screen", partOfSpeech: "noun",
+        breakdown: "skreen", chinese: "屏幕", pinyin: "píng mǔ",
+        emoji: "🖥️", imageKeyword: "phone screen",
+        definitionEn: "The flat surface where you see images.",
+        definitionZh: "显示图像的平面。",
+        detailsEn: "Common: phone screen, screen size, screen time.",
+        detailsZh: "常见：phone screen、screen size、screen time。",
+        exampleEn: "The screen is cracked.",
+        exampleZh: "屏幕碎了。",
+        examples: [
+          { en: "Clean the screen gently.", zh: "轻轻擦拭屏幕。" },
+          { en: "Screen time affects sleep.", zh: "屏幕时间影响睡眠。" }
+        ],
+        collocations: ["phone screen", "screen size", "screen time", "touch screen"],
+        synonyms: ["display", "monitor"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'screen' only for TVs", correction: "Screens are on phones, laptops, watches, etc." }],
+        pronunciationTips: "One syllable: skreen. Like 'scream' without 'm'.",
+        memoryTrick: "Screen = 屏幕. Like a clean(干净) scene."
+      },
+      {
+        id: "tc-8", topic: "Technology", level: "B1", category: "Devices",
+        english: "Device", word: "device", partOfSpeech: "noun",
+        breakdown: "di-VYS", chinese: "设备", pinyin: "shè bèi",
+        emoji: "📱", imageKeyword: "tech devices",
+        definitionEn: "A piece of equipment made for a purpose.",
+        definitionZh: "为特定目的制造的设备。",
+        detailsEn: "Common: electronic device, mobile device, smart device.",
+        detailsZh: "常见：electronic device、mobile device、smart device。",
+        exampleEn: "This device is very useful.",
+        exampleZh: "这个设备很有用。",
+        examples: [
+          { en: "Connect the device to Wi-Fi.", zh: "将设备连接到Wi-Fi。" },
+          { en: "The device needs charging.", zh: "设备需要充电。" }
+        ],
+        collocations: ["electronic device", "mobile device", "smart device", "device support"],
+        synonyms: ["gadget", "tool", "equipment"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'device' for software only", correction: "Device = hardware; app = software." }],
+        pronunciationTips: "Two syllables: di-VYS. Stress the second.",
+        memoryTrick: "De + vice. De (down) + vice (工具) = a tool down to use."
       }
     ]
   },
