@@ -2192,6 +2192,48 @@ export const wordBook: WordBookTopic[] = [
         pronunciationTips: "Stress the third syllable: hye-POTH-uh-sis.",
         memoryTrick: "Hypo = under, thesis = placing. An educated guess placed before proof.",
         superlative: "hypotheses"
+      },
+      {
+        id: "ac-7", topic: "Academic", level: "B2", category: "Writing",
+        english: "Argument", word: "argument", partOfSpeech: "noun",
+        breakdown: "AHR-gyuh-ment", chinese: "论点", pinyin: "lùn diǎn",
+        emoji: "💬", imageKeyword: "debate argument",
+        definitionEn: "A reason or set of reasons supporting a conclusion.",
+        definitionZh: "支持结论的理由。",
+        detailsEn: "Common: present an argument, strong argument, counter argument.",
+        detailsZh: "常见：present an argument、strong argument、counter argument。",
+        exampleEn: "She presented a strong argument.",
+        exampleZh: "她提出了有力的论点。",
+        examples: [
+          { en: "His argument was convincing.", zh: "他的论点很有说服力。" },
+          { en: "They had an argument.", zh: "他们发生了争论。" }
+        ],
+        collocations: ["strong argument", "present argument", "counter argument", "argument essay"],
+        synonyms: ["reasoning", "case", "point"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'argument' only for fights", correction: "In academic writing, it means a reasoned point." }],
+        pronunciationTips: "Stress the first syllable: AHR-gyuh-ment.",
+        memoryTrick: "Argue + ment. A reasoned point in a debate."
+      },
+      {
+        id: "ac-8", topic: "Academic", level: "B2", category: "Reading",
+        english: "Criticize", word: "criticize", partOfSpeech: "verb",
+        breakdown: "KRIT-i-syz", chinese: "批评", pinyin: "pī píng",
+        emoji: "🧐", imageKeyword: "critique analysis",
+        definitionEn: "To point out the faults of something.",
+        definitionZh: "指出某事的错误。",
+        detailsEn: "Common in essays: criticize an idea, constructive criticism.",
+        detailsZh: "常见于作文：criticize an idea、constructive criticism。",
+        exampleEn: "He criticized the proposal.",
+        exampleZh: "他批评了这个提议。",
+        examples: [
+          { en: "The paper criticizes current policy.", zh: "论文批评了现行政策。" },
+          { en: "Constructive criticism helps improvement.", zh: "建设性批评帮助改进。" }
+        ],
+        collocations: ["criticize idea", "criticize policy", "constructive criticism", "criticize method"],
+        synonyms: ["challenge", "question", "evaluate"], antonyms: ["praise"],
+        commonMistakes: [{ mistake: "Using only negative meaning", correction: "It can be neutral or constructive in academic contexts." }],
+        pronunciationTips: "Stress the first syllable: KRIT-i-syz.",
+        memoryTrick: "Critic + ize. Make a critic judgment."
       }
     ]
   },
@@ -2327,6 +2369,48 @@ export const wordBook: WordBookTopic[] = [
         commonMistakes: [{ mistake: "Using 'invite for' instead of 'invite to'", correction: "Say 'invite someone to something.'" }],
         pronunciationTips: "Stress the second syllable: in-VYT.",
         memoryTrick: "In + vite. Send in an invitation."
+      },
+      {
+        id: "fr-social-8", topic: "Friends", level: "A2", category: "Social",
+        english: "Apologize", word: "apologize", partOfSpeech: "verb",
+        breakdown: "uh-POL-uh-jyz", chinese: "道歉", pinyin: "dào qiàn",
+        emoji: "🙇", imageKeyword: "apologize gesture",
+        definitionEn: "To say sorry for a mistake or offense.",
+        definitionZh: "为错误或冒犯说对不起。",
+        detailsEn: "Common: apologize to someone, apologize for, apologize sincerely.",
+        detailsZh: "常见：apologize to someone、apologize for、apologize sincerely。",
+        exampleEn: "I apologize for being late.",
+        exampleZh: "我为迟到道歉。",
+        examples: [
+          { en: "She apologized to her friend.", zh: "她向朋友道歉了。" },
+          { en: "Please accept my apology.", zh: "请接受我的道歉。" }
+        ],
+        collocations: ["apologize to", "apologize for", "apologize sincerely", "accept apology"],
+        synonyms: ["sorry", "regret"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'sorry' as a verb", correction: "Use 'apologize' as a verb; 'sorry' is an adjective." }],
+        pronunciationTips: "Stress the third syllable: uh-POL-uh-jyz.",
+        memoryTrick: "A + pole + o + gize. A gesture of apology."
+      },
+      {
+        id: "fr-social-9", topic: "Friends", level: "A2", category: "Social",
+        english: "Compliment", word: "compliment", partOfSpeech: "noun / verb",
+        breakdown: "KOM-pluh-ment", chinese: "赞美", pinyin: "zàn měi",
+        emoji: "💬", imageKeyword: "giving compliment",
+        definitionEn: "A polite expression of praise or admiration.",
+        definitionZh: "礼貌的赞扬或钦佩表达。",
+        detailsEn: "Common: give a compliment, receive a compliment, compliment someone.",
+        detailsZh: "常见：give a compliment、receive a compliment、compliment someone。",
+        exampleEn: "She gave him a compliment.",
+        exampleZh: "她给了他一个赞美。",
+        examples: [
+          { en: "That is a nice compliment.", zh: "那是个很好的赞美。" },
+          { en: "He complimented my cooking.", zh: "他赞美了我的厨艺。" }
+        ],
+        collocations: ["give a compliment", "receive a compliment", "compliment someone", "backhanded compliment"],
+        synonyms: ["praise", "flattery"], antonyms: ["insult", "criticism"],
+        commonMistakes: [{ mistake: "Using 'compliment' for 'complement'", correction: "Compliment = 赞美; complement = 补充." }],
+        pronunciationTips: "Stress the first syllable: KOM-pluh-ment.",
+        memoryTrick: "Com + pliment. Complete (complete) the praise."
       }
     ]
   },
@@ -3702,6 +3786,48 @@ export const wordBook: WordBookTopic[] = [
         commonMistakes: [{ mistake: "Using 'guide' for the book", correction: "'Guide' is the person; 'guidebook' is the book." }],
         pronunciationTips: "Two syllables: GIDE-book. Stress the first.",
         memoryTrick: "Guide + book. A book that guides you."
+      },
+      {
+        id: "ct-7", topic: "Travel", level: "A2", category: "Sightseeing",
+        english: "Landmark", word: "landmark", partOfSpeech: "noun",
+        breakdown: "LAND-mark", chinese: "地标", pinyin: "dì biāo",
+        emoji: "🗼", imageKeyword: "famous landmark",
+        definitionEn: "A famous place or object that people recognize.",
+        definitionZh: "人们认识的名胜或物体。",
+        detailsEn: "Common: famous landmark, historical landmark, visit a landmark.",
+        detailsZh: "常见：famous landmark、historical landmark、visit a landmark。",
+        exampleEn: "The tower is a famous landmark.",
+        exampleZh: "这座塔是著名地标。",
+        examples: [
+          { en: "We visited the landmark.", zh: "我们参观了地标。" },
+          { en: "It is a historical landmark.", zh: "这是历史地标。" }
+        ],
+        collocations: ["famous landmark", "historical landmark", "visit landmark", "landmark building"],
+        synonyms: ["monument", "attraction"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'marker' for landmarks", correction: "Landmark = 地标 (famous); marker = 标记 (small sign)." }],
+        pronunciationTips: "Two syllables: LAND-mark. Stress the first.",
+        memoryTrick: "Land + mark. A mark on the land that everyone knows."
+      },
+      {
+        id: "ct-8", topic: "Travel", level: "A2", category: "Planning",
+        english: "Passport", word: "passport", partOfSpeech: "noun",
+        breakdown: "PASS-port", chinese: "护照", pinyin: "hù zhào",
+        emoji: "🛂", imageKeyword: "passport travel",
+        definitionEn: "An official document for international travel.",
+        definitionZh: "国际旅行的官方证件。",
+        detailsEn: "Required at borders. Check expiration dates.",
+        detailsZh: "在边境需要。检查有效期。",
+        exampleEn: "Don't forget your passport.",
+        exampleZh: "别忘了带护照。",
+        examples: [
+          { en: "My passport expires next year.", zh: "我的护照明年过期。" },
+          { en: "Passport control is crowded.", zh: "护照检查很拥挤。" }
+        ],
+        collocations: ["valid passport", "renew passport", "passport control", "passport photo"],
+        synonyms: ["travel document", "visa"], antonyms: [],
+        commonMistakes: [{ mistake: "Calling it 护照本 constantly", correction: "Just say passport." }],
+        pronunciationTips: "Two syllables: PASS-port. Stress the first.",
+        memoryTrick: "Pass + port. Pass through ports with this document."
       }
     ]
   },
@@ -4014,6 +4140,48 @@ export const wordBook: WordBookTopic[] = [
         commonMistakes: [{ mistake: "Using 'cloud' for 'clown'", correction: "Cloud = 云; clown = 小丑." }],
         pronunciationTips: "One syllable: klowd. Like 'loud' with 'c'.",
         memoryTrick: "Cloud = 云. Cl (cloud) + oud (large) = large white cloud."
+      },
+      {
+        id: "an-7", topic: "Nature", level: "A1", category: "Animals",
+        english: "Bird", word: "bird", partOfSpeech: "noun",
+        breakdown: "burd", chinese: "鸟", pinyin: "niǎo",
+        emoji: "🐦", imageKeyword: "small bird",
+        definitionEn: "A small animal with wings that can fly.",
+        definitionZh: "有翅膀会飞的小动物。",
+        detailsEn: "Common: pet bird, bird nest, bird watching.",
+        detailsZh: "常见：pet bird、bird nest、bird watching。",
+        exampleEn: "I heard a bird singing.",
+        exampleZh: "我听到一只鸟在唱歌。",
+        examples: [
+          { en: "The bird flew away.", zh: "鸟飞走了。" },
+          { en: "Birds build nests in spring.", zh: "鸟儿春天筑巢。" }
+        ],
+        collocations: ["pet bird", "bird nest", "bird watching", "bird species"],
+        synonyms: ["fowl", "avian"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'bird' for all flying animals", correction: "Bird = 鸟; bat = 蝙蝠." }],
+        pronunciationTips: "One syllable: burd. Like 'word' with 'b'.",
+        memoryTrick: "Bird = 鸟. B + ird (ird) = bird flies."
+      },
+      {
+        id: "an-8", topic: "Nature", level: "A2", category: "Plants",
+        english: "Tree", word: "tree", partOfSpeech: "noun",
+        breakdown: "tree", chinese: "树", pinyin: "shù",
+        emoji: "🌳", imageKeyword: "big tree",
+        definitionEn: "A tall plant with a trunk and branches.",
+        definitionZh: "有树干和树枝的高大植物。",
+        detailsEn: "Common: fruit tree, climb a tree, tree house.",
+        detailsZh: "常见：fruit tree、climb a tree、tree house。",
+        exampleEn: "The tree is very tall.",
+        exampleZh: "树很高。",
+        examples: [
+          { en: "Birds live in the tree.", zh: "鸟住在树上。" },
+          { en: "We planted a tree.", zh: "我们种了一棵树。" }
+        ],
+        collocations: ["fruit tree", "climb a tree", "tree house", "family tree"],
+        synonyms: ["plant", "shrub"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'tree' for bushes", correction: "Tree = 树 (tall); bush = 灌木 (short)." }],
+        pronunciationTips: "One syllable: tree. Long 'ee'.",
+        memoryTrick: "Tree = 树. Green and tall."
       }
     ]
   },
@@ -4326,6 +4494,48 @@ export const wordBook: WordBookTopic[] = [
         commonMistakes: [{ mistake: "Using 'subway' for all underground trains", correction: "American: subway; British: underground." }],
         pronunciationTips: "Two syllables: SUB-way. Stress the first.",
         memoryTrick: "Sub (under) + way (road). A road under the city."
+      },
+      {
+        id: "tt-7", topic: "Travel", level: "A1", category: "Tickets",
+        english: "Ticket", word: "ticket", partOfSpeech: "noun",
+        breakdown: "TIK-it", chinese: "票", pinyin: "piào",
+        emoji: "🎫", imageKeyword: "travel ticket",
+        definitionEn: "A document allowing you to enter or travel.",
+        definitionZh: "允许你进入或旅行的证件。",
+        detailsEn: "Common: buy a ticket, train ticket, movie ticket.",
+        detailsZh: "常见：buy a ticket、train ticket、movie ticket。",
+        exampleEn: "I bought a ticket online.",
+        exampleZh: "我在网上买了票。",
+        examples: [
+          { en: "The ticket is valid for one day.", zh: "票一天有效。" },
+          { en: "Please show your ticket.", zh: "请出示你的票。" }
+        ],
+        collocations: ["buy a ticket", "train ticket", "movie ticket", "ticket office"],
+        synonyms: ["pass", "voucher"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'ticket' for all documents", correction: "Ticket = 票 (entry); passport = 护照 (identity)." }],
+        pronunciationTips: "Two syllables: TIK-it. Stress the first.",
+        memoryTrick: "Ticket = 票. Ticket sounds like 'strip' — a small paper strip."
+      },
+      {
+        id: "tt-8", topic: "Travel", level: "A2", category: "Luggage",
+        english: "Luggage", word: "luggage", partOfSpeech: "noun",
+        breakdown: "LUG-ij", chinese: "行李", pinyin: "xíng lǐ",
+        emoji: "🧳", imageKeyword: "travel luggage",
+        definitionEn: "Bags and cases you travel with.",
+        definitionZh: "你旅行时携带的包和箱子。",
+        detailsEn: "Common: carry-on luggage, checked luggage, luggage claim.",
+        detailsZh: "常见：carry-on luggage、checked luggage、luggage claim。",
+        exampleEn: "My luggage is heavy.",
+        exampleZh: "我的行李很重。",
+        examples: [
+          { en: "How many pieces of luggage?", zh: "几件行李？" },
+          { en: "Luggage claim is over there.", zh: "行李提取处在那。" }
+        ],
+        collocations: ["carry-on luggage", "checked luggage", "luggage claim", "luggage tag"],
+        synonyms: ["bags", "suitcases"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'baggage' and 'luggage' interchangeably", correction: "Both are fine; 'luggage' is more common." }],
+        pronunciationTips: "Two syllables: LUG-ij. Stress the first.",
+        memoryTrick: "Lug = carry, age = thing. Carry things = luggage."
       }
     ]
   },
@@ -4461,6 +4671,48 @@ export const wordBook: WordBookTopic[] = [
         commonMistakes: [{ mistake: "Using 'sport' for all activity", correction: "Exercise = 锻炼; sport = 体育运动." }],
         pronunciationTips: "Stress the first syllable: EK-ser-syz.",
          memoryTrick: "Ex (extra) + ercise (锻炼) = extra training."
+      },
+      {
+        id: "hw-7", topic: "Health", level: "A2", category: "Medical",
+        english: "Doctor", word: "doctor", partOfSpeech: "noun",
+        breakdown: "DOK-ter", chinese: "医生", pinyin: "yī shēng",
+        emoji: "👨‍⚕️", imageKeyword: "doctor medical",
+        definitionEn: "A person who treats sick people.",
+        definitionZh: "治疗病人的人。",
+        detailsEn: "Common: see a doctor, family doctor, doctor appointment.",
+        detailsZh: "常见：see a doctor、family doctor、doctor appointment。",
+        exampleEn: "I need to see a doctor.",
+        exampleZh: "我需要看医生。",
+        examples: [
+          { en: "The doctor gave her medicine.", zh: "医生给了她药。" },
+          { en: "Ask the doctor for advice.", zh: "问医生寻求建议。" }
+        ],
+        collocations: ["see doctor", "family doctor", "doctor appointment", "doctor visit"],
+        synonyms: ["physician", "surgeon"], antonyms: ["patient"],
+        commonMistakes: [{ mistake: "Using 'doc' in formal settings", correction: "'Doc' is informal; use 'doctor' in formal contexts." }],
+        pronunciationTips: "Stress the first syllable: DOK-ter.",
+        memoryTrick: "Doctor = 医生. Someone with a doctorate."
+      },
+      {
+        id: "hw-8", topic: "Health", level: "A2", category: "Medical",
+        english: "Hospital", word: "hospital", partOfSpeech: "noun",
+        breakdown: "HOS-pi-tl", chinese: "医院", pinyin: "yī yuàn",
+        emoji: "🏥", imageKeyword: "hospital building",
+        definitionEn: "A place where sick people are treated.",
+        definitionZh: "治疗病人的地方。",
+        detailsEn: "Common: go to hospital, hospital bed, hospital staff.",
+        detailsZh: "常见：go to hospital、hospital bed、hospital staff。",
+        exampleEn: "She went to the hospital.",
+        exampleZh: "她去了医院。",
+        examples: [
+          { en: "He is still in the hospital.", zh: "他还在医院。" },
+          { en: "The hospital is nearby.", zh: "医院在附近。" }
+        ],
+        collocations: ["go to hospital", "hospital bed", "hospital staff", "hospital visit"],
+        synonyms: ["clinic", "medical center"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'hotel' instead of 'hospital'", correction: "'Hospital' is for medical care; 'hotel' is for sleep." }],
+        pronunciationTips: "Stress the first syllable: HOS-pi-tl.",
+        memoryTrick: "Hospit = host + ital. Hosts the ill."
       }
     ]
   },
@@ -4596,6 +4848,48 @@ export const wordBook: WordBookTopic[] = [
         commonMistakes: [{ mistake: "Using 'reduce' when you mean 'mitigate'", correction: "'Mitigate' implies making something bad less severe." }],
         pronunciationTips: "Stress first syllable: MIT-i-ɡeɪt.",
         memoryTrick: "Miti =  minimization. Make it smaller = mitigate."
+      },
+      {
+        id: "ps-7", topic: "Professional Skills", level: "C1", category: "Strategy",
+        english: "Strategy", word: "strategy", partOfSpeech: "noun",
+        breakdown: "STRAT-uh-jee", chinese: "策略", pinyin: "cè lüè",
+        emoji: "♟️", imageKeyword: "business strategy",
+        definitionEn: "A plan of action designed to achieve a goal.",
+        definitionZh: "为实现目标而设计的行动计划。",
+        detailsEn: "Common: business strategy, marketing strategy, long-term strategy.",
+        detailsZh: "常见：business strategy、marketing strategy、long-term strategy。",
+        exampleEn: "We need a better strategy.",
+        exampleZh: "我们需要更好的策略。",
+        examples: [
+          { en: "The strategy worked well.", zh: "策略效果很好。" },
+          { en: "She developed a marketing strategy.", zh: "她制定了营销策略。" }
+        ],
+        collocations: ["business strategy", "marketing strategy", "long-term strategy", "strategy plan"],
+        synonyms: ["plan", "tactic", "approach"], antonyms: ["chaos"],
+        commonMistakes: [{ mistake: "Using 'strategy' for simple plans", correction: "Strategy = 策略 (long-term); tactic = 战术 (short-term)." }],
+        pronunciationTips: "Stress the first syllable: STRAT-uh-jee.",
+        memoryTrick: "Strateg + y. Strategic plan = strategy."
+      },
+      {
+        id: "ps-8", topic: "Professional Skills", level: "C1", category: "Leadership",
+        english: "Negotiate", word: "negotiate", partOfSpeech: "verb",
+        breakdown: "ni-GOH-shee-ayt", chinese: "谈判", pinyin: "tán pàn",
+        emoji: "🤝", imageKeyword: "business negotiation",
+        definitionEn: "To discuss something to reach agreement.",
+        definitionZh: "讨论某事以达成协议。",
+        detailsEn: "Common: negotiate a deal, negotiate salary, negotiate terms.",
+        detailsZh: "常见：negotiate a deal、negotiate salary、negotiate terms。",
+        exampleEn: "They negotiated a deal.",
+        exampleZh: "他们谈判达成了一个协议。",
+        examples: [
+          { en: "We need to negotiate the price.", zh: "我们需要谈判价格。" },
+          { en: "She negotiated a better contract.", zh: "她谈判得到了更好的合同。" }
+        ],
+        collocations: ["negotiate a deal", "negotiate salary", "negotiate terms", "negotiate peace"],
+        synonyms: ["mediate", "discuss", "bargain"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'discuss' for formal negotiations", correction: "Negotiate = 谈判 (formal); discuss = 讨论 (general)." }],
+        pronunciationTips: "Stress the second syllable: ni-GOH-shee-ayt.",
+        memoryTrick: "Nego = 交流, tiate = 动作. Negotiate = communicate to agree."
       }
     ]
   },
@@ -4731,6 +5025,48 @@ export const wordBook: WordBookTopic[] = [
         commonMistakes: [{ mistake: "Using 'epistemology' in casual conversation", correction: "Reserve for academic or philosophical contexts." }],
         pronunciationTips: "Stress sixth syllable: ɪˌpɪstəˈmɒlədʒi.",
         memoryTrick: "Episteme = knowledge, ology = study. Study of knowledge."
+      },
+      {
+        id: "ac-7", topic: "Advanced Communication", level: "C2", category: "Rhetoric",
+        english: "Rhetoric", word: "rhetoric", partOfSpeech: "noun",
+        breakdown: "RET-uh-rik", chinese: "修辞", pinyin: "xiū cí",
+        emoji: "🎭", imageKeyword: "rhetoric speech",
+        definitionEn: "The art of effective or persuasive speaking or writing.",
+        definitionZh: "有效或有说服力的讲话或写作艺术。",
+        detailsEn: "Common: political rhetoric, rhetorical question, rhetoric device.",
+        detailsZh: "常见：political rhetoric、rhetorical question、rhetoric device。",
+        exampleEn: "His rhetoric inspired many.",
+        exampleZh: "他的修辞激励了许多人。",
+        examples: [
+          { en: "The speech was full of rhetoric.", zh: "演讲充满了修辞。" },
+          { en: "She studies rhetoric and debate.", zh: "她学习修辞和辩论。" }
+        ],
+        collocations: ["political rhetoric", "rhetorical question", "rhetoric device", "rhetoric style"],
+        synonyms: ["persuasion", "eloquence", "oratory"], antonyms: [],
+        commonMistakes: [{ mistake: "Using 'rhetoric' only negatively", correction: "It can be neutral or positive; it means the art of persuasion." }],
+        pronunciationTips: "Stress the first syllable: RET-uh-rik.",
+        memoryTrick: "Rhetoric = 修辞. Rhet (rhetoric) + oric (形容词后缀) = rhetorical."
+      },
+      {
+        id: "ac-8", topic: "Advanced Communication", level: "C2", category: "Discourse",
+        english: "Discourse", word: "discourse", partOfSpeech: "noun",
+        breakdown: "DIS-kors", chinese: "论述", pinyin: "lùn shù",
+        emoji: "📚", imageKeyword: "academic discourse",
+        definitionEn: "Structured written or spoken communication.",
+        definitionZh: "结构化的书面或口头交流。",
+        detailsEn: "Common: academic discourse, political discourse, discourse analysis.",
+        detailsZh: "常见：academic discourse、political discourse、discourse analysis。",
+        exampleEn: "Academic discourse requires evidence.",
+        exampleZh: "学术论述需要证据。",
+        examples: [
+          { en: "The discourse was thoughtful.", zh: "论述很有深度。" },
+          { en: "She analyzed the discourse.", zh: "她分析了论述。" }
+        ],
+        collocations: ["academic discourse", "political discourse", "discourse analysis", "discourse community"],
+        synonyms: ["communication", "text", "language"], antonyms: ["silence"],
+        commonMistakes: [{ mistake: "Using 'discourse' for casual talk", correction: "Use for formal, structured communication." }],
+        pronunciationTips: "Stress first syllable: DIS-kors.",
+        memoryTrick: "Dis = apart, course = path. A structured path of words."
       }
     ]
   }
