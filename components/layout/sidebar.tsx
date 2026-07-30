@@ -15,6 +15,7 @@ import {
   Presentation,
   Volume2,
   GraduationCap,
+  MessageSquare,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
@@ -33,6 +34,7 @@ export function StudentSidebar() {
   const links: SidebarLink[] = [
     { href: "/vocabulary", label: "Vocabulary", icon: BookOpen, emoji: "📚" },
     { href: "/word-book", label: "Word Book", icon: BookText, emoji: "📖" },
+    { href: "/conversations", label: "Conversations", icon: MessageSquare, emoji: "💬" },
     { href: "/flashcards", label: "Flashcards", icon: Layers, emoji: "🃏" },
     { href: "/speaking", label: "Speaking", icon: Mic, emoji: "🎤" },
     { href: "/listening", label: "Listening", icon: Headphones, emoji: "🎧" },
