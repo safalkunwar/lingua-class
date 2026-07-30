@@ -6,6 +6,7 @@ export interface ImageGuessItem {
   category: "animals" | "actions" | "daily-life" | "food" | "weather";
   level: "A1" | "A2";
   alternatives?: string[];
+  image?: string;
 }
 
 export interface ImageGuessCategory {

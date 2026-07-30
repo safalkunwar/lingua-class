@@ -1,4 +1,5 @@
 import { ImageGuessCategory } from "@/types/image-guessing";
+import { imageGuessingSvgs } from "./image-guessing-svgs";
 
 export const imageGuessingCategories: ImageGuessCategory[] = [
   {
@@ -15,6 +16,8 @@ export const imageGuessingCategories: ImageGuessCategory[] = [
         category: "animals",
         level: "A1",
         alternatives: ["hop"]
+,
+        image: imageGuessingSvgs["aa-1"],
       },
       {
         id: "aa-2",
@@ -24,6 +27,8 @@ export const imageGuessingCategories: ImageGuessCategory[] = [
         category: "animals",
         level: "A1",
         alternatives: ["float"]
+,
+        image: imageGuessingSvgs["aa-2"],
       },
       {
         id: "aa-3",
@@ -33,6 +38,8 @@ export const imageGuessingCategories: ImageGuessCategory[] = [
         category: "animals",
         level: "A2",
         alternatives: ["running", "jumping"]
+,
+        image: imageGuessingSvgs["aa-3"],
       },
       {
         id: "aa-4",
@@ -42,6 +49,8 @@ export const imageGuessingCategories: ImageGuessCategory[] = [
         category: "animals",
         level: "A1",
         alternatives: ["soaring"]
+,
+        image: imageGuessingSvgs["aa-4"],
       },
       {
         id: "aa-5",
@@ -51,6 +60,8 @@ export const imageGuessingCategories: ImageGuessCategory[] = [
         category: "animals",
         level: "A1",
         alternatives: ["strolling"]
+,
+        image: imageGuessingSvgs["aa-5"],
       },
       {
         id: "aa-6",
@@ -60,6 +71,8 @@ export const imageGuessingCategories: ImageGuessCategory[] = [
         category: "animals",
         level: "A1",
         alternatives: ["running"]
+,
+        image: imageGuessingSvgs["aa-6"],
       },
       {
         id: "aa-7",
@@ -69,6 +82,8 @@ export const imageGuessingCategories: ImageGuessCategory[] = [
         category: "animals",
         level: "A1",
         alternatives: ["napping"]
+,
+        image: imageGuessingSvgs["aa-7"],
       },
       {
         id: "aa-8",
@@ -78,6 +93,8 @@ export const imageGuessingCategories: ImageGuessCategory[] = [
         category: "animals",
         level: "A2",
         alternatives: ["fluttering"]
+,
+        image: imageGuessingSvgs["aa-8"],
       },
       {
         id: "aa-9",
@@ -87,6 +104,8 @@ export const imageGuessingCategories: ImageGuessCategory[] = [
         category: "animals",
         level: "A1",
         alternatives: ["jumping"]
+,
+        image: imageGuessingSvgs["aa-9"],
       },
       {
         id: "aa-10",
@@ -96,6 +115,8 @@ export const imageGuessingCategories: ImageGuessCategory[] = [
         category: "animals",
         level: "A1",
         alternatives: ["walking slowly"]
+,
+        image: imageGuessingSvgs["aa-10"],
       }
     ]
   },
@@ -113,6 +134,8 @@ export const imageGuessingCategories: ImageGuessCategory[] = [
         category: "actions",
         level: "A1",
         alternatives: ["chewing"]
+,
+        image: imageGuessingSvgs["da-1"],
       },
       {
         id: "da-2",
@@ -122,6 +145,8 @@ export const imageGuessingCategories: ImageGuessCategory[] = [
         category: "actions",
         level: "A1",
         alternatives: ["studying"]
+,
+        image: imageGuessingSvgs["da-2"],
       },
       {
         id: "da-3",
@@ -131,6 +156,8 @@ export const imageGuessingCategories: ImageGuessCategory[] = [
         category: "actions",
         level: "A1",
         alternatives: ["performing"]
+,
+        image: imageGuessingSvgs["da-3"],
       },
       {
         id: "da-4",
@@ -140,6 +167,8 @@ export const imageGuessingCategories: ImageGuessCategory[] = [
         category: "actions",
         level: "A1",
         alternatives: ["kicking"]
+,
+        image: imageGuessingSvgs["da-4"],
       },
       {
         id: "da-5",
@@ -149,6 +178,8 @@ export const imageGuessingCategories: ImageGuessCategory[] = [
         category: "actions",
         level: "A1",
         alternatives: ["painting"]
+,
+        image: imageGuessingSvgs["da-5"],
       },
       {
         id: "da-6",
@@ -158,6 +189,8 @@ export const imageGuessingCategories: ImageGuessCategory[] = [
         category: "actions",
         level: "A2",
         alternatives: ["tidying"]
+,
+        image: imageGuessingSvgs["da-6"],
       },
       {
         id: "da-7",
@@ -166,7 +199,8 @@ export const imageGuessingCategories: ImageGuessCategory[] = [
         hint: "You do this when you wash your body.",
         category: "actions",
         level: "A1",
-        alternatives: ["showering"]
+        alternatives: ["showering"],
+        image: imageGuessingSvgs["da-7"],
       },
       {
         id: "da-8",
@@ -176,6 +210,8 @@ export const imageGuessingCategories: ImageGuessCategory[] = [
         category: "actions",
         level: "A1",
         alternatives: ["cleaning"]
+,
+        image: imageGuessingSvgs["da-8"],
       },
       {
         id: "da-9",
@@ -184,7 +220,8 @@ export const imageGuessingCategories: ImageGuessCategory[] = [
         hint: "You do this for fun with a controller or phone.",
         category: "actions",
         level: "A1",
-        alternatives: ["gaming"]
+        alternatives: ["gaming"],
+        image: imageGuessingSvgs["da-9"],
       },
       {
         id: "da-10",
@@ -194,6 +231,8 @@ export const imageGuessingCategories: ImageGuessCategory[] = [
         category: "actions",
         level: "A1",
         alternatives: ["preparing food"]
+,
+        image: imageGuessingSvgs["da-10"],
       }
     ]
   },
@@ -211,6 +250,8 @@ export const imageGuessingCategories: ImageGuessCategory[] = [
         category: "daily-life",
         level: "A1",
         alternatives: ["having a snack"]
+,
+        image: imageGuessingSvgs["ps-1"],
       },
       {
         id: "ps-2",
@@ -220,6 +261,8 @@ export const imageGuessingCategories: ImageGuessCategory[] = [
         category: "daily-life",
         level: "A1",
         alternatives: ["partying"]
+,
+        image: imageGuessingSvgs["ps-2"],
       },
       {
         id: "ps-3",
@@ -229,6 +272,8 @@ export const imageGuessingCategories: ImageGuessCategory[] = [
         category: "daily-life",
         level: "A1",
         alternatives: ["showering"]
+,
+        image: imageGuessingSvgs["ps-3"],
       },
       {
         id: "ps-4",
@@ -238,6 +283,8 @@ export const imageGuessingCategories: ImageGuessCategory[] = [
         category: "daily-life",
         level: "A1",
         alternatives: ["presenting"]
+,
+        image: imageGuessingSvgs["ps-4"],
       },
       {
         id: "ps-5",
@@ -247,6 +294,8 @@ export const imageGuessingCategories: ImageGuessCategory[] = [
         category: "daily-life",
         level: "A2",
         alternatives: ["floating"]
+,
+        image: imageGuessingSvgs["ps-5"],
       },
       {
         id: "ps-6",
@@ -256,6 +305,8 @@ export const imageGuessingCategories: ImageGuessCategory[] = [
         category: "daily-life",
         level: "A1",
         alternatives: ["licking"]
+,
+        image: imageGuessingSvgs["ps-6"],
       },
       {
         id: "ps-7",
@@ -265,6 +316,8 @@ export const imageGuessingCategories: ImageGuessCategory[] = [
         category: "daily-life",
         level: "A2",
         alternatives: ["acting"]
+,
+        image: imageGuessingSvgs["ps-7"],
       },
       {
         id: "ps-8",
@@ -274,6 +327,8 @@ export const imageGuessingCategories: ImageGuessCategory[] = [
         category: "daily-life",
         level: "A2",
         alternatives: ["launching"]
+,
+        image: imageGuessingSvgs["ps-8"],
       },
       {
         id: "ps-9",
@@ -283,6 +338,8 @@ export const imageGuessingCategories: ImageGuessCategory[] = [
         category: "daily-life",
         level: "A1",
         alternatives: ["drawing"]
+,
+        image: imageGuessingSvgs["ps-9"],
       },
       {
         id: "ps-10",
@@ -292,6 +349,8 @@ export const imageGuessingCategories: ImageGuessCategory[] = [
         category: "daily-life",
         level: "A1",
         alternatives: ["floating"]
+,
+        image: imageGuessingSvgs["ps-10"],
       }
     ]
   },
@@ -309,6 +368,8 @@ export const imageGuessingCategories: ImageGuessCategory[] = [
         category: "food",
         level: "A1",
         alternatives: ["toasting"]
+,
+        image: imageGuessingSvgs["fc-1"],
       },
       {
         id: "fc-2",
@@ -318,6 +379,8 @@ export const imageGuessingCategories: ImageGuessCategory[] = [
         category: "food",
         level: "A1",
         alternatives: ["preparing salad"]
+,
+        image: imageGuessingSvgs["fc-2"],
       },
       {
         id: "fc-3",
@@ -327,6 +390,8 @@ export const imageGuessingCategories: ImageGuessCategory[] = [
         category: "food",
         level: "A2",
         alternatives: ["cooking breakfast"]
+,
+        image: imageGuessingSvgs["fc-3"],
       },
       {
         id: "fc-4",
@@ -336,6 +401,8 @@ export const imageGuessingCategories: ImageGuessCategory[] = [
         category: "food",
         level: "A1",
         alternatives: ["having pizza"]
+,
+        image: imageGuessingSvgs["fc-4"],
       },
       {
         id: "fc-5",
@@ -345,6 +412,8 @@ export const imageGuessingCategories: ImageGuessCategory[] = [
         category: "food",
         level: "A1",
         alternatives: ["sipping"]
+,
+        image: imageGuessingSvgs["fc-5"],
       },
       {
         id: "fc-6",
@@ -354,6 +423,8 @@ export const imageGuessingCategories: ImageGuessCategory[] = [
         category: "food",
         level: "A1",
         alternatives: ["snacking"]
+,
+        image: imageGuessingSvgs["fc-6"],
       },
       {
         id: "fc-7",
@@ -363,6 +434,8 @@ export const imageGuessingCategories: ImageGuessCategory[] = [
         category: "food",
         level: "A1",
         alternatives: ["rinsing"]
+,
+        image: imageGuessingSvgs["fc-7"],
       },
       {
         id: "fc-8",
@@ -372,6 +445,8 @@ export const imageGuessingCategories: ImageGuessCategory[] = [
         category: "food",
         level: "A2",
         alternatives: ["decorating"]
+,
+        image: imageGuessingSvgs["fc-8"],
       },
       {
         id: "fc-9",
@@ -381,6 +456,8 @@ export const imageGuessingCategories: ImageGuessCategory[] = [
         category: "food",
         level: "A1",
         alternatives: ["tasting"]
+,
+        image: imageGuessingSvgs["fc-9"],
       },
       {
         id: "fc-10",
@@ -390,6 +467,8 @@ export const imageGuessingCategories: ImageGuessCategory[] = [
         category: "food",
         level: "A1",
         alternatives: ["making dinner"]
+,
+        image: imageGuessingSvgs["fc-10"],
       }
     ]
   },
@@ -407,6 +486,8 @@ export const imageGuessingCategories: ImageGuessCategory[] = [
         category: "weather",
         level: "A1",
         alternatives: ["bright"]
+,
+        image: imageGuessingSvgs["ws-1"],
       },
       {
         id: "ws-2",
@@ -416,6 +497,8 @@ export const imageGuessingCategories: ImageGuessCategory[] = [
         category: "weather",
         level: "A1",
         alternatives: ["showering"]
+,
+        image: imageGuessingSvgs["ws-2"],
       },
       {
         id: "ws-3",
@@ -425,6 +508,8 @@ export const imageGuessingCategories: ImageGuessCategory[] = [
         category: "weather",
         level: "A1",
         alternatives: ["blizzard"]
+,
+        image: imageGuessingSvgs["ws-3"],
       },
       {
         id: "ws-4",
@@ -434,6 +519,8 @@ export const imageGuessingCategories: ImageGuessCategory[] = [
         category: "weather",
         level: "A1",
         alternatives: ["colorful sky"]
+,
+        image: imageGuessingSvgs["ws-4"],
       },
       {
         id: "ws-5",
@@ -443,6 +530,8 @@ export const imageGuessingCategories: ImageGuessCategory[] = [
         category: "weather",
         level: "A1",
         alternatives: ["breezy"]
+,
+        image: imageGuessingSvgs["ws-5"],
       },
       {
         id: "ws-6",
@@ -452,6 +541,8 @@ export const imageGuessingCategories: ImageGuessCategory[] = [
         category: "weather",
         level: "A1",
         alternatives: ["overcast"]
+,
+        image: imageGuessingSvgs["ws-6"],
       },
       {
         id: "ws-7",
@@ -461,6 +552,8 @@ export const imageGuessingCategories: ImageGuessCategory[] = [
         category: "weather",
         level: "A2",
         alternatives: ["tornado"]
+,
+        image: imageGuessingSvgs["ws-7"],
       },
       {
         id: "ws-8",
@@ -470,6 +563,8 @@ export const imageGuessingCategories: ImageGuessCategory[] = [
         category: "weather",
         level: "A1",
         alternatives: ["burning"]
+,
+        image: imageGuessingSvgs["ws-8"],
       },
       {
         id: "ws-9",
@@ -479,6 +574,8 @@ export const imageGuessingCategories: ImageGuessCategory[] = [
         category: "weather",
         level: "A1",
         alternatives: ["freezing"]
+,
+        image: imageGuessingSvgs["ws-9"],
       },
       {
         id: "ws-10",
@@ -488,6 +585,8 @@ export const imageGuessingCategories: ImageGuessCategory[] = [
         category: "weather",
         level: "A1",
         alternatives: ["fall"]
+,
+        image: imageGuessingSvgs["ws-10"],
       }
     ]
   }

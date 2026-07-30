@@ -3,11 +3,12 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { imageGuessingCategories } from "@/data/image-guessing";
+import { getImageGuessingSvg } from "@/data/image-guessing-svgs";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
-import { Sparkles, Trophy, RotateCcw, Lightbulb, Star, Heart } from "lucide-react";
+import { Sparkles, Trophy, RotateCcw, Lightbulb, Star, Heart, MessageCircle, Mic, ArrowRight, PartyPopper, Frown } from "lucide-react";
 import { StudentSidebar } from "@/components/layout/sidebar";
 
 type GameState = "start" | "playing" | "revealed";
@@ -30,6 +31,7 @@ export default function ImageGuessingPage() {
   useEffect(() => {
     if (category && currentIndex >= category.items.length) {
       setGameState("start");
+      setSelectedCategory(null);
     }
   }, [currentIndex, category]);
 
@@ -109,30 +111,36 @@ export default function ImageGuessingPage() {
           </motion.div>
 
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-5xl mx-auto w-full">
-            {imageGuessingCategories.map((cat, index) => (
-              <motion.div
-                key={cat.id}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1 }}
-              >
-                <Card
-                  onClick={() => startGame(cat.id)}
-                  className="cursor-pointer transition-all hover:shadow-xl hover:-translate-y-1 border-2 hover:border-yellow-300 h-full"
+            {imageGuessingCategories.map((cat, index) => {
+              const previewItem = cat.items[0];
+              return (
+                <motion.div
+                  key={cat.id}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: index * 0.1 }}
                 >
-                  <div className="p-6 text-center">
-                    <div className="text-6xl mb-3">{cat.emoji}</div>
-                    <h3 className="text-xl font-bold mb-1">{cat.title}</h3>
-                    <p className="text-sm text-muted-foreground mb-3">
-                      {cat.description}
-                    </p>
-                    <Badge variant="secondary" className="text-xs">
-                      {cat.items.length} questions
-                    </Badge>
-                  </div>
-                </Card>
-              </motion.div>
-            ))}
+                  <Card
+                    onClick={() => startGame(cat.id)}
+                    className="cursor-pointer transition-all hover:shadow-xl hover:-translate-y-1 border-2 hover:border-yellow-300 h-full overflow-hidden group"
+                  >
+                    <div className="p-6 text-center">
+                      <div
+                        className="w-full h-40 mb-4 rounded-xl overflow-hidden flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-700 group-hover:scale-105 transition-transform duration-300"
+                        dangerouslySetInnerHTML={{ __html: previewItem?.image || "" }}
+                      />
+                      <h3 className="text-xl font-bold mb-1">{cat.title}</h3>
+                      <p className="text-sm text-muted-foreground mb-3">
+                        {cat.description}
+                      </p>
+                      <Badge variant="secondary" className="text-xs">
+                        {cat.items.length} questions
+                      </Badge>
+                    </div>
+                  </Card>
+                </motion.div>
+              );
+            })}
           </div>
         </div>
       </div>
@@ -149,40 +157,98 @@ export default function ImageGuessingPage() {
             <motion.div
               initial={{ scale: 0.5, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
-              className="text-9xl mb-6"
-            >
-              {currentItem?.emoji}
-            </motion.div>
-
-            <motion.div
-              initial={{ y: 20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
               className="mb-6"
             >
               {isCorrect ? (
-                <div className="flex items-center justify-center gap-2 text-green-600 mb-4">
-                  <Trophy className="w-8 h-8" />
-                  <h2 className="text-3xl font-bold">Correct!</h2>
-                </div>
+                <motion.div
+                  initial={{ scale: 0 }}
+                  animate={{ scale: 1, rotate: [0, -10, 10, 0] }}
+                  transition={{ type: "spring", stiffness: 200 }}
+                  className="inline-flex items-center gap-2 text-green-600 text-3xl font-bold mb-4"
+                >
+                  <PartyPopper className="w-10 h-10" />
+                  Correct!
+                </motion.div>
               ) : (
-                <div className="mb-4">
-                  <h2 className="text-2xl font-bold text-red-500 mb-2">Not quite!</h2>
-                  <p className="text-lg text-muted-foreground">
-                    The answer was: <span className="font-bold text-foreground">{currentItem?.answer}</span>
-                  </p>
+                <motion.div
+                  initial={{ scale: 0 }}
+                  animate={{ scale: 1 }}
+                  className="inline-flex items-center gap-2 text-red-500 text-3xl font-bold mb-4"
+                >
+                  <Frown className="w-10 h-10" />
+                  Not quite!
+                </motion.div>
+              )}
+
+              {!isCorrect && (
+                <p className="text-lg text-muted-foreground">
+                  The answer was:{" "}
+                  <span className="font-bold text-foreground">
+                    {currentItem?.answer}
+                  </span>
+                </p>
+              )}
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="mb-6 space-y-4"
+            >
+              <div className="relative w-full max-w-md mx-auto">
+                <div className="absolute -top-3 -right-3 bg-yellow-400 text-yellow-900 text-xs font-bold px-3 py-1 rounded-full shadow-lg z-10">
+                  Revealed!
+                </div>
+                <div
+                  className="w-full h-64 rounded-2xl overflow-hidden shadow-2xl border-4 border-white dark:border-gray-700"
+                  dangerouslySetInnerHTML={{ __html: currentItem?.image || "" }}
+                />
+              </div>
+
+              <div className="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-950/30 dark:to-purple-950/30 rounded-2xl p-6 border border-blue-200 dark:border-blue-800">
+                <div className="flex items-center justify-center gap-2 mb-3">
+                  <MessageCircle className="w-5 h-5 text-blue-500" />
+                  <span className="text-sm font-semibold text-blue-700 dark:text-blue-300">
+                    You guessed:
+                  </span>
+                  <span className="text-base font-bold text-foreground">
+                    {guess || "(no answer)"}
+                  </span>
+                </div>
+
+              {currentItem && (
+                <div className="flex flex-wrap justify-center gap-2">
+                  {currentItem.alternatives?.map((alt) => (
+                    <Badge key={alt} variant="secondary" className="text-xs bg-blue-100 dark:bg-blue-900/50">
+                      {alt}
+                    </Badge>
+                  ))}
                 </div>
               )}
 
-              <div className="bg-muted/50 rounded-xl p-4 mb-6">
-                <p className="text-sm text-muted-foreground">
-                  <span className="font-semibold">Your guess:</span> {guess || "(no answer)"}
-                </p>
+                {currentItem && currentItem.level && (
+                  <div className="mt-3 text-center">
+                    <span className="text-xs text-muted-foreground">
+                      Level: <span className="font-semibold">{currentItem.level}</span>
+                    </span>
+                  </div>
+                )}
               </div>
             </motion.div>
 
             <div className="flex gap-3 justify-center">
-              <Button onClick={nextItem} size="lg" className="px-8">
-                {currentIndex < category.items.length - 1 ? "Next Picture" : "Finish"}
+              <Button onClick={nextItem} size="lg" className="px-8 group">
+                {currentIndex < category.items.length - 1 ? (
+                  <>
+                    Next Picture
+                    <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                  </>
+                ) : (
+                  <>
+                    Finish
+                    <Trophy className="w-4 h-4 ml-2" />
+                  </>
+                )}
               </Button>
               <Button onClick={resetGame} variant="outline" size="lg">
                 <RotateCcw className="w-4 h-4 mr-2" />
@@ -228,38 +294,63 @@ export default function ImageGuessingPage() {
               animate={{ scale: 1, opacity: 1 }}
               className="text-center mb-8"
             >
-              <div className="text-9xl mb-4">{currentItem.emoji}</div>
-              <Badge variant="outline" className="text-xs mb-2">
-                {currentItem.category}
-              </Badge>
-              <h2 className="text-2xl font-bold text-muted-foreground">
-                What is happening?
-              </h2>
+              <div className="relative inline-block mb-6">
+                <div className="absolute -inset-1 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+                <div
+                  className="relative w-full max-w-md mx-auto h-72 rounded-2xl overflow-hidden shadow-2xl border-4 border-white dark:border-gray-700"
+                  dangerouslySetInnerHTML={{ __html: currentItem.image || "" }}
+                />
+              </div>
+
+              <motion.div
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.2 }}
+                className="relative bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg border border-gray-200 dark:border-gray-700 max-w-lg mx-auto"
+              >
+                <div className="absolute -top-4 left-8 bg-blue-500 text-white px-4 py-1 rounded-full text-sm font-medium shadow-md flex items-center gap-2">
+                  <div className="w-6 h-6 bg-blue-400 rounded-full flex items-center justify-center">
+                    <Mic className="w-3 h-3" />
+                  </div>
+                  Teacher
+                </div>
+                <div className="pt-2">
+                  <p className="text-lg font-medium text-gray-800 dark:text-gray-200 mb-2">
+                    What is happening in this picture?
+                  </p>
+                  <p className="text-sm text-gray-500 dark:text-gray-400">
+                    Look at the image and describe the action you see. Use a verb!
+                  </p>
+                </div>
+                <div className="absolute -bottom-2 left-8 w-4 h-4 bg-white dark:bg-gray-800 border-b border-l border-gray-200 dark:border-gray-700 transform rotate-45"></div>
+              </motion.div>
             </motion.div>
 
             <motion.div
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 0.2 }}
+              transition={{ delay: 0.4 }}
               className="space-y-4"
             >
               <div className="flex gap-3">
                 <Input
                   value={guess}
                   onChange={(e) => setGuess(e.target.value)}
-                  placeholder="Type your guess..."
+                  placeholder="Type your guess... (e.g. swimming, eating)"
                   onKeyDown={(e) => e.key === "Enter" && checkAnswer()}
-                  className="text-lg"
+                  className="text-lg flex-1"
                   disabled={false}
                 />
-                <Button
-                  onClick={checkAnswer}
-                  size="lg"
-                  disabled={!guess.trim()}
-                  className="px-8"
-                >
-                  Check
-                </Button>
+                <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                  <Button
+                    onClick={checkAnswer}
+                    size="lg"
+                    disabled={!guess.trim()}
+                    className="px-8"
+                  >
+                    Check
+                  </Button>
+                </motion.div>
               </div>
 
               <div className="flex justify-center">
@@ -284,7 +375,8 @@ export default function ImageGuessingPage() {
                   >
                     <Card className="p-4 bg-yellow-50 dark:bg-yellow-950/20 border-yellow-200 dark:border-yellow-800">
                       <p className="text-sm text-yellow-800 dark:text-yellow-200">
-                        💡 Hint: {currentItem.hint}
+                        <Lightbulb className="w-4 h-4 inline mr-2" />
+                        {currentItem.hint}
                       </p>
                     </Card>
                   </motion.div>
@@ -297,21 +389,32 @@ export default function ImageGuessingPage() {
                   animate={{ opacity: 1, y: 0 }}
                   className="flex flex-col items-center gap-4 pt-4"
                 >
-                  <div className="flex gap-2">
+                  <div className="flex items-center justify-center gap-2">
                     {currentItem.alternatives?.map((alt) => (
-                      <Badge key={alt} variant="outline">
+                      <Badge key={alt} variant="outline" className="text-xs">
                         {alt}
                       </Badge>
                     ))}
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Acceptable answers: <span className="font-semibold">{currentItem.answer}</span>
+                    Acceptable answers:{" "}
+                    <span className="font-semibold">{currentItem.answer}</span>
                     {currentItem.alternatives && (
                       <span> or {currentItem.alternatives.join(", ")}</span>
                     )}
                   </p>
-                  <Button onClick={nextItem} size="lg" className="px-8">
-                    {currentIndex < category.items.length - 1 ? "Next Picture" : "Finish"}
+                  <Button onClick={nextItem} size="lg" className="px-8 group">
+                    {currentIndex < category.items.length - 1 ? (
+                      <>
+                        Next Picture
+                        <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                      </>
+                    ) : (
+                      <>
+                        Finish
+                        <Trophy className="w-4 h-4 ml-2" />
+                      </>
+                    )}
                   </Button>
                 </motion.div>
               )}
