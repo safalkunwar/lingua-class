@@ -1378,5 +1378,622 @@ export const conversations: ConversationTopic[] = [
         "End with an invitation to lunch or coffee"
       ]
     }
+  },
+  {
+    id: "greeting-people",
+    title: "Greeting People",
+    emoji: "👋",
+    description: "Basic greetings, introductions, and polite farewells for everyday situations.",
+    color: "from-green-400 to-emerald-400",
+    level: "A1",
+    estimatedTime: "10 min",
+    vocabularyPreview: [
+      { word: "Hello", phonetic: "/həˈloʊ/", chinese: "你好", partOfSpeech: "interjection" },
+      { word: "Good morning", phonetic: "/ɡʊd ˈmɔːrnɪŋ/", chinese: "早上好", partOfSpeech: "phrase" },
+      { word: "How are you?", phonetic: "/haʊ ɑːr juː/", chinese: "你好吗？", partOfSpeech: "question" },
+      { word: "I'm fine, thanks", phonetic: "/aɪm faɪn θæŋks/", chinese: "我很好，谢谢", partOfSpeech: "phrase" },
+      { word: "Nice to meet you", phonetic: "/naɪs tu miːt juː/", chinese: "很高兴认识你", partOfSpeech: "phrase" },
+      { word: "Bye", phonetic: "/baɪ/", chinese: "再见", partOfSpeech: "interjection" }
+    ],
+    conversation: [
+      { speaker: "Anna", line: "Hi, good morning!" },
+      { speaker: "Ben", line: "Good morning! How are you?" },
+      { speaker: "Anna", line: "I'm fine, thanks. And you?" },
+      { speaker: "Ben", line: "I'm doing well, thank you." },
+      { speaker: "Anna", line: "Nice to meet you. I'm Anna." },
+      { speaker: "Ben", line: "Nice to meet you too, Anna. I'm Ben." },
+      { speaker: "Anna", line: "See you later, Ben!" },
+      { speaker: "Ben", line: "Bye! Have a great day." }
+    ],
+    chineseTranslation: [
+      { speaker: "Anna", line: "嗨，早上好！" },
+      { speaker: "Ben", line: "早上好！你好吗？" },
+      { speaker: "Anna", line: "我很好，谢谢。你呢？" },
+      { speaker: "Ben", line: "我很好，谢谢。" },
+      { speaker: "Anna", line: "很高兴认识你。我是安娜。" },
+      { speaker: "Ben", line: "我也很高兴认识你，安娜。我是本。" },
+      { speaker: "Anna", line: "回头见，本！" },
+      { speaker: "Ben", line: "再见！祝你今天愉快。" }
+    ],
+    usefulExpressions: [
+      { expression: "Good morning", meaning: "早上好", usage: "从起床到中午前使用" },
+      { expression: "How are you?", meaning: "你好吗？", usage: "最常见的问候方式" },
+      { expression: "I'm fine, thanks", meaning: "我很好，谢谢", usage: "标准回答" },
+      { expression: "Nice to meet you", meaning: "很高兴认识你", usage: "第一次见面时使用" },
+      { expression: "Have a great day", meaning: "祝你今天愉快", usage: "告别时使用" }
+    ],
+    grammarFocus: [
+      {
+        title: "Basic Greetings",
+        explanation: "英语中最常用的问候语。根据时间选择合适的问候语。",
+        examples: [
+          "Good morning!",
+          "Good afternoon!",
+          "Good evening!"
+        ]
+      },
+      {
+        title: "Simple Introductions",
+        explanation: "介绍自己时使用 'I'm + 名字' 或 'My name is + 名字'。",
+        examples: [
+          "I'm Sarah.",
+          "My name is John."
+        ]
+      }
+    ],
+    collocationsAndChunks: [
+      { chunk: "Good morning", meaning: "早上好", example: "Good morning, teacher!" },
+      { chunk: "How are you?", meaning: "你好吗？", example: "Hi, how are you?" },
+      { chunk: "Nice to meet you", meaning: "很高兴认识你", example: "Nice to meet you!" }
+    ],
+    pronunciationTips: [
+      { tip: "How are you? → /haʊ ɑːr juː/", example: "Fast, natural speech" },
+      { tip: "I'm fine → /aɪm faɪn/", example: "Contraction is natural" }
+    ],
+    commonMistakes: [
+      {
+        mistake: "翻译 '你好吗？' 为 'How do you do?'",
+        correction: "日常问候用 'How are you?'",
+        explanation: "'How do you do?' 是正式场合的初次见面问候，现在很少使用。"
+      }
+    ],
+    rolePlayPractice: [
+      {
+        scenario: "You meet your new neighbor for the first time. Greet them, introduce yourself, and say goodbye politely.",
+        prompts: [
+          "Say good morning",
+          "Ask how they are",
+          "Introduce yourself",
+          "Say goodbye"
+        ]
+      }
+    ],
+    vocabularyExpansion: [
+      {
+        word: "Hello",
+        synonyms: ["Hi", "Hey"],
+        antonyms: [],
+        example: "Hello, how are you?"
+      },
+      {
+        word: "Goodbye",
+        synonyms: ["Bye", "See you"],
+        antonyms: [],
+        example: "Goodbye, see you tomorrow!"
+      }
+    ],
+    shadowingPractice: [
+      "Hi, good morning!",
+      "How are you?",
+      "I'm fine, thanks.",
+      "Nice to meet you.",
+      "Have a great day!"
+    ],
+    speakingChallenge: {
+      instruction: "Practice greeting 3 different people: a friend, a teacher, and a shop assistant. Use appropriate greetings for each.",
+      hints: [
+        "Use 'Hi' or 'Hey' with friends",
+        "Use 'Good morning/afternoon' with teachers",
+        "Use 'Hello' with shop assistants",
+        "Remember to say please and thank you"
+      ]
+    }
+  },
+  {
+    id: "asking-directions",
+    title: "Asking for Directions",
+    emoji: "🗺️",
+    description: "How to ask for and understand directions when you are lost or traveling.",
+    color: "from-sky-400 to-blue-400",
+    level: "A1",
+    estimatedTime: "12 min",
+    vocabularyPreview: [
+      { word: "Excuse me", phonetic: "/ɪkˈskuːz miː/", chinese: "打扰一下", partOfSpeech: "phrase" },
+      { word: "Where is...?", phonetic: "/wer ɪz/", chinese: "...在哪里？", partOfSpeech: "question" },
+      { word: "Turn left", phonetic: "/tɜːrn left/", chinese: "左转", partOfSpeech: "phrase" },
+      { word: "Turn right", phonetic: "/tɜːrn raɪt/", chinese: "右转", partOfSpeech: "phrase" },
+      { word: "Go straight", phonetic: "/ɡoʊ streɪt/", chinese: "直走", partOfSpeech: "phrase" },
+      { word: "Next to", phonetic: "/nekst tuː/", chinese: "在...旁边", partOfSpeech: "phrase" }
+    ],
+    conversation: [
+      { speaker: "Tourist", line: "Excuse me, where is the train station?" },
+      { speaker: "Local", line: "Go straight for two blocks, then turn left." },
+      { speaker: "Tourist", line: "Is it far from here?" },
+      { speaker: "Local", line: "No, it's about a 5-minute walk." },
+      { speaker: "Tourist", line: "Thank you very much!" },
+      { speaker: "Local", line: "You're welcome. Enjoy your day!" }
+    ],
+    chineseTranslation: [
+      { speaker: "游客", line: "打扰一下，火车站在哪里？" },
+      { speaker: "当地人", line: "直走两个街区，然后左转。" },
+      { speaker: "游客", line: "离这里远吗？" },
+      { speaker: "当地人", line: "不远，步行大约5分钟。" },
+      { speaker: "游客", line: "非常感谢！" },
+      { speaker: "当地人", line: "不客气。祝你今天愉快！" }
+    ],
+    usefulExpressions: [
+      { expression: "Excuse me", meaning: "打扰一下", usage: "向陌生人提问前使用" },
+      { expression: "Where is...?", meaning: "...在哪里？", usage: "询问地点" },
+      { expression: "Turn left/right", meaning: "左转/右转", usage: "指路时使用" },
+      { expression: "Go straight", meaning: "直走", usage: "指路时使用" },
+      { expression: "You're welcome", meaning: "不客气", usage: "回应感谢" }
+    ],
+    grammarFocus: [
+      {
+        title: "Imperative Verbs for Directions",
+        explanation: "用祈使句（动词原形开头）指路。",
+        examples: [
+          "Go straight.",
+          "Turn left.",
+          "Walk for two blocks."
+        ]
+      },
+      {
+        title: "Prepositions of Place",
+        explanation: "用介词描述位置。",
+        examples: [
+          "The station is next to the bank.",
+          "It's on Main Street.",
+          "It's across from the park."
+        ]
+      }
+    ],
+    collocationsAndChunks: [
+      { chunk: "Go straight", meaning: "直走", example: "Go straight for 100 meters." },
+      { chunk: "Turn left", meaning: "左转", example: "Turn left at the intersection." },
+      { chunk: "Next to", meaning: "在...旁边", example: "It's next to the coffee shop." }
+    ],
+    pronunciationTips: [
+      { tip: "Excuse me → /ɪkˈskuːz miː/", example: "Quick, polite phrase" },
+      { tip: "Where is → /wer ɪz/", example: "'Where' sounds like 'wear'" }
+    ],
+    commonMistakes: [
+      {
+        mistake: "问路时用 'How can I go to...?'",
+        correction: "更自然的说法是 'Where is...?' 或 'How do I get to...?'",
+        explanation: "'Where is...?' 是最直接、最常用的问路方式。"
+      }
+    ],
+    rolePlayPractice: [
+      {
+        scenario: "You are lost in a new city. Ask a local for directions to the nearest coffee shop.",
+        prompts: [
+          "Get the person's attention politely",
+          "Ask where the coffee shop is",
+          "Ask if it is far",
+          "Thank them"
+        ]
+      }
+    ],
+    vocabularyExpansion: [
+      {
+        word: "Intersection",
+        synonyms: ["Crossing", "Junction"],
+        antonyms: [],
+        example: "Turn left at the intersection."
+      },
+      {
+        word: "Block",
+        synonyms: ["Distance", "Section"],
+        antonyms: [],
+        example: "Go straight for two blocks."
+      }
+    ],
+    shadowingPractice: [
+      "Excuse me, where is the train station?",
+      "Go straight for two blocks.",
+      "Turn left at the corner.",
+      "It's next to the bank.",
+      "Thank you very much!"
+    ],
+    speakingChallenge: {
+      instruction: "Practice asking for directions to 3 different places: a hotel, a restaurant, and a museum. Use 'Excuse me', 'Where is...?', and 'Thank you'.",
+      hints: [
+        "Start with 'Excuse me'",
+        "Ask 'Where is...?'",
+        "Listen for 'Go straight', 'Turn left/right'",
+        "Always say thank you"
+      ]
+    }
+  },
+  {
+    id: "ordering-food",
+    title: "Ordering Food at a Restaurant",
+    emoji: "🍽️",
+    description: "Simple restaurant conversations: greeting, ordering, asking questions, and paying.",
+    color: "from-orange-400 to-red-400",
+    level: "A1",
+    estimatedTime: "12 min",
+    vocabularyPreview: [
+      { word: "Menu", phonetic: "/ˈmenjuː/", chinese: "菜单", partOfSpeech: "noun" },
+      { word: "I would like...", phonetic: "/aɪ wʊd laɪk/", chinese: "我想要...", partOfSpeech: "phrase" },
+      { word: "Bill", phonetic: "/bɪl/", chinese: "账单", partOfSpeech: "noun" },
+      { word: "Water", phonetic: "/ˈwɔːtər/", chinese: "水", partOfSpeech: "noun" },
+      { word: "Check", phonetic: "/tʃek/", chinese: "账单", partOfSpeech: "noun" },
+      { word: "Enjoy your meal", phonetic: "/ɪnˈdʒɔɪ jʊr miːl/", chinese: "请慢用", partOfSpeech: "phrase" }
+    ],
+    conversation: [
+      { speaker: "Server", line: "Hello! Welcome to our restaurant. Here is the menu." },
+      { speaker: "Customer", line: "Thank you. Can I have some water please?" },
+      { speaker: "Server", line: "Of course. Here you go. Are you ready to order?" },
+      { speaker: "Customer", line: "Yes, I would like the soup and a salad, please." },
+      { speaker: "Server", line: "Good choice! The soup is today's special. Enjoy your meal!" },
+      { speaker: "Customer", line: "Thank you. This looks delicious." },
+      { speaker: "Server", line: "Can I get you anything else?" },
+      { speaker: "Customer", line: "No, thank you. Could I have the bill, please?" },
+      { speaker: "Server", line: "Sure, here it is. The total is $25." },
+      { speaker: "Customer", line: "Here is my card. Thank you for the service." },
+      { speaker: "Server", line: "You're welcome! Have a great day." }
+    ],
+    chineseTranslation: [
+      { speaker: "服务员", line: "你好！欢迎来到我们餐厅。这是菜单。" },
+      { speaker: "顾客", line: "谢谢。请给我一些水。" },
+      { speaker: "服务员", line: "当然。给您。您准备好点菜了吗？" },
+      { speaker: "顾客", line: "是的，我想要汤和沙拉，谢谢。" },
+      { speaker: "服务员", line: "好选择！汤是今天的特色。请慢用！" },
+      { speaker: "顾客", line: "谢谢。这看起来很好吃。" },
+      { speaker: "服务员", line: "还需要别的吗？" },
+      { speaker: "顾客", line: "不用了，谢谢。请给我账单好吗？" },
+      { speaker: "服务员", line: "好的，给您。总共25美元。" },
+      { speaker: "顾客", line: "给你我的卡。谢谢你的服务。" },
+      { speaker: "服务员", line: "不客气！祝你今天愉快。" }
+    ],
+    usefulExpressions: [
+      { expression: "I would like...", meaning: "我想要...", usage: "礼貌点餐" },
+      { expression: "Can I have...?", meaning: "能给我...吗？", usage: "请求物品或服务" },
+      { expression: "Here you go", meaning: "给你", usage: "递东西给别人时" },
+      { expression: "Could I have the bill?", meaning: "请给我账单好吗？", usage: "请求结账" },
+      { expression: "Enjoy your meal", meaning: "请慢用", usage: "服务员常用语" }
+    ],
+    grammarFocus: [
+      {
+        title: "Polite Requests with 'I would like'",
+        explanation: "用 'I would like...' 礼貌地表达想要的东西。比 'I want' 更礼貌。",
+        examples: [
+          "I would like the chicken salad.",
+          "I would like some water, please.",
+          "I would like to order now."
+        ]
+      },
+      {
+        title: "Yes/No Questions with 'Can I'",
+        explanation: "用 'Can I...?' 礼貌地请求允许或物品。",
+        examples: [
+          "Can I have the menu?",
+          "Can I pay by card?",
+          "Can I get the bill?"
+        ]
+      }
+    ],
+    collocationsAndChunks: [
+      { chunk: "I would like", meaning: "我想要", example: "I would like the steak, please." },
+      { chunk: "Could I have...?", meaning: "能给我...吗？", example: "Could I have the bill?" },
+      { chunk: "Enjoy your meal", meaning: "请慢用", example: "Enjoy your meal!" }
+    ],
+    pronunciationTips: [
+      { tip: "I would like → /aɪ wʊd laɪk/", example: "Commonly contracted to 'I'd like'" },
+      { tip: "Could I have → /kʊd aɪ hæv/", example: "Polite request form" }
+    ],
+    commonMistakes: [
+      {
+        mistake: "用 'I want...' 点餐",
+        correction: "更礼貌的说法是 'I would like...' 或 'I'd like...'",
+        explanation: "在餐厅等服务场所，'I would like' 比 'I want' 更礼貌。"
+      }
+    ],
+    rolePlayPractice: [
+      {
+        scenario: "You are at a restaurant with a friend. Order food and drinks, ask for the bill, and pay.",
+        prompts: [
+          "Greet the server",
+          "Ask for water and the menu",
+          "Order your food",
+          "Ask for the bill",
+          "Pay and say thank you"
+        ]
+      }
+    ],
+    vocabularyExpansion: [
+      {
+        word: "Appetizer",
+        synonyms: ["Starter", "Small dish"],
+        antonyms: [],
+        example: "Let's start with an appetizer."
+      },
+      {
+        word: "Special",
+        synonyms: ["Today's special", "Featured dish"],
+        antonyms: [],
+        example: "What is today's special?"
+      }
+    ],
+    shadowingPractice: [
+      "Hello! Welcome to our restaurant.",
+      "Can I have some water, please?",
+      "I would like the soup and a salad.",
+      "Could I have the bill, please?",
+      "You're welcome! Have a great day."
+    ],
+    speakingChallenge: {
+      instruction: "Practice ordering a full meal at a restaurant. Include: greeting, ordering food/drink, asking for the bill, and paying.",
+      hints: [
+        "Start with 'Hello'",
+        "Use 'I would like...' to order",
+        "Ask 'Could I have the bill?'",
+        "Say 'Thank you' at the end"
+      ]
+    }
+  },
+  {
+    id: "shopping-basics",
+    title: "Shopping Basics",
+    emoji: "🛍️",
+    description: "Buying clothes, asking about prices, and paying at a store.",
+    color: "from-pink-400 to-rose-400",
+    level: "A1",
+    estimatedTime: "10 min",
+    vocabularyPreview: [
+      { word: "How much is...?", phonetic: "/haʊ mʌtʃ ɪz/", chinese: "...多少钱？", partOfSpeech: "question" },
+      { word: "Price", phonetic: "/praɪs/", chinese: "价格", partOfSpeech: "noun" },
+      { word: "Size", phonetic: "/saɪz/", chinese: "尺寸", partOfSpeech: "noun" },
+      { word: "Color", phonetic: "/ˈkʌlər/", chinese: "颜色", partOfSpeech: "noun" },
+      { word: "Cash", phonetic: "/kæʃ/", chinese: "现金", partOfSpeech: "noun" },
+      { word: "Card", phonetic: "/kɑːrd/", chinese: "卡", partOfSpeech: "noun" }
+    ],
+    conversation: [
+      { speaker: "Customer", line: "Excuse me, how much is this shirt?" },
+      { speaker: "Shopkeeper", line: "It's $25. It's on sale today." },
+      { speaker: "Customer", line: "Oh, that's a good price. Do you have it in medium?" },
+      { speaker: "Shopkeeper", line: "Yes, let me check. Here you go. Do you want to try it on?" },
+      { speaker: "Customer", line: "Yes, please. Thank you." },
+      { speaker: "Customer", line: "It fits perfectly. I'll take it." },
+      { speaker: "Shopkeeper", line: "Great! Will you pay by cash or card?" },
+      { speaker: "Customer", line: "Card, please." },
+      { speaker: "Shopkeeper", line: "Here is your receipt. Thank you for shopping with us!" },
+      { speaker: "Customer", line: "Thank you. Have a nice day!" }
+    ],
+    chineseTranslation: [
+      { speaker: "顾客", line: "打扰一下，这件衬衫多少钱？" },
+      { speaker: "店员", line: "25美元。今天特价。" },
+      { speaker: "顾客", line: "哦，价格不错。有中号吗？" },
+      { speaker: "店员", line: "有的，让我看看。给你。你想试穿吗？" },
+      { speaker: "顾客", line: "好的，谢谢。" },
+      { speaker: "顾客", line: "很合身。我买了。" },
+      { speaker: "店员", line: "太好了！您用现金还是刷卡？" },
+      { speaker: "顾客", line: "刷卡。" },
+      { speaker: "店员", line: "这是您的收据。谢谢惠顾！" },
+      { speaker: "顾客", line: "谢谢。祝你今天愉快！" }
+    ],
+    usefulExpressions: [
+      { expression: "How much is...?", meaning: "...多少钱？", usage: "询问价格" },
+      { expression: "Do you have this in...?", meaning: "你们有...号/颜色的吗？", usage: "询问尺码或颜色" },
+      { expression: "I'll take it", meaning: "我买了", usage: "决定购买" },
+      { expression: "Try it on", meaning: "试穿", usage: "请求试穿衣服" },
+      { expression: "Pay by cash/card", meaning: "用现金/刷卡支付", usage: "选择支付方式" }
+    ],
+    grammarFocus: [
+      {
+        title: "Yes/No Questions with 'Do you'",
+        explanation: "用 'Do you have...?' 询问是否有某物。",
+        examples: [
+          "Do you have this in medium?",
+          "Do you have a blue color?",
+          "Do you accept credit cards?"
+        ]
+      },
+      {
+        title: "Future Intention with 'I'll'",
+        explanation: "用 'I'll...' (I will) 表达决定做某事。",
+        examples: [
+          "I'll take it.",
+          "I'll pay by card.",
+          "I'll try it on."
+        ]
+      }
+    ],
+    collocationsAndChunks: [
+      { chunk: "How much is", meaning: "多少钱", example: "How much is this shirt?" },
+      { chunk: "I'll take it", meaning: "我买了", example: "I'll take it, please." },
+      { chunk: "Try it on", meaning: "试穿", example: "Can I try it on?" }
+    ],
+    pronunciationTips: [
+      { tip: "How much → /haʊ mʌtʃ/", example: "Quick question" },
+      { tip: "I'll take it → /aɪl teɪk ɪt/", example: "Decision phrase" }
+    ],
+    commonMistakes: [
+      {
+        mistake: "说 'How much it is?'",
+        correction: "正确语序是 'How much is it?'",
+        explanation: "疑问句中 be 动词要放在主语前面。"
+      }
+    ],
+    rolePlayPractice: [
+      {
+        scenario: "You want to buy a pair of shoes at a store. Ask about the price, size, and color. Try them on and buy them.",
+        prompts: [
+          "Greet the shopkeeper",
+          "Ask the price",
+          "Ask for your size",
+          "Try them on",
+          "Pay and say thank you"
+        ]
+      }
+    ],
+    vocabularyExpansion: [
+      {
+        word: "Receipt",
+        synonyms: ["Proof of purchase", "Bill"],
+        antonyms: [],
+        example: "Can I have a receipt, please?"
+      },
+      {
+        word: "Discount",
+        synonyms: ["Sale", "Reduction"],
+        antonyms: [],
+        example: "Is there a discount today?"
+      }
+    ],
+    shadowingPractice: [
+      "How much is this shirt?",
+      "It's $25.",
+      "Do you have it in medium?",
+      "I'll take it.",
+      "Thank you, have a nice day!"
+    ],
+    speakingChallenge: {
+      instruction: "Practice shopping for 3 items: a shirt, a pair of shoes, and a hat. Use 'How much', 'I'll take it', and 'Thank you'.",
+      hints: [
+        "Start with 'Excuse me'",
+        "Ask 'How much is...?'",
+        "Ask 'Do you have...?'",
+        "End with 'Thank you'"
+      ]
+    }
+  },
+  {
+    id: "daily-small-talk",
+    title: "Daily Small Talk",
+    emoji: "☕",
+    description: "Casual conversations about weather, weekend plans, hobbies, and general topics.",
+    color: "from-teal-400 to-green-400",
+    level: "A1",
+    estimatedTime: "10 min",
+    vocabularyPreview: [
+      { word: "Weather", phonetic: "/ˈweðər/", chinese: "天气", partOfSpeech: "noun" },
+      { word: "Weekend", phonetic: "/ˈwiːkend/", chinese: "周末", partOfSpeech: "noun" },
+      { word: "Hobby", phonetic: "/ˈhɒbi/", chinese: "爱好", partOfSpeech: "noun" },
+      { word: "Like", phonetic: "/laɪk/", chinese: "喜欢", partOfSpeech: "verb" },
+      { word: "Beautiful", phonetic: "/ˈbjuːtɪfl/", chinese: "美丽的", partOfSpeech: "adjective" }
+    ],
+    conversation: [
+      { speaker: "Anna", line: "It's a beautiful day today, isn't it?" },
+      { speaker: "Ben", line: "Yes, it's sunny and warm. Perfect for a picnic!" },
+      { speaker: "Anna", line: "What are your plans for the weekend?" },
+      { speaker: "Ben", line: "I'm going to visit my parents. What about you?" },
+      { speaker: "Anna", line: "I'm going to the park with my dog. I love walking in the park." },
+      { speaker: "Ben", line: "That sounds nice! Do you have any hobbies?" },
+      { speaker: "Anna", line: "Yes, I like reading and cooking. How about you?" },
+      { speaker: "Ben", line: "I enjoy playing soccer and watching movies." },
+      { speaker: "Anna", line: "Cool! Maybe we can play soccer together sometime?" },
+      { speaker: "Ben", line: "That would be great! Let's plan it soon." }
+    ],
+    chineseTranslation: [
+      { speaker: "Anna", line: "今天天气真好，不是吗？" },
+      { speaker: "Ben", line: "是的，阳光明媚。非常适合野餐！" },
+      { speaker: "Anna", line: "你周末有什么计划？" },
+      { speaker: "Ben", line: "我要去看望父母。你呢？" },
+      { speaker: "Anna", line: "我要带我的狗去公园。我喜欢在公园散步。" },
+      { speaker: "Ben", line: "听起来不错！你有什么爱好吗？" },
+      { speaker: "Anna", line: "有的，我喜欢阅读和做饭。你呢？" },
+      { speaker: "Ben", line: "我喜欢踢足球和看电影。" },
+      { speaker: "Anna", line: "酷！也许我们可以找个时间一起踢足球？" },
+      { speaker: "Ben", line: "那太好了！我们很快计划吧。" }
+    ],
+    usefulExpressions: [
+      { expression: "It's a beautiful day", meaning: "今天天气真好", usage: "谈论天气" },
+      { expression: "What are your plans...?", meaning: "你有什么计划...？", usage: "询问他人安排" },
+      { expression: "I love...", meaning: "我喜欢...", usage: "表达爱好或喜好" },
+      { expression: "That sounds nice", meaning: "听起来不错", usage: "回应他人的计划" },
+      { expression: "Let's plan it soon", meaning: "我们很快计划吧", usage: "建议将来一起做某事" }
+    ],
+    grammarFocus: [
+      {
+        title: "Present Continuous for Future Plans",
+        explanation: "用现在进行时表示已经安排好的未来计划。",
+        examples: [
+          "I'm going to the park.",
+          "I'm visiting my parents.",
+          "What are you doing this weekend?"
+        ]
+      },
+      {
+        title: "Simple Present for Habits and Likes",
+        explanation: "用一般现在时表达爱好和喜好。",
+        examples: [
+          "I like reading.",
+          "I enjoy playing soccer.",
+          "She loves cooking."
+        ]
+      }
+    ],
+    collocationsAndChunks: [
+      { chunk: "What are your plans", meaning: "你有什么计划", example: "What are your plans for the weekend?" },
+      { chunk: "I love...", meaning: "我喜欢...", example: "I love walking in the park." },
+      { chunk: "That sounds nice", meaning: "听起来不错", example: "That sounds nice!" }
+    ],
+    pronunciationTips: [
+      { tip: "It's a beautiful day → /ɪts ə ˈbjuːtɪfl deɪ/", example: "Natural, flowing speech" },
+      { tip: "What are your plans → /wət ɑːr jʊr plænz/", example: "Fast, connected speech" }
+    ],
+    commonMistakes: [
+      {
+        mistake: "说 'I am like reading'",
+        correction: "正确说法是 'I like reading'",
+        explanation: "'Like' 在这里是动词，不需要用 'am'。"
+      }
+    ],
+    rolePlayPractice: [
+      {
+        scenario: "You meet a neighbor in the elevator. Make small talk about the weather and your weekend plans.",
+        prompts: [
+          "Greet them",
+          "Comment on the weather",
+          "Ask about their weekend",
+          "Share your own plans",
+          "Say goodbye"
+        ]
+      }
+    ],
+    vocabularyExpansion: [
+      {
+        word: "Picnic",
+        synonyms: ["Outdoor meal", "Cookout"],
+        antonyms: [],
+        example: "We had a picnic in the park."
+      },
+      {
+        word: "Hobby",
+        synonyms: ["Interest", "Pastime"],
+        antonyms: [],
+        example: "My hobby is photography."
+      }
+    ],
+    shadowingPractice: [
+      "It's a beautiful day today, isn't it?",
+      "What are your plans for the weekend?",
+      "I'm going to the park with my dog.",
+      "I like reading and cooking.",
+      "Maybe we can play soccer together sometime?"
+    ],
+    speakingChallenge: {
+      instruction: "Practice making small talk with 3 different people: a neighbor, a friend, and a colleague. Use weather, weekend, and hobbies as topics.",
+      hints: [
+        "Start with a greeting",
+        "Comment on the weather",
+        "Ask about their weekend or hobbies",
+        "Share your own interests",
+        "End with a friendly goodbye"
+      ]
+    }
   }
 ];

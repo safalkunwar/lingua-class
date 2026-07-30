@@ -59,7 +59,7 @@
 - **Data:** `data/conversations.ts`
 - **Types:** `types/conversations.ts`
 - **Pages:** `app/conversations/page.tsx`, `app/conversations/[id]/page.tsx`
-- **Status:** Production ready — 11 topics
+- **Status:** Production ready — 15 topics
 
 **Topics included:**
 1. Meeting Someone for the First Time (A2, 15 min)
@@ -73,6 +73,11 @@
 9. Talking About Family (A2, 10 min)
 10. At the Gym (B1, 10 min)
 11. Small Talk with Coworkers (B1, 10 min)
+12. Greeting People (A1, 10 min)
+13. Asking for Directions (A1, 12 min)
+14. Ordering Food at a Restaurant (A1, 12 min)
+15. Shopping Basics (A1, 10 min)
+16. Daily Small Talk (A1, 10 min)
 
 **Each topic includes:**
 - Vocabulary Preview
@@ -88,6 +93,13 @@
 - Speaking Challenge
 
 **Note:** Data file previously contained malformed/duplicate entries; cleaned to 11 valid unique topics.
+
+**Added beginner-level daily conversations (A1 level):**
+- Greeting People: basic greetings, introductions, farewells
+- Asking for Directions: asking and understanding directions
+- Ordering Food at a Restaurant: ordering, asking for bill, paying
+- Shopping Basics: buying clothes, asking prices, payment
+- Daily Small Talk: weather, weekend plans, hobbies
 
 #### 3. Other Existing Modules
 - Speaking module (IELTS Speaking Part 1)
