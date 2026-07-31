@@ -3,15 +3,18 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { imageGuessingCategories } from "@/data/image-guessing";
-import { getImageGuessingSvg } from "@/data/image-guessing-svgs";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
-import { Sparkles, Trophy, RotateCcw, Lightbulb, Star, Heart, MessageCircle, Mic, ArrowRight, PartyPopper, Frown } from "lucide-react";
+import { Sparkles, Trophy, RotateCcw, Lightbulb, Star, MessageCircle, Mic, ArrowRight, PartyPopper, Frown, HelpCircle } from "lucide-react";
 import { StudentSidebar } from "@/components/layout/sidebar";
 
 type GameState = "start" | "playing" | "revealed";
+
+function svgToDataUri(svgString: string): string {
+  return `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svgString)}`;
+}
 
 export default function ImageGuessingPage() {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
@@ -22,6 +25,7 @@ export default function ImageGuessingPage() {
   const [showHint, setShowHint] = useState(false);
   const [feedback, setFeedback] = useState<"correct" | "wrong" | null>(null);
   const [totalAnswered, setTotalAnswered] = useState(0);
+  const [hintUsed, setHintUsed] = useState(false);
 
   const category = selectedCategory
     ? imageGuessingCategories.find((c) => c.id === selectedCategory)
@@ -42,6 +46,7 @@ export default function ImageGuessingPage() {
     setTotalAnswered(0);
     setGuess("");
     setShowHint(false);
+    setHintUsed(false);
     setFeedback(null);
     setGameState("playing");
   };
@@ -74,6 +79,7 @@ export default function ImageGuessingPage() {
       setCurrentIndex((prev) => prev + 1);
       setGuess("");
       setShowHint(false);
+      setHintUsed(false);
       setFeedback(null);
       setGameState("playing");
     } else {
@@ -87,8 +93,18 @@ export default function ImageGuessingPage() {
     setCurrentIndex(0);
     setGuess("");
     setShowHint(false);
+    setHintUsed(false);
     setFeedback(null);
     setGameState("start");
+  };
+
+  const itemImageSrc = currentItem?.image
+    ? svgToDataUri(currentItem.image)
+    : "";
+
+  const previewImageSrc = (cat: typeof imageGuessingCategories[0]) => {
+    const first = cat.items[0];
+    return first?.image ? svgToDataUri(first.image) : "";
   };
 
   if (gameState === "start" || !category) {
@@ -111,36 +127,36 @@ export default function ImageGuessingPage() {
           </motion.div>
 
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-5xl mx-auto w-full">
-            {imageGuessingCategories.map((cat, index) => {
-              const previewItem = cat.items[0];
-              return (
-                <motion.div
-                  key={cat.id}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: index * 0.1 }}
+            {imageGuessingCategories.map((cat, index) => (
+              <motion.div
+                key={cat.id}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.1 }}
+              >
+                <Card
+                  onClick={() => startGame(cat.id)}
+                  className="cursor-pointer transition-all hover:shadow-xl hover:-translate-y-1 border-2 hover:border-yellow-300 h-full overflow-hidden group"
                 >
-                  <Card
-                    onClick={() => startGame(cat.id)}
-                    className="cursor-pointer transition-all hover:shadow-xl hover:-translate-y-1 border-2 hover:border-yellow-300 h-full overflow-hidden group"
-                  >
-                    <div className="p-6 text-center">
-                      <div
-                        className="w-full h-40 mb-4 rounded-xl overflow-hidden flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-700 group-hover:scale-105 transition-transform duration-300"
-                        dangerouslySetInnerHTML={{ __html: previewItem?.image || "" }}
-                      />
-                      <h3 className="text-xl font-bold mb-1">{cat.title}</h3>
-                      <p className="text-sm text-muted-foreground mb-3">
-                        {cat.description}
-                      </p>
-                      <Badge variant="secondary" className="text-xs">
-                        {cat.items.length} questions
-                      </Badge>
+                  <div className="p-6 text-center">
+                    <div className="w-full h-40 mb-4 rounded-xl overflow-hidden flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-700 group-hover:scale-105 transition-transform duration-300">
+                      {previewImageSrc(cat) ? (
+                        <img src={previewImageSrc(cat)} alt={cat.title} className="object-contain w-full h-full" />
+                      ) : (
+                        <span className="text-4xl">{cat.emoji}</span>
+                      )}
                     </div>
-                  </Card>
-                </motion.div>
-              );
-            })}
+                    <h3 className="text-xl font-bold mb-1">{cat.title}</h3>
+                    <p className="text-sm text-muted-foreground mb-3">
+                      {cat.description}
+                    </p>
+                    <Badge variant="secondary" className="text-xs">
+                      {cat.items.length} questions
+                    </Badge>
+                  </div>
+                </Card>
+              </motion.div>
+            ))}
           </div>
         </div>
       </div>
@@ -181,11 +197,17 @@ export default function ImageGuessingPage() {
               )}
 
               {!isCorrect && (
-                <p className="text-lg text-muted-foreground">
+                <p className="text-lg text-muted-foreground mb-2">
                   The answer was:{" "}
                   <span className="font-bold text-foreground">
                     {currentItem?.answer}
                   </span>
+                </p>
+              )}
+
+              {isCorrect && (
+                <p className="text-sm text-green-600 font-medium mt-2">
+                  Great job! You got it right.
                 </p>
               )}
             </motion.div>
@@ -196,38 +218,36 @@ export default function ImageGuessingPage() {
               className="mb-6 space-y-4"
             >
               <div className="relative w-full max-w-md mx-auto">
-                <div className="absolute -top-3 -right-3 bg-yellow-400 text-yellow-900 text-xs font-bold px-3 py-1 rounded-full shadow-lg z-10">
-                  Revealed!
-                </div>
-                <div
-                  className="w-full h-64 rounded-2xl overflow-hidden shadow-2xl border-4 border-white dark:border-gray-700"
-                  dangerouslySetInnerHTML={{ __html: currentItem?.image || "" }}
-                />
+                {itemImageSrc && (
+                  <img
+                    src={itemImageSrc}
+                    alt="guess image"
+                    className="w-full h-64 rounded-2xl overflow-hidden shadow-2xl border-4 border-white dark:border-gray-700 object-contain"
+                  />
+                )}
               </div>
 
               <div className="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-950/30 dark:to-purple-950/30 rounded-2xl p-6 border border-blue-200 dark:border-blue-800">
                 <div className="flex items-center justify-center gap-2 mb-3">
-                  <MessageCircle className="w-5 h-5 text-blue-500" />
+                  <MessageCircle className="w-4 h-4 text-blue-500" />
                   <span className="text-sm font-semibold text-blue-700 dark:text-blue-300">
-                    You guessed:
+                    Your guess:
                   </span>
                   <span className="text-base font-bold text-foreground">
                     {guess || "(no answer)"}
                   </span>
                 </div>
 
-              {currentItem && (
-                <div className="flex flex-wrap justify-center gap-2">
-                  {currentItem.alternatives?.map((alt) => (
+                <div className="flex flex-wrap justify-center gap-2 mb-3">
+                  {currentItem?.alternatives?.map((alt) => (
                     <Badge key={alt} variant="secondary" className="text-xs bg-blue-100 dark:bg-blue-900/50">
                       {alt}
                     </Badge>
                   ))}
                 </div>
-              )}
 
-                {currentItem && currentItem.level && (
-                  <div className="mt-3 text-center">
+                {currentItem && (
+                  <div className="text-center">
                     <span className="text-xs text-muted-foreground">
                       Level: <span className="font-semibold">{currentItem.level}</span>
                     </span>
@@ -236,9 +256,9 @@ export default function ImageGuessingPage() {
               </div>
             </motion.div>
 
-            <div className="flex gap-3 justify-center">
+            <div className="flex gap-3 justify-center flex-wrap">
               <Button onClick={nextItem} size="lg" className="px-8 group">
-                {currentIndex < category.items.length - 1 ? (
+                {currentIndex && currentIndex < category.items.length - 1 ? (
                   <>
                     Next Picture
                     <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
@@ -290,16 +310,19 @@ export default function ImageGuessingPage() {
             </div>
 
             <motion.div
+              key={`img-${currentIndex}`}
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               className="text-center mb-8"
             >
               <div className="relative inline-block mb-6">
-                <div className="absolute -inset-1 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
-                <div
-                  className="relative w-full max-w-md mx-auto h-72 rounded-2xl overflow-hidden shadow-2xl border-4 border-white dark:border-gray-700"
-                  dangerouslySetInnerHTML={{ __html: currentItem.image || "" }}
-                />
+                {itemImageSrc && (
+                  <img
+                    src={itemImageSrc}
+                    alt="guess image"
+                    className="relative w-full max-w-md mx-auto h-72 rounded-2xl overflow-hidden shadow-2xl border-4 border-white dark:border-gray-700 object-contain"
+                  />
+                )}
               </div>
 
               <motion.div
@@ -339,13 +362,13 @@ export default function ImageGuessingPage() {
                   placeholder="Type your guess... (e.g. swimming, eating)"
                   onKeyDown={(e) => e.key === "Enter" && checkAnswer()}
                   className="text-lg flex-1"
-                  disabled={false}
+                  disabled={feedback !== null}
                 />
                 <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                   <Button
                     onClick={checkAnswer}
                     size="lg"
-                    disabled={!guess.trim()}
+                    disabled={!guess.trim() || feedback !== null}
                     className="px-8"
                   >
                     Check
@@ -357,11 +380,17 @@ export default function ImageGuessingPage() {
                 <Button
                   variant="ghost"
                   size="sm"
-                  onClick={() => setShowHint((prev) => !prev)}
+                  onClick={() => {
+                    setShowHint((prev) => !prev);
+                    setHintUsed(true);
+                  }}
                   className="text-muted-foreground"
                 >
-                  <Lightbulb className="w-4 h-4 mr-2" />
+                  <HelpCircle className="w-4 h-4 mr-2" />
                   {showHint ? "Hide Hint" : "Show Hint"}
+                  {hintUsed && !showHint && (
+                    <Badge variant="secondary" className="text-xs ml-2">Hint used</Badge>
+                  )}
                 </Button>
               </div>
 
@@ -374,10 +403,12 @@ export default function ImageGuessingPage() {
                     className="overflow-hidden"
                   >
                     <Card className="p-4 bg-yellow-50 dark:bg-yellow-950/20 border-yellow-200 dark:border-yellow-800">
-                      <p className="text-sm text-yellow-800 dark:text-yellow-200">
-                        <Lightbulb className="w-4 h-4 inline mr-2" />
-                        {currentItem.hint}
-                      </p>
+                      <div className="flex items-start gap-2">
+                        <Lightbulb className="w-4 h-4 text-yellow-600 mt-0.5 flex-shrink-0" />
+                        <p className="text-sm text-yellow-800 dark:text-yellow-200">
+                          {currentItem.hint}
+                        </p>
+                      </div>
                     </Card>
                   </motion.div>
                 )}
