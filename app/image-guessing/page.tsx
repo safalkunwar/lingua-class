@@ -175,9 +175,9 @@ export default function ImageGuessingPage() {
                 >
                   <div className="p-6 text-center">
                     <div className="w-full h-40 mb-4 rounded-xl overflow-hidden flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-700 group-hover:scale-105 transition-transform duration-300">
-                      {previewImageSrc(cat) ? (
-                        <img src={previewImageSrc(cat)} alt={cat.title} className="object-contain w-full h-full" />
-                      ) : (
+{previewImageSrc(cat) ? (
+                         <img src={previewImageSrc(cat)} alt={cat.title} className="object-contain w-full h-full drop-shadow-md" />
+                       ) : (
                         <span className="text-4xl">{cat.emoji}</span>
                       )}
                     </div>
@@ -257,7 +257,8 @@ export default function ImageGuessingPage() {
                   <img
                     src={itemImageSrc}
                     alt="guess image"
-                    className="w-full h-64 rounded-2xl overflow-hidden shadow-2xl border-4 border-white dark:border-gray-700 object-contain"
+                    className="w-full h-64 rounded-2xl overflow-hidden shadow-2xl border-4 border-white dark:border-gray-700 object-contain drop-shadow-lg"
+                    style={{filter:"drop-shadow(0 4px 8px rgba(0,0,0,0.15))"}}
                   />
                 )}
               </div>
@@ -359,13 +360,14 @@ export default function ImageGuessingPage() {
               className="text-center mb-8"
             >
               <div className="relative inline-block mb-6">
-                {itemImageSrc && (
-                  <img
-                    src={itemImageSrc}
-                    alt="guess image"
-                    className="relative w-full max-w-md mx-auto h-72 rounded-2xl overflow-hidden shadow-2xl border-4 border-white dark:border-gray-700 object-contain"
-                  />
-                )}
+{itemImageSrc && (
+                   <img
+                     src={itemImageSrc}
+                     alt="guess image"
+                     className="relative w-full max-w-md mx-auto h-72 rounded-2xl overflow-hidden shadow-2xl border-4 border-white dark:border-gray-700 object-contain drop-shadow-lg"
+                     style={{filter:"drop-shadow(0 4px 8px rgba(0,0,0,0.15))"}}
+                   />
+                 )}
               </div>
 
               <motion.div
