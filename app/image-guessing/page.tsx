@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
-import { Sparkles, Trophy, RotateCcw, Lightbulb, Star, MessageCircle, Mic, ArrowRight, PartyPopper, Frown, HelpCircle } from "lucide-react";
+import { Sparkles, Trophy, RotateCcw, Lightbulb, Star, MessageCircle, Mic, ArrowRight, PartyPopper, Frown, HelpCircle, Undo2, Redo2 } from "lucide-react";
 import { StudentSidebar } from "@/components/layout/sidebar";
 
 type GameState = "start" | "playing" | "revealed";
@@ -26,6 +26,8 @@ export default function ImageGuessingPage() {
   const [feedback, setFeedback] = useState<"correct" | "wrong" | null>(null);
   const [totalAnswered, setTotalAnswered] = useState(0);
   const [hintUsed, setHintUsed] = useState(false);
+  const [history, setHistory] = useState<number[]>([]);
+  const [historyIndex, setHistoryIndex] = useState(-1);
 
   const category = selectedCategory
     ? imageGuessingCategories.find((c) => c.id === selectedCategory)
@@ -48,6 +50,8 @@ export default function ImageGuessingPage() {
     setShowHint(false);
     setHintUsed(false);
     setFeedback(null);
+    setHistory([0]);
+    setHistoryIndex(0);
     setGameState("playing");
   };
 
@@ -75,8 +79,13 @@ export default function ImageGuessingPage() {
 
   const nextItem = () => {
     if (!category) return;
-    if (currentIndex < category.items.length - 1) {
-      setCurrentIndex((prev) => prev + 1);
+    const newIndex = currentIndex + 1;
+    if (newIndex < category.items.length) {
+      const newHistory = history.slice(0, historyIndex + 1);
+      newHistory.push(newIndex);
+      setHistory(newHistory);
+      setHistoryIndex(newHistory.length - 1);
+      setCurrentIndex(newIndex);
       setGuess("");
       setShowHint(false);
       setHintUsed(false);
@@ -85,6 +94,32 @@ export default function ImageGuessingPage() {
     } else {
       setGameState("start");
       setSelectedCategory(null);
+    }
+  };
+
+  const goBack = () => {
+    if (historyIndex > 0) {
+      const newIdx = history[historyIndex - 1];
+      setHistoryIndex(historyIndex - 1);
+      setCurrentIndex(newIdx);
+      setGuess("");
+      setShowHint(false);
+      setHintUsed(false);
+      setFeedback(null);
+      setGameState("playing");
+    }
+  };
+
+  const goForward = () => {
+    if (historyIndex < history.length - 1) {
+      const newIdx = history[historyIndex + 1];
+      setHistoryIndex(historyIndex + 1);
+      setCurrentIndex(newIdx);
+      setGuess("");
+      setShowHint(false);
+      setHintUsed(false);
+      setFeedback(null);
+      setGameState("playing");
     }
   };
 
@@ -256,25 +291,33 @@ export default function ImageGuessingPage() {
               </div>
             </motion.div>
 
-            <div className="flex gap-3 justify-center flex-wrap">
-              <Button onClick={nextItem} size="lg" className="px-8 group">
-                {currentIndex && currentIndex < category.items.length - 1 ? (
-                  <>
-                    Next Picture
-                    <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                  </>
-                ) : (
-                  <>
-                    Finish
-                    <Trophy className="w-4 h-4 ml-2" />
-                  </>
-                )}
-              </Button>
-              <Button onClick={resetGame} variant="outline" size="lg">
-                <RotateCcw className="w-4 h-4 mr-2" />
-                New Game
-              </Button>
-            </div>
+<div className="flex gap-3 justify-center flex-wrap">
+               <Button onClick={goBack} size="lg" variant="outline" disabled={historyIndex <= 0} className="px-4">
+                 <Undo2 className="w-4 h-4 mr-1" />
+                 Undo
+               </Button>
+               <Button onClick={nextItem} size="lg" className="px-8 group">
+                 {currentIndex && currentIndex < category.items.length - 1 ? (
+                   <>
+                     Next Picture
+                     <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                   </>
+                 ) : (
+                   <>
+                     Finish
+                     <Trophy className="w-4 h-4 ml-2" />
+                   </>
+                 )}
+               </Button>
+               <Button onClick={goForward} size="lg" variant="outline" disabled={historyIndex >= history.length - 1} className="px-4">
+                 <Redo2 className="w-4 h-4 mr-1" />
+                 Redo
+               </Button>
+               <Button onClick={resetGame} variant="outline" size="lg">
+                 <RotateCcw className="w-4 h-4 mr-2" />
+                 New Game
+               </Button>
+             </div>
 
             {currentIndex < category.items.length - 1 && (
               <p className="mt-4 text-sm text-muted-foreground">
@@ -413,6 +456,29 @@ export default function ImageGuessingPage() {
                   </motion.div>
                 )}
               </AnimatePresence>
+
+              <div className="flex justify-center gap-2 mt-2">
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  onClick={goBack}
+                  disabled={historyIndex <= 0}
+                  className="text-muted-foreground"
+                >
+                  <Undo2 className="w-4 h-4 mr-1" />
+                  Undo
+                </Button>
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  onClick={goForward}
+                  disabled={historyIndex >= history.length - 1}
+                  className="text-muted-foreground"
+                >
+                  <Redo2 className="w-4 h-4 mr-1" />
+                  Redo
+                </Button>
+              </div>
 
               {feedback !== null && (
                 <motion.div
