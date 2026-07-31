@@ -135,6 +135,7 @@
   - Hints, acceptable alternatives, score tracking
   - A1/A2 leveled for Chinese beginners
   - Improved dialogue-based UI with teacher prompts and speech bubbles
+  - Improved dialogue-based UI with teacher prompts and speech bubbles
 - Student/Teacher dashboards
 
 ### Technical Notes
