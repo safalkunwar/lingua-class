@@ -131,13 +131,13 @@
 - Image Guessing Game module (`/image-guessing`)
   - Playful ESL activity inspired by Hot Seat and action games
   - Categories: Animals and Actions, Daily Actions, Playful Scenes, Food and Cooking, Weather and Seasons, Sports and Games, Hobbies and Leisure, School and Learning, Pets and Animals, Transportation
-  - 100 total guessing prompts with realistic inline SVG illustrations (gradient fills for depth, naturalistic colors)
+  - 100 total guessing prompts with realistic inline SVG illustrations featuring gradient fills, drop shadows, naturalistic colors, and scene-based compositions
   - Hints, acceptable alternatives, score tracking
   - Undo/redo buttons with history tracking for navigation
   - A1/A2 leveled for Chinese beginners
   - Improved dialogue-based UI with teacher prompts and speech bubbles
   - SVG images rendered as standalone `<img>` tags via data URIs (not inside dialogue)
-  - Visual enhancements: drop-shadow effects on images, interactive card borders, animated feedback
+  - Visual enhancements: gradient background fills, drop shadows, scene-based compositions, interactive card borders, animated feedback
 - Student/Teacher dashboards
 
 ### Technical Notes
