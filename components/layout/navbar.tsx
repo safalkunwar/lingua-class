@@ -22,6 +22,7 @@ import {
   Home,
   Layers,
   Volume2,
+  MessageSquare,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { usePreferencesStore } from "@/stores/preferences-store";
@@ -31,6 +32,7 @@ const studentLinks = [
   { href: "/student", label: "Dashboard", icon: LayoutDashboard },
   { href: "/vocabulary", label: "Vocabulary", icon: BookOpen },
   { href: "/flashcards", label: "Flashcards", icon: Layers },
+  { href: "/slang-module", label: "Slang", icon: MessageSquare },
   { href: "/speaking", label: "Speaking", icon: Mic },
   { href: "/listening", label: "Listening", icon: Headphones },
   { href: "/reading", label: "Reading", icon: BookText },
