@@ -23,6 +23,8 @@ import {
   Layers,
   Volume2,
   MessageSquare,
+  BookMarked,
+  AlertTriangle,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { usePreferencesStore } from "@/stores/preferences-store";
@@ -32,7 +34,10 @@ const studentLinks = [
   { href: "/student", label: "Dashboard", icon: LayoutDashboard },
   { href: "/vocabulary", label: "Vocabulary", icon: BookOpen },
   { href: "/flashcards", label: "Flashcards", icon: Layers },
-  { href: "/slang-module", label: "Slang", icon: MessageSquare },
+  { href: "/conversations", label: "Conversations", icon: MessageCircle },
+  { href: "/daily-expressions", label: "Daily Expressions", icon: BookMarked },
+  { href: "/slang-academy", label: "Slang Academy", icon: MessageSquare },
+  { href: "/rough-english", label: "Rough English", icon: AlertTriangle },
   { href: "/speaking", label: "Speaking", icon: Mic },
   { href: "/listening", label: "Listening", icon: Headphones },
   { href: "/reading", label: "Reading", icon: BookText },
