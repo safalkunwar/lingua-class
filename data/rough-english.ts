@@ -159,6 +159,58 @@ export const roughEnglish: SlangItem[] = [
     ],
     culturalNotes: "Common in school bullying. Should be avoided in adult professional contexts. Can be playful among friends depending on tone.",
     warning: "WARNING: 'Loser' can be bullying language. Using it toward someone who is struggling is cruel."
+  },
+  {
+    id: "rough-7",
+    word: "Idiot",
+    chinese: "白痴/笨蛋",
+    pinyin: "bái chǐ / bèn dàn",
+    meaning: "Stupid person (insult)",
+    example: "You idiot! You locked the keys in the car again.",
+    exampleZh: "你个笨蛋！你又把钥匙锁在车里了。",
+    whoSaysIt: "Everyone when frustrated",
+    ageGroup: "Teens and above",
+    region: "All English-speaking countries",
+    isOffensive: true,
+    offensiveLevel: 3,
+    safeAlternatives: ["Silly", "Careless", "Unwise", "That was a mistake"],
+    conversation: [
+      { speaker: "Alex", line: "You idiot! You deleted the whole folder!" },
+      { speaker: "Jordan", line: "I know, I'm so sorry. It was an accident." },
+      { speaker: "Alex", line: "Whatever. Just don't be such a jerk next time." }
+    ],
+    chineseTranslation: [
+      { speaker: "Alex", line: "你个白痴！你把整个文件夹都删了！" },
+      { speaker: "Jordan", line: "我知道，对不起。那是意外。" },
+      { speaker: "Alex", line: "算了。下次别那么混蛋。" }
+    ],
+    culturalNotes: "Mild-to-moderate insult. Less severe than some other words but still rude. Common in everyday speech among friends."
+  },
+  {
+    id: "rough-8",
+    word: "Cheapskate",
+    chinese: "吝啬鬼",
+    pinyin: "lìn sè guǐ",
+    meaning: "Someone who is extremely reluctant to spend money",
+    example: "Don't be such a cheapskate — buy the round!",
+    exampleZh: "别这么吝啬——请客吧！",
+    whoSaysIt: "Friends, coworkers",
+    ageGroup: "Teens and above",
+    region: "All English-speaking countries",
+    isOffensive: true,
+    offensiveLevel: 2,
+    safeAlternatives: ["Frugal", "Budget-conscious", "Careful with money", "Thrifty"],
+    conversation: [
+      { speaker: "Mike", line: "You're not paying for the taxi?" },
+      { speaker: "Sam", line: "I'm broke this week." },
+      { speaker: "Mike", line: "Don't be a cheapskate. It's only $5." }
+    ],
+    chineseTranslation: [
+      { speaker: "Mike", line: "你不付出租车费吗？" },
+      { speaker: "Sam", line: "我这周没钱了。" },
+      { speaker: "Mike", line: "别这么吝啬。才5美元。" }
+    ],
+    culturalNotes: "Common insult among friends. Can be playful or serious depending on tone. 'Frugal' is the neutral/positive version."
   }
 ];
 

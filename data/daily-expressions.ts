@@ -67,6 +67,50 @@ export const dailyExpressions: DailyExpression[] = [
       { question: "'What's up?' is best used:", options: ["With friends informally", "In job interviews", "At funerals", "With strangers"], correct: 0 }
     ],
     register: "casual"
+  },
+  {
+    id: "dne-hang-on",
+    expression: "Hang on",
+    chinese: "等一下",
+    pinyin: "děng yī xià",
+    meaning: "Wait a moment / Hold on",
+    whenToUse: "When you need someone to wait briefly. Very common on phone calls and in person.",
+    whenNotToUse: "Don't use with people who are in a hurry or in very formal situations.",
+    nativeFrequency: "Extremely common — used multiple times daily.",
+    commonMistakes: [
+      { mistake: "Saying 'wait' without softening", correction: "Use 'Hang on' or 'Give me a second' for politeness" }
+    ],
+    pronunciation: "/hæŋ ɒn/",
+    funnyExample: "A: Hang on. B: I'm not hanging anywhere! A: ...I meant wait.",
+    memoryTrick: "Think: 'HANG on to your hat — I need a second.'",
+    relatedExpressions: ["Hold on", "Wait a second", "Give me a moment", "One moment please"],
+    collocations: ["hang on a second", "hang on a minute", "hang on, I'll check"],
+    miniQuiz: [
+      { question: "'Hang on' means:", options: ["Wait a moment", "Hang something up", "Be patient", "Hold the phone"], correct: 0 }
+    ],
+    register: "casual"
+  },
+  {
+    id: "dne-sounds-good",
+    expression: "Sounds good",
+    chinese: "听起来不错",
+    pinyin: "tīng qǐ lái bù cuò",
+    meaning: "I agree / That works for me / Okay",
+    whenToUse: "When accepting a plan, suggestion, or invitation. Very common in both casual and neutral settings.",
+    whenNotToUse: "Avoid in formal business settings where a more formal response is expected.",
+    nativeFrequency: "Very common — used daily in decision-making.",
+    commonMistakes: [
+      { mistake: "Overusing in formal emails", correction: "Use 'That works for me' or 'I agree' in formal contexts" }
+    ],
+    pronunciation: "/saʊndz ɡʊd/",
+    funnyExample: "A: Let's meet at 3 AM. B: Sounds good! A: ...Wait, really?",
+    memoryTrick: "Think: 'That SOUNDS like a GOOD plan.'",
+    relatedExpressions: ["That works for me", "I'm down", "I'm up for it", "Sure thing"],
+    collocations: ["sounds good to me", "sounds like a plan", "sounds great"],
+    miniQuiz: [
+      { question: "'Sounds good' is used to:", options: ["Show agreement", "Express disagreement", "Ask a question", "Give an order"], correct: 0 }
+    ],
+    register: "neutral"
   }
 ];
 

@@ -94,6 +94,58 @@ export const slangAcademy: SlangLevelData[] = [
           { speaker: "Tom", line: "常有的事。我们买新的吧。" }
         ],
         culturalNotes: "'My bad' is American slang that went mainstream. It's casual but acceptable in most situations."
+      },
+      {
+        id: "safe-3",
+        word: "No way",
+        chinese: "不会吧/真的吗",
+        pinyin: "bú huì ba / zhēn de ma",
+        meaning: "Really? / That's surprising / I don't believe it",
+        example: "No way! I won the lottery!",
+        exampleZh: "不会吧！我中彩票了！",
+        whoSaysIt: "Everyone",
+        ageGroup: "All ages",
+        region: "All English-speaking countries",
+        isOffensive: false,
+        offensiveLevel: 0,
+        safeAlternatives: ["Really?", "Are you serious?", "No kidding"],
+        conversation: [
+          { speaker: "Amy", line: "I just got a new job!" },
+          { speaker: "John", line: "No way! Congratulations!" },
+          { speaker: "Amy", line: "Thanks! I'm so excited." }
+        ],
+        chineseTranslation: [
+          { speaker: "Amy", line: "我刚得到一份新工作！" },
+          { speaker: "John", line: "不会吧！恭喜！" },
+          { speaker: "Amy", line: "谢谢！我很兴奋。" }
+        ],
+        culturalNotes: "'No way' can express surprise or disbelief. It's very common in casual speech."
+      },
+      {
+        id: "safe-4",
+        word: "Fair enough",
+        chinese: "有道理/好吧",
+        pinyin: "yǒu dào lǐ / hǎo ba",
+        meaning: "I understand your point / That's reasonable",
+        example: "I don't like it, but fair enough.",
+        exampleZh: "我不喜欢，但你说得有道理。",
+        whoSaysIt: "Everyone",
+        ageGroup: "All ages",
+        region: "All English-speaking countries",
+        isOffensive: false,
+        offensiveLevel: 0,
+        safeAlternatives: ["I see your point", "That's reasonable", "I understand"],
+        conversation: [
+          { speaker: "Tom", line: "I think we should leave early." },
+          { speaker: "Lisa", line: "I'd rather stay longer, but fair enough." },
+          { speaker: "Tom", line: "We can always come back next time." }
+        ],
+        chineseTranslation: [
+          { speaker: "Tom", line: "我觉得我们应该早点走。" },
+          { speaker: "Lisa", line: "我宁愿多待一会儿，但你说得有道理。" },
+          { speaker: "Tom", line: "我们下次可以再来。" }
+        ],
+        culturalNotes: "'Fair enough' is a very common way to acknowledge someone else's point even if you disagree."
       }
     ]
   },
