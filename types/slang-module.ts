@@ -12,7 +12,7 @@ export type RegionalVariation = {
   note: string;
 };
 
-export type Tone = "Angry" | "Funny" | "Sarcastic" | "Friendly" | "Neutral" | "Disgusted" | "Surprised" | "Playful";
+export type Tone = "Angry" | "Funny" | "Sarcastic" | "Friendly" | "Neutral" | "Disgusted" | "Surprised" | "Playful" | "Frustrated";
 
 export type Demographics = {
   ageGroup: string;
