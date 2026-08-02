@@ -523,7 +523,7 @@ export default function ConversationDetailPage({ params }: { params: Promise<{ i
               <div className="space-y-6">
                 {topic.quiz.map((q, idx) => {
                   const isAnswered = quizAnswers[q.id] !== undefined;
-                  const selectedOption = isAnswered ? topic.quiz[idx].options[quizAnswers[q.id]] : null;
+                  const selectedOption = isAnswered ? (topic.quiz as NonNullable<typeof topic.quiz>)[idx].options[quizAnswers[q.id]] : null;
                   const isCorrect = selectedOption?.correct || false;
 
                   return (
