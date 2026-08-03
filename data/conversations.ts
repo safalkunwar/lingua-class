@@ -9571,42 +9571,189 @@ export const conversations: ConversationTopic[] = [
     color: "from-emerald-400 to-teal-400",
     level: "A1",
     estimatedTime: "10 min",
-    vocabularyPreview: [
-      { word: "Neighbor", phonetic: "/'ne?b?r/", chinese: "??", partOfSpeech: "noun" },
-      { word: "Building", phonetic: "/'b?ld??/", chinese: "???", partOfSpeech: "noun" },
-      { word: "Floor", phonetic: "/fl??r/", chinese: "??", partOfSpeech: "noun" },
-      { word: "Introduce", phonetic: "/??ntr?'du?s/", chinese: "??", partOfSpeech: "verb" },
-      { word: "Welcome", phonetic: "/'welk?m/", chinese: "??", partOfSpeech: "verb / adjective" },
-      { word: "Get to know", phonetic: "/get tu? no?/", chinese: "??", partOfSpeech: "phrase" }
+    registerMarkers: [
+      { level: "formal", label: "Formal", color: "bg-blue-100 text-blue-800 border-blue-200", description: "Apartment building meetings" },
+      { level: "neutral", label: "Neutral", color: "bg-gray-100 text-gray-800 border-gray-200", description: "Standard neighbor introduction" },
+      { level: "casual", label: "Casual", color: "bg-green-100 text-green-800 border-green-200", description: "Friendly chat in the hallway" }
+    ],
+    warmUp: {
+      title: "Warm-Up: Neighborly English",
+      content: "Meeting new neighbors is a great way to build community. In this lesson, you'll learn how to introduce yourself, make small talk, and be a friendly neighbor.",
+      contentZh: "??????????????????????????????????????????"
+    },
+    vocabulary: [
+      {
+        word: "Neighbor",
+        phonetic: "/?ne?b?r/",
+        chinese: "??",
+        pinyin: "lín j?",
+        partOfSpeech: "noun",
+        definitionEn: "A person who lives near you.",
+        definitionZh: "????????",
+        exampleEn: "My neighbor is very friendly.",
+        exampleZh: "?????????",
+        register: "neutral"
+      },
+      {
+        word: "Building",
+        phonetic: "/?b?ld??/",
+        chinese: "??/??",
+        pinyin: "dà lóu / jiàn zhù",
+        partOfSpeech: "noun",
+        definitionEn: "A structure with floors and rooms where people live or work.",
+        definitionZh: "??????????????????",
+        exampleEn: "Welcome to the building!",
+        exampleZh: "?????????",
+        register: "neutral"
+      },
+      {
+        word: "Floor",
+        phonetic: "/fl??r/",
+        chinese: "??",
+        pinyin: "lóu céng",
+        partOfSpeech: "noun",
+        definitionEn: "A level of a building.",
+        definitionZh: "???????",
+        exampleEn: "What floor are you on?",
+        exampleZh: "??????",
+        register: "neutral"
+      },
+      {
+        word: "Introduce",
+        phonetic: "/??ntr??du?s/",
+        chinese: "??",
+        pinyin: "jiè shào",
+        partOfSpeech: "verb",
+        definitionEn: "To tell people your name and information.",
+        definitionZh: "????????????",
+        exampleEn: "Let me introduce myself.",
+        exampleZh: "?????????",
+        register: "neutral"
+      },
+      {
+        word: "Welcome",
+        phonetic: "/?welk?m/",
+        chinese: "??",
+        pinyin: "hu?n yíng",
+        partOfSpeech: "verb / adjective",
+        definitionEn: "To greet someone warmly; also feeling glad about someone's arrival.",
+        definitionZh: "????????????????????",
+        exampleEn: "Welcome to the building!",
+        exampleZh: "?????????",
+        register: "neutral"
+      },
+      {
+        word: "Get to know",
+        phonetic: "/?et tu? no?/",
+        chinese: "??/??",
+        pinyin: "rèn shi / li?o ji?",
+        partOfSpeech: "phrase",
+        definitionEn: "To become familiar with someone over time.",
+        definitionZh: "????????????",
+        exampleEn: "I'm happy to get to know you.",
+        exampleZh: "????????",
+        register: "neutral"
+      }
+    ],
+    dailyExpressions: {
+      title: "Daily Native Expressions",
+      items: [
+        {
+          id: "de-neighbor-1",
+          expression: "I just moved in",
+          chinese: "?????",
+          pinyin: "w? g?ng b?ng jìn lái",
+          meaning: "Telling someone you recently arrived at your new home.",
+          whenToUse: "When meeting new neighbors after moving to a new place.",
+          whenNotToUse: "Don't use if you've lived there for years — it would be confusing.",
+          nativeFrequency: "Very common when meeting new people after moving.",
+          commonMistakes: [
+            { mistake: "Using 'I moved in yesterday' without context", correction: "'I just moved in' emphasizes the recent change" }
+          ],
+          pronunciation: "/a? d??st mu?vd ?n/",
+          funnyExample: "A: I just moved in. B: Where were you before? A: ...I was outside. B: ...I meant where did you live before.",
+          memoryTrick: "Think: 'just = recently' + 'moved in = arrived home' = 'recently arrived home'",
+          relatedExpressions: ["I just arrived", "I'm new here", "I just got here"],
+          collocations: ["just moved in", "moved in next door", "moved in yesterday"],
+          miniQuiz: [
+            { question: "'I just moved in' means:", options: ["I recently arrived at my new home", "I'm moving out", "I've lived here for years", "I'm visiting"], correct: 0 }
+          ],
+          register: "neutral"
+        },
+        {
+          id: "de-neighbor-2",
+          expression: "Nice to meet you",
+          chinese: "??????",
+          pinyin: "h?n g?o xìng rèn shi n?",
+          meaning: "A standard phrase said when meeting someone for the first time.",
+          whenToUse: "When being introduced to someone new.",
+          whenNotToUse: "Don't use with people you already know — it sounds like you've forgotten them.",
+          nativeFrequency: "Extremely common — used every time you meet someone new.",
+          commonMistakes: [
+            { mistake: "Using 'Nice to see you' for first meetings", correction: "'Nice to meet you' is for first meetings; 'Nice to see you' is for people you already know" }
+          ],
+          pronunciation: "/na?s tu? mi?t ju?/",
+          funnyExample: "A: Nice to meet you! B: Nice to meet you too! A: ...We've been neighbors for 2 years. B: ...I'm bad at remembering faces.",
+          memoryTrick: "Think: 'meet = first time' + 'nice = pleasant' = 'pleased to meet you for the first time'",
+          relatedExpressions: ["Pleased to meet you", "Great to meet you", "Nice to meet you too"],
+          collocations: ["nice to meet you", "pleased to meet you", "great to meet you"],
+          miniQuiz: [
+            { question: "'Nice to meet you' is used when:", options: ["Meeting someone for the first time", "Saying goodbye", "Seeing an old friend", "Asking for help"], correct: 0 }
+          ],
+          register: "neutral"
+        },
+        {
+          id: "de-neighbor-3",
+          expression: "Would you like...?",
+          chinese: "???...??",
+          pinyin: "nín xi?ng yào... ma?",
+          meaning: "Polite way to offer something to someone.",
+          whenToUse: "When offering food, drinks, or help to neighbors.",
+          whenNotToUse: "Don't use for commands — this is only for offers.",
+          nativeFrequency: "Very common in friendly social situations.",
+          commonMistakes: [
+            { mistake: "Using 'Do you want...?' which can sound demanding", correction: "'Would you like...?' is polite and friendly" }
+          ],
+          pronunciation: "/w?d ju? la?k/",
+          funnyExample: "A: Would you like a cookie? B: Would I like a cookie? A: ...I'm offering you a cookie. B: ...I love cookies. Yes!",
+          memoryTrick: "Think: 'would like = want politely' = 'polite offer'",
+          relatedExpressions: ["Do you want...?", "Can I get you...?", "Would you care for...?"],
+          collocations: ["would you like", "would you like a", "would you like some"],
+          miniQuiz: [
+            { question: "'Would you like...?' is used to:", options: ["Offer something politely", "Give a command", "Ask a question", "Say goodbye"], correct: 0 }
+          ],
+          register: "neutral"
+        }
+      ]
+    },
+    nativeChunks: [
+      { chunk: "I just moved in", meaning: "?????", example: "I just moved in next door.", register: "neutral", context: "Introduction" },
+      { chunk: "Nice to meet you", meaning: "??????", example: "Nice to meet you, Mike!", register: "neutral", context: "First meeting" },
+      { chunk: "Welcome to the building", meaning: "????????", example: "Welcome to the building!", register: "neutral", context: "Welcoming" },
+      { chunk: "Would you like", meaning: "???...?", example: "Would you like a cookie?", register: "neutral", context: "Offering" },
+      { chunk: "That's so kind of you", meaning: "???", example: "That's so kind of you!", register: "neutral", context: "Gratitude" }
     ],
     conversation: [
-      { speaker: "Anna", line: "Hi! I just moved in next door. I'm Anna." },
-      { speaker: "Neighbor", line: "Welcome to the building! I'm Mike, from 2B." },
-      { speaker: "Anna", line: "Nice to meet you, Mike! Is it a quiet building?" },
-      { speaker: "Neighbor", line: "Yes, everyone here is friendly. What floor are you on?" },
-      { speaker: "Anna", line: "I'm on 3A. I brought cookies. Would you like one?" },
-      { speaker: "Neighbor", line: "That's so kind of you! Thank you very much." },
-      { speaker: "Anna", line: "If you need anything, just knock. Welcome again!" },
-      { speaker: "Neighbor", line: "You too! Let me know if you need help moving anything." }
+      { speaker: "Anna", line: "Hi! I just moved in next door. I'm Anna.", register: "neutral" },
+      { speaker: "Neighbor", line: "Welcome to the building! I'm Mike, from 2B.", register: "neutral" },
+      { speaker: "Anna", line: "Nice to meet you, Mike! Is it a quiet building?", register: "neutral" },
+      { speaker: "Neighbor", line: "Yes, everyone here is friendly. What floor are you on?", register: "neutral" },
+      { speaker: "Anna", line: "I'm on 3A. I brought cookies. Would you like one?", register: "casual" },
+      { speaker: "Neighbor", line: "That's so kind of you! Thank you very much.", register: "neutral" },
+      { speaker: "Anna", line: "If you need anything, just knock. Welcome again!", register: "neutral" },
+      { speaker: "Neighbor", line: "You too! Let me know if you need help moving anything.", register: "neutral" }
     ],
     chineseTranslation: [
-      { speaker: "Anna", line: "?!??????????Anna?" },
-      { speaker: "??", line: "???????!??Mike,2B??" },
-      { speaker: "Anna", line: "??????,Mike!???????" },
-      { speaker: "??", line: "??,?????????????" },
-      { speaker: "Anna", line: "??3A?????????????" },
-      { speaker: "??", line: "???!?????" },
-      { speaker: "Anna", line: "??????,??????????!" },
-      { speaker: "??", line: "???!?????????,????" }
+      { speaker: "Anna", line: "???????????Anna?" },
+      { speaker: "??", line: "???????????Mike???2B?" },
+      { speaker: "Anna", line: "???????Mike????????" },
+      { speaker: "??", line: "???????????????????" },
+      { speaker: "Anna", line: "??3A??????????????" },
+      { speaker: "??", line: "?????????" },
+      { speaker: "Anna", line: "????????????????????" },
+      { speaker: "??", line: "???????????????????" }
     ],
-    usefulExpressions: [
-      { expression: "I just moved in", meaning: "????", usage: "??????????" },
-      { expression: "Nice to meet you", meaning: "??????", usage: "????????" },
-      { expression: "Would you like...?", meaning: "???...??", usage: "??????" },
-      { expression: "That's so kind of you", meaning: "???", usage: "???????" },
-      { expression: "Let me know if...", meaning: "????...????", usage: "??????" }
-    ],
-    grammarFocus: [
+    grammarInContext: [
       {
         title: "Present Perfect for Recent Actions",
         explanation: "????????????????",
@@ -9618,7 +9765,7 @@ export const conversations: ConversationTopic[] = [
       },
       {
         title: "Conditional Offers with 'Would you like'",
-        explanation: "? 'Would you like...?' ???????????",
+        explanation: "? 'Would you like...?' ????????",
         examples: [
           "Would you like a cookie?",
           "Would you like some water?",
@@ -9626,20 +9773,107 @@ export const conversations: ConversationTopic[] = [
         ]
       }
     ],
-    collocationsAndChunks: [
-      { chunk: "Just moved in", meaning: "???", example: "I just moved in next door." },
-      { chunk: "Nice to meet you", meaning: "??????", example: "Nice to meet you, Mike!" },
-      { chunk: "That's so kind of you", meaning: "???", example: "That's so kind of you!" }
-    ],
-    pronunciationTips: [
-      { tip: "Neighbor ? /'ne?b?r/", example: "Stress on first syllable" },
+    pronunciation: [
+      { tip: "Neighbor ? /?ne?b?r/", example: "Stress on first syllable" },
       { tip: "Would you like ? /w?d ju? la?k/", example: "Polite offer" }
+    ],
+    shadowing: [
+      { line: "Hi! I just moved in next door. I'm Anna.", emphasis: "just moved in" },
+      { line: "Welcome to the building! I'm Mike, from 2B.", emphasis: "Welcome to the building" },
+      { line: "Nice to meet you, Mike!", emphasis: "Nice to meet you" },
+      { line: "I brought cookies. Would you like one?", emphasis: "Would you like" },
+      { line: "That's so kind of you!", emphasis: "That's so kind of you" }
+    ],
+    speakingPractice: {
+      instruction: "Practice introducing yourself to a new neighbor. Use 'I just moved in', 'Nice to meet you', and offer something small.",
+      hints: [
+        "Start with a friendly greeting",
+        "Say which apartment you're in",
+        "Ask about the building",
+        "Offer a small gift or help",
+        "End with a warm goodbye"
+      ],
+      followUpQuestions: [
+        "What did you say when you introduced yourself?",
+        "Did you offer something?",
+        "What did you learn about the building?",
+        "Did you exchange contact information?"
+      ]
+    },
+    rolePlay: {
+      scenario: "You meet your new neighbor in the hallway. Introduce yourself, ask about the building, and offer a small gift.",
+      prompts: [
+        "Greet them warmly",
+        "Introduce yourself",
+        "Ask about the building",
+        "Offer a small gift",
+        "Exchange contact info"
+      ],
+      partnerLines: [
+        "Hi! I just moved in next door. I'm Anna.",
+        "Welcome to the building! I'm Mike, from 2B.",
+        "Yes, everyone here is friendly. What floor are you on?",
+        "That's so kind of you! Thank you very much.",
+        "You too! Let me know if you need help moving anything."
+      ]
+    },
+    homework: {
+      task: "Neighbor Introduction",
+      description: "If you have new neighbors, introduce yourself. If not, practice your introduction in front of a mirror. Write down what you would say.",
+      dueText: "Before next lesson"
+    },
+    quiz: [
+      {
+        id: "q1",
+        question: "'I just moved in' means:",
+        questionZh: "'I just moved in'????",
+        options: [
+          { label: "A) I recently arrived at my new home", labelZh: "A) ????????", correct: true },
+          { label: "B) I'm moving out", labelZh: "B) ??????", correct: false },
+          { label: "C) I've lived here for years", labelZh: "C) ?????????", correct: false },
+          { label: "D) I'm visiting", labelZh: "D) ????", correct: false }
+        ],
+        explanation: "'I just moved in' means you recently arrived at your new home.",
+        explanationZh: "'I just moved in'????????????"
+      },
+      {
+        id: "q2",
+        question: "'Nice to meet you' is used when:",
+        questionZh: "'Nice to meet you'???",
+        options: [
+          { label: "A) Meeting someone for the first time", labelZh: "A) ???????", correct: true },
+          { label: "B) Saying goodbye", labelZh: "B) ???", correct: false },
+          { label: "C) Seeing an old friend", labelZh: "C) ?????", correct: false },
+          { label: "D) Asking for help", labelZh: "D) ????", correct: false }
+        ],
+        explanation: "'Nice to meet you' is the standard phrase for first-time introductions.",
+        explanationZh: "'Nice to meet you'????????????"
+      }
+    ],
+    review: [
+      { key: "moved", prompt: "How do you say you recently arrived at your new home?", answer: "I just moved in" },
+      { key: "meet", prompt: "What do you say when meeting someone for the first time?", answer: "Nice to meet you" },
+      { key: "offer", prompt: "How do you politely offer something?", answer: "Would you like...?" }
+    ],
+    humorNotes: [
+      {
+        context: "When you're not sure if your neighbor likes you",
+        punchline: "A: I brought cookies! B: ...Thanks. A: ...Is that a 'thanks' or a 'go away'? B: ...It's a 'thanks but please don't knock again'.",
+        explanation: "Self-deprecating humor about neighbor relationships is very common."
+      }
+    ],
+    usefulExpressions: [
+      { expression: "I just moved in", meaning: "?????", usage: "?????" },
+      { expression: "Nice to meet you", meaning: "??????", usage: "????????" },
+      { expression: "Would you like...?", meaning: "???...??", usage: "?????" },
+      { expression: "That's so kind of you", meaning: "???", usage: "???????" },
+      { expression: "Let me know if...", meaning: "????...????", usage: "???????" }
     ],
     commonMistakes: [
       {
-        mistake: "'I moved in yesterday' ??????",
-        correction: "?????? 'I have just moved in' ???",
-        explanation: "???????????????,???????"
+        mistake: "? 'I moved in yesterday' ?? 'I have just moved in'",
+        correction: "??????? 'I have just moved in' ? 'I just moved in'",
+        explanation: "???????????????????????????? 'just' ?????????"
       }
     ],
     rolePlayPractice: [
