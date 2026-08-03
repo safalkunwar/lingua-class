@@ -5314,42 +5314,189 @@ export const conversations: ConversationTopic[] = [
     color: "from-indigo-400 to-blue-400",
     level: "A1",
     estimatedTime: "10 min",
-    vocabularyPreview: [
-      { word: "Hello?", phonetic: "/h?'lo?/", chinese: "??", partOfSpeech: "interjection" },
-      { word: "Can I speak to...?", phonetic: "/kæn a? spi?k tu?/", chinese: "???...????", partOfSpeech: "question" },
-      { word: "Hold on", phonetic: "/ho?ld ?n/", chinese: "???", partOfSpeech: "phrase" },
-      { word: "Message", phonetic: "/'mes?d?/", chinese: "??", partOfSpeech: "noun" },
-      { word: "Call back", phonetic: "/k??l bæk/", chinese: "???", partOfSpeech: "phrasal verb" },
-      { word: "Busy", phonetic: "/'b?zi/", chinese: "?", partOfSpeech: "adjective" }
+    registerMarkers: [
+      { level: "formal", label: "Formal", color: "bg-blue-100 text-blue-800 border-blue-200", description: "Business or official calls" },
+      { level: "neutral", label: "Neutral", color: "bg-gray-100 text-gray-800 border-gray-200", description: "Standard phone conversation" },
+      { level: "casual", label: "Casual", color: "bg-green-100 text-green-800 border-green-200", description: "Calling friends or family" }
+    ],
+    warmUp: {
+      title: "Warm-Up: Phone Etiquette",
+      content: "Phone calls have their own rules and vocabulary. In this lesson, you'll learn how to answer calls politely, ask for people, and leave messages.",
+      contentZh: "????????????????????????????????????????"
+    },
+    vocabulary: [
+      {
+        word: "Hello?",
+        phonetic: "/h??lo?/",
+        chinese: "??",
+        pinyin: "wéi?",
+        partOfSpeech: "interjection",
+        definitionEn: "The standard way to answer a phone call.",
+        definitionZh: "?????????",
+        exampleEn: "Hello? Who's calling?",
+        exampleZh: "?????",
+        register: "neutral"
+      },
+      {
+        word: "Can I speak to...?",
+        phonetic: "/kæn a? spi?k tu?/",
+        chinese: "???...????",
+        pinyin: "w? néng hé... shu? huà ma?",
+        partOfSpeech: "question",
+        definitionEn: "Asking to talk to a specific person on the phone.",
+        definitionZh: "??????????????",
+        exampleEn: "Can I speak to Mr. Johnson, please?",
+        exampleZh: "????????????",
+        register: "neutral"
+      },
+      {
+        word: "Hold on",
+        phonetic: "/ho?ld ?n/",
+        chinese: "???",
+        pinyin: "q?ng sh?o d?ng",
+        partOfSpeech: "phrase",
+        definitionEn: "Asking someone to wait on the phone.",
+        definitionZh: "???????????",
+        exampleEn: "Hold on, let me check.",
+        exampleZh: "?????????",
+        register: "neutral"
+      },
+      {
+        word: "Message",
+        phonetic: "/?mes?d?/",
+        chinese: "??",
+        pinyin: "liú yán",
+        partOfSpeech: "noun",
+        definitionEn: "Information left for someone who isn't available.",
+        definitionZh: "???????????",
+        exampleEn: "Can I take a message?",
+        exampleZh: "???????",
+        register: "neutral"
+      },
+      {
+        word: "Call back",
+        phonetic: "/k??l bæk/",
+        chinese: "???",
+        pinyin: "huí diàn huà",
+        partOfSpeech: "phrasal verb",
+        definitionEn: "To return a phone call.",
+        definitionZh: "????",
+        exampleEn: "I'll call you back later.",
+        exampleZh: "??????????",
+        register: "neutral"
+      },
+      {
+        word: "Busy",
+        phonetic: "/?b?zi/",
+        chinese: "?",
+        pinyin: "máng",
+        partOfSpeech: "adjective",
+        definitionEn: "Occupied or unavailable.",
+        definitionZh: "????????",
+        exampleEn: "He's busy right now.",
+        exampleZh: "??????",
+        register: "neutral"
+      }
+    ],
+    dailyExpressions: {
+      title: "Daily Native Expressions",
+      items: [
+        {
+          id: "de-phone-1",
+          expression: "Can I speak to...?",
+          chinese: "???...????",
+          pinyin: "w? néng hé... shu? huà ma?",
+          meaning: "The standard polite way to ask for someone on the phone.",
+          whenToUse: "When calling and asking to speak to a specific person.",
+          whenNotToUse: "Don't use 'I want to talk to...' — it's too direct and rude.",
+          nativeFrequency: "Extremely common — the standard phone etiquette.",
+          commonMistakes: [
+            { mistake: "Using 'I want to talk to...' instead", correction: "'Can I speak to...?' is the polite, standard form" }
+          ],
+          pronunciation: "/kæn a? spi?k tu?/",
+          funnyExample: "A: Can I speak to... myself? B: ...You're already here. A: I know, I just wanted to hear my own voice.",
+          memoryTrick: "Think: 'speak = talk' + 'to = with' = 'can I talk with this person?'",
+          relatedExpressions: ["May I speak to...?", "Is this...?", "I'd like to speak to..."],
+          collocations: ["speak to", "speak to someone", "can I speak to"],
+          miniQuiz: [
+            { question: "'Can I speak to...?' is used to:", options: ["Ask for a person on the phone", "Say hello", "Leave a message", "Hang up"], correct: 0 }
+          ],
+          register: "neutral"
+        },
+        {
+          id: "de-phone-2",
+          expression: "Hold on",
+          chinese: "???",
+          pinyin: "q?ng sh?o d?ng",
+          meaning: "Asking someone to wait on the phone.",
+          whenToUse: "When you need to check something or get someone before continuing the call.",
+          whenNotToUse: "Don't keep people on hold for more than a minute without checking back.",
+          nativeFrequency: "Very common in phone conversations.",
+          commonMistakes: [
+            { mistake: "Using 'Wait' instead", correction: "'Hold on' is the standard phone phrase" }
+          ],
+          pronunciation: "/ho?ld ?n/",
+          funnyExample: "A: Hold on. B: ...How long? A: Until you forget why you called. B: ...I already forgot.",
+          memoryTrick: "Think: 'hold = keep' + 'on = continuing' = 'keep the call continuing while I check'",
+          relatedExpressions: ["Wait a moment", "One moment please", "Let me check"],
+          collocations: ["hold on", "hold on please", "hold on a moment"],
+          miniQuiz: [
+            { question: "'Hold on' means:", options: ["Wait a moment", "Hang up", "Call back", "Leave a message"], correct: 0 }
+          ],
+          register: "neutral"
+        },
+        {
+          id: "de-phone-3",
+          expression: "Take a message",
+          chinese: "??",
+          pinyin: "liú yán",
+          meaning: "Writing down information for someone who isn't available to take the call.",
+          whenToUse: "When the person you're calling isn't available and you want to leave information.",
+          whenNotToUse: "Don't use if the person is available — talk to them directly.",
+          nativeFrequency: "Very common in offices and professional settings.",
+          commonMistakes: [
+            { mistake: "Using 'Leave a message' when asking if you can", correction: "The receiver says 'Can I take a message?' — you say 'Yes, please tell him...'" }
+          ],
+          pronunciation: "/te?k ? ?mes?d?/",
+          funnyExample: "A: Can I take a message? B: Yes. Tell him I said... wait, what did I want to say? A: ...I'll take a message that you called.",
+          memoryTrick: "Think: 'take = write down' + 'message = information' = 'write down information'",
+          relatedExpressions: ["Leave a message", "Take down a message", "Write this down"],
+          collocations: ["take a message", "take a message for", "can I take a message"],
+          miniQuiz: [
+            { question: "'Can I take a message?' is said by:", options: ["The person answering the phone", "The caller", "Both", "Neither"], correct: 0 }
+          ],
+          register: "neutral"
+        }
+      ]
+    },
+    nativeChunks: [
+      { chunk: "Can I speak to", meaning: "???...???", example: "Can I speak to Mr. Johnson?", register: "neutral", context: "Asking for someone" },
+      { chunk: "Hold on", meaning: "???", example: "Hold on, let me check.", register: "neutral", context: "Waiting on phone" },
+      { chunk: "take a message", meaning: "??", example: "Can I take a message?", register: "neutral", context: "Taking message" },
+      { chunk: "call back", meaning: "???", example: "I'll call you back later.", register: "neutral", context: "Returning call" },
+      { chunk: "in a meeting", meaning: "???", example: "He's in a meeting.", register: "neutral", context: "Busy reason" }
     ],
     conversation: [
-      { speaker: "Receptionist", line: "Hello, Smith & Co. How can I help you?" },
-      { speaker: "Caller", line: "Hi, can I speak to Mr. Johnson, please?" },
-      { speaker: "Receptionist", line: "I'm sorry, he's in a meeting. Can I take a message?" },
-      { speaker: "Caller", line: "Yes, please. Tell him Sarah called about the report." },
-      { speaker: "Receptionist", line: "Sure. Does he need to call you back?" },
-      { speaker: "Caller", line: "Yes, that would be great. My number is 555-0142." },
-      { speaker: "Receptionist", line: "Thank you. I'll make sure he calls you back." },
-      { speaker: "Caller", line: "Thanks a lot. Goodbye!" }
+      { speaker: "Receptionist", line: "Hello, Smith & Co. How can I help you?", register: "neutral" },
+      { speaker: "Caller", line: "Hi, can I speak to Mr. Johnson, please?", register: "neutral" },
+      { speaker: "Receptionist", line: "I'm sorry, he's in a meeting. Can I take a message?", register: "neutral" },
+      { speaker: "Caller", line: "Yes, please. Tell him Sarah called about the report.", register: "neutral" },
+      { speaker: "Receptionist", line: "Sure. Does he need to call you back?", register: "neutral" },
+      { speaker: "Caller", line: "Yes, that would be great. My number is 555-0142.", register: "neutral" },
+      { speaker: "Receptionist", line: "Thank you. I'll make sure he calls you back.", register: "neutral" },
+      { speaker: "Caller", line: "Thanks a lot. Goodbye!", register: "neutral" }
     ],
     chineseTranslation: [
-      { speaker: "??", line: "??,???Smith???????????" },
-      { speaker: "???", line: "??,????????????" },
-      { speaker: "??", line: "??,??????????????" },
+      { speaker: "??", line: "??????Smith???????????" },
+      { speaker: "???", line: "???????????????" },
+      { speaker: "??", line: "?????????????????" },
       { speaker: "???", line: "??????????????????" },
       { speaker: "??", line: "?????????????" },
-      { speaker: "???", line: "??,???????????555-0142?" },
+      { speaker: "???", line: "??????????????555-0142?" },
       { speaker: "??", line: "??????????????" },
-      { speaker: "???", line: "???????!" }
+      { speaker: "???", line: "????????" }
     ],
-    usefulExpressions: [
-      { expression: "Can I speak to...?", meaning: "???...????", usage: "????????" },
-      { expression: "Hold on", meaning: "???", usage: "?????" },
-      { expression: "Take a message", meaning: "??", usage: "????????????" },
-      { expression: "Call back", meaning: "???", usage: "??????" },
-      { expression: "I'll make sure...", meaning: "???...", usage: "??????" }
-    ],
-    grammarFocus: [
+    grammarInContext: [
       {
         title: "Polite Phone Questions",
         explanation: "????? 'Can I speak to...?' ? 'May I speak to...?' ?????",
@@ -5369,21 +5516,105 @@ export const conversations: ConversationTopic[] = [
         ]
       }
     ],
-    collocationsAndChunks: [
-      { chunk: "Can I speak to", meaning: "???...???", example: "Can I speak to Sarah?" },
-      { chunk: "Hold on", meaning: "???", example: "Hold on, let me check." },
-      { chunk: "Take a message", meaning: "??", example: "Can I take a message?" },
-      { chunk: "Call back", meaning: "???", example: "I'll call you back later." }
-    ],
-    pronunciationTips: [
+    pronunciation: [
       { tip: "Can I speak to ? /kæn a? spi?k tu?/", example: "Natural, polite phone phrase" },
       { tip: "Hold on ? /ho?ld ?n/", example: "Quick transition" }
+    ],
+    shadowing: [
+      { line: "Hello, Smith & Co. How can I help you?", emphasis: "How can I help you" },
+      { line: "Can I speak to Mr. Johnson, please?", emphasis: "Can I speak to" },
+      { line: "I'm sorry, he's in a meeting.", emphasis: "in a meeting" },
+      { line: "Can I take a message?", emphasis: "take a message" }
+    ],
+    speakingPractice: {
+      instruction: "Practice making a phone call to schedule a doctor's appointment. Use 'Can I speak to...', 'hold on', and 'call back'.",
+      hints: [
+        "Start with a polite greeting",
+        "Ask for the doctor or receptionist",
+        "Give your name and reason for calling",
+        "Confirm the appointment time",
+        "Say thank you and goodbye"
+      ],
+      followUpQuestions: [
+        "Who did you ask for?",
+        "Were they available?",
+        "Did you leave a message?",
+        "Did they call you back?"
+      ]
+    },
+    rolePlay: {
+      scenario: "You call a restaurant to make a reservation. The line is busy, so you leave a message with your name, phone number, and time.",
+      prompts: [
+        "Answer the phone politely",
+        "Ask to make a reservation",
+        "Handle the 'busy' situation",
+        "Leave your name and number",
+        "Say goodbye"
+      ],
+      partnerLines: [
+        "Hello, Smith & Co. How can I help you?",
+        "I'm sorry, he's in a meeting.",
+        "Can I take a message?",
+        "I'll make sure he calls you back."
+      ]
+    },
+    homework: {
+      task: "Real Phone Call",
+      description: "Make a real phone call in English this week — to a restaurant, doctor, or business. Write down what you said.",
+      dueText: "Before next lesson"
+    },
+    quiz: [
+      {
+        id: "q1",
+        question: "'Can I speak to...?' is used to:",
+        questionZh: "'Can I speak to...?'???",
+        options: [
+          { label: "A) Ask for a person on the phone", labelZh: "A) ??????", correct: true },
+          { label: "B) Say hello", labelZh: "B) ???", correct: false },
+          { label: "C) Leave a message", labelZh: "C) ??", correct: false },
+          { label: "D) Hang up", labelZh: "D) ???", correct: false }
+        ],
+        explanation: "'Can I speak to...?' is the standard way to ask for someone on the phone.",
+        explanationZh: "'Can I speak to...?'?????????????"
+      },
+      {
+        id: "q2",
+        question: "'Hold on' means:",
+        questionZh: "'Hold on'????",
+        options: [
+          { label: "A) Wait a moment", labelZh: "A) ???", correct: true },
+          { label: "B) Hang up", labelZh: "B) ???", correct: false },
+          { label: "C) Call back", labelZh: "C) ???", correct: false },
+          { label: "D) Leave a message", labelZh: "D) ??", correct: false }
+        ],
+        explanation: "'Hold on' means to wait a moment on the phone.",
+        explanationZh: "'Hold on'???????????"
+      }
+    ],
+    review: [
+      { key: "ask", prompt: "How do you ask for someone on the phone?", answer: "Can I speak to...?" },
+      { key: "wait", prompt: "How do you ask someone to wait?", answer: "Hold on" },
+      { key: "message", prompt: "How do you offer to take a message?", answer: "Can I take a message?" }
+    ],
+    humorNotes: [
+      {
+        context: "When you call and forget what you wanted",
+        punchline: "A: Can I speak to... wait, who was I calling? B: ...You called your own number. A: ...I thought I left a message for myself.",
+        explanation: "Self-deprecating humor about phone confusion is very common."
+      }
+    ],
+    usefulExpressions: [
+      { expression: "Can I speak to...?", meaning: "???...????", usage: "????????" },
+      { expression: "Hold on", meaning: "???", usage: "?????" },
+      { expression: "Take a message", meaning: "??", usage: "????????????" },
+      { expression: "Call back", meaning: "???", usage: "??????" },
+      { expression: "I'll make sure...", meaning: "???...", usage: "??????" }
     ],
     commonMistakes: [
       {
         mistake: "????? 'I want to talk to...'",
         correction: "??????? 'Can I speak to...?'",
-        explanation: "?????????,'Can I speak to...?' ??????"
+        explanation: "??????????'Can I speak to...?' ??????"
       }
     ],
     rolePlayPractice: [
