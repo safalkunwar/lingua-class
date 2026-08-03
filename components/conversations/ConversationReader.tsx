@@ -218,17 +218,6 @@ export function ConversationReader({
           </div>
         </div>
       </main>
-
-      {/* Presentation Mode */}
-      {viewMode === "presentation" && (
-        <div className="fixed inset-0 bg-background z-50 flex flex-col">
-          <div className="flex-1 flex items-center justify-center p-8">
-            <div className="max-w-4xl w-full text-center">
-              <div className="text-sm text-muted-foreground mb-4">Press ESC to exit presentation mode</div>
-            </div>
-          </div>
-        </div>
-      )}
     </div>
   );
 }

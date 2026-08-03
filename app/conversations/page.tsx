@@ -98,70 +98,83 @@ export default function ConversationsPage() {
           </div>
         </motion.div>
 
-        {/* Search and Filters */}
+        {/* Collapsible Search and Filters */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
-          className="mb-6 space-y-4"
+          className="mb-6"
         >
-          <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
-            <div className="flex gap-2 flex-wrap justify-center">
-              {(["all", ...categories] as LevelFilter[]).map((level) => (
-                <Button
-                  key={level}
-                  onClick={() => setLevelFilter(level)}
-                  variant={levelFilter === level ? "default" : "outline"}
-                  size="sm"
-                  className="capitalize"
-                >
-                  {level === "all" ? "All" : level}
-                </Button>
-              ))}
+          <details className="group">
+            <summary className="list-none flex items-center justify-center cursor-pointer text-sm text-muted-foreground hover:text-foreground transition-colors">
+              <span className="group-open:rotate-90 transition-transform mr-1">▶</span>
+              Search & Filters
+            </summary>
+            <div className="mt-4 space-y-4">
+              <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
+                <div className="flex gap-2 flex-wrap justify-center">
+                  {(["all", ...categories] as LevelFilter[]).map((level) => (
+                    <Button
+                      key={level}
+                      onClick={() => setLevelFilter(level)}
+                      variant={levelFilter === level ? "default" : "outline"}
+                      size="sm"
+                      className="capitalize"
+                    >
+                      {level === "all" ? "All" : level}
+                    </Button>
+                  ))}
+                </div>
+                <div className="sm:max-w-md w-full">
+                  <Input
+                    placeholder="Search conversations..."
+                    value={search}
+                    onChange={(e) => setSearch(e.target.value)}
+                    className="w-full"
+                  />
+                </div>
+              </div>
             </div>
-            <div className="sm:max-w-md w-full">
-              <Input
-                placeholder="Search conversations..."
-                value={search}
-                onChange={(e) => setSearch(e.target.value)}
-                className="w-full"
-              />
-            </div>
-          </div>
+          </details>
         </motion.div>
 
-        {/* Category Chips */}
+        {/* Collapsible Category Chips */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
           className="mb-8"
         >
-          <h2 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-3 text-center">
-            Browse by Category
-          </h2>
-          <div className="flex gap-2 overflow-x-auto pb-3 -mx-4 px-4 sm:mx-0 sm:px-0 sm:justify-center sm:flex-wrap">
-            <button
-              onClick={() => setSelectedCategory("all")}
-              className={cnChip(selectedCategory === "all")}
-            >
-              📋 All
-            </button>
-            {conversations.map((topic) => {
-              const cat = CATEGORY_ICONS[topic.id] || { icon: topic.emoji, label: topic.title };
-              const isSelected = selectedCategory === topic.id;
-              return (
+          <details className="group">
+            <summary className="list-none flex items-center justify-center cursor-pointer text-sm text-muted-foreground hover:text-foreground transition-colors">
+              <span className="group-open:rotate-90 transition-transform mr-1">▶</span>
+              Browse by Category
+            </summary>
+            <div className="mt-4">
+              <div className="flex gap-2 overflow-x-auto pb-3 -mx-4 px-4 sm:mx-0 sm:px-0 sm:justify-center sm:flex-wrap">
                 <button
-                  key={topic.id}
-                  onClick={() => setSelectedCategory(topic.id)}
-                  className={cnChip(isSelected)}
+                  onClick={() => setSelectedCategory("all")}
+                  className={cnChip(selectedCategory === "all")}
                 >
-                  <span>{cat.icon}</span>
-                  <span>{cat.label}</span>
+                  📋 All
                 </button>
-              );
-            })}
-          </div>
+                {conversations.map((topic) => {
+                  const cat = CATEGORY_ICONS[topic.id] || { icon: topic.emoji, label: topic.title };
+                  const isSelected = selectedCategory === topic.id;
+                  return (
+                    <button
+                      key={topic.id}
+                      onClick={() => setSelectedCategory(topic.id)}
+                      className={cnChip(isSelected)}
+                    >
+                      <span>{cat.icon}</span>
+                      <span>{cat.label}</span>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+          </details>
         </motion.div>
 
         {/* Selected Category Preview or Grid */}

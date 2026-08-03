@@ -248,6 +248,22 @@ export default function ConversationDetailPage({ params }: { params: Promise<{ i
               onToggleAutoPlay={() => setAutoPlay((a) => !a)}
             />
           </div>
+          {/* Audio Controller in Presentation Mode */}
+          <div className="border-t bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+            <div className="max-w-4xl mx-auto px-4 py-3">
+              <AudioController
+                isPlaying={isPlaying}
+                onPlay={playAudio}
+                onPause={pauseAudio}
+                playbackRate={playbackRate}
+                onPlaybackRateChange={handlePlaybackRateChange}
+                autoPlay={autoPlay}
+                onToggleAutoPlay={() => setAutoPlay((a) => !a)}
+                currentLine={currentLine}
+                totalLines={topic.conversation.length}
+              />
+            </div>
+          </div>
         </PresentationMode>
       </div>
     </div>
