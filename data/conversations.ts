@@ -9928,45 +9928,192 @@ export const conversations: ConversationTopic[] = [
     color: "from-cyan-400 to-blue-400",
     level: "A1",
     estimatedTime: "10 min",
-    vocabularyPreview: [
-      { word: "Laundry", phonetic: "/'l??ndri/", chinese: "??", partOfSpeech: "noun" },
-      { word: "Machine", phonetic: "/m?'?i?n/", chinese: "??", partOfSpeech: "noun" },
-      { word: "Detergent", phonetic: "/d?'t??rd??nt/", chinese: "???", partOfSpeech: "noun" },
-      { word: "Dryer", phonetic: "/'dra??r/", chinese: "???", partOfSpeech: "noun" },
-      { word: "Change", phonetic: "/t?e?nd?/", chinese: "??", partOfSpeech: "noun" },
-      { word: "Spin", phonetic: "/sp?n/", chinese: "??", partOfSpeech: "verb" }
+    registerMarkers: [
+      { level: "formal", label: "Formal", color: "bg-blue-100 text-blue-800 border-blue-200", description: "Professional laundry service" },
+      { level: "neutral", label: "Neutral", color: "bg-gray-100 text-gray-800 border-gray-200", description: "Standard laundromat interaction" },
+      { level: "casual", label: "Casual", color: "bg-green-100 text-green-800 border-green-200", description: "Chatting while waiting for laundry" }
+    ],
+    warmUp: {
+      title: "Warm-Up: Laundromat English",
+      content: "Doing laundry is a universal task. In this lesson, you'll learn how to ask about prices, use machines, and handle payment at a laundromat.",
+      contentZh: "?????????????????????????????????????????????"
+    },
+    vocabulary: [
+      {
+        word: "Laundry",
+        phonetic: "/?l??ndri/",
+        chinese: "??/????",
+        pinyin: "x? y? / dài x? y? wù",
+        partOfSpeech: "noun",
+        definitionEn: "Clothes that need washing; also the act of washing them.",
+        definitionZh: "????????????????",
+        exampleEn: "I have a lot of laundry to do.",
+        exampleZh: "?????????",
+        register: "neutral"
+      },
+      {
+        word: "Machine",
+        phonetic: "/m???i?n/",
+        chinese: "???",
+        pinyin: "x? y? j?",
+        partOfSpeech: "noun",
+        definitionEn: "An appliance that washes clothes.",
+        definitionZh: "?????????",
+        exampleEn: "Which machine should I use?",
+        exampleZh: "??????????",
+        register: "neutral"
+      },
+      {
+        word: "Detergent",
+        phonetic: "/d??t??rd??nt/",
+        chinese: "???/???",
+        pinyin: "x? y? f?n / x? y? yè",
+        partOfSpeech: "noun",
+        definitionEn: "Soap used for washing clothes.",
+        definitionZh: "?????????",
+        exampleEn: "Do you sell detergent here?",
+        exampleZh: "??????????",
+        register: "neutral"
+      },
+      {
+        word: "Dryer",
+        phonetic: "/?dra??r/",
+        chinese: "???",
+        pinyin: "h?ng g?n j?",
+        partOfSpeech: "noun",
+        definitionEn: "A machine that dries wet clothes.",
+        definitionZh: "?????????",
+        exampleEn: "How much is the dryer?",
+        exampleZh: "???????",
+        register: "neutral"
+      },
+      {
+        word: "Change",
+        phonetic: "/t?e?nd?/",
+        chinese: "??",
+        pinyin: "líng qián",
+        partOfSpeech: "noun",
+        definitionEn: "Small amount of money given back or needed for machines.",
+        definitionZh: "????????????",
+        exampleEn: "Do you have change for the machine?",
+        exampleZh: "??????????",
+        register: "neutral"
+      },
+      {
+        word: "Spin",
+        phonetic: "/sp?n/",
+        chinese: "??",
+        pinyin: "xuán zhu?n",
+        partOfSpeech: "verb",
+        definitionEn: "To rotate quickly, as in a washing machine.",
+        definitionZh: "??????????",
+        exampleEn: "The machine spins fast.",
+        exampleZh: "???????",
+        register: "neutral"
+      }
+    ],
+    dailyExpressions: {
+      title: "Daily Native Expressions",
+      items: [
+        {
+          id: "de-laundromat-1",
+          expression: "How much is a wash and dry cycle?",
+          chinese: "??????????",
+          pinyin: "x? y? h?ng g?n xún huán du? sh?o qián?",
+          meaning: "Asking for the price of washing and drying clothes.",
+          whenToUse: "When you arrive at a laundromat and want to know the cost.",
+          whenNotToUse: "Don't use for dry cleaning — this is for self-service laundromats.",
+          nativeFrequency: "Very common when using a laundromat.",
+          commonMistakes: [
+            { mistake: "Using 'How much are...?' for a service", correction: "'How much is...?' is correct for asking about a service price" }
+          ],
+          pronunciation: "/ha? m?t? ?z ? w?? ?nd dra? sa?kl/",
+          funnyExample: "A: How much is a wash and dry cycle? B: $3.50. A: ...I'll wear my clothes dirty then. B: ...That's also an option.",
+          memoryTrick: "Think: 'wash and dry = clean clothes' + 'cycle = service' = 'how much for clean clothes service?'",
+          relatedExpressions: ["How much is a wash?", "How much is drying?", "What's the price per load?"],
+          collocations: ["wash and dry", "wash cycle", "dry cycle"],
+          miniQuiz: [
+            { question: "'How much is a wash and dry cycle?' asks:", options: ["Price of washing and drying", "Time it takes", "How to use the machine", "If they sell detergent"], correct: 0 }
+          ],
+          register: "neutral"
+        },
+        {
+          id: "de-laundromat-2",
+          expression: "Can you break a...?",
+          chinese: "????...??",
+          pinyin: "n? néng huàn k?i... ma?",
+          meaning: "Asking someone to exchange a large bill for smaller coins or bills.",
+          whenToUse: "When you have a large bill and need coins for a laundromat machine.",
+          whenNotToUse: "Don't use if you already have the right change — it's only for getting change.",
+          nativeFrequency: "Common when using coin-operated machines.",
+          commonMistakes: [
+            { mistake: "Using 'Can you change...?' which is okay but less specific", correction: "'Can you break a $20 bill?' is the standard phrase" }
+          ],
+          pronunciation: "/kæn ju? bre?k ?/",
+          funnyExample: "A: Can you break a $20 bill? B: I only have $20 bills too. A: ...We're stuck in the laundromat forever.",
+          memoryTrick: "Think: 'break = split into smaller pieces' + 'bill = money' = 'split this money into smaller pieces'",
+          relatedExpressions: ["Can you change this?", "Do you have change?", "I need quarters"],
+          collocations: ["break a bill", "break a $20", "break change"],
+          miniQuiz: [
+            { question: "'Can you break a $20 bill?' means:", options: ["Can you give me smaller bills/coins?", "Can you tear the bill?", "Can you give me $20?", "Can you keep the bill?"], correct: 0 }
+          ],
+          register: "neutral"
+        },
+        {
+          id: "de-laundromat-3",
+          expression: "Here are your...",
+          chinese: "????...",
+          pinyin: "zhè shì nín de...",
+          meaning: "Giving something to someone after they asked for it.",
+          whenToUse: "When handing over quarters, change, detergent, or anything.",
+          whenNotToUse: "Don't use when receiving — use 'Thank you' instead.",
+          nativeFrequency: "Very common in service situations.",
+          commonMistakes: [
+            { mistake: "Using 'Here is your...' for plural items", correction: "Use 'Here are your...' for plural items like quarters" }
+          ],
+          pronunciation: "/h?r ??r j?r/",
+          funnyExample: "A: Here are your quarters. B: Thanks. A: ...Don't spend them all in one place. B: ...I'm putting them in a machine.",
+          memoryTrick: "Think: 'here = take this' + 'are your = these belong to you' = 'take these, they're yours'",
+          relatedExpressions: ["Here you go", "Here it is", "There you go"],
+          collocations: ["here are your", "here are your quarters", "here are your clothes"],
+          miniQuiz: [
+            { question: "'Here are your quarters' means:", options: ["Here are your coins", "Give me quarters", "I need quarters", "Quarters are free"], correct: 0 }
+          ],
+          register: "neutral"
+        }
+      ]
+    },
+    nativeChunks: [
+      { chunk: "How much is", meaning: "???", example: "How much is a wash and dry cycle?", register: "neutral", context: "Asking price" },
+      { chunk: "Do you sell", meaning: "???...?", example: "Do you sell detergent here?", register: "neutral", context: "Asking about products" },
+      { chunk: "Can you break", meaning: "????...?", example: "Can you break a $20 bill?", register: "neutral", context: "Getting change" },
+      { chunk: "Here are your", meaning: "????", example: "Here are your quarters.", register: "neutral", context: "Handing over items" },
+      { chunk: "takes 30 minutes", meaning: "??30??", example: "The wash cycle takes 30 minutes.", register: "neutral", context: "Time information" }
     ],
     conversation: [
-      { speaker: "Customer", line: "Hi, how much is a wash and dry cycle?" },
-      { speaker: "Attendant", line: "A wash is $2 and dry is $1.50. Machines take quarters." },
-      { speaker: "Customer", line: "Do you sell detergent here?" },
-      { speaker: "Attendant", line: "Yes, right here. $1 per box. Do you need change for the machine?" },
-      { speaker: "Customer", line: "Yes, please. Can you break a $20 bill?" },
-      { speaker: "Attendant", line: "Sure. Here are your quarters. The wash cycle takes 30 minutes." },
-      { speaker: "Customer", line: "Thank you! Can I use my phone while I wait?" },
-      { speaker: "Attendant", line: "Of course. There's free Wi-Fi. Password is on the wall." }
+      { speaker: "Customer", line: "Hi, how much is a wash and dry cycle?", register: "neutral" },
+      { speaker: "Attendant", line: "A wash is $2 and dry is $1.50. Machines take quarters.", register: "neutral" },
+      { speaker: "Customer", line: "Do you sell detergent here?", register: "neutral" },
+      { speaker: "Attendant", line: "Yes, right here. $1 per box. Do you need change for the machine?", register: "neutral" },
+      { speaker: "Customer", line: "Yes, please. Can you break a $20 bill?", register: "neutral" },
+      { speaker: "Attendant", line: "Sure. Here are your quarters. The wash cycle takes 30 minutes.", register: "neutral" },
+      { speaker: "Customer", line: "Thank you! Can I use my phone while I wait?", register: "neutral" },
+      { speaker: "Attendant", line: "Of course. There's free Wi-Fi. Password is on the wall.", register: "neutral" }
     ],
     chineseTranslation: [
-      { speaker: "??", line: "?,??????????" },
-      { speaker: "??", line: "?2??,?1.50??????25?????" },
+      { speaker: "??", line: "?????????????" },
+      { speaker: "???", line: "??2?????1.50??????25?????" },
       { speaker: "??", line: "??????????" },
-      { speaker: "??", line: "??,???????1???????????" },
-      { speaker: "??", line: "??,???????20????" },
-      { speaker: "??", line: "???????25?????????30???" },
-      { speaker: "??", line: "??!?????????????" },
-      { speaker: "??", line: "????????Wi-Fi???????" }
+      { speaker: "???", line: "?????????1??????????????" },
+      { speaker: "??", line: "?????????????20????" },
+      { speaker: "???", line: "???????25???????????30???" },
+      { speaker: "??", line: "????????????????" },
+      { speaker: "???", line: "????????Wi-Fi???????" }
     ],
-    usefulExpressions: [
-      { expression: "How much is...?", meaning: "...????", usage: "????" },
-      { expression: "Do you sell...?", meaning: "???...??", usage: "????????" },
-      { expression: "Can you break a...?", meaning: "?????...??", usage: "?????" },
-      { expression: "Here are your...", meaning: "????...", usage: "????" },
-      { expression: "Free Wi-Fi", meaning: "??Wi-Fi", usage: "??????" }
-    ],
-    grammarFocus: [
+    grammarInContext: [
       {
         title: "Questions with 'How much'",
-        explanation: "? 'How much...?' ?????",
+        explanation: "? 'How much...?' ??????????????",
         examples: [
           "How much is a wash?",
           "How much is detergent?",
@@ -9975,7 +10122,7 @@ export const conversations: ConversationTopic[] = [
       },
       {
         title: "Polite Requests with 'Can you'",
-        explanation: "? 'Can you...?' ???????",
+        explanation: "? 'Can you...?' ???????????",
         examples: [
           "Can you break a $20 bill?",
           "Can you show me how to use it?",
@@ -9983,20 +10130,106 @@ export const conversations: ConversationTopic[] = [
         ]
       }
     ],
-    collocationsAndChunks: [
-      { chunk: "Wash and dry", meaning: "????", example: "I need a wash and dry cycle." },
-      { chunk: "Break a bill", meaning: "???", example: "Can you break a $20 bill?" },
-      { chunk: "Free Wi-Fi", meaning: "??Wi-Fi", example: "There's free Wi-Fi here." }
+    pronunciation: [
+      { tip: "Detergent ? /d??t??rd??nt/", example: "Stress on second syllable" },
+      { tip: "Quarters ? /?kw??rt?rz/", example: "Stress on first syllable" }
     ],
-    pronunciationTips: [
-      { tip: "Detergent ? /d?'t??rd??nt/", example: "Stress on second syllable" },
-      { tip: "Quarters ? /'kw??rt?rz/", example: "Stress on first syllable" }
+    shadowing: [
+      { line: "Hi, how much is a wash and dry cycle?", emphasis: "how much is" },
+      { line: "Do you sell detergent here?", emphasis: "Do you sell" },
+      { line: "Can you break a $20 bill?", emphasis: "break a $20 bill" },
+      { line: "The wash cycle takes 30 minutes.", emphasis: "takes 30 minutes" },
+      { line: "There's free Wi-Fi. Password is on the wall.", emphasis: "free Wi-Fi" }
+    ],
+    speakingPractice: {
+      instruction: "Practice at a laundromat: ask prices, buy detergent, get change, and ask about amenities. Use 'How much', 'Do you sell', and 'Can you'.",
+      hints: [
+        "Ask about wash and dry prices",
+        "Buy detergent if needed",
+        "Get change for quarters",
+        "Ask about Wi-Fi or seating"
+      ],
+      followUpQuestions: [
+        "How much did the wash and dry cost?",
+        "Did you buy detergent?",
+        "Did you get change for the machine?",
+        "Was there Wi-Fi available?"
+      ]
+    },
+    rolePlay: {
+      scenario: "You need to wash your clothes at a laundromat. Ask about prices, buy detergent, get change, and ask about Wi-Fi.",
+      prompts: [
+        "Ask about wash and dry prices",
+        "Ask if they sell detergent",
+        "Get change for the machine",
+        "Ask about Wi-Fi",
+        "Thank them"
+      ],
+      partnerLines: [
+        "Hi, how much is a wash and dry cycle?",
+        "A wash is $2 and dry is $1.50. Machines take quarters.",
+        "Yes, right here. $1 per box. Do you need change for the machine?",
+        "Sure. Here are your quarters. The wash cycle takes 30 minutes.",
+        "Of course. There's free Wi-Fi. Password is on the wall."
+      ]
+    },
+    homework: {
+      task: "Laundromat Vocabulary",
+      description: "Write down 10 laundromat-related words and practice using them. If you use a laundromat, practice these phrases this week.",
+      dueText: "Before next lesson"
+    },
+    quiz: [
+      {
+        id: "q1",
+        question: "'How much is a wash and dry cycle?' asks:",
+        questionZh: "'How much is a wash and dry cycle?'?????",
+        options: [
+          { label: "A) Price of washing and drying", labelZh: "A) ????????", correct: true },
+          { label: "B) Time it takes", labelZh: "B) ?????", correct: false },
+          { label: "C) How to use the machine", labelZh: "C) ??????", correct: false },
+          { label: "D) If they sell detergent", labelZh: "D) ????????", correct: false }
+        ],
+        explanation: "'How much is a wash and dry cycle?' asks for the price of washing and drying clothes.",
+        explanationZh: "'How much is a wash and dry cycle?'???????????"
+      },
+      {
+        id: "q2",
+        question: "'Can you break a $20 bill?' means:",
+        questionZh: "'Can you break a $20 bill?'????",
+        options: [
+          { label: "A) Can you give me smaller bills/coins?", labelZh: "A) ???????????", correct: true },
+          { label: "B) Can you tear the bill?", labelZh: "B) ?????????", correct: false },
+          { label: "C) Can you give me $20?", labelZh: "C) ????20????", correct: false },
+          { label: "D) Can you keep the bill?", labelZh: "D) ?????????", correct: false }
+        ],
+        explanation: "'Can you break a $20 bill?' asks for smaller bills or coins in exchange.",
+        explanationZh: "'Can you break a $20 bill?'??????????"
+      }
+    ],
+    review: [
+      { key: "price", prompt: "How do you ask for laundromat prices?", answer: "How much is a wash and dry cycle?" },
+      { key: "detergent", prompt: "How do you ask if they sell detergent?", answer: "Do you sell detergent here?" },
+      { key: "change", prompt: "How do you ask to break a bill?", answer: "Can you break a $20 bill?" }
+    ],
+    humorNotes: [
+      {
+        context: "When you forget your laundry detergent",
+        punchline: "A: Do you sell detergent here? B: Yes, right here. A: ...I brought my clothes but forgot detergent. B: ...That's like going to a restaurant and forgetting to bring your appetite.",
+        explanation: "Self-deprecating humor about forgetting things is very common."
+      }
+    ],
+    usefulExpressions: [
+      { expression: "How much is...?", meaning: "...????", usage: "????" },
+      { expression: "Do you sell...?", meaning: "???...??", usage: "???????" },
+      { expression: "Can you break a...?", meaning: "????...??", usage: "?????" },
+      { expression: "Here are your...", meaning: "????...", usage: "??????" },
+      { expression: "Free Wi-Fi", meaning: "??Wi-Fi", usage: "?????Wi-Fi" }
     ],
     commonMistakes: [
       {
-        mistake: "'How much are a wash and dry?'",
-        correction: "'How much is a wash and dry cycle?'",
-        explanation: "???????????,??? 'is'?"
+        mistake: "? 'How much are a wash and dry?'",
+        correction: "?????? 'How much is a wash and dry cycle?'",
+        explanation: "???????????? 'is'?"
       }
     ],
     rolePlayPractice: [
