@@ -43,6 +43,8 @@ export default function ConversationDetailPage({ params }: { params: Promise<{ i
   const [autoPlay, setAutoPlay] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const [levelFilter, setLevelFilter] = useState("all");
+  const [currentLineText, setCurrentLineText] = useState("");
+  const [audioLanguage, setAudioLanguage] = useState<"en" | "zh">("en");
 
   const audioRef = useRef<SpeechSynthesisUtterance | null>(null);
 
@@ -65,7 +67,11 @@ export default function ConversationDetailPage({ params }: { params: Promise<{ i
       const lines = topic.conversation || [];
       const line = lines[currentLine];
       if (line) {
+        setCurrentLineText(line.line);
+        setAudioLanguage("en");
         const utterance = new SpeechSynthesisUtterance(line.line);
+        const englishVoice = window.speechSynthesis.getVoices().find(v => v.lang.startsWith("en"));
+        if (englishVoice) utterance.voice = englishVoice;
         utterance.rate = playbackRate;
         utterance.onend = () => {
           if (autoPlay && currentLine < lines.length - 1) {
@@ -73,6 +79,7 @@ export default function ConversationDetailPage({ params }: { params: Promise<{ i
             setTimeout(() => playAudio(), 500);
           } else {
             setIsPlaying(false);
+            setCurrentLineText("");
           }
         };
         audioRef.current = utterance;
@@ -82,10 +89,30 @@ export default function ConversationDetailPage({ params }: { params: Promise<{ i
     }
   }, [topic, currentLine, playbackRate, autoPlay]);
 
+  const playChineseAudio = useCallback((text: string) => {
+    if ("speechSynthesis" in window) {
+      window.speechSynthesis.cancel();
+      setCurrentLineText(text);
+      setAudioLanguage("zh");
+      const utterance = new SpeechSynthesisUtterance(text);
+      const chineseVoice = window.speechSynthesis.getVoices().find(v => v.lang.startsWith("zh"));
+      if (chineseVoice) utterance.voice = chineseVoice;
+      utterance.rate = playbackRate;
+      utterance.onend = () => {
+        setIsPlaying(false);
+        setCurrentLineText("");
+      };
+      audioRef.current = utterance;
+      window.speechSynthesis.speak(utterance);
+      setIsPlaying(true);
+    }
+  }, [playbackRate]);
+
   const pauseAudio = useCallback(() => {
     if ("speechSynthesis" in window) {
       window.speechSynthesis.cancel();
       setIsPlaying(false);
+      setCurrentLineText("");
     }
   }, []);
 
@@ -165,24 +192,27 @@ export default function ConversationDetailPage({ params }: { params: Promise<{ i
 
           {/* Conversation Reader */}
           <div className="px-4 sm:px-6 py-6">
-            <ConversationReader
-              topic={topic}
-              readingMode={readingMode}
-              teacherMode={teacherMode}
-              viewMode={viewMode}
-              favorites={favorites}
-              onToggleFavorite={toggleFavorite}
-              onToggleTeacherMode={() => setTeacherMode((t) => !t)}
-              onToggleReadingMode={() => setReadingMode((m) => m === "normal" ? "focused" : "normal")}
-              onTogglePresentationMode={() => setViewMode("presentation")}
-              onPlayAudio={playAudio}
-              onPauseAudio={pauseAudio}
-              audioPlaying={isPlaying}
-              playbackRate={playbackRate}
-              onPlaybackRateChange={handlePlaybackRateChange}
-              autoPlay={autoPlay}
-              onToggleAutoPlay={() => setAutoPlay((a) => !a)}
-            />
+          <ConversationReader
+            topic={topic}
+            readingMode={readingMode}
+            teacherMode={teacherMode}
+            viewMode={viewMode}
+            favorites={favorites}
+            onToggleFavorite={toggleFavorite}
+            onToggleTeacherMode={() => setTeacherMode((t) => !t)}
+            onToggleReadingMode={() => setReadingMode((m) => m === "normal" ? "focused" : "normal")}
+            onTogglePresentationMode={() => setViewMode("presentation")}
+            onPlayAudio={playAudio}
+            onPauseAudio={pauseAudio}
+            audioPlaying={isPlaying}
+            playbackRate={playbackRate}
+            onPlaybackRateChange={handlePlaybackRateChange}
+            autoPlay={autoPlay}
+            onToggleAutoPlay={() => setAutoPlay((a) => !a)}
+            chineseTranslation={topic.chineseTranslation}
+            onPlayChineseAudio={playChineseAudio}
+            currentLine={currentLine}
+          />
           </div>
 
           {/* Bottom Navigation */}
@@ -221,6 +251,8 @@ export default function ConversationDetailPage({ params }: { params: Promise<{ i
           onToggleAutoPlay={() => setAutoPlay((a) => !a)}
           currentLine={currentLine}
           totalLines={topic.conversation.length}
+          currentText={currentLineText}
+          language={audioLanguage}
         />
 
         {/* Presentation Mode Overlay */}
@@ -246,6 +278,9 @@ export default function ConversationDetailPage({ params }: { params: Promise<{ i
               onPlaybackRateChange={handlePlaybackRateChange}
               autoPlay={autoPlay}
               onToggleAutoPlay={() => setAutoPlay((a) => !a)}
+              chineseTranslation={topic.chineseTranslation}
+              onPlayChineseAudio={playChineseAudio}
+              currentLine={currentLine}
             />
           </div>
           {/* Audio Controller in Presentation Mode */}
@@ -261,6 +296,8 @@ export default function ConversationDetailPage({ params }: { params: Promise<{ i
                 onToggleAutoPlay={() => setAutoPlay((a) => !a)}
                 currentLine={currentLine}
                 totalLines={topic.conversation.length}
+                currentText={currentLineText}
+                language={audioLanguage}
               />
             </div>
           </div>

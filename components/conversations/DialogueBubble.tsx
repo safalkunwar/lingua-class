@@ -15,7 +15,9 @@ interface DialogueBubbleProps {
   favorites: Set<string>;
   onToggleFavorite: (lineIndex: number) => void;
   onPlayAudio: () => void;
+  onPlayChineseAudio?: () => void;
   isFav: boolean;
+  isCurrentLine?: boolean;
 }
 
 const SPEAKER_COLORS: Record<string, string> = {
@@ -53,7 +55,9 @@ export function DialogueBubble({
   favorites,
   onToggleFavorite,
   onPlayAudio,
+  onPlayChineseAudio,
   isFav,
+  isCurrentLine = false,
 }: DialogueBubbleProps) {
   const speakerColor = getSpeakerColor(line.speaker);
   const isFocused = readingMode === "focused";
@@ -62,15 +66,17 @@ export function DialogueBubble({
   return (
     <div
       className={cn(
-        "flex gap-3",
-        isPresentation && "min-h-[60vh] items-center"
+        "flex gap-3 transition-all duration-300",
+        isPresentation && "min-h-[60vh] items-center",
+        isCurrentLine && "scale-[1.01]"
       )}
     >
       {/* Speaker Avatar */}
       <div
         className={cn(
-          "shrink-0 rounded-full flex items-center justify-center text-white font-bold",
-          isPresentation ? "w-16 h-16 text-2xl" : "w-10 h-10 text-sm"
+          "shrink-0 rounded-full flex items-center justify-center text-white font-bold shadow-md transition-all",
+          isPresentation ? "w-16 h-16 text-2xl" : "w-10 h-10 text-sm",
+          isCurrentLine && "ring-4 ring-primary/30 ring-offset-2"
         )}
         style={{ backgroundColor: speakerColor }}
       >
@@ -80,8 +86,9 @@ export function DialogueBubble({
       {/* Bubble */}
       <div
         className={cn(
-          "flex-1 rounded-2xl",
-          isPresentation ? "rounded-3xl p-8" : "p-4"
+          "flex-1 rounded-2xl shadow-sm transition-all",
+          isPresentation ? "rounded-3xl p-8" : "p-4",
+          isCurrentLine && "ring-2 ring-primary/20 shadow-md"
         )}
         style={{
           backgroundColor: `${speakerColor}14`,
@@ -94,6 +101,11 @@ export function DialogueBubble({
           {line.register && (
             <span className="text-[10px] px-1.5 py-0.5 rounded-full border bg-muted/50 text-muted-foreground">
               {line.register}
+            </span>
+          )}
+          {isCurrentLine && (
+            <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-primary/10 text-primary font-medium animate-pulse">
+              Playing
             </span>
           )}
         </div>
@@ -125,39 +137,41 @@ export function DialogueBubble({
         <div className="flex items-center gap-1 mt-3">
           <button
             onClick={onPlayAudio}
-            className="p-3 rounded-lg hover:bg-muted/50 transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center"
-            title="Play audio"
+            className="p-3 rounded-lg hover:bg-muted/50 transition-all min-w-[44px] min-h-[44px] flex items-center justify-center group"
+            title="Play English audio"
           >
-            🔊
+            <span className="text-base group-hover:scale-110 transition-transform">🔊</span>
           </button>
+          {onPlayChineseAudio && (
+            <button
+              onClick={onPlayChineseAudio}
+              className="p-3 rounded-lg hover:bg-muted/50 transition-all min-w-[44px] min-h-[44px] flex items-center justify-center group"
+              title="Play Chinese audio"
+            >
+              <span className="text-base group-hover:scale-110 transition-transform">🇨🇳</span>
+            </button>
+          )}
           <button
-            onClick={onPlayAudio}
-            className="p-3 rounded-lg hover:bg-muted/50 transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center"
-            title="Chinese audio"
-          >
-            🔊 中
-          </button>
-          <button
-            className="p-3 rounded-lg hover:bg-muted/50 transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center"
+            className="p-3 rounded-lg hover:bg-muted/50 transition-all min-w-[44px] min-h-[44px] flex items-center justify-center group"
             title="Vocabulary"
           >
-            📖
+            <span className="text-base group-hover:scale-110 transition-transform">📖</span>
           </button>
           <button
-            className="p-3 rounded-lg hover:bg-muted/50 transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center"
+            className="p-3 rounded-lg hover:bg-muted/50 transition-all min-w-[44px] min-h-[44px] flex items-center justify-center group"
             title="Grammar hint"
           >
-            💡
+            <span className="text-base group-hover:scale-110 transition-transform">💡</span>
           </button>
           <button
             onClick={() => onToggleFavorite(index)}
             className={cn(
-              "p-3 rounded-lg hover:bg-muted/50 transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center",
+              "p-3 rounded-lg hover:bg-muted/50 transition-all min-w-[44px] min-h-[44px] flex items-center justify-center",
               isFav && "text-amber-500"
             )}
             title="Favorite"
           >
-            {isFav ? "⭐" : "☆"}
+            <span className="text-base">{isFav ? "⭐" : "☆"}</span>
           </button>
         </div>
 

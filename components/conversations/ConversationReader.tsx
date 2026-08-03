@@ -25,6 +25,9 @@ interface ConversationReaderProps {
   onPlaybackRateChange: (rate: number) => void;
   autoPlay: boolean;
   onToggleAutoPlay: () => void;
+  chineseTranslation?: { speaker: string; line: string }[];
+  onPlayChineseAudio?: (text: string) => void;
+  currentLine?: number;
 }
 
 export function ConversationReader({
@@ -44,6 +47,9 @@ export function ConversationReader({
   onPlaybackRateChange,
   autoPlay,
   onToggleAutoPlay,
+  chineseTranslation = [],
+  onPlayChineseAudio,
+  currentLine = 0,
 }: ConversationReaderProps) {
   const conversation = topic.conversation || [];
   const showChinese = readingMode !== "focused";
@@ -188,6 +194,7 @@ export function ConversationReader({
           <div className="space-y-6">
             {conversation.map((line, index) => {
               const isFav = favorites.has(`${topic.id}-${index}`);
+              const chineseLine = chineseTranslation[index]?.line;
 
               return (
                 <DialogueBubble
@@ -201,7 +208,9 @@ export function ConversationReader({
                   favorites={favorites}
                   onToggleFavorite={onToggleFavorite}
                   onPlayAudio={onPlayAudio}
+                  onPlayChineseAudio={chineseLine && onPlayChineseAudio ? () => onPlayChineseAudio(chineseLine) : undefined}
                   isFav={isFav}
+                  isCurrentLine={currentLine === index}
                 />
               );
             })}
