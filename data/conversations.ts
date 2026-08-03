@@ -382,68 +382,192 @@ export const conversations: ConversationTopic[] = [
       ]
     }
   },
-  {
+   {
     id: "ordering-restaurant",
     title: "Ordering Food at a Restaurant",
-    emoji: "???",
+    emoji: "🍽️",
     description: "Interacting with waiters, asking questions, and making special requests.",
     color: "from-orange-400 to-red-400",
     level: "A2",
     estimatedTime: "12 min",
-    vocabularyPreview: [
-      { word: "reservation", phonetic: "/?rez?r've??n/", chinese: "??", partOfSpeech: "noun" },
-      { word: "recommend", phonetic: "/?rek?'mend/", chinese: "??", partOfSpeech: "verb" },
-      { word: "allergic", phonetic: "/?'l??rd??k/", chinese: "???", partOfSpeech: "adjective" },
-      { word: "customize", phonetic: "/'k?st?ma?z/", chinese: "??", partOfSpeech: "verb" }
+    registerMarkers: [
+      { level: "formal", label: "Formal", color: "bg-blue-100 text-blue-800 border-blue-200", description: "Fine dining or business dinner" },
+      { level: "neutral", label: "Neutral", color: "bg-gray-100 text-gray-800 border-gray-200", description: "Standard restaurant interaction" },
+      { level: "casual", label: "Casual", color: "bg-green-100 text-green-800 border-green-200", description: "Casual dining with friends" }
+    ],
+    warmUp: {
+      title: "Warm-Up: Restaurant English",
+      content: "Ordering food at a restaurant is an essential skill. In this lesson, you'll learn how to interact with waiters, ask questions about the menu, and make special requests politely.",
+      contentZh: "在餐厅点菜是一项基本技能。在本课中，你将学习如何与服务生互动、询问菜单问题并礼貌地提出特殊要求。"
+    },
+    vocabulary: [
+      {
+        word: "Reservation",
+        phonetic: "/ˌrezərˈveɪʃn/",
+        chinese: "预订",
+        pinyin: "yù dìng",
+        partOfSpeech: "noun",
+        definitionEn: "A booking made in advance for a table at a restaurant.",
+        definitionZh: "提前预订餐厅座位。",
+        exampleEn: "I made a reservation for 7 PM.",
+        exampleZh: "我预订了晚上7点的座位。",
+        register: "neutral"
+      },
+      {
+        word: "Recommend",
+        phonetic: "/ˌrekəˈmend/",
+        chinese: "推荐",
+        pinyin: "tuī jiàn",
+        partOfSpeech: "verb",
+        definitionEn: "To suggest something because you think it's good.",
+        definitionZh: "建议某物，因为你认为它很好。",
+        exampleEn: "What do you recommend?",
+        exampleZh: "你推荐什么？",
+        register: "neutral"
+      },
+      {
+        word: "Allergic",
+        phonetic: "/əˈlɜːrdʒɪk/",
+        chinese: "过敏的",
+        pinyin: "guò mǐn de",
+        partOfSpeech: "adjective",
+        definitionEn: "Having an adverse physical reaction to certain foods.",
+        definitionZh: "对某些食物有不良身体反应。",
+        exampleEn: "I'm allergic to shellfish.",
+        exampleZh: "我对贝类过敏。",
+        register: "neutral"
+      },
+      {
+        word: "Customize",
+        phonetic: "/ˈkʌstəmaɪz/",
+        chinese: "定制",
+        pinyin: "dìng zhì",
+        partOfSpeech: "verb",
+        definitionEn: "To modify something according to your preferences.",
+        definitionZh: "根据你的偏好修改某物。",
+        exampleEn: "Can I customize my order?",
+        exampleZh: "我可以定制我的订单吗？",
+        register: "neutral"
+      }
+    ],
+    dailyExpressions: {
+      title: "Daily Native Expressions",
+      items: [
+        {
+          id: "de-restaurant-1",
+          expression: "Do you have a reservation?",
+          chinese: "您有预订吗？",
+          pinyin: "nín yǒu yù dìng ma?",
+          meaning: "Asking a customer if they booked a table in advance.",
+          whenToUse: "When greeting customers at a restaurant.",
+          whenNotToUse: "Don't use for walk-ins only restaurants — but most restaurants ask this.",
+          nativeFrequency: "Very common greeting at restaurants.",
+          commonMistakes: [
+            { mistake: "Using 'reserve' as a verb incorrectly", correction: "'Reservation' is the noun; 'to reserve' is the verb" }
+          ],
+          pronunciation: "/duː juː hæv ə ˌrezərˈveɪʃn/",
+          funnyExample: "A: Do you have a reservation? B: No, but I have an appetite. A: ...That's not a reservation, but we'll seat you anyway.",
+          memoryTrick: "Think: 'reservation = booked in advance' = 'did you book ahead?'",
+          relatedExpressions: ["I have a reservation", "Under the name...", "Party of..."],
+          collocations: ["have a reservation", "make a reservation", "reservation for"],
+          miniQuiz: [
+            { question: "'Do you have a reservation?' means:", options: ["Did you book a table in advance?", "Are you ready to order?", "Do you have a menu?", "Are you allergic to anything?"], correct: 0 }
+          ],
+          register: "neutral"
+        },
+        {
+          id: "de-restaurant-2",
+          expression: "Could we get...?",
+          chinese: "我们可以要...吗？",
+          pinyin: "wǒ men kě yǐ yào... ma?",
+          meaning: "A polite way to ask for something at a restaurant.",
+          whenToUse: "When you want to ask the waiter for something — water, the bill, etc.",
+          whenNotToUse: "Don't use for ordering food directly — use 'I'd like...' or 'I'll have...' for ordering.",
+          nativeFrequency: "Very common polite request phrase.",
+          commonMistakes: [
+            { mistake: "Using 'Can we get...?' which is less polite", correction: "'Could we get...?' is more polite and standard" }
+          ],
+          pronunciation: "/kʊd wiː ɡet/",
+          funnyExample: "A: Could we get some water? B: Could you get it yourself? A: ...I could, but then we wouldn't need you. B: ...Fair point.",
+          memoryTrick: "Think: 'Could = polite' + 'we get = we would like' = 'polite request for something'",
+          relatedExpressions: ["Could I have...?", "Can we get...?", "Would it be possible to..."],
+          collocations: ["could we get", "could I get", "could we have"],
+          miniQuiz: [
+            { question: "'Could we get...?' is:", options: ["A polite request", "A statement about food", "A question about price", "A complaint"], correct: 0 }
+          ],
+          register: "neutral"
+        },
+        {
+          id: "de-restaurant-3",
+          expression: "On the side",
+          chinese: "在旁边/分开装",
+          pinyin: "zài páng biān / fēn kāi zhuāng",
+          meaning: "Asking for something to be served separately.",
+          whenToUse: "When you want dressing, sauce, or something separate from your main dish.",
+          whenNotToUse: "Don't use for things that are always served together — this is for modification requests.",
+          nativeFrequency: "Common when making special requests.",
+          commonMistakes: [
+            { mistake: "Using 'separate' instead of 'on the side'", correction: "'On the side' is the standard restaurant phrase" }
+          ],
+          pronunciation: "/ɒn ðə saɪd/",
+          funnyExample: "A: Could I get the dressing on the side? B: So... a salad with no salad? A: ...It's the croutons I'm here for. B: ...We can do that.",
+          memoryTrick: "Think: 'on the side = separate from main' = 'don't mix it with my food'",
+          relatedExpressions: ["Separately", "On the side please", "Dressing on the side"],
+          collocations: ["on the side", "dressing on the side", "sauce on the side"],
+          miniQuiz: [
+            { question: "'On the side' means:", options: ["Served separately", "On the table", "Extra food", "Free of charge"], correct: 0 }
+          ],
+          register: "neutral"
+        }
+      ]
+    },
+    nativeChunks: [
+      { chunk: "Do you have a reservation", meaning: "您有预订吗", example: "Do you have a reservation?", register: "neutral", context: "Greeting" },
+      { chunk: "Party of two", meaning: "两位", example: "Party of two.", register: "neutral", context: "Group size" },
+      { chunk: "I'll give you a moment", meaning: "我给您一点时间", example: "I'll give you a moment to look things over.", register: "neutral", context: "Service" },
+      { chunk: "Could we get", meaning: "我们可以要...吗", example: "Could we get some water?", register: "neutral", context: "Request" },
+      { chunk: "On the side", meaning: "在旁边/分开装", example: "Dressing on the side, please.", register: "neutral", context: "Customization" }
     ],
     conversation: [
-      { speaker: "Waiter", line: "Good evening! Do you have a reservation?" },
-      { speaker: "Mike", line: "Yes, under the name Turner. Party of two." },
-      { speaker: "Waiter", line: "Perfect, right this way. Here are your menus � I'll give you a moment." },
-      { speaker: "Emma", line: "Thanks! Could we get some water while we decide?" },
-      { speaker: "Waiter", line: "Absolutely. Still or sparkling?" },
-      { speaker: "Mike", line: "I'll have still, please. Do you have any specials tonight?" },
-      { speaker: "Waiter", line: "Tonight's special is grilled salmon with roasted vegetables. It's really popular." },
-      { speaker: "Emma", line: "That sounds nice, but I was eyeing the pasta. Is the truffle sauce good?" },
-      { speaker: "Waiter", line: "Oh, the truffle sauce is amazing � it's made in-house. Highly recommended." },
-      { speaker: "Mike", line: "I'll go with the salmon, medium rare please. And the truffle pasta for her." },
-      { speaker: "Emma", line: "One more thing � could I get my dressing on the side for the salad?" },
-      { speaker: "Waiter", line: "Of course. Anything else? Allergies I should know about?" },
-      { speaker: "Mike", line: "Nope, we're good. When do you expect our food?" },
-      { speaker: "Waiter", line: "About 15�20 minutes. I'll bring your drinks right away." },
-      { speaker: "Emma", line: "Thanks so much! You've been really helpful." },
-      { speaker: "Waiter", line: "My pleasure. I'll check on you soon." }
+      { speaker: "Waiter", line: "Good evening! Do you have a reservation?", register: "neutral" },
+      { speaker: "Mike", line: "Yes, under the name Turner. Party of two.", register: "neutral" },
+      { speaker: "Waiter", line: "Perfect, right this way. Here are your menus — I'll give you a moment.", register: "neutral" },
+      { speaker: "Emma", line: "Thanks! Could we get some water while we decide?", register: "neutral" },
+      { speaker: "Waiter", line: "Absolutely. Still or sparkling?", register: "neutral" },
+      { speaker: "Mike", line: "I'll have still, please. Do you have any specials tonight?", register: "neutral" },
+      { speaker: "Waiter", line: "Tonight's special is grilled salmon with roasted vegetables. It's really popular.", register: "neutral" },
+      { speaker: "Emma", line: "That sounds nice, but I was eyeing the pasta. Is the truffle sauce good?", register: "neutral" },
+      { speaker: "Waiter", line: "Oh, the truffle sauce is amazing — it's made in-house. Highly recommended.", register: "neutral" },
+      { speaker: "Mike", line: "I'll go with the salmon, medium rare please. And the truffle pasta for her.", register: "neutral" },
+      { speaker: "Emma", line: "One more thing — could I get my dressing on the side for the salad?", register: "neutral" },
+      { speaker: "Waiter", line: "Of course. Anything else? Allergies I should know about?", register: "neutral" },
+      { speaker: "Mike", line: "Nope, we're good. When do you expect our food?", register: "neutral" },
+      { speaker: "Waiter", line: "About 15–20 minutes. I'll bring your drinks right away.", register: "neutral" },
+      { speaker: "Emma", line: "Thanks so much! You've been really helpful.", register: "neutral" },
+      { speaker: "Waiter", line: "My pleasure. I'll check on you soon.", register: "neutral" }
     ],
     chineseTranslation: [
-      { speaker: "Waiter", line: "???!??????" },
-      { speaker: "Mike", line: "??,?Turner??????" },
-      { speaker: "Waiter", line: "??,????????��????????" },
-      { speaker: "Emma", line: "??!??????????????????" },
-      { speaker: "Waiter", line: "?????????????" },
-      { speaker: "Mike", line: "????????,??????????" },
-      { speaker: "Waiter", line: "?????????????????????" },
-      { speaker: "Emma", line: "?????,?????????????????" },
-      { speaker: "Waiter", line: "?,??????��????????????" },
-      { speaker: "Mike", line: "?????,???????????" },
-      { speaker: "Emma", line: "?????��????????????" },
-      { speaker: "Waiter", line: "??????????????????" },
-      { speaker: "Mike", line: "??,????????????????" },
-      { speaker: "Waiter", line: "??15-20????????????" },
-      { speaker: "Emma", line: "????!???????" },
-      { speaker: "Waiter", line: "??????????????" }
+      { speaker: "服务员", line: "晚上好！您有预订吗？" },
+      { speaker: "Mike", line: "是的，姓Turner。两位。" },
+      { speaker: "服务员", line: "完美，请这边走。这是您的菜单——我给您一点时间。" },
+      { speaker: "Emma", line: "谢谢！我们决定的时候可以给我们一些水吗？" },
+      { speaker: "服务员", line: "当然。要气泡水还是静水？" },
+      { speaker: "Mike", line: "我要静水，谢谢。你们今晚有什么特色菜吗？" },
+      { speaker: "服务员", line: "今晚的特色菜是烤鲑鱼配烤蔬菜。真的很受欢迎。" },
+      { speaker: "Emma", line: "听起来不错，但我看中了意大利面。松露酱好吗？" },
+      { speaker: "服务员", line: "哦，松露酱很棒——是店内自制的。强烈推荐。" },
+      { speaker: "Mike", line: "我要鲑鱼，三分熟。她要松露意大利面。" },
+      { speaker: "Emma", line: "还有一件事——我的沙拉酱可以分开装吗？" },
+      { speaker: "服务员", line: "当然。还有别的吗？有什么过敏吗？" },
+      { speaker: "Mike", line: "没有了，我们没问题。我们的食物大概多久好？" },
+      { speaker: "服务员", line: "大约15-20分钟。我马上给您送饮料。" },
+      { speaker: "Emma", line: "非常感谢！你真的帮了大忙。" },
+      { speaker: "服务员", line: "不客气。我很快再来看您。" }
     ],
-    usefulExpressions: [
-      { expression: "Do you have a reservation?", meaning: "??????", usage: "????????????????" },
-      { expression: "Party of two", meaning: "??", usage: "?????????" },
-      { expression: "I'll give you a moment", meaning: "??????", usage: "???????????" },
-      { expression: "Could we get...?", meaning: "????...??", usage: "???????" },
-      { expression: "On the side", meaning: "???", usage: "??????????" },
-      { expression: "Check on you", meaning: "??????", usage: "????????????" }
-    ],
-    grammarFocus: [
+    grammarInContext: [
       {
         title: "Polite Requests with 'Could' and 'Would'",
-        explanation: "??????,? 'Could/Can/Would you...?' ?????????",
+        explanation: "用 'Could' 和 'Would' 礼貌地提出请求。",
         examples: [
           "Could I get the dressing on the side?",
           "Would you recommend the salmon?",
@@ -451,31 +575,113 @@ export const conversations: ConversationTopic[] = [
         ]
       }
     ],
-    collocationsAndChunks: [
-      { chunk: "look things over", meaning: "??", example: "Take your time and look things over." },
-      { chunk: "get something", meaning: "???", example: "Could we get some water?" },
-      { chunk: "eye something", meaning: "????", example: "I was eyeing the chocolate cake." },
-      { chunk: "in-house", meaning: "???", example: "The sauce is made in-house." }
+    pronunciation: [
+      { tip: "'Could we' → /kʊd wiː/ with linking", example: "'Could we' → 'Coudwee'" },
+      { tip: "'Would you' → /wʊd juː/ with elision", example: "'Would you' → 'Woodja'" }
     ],
-    pronunciationTips: [
-      { tip: "'Could we' ? /k?d wi/ with linking", example: "Could we ? 'Coudwee'" },
-      { tip: "'Would you' ? /w?d??/ with elision", example: "Would you ? 'Woodja'" }
+    shadowing: [
+      { line: "Good evening! Do you have a reservation?", emphasis: "Do you have a reservation" },
+      { line: "I'll give you a moment to look things over.", emphasis: "give you a moment" },
+      { line: "Tonight's special is grilled salmon with roasted vegetables.", emphasis: "Tonight's special" },
+      { line: "Could I get the dressing on the side, please?", emphasis: "dressing on the side" }
+    ],
+    speakingPractice: {
+      instruction: "Role-play ordering food at a restaurant with a friend. Take turns being waiter and customer. Use at least 5 expressions from this lesson.",
+      hints: [
+        "Start with a greeting and ask about reservations",
+        "Ask about the daily special",
+        "Order food and make one modification",
+        "Thank the server politely"
+      ],
+      followUpQuestions: [
+        "What did you order?",
+        "Did you make any special requests?",
+        "What was the special of the day?",
+        "How was the service?"
+      ]
+    },
+    rolePlay: {
+      scenario: "You are at a café. Order a drink and a snack. Ask about today's special. Make a special request.",
+      prompts: [
+        "Greet the server and ask to see the menu",
+        "Ask about today's specials",
+        "Order your drink and snack",
+        "Make one polite request or modification"
+      ],
+      partnerLines: [
+        "Good evening! Do you have a reservation?",
+        "I'll give you a moment to look things over.",
+        "Tonight's special is grilled salmon with roasted vegetables.",
+        "Could I get the dressing on the side, please?"
+      ]
+    },
+    homework: {
+      task: "Restaurant Vocabulary",
+      description: "Visit a restaurant this week and practice using these phrases. Write about your experience.",
+      dueText: "Before next lesson"
+    },
+    quiz: [
+      {
+        id: "q1",
+        question: "'Do you have a reservation?' means:",
+        questionZh: "'Do you have a reservation?'意思是：",
+        options: [
+          { label: "A) Did you book a table in advance?", labelZh: "A) 您是否提前预订了桌子？", correct: true },
+          { label: "B) Are you ready to order?", labelZh: "B) 您准备好点餐了吗？", correct: false },
+          { label: "C) Do you have a menu?", labelZh: "C) 您有菜单吗？", correct: false },
+          { label: "D) Are you allergic to anything?", labelZh: "D) 您对什么过敏吗？", correct: false }
+        ],
+        explanation: "'Do you have a reservation?' asks if you booked a table in advance.",
+        explanationZh: "'Do you have a reservation?'询问您是否提前预订了桌子。"
+      },
+      {
+        id: "q2",
+        question: "'On the side' means:",
+        questionZh: "'On the side'意思是：",
+        options: [
+          { label: "A) Served separately", labelZh: "A) 分开装", correct: true },
+          { label: "B) On the table", labelZh: "B) 在桌子上", correct: false },
+          { label: "C) Extra food", labelZh: "C) 额外的食物", correct: false },
+          { label: "D) Free of charge", labelZh: "D) 免费", correct: false }
+        ],
+        explanation: "'On the side' means served separately from the main dish.",
+        explanationZh: "'On the side'意味着与主菜分开上。"
+      }
+    ],
+    review: [
+      { key: "reservation", prompt: "How do you ask if someone has a reservation?", answer: "Do you have a reservation?" },
+      { key: "request", prompt: "How do you politely ask for something?", answer: "Could we get...?" },
+      { key: "customize", prompt: "How do you ask for dressing separately?", answer: "Dressing on the side, please" }
+    ],
+    humorNotes: [
+      {
+        context: "When the waiter asks about allergies",
+        punchline: "A: Allergies I should know about? B: Just to bad puns. A: ...We're safe then. B: ...I'm kidding. I'm allergic to shellfish. A: ...Noted.",
+        explanation: "Self-deprecating humor about allergies and bad jokes is very common."
+      }
+    ],
+    usefulExpressions: [
+      { expression: "Do you have a reservation?", meaning: "您有预订吗？", usage: "询问预订情况" },
+      { expression: "Party of two", meaning: "两位", usage: "说明用餐人数" },
+      { expression: "I'll give you a moment", meaning: "我给您一点时间", usage: "让顾客看菜单" },
+      { expression: "Could we get...?", meaning: "我们可以要...吗？", usage: "礼貌地请求" },
+      { expression: "On the side", meaning: "在旁边/分开装", usage: "要求分开上菜" }
     ],
     commonMistakes: [
       {
-        mistake: "Saying 'I want the salmon' instead of 'I'll have...'",
-        correction: "Use 'I'll have...' or 'I'd like...' for politeness",
-        explanation: "??? 'I want' ??????????"
+        mistake: "说 'I want the salmon' 而不是 'I'll have...'",
+        correction: "用 'I'll have...' 或 'I'd like...' 更礼貌",
+        explanation: "'I want' 太直接，在餐厅要用更礼貌的表达。"
       },
       {
-        mistake: "Saying 'Can I get...' without 'please'",
-        correction: "Always add 'please' when making requests",
-        explanation: "????????,'please' ??????????"
+        mistake: "说 'Can I get...' 时没有加 'please'",
+        correction: "请求时总是加上 'please'",
+        explanation: "加上 'please' 让请求更礼貌。"
       }
     ],
     rolePlayPractice: [
       {
-        scenario: "You are at a caf�. Order a drink and a snack. Ask about today's special. Make a special request.",
+        scenario: "You are at a café. Order a drink and a snack. Ask about today's special. Make a special request.",
         prompts: [
           "Greet the server and ask to see the menu",
           "Ask about today's specials",
