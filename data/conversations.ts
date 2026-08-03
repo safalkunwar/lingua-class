@@ -10634,53 +10634,200 @@ export const conversations: ConversationTopic[] = [
       ]
     }
   },
-  {
+   {
     id: "library-visit",
     title: "At the Library",
-    emoji: "??",
+    emoji: "📚",
     description: "Finding books, asking for help, and using library services.",
     color: "from-indigo-400 to-purple-400",
     level: "A1",
     estimatedTime: "10 min",
-    vocabularyPreview: [
-      { word: "Library", phonetic: "/'la?breri/", chinese: "???", partOfSpeech: "noun" },
-      { word: "Book", phonetic: "/b?k/", chinese: "?", partOfSpeech: "noun" },
-      { word: "Membership", phonetic: "/'memb?r??p/", chinese: "???", partOfSpeech: "noun" },
-      { word: "Borrow", phonetic: "/'b?ro?/", chinese: "??", partOfSpeech: "verb" },
-      { word: "Return", phonetic: "/r?'t??rn/", chinese: "??", partOfSpeech: "verb" },
-      { word: "Fine", phonetic: "/fa?n/", chinese: "??", partOfSpeech: "noun" }
+    registerMarkers: [
+      { level: "formal", label: "Formal", color: "bg-blue-100 text-blue-800 border-blue-200", description: "Academic library or formal setting" },
+      { level: "neutral", label: "Neutral", color: "bg-gray-100 text-gray-800 border-gray-200", description: "Standard library interaction" },
+      { level: "casual", label: "Casual", color: "bg-green-100 text-green-800 border-green-200", description: "Local community library" }
+    ],
+    warmUp: {
+      title: "Warm-Up: Library English",
+      content: "Libraries are wonderful places for learning. In this lesson, you'll learn how to get a library card, borrow books, and ask for help at a library.",
+      contentZh: "图书馆是学习的绝佳场所。在本课中，你将学习如何办理借书证、借书和在图书馆寻求帮助。"
+    },
+    vocabulary: [
+      {
+        word: "Library",
+        phonetic: "/ˈlaɪbrəri/",
+        chinese: "图书馆",
+        pinyin: "tú shū guǎn",
+        partOfSpeech: "noun",
+        definitionEn: "A place where books and other materials are kept for people to read or borrow.",
+        definitionZh: "存放书籍和其他材料供人们阅读或借阅的地方。",
+        exampleEn: "I go to the library every weekend.",
+        exampleZh: "我每个周末都去图书馆。",
+        register: "neutral"
+      },
+      {
+        word: "Book",
+        phonetic: "/bʊk/",
+        chinese: "书",
+        pinyin: "shū",
+        partOfSpeech: "noun",
+        definitionEn: "A written or printed work consisting of pages.",
+        definitionZh: "由页面组成的书面或印刷作品。",
+        exampleEn: "I'd like to borrow a book about gardening.",
+        exampleZh: "我想借一本关于园艺的书。",
+        register: "neutral"
+      },
+      {
+        word: "Membership",
+        phonetic: "/ˈmembəʃɪp/",
+        chinese: "会员资格",
+        pinyin: "huì yuán zī gé",
+        partOfSpeech: "noun",
+        definitionEn: "The status of being a member of an organization, often required to borrow books.",
+        definitionZh: "成为组织成员的身份，通常是借书所必需的。",
+        exampleEn: "Library membership is free.",
+        exampleZh: "图书馆会员资格是免费的。",
+        register: "neutral"
+      },
+      {
+        word: "Borrow",
+        phonetic: "/ˈbɒroʊ/",
+        chinese: "借",
+        pinyin: "jiè",
+        partOfSpeech: "verb",
+        definitionEn: "To take and use something with the intention of returning it.",
+        definitionZh: "拿走并使用某物，并打算归还。",
+        exampleEn: "Can I borrow this book?",
+        exampleZh: "我可以借这本书吗？",
+        register: "neutral"
+      },
+      {
+        word: "Return",
+        phonetic: "/rɪˈtɜːrn/",
+        chinese: "归还",
+        pinyin: "guī huán",
+        partOfSpeech: "verb",
+        definitionEn: "To give back something you borrowed.",
+        definitionZh: "归还你借的东西。",
+        exampleEn: "When should I return this book?",
+        exampleZh: "我应该什么时候还这本书？",
+        register: "neutral"
+      },
+      {
+        word: "Fine",
+        phonetic: "/faɪn/",
+        chinese: "罚款",
+        pinyin: "fá kuǎn",
+        partOfSpeech: "noun",
+        definitionEn: "Money you must pay for returning a book late.",
+        definitionZh: "因为逾期还书而必须支付的金钱。",
+        exampleEn: "I have a fine of $2.",
+        exampleZh: "我有2美元的罚款。",
+        register: "neutral"
+      }
+    ],
+    dailyExpressions: {
+      title: "Daily Native Expressions",
+      items: [
+        {
+          id: "de-library-1",
+          expression: "I'd like to borrow...",
+          chinese: "我想借...",
+          pinyin: "wǒ xiǎng jiè...",
+          meaning: "Politely asking to borrow a book or item from the library.",
+          whenToUse: "When you want to borrow something from the library.",
+          whenNotToUse: "Don't use 'I want to borrow...' — 'I'd like' is more polite.",
+          nativeFrequency: "Very common in libraries.",
+          commonMistakes: [
+            { mistake: "Using 'I want to borrow...' which sounds demanding", correction: "'I'd like to borrow...' is polite and standard" }
+          ],
+          pronunciation: "/aɪd laɪk tuː ˈbɒroʊ/",
+          funnyExample: "A: I'd like to borrow a book. B: Which one? A: ...All of them. B: ...That's a library card, not a credit card.",
+          memoryTrick: "Think: 'I'd like = politely want' + 'borrow = take temporarily' = 'I politely want to take temporarily'",
+          relatedExpressions: ["Can I borrow...?", "I want to check out...", "May I borrow...?"],
+          collocations: ["borrow a book", "borrow from the library", "borrow up to"],
+          miniQuiz: [
+            { question: "'I'd like to borrow...' means:", options: ["I want to take something temporarily", "I want to keep it forever", "I want to buy it", "I want to read it here"], correct: 0 }
+          ],
+          register: "neutral"
+        },
+        {
+          id: "de-library-2",
+          expression: "Do you have a...?",
+          chinese: "你们有...吗？",
+          pinyin: "nǐ men yǒu... ma?",
+          meaning: "Asking if the library has something.",
+          whenToUse: "When checking if the library has a specific book, card, or service.",
+          whenNotToUse: "Don't use for things you know they have — it's for checking availability.",
+          nativeFrequency: "Very common in libraries.",
+          commonMistakes: [
+            { mistake: "Using 'Have you got a...?' which is okay but less formal", correction: "'Do you have a...?' is standard in libraries" }
+          ],
+          pronunciation: "/duː juː hæv ə/",
+          funnyExample: "A: Do you have a library card? B: Do you have a brain? A: ...I'm asking for a friend. B: ...So am I.",
+          memoryTrick: "Think: 'do you have = do you possess' = 'do you possess this item?'",
+          relatedExpressions: ["Do you have any...?", "Do you have the...?", "Can I get a...?"],
+          collocations: ["have a library card", "have a membership", "have this book"],
+          miniQuiz: [
+            { question: "'Do you have a library card?' asks:", options: ["If they possess a library card", "If they want a library card", "If they lost their card", "If they like libraries"], correct: 0 }
+          ],
+          register: "neutral"
+        },
+        {
+          id: "de-library-3",
+          expression: "Up to...",
+          chinese: "最多...",
+          pinyin: "zuì duō...",
+          meaning: "Indicating the maximum amount or number allowed.",
+          whenToUse: "When stating limits or maximums.",
+          whenNotToUse: "Don't use for minimums — use 'at least' instead.",
+          nativeFrequency: "Very common when stating rules and limits.",
+          commonMistakes: [
+            { mistake: "Using 'Up to' for minimums", correction: "'Up to' means maximum; 'at least' means minimum" }
+          ],
+          pronunciation: "/ʌp tuː/",
+          funnyExample: "A: You can borrow up to 5 books. B: ...I'll borrow 5. A: ...Most people borrow 2. B: ...I'm not most people.",
+          memoryTrick: "Think: 'up = maximum' + 'to = limit' = 'maximum limit is...'",
+          relatedExpressions: ["As many as", "No more than", "Maximum of"],
+          collocations: ["up to 5", "up to 10", "up to 3 weeks"],
+          miniQuiz: [
+            { question: "'You can borrow up to 5 books' means:", options: ["Maximum 5 books", "Exactly 5 books", "Minimum 5 books", "Only 5 books available"], correct: 0 }
+          ],
+          register: "neutral"
+        }
+      ]
+    },
+    nativeChunks: [
+      { chunk: "I'd like to borrow", meaning: "我想借", example: "I'd like to borrow a book.", register: "neutral", context: "Borrowing" },
+      { chunk: "Do you have a", meaning: "你们有...吗", example: "Do you have a library card?", register: "neutral", context: "Asking about availability" },
+      { chunk: "Up to", meaning: "最多", example: "You can borrow up to 5 books.", register: "neutral", context: "Limits" },
+      { chunk: "Here you go", meaning: "给你", example: "Here you go.", register: "neutral", context: "Handing something" },
+      { chunk: "We close at", meaning: "我们...关门", example: "We close at 8 PM.", register: "neutral", context: "Hours" }
     ],
     conversation: [
-      { speaker: "Visitor", line: "Hi, I'd like to borrow a book about gardening." },
-      { speaker: "Librarian", line: "Sure! Do you have a library card?" },
-      { speaker: "Visitor", line: "No, I don't. How do I get one?" },
-      { speaker: "Librarian", line: "I just need your ID and address. It's free." },
-      { speaker: "Visitor", line: "Here you go. How many books can I borrow?" },
-      { speaker: "Librarian", line: "You can borrow up to 5 books for 3 weeks." },
-      { speaker: "Visitor", line: "Great! And what time do you close?" },
-      { speaker: "Librarian", line: "We close at 8 PM on weekdays and 5 PM on weekends." }
+      { speaker: "Visitor", line: "Hi, I'd like to borrow a book about gardening.", register: "neutral" },
+      { speaker: "Librarian", line: "Sure! Do you have a library card?", register: "neutral" },
+      { speaker: "Visitor", line: "No, I don't. How do I get one?", register: "neutral" },
+      { speaker: "Librarian", line: "I just need your ID and address. It's free.", register: "neutral" },
+      { speaker: "Visitor", line: "Here you go. How many books can I borrow?", register: "neutral" },
+      { speaker: "Librarian", line: "You can borrow up to 5 books for 3 weeks.", register: "neutral" },
+      { speaker: "Visitor", line: "Great! And what time do you close?", register: "neutral" },
+      { speaker: "Librarian", line: "We close at 8 PM on weekdays and 5 PM on weekends.", register: "neutral" }
     ],
     chineseTranslation: [
-      { speaker: "??", line: "?,????????????" },
-      { speaker: "?????", line: "??!???????" },
-      { speaker: "??", line: "??????????" },
-      { speaker: "?????", line: "?????????????????" },
-      { speaker: "??", line: "???????????" },
-      { speaker: "?????", line: "??????5?,??3??" },
-      { speaker: "??", line: "???!???????" },
-      { speaker: "?????", line: "?????8???,????5??" }
+      { speaker: "访客", line: "您好，我想借一本关于园艺的书。" },
+      { speaker: "图书管理员", line: "当然！您有借书证吗？" },
+      { speaker: "访客", line: "没有。我怎么办理？" },
+      { speaker: "图书管理员", line: "我只需要您的身份证和地址。这是免费的。" },
+      { speaker: "访客", line: "给你。我可以借多少本书？" },
+      { speaker: "图书管理员", line: "您最多可以借5本书，为期3周。" },
+      { speaker: "访客", line: "太好了！你们几点关门？" },
+      { speaker: "图书管理员", line: "我们工作日晚上8点关门，周末下午5点关门。" }
     ],
-    usefulExpressions: [
-      { expression: "I'd like to borrow...", meaning: "???...", usage: "??????" },
-      { expression: "Do you have a...?", meaning: "??...??", usage: "????" },
-      { expression: "How many...?", meaning: "??...?", usage: "????" },
-      { expression: "Up to...", meaning: "??...", usage: "????" },
-      { expression: "Here you go", meaning: "??", usage: "????" }
-    ],
-    grammarFocus: [
+    grammarInContext: [
       {
         title: "Modal Verbs for Permission",
-        explanation: "? 'Can I...?' ? 'Could I...?' ???????",
+        explanation: "用 'Can I...?' 和 'Could I...?' 礼貌地请求许可。",
         examples: [
           "Can I borrow this book?",
           "Could I use the computer?",
@@ -10689,7 +10836,7 @@ export const conversations: ConversationTopic[] = [
       },
       {
         title: "Present Simple for Schedules",
-        explanation: "?????????????",
+        explanation: "用一般现在时表示固定的时间表或安排。",
         examples: [
           "The library closes at 8 PM.",
           "The bus arrives at 9.",
@@ -10697,20 +10844,107 @@ export const conversations: ConversationTopic[] = [
         ]
       }
     ],
-    collocationsAndChunks: [
-      { chunk: "I'd like to borrow", meaning: "???", example: "I'd like to borrow a book." },
-      { chunk: "Library card", meaning: "???", example: "Do you have a library card?" },
-      { chunk: "Up to 5 books", meaning: "??5?", example: "You can borrow up to 5 books." }
+    pronunciation: [
+      { tip: "Library → /ˈlaɪbrəri/", example: "Stress on first syllable" },
+      { tip: "Borrow → /ˈbɒroʊ/", example: "Stress on first syllable" }
     ],
-    pronunciationTips: [
-      { tip: "Library ? /'la?breri/", example: "Stress on first syllable" },
-      { tip: "Borrow ? /'b?ro?/", example: "Stress on first syllable" }
+    shadowing: [
+      { line: "Hi, I'd like to borrow a book about gardening.", emphasis: "I'd like to borrow" },
+      { line: "Do you have a library card?", emphasis: "Do you have" },
+      { line: "I just need your ID and address. It's free.", emphasis: "It's free" },
+      { line: "You can borrow up to 5 books for 3 weeks.", emphasis: "up to 5 books" },
+      { line: "We close at 8 PM on weekdays and 5 PM on weekends.", emphasis: "close at" }
+    ],
+    speakingPractice: {
+      instruction: "Practice visiting a library: get a card, borrow books, ask about due dates, and check hours. Use 'I'd like to', 'Do you have', and 'How many'.",
+      hints: [
+        "Start with 'Hi, I'd like to borrow...'",
+        "Get a library card if needed",
+        "Ask about borrowing limits",
+        "Check when books are due",
+        "Ask about closing time"
+      ],
+      followUpQuestions: [
+        "What book did you borrow?",
+        "Did you get a library card?",
+        "How many books can you borrow?",
+        "What time does the library close?"
+      ]
+    },
+    rolePlay: {
+      scenario: "You go to the library to borrow books. Get a membership card, find a book, ask about borrowing limits, and check the closing time.",
+      prompts: [
+        "Ask about getting a library card",
+        "Provide your information",
+        "Ask what books you can borrow",
+        "Find a book on your topic",
+        "Ask about closing time"
+      ],
+      partnerLines: [
+        "Hi, I'd like to borrow a book about gardening.",
+        "Sure! Do you have a library card?",
+        "I just need your ID and address. It's free.",
+        "You can borrow up to 5 books for 3 weeks.",
+        "We close at 8 PM on weekdays and 5 PM on weekends."
+      ]
+    },
+    homework: {
+      task: "Library Visit",
+      description: "Visit a library this week. Get a library card if you don't have one, borrow a book, and practice using these phrases.",
+      dueText: "Before next lesson"
+    },
+    quiz: [
+      {
+        id: "q1",
+        question: "'I'd like to borrow...' means:",
+        questionZh: "'I'd like to borrow...'意思是：",
+        options: [
+          { label: "A) I want to take something temporarily", labelZh: "A) 我想暂时借某物", correct: true },
+          { label: "B) I want to keep it forever", labelZh: "B) 我想永远保留它", correct: false },
+          { label: "C) I want to buy it", labelZh: "C) 我想买它", correct: false },
+          { label: "D) I want to read it here", labelZh: "D) 我想在这里读它", correct: false }
+        ],
+        explanation: "'I'd like to borrow...' means you want to take something temporarily with the intention of returning it.",
+        explanationZh: "'I'd like to borrow...'意味着你想暂时借某物并打算归还。"
+      },
+      {
+        id: "q2",
+        question: "'Up to 5 books' means:",
+        questionZh: "'Up to 5 books'意思是：",
+        options: [
+          { label: "A) Maximum 5 books", labelZh: "A) 最多5本书", correct: true },
+          { label: "B) Exactly 5 books", labelZh: "B) 正好5本书", correct: false },
+          { label: "C) Minimum 5 books", labelZh: "C) 最少5本书", correct: false },
+          { label: "D) Only 5 books available", labelZh: "D) 只有5本书可借", correct: false }
+        ],
+        explanation: "'Up to 5 books' means the maximum number you can borrow is 5.",
+        explanationZh: "'Up to 5 books'意味着你最多可以借5本书。"
+      }
+    ],
+    review: [
+      { key: "borrow", prompt: "How do you say you want to borrow a book?", answer: "I'd like to borrow..." },
+      { key: "card", prompt: "How do you ask if they have a library card?", answer: "Do you have a library card?" },
+      { key: "limit", prompt: "What does 'up to' mean?", answer: "Maximum amount" }
+    ],
+    humorNotes: [
+      {
+        context: "When you forget to return books",
+        punchline: "A: You can borrow up to 5 books for 3 weeks. B: ...I borrowed 5 books 3 months ago. A: ...That's not how it works. B: ...I know, that's why I'm asking about the fine.",
+        explanation: "Self-deprecating humor about overdue library books is very common."
+      }
+    ],
+    usefulExpressions: [
+      { expression: "I'd like to borrow...", meaning: "我想借...", usage: "礼貌地请求借书" },
+      { expression: "Do you have a...?", meaning: "你们有...吗？", usage: "询问是否有某物" },
+      { expression: "How many...?", meaning: "多少...？", usage: "询问数量" },
+      { expression: "Up to...", meaning: "最多...", usage: "表示上限" },
+      { expression: "Here you go", meaning: "给你", usage: "递东西给对方" }
     ],
     commonMistakes: [
       {
-        mistake: "'I want to borrow a book' ??????",
-        correction: "??????? 'I'd like to borrow...'",
-        explanation: "?????????????????"
+        mistake: "用 'I want to borrow a book' 而不是 'I'd like to borrow...'",
+        correction: "更礼貌的说法是 'I'd like to borrow...'",
+        explanation: "在图书馆等正式场合，'I'd like' 比 'I want' 更礼貌。"
       }
     ],
     rolePlayPractice: [
