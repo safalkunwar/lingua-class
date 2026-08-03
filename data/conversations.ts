@@ -11714,55 +11714,202 @@ export const conversations: ConversationTopic[] = [
       ]
     }
   },
-  {
+   {
     id: "coffee-shop-meeting",
     title: "Coffee Shop Meeting",
-    emoji: "?",
+    emoji: "☕",
     description: "Meeting someone for coffee, ordering together, and making plans.",
     color: "from-amber-400 to-orange-400",
     level: "A1",
     estimatedTime: "10 min",
-    vocabularyPreview: [
-      { word: "Meeting", phonetic: "/'mi?t??/", chinese: "??", partOfSpeech: "noun" },
-      { word: "Catch up", phonetic: "/k�t? ?p/", chinese: "??", partOfSpeech: "phrasal verb" },
-      { word: "Recommend", phonetic: "/?rek?'mend/", chinese: "??", partOfSpeech: "verb" },
-      { word: "Treat", phonetic: "/tri?t/", chinese: "??", partOfSpeech: "noun / verb" },
-      { word: "Bill", phonetic: "/b?l/", chinese: "??", partOfSpeech: "noun" },
-      { word: "Split", phonetic: "/spl?t/", chinese: "??", partOfSpeech: "verb" }
+    registerMarkers: [
+      { level: "formal", label: "Formal", color: "bg-blue-100 text-blue-800 border-blue-200", description: "Business meeting or professional setting" },
+      { level: "neutral", label: "Neutral", color: "bg-gray-100 text-gray-800 border-gray-200", description: "Standard coffee shop meeting" },
+      { level: "casual", label: "Casual", color: "bg-green-100 text-green-800 border-green-200", description: "Chatting with friends" }
+    ],
+    warmUp: {
+      title: "Warm-Up: Coffee Shop English",
+      content: "Meeting someone for coffee is a common social activity. In this lesson, you'll learn how to greet friends, order drinks, and handle the bill.",
+      contentZh: "和朋友在咖啡店见面是很常见的社交活动。在本课中，你将学习如何问候朋友、点饮料和处理账单。"
+    },
+    vocabulary: [
+      {
+        word: "Meeting",
+        phonetic: "/ˈmiːtɪŋ/",
+        chinese: "聚会/会议",
+        pinyin: "jù huì / huì yì",
+        partOfSpeech: "noun",
+        definitionEn: "An arranged gathering of people.",
+        definitionZh: "人们安排好的聚会。",
+        exampleEn: "Let's meet for coffee.",
+        exampleZh: "我们见面喝杯咖啡吧。",
+        register: "neutral"
+      },
+      {
+        word: "Catch up",
+        phonetic: "/kætʃ ʌp/",
+        chinese: "叙旧/ catching up",
+        pinyin: "xù jiù",
+        partOfSpeech: "phrasal verb",
+        definitionEn: "To talk to someone you haven't seen in a while and learn what they've been doing.",
+        definitionZh: "与很久没见的人交谈，了解他们近况。",
+        exampleEn: "Let's catch up over coffee.",
+        exampleZh: "我们喝咖啡叙旧吧。",
+        register: "neutral"
+      },
+      {
+        word: "Recommend",
+        phonetic: "/ˌrekəˈmend/",
+        chinese: "推荐",
+        pinyin: "tuī jiàn",
+        partOfSpeech: "verb",
+        definitionEn: "To suggest something because you think it's good.",
+        definitionZh: "建议某物，因为你认为它很好。",
+        exampleEn: "I recommend the latte.",
+        exampleZh: "我推荐拿铁咖啡。",
+        register: "neutral"
+      },
+      {
+        word: "Treat",
+        phonetic: "/triːt/",
+        chinese: "请客/款待",
+        pinyin: "qǐng kè / kuǎn dài",
+        partOfSpeech: "noun / verb",
+        definitionEn: "To pay for someone else's food or drink.",
+        definitionZh: "为别人的食物或饮料付费。",
+        exampleEn: "I'll treat you this time.",
+        exampleZh: "这次我请客。",
+        register: "neutral"
+      },
+      {
+        word: "Bill",
+        phonetic: "/bɪl/",
+        chinese: "账单",
+        pinyin: "zhàng dān",
+        partOfSpeech: "noun",
+        definitionEn: "The paper showing what you owe for food and drinks.",
+        definitionZh: "显示你欠的食物和饮料费用的纸。",
+        exampleEn: "Can I have the bill?",
+        exampleZh: "请给我账单。",
+        register: "neutral"
+      },
+      {
+        word: "Split",
+        phonetic: "/splɪt/",
+        chinese: "分摊",
+        pinyin: "fēn tān",
+        partOfSpeech: "verb",
+        definitionEn: "To divide the cost between people.",
+        definitionZh: "在人们之间分摊费用。",
+        exampleEn: "Let's split the bill.",
+        exampleZh: "我们分摊账单吧。",
+        register: "neutral"
+      }
+    ],
+    dailyExpressions: {
+      title: "Daily Native Expressions",
+      items: [
+        {
+          id: "de-coffee-1",
+          expression: "Long time no see",
+          chinese: "好久不见",
+          pinyin: "hǎo jiǔ bù jiàn",
+          meaning: "A friendly greeting for someone you haven't seen in a while.",
+          whenToUse: "When greeting someone you haven't seen for a long time.",
+          whenNotToUse: "Don't use for people you saw yesterday — it's for longer absences.",
+          nativeFrequency: "Very common greeting.",
+          commonMistakes: [
+            { mistake: "Using it for people you saw recently", correction: "'Long time no see' is for people you haven't seen in weeks or months" }
+          ],
+          pronunciation: "/lɒŋ taɪm noʊ siː/",
+          funnyExample: "A: Long time no see! B: We saw each other yesterday. A: ...It felt like longer. B: ...That's not how time works.",
+          memoryTrick: "Think: 'long time = much time passed' + 'no see = haven't seen' = 'much time has passed without seeing you'",
+          relatedExpressions: ["It's been a while", "How have you been?", "I haven't seen you in ages"],
+          collocations: ["long time no see", "long time no see friend", "long time since"],
+          miniQuiz: [
+            { question: "'Long time no see' is used when:", options: ["You haven't seen someone for a long time", "You just saw someone", "You're meeting for the first time", "You're saying goodbye"], correct: 0 }
+          ],
+          register: "casual"
+        },
+        {
+          id: "de-coffee-2",
+          expression: "I'll treat you",
+          chinese: "我请客",
+          pinyin: "wǒ qǐng kè",
+          meaning: "Offering to pay for someone else.",
+          whenToUse: "When you want to pay for your friend's coffee or meal.",
+          whenNotToUse: "Don't use if you expect them to pay — this is genuinely offering to pay.",
+          nativeFrequency: "Common among friends.",
+          commonMistakes: [
+            { mistake: "Using 'I'll pay you' which means something different", correction: "'I'll treat you' means I'll pay for your order" }
+          ],
+          pronunciation: "/aɪl triːt juː/",
+          funnyExample: "A: I'll treat you. B: You don't have to! A: I insist. B: ...Then I'll let you. A: ...That was easier than last time.",
+          memoryTrick: "Think: 'treat = give a gift' + 'you = to you' = 'I'll give you this as a gift'",
+          relatedExpressions: ["It's on me", "Let me pay", "I've got this"],
+          collocations: ["treat you", "treat you to", "I'll treat"],
+          miniQuiz: [
+            { question: "'I'll treat you' means:", options: ["I'll pay for you", "I'll cook for you", "I'll give you a gift", "I'll order for you"], correct: 0 }
+          ],
+          register: "casual"
+        },
+        {
+          id: "de-coffee-3",
+          expression: "Keep the change",
+          chinese: "不用找了",
+          pinyin: "bù yòng zhǎo le",
+          meaning: "Telling someone to keep the extra money as a tip.",
+          whenToUse: "When paying with cash and don't need the change back.",
+          whenNotToUse: "Don't use for card payments — this is only for cash.",
+          nativeFrequency: "Very common when paying cash.",
+          commonMistakes: [
+            { mistake: "Using it for card payments", correction: "'Keep the change' is only for cash transactions" }
+          ],
+          pronunciation: "/kiːp ðə tʃeɪndʒ/",
+          funnyExample: "A: Keep the change. B: Thanks! A: ...It was only 5 cents. B: ...Every little bit helps.",
+          memoryTrick: "Think: 'keep = keep it' + 'the change = the extra money' = 'keep the extra money'",
+          relatedExpressions: ["Keep it", "You can keep it", "No change needed"],
+          collocations: ["keep the change", "keep it", "no change"],
+          miniQuiz: [
+            { question: "'Keep the change' means:", options: ["Keep the extra money as a tip", "Give me back my change", "The price is wrong", "I don't have change"], correct: 0 }
+          ],
+          register: "neutral"
+        }
+      ]
+    },
+    nativeChunks: [
+      { chunk: "Long time no see", meaning: "好久不见", example: "Long time no see! How have you been?", register: "casual", context: "Greeting" },
+      { chunk: "Let's catch up", meaning: "我们叙叙旧", example: "Let's catch up over coffee.", register: "casual", context: "Socializing" },
+      { chunk: "I'll treat you", meaning: "我请客", example: "I'll treat you this time.", register: "casual", context: "Paying" },
+      { chunk: "Keep the change", meaning: "不用找了", example: "Keep the change.", register: "neutral", context: "Tipping" },
+      { chunk: "That works for me", meaning: "那对我来说可以", example: "That works for me.", register: "neutral", context: "Agreeing" }
     ],
     conversation: [
-      { speaker: "Anna", line: "Hey! Long time no see. How have you been?" },
-      { speaker: "Ben", line: "I've been good! Let's catch up over coffee." },
-      { speaker: "Anna", line: "Great idea! Do you know a good place around here?" },
-      { speaker: "Ben", line: "Yes, there's a nice caf� just around the corner. I'll treat you this time." },
-      { speaker: "Anna", line: "Oh, you don't have to! But thank you." },
-      { speaker: "Ben", line: "No problem. I insist. What would you like to drink?" },
-      { speaker: "Anna", line: "I'll have a latte, please. And maybe a croissant?" },
-      { speaker: "Waiter", line: "Here you go. That'll be $12 total." },
-      { speaker: "Ben", line: "Keep the change. Thanks for meeting me!" }
+      { speaker: "Anna", line: "Hey! Long time no see. How have you been?", register: "casual" },
+      { speaker: "Ben", line: "I've been good! Let's catch up over coffee.", register: "casual" },
+      { speaker: "Anna", line: "Great idea! Do you know a good place around here?", register: "casual" },
+      { speaker: "Ben", line: "Yes, there's a nice café just around the corner. I'll treat you this time.", register: "casual" },
+      { speaker: "Anna", line: "Oh, you don't have to! But thank you.", register: "casual" },
+      { speaker: "Ben", line: "No problem. I insist. What would you like to drink?", register: "casual" },
+      { speaker: "Anna", line: "I'll have a latte, please. And maybe a croissant?", register: "casual" },
+      { speaker: "Waiter", line: "Here you go. That'll be $12 total.", register: "neutral" },
+      { speaker: "Ben", line: "Keep the change. Thanks for meeting me!", register: "casual" }
     ],
     chineseTranslation: [
-      { speaker: "Anna", line: "?!????????????" },
-      { speaker: "Ben", line: "???!??????????" },
-      { speaker: "Anna", line: "???!???????????" },
-      { speaker: "Ben", line: "??,???????????????????" },
-      { speaker: "Anna", line: "?,????!?????" },
-      { speaker: "Ben", line: "???????????????" },
-      { speaker: "Anna", line: "??????,?????????????" },
-      { speaker: "???", line: "?????12???" },
-      { speaker: "Ben", line: "???????????!" }
+      { speaker: "Anna", line: "嗨！好久不见。你最近怎么样？" },
+      { speaker: "Ben", line: "我很好！我们喝咖啡叙叙旧吧。" },
+      { speaker: "Anna", line: "好主意！你知道这附近有什么好地方吗？" },
+      { speaker: "Ben", line: "是的，拐角处有一家不错的咖啡馆。这次我请客。" },
+      { speaker: "Anna", line: "哦，你不用这样！但还是谢谢你。" },
+      { speaker: "Ben", line: "没问题。我坚持。你想喝点什么？" },
+      { speaker: "Anna", line: "我来一杯拿铁咖啡。还要一个羊角面包？" },
+      { speaker: "服务员", line: "给您。总共12美元。" },
+      { speaker: "Ben", line: "不用找了。谢谢你来见我！" }
     ],
-    usefulExpressions: [
-      { expression: "Long time no see", meaning: "????", usage: "???????" },
-      { expression: "Catch up", meaning: "??", usage: "???????" },
-      { expression: "I'll treat you", meaning: "???", usage: "????" },
-      { expression: "Keep the change", meaning: "????", usage: "???????" },
-      { expression: "I insist", meaning: "???", usage: "??????????" }
-    ],
-    grammarFocus: [
+    grammarInContext: [
       {
         title: "Present Perfect for Recent News",
-        explanation: "??????????????",
+        explanation: "用现在完成时谈论最近发生的事情。",
         examples: [
           "I have been busy.",
           "I have just returned.",
@@ -11771,7 +11918,7 @@ export const conversations: ConversationTopic[] = [
       },
       {
         title: "Conditional Offers with 'I'll'",
-        explanation: "? 'I'll...' ????????",
+        explanation: "用 'I'll...' 提出条件性提议或承诺。",
         examples: [
           "I'll treat you this time.",
           "I'll pay the bill.",
@@ -11779,29 +11926,116 @@ export const conversations: ConversationTopic[] = [
         ]
       }
     ],
-    collocationsAndChunks: [
-      { chunk: "Long time no see", meaning: "????", example: "Long time no see! How are you?" },
-      { chunk: "Catch up", meaning: "??", example: "Let's catch up over coffee." },
-      { chunk: "I'll treat you", meaning: "???", example: "I'll treat you this time." }
+    pronunciation: [
+      { tip: "Long time no see → /lɒŋ taɪm noʊ siː/", example: "Friendly, relaxed speech" },
+      { tip: "Keep the change → /kiːp ðə tʃeɪndʒ/", example: "Quick, natural phrase" }
     ],
-    pronunciationTips: [
-      { tip: "Long time no see ? /l??? ta?m no? si?/", example: "Friendly, relaxed speech" },
-      { tip: "Keep the change ? /ki?p �? t?e?nd?/", example: "Quick, natural phrase" }
+    shadowing: [
+      { line: "Hey! Long time no see. How have you been?", emphasis: "Long time no see" },
+      { line: "I've been good! Let's catch up over coffee.", emphasis: "catch up" },
+      { line: "Yes, there's a nice café just around the corner. I'll treat you this time.", emphasis: "treat you" },
+      { line: "I'll have a latte, please. And maybe a croissant?", emphasis: "I'll have" },
+      { line: "Keep the change. Thanks for meeting me!", emphasis: "Keep the change" }
+    ],
+    speakingPractice: {
+      instruction: "Practice meeting a friend for coffee. Use 'Long time no see', 'catch up', 'I'll treat you', and 'Keep the change'.",
+      hints: [
+        "Start with a warm greeting",
+        "Suggest catching up",
+        "Choose a drink and food",
+        "Insist on paying",
+        "End with a friendly goodbye"
+      ],
+      followUpQuestions: [
+        "What did you order?",
+        "Who paid the bill?",
+        "What did you catch up on?",
+        "When are you meeting again?"
+      ]
+    },
+    rolePlay: {
+      scenario: "You meet an old friend at a café. Catch up on each other's lives, order drinks, and insist on treating them.",
+      prompts: [
+        "Greet them warmly",
+        "Suggest catching up",
+        "Choose a café",
+        "Order drinks and food",
+        "Insist on treating them"
+      ],
+      partnerLines: [
+        "Hey! Long time no see. How have you been?",
+        "I've been good! Let's catch up over coffee.",
+        "Yes, there's a nice café just around the corner. I'll treat you this time.",
+        "I'll have a latte, please. And maybe a croissant?",
+        "Keep the change. Thanks for meeting me!"
+      ]
+    },
+    homework: {
+      task: "Coffee Shop Conversation",
+      description: "Meet a friend for coffee this week and practice using these phrases. Write about what you talked about.",
+      dueText: "Before next lesson"
+    },
+    quiz: [
+      {
+        id: "q1",
+        question: "'Long time no see' is used when:",
+        questionZh: "'Long time no see'用于：",
+        options: [
+          { label: "A) You haven't seen someone for a long time", labelZh: "A) 你很久没见某人了", correct: true },
+          { label: "B) You just saw someone", labelZh: "B) 你刚刚见过某人", correct: false },
+          { label: "C) You're meeting for the first time", labelZh: "C) 你第一次见面", correct: false },
+          { label: "D) You're saying goodbye", labelZh: "D) 你在说再见", correct: false }
+        ],
+        explanation: "'Long time no see' is used when greeting someone you haven't seen in a long time.",
+        explanationZh: "'Long time no see'用于问候很久没见的人。"
+      },
+      {
+        id: "q2",
+        question: "'I'll treat you' means:",
+        questionZh: "'I'll treat you'意思是：",
+        options: [
+          { label: "A) I'll pay for you", labelZh: "A) 我请你", correct: true },
+          { label: "B) I'll cook for you", labelZh: "B) 我给你做饭", correct: false },
+          { label: "C) I'll give you a gift", labelZh: "C) 我给你礼物", correct: false },
+          { label: "D) I'll order for you", labelZh: "D) 我帮你点餐", correct: false }
+        ],
+        explanation: "'I'll treat you' means I will pay for your order.",
+        explanationZh: "'I'll treat you'意味着我会为你付款。"
+      }
+    ],
+    review: [
+      { key: "greeting", prompt: "What do you say when you see an old friend?", answer: "Long time no see" },
+      { key: "social", prompt: "How do you suggest catching up?", answer: "Let's catch up over coffee" },
+      { key: "paying", prompt: "How do you say you'll pay for your friend?", answer: "I'll treat you" }
+    ],
+    humorNotes: [
+      {
+        context: "When the bill arrives and everyone hesitates",
+        punchline: "A: I'll treat you. B: No, I'll treat you. A: ...Then let's race to the cashier. B: ...And the loser pays for both.",
+        explanation: "Self-deprecating humor about paying the bill is very common."
+      }
+    ],
+    usefulExpressions: [
+      { expression: "Long time no see", meaning: "好久不见", usage: "问候很久没见的人" },
+      { expression: "Catch up", meaning: "叙旧", usage: "和朋友聊天了解近况" },
+      { expression: "I'll treat you", meaning: "我请客", usage: "主动付款" },
+      { expression: "Keep the change", meaning: "不用找了", usage: "给小费" },
+      { expression: "I insist", meaning: "我坚持", usage: "坚持要请客" }
     ],
     commonMistakes: [
       {
-        mistake: "'I'll treat you' ???",
-        correction: "?? 'Oh, you don't have to' ???? 'I insist' ???",
-        explanation: "????????,?????????????"
+        mistake: "用 'I'll treat you' 但不知道它的意思",
+        correction: "'I'll treat you' 意味着 '我请你'，即我为你的消费付款",
+        explanation: "'Treat' 在社交场合意味着 '请客'。"
       }
     ],
     rolePlayPractice: [
       {
-        scenario: "You meet an old friend at a caf�. Catch up on each other's lives, order drinks, and insist on treating them.",
+        scenario: "You meet an old friend at a café. Catch up on each other's lives, order drinks, and insist on treating them.",
         prompts: [
           "Greet them warmly",
-          "Suggest catching up over coffee",
-          "Choose a caf�",
+          "Suggest catching up",
+          "Choose a café",
           "Order drinks and food",
           "Insist on treating them"
         ]
