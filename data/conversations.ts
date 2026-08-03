@@ -10991,53 +10991,200 @@ export const conversations: ConversationTopic[] = [
       ]
     }
   },
-  {
+   {
     id: "pharmacy",
     title: "At the Pharmacy",
-    emoji: "??",
+    emoji: "💊",
     description: "Buying medicine, asking for advice, and understanding labels.",
     color: "from-green-400 to-emerald-400",
     level: "A1",
     estimatedTime: "10 min",
-    vocabularyPreview: [
-      { word: "Medicine", phonetic: "/'med?s?n/", chinese: "?", partOfSpeech: "noun" },
-      { word: "Prescription", phonetic: "/pr?'skr?p?n/", chinese: "??", partOfSpeech: "noun" },
-      { word: "Symptom", phonetic: "/'s?mpt?m/", chinese: "??", partOfSpeech: "noun" },
-      { word: "Dosage", phonetic: "/'do?s?d?/", chinese: "??", partOfSpeech: "noun" },
-      { word: "Side effects", phonetic: "/'sa?d ?fekts/", chinese: "???", partOfSpeech: "noun" },
-      { word: "Generic", phonetic: "/d??'ner?k/", chinese: "????", partOfSpeech: "adjective" }
+    registerMarkers: [
+      { level: "formal", label: "Formal", color: "bg-blue-100 text-blue-800 border-blue-200", description: "Hospital pharmacy or prescription" },
+      { level: "neutral", label: "Neutral", color: "bg-gray-100 text-gray-800 border-gray-200", description: "Standard pharmacy interaction" },
+      { level: "casual", label: "Casual", color: "bg-green-100 text-green-800 border-green-200", description: "Buying over-the-counter medicine" }
+    ],
+    warmUp: {
+      title: "Warm-Up: Pharmacy English",
+      content: "Visiting a pharmacy is an important real-life skill. In this lesson, you'll learn how to describe symptoms, ask for medicine, and understand dosage instructions.",
+      contentZh: "去药店是一项重要的生活技能。在本课中，你将学习如何描述症状、询问药品和了解剂量说明。"
+    },
+    vocabulary: [
+      {
+        word: "Medicine",
+        phonetic: "/ˈmedsn/",
+        chinese: "药",
+        pinyin: "yào",
+        partOfSpeech: "noun",
+        definitionEn: "A substance used to treat illness or pain.",
+        definitionZh: "用于治疗疾病或疼痛的物质。",
+        exampleEn: "How should I take this medicine?",
+        exampleZh: "我应该怎么吃这个药？",
+        register: "neutral"
+      },
+      {
+        word: "Prescription",
+        phonetic: "/prɪˈskrɪpʃn/",
+        chinese: "处方",
+        pinyin: "chǔ fāng",
+        partOfSpeech: "noun",
+        definitionEn: "A written order from a doctor for medicine.",
+        definitionZh: "医生开的药方。",
+        exampleEn: "I have a prescription to fill.",
+        exampleZh: "我有一个处方要配。",
+        register: "neutral"
+      },
+      {
+        word: "Symptom",
+        phonetic: "/ˈsɪmptəm/",
+        chinese: "症状",
+        pinyin: "zhèng zhuàng",
+        partOfSpeech: "noun",
+        definitionEn: "A physical or mental sign of an illness.",
+        definitionZh: "疾病的生理或精神迹象。",
+        exampleEn: "What are your symptoms?",
+        exampleZh: "你有什么症状？",
+        register: "neutral"
+      },
+      {
+        word: "Dosage",
+        phonetic: "/ˈdoʊsɪdʒ/",
+        chinese: "剂量",
+        pinyin: "jì liàng",
+        partOfSpeech: "noun",
+        definitionEn: "The amount of medicine to take at one time.",
+        definitionZh: "一次服用的药量。",
+        exampleEn: "What is the dosage?",
+        exampleZh: "剂量是多少？",
+        register: "neutral"
+      },
+      {
+        word: "Side effects",
+        phonetic: "/ˈsaɪd ɪfekts/",
+        chinese: "副作用",
+        pinyin: "fù zuò yòng",
+        partOfSpeech: "noun",
+        definitionEn: "Unintended effects of a medicine.",
+        definitionZh: "药物的意外作用。",
+        exampleEn: "Are there any side effects?",
+        exampleZh: "有什么副作用吗？",
+        register: "neutral"
+      },
+      {
+        word: "Generic",
+        phonetic: "/dʒəˈnerɪk/",
+        chinese: "非品牌的/通用的",
+        pinyin: "fēi pǐn pái de / tōng yòng de",
+        partOfSpeech: "adjective",
+        definitionEn: "A medicine that is not a brand name but has the same ingredients.",
+        definitionZh: "非品牌但成分相同的药物。",
+        exampleEn: "Is there a generic version?",
+        exampleZh: "有非品牌的版本吗？",
+        register: "neutral"
+      }
+    ],
+    dailyExpressions: {
+      title: "Daily Native Expressions",
+      items: [
+        {
+          id: "de-pharmacy-1",
+          expression: "I have a prescription to fill",
+          chinese: "我有一个处方要配",
+          pinyin: "wǒ yǒu yī gè chǔ fāng yào pèi",
+          meaning: "Telling the pharmacist you need to get your prescription filled.",
+          whenToUse: "When you bring a doctor's prescription to a pharmacy.",
+          whenNotToUse: "Don't use for over-the-counter medicine — only for prescriptions.",
+          nativeFrequency: "Very common at pharmacies.",
+          commonMistakes: [
+            { mistake: "Using 'I need to buy medicine' instead", correction: "'I have a prescription to fill' is the standard phrase for prescriptions" }
+          ],
+          pronunciation: "/aɪ hæv ə prɪˈskrɪpʃn tuː fɪl/",
+          funnyExample: "A: I have a prescription to fill. B: Do you have the prescription? A: ...I have the desire to fill it. B: ...That's not what I meant.",
+          memoryTrick: "Think: 'prescription = doctor's order' + 'fill = prepare' = 'I need to prepare my doctor's order'",
+          relatedExpressions: ["I need to fill a prescription", "Can you fill this?", "I have a prescription"],
+          collocations: ["prescription to fill", "fill a prescription", "have a prescription"],
+          miniQuiz: [
+            { question: "'I have a prescription to fill' means:", options: ["I need to get medicine from a doctor's order", "I want to buy over-the-counter medicine", "I want to sell medicine", "I lost my prescription"], correct: 0 }
+          ],
+          register: "neutral"
+        },
+        {
+          id: "de-pharmacy-2",
+          expression: "Take one pill...",
+          chinese: "吃一片...",
+          pinyin: "chī yī piàn...",
+          meaning: "Giving instructions on how to take medicine.",
+          whenToUse: "When the pharmacist explains how to take your medicine.",
+          whenNotToUse: "Don't use for non-medicine instructions — this is only for medication.",
+          nativeFrequency: "Very common when receiving medicine.",
+          commonMistakes: [
+            { mistake: "Using 'Eat one pill' instead of 'Take'", correction: "Use 'Take' for medicine, not 'Eat'" }
+          ],
+          pronunciation: "/teɪk wʌn pɪl/",
+          funnyExample: "A: Take one pill three times a day. B: ...Can I take it with soda? A: ...I should have asked what you're taking it for.",
+          memoryTrick: "Think: 'take = consume' + 'pill = medicine' = 'consume this medicine'",
+          relatedExpressions: ["Take two pills", "Take with food", "Take every 4 hours"],
+          collocations: ["take one pill", "take with food", "take three times"],
+          miniQuiz: [
+            { question: "'Take one pill three times a day' means:", options: ["Consume one pill three times daily", "Eat one pill for three days", "Take three pills once a day", "Take pills only when sick"], correct: 0 }
+          ],
+          register: "neutral"
+        },
+        {
+          id: "de-pharmacy-3",
+          expression: "Are there any side effects?",
+          chinese: "有什么副作用吗？",
+          pinyin: "yǒu shén me fù zuò yòng ma?",
+          meaning: "Asking about possible unwanted effects of a medicine.",
+          whenToUse: "When you want to know the risks of a new medicine.",
+          whenNotToUse: "Don't ask about side effects of food or drinks — only medicine.",
+          nativeFrequency: "Very common when getting a new prescription.",
+          commonMistakes: [
+            { mistake: "Using 'Are there any effects?' which is vague", correction: "'Side effects' specifically means unwanted effects of medicine" }
+          ],
+          pronunciation: "/ɑːr ðer ˈsaɪd ɪfekts/",
+          funnyExample: "A: Are there any side effects? B: Yes, you might feel sleepy. A: ...I'm already sleepy. B: ...Then you're cured!",
+          memoryTrick: "Think: 'side effects = extra effects' + 'are there any = do any exist' = 'do any unwanted effects exist?'",
+          relatedExpressions: ["What are the side effects?", "Can it cause drowsiness?", "Is it safe?"],
+          collocations: ["side effects", "side effects include", "possible side effects"],
+          miniQuiz: [
+            { question: "'Side effects' means:", options: ["Unwanted effects of medicine", "Good effects of medicine", "The main purpose of medicine", "How to take medicine"], correct: 0 }
+          ],
+          register: "neutral"
+        }
+      ]
+    },
+    nativeChunks: [
+      { chunk: "I have a prescription", meaning: "我有一个处方", example: "I have a prescription to fill.", register: "neutral", context: "Prescription" },
+      { chunk: "Take one pill", meaning: "吃一片", example: "Take one pill three times a day.", register: "neutral", context: "Instructions" },
+      { chunk: "with food", meaning: "随餐", example: "Take it with food.", register: "neutral", context: "How to take" },
+      { chunk: "side effects", meaning: "副作用", example: "Are there any side effects?", register: "neutral", context: "Safety" },
+      { chunk: "Drink plenty of water", meaning: "多喝水", example: "Drink plenty of water.", register: "neutral", context: "Advice" }
     ],
     conversation: [
-      { speaker: "Customer", line: "Hi, I have a prescription to fill." },
-      { speaker: "Pharmacist", line: "Sure. Do you have the prescription with you?" },
-      { speaker: "Customer", line: "Yes, here it is. It's for antibiotics." },
-      { speaker: "Pharmacist", line: "Okay, this will take about 15 minutes. Do you have any allergies?" },
-      { speaker: "Customer", line: "No, I don't. How should I take this medicine?" },
-      { speaker: "Pharmacist", line: "Take one pill three times a day with food. Here's the leaflet with all the details." },
-      { speaker: "Customer", line: "Thank you. Are there any side effects I should know about?" },
-      { speaker: "Pharmacist", line: "Some people feel sleepy. If that happens, just rest. And drink plenty of water." }
+      { speaker: "Customer", line: "Hi, I have a prescription to fill.", register: "neutral" },
+      { speaker: "Pharmacist", line: "Sure. Do you have the prescription with you?", register: "neutral" },
+      { speaker: "Customer", line: "Yes, here it is. It's for antibiotics.", register: "neutral" },
+      { speaker: "Pharmacist", line: "Okay, this will take about 15 minutes. Do you have any allergies?", register: "neutral" },
+      { speaker: "Customer", line: "No, I don't. How should I take this medicine?", register: "neutral" },
+      { speaker: "Pharmacist", line: "Take one pill three times a day with food. Here's the leaflet with all the details.", register: "neutral" },
+      { speaker: "Customer", line: "Thank you. Are there any side effects I should know about?", register: "neutral" },
+      { speaker: "Pharmacist", line: "Some people feel sleepy. If that happens, just rest. And drink plenty of water.", register: "neutral" }
     ],
     chineseTranslation: [
-      { speaker: "??", line: "?,?????????" },
-      { speaker: "???", line: "??????????" },
-      { speaker: "??", line: "????????????" },
-      { speaker: "???", line: "??,????15??????????" },
-      { speaker: "??", line: "????????????" },
-      { speaker: "???", line: "????,????,??????????,????????" },
-      { speaker: "??", line: "???????????????" },
-      { speaker: "???", line: "?????????????????,?????????" }
+      { speaker: "顾客", line: "您好，我有一个处方要配。" },
+      { speaker: "药剂师", line: "当然。您带处方了吗？" },
+      { speaker: "顾客", line: "带了，在这里。是抗生素。" },
+      { speaker: "药剂师", line: "好的，这需要大约15分钟。您有任何过敏吗？" },
+      { speaker: "顾客", line: "没有。我应该怎么吃这个药？" },
+      { speaker: "药剂师", line: "一天三次，每次一片，随餐服用。这是所有详细信息的说明书。" },
+      { speaker: "顾客", line: "谢谢。有什么副作用是我需要知道的吗？" },
+      { speaker: "药剂师", line: "有些人会感到困倦。如果发生这种情况，就休息一下。多喝水。" }
     ],
-    usefulExpressions: [
-      { expression: "I have a prescription to fill", meaning: "????????", usage: "?????" },
-      { expression: "Take one pill...", meaning: "???...", usage: "??????" },
-      { expression: "With food", meaning: "??", usage: "??????" },
-      { expression: "Side effects", meaning: "???", usage: "??????" },
-      { expression: "Drink plenty of water", meaning: "???", usage: "????" }
-    ],
-    grammarFocus: [
+    grammarInContext: [
       {
         title: "Modal Verbs for Advice",
-        explanation: "? 'should' ? 'can' ?????",
+        explanation: "用 'should' 和 'can' 给出建议和说明。",
         examples: [
           "You should take it with food.",
           "You can take it twice a day.",
@@ -11046,7 +11193,7 @@ export const conversations: ConversationTopic[] = [
       },
       {
         title: "Present Simple for Instructions",
-        explanation: "???????????",
+        explanation: "用一般现在时给出明确的指示或说明。",
         examples: [
           "Take one pill three times a day.",
           "Store in a cool place.",
@@ -11054,20 +11201,107 @@ export const conversations: ConversationTopic[] = [
         ]
       }
     ],
-    collocationsAndChunks: [
-      { chunk: "Fill a prescription", meaning: "??", example: "I need to fill this prescription." },
-      { chunk: "Take one pill", meaning: "???", example: "Take one pill three times a day." },
-      { chunk: "Side effects", meaning: "???", example: "Are there any side effects?" }
+    pronunciation: [
+      { tip: "Prescription → /prɪˈskrɪpʃn/", example: "Stress on second syllable" },
+      { tip: "Dosage → /ˈdoʊsɪdʒ/", example: "Stress on first syllable" }
     ],
-    pronunciationTips: [
-      { tip: "Prescription ? /pr?'skr?p?n/", example: "Stress on second syllable" },
-      { tip: "Dosage ? /'do?s?d?/", example: "Stress on first syllable" }
+    shadowing: [
+      { line: "Hi, I have a prescription to fill.", emphasis: "prescription to fill" },
+      { line: "Do you have the prescription with you?", emphasis: "prescription with you" },
+      { line: "Take one pill three times a day with food.", emphasis: "Take one pill" },
+      { line: "Are there any side effects I should know about?", emphasis: "side effects" },
+      { line: "Some people feel sleepy. If that happens, just rest.", emphasis: "feel sleepy" }
+    ],
+    speakingPractice: {
+      instruction: "Practice at a pharmacy: get medicine, ask about dosage, side effects, and storage. Use 'I have a prescription', 'How should I take', and 'Are there any side effects'.",
+      hints: [
+        "State your symptom",
+        "Show prescription if needed",
+        "Ask how to take the medicine",
+        "Ask about side effects",
+        "Confirm the dosage"
+      ],
+      followUpQuestions: [
+        "What medicine did you get?",
+        "What was the dosage?",
+        "Did you ask about side effects?",
+        "How should you take the medicine?"
+      ]
+    },
+    rolePlay: {
+      scenario: "You have a headache and go to the pharmacy. Describe your symptom, get medicine, and ask about dosage and side effects.",
+      prompts: [
+        "Tell the pharmacist your symptom",
+        "Show your prescription if you have one",
+        "Ask about dosage",
+        "Ask about side effects",
+        "Thank them and leave"
+      ],
+      partnerLines: [
+        "Hi, I have a prescription to fill.",
+        "Sure. Do you have the prescription with you?",
+        "Okay, this will take about 15 minutes. Do you have any allergies?",
+        "Take one pill three times a day with food. Here's the leaflet with all the details.",
+        "Some people feel sleepy. If that happens, just rest. And drink plenty of water."
+      ]
+    },
+    homework: {
+      task: "Pharmacy Vocabulary",
+      description: "Write down 10 pharmacy-related words and practice using them. Look up a medicine label and try to understand the instructions.",
+      dueText: "Before next lesson"
+    },
+    quiz: [
+      {
+        id: "q1",
+        question: "'I have a prescription to fill' means:",
+        questionZh: "'I have a prescription to fill'意思是：",
+        options: [
+          { label: "A) I need to get medicine from a doctor's order", labelZh: "A) 我需要凭医生处方取药", correct: true },
+          { label: "B) I want to buy over-the-counter medicine", labelZh: "B) 我想买非处方药", correct: false },
+          { label: "C) I want to sell medicine", labelZh: "C) 我想卖药", correct: false },
+          { label: "D) I lost my prescription", labelZh: "D) 我丢了处方", correct: false }
+        ],
+        explanation: "'I have a prescription to fill' means you need to get medicine based on a doctor's order.",
+        explanationZh: "'I have a prescription to fill'意味着你需要凭医生处方取药。"
+      },
+      {
+        id: "q2",
+        question: "'Side effects' means:",
+        questionZh: "'Side effects'意思是：",
+        options: [
+          { label: "A) Unwanted effects of medicine", labelZh: "A) 药物的副作用", correct: true },
+          { label: "B) Good effects of medicine", labelZh: "B) 药物的良好效果", correct: false },
+          { label: "C) The main purpose of medicine", labelZh: "C) 药物的主要目的", correct: false },
+          { label: "D) How to take medicine", labelZh: "D) 如何服药", correct: false }
+        ],
+        explanation: "'Side effects' are unintended or unwanted effects of a medicine.",
+        explanationZh: "'Side effects'是药物的意外或不希望有的作用。"
+      }
+    ],
+    review: [
+      { key: "prescription", prompt: "How do you say you need to get medicine from a doctor?", answer: "I have a prescription to fill" },
+      { key: "dosage", prompt: "How do you ask how to take medicine?", answer: "How should I take this medicine?" },
+      { key: "safety", prompt: "How do you ask about unwanted effects?", answer: "Are there any side effects?" }
+    ],
+    humorNotes: [
+      {
+        context: "When the pharmacist asks about side effects",
+        punchline: "A: Are there any side effects? B: Yes, you might feel sleepy. A: ...I'm already sleepy. B: ...Then the medicine is working!",
+        explanation: "Self-deprecating humor about medicine side effects is very common."
+      }
+    ],
+    usefulExpressions: [
+      { expression: "I have a prescription to fill", meaning: "我有一个处方要配", usage: "告知需要配药" },
+      { expression: "Take one pill...", meaning: "吃一片...", usage: "说明服药方式" },
+      { expression: "With food", meaning: "随餐", usage: "说明服药时间" },
+      { expression: "Side effects", meaning: "副作用", usage: "询问药物风险" },
+      { expression: "Drink plenty of water", meaning: "多喝水", usage: "给出健康建议" }
     ],
     commonMistakes: [
       {
-        mistake: "'I have a medicine'",
-        correction: "'I have a prescription' ? 'I need medicine'",
-        explanation: "??? 'prescription';?? 'medicine'?"
+        mistake: "用 'I have a medicine' 而不是 'I have a prescription'",
+        correction: "'Prescription' 是处方；'medicine' 是药物。有医生开的方子时要用 'prescription'。",
+        explanation: "'Prescription' 和 'medicine' 意思不同，不要混淆。"
       }
     ],
     rolePlayPractice: [
