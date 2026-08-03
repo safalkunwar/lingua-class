@@ -13,43 +13,43 @@ export const conversations: ConversationTopic[] = [
       { word: "first impression", phonetic: "/f??rst ?m'pre?n/", chinese: "????", partOfSpeech: "noun" },
       { word: "connect", phonetic: "/k?'nekt/", chinese: "????", partOfSpeech: "verb" },
       { word: "awkward", phonetic: "/'??kw?rd/", chinese: "???", partOfSpeech: "adjective" },
-      { word: "break the ice", phonetic: "/bre?k ğ? a?s/", chinese: "????", partOfSpeech: "idiom" },
+      { word: "break the ice", phonetic: "/bre?k ï¿½? a?s/", chinese: "????", partOfSpeech: "idiom" },
       { word: "hometown", phonetic: "/'ho?mta?n/", chinese: "??", partOfSpeech: "noun" },
-      { word: "catch up", phonetic: "/kæt? ?p/", chinese: "??", partOfSpeech: "phrasal verb" },
+      { word: "catch up", phonetic: "/kï¿½t? ?p/", chinese: "??", partOfSpeech: "phrasal verb" },
       { word: "industry", phonetic: "/'?nd?stri/", chinese: "??", partOfSpeech: "noun" }
     ],
     conversation: [
-      { speaker: "Alex", line: "Hey, you must be Sarah? I'm Alex — we met briefly at the conference last week?" },
+      { speaker: "Alex", line: "Hey, you must be Sarah? I'm Alex ï¿½ we met briefly at the conference last week?" },
       { speaker: "Sarah", line: "Oh right! Alex, nice to officially meet you. How have you been?" },
       { speaker: "Alex", line: "Can't complain, just been swamped with work. How about you?" },
       { speaker: "Sarah", line: "Yeah, still at the marketing agency. Actually, I just got promoted last month!" },
       { speaker: "Alex", line: "No way, congrats! That's huge. What's your new role?" },
       { speaker: "Sarah", line: "Thanks! I'm now the senior strategist. It's more responsibility, but I'm loving it." },
       { speaker: "Alex", line: "Sounds like you're killing it. What made you get into marketing?" },
-      { speaker: "Sarah", line: "Honestly, I fell into it by accident. I was studying communication and took a social media internship — never looked back." },
+      { speaker: "Sarah", line: "Honestly, I fell into it by accident. I was studying communication and took a social media internship ï¿½ never looked back." },
       { speaker: "Alex", line: "That's really cool. I'm in software myself, so completely different world." },
       { speaker: "Sarah", line: "Oh nice! What kind of software do you work on?" },
       { speaker: "Alex", line: "We build apps for small businesses. It's challenging but rewarding, you know?" },
-      { speaker: "Sarah", line: "Totally get that. So, besides work — what do you do for fun?" },
+      { speaker: "Sarah", line: "Totally get that. So, besides work ï¿½ what do you do for fun?" },
       { speaker: "Alex", line: "I try to hike whenever I can. There are some great trails not too far from the city. You into that?" },
       { speaker: "Sarah", line: "I love hiking! Maybe we should go together sometime?" },
-      { speaker: "Alex", line: "I'd love that. Here — let me give you my number and we can plan something." },
+      { speaker: "Alex", line: "I'd love that. Here ï¿½ let me give you my number and we can plan something." },
       { speaker: "Sarah", line: "Perfect. It was really nice chatting with you, Alex." },
       { speaker: "Alex", line: "Same here, Sarah. I'm glad we ran into each other again!" }
     ],
     chineseTranslation: [
-      { speaker: "Alex", line: "?,??????????????——?????????????" },
+      { speaker: "Alex", line: "?,??????????????ï¿½ï¿½?????????????" },
       { speaker: "Sarah", line: "??!????,????????????????" },
       { speaker: "Alex", line: "???????,???????????" },
       { speaker: "Sarah", line: "??,?????????,???????!" },
       { speaker: "Alex", line: "???,??!??????????????" },
       { speaker: "Sarah", line: "??!???????????????,??????" },
       { speaker: "Alex", line: "????????????????????????" },
-      { speaker: "Sarah", line: "???,???????????????,???????????——??????????" },
+      { speaker: "Sarah", line: "???,???????????????,???????????ï¿½ï¿½??????????" },
       { speaker: "Alex", line: "?????????????,?????????" },
       { speaker: "Sarah", line: "???!??????????" },
       { speaker: "Alex", line: "??????????????????????,????" },
-      { speaker: "Sarah", line: "???????,????——???????" },
+      { speaker: "Sarah", line: "???????,????ï¿½ï¿½???????" },
       { speaker: "Alex", line: "?????????????????????????????" },
       { speaker: "Sarah", line: "?????!??????????????" },
       { speaker: "Alex", line: "????????????,?????????" },
@@ -139,9 +139,9 @@ export const conversations: ConversationTopic[] = [
       }
     ],
     shadowingPractice: [
-      "Hey, you must be Sarah? I'm Alex — we met briefly at the conference last week?",
+      "Hey, you must be Sarah? I'm Alex ï¿½ we met briefly at the conference last week?",
       "Can't complain, just been swamped with work.",
-      "I fell into it by accident — never looked back.",
+      "I fell into it by accident ï¿½ never looked back.",
       "It's challenging but rewarding, you know?"
     ],
     speakingChallenge: {
@@ -171,33 +171,33 @@ export const conversations: ConversationTopic[] = [
     conversation: [
       { speaker: "Waiter", line: "Good evening! Do you have a reservation?" },
       { speaker: "Mike", line: "Yes, under the name Turner. Party of two." },
-      { speaker: "Waiter", line: "Perfect, right this way. Here are your menus — I'll give you a moment." },
+      { speaker: "Waiter", line: "Perfect, right this way. Here are your menus ï¿½ I'll give you a moment." },
       { speaker: "Emma", line: "Thanks! Could we get some water while we decide?" },
       { speaker: "Waiter", line: "Absolutely. Still or sparkling?" },
       { speaker: "Mike", line: "I'll have still, please. Do you have any specials tonight?" },
       { speaker: "Waiter", line: "Tonight's special is grilled salmon with roasted vegetables. It's really popular." },
       { speaker: "Emma", line: "That sounds nice, but I was eyeing the pasta. Is the truffle sauce good?" },
-      { speaker: "Waiter", line: "Oh, the truffle sauce is amazing — it's made in-house. Highly recommended." },
+      { speaker: "Waiter", line: "Oh, the truffle sauce is amazing ï¿½ it's made in-house. Highly recommended." },
       { speaker: "Mike", line: "I'll go with the salmon, medium rare please. And the truffle pasta for her." },
-      { speaker: "Emma", line: "One more thing — could I get my dressing on the side for the salad?" },
+      { speaker: "Emma", line: "One more thing ï¿½ could I get my dressing on the side for the salad?" },
       { speaker: "Waiter", line: "Of course. Anything else? Allergies I should know about?" },
       { speaker: "Mike", line: "Nope, we're good. When do you expect our food?" },
-      { speaker: "Waiter", line: "About 15–20 minutes. I'll bring your drinks right away." },
+      { speaker: "Waiter", line: "About 15ï¿½20 minutes. I'll bring your drinks right away." },
       { speaker: "Emma", line: "Thanks so much! You've been really helpful." },
       { speaker: "Waiter", line: "My pleasure. I'll check on you soon." }
     ],
     chineseTranslation: [
       { speaker: "Waiter", line: "???!??????" },
       { speaker: "Mike", line: "??,?Turner??????" },
-      { speaker: "Waiter", line: "??,????????——????????" },
+      { speaker: "Waiter", line: "??,????????ï¿½ï¿½????????" },
       { speaker: "Emma", line: "??!??????????????????" },
       { speaker: "Waiter", line: "?????????????" },
       { speaker: "Mike", line: "????????,??????????" },
       { speaker: "Waiter", line: "?????????????????????" },
       { speaker: "Emma", line: "?????,?????????????????" },
-      { speaker: "Waiter", line: "?,??????——????????????" },
+      { speaker: "Waiter", line: "?,??????ï¿½ï¿½????????????" },
       { speaker: "Mike", line: "?????,???????????" },
-      { speaker: "Emma", line: "?????——????????????" },
+      { speaker: "Emma", line: "?????ï¿½ï¿½????????????" },
       { speaker: "Waiter", line: "??????????????????" },
       { speaker: "Mike", line: "??,????????????????" },
       { speaker: "Waiter", line: "??15-20????????????" },
@@ -247,7 +247,7 @@ export const conversations: ConversationTopic[] = [
     ],
     rolePlayPractice: [
       {
-        scenario: "You are at a café. Order a drink and a snack. Ask about today's special. Make a special request.",
+        scenario: "You are at a cafï¿½. Order a drink and a snack. Ask about today's special. Make a special request.",
         prompts: [
           "Greet the server and ask to see the menu",
           "Ask about today's specials",
@@ -297,7 +297,7 @@ export const conversations: ConversationTopic[] = [
     registerMarkers: [
       { level: "formal", label: "Formal", color: "bg-blue-100 text-blue-800 border-blue-200", description: "Business coffee meetings" },
       { level: "neutral", label: "Neutral", color: "bg-gray-100 text-gray-800 border-gray-200", description: "Standard coffee shop interaction" },
-      { level: "casual", label: "Casual", color: "bg-green-100 text-green-800 border-green-200", description: "With friends at a café" }
+      { level: "casual", label: "Casual", color: "bg-green-100 text-green-800 border-green-200", description: "With friends at a cafï¿½" }
     ],
     warmUp: {
       title: "Warm-Up: Coffee Culture",
@@ -309,7 +309,7 @@ export const conversations: ConversationTopic[] = [
         word: "brew",
         phonetic: "/bru?/",
         chinese: "??",
-        pinyin: "chong pèi",
+        pinyin: "chong pï¿½i",
         partOfSpeech: "verb",
         definitionEn: "To make coffee or tea by pouring hot water over it.",
         definitionZh: "??????????????",
@@ -321,7 +321,7 @@ export const conversations: ConversationTopic[] = [
         word: "latte",
         phonetic: "/'l??te?/",
         chinese: "??",
-        pinyin: "ná tie",
+        pinyin: "nï¿½ tie",
         partOfSpeech: "noun",
         definitionEn: "Coffee drink made with espresso and steamed milk.",
         definitionZh: "??????????????????",
@@ -337,15 +337,15 @@ export const conversations: ConversationTopic[] = [
           id: "de-coffee-1",
           expression: "What can I get for you?",
           chinese: "??????",
-          pinyin: "nín yào dian shén me?",
+          pinyin: "nï¿½n yï¿½o dian shï¿½n me?",
           meaning: "Standard greeting from baristas and servers asking what you'd like to order.",
-          whenToUse: "When being served at a café, restaurant, or bar. The server is asking for your order.",
-          whenNotToUse: "Don't use this as a customer — it's the server's line. As a customer, say 'I'll have...' or 'I'd like...'",
-          nativeFrequency: "Extremely common — heard multiple times daily in service settings.",
+          whenToUse: "When being served at a cafï¿½, restaurant, or bar. The server is asking for your order.",
+          whenNotToUse: "Don't use this as a customer ï¿½ it's the server's line. As a customer, say 'I'll have...' or 'I'd like...'",
+          nativeFrequency: "Extremely common ï¿½ heard multiple times daily in service settings.",
           commonMistakes: [
             { mistake: "Customer saying 'What can I get for you?' to the barista", correction: "The barista says this to you. You respond with your order." }
           ],
-          pronunciation: "/w?t kæn a? get f?r ju?/",
+          pronunciation: "/w?t kï¿½n a? get f?r ju?/",
           funnyExample: "A: What can I get for you? B: You, obviously. A: ...That's not what I meant.",
           memoryTrick: "Think: 'What = order' + 'get = receive' = 'What do you want to receive?'",
           relatedExpressions: ["I'll have...", "I'd like...", "Can I get...?"],
@@ -359,7 +359,7 @@ export const conversations: ConversationTopic[] = [
           id: "de-coffee-2",
           expression: "You got it",
           chinese: "???",
-          pinyin: "méi wèn tí",
+          pinyin: "mï¿½i wï¿½n tï¿½",
           meaning: "A casual way to confirm or agree to a request.",
           whenToUse: "When confirming an order, agreeing to a request, or showing you understand.",
           whenNotToUse: "Don't use in very formal settings. Use 'Certainly' or 'Of course' instead.",
@@ -389,14 +389,14 @@ export const conversations: ConversationTopic[] = [
     conversation: [
       { speaker: "Barista", line: "Hey there! What can I get for you?", register: "casual", note: "Standard greeting with friendly tone" },
       { speaker: "Lisa", line: "Hi! I'll take a large latte, please.", register: "neutral" },
-      { speaker: "Barista", line: "Sure. Milk choice — we have whole, skim, oat, and almond.", register: "neutral" },
+      { speaker: "Barista", line: "Sure. Milk choice ï¿½ we have whole, skim, oat, and almond.", register: "neutral" },
       { speaker: "Lisa", line: "Oat milk, please. And can you make it with an extra shot?", register: "neutral" },
       { speaker: "Barista", line: "Of course. That'll be one extra shot for $1.10. Anything else?", register: "neutral" },
       { speaker: "Lisa", line: "Actually, throw in a blueberry muffin too. Is that gluten-free?", register: "casual", note: "'Throw in' = casually add" },
       { speaker: "Barista", line: "Nope, it has gluten, unfortunately. Our gluten-free option is the banana bread.", register: "neutral" },
       { speaker: "Lisa", line: "Hmm, I'll just take the muffin then. I'm not that strict about gluten anyway.", register: "casual" },
       { speaker: "Barista", line: "Haha, fair enough. So that's one oat milk latte with an extra shot and a blueberry muffin.", register: "neutral" },
-      { speaker: "Lisa", line: "Exactly. Oh — and can I get that for here or to-go?", register: "neutral" },
+      { speaker: "Lisa", line: "Exactly. Oh ï¿½ and can I get that for here or to-go?", register: "neutral" },
       { speaker: "Barista", line: "To-go, you said?", register: "neutral" },
       { speaker: "Lisa", line: "Actually, make it for here. I'll stay and chat with my friend.", register: "neutral" },
       { speaker: "Barista", line: "You got it. That'll be $7.50 total.", register: "casual" },
@@ -415,7 +415,7 @@ export const conversations: ConversationTopic[] = [
       { speaker: "Barista", line: "??,????????????????????" },
       { speaker: "Lisa", line: "?,????????????????????" },
       { speaker: "Barista", line: "??,??????????????????,?????????" },
-      { speaker: "Lisa", line: "????——????????????" },
+      { speaker: "Lisa", line: "????ï¿½ï¿½????????????" },
       { speaker: "Barista", line: "???????" },
       { speaker: "Lisa", line: "??,?????????????????" },
       { speaker: "Barista", line: "?????7.50???" },
@@ -461,7 +461,7 @@ export const conversations: ConversationTopic[] = [
       ]
     },
     rolePlay: {
-      scenario: "You are at a café. Order a drink and a snack. Ask about today's special. Make a special request.",
+      scenario: "You are at a cafï¿½. Order a drink and a snack. Ask about today's special. Make a special request.",
       prompts: [
         "Greet the barista",
         "Order your drink with customization",
@@ -477,7 +477,7 @@ export const conversations: ConversationTopic[] = [
     },
     homework: {
       task: "Real-World Ordering",
-      description: "Go to a café or coffee shop this week and order in English. Write down exactly what you said and what the barista said. Reflect: did you feel more confident?",
+      description: "Go to a cafï¿½ or coffee shop this week and order in English. Write down exactly what you said and what the barista said. Reflect: did you feel more confident?",
       dueText: "Before next lesson"
     },
     quiz: [
@@ -604,7 +604,7 @@ export const conversations: ConversationTopic[] = [
         word: "fitting room",
         phonetic: "/'f?t?? ru?m/",
         chinese: "???",
-        pinyin: "shì yi jian",
+        pinyin: "shï¿½ yi jian",
         partOfSpeech: "noun",
         definitionEn: "A private room in a store where you can try on clothes.",
         definitionZh: "??????????,???????????",
@@ -614,9 +614,9 @@ export const conversations: ConversationTopic[] = [
       },
       {
         word: "cashier",
-        phonetic: "/kæ'??r/",
+        phonetic: "/kï¿½'??r/",
         chinese: "???",
-        pinyin: "shou yín yuán",
+        pinyin: "shou yï¿½n yuï¿½n",
         partOfSpeech: "noun",
         definitionEn: "The person who handles payments at a store.",
         definitionZh: "??????????",
@@ -628,7 +628,7 @@ export const conversations: ConversationTopic[] = [
         word: "discount",
         phonetic: "/'d?ska?nt/",
         chinese: "??",
-        pinyin: "zhé kòu",
+        pinyin: "zhï¿½ kï¿½u",
         partOfSpeech: "noun",
         definitionEn: "A reduction in the regular price of something.",
         definitionZh: "??????????",
@@ -640,7 +640,7 @@ export const conversations: ConversationTopic[] = [
         word: "refund",
         phonetic: "/'ri?f?nd/",
         chinese: "??",
-        pinyin: "tuì kuan",
+        pinyin: "tuï¿½ kuan",
         partOfSpeech: "noun",
         definitionEn: "The return of money after a purchase.",
         definitionZh: "????????",
@@ -656,7 +656,7 @@ export const conversations: ConversationTopic[] = [
           id: "de-shopping-1",
           expression: "I'm just looking",
           chinese: "???????",
-          pinyin: "wo zhi shì suí biàn kàn kan",
+          pinyin: "wo zhi shï¿½ suï¿½ biï¿½n kï¿½n kan",
           meaning: "A polite way to tell a salesperson you don't need help right now.",
           whenToUse: "When a salesperson approaches you and you want to browse independently.",
           whenNotToUse: "Don't use if you actually want help. Then say 'Yes, do you have this in medium?' instead.",
@@ -678,15 +678,15 @@ export const conversations: ConversationTopic[] = [
           id: "de-shopping-2",
           expression: "That works for me",
           chinese: "?????",
-          pinyin: "zhè duì wo hé shì",
+          pinyin: "zhï¿½ duï¿½ wo hï¿½ shï¿½",
           meaning: "Accepting an offer, deal, or suggestion that suits you.",
           whenToUse: "When agreeing to a price, plan, or suggestion. Very common in negotiations.",
           whenNotToUse: "Don't use when rejecting. Say 'That doesn't work for me' to decline.",
           nativeFrequency: "Very common in shopping and business negotiations.",
           commonMistakes: [
-            { mistake: "Using 'That's good' instead", correction: "'That works for me' is more active — it shows the option fits your needs" }
+            { mistake: "Using 'That's good' instead", correction: "'That works for me' is more active ï¿½ it shows the option fits your needs" }
           ],
-          pronunciation: "/ğæt w??ks f?r mi?/",
+          pronunciation: "/ï¿½ï¿½t w??ks f?r mi?/",
           funnyExample: "A: The price is $80. B: That works for me! A: Great! B: ...I meant I'll work for $80.",
           memoryTrick: "Think: 'works = functions' + 'for me = for my needs' = 'it fits my needs'",
           relatedExpressions: ["That suits me", "I'll take it", "Sounds good", "Perfect"],
@@ -700,7 +700,7 @@ export const conversations: ConversationTopic[] = [
           id: "de-shopping-3",
           expression: "You're a lifesaver",
           chinese: "???????",
-          pinyin: "ni zhen shì bang le dà máng",
+          pinyin: "ni zhen shï¿½ bang le dï¿½ mï¿½ng",
           meaning: "Strong informal gratitude when someone does something helpful.",
           whenToUse: "When someone goes above and beyond to help you. Very warm and appreciative.",
           whenNotToUse: "Don't use with strangers or in formal settings. Use 'Thank you so much' instead.",
@@ -729,36 +729,36 @@ export const conversations: ConversationTopic[] = [
     ],
     conversation: [
       { speaker: "Sales associate", line: "Hi there! Let me know if you need any help finding your size.", register: "neutral" },
-      { speaker: "Jenny", line: "Thanks! I'm just looking for casual summer dresses — do you have anything in medium?", register: "neutral" },
+      { speaker: "Jenny", line: "Thanks! I'm just looking for casual summer dresses ï¿½ do you have anything in medium?", register: "neutral" },
       { speaker: "Sales associate", line: "Absolutely! We have a whole new section right here. What's your price range?", register: "neutral" },
       { speaker: "Jenny", line: "I'd prefer something under $60, if possible. I'm on a bit of a budget.", register: "neutral" },
-      { speaker: "Sales associate", line: "We have some lovely options right here. This floral one is on sale — 30% off.", register: "neutral" },
+      { speaker: "Sales associate", line: "We have some lovely options right here. This floral one is on sale ï¿½ 30% off.", register: "neutral" },
       { speaker: "Jenny", line: "Oh, that's cute! Can I try it on?", register: "neutral" },
       { speaker: "Sales associate", line: "Of course! The fitting rooms are right over there. Size medium is on the hanger.", register: "neutral" },
-      { speaker: "Jenny", line: "Perfect. Oh — do you take credit cards?", register: "neutral" },
+      { speaker: "Jenny", line: "Perfect. Oh ï¿½ do you take credit cards?", register: "neutral" },
       { speaker: "Sales associate", line: "Yes, we take Visa, Mastercard, and Apple Pay. Cash too, if you prefer.", register: "neutral" },
       { speaker: "Jenny", line: "Great. I'll be right back!", register: "neutral" },
       { speaker: "Jenny", line: "(coming back) Hmm, it's a little tight around the shoulders. Do you have a large?", register: "neutral" },
       { speaker: "Sales associate", line: "Let me check... yes, right here! I'll also grab a few other styles for you.", register: "neutral" },
       { speaker: "Jenny", line: "You're a lifesaver. Also, if I buy two, is there an additional discount?", register: "casual" },
-      { speaker: "Sales associate", line: "Actually, yes — 20% off when you buy two or more items today only.", register: "neutral" },
+      { speaker: "Sales associate", line: "Actually, yes ï¿½ 20% off when you buy two or more items today only.", register: "neutral" },
       { speaker: "Jenny", line: "That works for me! I'll try these too.", register: "neutral" }
     ],
     chineseTranslation: [
       { speaker: "Sales associate", line: "??!??????????????" },
-      { speaker: "Jenny", line: "??!???????????——????????" },
+      { speaker: "Jenny", line: "??!???????????ï¿½ï¿½????????" },
       { speaker: "Sales associate", line: "???!?????????????????????" },
       { speaker: "Jenny", line: "??????,???60??????????????" },
-      { speaker: "Sales associate", line: "????????????????????——???" },
+      { speaker: "Sales associate", line: "????????????????????ï¿½ï¿½???" },
       { speaker: "Jenny", line: "?,???!????????" },
       { speaker: "Sales associate", line: "??!?????????????????" },
-      { speaker: "Jenny", line: "?????——?????????" },
+      { speaker: "Jenny", line: "?????ï¿½ï¿½?????????" },
       { speaker: "Sales associate", line: "??,????Visa?Mastercard?Apple Pay???????" },
       { speaker: "Jenny", line: "?????????!" },
       { speaker: "Jenny", line: "(??)?,??????????????" },
       { speaker: "Sales associate", line: "?????...??,???!????????????" },
       { speaker: "Jenny", line: "??????????,??????,????????" },
-      { speaker: "Sales associate", line: "?????——????????????" },
+      { speaker: "Sales associate", line: "?????ï¿½ï¿½????????????" },
       { speaker: "Jenny", line: "??????!????????" }
     ],
     grammarInContext: [
@@ -941,7 +941,7 @@ export const conversations: ConversationTopic[] = [
         word: "destination",
         phonetic: "/?dest?'ne??n/",
         chinese: "???",
-        pinyin: "mù dì dì",
+        pinyin: "mï¿½ dï¿½ dï¿½",
         partOfSpeech: "noun",
         definitionEn: "The place you are going to.",
         definitionZh: "???????",
@@ -953,7 +953,7 @@ export const conversations: ConversationTopic[] = [
         word: "pickup",
         phonetic: "/'p?k?p/",
         chinese: "????",
-        pinyin: "jie rén dì dian",
+        pinyin: "jie rï¿½n dï¿½ dian",
         partOfSpeech: "noun",
         definitionEn: "The location where a driver collects a passenger.",
         definitionZh: "?????????",
@@ -963,7 +963,7 @@ export const conversations: ConversationTopic[] = [
       },
       {
         word: "traffic",
-        phonetic: "/'træf?k/",
+        phonetic: "/'trï¿½f?k/",
         chinese: "??",
         pinyin: "jiao tong",
         partOfSpeech: "noun",
@@ -993,7 +993,7 @@ export const conversations: ConversationTopic[] = [
           id: "de-taxi-1",
           expression: "Are you heading to...?",
           chinese: "???...??",
-          pinyin: "nín yào qù... ma?",
+          pinyin: "nï¿½n yï¿½o qï¿½... ma?",
           meaning: "Asking someone about their destination.",
           whenToUse: "When confirming where someone is going. Very common with drivers, concierges, and travel staff.",
           whenNotToUse: "Don't use for past trips. Use 'Did you go to...?' for past tense.",
@@ -1015,7 +1015,7 @@ export const conversations: ConversationTopic[] = [
           id: "de-taxi-2",
           expression: "Depending on traffic",
           chinese: "?????",
-          pinyin: "kàn jiao tong qíng kuàng",
+          pinyin: "kï¿½n jiao tong qï¿½ng kuï¿½ng",
           meaning: "A phrase indicating that time or outcome varies based on traffic conditions.",
           whenToUse: "When giving time estimates for travel. Shows awareness of uncertainty.",
           whenNotToUse: "Don't use for non-traffic situations. Use 'Depending on the weather' for weather.",
@@ -1023,7 +1023,7 @@ export const conversations: ConversationTopic[] = [
           commonMistakes: [
             { mistake: "Using 'depending about'", correction: "Always use 'depending on'" }
           ],
-          pronunciation: "/d?'pend?? ?n 'træf?k/",
+          pronunciation: "/d?'pend?? ?n 'trï¿½f?k/",
           funnyExample: "A: When will you arrive? B: Depending on traffic. A: ...But there's no traffic. B: Then I'm here.",
           memoryTrick: "Think: 'depend = rely on' + 'on traffic' = 'rely on traffic conditions'",
           relatedExpressions: ["It depends", "Depending on the weather", "Subject to change"],
@@ -1037,11 +1037,11 @@ export const conversations: ConversationTopic[] = [
           id: "de-taxi-3",
           expression: "Take your time",
           chinese: "???",
-          pinyin: "màn màn lái",
+          pinyin: "mï¿½n mï¿½n lï¿½i",
           meaning: "A polite way to tell someone they don't need to hurry.",
           whenToUse: "When someone is running late or needs extra time. Very common and polite.",
           whenNotToUse: "Don't use if you actually need them to hurry. Use 'Hurry up' or 'We're running late' instead.",
-          nativeFrequency: "Extremely common — one of the most polite phrases in English.",
+          nativeFrequency: "Extremely common ï¿½ one of the most polite phrases in English.",
           commonMistakes: [
             { mistake: "Using sarcastically without context", correction: "This phrase is almost always sincere in English" }
           ],
@@ -1059,10 +1059,10 @@ export const conversations: ConversationTopic[] = [
           id: "de-taxi-4",
           expression: "Pull over",
           chinese: "???",
-          pinyin: "kào bian tíng",
+          pinyin: "kï¿½o bian tï¿½ng",
           meaning: "To move a vehicle to the side of the road and stop.",
           whenToUse: "When asking a driver to stop at the side of the road. Also used by police.",
-          whenNotToUse: "Don't use 'stop the car' as a polite request — it sounds like a command.",
+          whenNotToUse: "Don't use 'stop the car' as a polite request ï¿½ it sounds like a command.",
           nativeFrequency: "Very common in driving and transportation contexts.",
           commonMistakes: [
             { mistake: "Saying 'stop the car' to a taxi driver", correction: "Say 'Could you pull over here, please?'" }
@@ -1089,25 +1089,25 @@ export const conversations: ConversationTopic[] = [
     conversation: [
       { speaker: "Driver", line: "Hi there! Are you heading to the airport?", register: "neutral" },
       { speaker: "Tom", line: "Yes, Terminal 3. Is that a long ride?", register: "neutral" },
-      { speaker: "Driver", line: "About 35 minutes, depending on traffic. I'll take the highway — it's usually faster.", register: "neutral" },
+      { speaker: "Driver", line: "About 35 minutes, depending on traffic. I'll take the highway ï¿½ it's usually faster.", register: "neutral" },
       { speaker: "Tom", line: "Sounds good. Do you mind if I stop briefly to grab a coffee? It's just around the corner.", register: "neutral" },
       { speaker: "Driver", line: "Sure, no problem. I'll pull over here.", register: "neutral" },
       { speaker: "Tom", line: "Thanks! I'll be two minutes tops.", register: "neutral" },
       { speaker: "Driver", line: "Take your time. Do you want the receipt emailed or printed?", register: "neutral" },
       { speaker: "Tom", line: "Emailed, please. Oh, and could you turn up the AC a bit? It's a bit warm in here.", register: "neutral" },
-      { speaker: "Driver", line: "Of course. Here you go — saved you a few minutes. We should make it with time to spare.", register: "neutral" },
+      { speaker: "Driver", line: "Of course. Here you go ï¿½ saved you a few minutes. We should make it with time to spare.", register: "neutral" },
       { speaker: "Tom", line: "Perfect. Thanks for the smooth ride!", register: "neutral" }
     ],
     chineseTranslation: [
       { speaker: "Driver", line: "?!???????" },
       { speaker: "Tom", line: "??,3??????????" },
-      { speaker: "Driver", line: "??35??,??????????——?????" },
+      { speaker: "Driver", line: "??35??,??????????ï¿½ï¿½?????" },
       { speaker: "Tom", line: "???????????????????????????" },
       { speaker: "Driver", line: "??????????????" },
       { speaker: "Tom", line: "??!?????????" },
       { speaker: "Driver", line: "????????????????" },
-      { speaker: "Tom", line: "??????——????????????????" },
-      { speaker: "Driver", line: "?????——??????????????????" },
+      { speaker: "Tom", line: "??????ï¿½ï¿½????????????????" },
+      { speaker: "Driver", line: "?????ï¿½ï¿½??????????????????" },
       { speaker: "Tom", line: "?????????????!" }
     ],
     grammarInContext: [
@@ -1281,15 +1281,15 @@ export const conversations: ConversationTopic[] = [
     ],
     warmUp: {
       title: "Warm-Up: Airport Survival",
-      content: "Airports have their own language — from check-in to boarding. In this lesson, you'll learn the essential phrases to navigate airports confidently in English.",
-      contentZh: "??????????——???????????,?????????????????????"
+      content: "Airports have their own language ï¿½ from check-in to boarding. In this lesson, you'll learn the essential phrases to navigate airports confidently in English.",
+      contentZh: "??????????ï¿½ï¿½???????????,?????????????????????"
     },
     vocabulary: [
       {
         word: "boarding pass",
-        phonetic: "/'b??rd?? pæs/",
+        phonetic: "/'b??rd?? pï¿½s/",
         chinese: "???",
-        pinyin: "deng ji pái",
+        pinyin: "deng ji pï¿½i",
         partOfSpeech: "noun",
         definitionEn: "A document that allows a passenger to board a flight.",
         definitionZh: "??????????",
@@ -1325,7 +1325,7 @@ export const conversations: ConversationTopic[] = [
         word: "overhead bin",
         phonetic: "/'o?v?rhed b?n/",
         chinese: "?????",
-        pinyin: "tóu di xíng li jià",
+        pinyin: "tï¿½u di xï¿½ng li jiï¿½",
         partOfSpeech: "noun",
         definitionEn: "The storage compartment above the seats on a plane.",
         definitionZh: "???????????",
@@ -1341,7 +1341,7 @@ export const conversations: ConversationTopic[] = [
           id: "de-airport-1",
           expression: "May I see...?",
           chinese: "???...",
-          pinyin: "qing chu shì...",
+          pinyin: "qing chu shï¿½...",
           meaning: "A polite formal request to see someone's documents or ID.",
           whenToUse: "When checking in at airports, hotels, or official venues. Very common and polite.",
           whenNotToUse: "Don't use with friends or family. Use 'Can I see...?' for casual situations.",
@@ -1363,11 +1363,11 @@ export const conversations: ConversationTopic[] = [
           id: "de-airport-2",
           expression: "Here you go",
           chinese: "??",
-          pinyin: "gei nín",
+          pinyin: "gei nï¿½n",
           meaning: "Giving something to someone in a casual, friendly way.",
           whenToUse: "When handing over documents, money, or items. Very common everywhere.",
-          whenNotToUse: "Don't use when receiving — use 'Thank you' instead.",
-          nativeFrequency: "Extremely common — one of the most useful phrases in English.",
+          whenNotToUse: "Don't use when receiving ï¿½ use 'Thank you' instead.",
+          nativeFrequency: "Extremely common ï¿½ one of the most useful phrases in English.",
           commonMistakes: [
             { mistake: "Using in very formal writing", correction: "Use 'Please find attached' in formal emails" }
           ],
@@ -1385,7 +1385,7 @@ export const conversations: ConversationTopic[] = [
           id: "de-airport-3",
           expression: "Proceed to",
           chinese: "??",
-          pinyin: "qián wang",
+          pinyin: "qiï¿½n wang",
           meaning: "Official instruction to go to a specific location.",
           whenToUse: "At airports, government buildings, and official venues. Formal and clear.",
           whenNotToUse: "Don't use with friends. Use 'Go to' or 'Head to' in casual situations.",
@@ -1416,7 +1416,7 @@ export const conversations: ConversationTopic[] = [
       { speaker: "Agent", line: "Good morning! May I see your passport and boarding pass, please?", register: "formal" },
       { speaker: "David", line: "Sure, here you go. Is the flight on time?", register: "neutral" },
       { speaker: "Agent", line: "Yes, boarding starts at 10:30 at Gate C4. Do you have any checked bags?", register: "neutral" },
-      { speaker: "David", line: "Just this one suitcase. I have some electronics in my carry-on too — do I need to take them out?", register: "neutral" },
+      { speaker: "David", line: "Just this one suitcase. I have some electronics in my carry-on too ï¿½ do I need to take them out?", register: "neutral" },
       { speaker: "Agent", line: "Laptops and tablets need to go in the bin separately. Phones can stay in your bag.", register: "neutral" },
       { speaker: "David", line: "Got it. How much is the overweight fee if I'm over the limit?", register: "neutral" },
       { speaker: "Agent", line: "For international flights, it's $50 per kilogram over 23kg.", register: "neutral" },
@@ -1427,7 +1427,7 @@ export const conversations: ConversationTopic[] = [
       { speaker: "Agent", line: "???!????????????" },
       { speaker: "David", line: "??,?????????" },
       { speaker: "Agent", line: "??,10:30????,?C4????????????" },
-      { speaker: "David", line: "????????????????????????——???????" },
+      { speaker: "David", line: "????????????????????????ï¿½ï¿½???????" },
       { speaker: "Agent", line: "???????????????????????????" },
       { speaker: "David", line: "????????,???????" },
       { speaker: "Agent", line: "???????23?????,???50???" },
@@ -1447,7 +1447,7 @@ export const conversations: ConversationTopic[] = [
     ],
     pronunciation: [
       { tip: "'May I' ? /me? a?/ with linking", example: "May I see..." },
-      { tip: "'Boarding pass' ? /'b??rd?? pæs/", example: "Stress the first syllable of each word" }
+      { tip: "'Boarding pass' ? /'b??rd?? pï¿½s/", example: "Stress the first syllable of each word" }
     ],
     shadowing: [
       { line: "Good morning! May I see your passport and boarding pass, please?", emphasis: "May I see" },
@@ -1613,7 +1613,7 @@ export const conversations: ConversationTopic[] = [
         word: "up for",
         phonetic: "/?p f?r/",
         chinese: "??",
-        pinyin: "yuàn yì",
+        pinyin: "yuï¿½n yï¿½",
         partOfSpeech: "phrase",
         definitionEn: "Willing to do something; interested in an activity.",
         definitionZh: "?????;?????????",
@@ -1623,9 +1623,9 @@ export const conversations: ConversationTopic[] = [
       },
       {
         word: "hang out",
-        phonetic: "/hæ? a?t/",
+        phonetic: "/hï¿½? a?t/",
         chinese: "??",
-        pinyin: "xián guàng",
+        pinyin: "xiï¿½n guï¿½ng",
         partOfSpeech: "phrasal verb",
         definitionEn: "To spend time relaxing with friends, without a specific plan.",
         definitionZh: "????????????,???????",
@@ -1635,9 +1635,9 @@ export const conversations: ConversationTopic[] = [
       },
       {
         word: "last-minute",
-        phonetic: "/læst 'mi?n?t/",
+        phonetic: "/lï¿½st 'mi?n?t/",
         chinese: "???",
-        pinyin: "lín shí de",
+        pinyin: "lï¿½n shï¿½ de",
         partOfSpeech: "adjective",
         definitionEn: "Happening or done at the last possible moment.",
         definitionZh: "?????????????????",
@@ -1653,15 +1653,15 @@ export const conversations: ConversationTopic[] = [
           id: "de-weekend-1",
           expression: "Any plans for...?",
           chinese: "???????",
-          pinyin: "you shén me jì huà ma?",
+          pinyin: "you shï¿½n me jï¿½ huï¿½ ma?",
           meaning: "Asking someone what they intend to do in a specific time period.",
           whenToUse: "When asking about someone's weekend, evening, or holiday plans.",
           whenNotToUse: "Don't use for past events. Use 'Did you have plans for...?' for past tense.",
-          nativeFrequency: "Extremely common — you'll hear this every week.",
+          nativeFrequency: "Extremely common ï¿½ you'll hear this every week.",
           commonMistakes: [
             { mistake: "Using 'Do you have plans?' instead", correction: "'Any plans' is more natural in casual English" }
           ],
-          pronunciation: "/'eni plænz f?r/",
+          pronunciation: "/'eni plï¿½nz f?r/",
           funnyExample: "A: Any plans for the weekend? B: Yes, my bed and I are very close. A: ...Same.",
           memoryTrick: "Think: 'any = some' + 'plans = ideas' = 'do you have any ideas?'",
           relatedExpressions: ["What are you up to?", "What's the plan?", "Anything fun planned?"],
@@ -1675,7 +1675,7 @@ export const conversations: ConversationTopic[] = [
           id: "de-weekend-2",
           expression: "I'm up for it",
           chinese: "???",
-          pinyin: "wo yuàn yì",
+          pinyin: "wo yuï¿½n yï¿½",
           meaning: "Expressing willingness or interest in doing something.",
           whenToUse: "When accepting an invitation or suggestion enthusiastically.",
           whenNotToUse: "Don't use if you're not actually interested. Say 'I'm not really up for it' to decline politely.",
@@ -1697,13 +1697,13 @@ export const conversations: ConversationTopic[] = [
           id: "de-weekend-3",
           expression: "Works for me",
           chinese: "?????",
-          pinyin: "zhè duì wo hé shì",
+          pinyin: "zhï¿½ duï¿½ wo hï¿½ shï¿½",
           meaning: "Accepting a time, plan, or suggestion that suits you.",
           whenToUse: "When agreeing to a proposed time or plan. Very common in scheduling.",
           whenNotToUse: "Don't use when rejecting. Say 'That doesn't work for me' to decline.",
           nativeFrequency: "Very common in social and professional planning.",
           commonMistakes: [
-            { mistake: "Using 'It's good' instead", correction: "'Works for me' is more active — shows the option fits your schedule" }
+            { mistake: "Using 'It's good' instead", correction: "'Works for me' is more active ï¿½ shows the option fits your schedule" }
           ],
           pronunciation: "/w??ks f?r mi?/",
           funnyExample: "A: Let's meet at 6 AM. B: That works for me. A: ...Are you a robot?",
@@ -1734,8 +1734,8 @@ export const conversations: ConversationTopic[] = [
       { speaker: "Amy", line: "Works for me! Should we invite Lisa and Mike too?", register: "neutral" },
       { speaker: "John", line: "Good idea. I'll text them. If they can't make it, it's just more coffee for us.", register: "neutral" },
       { speaker: "Amy", line: "Haha, exactly. Oh, and if it rains, should we have a backup plan?", register: "casual" },
-      { speaker: "John", line: "Good thinking. There's a board game café right around the corner if we need it.", register: "neutral" },
-      { speaker: "Amy", line: "Perfect! So 11 AM, art exhibit, and Italian food — or board games if it rains. I'm excited!", register: "casual" }
+      { speaker: "John", line: "Good thinking. There's a board game cafï¿½ right around the corner if we need it.", register: "neutral" },
+      { speaker: "Amy", line: "Perfect! So 11 AM, art exhibit, and Italian food ï¿½ or board games if it rains. I'm excited!", register: "casual" }
     ],
     chineseTranslation: [
       { speaker: "Amy", line: "?!?????????" },
@@ -1746,9 +1746,9 @@ export const conversations: ConversationTopic[] = [
       { speaker: "John", line: "??11??????????????????,??????" },
       { speaker: "Amy", line: "?????!??????Lisa?Mike????" },
       { speaker: "John", line: "???????????????????,?????????" },
-      { speaker: "Amy", line: "??,????——????,????????????" },
+      { speaker: "Amy", line: "??,????ï¿½ï¿½????,????????????" },
       { speaker: "John", line: "?????????????????,????????????" },
-      { speaker: "Amy", line: "???!?????11?,???,????——??????????????!" }
+      { speaker: "Amy", line: "???!?????11?,???,????ï¿½ï¿½??????????????!" }
     ],
     grammarInContext: [
       {
@@ -1921,8 +1921,8 @@ export const conversations: ConversationTopic[] = [
     ],
     warmUp: {
       title: "Warm-Up: The Art of Rescheduling",
-      content: "Life happens — plans change. In this lesson, you'll learn how to cancel and reschedule politely while maintaining good relationships.",
-      contentZh: "??????——?????????,??????????????,??????????"
+      content: "Life happens ï¿½ plans change. In this lesson, you'll learn how to cancel and reschedule politely while maintaining good relationships.",
+      contentZh: "??????ï¿½ï¿½?????????,??????????????,??????????"
     },
     vocabulary: [
       {
@@ -1941,7 +1941,7 @@ export const conversations: ConversationTopic[] = [
         word: "postpone",
         phonetic: "/po?st'po?n/",
         chinese: "??",
-        pinyin: "tui chí",
+        pinyin: "tui chï¿½",
         partOfSpeech: "verb",
         definitionEn: "To delay an event to a later time.",
         definitionZh: "????????????",
@@ -1953,7 +1953,7 @@ export const conversations: ConversationTopic[] = [
         word: "unavoidable",
         phonetic: "/??n?'v??d?bl/",
         chinese: "?????",
-        pinyin: "bù ke bì mian de",
+        pinyin: "bï¿½ ke bï¿½ mian de",
         partOfSpeech: "adjective",
         definitionEn: "Impossible to prevent or avoid.",
         definitionZh: "??????????",
@@ -1969,13 +1969,13 @@ export const conversations: ConversationTopic[] = [
           id: "de-cancel-1",
           expression: "Are we still on for...?",
           chinese: "??...????????",
-          pinyin: "wo men... de jì huà hái bao liú ma?",
+          pinyin: "wo men... de jï¿½ huï¿½ hï¿½i bao liï¿½ ma?",
           meaning: "Checking if a previously made plan is still happening.",
           whenToUse: "When you want to confirm a plan before the scheduled time. Common and expected.",
           whenNotToUse: "Don't use for plans that haven't been made yet. Use 'Do you want to...?' instead.",
-          nativeFrequency: "Very common — used to confirm plans before they happen.",
+          nativeFrequency: "Very common ï¿½ used to confirm plans before they happen.",
           commonMistakes: [
-            { mistake: "Using 'Are we still for...?'", correction: "Always use 'on for' — it's a fixed phrase" }
+            { mistake: "Using 'Are we still for...?'", correction: "Always use 'on for' ï¿½ it's a fixed phrase" }
           ],
           pronunciation: "/?r wi st?l ?n f?r/",
           funnyExample: "A: Are we still on for tonight? B: Yes, unless the world ends. A: ...I'll prepare for both possibilities.",
@@ -1991,11 +1991,11 @@ export const conversations: ConversationTopic[] = [
           id: "de-cancel-2",
           expression: "Something came up",
           chinese: "????",
-          pinyin: "you shì fa sheng",
+          pinyin: "you shï¿½ fa sheng",
           meaning: "A vague, polite way to say an unexpected event prevented you from doing something.",
           whenToUse: "When cancelling plans without giving too much personal detail. Very common and socially acceptable.",
-          whenNotToUse: "Don't overuse it — if you're always 'something coming up', people will notice.",
-          nativeFrequency: "Extremely common — the standard way to explain a cancellation.",
+          whenNotToUse: "Don't overuse it ï¿½ if you're always 'something coming up', people will notice.",
+          nativeFrequency: "Extremely common ï¿½ the standard way to explain a cancellation.",
           commonMistakes: [
             { mistake: "Giving too much or too little detail", correction: "Brief explanation + apology is the perfect balance" }
           ],
@@ -2013,7 +2013,7 @@ export const conversations: ConversationTopic[] = [
           id: "de-cancel-3",
           expression: "Give me a heads up",
           chinese: "?????",
-          pinyin: "tí qián gào sù wo",
+          pinyin: "tï¿½ qiï¿½n gï¿½o sï¿½ wo",
           meaning: "Asking someone to notify you in advance about something.",
           whenToUse: "When asking someone to warn you before changing plans or doing something that affects you.",
           whenNotToUse: "Don't use as a command. Use it as a polite request: 'Could you give me a heads up?'",
@@ -2045,7 +2045,7 @@ export const conversations: ConversationTopic[] = [
       { speaker: "Tom", line: "Actually, something came up at work. I have to stay late for an unexpected meeting.", register: "neutral" },
       { speaker: "Lisa", line: "Oh no! That's frustrating. Do you want to reschedule?", register: "neutral" },
       { speaker: "Tom", line: "If you're okay with it, sure. Would Friday at the same time work for you?", register: "neutral" },
-      { speaker: "Lisa", line: "Friday should work. But just to be safe — could we make it 4:30 instead? My schedule's a bit packed this week.", register: "neutral" },
+      { speaker: "Lisa", line: "Friday should work. But just to be safe ï¿½ could we make it 4:30 instead? My schedule's a bit packed this week.", register: "neutral" },
       { speaker: "Tom", line: "4:30 works for me. Sorry about the last-minute change!", register: "neutral" },
       { speaker: "Lisa", line: "No worries! Things happen. Just give me a heads up next time, that's all.", register: "casual" },
       { speaker: "Tom", line: "Definitely. I promise I'll be on time Friday. Thanks for being understanding!", register: "neutral" }
@@ -2055,7 +2055,7 @@ export const conversations: ConversationTopic[] = [
       { speaker: "Tom", line: "??,?????????????????????" },
       { speaker: "Lisa", line: "??!?????????????" },
       { speaker: "Tom", line: "????????,???????????????" },
-      { speaker: "Lisa", line: "??????????????——?????4:30???????????" },
+      { speaker: "Lisa", line: "??????????????ï¿½ï¿½?????4:30???????????" },
       { speaker: "Tom", line: "4:30???????????!" },
       { speaker: "Lisa", line: "???!????????????????????" },
       { speaker: "Tom", line: "??????????????????!" }
@@ -2239,7 +2239,7 @@ export const conversations: ConversationTopic[] = [
         word: "sibling",
         phonetic: "/'s?bl??/",
         chinese: "????",
-        pinyin: "xiong dì jie mèi",
+        pinyin: "xiong dï¿½ jie mï¿½i",
         partOfSpeech: "noun",
         definitionEn: "A brother or sister.",
         definitionZh: "????????????",
@@ -2249,9 +2249,9 @@ export const conversations: ConversationTopic[] = [
       },
       {
         word: "extended family",
-        phonetic: "/?k'stend?d 'fæm?li/",
+        phonetic: "/?k'stend?d 'fï¿½m?li/",
         chinese: "???",
-        pinyin: "dà jia tíng",
+        pinyin: "dï¿½ jia tï¿½ng",
         partOfSpeech: "noun",
         definitionEn: "All your relatives including aunts, uncles, and cousins.",
         definitionZh: "?????????????????????",
@@ -2275,7 +2275,7 @@ export const conversations: ConversationTopic[] = [
         word: "reunion",
         phonetic: "/ri?'ju?nj?n/",
         chinese: "??",
-        pinyin: "tuán jù",
+        pinyin: "tuï¿½n jï¿½",
         partOfSpeech: "noun",
         definitionEn: "A gathering of family members who haven't seen each other for a long time.",
         definitionZh: "???????????????",
@@ -2291,7 +2291,7 @@ export const conversations: ConversationTopic[] = [
           id: "de-family-1",
           expression: "I'm the youngest of...",
           chinese: "??...????",
-          pinyin: "wo shì... zhong zuì xiao de",
+          pinyin: "wo shï¿½... zhong zuï¿½ xiao de",
           meaning: "Telling people your birth order in your family.",
           whenToUse: "When someone asks about your family size or siblings.",
           whenNotToUse: "Don't use if you're an only child. Use 'I'm an only child' instead.",
@@ -2299,7 +2299,7 @@ export const conversations: ConversationTopic[] = [
           commonMistakes: [
             { mistake: "Using 'I'm the smaller'", correction: "Use 'youngest' for birth order, not 'smaller'" }
           ],
-          pronunciation: "/a?m ğ? 'j??g?st ?v/",
+          pronunciation: "/a?m ï¿½? 'j??g?st ?v/",
           funnyExample: "A: I'm the youngest of five. B: That explains everything. A: ...What's that supposed to mean?",
           memoryTrick: "Think: 'youngest = smallest age number' = 'born last'",
           relatedExpressions: ["I'm the oldest", "I'm the middle child", "I'm an only child"],
@@ -2321,7 +2321,7 @@ export const conversations: ConversationTopic[] = [
           commonMistakes: [
             { mistake: "Using 'get along to'", correction: "Always use 'get along with'" }
           ],
-          pronunciation: "/get ?'l?? w?ğ/",
+          pronunciation: "/get ?'l?? w?ï¿½/",
           funnyExample: "A: Do you get along with your brother? B: We get along... when he's not eating my food.",
           memoryTrick: "Think: 'along = together' + 'with = together with' = 'be together well with'",
           relatedExpressions: ["I'm close to", "I don't get along with", "We're like best friends"],
@@ -2335,7 +2335,7 @@ export const conversations: ConversationTopic[] = [
           id: "de-family-3",
           expression: "Count me in",
           chinese: "????",
-          pinyin: "suàn wo yi gè",
+          pinyin: "suï¿½n wo yi gï¿½",
           meaning: "Enthusiastically accepting an invitation.",
           whenToUse: "When you want to join an activity or event with excitement.",
           whenNotToUse: "Don't use for serious or formal commitments. Use 'I accept' in formal contexts.",
@@ -2363,7 +2363,7 @@ export const conversations: ConversationTopic[] = [
       { chunk: "to save my life", meaning: "??", example: "I can't sing to save my life.", register: "casual", context: "Self-deprecating humor" }
     ],
     conversation: [
-      { speaker: "Mia", line: "I saw your family photo on Instagram — you have a big family!", register: "neutral" },
+      { speaker: "Mia", line: "I saw your family photo on Instagram ï¿½ you have a big family!", register: "neutral" },
       { speaker: "James", line: "Yeah, I'm the youngest of four. Three older sisters and one brother.", register: "neutral" },
       { speaker: "Mia", line: "Wow, that's a lot! Do you get along with all of them?", register: "neutral" },
       { speaker: "James", line: "Mostly! We bicker like any siblings, but we're close. My parents always emphasized family dinners together.", register: "casual" },
@@ -2372,11 +2372,11 @@ export const conversations: ConversationTopic[] = [
       { speaker: "Mia", line: "Yes! We have a huge reunion every Chinese New Year. All my cousins, aunts, and uncles come together.", register: "neutral" },
       { speaker: "James", line: "That sounds amazing! I've always wanted to experience a big family reunion like that.", register: "neutral" },
       { speaker: "Mia", line: "You should come next year! There's always way too much food and loud karaoke.", register: "casual" },
-      { speaker: "James", line: "Count me in! Though I might hide from the karaoke — I can't sing to save my life.", register: "casual" },
-      { speaker: "Mia", line: "Haha, don't worry — nobody can. That's half the fun!", register: "casual" }
+      { speaker: "James", line: "Count me in! Though I might hide from the karaoke ï¿½ I can't sing to save my life.", register: "casual" },
+      { speaker: "Mia", line: "Haha, don't worry ï¿½ nobody can. That's half the fun!", register: "casual" }
     ],
     chineseTranslation: [
-      { speaker: "Mia", line: "??Instagram?????????——????!" },
+      { speaker: "Mia", line: "??Instagram?????????ï¿½ï¿½????!" },
       { speaker: "James", line: "??,??????????????????????" },
       { speaker: "Mia", line: "?,??!???????????" },
       { speaker: "James", line: "?????!??????????????,????????????????????" },
@@ -2385,8 +2385,8 @@ export const conversations: ConversationTopic[] = [
       { speaker: "Mia", line: "??!?????????????????????????????????" },
       { speaker: "James", line: "???????!????????????????" },
       { speaker: "Mia", line: "??????!?????????????OK?" },
-      { speaker: "James", line: "????!??????????OK——??????" },
-      { speaker: "Mia", line: "??,???——????????????!" }
+      { speaker: "James", line: "????!??????????OKï¿½ï¿½??????" },
+      { speaker: "Mia", line: "??,???ï¿½ï¿½????????????!" }
     ],
     grammarInContext: [
       {
@@ -2400,7 +2400,7 @@ export const conversations: ConversationTopic[] = [
       }
     ],
     pronunciation: [
-      { tip: "'I'm the youngest' ? /a?m ğ? 'j??g?st/", example: "Fast, natural speech" },
+      { tip: "'I'm the youngest' ? /a?m ï¿½? 'j??g?st/", example: "Fast, natural speech" },
       { tip: "'Count me in' ? /ka?nt mi ?n/", example: "Stress 'count' and 'in'" }
     ],
     shadowing: [
@@ -2433,7 +2433,7 @@ export const conversations: ConversationTopic[] = [
         "Invite them to a future family event"
       ],
       partnerLines: [
-        "I saw your family photo — you have a big family!",
+        "I saw your family photo ï¿½ you have a big family!",
         "Do you get along with all of them?",
         "That sounds amazing!",
         "Count me in!"
@@ -2567,7 +2567,7 @@ export const conversations: ConversationTopic[] = [
         word: "workout",
         phonetic: "/'w??rka?t/",
         chinese: "??",
-        pinyin: "duàn liàn",
+        pinyin: "duï¿½n liï¿½n",
         partOfSpeech: "noun",
         definitionEn: "A session of physical exercise.",
         definitionZh: "??????????",
@@ -2579,7 +2579,7 @@ export const conversations: ConversationTopic[] = [
         word: "treadmill",
         phonetic: "/'tredm?l/",
         chinese: "???",
-        pinyin: "pao bù ji",
+        pinyin: "pao bï¿½ ji",
         partOfSpeech: "noun",
         definitionEn: "A machine for running or walking while staying in one place.",
         definitionZh: "??????????????",
@@ -2591,7 +2591,7 @@ export const conversations: ConversationTopic[] = [
         word: "personal trainer",
         phonetic: "/'p??rs?nl tre?n?r/",
         chinese: "????",
-        pinyin: "si rén jiào liàn",
+        pinyin: "si rï¿½n jiï¿½o liï¿½n",
         partOfSpeech: "noun",
         definitionEn: "A fitness professional who works one-on-one with clients.",
         definitionZh: "??????????????",
@@ -2603,7 +2603,7 @@ export const conversations: ConversationTopic[] = [
         word: "muscle",
         phonetic: "/'m?sl/",
         chinese: "??",
-        pinyin: "ji ròu",
+        pinyin: "ji rï¿½u",
         partOfSpeech: "noun",
         definitionEn: "Tissue in the body that contracts to produce movement.",
         definitionZh: "??????????????",
@@ -2619,7 +2619,7 @@ export const conversations: ConversationTopic[] = [
           id: "de-gym-1",
           expression: "Let me show you around",
           chinese: "???????",
-          pinyin: "wo dài nín zhuan guan yi xià",
+          pinyin: "wo dï¿½i nï¿½n zhuan guan yi xiï¿½",
           meaning: "Offering to give someone a tour of a place.",
           whenToUse: "When someone is new to a gym, office, or venue and you want to help them.",
           whenNotToUse: "Don't use if you don't know the place well yourself.",
@@ -2641,15 +2641,15 @@ export const conversations: ConversationTopic[] = [
           id: "de-gym-2",
           expression: "Book in advance",
           chinese: "????",
-          pinyin: "tí qián yù dìng",
+          pinyin: "tï¿½ qiï¿½n yï¿½ dï¿½ng",
           meaning: "Reserving something before you arrive.",
           whenToUse: "For popular classes, appointments, or events that fill up quickly.",
           whenNotToUse: "Don't use for things that don't require reservations.",
           nativeFrequency: "Very common for classes, restaurants, and appointments.",
           commonMistakes: [
-            { mistake: "Using 'book before' instead", correction: "Use 'book in advance' — 'in advance' is the standard phrase" }
+            { mistake: "Using 'book before' instead", correction: "Use 'book in advance' ï¿½ 'in advance' is the standard phrase" }
           ],
-          pronunciation: "/b?k ?n ?d'væns/",
+          pronunciation: "/b?k ?n ?d'vï¿½ns/",
           funnyExample: "A: Do I need to book in advance? B: Yes, or you'll be doing yoga in the hallway. A: ...I'll book.",
           memoryTrick: "Think: 'advance = before' = 'book before you go'",
           relatedExpressions: ["Reserve ahead", "Make a reservation", "Book ahead"],
@@ -2663,13 +2663,13 @@ export const conversations: ConversationTopic[] = [
           id: "de-gym-3",
           expression: "Consistency beats intensity",
           chinese: "????????",
-          pinyin: "jian chí bi qiáng dù gèng zhòng yào",
+          pinyin: "jian chï¿½ bi qiï¿½ng dï¿½ gï¿½ng zhï¿½ng yï¿½o",
           meaning: "Regular, moderate effort is better than occasional extreme effort.",
           whenToUse: "When giving fitness advice or encouraging someone to keep going.",
-          whenNotToUse: "Don't use as a literal rule for everything — it's specific to fitness and habits.",
+          whenNotToUse: "Don't use as a literal rule for everything ï¿½ it's specific to fitness and habits.",
           nativeFrequency: "Common among trainers and fitness enthusiasts.",
           commonMistakes: [
-            { mistake: "Taking it as a strict rule", correction: "It's motivational advice, not a law — intensity has its place too" }
+            { mistake: "Taking it as a strict rule", correction: "It's motivational advice, not a law ï¿½ intensity has its place too" }
           ],
           pronunciation: "/k?n's?st?nsi bi?ts ?n'tens?ti/",
           funnyExample: "A: I only work out once a month, but it's INTENSE. B: Consistency beats intensity. A: ...My monthly workout is 24 hours long.",
@@ -2693,14 +2693,14 @@ export const conversations: ConversationTopic[] = [
     conversation: [
       { speaker: "Trainer", line: "Hi there! Are you new here? Let me show you around if you need.", register: "neutral" },
       { speaker: "Ryan", line: "Thanks! Yeah, this is my first time. I'm mainly interested in the cardio area.", register: "neutral" },
-      { speaker: "Trainer", line: "The treadmills and ellipticals are right over there. Most people start with 20–30 minutes of cardio.", register: "neutral" },
+      { speaker: "Trainer", line: "The treadmills and ellipticals are right over there. Most people start with 20ï¿½30 minutes of cardio.", register: "neutral" },
       { speaker: "Ryan", line: "Got it. Do I need to warm up first?", register: "neutral" },
       { speaker: "Trainer", line: "Absolutely! Five minutes on the treadmill at a slow pace, then some stretching. Prevents injury.", register: "neutral" },
       { speaker: "Ryan", line: "Makes sense. Are there any classes I could join?", register: "neutral" },
-      { speaker: "Trainer", line: "We have yoga at 9, spin class at 10:30, and HIIT at 5. The spin class is super popular — you'd need to book in advance.", register: "neutral" },
+      { speaker: "Trainer", line: "We have yoga at 9, spin class at 10:30, and HIIT at 5. The spin class is super popular ï¿½ you'd need to book in advance.", register: "neutral" },
       { speaker: "Ryan", line: "I'll definitely try spin class. How often do you recommend working out?", register: "neutral" },
       { speaker: "Trainer", line: "For beginners, three times a week is great. Consistency beats intensity, especially at the start.", register: "neutral" },
-      { speaker: "Ryan", line: "That's good to know. One last thing — do you have trainers available for one-on-one sessions?", register: "neutral" },
+      { speaker: "Ryan", line: "That's good to know. One last thing ï¿½ do you have trainers available for one-on-one sessions?", register: "neutral" },
       { speaker: "Trainer", line: "Yes! I'm available tomorrow at 2 PM if you're free. We can design a custom plan based on your goals.", register: "neutral" },
       { speaker: "Ryan", line: "Perfect. Let's do it!", register: "neutral" }
     ],
@@ -2711,10 +2711,10 @@ export const conversations: ConversationTopic[] = [
       { speaker: "Ryan", line: "????????????" },
       { speaker: "Trainer", line: "??!????????5??,?????????????" },
       { speaker: "Ryan", line: "????????????????" },
-      { speaker: "Trainer", line: "???9?????,10:30????,??5??????????????????——????????" },
+      { speaker: "Trainer", line: "???9?????,10:30????,??5??????????????????ï¿½ï¿½????????" },
       { speaker: "Ryan", line: "????????????????????" },
       { speaker: "Trainer", line: "??????,????????????????,????????" },
-      { speaker: "Ryan", line: "??????????——?????????????" },
+      { speaker: "Ryan", line: "??????????ï¿½ï¿½?????????????" },
       { speaker: "Trainer", line: "??!?????2???????????????????????" },
       { speaker: "Ryan", line: "?????????!" }
     ],
@@ -2895,9 +2895,9 @@ export const conversations: ConversationTopic[] = [
     vocabulary: [
       {
         word: "rapport",
-        phonetic: "/ræ'p??r/",
+        phonetic: "/rï¿½'p??r/",
         chinese: "????",
-        pinyin: "róng qià guan xi",
+        pinyin: "rï¿½ng qiï¿½ guan xi",
         partOfSpeech: "noun",
         definitionEn: "A friendly, understanding relationship with someone.",
         definitionZh: "??????????????",
@@ -2909,7 +2909,7 @@ export const conversations: ConversationTopic[] = [
         word: "water cooler",
         phonetic: "/'w??t?r ku?l?r/",
         chinese: "????",
-        pinyin: "yin shui ji páng",
+        pinyin: "yin shui ji pï¿½ng",
         partOfSpeech: "noun",
         definitionEn: "The area near the office water cooler where people chat informally.",
         definitionZh: "???????????????????",
@@ -2919,9 +2919,9 @@ export const conversations: ConversationTopic[] = [
       },
       {
         word: "catch up",
-        phonetic: "/kæt? ?p/",
+        phonetic: "/kï¿½t? ?p/",
         chinese: "??",
-        pinyin: "xù jiù",
+        pinyin: "xï¿½ jiï¿½",
         partOfSpeech: "phrasal verb",
         definitionEn: "To talk to someone you haven't seen for a while and find out what they've been doing.",
         definitionZh: "???????????,???????????",
@@ -2937,10 +2937,10 @@ export const conversations: ConversationTopic[] = [
           id: "de-coworker-1",
           expression: "How was your weekend?",
           chinese: "?????????",
-          pinyin: "ni zhou mò guò de zen me yàng?",
+          pinyin: "ni zhou mï¿½ guï¿½ de zen me yï¿½ng?",
           meaning: "The most common Monday morning greeting to ask about someone's weekend.",
           whenToUse: "Monday mornings or after a break when asking about someone's time off.",
-          whenNotToUse: "Don't ask on Friday afternoon — people are thinking about the weekend ahead, not the past one.",
+          whenNotToUse: "Don't ask on Friday afternoon ï¿½ people are thinking about the weekend ahead, not the past one.",
           nativeFrequency: "Extremely common in offices every Monday.",
           commonMistakes: [
             { mistake: "Asking too many personal questions", correction: "Keep it light: weekend, weather, or a shared experience" }
@@ -2959,15 +2959,15 @@ export const conversations: ConversationTopic[] = [
           id: "de-coworker-2",
           expression: "Catch up on",
           chinese: "??",
-          pinyin: "bu shàng",
+          pinyin: "bu shï¿½ng",
           meaning: "To do something you missed or didn't have time for earlier.",
           whenToUse: "When talking about sleep, work, emails, or shows you missed.",
-          whenNotToUse: "Don't use for catching up with a person — use 'catch up with' for people.",
+          whenNotToUse: "Don't use for catching up with a person ï¿½ use 'catch up with' for people.",
           nativeFrequency: "Very common in both personal and professional contexts.",
           commonMistakes: [
             { mistake: "Using 'catch up with sleep' instead of 'catch up on sleep'", correction: "Use 'catch up on' for activities/things, 'catch up with' for people" }
           ],
-          pronunciation: "/kæt? ?p ?n/",
+          pronunciation: "/kï¿½t? ?p ?n/",
           funnyExample: "A: Did you catch up on sleep? B: I caught up on three seasons of Netflix instead. A: ...That's not what I meant, but fair.",
           memoryTrick: "Think: 'catch = get' + 'up = back to normal' + 'on = about' = 'get back to normal about something'",
           relatedExpressions: ["Catch up with", "Get back to", "Make up for"],
@@ -2981,16 +2981,16 @@ export const conversations: ConversationTopic[] = [
           id: "de-coworker-3",
           expression: "Don't give me any spoilers",
           chinese: "?????",
-          pinyin: "bié gei wo jù tòu",
+          pinyin: "biï¿½ gei wo jï¿½ tï¿½u",
           meaning: "Asking someone not to tell you the ending or important plot details of a movie, show, or book.",
           whenToUse: "When you haven't seen/read something yet and want to experience it fresh.",
-          whenNotToUse: "Don't use if you've already seen/read it — then you can discuss it freely.",
+          whenNotToUse: "Don't use if you've already seen/read it ï¿½ then you can discuss it freely.",
           nativeFrequency: "Very common among friends, family, and coworkers.",
           commonMistakes: [
             { mistake: "Using it after you already know the ending", correction: "Only use it before you've experienced it" }
           ],
           pronunciation: "/do?nt g?v mi '?ni 'sp??l?rz/",
-          funnyExample: "A: Don't give me any spoilers! B: Too late — I told everyone in the office. A: ...I hate you.",
+          funnyExample: "A: Don't give me any spoilers! B: Too late ï¿½ I told everyone in the office. A: ...I hate you.",
           memoryTrick: "Think: 'spoiler = ruins the surprise' = 'don't ruin it for me'",
           relatedExpressions: ["No spoilers!", "Don't tell me the ending", "I haven't seen it yet!"],
           collocations: ["give spoilers", "no spoilers", "spoiler alert"],
@@ -3014,9 +3014,9 @@ export const conversations: ConversationTopic[] = [
       { speaker: "Emily", line: "Nice! I stayed in town. Watched a couple of movies and caught up on some sleep.", register: "neutral" },
       { speaker: "David", line: "Sounds relaxing. Did you see the new Marvel movie? I heard it's amazing.", register: "neutral" },
       { speaker: "Emily", line: "Not yet! I'm planning to go this week. Don't give me any spoilers!", register: "casual" },
-      { speaker: "David", line: "No promises! Heard the ending is mind-blowing. Oh, by the way — did you finish the quarterly report?", register: "neutral" },
+      { speaker: "David", line: "No promises! Heard the ending is mind-blowing. Oh, by the way ï¿½ did you finish the quarterly report?", register: "neutral" },
       { speaker: "Emily", line: "Almost. I'm just waiting for the sales data from the regional team. Should have it by Wednesday.", register: "neutral" },
-      { speaker: "David", line: "Cool. Let me know if you need any help — I have some experience with that data analysis.", register: "neutral" },
+      { speaker: "David", line: "Cool. Let me know if you need any help ï¿½ I have some experience with that data analysis.", register: "neutral" },
       { speaker: "Emily", line: "Thanks, I appreciate that! Oh, the meeting's starting. Let's catch up more at lunch?", register: "neutral" },
       { speaker: "David", line: "Sounds good! See you at 12.", register: "neutral" }
     ],
@@ -3026,9 +3026,9 @@ export const conversations: ConversationTopic[] = [
       { speaker: "Emily", line: "??!????????????,?????" },
       { speaker: "David", line: "????????????????????????" },
       { speaker: "Emily", line: "???!?????????????!" },
-      { speaker: "David", line: "???!??????????,??——??????????" },
+      { speaker: "David", line: "???!??????????,??ï¿½ï¿½??????????" },
       { speaker: "Emily", line: "????????????????????????????" },
-      { speaker: "David", line: "??????????????——????????????" },
+      { speaker: "David", line: "??????????????ï¿½ï¿½????????????" },
       { speaker: "Emily", line: "??,?????!?,??????????????" },
       { speaker: "David", line: "?????!12???" }
     ],
@@ -3079,7 +3079,7 @@ export const conversations: ConversationTopic[] = [
       partnerLines: [
         "Morning! How was your weekend?",
         "Pretty good! I went camping with some friends.",
-        "By the way — did you finish the quarterly report?",
+        "By the way ï¿½ did you finish the quarterly report?",
         "Let's catch up more at lunch?"
       ]
     },
@@ -3223,7 +3223,7 @@ export const conversations: ConversationTopic[] = [
         word: "Good morning",
         phonetic: "/g?d 'm??rn??/",
         chinese: "???",
-        pinyin: "zao shàng hao",
+        pinyin: "zao shï¿½ng hao",
         partOfSpeech: "phrase",
         definitionEn: "A greeting used from sunrise until noon.",
         definitionZh: "?????????????",
@@ -3245,9 +3245,9 @@ export const conversations: ConversationTopic[] = [
       },
       {
         word: "I'm fine, thanks",
-        phonetic: "/a?m fa?n ?æ?ks/",
+        phonetic: "/a?m fa?n ?ï¿½?ks/",
         chinese: "???,??",
-        pinyin: "wo hen hao, xiè xie",
+        pinyin: "wo hen hao, xiï¿½ xie",
         partOfSpeech: "phrase",
         definitionEn: "The standard response to 'How are you?'",
         definitionZh: "?'????'??????",
@@ -3259,7 +3259,7 @@ export const conversations: ConversationTopic[] = [
         word: "Nice to meet you",
         phonetic: "/na?s tu mi?t ju?/",
         chinese: "??????",
-        pinyin: "hen gao xìng rèn shi ni",
+        pinyin: "hen gao xï¿½ng rï¿½n shi ni",
         partOfSpeech: "phrase",
         definitionEn: "Said when meeting someone for the first time.",
         definitionZh: "????????????",
@@ -3271,7 +3271,7 @@ export const conversations: ConversationTopic[] = [
         word: "Bye",
         phonetic: "/ba?/",
         chinese: "??",
-        pinyin: "zài jiàn",
+        pinyin: "zï¿½i jiï¿½n",
         partOfSpeech: "interjection",
         definitionEn: "A casual way to say goodbye.",
         definitionZh: "?????????",
@@ -3287,11 +3287,11 @@ export const conversations: ConversationTopic[] = [
           id: "de-greeting-1",
           expression: "Good morning",
           chinese: "???",
-          pinyin: "zao shàng hao",
+          pinyin: "zao shï¿½ng hao",
           meaning: "A standard greeting used from sunrise until noon.",
           whenToUse: "When greeting someone before noon. The most common morning greeting.",
           whenNotToUse: "Don't use after noon. Use 'Good afternoon' from 12 PM to around 5 PM, and 'Good evening' after that.",
-          nativeFrequency: "Extremely common — used daily in the morning.",
+          nativeFrequency: "Extremely common ï¿½ used daily in the morning.",
           commonMistakes: [
             { mistake: "Using 'Good morning' after noon", correction: "Switch to 'Good afternoon' after 12 PM" }
           ],
@@ -3313,7 +3313,7 @@ export const conversations: ConversationTopic[] = [
           meaning: "The most common greeting to ask about someone's wellbeing.",
           whenToUse: "When greeting someone you know. Very common everywhere.",
           whenNotToUse: "Don't use with strangers in formal settings. Use 'Hello' or 'Good morning' instead.",
-          nativeFrequency: "Extremely common — probably the most used phrase in English.",
+          nativeFrequency: "Extremely common ï¿½ probably the most used phrase in English.",
           commonMistakes: [
             { mistake: "Asking 'How do you do?' as a greeting", correction: "'How do you do?' is formal and old-fashioned. Use 'How are you?' instead." }
           ],
@@ -3331,11 +3331,11 @@ export const conversations: ConversationTopic[] = [
           id: "de-greeting-3",
           expression: "Nice to meet you",
           chinese: "??????",
-          pinyin: "hen gao xìng rèn shi ni",
+          pinyin: "hen gao xï¿½ng rï¿½n shi ni",
           meaning: "Said when meeting someone for the first time.",
           whenToUse: "When being introduced to someone new. Very important in English culture.",
           whenNotToUse: "Don't use with people you already know. Use 'Good to see you again' instead.",
-          nativeFrequency: "Very common — the standard phrase for first meetings.",
+          nativeFrequency: "Very common ï¿½ the standard phrase for first meetings.",
           commonMistakes: [
             { mistake: "Saying 'Nice to meet you too' before they say it", correction: "Wait for them to say 'Nice to meet you' first, then add 'too'" }
           ],
@@ -3561,7 +3561,7 @@ export const conversations: ConversationTopic[] = [
         word: "Excuse me",
         phonetic: "/?k'sku?z mi?/",
         chinese: "????",
-        pinyin: "da rao yi xià",
+        pinyin: "da rao yi xiï¿½",
         partOfSpeech: "phrase",
         definitionEn: "A polite way to get someone's attention.",
         definitionZh: "?????????????",
@@ -3573,7 +3573,7 @@ export const conversations: ConversationTopic[] = [
         word: "Where is...?",
         phonetic: "/wer ?z/",
         chinese: "...????",
-        pinyin: "... zài na li?",
+        pinyin: "... zï¿½i na li?",
         partOfSpeech: "question",
         definitionEn: "The most common way to ask for the location of something.",
         definitionZh: "?????????????",
@@ -3597,7 +3597,7 @@ export const conversations: ConversationTopic[] = [
         word: "Turn right",
         phonetic: "/t??rn ra?t/",
         chinese: "??",
-        pinyin: "yòu zhuan",
+        pinyin: "yï¿½u zhuan",
         partOfSpeech: "phrase",
         definitionEn: "A direction to go right at an intersection.",
         definitionZh: "????????????",
@@ -3609,7 +3609,7 @@ export const conversations: ConversationTopic[] = [
         word: "Go straight",
         phonetic: "/go? stre?t/",
         chinese: "??",
-        pinyin: "zhí zou",
+        pinyin: "zhï¿½ zou",
         partOfSpeech: "phrase",
         definitionEn: "Continue in the same direction without turning.",
         definitionZh: "?????????,????",
@@ -3621,7 +3621,7 @@ export const conversations: ConversationTopic[] = [
         word: "Next to",
         phonetic: "/nekst tu?/",
         chinese: "?...??",
-        pinyin: "zài... páng bian",
+        pinyin: "zï¿½i... pï¿½ng bian",
         partOfSpeech: "phrase",
         definitionEn: "Beside or adjacent to something.",
         definitionZh: "???????????",
@@ -3637,11 +3637,11 @@ export const conversations: ConversationTopic[] = [
           id: "de-directions-1",
           expression: "Excuse me",
           chinese: "????",
-          pinyin: "da rao yi xià",
+          pinyin: "da rao yi xiï¿½",
           meaning: "A polite phrase to get a stranger's attention before asking a question.",
           whenToUse: "Before asking a stranger for help, directions, or any question.",
-          whenNotToUse: "Don't use with friends or people you know well — just ask directly.",
-          nativeFrequency: "Extremely common — essential for polite interaction with strangers.",
+          whenNotToUse: "Don't use with friends or people you know well ï¿½ just ask directly.",
+          nativeFrequency: "Extremely common ï¿½ essential for polite interaction with strangers.",
           commonMistakes: [
             { mistake: "Not using it and just asking abruptly", correction: "Always start with 'Excuse me' when approaching strangers" }
           ],
@@ -3659,11 +3659,11 @@ export const conversations: ConversationTopic[] = [
           id: "de-directions-2",
           expression: "Where is...?",
           chinese: "...????",
-          pinyin: "... zài na li?",
+          pinyin: "... zï¿½i na li?",
           meaning: "The standard question to ask for the location of something.",
           whenToUse: "When you need to find a place. The most common and direct way to ask.",
           whenNotToUse: "Don't use 'How can I go to...?' as it sounds unnatural. Use 'Where is...?' or 'How do I get to...?' instead.",
-          nativeFrequency: "Extremely common — the #1 way to ask for directions.",
+          nativeFrequency: "Extremely common ï¿½ the #1 way to ask for directions.",
           commonMistakes: [
             { mistake: "Using 'How can I go to...?'", correction: "Use 'Where is...?' or 'How do I get to...?'" }
           ],
@@ -3681,13 +3681,13 @@ export const conversations: ConversationTopic[] = [
           id: "de-directions-3",
           expression: "Go straight",
           chinese: "??",
-          pinyin: "zhí zou",
+          pinyin: "zhï¿½ zou",
           meaning: "Continue moving forward without turning.",
           whenToUse: "When giving or receiving directions. Very common and essential.",
-          whenNotToUse: "Don't use for cars only — it works for walking too.",
+          whenNotToUse: "Don't use for cars only ï¿½ it works for walking too.",
           nativeFrequency: "Very common in directions and navigation.",
           commonMistakes: [
-            { mistake: "Using 'go straightly' (not a word)", correction: "'Straight' is both adjective and adverb — use 'go straight'" }
+            { mistake: "Using 'go straightly' (not a word)", correction: "'Straight' is both adjective and adverb ï¿½ use 'go straight'" }
           ],
           pronunciation: "/go? stre?t/",
           funnyExample: "A: Go straight. B: For how long? A: Until you question your life choices. B: ...How long is that?",
@@ -3900,15 +3900,15 @@ export const conversations: ConversationTopic[] = [
     ],
     warmUp: {
       title: "Warm-Up: Restaurant Culture",
-      content: "Restaurants have their own language — from greetings to ordering to paying. In this lesson, you'll learn how to navigate a restaurant confidently in English.",
-      contentZh: "??????????——??????????????,????????????????????"
+      content: "Restaurants have their own language ï¿½ from greetings to ordering to paying. In this lesson, you'll learn how to navigate a restaurant confidently in English.",
+      contentZh: "??????????ï¿½ï¿½??????????????,????????????????????"
     },
     vocabulary: [
       {
         word: "Menu",
         phonetic: "/'menju?/",
         chinese: "??",
-        pinyin: "cài dan",
+        pinyin: "cï¿½i dan",
         partOfSpeech: "noun",
         definitionEn: "A list of food and drinks available at a restaurant.",
         definitionZh: "????????????????",
@@ -3920,7 +3920,7 @@ export const conversations: ConversationTopic[] = [
         word: "I would like",
         phonetic: "/a? w?d la?k/",
         chinese: "???",
-        pinyin: "wo xiang yào",
+        pinyin: "wo xiang yï¿½o",
         partOfSpeech: "phrase",
         definitionEn: "A polite way to order or request something.",
         definitionZh: "??????????????",
@@ -3932,7 +3932,7 @@ export const conversations: ConversationTopic[] = [
         word: "Bill",
         phonetic: "/b?l/",
         chinese: "??",
-        pinyin: "zhàng dan",
+        pinyin: "zhï¿½ng dan",
         partOfSpeech: "noun",
         definitionEn: "The paper showing how much you need to pay at a restaurant.",
         definitionZh: "???????????????",
@@ -3956,7 +3956,7 @@ export const conversations: ConversationTopic[] = [
         word: "Check",
         phonetic: "/t?ek/",
         chinese: "??",
-        pinyin: "zhàng dan",
+        pinyin: "zhï¿½ng dan",
         partOfSpeech: "noun",
         definitionEn: "American English for 'bill' at a restaurant.",
         definitionZh: "????????????",
@@ -3968,7 +3968,7 @@ export const conversations: ConversationTopic[] = [
         word: "Enjoy your meal",
         phonetic: "/?n'd??? j?r mi?l/",
         chinese: "???",
-        pinyin: "qing màn yòng",
+        pinyin: "qing mï¿½n yï¿½ng",
         partOfSpeech: "phrase",
         definitionEn: "A common phrase servers say when bringing food.",
         definitionZh: "????????????",
@@ -3984,11 +3984,11 @@ export const conversations: ConversationTopic[] = [
           id: "de-restaurant-1",
           expression: "I would like",
           chinese: "???",
-          pinyin: "wo xiang yào",
+          pinyin: "wo xiang yï¿½o",
           meaning: "The standard polite way to order food or request something.",
           whenToUse: "When ordering at restaurants, cafes, or any service setting.",
-          whenNotToUse: "Don't use 'I want' in restaurants — it's considered rude. Use 'I would like' or 'I'll have' instead.",
-          nativeFrequency: "Extremely common — the standard way to order politely.",
+          whenNotToUse: "Don't use 'I want' in restaurants ï¿½ it's considered rude. Use 'I would like' or 'I'll have' instead.",
+          nativeFrequency: "Extremely common ï¿½ the standard way to order politely.",
           commonMistakes: [
             { mistake: "Using 'I want' instead of 'I would like'", correction: "'I would like' or 'I'll have' are much more polite" }
           ],
@@ -4006,15 +4006,15 @@ export const conversations: ConversationTopic[] = [
           id: "de-restaurant-2",
           expression: "Can I have...?",
           chinese: "???...??",
-          pinyin: "néng gei wo... ma?",
+          pinyin: "nï¿½ng gei wo... ma?",
           meaning: "A polite way to ask for something at a restaurant.",
           whenToUse: "When asking for water, the menu, the bill, or any item.",
-          whenNotToUse: "Don't use for ordering food — use 'I would like...' for ordering.",
+          whenNotToUse: "Don't use for ordering food ï¿½ use 'I would like...' for ordering.",
           nativeFrequency: "Very common for requests at restaurants.",
           commonMistakes: [
             { mistake: "Using 'Give me...' instead", correction: "'Can I have...?' is much more polite" }
           ],
-          pronunciation: "/kæn a? hæv/",
+          pronunciation: "/kï¿½n a? hï¿½v/",
           funnyExample: "A: Can I have the bill? B: Can you pay? A: ...That's not what I meant.",
           memoryTrick: "Think: 'Can I = may I' + 'have = receive' = 'may I receive?'",
           relatedExpressions: ["Could I have...?", "May I have...?", "Can I get...?"],
@@ -4028,10 +4028,10 @@ export const conversations: ConversationTopic[] = [
           id: "de-restaurant-3",
           expression: "Here you go",
           chinese: "??",
-          pinyin: "gei nín",
+          pinyin: "gei nï¿½n",
           meaning: "Giving something to someone in a friendly, casual way.",
           whenToUse: "When handing over the menu, food, water, or bill.",
-          whenNotToUse: "Don't use when receiving — use 'Thank you' instead.",
+          whenNotToUse: "Don't use when receiving ï¿½ use 'Thank you' instead.",
           nativeFrequency: "Extremely common everywhere.",
           commonMistakes: [
             { mistake: "Using in very formal writing", correction: "Use 'Please find attached' in formal emails" }
@@ -4103,7 +4103,7 @@ export const conversations: ConversationTopic[] = [
     ],
     pronunciation: [
       { tip: "I would like ? /a? w?d la?k/", example: "Commonly contracted to 'I'd like'" },
-      { tip: "Could I have ? /k?d a? hæv/", example: "Polite request form" }
+      { tip: "Could I have ? /k?d a? hï¿½v/", example: "Polite request form" }
     ],
     shadowing: [
       { line: "Hello! Welcome to our restaurant. Here is the menu.", emphasis: "Welcome to our restaurant" },
@@ -4267,7 +4267,7 @@ export const conversations: ConversationTopic[] = [
         word: "How much is...?",
         phonetic: "/ha? m?t? ?z/",
         chinese: "...????",
-        pinyin: "... duo shao qián?",
+        pinyin: "... duo shao qiï¿½n?",
         partOfSpeech: "question",
         definitionEn: "Asking for the price of something.",
         definitionZh: "????????",
@@ -4279,7 +4279,7 @@ export const conversations: ConversationTopic[] = [
         word: "Price",
         phonetic: "/pra?s/",
         chinese: "??",
-        pinyin: "jià gé",
+        pinyin: "jiï¿½ gï¿½",
         partOfSpeech: "noun",
         definitionEn: "The amount of money something costs.",
         definitionZh: "??????",
@@ -4291,7 +4291,7 @@ export const conversations: ConversationTopic[] = [
         word: "Size",
         phonetic: "/sa?z/",
         chinese: "??",
-        pinyin: "chi cùn",
+        pinyin: "chi cï¿½n",
         partOfSpeech: "noun",
         definitionEn: "The measurement of clothing or shoes.",
         definitionZh: "?????????",
@@ -4303,7 +4303,7 @@ export const conversations: ConversationTopic[] = [
         word: "Color",
         phonetic: "/'k?l?r/",
         chinese: "??",
-        pinyin: "yán sè",
+        pinyin: "yï¿½n sï¿½",
         partOfSpeech: "noun",
         definitionEn: "The color of an item.",
         definitionZh: "??????",
@@ -4313,9 +4313,9 @@ export const conversations: ConversationTopic[] = [
       },
       {
         word: "Cash",
-        phonetic: "/kæ?/",
+        phonetic: "/kï¿½?/",
         chinese: "??",
-        pinyin: "xiàn jin",
+        pinyin: "xiï¿½n jin",
         partOfSpeech: "noun",
         definitionEn: "Physical money (bills and coins).",
         definitionZh: "???(?????)?",
@@ -4343,11 +4343,11 @@ export const conversations: ConversationTopic[] = [
           id: "de-shopping-basics-1",
           expression: "How much is...?",
           chinese: "...????",
-          pinyin: "... duo shao qián?",
+          pinyin: "... duo shao qiï¿½n?",
           meaning: "The standard way to ask for the price of something.",
           whenToUse: "In any store when you want to know the price of an item.",
-          whenNotToUse: "Don't use in formal auctions or negotiations — there are different conventions.",
-          nativeFrequency: "Extremely common — used daily in shopping.",
+          whenNotToUse: "Don't use in formal auctions or negotiations ï¿½ there are different conventions.",
+          nativeFrequency: "Extremely common ï¿½ used daily in shopping.",
           commonMistakes: [
             { mistake: "Saying 'How much it is?'", correction: "Correct order is 'How much is it?'" }
           ],
@@ -4365,15 +4365,15 @@ export const conversations: ConversationTopic[] = [
           id: "de-shopping-basics-2",
           expression: "Do you have this in...?",
           chinese: "???...?/?????",
-          pinyin: "ni men you... hào / yán sè de ma?",
+          pinyin: "ni men you... hï¿½o / yï¿½n sï¿½ de ma?",
           meaning: "Asking if a store has a specific size, color, or variant of an item.",
           whenToUse: "When you like an item but need a different size or color.",
-          whenNotToUse: "Don't use for completely different items — ask 'Do you sell/have...?' instead.",
+          whenNotToUse: "Don't use for completely different items ï¿½ ask 'Do you sell/have...?' instead.",
           nativeFrequency: "Very common in clothing and retail stores.",
           commonMistakes: [
             { mistake: "Using 'Is this available in...?' which is correct but longer", correction: "'Do you have this in...?' is more natural in casual shopping" }
           ],
-          pronunciation: "/du ju hæv ğ?s ?n/",
+          pronunciation: "/du ju hï¿½v ï¿½?s ?n/",
           funnyExample: "A: Do you have this in sanity? B: ...We only have sizes S, M, L.",
           memoryTrick: "Think: 'Do you have = is available' + 'in = in this variant' = 'is this variant available?'",
           relatedExpressions: ["Do you have any...?", "Is this available in...?", "Can I get this in...?"],
@@ -4622,9 +4622,9 @@ export const conversations: ConversationTopic[] = [
     vocabulary: [
       {
         word: "Weather",
-        phonetic: "/'weğ?r/",
+        phonetic: "/'weï¿½?r/",
         chinese: "??",
-        pinyin: "tian qì",
+        pinyin: "tian qï¿½",
         partOfSpeech: "noun",
         definitionEn: "The state of the atmosphere at a particular time and place.",
         definitionZh: "?????????????",
@@ -4636,7 +4636,7 @@ export const conversations: ConversationTopic[] = [
         word: "Weekend",
         phonetic: "/'wi?kend/",
         chinese: "??",
-        pinyin: "zhou mò",
+        pinyin: "zhou mï¿½",
         partOfSpeech: "noun",
         definitionEn: "Saturday and Sunday, or the time off from work/school.",
         definitionZh: "?????,???/????????",
@@ -4648,7 +4648,7 @@ export const conversations: ConversationTopic[] = [
         word: "Hobby",
         phonetic: "/'h?bi/",
         chinese: "??",
-        pinyin: "ài hào",
+        pinyin: "ï¿½i hï¿½o",
         partOfSpeech: "noun",
         definitionEn: "An activity you do regularly in your free time for pleasure.",
         definitionZh: "???????????????????",
@@ -4672,7 +4672,7 @@ export const conversations: ConversationTopic[] = [
         word: "Beautiful",
         phonetic: "/'bju?t?fl/",
         chinese: "???",
-        pinyin: "mei lì de",
+        pinyin: "mei lï¿½ de",
         partOfSpeech: "adjective",
         definitionEn: "Very pleasing to look at; attractive.",
         definitionZh: "???????;?????",
@@ -4688,11 +4688,11 @@ export const conversations: ConversationTopic[] = [
           id: "de-smalltalk-1",
           expression: "It's a beautiful day",
           chinese: "??????",
-          pinyin: "jin tian tian qì zhen hao",
+          pinyin: "jin tian tian qï¿½ zhen hao",
           meaning: "A common way to start small talk by commenting on the weather.",
           whenToUse: "When starting a conversation with neighbors, coworkers, or strangers. Very safe and common topic.",
-          whenNotToUse: "Don't use if it's clearly raining or storming — say 'What terrible weather!' instead.",
-          nativeFrequency: "Extremely common — the #1 small talk starter.",
+          whenNotToUse: "Don't use if it's clearly raining or storming ï¿½ say 'What terrible weather!' instead.",
+          nativeFrequency: "Extremely common ï¿½ the #1 small talk starter.",
           commonMistakes: [
             { mistake: "Using 'It's a beautiful weather'", correction: "Say 'It's beautiful weather' or 'It's a beautiful day'" }
           ],
@@ -4710,15 +4710,15 @@ export const conversations: ConversationTopic[] = [
           id: "de-smalltalk-2",
           expression: "What are your plans...?",
           chinese: "??????...?",
-          pinyin: "ni you shén me jì huà...?",
+          pinyin: "ni you shï¿½n me jï¿½ huï¿½...?",
           meaning: "Asking someone about their upcoming schedule or intentions.",
           whenToUse: "When asking about someone's weekend, evening, or holiday plans.",
           whenNotToUse: "Don't use for past events. Use 'What were your plans...?' for past tense.",
-          nativeFrequency: "Very common — used daily when asking about future intentions.",
+          nativeFrequency: "Very common ï¿½ used daily when asking about future intentions.",
           commonMistakes: [
             { mistake: "Using 'What do you plan?' instead", correction: "'What are your plans...?' is more natural in casual English" }
           ],
-          pronunciation: "/w?t ??r j?r plænz/",
+          pronunciation: "/w?t ??r j?r plï¿½nz/",
           funnyExample: "A: What are your plans for the weekend? B: My plan is to avoid all plans. A: ...That's still a plan.",
           memoryTrick: "Think: 'plans = ideas' + 'what are = asking about' = 'asking about your ideas'",
           relatedExpressions: ["What are you up to?", "Do you have any plans?", "What's the plan?"],
@@ -4735,7 +4735,7 @@ export const conversations: ConversationTopic[] = [
           pinyin: "wo xi huan...",
           meaning: "Expressing strong liking or enthusiasm for something.",
           whenToUse: "When talking about hobbies, food, activities, or anything you enjoy.",
-          whenNotToUse: "Don't use for people in romantic contexts — it's too strong. Use 'I like...' instead.",
+          whenNotToUse: "Don't use for people in romantic contexts ï¿½ it's too strong. Use 'I like...' instead.",
           nativeFrequency: "Very common in casual conversation.",
           commonMistakes: [
             { mistake: "Using 'I am loving...' for general preferences", correction: "Use 'I love...' or 'I like...' for general preferences" }
@@ -4805,7 +4805,7 @@ export const conversations: ConversationTopic[] = [
     ],
     pronunciation: [
       { tip: "It's a beautiful day ? /?ts ? 'bju?t?fl de?/", example: "Natural, flowing speech" },
-      { tip: "What are your plans ? /w?t ??r j?r plænz/", example: "Fast, connected speech" }
+      { tip: "What are your plans ? /w?t ??r j?r plï¿½nz/", example: "Fast, connected speech" }
     ],
     shadowing: [
       { line: "It's a beautiful day today, isn't it?", emphasis: "beautiful day" },
@@ -4954,18 +4954,18 @@ export const conversations: ConversationTopic[] = [
     id: "coffee-shop-basics",
     title: "At the Coffee Shop",
     emoji: "?",
-    description: "Ordering drinks, customizing your order, and paying at a café.",
+    description: "Ordering drinks, customizing your order, and paying at a cafï¿½.",
     color: "from-amber-400 to-orange-400",
     level: "A1",
     estimatedTime: "10 min",
     registerMarkers: [
       { level: "formal", label: "Formal", color: "bg-blue-100 text-blue-800 border-blue-200", description: "Business coffee meetings" },
-      { level: "neutral", label: "Neutral", color: "bg-gray-100 text-gray-800 border-gray-200", description: "Standard café interaction" },
-      { level: "casual", label: "Casual", color: "bg-green-100 text-green-800 border-green-200", description: "Chatting with a friend at a café" }
+      { level: "neutral", label: "Neutral", color: "bg-gray-100 text-gray-800 border-gray-200", description: "Standard cafï¿½ interaction" },
+      { level: "casual", label: "Casual", color: "bg-green-100 text-green-800 border-green-200", description: "Chatting with a friend at a cafï¿½" }
     ],
     warmUp: {
       title: "Warm-Up: Coffee Shop Culture",
-      content: "Coffee shops are social hubs. In this lesson, you'll learn how to order confidently, customize your drink, and handle payment at a café.",
+      content: "Coffee shops are social hubs. In this lesson, you'll learn how to order confidently, customize your drink, and handle payment at a cafï¿½.",
       contentZh: "?????????????,??????????????????,?????????????"
     },
     vocabulary: [
@@ -4985,7 +4985,7 @@ export const conversations: ConversationTopic[] = [
         word: "Tea",
         phonetic: "/ti?/",
         chinese: "?",
-        pinyin: "chá",
+        pinyin: "chï¿½",
         partOfSpeech: "noun",
         definitionEn: "A hot drink made by infusing dried leaves in hot water.",
         definitionZh: "??????????????????",
@@ -5009,7 +5009,7 @@ export const conversations: ConversationTopic[] = [
         word: "Large",
         phonetic: "/l??rd?/",
         chinese: "??",
-        pinyin: "dà bei",
+        pinyin: "dï¿½ bei",
         partOfSpeech: "adjective",
         definitionEn: "The biggest size available.",
         definitionZh: "????????",
@@ -5021,7 +5021,7 @@ export const conversations: ConversationTopic[] = [
         word: "To go",
         phonetic: "/tu? go?/",
         chinese: "??",
-        pinyin: "dài zou",
+        pinyin: "dï¿½i zou",
         partOfSpeech: "phrase",
         definitionEn: "Taking your order away with you instead of drinking it there.",
         definitionZh: "???????????????",
@@ -5033,9 +5033,9 @@ export const conversations: ConversationTopic[] = [
         word: "Here",
         phonetic: "/h?r/",
         chinese: "???",
-        pinyin: "zhè li he",
+        pinyin: "zhï¿½ li he",
         partOfSpeech: "adverb",
-        definitionEn: "Drinking your order at the café instead of taking it away.",
+        definitionEn: "Drinking your order at the cafï¿½ instead of taking it away.",
         definitionZh: "???????????????",
         exampleEn: "For here, please.",
         exampleZh: "??????",
@@ -5049,15 +5049,15 @@ export const conversations: ConversationTopic[] = [
           id: "de-coffee-shop-1",
           expression: "What can I get for you?",
           chinese: "??????",
-          pinyin: "nín xiang dian shén me?",
+          pinyin: "nï¿½n xiang dian shï¿½n me?",
           meaning: "The standard greeting from baristas asking what you'd like to order.",
           whenToUse: "This is the barista's line, not the customer's. Respond with your order.",
-          whenNotToUse: "Don't use this as a customer — it's the server's line.",
-          nativeFrequency: "Extremely common — you'll hear this in every coffee shop.",
+          whenNotToUse: "Don't use this as a customer ï¿½ it's the server's line.",
+          nativeFrequency: "Extremely common ï¿½ you'll hear this in every coffee shop.",
           commonMistakes: [
             { mistake: "Customers saying this to baristas", correction: "The barista says this to you. You respond with your order." }
           ],
-          pronunciation: "/w?t kæn a? get f?r ju?/",
+          pronunciation: "/w?t kï¿½n a? get f?r ju?/",
           funnyExample: "A: What can I get for you? B: You, obviously. A: ...That's not what I meant.",
           memoryTrick: "Think: 'What = order' + 'can I get = can I serve' = 'what can I serve you?'",
           relatedExpressions: ["What would you like?", "What can I get started for you?", "Ready to order?"],
@@ -5071,11 +5071,11 @@ export const conversations: ConversationTopic[] = [
           id: "de-coffee-shop-2",
           expression: "I'd like...",
           chinese: "???...",
-          pinyin: "wo xiang yào...",
+          pinyin: "wo xiang yï¿½o...",
           meaning: "The standard polite way to order at a coffee shop.",
-          whenToUse: "When ordering any drink or food at a café.",
-          whenNotToUse: "Don't use 'I want...' — it's considered rude in service settings.",
-          nativeFrequency: "Extremely common — the standard way to order politely.",
+          whenToUse: "When ordering any drink or food at a cafï¿½.",
+          whenNotToUse: "Don't use 'I want...' ï¿½ it's considered rude in service settings.",
+          nativeFrequency: "Extremely common ï¿½ the standard way to order politely.",
           commonMistakes: [
             { mistake: "Using 'I want...' instead", correction: "'I'd like...' or 'I'll have...' are much more polite" }
           ],
@@ -5093,7 +5093,7 @@ export const conversations: ConversationTopic[] = [
           id: "de-coffee-shop-3",
           expression: "Hot or iced?",
           chinese: "???????",
-          pinyin: "rè de hái shì bing de?",
+          pinyin: "rï¿½ de hï¿½i shï¿½ bing de?",
           meaning: "Asking whether you want a hot or cold drink.",
           whenToUse: "When ordering drinks that can be served hot or cold.",
           whenNotToUse: "Don't use for drinks that are only served one way.",
@@ -5163,7 +5163,7 @@ export const conversations: ConversationTopic[] = [
     ],
     pronunciation: [
       { tip: "I'd like ? /a?d la?k/", example: "Contraction sounds natural" },
-      { tip: "That'll be ? /ğæt?l bi?/", example: "Quick speech for pricing" }
+      { tip: "That'll be ? /ï¿½ï¿½t?l bi?/", example: "Quick speech for pricing" }
     ],
     shadowing: [
       { line: "Hi! What can I get for you?", emphasis: "What can I get" },
@@ -5329,7 +5329,7 @@ export const conversations: ConversationTopic[] = [
         word: "Hello?",
         phonetic: "/h??lo?/",
         chinese: "??",
-        pinyin: "wéi?",
+        pinyin: "wï¿½i?",
         partOfSpeech: "interjection",
         definitionEn: "The standard way to answer a phone call.",
         definitionZh: "?????????",
@@ -5339,9 +5339,9 @@ export const conversations: ConversationTopic[] = [
       },
       {
         word: "Can I speak to...?",
-        phonetic: "/kæn a? spi?k tu?/",
+        phonetic: "/kï¿½n a? spi?k tu?/",
         chinese: "???...????",
-        pinyin: "w? néng hé... shu? huà ma?",
+        pinyin: "w? nï¿½ng hï¿½... shu? huï¿½ ma?",
         partOfSpeech: "question",
         definitionEn: "Asking to talk to a specific person on the phone.",
         definitionZh: "??????????????",
@@ -5365,7 +5365,7 @@ export const conversations: ConversationTopic[] = [
         word: "Message",
         phonetic: "/?mes?d?/",
         chinese: "??",
-        pinyin: "liú yán",
+        pinyin: "liï¿½ yï¿½n",
         partOfSpeech: "noun",
         definitionEn: "Information left for someone who isn't available.",
         definitionZh: "???????????",
@@ -5375,9 +5375,9 @@ export const conversations: ConversationTopic[] = [
       },
       {
         word: "Call back",
-        phonetic: "/k??l bæk/",
+        phonetic: "/k??l bï¿½k/",
         chinese: "???",
-        pinyin: "huí diàn huà",
+        pinyin: "huï¿½ diï¿½n huï¿½",
         partOfSpeech: "phrasal verb",
         definitionEn: "To return a phone call.",
         definitionZh: "????",
@@ -5389,7 +5389,7 @@ export const conversations: ConversationTopic[] = [
         word: "Busy",
         phonetic: "/?b?zi/",
         chinese: "?",
-        pinyin: "máng",
+        pinyin: "mï¿½ng",
         partOfSpeech: "adjective",
         definitionEn: "Occupied or unavailable.",
         definitionZh: "????????",
@@ -5405,15 +5405,15 @@ export const conversations: ConversationTopic[] = [
           id: "de-phone-1",
           expression: "Can I speak to...?",
           chinese: "???...????",
-          pinyin: "w? néng hé... shu? huà ma?",
+          pinyin: "w? nï¿½ng hï¿½... shu? huï¿½ ma?",
           meaning: "The standard polite way to ask for someone on the phone.",
           whenToUse: "When calling and asking to speak to a specific person.",
-          whenNotToUse: "Don't use 'I want to talk to...' — it's too direct and rude.",
-          nativeFrequency: "Extremely common — the standard phone etiquette.",
+          whenNotToUse: "Don't use 'I want to talk to...' ï¿½ it's too direct and rude.",
+          nativeFrequency: "Extremely common ï¿½ the standard phone etiquette.",
           commonMistakes: [
             { mistake: "Using 'I want to talk to...' instead", correction: "'Can I speak to...?' is the polite, standard form" }
           ],
-          pronunciation: "/kæn a? spi?k tu?/",
+          pronunciation: "/kï¿½n a? spi?k tu?/",
           funnyExample: "A: Can I speak to... myself? B: ...You're already here. A: I know, I just wanted to hear my own voice.",
           memoryTrick: "Think: 'speak = talk' + 'to = with' = 'can I talk with this person?'",
           relatedExpressions: ["May I speak to...?", "Is this...?", "I'd like to speak to..."],
@@ -5449,13 +5449,13 @@ export const conversations: ConversationTopic[] = [
           id: "de-phone-3",
           expression: "Take a message",
           chinese: "??",
-          pinyin: "liú yán",
+          pinyin: "liï¿½ yï¿½n",
           meaning: "Writing down information for someone who isn't available to take the call.",
           whenToUse: "When the person you're calling isn't available and you want to leave information.",
-          whenNotToUse: "Don't use if the person is available — talk to them directly.",
+          whenNotToUse: "Don't use if the person is available ï¿½ talk to them directly.",
           nativeFrequency: "Very common in offices and professional settings.",
           commonMistakes: [
-            { mistake: "Using 'Leave a message' when asking if you can", correction: "The receiver says 'Can I take a message?' — you say 'Yes, please tell him...'" }
+            { mistake: "Using 'Leave a message' when asking if you can", correction: "The receiver says 'Can I take a message?' ï¿½ you say 'Yes, please tell him...'" }
           ],
           pronunciation: "/te?k ? ?mes?d?/",
           funnyExample: "A: Can I take a message? B: Yes. Tell him I said... wait, what did I want to say? A: ...I'll take a message that you called.",
@@ -5517,7 +5517,7 @@ export const conversations: ConversationTopic[] = [
       }
     ],
     pronunciation: [
-      { tip: "Can I speak to ? /kæn a? spi?k tu?/", example: "Natural, polite phone phrase" },
+      { tip: "Can I speak to ? /kï¿½n a? spi?k tu?/", example: "Natural, polite phone phrase" },
       { tip: "Hold on ? /ho?ld ?n/", example: "Quick transition" }
     ],
     shadowing: [
@@ -5560,7 +5560,7 @@ export const conversations: ConversationTopic[] = [
     },
     homework: {
       task: "Real Phone Call",
-      description: "Make a real phone call in English this week — to a restaurant, doctor, or business. Write down what you said.",
+      description: "Make a real phone call in English this week ï¿½ to a restaurant, doctor, or business. Write down what you said.",
       dueText: "Before next lesson"
     },
     quiz: [
@@ -5684,7 +5684,7 @@ export const conversations: ConversationTopic[] = [
         word: "Account",
         phonetic: "/??ka?nt/",
         chinese: "??",
-        pinyin: "zhàng hù",
+        pinyin: "zhï¿½ng hï¿½",
         partOfSpeech: "noun",
         definitionEn: "A financial arrangement with a bank to hold money.",
         definitionZh: "????????????????",
@@ -5694,9 +5694,9 @@ export const conversations: ConversationTopic[] = [
       },
       {
         word: "Balance",
-        phonetic: "/?bæl?ns/",
+        phonetic: "/?bï¿½l?ns/",
         chinese: "??",
-        pinyin: "yú é",
+        pinyin: "yï¿½ ï¿½",
         partOfSpeech: "noun",
         definitionEn: "The amount of money in an account.",
         definitionZh: "???????",
@@ -5708,7 +5708,7 @@ export const conversations: ConversationTopic[] = [
         word: "Deposit",
         phonetic: "/d??p?z?t/",
         chinese: "??",
-        pinyin: "cún ku?n",
+        pinyin: "cï¿½n ku?n",
         partOfSpeech: "verb / noun",
         definitionEn: "To put money into a bank account.",
         definitionZh: "?????????",
@@ -5718,7 +5718,7 @@ export const conversations: ConversationTopic[] = [
       },
       {
         word: "Withdraw",
-        phonetic: "/w?ğ?dr??/",
+        phonetic: "/w?ï¿½?dr??/",
         chinese: "??",
         pinyin: "q? ku?n",
         partOfSpeech: "verb",
@@ -5732,7 +5732,7 @@ export const conversations: ConversationTopic[] = [
         word: "Credit card",
         phonetic: "/?kred?t k??rd/",
         chinese: "???",
-        pinyin: "xìn yòng k?",
+        pinyin: "xï¿½n yï¿½ng k?",
         partOfSpeech: "noun",
         definitionEn: "A plastic card used to pay for things on credit.",
         definitionZh: "??????????",
@@ -5744,7 +5744,7 @@ export const conversations: ConversationTopic[] = [
         word: "Receipt",
         phonetic: "/r??si?t/",
         chinese: "??",
-        pinyin: "sh?u jù",
+        pinyin: "sh?u jï¿½",
         partOfSpeech: "noun",
         definitionEn: "A paper showing proof of a transaction.",
         definitionZh: "?????????",
@@ -5763,7 +5763,7 @@ export const conversations: ConversationTopic[] = [
           pinyin: "w? xi?ng k?i...",
           meaning: "Expressing your desire to start a new account or service.",
           whenToUse: "When starting a new bank account, credit card, or other financial service.",
-          whenNotToUse: "Don't use for existing accounts — use 'I'd like to check...' or 'I'd like to withdraw...' instead.",
+          whenNotToUse: "Don't use for existing accounts ï¿½ use 'I'd like to check...' or 'I'd like to withdraw...' instead.",
           nativeFrequency: "Very common when starting new banking relationships.",
           commonMistakes: [
             { mistake: "Using 'I want to open...' instead", correction: "'I'd like to open...' is more polite and professional" }
@@ -5782,15 +5782,15 @@ export const conversations: ConversationTopic[] = [
           id: "de-bank-2",
           expression: "Can I see your...?",
           chinese: "?????...??",
-          pinyin: "néng kàn kan nín de... ma?",
+          pinyin: "nï¿½ng kï¿½n kan nï¿½n de... ma?",
           meaning: "Asking to see someone's identification or documents.",
           whenToUse: "When verifying identity at a bank, airport, or official venue.",
-          whenNotToUse: "Don't use for personal items — only for official documents like ID, passport, etc.",
+          whenNotToUse: "Don't use for personal items ï¿½ only for official documents like ID, passport, etc.",
           nativeFrequency: "Very common in formal and official settings.",
           commonMistakes: [
             { mistake: "Using 'Show me your...' instead", correction: "'Can I see your...?' is polite; 'Show me...' is rude" }
           ],
-          pronunciation: "/kæn a? si? j?r/",
+          pronunciation: "/kï¿½n a? si? j?r/",
           funnyExample: "A: Can I see your ID? B: Can I see your sense of humor? A: ...Sir, this is the bank.",
           memoryTrick: "Think: 'see = look at' + 'your = your document' = 'may I look at your document?'",
           relatedExpressions: ["May I see...?", "Could you show me...?", "Do you have your...?"],
@@ -5804,10 +5804,10 @@ export const conversations: ConversationTopic[] = [
           id: "de-bank-3",
           expression: "Here you go",
           chinese: "??",
-          pinyin: "g?i nín",
+          pinyin: "g?i nï¿½n",
           meaning: "Giving something to someone in a friendly way.",
           whenToUse: "When handing over documents, money, or items.",
-          whenNotToUse: "Don't use when receiving — use 'Thank you' instead.",
+          whenNotToUse: "Don't use when receiving ï¿½ use 'Thank you' instead.",
           nativeFrequency: "Extremely common everywhere.",
           commonMistakes: [
             { mistake: "Using in very formal writing", correction: "Use 'Please find attached' in formal emails" }
@@ -6039,7 +6039,7 @@ export const conversations: ConversationTopic[] = [
         word: "Sick",
         phonetic: "/s?k/",
         chinese: "???",
-        pinyin: "sh?ng bìng de",
+        pinyin: "sh?ng bï¿½ng de",
         partOfSpeech: "adjective",
         definitionEn: "Not feeling well; ill.",
         definitionZh: "?????????",
@@ -6051,7 +6051,7 @@ export const conversations: ConversationTopic[] = [
         word: "Headache",
         phonetic: "/?hede?k/",
         chinese: "??",
-        pinyin: "tóu tòng",
+        pinyin: "tï¿½u tï¿½ng",
         partOfSpeech: "noun",
         definitionEn: "Pain in the head.",
         definitionZh: "?????",
@@ -6075,7 +6075,7 @@ export const conversations: ConversationTopic[] = [
         word: "Medicine",
         phonetic: "/?med?s?n/",
         chinese: "?",
-        pinyin: "yào",
+        pinyin: "yï¿½o",
         partOfSpeech: "noun",
         definitionEn: "Substance used to treat illness.",
         definitionZh: "??????????",
@@ -6099,7 +6099,7 @@ export const conversations: ConversationTopic[] = [
         word: "Appointment",
         phonetic: "/??p??ntm?nt/",
         chinese: "??",
-        pinyin: "yù yu?",
+        pinyin: "yï¿½ yu?",
         partOfSpeech: "noun",
         definitionEn: "A scheduled time to see a doctor.",
         definitionZh: "?????????",
@@ -6115,15 +6115,15 @@ export const conversations: ConversationTopic[] = [
           id: "de-doctor-1",
           expression: "What seems to be the problem?",
           chinese: "??????",
-          pinyin: "n? l? bù sh? fu?",
+          pinyin: "n? l? bï¿½ sh? fu?",
           meaning: "The standard way a doctor asks what's wrong with you.",
           whenToUse: "When a doctor or medical professional asks about your symptoms.",
-          whenNotToUse: "Don't use this as a patient — this is the doctor's line.",
+          whenNotToUse: "Don't use this as a patient ï¿½ this is the doctor's line.",
           nativeFrequency: "Very common in medical settings.",
           commonMistakes: [
             { mistake: "Using 'What is your problem?' which sounds rude", correction: "'What seems to be the problem?' is the polite, professional form" }
           ],
-          pronunciation: "/w?t si?mz tu bi ğ? ?pr?bl?m/",
+          pronunciation: "/w?t si?mz tu bi ï¿½? ?pr?bl?m/",
           funnyExample: "A: What seems to be the problem? B: I have a serious case of being allergic to Mondays. A: ...I'll prescribe you a vacation.",
           memoryTrick: "Think: 'seems = appears' + 'problem = issue' = 'what issue appears to you?'",
           relatedExpressions: ["What's wrong?", "What's the matter?", "How are you feeling?"],
@@ -6140,12 +6140,12 @@ export const conversations: ConversationTopic[] = [
           pinyin: "w? y?u...",
           meaning: "Describing a symptom or illness.",
           whenToUse: "When telling a doctor what's wrong with you.",
-          whenNotToUse: "Don't use for general statements — only for health issues in medical contexts.",
+          whenNotToUse: "Don't use for general statements ï¿½ only for health issues in medical contexts.",
           nativeFrequency: "Very common in doctor visits.",
           commonMistakes: [
-            { mistake: "Using 'I am a headache' instead", correction: "Use 'I have a headache' — the symptom belongs to you, you don't become it" }
+            { mistake: "Using 'I am a headache' instead", correction: "Use 'I have a headache' ï¿½ the symptom belongs to you, you don't become it" }
           ],
-          pronunciation: "/a? hæv ?/",
+          pronunciation: "/a? hï¿½v ?/",
           funnyExample: "A: I have a headache. B: I have a... case of the giggles. A: ...That's not a medical condition.",
           memoryTrick: "Think: 'have = experience' + 'symptom = feeling' = 'I experience this feeling'",
           relatedExpressions: ["I've got a...", "I'm feeling...", "I have been..."],
@@ -6162,8 +6162,8 @@ export const conversations: ConversationTopic[] = [
           pinyin: "du? h? shu?",
           meaning: "Common medical advice to stay hydrated.",
           whenToUse: "When a doctor gives you general health advice, or when you're sick.",
-          whenNotToUse: "Don't use for serious conditions — always follow specific medical advice.",
-          nativeFrequency: "Extremely common — the most common doctor's advice.",
+          whenNotToUse: "Don't use for serious conditions ï¿½ always follow specific medical advice.",
+          nativeFrequency: "Extremely common ï¿½ the most common doctor's advice.",
           commonMistakes: [
             { mistake: "Using 'drink much water'", correction: "'Plenty of' is the standard phrase, not 'much'" }
           ],
@@ -6396,7 +6396,7 @@ export const conversations: ConversationTopic[] = [
         word: "Appointment",
         phonetic: "/??p??ntm?nt/",
         chinese: "??",
-        pinyin: "yù yu?",
+        pinyin: "yï¿½ yu?",
         partOfSpeech: "noun",
         definitionEn: "A scheduled time to meet or see someone.",
         definitionZh: "?????????????",
@@ -6408,7 +6408,7 @@ export const conversations: ConversationTopic[] = [
         word: "Available",
         phonetic: "/??ve?l?bl/",
         chinese: "???",
-        pinyin: "y?u kòng de",
+        pinyin: "y?u kï¿½ng de",
         partOfSpeech: "adjective",
         definitionEn: "Free to meet or do something at a particular time.",
         definitionZh: "??????????????",
@@ -6420,7 +6420,7 @@ export const conversations: ConversationTopic[] = [
         word: "Time slot",
         phonetic: "/ta?m sl?t/",
         chinese: "???",
-        pinyin: "shí ji?n duàn",
+        pinyin: "shï¿½ ji?n duï¿½n",
         partOfSpeech: "noun",
         definitionEn: "A specific period of time available for an appointment.",
         definitionZh: "????????????",
@@ -6432,7 +6432,7 @@ export const conversations: ConversationTopic[] = [
         word: "Confirm",
         phonetic: "/k?n?f??rm/",
         chinese: "??",
-        pinyin: "què rèn",
+        pinyin: "quï¿½ rï¿½n",
         partOfSpeech: "verb",
         definitionEn: "To verify that an appointment is still on.",
         definitionZh: "???????????",
@@ -6454,7 +6454,7 @@ export const conversations: ConversationTopic[] = [
       },
       {
         word: "Cancellation",
-        phonetic: "/?kæns??le??n/",
+        phonetic: "/?kï¿½ns??le??n/",
         chinese: "??",
         pinyin: "q? xi?o",
         partOfSpeech: "noun",
@@ -6472,10 +6472,10 @@ export const conversations: ConversationTopic[] = [
           id: "de-appointment-1",
           expression: "I'd like to make an appointment",
           chinese: "????",
-          pinyin: "w? xi?ng yù yu?",
+          pinyin: "w? xi?ng yï¿½ yu?",
           meaning: "Expressing your desire to schedule a meeting or visit.",
           whenToUse: "When calling or visiting to schedule an appointment.",
-          whenNotToUse: "Don't use for casual meetups with friends — use 'Let's meet...' instead.",
+          whenNotToUse: "Don't use for casual meetups with friends ï¿½ use 'Let's meet...' instead.",
           nativeFrequency: "Very common in professional and medical settings.",
           commonMistakes: [
             { mistake: "Using 'I want to make an appointment'", correction: "'I'd like to make...' is more polite and professional" }
@@ -6494,10 +6494,10 @@ export const conversations: ConversationTopic[] = [
           id: "de-appointment-2",
           expression: "What day works best for you?",
           chinese: "????????",
-          pinyin: "n? ti?n duì n? zuì hé shì?",
+          pinyin: "n? ti?n duï¿½ n? zuï¿½ hï¿½ shï¿½?",
           meaning: "Asking someone what day is most convenient for them.",
           whenToUse: "When scheduling an appointment and checking the other person's availability.",
-          whenNotToUse: "Don't use if you're the only one involved — just pick a day.",
+          whenNotToUse: "Don't use if you're the only one involved ï¿½ just pick a day.",
           nativeFrequency: "Very common in scheduling.",
           commonMistakes: [
             { mistake: "Using 'What day is best for you?'", correction: "'Works best' is more natural in English" }
@@ -6516,10 +6516,10 @@ export const conversations: ConversationTopic[] = [
           id: "de-appointment-3",
           expression: "Your appointment is confirmed",
           chinese: "???????",
-          pinyin: "nín de yù yu? y? què rèn",
+          pinyin: "nï¿½n de yï¿½ yu? y? quï¿½ rï¿½n",
           meaning: "Telling someone that their appointment has been officially scheduled.",
           whenToUse: "After scheduling an appointment, to confirm it's been recorded.",
-          whenNotToUse: "Don't use before actually scheduling — only after the appointment is set.",
+          whenNotToUse: "Don't use before actually scheduling ï¿½ only after the appointment is set.",
           nativeFrequency: "Very common in confirmation messages and emails.",
           commonMistakes: [
             { mistake: "Using 'Your appointment is okay' instead", correction: "'Confirmed' is the standard professional term" }
@@ -6629,7 +6629,7 @@ export const conversations: ConversationTopic[] = [
     },
     homework: {
       task: "Real Appointment",
-      description: "Actually schedule a real appointment this week in English — dentist, doctor, or any service. Write down what you said.",
+      description: "Actually schedule a real appointment this week in English ï¿½ dentist, doctor, or any service. Write down what you said.",
       dueText: "Before next lesson"
     },
     quiz: [
@@ -6753,7 +6753,7 @@ export const conversations: ConversationTopic[] = [
         word: "Reservation",
         phonetic: "/?rez?r?ve??n/",
         chinese: "??",
-        pinyin: "yù dìng",
+        pinyin: "yï¿½ dï¿½ng",
         partOfSpeech: "noun",
         definitionEn: "A booking made in advance for a hotel room.",
         definitionZh: "????????????",
@@ -6765,7 +6765,7 @@ export const conversations: ConversationTopic[] = [
         word: "Check in",
         phonetic: "/t?ek ?n/",
         chinese: "????",
-        pinyin: "bàn l? rù zhù",
+        pinyin: "bï¿½n l? rï¿½ zhï¿½",
         partOfSpeech: "phrase",
         definitionEn: "The process of registering at a hotel and getting your room key.",
         definitionZh: "????????????????",
@@ -6777,7 +6777,7 @@ export const conversations: ConversationTopic[] = [
         word: "Room",
         phonetic: "/ru?m/",
         chinese: "??",
-        pinyin: "fáng ji?n",
+        pinyin: "fï¿½ng ji?n",
         partOfSpeech: "noun",
         definitionEn: "A private space in a hotel for guests.",
         definitionZh: "??????????????",
@@ -6789,7 +6789,7 @@ export const conversations: ConversationTopic[] = [
         word: "Key",
         phonetic: "/ki?/",
         chinese: "??/??",
-        pinyin: "yào shi / fáng k?",
+        pinyin: "yï¿½o shi / fï¿½ng k?",
         partOfSpeech: "noun",
         definitionEn: "A card or physical key to access your hotel room.",
         definitionZh: "??????????????",
@@ -6813,7 +6813,7 @@ export const conversations: ConversationTopic[] = [
         word: "Check out",
         phonetic: "/t?ek a?t/",
         chinese: "????",
-        pinyin: "bàn l? tuì fáng",
+        pinyin: "bï¿½n l? tuï¿½ fï¿½ng",
         partOfSpeech: "phrase",
         definitionEn: "The process of leaving the hotel and paying your bill.",
         definitionZh: "???????????",
@@ -6829,15 +6829,15 @@ export const conversations: ConversationTopic[] = [
           id: "de-hotel-1",
           expression: "I have a reservation under...",
           chinese: "????????...",
-          pinyin: "w? yù dìng le, míng zi shì...",
+          pinyin: "w? yï¿½ dï¿½ng le, mï¿½ng zi shï¿½...",
           meaning: "Telling the hotel your reservation name to check in.",
           whenToUse: "When arriving at a hotel and checking in.",
-          whenNotToUse: "Don't use for walk-ins without reservations — say 'I'd like to make a reservation' instead.",
-          nativeFrequency: "Extremely common — the standard check-in phrase.",
+          whenNotToUse: "Don't use for walk-ins without reservations ï¿½ say 'I'd like to make a reservation' instead.",
+          nativeFrequency: "Extremely common ï¿½ the standard check-in phrase.",
           commonMistakes: [
             { mistake: "Saying 'I booked a room' without the name", correction: "Always include the reservation name: 'under the name...'" }
           ],
-          pronunciation: "/a? hæv ? ?rez?r?ve??n ??nd?r/",
+          pronunciation: "/a? hï¿½v ? ?rez?r?ve??n ??nd?r/",
           funnyExample: "A: I have a reservation under... 'Steve'. B: I see 'Steeve' with two e's. A: ...That's a nickname.",
           memoryTrick: "Think: 'reservation = booking' + 'under = in the name of' = 'my booking is in the name of...'",
           relatedExpressions: ["I booked a room", "Do you have my reservation?", "I'd like to check in"],
@@ -6851,10 +6851,10 @@ export const conversations: ConversationTopic[] = [
           id: "de-hotel-2",
           expression: "Could I see your...?",
           chinese: "?????...??",
-          pinyin: "néng kàn kan nín de... ma?",
+          pinyin: "nï¿½ng kï¿½n kan nï¿½n de... ma?",
           meaning: "Politely asking to see someone's ID or documents.",
           whenToUse: "When verifying identity at hotels, banks, or official places.",
-          whenNotToUse: "Don't use for casual requests — it's too formal for friends.",
+          whenNotToUse: "Don't use for casual requests ï¿½ it's too formal for friends.",
           nativeFrequency: "Very common in formal service interactions.",
           commonMistakes: [
             { mistake: "Using 'Show me your...' which sounds rude", correction: "'Could I see your...?' is polite and professional" }
@@ -6873,11 +6873,11 @@ export const conversations: ConversationTopic[] = [
           id: "de-hotel-3",
           expression: "Enjoy your stay",
           chinese: "??????",
-          pinyin: "zhù nín rù zhù yú kuài",
+          pinyin: "zhï¿½ nï¿½n rï¿½ zhï¿½ yï¿½ kuï¿½i",
           meaning: "A standard farewell from hotel staff to guests.",
           whenToUse: "When hotel staff say goodbye to guests after check-in.",
-          whenNotToUse: "Don't use as a guest to staff — it's their line to you.",
-          nativeFrequency: "Very common — standard hotel farewell.",
+          whenNotToUse: "Don't use as a guest to staff ï¿½ it's their line to you.",
+          nativeFrequency: "Very common ï¿½ standard hotel farewell.",
           commonMistakes: [
             { mistake: "Using 'Have a good stay' which is okay but less common", correction: "'Enjoy your stay' is the standard hotel phrase" }
           ],
@@ -7103,9 +7103,9 @@ export const conversations: ConversationTopic[] = [
     vocabulary: [
       {
         word: "Stamp",
-        phonetic: "/stæmp/",
+        phonetic: "/stï¿½mp/",
         chinese: "??",
-        pinyin: "yóu piào",
+        pinyin: "yï¿½u piï¿½o",
         partOfSpeech: "noun",
         definitionEn: "A small piece of paper you put on mail to pay for postage.",
         definitionZh: "??????????????",
@@ -7117,7 +7117,7 @@ export const conversations: ConversationTopic[] = [
         word: "Envelope",
         phonetic: "/?env?l??p/",
         chinese: "??",
-        pinyin: "xìn f?ng",
+        pinyin: "xï¿½n f?ng",
         partOfSpeech: "noun",
         definitionEn: "A folded paper container for a letter.",
         definitionZh: "??????????",
@@ -7127,7 +7127,7 @@ export const conversations: ConversationTopic[] = [
       },
       {
         word: "Package",
-        phonetic: "/?pæk?d?/",
+        phonetic: "/?pï¿½k?d?/",
         chinese: "??",
         pinyin: "b?o gu?",
         partOfSpeech: "noun",
@@ -7141,7 +7141,7 @@ export const conversations: ConversationTopic[] = [
         word: "Mail",
         phonetic: "/me?l/",
         chinese: "??",
-        pinyin: "yóu jì",
+        pinyin: "yï¿½u jï¿½",
         partOfSpeech: "verb / noun",
         definitionEn: "To send something through the postal system.",
         definitionZh: "???????????",
@@ -7153,7 +7153,7 @@ export const conversations: ConversationTopic[] = [
         word: "Delivery",
         phonetic: "/d??l?v?ri/",
         chinese: "??",
-        pinyin: "pèi sòng",
+        pinyin: "pï¿½i sï¿½ng",
         partOfSpeech: "noun",
         definitionEn: "The service of bringing mail or packages to someone.",
         definitionZh: "??????????????",
@@ -7165,7 +7165,7 @@ export const conversations: ConversationTopic[] = [
         word: "Address",
         phonetic: "/??dres/",
         chinese: "??",
-        pinyin: "dì zh?",
+        pinyin: "dï¿½ zh?",
         partOfSpeech: "noun",
         definitionEn: "The location where mail is sent.",
         definitionZh: "????????",
@@ -7181,10 +7181,10 @@ export const conversations: ConversationTopic[] = [
           id: "de-postoffice-1",
           expression: "I'd like to mail...",
           chinese: "???...",
-          pinyin: "w? xi?ng jì...",
+          pinyin: "w? xi?ng jï¿½...",
           meaning: "Expressing your desire to send something through the mail.",
           whenToUse: "When you arrive at the post office and want to send something.",
-          whenNotToUse: "Don't use for digital messages — this is only for physical mail.",
+          whenNotToUse: "Don't use for digital messages ï¿½ this is only for physical mail.",
           nativeFrequency: "Very common at post offices.",
           commonMistakes: [
             { mistake: "Using 'I want to send...' instead", correction: "'I'd like to mail...' is more polite and natural" }
@@ -7203,10 +7203,10 @@ export const conversations: ConversationTopic[] = [
           id: "de-postoffice-2",
           expression: "Regular / Express delivery",
           chinese: "??/????",
-          pinyin: "p? t?ng / kuài dì pèi sòng",
+          pinyin: "p? t?ng / kuï¿½i dï¿½ pï¿½i sï¿½ng",
           meaning: "The two main delivery speed options at the post office.",
           whenToUse: "When choosing how fast you want your mail or package delivered.",
-          whenNotToUse: "Don't use for emails — this is only for physical mail.",
+          whenNotToUse: "Don't use for emails ï¿½ this is only for physical mail.",
           nativeFrequency: "Very common when mailing packages.",
           commonMistakes: [
             { mistake: "Confusing 'delivery' with 'mail'", correction: "'Mail' is what you send, 'delivery' is how fast it arrives" }
@@ -7225,11 +7225,11 @@ export const conversations: ConversationTopic[] = [
           id: "de-postoffice-3",
           expression: "How much is...?",
           chinese: "...????",
-          pinyin: "... du? sh?o qián?",
+          pinyin: "... du? sh?o qiï¿½n?",
           meaning: "Asking for the price of a service or item.",
           whenToUse: "When asking about postage, stamps, or delivery costs.",
-          whenNotToUse: "Don't use for things that are free — it sounds confused.",
-          nativeFrequency: "Extremely common — used everywhere when shopping or buying services.",
+          whenNotToUse: "Don't use for things that are free ï¿½ it sounds confused.",
+          nativeFrequency: "Extremely common ï¿½ used everywhere when shopping or buying services.",
           commonMistakes: [
             { mistake: "Saying 'How much it is?'", correction: "Correct order is 'How much is it?'" }
           ],
@@ -7299,7 +7299,7 @@ export const conversations: ConversationTopic[] = [
       }
     ],
     pronunciation: [
-      { tip: "Package ? /?pæk?d?/", example: "Stress on first syllable" },
+      { tip: "Package ? /?pï¿½k?d?/", example: "Stress on first syllable" },
       { tip: "Delivery ? /d??l?v?ri/", example: "Stress on second syllable" }
     ],
     shadowing: [
@@ -7466,7 +7466,7 @@ export const conversations: ConversationTopic[] = [
         word: "Membership",
         phonetic: "/?memb???p/",
         chinese: "????",
-        pinyin: "huì yuán z? gé",
+        pinyin: "huï¿½ yuï¿½n z? gï¿½",
         partOfSpeech: "noun",
         definitionEn: "The status of being a member of a gym or club.",
         definitionZh: "???????????????",
@@ -7478,7 +7478,7 @@ export const conversations: ConversationTopic[] = [
         word: "Trainer",
         phonetic: "/?tre?n?r/",
         chinese: "??",
-        pinyin: "jiào liàn",
+        pinyin: "jiï¿½o liï¿½n",
         partOfSpeech: "noun",
         definitionEn: "A person who helps others exercise and get fit.",
         definitionZh: "????????????",
@@ -7490,7 +7490,7 @@ export const conversations: ConversationTopic[] = [
         word: "Treadmill",
         phonetic: "/?tredm?l/",
         chinese: "???",
-        pinyin: "p?o bù j?",
+        pinyin: "p?o bï¿½ j?",
         partOfSpeech: "noun",
         definitionEn: "A machine for running or walking indoors.",
         definitionZh: "?????????????",
@@ -7502,7 +7502,7 @@ export const conversations: ConversationTopic[] = [
         word: "Weights",
         phonetic: "/we?ts/",
         chinese: "??/??",
-        pinyin: "y? líng / gàng líng",
+        pinyin: "y? lï¿½ng / gï¿½ng lï¿½ng",
         partOfSpeech: "noun",
         definitionEn: "Equipment used for strength training.",
         definitionZh: "??????????",
@@ -7512,9 +7512,9 @@ export const conversations: ConversationTopic[] = [
       },
       {
         word: "Mat",
-        phonetic: "/mæt/",
+        phonetic: "/mï¿½t/",
         chinese: "??",
-        pinyin: "diàn zi",
+        pinyin: "diï¿½n zi",
         partOfSpeech: "noun",
         definitionEn: "A padded surface for exercises like yoga.",
         definitionZh: "?????????????",
@@ -7526,7 +7526,7 @@ export const conversations: ConversationTopic[] = [
         word: "Workout",
         phonetic: "/?w??rka?t/",
         chinese: "??",
-        pinyin: "duàn liàn",
+        pinyin: "duï¿½n liï¿½n",
         partOfSpeech: "noun",
         definitionEn: "A session of physical exercise.",
         definitionZh: "???????",
@@ -7542,10 +7542,10 @@ export const conversations: ConversationTopic[] = [
           id: "de-gym-1",
           expression: "I'm interested in...",
           chinese: "??...???",
-          pinyin: "w? duì... g?n xìng qù",
+          pinyin: "w? duï¿½... g?n xï¿½ng qï¿½",
           meaning: "Expressing interest in something, especially gym memberships or activities.",
           whenToUse: "When talking to gym staff about joining or trying something.",
-          whenNotToUse: "Don't use 'I interest in...' — it's grammatically incorrect.",
+          whenNotToUse: "Don't use 'I interest in...' ï¿½ it's grammatically incorrect.",
           nativeFrequency: "Very common in service and social situations.",
           commonMistakes: [
             { mistake: "Saying 'I interest in...' instead of 'I'm interested in...'", correction: "'Interested' is an adjective, so you need 'am': 'I am interested in...'" }
@@ -7564,15 +7564,15 @@ export const conversations: ConversationTopic[] = [
           id: "de-gym-2",
           expression: "Can I start with...?",
           chinese: "????...????",
-          pinyin: "w? k? y? cóng... k?i sh? ma?",
+          pinyin: "w? k? y? cï¿½ng... k?i sh? ma?",
           meaning: "Asking if you can begin with a specific plan, exercise, or equipment.",
           whenToUse: "When choosing a gym plan or starting a workout.",
-          whenNotToUse: "Don't use for things that have already started — use 'Can I continue with...?' instead.",
+          whenNotToUse: "Don't use for things that have already started ï¿½ use 'Can I continue with...?' instead.",
           nativeFrequency: "Very common when starting something new.",
           commonMistakes: [
             { mistake: "Using 'I start with...' which sounds like a statement", correction: "'Can I start with...?' is a polite question" }
           ],
-          pronunciation: "/kæn a? st??rt w?ğ/",
+          pronunciation: "/kï¿½n a? st??rt w?ï¿½/",
           funnyExample: "A: Can I start with a donut? B: ...That's not a workout plan. A: It's a warm-up for my workout.",
           memoryTrick: "Think: 'start = begin' + 'with = using' = 'can I begin using this?'",
           relatedExpressions: ["I'd like to start with...", "Can I begin with...?", "Let's start with..."],
@@ -7586,10 +7586,10 @@ export const conversations: ConversationTopic[] = [
           id: "de-gym-3",
           expression: "I'm new to...",
           chinese: "??...??",
-          pinyin: "w? shì... x?n sh?u",
+          pinyin: "w? shï¿½... x?n sh?u",
           meaning: "Telling someone you don't have much experience with something.",
           whenToUse: "When starting at a gym, job, or any new activity.",
-          whenNotToUse: "Don't use if you have experience — it would be dishonest.",
+          whenNotToUse: "Don't use if you have experience ï¿½ it would be dishonest.",
           nativeFrequency: "Very common when learning something new.",
           commonMistakes: [
             { mistake: "Using 'I new to...' without 'am'", correction: "Always use 'I'm new to...' or 'I am new to...'" }
@@ -7825,7 +7825,7 @@ export const conversations: ConversationTopic[] = [
         word: "Cart",
         phonetic: "/k??rt/",
         chinese: "???",
-        pinyin: "gòu wù ch?",
+        pinyin: "gï¿½u wï¿½ ch?",
         partOfSpeech: "noun",
         definitionEn: "A wheeled basket for carrying groceries while shopping.",
         definitionZh: "????????????????",
@@ -7837,7 +7837,7 @@ export const conversations: ConversationTopic[] = [
         word: "Aisle",
         phonetic: "/a?l/",
         chinese: "????",
-        pinyin: "huò jià t?ng dào",
+        pinyin: "huï¿½ jiï¿½ t?ng dï¿½o",
         partOfSpeech: "noun",
         definitionEn: "The space between shelves in a supermarket.",
         definitionZh: "??????????",
@@ -7849,7 +7849,7 @@ export const conversations: ConversationTopic[] = [
         word: "Checkout",
         phonetic: "/?t?eka?t/",
         chinese: "???",
-        pinyin: "sh?u yín tái",
+        pinyin: "sh?u yï¿½n tï¿½i",
         partOfSpeech: "noun",
         definitionEn: "The place where you pay for your groceries.",
         definitionZh: "??????????",
@@ -7861,7 +7861,7 @@ export const conversations: ConversationTopic[] = [
         word: "Receipt",
         phonetic: "/r??si?t/",
         chinese: "??",
-        pinyin: "sh?u jù",
+        pinyin: "sh?u jï¿½",
         partOfSpeech: "noun",
         definitionEn: "A paper showing what you bought and how much you paid.",
         definitionZh: "?????????????????",
@@ -7871,9 +7871,9 @@ export const conversations: ConversationTopic[] = [
       },
       {
         word: "Cashier",
-        phonetic: "/kæ???r/",
+        phonetic: "/kï¿½???r/",
         chinese: "???",
-        pinyin: "sh?u yín yuán",
+        pinyin: "sh?u yï¿½n yuï¿½n",
         partOfSpeech: "noun",
         definitionEn: "The person who takes your payment at the checkout.",
         definitionZh: "??????????",
@@ -7883,9 +7883,9 @@ export const conversations: ConversationTopic[] = [
       },
       {
         word: "Plastic bag",
-        phonetic: "/?plæst?k bæ?/",
+        phonetic: "/?plï¿½st?k bï¿½?/",
         chinese: "???",
-        pinyin: "sù liào dài",
+        pinyin: "sï¿½ liï¿½o dï¿½i",
         partOfSpeech: "noun",
         definitionEn: "A bag made of plastic for carrying groceries.",
         definitionZh: "??????????",
@@ -7901,15 +7901,15 @@ export const conversations: ConversationTopic[] = [
           id: "de-supermarket-1",
           expression: "Where are the...?",
           chinese: "...????",
-          pinyin: "... zài n? l??",
+          pinyin: "... zï¿½i n? l??",
           meaning: "Asking where a specific item is located in the store.",
           whenToUse: "When you can't find something in the supermarket.",
-          whenNotToUse: "Don't use for items you can clearly see — it sounds confused.",
+          whenNotToUse: "Don't use for items you can clearly see ï¿½ it sounds confused.",
           nativeFrequency: "Very common in stores and supermarkets.",
           commonMistakes: [
             { mistake: "Using 'Where is the...?' for plural items", correction: "Use 'Where are the...?' for plural items like 'apples'" }
           ],
-          pronunciation: "/we?r ??r ğ?/",
+          pronunciation: "/we?r ??r ï¿½?/",
           funnyExample: "A: Where are the apples? B: They're in aisle 3. A: ...I was in aisle 3 and didn't see them. B: ...Did you look?",
           memoryTrick: "Think: 'where = location' + 'are = plural' = 'where are these items?'",
           relatedExpressions: ["Where is the...?", "Can you tell me where...?", "Do you know where...?"],
@@ -7923,7 +7923,7 @@ export const conversations: ConversationTopic[] = [
           id: "de-supermarket-2",
           expression: "I'll take...",
           chinese: "??...",
-          pinyin: "w? yào...",
+          pinyin: "w? yï¿½o...",
           meaning: "Deciding to buy something.",
           whenToUse: "When you've made your decision to purchase an item.",
           whenNotToUse: "Don't use if you're still deciding. Use 'Can I have...?' or 'Let me think' instead.",
@@ -7945,10 +7945,10 @@ export const conversations: ConversationTopic[] = [
           id: "de-supermarket-3",
           expression: "Would you like...?",
           chinese: "???...??",
-          pinyin: "nín xi?ng yào... ma?",
+          pinyin: "nï¿½n xi?ng yï¿½o... ma?",
           meaning: "Asking someone if they want something, often as an offer.",
           whenToUse: "When offering something or suggesting an additional item.",
-          whenNotToUse: "Don't use for commands — this is only for offers and suggestions.",
+          whenNotToUse: "Don't use for commands ï¿½ this is only for offers and suggestions.",
           nativeFrequency: "Very common in service situations.",
           commonMistakes: [
             { mistake: "Using 'Do you like...?' instead", correction: "'Would you like...?' is an offer; 'Do you like...?' is asking about preference" }
@@ -8180,7 +8180,7 @@ export const conversations: ConversationTopic[] = [
         word: "Bus stop",
         phonetic: "/b?s st?p/",
         chinese: "???",
-        pinyin: "g?ng ji?o zhàn",
+        pinyin: "g?ng ji?o zhï¿½n",
         partOfSpeech: "noun",
         definitionEn: "A place where buses stop to pick up and drop off passengers.",
         definitionZh: "?????????????",
@@ -8192,7 +8192,7 @@ export const conversations: ConversationTopic[] = [
         word: "Ticket",
         phonetic: "/?t?k?t/",
         chinese: "?",
-        pinyin: "piào",
+        pinyin: "piï¿½o",
         partOfSpeech: "noun",
         definitionEn: "A piece of paper or card showing you have paid for transport.",
         definitionZh: "????????????????",
@@ -8204,7 +8204,7 @@ export const conversations: ConversationTopic[] = [
         word: "Station",
         phonetic: "/?ste??n/",
         chinese: "??",
-        pinyin: "ch? zhàn",
+        pinyin: "ch? zhï¿½n",
         partOfSpeech: "noun",
         definitionEn: "A place where trains or buses start and end their routes.",
         definitionZh: "?????????????????",
@@ -8214,9 +8214,9 @@ export const conversations: ConversationTopic[] = [
       },
       {
         word: "Platform",
-        phonetic: "/?plætf??rm/",
+        phonetic: "/?plï¿½tf??rm/",
         chinese: "??",
-        pinyin: "zhàn tái",
+        pinyin: "zhï¿½n tï¿½i",
         partOfSpeech: "noun",
         definitionEn: "The area at a train station where you wait for your train.",
         definitionZh: "?????????????",
@@ -8226,9 +8226,9 @@ export const conversations: ConversationTopic[] = [
       },
       {
         word: "Transfer",
-        phonetic: "/træns?f??r/",
+        phonetic: "/trï¿½ns?f??r/",
         chinese: "??",
-        pinyin: "huàn chéng",
+        pinyin: "huï¿½n chï¿½ng",
         partOfSpeech: "verb / noun",
         definitionEn: "To change from one bus or train to another.",
         definitionZh: "???????????????",
@@ -8240,7 +8240,7 @@ export const conversations: ConversationTopic[] = [
         word: "Schedule",
         phonetic: "/?sked?u?l/",
         chinese: "???",
-        pinyin: "shí kè bi?o",
+        pinyin: "shï¿½ kï¿½ bi?o",
         partOfSpeech: "noun",
         definitionEn: "A plan showing when buses or trains arrive and leave.",
         definitionZh: "???????????????????",
@@ -8256,15 +8256,15 @@ export const conversations: ConversationTopic[] = [
           id: "de-transport-1",
           expression: "Does this bus go to...?",
           chinese: "??????...??",
-          pinyin: "zhè tàng g?ng ji?o ch? qù... ma?",
+          pinyin: "zhï¿½ tï¿½ng g?ng ji?o ch? qï¿½... ma?",
           meaning: "Asking if a bus or train goes to a specific destination.",
           whenToUse: "When checking if your transport goes where you need.",
-          whenNotToUse: "Don't use for directions within a building — this is for public transport.",
+          whenNotToUse: "Don't use for directions within a building ï¿½ this is for public transport.",
           nativeFrequency: "Very common when using public transport.",
           commonMistakes: [
             { mistake: "Using 'Is this bus going to...?' which is okay but longer", correction: "'Does this bus go to...?' is more concise and natural" }
           ],
-          pronunciation: "/d?z ğ?s b?s ?o? tu?/",
+          pronunciation: "/d?z ï¿½?s b?s ?o? tu?/",
           funnyExample: "A: Does this bus go to the moon? B: ...No, but the next one might. A: ...I'll wait for that one.",
           memoryTrick: "Think: 'does this bus go = is this the right bus' = 'is this bus going to my destination?'",
           relatedExpressions: ["Does the train go to...?", "Does this stop at...?", "Is this the right bus for...?"],
@@ -8278,15 +8278,15 @@ export const conversations: ConversationTopic[] = [
           id: "de-transport-2",
           expression: "Do I need to transfer?",
           chinese: "???????",
-          pinyin: "w? x? yào huàn chéng ma?",
+          pinyin: "w? x? yï¿½o huï¿½n chï¿½ng ma?",
           meaning: "Asking if you need to change from one vehicle to another.",
           whenToUse: "When taking a journey that might require changing buses or trains.",
-          whenNotToUse: "Don't use if you're staying on the same vehicle — use 'Does this go directly to...?' instead.",
+          whenNotToUse: "Don't use if you're staying on the same vehicle ï¿½ use 'Does this go directly to...?' instead.",
           nativeFrequency: "Very common when navigating public transport.",
           commonMistakes: [
             { mistake: "Using 'I need transfer' without 'to'", correction: "Always say 'I need to transfer' or 'Do I need to transfer?'" }
           ],
-          pronunciation: "/du? a? ni?d tu? træns?f??r/",
+          pronunciation: "/du? a? ni?d tu? trï¿½ns?f??r/",
           funnyExample: "A: Do I need to transfer? B: No, this bus goes straight there. A: ...I was hoping for an adventure.",
           memoryTrick: "Think: 'transfer = change' + 'need to = must' = 'must I change vehicles?'",
           relatedExpressions: ["Do I have to change?", "Is there a direct bus?", "Do I need to change trains?"],
@@ -8300,10 +8300,10 @@ export const conversations: ConversationTopic[] = [
           id: "de-transport-3",
           expression: "Right in front of",
           chinese: "???...??",
-          pinyin: "zhèng h?o zài... qián miàn",
+          pinyin: "zhï¿½ng h?o zï¿½i... qiï¿½n miï¿½n",
           meaning: "Describing a location that is directly facing something.",
           whenToUse: "When giving directions or describing locations.",
-          whenNotToUse: "Don't use for approximate locations — use 'near' or 'next to' instead.",
+          whenNotToUse: "Don't use for approximate locations ï¿½ use 'near' or 'next to' instead.",
           nativeFrequency: "Very common when giving directions.",
           commonMistakes: [
             { mistake: "Using 'in front' without 'of'", correction: "Always use 'in front of' when describing location" }
@@ -8364,7 +8364,7 @@ export const conversations: ConversationTopic[] = [
       }
     ],
     pronunciation: [
-      { tip: "That'll be ? /ğæt?l bi?/", example: "Contraction sounds natural" },
+      { tip: "That'll be ? /ï¿½ï¿½t?l bi?/", example: "Contraction sounds natural" },
       { tip: "Right in front of ? /ra?t ?n fr?nt ?v/", example: "Fast, connected speech" }
     ],
     shadowing: [
@@ -8529,7 +8529,7 @@ export const conversations: ConversationTopic[] = [
         word: "Post",
         phonetic: "/po?st/",
         chinese: "??/??",
-        pinyin: "ti? zi / f? bù",
+        pinyin: "ti? zi / f? bï¿½",
         partOfSpeech: "noun / verb",
         definitionEn: "A piece of content shared on social media; also the act of sharing it.",
         definitionZh: "?????????????????????",
@@ -8541,7 +8541,7 @@ export const conversations: ConversationTopic[] = [
         word: "Follow",
         phonetic: "/?f?lo?/",
         chinese: "??",
-        pinyin: "gu?n zhù",
+        pinyin: "gu?n zhï¿½",
         partOfSpeech: "verb",
         definitionEn: "To subscribe to someone's social media account.",
         definitionZh: "????????????",
@@ -8553,7 +8553,7 @@ export const conversations: ConversationTopic[] = [
         word: "Like",
         phonetic: "/la?k/",
         chinese: "??",
-        pinyin: "di?n zàn",
+        pinyin: "di?n zï¿½n",
         partOfSpeech: "verb",
         definitionEn: "To show approval or enjoyment of a post.",
         definitionZh: "????????????",
@@ -8565,7 +8565,7 @@ export const conversations: ConversationTopic[] = [
         word: "Comment",
         phonetic: "/?k?ment/",
         chinese: "??",
-        pinyin: "píng lùn",
+        pinyin: "pï¿½ng lï¿½n",
         partOfSpeech: "noun / verb",
         definitionEn: "A written response to a post; also the act of writing one.",
         definitionZh: "??????????????????",
@@ -8589,7 +8589,7 @@ export const conversations: ConversationTopic[] = [
         word: "Online",
         phonetic: "/??nla?n/",
         chinese: "???",
-        pinyin: "zài xiàn de",
+        pinyin: "zï¿½i xiï¿½n de",
         partOfSpeech: "adjective",
         definitionEn: "Connected to the internet; available on the internet.",
         definitionZh: "?????????????????",
@@ -8605,10 +8605,10 @@ export const conversations: ConversationTopic[] = [
           id: "de-social-1",
           expression: "Did you see my post?",
           chinese: "??????????",
-          pinyin: "n? kàn dào w? de ti? zi le ma?",
+          pinyin: "n? kï¿½n dï¿½o w? de ti? zi le ma?",
           meaning: "Asking if someone has seen your social media post.",
           whenToUse: "When you want to know if friends have seen your latest content.",
-          whenNotToUse: "Don't use for private messages — this is for public posts.",
+          whenNotToUse: "Don't use for private messages ï¿½ this is for public posts.",
           nativeFrequency: "Very common in social media conversations.",
           commonMistakes: [
             { mistake: "Using 'Did you post my photo?' instead", correction: "'Did you see my post?' asks if they viewed it, not if they posted it" }
@@ -8627,15 +8627,15 @@ export const conversations: ConversationTopic[] = [
           id: "de-social-2",
           expression: "Can you like and comment?",
           chinese: "?????????",
-          pinyin: "n? néng di?n zàn hé píng lùn ma?",
+          pinyin: "n? nï¿½ng di?n zï¿½n hï¿½ pï¿½ng lï¿½n ma?",
           meaning: "Asking someone to engage with your social media post.",
           whenToUse: "When you want more engagement on your post.",
-          whenNotToUse: "Don't ask strangers — this is for friends and family.",
+          whenNotToUse: "Don't ask strangers ï¿½ this is for friends and family.",
           nativeFrequency: "Common among friends on social media.",
           commonMistakes: [
             { mistake: "Using 'Can you like it?' only", correction: "Adding 'and comment' gets more engagement" }
           ],
-          pronunciation: "/kæn ju? la?k ?nd ?k?ment/",
+          pronunciation: "/kï¿½n ju? la?k ?nd ?k?ment/",
           funnyExample: "A: Can you like and comment? B: I can, but I won't. A: ...Why not? B: Because I'm not on your post.",
           memoryTrick: "Think: 'like = approve' + 'comment = respond' = 'please approve and respond to my post'",
           relatedExpressions: ["Can you share this?", "Please like and share", "Engage with my post"],
@@ -8649,15 +8649,15 @@ export const conversations: ConversationTopic[] = [
           id: "de-social-3",
           expression: "The more... the better",
           chinese: "??...??",
-          pinyin: "yuè du?... yuè h?o",
+          pinyin: "yuï¿½ du?... yuï¿½ h?o",
           meaning: "A comparative structure meaning more of something is desirable.",
           whenToUse: "When expressing that quantity improves quality or outcome.",
-          whenNotToUse: "Don't use for negative things — it only works for positive or neutral things.",
+          whenNotToUse: "Don't use for negative things ï¿½ it only works for positive or neutral things.",
           nativeFrequency: "Very common in social media and marketing.",
           commonMistakes: [
             { mistake: "Using 'The more... the good' instead", correction: "Always use 'better' in this structure: 'The more... the better'" }
           ],
-          pronunciation: "/ğ? m??r... ğ? ?bet?r/",
+          pronunciation: "/ï¿½? m??r... ï¿½? ?bet?r/",
           funnyExample: "A: The more shares, the better. B: The more likes, the better. A: The more memes, the better. B: ...We're on the same page.",
           memoryTrick: "Think: 'more = increase' + 'better = improve' = 'more is better'",
           relatedExpressions: ["The more the merrier", "More is better", "Quantity over quality"],
@@ -8716,7 +8716,7 @@ export const conversations: ConversationTopic[] = [
     ],
     pronunciation: [
       { tip: "Followers ? /?f?lo??rz/", example: "Stress on first syllable" },
-      { tip: "The more... the better ? /ğ? m??r... ğ? ?bet?r/", example: "Connected speech" }
+      { tip: "The more... the better ? /ï¿½? m??r... ï¿½? ?bet?r/", example: "Connected speech" }
     ],
     shadowing: [
       { line: "Did you see my new post on Instagram?", emphasis: "Did you see" },
@@ -8883,7 +8883,7 @@ export const conversations: ConversationTopic[] = [
         word: "Help",
         phonetic: "/help/",
         chinese: "??",
-        pinyin: "b?ng zhù",
+        pinyin: "b?ng zhï¿½",
         partOfSpeech: "noun / verb",
         definitionEn: "Assistance or support from someone.",
         definitionZh: "?????????",
@@ -8893,9 +8893,9 @@ export const conversations: ConversationTopic[] = [
       },
       {
         word: "Can you...?",
-        phonetic: "/kæn ju?/",
+        phonetic: "/kï¿½n ju?/",
         chinese: "??...??",
-        pinyin: "n? néng... ma?",
+        pinyin: "n? nï¿½ng... ma?",
         partOfSpeech: "question",
         definitionEn: "A polite way to ask someone to do something.",
         definitionZh: "??????????????",
@@ -8907,7 +8907,7 @@ export const conversations: ConversationTopic[] = [
         word: "Excuse me",
         phonetic: "/?k?skju?z mi?/",
         chinese: "????",
-        pinyin: "d? r?o y? xià",
+        pinyin: "d? r?o y? xiï¿½",
         partOfSpeech: "phrase",
         definitionEn: "A polite way to get someone's attention before asking for help.",
         definitionZh: "??????????????????",
@@ -8919,7 +8919,7 @@ export const conversations: ConversationTopic[] = [
         word: "Lost",
         phonetic: "/l?st/",
         chinese: "???",
-        pinyin: "mí lù de",
+        pinyin: "mï¿½ lï¿½ de",
         partOfSpeech: "adjective",
         definitionEn: "Not knowing where you are or where to go.",
         definitionZh: "?????????????",
@@ -8931,7 +8931,7 @@ export const conversations: ConversationTopic[] = [
         word: "Problem",
         phonetic: "/?pr?bl?m/",
         chinese: "??",
-        pinyin: "wèn tí",
+        pinyin: "wï¿½n tï¿½",
         partOfSpeech: "noun",
         definitionEn: "A difficulty or trouble that needs solving.",
         definitionZh: "???????????",
@@ -8941,9 +8941,9 @@ export const conversations: ConversationTopic[] = [
       },
       {
         word: "Thank you",
-        phonetic: "/?æ?k ju?/",
+        phonetic: "/?ï¿½?k ju?/",
         chinese: "??",
-        pinyin: "xiè xie",
+        pinyin: "xiï¿½ xie",
         partOfSpeech: "phrase",
         definitionEn: "Expressing gratitude for help received.",
         definitionZh: "???????????",
@@ -8959,15 +8959,15 @@ export const conversations: ConversationTopic[] = [
           id: "de-help-1",
           expression: "Can you help me...?",
           chinese: "????...??",
-          pinyin: "n? néng b?ng w?... ma?",
+          pinyin: "n? nï¿½ng b?ng w?... ma?",
           meaning: "Polite way to ask for assistance.",
           whenToUse: "When you need help from someone in any situation.",
-          whenNotToUse: "Don't use 'Help me!' alone — it sounds like an emergency or command.",
-          nativeFrequency: "Extremely common — used daily.",
+          whenNotToUse: "Don't use 'Help me!' alone ï¿½ it sounds like an emergency or command.",
+          nativeFrequency: "Extremely common ï¿½ used daily.",
           commonMistakes: [
             { mistake: "Using 'Help me!' which sounds urgent", correction: "'Can you help me, please?' is polite and appropriate" }
           ],
-          pronunciation: "/kæn ju? help mi?/",
+          pronunciation: "/kï¿½n ju? help mi?/",
           funnyExample: "A: Can you help me? B: I can, but I won't. A: ...That's not how this works.",
           memoryTrick: "Think: 'can you = are you able to' + 'help me = assist me' = 'are you able to assist me?'",
           relatedExpressions: ["Can you show me...?", "Can you tell me...?", "Would you mind helping me?"],
@@ -8981,11 +8981,11 @@ export const conversations: ConversationTopic[] = [
           id: "de-help-2",
           expression: "Excuse me",
           chinese: "????",
-          pinyin: "d? r?o y? xià",
+          pinyin: "d? r?o y? xiï¿½",
           meaning: "Polite way to get someone's attention before asking for something.",
           whenToUse: "Before asking a stranger for help, directions, or anything.",
-          whenNotToUse: "Don't use for people you know well — just say 'Hey' or their name.",
-          nativeFrequency: "Extremely common — used daily to get attention politely.",
+          whenNotToUse: "Don't use for people you know well ï¿½ just say 'Hey' or their name.",
+          nativeFrequency: "Extremely common ï¿½ used daily to get attention politely.",
           commonMistakes: [
             { mistake: "Using 'Hey you!' instead", correction: "'Excuse me' is much more polite with strangers" }
           ],
@@ -9003,15 +9003,15 @@ export const conversations: ConversationTopic[] = [
           id: "de-help-3",
           expression: "Thank you for your help",
           chinese: "??????",
-          pinyin: "xiè xie n? de b?ng zhù",
+          pinyin: "xiï¿½ xie n? de b?ng zhï¿½",
           meaning: "Expressing gratitude after receiving help.",
           whenToUse: "After someone has helped you with something.",
-          whenNotToUse: "Don't use before receiving help — use 'Thank you' after they help.",
-          nativeFrequency: "Very common — standard polite closing.",
+          whenNotToUse: "Don't use before receiving help ï¿½ use 'Thank you' after they help.",
+          nativeFrequency: "Very common ï¿½ standard polite closing.",
           commonMistakes: [
             { mistake: "Using just 'Thanks' which is fine but less formal", correction: "'Thank you for your help' is more complete and polite" }
           ],
-          pronunciation: "/?æ?k ju? f?r j?r help/",
+          pronunciation: "/?ï¿½?k ju? f?r j?r help/",
           funnyExample: "A: Thank you for your help! B: You're welcome. A: ...I didn't actually help. B: ...Then thank you for your attempt.",
           memoryTrick: "Think: 'thank you = gratitude' + 'for your help = for what you did' = 'grateful for your action'",
           relatedExpressions: ["Thanks a lot", "I really appreciate it", "You're a lifesaver"],
@@ -9065,8 +9065,8 @@ export const conversations: ConversationTopic[] = [
       }
     ],
     pronunciation: [
-      { tip: "Can you ? /kæn ju?/", example: "Natural, polite request" },
-      { tip: "Thank you for your help ? /?æ?k ju? f?r j?r help/", example: "Connected speech" }
+      { tip: "Can you ? /kï¿½n ju?/", example: "Natural, polite request" },
+      { tip: "Thank you for your help ? /?ï¿½?k ju? f?r j?r help/", example: "Connected speech" }
     ],
     shadowing: [
       { line: "Excuse me, I'm lost. Can you help me find the museum?", emphasis: "Can you help me" },
@@ -9231,7 +9231,7 @@ export const conversations: ConversationTopic[] = [
         word: "Sunny",
         phonetic: "/?s?ni/",
         chinese: "???",
-        pinyin: "qíng l?ng de",
+        pinyin: "qï¿½ng l?ng de",
         partOfSpeech: "adjective",
         definitionEn: "Bright with lots of sunshine.",
         definitionZh: "??????",
@@ -9243,7 +9243,7 @@ export const conversations: ConversationTopic[] = [
         word: "Rainy",
         phonetic: "/?re?ni/",
         chinese: "???",
-        pinyin: "xià y? de",
+        pinyin: "xiï¿½ y? de",
         partOfSpeech: "adjective",
         definitionEn: "Having a lot of rain.",
         definitionZh: "??????",
@@ -9277,9 +9277,9 @@ export const conversations: ConversationTopic[] = [
       },
       {
         word: "Forecast",
-        phonetic: "/?f??rkæst/",
+        phonetic: "/?f??rkï¿½st/",
         chinese: "????",
-        pinyin: "ti?n qì yù bào",
+        pinyin: "ti?n qï¿½ yï¿½ bï¿½o",
         partOfSpeech: "noun",
         definitionEn: "A prediction of what the weather will be.",
         definitionZh: "???????",
@@ -9291,7 +9291,7 @@ export const conversations: ConversationTopic[] = [
         word: "Temperature",
         phonetic: "/?tempr?t??r/",
         chinese: "??",
-        pinyin: "w?n dù",
+        pinyin: "w?n dï¿½",
         partOfSpeech: "noun",
         definitionEn: "A measure of how hot or cold something is.",
         definitionZh: "??????????????",
@@ -9307,11 +9307,11 @@ export const conversations: ConversationTopic[] = [
           id: "de-weather-1",
           expression: "It's sunny/rainy/cold",
           chinese: "????/??/??",
-          pinyin: "ti?n qì qíng l?ng / xià y? / hán l?ng",
+          pinyin: "ti?n qï¿½ qï¿½ng l?ng / xiï¿½ y? / hï¿½n l?ng",
           meaning: "Describing the current weather conditions.",
           whenToUse: "When talking about the weather right now.",
-          whenNotToUse: "Don't use 'Today is rainy' — always use 'It's rainy today'.",
-          nativeFrequency: "Extremely common — used every day.",
+          whenNotToUse: "Don't use 'Today is rainy' ï¿½ always use 'It's rainy today'.",
+          nativeFrequency: "Extremely common ï¿½ used every day.",
           commonMistakes: [
             { mistake: "Using 'Today is rainy' instead of 'It's rainy today'", correction: "Use 'It's + adjective + today' for weather" }
           ],
@@ -9329,15 +9329,15 @@ export const conversations: ConversationTopic[] = [
           id: "de-weather-2",
           expression: "What's the forecast?",
           chinese: "????????",
-          pinyin: "ti?n qì yù bào shì shén me?",
+          pinyin: "ti?n qï¿½ yï¿½ bï¿½o shï¿½ shï¿½n me?",
           meaning: "Asking what the weather will be like in the future.",
           whenToUse: "When you want to know the upcoming weather.",
-          whenNotToUse: "Don't use for current weather — use 'What's the weather like today?' instead.",
-          nativeFrequency: "Very common — used daily.",
+          whenNotToUse: "Don't use for current weather ï¿½ use 'What's the weather like today?' instead.",
+          nativeFrequency: "Very common ï¿½ used daily.",
           commonMistakes: [
             { mistake: "Using 'What will the weather be?' which is correct but longer", correction: "'What's the forecast?' is more concise and natural" }
           ],
-          pronunciation: "/w?ts ğ? ?f??rkæst/",
+          pronunciation: "/w?ts ï¿½? ?f??rkï¿½st/",
           funnyExample: "A: What's the forecast? B: It will rain. A: ...I can see that from the window. B: ...I'm a weather reporter, not a magician.",
           memoryTrick: "Think: 'forecast = prediction' = 'what will the weather be?'",
           relatedExpressions: ["What will the weather be?", "What's the weather like tomorrow?", "Is it going to rain?"],
@@ -9351,10 +9351,10 @@ export const conversations: ConversationTopic[] = [
           id: "de-weather-3",
           expression: "Perfect for...",
           chinese: "????...",
-          pinyin: "zh?n shì hé...",
+          pinyin: "zh?n shï¿½ hï¿½...",
           meaning: "Describing ideal conditions for an activity.",
           whenToUse: "When the weather is ideal for a specific activity.",
-          whenNotToUse: "Don't use for negative things — 'perfect' only works for positive situations.",
+          whenNotToUse: "Don't use for negative things ï¿½ 'perfect' only works for positive situations.",
           nativeFrequency: "Very common in weather and activity conversations.",
           commonMistakes: [
             { mistake: "Using 'Good for...' instead", correction: "'Perfect for...' is stronger and more enthusiastic" }
@@ -9418,7 +9418,7 @@ export const conversations: ConversationTopic[] = [
     ],
     pronunciation: [
       { tip: "Sunny ? /?s?ni/", example: "Double 'n', stress on first syllable" },
-      { tip: "Forecast ? /?f??rkæst/", example: "Stress on first syllable" }
+      { tip: "Forecast ? /?f??rkï¿½st/", example: "Stress on first syllable" }
     ],
     shadowing: [
       { line: "It's a beautiful sunny day today.", emphasis: "beautiful sunny day" },
@@ -9586,7 +9586,7 @@ export const conversations: ConversationTopic[] = [
         word: "Neighbor",
         phonetic: "/?ne?b?r/",
         chinese: "??",
-        pinyin: "lín j?",
+        pinyin: "lï¿½n j?",
         partOfSpeech: "noun",
         definitionEn: "A person who lives near you.",
         definitionZh: "????????",
@@ -9598,7 +9598,7 @@ export const conversations: ConversationTopic[] = [
         word: "Building",
         phonetic: "/?b?ld??/",
         chinese: "??/??",
-        pinyin: "dà lóu / jiàn zhù",
+        pinyin: "dï¿½ lï¿½u / jiï¿½n zhï¿½",
         partOfSpeech: "noun",
         definitionEn: "A structure with floors and rooms where people live or work.",
         definitionZh: "??????????????????",
@@ -9610,7 +9610,7 @@ export const conversations: ConversationTopic[] = [
         word: "Floor",
         phonetic: "/fl??r/",
         chinese: "??",
-        pinyin: "lóu céng",
+        pinyin: "lï¿½u cï¿½ng",
         partOfSpeech: "noun",
         definitionEn: "A level of a building.",
         definitionZh: "???????",
@@ -9622,7 +9622,7 @@ export const conversations: ConversationTopic[] = [
         word: "Introduce",
         phonetic: "/??ntr??du?s/",
         chinese: "??",
-        pinyin: "jiè shào",
+        pinyin: "jiï¿½ shï¿½o",
         partOfSpeech: "verb",
         definitionEn: "To tell people your name and information.",
         definitionZh: "????????????",
@@ -9634,7 +9634,7 @@ export const conversations: ConversationTopic[] = [
         word: "Welcome",
         phonetic: "/?welk?m/",
         chinese: "??",
-        pinyin: "hu?n yíng",
+        pinyin: "hu?n yï¿½ng",
         partOfSpeech: "verb / adjective",
         definitionEn: "To greet someone warmly; also feeling glad about someone's arrival.",
         definitionZh: "????????????????????",
@@ -9646,7 +9646,7 @@ export const conversations: ConversationTopic[] = [
         word: "Get to know",
         phonetic: "/?et tu? no?/",
         chinese: "??/??",
-        pinyin: "rèn shi / li?o ji?",
+        pinyin: "rï¿½n shi / li?o ji?",
         partOfSpeech: "phrase",
         definitionEn: "To become familiar with someone over time.",
         definitionZh: "????????????",
@@ -9662,10 +9662,10 @@ export const conversations: ConversationTopic[] = [
           id: "de-neighbor-1",
           expression: "I just moved in",
           chinese: "?????",
-          pinyin: "w? g?ng b?ng jìn lái",
+          pinyin: "w? g?ng b?ng jï¿½n lï¿½i",
           meaning: "Telling someone you recently arrived at your new home.",
           whenToUse: "When meeting new neighbors after moving to a new place.",
-          whenNotToUse: "Don't use if you've lived there for years — it would be confusing.",
+          whenNotToUse: "Don't use if you've lived there for years ï¿½ it would be confusing.",
           nativeFrequency: "Very common when meeting new people after moving.",
           commonMistakes: [
             { mistake: "Using 'I moved in yesterday' without context", correction: "'I just moved in' emphasizes the recent change" }
@@ -9684,11 +9684,11 @@ export const conversations: ConversationTopic[] = [
           id: "de-neighbor-2",
           expression: "Nice to meet you",
           chinese: "??????",
-          pinyin: "h?n g?o xìng rèn shi n?",
+          pinyin: "h?n g?o xï¿½ng rï¿½n shi n?",
           meaning: "A standard phrase said when meeting someone for the first time.",
           whenToUse: "When being introduced to someone new.",
-          whenNotToUse: "Don't use with people you already know — it sounds like you've forgotten them.",
-          nativeFrequency: "Extremely common — used every time you meet someone new.",
+          whenNotToUse: "Don't use with people you already know ï¿½ it sounds like you've forgotten them.",
+          nativeFrequency: "Extremely common ï¿½ used every time you meet someone new.",
           commonMistakes: [
             { mistake: "Using 'Nice to see you' for first meetings", correction: "'Nice to meet you' is for first meetings; 'Nice to see you' is for people you already know" }
           ],
@@ -9706,10 +9706,10 @@ export const conversations: ConversationTopic[] = [
           id: "de-neighbor-3",
           expression: "Would you like...?",
           chinese: "???...??",
-          pinyin: "nín xi?ng yào... ma?",
+          pinyin: "nï¿½n xi?ng yï¿½o... ma?",
           meaning: "Polite way to offer something to someone.",
           whenToUse: "When offering food, drinks, or help to neighbors.",
-          whenNotToUse: "Don't use for commands — this is only for offers.",
+          whenNotToUse: "Don't use for commands ï¿½ this is only for offers.",
           nativeFrequency: "Very common in friendly social situations.",
           commonMistakes: [
             { mistake: "Using 'Do you want...?' which can sound demanding", correction: "'Would you like...?' is polite and friendly" }
@@ -9943,7 +9943,7 @@ export const conversations: ConversationTopic[] = [
         word: "Laundry",
         phonetic: "/?l??ndri/",
         chinese: "??/????",
-        pinyin: "x? y? / dài x? y? wù",
+        pinyin: "x? y? / dï¿½i x? y? wï¿½",
         partOfSpeech: "noun",
         definitionEn: "Clothes that need washing; also the act of washing them.",
         definitionZh: "????????????????",
@@ -9967,7 +9967,7 @@ export const conversations: ConversationTopic[] = [
         word: "Detergent",
         phonetic: "/d??t??rd??nt/",
         chinese: "???/???",
-        pinyin: "x? y? f?n / x? y? yè",
+        pinyin: "x? y? f?n / x? y? yï¿½",
         partOfSpeech: "noun",
         definitionEn: "Soap used for washing clothes.",
         definitionZh: "?????????",
@@ -9991,7 +9991,7 @@ export const conversations: ConversationTopic[] = [
         word: "Change",
         phonetic: "/t?e?nd?/",
         chinese: "??",
-        pinyin: "líng qián",
+        pinyin: "lï¿½ng qiï¿½n",
         partOfSpeech: "noun",
         definitionEn: "Small amount of money given back or needed for machines.",
         definitionZh: "????????????",
@@ -10003,7 +10003,7 @@ export const conversations: ConversationTopic[] = [
         word: "Spin",
         phonetic: "/sp?n/",
         chinese: "??",
-        pinyin: "xuán zhu?n",
+        pinyin: "xuï¿½n zhu?n",
         partOfSpeech: "verb",
         definitionEn: "To rotate quickly, as in a washing machine.",
         definitionZh: "??????????",
@@ -10019,10 +10019,10 @@ export const conversations: ConversationTopic[] = [
           id: "de-laundromat-1",
           expression: "How much is a wash and dry cycle?",
           chinese: "??????????",
-          pinyin: "x? y? h?ng g?n xún huán du? sh?o qián?",
+          pinyin: "x? y? h?ng g?n xï¿½n huï¿½n du? sh?o qiï¿½n?",
           meaning: "Asking for the price of washing and drying clothes.",
           whenToUse: "When you arrive at a laundromat and want to know the cost.",
-          whenNotToUse: "Don't use for dry cleaning — this is for self-service laundromats.",
+          whenNotToUse: "Don't use for dry cleaning ï¿½ this is for self-service laundromats.",
           nativeFrequency: "Very common when using a laundromat.",
           commonMistakes: [
             { mistake: "Using 'How much are...?' for a service", correction: "'How much is...?' is correct for asking about a service price" }
@@ -10041,15 +10041,15 @@ export const conversations: ConversationTopic[] = [
           id: "de-laundromat-2",
           expression: "Can you break a...?",
           chinese: "????...??",
-          pinyin: "n? néng huàn k?i... ma?",
+          pinyin: "n? nï¿½ng huï¿½n k?i... ma?",
           meaning: "Asking someone to exchange a large bill for smaller coins or bills.",
           whenToUse: "When you have a large bill and need coins for a laundromat machine.",
-          whenNotToUse: "Don't use if you already have the right change — it's only for getting change.",
+          whenNotToUse: "Don't use if you already have the right change ï¿½ it's only for getting change.",
           nativeFrequency: "Common when using coin-operated machines.",
           commonMistakes: [
             { mistake: "Using 'Can you change...?' which is okay but less specific", correction: "'Can you break a $20 bill?' is the standard phrase" }
           ],
-          pronunciation: "/kæn ju? bre?k ?/",
+          pronunciation: "/kï¿½n ju? bre?k ?/",
           funnyExample: "A: Can you break a $20 bill? B: I only have $20 bills too. A: ...We're stuck in the laundromat forever.",
           memoryTrick: "Think: 'break = split into smaller pieces' + 'bill = money' = 'split this money into smaller pieces'",
           relatedExpressions: ["Can you change this?", "Do you have change?", "I need quarters"],
@@ -10063,10 +10063,10 @@ export const conversations: ConversationTopic[] = [
           id: "de-laundromat-3",
           expression: "Here are your...",
           chinese: "????...",
-          pinyin: "zhè shì nín de...",
+          pinyin: "zhï¿½ shï¿½ nï¿½n de...",
           meaning: "Giving something to someone after they asked for it.",
           whenToUse: "When handing over quarters, change, detergent, or anything.",
-          whenNotToUse: "Don't use when receiving — use 'Thank you' instead.",
+          whenNotToUse: "Don't use when receiving ï¿½ use 'Thank you' instead.",
           nativeFrequency: "Very common in service situations.",
           commonMistakes: [
             { mistake: "Using 'Here is your...' for plural items", correction: "Use 'Here are your...' for plural items like quarters" }
@@ -10275,55 +10275,202 @@ export const conversations: ConversationTopic[] = [
       ]
     }
   },
-  {
+   {
     id: "pet-store",
     title: "At the Pet Store",
-    emoji: "??",
+    emoji: "ğŸ¾",
     description: "Buying pet food, asking about pets, and talking to pet store staff.",
     color: "from-orange-400 to-amber-400",
     level: "A1",
     estimatedTime: "10 min",
-    vocabularyPreview: [
-      { word: "Pet", phonetic: "/pet/", chinese: "??", partOfSpeech: "noun" },
-      { word: "Dog food", phonetic: "/d?g fu?d/", chinese: "??", partOfSpeech: "noun" },
-      { word: "Cat food", phonetic: "/kæt fu?d/", chinese: "??", partOfSpeech: "noun" },
-      { word: "Leash", phonetic: "/li??/", chinese: "???", partOfSpeech: "noun" },
-      { word: "Cage", phonetic: "/ke?d?/", chinese: "??", partOfSpeech: "noun" },
-      { word: "Toy", phonetic: "/t??/", chinese: "??", partOfSpeech: "noun" }
+    registerMarkers: [
+      { level: "formal", label: "Formal", color: "bg-blue-100 text-blue-800 border-blue-200", description: "Professional pet store or vet" },
+      { level: "neutral", label: "Neutral", color: "bg-gray-100 text-gray-800 border-gray-200", description: "Standard pet store interaction" },
+      { level: "casual", label: "Casual", color: "bg-green-100 text-green-800 border-green-200", description: "Chatting with pet lovers" }
+    ],
+    warmUp: {
+      title: "Warm-Up: Pet Store English",
+      content: "Pet stores are full of useful vocabulary. In this lesson, you'll learn how to ask for pet supplies, get recommendations, and talk about your pet.",
+      contentZh: "å® ç‰©åº—å……æ»¡äº†æœ‰ç”¨çš„è¯æ±‡ã€‚åœ¨æœ¬è¯¾ä¸­ï¼Œä½ å°†å­¦ä¹ å¦‚ä½•è¯¢é—®å® ç‰©ç”¨å“ã€è·å–æ¨èå’Œè°ˆè®ºä½ çš„å® ç‰©ã€‚"
+    },
+    vocabulary: [
+      {
+        word: "Pet",
+        phonetic: "/pet/",
+        chinese: "å® ç‰©",
+        pinyin: "chÇ’ng wÃ¹",
+        partOfSpeech: "noun",
+        definitionEn: "An animal kept for companionship.",
+        definitionZh: "ä¸ºäº†é™ªä¼´è€Œé¥²å…»çš„åŠ¨ç‰©ã€‚",
+        exampleEn: "I have a pet dog.",
+        exampleZh: "æˆ‘æœ‰ä¸€åªå® ç‰©ç‹—ã€‚",
+        register: "neutral"
+      },
+      {
+        word: "Dog food",
+        phonetic: "/dÉ”ËÉ¡ fuËd/",
+        chinese: "ç‹—ç²®",
+        pinyin: "gÇ’u liÃ¡ng",
+        partOfSpeech: "noun",
+        definitionEn: "Food specifically made for dogs.",
+        definitionZh: "ä¸“é—¨ä¸ºç‹—åˆ¶ä½œçš„é£Ÿç‰©ã€‚",
+        exampleEn: "I'm looking for dog food for a small puppy.",
+        exampleZh: "æˆ‘åœ¨æ‰¾å°ç‹—çš„ç‹—ç²®ã€‚",
+        register: "neutral"
+      },
+      {
+        word: "Cat food",
+        phonetic: "/kÃ¦t fuËd/",
+        chinese: "çŒ«ç²®",
+        pinyin: "mÄo liÃ¡ng",
+        partOfSpeech: "noun",
+        definitionEn: "Food specifically made for cats.",
+        definitionZh: "ä¸“é—¨ä¸ºçŒ«åˆ¶ä½œçš„é£Ÿç‰©ã€‚",
+        exampleEn: "Do you have any cat food?",
+        exampleZh: "ä½ ä»¬æœ‰çŒ«ç²®å—ï¼Ÿ",
+        register: "neutral"
+      },
+      {
+        word: "Leash",
+        phonetic: "/liËÊƒ/",
+        chinese: "ç‰µå¼•ç»³",
+        pinyin: "qiÄn yÇn shÃ©ng",
+        partOfSpeech: "noun",
+        definitionEn: "A strap used to lead a dog.",
+        definitionZh: "ç”¨æ¥ç‰µç‹—çš„å¸¦å­ã€‚",
+        exampleEn: "Don't forget a leash.",
+        exampleZh: "åˆ«å¿˜äº†ç‰µå¼•ç»³ã€‚",
+        register: "neutral"
+      },
+      {
+        word: "Cage",
+        phonetic: "/keÉªdÊ’/",
+        chinese: "ç¬¼å­",
+        pinyin: "lÃ³ng zi",
+        partOfSpeech: "noun",
+        definitionEn: "An enclosure for keeping animals.",
+        definitionZh: "ç”¨äºé¥²å…»åŠ¨ç‰©çš„å›´æ ã€‚",
+        exampleEn: "I need a cage for my hamster.",
+        exampleZh: "æˆ‘éœ€è¦ä¸€ä¸ªä»“é¼ ç¬¼ã€‚",
+        register: "neutral"
+      },
+      {
+        word: "Toy",
+        phonetic: "/tÉ”Éª/",
+        chinese: "ç©å…·",
+        pinyin: "wÃ¡n jÃ¹",
+        partOfSpeech: "noun",
+        definitionEn: "An item for pets to play with.",
+        definitionZh: "å® ç‰©ç©è€çš„ç‰©å“ã€‚",
+        exampleEn: "Do you have any toys for small dogs?",
+        exampleZh: "ä½ ä»¬æœ‰å°ç‹—çš„ç©å…·å—ï¼Ÿ",
+        register: "neutral"
+      }
+    ],
+    dailyExpressions: {
+      title: "Daily Native Expressions",
+      items: [
+        {
+          id: "de-petstore-1",
+          expression: "I'm looking for...",
+          chinese: "æˆ‘åœ¨æ‰¾...",
+          pinyin: "wÇ’ zÃ i zhÇo...",
+          meaning: "Telling someone what you want to buy or find.",
+          whenToUse: "When you enter a store and want something specific.",
+          whenNotToUse: "Don't use 'I look for...' â€” use present continuous 'I'm looking for...' for current actions.",
+          nativeFrequency: "Very common in stores.",
+          commonMistakes: [
+            { mistake: "Using 'I look for...' instead of 'I'm looking for...'", correction: "'I'm looking for...' is the correct present continuous form" }
+          ],
+          pronunciation: "/aÉªm ËˆlÊŠkÉªÅ‹ fÉ™r/",
+          funnyExample: "A: I'm looking for dog food. B: Have you tried looking in the dog food aisle? A: ...That's where I was looking.",
+          memoryTrick: "Think: 'looking = searching now' + 'for = for this item' = 'currently searching for this'",
+          relatedExpressions: ["I need...", "I want...", "Can you help me find...?"],
+          collocations: ["looking for", "looking for dog food", "looking for a toy"],
+          miniQuiz: [
+            { question: "'I'm looking for...' means:", options: ["I am currently trying to find something", "I looked for it yesterday", "I will look for it later", "I don't want it"], correct: 0 }
+          ],
+          register: "neutral"
+        },
+        {
+          id: "de-petstore-2",
+          expression: "I recommend...",
+          chinese: "æˆ‘æ¨è...",
+          pinyin: "wÇ’ tuÄ« jiÃ n...",
+          meaning: "Suggesting something based on your knowledge or experience.",
+          whenToUse: "When giving advice or suggesting a product.",
+          whenNotToUse: "Don't use if you don't know anything about it â€” say 'I'm not sure' instead.",
+          nativeFrequency: "Very common when giving advice.",
+          commonMistakes: [
+            { mistake: "Using 'I recommend you to...' instead", correction: "Use 'I recommend...' or 'I recommend that you...'" }
+          ],
+          pronunciation: "/aÉª ËŒrekÉ™Ëˆmend/",
+          funnyExample: "A: I recommend this one. B: Why? A: ...Because it has a cute picture of a dog on it. B: ...That's not a reason.",
+          memoryTrick: "Think: 'recommend = suggest based on knowledge' = 'I suggest this based on what I know'",
+          relatedExpressions: ["I suggest...", "You should try...", "This one is good for..."],
+          collocations: ["I recommend", "recommend this", "recommend for"],
+          miniQuiz: [
+            { question: "'I recommend...' means:", options: ["I suggest something based on knowledge", "I am forcing you to buy it", "I don't like it", "It's free"], correct: 0 }
+          ],
+          register: "neutral"
+        },
+        {
+          id: "de-petstore-3",
+          expression: "Don't forget...",
+          chinese: "åˆ«å¿˜äº†...",
+          pinyin: "biÃ© wÃ ng le...",
+          meaning: "Reminding someone about something important.",
+          whenToUse: "When reminding someone about something they might forget.",
+          whenNotToUse: "Don't use for things that are obvious â€” it sounds nagging.",
+          nativeFrequency: "Very common in everyday reminders.",
+          commonMistakes: [
+            { mistake: "Using 'Don't forgot...'", correction: "Use 'Don't forget...' â€” 'forget' is the base form after 'don't'" }
+          ],
+          pronunciation: "/doÊŠnt fÉ™rËˆÉ¡et/",
+          funnyExample: "A: Don't forget your keys. B: Don't forget your keys. A: ...I'm not the one leaving. B: ...I'm just practicing.",
+          memoryTrick: "Think: 'don't = do not' + 'forget = remember to not remember' = 'remember to not forget'",
+          relatedExpressions: ["Remember to...", "Make sure you...", "Don't miss..."],
+          collocations: ["don't forget", "don't forget to", "don't forget your"],
+          miniQuiz: [
+            { question: "'Don't forget...' is used to:", options: ["Remind someone about something", "Forgive someone", "Ask a question", "Say goodbye"], correct: 0 }
+          ],
+          register: "neutral"
+        }
+      ]
+    },
+    nativeChunks: [
+      { chunk: "I'm looking for", meaning: "æˆ‘åœ¨æ‰¾", example: "I'm looking for dog food.", register: "neutral", context: "Shopping" },
+      { chunk: "What brand", meaning: "ä»€ä¹ˆå“ç‰Œ", example: "What brand do you usually buy?", register: "neutral", context: "Asking about brands" },
+      { chunk: "I recommend", meaning: "æˆ‘æ¨è", example: "I recommend this one.", register: "neutral", context: "Giving advice" },
+      { chunk: "Don't forget", meaning: "åˆ«å¿˜äº†", example: "Don't forget a leash.", register: "neutral", context: "Reminding" },
+      { chunk: "That'll be", meaning: "æ€»å…±", example: "That'll be $35.", register: "neutral", context: "Pricing" }
     ],
     conversation: [
-      { speaker: "Customer", line: "Hi, I'm looking for dog food for a small puppy." },
-      { speaker: "Staff", line: "Sure! What brand do you usually buy?" },
-      { speaker: "Customer", line: "I'm not sure. This is my first puppy." },
-      { speaker: "Staff", line: "No problem! I recommend this one. It's good for puppies." },
-      { speaker: "Customer", line: "Great. Do you have any toys for small dogs?" },
-      { speaker: "Staff", line: "Yes, right here. Also, don't forget a leash and a collar." },
-      { speaker: "Customer", line: "Perfect. How much is everything together?" },
-      { speaker: "Staff", line: "That'll be $35. Would you like a bag?" },
-      { speaker: "Customer", line: "Yes, please. Thank you for your help!" }
+      { speaker: "Customer", line: "Hi, I'm looking for dog food for a small puppy.", register: "neutral" },
+      { speaker: "Staff", line: "Sure! What brand do you usually buy?", register: "neutral" },
+      { speaker: "Customer", line: "I'm not sure. This is my first puppy.", register: "neutral" },
+      { speaker: "Staff", line: "No problem! I recommend this one. It's good for puppies.", register: "neutral" },
+      { speaker: "Customer", line: "Great. Do you have any toys for small dogs?", register: "neutral" },
+      { speaker: "Staff", line: "Yes, right here. Also, don't forget a leash and a collar.", register: "neutral" },
+      { speaker: "Customer", line: "Perfect. How much is everything together?", register: "neutral" },
+      { speaker: "Staff", line: "That'll be $35. Would you like a bag?", register: "neutral" },
+      { speaker: "Customer", line: "Yes, please. Thank you for your help!", register: "neutral" }
     ],
     chineseTranslation: [
-      { speaker: "??", line: "?,?????????" },
-      { speaker: "??", line: "??!?????????" },
-      { speaker: "??", line: "???????????????" },
-      { speaker: "??", line: "???!????????????" },
-      { speaker: "??", line: "??????????????" },
-      { speaker: "??", line: "??,??????,??????????" },
-      { speaker: "??", line: "?????????" },
-      { speaker: "??", line: "??35??????????" },
-      { speaker: "??", line: "??,???????????!" }
+      { speaker: "é¡¾å®¢", line: "æ‚¨å¥½ï¼Œæˆ‘åœ¨æ‰¾å°ç‹—çš„ç‹—ç²®ã€‚" },
+      { speaker: "åº—å‘˜", line: "å½“ç„¶ï¼æ‚¨é€šå¸¸ä¹°ä»€ä¹ˆå“ç‰Œï¼Ÿ" },
+      { speaker: "é¡¾å®¢", line: "æˆ‘ä¸ç¡®å®šã€‚è¿™æ˜¯æˆ‘ç¬¬ä¸€æ¬¡å…»å°ç‹—ã€‚" },
+      { speaker: "åº—å‘˜", line: "æ²¡é—®é¢˜ï¼æˆ‘æ¨èè¿™æ¬¾ã€‚å®ƒé€‚åˆå°ç‹—ã€‚" },
+      { speaker: "é¡¾å®¢", line: "å¤ªå¥½äº†ã€‚ä½ ä»¬æœ‰å°ç‹—çš„ç©å…·å—ï¼Ÿ" },
+      { speaker: "åº—å‘˜", line: "æœ‰çš„ï¼Œåœ¨è¿™é‡Œã€‚è¿˜æœ‰ï¼Œåˆ«å¿˜äº†ç‰µå¼•ç»³å’Œé¡¹åœˆã€‚" },
+      { speaker: "é¡¾å®¢", line: "å®Œç¾ã€‚æ€»å…±å¤šå°‘é’±ï¼Ÿ" },
+      { speaker: "åº—å‘˜", line: "æ€»å…±35ç¾å…ƒã€‚æ‚¨éœ€è¦ä¸€ä¸ªè¢‹å­å—ï¼Ÿ" },
+      { speaker: "é¡¾å®¢", line: "æ˜¯çš„ï¼Œè°¢è°¢ã€‚è°¢è°¢ä½ çš„å¸®åŠ©ï¼" }
     ],
-    usefulExpressions: [
-      { expression: "I'm looking for...", meaning: "???...", usage: "???????" },
-      { expression: "What brand...?", meaning: "????...?", usage: "????" },
-      { expression: "I recommend...", meaning: "???...", usage: "??????" },
-      { expression: "Don't forget...", meaning: "???...", usage: "????" },
-      { expression: "That'll be...", meaning: "??...", usage: "????" }
-    ],
-    grammarFocus: [
+    grammarInContext: [
       {
         title: "Present Continuous for Current Actions",
-        explanation: "??????????????????",
+        explanation: "ç”¨ç°åœ¨è¿›è¡Œæ—¶è¡¨ç¤ºå½“å‰æ­£åœ¨è¿›è¡Œçš„åŠ¨ä½œã€‚",
         examples: [
           "I'm looking for dog food.",
           "I'm buying a gift.",
@@ -10332,7 +10479,7 @@ export const conversations: ConversationTopic[] = [
       },
       {
         title: "Imperative for Suggestions",
-        explanation: "?????????",
+        explanation: "ç”¨ç¥ˆä½¿å¥è¡¨ç¤ºå»ºè®®æˆ–æé†’ã€‚",
         examples: [
           "Don't forget a leash.",
           "Try this one.",
@@ -10340,20 +10487,107 @@ export const conversations: ConversationTopic[] = [
         ]
       }
     ],
-    collocationsAndChunks: [
-      { chunk: "I'm looking for", meaning: "???", example: "I'm looking for dog food." },
-      { chunk: "Don't forget", meaning: "???", example: "Don't forget a leash." },
-      { chunk: "That'll be", meaning: "??", example: "That'll be $35." }
+    pronunciation: [
+      { tip: "Puppy â†’ /ËˆpÊŒpi/", example: "Stress on first syllable" },
+      { tip: "Leash â†’ /liËÊƒ/", example: "Long 'e' sound" }
     ],
-    pronunciationTips: [
-      { tip: "Puppy ? /'p?pi/", example: "Stress on first syllable" },
-      { tip: "Leash ? /li??/", example: "Long 'e' sound" }
+    shadowing: [
+      { line: "Hi, I'm looking for dog food for a small puppy.", emphasis: "I'm looking for" },
+      { line: "I'm not sure. This is my first puppy.", emphasis: "first puppy" },
+      { line: "I recommend this one. It's good for puppies.", emphasis: "I recommend" },
+      { line: "Don't forget a leash and a collar.", emphasis: "Don't forget" },
+      { line: "That'll be $35. Would you like a bag?", emphasis: "That'll be" }
+    ],
+    speakingPractice: {
+      instruction: "Practice buying supplies for a new pet. Use 'I'm looking for', 'I recommend', and 'Don't forget'. Include food, toys, and accessories.",
+      hints: [
+        "Start with 'I'm looking for'",
+        "Ask for recommendations",
+        "Choose items",
+        "Ask about price",
+        "Say thank you"
+      ],
+      followUpQuestions: [
+        "What pet supplies did you buy?",
+        "Did the staff give good recommendations?",
+        "What was the total cost?",
+        "Did you get a bag?"
+      ]
+    },
+    rolePlay: {
+      scenario: "You just got a new puppy and need supplies. Go to the pet store, ask for food recommendations, and buy a toy and leash.",
+      prompts: [
+        "Enter and greet the staff",
+        "Say you need puppy food",
+        "Ask for recommendations",
+        "Choose a toy and leash",
+        "Pay and say thank you"
+      ],
+      partnerLines: [
+        "Hi, I'm looking for dog food for a small puppy.",
+        "Sure! What brand do you usually buy?",
+        "No problem! I recommend this one. It's good for puppies.",
+        "Yes, right here. Also, don't forget a leash and a collar.",
+        "That'll be $35. Would you like a bag?"
+      ]
+    },
+    homework: {
+      task: "Pet Store Vocabulary",
+      description: "Write down 10 pet-related words and practice using them. If you have a pet, practice describing it in English.",
+      dueText: "Before next lesson"
+    },
+    quiz: [
+      {
+        id: "q1",
+        question: "'I'm looking for...' means:",
+        questionZh: "'I'm looking for...'æ„æ€æ˜¯ï¼š",
+        options: [
+          { label: "A) I am currently trying to find something", labelZh: "A) æˆ‘ç›®å‰åœ¨åŠªåŠ›æ‰¾æŸç‰©", correct: true },
+          { label: "B) I looked for it yesterday", labelZh: "B) æˆ‘æ˜¨å¤©æ‰¾äº†å®ƒ", correct: false },
+          { label: "C) I will look for it later", labelZh: "C) æˆ‘ç¨åä¼šæ‰¾", correct: false },
+          { label: "D) I don't want it", labelZh: "D) æˆ‘ä¸æƒ³è¦å®ƒ", correct: false }
+        ],
+        explanation: "'I'm looking for...' means you are currently trying to find something.",
+        explanationZh: "'I'm looking for...'æ„å‘³ç€ä½ ç›®å‰åœ¨åŠªåŠ›æ‰¾æŸç‰©ã€‚"
+      },
+      {
+        id: "q2",
+        question: "'Don't forget...' is used to:",
+        questionZh: "'Don't forget...'ç”¨äºï¼š",
+        options: [
+          { label: "A) Remind someone about something", labelZh: "A) æé†’æŸäººæŸäº‹", correct: true },
+          { label: "B) Forgive someone", labelZh: "B) åŸè°…æŸäºº", correct: false },
+          { label: "C) Ask a question", labelZh: "C) æé—®", correct: false },
+          { label: "D) Say goodbye", labelZh: "D) è¯´å†è§", correct: false }
+        ],
+        explanation: "'Don't forget...' is used to remind someone about something important.",
+        explanationZh: "'Don't forget...'ç”¨äºæé†’æŸäººæŸäº‹ã€‚"
+      }
+    ],
+    review: [
+      { key: "looking", prompt: "How do you say you're trying to find something?", answer: "I'm looking for..." },
+      { key: "recommend", prompt: "How do you suggest something?", answer: "I recommend..." },
+      { key: "remind", prompt: "How do you remind someone not to forget something?", answer: "Don't forget..." }
+    ],
+    humorNotes: [
+      {
+        context: "When you buy too much for your pet",
+        punchline: "A: That'll be $35. B: ...I only came for dog food. A: ...And you left with a toy, a leash, a collar, and treats. B: ...He looked at me with puppy eyes.",
+        explanation: "Self-deprecating humor about spoiling pets is very common."
+      }
+    ],
+    usefulExpressions: [
+      { expression: "I'm looking for...", meaning: "æˆ‘åœ¨æ‰¾...", usage: "è¡¨è¾¾æ­£åœ¨å¯»æ‰¾æŸç‰©" },
+      { expression: "What brand...?", meaning: "ä»€ä¹ˆå“ç‰Œ...ï¼Ÿ", usage: "è¯¢é—®å“ç‰Œ" },
+      { expression: "I recommend...", meaning: "æˆ‘æ¨è...", usage: "ç»™å‡ºå»ºè®®" },
+      { expression: "Don't forget...", meaning: "åˆ«å¿˜äº†...", usage: "æé†’å¯¹æ–¹" },
+      { expression: "That'll be...", meaning: "æ€»å…±...", usage: "å‘ŠçŸ¥æ€»ä»·" }
     ],
     commonMistakes: [
       {
-        mistake: "'I look for dog food' ??????",
-        correction: "?????? 'I'm looking for...' ????????",
-        explanation: "????????????????"
+        mistake: "ç”¨ 'I look for dog food' è€Œä¸æ˜¯ 'I'm looking for dog food'",
+        correction: "æ­£ç¡®çš„æ˜¯ 'I'm looking for...' ç°åœ¨è¿›è¡Œæ—¶",
+        explanation: "è¡¨ç¤ºå½“å‰æ­£åœ¨è¿›è¡Œçš„åŠ¨ä½œæ—¶ï¼Œè¦ç”¨ç°åœ¨è¿›è¡Œæ—¶ã€‚"
       }
     ],
     rolePlayPractice: [
@@ -10655,10 +10889,10 @@ export const conversations: ConversationTopic[] = [
     level: "A1",
     estimatedTime: "10 min",
     vocabularyPreview: [
-      { word: "Taxi", phonetic: "/'tæksi/", chinese: "???", partOfSpeech: "noun" },
+      { word: "Taxi", phonetic: "/'tï¿½ksi/", chinese: "???", partOfSpeech: "noun" },
       { word: "Destination", phonetic: "/?dest?'ne??n/", chinese: "???", partOfSpeech: "noun" },
       { word: "Fare", phonetic: "/fer/", chinese: "??", partOfSpeech: "noun" },
-      { word: "Traffic", phonetic: "/'træf?k/", chinese: "??", partOfSpeech: "noun" },
+      { word: "Traffic", phonetic: "/'trï¿½f?k/", chinese: "??", partOfSpeech: "noun" },
       { word: "Drop off", phonetic: "/dr?p ?f/", chinese: "??", partOfSpeech: "phrasal verb" },
       { word: "Change", phonetic: "/t?e?nd?/", chinese: "??", partOfSpeech: "noun" }
     ],
@@ -10902,7 +11136,7 @@ export const conversations: ConversationTopic[] = [
     estimatedTime: "10 min",
     vocabularyPreview: [
       { word: "Meeting", phonetic: "/'mi?t??/", chinese: "??", partOfSpeech: "noun" },
-      { word: "Catch up", phonetic: "/kæt? ?p/", chinese: "??", partOfSpeech: "phrasal verb" },
+      { word: "Catch up", phonetic: "/kï¿½t? ?p/", chinese: "??", partOfSpeech: "phrasal verb" },
       { word: "Recommend", phonetic: "/?rek?'mend/", chinese: "??", partOfSpeech: "verb" },
       { word: "Treat", phonetic: "/tri?t/", chinese: "??", partOfSpeech: "noun / verb" },
       { word: "Bill", phonetic: "/b?l/", chinese: "??", partOfSpeech: "noun" },
@@ -10912,7 +11146,7 @@ export const conversations: ConversationTopic[] = [
       { speaker: "Anna", line: "Hey! Long time no see. How have you been?" },
       { speaker: "Ben", line: "I've been good! Let's catch up over coffee." },
       { speaker: "Anna", line: "Great idea! Do you know a good place around here?" },
-      { speaker: "Ben", line: "Yes, there's a nice café just around the corner. I'll treat you this time." },
+      { speaker: "Ben", line: "Yes, there's a nice cafï¿½ just around the corner. I'll treat you this time." },
       { speaker: "Anna", line: "Oh, you don't have to! But thank you." },
       { speaker: "Ben", line: "No problem. I insist. What would you like to drink?" },
       { speaker: "Anna", line: "I'll have a latte, please. And maybe a croissant?" },
@@ -10964,7 +11198,7 @@ export const conversations: ConversationTopic[] = [
     ],
     pronunciationTips: [
       { tip: "Long time no see ? /l??? ta?m no? si?/", example: "Friendly, relaxed speech" },
-      { tip: "Keep the change ? /ki?p ğ? t?e?nd?/", example: "Quick, natural phrase" }
+      { tip: "Keep the change ? /ki?p ï¿½? t?e?nd?/", example: "Quick, natural phrase" }
     ],
     commonMistakes: [
       {
@@ -10975,11 +11209,11 @@ export const conversations: ConversationTopic[] = [
     ],
     rolePlayPractice: [
       {
-        scenario: "You meet an old friend at a café. Catch up on each other's lives, order drinks, and insist on treating them.",
+        scenario: "You meet an old friend at a cafï¿½. Catch up on each other's lives, order drinks, and insist on treating them.",
         prompts: [
           "Greet them warmly",
           "Suggest catching up over coffee",
-          "Choose a café",
+          "Choose a cafï¿½",
           "Order drinks and food",
           "Insist on treating them"
         ]
