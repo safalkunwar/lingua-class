@@ -919,70 +919,94 @@ export const conversations: ConversationTopic[] = [
     }
   },
   {
-    id: "taxi-ride",
-    title: "Taking a Taxi / Uber",
-    emoji: "??",
-    description: "Getting a ride, giving directions, and handling payment.",
+        id: "taxi-ride",
+    title: "Taking a Taxi",
+    emoji: "🚕",
+    description: "Getting a taxi, giving directions, and paying the fare.",
     color: "from-yellow-400 to-amber-400",
-    level: "A2",
+    level: "A1",
     estimatedTime: "10 min",
     registerMarkers: [
-      { level: "formal", label: "Formal", color: "bg-blue-100 text-blue-800 border-blue-200", description: "Business travel or premium rides" },
-      { level: "neutral", label: "Neutral", color: "bg-gray-100 text-gray-800 border-gray-200", description: "Standard taxi or Uber ride" },
-      { level: "casual", label: "Casual", color: "bg-green-100 text-green-800 border-green-200", description: "Chatting with a friendly driver" }
+      { level: "formal", label: "Formal", color: "bg-blue-100 text-blue-800 border-blue-200", description: "Business travel or luxury taxi" },
+      { level: "neutral", label: "Neutral", color: "bg-gray-100 text-gray-800 border-gray-200", description: "Standard taxi ride" },
+      { level: "casual", label: "Casual", color: "bg-green-100 text-green-800 border-green-200", description: "Chatting with the driver" }
     ],
     warmUp: {
-      title: "Warm-Up: Ride-Sharing & Taxis",
-      content: "Taking a taxi or ride-share is common everywhere. In this lesson, you'll learn how to confirm your destination, politely ask the driver for adjustments, and handle payment smoothly.",
-      contentZh: "???????????????????????,????????????????????,?????????"
+      title: "Warm-Up: Taxi English",
+      content: "Taking a taxi is a common way to get around in many cities. In this lesson, you'll learn how to tell the driver your destination, ask about the fare, and pay for the ride.",
+      contentZh: "在许多城市，坐出租车是常见的出行方式。在本课中，你将学习如何告诉司机你的目的地、询问车费并付款。"
     },
     vocabulary: [
       {
-        word: "destination",
-        phonetic: "/?dest?'ne??n/",
-        chinese: "???",
-        pinyin: "m� d� d�",
+        word: "Taxi",
+        phonetic: "/ˈtæksi/",
+        chinese: "出租车",
+        pinyin: "chū zū chē",
+        partOfSpeech: "noun",
+        definitionEn: "A car that you pay to drive you somewhere.",
+        definitionZh: "你付费让司机开车送你去某处的车。",
+        exampleEn: "I'll call a taxi.",
+        exampleZh: "我会叫一辆出租车。",
+        register: "neutral"
+      },
+      {
+        word: "Destination",
+        phonetic: "/ˌdestɪˈneɪʃn/",
+        chinese: "目的地",
+        pinyin: "mù dì dì",
         partOfSpeech: "noun",
         definitionEn: "The place you are going to.",
-        definitionZh: "???????",
-        exampleEn: "What's your final destination?",
-        exampleZh: "???????????",
+        definitionZh: "你要去的地方。",
+        exampleEn: "My destination is the airport.",
+        exampleZh: "我的目的地是机场。",
         register: "neutral"
       },
       {
-        word: "pickup",
-        phonetic: "/'p?k?p/",
-        chinese: "????",
-        pinyin: "jie r�n d� dian",
+        word: "Fare",
+        phonetic: "/fer/",
+        chinese: "车费",
+        pinyin: "chē fèi",
         partOfSpeech: "noun",
-        definitionEn: "The location where a driver collects a passenger.",
-        definitionZh: "?????????",
-        exampleEn: "The pickup is at Terminal 2.",
-        exampleZh: "???2?????",
+        definitionEn: "The money you pay for a taxi ride.",
+        definitionZh: "你为出租车付费的钱。",
+        exampleEn: "How much is the fare?",
+        exampleZh: "车费多少钱？",
         register: "neutral"
       },
       {
-        word: "traffic",
-        phonetic: "/'tr�f?k/",
-        chinese: "??",
-        pinyin: "jiao tong",
+        word: "Traffic",
+        phonetic: "/ˈtræfɪk/",
+        chinese: "交通",
+        pinyin: "jiāo tōng",
         partOfSpeech: "noun",
-        definitionEn: "Vehicles moving on a road.",
-        definitionZh: "?????????",
+        definitionEn: "The movement of vehicles on a road.",
+        definitionZh: "道路上车辆的移动。",
         exampleEn: "The traffic is heavy today.",
-        exampleZh: "????????",
+        exampleZh: "今天交通很拥堵。",
         register: "neutral"
       },
       {
-        word: "estimated",
-        phonetic: "/'est?me?t?d/",
-        chinese: "???",
-        pinyin: "yu gu de",
-        partOfSpeech: "adjective",
-        definitionEn: "Calculated approximately based on current conditions.",
-        definitionZh: "????????????",
-        exampleEn: "The estimated arrival is 3 PM.",
-        exampleZh: "?????????3??",
+        word: "Drop off",
+        phonetic: "/drɒp ɒf/",
+        chinese: "放下（乘客）",
+        pinyin: "fàng xià (chéng kè)",
+        partOfSpeech: "phrasal verb",
+        definitionEn: "To let a passenger out of the vehicle at their destination.",
+        definitionZh: "让乘客在目的地下车。",
+        exampleEn: "Can you drop me at Terminal 2?",
+        exampleZh: "你能在2号航站楼让我下车吗？",
+        register: "neutral"
+      },
+      {
+        word: "Change",
+        phonetic: "/tʃeɪndʒ/",
+        chinese: "零钱",
+        pinyin: "líng qián",
+        partOfSpeech: "noun",
+        definitionEn: "Small amount of money given back after paying.",
+        definitionZh: "付款后找回的小额钱。",
+        exampleEn: "Keep the change.",
+        exampleZh: "不用找了。",
         register: "neutral"
       }
     ],
@@ -991,278 +1015,263 @@ export const conversations: ConversationTopic[] = [
       items: [
         {
           id: "de-taxi-1",
-          expression: "Are you heading to...?",
-          chinese: "???...??",
-          pinyin: "n�n y�o q�... ma?",
-          meaning: "Asking someone about their destination.",
-          whenToUse: "When confirming where someone is going. Very common with drivers, concierges, and travel staff.",
-          whenNotToUse: "Don't use for past trips. Use 'Did you go to...?' for past tense.",
-          nativeFrequency: "Extremely common in transportation and travel contexts.",
+          expression: "Can you take me to...?",
+          chinese: "你能带我去...吗？",
+          pinyin: "nǐ néng dài wǒ qù... ma?",
+          meaning: "Asking a taxi driver to take you to a specific place.",
+          whenToUse: "When you get into a taxi and need to state your destination.",
+          whenNotToUse: "Don't use for other transport like buses — this is specifically for taxis.",
+          nativeFrequency: "Very common when taking taxis.",
           commonMistakes: [
-            { mistake: "Using 'going to' without 'heading'", correction: "'Heading to' is more natural in spoken English" }
+            { mistake: "Using 'Can you take I to...?' which is grammatically wrong", correction: "'Can you take me to...?' — use 'me' not 'I'" }
           ],
-          pronunciation: "/?r ju? 'hed?? tu?/",
-          funnyExample: "A: Are you heading to the gym? B: No, the gym is heading to me. I haven't moved in an hour.",
-          memoryTrick: "Think: 'heading = direction' + 'to = destination' = 'where are you directed?'",
-          relatedExpressions: ["Where are you going?", "Where to?", "What's your destination?"],
-          collocations: ["heading to", "heading home", "heading out"],
+          pronunciation: "/kæn juː teɪk miː tuː/",
+          funnyExample: "A: Can you take me to the airport? B: Can you take I to the airport? A: ...No, but I can take you to grammar school.",
+          memoryTrick: "Think: 'take = drive' + 'me = myself' = 'drive me to this place'",
+          relatedExpressions: ["Take me to...", "I need to go to...", "Can you drive to..."],
+          collocations: ["take me to", "take me to the airport", "take me to the hotel"],
           miniQuiz: [
-            { question: "'Are you heading to the airport?' means:", options: ["Are you going to the airport?", "Are you leaving the airport?", "Do you work at the airport?", "Do you like airports?"], correct: 0 }
+            { question: "'Can you take me to...?' is used to:", options: ["Ask a taxi driver for a destination", "Invite someone to a place", "Offer a ride", "Ask about the fare"], correct: 0 }
           ],
           register: "neutral"
         },
         {
           id: "de-taxi-2",
-          expression: "Depending on traffic",
-          chinese: "?????",
-          pinyin: "k�n jiao tong q�ng ku�ng",
-          meaning: "A phrase indicating that time or outcome varies based on traffic conditions.",
-          whenToUse: "When giving time estimates for travel. Shows awareness of uncertainty.",
-          whenNotToUse: "Don't use for non-traffic situations. Use 'Depending on the weather' for weather.",
-          nativeFrequency: "Very common in transportation and logistics.",
+          expression: "How much is the fare?",
+          chinese: "车费多少钱？",
+          pinyin: "chē fèi duō shǎo qián?",
+          meaning: "Asking how much the taxi ride will cost.",
+          whenToUse: "When you want to know the price of the taxi ride.",
+          whenNotToUse: "Don't use before the ride — you usually ask after or the driver tells you.",
+          nativeFrequency: "Very common when taking taxis.",
           commonMistakes: [
-            { mistake: "Using 'depending about'", correction: "Always use 'depending on'" }
+            { mistake: "Using 'How much is the fee?' which is less common", correction: "'Fare' is the specific word for transport cost" }
           ],
-          pronunciation: "/d?'pend?? ?n 'tr�f?k/",
-          funnyExample: "A: When will you arrive? B: Depending on traffic. A: ...But there's no traffic. B: Then I'm here.",
-          memoryTrick: "Think: 'depend = rely on' + 'on traffic' = 'rely on traffic conditions'",
-          relatedExpressions: ["It depends", "Depending on the weather", "Subject to change"],
-          collocations: ["depending on traffic", "depending on the weather", "depending on circumstances"],
+          pronunciation: "/haʊ mʌtʃ ɪz ðə fer/",
+          funnyExample: "A: How much is the fare? B: $25. A: ...I'll walk then. B: ...That'll be $25 for your luggage too.",
+          memoryTrick: "Think: 'fare = transport price' = 'how much does this ride cost?'",
+          relatedExpressions: ["How much does it cost?", "What's the price?", "How much for..."],
+          collocations: ["how much is the fare", "the fare is", "approximate fare"],
           miniQuiz: [
-            { question: "'Depending on traffic' means:", options: ["Time varies based on traffic", "I hate traffic", "Traffic is bad", "I'm stuck"], correct: 0 }
+            { question: "'How much is the fare?' asks:", options: ["The cost of the taxi ride", "The time of the ride", "The route", "The driver's name"], correct: 0 }
           ],
           register: "neutral"
         },
         {
           id: "de-taxi-3",
-          expression: "Take your time",
-          chinese: "???",
-          pinyin: "m�n m�n l�i",
-          meaning: "A polite way to tell someone they don't need to hurry.",
-          whenToUse: "When someone is running late or needs extra time. Very common and polite.",
-          whenNotToUse: "Don't use if you actually need them to hurry. Use 'Hurry up' or 'We're running late' instead.",
-          nativeFrequency: "Extremely common � one of the most polite phrases in English.",
+          expression: "Drop me at...",
+          chinese: "在...让我下车",
+          pinyin: "zài... ràng wǒ xià chē",
+          meaning: "Telling the driver where to let you out.",
+          whenToUse: "When you want to be dropped off at a specific location.",
+          whenNotToUse: "Don't use 'drop me' alone — always include the location.",
+          nativeFrequency: "Very common when exiting a taxi.",
           commonMistakes: [
-            { mistake: "Using sarcastically without context", correction: "This phrase is almost always sincere in English" }
+            { mistake: "Using 'Drop me here' which is okay but less specific", correction: "'Drop me at Terminal 2' is more precise" }
           ],
-          pronunciation: "/te?k j??r ta?m/",
-          funnyExample: "A: I'm sorry I'm late! B: Take your time! A: ...But I'm here now. B: I know, I'm just being polite.",
-          memoryTrick: "Think: 'take = use' + 'your time = your own pace' = 'use your own pace'",
-          relatedExpressions: ["No rush", "Take as long as you need", "Don't rush"],
-          collocations: ["take your time", "take all the time", "take your time no rush"],
+          pronunciation: "/drɒp miː æt/",
+          funnyExample: "A: Drop me at the terminal. B: Which one? A: ...The one with planes. B: ...That's all of them.",
+          memoryTrick: "Think: 'drop = let out' + 'me = myself' + 'at = at this place' = 'let me out at this place'",
+          relatedExpressions: ["Let me out at...", "Stop at...", "I'm getting off at..."],
+          collocations: ["drop me at", "drop me off at", "drop off at"],
           miniQuiz: [
-            { question: "'Take your time' means:", options: ["Don't hurry", "Hurry up", "Time is up", "I'm late"], correct: 0 }
-          ],
-          register: "neutral"
-        },
-        {
-          id: "de-taxi-4",
-          expression: "Pull over",
-          chinese: "???",
-          pinyin: "k�o bian t�ng",
-          meaning: "To move a vehicle to the side of the road and stop.",
-          whenToUse: "When asking a driver to stop at the side of the road. Also used by police.",
-          whenNotToUse: "Don't use 'stop the car' as a polite request � it sounds like a command.",
-          nativeFrequency: "Very common in driving and transportation contexts.",
-          commonMistakes: [
-            { mistake: "Saying 'stop the car' to a taxi driver", correction: "Say 'Could you pull over here, please?'" }
-          ],
-          pronunciation: "/p?l '??v?r/",
-          funnyExample: "A: Pull over! B: Why? A: I just want to take a photo. B: ...That's not why we say 'pull over'.",
-          memoryTrick: "Think: 'pull = move' + 'over = to the side' = 'move to the side'",
-          relatedExpressions: ["Pull up", "Stop here", "Park here"],
-          collocations: ["pull over", "pull over here", "pull up"],
-          miniQuiz: [
-            { question: "'Pull over' means:", options: ["Stop at the side of the road", "Pull something heavy", "Drive faster", "Turn left"], correct: 0 }
+            { question: "'Drop me at...' means:", options: ["Let me out at a specific place", "Give me something", "Pay the fare", "Call a taxi"], correct: 0 }
           ],
           register: "neutral"
         }
       ]
     },
     nativeChunks: [
-      { chunk: "Are you heading to", meaning: "???...??", example: "Are you heading to the airport?", register: "neutral", context: "Confirming destination" },
-      { chunk: "depending on traffic", meaning: "?????", example: "About 35 minutes, depending on traffic.", register: "neutral", context: "Time estimate" },
-      { chunk: "take your time", meaning: "???", example: "Take your time.", register: "neutral", context: "Being polite" },
-      { chunk: "pull over", meaning: "???", example: "Can you pull over here?", register: "neutral", context: "Stopping the car" },
-      { chunk: "with time to spare", meaning: "????", example: "We arrived with time to spare.", register: "neutral", context: "Arriving early" }
+      { chunk: "Can you take me to", meaning: "你能带我去...吗", example: "Can you take me to the airport?", register: "neutral", context: "Destination" },
+      { chunk: "How much is the fare", meaning: "车费多少钱", example: "How much is the fare?", register: "neutral", context: "Price" },
+      { chunk: "Drop me at", meaning: "在...让我下车", example: "Can you drop me at Terminal 2?", register: "neutral", context: "Exit" },
+      { chunk: "Approximately", meaning: "大约", example: "Approximately $25.", register: "neutral", context: "Estimation" },
+      { chunk: "In a hurry", meaning: "赶时间", example: "I'm in a hurry.", register: "neutral", context: "Time pressure" }
     ],
     conversation: [
-      { speaker: "Driver", line: "Hi there! Are you heading to the airport?", register: "neutral" },
-      { speaker: "Tom", line: "Yes, Terminal 3. Is that a long ride?", register: "neutral" },
-      { speaker: "Driver", line: "About 35 minutes, depending on traffic. I'll take the highway � it's usually faster.", register: "neutral" },
-      { speaker: "Tom", line: "Sounds good. Do you mind if I stop briefly to grab a coffee? It's just around the corner.", register: "neutral" },
-      { speaker: "Driver", line: "Sure, no problem. I'll pull over here.", register: "neutral" },
-      { speaker: "Tom", line: "Thanks! I'll be two minutes tops.", register: "neutral" },
-      { speaker: "Driver", line: "Take your time. Do you want the receipt emailed or printed?", register: "neutral" },
-      { speaker: "Tom", line: "Emailed, please. Oh, and could you turn up the AC a bit? It's a bit warm in here.", register: "neutral" },
-      { speaker: "Driver", line: "Of course. Here you go � saved you a few minutes. We should make it with time to spare.", register: "neutral" },
-      { speaker: "Tom", line: "Perfect. Thanks for the smooth ride!", register: "neutral" }
+      { speaker: "Passenger", line: "Hi, can you take me to the airport?", register: "neutral" },
+      { speaker: "Driver", line: "Sure. That's about 20 minutes. Is that okay?", register: "neutral" },
+      { speaker: "Passenger", line: "Yes, that's fine. How much is the fare?", register: "neutral" },
+      { speaker: "Driver", line: "Approximately $25, depending on traffic.", register: "neutral" },
+      { speaker: "Passenger", line: "Okay. Can you drop me at Terminal 2?", register: "neutral" },
+      { speaker: "Driver", line: "Of course. Do you have a preferred route?", register: "neutral" },
+      { speaker: "Passenger", line: "No, whatever is fastest. I'm in a hurry.", register: "neutral" },
+      { speaker: "Driver", line: "No problem. We'll take the highway. Here's your receipt. Have a great flight!", register: "neutral" }
     ],
     chineseTranslation: [
-      { speaker: "Driver", line: "?!???????" },
-      { speaker: "Tom", line: "??,3??????????" },
-      { speaker: "Driver", line: "??35??,??????????��?????" },
-      { speaker: "Tom", line: "???????????????????????????" },
-      { speaker: "Driver", line: "??????????????" },
-      { speaker: "Tom", line: "??!?????????" },
-      { speaker: "Driver", line: "????????????????" },
-      { speaker: "Tom", line: "??????��????????????????" },
-      { speaker: "Driver", line: "?????��??????????????????" },
-      { speaker: "Tom", line: "?????????????!" }
+      { speaker: "乘客", line: "您好，你能带我去机场吗？" },
+      { speaker: "司机", line: "当然。大约20分钟。可以吗？" },
+      { speaker: "乘客", line: "好的，没问题。车费多少钱？" },
+      { speaker: "司机", line: "大约25美元，取决于交通状况。" },
+      { speaker: "乘客", line: "好的。你能在2号航站楼让我下车吗？" },
+      { speaker: "司机", line: "当然。您有偏好的路线吗？" },
+      { speaker: "乘客", line: "没有，最快的就行。我赶时间。" },
+      { speaker: "司机", line: "没问题。我们走高速公路。这是您的收据。祝您旅途愉快！" }
     ],
     grammarInContext: [
       {
-        title: "Conditional with 'Depending On'",
-        explanation: "'Depending on' + noun means 'if... changes'. It shows that the result is not certain.",
+        title: "Modal Verbs for Requests",
+        explanation: "用 'Can you...?' 礼貌地提出请求。",
         examples: [
-          "Depending on traffic, we'll arrive in 35 minutes.",
-          "Depending on the weather, we might stay home.",
-          "Depending on the price, I'll buy it."
+          "Can you take me to the airport?",
+          "Can you drive faster?",
+          "Can you drop me at Terminal 2?"
+        ]
+      },
+      {
+        title: "Comparative Adjectives",
+        explanation: "用比较级形容词描述差异。",
+        examples: [
+          "The highway is faster.",
+          "This route is shorter.",
+          "It's better to avoid downtown."
         ]
       }
     ],
     pronunciation: [
-      { tip: "'Depending on' ? /d?'pend?? ?n/ with stress on second syllable", example: "Depending on traffic" },
-      { tip: "'Could you' ? /k?d??/ in fast speech", example: "Could you turn up the AC?" }
+      { tip: "Destination → /ˌdestɪˈneɪʃn/", example: "Stress on 'nay'" },
+      { tip: "Approximately → /əˈprɒksɪmətli/", example: "Stress on second syllable" }
     ],
     shadowing: [
-      { line: "Hi there! Are you heading to the airport?", emphasis: "heading to" },
-      { line: "About 35 minutes, depending on traffic.", emphasis: "depending on traffic" },
-      { line: "Sure, no problem. I'll pull over here.", emphasis: "pull over" },
-      { line: "Take your time.", emphasis: "Take your time" }
+      { line: "Hi, can you take me to the airport?", emphasis: "take me to the airport" },
+      { line: "Yes, that's fine. How much is the fare?", emphasis: "How much is the fare" },
+      { line: "Approximately $25, depending on traffic.", emphasis: "Approximately" },
+      { line: "No, whatever is fastest. I'm in a hurry.", emphasis: "in a hurry" },
+      { line: "Here's your receipt. Have a great flight!", emphasis: "Have a great flight" }
     ],
     speakingPractice: {
-      instruction: "Role-play a taxi ride. Change the destination, add small talk about the weather or city, and practice asking the driver to adjust something (AC, music, window).",
+      instruction: "Practice taking a taxi to 3 places: the airport, a hotel, and a restaurant. Use 'Can you take me to', ask about fare, and say 'drop me at'.",
       hints: [
-        "Start by confirming the destination",
-        "Ask 'How long is the ride?'",
-        "Say 'Could you turn down/up the...?'",
-        "Thank the driver at the end"
+        "Ask the taxi to come to your location",
+        "State your destination clearly",
+        "Ask about the fare",
+        "Choose a route if asked",
+        "Pay and say thank you"
       ],
       followUpQuestions: [
         "Where did you go?",
-        "Did you make any requests?",
-        "How was the driver?",
-        "Would you take that route again?"
+        "How much was the fare?",
+        "Did you ask for a specific route?",
+        "Did you tip the driver?"
       ]
     },
     rolePlay: {
-      scenario: "You are taking an Uber to a restaurant. Confirm the destination, ask about traffic, and make a quick stop if needed.",
+      scenario: "You need to get to the airport. Call a taxi, give the destination, discuss the route, and pay the driver.",
       prompts: [
-        "Confirm the destination with the driver",
-        "Ask about traffic",
-        "Make a request about temperature or music",
-        "Ask for the receipt preference"
+        "Call the taxi",
+        "State your destination",
+        "Ask about the fare",
+        "Choose a route",
+        "Pay and thank the driver"
       ],
       partnerLines: [
-        "Hi there! Are you heading to the airport?",
-        "About 35 minutes, depending on traffic.",
-        "Sure, no problem. I'll pull over here.",
-        "Take your time."
+        "Hi, can you take me to the airport?",
+        "Sure. That's about 20 minutes. Is that okay?",
+        "Approximately $25, depending on traffic.",
+        "Of course. Do you have a preferred route?",
+        "No problem. We'll take the highway. Here's your receipt. Have a great flight!"
       ]
     },
     homework: {
-      task: "Real-World Ride",
-      description: "Take a taxi or Uber this week and practice the expressions from this lesson. Write down what you said and what the driver said.",
+      task: "Taxi Ride Vocabulary",
+      description: "Write down 10 taxi-related words and practice using them. If you take a taxi this week, practice these phrases with the driver.",
       dueText: "Before next lesson"
     },
     quiz: [
       {
         id: "q1",
-        question: "'Pull over' means:",
-        questionZh: "'Pull over'???:",
+        question: "'Can you take me to...?' is used to:",
+        questionZh: "'Can you take me to...?'用于：",
         options: [
-          { label: "A) Stop at the side of the road", labelZh: "A) ???", correct: true },
-          { label: "B) Pull something heavy", labelZh: "B) ???", correct: false },
-          { label: "C) Drive faster", labelZh: "C) ???", correct: false },
-          { label: "D) Turn left", labelZh: "D) ??", correct: false }
+          { label: "A) Ask a taxi driver for a destination", labelZh: "A) 告诉出租车司机目的地", correct: true },
+          { label: "B) Invite someone to a place", labelZh: "B) 邀请某人去某地", correct: false },
+          { label: "C) Offer a ride", labelZh: "C) 主动提供搭车", correct: false },
+          { label: "D) Ask about the fare", labelZh: "D) 询问车费", correct: false }
         ],
-        explanation: "'Pull over' means to move your vehicle to the side of the road and stop.",
-        explanationZh: "'Pull over'?????????????"
+        explanation: "'Can you take me to...?' is used to ask a taxi driver to take you to a specific place.",
+        explanationZh: "'Can you take me to...?'用于告诉出租车司机你的目的地。"
       },
       {
         id: "q2",
-        question: "'Depending on traffic' means:",
-        questionZh: "'Depending on traffic'???:",
+        question: "'How much is the fare?' asks:",
+        questionZh: "'How much is the fare?'询问的是：",
         options: [
-          { label: "A) Time varies based on traffic", labelZh: "A) ?????????", correct: true },
-          { label: "B) I hate traffic", labelZh: "B) ?????", correct: false },
-          { label: "C) Traffic is bad", labelZh: "C) ?????", correct: false },
-          { label: "D) I'm stuck in traffic", labelZh: "D) ????", correct: false }
+          { label: "A) The cost of the taxi ride", labelZh: "A) 出租车费用", correct: true },
+          { label: "B) The time of the ride", labelZh: "B) 乘车时间", correct: false },
+          { label: "C) The route", labelZh: "C) 路线", correct: false },
+          { label: "D) The driver's name", labelZh: "D) 司机的名字", correct: false }
         ],
-        explanation: "'Depending on traffic' means the time or outcome will change based on how heavy traffic is.",
-        explanationZh: "'Depending on traffic'?????????????????????"
+        explanation: "'How much is the fare?' asks for the cost of the taxi ride.",
+        explanationZh: "'How much is the fare?'询问的是出租车的费用。"
       }
     ],
     review: [
-      { key: "destination", prompt: "How do you ask where someone is going?", answer: "Are you heading to...?" },
-      { key: "traffic", prompt: "How do you say time varies based on traffic?", answer: "Depending on traffic" },
-      { key: "politeness", prompt: "How do you tell someone not to hurry?", answer: "Take your time" }
+      { key: "destination", prompt: "How do you ask a taxi driver to take you somewhere?", answer: "Can you take me to...?" },
+      { key: "fare", prompt: "How do you ask the price of a taxi ride?", answer: "How much is the fare?" },
+      { key: "drop", prompt: "How do you tell the driver where to let you out?", answer: "Drop me at..." }
     ],
     humorNotes: [
       {
-        context: "When the driver asks if you're heading to the airport",
-        punchline: "A: Are you heading to the airport? B: No, I'm heading to the gym. A: ...Then why did you book an airport ride? B: I thought it was free cardio.",
-        explanation: "Self-deprecating humor about confusing rides with exercise is very common."
+        context: "When the taxi driver takes the long route",
+        punchline: "A: Can you take me to the airport? B: Sure! I'll show you the whole city on the way. A: ...That's not a feature. B: ...It's an optional tour.",
+        explanation: "Self-deprecating humor about taxi drivers taking long routes is very common."
       }
     ],
     usefulExpressions: [
-      { expression: "Are you heading to...?", meaning: "???...??", usage: "???????" },
-      { expression: "Depending on traffic", meaning: "?????", usage: "???????" },
-      { expression: "Take your time", meaning: "???", usage: "??????" },
-      { expression: "Pull over", meaning: "???", usage: "????" },
-      { expression: "With time to spare", meaning: "????", usage: "??????" }
+      { expression: "Can you take me to...?", meaning: "你能带我去...吗？", usage: "告知目的地" },
+      { expression: "How much is the fare?", meaning: "车费多少钱？", usage: "询问价格" },
+      { expression: "Approximately...", meaning: "大约...", usage: "估算费用" },
+      { expression: "Drop me at...", meaning: "在...让我下车", usage: "指定下车点" },
+      { expression: "In a hurry", meaning: "赶时间", usage: "说明时间紧迫" }
     ],
     commonMistakes: [
       {
-        mistake: "Saying 'stop the car' instead of 'pull over'",
-        correction: "Use 'pull over' for the side of the road",
-        explanation: "'Stop the car' ????,'pull over' ??????"
-      },
-      {
-        mistake: "Using 'air conditioner' instead of 'AC'",
-        correction: "Both are fine; 'AC' is more common in taxis",
-        explanation: "'AC' ? 'air conditioning' ??????"
+        mistake: "用 'Can you take I to...?' 而不是 'Can you take me to...?'",
+        correction: "正确的是 'Can you take me to...?' 用宾格 'me' 而不是主格 'I'",
+        explanation: "'Take' 是动词，后面要用宾格代词。"
       }
     ],
     rolePlayPractice: [
       {
-        scenario: "You are taking an Uber to a restaurant. Confirm the destination, ask about traffic, and make a quick stop if needed.",
+        scenario: "You need to get to the airport. Call a taxi, give the destination, discuss the route, and pay the driver.",
         prompts: [
-          "Confirm the destination with the driver",
-          "Ask about traffic",
-          "Make a request about temperature or music",
-          "Ask for the receipt preference"
+          "Call the taxi",
+          "State your destination",
+          "Ask about the fare",
+          "Choose a route",
+          "Pay and thank the driver"
         ]
       }
     ],
     vocabularyExpansion: [
       {
-        word: "Destination",
-        synonyms: ["Endpoint", "Target", "Goal"],
-        antonyms: ["Origin", "Starting point"],
-        example: "What's your final destination?"
+        word: "Fare",
+        synonyms: ["Price", "Cost"],
+        antonyms: [],
+        example: "The fare is approximately $25."
       },
       {
         word: "Traffic",
-        synonyms: ["Congestion", "Gridlock"],
-        antonyms: ["Clear roads"],
-        example: "The traffic is terrible today."
+        synonyms: ["Congestion", "Vehicles"],
+        antonyms: [],
+        example: "The traffic is heavy today."
       }
     ],
     shadowingPractice: [
-      "Hi there! Are you heading to the airport?",
-      "About 35 minutes, depending on traffic.",
-      "Sure, no problem. I'll pull over here.",
-      "Take your time. Do you want the receipt emailed or printed?"
+      "Hi, can you take me to the airport?",
+      "That's about 20 minutes. Is that okay?",
+      "How much is the fare?",
+      "Can you drop me at Terminal 2?",
+      "Have a great flight!"
     ],
     speakingChallenge: {
-      instruction: "Role-play a taxi ride. Change the destination, add small talk about the weather or city, and practice asking the driver to adjust something (AC, music, window).",
+      instruction: "Practice taking a taxi to 3 places: the airport, a hotel, and a restaurant. Use 'Can you take me to', ask about fare, and say 'drop me at'.",
       hints: [
-        "Start by confirming the destination",
-        "Ask 'How long is the ride?'",
-        "Say 'Could you turn down/up the...?'",
-        "Thank the driver at the end"
+        "Ask the taxi to come to your location",
+        "State your destination clearly",
+        "Ask about the fare",
+        "Choose a route if asked",
+        "Pay and say thank you"
       ]
     }
   },
@@ -11345,129 +11354,6 @@ export const conversations: ConversationTopic[] = [
         "Ask how to take the medicine",
         "Ask about side effects",
         "Confirm the dosage"
-      ]
-    }
-  },
-  {
-    id: "taxi-ride",
-    title: "Taking a Taxi",
-    emoji: "??",
-    description: "Getting a taxi, giving directions, and paying the fare.",
-    color: "from-yellow-400 to-amber-400",
-    level: "A1",
-    estimatedTime: "10 min",
-    vocabularyPreview: [
-      { word: "Taxi", phonetic: "/'t�ksi/", chinese: "???", partOfSpeech: "noun" },
-      { word: "Destination", phonetic: "/?dest?'ne??n/", chinese: "???", partOfSpeech: "noun" },
-      { word: "Fare", phonetic: "/fer/", chinese: "??", partOfSpeech: "noun" },
-      { word: "Traffic", phonetic: "/'tr�f?k/", chinese: "??", partOfSpeech: "noun" },
-      { word: "Drop off", phonetic: "/dr?p ?f/", chinese: "??", partOfSpeech: "phrasal verb" },
-      { word: "Change", phonetic: "/t?e?nd?/", chinese: "??", partOfSpeech: "noun" }
-    ],
-    conversation: [
-      { speaker: "Passenger", line: "Hi, can you take me to the airport?" },
-      { speaker: "Driver", line: "Sure. That's about 20 minutes. Is that okay?" },
-      { speaker: "Passenger", line: "Yes, that's fine. How much is the fare?" },
-      { speaker: "Driver", line: "Approximately $25, depending on traffic." },
-      { speaker: "Passenger", line: "Okay. Can you drop me at Terminal 2?" },
-      { speaker: "Driver", line: "Of course. Do you have a preferred route?" },
-      { speaker: "Passenger", line: "No, whatever is fastest. I'm in a hurry." },
-      { speaker: "Driver", line: "No problem. We'll take the highway. Here's your receipt. Have a great flight!" }
-    ],
-    chineseTranslation: [
-      { speaker: "??", line: "?,?????????" },
-      { speaker: "??", line: "?????20???????" },
-      { speaker: "??", line: "?????????" },
-      { speaker: "??", line: "??25??,????????" },
-      { speaker: "??", line: "??????2??????????" },
-      { speaker: "??", line: "????????????" },
-      { speaker: "??", line: "??,??????????" },
-      { speaker: "??", line: "?????????????????????????!" }
-    ],
-    usefulExpressions: [
-      { expression: "Can you take me to...?", meaning: "?????...??", usage: "????????" },
-      { expression: "How much is the fare?", meaning: "??????", usage: "????" },
-      { expression: "Approximately...", meaning: "??...", usage: "???????" },
-      { expression: "Drop me at...", meaning: "?...????", usage: "??????" },
-      { expression: "In a hurry", meaning: "???", usage: "?????" }
-    ],
-    grammarFocus: [
-      {
-        title: "Modal Verbs for Requests",
-        explanation: "? 'Can you...?' ?????",
-        examples: [
-          "Can you take me to the airport?",
-          "Can you drive faster?",
-          "Can you drop me at Terminal 2?"
-        ]
-      },
-      {
-        title: "Comparative Adjectives",
-        explanation: "?????????????",
-        examples: [
-          "The highway is faster.",
-          "This route is shorter.",
-          "It's better to avoid downtown."
-        ]
-      }
-    ],
-    collocationsAndChunks: [
-      { chunk: "Take me to", meaning: "???", example: "Can you take me to the airport?" },
-      { chunk: "How much is the fare", meaning: "?????", example: "How much is the fare?" },
-      { chunk: "Drop me at", meaning: "?...????", example: "Drop me at Terminal 2, please." }
-    ],
-    pronunciationTips: [
-      { tip: "Destination ? /?dest?'ne??n/", example: "Stress on 'nay'" },
-      { tip: "Approximately ? /?'pr?ks?m?tli/", example: "Stress on second syllable" }
-    ],
-    commonMistakes: [
-      {
-        mistake: "'Can you take I to...?'",
-        correction: "'Can you take me to...?'",
-        explanation: "??????? 'me',???? 'I'?"
-      }
-    ],
-    rolePlayPractice: [
-      {
-        scenario: "You need to get to the airport. Call a taxi, give the destination, discuss the route, and pay the driver.",
-        prompts: [
-          "Call the taxi",
-          "State your destination",
-          "Ask about the fare",
-          "Choose a route",
-          "Pay and thank the driver"
-        ]
-      }
-    ],
-    vocabularyExpansion: [
-      {
-        word: "Fare",
-        synonyms: ["Price", "Cost"],
-        antonyms: [],
-        example: "The fare is approximately $25."
-      },
-      {
-        word: "Traffic",
-        synonyms: ["Congestion", "Vehicles"],
-        antonyms: [],
-        example: "The traffic is heavy today."
-      }
-    ],
-    shadowingPractice: [
-      "Hi, can you take me to the airport?",
-      "That's about 20 minutes. Is that okay?",
-      "How much is the fare?",
-      "Can you drop me at Terminal 2?",
-      "Have a great flight!"
-    ],
-    speakingChallenge: {
-      instruction: "Practice taking a taxi to 3 places: the airport, a hotel, and a restaurant. Use 'Can you take me to', ask about fare, and say 'drop me at'.",
-      hints: [
-        "Ask the taxi to come to your location",
-        "State your destination clearly",
-        "Ask about the fare",
-        "Choose a route if asked",
-        "Pay and say thank you"
       ]
     }
   },
