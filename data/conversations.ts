@@ -9216,40 +9216,187 @@ export const conversations: ConversationTopic[] = [
     color: "from-sky-400 to-blue-400",
     level: "A1",
     estimatedTime: "10 min",
-    vocabularyPreview: [
-      { word: "Sunny", phonetic: "/'s?ni/", chinese: "???", partOfSpeech: "adjective" },
-      { word: "Rainy", phonetic: "/'re?ni/", chinese: "???", partOfSpeech: "adjective" },
-      { word: "Cold", phonetic: "/ko?ld/", chinese: "??", partOfSpeech: "adjective" },
-      { word: "Warm", phonetic: "/w??rm/", chinese: "???", partOfSpeech: "adjective" },
-      { word: "Forecast", phonetic: "/'f??rkæst/", chinese: "????", partOfSpeech: "noun" },
-      { word: "Temperature", phonetic: "/'tempr?t??r/", chinese: "??", partOfSpeech: "noun" }
+    registerMarkers: [
+      { level: "formal", label: "Formal", color: "bg-blue-100 text-blue-800 border-blue-200", description: "Professional weather reports" },
+      { level: "neutral", label: "Neutral", color: "bg-gray-100 text-gray-800 border-gray-200", description: "Standard weather conversation" },
+      { level: "casual", label: "Casual", color: "bg-green-100 text-green-800 border-green-200", description: "Chatting about weather with friends" }
+    ],
+    warmUp: {
+      title: "Warm-Up: Weather English",
+      content: "Weather is the most common small talk topic. In this lesson, you'll learn how to describe weather, talk about forecasts, and make plans based on weather.",
+      contentZh: "????????????????????????????????????????????"
+    },
+    vocabulary: [
+      {
+        word: "Sunny",
+        phonetic: "/?s?ni/",
+        chinese: "???",
+        pinyin: "qíng l?ng de",
+        partOfSpeech: "adjective",
+        definitionEn: "Bright with lots of sunshine.",
+        definitionZh: "??????",
+        exampleEn: "It's sunny today.",
+        exampleZh: "???????",
+        register: "neutral"
+      },
+      {
+        word: "Rainy",
+        phonetic: "/?re?ni/",
+        chinese: "???",
+        pinyin: "xià y? de",
+        partOfSpeech: "adjective",
+        definitionEn: "Having a lot of rain.",
+        definitionZh: "??????",
+        exampleEn: "It's rainy outside.",
+        exampleZh: "??????",
+        register: "neutral"
+      },
+      {
+        word: "Cold",
+        phonetic: "/ko?ld/",
+        chinese: "??",
+        pinyin: "l?ng de",
+        partOfSpeech: "adjective",
+        definitionEn: "Having a low temperature.",
+        definitionZh: "?????",
+        exampleEn: "It's cold in winter.",
+        exampleZh: "?????",
+        register: "neutral"
+      },
+      {
+        word: "Warm",
+        phonetic: "/w??rm/",
+        chinese: "???",
+        pinyin: "w?n nu?n de",
+        partOfSpeech: "adjective",
+        definitionEn: "Mildly hot; comfortable temperature.",
+        definitionZh: "???????????",
+        exampleEn: "It's warm and sunny.",
+        exampleZh: "???????",
+        register: "neutral"
+      },
+      {
+        word: "Forecast",
+        phonetic: "/?f??rkæst/",
+        chinese: "????",
+        pinyin: "ti?n qì yù bào",
+        partOfSpeech: "noun",
+        definitionEn: "A prediction of what the weather will be.",
+        definitionZh: "???????",
+        exampleEn: "What's the forecast for tomorrow?",
+        exampleZh: "???????????",
+        register: "neutral"
+      },
+      {
+        word: "Temperature",
+        phonetic: "/?tempr?t??r/",
+        chinese: "??",
+        pinyin: "w?n dù",
+        partOfSpeech: "noun",
+        definitionEn: "A measure of how hot or cold something is.",
+        definitionZh: "??????????????",
+        exampleEn: "The temperature is dropping.",
+        exampleZh: "???????",
+        register: "neutral"
+      }
+    ],
+    dailyExpressions: {
+      title: "Daily Native Expressions",
+      items: [
+        {
+          id: "de-weather-1",
+          expression: "It's sunny/rainy/cold",
+          chinese: "????/??/??",
+          pinyin: "ti?n qì qíng l?ng / xià y? / hán l?ng",
+          meaning: "Describing the current weather conditions.",
+          whenToUse: "When talking about the weather right now.",
+          whenNotToUse: "Don't use 'Today is rainy' — always use 'It's rainy today'.",
+          nativeFrequency: "Extremely common — used every day.",
+          commonMistakes: [
+            { mistake: "Using 'Today is rainy' instead of 'It's rainy today'", correction: "Use 'It's + adjective + today' for weather" }
+          ],
+          pronunciation: "/?ts ?s?ni/ /?ts ?re?ni/ /?ts ko?ld/",
+          funnyExample: "A: It's sunny today! B: It's sunny in your imagination. A: ...I'm wearing sunglasses indoors.",
+          memoryTrick: "Think: 'It = the weather' + 'is = currently' = 'the weather is currently...'",
+          relatedExpressions: ["It's warm today", "It's cold outside", "It's raining"],
+          collocations: ["it's sunny", "it's rainy", "it's cold today"],
+          miniQuiz: [
+            { question: "'It's sunny today' means:", options: ["The weather is sunny now", "Today is a noun", "The sun is a person", "It's always sunny"], correct: 0 }
+          ],
+          register: "neutral"
+        },
+        {
+          id: "de-weather-2",
+          expression: "What's the forecast?",
+          chinese: "????????",
+          pinyin: "ti?n qì yù bào shì shén me?",
+          meaning: "Asking what the weather will be like in the future.",
+          whenToUse: "When you want to know the upcoming weather.",
+          whenNotToUse: "Don't use for current weather — use 'What's the weather like today?' instead.",
+          nativeFrequency: "Very common — used daily.",
+          commonMistakes: [
+            { mistake: "Using 'What will the weather be?' which is correct but longer", correction: "'What's the forecast?' is more concise and natural" }
+          ],
+          pronunciation: "/w?ts ð? ?f??rkæst/",
+          funnyExample: "A: What's the forecast? B: It will rain. A: ...I can see that from the window. B: ...I'm a weather reporter, not a magician.",
+          memoryTrick: "Think: 'forecast = prediction' = 'what will the weather be?'",
+          relatedExpressions: ["What will the weather be?", "What's the weather like tomorrow?", "Is it going to rain?"],
+          collocations: ["the forecast", "the forecast for", "weather forecast"],
+          miniQuiz: [
+            { question: "'What's the forecast?' asks about:", options: ["Future weather", "Current weather", "Past weather", "Weather in other countries"], correct: 0 }
+          ],
+          register: "neutral"
+        },
+        {
+          id: "de-weather-3",
+          expression: "Perfect for...",
+          chinese: "????...",
+          pinyin: "zh?n shì hé...",
+          meaning: "Describing ideal conditions for an activity.",
+          whenToUse: "When the weather is ideal for a specific activity.",
+          whenNotToUse: "Don't use for negative things — 'perfect' only works for positive situations.",
+          nativeFrequency: "Very common in weather and activity conversations.",
+          commonMistakes: [
+            { mistake: "Using 'Good for...' instead", correction: "'Perfect for...' is stronger and more enthusiastic" }
+          ],
+          pronunciation: "/?p??rfl f?r/",
+          funnyExample: "A: It's perfect for a picnic! B: It's pouring rain. A: ...Perfect for staying inside and watching movies.",
+          memoryTrick: "Think: 'perfect = ideal' + 'for = for this activity' = 'ideal conditions for this'",
+          relatedExpressions: ["Great for...", "Ideal for...", "Good for..."],
+          collocations: ["perfect for", "perfect for a picnic", "perfect weather for"],
+          miniQuiz: [
+            { question: "'Perfect for a picnic' means:", options: ["Ideal weather for a picnic", "The picnic is cancelled", "The weather is terrible", "Picnics are bad"], correct: 0 }
+          ],
+          register: "neutral"
+        }
+      ]
+    },
+    nativeChunks: [
+      { chunk: "It's sunny", meaning: "????", example: "It's sunny today.", register: "neutral", context: "Current weather" },
+      { chunk: "What's the forecast", meaning: "???????", example: "What's the forecast for tomorrow?", register: "neutral", context: "Future weather" },
+      { chunk: "Perfect for", meaning: "????", example: "Perfect for a picnic!", register: "neutral", context: "Activity suitability" },
+      { chunk: "Me neither", meaning: "???", example: "Me neither.", register: "neutral", context: "Agreeing negatively" },
+      { chunk: "Let's enjoy", meaning: "?????", example: "Let's enjoy the sun today.", register: "casual", context: "Suggestion" }
     ],
     conversation: [
-      { speaker: "Anna", line: "It's a beautiful sunny day today." },
-      { speaker: "Ben", line: "Yes, it's warm and sunny. Perfect for a picnic!" },
-      { speaker: "Anna", line: "What's the forecast for tomorrow?" },
-      { speaker: "Ben", line: "It says it will be rainy and cold. We should bring jackets." },
-      { speaker: "Anna", line: "Good idea. I don't like rainy days." },
-      { speaker: "Ben", line: "Me neither. But we need rain for the plants!" },
-      { speaker: "Anna", line: "That's true. Let's enjoy the sun today." }
+      { speaker: "Anna", line: "It's a beautiful sunny day today.", register: "neutral" },
+      { speaker: "Ben", line: "Yes, it's warm and sunny. Perfect for a picnic!", register: "neutral" },
+      { speaker: "Anna", line: "What's the forecast for tomorrow?", register: "neutral" },
+      { speaker: "Ben", line: "It says it will be rainy and cold. We should bring jackets.", register: "neutral" },
+      { speaker: "Anna", line: "Good idea. I don't like rainy days.", register: "neutral" },
+      { speaker: "Ben", line: "Me neither. But we need rain for the plants!", register: "neutral" },
+      { speaker: "Anna", line: "That's true. Let's enjoy the sun today.", register: "casual" }
     ],
     chineseTranslation: [
-      { speaker: "Anna", line: "??????,?????" },
-      { speaker: "Ben", line: "??,????????????!" },
-      { speaker: "Anna", line: "??????????" },
-      { speaker: "Ben", line: "??????,???????????" },
       { speaker: "Anna", line: "????????????" },
-      { speaker: "Ben", line: "??????????????!" },
-      { speaker: "Anna", line: "???????????????" }
+      { speaker: "Ben", line: "?????????????????" },
+      { speaker: "Anna", line: "???????????" },
+      { speaker: "Ben", line: "????????????????????" },
+      { speaker: "Anna", line: "????????????" },
+      { speaker: "Ben", line: "???????????????" },
+      { speaker: "Anna", line: "??????????????" }
     ],
-    usefulExpressions: [
-      { expression: "It's sunny/rainy/cold", meaning: "????/??/?", usage: "????" },
-      { expression: "What's the forecast?", meaning: "????????", usage: "??????" },
-      { expression: "Perfect for...", meaning: "????...", usage: "???????" },
-      { expression: "Me neither", meaning: "???", usage: "???????????" },
-      { expression: "Let's...", meaning: "???...", usage: "????" }
-    ],
-    grammarFocus: [
+    grammarInContext: [
       {
         title: "Present Tense for Weather",
         explanation: "?????????????",
@@ -9269,20 +9416,107 @@ export const conversations: ConversationTopic[] = [
         ]
       }
     ],
-    collocationsAndChunks: [
-      { chunk: "It's sunny", meaning: "????", example: "It's sunny today." },
-      { chunk: "What's the forecast", meaning: "????", example: "What's the forecast for tomorrow?" },
-      { chunk: "Me neither", meaning: "???", example: "I don't like rain. Me neither." }
+    pronunciation: [
+      { tip: "Sunny ? /?s?ni/", example: "Double 'n', stress on first syllable" },
+      { tip: "Forecast ? /?f??rkæst/", example: "Stress on first syllable" }
     ],
-    pronunciationTips: [
-      { tip: "Sunny ? /'s?ni/", example: "Double 'n', stress on first syllable" },
-      { tip: "Forecast ? /'f??rkæst/", example: "Stress on first syllable" }
+    shadowing: [
+      { line: "It's a beautiful sunny day today.", emphasis: "beautiful sunny day" },
+      { line: "What's the forecast for tomorrow?", emphasis: "What's the forecast" },
+      { line: "It says it will be rainy and cold.", emphasis: "rainy and cold" },
+      { line: "Me neither. But we need rain for the plants!", emphasis: "Me neither" },
+      { line: "Let's enjoy the sun today.", emphasis: "enjoy the sun" }
+    ],
+    speakingPractice: {
+      instruction: "Practice talking about weather for a week. Use 'It's...', 'It will...', and 'Me neither'. Compare weather in different cities.",
+      hints: [
+        "Start with today's weather",
+        "Use adjectives like sunny, rainy, cold",
+        "Ask about tomorrow's forecast",
+        "Express likes and dislikes",
+        "Suggest activities based on weather"
+      ],
+      followUpQuestions: [
+        "What's your favorite weather?",
+        "What do you do on rainy days?",
+        "Do you check the forecast often?",
+        "What's the weather like in your city?"
+      ]
+    },
+    rolePlay: {
+      scenario: "You meet your neighbor outside. Talk about today's weather, tomorrow's forecast, and plan an outdoor activity together.",
+      prompts: [
+        "Comment on today's weather",
+        "Ask about tomorrow's forecast",
+        "Express your preference",
+        "Suggest an activity",
+        "Agree on a plan"
+      ],
+      partnerLines: [
+        "It's a beautiful sunny day today.",
+        "What's the forecast for tomorrow?",
+        "It says it will be rainy and cold. We should bring jackets.",
+        "Me neither. But we need rain for the plants!",
+        "That's true. Let's enjoy the sun today."
+      ]
+    },
+    homework: {
+      task: "Weather Journal",
+      description: "Check the weather forecast every day this week and write a short journal entry about the weather and your activities.",
+      dueText: "Before next lesson"
+    },
+    quiz: [
+      {
+        id: "q1",
+        question: "'It's sunny today' means:",
+        questionZh: "'It's sunny today'????",
+        options: [
+          { label: "A) The weather is sunny now", labelZh: "A) ??????", correct: true },
+          { label: "B) Today is a noun", labelZh: "B) ???????", correct: false },
+          { label: "C) The sun is a person", labelZh: "C) ??????", correct: false },
+          { label: "D) It's always sunny", labelZh: "D) ?????", correct: false }
+        ],
+        explanation: "'It's sunny today' means the weather is sunny right now.",
+        explanationZh: "'It's sunny today'??????????"
+      },
+      {
+        id: "q2",
+        question: "'What's the forecast?' asks about:",
+        questionZh: "'What's the forecast?'?????",
+        options: [
+          { label: "A) Future weather", labelZh: "A) ?????", correct: true },
+          { label: "B) Current weather", labelZh: "B) ?????", correct: false },
+          { label: "C) Past weather", labelZh: "C) ?????", correct: false },
+          { label: "D) Weather in other countries", labelZh: "D) ???????", correct: false }
+        ],
+        explanation: "'What's the forecast?' asks about the predicted future weather.",
+        explanationZh: "'What's the forecast?'????????????"
+      }
+    ],
+    review: [
+      { key: "current", prompt: "How do you describe today's weather?", answer: "It's sunny/rainy/cold..." },
+      { key: "forecast", prompt: "How do you ask about tomorrow's weather?", answer: "What's the forecast?" },
+      { key: "perfect", prompt: "What does 'Perfect for...' mean?", answer: "Ideal conditions for an activity" }
+    ],
+    humorNotes: [
+      {
+        context: "When the forecast is wrong",
+        punchline: "A: The forecast said it would be sunny. B: ...And here we are in the rain. A: ...The forecast is more of a suggestion.",
+        explanation: "Self-deprecating humor about weather forecasts being wrong is very common."
+      }
+    ],
+    usefulExpressions: [
+      { expression: "It's sunny/rainy/cold", meaning: "????/??/??", usage: "??????" },
+      { expression: "What's the forecast?", meaning: "????????", usage: "??????" },
+      { expression: "Perfect for...", meaning: "????...", usage: "???????" },
+      { expression: "Me neither", meaning: "???", usage: "?????????" },
+      { expression: "Let's...", meaning: "???...", usage: "????" }
     ],
     commonMistakes: [
       {
-        mistake: "'Today is rainy'",
-        correction: "'It's rainy today'",
-        explanation: "????? 'It's...',????? 'Today is...'"
+        mistake: "? 'Today is rainy' ??? 'It's rainy today'",
+        correction: "?????? 'It's + adjective + today'",
+        explanation: "???????? 'It's...' ??? 'Today is...'"
       }
     ],
     rolePlayPractice: [
