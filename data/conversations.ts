@@ -7090,48 +7090,195 @@ export const conversations: ConversationTopic[] = [
     color: "from-red-400 to-pink-400",
     level: "A1",
     estimatedTime: "10 min",
-    vocabularyPreview: [
-      { word: "Stamp", phonetic: "/stæmp/", chinese: "??", partOfSpeech: "noun" },
-      { word: "Envelope", phonetic: "/'env?lo?p/", chinese: "??", partOfSpeech: "noun" },
-      { word: "Package", phonetic: "/'pæk?d?/", chinese: "??", partOfSpeech: "noun" },
-      { word: "Mail", phonetic: "/me?l/", chinese: "??", partOfSpeech: "verb / noun" },
-      { word: "Delivery", phonetic: "/d?'l?v?ri/", chinese: "??", partOfSpeech: "noun" },
-      { word: "Address", phonetic: "/?'dres/", chinese: "??", partOfSpeech: "noun" }
+    registerMarkers: [
+      { level: "formal", label: "Formal", color: "bg-blue-100 text-blue-800 border-blue-200", description: "Official mail or international shipping" },
+      { level: "neutral", label: "Neutral", color: "bg-gray-100 text-gray-800 border-gray-200", description: "Standard post office interaction" },
+      { level: "casual", label: "Casual", color: "bg-green-100 text-green-800 border-green-200", description: "Sending a quick letter or postcard" }
+    ],
+    warmUp: {
+      title: "Warm-Up: Post Office Phrases",
+      content: "The post office is an essential service. In this lesson, you'll learn how to mail packages, buy stamps, and ask about delivery options in English.",
+      contentZh: "???????????????????????????????????????"
+    },
+    vocabulary: [
+      {
+        word: "Stamp",
+        phonetic: "/stæmp/",
+        chinese: "??",
+        pinyin: "yóu piào",
+        partOfSpeech: "noun",
+        definitionEn: "A small piece of paper you put on mail to pay for postage.",
+        definitionZh: "??????????????",
+        exampleEn: "I need to buy some stamps.",
+        exampleZh: "?????????",
+        register: "neutral"
+      },
+      {
+        word: "Envelope",
+        phonetic: "/?env?l??p/",
+        chinese: "??",
+        pinyin: "xìn f?ng",
+        partOfSpeech: "noun",
+        definitionEn: "A folded paper container for a letter.",
+        definitionZh: "??????????",
+        exampleEn: "Put the letter in an envelope.",
+        exampleZh: "????????",
+        register: "neutral"
+      },
+      {
+        word: "Package",
+        phonetic: "/?pæk?d?/",
+        chinese: "??",
+        pinyin: "b?o gu?",
+        partOfSpeech: "noun",
+        definitionEn: "A wrapped or boxed item sent through the mail.",
+        definitionZh: "???????????????",
+        exampleEn: "I'd like to mail this package.",
+        exampleZh: "????????",
+        register: "neutral"
+      },
+      {
+        word: "Mail",
+        phonetic: "/me?l/",
+        chinese: "??",
+        pinyin: "yóu jì",
+        partOfSpeech: "verb / noun",
+        definitionEn: "To send something through the postal system.",
+        definitionZh: "???????????",
+        exampleEn: "I need to mail this letter.",
+        exampleZh: "????????",
+        register: "neutral"
+      },
+      {
+        word: "Delivery",
+        phonetic: "/d??l?v?ri/",
+        chinese: "??",
+        pinyin: "pèi sòng",
+        partOfSpeech: "noun",
+        definitionEn: "The service of bringing mail or packages to someone.",
+        definitionZh: "??????????????",
+        exampleEn: "Express delivery takes 3-5 days.",
+        exampleZh: "??????3-5??",
+        register: "neutral"
+      },
+      {
+        word: "Address",
+        phonetic: "/??dres/",
+        chinese: "??",
+        pinyin: "dì zh?",
+        partOfSpeech: "noun",
+        definitionEn: "The location where mail is sent.",
+        definitionZh: "????????",
+        exampleEn: "Write the address clearly.",
+        exampleZh: "????????",
+        register: "neutral"
+      }
+    ],
+    dailyExpressions: {
+      title: "Daily Native Expressions",
+      items: [
+        {
+          id: "de-postoffice-1",
+          expression: "I'd like to mail...",
+          chinese: "???...",
+          pinyin: "w? xi?ng jì...",
+          meaning: "Expressing your desire to send something through the mail.",
+          whenToUse: "When you arrive at the post office and want to send something.",
+          whenNotToUse: "Don't use for digital messages — this is only for physical mail.",
+          nativeFrequency: "Very common at post offices.",
+          commonMistakes: [
+            { mistake: "Using 'I want to send...' instead", correction: "'I'd like to mail...' is more polite and natural" }
+          ],
+          pronunciation: "/a?d la?k tu? me?l/",
+          funnyExample: "A: I'd like to mail this package. B: Where to? A: To my friend. B: ...That's not an address.",
+          memoryTrick: "Think: 'mail = send via post' + 'I'd like = politely want' = 'I politely want to send via post'",
+          relatedExpressions: ["Can I mail...?", "I want to send...", "I need to post..."],
+          collocations: ["mail a package", "mail a letter", "mail something"],
+          miniQuiz: [
+            { question: "'I'd like to mail...' means:", options: ["I want to send something by post", "I want to receive mail", "I want to buy stamps", "I want to open an account"], correct: 0 }
+          ],
+          register: "neutral"
+        },
+        {
+          id: "de-postoffice-2",
+          expression: "Regular / Express delivery",
+          chinese: "??/????",
+          pinyin: "p? t?ng / kuài dì pèi sòng",
+          meaning: "The two main delivery speed options at the post office.",
+          whenToUse: "When choosing how fast you want your mail or package delivered.",
+          whenNotToUse: "Don't use for emails — this is only for physical mail.",
+          nativeFrequency: "Very common when mailing packages.",
+          commonMistakes: [
+            { mistake: "Confusing 'delivery' with 'mail'", correction: "'Mail' is what you send, 'delivery' is how fast it arrives" }
+          ],
+          pronunciation: "/?re?j?l?r / ?k?spres d??l?v?ri/",
+          funnyExample: "A: How much is express delivery? B: $25. A: ...I'll just walk it there myself. B: ...That's also an option.",
+          memoryTrick: "Think: 'express = fast' + 'regular = normal' = 'fast vs normal delivery'",
+          relatedExpressions: ["Standard delivery", "Overnight delivery", "Economy shipping"],
+          collocations: ["regular delivery", "express delivery", "delivery time"],
+          miniQuiz: [
+            { question: "'Express delivery' means:", options: ["Fast delivery", "Slow delivery", "Free delivery", "No delivery"], correct: 0 }
+          ],
+          register: "neutral"
+        },
+        {
+          id: "de-postoffice-3",
+          expression: "How much is...?",
+          chinese: "...????",
+          pinyin: "... du? sh?o qián?",
+          meaning: "Asking for the price of a service or item.",
+          whenToUse: "When asking about postage, stamps, or delivery costs.",
+          whenNotToUse: "Don't use for things that are free — it sounds confused.",
+          nativeFrequency: "Extremely common — used everywhere when shopping or buying services.",
+          commonMistakes: [
+            { mistake: "Saying 'How much it is?'", correction: "Correct order is 'How much is it?'" }
+          ],
+          pronunciation: "/ha? m?t? ?z/",
+          funnyExample: "A: How much is a stamp? B: $0.55. A: ...That's cheaper than my coffee.",
+          memoryTrick: "Think: 'How much = what quantity of money' + 'is = costs' = 'what does it cost?'",
+          relatedExpressions: ["What's the price?", "How much does it cost?", "What's the cost?"],
+          collocations: ["how much is", "how much is this", "how much is that"],
+          miniQuiz: [
+            { question: "'How much is...?' asks for:", options: ["Price", "Weight", "Distance", "Time"], correct: 0 }
+          ],
+          register: "neutral"
+        }
+      ]
+    },
+    nativeChunks: [
+      { chunk: "I'd like to mail", meaning: "???", example: "I'd like to mail this package.", register: "neutral", context: "Mailing" },
+      { chunk: "Regular or express", meaning: "??????", example: "Is it regular or express delivery?", register: "neutral", context: "Delivery options" },
+      { chunk: "How much is", meaning: "???", example: "How much is express delivery?", register: "neutral", context: "Asking price" },
+      { chunk: "Can I buy", meaning: "?????", example: "Can I buy some stamps?", register: "neutral", context: "Buying items" },
+      { chunk: "Here is your receipt", meaning: "??????", example: "Here is your receipt.", register: "neutral", context: "Payment" }
     ],
     conversation: [
-      { speaker: "Customer", line: "Hello, I'd like to mail this package, please." },
-      { speaker: "Clerk", line: "Sure. Where are you sending it?" },
-      { speaker: "Customer", line: "To Japan. It's a gift for my friend." },
-      { speaker: "Clerk", line: "Okay. Is it a regular or express delivery?" },
-      { speaker: "Customer", line: "How much is express delivery?" },
-      { speaker: "Clerk", line: "Express is $25 for 3-5 days. Regular is $10 for 2 weeks." },
-      { speaker: "Customer", line: "I'll take regular delivery, please. Can I also buy some stamps?" },
-      { speaker: "Clerk", line: "Of course. How many stamps do you need?" },
-      { speaker: "Customer", line: "10, please. And can you write the address on it for me?" },
-      { speaker: "Clerk", line: "Sure. Here is your receipt." },
-      { speaker: "Customer", line: "Thank you very much!" }
+      { speaker: "Customer", line: "Hello, I'd like to mail this package, please.", register: "neutral" },
+      { speaker: "Clerk", line: "Sure. Where are you sending it?", register: "neutral" },
+      { speaker: "Customer", line: "To Japan. It's a gift for my friend.", register: "neutral" },
+      { speaker: "Clerk", line: "Okay. Is it a regular or express delivery?", register: "neutral" },
+      { speaker: "Customer", line: "How much is express delivery?", register: "neutral" },
+      { speaker: "Clerk", line: "Express is $25 for 3-5 days. Regular is $10 for 2 weeks.", register: "neutral" },
+      { speaker: "Customer", line: "I'll take regular delivery, please. Can I also buy some stamps?", register: "neutral" },
+      { speaker: "Clerk", line: "Of course. How many stamps do you need?", register: "neutral" },
+      { speaker: "Customer", line: "10, please. And can you write the address on it for me?", register: "neutral" },
+      { speaker: "Clerk", line: "Sure. Here is your receipt.", register: "neutral" },
+      { speaker: "Customer", line: "Thank you very much!", register: "neutral" }
     ],
     chineseTranslation: [
-      { speaker: "??", line: "??,????????" },
-      { speaker: "??", line: "?????????" },
+      { speaker: "??", line: "???????????" },
+      { speaker: "??", line: "??????????" },
       { speaker: "??", line: "???????????????" },
-      { speaker: "??", line: "?????????????" },
+      { speaker: "??", line: "??????????????" },
       { speaker: "??", line: "??????" },
-      { speaker: "??", line: "???25??,3-5???????10??,2????" },
+      { speaker: "??", line: "??25???3-5??????10???2????" },
       { speaker: "??", line: "????????????????" },
       { speaker: "??", line: "????????????" },
-      { speaker: "??", line: "10?????????????" },
+      { speaker: "??", line: "10???????????????" },
       { speaker: "??", line: "??????????" },
-      { speaker: "??", line: "????!" }
+      { speaker: "??", line: "?????" }
     ],
-    usefulExpressions: [
-      { expression: "I'd like to mail...", meaning: "???...", usage: "??????" },
-      { expression: "Regular / Express delivery", meaning: "??/??", usage: "??????" },
-      { expression: "How much is...?", meaning: "...????", usage: "????" },
-      { expression: "Can I buy...?", meaning: "???...??", usage: "????" },
-      { expression: "Here is your receipt", meaning: "??????", usage: "????" }
-    ],
-    grammarFocus: [
+    grammarInContext: [
       {
         title: "Questions with 'How much'",
         explanation: "? 'How much...?' ??????????????",
@@ -7143,7 +7290,7 @@ export const conversations: ConversationTopic[] = [
       },
       {
         title: "Polite Offers with 'Can I'",
-        explanation: "? 'Can I...?' ???????????",
+        explanation: "? 'Can I...?' ?????????????",
         examples: [
           "Can I buy stamps here?",
           "Can I track my package?",
@@ -7151,20 +7298,106 @@ export const conversations: ConversationTopic[] = [
         ]
       }
     ],
-    collocationsAndChunks: [
-      { chunk: "Mail a package", meaning: "???", example: "I'd like to mail this package." },
-      { chunk: "Express delivery", meaning: "??", example: "How much is express delivery?" },
-      { chunk: "Here is your receipt", meaning: "??????", example: "Thank you, here is your receipt." }
+    pronunciation: [
+      { tip: "Package ? /?pæk?d?/", example: "Stress on first syllable" },
+      { tip: "Delivery ? /d??l?v?ri/", example: "Stress on second syllable" }
     ],
-    pronunciationTips: [
-      { tip: "Package ? /'pæk?d?/", example: "Stress on first syllable" },
-      { tip: "Delivery ? /d?'l?v?ri/", example: "Stress on second syllable" }
+    shadowing: [
+      { line: "Hello, I'd like to mail this package, please.", emphasis: "I'd like to mail" },
+      { line: "Where are you sending it?", emphasis: "Where are you sending" },
+      { line: "How much is express delivery?", emphasis: "How much is" },
+      { line: "I'll take regular delivery, please.", emphasis: "regular delivery" },
+      { line: "Can I also buy some stamps?", emphasis: "buy some stamps" }
+    ],
+    speakingPractice: {
+      instruction: "Practice mailing three items: a letter, a postcard, and a package. Use 'I'd like to mail...' and ask about delivery options.",
+      hints: [
+        "Start with 'Hello'",
+        "Say where you're sending it",
+        "Ask about delivery speed",
+        "Buy stamps if needed"
+      ],
+      followUpQuestions: [
+        "What did you mail?",
+        "Which delivery option did you choose?",
+        "How much did it cost?",
+        "Did you track your package?"
+      ]
+    },
+    rolePlay: {
+      scenario: "You need to send a birthday gift to your friend in another country. Go to the post office, choose delivery speed, buy stamps, and mail it.",
+      prompts: [
+        "Greet the clerk",
+        "Say what you want to mail",
+        "Choose delivery type",
+        "Buy stamps",
+        "Get a receipt"
+      ],
+      partnerLines: [
+        "Hello, I'd like to mail this package, please.",
+        "Sure. Where are you sending it?",
+        "Okay. Is it a regular or express delivery?",
+        "Express is $25 for 3-5 days. Regular is $10 for 2 weeks.",
+        "Sure. Here is your receipt."
+      ]
+    },
+    homework: {
+      task: "Mailing Practice",
+      description: "Write a letter or postcard to a friend this week. Describe your week and ask about theirs. Mail it and track the delivery.",
+      dueText: "Before next lesson"
+    },
+    quiz: [
+      {
+        id: "q1",
+        question: "'I'd like to mail...' means:",
+        questionZh: "'I'd like to mail...'????",
+        options: [
+          { label: "A) I want to send something by post", labelZh: "A) ?????????", correct: true },
+          { label: "B) I want to receive mail", labelZh: "B) ??????", correct: false },
+          { label: "C) I want to buy stamps", labelZh: "C) ?????", correct: false },
+          { label: "D) I want to open an account", labelZh: "D) ?????", correct: false }
+        ],
+        explanation: "'I'd like to mail...' means you want to send something through the postal service.",
+        explanationZh: "'I'd like to mail...'???????????????"
+      },
+      {
+        id: "q2",
+        question: "'Express delivery' means:",
+        questionZh: "'Express delivery'????",
+        options: [
+          { label: "A) Fast delivery", labelZh: "A) ????", correct: true },
+          { label: "B) Slow delivery", labelZh: "B) ????", correct: false },
+          { label: "C) Free delivery", labelZh: "C) ????", correct: false },
+          { label: "D) No delivery", labelZh: "D) ???", correct: false }
+        ],
+        explanation: "'Express delivery' is a faster, usually more expensive shipping option.",
+        explanationZh: "'Express delivery'???????????????"
+      }
+    ],
+    review: [
+      { key: "mail", prompt: "How do you say you want to send a package?", answer: "I'd like to mail..." },
+      { key: "delivery", prompt: "What are the two delivery options?", answer: "Regular or express delivery" },
+      { key: "stamps", prompt: "How do you ask to buy stamps?", answer: "Can I buy some stamps?" }
+    ],
+    humorNotes: [
+      {
+        context: "When the post office is busy",
+        punchline: "A: I'd like to mail this package. B: So would everyone else in this line. A: ...Then I'd like to mail my patience.",
+        explanation: "Self-deprecating humor about post office lines is very common."
+      }
+    ],
+    usefulExpressions: [
+      { expression: "I'd like to mail...", meaning: "???...", usage: "????" },
+      { expression: "Regular / Express delivery", meaning: "??/????", usage: "??????" },
+      { expression: "How much is...?", meaning: "...????", usage: "????" },
+      { expression: "Can I buy...?", meaning: "????...??", usage: "????" },
+      { expression: "Here is your receipt", meaning: "??????", usage: "????" }
     ],
     commonMistakes: [
       {
-        mistake: "'I want to mail...' ??????",
+        mistake: "? 'I want to mail...' ??? 'I'd like to mail...'",
         correction: "??????? 'I'd like to mail...'",
-        explanation: "????????????????"
+        explanation: "??????'I'd like' ? 'I want' ????"
       }
     ],
     rolePlayPractice: [
