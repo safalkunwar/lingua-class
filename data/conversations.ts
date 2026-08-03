@@ -6381,47 +6381,194 @@ export const conversations: ConversationTopic[] = [
     color: "from-purple-400 to-indigo-400",
     level: "A1",
     estimatedTime: "10 min",
-    vocabularyPreview: [
-      { word: "Appointment", phonetic: "/?'p??ntm?nt/", chinese: "??", partOfSpeech: "noun" },
-      { word: "Available", phonetic: "/?'ve?l?bl/", chinese: "???", partOfSpeech: "adjective" },
-      { word: "Time slot", phonetic: "/ta?m sl?t/", chinese: "???", partOfSpeech: "noun" },
-      { word: "Confirm", phonetic: "/k?n'f??rm/", chinese: "??", partOfSpeech: "verb" },
-      { word: "Reschedule", phonetic: "/ri?'?edju?l/", chinese: "??", partOfSpeech: "verb" },
-      { word: "Cancellation", phonetic: "/?kæns?'le??n/", chinese: "??", partOfSpeech: "noun" }
+    registerMarkers: [
+      { level: "formal", label: "Formal", color: "bg-blue-100 text-blue-800 border-blue-200", description: "Business or medical appointments" },
+      { level: "neutral", label: "Neutral", color: "bg-gray-100 text-gray-800 border-gray-200", description: "Standard appointment scheduling" },
+      { level: "casual", label: "Casual", color: "bg-green-100 text-green-800 border-green-200", description: "Personal appointments with friends" }
+    ],
+    warmUp: {
+      title: "Warm-Up: Appointment Language",
+      content: "Making appointments is an essential life skill. In this lesson, you'll learn how to schedule, confirm, and manage appointments confidently.",
+      contentZh: "??????????????????????????????????????"
+    },
+    vocabulary: [
+      {
+        word: "Appointment",
+        phonetic: "/??p??ntm?nt/",
+        chinese: "??",
+        pinyin: "yù yu?",
+        partOfSpeech: "noun",
+        definitionEn: "A scheduled time to meet or see someone.",
+        definitionZh: "?????????????",
+        exampleEn: "I'd like to make an appointment.",
+        exampleZh: "?????",
+        register: "neutral"
+      },
+      {
+        word: "Available",
+        phonetic: "/??ve?l?bl/",
+        chinese: "???",
+        pinyin: "y?u kòng de",
+        partOfSpeech: "adjective",
+        definitionEn: "Free to meet or do something at a particular time.",
+        definitionZh: "??????????????",
+        exampleEn: "Are you available on Friday?",
+        exampleZh: "???????",
+        register: "neutral"
+      },
+      {
+        word: "Time slot",
+        phonetic: "/ta?m sl?t/",
+        chinese: "???",
+        pinyin: "shí ji?n duàn",
+        partOfSpeech: "noun",
+        definitionEn: "A specific period of time available for an appointment.",
+        definitionZh: "????????????",
+        exampleEn: "We have a 10:00 time slot available.",
+        exampleZh: "???10:00???????",
+        register: "neutral"
+      },
+      {
+        word: "Confirm",
+        phonetic: "/k?n?f??rm/",
+        chinese: "??",
+        pinyin: "què rèn",
+        partOfSpeech: "verb",
+        definitionEn: "To verify that an appointment is still on.",
+        definitionZh: "???????????",
+        exampleEn: "I'd like to confirm my appointment.",
+        exampleZh: "?????????",
+        register: "neutral"
+      },
+      {
+        word: "Reschedule",
+        phonetic: "/ri???edju?l/",
+        chinese: "??",
+        pinyin: "g?i q?",
+        partOfSpeech: "verb",
+        definitionEn: "To change the time of an appointment.",
+        definitionZh: "????????",
+        exampleEn: "I need to reschedule my appointment.",
+        exampleZh: "??????????",
+        register: "neutral"
+      },
+      {
+        word: "Cancellation",
+        phonetic: "/?kæns??le??n/",
+        chinese: "??",
+        pinyin: "q? xi?o",
+        partOfSpeech: "noun",
+        definitionEn: "The act of cancelling an appointment.",
+        definitionZh: "????????",
+        exampleEn: "I need to make a cancellation.",
+        exampleZh: "??????",
+        register: "neutral"
+      }
+    ],
+    dailyExpressions: {
+      title: "Daily Native Expressions",
+      items: [
+        {
+          id: "de-appointment-1",
+          expression: "I'd like to make an appointment",
+          chinese: "????",
+          pinyin: "w? xi?ng yù yu?",
+          meaning: "Expressing your desire to schedule a meeting or visit.",
+          whenToUse: "When calling or visiting to schedule an appointment.",
+          whenNotToUse: "Don't use for casual meetups with friends — use 'Let's meet...' instead.",
+          nativeFrequency: "Very common in professional and medical settings.",
+          commonMistakes: [
+            { mistake: "Using 'I want to make an appointment'", correction: "'I'd like to make...' is more polite and professional" }
+          ],
+          pronunciation: "/a?d la?k tu? me?k ?n ??p??ntm?nt/",
+          funnyExample: "A: I'd like to make an appointment. B: For what? A: To tell you I'd like to make an appointment. B: ...That's the appointment.",
+          memoryTrick: "Think: 'make = create' + 'appointment = scheduled time' = 'create a scheduled time'",
+          relatedExpressions: ["Can I make an appointment?", "I need to schedule...", "I'd like to book..."],
+          collocations: ["make an appointment", "make an appointment with", "book an appointment"],
+          miniQuiz: [
+            { question: "'I'd like to make an appointment' means:", options: ["I want to schedule a meeting", "I want to cancel", "I want to reschedule", "I want to complain"], correct: 0 }
+          ],
+          register: "neutral"
+        },
+        {
+          id: "de-appointment-2",
+          expression: "What day works best for you?",
+          chinese: "????????",
+          pinyin: "n? ti?n duì n? zuì hé shì?",
+          meaning: "Asking someone what day is most convenient for them.",
+          whenToUse: "When scheduling an appointment and checking the other person's availability.",
+          whenNotToUse: "Don't use if you're the only one involved — just pick a day.",
+          nativeFrequency: "Very common in scheduling.",
+          commonMistakes: [
+            { mistake: "Using 'What day is best for you?'", correction: "'Works best' is more natural in English" }
+          ],
+          pronunciation: "/w?t de? w??ks best f?r ju?/",
+          funnyExample: "A: What day works best for you? B: All of them. A: ...Then let's meet every day. B: ...I was joking.",
+          memoryTrick: "Think: 'works best = most convenient' = 'which day is most convenient?'",
+          relatedExpressions: ["When are you free?", "What's your availability?", "When works for you?"],
+          collocations: ["works best for you", "works for me", "what day works"],
+          miniQuiz: [
+            { question: "'What day works best for you?' asks about:", options: ["Your availability", "Your favorite day", "Your work schedule", "Your birthday"], correct: 0 }
+          ],
+          register: "neutral"
+        },
+        {
+          id: "de-appointment-3",
+          expression: "Your appointment is confirmed",
+          chinese: "???????",
+          pinyin: "nín de yù yu? y? què rèn",
+          meaning: "Telling someone that their appointment has been officially scheduled.",
+          whenToUse: "After scheduling an appointment, to confirm it's been recorded.",
+          whenNotToUse: "Don't use before actually scheduling — only after the appointment is set.",
+          nativeFrequency: "Very common in confirmation messages and emails.",
+          commonMistakes: [
+            { mistake: "Using 'Your appointment is okay' instead", correction: "'Confirmed' is the standard professional term" }
+          ],
+          pronunciation: "/j?r ??p??ntm?nt ?z k?n?f??rmd/",
+          funnyExample: "A: Your appointment is confirmed. B: For when? A: ...I forgot to confirm the time. B: ...Then it's not confirmed.",
+          memoryTrick: "Think: 'confirmed = officially set' = 'it's definitely scheduled'",
+          relatedExpressions: ["Your booking is confirmed", "You're all set", "Appointment confirmed"],
+          collocations: ["appointment is confirmed", "booking confirmed", "you're confirmed"],
+          miniQuiz: [
+            { question: "'Your appointment is confirmed' means:", options: ["Your appointment is officially scheduled", "Your appointment might happen", "Your appointment is cancelled", "Your appointment is free"], correct: 0 }
+          ],
+          register: "neutral"
+        }
+      ]
+    },
+    nativeChunks: [
+      { chunk: "make an appointment", meaning: "??", example: "I'd like to make an appointment.", register: "neutral", context: "Scheduling" },
+      { chunk: "works best for you", meaning: "?????", example: "What day works best for you?", register: "neutral", context: "Scheduling" },
+      { chunk: "anything available", meaning: "???", example: "Do you have anything available on Friday?", register: "neutral", context: "Availability" },
+      { chunk: "works for me", meaning: "????", example: "11:30 works for me.", register: "neutral", context: "Confirming time" },
+      { chunk: "appointment is confirmed", meaning: "?????", example: "Your appointment is confirmed.", register: "neutral", context: "Confirmation" }
     ],
     conversation: [
-      { speaker: "Receptionist", line: "Good morning! How can I help you?" },
-      { speaker: "Customer", line: "Hi, I'd like to make an appointment, please." },
-      { speaker: "Receptionist", line: "Sure. What day works best for you?" },
-      { speaker: "Customer", line: "Do you have anything available on Friday morning?" },
-      { speaker: "Receptionist", line: "Let me check. Yes, we have 10:00 and 11:30." },
-      { speaker: "Customer", line: "11:30 is perfect. Thank you!" },
-      { speaker: "Receptionist", line: "Great. Can I get your name and phone number please?" },
-      { speaker: "Customer", line: "My name is Lisa, and my number is 555-0199." },
-      { speaker: "Receptionist", line: "Thank you, Lisa! Your appointment is confirmed for Friday at 11:30." }
+      { speaker: "Receptionist", line: "Good morning! How can I help you?", register: "neutral" },
+      { speaker: "Customer", line: "Hi, I'd like to make an appointment, please.", register: "neutral" },
+      { speaker: "Receptionist", line: "Sure. What day works best for you?", register: "neutral" },
+      { speaker: "Customer", line: "Do you have anything available on Friday morning?", register: "neutral" },
+      { speaker: "Receptionist", line: "Let me check. Yes, we have 10:00 and 11:30.", register: "neutral" },
+      { speaker: "Customer", line: "11:30 is perfect. Thank you!", register: "neutral" },
+      { speaker: "Receptionist", line: "Great. Can I get your name and phone number please?", register: "neutral" },
+      { speaker: "Customer", line: "My name is Lisa, and my number is 555-0199.", register: "neutral" },
+      { speaker: "Receptionist", line: "Thank you, Lisa! Your appointment is confirmed for Friday at 11:30.", register: "neutral" }
     ],
     chineseTranslation: [
-      { speaker: "??", line: "???!????????" },
-      { speaker: "??", line: "??,?????" },
-      { speaker: "??", line: "?????????" },
+      { speaker: "???", line: "????????????" },
       { speaker: "??", line: "????????" },
-      { speaker: "??", line: "???????,10??11:30???" },
-      { speaker: "??", line: "11:30?????!" },
-      { speaker: "??", line: "??????????????????" },
-      { speaker: "??", line: "????,???555-0199?" },
-      { speaker: "??", line: "????!???????,??11:30?" }
+      { speaker: "???", line: "???????????" },
+      { speaker: "??", line: "????????" },
+      { speaker: "???", line: "???????????10:00?11:30?" },
+      { speaker: "??", line: "11:30??????" },
+      { speaker: "???", line: "????????????????" },
+      { speaker: "??", line: "??Lisa????555-0199?" },
+      { speaker: "???", line: "??Lisa???????????11:30?" }
     ],
-    usefulExpressions: [
-      { expression: "I'd like to make an appointment", meaning: "????", usage: "?????" },
-      { expression: "What day works best for you?", meaning: "??????", usage: "??????" },
-      { expression: "Do you have anything available...?", meaning: "...????", usage: "??????" },
-      { expression: "That works for me", meaning: "????????", usage: "????" },
-      { expression: "Your appointment is confirmed", meaning: "?????", usage: "????" }
-    ],
-    grammarFocus: [
+    grammarInContext: [
       {
         title: "Modal Verbs for Possibility and Offers",
-        explanation: "? 'Can I...?' ? 'Do you have...?' ???????",
+        explanation: "? 'Can I...?' ? 'Do you have...?' ????????",
         examples: [
           "Can I make an appointment?",
           "Do you have anything available on Monday?",
@@ -6430,7 +6577,7 @@ export const conversations: ConversationTopic[] = [
       },
       {
         title: "Present Simple for Scheduled Events",
-        explanation: "?????????????",
+        explanation: "????????????????",
         examples: [
           "My appointment is on Friday.",
           "The meeting starts at 10:00.",
@@ -6438,20 +6585,105 @@ export const conversations: ConversationTopic[] = [
         ]
       }
     ],
-    collocationsAndChunks: [
-      { chunk: "Make an appointment", meaning: "??", example: "I'd like to make an appointment." },
-      { chunk: "Do you have anything available", meaning: "???", example: "Do you have anything available tomorrow?" },
-      { chunk: "Works for me", meaning: "????", example: "10:00 works for me." }
-    ],
-    pronunciationTips: [
+    pronunciation: [
       { tip: "I'd like ? /a?d la?k/", example: "Natural, polite request" },
-      { tip: "Available ? /?'ve?l?bl/", example: "Stress on second syllable" }
+      { tip: "Available ? /??ve?l?bl/", example: "Stress on second syllable" }
+    ],
+    shadowing: [
+      { line: "Hi, I'd like to make an appointment, please.", emphasis: "I'd like to make" },
+      { line: "What day works best for you?", emphasis: "works best" },
+      { line: "Do you have anything available on Friday morning?", emphasis: "anything available" },
+      { line: "11:30 is perfect.", emphasis: "11:30 is perfect" }
+    ],
+    speakingPractice: {
+      instruction: "Practice scheduling three appointments: a dentist, a hairdresser, and a massage. Use 'I'd like to make an appointment' and 'Do you have anything available...?'.",
+      hints: [
+        "Call or visit in person",
+        "Ask for availability",
+        "Pick a time that works",
+        "Confirm the appointment",
+        "Thank them politely"
+      ],
+      followUpQuestions: [
+        "What appointments did you schedule?",
+        "What times were available?",
+        "Did you have to reschedule?",
+        "How did you confirm?"
+      ]
+    },
+    rolePlay: {
+      scenario: "You need to schedule a dentist appointment. Call the clinic, ask for Friday, confirm 11:30, and write down the details.",
+      prompts: [
+        "Call and greet",
+        "Ask to make an appointment",
+        "Suggest a day",
+        "Choose an available time",
+        "Confirm your name and time"
+      ],
+      partnerLines: [
+        "Good morning! How can I help you?",
+        "Sure. What day works best for you?",
+        "Let me check. Yes, we have 10:00 and 11:30.",
+        "Thank you, Lisa! Your appointment is confirmed for Friday at 11:30."
+      ]
+    },
+    homework: {
+      task: "Real Appointment",
+      description: "Actually schedule a real appointment this week in English — dentist, doctor, or any service. Write down what you said.",
+      dueText: "Before next lesson"
+    },
+    quiz: [
+      {
+        id: "q1",
+        question: "'I'd like to make an appointment' means:",
+        questionZh: "'I'd like to make an appointment'????",
+        options: [
+          { label: "A) I want to schedule a meeting", labelZh: "A) ??????", correct: true },
+          { label: "B) I want to cancel", labelZh: "B) ????", correct: false },
+          { label: "C) I want to reschedule", labelZh: "C) ????", correct: false },
+          { label: "D) I want to complain", labelZh: "D) ????", correct: false }
+        ],
+        explanation: "'I'd like to make an appointment' means you want to schedule a meeting or visit.",
+        explanationZh: "'I'd like to make an appointment'?????????????"
+      },
+      {
+        id: "q2",
+        question: "'Your appointment is confirmed' means:",
+        questionZh: "'Your appointment is confirmed'????",
+        options: [
+          { label: "A) Your appointment is officially scheduled", labelZh: "A) ?????????", correct: true },
+          { label: "B) Your appointment might happen", labelZh: "B) ?????????", correct: false },
+          { label: "C) Your appointment is cancelled", labelZh: "C) ???????", correct: false },
+          { label: "D) Your appointment is free", labelZh: "D) ??????", correct: false }
+        ],
+        explanation: "'Your appointment is confirmed' means your appointment is officially scheduled.",
+        explanationZh: "'Your appointment is confirmed'?????????????"
+      }
+    ],
+    review: [
+      { key: "schedule", prompt: "How do you say you want to schedule a meeting?", answer: "I'd like to make an appointment" },
+      { key: "availability", prompt: "How do you ask if someone is free on Friday?", answer: "Do you have anything available on Friday?" },
+      { key: "confirm", prompt: "How do you confirm an appointment?", answer: "Your appointment is confirmed" }
+    ],
+    humorNotes: [
+      {
+        context: "When you forget your appointment",
+        punchline: "A: Your appointment is confirmed for Friday at 11:30. B: ...I forgot I made an appointment. A: ...That's why we confirm them.",
+        explanation: "Self-deprecating humor about forgetting appointments is very common."
+      }
+    ],
+    usefulExpressions: [
+      { expression: "I'd like to make an appointment", meaning: "????", usage: "????" },
+      { expression: "What day works best for you?", meaning: "????????", usage: "??????" },
+      { expression: "Do you have anything available...?", meaning: "...????", usage: "??????" },
+      { expression: "That works for me", meaning: "?????", usage: "???????" },
+      { expression: "Your appointment is confirmed", meaning: "???????", usage: "????" }
     ],
     commonMistakes: [
       {
         mistake: "'Make an appointment with the doctor' ?? 'make a doctor appointment'",
-        correction: "?????,? 'make an appointment with the doctor' ???",
-        explanation: "?? 'appointment' ????? 'an'?"
+        correction: "??????? 'make an appointment with the doctor'",
+        explanation: "???'appointment'???? 'an'?"
       }
     ],
     rolePlayPractice: [
