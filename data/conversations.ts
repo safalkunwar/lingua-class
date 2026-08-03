@@ -11357,53 +11357,200 @@ export const conversations: ConversationTopic[] = [
       ]
     }
   },
-  {
+   {
     id: "hair-salon",
     title: "At the Hair Salon",
-    emoji: "??",
+    emoji: "💇",
     description: "Booking an appointment, describing what you want, and paying for services.",
     color: "from-pink-400 to-rose-400",
     level: "A1",
     estimatedTime: "10 min",
-    vocabularyPreview: [
-      { word: "Appointment", phonetic: "/?'p??ntm?nt/", chinese: "??", partOfSpeech: "noun" },
-      { word: "Haircut", phonetic: "/'herk?t/", chinese: "??", partOfSpeech: "noun" },
-      { word: "Color", phonetic: "/'k?l?r/", chinese: "??", partOfSpeech: "noun" },
-      { word: "Style", phonetic: "/sta?l/", chinese: "??", partOfSpeech: "noun" },
-      { word: "Blow-dry", phonetic: "/blo? dra?/", chinese: "??", partOfSpeech: "verb" },
-      { word: "Tip", phonetic: "/t?p/", chinese: "??", partOfSpeech: "noun" }
+    registerMarkers: [
+      { level: "formal", label: "Formal", color: "bg-blue-100 text-blue-800 border-blue-200", description: "High-end salon or special event" },
+      { level: "neutral", label: "Neutral", color: "bg-gray-100 text-gray-800 border-gray-200", description: "Standard salon visit" },
+      { level: "casual", label: "Casual", color: "bg-green-100 text-green-800 border-green-200", description: "Regular haircut or casual style" }
+    ],
+    warmUp: {
+      title: "Warm-Up: Hair Salon English",
+      content: "Visiting a hair salon is a common experience. In this lesson, you'll learn how to book an appointment, describe what you want, and understand pricing.",
+      contentZh: "去美发沙龙是很常见的体验。在本课中，你将学习如何预约、描述你想要的发型和了解价格。"
+    },
+    vocabulary: [
+      {
+        word: "Appointment",
+        phonetic: "/əˈpɔɪntmənt/",
+        chinese: "预约",
+        pinyin: "yù yuē",
+        partOfSpeech: "noun",
+        definitionEn: "A scheduled time to meet someone or receive a service.",
+        definitionZh: "约定见某人或接受服务的时间。",
+        exampleEn: "I'd like to make an appointment for a haircut.",
+        exampleZh: "我想预约理发。",
+        register: "neutral"
+      },
+      {
+        word: "Haircut",
+        phonetic: "/ˈherkʌt/",
+        chinese: "理发",
+        pinyin: "lǐ fà",
+        partOfSpeech: "noun",
+        definitionEn: "The act of cutting hair; also the style after cutting.",
+        definitionZh: "剪发的行为；也指剪后的发型。",
+        exampleEn: "I need a haircut.",
+        exampleZh: "我需要理发。",
+        register: "neutral"
+      },
+      {
+        word: "Color",
+        phonetic: "/ˈkʌlər/",
+        chinese: "染发",
+        pinyin: "rǎn fà",
+        partOfSpeech: "noun",
+        definitionEn: "The process of dyeing hair a different color.",
+        definitionZh: "将头发染成不同颜色的过程。",
+        exampleEn: "Can I also get my hair colored?",
+        exampleZh: "我也可以染发吗？",
+        register: "neutral"
+      },
+      {
+        word: "Style",
+        phonetic: "/staɪl/",
+        chinese: "发型",
+        pinyin: "fà xíng",
+        partOfSpeech: "noun",
+        definitionEn: "The way hair is cut or arranged.",
+        definitionZh: "头发的剪裁或梳理方式。",
+        exampleEn: "I want a new style.",
+        exampleZh: "我想要一个新发型。",
+        register: "neutral"
+      },
+      {
+        word: "Blow-dry",
+        phonetic: "/bloʊ draɪ/",
+        chinese: "吹干",
+        pinyin: "chuī gān",
+        partOfSpeech: "verb",
+        definitionEn: "To dry hair with a blow dryer.",
+        definitionZh: "用吹风机吹干头发。",
+        exampleEn: "Can you blow-dry my hair?",
+        exampleZh: "你能帮我吹干头发吗？",
+        register: "neutral"
+      },
+      {
+        word: "Tip",
+        phonetic: "/tɪp/",
+        chinese: "小费",
+        pinyin: "xiǎo fèi",
+        partOfSpeech: "noun",
+        definitionEn: "Extra money given to service staff as thanks.",
+        definitionZh: "给服务人员的额外感谢钱。",
+        exampleEn: "I left a 15% tip.",
+        exampleZh: "我留下了15%的小费。",
+        register: "neutral"
+      }
+    ],
+    dailyExpressions: {
+      title: "Daily Native Expressions",
+      items: [
+        {
+          id: "de-salon-1",
+          expression: "I'd like to make an appointment",
+          chinese: "我想预约",
+          pinyin: "wǒ xiǎng yù yuē",
+          meaning: "Requesting to schedule a service at a specific time.",
+          whenToUse: "When you want to book a hair salon appointment.",
+          whenNotToUse: "Don't use 'I want make an appointment' — always use 'I'd like to' for politeness.",
+          nativeFrequency: "Very common when booking services.",
+          commonMistakes: [
+            { mistake: "Using 'I want make an appointment' which is grammatically wrong", correction: "'I'd like to make an appointment' is the correct polite form" }
+          ],
+          pronunciation: "/aɪd laɪk tuː meɪk əˈpɔɪntmənt/",
+          funnyExample: "A: I'd like to make an appointment. B: For what? A: ...For my hair. B: ...I assumed. What time?",
+          memoryTrick: "Think: 'I'd like = politely want' + 'make an appointment = schedule' = 'I want to schedule politely'",
+          relatedExpressions: ["Can I book an appointment?", "I need to schedule", "Can I come in today?"],
+          collocations: ["make an appointment", "book an appointment", "appointment for"],
+          miniQuiz: [
+            { question: "'I'd like to make an appointment' is:", options: ["A polite request to schedule", "A statement about past appointments", "An offer to help", "A cancellation"], correct: 0 }
+          ],
+          register: "neutral"
+        },
+        {
+          id: "de-salon-2",
+          expression: "What time do you have available?",
+          chinese: "你们有什么时间空档？",
+          pinyin: "nǐ men yǒu shén me shí jiān kòng dàng?",
+          meaning: "Asking about open appointment slots.",
+          whenToUse: "When the salon asks when you'd like to come, or when you want to know their availability.",
+          whenNotToUse: "Don't use if you already have a specific time in mind.",
+          nativeFrequency: "Very common when booking appointments.",
+          commonMistakes: [
+            { mistake: "Using 'What time is available?' which is okay but less specific", correction: "'What time do you have available?' is more natural and polite" }
+          ],
+          pronunciation: "/wɒt taɪm duː juː hæv əˈveɪləbl/",
+          funnyExample: "A: What time do you have available? B: We have 2 PM and 4 PM. A: ...I'll take both. B: ...That's a long haircut.",
+          memoryTrick: "Think: 'what time = when' + 'do you have = are you free' = 'when are you free?'",
+          relatedExpressions: ["What times are open?", "When are you available?", "Do you have any openings?"],
+          collocations: ["have available", "time available", "available today"],
+          miniQuiz: [
+            { question: "'What time do you have available?' asks:", options: ["About open appointment slots", "About the salon's closing time", "About the stylist's schedule", "About your own schedule"], correct: 0 }
+          ],
+          register: "neutral"
+        },
+        {
+          id: "de-salon-3",
+          expression: "That works for me",
+          chinese: "那对我来说可以",
+          pinyin: "nà duì wǒ lái shuō kě yǐ",
+          meaning: "Agreeing to a suggested time or plan.",
+          whenToUse: "When someone suggests a time or option that suits you.",
+          whenNotToUse: "Don't use if the option doesn't work — say 'That doesn't work for me' instead.",
+          nativeFrequency: "Very common when scheduling.",
+          commonMistakes: [
+            { mistake: "Using 'That is good for me' which is less natural", correction: "'That works for me' is the standard scheduling phrase" }
+          ],
+          pronunciation: "/ðæt wɜːrks fər miː/",
+          funnyExample: "A: We have 2 PM available. B: That works for me. A: ...I was joking. B: ...I'm not. I'll be there at 2.",
+          memoryTrick: "Think: 'works = fits' + 'for me = in my schedule' = 'this fits my schedule'",
+          relatedExpressions: ["That works", "That's perfect", "That's fine", "I can do that time"],
+          collocations: ["that works for me", "that works", "works for me"],
+          miniQuiz: [
+            { question: "'That works for me' means:", options: ["The suggested time is acceptable", "The time is too early", "I don't like it", "I need to think about it"], correct: 0 }
+          ],
+          register: "neutral"
+        }
+      ]
+    },
+    nativeChunks: [
+      { chunk: "I'd like to make", meaning: "我想做", example: "I'd like to make an appointment.", register: "neutral", context: "Booking" },
+      { chunk: "What time", meaning: "什么时间", example: "What time do you have available?", register: "neutral", context: "Scheduling" },
+      { chunk: "That works for me", meaning: "那对我来说可以", example: "2 PM works for me.", register: "neutral", context: "Confirming" },
+      { chunk: "Plus tax", meaning: "加税", example: "Total is $80 plus tax.", register: "neutral", context: "Payment" },
+      { chunk: "It doesn't matter", meaning: "无所谓", example: "It doesn't matter to me.", register: "neutral", context: "Preference" }
     ],
     conversation: [
-      { speaker: "Customer", line: "Hi, I'd like to make an appointment for a haircut." },
-      { speaker: "Receptionist", line: "Sure. Do you prefer a male or female stylist?" },
-      { speaker: "Customer", line: "It doesn't matter. What time do you have available?" },
-      { speaker: "Receptionist", line: "We have 2 PM and 4 PM today. Which works for you?" },
-      { speaker: "Customer", line: "2 PM is perfect. Can I also get my hair colored?" },
-      { speaker: "Receptionist", line: "Of course. I'll schedule that after the haircut. It will be about 2 hours total." },
-      { speaker: "Customer", line: "That's fine. How much will it be?" },
-      { speaker: "Receptionist", line: "Haircut is $30, color is $50. Total is $80 plus tax." }
+      { speaker: "Customer", line: "Hi, I'd like to make an appointment for a haircut.", register: "neutral" },
+      { speaker: "Receptionist", line: "Sure. Do you prefer a male or female stylist?", register: "neutral" },
+      { speaker: "Customer", line: "It doesn't matter. What time do you have available?", register: "neutral" },
+      { speaker: "Receptionist", line: "We have 2 PM and 4 PM today. Which works for you?", register: "neutral" },
+      { speaker: "Customer", line: "2 PM is perfect. Can I also get my hair colored?", register: "neutral" },
+      { speaker: "Receptionist", line: "Of course. I'll schedule that after the haircut. It will be about 2 hours total.", register: "neutral" },
+      { speaker: "Customer", line: "That's fine. How much will it be?", register: "neutral" },
+      { speaker: "Receptionist", line: "Haircut is $30, color is $50. Total is $80 plus tax.", register: "neutral" }
     ],
     chineseTranslation: [
-      { speaker: "??", line: "?,???????" },
-      { speaker: "??", line: "?????????????????" },
-      { speaker: "??", line: "??????????????" },
-      { speaker: "??", line: "?????2??4??????????" },
-      { speaker: "??", line: "2????????????" },
-      { speaker: "??", line: "?????????????????2???" },
-      { speaker: "??", line: "??????????" },
-      { speaker: "??", line: "??30??,??50?????80?????" }
+      { speaker: "顾客", line: "您好，我想预约理发。" },
+      { speaker: "接待员", line: "当然。您喜欢男理发师还是女理发师？" },
+      { speaker: "顾客", line: "无所谓。你们有什么时间空档？" },
+      { speaker: "接待员", line: "我们今天有下午2点和4点。哪个时间对您合适？" },
+      { speaker: "顾客", line: "下午2点完美。我也可以染发吗？" },
+      { speaker: "接待员", line: "当然。我安排在理发之后。总共大约2小时。" },
+      { speaker: "顾客", line: "没问题。总共多少钱？" },
+      { speaker: "接待员", line: "理发30美元，染发50美元。总共80美元加税。" }
     ],
-    usefulExpressions: [
-      { expression: "I'd like to make an appointment", meaning: "????", usage: "????" },
-      { expression: "What time do you have available?", meaning: "????????", usage: "??????" },
-      { expression: "That works for me", meaning: "??????", usage: "????" },
-      { expression: "Total is...", meaning: "??...", usage: "????" },
-      { expression: "Plus tax", meaning: "??", usage: "??????" }
-    ],
-    grammarFocus: [
+    grammarInContext: [
       {
         title: "Present Simple for Preferences",
-        explanation: "???????????",
+        explanation: "用一般现在时表达偏好。",
         examples: [
           "I prefer a female stylist.",
           "It doesn't matter to me.",
@@ -11412,7 +11559,7 @@ export const conversations: ConversationTopic[] = [
       },
       {
         title: "Modal Verbs for Offers",
-        explanation: "? 'Can I...?' ? 'Do you have...?' ???",
+        explanation: "用 'Can I...?' 和 'Do you have...?' 提出请求和询问。",
         examples: [
           "Can I also get my hair colored?",
           "Do you have any tips for dry hair?",
@@ -11420,20 +11567,107 @@ export const conversations: ConversationTopic[] = [
         ]
       }
     ],
-    collocationsAndChunks: [
-      { chunk: "Make an appointment", meaning: "??", example: "I'd like to make an appointment." },
-      { chunk: "Haircut", meaning: "??", example: "I need a haircut." },
-      { chunk: "Plus tax", meaning: "??", example: "Total is $80 plus tax." }
+    pronunciation: [
+      { tip: "Appointment → /əˈpɔɪntmənt/", example: "Stress on second syllable" },
+      { tip: "Stylist → /ˈstaɪlɪst/", example: "Stress on first syllable" }
     ],
-    pronunciationTips: [
-      { tip: "Appointment ? /?'p??ntm?nt/", example: "Stress on second syllable" },
-      { tip: "Stylist ? /'sta?l?st/", example: "Stress on first syllable" }
+    shadowing: [
+      { line: "Hi, I'd like to make an appointment for a haircut.", emphasis: "make an appointment" },
+      { line: "What time do you have available?", emphasis: "What time" },
+      { line: "2 PM is perfect. Can I also get my hair colored?", emphasis: "hair colored" },
+      { line: "It will be about 2 hours total.", emphasis: "2 hours total" },
+      { line: "Total is $80 plus tax.", emphasis: "Total is" }
+    ],
+    speakingPractice: {
+      instruction: "Practice booking a hair salon appointment. Use 'I'd like to make an appointment', ask about availability, and confirm the price.",
+      hints: [
+        "Call or visit the salon",
+        "Choose a service: haircut, color, or both",
+        "Pick an available time",
+        "Ask about the price",
+        "Confirm your appointment"
+      ],
+      followUpQuestions: [
+        "What service did you book?",
+        "What time was your appointment?",
+        "How much did it cost?",
+        "Did you tip the stylist?"
+      ]
+    },
+    rolePlay: {
+      scenario: "You want a haircut and color. Call the salon, book an appointment, describe what you want, and ask about the price.",
+      prompts: [
+        "Call and greet",
+        "Ask for an appointment",
+        "Choose a time",
+        "Describe what you want",
+        "Ask about the total price"
+      ],
+      partnerLines: [
+        "Hi, I'd like to make an appointment for a haircut.",
+        "Sure. Do you prefer a male or female stylist?",
+        "We have 2 PM and 4 PM today. Which works for you?",
+        "Of course. I'll schedule that after the haircut. It will be about 2 hours total.",
+        "Haircut is $30, color is $50. Total is $80 plus tax."
+      ]
+    },
+    homework: {
+      task: "Salon Vocabulary",
+      description: "Write down 10 hair salon-related words and practice using them. If you visit a salon this month, practice these phrases.",
+      dueText: "Before next lesson"
+    },
+    quiz: [
+      {
+        id: "q1",
+        question: "'I'd like to make an appointment' is:",
+        questionZh: "'I'd like to make an appointment'是：",
+        options: [
+          { label: "A) A polite request to schedule", labelZh: "A) 礼貌地请求预约", correct: true },
+          { label: "B) A statement about past appointments", labelZh: "B) 关于过去预约的陈述", correct: false },
+          { label: "C) An offer to help", labelZh: "C) 主动提供帮助", correct: false },
+          { label: "D) A cancellation", labelZh: "D) 取消预约", correct: false }
+        ],
+        explanation: "'I'd like to make an appointment' is a polite way to request scheduling a service.",
+        explanationZh: "'I'd like to make an appointment'是礼貌地请求预约服务的方式。"
+      },
+      {
+        id: "q2",
+        question: "'That works for me' means:",
+        questionZh: "'That works for me'意思是：",
+        options: [
+          { label: "A) The suggested time is acceptable", labelZh: "A) 建议的时间可以接受", correct: true },
+          { label: "B) The time is too early", labelZh: "B) 时间太早", correct: false },
+          { label: "C) I don't like it", labelZh: "C) 我不喜欢", correct: false },
+          { label: "D) I need to think about it", labelZh: "D) 我需要考虑一下", correct: false }
+        ],
+        explanation: "'That works for me' means the suggested time or option is acceptable.",
+        explanationZh: "'That works for me'意味着建议的时间或选项是可以接受的。"
+      }
+    ],
+    review: [
+      { key: "appointment", prompt: "How do you politely ask to schedule a haircut?", answer: "I'd like to make an appointment" },
+      { key: "availability", prompt: "How do you ask about open times?", answer: "What time do you have available?" },
+      { key: "confirmation", prompt: "How do you say a time works for you?", answer: "That works for me" }
+    ],
+    humorNotes: [
+      {
+        context: "When the haircut doesn't go as planned",
+        punchline: "A: How much will it be? B: Haircut is $30, color is $50. Total is $80 plus tax. A: ...I asked for a trim. B: ...You also got a personality.",
+        explanation: "Self-deprecating humor about bad haircuts is very common."
+      }
+    ],
+    usefulExpressions: [
+      { expression: "I'd like to make an appointment", meaning: "我想预约", usage: "预约服务" },
+      { expression: "What time do you have available?", meaning: "你们有什么时间空档？", usage: "询问可用时间" },
+      { expression: "That works for me", meaning: "那对我来说可以", usage: "确认时间" },
+      { expression: "Total is...", meaning: "总共...", usage: "告知总价" },
+      { expression: "Plus tax", meaning: "加税", usage: "说明税费" }
     ],
     commonMistakes: [
       {
-        mistake: "'I want make an appointment'",
-        correction: "'I'd like to make an appointment'",
-        explanation: "???? 'I'd like to' ????"
+        mistake: "用 'I want make an appointment' 而不是 'I'd like to make an appointment'",
+        correction: "更礼貌的说法是 'I'd like to make an appointment'",
+        explanation: "'I'd like to' 是更礼貌的请求方式。"
       }
     ],
     rolePlayPractice: [
