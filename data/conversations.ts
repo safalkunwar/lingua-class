@@ -6024,49 +6024,196 @@ export const conversations: ConversationTopic[] = [
     color: "from-teal-400 to-cyan-400",
     level: "A1",
     estimatedTime: "12 min",
-    vocabularyPreview: [
-      { word: "Sick", phonetic: "/s?k/", chinese: "???", partOfSpeech: "adjective" },
-      { word: "Headache", phonetic: "/'hede?k/", chinese: "??", partOfSpeech: "noun" },
-      { word: "Fever", phonetic: "/'fi?v?r/", chinese: "??", partOfSpeech: "noun" },
-      { word: "Medicine", phonetic: "/'med?s?n/", chinese: "?", partOfSpeech: "noun" },
-      { word: "Rest", phonetic: "/rest/", chinese: "??", partOfSpeech: "verb / noun" },
-      { word: "Appointment", phonetic: "/?'p??ntm?nt/", chinese: "??", partOfSpeech: "noun" }
+    registerMarkers: [
+      { level: "formal", label: "Formal", color: "bg-blue-100 text-blue-800 border-blue-200", description: "Hospital or specialist visits" },
+      { level: "neutral", label: "Neutral", color: "bg-gray-100 text-gray-800 border-gray-200", description: "Standard doctor consultation" },
+      { level: "casual", label: "Casual", color: "bg-green-100 text-green-800 border-green-200", description: "Chatting with a family doctor" }
+    ],
+    warmUp: {
+      title: "Warm-Up: Medical English",
+      content: "Visiting a doctor can be stressful, especially in a foreign language. In this lesson, you'll learn how to describe symptoms, understand doctor's advice, and ask questions clearly.",
+      contentZh: "????????????????????????????????????????????????"
+    },
+    vocabulary: [
+      {
+        word: "Sick",
+        phonetic: "/s?k/",
+        chinese: "???",
+        pinyin: "sh?ng bìng de",
+        partOfSpeech: "adjective",
+        definitionEn: "Not feeling well; ill.",
+        definitionZh: "?????????",
+        exampleEn: "I feel sick.",
+        exampleZh: "???????",
+        register: "neutral"
+      },
+      {
+        word: "Headache",
+        phonetic: "/?hede?k/",
+        chinese: "??",
+        pinyin: "tóu tòng",
+        partOfSpeech: "noun",
+        definitionEn: "Pain in the head.",
+        definitionZh: "?????",
+        exampleEn: "I have a bad headache.",
+        exampleZh: "???????",
+        register: "neutral"
+      },
+      {
+        word: "Fever",
+        phonetic: "/?fi?v?r/",
+        chinese: "??",
+        pinyin: "f? sh?o",
+        partOfSpeech: "noun",
+        definitionEn: "An abnormally high body temperature.",
+        definitionZh: "???????",
+        exampleEn: "I have a fever.",
+        exampleZh: "?????",
+        register: "neutral"
+      },
+      {
+        word: "Medicine",
+        phonetic: "/?med?s?n/",
+        chinese: "?",
+        pinyin: "yào",
+        partOfSpeech: "noun",
+        definitionEn: "Substance used to treat illness.",
+        definitionZh: "??????????",
+        exampleEn: "Take this medicine twice a day.",
+        exampleZh: "?????????",
+        register: "neutral"
+      },
+      {
+        word: "Rest",
+        phonetic: "/rest/",
+        chinese: "??",
+        pinyin: "xi? xi",
+        partOfSpeech: "verb / noun",
+        definitionEn: "To relax or sleep to recover health.",
+        definitionZh: "???????????",
+        exampleEn: "You should rest.",
+        exampleZh: "??????",
+        register: "neutral"
+      },
+      {
+        word: "Appointment",
+        phonetic: "/??p??ntm?nt/",
+        chinese: "??",
+        pinyin: "yù yu?",
+        partOfSpeech: "noun",
+        definitionEn: "A scheduled time to see a doctor.",
+        definitionZh: "?????????",
+        exampleEn: "I'd like to make an appointment.",
+        exampleZh: "?????",
+        register: "neutral"
+      }
+    ],
+    dailyExpressions: {
+      title: "Daily Native Expressions",
+      items: [
+        {
+          id: "de-doctor-1",
+          expression: "What seems to be the problem?",
+          chinese: "??????",
+          pinyin: "n? l? bù sh? fu?",
+          meaning: "The standard way a doctor asks what's wrong with you.",
+          whenToUse: "When a doctor or medical professional asks about your symptoms.",
+          whenNotToUse: "Don't use this as a patient — this is the doctor's line.",
+          nativeFrequency: "Very common in medical settings.",
+          commonMistakes: [
+            { mistake: "Using 'What is your problem?' which sounds rude", correction: "'What seems to be the problem?' is the polite, professional form" }
+          ],
+          pronunciation: "/w?t si?mz tu bi ð? ?pr?bl?m/",
+          funnyExample: "A: What seems to be the problem? B: I have a serious case of being allergic to Mondays. A: ...I'll prescribe you a vacation.",
+          memoryTrick: "Think: 'seems = appears' + 'problem = issue' = 'what issue appears to you?'",
+          relatedExpressions: ["What's wrong?", "What's the matter?", "How are you feeling?"],
+          collocations: ["seems to be", "what seems to be", "seems to be the problem"],
+          miniQuiz: [
+            { question: "'What seems to be the problem?' is asked by:", options: ["The doctor", "The patient", "Both", "Neither"], correct: 0 }
+          ],
+          register: "neutral"
+        },
+        {
+          id: "de-doctor-2",
+          expression: "I have a...",
+          chinese: "??...",
+          pinyin: "w? y?u...",
+          meaning: "Describing a symptom or illness.",
+          whenToUse: "When telling a doctor what's wrong with you.",
+          whenNotToUse: "Don't use for general statements — only for health issues in medical contexts.",
+          nativeFrequency: "Very common in doctor visits.",
+          commonMistakes: [
+            { mistake: "Using 'I am a headache' instead", correction: "Use 'I have a headache' — the symptom belongs to you, you don't become it" }
+          ],
+          pronunciation: "/a? hæv ?/",
+          funnyExample: "A: I have a headache. B: I have a... case of the giggles. A: ...That's not a medical condition.",
+          memoryTrick: "Think: 'have = experience' + 'symptom = feeling' = 'I experience this feeling'",
+          relatedExpressions: ["I've got a...", "I'm feeling...", "I have been..."],
+          collocations: ["have a headache", "have a fever", "have a cold"],
+          miniQuiz: [
+            { question: "'I have a headache' means:", options: ["I experience head pain", "I own a headache", "I am a headache", "I like headaches"], correct: 0 }
+          ],
+          register: "neutral"
+        },
+        {
+          id: "de-doctor-3",
+          expression: "Drink plenty of water",
+          chinese: "???",
+          pinyin: "du? h? shu?",
+          meaning: "Common medical advice to stay hydrated.",
+          whenToUse: "When a doctor gives you general health advice, or when you're sick.",
+          whenNotToUse: "Don't use for serious conditions — always follow specific medical advice.",
+          nativeFrequency: "Extremely common — the most common doctor's advice.",
+          commonMistakes: [
+            { mistake: "Using 'drink much water'", correction: "'Plenty of' is the standard phrase, not 'much'" }
+          ],
+          pronunciation: "/dr??k ?plenti ?v ?w??t?r/",
+          funnyExample: "A: Drink plenty of water. B: Is that the cure for everything? A: ...Pretty much. B: What about a broken arm? A: ...Drink plenty of water and come back tomorrow.",
+          memoryTrick: "Think: 'plenty = a lot of' + 'water = H2O' = 'drink lots of water'",
+          relatedExpressions: ["Get plenty of rest", "Stay hydrated", "Drink lots of water"],
+          collocations: ["plenty of water", "plenty of rest", "drink plenty"],
+          miniQuiz: [
+            { question: "'Drink plenty of water' means:", options: ["Drink a lot of water", "Drink a little water", "Avoid water", "Water is dangerous"], correct: 0 }
+          ],
+          register: "neutral"
+        }
+      ]
+    },
+    nativeChunks: [
+      { chunk: "What seems to be", meaning: "????", example: "What seems to be the problem?", register: "neutral", context: "Doctor asking" },
+      { chunk: "I have a", meaning: "??", example: "I have a bad headache.", register: "neutral", context: "Describing symptoms" },
+      { chunk: "How long", meaning: "??", example: "How long have you had this?", register: "neutral", context: "Duration question" },
+      { chunk: "Take one pill", meaning: "???", example: "Take one pill three times a day.", register: "neutral", context: "Medicine instructions" },
+      { chunk: "plenty of water", meaning: "????", example: "Drink plenty of water.", register: "neutral", context: "Medical advice" }
     ],
     conversation: [
-      { speaker: "Doctor", line: "Hello, what seems to be the problem?" },
-      { speaker: "Patient", line: "Hi, I have a bad headache and I feel dizzy." },
-      { speaker: "Doctor", line: "How long have you had these symptoms?" },
-      { speaker: "Patient", line: "Since yesterday. I also have a slight fever." },
-      { speaker: "Doctor", line: "Let me check your temperature. Open your mouth, please." },
-      { speaker: "Patient", line: "Is it serious?" },
-      { speaker: "Doctor", line: "Nothing too serious. You have a mild infection. I recommend rest and this medicine." },
-      { speaker: "Patient", line: "How often should I take it?" },
-      { speaker: "Doctor", line: "Take one pill three times a day after meals. Drink plenty of water and rest well." },
-      { speaker: "Patient", line: "Thank you, Doctor. I'll do that." }
+      { speaker: "Doctor", line: "Hello, what seems to be the problem?", register: "neutral" },
+      { speaker: "Patient", line: "Hi, I have a bad headache and I feel dizzy.", register: "neutral" },
+      { speaker: "Doctor", line: "How long have you had these symptoms?", register: "neutral" },
+      { speaker: "Patient", line: "Since yesterday. I also have a slight fever.", register: "neutral" },
+      { speaker: "Doctor", line: "Let me check your temperature. Open your mouth, please.", register: "neutral" },
+      { speaker: "Patient", line: "Is it serious?", register: "neutral" },
+      { speaker: "Doctor", line: "Nothing too serious. You have a mild infection. I recommend rest and this medicine.", register: "neutral" },
+      { speaker: "Patient", line: "How often should I take it?", register: "neutral" },
+      { speaker: "Doctor", line: "Take one pill three times a day after meals. Drink plenty of water and rest well.", register: "neutral" },
+      { speaker: "Patient", line: "Thank you, Doctor. I'll do that.", register: "neutral" }
     ],
     chineseTranslation: [
-      { speaker: "??", line: "??,??????" },
-      { speaker: "??", line: "??,???????,??????" },
-      { speaker: "??", line: "??????????" },
+      { speaker: "??", line: "?????????" },
       { speaker: "??", line: "????????????????" },
+      { speaker: "??", line: "??????????" },
+      { speaker: "??", line: "???????????????" },
       { speaker: "??", line: "?????????????" },
       { speaker: "??", line: "????" },
-      { speaker: "??", line: "??????????????????????" },
+      { speaker: "??", line: "???????????????????????" },
       { speaker: "??", line: "?????????" },
-      { speaker: "??", line: "??????,????????,?????" },
+      { speaker: "??", line: "??????????????????????" },
       { speaker: "??", line: "?????????" }
     ],
-    usefulExpressions: [
-      { expression: "What seems to be the problem?", meaning: "??????", usage: "??????" },
-      { expression: "I have a...", meaning: "??...", usage: "????" },
-      { expression: "How long...?", meaning: "??????", usage: "??????" },
-      { expression: "Take one pill...", meaning: "???...", usage: "??????" },
-      { expression: "Drink plenty of water", meaning: "???", usage: "????" }
-    ],
-    grammarFocus: [
+    grammarInContext: [
       {
         title: "Present Perfect for Duration",
-        explanation: "????????????????????",
+        explanation: "???????????????????????",
         examples: [
           "I have had a headache for two days.",
           "I have been feeling dizzy since morning.",
@@ -6083,21 +6230,104 @@ export const conversations: ConversationTopic[] = [
         ]
       }
     ],
-    collocationsAndChunks: [
-      { chunk: "I have a headache", meaning: "???", example: "I have a terrible headache." },
-      { chunk: "How long...?", meaning: "????", example: "How long have you been sick?" },
-      { chunk: "Take one pill", meaning: "????", example: "Take one pill three times a day." },
-      { chunk: "Plenty of water", meaning: "????", example: "Drink plenty of water." }
-    ],
-    pronunciationTips: [
-      { tip: "What seems to be ? /w?t si?mz tu bi?/", example: "Linking 'seems to'" },
+    pronunciation: [
+      { tip: "What seems to be ? /w?t si?mz tu bi/", example: "Linking 'seems to'" },
       { tip: "Three times a day ? /?ri? ta?mz ? de?/", example: "Fast, natural speech" }
+    ],
+    shadowing: [
+      { line: "Hello, what seems to be the problem?", emphasis: "what seems to be" },
+      { line: "I have a bad headache and I feel dizzy.", emphasis: "bad headache" },
+      { line: "How long have you had these symptoms?", emphasis: "How long" },
+      { line: "Take one pill three times a day after meals.", emphasis: "three times a day" }
+    ],
+    speakingPractice: {
+      instruction: "Practice visiting a doctor for three different problems: a cold, a stomachache, and a sore throat. Use 'I have a...' and ask 'What should I do?'.",
+      hints: [
+        "Start with 'Hello, what seems to be the problem?'",
+        "Describe your symptom",
+        "Ask how long it has lasted",
+        "Follow the advice"
+      ],
+      followUpQuestions: [
+        "What was your symptom?",
+        "What did the doctor say?",
+        "Did you understand the advice?",
+        "Would you feel comfortable visiting a doctor in English?"
+      ]
+    },
+    rolePlay: {
+      scenario: "You are not feeling well. Visit a doctor, describe your symptoms, ask about the cause, and follow the doctor's advice.",
+      prompts: [
+        "Greet the doctor",
+        "Describe your symptoms",
+        "Answer questions about duration",
+        "Ask for the diagnosis",
+        "Repeat the advice"
+      ],
+      partnerLines: [
+        "Hello, what seems to be the problem?",
+        "I have a bad headache and I feel dizzy.",
+        "How long have you had these symptoms?",
+        "Nothing too serious. You have a mild infection."
+      ]
+    },
+    homework: {
+      task: "Medical Vocabulary",
+      description: "Write down 5 medical symptoms and 5 pieces of medical advice in English. Practice using them with a partner.",
+      dueText: "Before next lesson"
+    },
+    quiz: [
+      {
+        id: "q1",
+        question: "'I have a headache' means:",
+        questionZh: "'I have a headache'????",
+        options: [
+          { label: "A) I experience head pain", labelZh: "A) ?????", correct: true },
+          { label: "B) I own a headache", labelZh: "B) ?????", correct: false },
+          { label: "C) I am a headache", labelZh: "C) ??????", correct: false },
+          { label: "D) I like headaches", labelZh: "D) ?????", correct: false }
+        ],
+        explanation: "'I have a headache' means you are experiencing head pain.",
+        explanationZh: "'I have a headache'?????????????"
+      },
+      {
+        id: "q2",
+        question: "'Drink plenty of water' means:",
+        questionZh: "'Drink plenty of water'????",
+        options: [
+          { label: "A) Drink a lot of water", labelZh: "A) ???", correct: true },
+          { label: "B) Drink a little water", labelZh: "B) ????", correct: false },
+          { label: "C) Avoid water", labelZh: "C) ????", correct: false },
+          { label: "D) Water is dangerous", labelZh: "D) ?????", correct: false }
+        ],
+        explanation: "'Drink plenty of water' means to drink a large amount of water.",
+        explanationZh: "'Drink plenty of water'????????"
+      }
+    ],
+    review: [
+      { key: "symptom", prompt: "How do you say you have a headache?", answer: "I have a headache" },
+      { key: "duration", prompt: "How do you ask how long someone has been sick?", answer: "How long have you had...?" },
+      { key: "advice", prompt: "What's common doctor's advice?", answer: "Drink plenty of water and rest" }
+    ],
+    humorNotes: [
+      {
+        context: "When the doctor gives you obvious advice",
+        punchline: "A: Drink plenty of water and rest. B: ...That's not a diagnosis, that's being alive. A: ...Then keep doing that.",
+        explanation: "Self-deprecating humor about generic medical advice is very common."
+      }
+    ],
+    usefulExpressions: [
+      { expression: "What seems to be the problem?", meaning: "??????", usage: "??????" },
+      { expression: "I have a...", meaning: "??...", usage: "????" },
+      { expression: "How long...?", meaning: "????", usage: "??????" },
+      { expression: "Take one pill...", meaning: "???...", usage: "??????" },
+      { expression: "Drink plenty of water", meaning: "???", usage: "????" }
     ],
     commonMistakes: [
       {
         mistake: "'I have a headache since yesterday'",
         correction: "'I have had a headache since yesterday'",
-        explanation: "??????????,?????? 'have had'?"
+        explanation: "????????????????????????? 'have had'?"
       }
     ],
     rolePlayPractice: [
