@@ -8,11 +8,48 @@ import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Search, MessageCircle, Clock } from "lucide-react";
 import Link from "next/link";
 
 type LevelFilter = "all" | "A1" | "A2" | "B1" | "B2";
+
+const CATEGORY_ICONS: Record<string, { icon: string; label: string }> = {
+  "first-meeting": { icon: "🤝", label: "Meeting" },
+  "ordering-restaurant": { icon: "🍽️", label: "Restaurant" },
+  "coffee-shop": { icon: "☕", label: "Coffee" },
+  "coffee-shop-basics": { icon: "☕", label: "Coffee" },
+  "coffee-shop-meeting": { icon: "☕", label: "Coffee" },
+  "grocery-shopping": { icon: "🛒", label: "Shopping" },
+  "shopping-basics": { icon: "🛍️", label: "Shopping" },
+  "supermarket-shopping": { icon: "🛒", label: "Shopping" },
+  "airport-checkin": { icon: "✈️", label: "Airport" },
+  "taxi-ride": { icon: "🚕", label: "Taxi" },
+  "public-transport": { icon: "🚌", label: "Transport" },
+  "asking-directions": { icon: "🗺️", label: "Directions" },
+  "weekend-plans": { icon: "📅", label: "Social" },
+  "making-cancelling-plans": { icon: "📅", label: "Social" },
+  "family-talk": { icon: "👨‍👩‍👧‍👦", label: "Family" },
+  "meeting-neighbors": { icon: "🏘️", label: "Social" },
+  "daily-small-talk": { icon: "💬", label: "Small Talk" },
+  "coworkers-small-talk": { icon: "💼", label: "Office" },
+  "greeting-people": { icon: "👋", label: "Greetings" },
+  "phone-calls-basics": { icon: "📞", label: "Phone" },
+  "asking-for-help": { icon: "🙋", label: "Help" },
+  "weather-chat": { icon: "🌤️", label: "Weather" },
+  "internet-social-media": { icon: "📱", label: "Digital" },
+  "bank-basics": { icon: "🏦", label: "Bank" },
+  "doctor-visit": { icon: "🏥", label: "Health" },
+  "pharmacy": { icon: "💊", label: "Health" },
+  "making-appointments": { icon: "📆", label: "Appointments" },
+  "hotel-checkin": { icon: "🏨", label: "Hotel" },
+  "post-office": { icon: "📮", label: "Post Office" },
+  "at-the-gym": { icon: "🏋️", label: "Gym" },
+  "at-the-gym-beginner": { icon: "🏋️", label: "Gym" },
+  "at-laundromat": { icon: "🧺", label: "Laundromat" },
+  "pet-store": { icon: "🐾", label: "Pet Store" },
+  "library-visit": { icon: "📚", label: "Library" },
+  "hair-salon": { icon: "💇", label: "Salon" },
+};
 
 export default function ConversationsPage() {
   const [search, setSearch] = useState("");
@@ -34,10 +71,14 @@ export default function ConversationsPage() {
     });
   }, [search, levelFilter]);
 
+  const selectedTopic = selectedCategory !== "all"
+    ? conversations.find((c) => c.id === selectedCategory)
+    : null;
+
   return (
     <div className="flex">
       <StudentSidebar />
-      <div className="flex-1 p-6 sm:p-8 flex flex-col min-h-screen">
+      <div className="flex-1 p-4 sm:p-6 lg:p-8 flex flex-col min-h-screen">
         <motion.div
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
@@ -57,6 +98,7 @@ export default function ConversationsPage() {
           </div>
         </motion.div>
 
+        {/* Search and Filters */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -88,56 +130,155 @@ export default function ConversationsPage() {
           </div>
         </motion.div>
 
-        {filteredConversations.length === 0 ? (
+        {/* Category Chips */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2 }}
+          className="mb-8"
+        >
+          <h2 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-3 text-center">
+            Browse by Category
+          </h2>
+          <div className="flex gap-2 overflow-x-auto pb-3 -mx-4 px-4 sm:mx-0 sm:px-0 sm:justify-center sm:flex-wrap">
+            <button
+              onClick={() => setSelectedCategory("all")}
+              className={cnChip(selectedCategory === "all")}
+            >
+              📋 All
+            </button>
+            {conversations.map((topic) => {
+              const cat = CATEGORY_ICONS[topic.id] || { icon: topic.emoji, label: topic.title };
+              const isSelected = selectedCategory === topic.id;
+              return (
+                <button
+                  key={topic.id}
+                  onClick={() => setSelectedCategory(topic.id)}
+                  className={cnChip(isSelected)}
+                >
+                  <span>{cat.icon}</span>
+                  <span>{cat.label}</span>
+                </button>
+              );
+            })}
+          </div>
+        </motion.div>
+
+        {/* Selected Category Preview or Grid */}
+        {selectedTopic ? (
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-center py-20 flex-1 flex flex-col items-center justify-center"
+            className="mb-8"
           >
-            <div className="text-6xl mb-4">🔍</div>
-            <h3 className="text-2xl font-bold mb-2">No conversations found</h3>
-            <p className="text-muted-foreground">Try adjusting your search or filter.</p>
-          </motion.div>
-        ) : (
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-            {filteredConversations.map((topic, index) => (
-              <motion.div
-                key={topic.id}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.05 }}
-              >
-                <Link href={`/conversations/${topic.id}`}>
-                  <Card className="h-full overflow-hidden transition-all hover:shadow-xl hover:-translate-y-1 cursor-pointer group border-2 hover:border-indigo-200">
-                    <div className="p-6 text-center">
-                      <div className="text-5xl mb-3 group-hover:scale-110 transition-transform">
-                        {topic.emoji}
-                      </div>
-                      <h3 className="text-xl font-bold mb-1">{topic.title}</h3>
-                      <p className="text-sm text-muted-foreground mb-3 line-clamp-2">
-                        {topic.description}
-                      </p>
-                      <div className="flex flex-wrap justify-center gap-2 mb-4">
-                        <Badge variant="secondary" className="text-xs">
-                          {topic.level}
-                        </Badge>
-                        <Badge variant="outline" className="text-xs flex items-center gap-1">
+            <Card className="overflow-hidden border-2 border-indigo-200 dark:border-indigo-800">
+              <Link href={`/conversations/${selectedTopic.id}`}>
+                <div className="p-6 sm:p-8">
+                  <div className="flex items-start gap-4">
+                    <div className="text-5xl sm:text-6xl">{selectedTopic.emoji}</div>
+                    <div className="flex-1 min-w-0">
+                      <h3 className="text-2xl font-bold mb-1">{selectedTopic.title}</h3>
+                      <p className="text-muted-foreground mb-3">{selectedTopic.description}</p>
+                      <div className="flex flex-wrap gap-2">
+                        <Badge variant="secondary">{selectedTopic.level}</Badge>
+                        <Badge variant="outline" className="flex items-center gap-1">
                           <Clock className="w-3 h-3" />
-                          {topic.estimatedTime}
+                          {selectedTopic.estimatedTime}
                         </Badge>
-                        <Badge variant="outline" className="text-xs flex items-center gap-1">
+                        <Badge variant="outline" className="flex items-center gap-1">
                           <MessageCircle className="w-3 h-3" />
-                          {topic.conversation.length} lines
+                          {selectedTopic.conversation.length} lines
                         </Badge>
                       </div>
                     </div>
-                  </Card>
-                </Link>
-              </motion.div>
-            ))}
-          </div>
+                  </div>
+                </div>
+              </Link>
+            </Card>
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={() => setSelectedCategory("all")}
+              className="mt-3"
+            >
+              ← Show all categories
+            </Button>
+          </motion.div>
+        ) : (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3 }}
+          >
+            {filteredConversations.length === 0 ? (
+              <div className="text-center py-20">
+                <div className="text-6xl mb-4">🔍</div>
+                <h3 className="text-2xl font-bold mb-2">No conversations found</h3>
+                <p className="text-muted-foreground">Try adjusting your search or filter.</p>
+              </div>
+            ) : (
+              <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                {filteredConversations.map((topic, index) => {
+                  const cat = CATEGORY_ICONS[topic.id] || { icon: topic.emoji, label: topic.title };
+                  return (
+                    <motion.div
+                      key={topic.id}
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ delay: index * 0.03 }}
+                    >
+                      <Link href={`/conversations/${topic.id}`}>
+                        <Card className="h-full overflow-hidden transition-all hover:shadow-lg hover:-translate-y-0.5 cursor-pointer group border-2 hover:border-indigo-200">
+                          <div className="p-5">
+                            <div className="flex items-center gap-3 mb-3">
+                              <span className="text-3xl group-hover:scale-110 transition-transform">
+                                {topic.emoji}
+                              </span>
+                              <div className="min-w-0 flex-1">
+                                <h3 className="font-bold text-base leading-tight truncate">
+                                  {topic.title}
+                                </h3>
+                                <p className="text-xs text-muted-foreground line-clamp-1 mt-0.5">
+                                  {cat.label}
+                                </p>
+                              </div>
+                            </div>
+                            <p className="text-sm text-muted-foreground mb-3 line-clamp-2">
+                              {topic.description}
+                            </p>
+                            <div className="flex flex-wrap gap-1.5">
+                              <Badge variant="secondary" className="text-xs">
+                                {topic.level}
+                              </Badge>
+                              <Badge variant="outline" className="text-xs flex items-center gap-1">
+                                <Clock className="w-3 h-3" />
+                                {topic.estimatedTime}
+                              </Badge>
+                              <Badge variant="outline" className="text-xs flex items-center gap-1">
+                                <MessageCircle className="w-3 h-3" />
+                                {topic.conversation.length}
+                              </Badge>
+                            </div>
+                          </div>
+                        </Card>
+                      </Link>
+                    </motion.div>
+                  );
+                })}
+              </div>
+            )}
+          </motion.div>
         )}
       </div>
     </div>
   );
+}
+
+function cnChip(isSelected: boolean): string {
+  return [
+    "shrink-0 flex items-center gap-1.5 px-3 py-2 rounded-full border text-sm font-medium transition-all cursor-pointer",
+    isSelected
+      ? "bg-indigo-50 border-indigo-300 text-indigo-700 dark:bg-indigo-950/30 dark:border-indigo-700 dark:text-indigo-300"
+      : "bg-card hover:bg-muted border-border",
+  ].join(" ");
 }
