@@ -7810,42 +7810,189 @@ export const conversations: ConversationTopic[] = [
     color: "from-green-400 to-lime-400",
     level: "A1",
     estimatedTime: "10 min",
-    vocabularyPreview: [
-      { word: "Cart", phonetic: "/k??rt/", chinese: "???", partOfSpeech: "noun" },
-      { word: "Aisle", phonetic: "/a?l/", chinese: "??", partOfSpeech: "noun" },
-      { word: "Checkout", phonetic: "/'t?eka?t/", chinese: "???", partOfSpeech: "noun" },
-      { word: "Receipt", phonetic: "/r?'si?t/", chinese: "??", partOfSpeech: "noun" },
-      { word: "Cashier", phonetic: "/kæ'??r/", chinese: "???", partOfSpeech: "noun" },
-      { word: "Plastic bag", phonetic: "/'plæst?k bæg/", chinese: "???", partOfSpeech: "noun" }
+    registerMarkers: [
+      { level: "formal", label: "Formal", color: "bg-blue-100 text-blue-800 border-blue-200", description: "Upscale supermarket or specialty store" },
+      { level: "neutral", label: "Neutral", color: "bg-gray-100 text-gray-800 border-gray-200", description: "Standard grocery shopping" },
+      { level: "casual", label: "Casual", color: "bg-green-100 text-green-800 border-green-200", description: "Local market or casual store" }
+    ],
+    warmUp: {
+      title: "Warm-Up: Supermarket English",
+      content: "Supermarkets are universal, and knowing the right phrases makes shopping easier. In this lesson, you'll learn how to find items, ask for help, and check out smoothly.",
+      contentZh: "????????????????????????????????????????????????"
+    },
+    vocabulary: [
+      {
+        word: "Cart",
+        phonetic: "/k??rt/",
+        chinese: "???",
+        pinyin: "gòu wù ch?",
+        partOfSpeech: "noun",
+        definitionEn: "A wheeled basket for carrying groceries while shopping.",
+        definitionZh: "????????????????",
+        exampleEn: "Can I get a cart, please?",
+        exampleZh: "????????????",
+        register: "neutral"
+      },
+      {
+        word: "Aisle",
+        phonetic: "/a?l/",
+        chinese: "????",
+        pinyin: "huò jià t?ng dào",
+        partOfSpeech: "noun",
+        definitionEn: "The space between shelves in a supermarket.",
+        definitionZh: "??????????",
+        exampleEn: "They're in aisle 3.",
+        exampleZh: "???3????",
+        register: "neutral"
+      },
+      {
+        word: "Checkout",
+        phonetic: "/?t?eka?t/",
+        chinese: "???",
+        pinyin: "sh?u yín tái",
+        partOfSpeech: "noun",
+        definitionEn: "The place where you pay for your groceries.",
+        definitionZh: "??????????",
+        exampleEn: "The checkout is on the left.",
+        exampleZh: "???????",
+        register: "neutral"
+      },
+      {
+        word: "Receipt",
+        phonetic: "/r??si?t/",
+        chinese: "??",
+        pinyin: "sh?u jù",
+        partOfSpeech: "noun",
+        definitionEn: "A paper showing what you bought and how much you paid.",
+        definitionZh: "?????????????????",
+        exampleEn: "Here's your receipt.",
+        exampleZh: "???????",
+        register: "neutral"
+      },
+      {
+        word: "Cashier",
+        phonetic: "/kæ???r/",
+        chinese: "???",
+        pinyin: "sh?u yín yuán",
+        partOfSpeech: "noun",
+        definitionEn: "The person who takes your payment at the checkout.",
+        definitionZh: "??????????",
+        exampleEn: "The cashier was very helpful.",
+        exampleZh: "????????",
+        register: "neutral"
+      },
+      {
+        word: "Plastic bag",
+        phonetic: "/?plæst?k bæ?/",
+        chinese: "???",
+        pinyin: "sù liào dài",
+        partOfSpeech: "noun",
+        definitionEn: "A bag made of plastic for carrying groceries.",
+        definitionZh: "??????????",
+        exampleEn: "Do you need a plastic bag?",
+        exampleZh: "????????",
+        register: "neutral"
+      }
+    ],
+    dailyExpressions: {
+      title: "Daily Native Expressions",
+      items: [
+        {
+          id: "de-supermarket-1",
+          expression: "Where are the...?",
+          chinese: "...????",
+          pinyin: "... zài n? l??",
+          meaning: "Asking where a specific item is located in the store.",
+          whenToUse: "When you can't find something in the supermarket.",
+          whenNotToUse: "Don't use for items you can clearly see — it sounds confused.",
+          nativeFrequency: "Very common in stores and supermarkets.",
+          commonMistakes: [
+            { mistake: "Using 'Where is the...?' for plural items", correction: "Use 'Where are the...?' for plural items like 'apples'" }
+          ],
+          pronunciation: "/we?r ??r ð?/",
+          funnyExample: "A: Where are the apples? B: They're in aisle 3. A: ...I was in aisle 3 and didn't see them. B: ...Did you look?",
+          memoryTrick: "Think: 'where = location' + 'are = plural' = 'where are these items?'",
+          relatedExpressions: ["Where is the...?", "Can you tell me where...?", "Do you know where...?"],
+          collocations: ["where are the", "where are the apples", "where are the shelves"],
+          miniQuiz: [
+            { question: "'Where are the...?' is used for:", options: ["Asking location of plural items", "Asking about price", "Asking for help", "Paying"], correct: 0 }
+          ],
+          register: "neutral"
+        },
+        {
+          id: "de-supermarket-2",
+          expression: "I'll take...",
+          chinese: "??...",
+          pinyin: "w? yào...",
+          meaning: "Deciding to buy something.",
+          whenToUse: "When you've made your decision to purchase an item.",
+          whenNotToUse: "Don't use if you're still deciding. Use 'Can I have...?' or 'Let me think' instead.",
+          nativeFrequency: "Very common in shopping.",
+          commonMistakes: [
+            { mistake: "Using 'I want...' instead", correction: "'I'll take...' is more decisive and natural in shopping" }
+          ],
+          pronunciation: "/a?l te?k/",
+          funnyExample: "A: I'll take everything. B: ...That'll be $500. A: ...I meant I'll take this apple.",
+          memoryTrick: "Think: 'take = buy' = 'I will buy this'",
+          relatedExpressions: ["I'll get it", "I'll buy it", "This one please"],
+          collocations: ["I'll take", "I'll take this", "I'll take a bag"],
+          miniQuiz: [
+            { question: "'I'll take...' means:", options: ["I want to buy it", "I will carry it", "I don't want it", "It's too expensive"], correct: 0 }
+          ],
+          register: "neutral"
+        },
+        {
+          id: "de-supermarket-3",
+          expression: "Would you like...?",
+          chinese: "???...??",
+          pinyin: "nín xi?ng yào... ma?",
+          meaning: "Asking someone if they want something, often as an offer.",
+          whenToUse: "When offering something or suggesting an additional item.",
+          whenNotToUse: "Don't use for commands — this is only for offers and suggestions.",
+          nativeFrequency: "Very common in service situations.",
+          commonMistakes: [
+            { mistake: "Using 'Do you like...?' instead", correction: "'Would you like...?' is an offer; 'Do you like...?' is asking about preference" }
+          ],
+          pronunciation: "/w?d ju? la?k/",
+          funnyExample: "A: Would you like a bag? B: Would I like a bag? A: ...I'm offering you a bag. B: ...I love bags. Yes!",
+          memoryTrick: "Think: 'would like = want politely' = 'polite offer'",
+          relatedExpressions: ["Do you want...?", "Can I get you...?", "Would you care for...?"],
+          collocations: ["would you like", "would you like a bag", "would you like some"],
+          miniQuiz: [
+            { question: "'Would you like...?' is used to:", options: ["Offer something politely", "Ask about preferences", "Give a command", "Say goodbye"], correct: 0 }
+          ],
+          register: "neutral"
+        }
+      ]
+    },
+    nativeChunks: [
+      { chunk: "Where are the", meaning: "...???", example: "Where are the apples?", register: "neutral", context: "Asking location" },
+      { chunk: "They're in aisle", meaning: "???...??", example: "They're in aisle 3.", register: "neutral", context: "Giving location" },
+      { chunk: "I'll take", meaning: "??", example: "I'll take a bag of those.", register: "neutral", context: "Deciding to buy" },
+      { chunk: "Would you like", meaning: "???...?", example: "Would you like a plastic bag?", register: "neutral", context: "Offering" },
+      { chunk: "Here's your receipt", meaning: "??????", example: "Here's your receipt.", register: "neutral", context: "Payment" }
     ],
     conversation: [
-      { speaker: "Customer", line: "Excuse me, where are the apples?" },
-      { speaker: "Staff", line: "They're in aisle 3, next to the oranges." },
-      { speaker: "Customer", line: "Thank you. Do you have any organic apples?" },
-      { speaker: "Staff", line: "Yes, right here. They're on sale today." },
-      { speaker: "Customer", line: "Great! I'll take a bag of those, please." },
-      { speaker: "Cashier", line: "That'll be $5.99. Would you like a plastic bag?" },
-      { speaker: "Customer", line: "No, I brought my own. Thank you!" },
-      { speaker: "Cashier", line: "Here's your receipt. Have a great day!" }
+      { speaker: "Customer", line: "Excuse me, where are the apples?", register: "neutral" },
+      { speaker: "Staff", line: "They're in aisle 3, next to the oranges.", register: "neutral" },
+      { speaker: "Customer", line: "Thank you. Do you have any organic apples?", register: "neutral" },
+      { speaker: "Staff", line: "Yes, right here. They're on sale today.", register: "neutral" },
+      { speaker: "Customer", line: "Great! I'll take a bag of those, please.", register: "neutral" },
+      { speaker: "Cashier", line: "That'll be $5.99. Would you like a plastic bag?", register: "neutral" },
+      { speaker: "Customer", line: "No, I brought my own. Thank you!", register: "neutral" },
+      { speaker: "Cashier", line: "Here's your receipt. Have a great day!", register: "neutral" }
     ],
     chineseTranslation: [
-      { speaker: "??", line: "????,??????" },
-      { speaker: "??", line: "?3???,?????" },
+      { speaker: "??", line: "???????????" },
+      { speaker: "??", line: "???3??????????" },
       { speaker: "??", line: "????????????" },
-      { speaker: "??", line: "??,??????????" },
-      { speaker: "??", line: "???!?????" },
+      { speaker: "??", line: "?????????????" },
+      { speaker: "??", line: "????????????" },
       { speaker: "???", line: "??5.99???????????" },
-      { speaker: "??", line: "???,????????!" },
-      { speaker: "???", line: "???????????!" }
+      { speaker: "??", line: "?????????????" },
+      { speaker: "???", line: "????????????????" }
     ],
-    usefulExpressions: [
-      { expression: "Where are the...?", meaning: "...????", usage: "?????????" },
-      { expression: "They're in aisle...", meaning: "?...??", usage: "??" },
-      { expression: "I'll take...", meaning: "??...", usage: "????" },
-      { expression: "Would you like...?", meaning: "???...??", usage: "?????" },
-      { expression: "Here's your receipt", meaning: "??????", usage: "????" }
-    ],
-    grammarFocus: [
+    grammarInContext: [
       {
         title: "Questions with 'Where'",
         explanation: "? 'Where...?' ?????",
@@ -7857,7 +8004,7 @@ export const conversations: ConversationTopic[] = [
       },
       {
         title: "Simple Future with 'I'll'",
-        explanation: "? 'I'll...' (I will) ?????",
+        explanation: "? 'I'll...' (I will) ??????????",
         examples: [
           "I'll take a bag.",
           "I'll get the milk.",
@@ -7865,20 +8012,106 @@ export const conversations: ConversationTopic[] = [
         ]
       }
     ],
-    collocationsAndChunks: [
-      { chunk: "Where are the...", meaning: "...???", example: "Where are the apples?" },
-      { chunk: "I'll take...", meaning: "??...", example: "I'll take a bag of apples." },
-      { chunk: "Here's your receipt", meaning: "??????", example: "Here's your receipt. Thank you!" }
-    ],
-    pronunciationTips: [
+    pronunciation: [
       { tip: "Aisle ? /a?l/", example: "Sounds like 'I'll'" },
-      { tip: "Receipt ? /r?'si?t/", example: "Stress on second syllable" }
+      { tip: "Receipt ? /r??si?t/", example: "Stress on second syllable" }
+    ],
+    shadowing: [
+      { line: "Excuse me, where are the apples?", emphasis: "where are the apples" },
+      { line: "They're in aisle 3, next to the oranges.", emphasis: "in aisle 3" },
+      { line: "Great! I'll take a bag of those, please.", emphasis: "I'll take" },
+      { line: "That'll be $5.99. Would you like a plastic bag?", emphasis: "Would you like" },
+      { line: "Here's your receipt. Have a great day!", emphasis: "Here's your receipt" }
+    ],
+    speakingPractice: {
+      instruction: "Practice shopping for 5 items at a supermarket. Use 'Where are...', 'I'll take', and 'Here's your receipt'.",
+      hints: [
+        "Start by taking a cart",
+        "Ask for directions to each item",
+        "Choose brands or sizes",
+        "Pay at the checkout"
+      ],
+      followUpQuestions: [
+        "What items did you buy?",
+        "Did you find everything on your list?",
+        "Did you ask for help?",
+        "How much did you pay?"
+      ]
+    },
+    rolePlay: {
+      scenario: "You need to buy ingredients for dinner. Go to the supermarket, find the items, ask for help if needed, and check out.",
+      prompts: [
+        "Take a cart",
+        "Find the items on your list",
+        "Ask a staff member for help",
+        "Choose items",
+        "Pay at the checkout"
+      ],
+      partnerLines: [
+        "Excuse me, where are the apples?",
+        "They're in aisle 3, next to the oranges.",
+        "Yes, right here. They're on sale today.",
+        "That'll be $5.99. Would you like a plastic bag?",
+        "Here's your receipt. Have a great day!"
+      ]
+    },
+    homework: {
+      task: "Supermarket Shopping",
+      description: "Go to a supermarket and practice using 'Where are...', 'I'll take', and asking for help. Write a shopping list in English.",
+      dueText: "Before next lesson"
+    },
+    quiz: [
+      {
+        id: "q1",
+        question: "'Where are the...?' is used for:",
+        questionZh: "'Where are the...?'???",
+        options: [
+          { label: "A) Asking location of plural items", labelZh: "A) ?????????", correct: true },
+          { label: "B) Asking about price", labelZh: "B) ????", correct: false },
+          { label: "C) Asking for help", labelZh: "C) ????", correct: false },
+          { label: "D) Paying", labelZh: "D) ??", correct: false }
+        ],
+        explanation: "'Where are the...?' is used to ask where plural items are located.",
+        explanationZh: "'Where are the...?'????????????"
+      },
+      {
+        id: "q2",
+        question: "'I'll take...' means:",
+        questionZh: "'I'll take...'????",
+        options: [
+          { label: "A) I want to buy it", labelZh: "A) ???", correct: true },
+          { label: "B) I will carry it", labelZh: "B) ????", correct: false },
+          { label: "C) I don't want it", labelZh: "C) ????", correct: false },
+          { label: "D) It's too expensive", labelZh: "D) ???", correct: false }
+        ],
+        explanation: "'I'll take...' means you've decided to buy something.",
+        explanationZh: "'I'll take...'?????????????"
+      }
+    ],
+    review: [
+      { key: "location", prompt: "How do you ask where something is?", answer: "Where are the...?" },
+      { key: "buy", prompt: "How do you say you want to buy something?", answer: "I'll take..." },
+      { key: "receipt", prompt: "What do you get after paying?", answer: "Here's your receipt" }
+    ],
+    humorNotes: [
+      {
+        context: "When you forget your reusable bag",
+        punchline: "A: Would you like a plastic bag? B: Yes, I forgot my reusable one. A: ...We all have those days. B: ...Today is 'those days'.",
+        explanation: "Self-deprecating humor about forgetting reusable bags is very common."
+      }
+    ],
+    usefulExpressions: [
+      { expression: "Where are the...?", meaning: "...????", usage: "??????" },
+      { expression: "They're in aisle...", meaning: "???...??", usage: "????" },
+      { expression: "I'll take...", meaning: "??...", usage: "????" },
+      { expression: "Would you like...?", meaning: "???...??", usage: "????" },
+      { expression: "Here's your receipt", meaning: "??????", usage: "??????" }
     ],
     commonMistakes: [
       {
-        mistake: "'I want...' ??????",
-        correction: "??????? 'I'll take...'",
-        explanation: "???? 'I'll take' ??????????"
+        mistake: "? 'I want...' ??? 'I'll take...'",
+        correction: "?????'I'll take...' ???",
+        explanation: "'I'll take' ??????????"
       }
     ],
     rolePlayPractice: [
