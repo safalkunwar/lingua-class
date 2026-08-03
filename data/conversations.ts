@@ -8868,39 +8868,186 @@ export const conversations: ConversationTopic[] = [
     color: "from-yellow-400 to-amber-400",
     level: "A1",
     estimatedTime: "10 min",
-    vocabularyPreview: [
-      { word: "Help", phonetic: "/help/", chinese: "??", partOfSpeech: "noun / verb" },
-      { word: "Can you...?", phonetic: "/kæn ju?/", chinese: "??...??", partOfSpeech: "question" },
-      { word: "Excuse me", phonetic: "/?k'sku?z mi?/", chinese: "????", partOfSpeech: "phrase" },
-      { word: "Lost", phonetic: "/l?st/", chinese: "???", partOfSpeech: "adjective" },
-      { word: "Problem", phonetic: "/'pr?bl?m/", chinese: "??", partOfSpeech: "noun" },
-      { word: "Thank you", phonetic: "/?æ?k ju?/", chinese: "??", partOfSpeech: "phrase" }
+    registerMarkers: [
+      { level: "formal", label: "Formal", color: "bg-blue-100 text-blue-800 border-blue-200", description: "Official buildings or services" },
+      { level: "neutral", label: "Neutral", color: "bg-gray-100 text-gray-800 border-gray-200", description: "Standard help request" },
+      { level: "casual", label: "Casual", color: "bg-green-100 text-green-800 border-green-200", description: "Asking friends or strangers casually" }
+    ],
+    warmUp: {
+      title: "Warm-Up: Polite Help-Seeking",
+      content: "Asking for help is a necessary skill, especially in a foreign country. In this lesson, you'll learn polite phrases for getting assistance in English.",
+      contentZh: "???????????????????????????????????????????"
+    },
+    vocabulary: [
+      {
+        word: "Help",
+        phonetic: "/help/",
+        chinese: "??",
+        pinyin: "b?ng zhù",
+        partOfSpeech: "noun / verb",
+        definitionEn: "Assistance or support from someone.",
+        definitionZh: "?????????",
+        exampleEn: "Can you help me?",
+        exampleZh: "??????",
+        register: "neutral"
+      },
+      {
+        word: "Can you...?",
+        phonetic: "/kæn ju?/",
+        chinese: "??...??",
+        pinyin: "n? néng... ma?",
+        partOfSpeech: "question",
+        definitionEn: "A polite way to ask someone to do something.",
+        definitionZh: "??????????????",
+        exampleEn: "Can you help me find the museum?",
+        exampleZh: "???????????",
+        register: "neutral"
+      },
+      {
+        word: "Excuse me",
+        phonetic: "/?k?skju?z mi?/",
+        chinese: "????",
+        pinyin: "d? r?o y? xià",
+        partOfSpeech: "phrase",
+        definitionEn: "A polite way to get someone's attention before asking for help.",
+        definitionZh: "??????????????????",
+        exampleEn: "Excuse me, can you help me?",
+        exampleZh: "???????????",
+        register: "neutral"
+      },
+      {
+        word: "Lost",
+        phonetic: "/l?st/",
+        chinese: "???",
+        pinyin: "mí lù de",
+        partOfSpeech: "adjective",
+        definitionEn: "Not knowing where you are or where to go.",
+        definitionZh: "?????????????",
+        exampleEn: "I'm lost. Can you help me?",
+        exampleZh: "???????????",
+        register: "neutral"
+      },
+      {
+        word: "Problem",
+        phonetic: "/?pr?bl?m/",
+        chinese: "??",
+        pinyin: "wèn tí",
+        partOfSpeech: "noun",
+        definitionEn: "A difficulty or trouble that needs solving.",
+        definitionZh: "???????????",
+        exampleEn: "I have a problem. Can you help?",
+        exampleZh: "????????????",
+        register: "neutral"
+      },
+      {
+        word: "Thank you",
+        phonetic: "/?æ?k ju?/",
+        chinese: "??",
+        pinyin: "xiè xie",
+        partOfSpeech: "phrase",
+        definitionEn: "Expressing gratitude for help received.",
+        definitionZh: "???????????",
+        exampleEn: "Thank you for your help!",
+        exampleZh: "???????",
+        register: "neutral"
+      }
+    ],
+    dailyExpressions: {
+      title: "Daily Native Expressions",
+      items: [
+        {
+          id: "de-help-1",
+          expression: "Can you help me...?",
+          chinese: "????...??",
+          pinyin: "n? néng b?ng w?... ma?",
+          meaning: "Polite way to ask for assistance.",
+          whenToUse: "When you need help from someone in any situation.",
+          whenNotToUse: "Don't use 'Help me!' alone — it sounds like an emergency or command.",
+          nativeFrequency: "Extremely common — used daily.",
+          commonMistakes: [
+            { mistake: "Using 'Help me!' which sounds urgent", correction: "'Can you help me, please?' is polite and appropriate" }
+          ],
+          pronunciation: "/kæn ju? help mi?/",
+          funnyExample: "A: Can you help me? B: I can, but I won't. A: ...That's not how this works.",
+          memoryTrick: "Think: 'can you = are you able to' + 'help me = assist me' = 'are you able to assist me?'",
+          relatedExpressions: ["Can you show me...?", "Can you tell me...?", "Would you mind helping me?"],
+          collocations: ["help me", "help me find", "help me with"],
+          miniQuiz: [
+            { question: "'Can you help me...?' is:", options: ["A polite request for help", "An emergency call", "A statement", "An offer to help"], correct: 0 }
+          ],
+          register: "neutral"
+        },
+        {
+          id: "de-help-2",
+          expression: "Excuse me",
+          chinese: "????",
+          pinyin: "d? r?o y? xià",
+          meaning: "Polite way to get someone's attention before asking for something.",
+          whenToUse: "Before asking a stranger for help, directions, or anything.",
+          whenNotToUse: "Don't use for people you know well — just say 'Hey' or their name.",
+          nativeFrequency: "Extremely common — used daily to get attention politely.",
+          commonMistakes: [
+            { mistake: "Using 'Hey you!' instead", correction: "'Excuse me' is much more polite with strangers" }
+          ],
+          pronunciation: "/?k?skju?z mi?/",
+          funnyExample: "A: Excuse me. B: Yes? A: ...I forgot what I was going to say. B: ...Excuse accepted.",
+          memoryTrick: "Think: 'excuse = pardon' + 'me = myself' = 'pardon me for interrupting'",
+          relatedExpressions: ["Sorry to bother you", "Pardon me", "May I ask..."],
+          collocations: ["excuse me", "excuse me sir", "excuse me miss"],
+          miniQuiz: [
+            { question: "'Excuse me' is used to:", options: ["Politely get attention", "Say goodbye", "Apologize", "Thank someone"], correct: 0 }
+          ],
+          register: "neutral"
+        },
+        {
+          id: "de-help-3",
+          expression: "Thank you for your help",
+          chinese: "??????",
+          pinyin: "xiè xie n? de b?ng zhù",
+          meaning: "Expressing gratitude after receiving help.",
+          whenToUse: "After someone has helped you with something.",
+          whenNotToUse: "Don't use before receiving help — use 'Thank you' after they help.",
+          nativeFrequency: "Very common — standard polite closing.",
+          commonMistakes: [
+            { mistake: "Using just 'Thanks' which is fine but less formal", correction: "'Thank you for your help' is more complete and polite" }
+          ],
+          pronunciation: "/?æ?k ju? f?r j?r help/",
+          funnyExample: "A: Thank you for your help! B: You're welcome. A: ...I didn't actually help. B: ...Then thank you for your attempt.",
+          memoryTrick: "Think: 'thank you = gratitude' + 'for your help = for what you did' = 'grateful for your action'",
+          relatedExpressions: ["Thanks a lot", "I really appreciate it", "You're a lifesaver"],
+          collocations: ["thank you for", "thank you for your help", "thanks for helping"],
+          miniQuiz: [
+            { question: "'Thank you for your help' is said:", options: ["After receiving help", "Before receiving help", "When refusing help", "When asking for help"], correct: 0 }
+          ],
+          register: "neutral"
+        }
+      ]
+    },
+    nativeChunks: [
+      { chunk: "Can you help me", meaning: "?????", example: "Can you help me find the museum?", register: "neutral", context: "Requesting help" },
+      { chunk: "Excuse me", meaning: "????", example: "Excuse me, I'm lost.", register: "neutral", context: "Getting attention" },
+      { chunk: "I'm lost", meaning: "????", example: "I'm lost. Can you help me?", register: "neutral", context: "Explaining problem" },
+      { chunk: "two blocks straight ahead", meaning: "??????", example: "It's just two blocks straight ahead.", register: "neutral", context: "Giving directions" },
+      { chunk: "Thank you for your help", meaning: "??????", example: "Thank you for your help!", register: "neutral", context: "Expressing gratitude" }
     ],
     conversation: [
-      { speaker: "Tourist", line: "Excuse me, I'm lost. Can you help me find the museum?" },
-      { speaker: "Local", line: "Of course. It's just two blocks straight ahead. Turn left at the traffic light." },
-      { speaker: "Tourist", line: "Thank you! Is it open on Sundays?" },
-      { speaker: "Local", line: "Yes, it opens at 10 AM. You have plenty of time." },
-      { speaker: "Tourist", line: "You're very kind. Thank you for your help!" }
+      { speaker: "Tourist", line: "Excuse me, I'm lost. Can you help me find the museum?", register: "neutral" },
+      { speaker: "Local", line: "Of course. It's just two blocks straight ahead. Turn left at the traffic light.", register: "neutral" },
+      { speaker: "Tourist", line: "Thank you! Is it open on Sundays?", register: "neutral" },
+      { speaker: "Local", line: "Yes, it opens at 10 AM. You have plenty of time.", register: "neutral" },
+      { speaker: "Tourist", line: "You're very kind. Thank you for your help!", register: "neutral" }
     ],
     chineseTranslation: [
-      { speaker: "??", line: "????,???????????????" },
-      { speaker: "???", line: "?????????,????????" },
-      { speaker: "??", line: "??!???????" },
-      { speaker: "???", line: "??,??10???????????" },
-      { speaker: "??", line: "????????????!" }
+      { speaker: "??", line: "?????????????????????" },
+      { speaker: "???", line: "??????????????????" },
+      { speaker: "??", line: "??????????" },
+      { speaker: "???", line: "?????10???????????" },
+      { speaker: "??", line: "???????????" }
     ],
-    usefulExpressions: [
-      { expression: "Can you help me...?", meaning: "????...??", usage: "??????" },
-      { expression: "I'm lost", meaning: "????", usage: "??????" },
-      { expression: "Can you show me...?", meaning: "?????...??", usage: "???????" },
-      { expression: "Plenty of time", meaning: "????", usage: "??????" },
-      { expression: "Thank you for your help", meaning: "??????", usage: "????" }
-    ],
-    grammarFocus: [
+    grammarInContext: [
       {
         title: "Polite Requests with 'Can you'",
-        explanation: "? 'Can you...?' ???????",
+        explanation: "? 'Can you...?' ????????",
         examples: [
           "Can you help me?",
           "Can you show me the way?",
@@ -8909,7 +9056,7 @@ export const conversations: ConversationTopic[] = [
       },
       {
         title: "Simple Past for Location",
-        explanation: "??????????????",
+        explanation: "?????????????????",
         examples: [
           "I lost my way.",
           "I left my bag at home.",
@@ -8917,20 +9064,105 @@ export const conversations: ConversationTopic[] = [
         ]
       }
     ],
-    collocationsAndChunks: [
-      { chunk: "Can you help me", meaning: "?????", example: "Can you help me find the museum?" },
-      { chunk: "I'm lost", meaning: "????", example: "I'm lost. Can you help me?" },
-      { chunk: "Thank you for your help", meaning: "??????", example: "Thank you for your help!" }
-    ],
-    pronunciationTips: [
+    pronunciation: [
       { tip: "Can you ? /kæn ju?/", example: "Natural, polite request" },
       { tip: "Thank you for your help ? /?æ?k ju? f?r j?r help/", example: "Connected speech" }
     ],
+    shadowing: [
+      { line: "Excuse me, I'm lost. Can you help me find the museum?", emphasis: "Can you help me" },
+      { line: "Of course. It's just two blocks straight ahead.", emphasis: "two blocks straight ahead" },
+      { line: "Turn left at the traffic light.", emphasis: "Turn left" },
+      { line: "Is it open on Sundays?", emphasis: "open on Sundays" },
+      { line: "Thank you for your help!", emphasis: "Thank you for your help" }
+    ],
+    speakingPractice: {
+      instruction: "Practice asking for help in 3 situations: finding a museum, asking for a restroom, and asking someone to take a photo for you.",
+      hints: [
+        "Start with 'Excuse me'",
+        "Say 'Can you help me?'",
+        "Explain what you need",
+        "Always say 'Thank you'"
+      ],
+      followUpQuestions: [
+        "What did you ask for help with?",
+        "Was the person helpful?",
+        "Did you understand the directions?",
+        "How did you thank them?"
+      ]
+    },
+    rolePlay: {
+      scenario: "You are lost in a new city. Ask a local for help finding your hotel. Ask about distance, transportation, and time.",
+      prompts: [
+        "Get their attention politely",
+        "Explain that you're lost",
+        "Ask for directions",
+        "Ask how far it is",
+        "Thank them sincerely"
+      ],
+      partnerLines: [
+        "Excuse me, I'm lost. Can you help me find the museum?",
+        "Of course. It's just two blocks straight ahead. Turn left at the traffic light.",
+        "Yes, it opens at 10 AM. You have plenty of time.",
+        "You're very kind. Thank you for your help!"
+      ]
+    },
+    homework: {
+      task: "Help Request Practice",
+      description: "Practice asking for help in English this week. Ask a friend or stranger for directions, help with something, or assistance. Write about your experience.",
+      dueText: "Before next lesson"
+    },
+    quiz: [
+      {
+        id: "q1",
+        question: "'Can you help me...?' is:",
+        questionZh: "'Can you help me...?'??",
+        options: [
+          { label: "A) A polite request for help", labelZh: "A) ???????", correct: true },
+          { label: "B) An emergency call", labelZh: "B) ????", correct: false },
+          { label: "C) A statement", labelZh: "C) ??", correct: false },
+          { label: "D) An offer to help", labelZh: "D) ??????", correct: false }
+        ],
+        explanation: "'Can you help me...?' is a polite way to ask for assistance.",
+        explanationZh: "'Can you help me...?'????????????"
+      },
+      {
+        id: "q2",
+        question: "'Excuse me' is used to:",
+        questionZh: "'Excuse me'???",
+        options: [
+          { label: "A) Politely get attention", labelZh: "A) ???????", correct: true },
+          { label: "B) Say goodbye", labelZh: "B) ???", correct: false },
+          { label: "C) Apologize", labelZh: "C) ??", correct: false },
+          { label: "D) Thank someone", labelZh: "D) ????", correct: false }
+        ],
+        explanation: "'Excuse me' is used to politely get someone's attention before asking for something.",
+        explanationZh: "'Excuse me'??????????????????"
+      }
+    ],
+    review: [
+      { key: "attention", prompt: "How do you politely get someone's attention?", answer: "Excuse me" },
+      { key: "help", prompt: "How do you ask for help politely?", answer: "Can you help me...?" },
+      { key: "thanks", prompt: "How do you thank someone for help?", answer: "Thank you for your help" }
+    ],
+    humorNotes: [
+      {
+        context: "When you ask for help and the person is also lost",
+        punchline: "A: Can you help me find the museum? B: I'm also looking for it. A: ...Then let's be lost together. B: ...That's one way to solve it.",
+        explanation: "Self-deprecating humor about mutual confusion is very common."
+      }
+    ],
+    usefulExpressions: [
+      { expression: "Can you help me...?", meaning: "????...??", usage: "???????" },
+      { expression: "I'm lost", meaning: "????", usage: "???????" },
+      { expression: "Can you show me...?", meaning: "??????...??", usage: "???????" },
+      { expression: "Plenty of time", meaning: "??????", usage: "????????" },
+      { expression: "Thank you for your help", meaning: "??????", usage: "????" }
+    ],
     commonMistakes: [
       {
-        mistake: "'Help me!'",
-        correction: "'Can you help me, please?'",
-        explanation: "?? 'Can you' ? 'please' ????????"
+        mistake: "??? 'Help me!'",
+        correction: "??????? 'Can you help me, please?'",
+        explanation: "?? 'Can you' ? 'please' ???????????"
       }
     ],
     rolePlayPractice: [
