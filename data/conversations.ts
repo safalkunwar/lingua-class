@@ -6738,45 +6738,192 @@ export const conversations: ConversationTopic[] = [
     color: "from-blue-400 to-indigo-400",
     level: "A1",
     estimatedTime: "12 min",
-    vocabularyPreview: [
-      { word: "Reservation", phonetic: "/?rez?r've??n/", chinese: "??", partOfSpeech: "noun" },
-      { word: "Check in", phonetic: "/t?ek ?n/", chinese: "????", partOfSpeech: "phrase" },
-      { word: "Room", phonetic: "/ru?m/", chinese: "??", partOfSpeech: "noun" },
-      { word: "Key", phonetic: "/ki?/", chinese: "??/??", partOfSpeech: "noun" },
-      { word: "Breakfast", phonetic: "/'brekf?st/", chinese: "??", partOfSpeech: "noun" },
-      { word: "Check out", phonetic: "/t?ek a?t/", chinese: "????", partOfSpeech: "phrase" }
+    registerMarkers: [
+      { level: "formal", label: "Formal", color: "bg-blue-100 text-blue-800 border-blue-200", description: "Luxury hotel or business travel" },
+      { level: "neutral", label: "Neutral", color: "bg-gray-100 text-gray-800 border-gray-200", description: "Standard hotel check-in" },
+      { level: "casual", label: "Casual", color: "bg-green-100 text-green-800 border-green-200", description: "Budget hotel or hostel" }
+    ],
+    warmUp: {
+      title: "Warm-Up: Hotel English",
+      content: "Checking into a hotel is a common travel situation. In this lesson, you'll learn how to check in, ask about amenities, and check out confidently.",
+      contentZh: "????????????????????????????????????????"
+    },
+    vocabulary: [
+      {
+        word: "Reservation",
+        phonetic: "/?rez?r?ve??n/",
+        chinese: "??",
+        pinyin: "yù dìng",
+        partOfSpeech: "noun",
+        definitionEn: "A booking made in advance for a hotel room.",
+        definitionZh: "????????????",
+        exampleEn: "I have a reservation under Thompson.",
+        exampleZh: "??Thompson???????",
+        register: "neutral"
+      },
+      {
+        word: "Check in",
+        phonetic: "/t?ek ?n/",
+        chinese: "????",
+        pinyin: "bàn l? rù zhù",
+        partOfSpeech: "phrase",
+        definitionEn: "The process of registering at a hotel and getting your room key.",
+        definitionZh: "????????????????",
+        exampleEn: "What time is check-in?",
+        exampleZh: "????????",
+        register: "neutral"
+      },
+      {
+        word: "Room",
+        phonetic: "/ru?m/",
+        chinese: "??",
+        pinyin: "fáng ji?n",
+        partOfSpeech: "noun",
+        definitionEn: "A private space in a hotel for guests.",
+        definitionZh: "??????????????",
+        exampleEn: "My room is 305.",
+        exampleZh: "?????305?",
+        register: "neutral"
+      },
+      {
+        word: "Key",
+        phonetic: "/ki?/",
+        chinese: "??/??",
+        pinyin: "yào shi / fáng k?",
+        partOfSpeech: "noun",
+        definitionEn: "A card or physical key to access your hotel room.",
+        definitionZh: "??????????????",
+        exampleEn: "Here is your room key.",
+        exampleZh: "???????",
+        register: "neutral"
+      },
+      {
+        word: "Breakfast",
+        phonetic: "/?brekf?st/",
+        chinese: "??",
+        pinyin: "z?o c?n",
+        partOfSpeech: "noun",
+        definitionEn: "The first meal of the day, often served at hotels.",
+        definitionZh: "????????????????",
+        exampleEn: "Breakfast is served from 7 to 10.",
+        exampleZh: "???????7??10??",
+        register: "neutral"
+      },
+      {
+        word: "Check out",
+        phonetic: "/t?ek a?t/",
+        chinese: "????",
+        pinyin: "bàn l? tuì fáng",
+        partOfSpeech: "phrase",
+        definitionEn: "The process of leaving the hotel and paying your bill.",
+        definitionZh: "???????????",
+        exampleEn: "Check-out time is 11 AM.",
+        exampleZh: "???????11??",
+        register: "neutral"
+      }
+    ],
+    dailyExpressions: {
+      title: "Daily Native Expressions",
+      items: [
+        {
+          id: "de-hotel-1",
+          expression: "I have a reservation under...",
+          chinese: "????????...",
+          pinyin: "w? yù dìng le, míng zi shì...",
+          meaning: "Telling the hotel your reservation name to check in.",
+          whenToUse: "When arriving at a hotel and checking in.",
+          whenNotToUse: "Don't use for walk-ins without reservations — say 'I'd like to make a reservation' instead.",
+          nativeFrequency: "Extremely common — the standard check-in phrase.",
+          commonMistakes: [
+            { mistake: "Saying 'I booked a room' without the name", correction: "Always include the reservation name: 'under the name...'" }
+          ],
+          pronunciation: "/a? hæv ? ?rez?r?ve??n ??nd?r/",
+          funnyExample: "A: I have a reservation under... 'Steve'. B: I see 'Steeve' with two e's. A: ...That's a nickname.",
+          memoryTrick: "Think: 'reservation = booking' + 'under = in the name of' = 'my booking is in the name of...'",
+          relatedExpressions: ["I booked a room", "Do you have my reservation?", "I'd like to check in"],
+          collocations: ["have a reservation", "reservation under", "reservation for"],
+          miniQuiz: [
+            { question: "'I have a reservation under...' is used to:", options: ["Check into a hotel", "Order food", "Make a complaint", "Ask for directions"], correct: 0 }
+          ],
+          register: "neutral"
+        },
+        {
+          id: "de-hotel-2",
+          expression: "Could I see your...?",
+          chinese: "?????...??",
+          pinyin: "néng kàn kan nín de... ma?",
+          meaning: "Politely asking to see someone's ID or documents.",
+          whenToUse: "When verifying identity at hotels, banks, or official places.",
+          whenNotToUse: "Don't use for casual requests — it's too formal for friends.",
+          nativeFrequency: "Very common in formal service interactions.",
+          commonMistakes: [
+            { mistake: "Using 'Show me your...' which sounds rude", correction: "'Could I see your...?' is polite and professional" }
+          ],
+          pronunciation: "/k?d a? si? j?r/",
+          funnyExample: "A: Could I see your ID? B: Could I see your sense of humor? A: ...Sir, this is the hotel lobby.",
+          memoryTrick: "Think: 'could = may' + 'see = look at' = 'may I look at your document?'",
+          relatedExpressions: ["Can I see your...?", "May I see your...?", "Do you have your...?"],
+          collocations: ["see your ID", "see your passport", "see your credit card"],
+          miniQuiz: [
+            { question: "'Could I see your ID?' is:", options: ["A polite request for documents", "An offer to show your ID", "A statement", "An insult"], correct: 0 }
+          ],
+          register: "formal"
+        },
+        {
+          id: "de-hotel-3",
+          expression: "Enjoy your stay",
+          chinese: "??????",
+          pinyin: "zhù nín rù zhù yú kuài",
+          meaning: "A standard farewell from hotel staff to guests.",
+          whenToUse: "When hotel staff say goodbye to guests after check-in.",
+          whenNotToUse: "Don't use as a guest to staff — it's their line to you.",
+          nativeFrequency: "Very common — standard hotel farewell.",
+          commonMistakes: [
+            { mistake: "Using 'Have a good stay' which is okay but less common", correction: "'Enjoy your stay' is the standard hotel phrase" }
+          ],
+          pronunciation: "/?n?d??? j?r ste?/",
+          funnyExample: "A: Enjoy your stay! B: I'll try! A: ...That's not what I meant. B: I know, but the Wi-Fi password is 'enjoyyourstay'.",
+          memoryTrick: "Think: 'enjoy = have a good' + 'stay = time here' = 'have a good time here'",
+          relatedExpressions: ["Have a pleasant stay", "Enjoy your visit", "Welcome to the hotel"],
+          collocations: ["enjoy your stay", "enjoy your visit", "enjoy your time"],
+          miniQuiz: [
+            { question: "'Enjoy your stay' is said by:", options: ["Hotel staff to guests", "Guests to staff", "Both", "Neither"], correct: 0 }
+          ],
+          register: "neutral"
+        }
+      ]
+    },
+    nativeChunks: [
+      { chunk: "have a reservation", meaning: "???", example: "I have a reservation under Thompson.", register: "neutral", context: "Check-in" },
+      { chunk: "under the name", meaning: "?...??", example: "Under the name Smith.", register: "neutral", context: "Reservation name" },
+      { chunk: "Could I see your", meaning: "?????...?", example: "Could I see your ID?", register: "formal", context: "Verification" },
+      { chunk: "Here you go", meaning: "??", example: "Here you go.", register: "neutral", context: "Handing documents" },
+      { chunk: "Enjoy your stay", meaning: "??????", example: "Enjoy your stay!", register: "neutral", context: "Farewell" }
     ],
     conversation: [
-      { speaker: "Receptionist", line: "Good afternoon! Welcome to the Grand Hotel. Do you have a reservation?" },
-      { speaker: "Guest", line: "Yes, under the name Thompson. I booked a double room for three nights." },
-      { speaker: "Receptionist", line: "Let me check... Yes, here it is. Could I see your ID and credit card, please?" },
-      { speaker: "Guest", line: "Sure, here you go." },
-      { speaker: "Receptionist", line: "Thank you. Your room is 305 on the third floor. Breakfast is served from 7 to 10 in the restaurant downstairs." },
-      { speaker: "Guest", line: "Perfect. Is Wi-Fi free?" },
-      { speaker: "Receptionist", line: "Yes, the password is on the back of your key card. Enjoy your stay!" },
-      { speaker: "Guest", line: "Thank you so much!" }
+      { speaker: "Receptionist", line: "Good afternoon! Welcome to the Grand Hotel. Do you have a reservation?", register: "neutral" },
+      { speaker: "Guest", line: "Yes, under the name Thompson. I booked a double room for three nights.", register: "neutral" },
+      { speaker: "Receptionist", line: "Let me check... Yes, here it is. Could I see your ID and credit card, please?", register: "neutral" },
+      { speaker: "Guest", line: "Sure, here you go.", register: "neutral" },
+      { speaker: "Receptionist", line: "Thank you. Your room is 305 on the third floor. Breakfast is served from 7 to 10 in the restaurant downstairs.", register: "neutral" },
+      { speaker: "Guest", line: "Perfect. Is Wi-Fi free?", register: "neutral" },
+      { speaker: "Receptionist", line: "Yes, the password is on the back of your key card. Enjoy your stay!", register: "neutral" },
+      { speaker: "Guest", line: "Thank you so much!", register: "neutral" }
     ],
     chineseTranslation: [
-      { speaker: "??", line: "???!????????????????" },
-      { speaker: "??", line: "??,?????????????,????" },
-      { speaker: "??", line: "?????... ??,???????????????????" },
-      { speaker: "??", line: "??,???" },
-      { speaker: "??", line: "????????305,???????7??10? downstairs ?????" },
-      { speaker: "??", line: "????Wi-Fi????" },
-      { speaker: "??", line: "??,??????????????!" },
-      { speaker: "??", line: "????!" }
+      { speaker: "???", line: "????????Grand?????????" },
+      { speaker: "??", line: "????Thompson??????????????????" },
+      { speaker: "???", line: "?????...?????????????????????" },
+      { speaker: "??", line: "??????" },
+      { speaker: "???", line: "????????305??????????????????7??10??" },
+      { speaker: "??", line: "???Wi-Fi????" },
+      { speaker: "???", line: "??????????????????" },
+      { speaker: "??", line: "?????" }
     ],
-    usefulExpressions: [
-      { expression: "I have a reservation under...", meaning: "????,???...", usage: "???????????" },
-      { expression: "Could I see your...?", meaning: "?????...??", usage: "??????" },
-      { expression: "Here you go", meaning: "??", usage: "????" },
-      { expression: "Breakfast is served from...", meaning: "???????...", usage: "??????" },
-      { expression: "Enjoy your stay", meaning: "??????", usage: "???????" }
-    ],
-    grammarFocus: [
+    grammarInContext: [
       {
         title: "Present Perfect for Recent Actions",
-        explanation: "????????????????",
+        explanation: "?????????????????????????",
         examples: [
           "I have booked a room.",
           "I have just arrived.",
@@ -6785,7 +6932,7 @@ export const conversations: ConversationTopic[] = [
       },
       {
         title: "Prepositions of Place",
-        explanation: "????????",
+        explanation: "??????????",
         examples: [
           "The room is on the third floor.",
           "The restaurant is downstairs.",
@@ -6793,20 +6940,104 @@ export const conversations: ConversationTopic[] = [
         ]
       }
     ],
-    collocationsAndChunks: [
-      { chunk: "Have a reservation", meaning: "???", example: "I have a reservation under Smith." },
-      { chunk: "Check in", meaning: "????", example: "What time is check-in?" },
-      { chunk: "Check out", meaning: "????", example: "Check-out time is 11 AM." }
+    pronunciation: [
+      { tip: "Reservation ? /?rez?r?ve??n/", example: "Four syllables, stress on 'vey'" },
+      { tip: "Here you go ? /h?? ju? ?o?/", example: "Fast, natural speech" }
     ],
-    pronunciationTips: [
-      { tip: "Reservation ? /?rez?r've??n/", example: "Four syllables, stress on 'vey'" },
-      { tip: "Here you go ? /h?r ju go?/", example: "Fast, natural speech" }
+    shadowing: [
+      { line: "Good afternoon! Welcome to the Grand Hotel. Do you have a reservation?", emphasis: "Do you have a reservation" },
+      { line: "Yes, under the name Thompson. I booked a double room for three nights.", emphasis: "under the name Thompson" },
+      { line: "Let me check... Yes, here it is. Could I see your ID and credit card, please?", emphasis: "Could I see your ID" },
+      { line: "Your room is 305 on the third floor.", emphasis: "room is 305" },
+      { line: "Breakfast is served from 7 to 10 in the restaurant downstairs.", emphasis: "Breakfast is served" }
+    ],
+    speakingPractice: {
+      instruction: "Practice checking into a hotel for a 2-night stay. Use 'I have a reservation', ask about breakfast, Wi-Fi, and checkout time.",
+      hints: [
+        "State your reservation name",
+        "Show your ID",
+        "Ask about amenities",
+        "Confirm your room number"
+      ],
+      followUpQuestions: [
+        "What was the hotel name?",
+        "What floor was your room on?",
+        "What amenities did they mention?",
+        "What time was breakfast served?"
+      ]
+    },
+    rolePlay: {
+      scenario: "You arrive at a hotel for a 3-night stay. Check in, ask about breakfast time, Wi-Fi, and the room location.",
+      prompts: [
+        "Tell them you have a reservation",
+        "Provide your name and ID",
+        "Ask about breakfast and Wi-Fi",
+        "Thank them and go to your room"
+      ],
+      partnerLines: [
+        "Good afternoon! Welcome to the Grand Hotel. Do you have a reservation?",
+        "Let me check... Yes, here it is. Could I see your ID and credit card, please?",
+        "Thank you. Your room is 305 on the third floor.",
+        "Yes, the password is on the back of your key card. Enjoy your stay!"
+      ]
+    },
+    homework: {
+      task: "Hotel Vocabulary",
+      description: "Look up 10 hotel-related words and practice using them in sentences. Think about your last hotel stay and describe it in English.",
+      dueText: "Before next lesson"
+    },
+    quiz: [
+      {
+        id: "q1",
+        question: "'I have a reservation under...' means:",
+        questionZh: "'I have a reservation under...'????",
+        options: [
+          { label: "A) I have a booking in a specific name", labelZh: "A) ??????????????", correct: true },
+          { label: "B) I want to make a reservation", labelZh: "B) ????", correct: false },
+          { label: "C) I want to cancel", labelZh: "C) ????", correct: false },
+          { label: "D) I'm looking for a hotel", labelZh: "D) ?????", correct: false }
+        ],
+        explanation: "'I have a reservation under...' means you have a booking in a specific name.",
+        explanationZh: "'I have a reservation under...'??????????????????"
+      },
+      {
+        id: "q2",
+        question: "'Enjoy your stay' is said by:",
+        questionZh: "'Enjoy your stay'??",
+        options: [
+          { label: "A) Hotel staff to guests", labelZh: "A) ??????????", correct: true },
+          { label: "B) Guests to staff", labelZh: "B) ????????", correct: false },
+          { label: "C) Both", labelZh: "C) ??????", correct: false },
+          { label: "D) Neither", labelZh: "D) ???", correct: false }
+        ],
+        explanation: "'Enjoy your stay' is a standard farewell from hotel staff to guests.",
+        explanationZh: "'Enjoy your stay'??????????????????"
+      }
+    ],
+    review: [
+      { key: "reservation", prompt: "How do you say you have a booking?", answer: "I have a reservation under..." },
+      { key: "checkin", prompt: "What do you say when checking in?", answer: "I'd like to check in, please" },
+      { key: "stay", prompt: "How do you wish a guest a good stay?", answer: "Enjoy your stay" }
+    ],
+    humorNotes: [
+      {
+        context: "When the hotel room is not what you expected",
+        punchline: "A: Welcome to your room! B: ...I booked a suite. A: This is the elevator room. B: ...Then I'd like to check out.",
+        explanation: "Self-deprecating humor about hotel room disappointments is very common."
+      }
+    ],
+    usefulExpressions: [
+      { expression: "I have a reservation under...", meaning: "????????...", usage: "????" },
+      { expression: "Could I see your...?", meaning: "?????...??", usage: "??????" },
+      { expression: "Here you go", meaning: "??", usage: "????" },
+      { expression: "Breakfast is served from...", meaning: "???????...", usage: "??????" },
+      { expression: "Enjoy your stay", meaning: "??????", usage: "????" }
     ],
     commonMistakes: [
       {
-        mistake: "'I check in' instead of 'I'd like to check in'",
+        mistake: "? 'I check in' ?? 'I'd like to check in'",
         correction: "??????? 'I'd like to check in, please'",
-        explanation: "???????????????"
+        explanation: "?????????????????"
       }
     ],
     rolePlayPractice: [
