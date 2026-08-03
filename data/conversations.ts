@@ -1,74 +1,218 @@
 import { ConversationTopic } from "@/types/conversations";
 
 export const conversations: ConversationTopic[] = [
-  {
+   {
     id: "first-meeting",
     title: "Meeting Someone for the First Time",
-    emoji: "??",
+    emoji: "🤝",
     description: "Natural introductions, small talk, and making a good first impression.",
     color: "from-blue-400 to-cyan-400",
     level: "A2",
     estimatedTime: "15 min",
-    vocabularyPreview: [
-      { word: "first impression", phonetic: "/f??rst ?m'pre?n/", chinese: "????", partOfSpeech: "noun" },
-      { word: "connect", phonetic: "/k?'nekt/", chinese: "????", partOfSpeech: "verb" },
-      { word: "awkward", phonetic: "/'??kw?rd/", chinese: "???", partOfSpeech: "adjective" },
-      { word: "break the ice", phonetic: "/bre?k �? a?s/", chinese: "????", partOfSpeech: "idiom" },
-      { word: "hometown", phonetic: "/'ho?mta?n/", chinese: "??", partOfSpeech: "noun" },
-      { word: "catch up", phonetic: "/k�t? ?p/", chinese: "??", partOfSpeech: "phrasal verb" },
-      { word: "industry", phonetic: "/'?nd?stri/", chinese: "??", partOfSpeech: "noun" }
+    registerMarkers: [
+      { level: "formal", label: "Formal", color: "bg-blue-100 text-blue-800 border-blue-200", description: "Professional networking or business setting" },
+      { level: "neutral", label: "Neutral", color: "bg-gray-100 text-gray-800 border-gray-200", description: "Standard first meeting" },
+      { level: "casual", label: "Casual", color: "bg-green-100 text-green-800 border-green-200", description: "Social or friendly meeting" }
+    ],
+    warmUp: {
+      title: "Warm-Up: First Meeting English",
+      content: "Meeting someone for the first time is a common social situation. In this lesson, you'll learn how to introduce yourself naturally, make small talk, and leave a good impression.",
+      contentZh: "第一次见某人是很常见的社交场合。在本课中，你将学习如何自然地自我介绍、进行闲聊并留下好印象。"
+    },
+    vocabulary: [
+      {
+        word: "First impression",
+        phonetic: "/fɜːrst ɪmˈpreʃn/",
+        chinese: "第一印象",
+        pinyin: "dì yī yìn xiàng",
+        partOfSpeech: "noun",
+        definitionEn: "The opinion you form about someone when you first meet them.",
+        definitionZh: "你第一次见到某人时形成的印象。",
+        exampleEn: "First impressions are important.",
+        exampleZh: "第一印象很重要。",
+        register: "neutral"
+      },
+      {
+        word: "Connect",
+        phonetic: "/kəˈnekt/",
+        chinese: "建立联系",
+        pinyin: "jiàn lì lián xì",
+        partOfSpeech: "verb",
+        definitionEn: "To establish a relationship or feeling of understanding with someone.",
+        definitionZh: "与某人建立关系或理解的感觉。",
+        exampleEn: "We connected right away.",
+        exampleZh: "我们立刻建立了联系。",
+        register: "neutral"
+      },
+      {
+        word: "Awkward",
+        phonetic: "/ˈɔːkwərd/",
+        chinese: "尴尬的",
+        pinyin: "gān gà de",
+        partOfSpeech: "adjective",
+        definitionEn: "Making you feel uncomfortable or embarrassed.",
+        definitionZh: "让你感到不舒服或尴尬的。",
+        exampleEn: "The silence was awkward.",
+        exampleZh: "沉默很尴尬。",
+        register: "neutral"
+      },
+      {
+        word: "Break the ice",
+        phonetic: "/breɪk ðə aɪs/",
+        chinese: "打破僵局",
+        pinyin: "dǎ pò jiāng jú",
+        partOfSpeech: "idiom",
+        definitionEn: "To do or say something to reduce tension or get a conversation started.",
+        definitionZh: "做或说某事来减少紧张或开始对话。",
+        exampleEn: "I told a joke to break the ice.",
+        exampleZh: "我讲了个笑话来打破僵局。",
+        register: "neutral"
+      },
+      {
+        word: "Hometown",
+        phonetic: "/ˈhoʊmtaʊn/",
+        chinese: "家乡",
+        pinyin: "jiā xiāng",
+        partOfSpeech: "noun",
+        definitionEn: "The town or city where you were born or grew up.",
+        definitionZh: "你出生或长大的城镇或城市。",
+        exampleEn: "What's your hometown?",
+        exampleZh: "你的家乡是哪里？",
+        register: "neutral"
+      },
+      {
+        word: "Catch up",
+        phonetic: "/kætʃ ʌp/",
+        chinese: "叙旧",
+        pinyin: "xù jiù",
+        partOfSpeech: "phrasal verb",
+        definitionEn: "To talk to someone and learn what they have been doing recently.",
+        definitionZh: "与某人交谈并了解他们最近在做什么。",
+        exampleEn: "Let's catch up over coffee.",
+        exampleZh: "我们喝咖啡叙叙旧吧。",
+        register: "neutral"
+      }
+    ],
+    dailyExpressions: {
+      title: "Daily Native Expressions",
+      items: [
+        {
+          id: "de-firstmeeting-1",
+          expression: "You must be...",
+          chinese: "你一定就是...",
+          pinyin: "nǐ yī dìng jiù shì...",
+          meaning: "Guessing someone's identity when you think you know them.",
+          whenToUse: "When you think you know someone but want to confirm.",
+          whenNotToUse: "Don't use if you're not sure at all — it can be awkward if you're wrong.",
+          nativeFrequency: "Common at networking events and parties.",
+          commonMistakes: [
+            { mistake: "Using 'Are you...?' which is more direct", correction: "'You must be...?' is softer and more polite for first meetings" }
+          ],
+          pronunciation: "/juː mʌst biː/",
+          funnyExample: "A: You must be the new manager? B: No, I'm the intern. A: ...Then you must be the most confident intern I've ever met.",
+          memoryTrick: "Think: 'must be = I'm guessing you are' = 'I think you are this person'",
+          relatedExpressions: ["You're... right?", "I think you're...", "Are you...?"],
+          collocations: ["you must be", "you must be the", "you must be here for"],
+          miniQuiz: [
+            { question: "'You must be...?' is used when:", options: ["You're guessing someone's identity", "You're sure about something", "You're asking for permission", "You're giving a command"], correct: 0 }
+          ],
+          register: "neutral"
+        },
+        {
+          id: "de-firstmeeting-2",
+          expression: "Can't complain",
+          chinese: "没什么好抱怨的",
+          pinyin: "méi shén me hǎo bào yuàn de",
+          meaning: "A casual, positive response to 'How are you?' that means things are going well.",
+          whenToUse: "When someone asks how you are and you want to say you're doing okay.",
+          whenNotToUse: "Don't use if you're actually doing badly — it's for neutral-positive situations.",
+          nativeFrequency: "Very common response to 'How are you?'",
+          commonMistakes: [
+            { mistake: "Using it when you're actually having problems", correction: "'Can't complain' means things are acceptable or good" }
+          ],
+          pronunciation: "/kɑːnt kəmˈpleɪn/",
+          funnyExample: "A: How are you? B: Can't complain. A: ...That's a very low bar. B: ...I know, but I keep clearing it.",
+          memoryTrick: "Think: 'can't complain = nothing bad to say' = 'things are okay'",
+          relatedExpressions: ["Not bad", "Doing well", "Could be better"],
+          collocations: ["can't complain", "can't complain about", "can't complain much"],
+          miniQuiz: [
+            { question: "'Can't complain' means:", options: ["Things are going okay", "I'm very unhappy", "I have many complaints", "I don't want to talk"], correct: 0 }
+          ],
+          register: "casual"
+        },
+        {
+          id: "de-firstmeeting-3",
+          expression: "Fell into it by accident",
+          chinese: "意外地进入了这个行业",
+          pinyin: "yì wài de jìn rù le zhè gè háng yè",
+          meaning: "Describing how you started something unintentionally or unexpectedly.",
+          whenToUse: "When explaining how you got into your job or field.",
+          whenNotToUse: "Don't use for planned decisions — this is for accidental or unexpected starts.",
+          nativeFrequency: "Common when discussing career paths.",
+          commonMistakes: [
+            { mistake: "Using it for planned decisions", correction: "This phrase implies you didn't plan it — use 'I chose...' for planned decisions" }
+          ],
+          pronunciation: "/fel ˈɪntəʊ ɪt baɪ ˈæksɪdənt/",
+          funnyExample: "A: How did you get into teaching? B: I fell into it by accident. A: ...Did you trip? B: ...Metaphorically.",
+          memoryTrick: "Think: 'fell = accidentally' + 'into it = into this job' = 'accidentally got this job'",
+          relatedExpressions: ["Ended up in", "Got into by chance", "Stumbled upon"],
+          collocations: ["fell into it", "fell into it by accident", "fell into this field"],
+          miniQuiz: [
+            { question: "'I fell into it by accident' means:", options: ["I got into it unintentionally", "I planned it carefully", "I was forced into it", "I failed at it"], correct: 0 }
+          ],
+          register: "casual"
+        }
+      ]
+    },
+    nativeChunks: [
+      { chunk: "You must be", meaning: "你一定就是", example: "You must be Sarah?", register: "neutral", context: "Introduction" },
+      { chunk: "Can't complain", meaning: "没什么好抱怨的", example: "How have you been? Can't complain.", register: "casual", context: "Small talk" },
+      { chunk: "Fell into it", meaning: "意外进入", example: "I fell into it by accident.", register: "casual", context: "Career" },
+      { chunk: "Never looked back", meaning: "从未回头", example: "I switched careers and never looked back.", register: "casual", context: "Decision" },
+      { chunk: "Ran into each other", meaning: "偶遇", example: "We ran into each other at the conference.", register: "neutral", context: "Meeting" }
     ],
     conversation: [
-      { speaker: "Alex", line: "Hey, you must be Sarah? I'm Alex � we met briefly at the conference last week?" },
-      { speaker: "Sarah", line: "Oh right! Alex, nice to officially meet you. How have you been?" },
-      { speaker: "Alex", line: "Can't complain, just been swamped with work. How about you?" },
-      { speaker: "Sarah", line: "Yeah, still at the marketing agency. Actually, I just got promoted last month!" },
-      { speaker: "Alex", line: "No way, congrats! That's huge. What's your new role?" },
-      { speaker: "Sarah", line: "Thanks! I'm now the senior strategist. It's more responsibility, but I'm loving it." },
-      { speaker: "Alex", line: "Sounds like you're killing it. What made you get into marketing?" },
-      { speaker: "Sarah", line: "Honestly, I fell into it by accident. I was studying communication and took a social media internship � never looked back." },
-      { speaker: "Alex", line: "That's really cool. I'm in software myself, so completely different world." },
-      { speaker: "Sarah", line: "Oh nice! What kind of software do you work on?" },
-      { speaker: "Alex", line: "We build apps for small businesses. It's challenging but rewarding, you know?" },
-      { speaker: "Sarah", line: "Totally get that. So, besides work � what do you do for fun?" },
-      { speaker: "Alex", line: "I try to hike whenever I can. There are some great trails not too far from the city. You into that?" },
-      { speaker: "Sarah", line: "I love hiking! Maybe we should go together sometime?" },
-      { speaker: "Alex", line: "I'd love that. Here � let me give you my number and we can plan something." },
-      { speaker: "Sarah", line: "Perfect. It was really nice chatting with you, Alex." },
-      { speaker: "Alex", line: "Same here, Sarah. I'm glad we ran into each other again!" }
+      { speaker: "Alex", line: "Hey, you must be Sarah? I'm Alex — we met briefly at the conference last week?", register: "neutral" },
+      { speaker: "Sarah", line: "Oh right! Alex, nice to officially meet you. How have you been?", register: "neutral" },
+      { speaker: "Alex", line: "Can't complain, just been swamped with work. How about you?", register: "casual" },
+      { speaker: "Sarah", line: "Yeah, still at the marketing agency. Actually, I just got promoted last month!", register: "casual" },
+      { speaker: "Alex", line: "No way, congrats! That's huge. What's your new role?", register: "casual" },
+      { speaker: "Sarah", line: "Thanks! I'm now the senior strategist. It's more responsibility, but I'm loving it.", register: "casual" },
+      { speaker: "Alex", line: "Sounds like you're killing it. What made you get into marketing?", register: "casual" },
+      { speaker: "Sarah", line: "Honestly, I fell into it by accident. I was studying communication and took a social media internship — never looked back.", register: "casual" },
+      { speaker: "Alex", line: "That's really cool. I'm in software myself, so completely different world.", register: "casual" },
+      { speaker: "Sarah", line: "Oh nice! What kind of software do you work on?", register: "casual" },
+      { speaker: "Alex", line: "We build apps for small businesses. It's challenging but rewarding, you know?", register: "casual" },
+      { speaker: "Sarah", line: "Totally get that. So, besides work — what do you do for fun?", register: "casual" },
+      { speaker: "Alex", line: "I try to hike whenever I can. There are some great trails not too far from the city. You into that?", register: "casual" },
+      { speaker: "Sarah", line: "I love hiking! Maybe we should go together sometime?", register: "casual" },
+      { speaker: "Alex", line: "I'd love that. Here — let me give you my number and we can plan something.", register: "casual" },
+      { speaker: "Sarah", line: "Perfect. It was really nice chatting with you, Alex.", register: "casual" },
+      { speaker: "Alex", line: "Same here, Sarah. I'm glad we ran into each other again!", register: "casual" }
     ],
     chineseTranslation: [
-      { speaker: "Alex", line: "?,??????????????��?????????????" },
-      { speaker: "Sarah", line: "??!????,????????????????" },
-      { speaker: "Alex", line: "???????,???????????" },
-      { speaker: "Sarah", line: "??,?????????,???????!" },
-      { speaker: "Alex", line: "???,??!??????????????" },
-      { speaker: "Sarah", line: "??!???????????????,??????" },
-      { speaker: "Alex", line: "????????????????????????" },
-      { speaker: "Sarah", line: "???,???????????????,???????????��??????????" },
-      { speaker: "Alex", line: "?????????????,?????????" },
-      { speaker: "Sarah", line: "???!??????????" },
-      { speaker: "Alex", line: "??????????????????????,????" },
-      { speaker: "Sarah", line: "???????,????��???????" },
-      { speaker: "Alex", line: "?????????????????????????????" },
-      { speaker: "Sarah", line: "?????!??????????????" },
-      { speaker: "Alex", line: "????????????,?????????" },
-      { speaker: "Sarah", line: "?????????????,?????" },
-      { speaker: "Alex", line: "???,????????????!" }
+      { speaker: "Alex", line: "嗨，你一定就是Sarah？我是Alex——我们上周在会议上短暂见过面？" },
+      { speaker: "Sarah", line: "哦对！Alex，很高兴正式认识你。你最近怎么样？" },
+      { speaker: "Alex", line: "没什么好抱怨的，就是工作很忙。你呢？" },
+      { speaker: "Sarah", line: "是的，还在营销公司。实际上，我上个月刚升职了！" },
+      { speaker: "Alex", line: "真的吗，恭喜！这太棒了。你的新职位是什么？" },
+      { speaker: "Sarah", line: "谢谢！我现在是高级策略师。责任更多了，但我很喜欢。" },
+      { speaker: "Alex", line: "听起来你很厉害。什么让你进入营销行业？" },
+      { speaker: "Sarah", line: "说实话，我是意外进入这个行业的。我当时学的是传播学，做了一个社交媒体实习——从未回头。" },
+      { speaker: "Alex", line: "那真的很酷。我自己做软件，完全是不同的世界。" },
+      { speaker: "Sarah", line: "哦真好！你做什么样的软件？" },
+      { speaker: "Alex", line: "我们为小企业开发应用程序。很有挑战性但很有回报，你知道吗？" },
+      { speaker: "Sarah", line: "完全理解。那么，除了工作——你有什么爱好？" },
+      { speaker: "Alex", line: "我尽量经常去徒步。离城市不远有一些很棒的步道。你喜欢吗？" },
+      { speaker: "Sarah", line: "我喜欢徒步！也许我们什么时候一起去？" },
+      { speaker: "Alex", line: "我很乐意。来——我给你我的电话号码，我们可以计划一下。" },
+      { speaker: "Sarah", line: "完美。和你聊天真的很愉快，Alex。" },
+      { speaker: "Alex", line: "我也是，Sarah。我很高兴我们再次相遇！" }
     ],
-    usefulExpressions: [
-      { expression: "You must be...?", meaning: "????????", usage: "???????????????????" },
-      { expression: "Can't complain", meaning: "???????", usage: "?????????,???????????" },
-      { expression: "Swamped with work", meaning: "?????", usage: "????????" },
-      { expression: "Fell into it by accident", meaning: "????????", usage: "??????????????" },
-      { expression: "Never looked back", meaning: "????", usage: "????????????????" },
-      { expression: "Killing it", meaning: "???????", usage: "????????" },
-      { expression: "Ran into each other", meaning: "????", usage: "??????" }
-    ],
-    grammarFocus: [
+    grammarInContext: [
       {
         title: "Present Perfect for Life Experience",
-        explanation: "?????????????????????,??????????",
+        explanation: "用现在完成时谈论生活经历和没有具体时间的过去事件。",
         examples: [
           "I've been swamped with work lately.",
           "I've just gotten promoted.",
@@ -77,34 +221,118 @@ export const conversations: ConversationTopic[] = [
       },
       {
         title: "Past Simple vs. Present Perfect",
-        explanation: "??????????,??????????????",
+        explanation: "区分一般过去时和现在完成时的使用场景。",
         examples: [
           "I fell into it by accident (specific past moment).",
           "I've been studying communication (ongoing relevance)."
         ]
       }
     ],
-    collocationsAndChunks: [
-      { chunk: "meet someone briefly", meaning: "???????", example: "We met briefly at the conference." },
-      { chunk: "catch up", meaning: "??", example: "Let's catch up over coffee sometime." },
-      { chunk: "fall into something", meaning: "????????", example: "I fell into teaching by accident." },
-      { chunk: "never looked back", meaning: "????", example: "I switched careers and never looked back." },
-      { chunk: "run into someone", meaning: "??????", example: "I ran into my old boss downtown." }
+    pronunciation: [
+      { tip: "Connected speech: 'got to' → 'gotta'", example: "'I gotta run' instead of 'I have got to run'" },
+      { tip: "Weak forms: 'to' is often /tə/ or /tu/", example: "'going to' → 'gonna'" }
     ],
-    pronunciationTips: [
-      { tip: "Connected speech: 'got to' ? 'gotta'", example: "'I gotta run' instead of 'I have got to run'" },
-      { tip: "Weak forms: 'to' is often /t?/ or /tu/", example: "'going to' ? 'gonna'" }
+    shadowing: [
+      { line: "Hey, you must be Sarah? I'm Alex — we met briefly at the conference last week?", emphasis: "you must be" },
+      { line: "Can't complain, just been swamped with work.", emphasis: "Can't complain" },
+      { line: "I fell into it by accident — never looked back.", emphasis: "fell into it by accident" },
+      { line: "It's challenging but rewarding, you know?", emphasis: "challenging but rewarding" },
+      { line: "I'd love that. Here — let me give you my number.", emphasis: "I'd love that" }
+    ],
+    speakingPractice: {
+      instruction: "Practice introducing yourself to someone new. Use 'You must be...', 'Can't complain', and 'fell into it by accident'.",
+      hints: [
+        "Start with a friendly greeting",
+        "Guess their identity if appropriate",
+        "Ask about their work or studies",
+        "Share something about yourself",
+        "Suggest staying in touch"
+      ],
+      followUpQuestions: [
+        "What did you talk about?",
+        "Did you find any common interests?",
+        "What was your first impression?",
+        "Did you exchange contact information?"
+      ]
+    },
+    rolePlay: {
+      scenario: "You're at a networking event. Approach someone and introduce yourself naturally.",
+      prompts: [
+        "Introduce yourself and mention where you work",
+        "Ask about their work or studies",
+        "Find one common interest",
+        "Suggest staying in touch"
+      ],
+      partnerLines: [
+        "Hey, you must be Sarah? I'm Alex — we met briefly at the conference last week?",
+        "Oh right! Alex, nice to officially meet you. How have you been?",
+        "Yeah, still at the marketing agency. Actually, I just got promoted last month!",
+        "That's really cool. I'm in software myself, so completely different world.",
+        "I'd love that. Here — let me give you my number and we can plan something."
+      ]
+    },
+    homework: {
+      task: "First Meeting Practice",
+      description: "Practice introducing yourself to someone new this week. Use at least 3 expressions from this lesson. Write about the conversation.",
+      dueText: "Before next lesson"
+    },
+    quiz: [
+      {
+        id: "q1",
+        question: "'You must be...?' is used when:",
+        questionZh: "'You must be...?'用于：",
+        options: [
+          { label: "A) You're guessing someone's identity", labelZh: "A) 你在猜测某人的身份", correct: true },
+          { label: "B) You're sure about something", labelZh: "B) 你确定某事", correct: false },
+          { label: "C) You're asking for permission", labelZh: "C) 你在请求许可", correct: false },
+          { label: "D) You're giving a command", labelZh: "D) 你在下达命令", correct: false }
+        ],
+        explanation: "'You must be...?' is a polite way to guess someone's identity when you think you know them.",
+        explanationZh: "'You must be...?'是在你认为你认识某人时，礼貌地猜测其身份的方式。"
+      },
+      {
+        id: "q2",
+        question: "'Fell into it by accident' means:",
+        questionZh: "'Fell into it by accident'意思是：",
+        options: [
+          { label: "A) I got into it unintentionally", labelZh: "A) 我意外地进入了这个行业", correct: true },
+          { label: "B) I planned it carefully", labelZh: "B) 我精心计划了", correct: false },
+          { label: "C) I was forced into it", labelZh: "C) 我被强迫进入", correct: false },
+          { label: "D) I failed at it", labelZh: "D) 我失败了", correct: false }
+        ],
+        explanation: "'Fell into it by accident' means you got into something unintentionally or unexpectedly.",
+        explanationZh: "'Fell into it by accident'意味着你是意外或无意中进入了某个行业。"
+      }
+    ],
+    review: [
+      { key: "introduction", prompt: "How do you politely guess someone's identity?", answer: "You must be...?" },
+      { key: "smalltalk", prompt: "How do you respond to 'How are you?' casually?", answer: "Can't complain" },
+      { key: "career", prompt: "How do you say you got into something unintentionally?", answer: "I fell into it by accident" }
+    ],
+    humorNotes: [
+      {
+        context: "When you're bad at remembering names",
+        punchline: "A: You must be Sarah? B: No, I'm Jessica. A: ...Right, Jessica. You must be Jessica? B: ...Yes, that's my name. A: ...I'm getting better at this.",
+        explanation: "Self-deprecating humor about bad memory for names is very common."
+      }
+    ],
+    usefulExpressions: [
+      { expression: "You must be...?", meaning: "你一定就是...", usage: "猜测对方身份" },
+      { expression: "Can't complain", meaning: "没什么好抱怨的", usage: "礼貌回应近况" },
+      { expression: "Swamped with work", meaning: "工作忙得不可开交", usage: "描述忙碌状态" },
+      { expression: "Fell into it by accident", meaning: "意外进入这个行业", usage: "解释职业选择" },
+      { expression: "Never looked back", meaning: "从未回头", usage: "表示不后悔选择" }
     ],
     commonMistakes: [
       {
-        mistake: "Saying 'I very like it' instead of 'I really like it'",
-        correction: "Use 'really' with verbs, not 'very'",
-        explanation: "'Very' modifies adjectives, not verbs."
+        mistake: "说 'I very like it' 而不是 'I really like it'",
+        correction: "动词前用 'really' 而不是 'very'",
+        explanation: "'Very' 修饰形容词，不修饰动词。"
       },
       {
-        mistake: "Overusing 'yes/no' and not expanding responses",
-        correction: "Give fuller answers: 'Not bad, thanks. How about you?'",
-        explanation: "Native speakers expand beyond one-word answers in social situations."
+        mistake: "只用 'yes/no' 回答，不展开",
+        correction: "给出更完整的回答：'Not bad, thanks. How about you?'",
+        explanation: "母语者在社交场合会扩展回答，而不是只用一个词。"
       }
     ],
     rolePlayPractice: [
@@ -139,9 +367,9 @@ export const conversations: ConversationTopic[] = [
       }
     ],
     shadowingPractice: [
-      "Hey, you must be Sarah? I'm Alex � we met briefly at the conference last week?",
+      "Hey, you must be Sarah? I'm Alex — we met briefly at the conference last week?",
       "Can't complain, just been swamped with work.",
-      "I fell into it by accident � never looked back.",
+      "I fell into it by accident — never looked back.",
       "It's challenging but rewarding, you know?"
     ],
     speakingChallenge: {
