@@ -8165,38 +8165,185 @@ export const conversations: ConversationTopic[] = [
     color: "from-sky-400 to-blue-400",
     level: "A1",
     estimatedTime: "10 min",
-    vocabularyPreview: [
-      { word: "Bus stop", phonetic: "/b?s st?p/", chinese: "???", partOfSpeech: "noun" },
-      { word: "Ticket", phonetic: "/'t?k?t/", chinese: "?", partOfSpeech: "noun" },
-      { word: "Station", phonetic: "/'ste??n/", chinese: "??", partOfSpeech: "noun" },
-      { word: "Platform", phonetic: "/'plætf??rm/", chinese: "??", partOfSpeech: "noun" },
-      { word: "Transfer", phonetic: "/træns'f??r/", chinese: "??", partOfSpeech: "verb / noun" },
-      { word: "Schedule", phonetic: "/'sked?u?l/", chinese: "???", partOfSpeech: "noun" }
+    registerMarkers: [
+      { level: "formal", label: "Formal", color: "bg-blue-100 text-blue-800 border-blue-200", description: "Train station or airport transport" },
+      { level: "neutral", label: "Neutral", color: "bg-gray-100 text-gray-800 border-gray-200", description: "Standard bus or train ride" },
+      { level: "casual", label: "Casual", color: "bg-green-100 text-green-800 border-green-200", description: "Chatting with driver or passengers" }
+    ],
+    warmUp: {
+      title: "Warm-Up: Public Transport Phrases",
+      content: "Public transport is a common way to get around. In this lesson, you'll learn how to ask about routes, buy tickets, and find your stop confidently.",
+      contentZh: "????????????????????????????????????????"
+    },
+    vocabulary: [
+      {
+        word: "Bus stop",
+        phonetic: "/b?s st?p/",
+        chinese: "???",
+        pinyin: "g?ng ji?o zhàn",
+        partOfSpeech: "noun",
+        definitionEn: "A place where buses stop to pick up and drop off passengers.",
+        definitionZh: "?????????????",
+        exampleEn: "The bus stop is on the corner.",
+        exampleZh: "????????",
+        register: "neutral"
+      },
+      {
+        word: "Ticket",
+        phonetic: "/?t?k?t/",
+        chinese: "?",
+        pinyin: "piào",
+        partOfSpeech: "noun",
+        definitionEn: "A piece of paper or card showing you have paid for transport.",
+        definitionZh: "????????????????",
+        exampleEn: "One ticket to Central Station, please.",
+        exampleZh: "?????????????",
+        register: "neutral"
+      },
+      {
+        word: "Station",
+        phonetic: "/?ste??n/",
+        chinese: "??",
+        pinyin: "ch? zhàn",
+        partOfSpeech: "noun",
+        definitionEn: "A place where trains or buses start and end their routes.",
+        definitionZh: "?????????????????",
+        exampleEn: "Central Station is two stops away.",
+        exampleZh: "?????????",
+        register: "neutral"
+      },
+      {
+        word: "Platform",
+        phonetic: "/?plætf??rm/",
+        chinese: "??",
+        pinyin: "zhàn tái",
+        partOfSpeech: "noun",
+        definitionEn: "The area at a train station where you wait for your train.",
+        definitionZh: "?????????????",
+        exampleEn: "The train leaves from platform 3.",
+        exampleZh: "???3??????",
+        register: "neutral"
+      },
+      {
+        word: "Transfer",
+        phonetic: "/træns?f??r/",
+        chinese: "??",
+        pinyin: "huàn chéng",
+        partOfSpeech: "verb / noun",
+        definitionEn: "To change from one bus or train to another.",
+        definitionZh: "???????????????",
+        exampleEn: "Do I need to transfer?",
+        exampleZh: "???????",
+        register: "neutral"
+      },
+      {
+        word: "Schedule",
+        phonetic: "/?sked?u?l/",
+        chinese: "???",
+        pinyin: "shí kè bi?o",
+        partOfSpeech: "noun",
+        definitionEn: "A plan showing when buses or trains arrive and leave.",
+        definitionZh: "???????????????????",
+        exampleEn: "What's the schedule for the next bus?",
+        exampleZh: "??????????????",
+        register: "neutral"
+      }
+    ],
+    dailyExpressions: {
+      title: "Daily Native Expressions",
+      items: [
+        {
+          id: "de-transport-1",
+          expression: "Does this bus go to...?",
+          chinese: "??????...??",
+          pinyin: "zhè tàng g?ng ji?o ch? qù... ma?",
+          meaning: "Asking if a bus or train goes to a specific destination.",
+          whenToUse: "When checking if your transport goes where you need.",
+          whenNotToUse: "Don't use for directions within a building — this is for public transport.",
+          nativeFrequency: "Very common when using public transport.",
+          commonMistakes: [
+            { mistake: "Using 'Is this bus going to...?' which is okay but longer", correction: "'Does this bus go to...?' is more concise and natural" }
+          ],
+          pronunciation: "/d?z ð?s b?s ?o? tu?/",
+          funnyExample: "A: Does this bus go to the moon? B: ...No, but the next one might. A: ...I'll wait for that one.",
+          memoryTrick: "Think: 'does this bus go = is this the right bus' = 'is this bus going to my destination?'",
+          relatedExpressions: ["Does the train go to...?", "Does this stop at...?", "Is this the right bus for...?"],
+          collocations: ["bus go to", "train go to", "does this go to"],
+          miniQuiz: [
+            { question: "'Does this bus go to...?' asks:", options: ["If the bus reaches a destination", "How fast the bus goes", "The price of the ticket", "The bus schedule"], correct: 0 }
+          ],
+          register: "neutral"
+        },
+        {
+          id: "de-transport-2",
+          expression: "Do I need to transfer?",
+          chinese: "???????",
+          pinyin: "w? x? yào huàn chéng ma?",
+          meaning: "Asking if you need to change from one vehicle to another.",
+          whenToUse: "When taking a journey that might require changing buses or trains.",
+          whenNotToUse: "Don't use if you're staying on the same vehicle — use 'Does this go directly to...?' instead.",
+          nativeFrequency: "Very common when navigating public transport.",
+          commonMistakes: [
+            { mistake: "Using 'I need transfer' without 'to'", correction: "Always say 'I need to transfer' or 'Do I need to transfer?'" }
+          ],
+          pronunciation: "/du? a? ni?d tu? træns?f??r/",
+          funnyExample: "A: Do I need to transfer? B: No, this bus goes straight there. A: ...I was hoping for an adventure.",
+          memoryTrick: "Think: 'transfer = change' + 'need to = must' = 'must I change vehicles?'",
+          relatedExpressions: ["Do I have to change?", "Is there a direct bus?", "Do I need to change trains?"],
+          collocations: ["need to transfer", "need to change", "transfer at"],
+          miniQuiz: [
+            { question: "'Do I need to transfer?' means:", options: ["Do I need to change vehicles?", "Do I need a ticket?", "Do I need to get off?", "Do I need to wait?"], correct: 0 }
+          ],
+          register: "neutral"
+        },
+        {
+          id: "de-transport-3",
+          expression: "Right in front of",
+          chinese: "???...??",
+          pinyin: "zhèng h?o zài... qián miàn",
+          meaning: "Describing a location that is directly facing something.",
+          whenToUse: "When giving directions or describing locations.",
+          whenNotToUse: "Don't use for approximate locations — use 'near' or 'next to' instead.",
+          nativeFrequency: "Very common when giving directions.",
+          commonMistakes: [
+            { mistake: "Using 'in front' without 'of'", correction: "Always use 'in front of' when describing location" }
+          ],
+          pronunciation: "/ra?t ?n fr?nt ?v/",
+          funnyExample: "A: The museum is right in front of the stop. B: ...I don't see it. A: ...Maybe you're at the wrong stop. B: ...Or maybe the museum is hiding.",
+          memoryTrick: "Think: 'right = exactly' + 'in front of = facing' = 'exactly facing'",
+          relatedExpressions: ["Next to", "Opposite", "Around the corner from"],
+          collocations: ["right in front of", "in front of the", "right next to"],
+          miniQuiz: [
+            { question: "'Right in front of' means:", options: ["Directly facing", "Far away from", "Behind", "Inside"], correct: 0 }
+          ],
+          register: "neutral"
+        }
+      ]
+    },
+    nativeChunks: [
+      { chunk: "Does this bus go to", meaning: "??????...?", example: "Does this bus go to Central Station?", register: "neutral", context: "Asking route" },
+      { chunk: "Do I need to transfer", meaning: "??????", example: "Do I need to transfer anywhere?", register: "neutral", context: "Asking about transfer" },
+      { chunk: "That'll be", meaning: "??", example: "That'll be $2.50, please.", register: "neutral", context: "Pricing" },
+      { chunk: "right in front of", meaning: "???...??", example: "It's right in front of the museum.", register: "neutral", context: "Location" },
+      { chunk: "Enjoy your ride", meaning: "????", example: "Enjoy your ride!", register: "neutral", context: "Farewell" }
     ],
     conversation: [
-      { speaker: "Passenger", line: "Excuse me, does this bus go to Central Station?" },
-      { speaker: "Driver", line: "Yes, it does. That'll be $2.50, please." },
-      { speaker: "Passenger", line: "Here you go. Do I need to transfer anywhere?" },
-      { speaker: "Driver", line: "No, this bus goes straight there. Enjoy your ride!" },
-      { speaker: "Passenger", line: "Thank you. Is there a stop near the museum?" },
-      { speaker: "Driver", line: "Yes, the next stop is Main Street, which is right in front of the museum." }
+      { speaker: "Passenger", line: "Excuse me, does this bus go to Central Station?", register: "neutral" },
+      { speaker: "Driver", line: "Yes, it does. That'll be $2.50, please.", register: "neutral" },
+      { speaker: "Passenger", line: "Here you go. Do I need to transfer anywhere?", register: "neutral" },
+      { speaker: "Driver", line: "No, this bus goes straight there. Enjoy your ride!", register: "neutral" },
+      { speaker: "Passenger", line: "Thank you. Is there a stop near the museum?", register: "neutral" },
+      { speaker: "Driver", line: "Yes, the next stop is Main Street, which is right in front of the museum.", register: "neutral" }
     ],
     chineseTranslation: [
-      { speaker: "??", line: "????,????????????" },
-      { speaker: "??", line: "?????2.50???" },
-      { speaker: "??", line: "?????????????" },
-      { speaker: "??", line: "??,????????????!" },
+      { speaker: "??", line: "?????????????????" },
+      { speaker: "??", line: "????????2.50???" },
       { speaker: "??", line: "????????????" },
-      { speaker: "??", line: "??,???????,????????" }
+      { speaker: "??", line: "????????????????" },
+      { speaker: "??", line: "?????????????" },
+      { speaker: "??", line: "??????? Main Street??????????" }
     ],
-    usefulExpressions: [
-      { expression: "Does this bus go to...?", meaning: "????...??", usage: "??????" },
-      { expression: "That'll be...", meaning: "??...", usage: "????" },
-      { expression: "Do I need to transfer?", meaning: "???????", usage: "????????" },
-      { expression: "Right in front of", meaning: "??...??", usage: "????" },
-      { expression: "Enjoy your ride", meaning: "????", usage: "?????" }
-    ],
-    grammarFocus: [
+    grammarInContext: [
       {
         title: "Yes/No Questions with 'Does'",
         explanation: "? 'Does...?' ????????????",
@@ -8208,7 +8355,7 @@ export const conversations: ConversationTopic[] = [
       },
       {
         title: "Prepositions of Place",
-        explanation: "????????",
+        explanation: "??????????",
         examples: [
           "The museum is next to the park.",
           "The stop is in front of the museum.",
@@ -8216,20 +8363,104 @@ export const conversations: ConversationTopic[] = [
         ]
       }
     ],
-    collocationsAndChunks: [
-      { chunk: "Go straight", meaning: "??", example: "This bus goes straight there." },
-      { chunk: "Right in front of", meaning: "??...??", example: "The museum is right in front of the stop." },
-      { chunk: "Do I need to transfer", meaning: "??????", example: "Do I need to transfer anywhere?" }
-    ],
-    pronunciationTips: [
+    pronunciation: [
       { tip: "That'll be ? /ðæt?l bi?/", example: "Contraction sounds natural" },
       { tip: "Right in front of ? /ra?t ?n fr?nt ?v/", example: "Fast, connected speech" }
     ],
+    shadowing: [
+      { line: "Excuse me, does this bus go to Central Station?", emphasis: "does this bus go to" },
+      { line: "Yes, it does. That'll be $2.50, please.", emphasis: "That'll be" },
+      { line: "Do I need to transfer anywhere?", emphasis: "Do I need to transfer" },
+      { line: "The next stop is Main Street, which is right in front of the museum.", emphasis: "right in front of" }
+    ],
+    speakingPractice: {
+      instruction: "Practice taking public transport to 3 destinations: the museum, the park, and the shopping mall. Ask about routes, prices, and stops.",
+      hints: [
+        "Start with 'Does this bus go to...?'",
+        "Ask the ticket price",
+        "Confirm if you need to transfer",
+        "Ask which stop to get off at"
+      ],
+      followUpQuestions: [
+        "Which transport did you take?",
+        "Did you need to transfer?",
+        "How much was the ticket?",
+        "Which stop did you get off at?"
+      ]
+    },
+    rolePlay: {
+      scenario: "You need to get from the bus stop to the museum. Ask the driver about the route, ticket price, and what stop to get off at.",
+      prompts: [
+        "Check if the bus goes to the museum",
+        "Buy a ticket",
+        "Ask if you need to transfer",
+        "Ask which stop to get off at",
+        "Thank the driver"
+      ],
+      partnerLines: [
+        "Excuse me, does this bus go to Central Station?",
+        "Yes, it does. That'll be $2.50, please.",
+        "No, this bus goes straight there. Enjoy your ride!",
+        "Yes, the next stop is Main Street, which is right in front of the museum."
+      ]
+    },
+    homework: {
+      task: "Transport Journal",
+      description: "Take a public transport trip this week and write about your experience in English. Describe the route, ticket price, and what you saw.",
+      dueText: "Before next lesson"
+    },
+    quiz: [
+      {
+        id: "q1",
+        question: "'Does this bus go to...?' is used to:",
+        questionZh: "'Does this bus go to...?'???",
+        options: [
+          { label: "A) Ask if the bus reaches a destination", labelZh: "A) ????????????", correct: true },
+          { label: "B) Ask the price", labelZh: "B) ????", correct: false },
+          { label: "C) Ask for a transfer", labelZh: "C) ????", correct: false },
+          { label: "D) Ask for directions", labelZh: "D) ????", correct: false }
+        ],
+        explanation: "'Does this bus go to...?' asks if a bus route includes a specific destination.",
+        explanationZh: "'Does this bus go to...?'?????????????????"
+      },
+      {
+        id: "q2",
+        question: "'Do I need to transfer?' means:",
+        questionZh: "'Do I need to transfer?'????",
+        options: [
+          { label: "A) Do I need to change vehicles?", labelZh: "A) ???????", correct: true },
+          { label: "B) Do I need a ticket?", labelZh: "B) ??????", correct: false },
+          { label: "C) Do I need to get off?", labelZh: "C) ???????", correct: false },
+          { label: "D) Do I need to wait?", labelZh: "D) ???????", correct: false }
+        ],
+        explanation: "'Do I need to transfer?' asks if you need to change from one bus or train to another.",
+        explanationZh: "'Do I need to transfer?'??????????????????????"
+      }
+    ],
+    review: [
+      { key: "route", prompt: "How do you ask if a bus goes somewhere?", answer: "Does this bus go to...?" },
+      { key: "transfer", prompt: "How do you ask if you need to change vehicles?", answer: "Do I need to transfer?" },
+      { key: "location", prompt: "How do you say something is directly facing something else?", answer: "Right in front of" }
+    ],
+    humorNotes: [
+      {
+        context: "When you miss your stop",
+        punchline: "A: Is there a stop near the museum? B: This is the last stop. A: ...Then I missed it. B: ...You also missed the museum. A: ...I'm good at missing things.",
+        explanation: "Self-deprecating humor about missing stops is very common."
+      }
+    ],
+    usefulExpressions: [
+      { expression: "Does this bus go to...?", meaning: "??????...??", usage: "????" },
+      { expression: "That'll be...", meaning: "??...", usage: "????" },
+      { expression: "Do I need to transfer?", meaning: "???????", usage: "????????" },
+      { expression: "Right in front of", meaning: "???...??", usage: "????" },
+      { expression: "Enjoy your ride", meaning: "????", usage: "????" }
+    ],
     commonMistakes: [
       {
-        mistake: "'I need transfer'",
-        correction: "'I need to transfer' ? 'Do I need to transfer?'",
-        explanation: "'Transfer' ???????? 'to'?"
+        mistake: "? 'I need transfer' ??? 'I need to transfer'",
+        correction: "???? 'I need to transfer' ? 'Do I need to transfer?'",
+        explanation: "'Transfer' ????????? 'to'?"
       }
     ],
     rolePlayPractice: [
