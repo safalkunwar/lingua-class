@@ -7451,49 +7451,196 @@ export const conversations: ConversationTopic[] = [
     color: "from-green-400 to-emerald-400",
     level: "A1",
     estimatedTime: "10 min",
-    vocabularyPreview: [
-      { word: "Membership", phonetic: "/'memb?r??p/", chinese: "????", partOfSpeech: "noun" },
-      { word: "Trainer", phonetic: "/'tre?n?r/", chinese: "??", partOfSpeech: "noun" },
-      { word: "Treadmill", phonetic: "/'tredm?l/", chinese: "???", partOfSpeech: "noun" },
-      { word: "Weights", phonetic: "/we?ts/", chinese: "??/??", partOfSpeech: "noun" },
-      { word: "Mat", phonetic: "/mæt/", chinese: "??", partOfSpeech: "noun" },
-      { word: "Workout", phonetic: "/'w??rka?t/", chinese: "??", partOfSpeech: "noun" }
+    registerMarkers: [
+      { level: "formal", label: "Formal", color: "bg-blue-100 text-blue-800 border-blue-200", description: "Business gym or formal training" },
+      { level: "neutral", label: "Neutral", color: "bg-gray-100 text-gray-800 border-gray-200", description: "Standard gym interaction" },
+      { level: "casual", label: "Casual", color: "bg-green-100 text-green-800 border-green-200", description: "Chatting with gym staff or friends" }
+    ],
+    warmUp: {
+      title: "Warm-Up: Gym English",
+      content: "Going to the gym is a great way to stay healthy. In this lesson, you'll learn how to ask about memberships, use equipment, and talk to trainers in English.",
+      contentZh: "???????????????????????????????????????????????"
+    },
+    vocabulary: [
+      {
+        word: "Membership",
+        phonetic: "/?memb???p/",
+        chinese: "????",
+        pinyin: "huì yuán z? gé",
+        partOfSpeech: "noun",
+        definitionEn: "The status of being a member of a gym or club.",
+        definitionZh: "???????????????",
+        exampleEn: "I'd like to get a gym membership.",
+        exampleZh: "????????????",
+        register: "neutral"
+      },
+      {
+        word: "Trainer",
+        phonetic: "/?tre?n?r/",
+        chinese: "??",
+        pinyin: "jiào liàn",
+        partOfSpeech: "noun",
+        definitionEn: "A person who helps others exercise and get fit.",
+        definitionZh: "????????????",
+        exampleEn: "Do you have a personal trainer?",
+        exampleZh: "?????????",
+        register: "neutral"
+      },
+      {
+        word: "Treadmill",
+        phonetic: "/?tredm?l/",
+        chinese: "???",
+        pinyin: "p?o bù j?",
+        partOfSpeech: "noun",
+        definitionEn: "A machine for running or walking indoors.",
+        definitionZh: "?????????????",
+        exampleEn: "Let's start with a warm-up on the treadmill.",
+        exampleZh: "?????????????",
+        register: "neutral"
+      },
+      {
+        word: "Weights",
+        phonetic: "/we?ts/",
+        chinese: "??/??",
+        pinyin: "y? líng / gàng líng",
+        partOfSpeech: "noun",
+        definitionEn: "Equipment used for strength training.",
+        definitionZh: "??????????",
+        exampleEn: "Let's do some weights.",
+        exampleZh: "???????",
+        register: "neutral"
+      },
+      {
+        word: "Mat",
+        phonetic: "/mæt/",
+        chinese: "??",
+        pinyin: "diàn zi",
+        partOfSpeech: "noun",
+        definitionEn: "A padded surface for exercises like yoga.",
+        definitionZh: "?????????????",
+        exampleEn: "Put your mat on the floor.",
+        exampleZh: "???????????",
+        register: "neutral"
+      },
+      {
+        word: "Workout",
+        phonetic: "/?w??rka?t/",
+        chinese: "??",
+        pinyin: "duàn liàn",
+        partOfSpeech: "noun",
+        definitionEn: "A session of physical exercise.",
+        definitionZh: "???????",
+        exampleEn: "I have a workout every morning.",
+        exampleZh: "?????????",
+        register: "neutral"
+      }
+    ],
+    dailyExpressions: {
+      title: "Daily Native Expressions",
+      items: [
+        {
+          id: "de-gym-1",
+          expression: "I'm interested in...",
+          chinese: "??...???",
+          pinyin: "w? duì... g?n xìng qù",
+          meaning: "Expressing interest in something, especially gym memberships or activities.",
+          whenToUse: "When talking to gym staff about joining or trying something.",
+          whenNotToUse: "Don't use 'I interest in...' — it's grammatically incorrect.",
+          nativeFrequency: "Very common in service and social situations.",
+          commonMistakes: [
+            { mistake: "Saying 'I interest in...' instead of 'I'm interested in...'", correction: "'Interested' is an adjective, so you need 'am': 'I am interested in...'" }
+          ],
+          pronunciation: "/a?m ??ntr?st?d ?n/",
+          funnyExample: "A: I interest in yoga. B: You interest in grammar too? A: ...I meant I'm interested.",
+          memoryTrick: "Think: 'interested = feeling interest' + 'I am = I feel' = 'I feel interest in...'",
+          relatedExpressions: ["I'd like...", "I want to try...", "Can I join...?"],
+          collocations: ["interested in", "interested in joining", "interested in trying"],
+          miniQuiz: [
+            { question: "'I'm interested in...' means:", options: ["I want to learn more about it", "I already know it", "I hate it", "I'm teaching it"], correct: 0 }
+          ],
+          register: "neutral"
+        },
+        {
+          id: "de-gym-2",
+          expression: "Can I start with...?",
+          chinese: "????...????",
+          pinyin: "w? k? y? cóng... k?i sh? ma?",
+          meaning: "Asking if you can begin with a specific plan, exercise, or equipment.",
+          whenToUse: "When choosing a gym plan or starting a workout.",
+          whenNotToUse: "Don't use for things that have already started — use 'Can I continue with...?' instead.",
+          nativeFrequency: "Very common when starting something new.",
+          commonMistakes: [
+            { mistake: "Using 'I start with...' which sounds like a statement", correction: "'Can I start with...?' is a polite question" }
+          ],
+          pronunciation: "/kæn a? st??rt w?ð/",
+          funnyExample: "A: Can I start with a donut? B: ...That's not a workout plan. A: It's a warm-up for my workout.",
+          memoryTrick: "Think: 'start = begin' + 'with = using' = 'can I begin using this?'",
+          relatedExpressions: ["I'd like to start with...", "Can I begin with...?", "Let's start with..."],
+          collocations: ["start with", "start with a plan", "start with the treadmill"],
+          miniQuiz: [
+            { question: "'Can I start with...?' is used to:", options: ["Ask to begin with something", "Say you already started", "Stop an activity", "Ask for help"], correct: 0 }
+          ],
+          register: "neutral"
+        },
+        {
+          id: "de-gym-3",
+          expression: "I'm new to...",
+          chinese: "??...??",
+          pinyin: "w? shì... x?n sh?u",
+          meaning: "Telling someone you don't have much experience with something.",
+          whenToUse: "When starting at a gym, job, or any new activity.",
+          whenNotToUse: "Don't use if you have experience — it would be dishonest.",
+          nativeFrequency: "Very common when learning something new.",
+          commonMistakes: [
+            { mistake: "Using 'I new to...' without 'am'", correction: "Always use 'I'm new to...' or 'I am new to...'" }
+          ],
+          pronunciation: "/a?m nu? tu?/",
+          funnyExample: "A: I'm new to this. B: No worries, we all started somewhere. A: ...I started yesterday and already need a vacation.",
+          memoryTrick: "Think: 'new = beginner' + 'to = in' = 'I am a beginner in this'",
+          relatedExpressions: ["I'm a beginner", "I'm just starting", "I'm learning..."],
+          collocations: ["new to", "new to working out", "new to the gym"],
+          miniQuiz: [
+            { question: "'I'm new to...' means:", options: ["I am a beginner", "I am experienced", "I am teaching", "I am leaving"], correct: 0 }
+          ],
+          register: "neutral"
+        }
+      ]
+    },
+    nativeChunks: [
+      { chunk: "I'm interested in", meaning: "??...???", example: "I'm interested in a gym membership.", register: "neutral", context: "Expressing interest" },
+      { chunk: "Can I start with", meaning: "????...???", example: "Can I start with a monthly plan?", register: "neutral", context: "Starting something" },
+      { chunk: "I'm new to", meaning: "??...??", example: "I'm new to working out.", register: "neutral", context: "Being a beginner" },
+      { chunk: "Show me around", meaning: "????", example: "Can you show me around?", register: "neutral", context: "Requesting tour" },
+      { chunk: "Let's get started", meaning: "??????", example: "Let's get started.", register: "neutral", context: "Beginning activity" }
     ],
     conversation: [
-      { speaker: "Member", line: "Hi, I'm interested in a gym membership." },
-      { speaker: "Trainer", line: "Great! We have monthly and yearly plans. Which one do you prefer?" },
-      { speaker: "Member", line: "Can I start with a monthly plan?" },
-      { speaker: "Trainer", line: "Of course. That's $40 per month. Do you need a personal trainer?" },
-      { speaker: "Member", line: "Yes, please. I'm new to working out." },
-      { speaker: "Trainer", line: "No problem! I can show you around. Let's start with a warm-up on the treadmill." },
-      { speaker: "Member", line: "Sounds good. How long should I warm up?" },
-      { speaker: "Trainer", line: "About 10 minutes. Then we'll do some weights. Do you have comfortable shoes?" },
-      { speaker: "Member", line: "Yes, I brought my running shoes." },
-      { speaker: "Trainer", line: "Perfect! Let's get started." }
+      { speaker: "Member", line: "Hi, I'm interested in a gym membership.", register: "neutral" },
+      { speaker: "Trainer", line: "Great! We have monthly and yearly plans. Which one do you prefer?", register: "neutral" },
+      { speaker: "Member", line: "Can I start with a monthly plan?", register: "neutral" },
+      { speaker: "Trainer", line: "Of course. That's $40 per month. Do you need a personal trainer?", register: "neutral" },
+      { speaker: "Member", line: "Yes, please. I'm new to working out.", register: "neutral" },
+      { speaker: "Trainer", line: "No problem! I can show you around. Let's start with a warm-up on the treadmill.", register: "neutral" },
+      { speaker: "Member", line: "Sounds good. How long should I warm up?", register: "neutral" },
+      { speaker: "Trainer", line: "About 10 minutes. Then we'll do some weights. Do you have comfortable shoes?", register: "neutral" },
+      { speaker: "Member", line: "Yes, I brought my running shoes.", register: "neutral" },
+      { speaker: "Trainer", line: "Perfect! Let's get started.", register: "neutral" }
     ],
     chineseTranslation: [
-      { speaker: "??", line: "?,??????????" },
-      { speaker: "??", line: "???!????????????????" },
-      { speaker: "??", line: "????????????" },
+      { speaker: "??", line: "????????????????" },
+      { speaker: "??", line: "???????????????? prefer ???" },
+      { speaker: "??", line: "??????????" },
       { speaker: "??", line: "?????40????????????" },
-      { speaker: "??", line: "??,?????????" },
-      { speaker: "??", line: "???!???????????????????" },
+      { speaker: "??", line: "?????????????" },
+      { speaker: "??", line: "???????????????????????????" },
       { speaker: "??", line: "??????????????" },
-      { speaker: "??", line: "??10????????????????????????" },
-      { speaker: "??", line: "??,??????" },
-      { speaker: "??", line: "??!??????" }
+      { speaker: "??", line: "??10??????????????????????????" },
+      { speaker: "??", line: "?????????" },
+      { speaker: "??", line: "??????????" }
     ],
-    usefulExpressions: [
-      { expression: "I'm interested in...", meaning: "??...???", usage: "?????????" },
-      { expression: "Can I start with...?", meaning: "???...????", usage: "??????" },
-      { expression: "I'm new to...", meaning: "??...??", usage: "??????" },
-      { expression: "Show me around", meaning: "????", usage: "??????" },
-      { expression: "Let's get started", meaning: "?????", usage: "????" }
-    ],
-    grammarFocus: [
+    grammarInContext: [
       {
         title: "Present Continuous for Future Plans",
-        explanation: "????????????????",
+        explanation: "???????????????????",
         examples: [
           "I'm starting with a monthly plan.",
           "I'm working out tomorrow.",
@@ -7502,7 +7649,7 @@ export const conversations: ConversationTopic[] = [
       },
       {
         title: "Modal Verbs for Requests and Offers",
-        explanation: "? 'Can I...?' ? 'Do you need...?' ?????",
+        explanation: "? 'Can I...?' ? 'Do you need...?' ?????????????",
         examples: [
           "Can I start with a monthly plan?",
           "Do you need a personal trainer?",
@@ -7510,20 +7657,106 @@ export const conversations: ConversationTopic[] = [
         ]
       }
     ],
-    collocationsAndChunks: [
-      { chunk: "Gym membership", meaning: "?????", example: "I'd like a gym membership." },
-      { chunk: "Personal trainer", meaning: "????", example: "Do you have a personal trainer?" },
-      { chunk: "Work out", meaning: "??", example: "I work out three times a week." }
+    pronunciation: [
+      { tip: "Membership ? /?memb???p/", example: "Stress on first syllable" },
+      { tip: "Treadmill ? /?tredm?l/", example: "Stress on first syllable" }
     ],
-    pronunciationTips: [
-      { tip: "Membership ? /'memb?r??p/", example: "Stress on first syllable" },
-      { tip: "Treadmill ? /'tredm?l/", example: "Stress on first syllable" }
+    shadowing: [
+      { line: "Hi, I'm interested in a gym membership.", emphasis: "interested in a gym membership" },
+      { line: "Can I start with a monthly plan?", emphasis: "start with a monthly plan" },
+      { line: "I'm new to working out.", emphasis: "new to working out" },
+      { line: "Let's start with a warm-up on the treadmill.", emphasis: "warm-up on the treadmill" },
+      { line: "Perfect! Let's get started.", emphasis: "get started" }
+    ],
+    speakingPractice: {
+      instruction: "Practice joining a gym and talking to a trainer. Use 'I'm interested in', 'Can I start with', and 'I'm new to'.",
+      hints: [
+        "Ask about membership plans",
+        "Choose monthly or yearly",
+        "Ask for a trainer if you're new",
+        "Confirm the price"
+      ],
+      followUpQuestions: [
+        "What membership did you choose?",
+        "How much does it cost per month?",
+        "Did you ask for a trainer?",
+        "What equipment did you try?"
+      ]
+    },
+    rolePlay: {
+      scenario: "You join a gym for the first time. Talk to the trainer about membership options, ask for a tour, and schedule your first workout.",
+      prompts: [
+        "Express interest in membership",
+        "Choose a plan",
+        "Ask for a trainer",
+        "Get a tour of the gym",
+        "Schedule your first session"
+      ],
+      partnerLines: [
+        "Hi, I'm interested in a gym membership.",
+        "Great! We have monthly and yearly plans. Which one do you prefer?",
+        "Of course. That's $40 per month. Do you need a personal trainer?",
+        "No problem! I can show you around. Let's start with a warm-up on the treadmill.",
+        "Perfect! Let's get started."
+      ]
+    },
+    homework: {
+      task: "Gym Vocabulary",
+      description: "Write down 10 gym-related words and practice using them. Research local gyms and compare their membership prices.",
+      dueText: "Before next lesson"
+    },
+    quiz: [
+      {
+        id: "q1",
+        question: "'I'm interested in...' means:",
+        questionZh: "'I'm interested in...'????",
+        options: [
+          { label: "A) I want to learn more about it", labelZh: "A) ??????", correct: true },
+          { label: "B) I already know it well", labelZh: "B) ???????", correct: false },
+          { label: "C) I hate it", labelZh: "C) ????", correct: false },
+          { label: "D) I am teaching it", labelZh: "D) ????", correct: false }
+        ],
+        explanation: "'I'm interested in...' means you want to learn more about something.",
+        explanationZh: "'I'm interested in...'?????????????????"
+      },
+      {
+        id: "q2",
+        question: "'I'm new to...' means:",
+        questionZh: "'I'm new to...'????",
+        options: [
+          { label: "A) I am a beginner", labelZh: "A) ????", correct: true },
+          { label: "B) I am experienced", labelZh: "B) ?????", correct: false },
+          { label: "C) I am teaching", labelZh: "C) ???", correct: false },
+          { label: "D) I am leaving", labelZh: "D) ????", correct: false }
+        ],
+        explanation: "'I'm new to...' means you are a beginner at something.",
+        explanationZh: "'I'm new to...'???????????"
+      }
+    ],
+    review: [
+      { key: "membership", prompt: "How do you say you want a gym membership?", answer: "I'm interested in a gym membership" },
+      { key: "start", prompt: "How do you ask to begin with a monthly plan?", answer: "Can I start with a monthly plan?" },
+      { key: "new", prompt: "How do you say you're a beginner?", answer: "I'm new to working out" }
+    ],
+    humorNotes: [
+      {
+        context: "When the gym is crowded",
+        punchline: "A: I'm new to working out. B: So is everyone else on Monday. A: ...Then I'm new to Tuesdays too.",
+        explanation: "Self-deprecating humor about gym crowds on Mondays is very common."
+      }
+    ],
+    usefulExpressions: [
+      { expression: "I'm interested in...", meaning: "??...???", usage: "????" },
+      { expression: "Can I start with...?", meaning: "????...????", usage: "??????" },
+      { expression: "I'm new to...", meaning: "??...??", usage: "????????" },
+      { expression: "Show me around", meaning: "????", usage: "????" },
+      { expression: "Let's get started", meaning: "??????", usage: "????" }
     ],
     commonMistakes: [
       {
-        mistake: "'I interest in...'",
+        mistake: "? 'I interest in...'",
         correction: "???? 'I'm interested in...'",
-        explanation: "'Interested' ????,????? 'am'?"
+        explanation: "'Interested' ?????????? 'am'?"
       }
     ],
     rolePlayPractice: [
