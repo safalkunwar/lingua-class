@@ -5669,44 +5669,191 @@ export const conversations: ConversationTopic[] = [
     color: "from-emerald-400 to-green-400",
     level: "A1",
     estimatedTime: "12 min",
-    vocabularyPreview: [
-      { word: "Account", phonetic: "/?'ka?nt/", chinese: "??", partOfSpeech: "noun" },
-      { word: "Balance", phonetic: "/'bæl?ns/", chinese: "??", partOfSpeech: "noun" },
-      { word: "Deposit", phonetic: "/d?'p?z?t/", chinese: "??", partOfSpeech: "verb / noun" },
-      { word: "Withdraw", phonetic: "/w?ð'dr??/", chinese: "??", partOfSpeech: "verb" },
-      { word: "Credit card", phonetic: "/'kred?t k??rd/", chinese: "???", partOfSpeech: "noun" },
-      { word: "Receipt", phonetic: "/r?'si?t/", chinese: "??", partOfSpeech: "noun" }
+    registerMarkers: [
+      { level: "formal", label: "Formal", color: "bg-blue-100 text-blue-800 border-blue-200", description: "Banking appointments or loans" },
+      { level: "neutral", label: "Neutral", color: "bg-gray-100 text-gray-800 border-gray-200", description: "Standard bank transactions" },
+      { level: "casual", label: "Casual", color: "bg-green-100 text-green-800 border-green-200", description: "Chatting with a bank teller" }
+    ],
+    warmUp: {
+      title: "Warm-Up: Banking Basics",
+      content: "Banks are essential in adult life. In this lesson, you'll learn how to open an account, ask about balances, and make deposits in English.",
+      contentZh: "??????????????????????????????????????"
+    },
+    vocabulary: [
+      {
+        word: "Account",
+        phonetic: "/??ka?nt/",
+        chinese: "??",
+        pinyin: "zhàng hù",
+        partOfSpeech: "noun",
+        definitionEn: "A financial arrangement with a bank to hold money.",
+        definitionZh: "????????????????",
+        exampleEn: "I'd like to open a new account.",
+        exampleZh: "?????????",
+        register: "neutral"
+      },
+      {
+        word: "Balance",
+        phonetic: "/?bæl?ns/",
+        chinese: "??",
+        pinyin: "yú é",
+        partOfSpeech: "noun",
+        definitionEn: "The amount of money in an account.",
+        definitionZh: "???????",
+        exampleEn: "What's my account balance?",
+        exampleZh: "??????????",
+        register: "neutral"
+      },
+      {
+        word: "Deposit",
+        phonetic: "/d??p?z?t/",
+        chinese: "??",
+        pinyin: "cún ku?n",
+        partOfSpeech: "verb / noun",
+        definitionEn: "To put money into a bank account.",
+        definitionZh: "?????????",
+        exampleEn: "I'd like to make a deposit.",
+        exampleZh: "?????",
+        register: "neutral"
+      },
+      {
+        word: "Withdraw",
+        phonetic: "/w?ð?dr??/",
+        chinese: "??",
+        pinyin: "q? ku?n",
+        partOfSpeech: "verb",
+        definitionEn: "To take money out of a bank account.",
+        definitionZh: "?????????",
+        exampleEn: "I need to withdraw some cash.",
+        exampleZh: "?????????",
+        register: "neutral"
+      },
+      {
+        word: "Credit card",
+        phonetic: "/?kred?t k??rd/",
+        chinese: "???",
+        pinyin: "xìn yòng k?",
+        partOfSpeech: "noun",
+        definitionEn: "A plastic card used to pay for things on credit.",
+        definitionZh: "??????????",
+        exampleEn: "Do you accept credit cards?",
+        exampleZh: "?????????",
+        register: "neutral"
+      },
+      {
+        word: "Receipt",
+        phonetic: "/r??si?t/",
+        chinese: "??",
+        pinyin: "sh?u jù",
+        partOfSpeech: "noun",
+        definitionEn: "A paper showing proof of a transaction.",
+        definitionZh: "?????????",
+        exampleEn: "Here is your receipt.",
+        exampleZh: "???????",
+        register: "neutral"
+      }
+    ],
+    dailyExpressions: {
+      title: "Daily Native Expressions",
+      items: [
+        {
+          id: "de-bank-1",
+          expression: "I'd like to open...",
+          chinese: "???...",
+          pinyin: "w? xi?ng k?i...",
+          meaning: "Expressing your desire to start a new account or service.",
+          whenToUse: "When starting a new bank account, credit card, or other financial service.",
+          whenNotToUse: "Don't use for existing accounts — use 'I'd like to check...' or 'I'd like to withdraw...' instead.",
+          nativeFrequency: "Very common when starting new banking relationships.",
+          commonMistakes: [
+            { mistake: "Using 'I want to open...' instead", correction: "'I'd like to open...' is more polite and professional" }
+          ],
+          pronunciation: "/a?d la?k tu? ?o?p?n/",
+          funnyExample: "A: I'd like to open a bank. B: ...We already opened it. A: I'd like to open an account.",
+          memoryTrick: "Think: 'open = start' + 'account = bank relationship' = 'start a bank relationship'",
+          relatedExpressions: ["I want to open...", "Can I open...?", "I'd like to start..."],
+          collocations: ["open an account", "open a savings account", "open a checking account"],
+          miniQuiz: [
+            { question: "'I'd like to open...' means:", options: ["I want to start a new account", "I want to close my account", "I want to borrow money", "I want to work there"], correct: 0 }
+          ],
+          register: "neutral"
+        },
+        {
+          id: "de-bank-2",
+          expression: "Can I see your...?",
+          chinese: "?????...??",
+          pinyin: "néng kàn kan nín de... ma?",
+          meaning: "Asking to see someone's identification or documents.",
+          whenToUse: "When verifying identity at a bank, airport, or official venue.",
+          whenNotToUse: "Don't use for personal items — only for official documents like ID, passport, etc.",
+          nativeFrequency: "Very common in formal and official settings.",
+          commonMistakes: [
+            { mistake: "Using 'Show me your...' instead", correction: "'Can I see your...?' is polite; 'Show me...' is rude" }
+          ],
+          pronunciation: "/kæn a? si? j?r/",
+          funnyExample: "A: Can I see your ID? B: Can I see your sense of humor? A: ...Sir, this is the bank.",
+          memoryTrick: "Think: 'see = look at' + 'your = your document' = 'may I look at your document?'",
+          relatedExpressions: ["May I see...?", "Could you show me...?", "Do you have your...?"],
+          collocations: ["see your ID", "see your passport", "see your documents"],
+          miniQuiz: [
+            { question: "'Can I see your ID?' is:", options: ["A polite request for documents", "An offer to show your ID", "A statement", "An insult"], correct: 0 }
+          ],
+          register: "formal"
+        },
+        {
+          id: "de-bank-3",
+          expression: "Here you go",
+          chinese: "??",
+          pinyin: "g?i nín",
+          meaning: "Giving something to someone in a friendly way.",
+          whenToUse: "When handing over documents, money, or items.",
+          whenNotToUse: "Don't use when receiving — use 'Thank you' instead.",
+          nativeFrequency: "Extremely common everywhere.",
+          commonMistakes: [
+            { mistake: "Using in very formal writing", correction: "Use 'Please find attached' in formal emails" }
+          ],
+          pronunciation: "/h?? ju? ?o?/",
+          funnyExample: "A: Give me the documents. B: Here you go! A: ...That's not how this works.",
+          memoryTrick: "Think: 'here = take this' + 'you go = it's yours' = 'take this, it's yours'",
+          relatedExpressions: ["There you go", "Here you are", "Here it is"],
+          collocations: ["here you go", "here you go thanks", "here you go please"],
+          miniQuiz: [
+            { question: "'Here you go' means:", options: ["Take this / Here it is", "Go away", "Goodbye", "Come here"], correct: 0 }
+          ],
+          register: "neutral"
+        }
+      ]
+    },
+    nativeChunks: [
+      { chunk: "open an account", meaning: "??", example: "I'd like to open a savings account.", register: "neutral", context: "Banking" },
+      { chunk: "Can I see your", meaning: "?????...?", example: "Can I see your ID?", register: "formal", context: "Verification" },
+      { chunk: "Here you go", meaning: "??", example: "Here you go.", register: "neutral", context: "Handing something" },
+      { chunk: "check my balance", meaning: "???", example: "Can I check my balance?", register: "neutral", context: "Account inquiry" },
+      { chunk: "make a deposit", meaning: "??", example: "I'd like to make a deposit.", register: "neutral", context: "Depositing money" }
     ],
     conversation: [
-      { speaker: "Customer", line: "Hello, I'd like to open a new account." },
-      { speaker: "Banker", line: "Of course! What type of account would you like?" },
-      { speaker: "Customer", line: "I need a savings account, please." },
-      { speaker: "Banker", line: "Great choice. Do you have your ID and proof of address?" },
-      { speaker: "Customer", line: "Yes, here they are. How much should I deposit to start?" },
-      { speaker: "Banker", line: "You can start with any amount. Can I see your ID, please?" },
-      { speaker: "Customer", line: "Sure, here is my passport." },
-      { speaker: "Banker", line: "Thank you. Your account is now open. Here is your receipt." },
-      { speaker: "Customer", line: "Thank you very much for your help!" }
+      { speaker: "Customer", line: "Hello, I'd like to open a new account.", register: "neutral" },
+      { speaker: "Banker", line: "Of course! What type of account would you like?", register: "neutral" },
+      { speaker: "Customer", line: "I need a savings account, please.", register: "neutral" },
+      { speaker: "Banker", line: "Great choice. Do you have your ID and proof of address?", register: "neutral" },
+      { speaker: "Customer", line: "Yes, here they are. How much should I deposit to start?", register: "neutral" },
+      { speaker: "Banker", line: "You can start with any amount. Can I see your ID, please?", register: "neutral" },
+      { speaker: "Customer", line: "Sure, here is my passport.", register: "neutral" },
+      { speaker: "Banker", line: "Thank you. Your account is now open. Here is your receipt.", register: "neutral" },
+      { speaker: "Customer", line: "Thank you very much for your help!", register: "neutral" }
     ],
     chineseTranslation: [
-      { speaker: "??", line: "??,?????????" },
-      { speaker: "????", line: "??!???????????" },
-      { speaker: "??", line: "?????????,???" },
+      { speaker: "??", line: "????????????" },
+      { speaker: "????", line: "??????????????" },
+      { speaker: "??", line: "?????????????" },
       { speaker: "????", line: "??????????????????" },
-      { speaker: "??", line: "??,?????????????" },
+      { speaker: "??", line: "????????????????" },
       { speaker: "????", line: "?????????????????" },
-      { speaker: "??", line: "??,???????" },
+      { speaker: "??", line: "??????????" },
       { speaker: "????", line: "???????????????????" },
-      { speaker: "??", line: "????????!" }
+      { speaker: "??", line: "?????????" }
     ],
-    usefulExpressions: [
-      { expression: "I'd like to open...", meaning: "???...", usage: "????" },
-      { expression: "What type of...?", meaning: "?????...?", usage: "????" },
-      { expression: "Can I see your...?", meaning: "?????...??", usage: "??????" },
-      { expression: "Here you go", meaning: "??", usage: "????" },
-      { expression: "Savings account", meaning: "????", usage: "????" }
-    ],
-    grammarFocus: [
+    grammarInContext: [
       {
         title: "Polite Requests with 'I'd like'",
         explanation: "? 'I'd like to...' ???????",
@@ -5726,20 +5873,104 @@ export const conversations: ConversationTopic[] = [
         ]
       }
     ],
-    collocationsAndChunks: [
-      { chunk: "Open an account", meaning: "??", example: "I'd like to open a savings account." },
-      { chunk: "Check my balance", meaning: "???", example: "Can I check my balance?" },
-      { chunk: "Make a deposit", meaning: "??", example: "I want to make a deposit." }
-    ],
-    pronunciationTips: [
+    pronunciation: [
       { tip: "I'd like ? /a?d la?k/", example: "Soft d sound, natural flow" },
-      { tip: "Savings account ? /'se?v??z ?'ka?nt/", example: "'Savings' has two syllables" }
+      { tip: "Savings account ? /?se?v??z ??ka?nt/", example: "'Savings' has two syllables" }
+    ],
+    shadowing: [
+      { line: "Hello, I'd like to open a new account.", emphasis: "I'd like to open" },
+      { line: "What type of account would you like?", emphasis: "type of account" },
+      { line: "I need a savings account, please.", emphasis: "savings account" },
+      { line: "Do you have your ID and proof of address?", emphasis: "ID and proof of address" }
+    ],
+    speakingPractice: {
+      instruction: "Practice opening a bank account and making a deposit. Use 'I'd like', 'Can I see', and 'Here you go'.",
+      hints: [
+        "Say what type of account you want",
+        "Have your ID ready",
+        "Ask about minimum deposit",
+        "Confirm the account is open"
+      ],
+      followUpQuestions: [
+        "What type of account did you open?",
+        "What documents did you need?",
+        "How much did you deposit?",
+        "Was the banker helpful?"
+      ]
+    },
+    rolePlay: {
+      scenario: "You go to a bank to open your first savings account. Talk to the banker, provide your documents, and ask about the minimum deposit.",
+      prompts: [
+        "Greet the banker",
+        "State what you want to do",
+        "Provide ID and address proof",
+        "Ask about the minimum deposit",
+        "Thank them and leave"
+      ],
+      partnerLines: [
+        "Hello, I'd like to open a new account.",
+        "Of course! What type of account would you like?",
+        "Great choice. Do you have your ID and proof of address?",
+        "Thank you. Your account is now open."
+      ]
+    },
+    homework: {
+      task: "Bank Vocabulary Hunt",
+      description: "Visit a bank or watch a banking video. Write down 10 banking words or phrases you hear. Practice using them in sentences.",
+      dueText: "Before next lesson"
+    },
+    quiz: [
+      {
+        id: "q1",
+        question: "'I'd like to open...' means:",
+        questionZh: "'I'd like to open...'????",
+        options: [
+          { label: "A) I want to start a new account", labelZh: "A) ????????", correct: true },
+          { label: "B) I want to close my account", labelZh: "B) ????????", correct: false },
+          { label: "C) I want to borrow money", labelZh: "C) ????", correct: false },
+          { label: "D) I want to work there", labelZh: "D) ???????", correct: false }
+        ],
+        explanation: "'I'd like to open...' means you want to start a new account or service.",
+        explanationZh: "'I'd like to open...'???????????????"
+      },
+      {
+        id: "q2",
+        question: "'Can I see your ID?' is:",
+        questionZh: "'Can I see your ID?'??",
+        options: [
+          { label: "A) A polite request for documents", labelZh: "A) ?????????", correct: true },
+          { label: "B) An offer to show your ID", labelZh: "B) ????????", correct: false },
+          { label: "C) A statement", labelZh: "C) ??", correct: false },
+          { label: "D) An insult", labelZh: "D) ??", correct: false }
+        ],
+        explanation: "'Can I see your ID?' is a polite way to ask for someone's identification.",
+        explanationZh: "'Can I see your ID?'??????????????????"
+      }
+    ],
+    review: [
+      { key: "open", prompt: "How do you say you want to start a new account?", answer: "I'd like to open..." },
+      { key: "documents", prompt: "What documents do you need at a bank?", answer: "ID and proof of address" },
+      { key: "deposit", prompt: "How do you say you want to deposit money?", answer: "I'd like to make a deposit" }
+    ],
+    humorNotes: [
+      {
+        context: "When the banker asks for your ID",
+        punchline: "A: Can I see your ID? B: Here you go. A: ...This is a drawing of a cat. B: That's my emotional support cat. Her name is Account.",
+        explanation: "Self-deprecating humor about banking confusion is very common."
+      }
+    ],
+    usefulExpressions: [
+      { expression: "I'd like to open...", meaning: "???...", usage: "????" },
+      { expression: "What type of...?", meaning: "?????...?", usage: "????" },
+      { expression: "Can I see your...?", meaning: "?????...??", usage: "??????" },
+      { expression: "Here you go", meaning: "??", usage: "????" },
+      { expression: "Savings account", meaning: "????", usage: "????" }
     ],
     commonMistakes: [
       {
         mistake: "'Open a bank' instead of 'open an account'",
         correction: "Correct: 'open an account'",
-        explanation: "??? 'bank';???? 'account'(??)?"
+        explanation: "?? 'open a bank'??? 'open an account'(??)?"
       }
     ],
     rolePlayPractice: [
