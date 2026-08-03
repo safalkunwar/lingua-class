@@ -8514,43 +8514,190 @@ export const conversations: ConversationTopic[] = [
     color: "from-blue-400 to-cyan-400",
     level: "A1",
     estimatedTime: "10 min",
-    vocabularyPreview: [
-      { word: "Post", phonetic: "/po?st/", chinese: "??", partOfSpeech: "noun / verb" },
-      { word: "Follow", phonetic: "/'f?lo?/", chinese: "??", partOfSpeech: "verb" },
-      { word: "Like", phonetic: "/la?k/", chinese: "??", partOfSpeech: "verb" },
-      { word: "Comment", phonetic: "/'k?ment/", chinese: "??", partOfSpeech: "noun / verb" },
-      { word: "Share", phonetic: "/?er/", chinese: "??", partOfSpeech: "verb" },
-      { word: "Online", phonetic: "/'?nla?n/", chinese: "???", partOfSpeech: "adjective" }
+    registerMarkers: [
+      { level: "formal", label: "Formal", color: "bg-blue-100 text-blue-800 border-blue-200", description: "Professional networking or work posts" },
+      { level: "neutral", label: "Neutral", color: "bg-gray-100 text-gray-800 border-gray-200", description: "Standard social media chat" },
+      { level: "casual", label: "Casual", color: "bg-green-100 text-green-800 border-green-200", description: "Chatting with friends online" }
+    ],
+    warmUp: {
+      title: "Warm-Up: Digital English",
+      content: "Social media is a huge part of modern life. In this lesson, you'll learn how to talk about posts, likes, comments, and sharing in English.",
+      contentZh: "?????????????????????????????????????????????"
+    },
+    vocabulary: [
+      {
+        word: "Post",
+        phonetic: "/po?st/",
+        chinese: "??/??",
+        pinyin: "ti? zi / f? bù",
+        partOfSpeech: "noun / verb",
+        definitionEn: "A piece of content shared on social media; also the act of sharing it.",
+        definitionZh: "?????????????????????",
+        exampleEn: "I posted a photo on Instagram.",
+        exampleZh: "??Instagram????????",
+        register: "neutral"
+      },
+      {
+        word: "Follow",
+        phonetic: "/?f?lo?/",
+        chinese: "??",
+        pinyin: "gu?n zhù",
+        partOfSpeech: "verb",
+        definitionEn: "To subscribe to someone's social media account.",
+        definitionZh: "????????????",
+        exampleEn: "I follow 100 accounts on Twitter.",
+        exampleZh: "??Twitter????100????",
+        register: "neutral"
+      },
+      {
+        word: "Like",
+        phonetic: "/la?k/",
+        chinese: "??",
+        pinyin: "di?n zàn",
+        partOfSpeech: "verb",
+        definitionEn: "To show approval or enjoyment of a post.",
+        definitionZh: "????????????",
+        exampleEn: "Can you like my new post?",
+        exampleZh: "????????????",
+        register: "neutral"
+      },
+      {
+        word: "Comment",
+        phonetic: "/?k?ment/",
+        chinese: "??",
+        pinyin: "píng lùn",
+        partOfSpeech: "noun / verb",
+        definitionEn: "A written response to a post; also the act of writing one.",
+        definitionZh: "??????????????????",
+        exampleEn: "Please comment on my photo.",
+        exampleZh: "?????????",
+        register: "neutral"
+      },
+      {
+        word: "Share",
+        phonetic: "/?er/",
+        chinese: "??",
+        pinyin: "f?n xi?ng",
+        partOfSpeech: "verb",
+        definitionEn: "To repost someone else's content on your own profile.",
+        definitionZh: "??????????????????",
+        exampleEn: "Can you share this with your friends?",
+        exampleZh: "?????????????",
+        register: "neutral"
+      },
+      {
+        word: "Online",
+        phonetic: "/??nla?n/",
+        chinese: "???",
+        pinyin: "zài xiàn de",
+        partOfSpeech: "adjective",
+        definitionEn: "Connected to the internet; available on the internet.",
+        definitionZh: "?????????????????",
+        exampleEn: "I spend 2 hours online every day.",
+        exampleZh: "????2?????",
+        register: "neutral"
+      }
+    ],
+    dailyExpressions: {
+      title: "Daily Native Expressions",
+      items: [
+        {
+          id: "de-social-1",
+          expression: "Did you see my post?",
+          chinese: "??????????",
+          pinyin: "n? kàn dào w? de ti? zi le ma?",
+          meaning: "Asking if someone has seen your social media post.",
+          whenToUse: "When you want to know if friends have seen your latest content.",
+          whenNotToUse: "Don't use for private messages — this is for public posts.",
+          nativeFrequency: "Very common in social media conversations.",
+          commonMistakes: [
+            { mistake: "Using 'Did you post my photo?' instead", correction: "'Did you see my post?' asks if they viewed it, not if they posted it" }
+          ],
+          pronunciation: "/d?d ju? si? ma? po?st/",
+          funnyExample: "A: Did you see my post? B: Which one? A: ...All of them. B: ...You post too much. A: ...That's the point.",
+          memoryTrick: "Think: 'did you see = have you viewed' + 'my post = my content' = 'have you viewed my content?'",
+          relatedExpressions: ["Have you seen my post?", "Did you like my post?", "What do you think of my post?"],
+          collocations: ["see my post", "see my photo", "see my story"],
+          miniQuiz: [
+            { question: "'Did you see my post?' asks:", options: ["If they viewed your post", "If they posted something", "If they like posts", "If they follow you"], correct: 0 }
+          ],
+          register: "neutral"
+        },
+        {
+          id: "de-social-2",
+          expression: "Can you like and comment?",
+          chinese: "?????????",
+          pinyin: "n? néng di?n zàn hé píng lùn ma?",
+          meaning: "Asking someone to engage with your social media post.",
+          whenToUse: "When you want more engagement on your post.",
+          whenNotToUse: "Don't ask strangers — this is for friends and family.",
+          nativeFrequency: "Common among friends on social media.",
+          commonMistakes: [
+            { mistake: "Using 'Can you like it?' only", correction: "Adding 'and comment' gets more engagement" }
+          ],
+          pronunciation: "/kæn ju? la?k ?nd ?k?ment/",
+          funnyExample: "A: Can you like and comment? B: I can, but I won't. A: ...Why not? B: Because I'm not on your post.",
+          memoryTrick: "Think: 'like = approve' + 'comment = respond' = 'please approve and respond to my post'",
+          relatedExpressions: ["Can you share this?", "Please like and share", "Engage with my post"],
+          collocations: ["like and comment", "like and share", "comment on my post"],
+          miniQuiz: [
+            { question: "'Can you like and comment?' asks someone to:", options: ["Engage with your post", "Delete your post", "Report your post", "Ignore your post"], correct: 0 }
+          ],
+          register: "casual"
+        },
+        {
+          id: "de-social-3",
+          expression: "The more... the better",
+          chinese: "??...??",
+          pinyin: "yuè du?... yuè h?o",
+          meaning: "A comparative structure meaning more of something is desirable.",
+          whenToUse: "When expressing that quantity improves quality or outcome.",
+          whenNotToUse: "Don't use for negative things — it only works for positive or neutral things.",
+          nativeFrequency: "Very common in social media and marketing.",
+          commonMistakes: [
+            { mistake: "Using 'The more... the good' instead", correction: "Always use 'better' in this structure: 'The more... the better'" }
+          ],
+          pronunciation: "/ð? m??r... ð? ?bet?r/",
+          funnyExample: "A: The more shares, the better. B: The more likes, the better. A: The more memes, the better. B: ...We're on the same page.",
+          memoryTrick: "Think: 'more = increase' + 'better = improve' = 'more is better'",
+          relatedExpressions: ["The more the merrier", "More is better", "Quantity over quality"],
+          collocations: ["the more the better", "the more shares", "the more likes"],
+          miniQuiz: [
+            { question: "'The more shares, the better' means:", options: ["More shares is good", "Shares are bad", "Shares are expensive", "I don't want shares"], correct: 0 }
+          ],
+          register: "neutral"
+        }
+      ]
+    },
+    nativeChunks: [
+      { chunk: "Did you see", meaning: "???...??", example: "Did you see my post?", register: "neutral", context: "Asking about visibility" },
+      { chunk: "Can you like and comment", meaning: "????????", example: "Can you like and comment?", register: "casual", context: "Requesting engagement" },
+      { chunk: "post more often", meaning: "??????", example: "I'm trying to post more often.", register: "neutral", context: "Frequency" },
+      { chunk: "The more... the better", meaning: "??...??", example: "The more shares, the better.", register: "neutral", context: "Comparison" },
+      { chunk: "share with my friends", meaning: "???????", example: "Share this with my friends.", register: "casual", context: "Sharing" }
     ],
     conversation: [
-      { speaker: "Anna", line: "Did you see my new post on Instagram?" },
-      { speaker: "Ben", line: "Not yet! What did you post?" },
-      { speaker: "Anna", line: "I posted a photo of my trip. Can you like and comment?" },
-      { speaker: "Ben", line: "Sure! I'll do it now. How many followers do you have now?" },
-      { speaker: "Anna", line: "I have 500 followers. I'm trying to post more often." },
-      { speaker: "Ben", line: "That's great! Should I share your post with my friends?" },
-      { speaker: "Anna", line: "Yes, please! The more shares, the better." }
+      { speaker: "Anna", line: "Did you see my new post on Instagram?", register: "neutral" },
+      { speaker: "Ben", line: "Not yet! What did you post?", register: "neutral" },
+      { speaker: "Anna", line: "I posted a photo of my trip. Can you like and comment?", register: "casual" },
+      { speaker: "Ben", line: "Sure! I'll do it now. How many followers do you have now?", register: "neutral" },
+      { speaker: "Anna", line: "I have 500 followers. I'm trying to post more often.", register: "neutral" },
+      { speaker: "Ben", line: "That's great! Should I share your post with my friends?", register: "neutral" },
+      { speaker: "Anna", line: "Yes, please! The more shares, the better.", register: "neutral" }
     ],
     chineseTranslation: [
-      { speaker: "??", line: "????Instagram????????" },
-      { speaker: "?", line: "??!??????" },
-      { speaker: "??", line: "????????????????????" },
-      { speaker: "?", line: "??!????????????????" },
-      { speaker: "??", line: "??500??????????????" },
-      { speaker: "?", line: "???!???????????????" },
-      { speaker: "??", line: "??,?!???????" }
+      { speaker: "Anna", line: "?????Instagram????????" },
+      { speaker: "Ben", line: "?????????" },
+      { speaker: "Anna", line: "????????????????????" },
+      { speaker: "Ben", line: "???????????????????" },
+      { speaker: "Anna", line: "??500????????????????" },
+      { speaker: "Ben", line: "????????????????????" },
+      { speaker: "Anna", line: "????????????" }
     ],
-    usefulExpressions: [
-      { expression: "Did you see my post?", meaning: "??????????", usage: "????????????" },
-      { expression: "Can you like and comment?", meaning: "?????????", usage: "????" },
-      { expression: "Post more often", meaning: "??????", usage: "??????" },
-      { expression: "The more... the better", meaning: "????", usage: "????" },
-      { expression: "Share with...", meaning: "???...", usage: "????" }
-    ],
-    grammarFocus: [
+    grammarInContext: [
       {
         title: "Present Perfect for Recent Actions",
-        explanation: "????????????????",
+        explanation: "????????????????????????",
         examples: [
           "Have you seen my post?",
           "I have just posted a photo.",
@@ -8567,20 +8714,106 @@ export const conversations: ConversationTopic[] = [
         ]
       }
     ],
-    collocationsAndChunks: [
-      { chunk: "Post a photo", meaning: "???", example: "I posted a photo on Instagram." },
-      { chunk: "Like and comment", meaning: "?????", example: "Can you like and comment?" },
-      { chunk: "The more... the better", meaning: "????", example: "The more shares, the better." }
+    pronunciation: [
+      { tip: "Followers ? /?f?lo??rz/", example: "Stress on first syllable" },
+      { tip: "The more... the better ? /ð? m??r... ð? ?bet?r/", example: "Connected speech" }
     ],
-    pronunciationTips: [
-      { tip: "Followers ? /'f?lo??rz/", example: "Stress on first syllable" },
-      { tip: "The more... the better ? /ð? m??r... ð? 'bet?r/", example: "Connected speech" }
+    shadowing: [
+      { line: "Did you see my new post on Instagram?", emphasis: "Did you see" },
+      { line: "I posted a photo of my trip. Can you like and comment?", emphasis: "like and comment" },
+      { line: "How many followers do you have now?", emphasis: "How many followers" },
+      { line: "I'm trying to post more often.", emphasis: "post more often" },
+      { line: "The more shares, the better.", emphasis: "The more... the better" }
+    ],
+    speakingPractice: {
+      instruction: "Practice talking about social media with a friend. Use 'post', 'like', 'follow', and 'share'. Discuss your favorite platforms and posting habits.",
+      hints: [
+        "Ask about their latest post",
+        "Offer to like and comment",
+        "Ask about follower count",
+        "Suggest sharing posts",
+        "Talk about posting frequency"
+      ],
+      followUpQuestions: [
+        "What's your favorite platform?",
+        "How often do you post?",
+        "How many followers do you have?",
+        "Do you follow many people?"
+      ]
+    },
+    rolePlay: {
+      scenario: "You and a friend are talking about social media. Ask about their posts, offer to like and share, and discuss your own online habits.",
+      prompts: [
+        "Ask if they saw your post",
+        "Offer to like and comment",
+        "Ask about their follower count",
+        "Suggest sharing each other's posts",
+        "Talk about posting frequency"
+      ],
+      partnerLines: [
+        "Did you see my new post on Instagram?",
+        "Not yet! What did you post?",
+        "Sure! I'll do it now. How many followers do you have now?",
+        "Yes, please! The more shares, the better."
+      ]
+    },
+    homework: {
+      task: "Social Media Observation",
+      description: "Spend 10 minutes on your favorite social media platform. Write down 5 phrases you see and practice using them in sentences.",
+      dueText: "Before next lesson"
+    },
+    quiz: [
+      {
+        id: "q1",
+        question: "'Did you see my post?' asks:",
+        questionZh: "'Did you see my post?'?????",
+        options: [
+          { label: "A) If they viewed your post", labelZh: "A) ??????????", correct: true },
+          { label: "B) If they posted something", labelZh: "B) ????????", correct: false },
+          { label: "C) If they like posts", labelZh: "C) ??????", correct: false },
+          { label: "D) If they follow you", labelZh: "D) ???????", correct: false }
+        ],
+        explanation: "'Did you see my post?' asks if someone has viewed your social media post.",
+        explanationZh: "'Did you see my post?'?????????????????"
+      },
+      {
+        id: "q2",
+        question: "'The more shares, the better' means:",
+        questionZh: "'The more shares, the better'????",
+        options: [
+          { label: "A) More shares is good", labelZh: "A) ??????", correct: true },
+          { label: "B) Shares are bad", labelZh: "B) ????", correct: false },
+          { label: "C) Shares are expensive", labelZh: "C) ????", correct: false },
+          { label: "D) I don't want shares", labelZh: "D) ??????", correct: false }
+        ],
+        explanation: "'The more... the better' means increasing something is desirable.",
+        explanationZh: "'The more... the better'????????????"
+      }
+    ],
+    review: [
+      { key: "post", prompt: "How do you ask if someone saw your post?", answer: "Did you see my post?" },
+      { key: "engage", prompt: "How do you ask someone to like and comment?", answer: "Can you like and comment?" },
+      { key: "shares", prompt: "What does 'The more shares, the better' mean?", answer: "More shares is good" }
+    ],
+    humorNotes: [
+      {
+        context: "When your post gets no likes",
+        punchline: "A: The more shares, the better. B: ...Your post has 2 likes. A: ...One is from my mom. B: ...That's the better part.",
+        explanation: "Self-deprecating humor about social media engagement is very common."
+      }
+    ],
+    usefulExpressions: [
+      { expression: "Did you see my post?", meaning: "??????????", usage: "????????" },
+      { expression: "Can you like and comment?", meaning: "?????????", usage: "????" },
+      { expression: "Post more often", meaning: "??????", usage: "?????" },
+      { expression: "The more... the better", meaning: "??...??", usage: "??????" },
+      { expression: "Share with...", meaning: "?...??", usage: "????" }
     ],
     commonMistakes: [
       {
-        mistake: "'Did you post my photo?'",
-        correction: "'Did you see my post?' ? 'Have you seen my post?'",
-        explanation: "'See' ????;'Post' ?????"
+        mistake: "? 'Did you post my photo?' ??? 'Did you see my post?'",
+        correction: "?????? 'Did you see my post?' ? 'Have you seen my post?'",
+        explanation: "'See' ?????'Post' ?????"
       }
     ],
     rolePlayPractice: [
