@@ -3,21 +3,13 @@
 import { useState } from "react";
 import { StudentSidebar } from "@/components/layout/sidebar";
 import { dailyExpressions } from "@/data/daily-expressions";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import Link from "next/link";
-import {
-  BookOpen,
-  MessageCircle,
-  HelpCircle,
-  Lightbulb,
-  Volume2,
-  BookMarked,
-  Search,
-} from "lucide-react";
+import { Volume2 } from "lucide-react";
 import { DailyExpression } from "@/types/conversations";
 import { useSpeechSynthesis } from "@/hooks/use-speech-synthesis";
 
