@@ -720,6 +720,60 @@ export const roughEnglish: SlangItem[] = [
       { speaker: "Alex", line: "这不是重点。你应该道歉。" }
     ],
     culturalNotes: "Dismissive and often confrontational. Can escalate arguments. While not a 'swear word,' it's considered rude in many contexts because it minimizes the other person's concerns."
+  },
+  {
+    id: "rough-28",
+    word: "Holy shit",
+    chinese: "我靠/天哪",
+    pinyin: "wǒ kào / tiān ne",
+    meaning: "Extreme surprise or shock (very vulgar)",
+    example: "Holy shit! Did you see that car crash?",
+    exampleZh: "我靠！你看到那场车祸了吗？",
+    whoSaysIt: "Almost everyone in extreme surprise, but very vulgar",
+    ageGroup: "Teens and above",
+    region: "All English-speaking countries",
+    isOffensive: true,
+    offensiveLevel: 4,
+    safeAlternatives: ["Oh my god", "Wow", "Oh no", "Are you kidding"],
+    conversation: [
+      { speaker: "Jake", line: "Holy shit! Look at the size of that wave!" },
+      { speaker: "Mia", line: "I know! It's massive!" },
+      { speaker: "Jake", line: "We have to surf it!" }
+    ],
+    chineseTranslation: [
+      { speaker: "Jake", line: "我靠！看那个浪有多大！" },
+      { speaker: "Mia", line: "我知道！它太大了！" },
+      { speaker: "Jake", line: "我们必须去冲浪！" }
+    ],
+    culturalNotes: "Extremely common expletive expressing shock, surprise, or disbelief. Very vulgar but widely used. Avoid in polite company, at work, or around children.",
+    warning: "WARNING: 'Holy shit' is highly offensive and vulgar. It combines a religious term with a profanity. Never use in formal settings or with people you don't know well."
+  },
+  {
+    id: "rough-29",
+    word: "Fuck off",
+    chinese: "滚开/去死",
+    pinyin: "gǔn kāi / qù sǐ",
+    meaning: "Go away / Leave me alone (extremely vulgar, aggressive)",
+    example: "Fuck off! I don't want to talk to you.",
+    exampleZh: "滚开！我不想跟你说话。",
+    whoSaysIt: "Angry people, people in intense arguments",
+    ageGroup: "Adults only",
+    region: "All English-speaking countries",
+    isOffensive: true,
+    offensiveLevel: 5,
+    safeAlternatives: ["Go away", "Leave me alone", "I don't want to talk", "Please leave"],
+    conversation: [
+      { speaker: "Alex", line: "Fuck off! I'm done with your nonsense." },
+      { speaker: "Sam", line: "I was just trying to help." },
+      { speaker: "Alex", line: "I didn't ask for your help. Fuck off!" }
+    ],
+    chineseTranslation: [
+      { speaker: "Alex", line: "滚开！我受够了你的胡说八道。" },
+      { speaker: "Sam", line: "我只是想帮忙。" },
+      { speaker: "Alex", line: "我没要你帮忙。滚开！" }
+    ],
+    culturalNotes: "One of the most aggressive and offensive phrases in English. Combines a sexual profanity with a command to leave. Can be considered verbal abuse. Almost never acceptable in any context.",
+    warning: "WARNING: 'Fuck off' is extremely vulgar and aggressive. It is considered verbal abuse in many contexts. Using this toward someone can result in serious consequences, including legal action in some places. NEVER use this phrase."
   }
 ];
 
