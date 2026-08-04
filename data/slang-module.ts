@@ -1355,6 +1355,86 @@ export const slangModule: SlangModule = {
           exampleZh: "你知道的，我觉得我们应该早点走。",
           category: "casual-connectors",
         },
+        {
+          id: "literally",
+          english: "Literally",
+          chinese: " literally/真的是",
+          pinyin: " literally / zhēn de shì",
+          pronunciation: "li-ter-al-lee",
+          literalMeaning: "In a literal manner",
+          actualMeaning: "Really / Actually / I'm not exaggerating (or ironically, I am exaggerating)",
+          detailsEn:
+            "One of the most overused words in English. Used both as an intensifier ('I'm literally dying') and to mean 'actually' ('I literally just got here').",
+          detailsZh: "英语中最被滥用的词之一。既用作强调词（'我 literally 要死了'），也意为'实际上'（'我 literally 刚到'）。",
+          intensity: 1,
+          safetyLabels: [
+            { label: "Very Safe", icon: "✅", settings: ["All settings"] },
+          ],
+          regionalVariations: [
+            { region: "American", usage: "I'm literally so tired.", note: "Very common" },
+            { region: "British", usage: "I'm literally exhausted.", note: "Common" },
+            { region: "Australian", usage: "I'm literally shattered.", note: "Common" },
+          ],
+          demographics: {
+            ageGroup: "All ages",
+            tone: "Neutral",
+            genderNeutral: true,
+          },
+          nonVerbalCues: {
+            facialExpression: "Serious or exaggerated",
+            bodyLanguage: "Hand gestures for emphasis",
+          },
+          comparative: {
+            commonMistakes: ["Using for things that aren't true", "Overusing in formal settings"],
+            saferAlternatives: ["Really", "Actually", "Truly", "Honestly"],
+            similarWords: ["Actually", "Really", "Honestly", "Truly"],
+            culturalNotes:
+              "Has become one of the most hated words in English due to overuse. Many people use it to mean 'figuratively' when they should mean 'literally.' Native speakers use it constantly.",
+          },
+          exampleEn: "I'm literally so hungry I could eat a horse.",
+          exampleZh: "我 literally 饿得能吃下一匹马。",
+          category: "casual-connectors",
+        },
+        {
+          id: "actually",
+          english: "Actually",
+          chinese: "实际上/其实",
+          pinyin: "shí jì shàng / qí shí",
+          pronunciation: "ak-choo-al-lee",
+          literalMeaning: "In actual fact",
+          actualMeaning: "Correction or contrast with what was just said",
+          detailsEn:
+            "Very common filler used to correct, contradict, or add nuance to what was just said.",
+          detailsZh: "非常常见的填充词，用于纠正、反驳或增加刚才所说内容的细微差别。",
+          intensity: 1,
+          safetyLabels: [
+            { label: "Very Safe", icon: "✅", settings: ["All settings"] },
+          ],
+          regionalVariations: [
+            { region: "American", usage: "Actually, I think we should leave now.", note: "Very common" },
+            { region: "British", usage: "Actually, I disagree.", note: "Very common" },
+            { region: "Australian", usage: "Actually, it's over there.", note: "Common" },
+          ],
+          demographics: {
+            ageGroup: "All ages",
+            tone: "Neutral",
+            genderNeutral: true,
+          },
+          nonVerbalCues: {
+            facialExpression: "Slight pause or thoughtful",
+            bodyLanguage: "Small hand gesture or shake of head",
+          },
+          comparative: {
+            commonMistakes: ["Using too aggressively - can sound argumentative", "Using in place of 'sorry'"],
+            saferAlternatives: ["In fact", "To be honest", "To clarify", "I think"],
+            similarWords: ["Really", "In fact", "To be honest"],
+            culturalNotes:
+              "One of the most common filler words in English. Often used to politely disagree or correct someone. Can sound aggressive if said with the wrong tone.",
+          },
+          exampleEn: "Actually, I think we should take a different route.",
+          exampleZh: "实际上，我觉得我们应该走另一条路。",
+          category: "casual-connectors",
+        },
       ],
       dialogues: [
         {
