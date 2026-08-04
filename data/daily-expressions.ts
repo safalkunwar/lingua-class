@@ -267,28 +267,6 @@ export const dailyExpressions: DailyExpression[] = [
     register: "neutral"
   },
   {
-    id: "dne-sounds-good",
-    expression: "Sounds good",
-    chinese: "听起来不错",
-    pinyin: "tīng qǐ lái bú cuò",
-    meaning: "I agree / That works for me / Okay.",
-    whenToUse: "Responding to plans, suggestions, or proposals. Very common in both casual and professional settings.",
-    whenNotToUse: "Can sound non-committal if you're not actually interested. Use 'That sounds great!' if you're excited.",
-    nativeFrequency: "Extremely common. The go-to response to suggestions in American English.",
-    commonMistakes: [
-      { mistake: "Using when you're not actually interested", correction: "Use 'That sounds great' or 'I'm not sure' to be honest" }
-    ],
-    pronunciation: "/saʊndz ɡʊd/",
-    funnyExample: "A: Let's meet at 7pm? B: Sounds good. A: ...But you hate 7pm. B: ...It sounds good on paper.",
-    memoryTrick: "Think: 'SOUNDS GOOD = I approve = that works for me.'",
-    relatedExpressions: ["That works", "I'm down", "Sure", "Okay"],
-    collocations: ["sounds good to me", "sounds good, let's do it", "that sounds good"],
-    miniQuiz: [
-      { question: "'Sounds good' means:", options: ["I agree", "I disagree", "I don't know", "I'm confused"], correct: 0 }
-    ],
-    register: "neutral"
-  },
-  {
     id: "dne-my-pleasure",
     expression: "My pleasure",
     chinese: "我的荣幸",
