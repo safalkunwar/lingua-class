@@ -287,6 +287,72 @@ export const dailyExpressions: DailyExpression[] = [
       { question: "'Sounds good' means:", options: ["I agree", "I disagree", "I don't know", "I'm confused"], correct: 0 }
     ],
     register: "neutral"
+  },
+  {
+    id: "dne-my-pleasure",
+    expression: "My pleasure",
+    chinese: "我的荣幸",
+    pinyin: "wǒ de róng xìng",
+    meaning: "You're welcome / I'm happy to help",
+    whenToUse: "Responding to 'thank you.' More formal and sincere than 'you're welcome.'",
+    whenNotToUse: "Can sound overly formal in very casual settings. Use 'no problem' or 'sure' with close friends.",
+    nativeFrequency: "Common in both casual and professional settings.",
+    commonMistakes: [
+      { mistake: "Using with strangers when you want to sound casual", correction: "Use 'you're welcome' or 'no problem' for casual responses" }
+    ],
+    pronunciation: "/maɪ ˈpleʒər/",
+    funnyExample: "A: Thanks for carrying my bags! B: My pleasure. A: ...You just carried one bag. B: ...My pleasure.",
+    memoryTrick: "Think: 'MY PLEASURE = I enjoyed helping = you're welcome.'",
+    relatedExpressions: ["You're welcome", "Happy to help", "Glad I could help"],
+    collocations: ["my pleasure", "it's my pleasure"],
+    miniQuiz: [
+      { question: "'My pleasure' is:", options: ["A sincere you're welcome", "A greeting", "A request", "A rejection"], correct: 0 }
+    ],
+    register: "neutral"
+  },
+  {
+    id: "dne-youre-welcome",
+    expression: "You're welcome",
+    chinese: "不客气",
+    pinyin: "bù kè qì",
+    meaning: "You're welcome / My pleasure",
+    whenToUse: "The standard response to 'thank you.' Appropriate in almost all situations.",
+    whenNotToUse: "Can sound a bit formal or stiff in very casual settings. Use 'no problem' or 'sure' with close friends.",
+    nativeFrequency: "Extremely common. The default response to 'thank you' in English.",
+    commonMistakes: [
+      { mistake: "Using 'no problem' in formal settings", correction: "Use 'you're welcome' in professional or formal settings" }
+    ],
+    pronunciation: "/jɔːr ˈwelkəm/",
+    funnyExample: "A: Thanks! B: You're welcome. A: ...That was literally your job. B: ...You're welcome.",
+    memoryTrick: "Think: 'YOU'RE WELCOME = you are welcome = glad to help.'",
+    relatedExpressions: ["My pleasure", "No problem", "Anytime", "Happy to help"],
+    collocations: ["you're welcome", "you are very welcome"],
+    miniQuiz: [
+      { question: "'You're welcome' is:", options: ["The standard response to thanks", "A greeting", "A question", "An insult"], correct: 0 }
+    ],
+    register: "neutral"
+  },
+  {
+    id: "dne-anytime",
+    expression: "Anytime",
+    chinese: "随时效劳/不用谢",
+    pinyin: "suí shí xiào láo / bù yòng xiè",
+    meaning: "You're welcome / Happy to help anytime",
+    whenToUse: "Responding to 'thank you' in casual settings. Implies you're always ready to help.",
+    whenNotToUse: "Too casual for formal or professional settings. Use 'you're welcome' or 'my pleasure' instead.",
+    nativeFrequency: "Very common in casual American English.",
+    commonMistakes: [
+      { mistake: "Using in formal settings", correction: "Reserve 'anytime' for casual friends and family" }
+    ],
+    pronunciation: "/ˈeniˌtaɪm/",
+    funnyExample: "A: Thanks for the ride! B: Anytime. A: ...Even at 3am? B: ...Maybe not anytime.",
+    memoryTrick: "Think: 'ANYTIME = whenever you need me = you're welcome.'",
+    relatedExpressions: ["You're welcome", "No problem", "My pleasure", "Sure"],
+    collocations: ["anytime", "anytime you need me"],
+    miniQuiz: [
+      { question: "'Anytime' means:", options: ["You're welcome / happy to help", "See you later", "I don't know", "Goodbye"], correct: 0 }
+    ],
+    register: "casual"
   }
 ];
 
