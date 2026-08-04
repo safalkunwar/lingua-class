@@ -250,6 +250,84 @@ export const slangAcademy: SlangLevelData[] = [
           { speaker: "Lisa", line: "我们这周末应该再来。" }
         ],
         culturalNotes: "'Vibe' refers to the emotional atmosphere of a place or situation. 'Good vibes' means positive atmosphere. 'Bad vibes' means negative or uncomfortable atmosphere."
+      },
+      {
+        id: "safe-9",
+        word: "Bet",
+        chinese: "一言为定/没问题",
+        pinyin: "yī yán wéi dìng / méi wèn tí",
+        meaning: "Agreement / confirmation / 'okay'",
+        example: "We meeting at 5? — Bet.",
+        exampleZh: "我们5点见面？——一言为定。",
+        whoSaysIt: "Everyone, especially young people",
+        ageGroup: "Teens and above",
+        region: "All English-speaking countries",
+        isOffensive: false,
+        offensiveLevel: 0,
+        safeAlternatives: ["Sure", "Okay", "Agreed", "Sounds good"],
+        conversation: [
+          { speaker: "Amy", line: "We should hang out this weekend." },
+          { speaker: "John", line: "Bet! Where do you want to go?" },
+          { speaker: "Amy", line: "I'll text you the details." }
+        ],
+        chineseTranslation: [
+          { speaker: "Amy", line: "我们这周末应该一起玩。" },
+          { speaker: "John", line: "一言为定！你想去哪？" },
+          { speaker: "Amy", line: "我会发信息给你详情。" }
+        ],
+        culturalNotes: "'Bet' is a very common way to say 'agreed' or 'okay' in casual speech. Originated from AAVE but now used by everyone."
+      },
+      {
+        id: "safe-10",
+        word: "I feel you",
+        chinese: "我懂你/我理解你",
+        pinyin: "wǒ dǒng nǐ / wǒ lǐ jiě nǐ",
+        meaning: "I understand you / I empathize with you",
+        example: "I'm so stressed about the exam. — I feel you, I have three this week.",
+        exampleZh: "我考试压力好大。——我懂你，我这周也有三个考试。",
+        whoSaysIt: "Everyone, especially young people",
+        ageGroup: "Teens and above",
+        region: "All English-speaking countries",
+        isOffensive: false,
+        offensiveLevel: 0,
+        safeAlternatives: ["I understand", "I get it", "I know what you mean", "Same here"],
+        conversation: [
+          { speaker: "Lisa", line: "I'm so tired. I barely slept last night." },
+          { speaker: "Tom", line: "I feel you. I was up until 3am studying too." },
+          { speaker: "Lisa", line: "We should take a nap after class." }
+        ],
+        chineseTranslation: [
+          { speaker: "Lisa", line: "我累死了。我昨晚几乎没睡。" },
+          { speaker: "Tom", line: "我懂你。我也学习到凌晨3点。" },
+          { speaker: "Lisa", line: "我们课后应该小睡一下。" }
+        ],
+        culturalNotes: "'I feel you' is a casual way to show empathy. It means 'I understand your situation because I've been there.' Very common in casual speech."
+      },
+      {
+        id: "safe-11",
+        word: "Facts",
+        chinese: "事实/真的",
+        pinyin: "shì shí / zhēn de",
+        meaning: "That's true / I agree completely",
+        example: "This weather is amazing. — Facts!",
+        exampleZh: "这天气好棒。——真的！",
+        whoSaysIt: "Teens, young adults",
+        ageGroup: "13-30",
+        region: "All English-speaking countries",
+        isOffensive: false,
+        offensiveLevel: 0,
+        safeAlternatives: ["True", "I agree", "That's right", "No lie"],
+        conversation: [
+          { speaker: "Jake", line: "Pizza is the best food ever." },
+          { speaker: "Mia", line: "Facts! I could eat it every day." },
+          { speaker: "Jake", line: "Same. No other food compares." }
+        ],
+        chineseTranslation: [
+          { speaker: "Jake", line: "披萨是最好吃的食物。" },
+          { speaker: "Mia", line: "真的！我每天都想吃。" },
+          { speaker: "Jake", line: "一样。没有其他食物能比。" }
+        ],
+        culturalNotes: "'Facts' is used to strongly agree with something. It means 'that's true' or 'I agree 100%.' Common in casual speech and social media comments."
       }
     ]
   },
