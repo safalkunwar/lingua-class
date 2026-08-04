@@ -41,6 +41,7 @@ export function Flashcard({ item, cardNumber, total }: FlashcardProps) {
             style={{ backfaceVisibility: "hidden" }}
           >
             <div className="relative mb-5 h-52 w-full overflow-hidden rounded-xl bg-gradient-to-br from-indigo-100 to-purple-100 dark:from-indigo-950/40 dark:to-purple-950/20 sm:h-60">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={`https://image.pollinations.ai/prompt/${encodeURIComponent(item.imageKeyword || item.english)}?width=900&height=600&nologo=true`}
                 alt={item.english}
@@ -69,6 +70,7 @@ export function Flashcard({ item, cardNumber, total }: FlashcardProps) {
             }}
           >
             <div className="relative mb-5 h-52 w-full overflow-hidden rounded-xl bg-gradient-to-br from-indigo-100 to-purple-100 dark:from-indigo-950/40 dark:to-purple-950/20 sm:h-60">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={`https://image.pollinations.ai/prompt/${encodeURIComponent(item.imageKeyword || item.english)}?width=900&height=600&nologo=true`}
                 alt={item.english}

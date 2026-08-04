@@ -151,6 +151,7 @@ export function QuizRunner({ items, allItems, onComplete, onRestart }: QuizRunne
         >
           <Card className="mb-6 overflow-hidden">
             <div className="relative h-40 w-full bg-gradient-to-br from-indigo-100 to-purple-100 dark:from-indigo-950/40 dark:to-purple-950/20">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={`https://image.pollinations.ai/prompt/${encodeURIComponent(current.correct.imageKeyword || current.correct.english)}?width=600&height=400&nologo=true`}
                 alt={current.correct.english}

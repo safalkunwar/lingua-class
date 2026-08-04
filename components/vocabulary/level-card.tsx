@@ -40,6 +40,7 @@ export function LevelCard({ level, index }: LevelCardProps) {
           )}
           <CardContent className="p-0">
             <div className="relative h-56 w-full overflow-hidden bg-gradient-to-br from-indigo-100 to-purple-100 dark:from-indigo-950/40 dark:to-purple-950/20 sm:h-64">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={`https://image.pollinations.ai/prompt/${encodeURIComponent(level.items[0]?.imageKeyword || level.id)}?width=800&height=500&nologo=true`}
                 alt={level.title}
