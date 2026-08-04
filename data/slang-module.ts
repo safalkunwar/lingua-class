@@ -2070,6 +2070,86 @@ export const slangModule: SlangModule = {
           exampleZh: "这身衣服？感觉像是主角光环。",
           category: "emotional-expressions",
         },
+        {
+          id: "im-shook",
+          english: "I'm shook",
+          chinese: "我震惊了/我懵了",
+          pinyin: "wǒ zhèn jīng le / wǒ měng le",
+          pronunciation: "aym shook",
+          literalMeaning: "I am shaken",
+          actualMeaning: "I'm shocked or surprised by something",
+          detailsEn:
+            "Means you're shocked, surprised, or can't believe what just happened. Very common in casual speech and social media.",
+          detailsZh: "意味着你震惊、惊讶，或无法相信刚刚发生的事情。在 casual speech 和社交媒体中非常常见。",
+          intensity: 1,
+          safetyLabels: [
+            { label: "Very Safe", icon: "✅", settings: ["All settings"] },
+          ],
+          regionalVariations: [
+            { region: "American", usage: "I'm shook! Did you see that?", note: "Very common" },
+            { region: "British", usage: "I'm shook!", note: "Common" },
+            { region: "Australian", usage: "I'm shook!", note: "Common" },
+          ],
+          demographics: {
+            ageGroup: "Teens and above",
+            tone: "Surprised",
+            genderNeutral: true,
+          },
+          nonVerbalCues: {
+            facialExpression: "Wide eyes or open mouth",
+            bodyLanguage: "Hands on cheeks or stepping back",
+          },
+          comparative: {
+            commonMistakes: ["Using for minor surprises", "Using in formal settings"],
+            saferAlternatives: ["I'm shocked", "I'm surprised", "I can't believe it", "Wow"],
+            similarWords: ["I'm dead", "I'm crying", "I'm traumatized"],
+            culturalNotes:
+              "Originated from African American Vernacular English. Now widespread but still associated with AAVE. Means you're emotionally affected by something surprising.",
+          },
+          exampleEn: "I'm shook! Did you see that goal?",
+          exampleZh: "我震惊了！你看到那个进球了吗？",
+          category: "emotional-expressions",
+        },
+        {
+          id: "im-screaming",
+          english: "I'm screaming",
+          chinese: "我尖叫了/笑死我了",
+          pinyin: "wǒ jiàn jiào le / xiào sǐ wǒ le",
+          pronunciation: "aym screen-ing",
+          literalMeaning: "I am screaming",
+          actualMeaning: "That's so funny I'm laughing hard",
+          detailsEn:
+            "Exaggerated expression of laughter. Means something is hilarious. Common in text and social media.",
+          detailsZh: "夸张的笑声表达。意味着某事物非常搞笑。在文本和社交媒体中很常见。",
+          intensity: 1,
+          safetyLabels: [
+            { label: "Very Safe", icon: "✅", settings: ["All settings"] },
+          ],
+          regionalVariations: [
+            { region: "American", usage: "I'm screaming! That meme is too funny.", note: "Very common" },
+            { region: "British", usage: "I'm screaming!", note: "Common" },
+            { region: "Australian", usage: "I'm screaming!", note: "Common" },
+          ],
+          demographics: {
+            ageGroup: "Teens and above",
+            tone: "Funny",
+            genderNeutral: true,
+          },
+          nonVerbalCues: {
+            facialExpression: "Laughing hard",
+            bodyLanguage: "Hands on stomach or laughing so hard you can't breathe",
+          },
+          comparative: {
+            commonMistakes: ["Using for actual distress", "Using in formal settings"],
+            saferAlternatives: ["That's hilarious", "I'm laughing so hard", "That's so funny"],
+            similarWords: ["I'm dead", "I'm crying", "I'm deceased"],
+            culturalNotes:
+              "Similar to 'I'm dead' but more focused on the laughing aspect. Common in social media comments and reactions.",
+          },
+          exampleEn: "I'm screaming! That TikTok had me in tears.",
+          exampleZh: "我笑死了！那个TikTok让我笑出眼泪。",
+          category: "emotional-expressions",
+        },
       ],
       dialogues: [
         {
