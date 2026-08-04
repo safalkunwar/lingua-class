@@ -774,6 +774,114 @@ export const roughEnglish: SlangItem[] = [
     ],
     culturalNotes: "One of the most aggressive and offensive phrases in English. Combines a sexual profanity with a command to leave. Can be considered verbal abuse. Almost never acceptable in any context.",
     warning: "WARNING: 'Fuck off' is extremely vulgar and aggressive. It is considered verbal abuse in many contexts. Using this toward someone can result in serious consequences, including legal action in some places. NEVER use this phrase."
+  },
+  {
+    id: "rough-30",
+    word: "Bullshit",
+    chinese: "胡说八道/狗屁",
+    pinyin: "hú shuō bā dào / gǒu pì",
+    meaning: "Nonsense / lies / something untrue",
+    example: "That's bullshit! I know he's lying.",
+    exampleZh: "那是胡说八道！我知道他在撒谎。",
+    whoSaysIt: "Everyone when calling out lies or nonsense",
+    ageGroup: "Teens and above",
+    region: "All English-speaking countries",
+    isOffensive: true,
+    offensiveLevel: 3,
+    safeAlternatives: ["Nonsense", "That's not true", "I don't believe it", "Lies"],
+    conversation: [
+      { speaker: "Jake", line: "He said he finished the project alone." },
+      { speaker: "Mia", line: "Bullshit! I helped him the whole time." },
+      { speaker: "Jake", line: "I know. He always takes credit." }
+    ],
+    chineseTranslation: [
+      { speaker: "Jake", line: "他说他独自完成了项目。" },
+      { speaker: "Mia", line: "狗屁！我一直在帮他。" },
+      { speaker: "Jake", line: "我知道。他总是抢功劳。" }
+    ],
+    culturalNotes: "Common expression for calling out lies or nonsense. While vulgar, it's very common in casual speech. Can also mean 'nonsense' in a lighter way among close friends.",
+    warning: "WARNING: 'Bullshit' is vulgar and offensive in formal settings. Use 'nonsense' or 'that's not true' in polite company."
+  },
+  {
+    id: "rough-31",
+    word: "Asshole",
+    chinese: "混蛋/烂人",
+    pinyin: "hún dàn / làn rén",
+    meaning: "A rude, unpleasant, or contemptible person",
+    example: "What an asshole! He cut me off in traffic.",
+    exampleZh: "真是个混蛋！他在交通中超我车。",
+    whoSaysIt: "Everyone when angry or frustrated with someone",
+    ageGroup: "Teens and above",
+    region: "All English-speaking countries",
+    isOffensive: true,
+    offensiveLevel: 4,
+    safeAlternatives: ["Jerk", "Rude person", "Idiot", "Fool"],
+    conversation: [
+      { speaker: "Mia", line: "Did you see what he did?" },
+      { speaker: "Jake", line: "Yeah, what an asshole." },
+      { speaker: "Mia", line: "I know. He's always like this." }
+    ],
+    chineseTranslation: [
+      { speaker: "Mia", line: "你看到他所做的了吗？" },
+      { speaker: "Jake", line: "看到了，真是个混蛋。" },
+      { speaker: "Mia", line: "我知道。他总是这样。" }
+    ],
+    culturalNotes: "Common insult for someone who is rude or unpleasant. While vulgar, it's widely used. Can be used playfully among very close friends, but usually indicates genuine anger.",
+    warning: "WARNING: 'Asshole' is a vulgar insult. Using it directly to someone's face is extremely rude and can lead to conflicts."
+  },
+  {
+    id: "rough-32",
+    word: "Son of a bitch",
+    chinese: "狗娘养的/他妈了个巴子",
+    pinyin: "gǒu niáng yǎng de / tā mā le bā zi",
+    meaning: "Expression of frustration or insult (very vulgar)",
+    example: "Son of a bitch! I forgot my keys again.",
+    exampleZh: "他妈了个巴子！我又忘了带钥匙。",
+    whoSaysIt: "Everyone when extremely frustrated",
+    ageGroup: "Adults only",
+    region: "All English-speaking countries",
+    isOffensive: true,
+    offensiveLevel: 4,
+    safeAlternatives: ["Damn it", "Oh no", "Shoot", "Darn it"],
+    conversation: [
+      { speaker: "Alex", line: "Son of a bitch! My car won't start." },
+      { speaker: "Sam", line: "Again? That's rough." },
+      { speaker: "Alex", line: "I know. I need to get it fixed." }
+    ],
+    chineseTranslation: [
+      { speaker: "Alex", line: "他妈了个巴子！我的车发动不了了。" },
+      { speaker: "Sam", line: "又来了？那太糟糕了。" },
+      { speaker: "Alex", line: "我知道。我得去修一下。" }
+    ],
+    culturalNotes: "Common expression of frustration. The literal meaning is offensive, but it's often used as a general expletive. Can be directed at a person as a severe insult.",
+    warning: "WARNING: 'Son of a bitch' is very vulgar. The literal meaning is deeply offensive. Use milder alternatives like 'damn it' or 'shoot' in most situations."
+  },
+  {
+    id: "rough-33",
+    word: "Goddammit",
+    chinese: "该死/混账",
+    pinyin: "gāi sǐ / hùn zhàng",
+    meaning: "Expression of extreme frustration or anger",
+    example: "Goddammit! I missed the bus again.",
+    exampleZh: "该死！我又错过公交车了。",
+    whoSaysIt: "Everyone when extremely frustrated",
+    ageGroup: "Teens and above",
+    region: "All English-speaking countries",
+    isOffensive: true,
+    offensiveLevel: 2,
+    safeAlternatives: ["Darn it", "Shoot", "Oh no", "Damn it"],
+    conversation: [
+      { speaker: "Jake", line: "Goddammit! I forgot my wallet." },
+      { speaker: "Mia", line: "I can lend you some money." },
+      { speaker: "Jake", line: "Thanks. I'll pay you back tomorrow." }
+    ],
+    chineseTranslation: [
+      { speaker: "Jake", line: "该死！我忘了带钱包。" },
+      { speaker: "Mia", line: "我可以借你一些钱。" },
+      { speaker: "Jake", line: "谢谢。我明天还你。" }
+    ],
+    culturalNotes: "Common expression of frustration. Less severe than 'holy shit' or 'fuck off' but still considered profane. Some religious people find it offensive because it uses God's name in vain.",
+    warning: "WARNING: 'Goddammit' is considered blasphemous by some religious people. Use 'darn it' or 'shoot' if you're around sensitive audiences."
   }
 ];
 
