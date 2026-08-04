@@ -198,6 +198,58 @@ export const slangAcademy: SlangLevelData[] = [
           { speaker: "Lisa", line: "完美。我会发信息给你详情。" }
         ],
         culturalNotes: "'Hang out' is the standard phrase for casual time with friends. It has no romantic implication unless context suggests otherwise."
+      },
+      {
+        id: "safe-7",
+        word: "Chill",
+        chinese: "放松/冷静",
+        pinyin: "fàng sōng / lěng jìng",
+        meaning: "Relax / Calm down / Casual and relaxed",
+        example: "Just chill, it's not a big deal.",
+        exampleZh: "放松点，没什么大不了的。",
+        whoSaysIt: "Everyone, especially young people",
+        ageGroup: "Teens and above",
+        region: "All English-speaking countries",
+        isOffensive: false,
+        offensiveLevel: 0,
+        safeAlternatives: ["Relax", "Calm down", "Take it easy", "Be cool"],
+        conversation: [
+          { speaker: "Amy", line: "I'm so stressed about the exam." },
+          { speaker: "John", line: "Chill, you've studied hard." },
+          { speaker: "Amy", line: "I know, but I still feel nervous." }
+        ],
+        chineseTranslation: [
+          { speaker: "Amy", line: "我考试压力好大。" },
+          { speaker: "John", line: "放松，你已经努力复习了。" },
+          { speaker: "Amy", line: "我知道，但我还是紧张。" }
+        ],
+        culturalNotes: "'Chill' can mean 'relax' or describe a relaxed person/ situation. 'Chill out' means 'calm down.' Very common in casual speech."
+      },
+      {
+        id: "safe-8",
+        word: "Vibe",
+        chinese: "氛围/感觉",
+        pinyin: "fēn wéi / gǎn jué",
+        meaning: "The atmosphere or feeling of a place/situation",
+        example: "This coffee shop has good vibes.",
+        exampleZh: "这家咖啡店氛围很好。",
+        whoSaysIt: "Everyone, especially young people",
+        ageGroup: "Teens and above",
+        region: "All English-speaking countries",
+        isOffensive: false,
+        offensiveLevel: 0,
+        safeAlternatives: ["Atmosphere", "Feeling", "Mood", "Energy"],
+        conversation: [
+          { speaker: "Lisa", line: "I love this place. It has such good vibes." },
+          { speaker: "Tom", line: "Yeah, it's so relaxing here." },
+          { speaker: "Lisa", line: "We should come back this weekend." }
+        ],
+        chineseTranslation: [
+          { speaker: "Lisa", line: "我喜欢这个地方。氛围很好。" },
+          { speaker: "Tom", line: "是啊，这里好放松。" },
+          { speaker: "Lisa", line: "我们这周末应该再来。" }
+        ],
+        culturalNotes: "'Vibe' refers to the emotional atmosphere of a place or situation. 'Good vibes' means positive atmosphere. 'Bad vibes' means negative or uncomfortable atmosphere."
       }
     ]
   },
