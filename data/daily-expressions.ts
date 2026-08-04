@@ -661,6 +661,72 @@ export const dailyExpressions: DailyExpression[] = [
       { question: "'I'm exhausted' means:", options: ["I'm extremely tired", "I'm angry", "I'm hungry", "I'm excited"], correct: 0 }
     ],
     register: "neutral"
+  },
+  {
+    id: "dne-whatever",
+    expression: "Whatever",
+    chinese: "随便/管他呢",
+    pinyin: "suí biàn / guǎn tā ne",
+    meaning: "I don't care / Do whatever you want",
+    whenToUse: "When you don't have a preference or when you're dismissive. Can be casual or rude depending on tone.",
+    whenNotToUse: "Can sound very rude if said aggressively. Use 'I don't mind' or 'Up to you' for polite indifference.",
+    nativeFrequency: "Very common. One of the most common dismissive expressions in English.",
+    commonMistakes: [
+      { mistake: "Using 'whatever' with authority figures or in formal settings", correction: "Use 'I don't mind' or 'Up to you' instead" }
+    ],
+    pronunciation: "/wɒtˈɛvər/",
+    funnyExample: "A: What do you want for dinner? B: Whatever. A: ...That's not helpful. B: ...Whatever.",
+    memoryTrick: "Think: 'WHATEVER = I don't care = do what you want.'",
+    relatedExpressions: ["I don't care", "I don't mind", "Up to you", "Your call"],
+    collocations: ["whatever you want", "whatever works", "whatever, man"],
+    miniQuiz: [
+      { question: "'Whatever' can mean:", options: ["I don't care / Up to you", "I agree completely", "I'm excited", "I'm confused"], correct: 0 }
+    ],
+    register: "casual"
+  },
+  {
+    id: "dne-its-up-to-you",
+    expression: "It's up to you",
+    chinese: "你决定/随便你",
+    pinyin: "nǐ jué dìng / suí biàn nǐ",
+    meaning: "You decide / The choice is yours",
+    whenToUse: "Letting someone else make a decision. Very common in both casual and professional settings.",
+    whenNotToUse: "Can sound like you're avoiding responsibility if overused. Be ready to make decisions when needed.",
+    nativeFrequency: "Extremely common. Used constantly in daily life.",
+    commonMistakes: [
+      { mistake: "Using when someone asks for your opinion", correction: "Give your opinion first, then say 'it's up to you'" }
+    ],
+    pronunciation: "/ɪts ʌp tu ju/",
+    funnyExample: "A: Where do you want to eat? B: It's up to you. A: ...You're the one who invited me. B: ...It's up to you.",
+    memoryTrick: "Think: 'UP TO YOU = your decision = you choose.'",
+    relatedExpressions: ["Your call", "You decide", "Your choice", "Whatever you want"],
+    collocations: ["it's up to you", "up to you", "leave it up to you"],
+    miniQuiz: [
+      { question: "'It's up to you' means:", options: ["You decide", "I decide", "We both decide", "No one decides"], correct: 0 }
+    ],
+    register: "neutral"
+  },
+  {
+    id: "dne-count-me-in",
+    expression: "Count me in",
+    chinese: "算我一个/带我一起",
+    pinyin: "suàn wǒ yī gè / dài wǒ yī qǐ",
+    meaning: "I want to participate / Include me",
+    whenToUse: "Expressing enthusiasm to join an activity or plan.",
+    whenNotToUse: "Don't use if you're not actually interested. Be honest about your availability.",
+    nativeFrequency: "Very common in casual speech.",
+    commonMistakes: [
+      { mistake: "Saying 'count me in' when you can't actually participate", correction: "Only say it if you're genuinely interested and available" }
+    ],
+    pronunciation: "/kaʊnt mi ɪn/",
+    funnyExample: "A: We're going to the concert! B: Count me in! A: ...It's tomorrow. B: ...I have work. A: ...So you're not coming? B: ...Count me in next time.",
+    memoryTrick: "Think: 'COUNT ME IN = include me = I want to join.'",
+    relatedExpressions: ["I'm in", "Sign me up", "I'll join", "I want to come"],
+    collocations: ["count me in", "count me in on", "you can count me in"],
+    miniQuiz: [
+      { question: "'Count me in' means:", options: ["I want to participate", "I want to leave", "I don't know", "I'm counting"], correct: 0 }
+    ],
+    register: "casual"
   }
 ];
 
