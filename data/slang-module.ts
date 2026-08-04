@@ -1255,6 +1255,310 @@ export const slangModule: SlangModule = {
         },
       ],
     },
+    {
+      id: "street-slang",
+      title: "Street Slang & Attitude",
+      description:
+        "Common street slang and expressions with attitude. Learn when these are cool among friends and when they can cause trouble.",
+      emoji: "😎",
+      category: "street-slang",
+      terms: [
+        {
+          id: "deadass",
+          english: "Deadass",
+          chinese: "说真的/真的假的",
+          pinyin: "shuō zhēn de / zhēn de jiǎ de",
+          pronunciation: "ded-as",
+          literalMeaning: "Dead ass (vulgar origin)",
+          actualMeaning: "Seriously / I'm not joking / For real",
+          detailsEn:
+            "Common in casual speech, especially among young people. Used to emphasize that you're serious or to ask if someone is serious.",
+          detailsZh: "在 casual speech 中很常见，尤其是年轻人之间。用于强调你是认真的，或问某人是否认真。",
+          intensity: 2,
+          safetyLabels: [
+            { label: "Mostly Safe", icon: "✅", settings: ["Casual", "Friends"] },
+            { label: "Caution", icon: "⚠️", settings: ["Formal settings"] },
+          ],
+          regionalVariations: [
+            { region: "American", usage: "Deadass?", note: "Very common" },
+            { region: "British", usage: "Deadass?", note: "Less common" },
+            { region: "Australian", usage: "Deadass?", note: "Uncommon" },
+          ],
+          demographics: {
+            ageGroup: "Teens and above",
+            tone: "Serious",
+            genderNeutral: true,
+          },
+          nonVerbalCues: {
+            facialExpression: "Serious face or raised eyebrows",
+            bodyLanguage: "Leaning forward or direct eye contact",
+          },
+          comparative: {
+            commonMistakes: ["Using in formal settings", "Using with strangers"],
+            saferAlternatives: ["Really?", "Are you serious?", "For real?", "No way"],
+            similarWords: ["Fr", "No cap", "Deadass"],
+            culturalNotes:
+              "Originated in African American Vernacular English (AAVE). Now used widely but still associated with AAVE.",
+          },
+          exampleEn: "Deadass? You're going to travel the world?",
+          exampleZh: "说真的？你要去环游世界？",
+          category: "street-slang",
+        },
+        {
+          id: "bussin",
+          english: "Bussin'",
+          chinese: "好吃到爆/棒极了",
+          pinyin: "hǎo chī dào bào / bàng jí le",
+          pronunciation: "buh-sin",
+          literalMeaning: "Bussing (phonetically shifted)",
+          actualMeaning: "Really good, especially food",
+          detailsEn:
+            "Popular slang for food that tastes amazing. Originated in African American communities.",
+          detailsZh: "形容食物非常好吃的流行俚语。起源于非裔美国人社区。",
+          intensity: 1,
+          safetyLabels: [
+            { label: "Very Safe", icon: "✅", settings: ["All settings"] },
+          ],
+          regionalVariations: [
+            { region: "American", usage: "This food bussin'!", note: "Very common" },
+            { region: "British", usage: "This bussin'!", note: "Common" },
+            { region: "Australian", usage: "This bussin'!", note: "Common" },
+          ],
+          demographics: {
+            ageGroup: "Teens and above",
+            tone: "Excited",
+            genderNeutral: true,
+          },
+          nonVerbalCues: {
+            facialExpression: "Wide eyes or smile",
+            bodyLanguage: "Nodding while eating",
+          },
+          comparative: {
+            commonMistakes: ["Using for non-food contexts"],
+            saferAlternatives: ["Delicious", "Amazing", "Great", "Fantastic"],
+            similarWords: ["Slaps", "Fire", "Lit"],
+            culturalNotes:
+              "Originated in African American Vernacular English. Now widely used, especially for food.",
+          },
+          exampleEn: "This mac and cheese is bussin'!",
+          exampleZh: "这通心粉和奶酪好吃到爆！",
+          category: "street-slang",
+        },
+        {
+          id: "flex",
+          english: "Flex",
+          chinese: "炫耀/展示",
+          pinyin: "xuàn yào / zhǎn shì",
+          pronunciation: "fleks",
+          literalMeaning: "To bend or contract (muscle)",
+          actualMeaning: "To show off or display something proudly",
+          detailsEn:
+            "Common in casual speech. Can be positive (sharing achievements) or negative (showing off).",
+          detailsZh: "在 casual speech 中很常见。可以是积极的（分享成就）或消极的（炫耀）。",
+          intensity: 1,
+          safetyLabels: [
+            { label: "Mostly Safe", icon: "✅", settings: ["Casual", "Friends"] },
+            { label: "Caution", icon: "⚠️", settings: ["Formal settings"] },
+          ],
+          regionalVariations: [
+            { region: "American", usage: "He's always flexing his new car.", note: "Very common" },
+            { region: "British", usage: "He's flexing his new car.", note: "Common" },
+            { region: "Australian", usage: "He's flexing his new car.", note: "Common" },
+          ],
+          demographics: {
+            ageGroup: "Teens and above",
+            tone: "Playful",
+            genderNeutral: true,
+          },
+          nonVerbalCues: {
+            facialExpression: "Proud smile or smirk",
+            bodyLanguage: "Showing off the object or striking a pose",
+          },
+          comparative: {
+            commonMistakes: ["Using in formal settings", "Using to describe others negatively without context"],
+            saferAlternatives: ["Show off", "Display", "Share", "Be proud of"],
+            similarWords: ["Show off", "Showboat", "Humblebrag"],
+            culturalNotes:
+              "Can be positive or negative depending on context. 'Flex' alone is often negative, but 'flex your skills' can be positive.",
+          },
+          exampleEn: "He's just flexing his new watch.",
+          exampleZh: "他只是在炫耀他的新手表。",
+          category: "street-slang",
+        },
+      ],
+      dialogues: [
+        {
+          id: "d1",
+          context: "Friends discussing someone showing off",
+          lines: [
+            {
+              speaker: "Casey",
+              english: "Did you see Jake's new car?",
+              chinese: "你看到Jake的新车了吗？",
+              pinyin: "nǐ kàn dào Jake de xīn chē le ma?",
+            },
+            {
+              speaker: "Morgan",
+              english: "Yeah, he's been flexing it all week.",
+              chinese: "看了，他整个星期都在炫耀。",
+              pinyin: "kàn le, tā zhěng gè xīng qī dōu zài xuàn yào.",
+            },
+            {
+              speaker: "Casey",
+              english: "I know, right? Just let him have his moment.",
+              chinese: "是吧？就让他得意一下吧。",
+              pinyin: "shì ba? jiù ràng tā dé yì yī xià ba.",
+            },
+          ],
+          comprehensionNote:
+            "Shows how 'flex' is used to describe showing off. It can be playful or slightly negative depending on tone.",
+        },
+        {
+          id: "d2",
+          context: "Friends talking about good food",
+          lines: [
+            {
+              speaker: "Taylor",
+              english: "Try the wings! They're bussin'!",
+              chinese: "尝尝鸡翅！好吃到爆！",
+              pinyin: "cháng chang jī chì! hǎo chī dào bào!",
+            },
+            {
+              speaker: "Jordan",
+              english: "Wow, you're right. This is amazing.",
+              chinese: "哇，你说得对。这太棒了。",
+              pinyin: "wa, nǐ shuō de duì. zhè tài bàng le.",
+            },
+            {
+              speaker: "Taylor",
+              english: "Told you! Best wings in the city.",
+              chinese: "跟你说过了！城里最好的鸡翅。",
+              pinyin: "gēn nǐ shuō guò le! chéng lǐ zuì hǎo de jī chì.",
+            },
+          ],
+          comprehensionNote:
+            "Shows how 'bussin'' is used for food. It's very positive and enthusiastic.",
+        },
+        {
+          id: "d3",
+          context: "Friends reacting to surprising news",
+          lines: [
+            {
+              speaker: "Riley",
+              english: "I'm actually moving to Japan next month.",
+              chinese: "我下个月真的要搬到日本去了。",
+              pinyin: "wǒ xià gè yuè zhēn de yào bān dào rì běn qù le.",
+            },
+            {
+              speaker: "Sam",
+              english: "Deadass? That's wild!",
+              chinese: "说真的？太疯狂了！",
+              pinyin: "shuō zhēn de? tài fēng kuáng le!",
+            },
+            {
+              speaker: "Riley",
+              english: "Deadass. I already quit my job.",
+              chinese: "说真的。我已经辞职了。",
+              pinyin: "shuō zhēn de. wǒ yǐ jīng cí zhí le.",
+            },
+          ],
+          comprehensionNote:
+            "Shows how 'deadass' is used both to ask for confirmation and to confirm something seriously.",
+        },
+      ],
+      practiceDrills: [
+        {
+          id: "p1",
+          type: "register-comparison",
+          title: "Formal vs. Casual",
+          instructions: "Rewrite these sentences using street slang.",
+          instructionsZh: "使用 street slang 改写这些句子。",
+          content: "1. 'He is showing off his new phone.' 2. 'This food is delicious.' 3. 'Are you serious?'",
+          contentZh: "1. '他在炫耀他的新手机。' 2. '这食物很美味。' 3. '你是认真的吗？'",
+          answer:
+            "1. 'He's flexing his new phone.' 2. 'This food bussin'!' 3. 'Deadass?'",
+          answerZh: "1. '他在炫耀他的新手机。' 2. '这食物好吃到爆！' 3. '说真的？'",
+        },
+        {
+          id: "p2",
+          type: "situational-judgment",
+          title: "When to Use",
+          instructions: "When is it appropriate to say 'bussin''?",
+          instructionsZh: "什么时候适合说'bussin''？",
+          content: "A) At a fancy restaurant with your boss B) With friends eating street food C) In a job interview D) In a formal essay",
+          contentZh: "A) 在高级餐厅和老板一起 B) 和朋友吃街头食品 C) 在面试中 D) 在正式论文中",
+          options: [
+            { label: "A) At a fancy restaurant with your boss", labelZh: "A) 在高级餐厅和老板一起", correct: false },
+            {
+              label: "B) With friends eating street food",
+              labelZh: "B) 和朋友吃街头食品",
+              correct: true,
+            },
+            { label: "C) In a job interview", labelZh: "C) 在面试中", correct: false },
+            { label: "D) In a formal essay", labelZh: "D) 在正式论文中", correct: false },
+          ],
+          answer:
+            "B only. 'Bussin'' is very casual and should only be used with friends in informal settings.",
+          answerZh: "仅B。'Bussin''非常 casual，只应在非正式场合和朋友一起使用。",
+        },
+        {
+          id: "p3",
+          type: "emotional-intelligence",
+          title: "Empathy Response",
+          instructions: "Your friend says 'I can't believe I failed that test.' Respond appropriately.",
+          instructionsZh: "你的朋友说'我不敢相信我考试不及格。'恰当地回应。",
+          content: "Use street slang to show you understand and care.",
+          contentZh: "使用 street slang 表示你理解并关心。",
+          answer:
+            "Example: 'Deadass? That sucks. But you'll pass next time — I know it. Want to grab food? I'll treat.'",
+          answerZh: "示例：'说真的？太糟了。但你下次会过的——我知道。想去吃东西吗？我请客。'",
+        },
+      ],
+      quiz: [
+        {
+          id: "q1",
+          question: "What does 'deadass' mean?",
+          questionZh: "'Deadass'是什么意思？",
+          options: [
+            { label: "A) To be extremely tired", labelZh: "A) 非常累", correct: false },
+            { label: "B) Seriously / For real", labelZh: "B) 说真的/真的", correct: true },
+            { label: "C) To be very angry", labelZh: "C) 非常生气", correct: false },
+            { label: "D) To be excited", labelZh: "D) 很兴奋", correct: false },
+          ],
+          explanation:
+            "'Deadass' means 'seriously' or 'for real.' It's used to emphasize that you're being truthful or to ask if someone is serious.",
+          explanationZh: "'Deadass'意为'说真的'或'真的'。用于强调你是认真的，或问某人是否认真。",
+        },
+        {
+          id: "q2",
+          question: "What does 'bussin'' mean?",
+          questionZh: "'Bussin''是什么意思？",
+          options: [
+            { label: "A) Really good (especially food)", labelZh: "A) 超棒（尤其是食物）", correct: true },
+            { label: "B) To be very busy", labelZh: "B) 非常忙", correct: false },
+            { label: "C) To show off", labelZh: "C) 炫耀", correct: false },
+            { label: "D) To be serious", labelZh: "D) 认真", correct: false },
+          ],
+          explanation:
+            "'Bussin'' means something is really good, especially food. It originated in African American Vernacular English.",
+          explanationZh: "'Bussin''意为某事物非常好，尤其是食物。它起源于非裔美国人白话英语。",
+        },
+        {
+          id: "q3",
+          question: "What does 'flex' mean?",
+          questionZh: "'Flex'是什么意思？",
+          options: [
+            { label: "A) To show off", labelZh: "A) 炫耀", correct: true },
+            { label: "B) To be flexible", labelZh: "B) 灵活", correct: false },
+            { label: "C) To exercise", labelZh: "C) 锻炼", correct: false },
+            { label: "D) To relax", labelZh: "D) 放松", correct: false },
+          ],
+          explanation:
+            "'Flex' means to show off or display something proudly. It can be positive or negative depending on context.",
+          explanationZh: "'Flex'意为炫耀或自豪地展示某物。根据语境可以是积极的或消极的。",
+        },
+      ],
+    },
   ],
 };
 
