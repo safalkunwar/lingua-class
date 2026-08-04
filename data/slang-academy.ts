@@ -363,6 +363,84 @@ export const slangAcademy: SlangLevelData[] = [
           { speaker: "Taylor", line: "好主意。看起来他们正在开会。" }
         ],
         culturalNotes: "'Vibe check' became popular on social media around 2019. It means assessing whether the mood is positive, negative, or tense."
+      },
+      {
+        id: "internet-5",
+        word: "Cap",
+        chinese: "谎言/吹牛",
+        pinyin: "huǎng yán / chuī niú",
+        meaning: "Lie / exaggeration / to claim something false",
+        example: "No cap, I studied for 10 hours for that test.",
+        exampleZh: "真的，我为那次考试学习了10个小时。",
+        whoSaysIt: "Teens, young adults",
+        ageGroup: "13-30",
+        region: "American (originally AAVE), now global",
+        isOffensive: false,
+        offensiveLevel: 0,
+        safeAlternatives: ["Lie", "Exaggeration", "False claim", "Untruth"],
+        conversation: [
+          { speaker: "Jake", line: "No cap, that was the best concert ever." },
+          { speaker: "Mia", line: "I know! The energy was insane." },
+          { speaker: "Jake", line: "We have to go to their next show." }
+        ],
+        chineseTranslation: [
+          { speaker: "Jake", line: "真的，那是史上最棒的演唱会。" },
+          { speaker: "Mia", line: "我知道！现场气氛太疯狂了。" },
+          { speaker: "Jake", line: "我们一定要去看他们的下一场演出。" }
+        ],
+        culturalNotes: "'Cap' means 'lie' in slang. 'No cap' means 'no lie' or 'I'm telling the truth.' Originated in African American Vernacular English."
+      },
+      {
+        id: "internet-6",
+        word: "Rizz",
+        chinese: "魅力/撩妹/撩汉",
+        pinyin: "mèi lì / liáo mèi / liáo hàn",
+        meaning: "Charisma or ability to attract romantic interest",
+        example: "He's got mad rizz. Every girl at the party was talking to him.",
+        exampleZh: "他魅力十足。派对上的每个女孩都在和他说话。",
+        whoSaysIt: "Teens, young adults",
+        ageGroup: "13-25",
+        region: "American, British, Australian",
+        isOffensive: false,
+        offensiveLevel: 0,
+        safeAlternatives: ["Charisma", "Charm", "Smooth talker", "Game"],
+        conversation: [
+          { speaker: "Casey", line: "Did you see Jake talking to Sarah?" },
+          { speaker: "Morgan", line: "Yeah, he's got serious rizz." },
+          { speaker: "Casey", line: "I know! I'm jealous." }
+        ],
+        chineseTranslation: [
+          { speaker: "Casey", line: "你看到Jake和Sarah说话了吗？" },
+          { speaker: "Morgan", line: "看了，他魅力十足。" },
+          { speaker: "Casey", line: "我知道！我嫉妒了。" }
+        ],
+        culturalNotes: "Short for 'charisma.' Popularized by TikTok and Gen Z. Can be used for anyone who is good at attracting others romantically."
+      },
+      {
+        id: "internet-7",
+        word: "Simp",
+        chinese: "舔狗/讨好者",
+        pinyin: "tiǎn gǒu / tǎo hǎo zhě",
+        meaning: "Someone who does too much for someone they like, often with no reciprocation",
+        example: "He's simping for Sarah. He bought her a PS5 on the second date.",
+        exampleZh: "他在讨好Sarah。他第二次约会就给她买了PS5。",
+        whoSaysIt: "Teens, young adults",
+        ageGroup: "13-25",
+        region: "American, British, Australian",
+        isOffensive: true,
+        offensiveLevel: 2,
+        safeAlternatives: ["Devoted", "Attentive", "Enthusiastic", "Hopeful romantic"],
+        conversation: [
+          { speaker: "Tom", line: "Jake is simping so hard for Sarah right now." },
+          { speaker: "Lisa", line: "I know! He bought her a PS5 on the second date." },
+          { speaker: "Tom", line: "That's wild. She hasn't even said she likes him." }
+        ],
+        chineseTranslation: [
+          { speaker: "Tom", line: "Jake现在在拼命讨好Sarah。" },
+          { speaker: "Lisa", line: "我知道！他第二次约会就给她买了PS5。" },
+          { speaker: "Tom", line: "太疯狂了。她甚至没说过喜欢他。" }
+        ],
+        culturalNotes: "Often used as an insult, but can be self-deprecating. Implies the person is being taken advantage of. Use carefully - can be hurtful."
       }
     ]
   },
