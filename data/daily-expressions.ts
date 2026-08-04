@@ -595,6 +595,72 @@ export const dailyExpressions: DailyExpression[] = [
       { question: "'It is what it is' means:", options: ["Accepting an unchangeable situation", "Everything is perfect", "I'm confused", "I disagree"], correct: 0 }
     ],
     register: "neutral"
+  },
+  {
+    id: "dne-im-starving",
+    expression: "I'm starving",
+    chinese: "我快饿死了/我饿坏了",
+    pinyin: "wǒ kuài è sǐ le / wǒ è huài le",
+    meaning: "I'm extremely hungry (exaggerated)",
+    whenToUse: "Expressing extreme hunger. Usually exaggerated for effect.",
+    whenNotToUse: "Don't use when someone is actually starving (serious food insecurity). Use 'I'm hungry' for normal hunger.",
+    nativeFrequency: "Very common. Used constantly in casual speech.",
+    commonMistakes: [
+      { mistake: "Using when someone is actually starving", correction: "Reserve 'starving' for exaggeration, use 'hungry' for actual hunger" }
+    ],
+    pronunciation: "/aɪm ˈstɑːrvɪŋ/",
+    funnyExample: "A: Have you eaten? B: I'm starving! A: ...You ate an hour ago. B: ...That was a snack.",
+    memoryTrick: "Think: 'STARVING = extremely hungry = I need food now.'",
+    relatedExpressions: ["I'm hungry", "I need to eat", "I could eat a horse", "Food please"],
+    collocations: ["I'm starving", "I'm so hungry", "starving to death"],
+    miniQuiz: [
+      { question: "'I'm starving' means:", options: ["I'm extremely hungry", "I'm dying", "I'm angry", "I'm tired"], correct: 0 }
+    ],
+    register: "casual"
+  },
+  {
+    id: "dne-thats-hilarious",
+    expression: "That's hilarious",
+    chinese: "太搞笑了/真好笑",
+    pinyin: "tài gǎo xiào le / zhēn hǎo xiào",
+    meaning: "That's very funny",
+    whenToUse: "Responding to something funny. More sincere than 'haha' or 'lol'.",
+    whenNotToUse: "Can sound sarcastic if tone is wrong. Make sure you're actually laughing.",
+    nativeFrequency: "Very common. Standard response to jokes and funny stories.",
+    commonMistakes: [
+      { mistake: "Using when you don't actually find something funny", correction: "Only use when you genuinely find something funny" }
+    ],
+    pronunciation: "/ðæts hɪˈlɛəriəs/",
+    funnyExample: "A: I walked into a wall today. B: That's hilarious. A: ...You could have asked if I'm okay. B: ...That's also hilarious.",
+    memoryTrick: "Think: 'HILARIOUS = extremely funny = that made me laugh.'",
+    relatedExpressions: ["That's so funny", "I'm laughing", "That's a joke", "You're hilarious"],
+    collocations: ["that's hilarious", "that's so hilarious", "hilarious"],
+    miniQuiz: [
+      { question: "'That's hilarious' means:", options: ["That's very funny", "That's boring", "That's sad", "That's serious"], correct: 0 }
+    ],
+    register: "neutral"
+  },
+  {
+    id: "dne-im-exhausted",
+    expression: "I'm exhausted",
+    chinese: "我筋疲力尽了/我累坏了",
+    pinyin: "wǒ jīn pí lì jìn le / wǒ lèi huài le",
+    meaning: "I'm extremely tired",
+    whenToUse: "Expressing extreme tiredness after physical or mental effort.",
+    whenNotToUse: "Too formal for casual settings with close friends. Use 'I'm beat' or 'I'm wiped' instead.",
+    nativeFrequency: "Common in both casual and professional settings.",
+    commonMistakes: [
+      { mistake: "Using 'exhausted' for mild tiredness", correction: "Use 'tired' for mild tiredness, 'exhausted' for extreme tiredness" }
+    ],
+    pronunciation: "/aɪm ɪɡˈzɔːstɪd/",
+    funnyExample: "A: How was your day? B: I'm exhausted. A: ...You sat on the couch all day. B: ...It was mentally exhausting.",
+    memoryTrick: "Think: 'EXHAUSTED = all energy gone = extremely tired.'",
+    relatedExpressions: ["I'm tired", "I'm beat", "I'm wiped", "I need rest"],
+    collocations: ["I'm exhausted", "exhausted from", "completely exhausted"],
+    miniQuiz: [
+      { question: "'I'm exhausted' means:", options: ["I'm extremely tired", "I'm angry", "I'm hungry", "I'm excited"], correct: 0 }
+    ],
+    register: "neutral"
   }
 ];
 
