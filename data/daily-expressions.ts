@@ -221,6 +221,72 @@ export const dailyExpressions: DailyExpression[] = [
       { question: "'I appreciate it' is:", options: ["A sincere thank you", "A greeting", "A question", "A rejection"], correct: 0 }
     ],
     register: "neutral"
+  },
+  {
+    id: "dne-no-problem",
+    expression: "No problem",
+    chinese: "没问题",
+    pinyin: "méi wèn tí",
+    meaning: "You're welcome / It's not an issue.",
+    whenToUse: "Responding to 'thank you' or when someone apologizes for a minor inconvenience.",
+    whenNotToUse: "Can sound dismissive if someone thanks you for a major favor. Use 'You're welcome' or 'I'm glad I could help' instead.",
+    nativeFrequency: "Extremely common. The default response to 'thank you' in casual American English.",
+    commonMistakes: [
+      { mistake: "Using for major favors", correction: "Reserve 'no problem' for small gestures, not life-changing help" }
+    ],
+    pronunciation: "/noʊ ˈprɒbləm/",
+    funnyExample: "A: Thanks for saving my project! B: No problem. A: ...You literally saved my career. B: ...No problem.",
+    memoryTrick: "Think: 'NO PROBLEM = everything is fine = you're welcome.'",
+    relatedExpressions: ["You're welcome", "Don't mention it", "Anytime", "Happy to help"],
+    collocations: ["no problem at all", "absolutely no problem", "sure, no problem"],
+    miniQuiz: [
+      { question: "'No problem' is best used when:", options: ["Someone thanks you for a small favor", "Someone apologizes for being late", "You need a favor", "You're angry"], correct: 0 }
+    ],
+    register: "casual"
+  },
+  {
+    id: "dne-take-care",
+    expression: "Take care",
+    chinese: "保重",
+    pinyin: "bǎo zhòng",
+    meaning: "Goodbye / Stay safe / Look after yourself.",
+    whenToUse: "Saying goodbye to friends, family, or colleagues. Common in both casual and professional settings.",
+    whenNotToUse: "Too formal for very close friends who say 'bye' or 'see ya'. Can sound concerned if used with strangers.",
+    nativeFrequency: "Very common. Standard friendly goodbye in American English.",
+    commonMistakes: [
+      { mistake: "Using with strangers", correction: "Reserve for people you know, not random encounters" }
+    ],
+    pronunciation: "/teɪk keər/",
+    funnyExample: "A: Take care! B: I'm just going to the grocery store. A: ...Take care of the milk. B: ...Okay.",
+    memoryTrick: "Think: 'TAKE CARE = look after yourself = goodbye with warmth.'",
+    relatedExpressions: ["See you", "Bye", "Take it easy", "Stay safe"],
+    collocations: ["take care of yourself", "take care of business", "take care of"],
+    miniQuiz: [
+      { question: "'Take care' is:", options: ["A friendly goodbye", "A greeting", "A request", "An insult"], correct: 0 }
+    ],
+    register: "neutral"
+  },
+  {
+    id: "dne-sounds-good",
+    expression: "Sounds good",
+    chinese: "听起来不错",
+    pinyin: "tīng qǐ lái bú cuò",
+    meaning: "I agree / That works for me / Okay.",
+    whenToUse: "Responding to plans, suggestions, or proposals. Very common in both casual and professional settings.",
+    whenNotToUse: "Can sound non-committal if you're not actually interested. Use 'That sounds great!' if you're excited.",
+    nativeFrequency: "Extremely common. The go-to response to suggestions in American English.",
+    commonMistakes: [
+      { mistake: "Using when you're not actually interested", correction: "Use 'That sounds great' or 'I'm not sure' to be honest" }
+    ],
+    pronunciation: "/saʊndz ɡʊd/",
+    funnyExample: "A: Let's meet at 7pm? B: Sounds good. A: ...But you hate 7pm. B: ...It sounds good on paper.",
+    memoryTrick: "Think: 'SOUNDS GOOD = I approve = that works for me.'",
+    relatedExpressions: ["That works", "I'm down", "Sure", "Okay"],
+    collocations: ["sounds good to me", "sounds good, let's do it", "that sounds good"],
+    miniQuiz: [
+      { question: "'Sounds good' means:", options: ["I agree", "I disagree", "I don't know", "I'm confused"], correct: 0 }
+    ],
+    register: "neutral"
   }
 ];
 

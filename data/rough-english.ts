@@ -319,6 +319,86 @@ export const roughEnglish: SlangItem[] = [
     ],
     culturalNotes: "Common threat phrase among students. Can be serious or playful depending on context. In schools, this should be reported to teachers.",
     warning: "WARNING: This is a threatening phrase. If someone says this to you, especially in school, report it to a teacher or authority figure."
+  },
+  {
+    id: "rough-13",
+    word: "Shut up",
+    chinese: "闭嘴",
+    pinyin: "bì zuǐ",
+    meaning: "Stop talking / Be quiet (rude command)",
+    example: "Shut up! I'm trying to study.",
+    exampleZh: "闭嘴！我在学习。",
+    whoSaysIt: "Angry people, bullies, frustrated friends",
+    ageGroup: "Teens and above",
+    region: "All English-speaking countries",
+    isOffensive: true,
+    offensiveLevel: 3,
+    safeAlternatives: ["Be quiet", "Stop talking", "Please be quiet", "I need quiet"],
+    conversation: [
+      { speaker: "Emma", line: "Shut up! I'm on the phone." },
+      { speaker: "Jake", line: "Sorry, I didn't know." },
+      { speaker: "Emma", line: "Just keep it down next time." }
+    ],
+    chineseTranslation: [
+      { speaker: "Emma", line: "闭嘴！我在打电话。" },
+      { speaker: "Jake", line: "对不起，我不知道。" },
+      { speaker: "Emma", line: "下次小声点。" }
+    ],
+    culturalNotes: "Very common but rude. Among close friends with playful tone, it can mean 'wow, that's surprising.' Never use with strangers or in formal settings.",
+    warning: "WARNING: 'Shut up' is a rude command. Using it toward strangers, teachers, or bosses is extremely disrespectful."
+  },
+  {
+    id: "rough-14",
+    word: "Dumb",
+    chinese: "愚蠢的/笨蛋",
+    pinyin: "yú chǔn / běn dàn",
+    meaning: "Stupid or foolish (insult)",
+    example: "That was a dumb move.",
+    exampleZh: "那是个愚蠢的举动。",
+    whoSaysIt: "Everyone when frustrated or teasing",
+    ageGroup: "Teens and above",
+    region: "All English-speaking countries",
+    isOffensive: true,
+    offensiveLevel: 2,
+    safeAlternatives: ["Unwise", "Not the best idea", "That wasn't smart", "Careless"],
+    conversation: [
+      { speaker: "Tom", line: "Why did you do that? That was so dumb." },
+      { speaker: "Lisa", line: "I know, I wasn't thinking." },
+      { speaker: "Tom", line: "Just be more careful next time." }
+    ],
+    chineseTranslation: [
+      { speaker: "Tom", line: "你为什么要那样做？太蠢了。" },
+      { speaker: "Lisa", line: "我知道，我没想清楚。" },
+      { speaker: "Tom", line: "下次小心点。" }
+    ],
+    culturalNotes: "Common mild insult. Less severe than 'idiot' but still rude. Often used to describe actions rather than people."
+  },
+  {
+    id: "rough-15",
+    word: "Hate you",
+    chinese: "讨厌你/恨你",
+    pinyin: "tǎo yàn nǐ / hèn nǐ",
+    meaning: "I strongly dislike you (very strong, often not literal)",
+    example: "I hate you! You ruined my party.",
+    exampleZh: "我讨厌你！你毁了我的派对。",
+    whoSaysIt: "Angry people, upset friends, dramatic teens",
+    ageGroup: "Teens and above",
+    region: "All English-speaking countries",
+    isOffensive: true,
+    offensiveLevel: 4,
+    safeAlternatives: ["I'm really upset with you", "I'm angry", "That hurt my feelings", "I'm disappointed"],
+    conversation: [
+      { speaker: "Mia", line: "I hate you! You told everyone my secret!" },
+      { speaker: "Jake", line: "I'm sorry, it slipped out." },
+      { speaker: "Mia", line: "That's not okay. I need you to apologize." }
+    ],
+    chineseTranslation: [
+      { speaker: "Mia", line: "我讨厌你！你把我的秘密告诉所有人了！" },
+      { speaker: "Jake", line: "对不起，我脱口而出了。" },
+      { speaker: "Mia", line: "这不行。你需要道歉。" }
+    ],
+    culturalNotes: "Very strong expression. Rarely literal among friends, but still hurtful. Among teens, it's often dramatic and temporary. Adults should avoid using it.",
+    warning: "WARNING: 'I hate you' is extremely hurtful. Even when said in anger, it can cause lasting emotional damage. Never use this expression lightly."
   }
 ];
 
