@@ -10,7 +10,8 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { ChevronLeft, ChevronRight, Search, Maximize2, Minimize2, List, Grid3X3 } from "lucide-react";
+import { ChevronLeft, ChevronRight, Search, Maximize2, Minimize2, List, Grid3X3, Volume2 } from "lucide-react";
+import { useSpeechSynthesis } from "@/hooks/use-speech-synthesis";
 
 type ViewMode = "presentation" | "grid";
 type LevelFilter = "all" | "A1" | "A2" | "B1" | "B2" | "C1" | "C2";
@@ -23,6 +24,7 @@ export default function WordBookPage() {
   const [viewMode, setViewMode] = useState<ViewMode>("presentation");
   const [isFullscreen, setIsFullscreen] = useState(false);
   const [showSearch, setShowSearch] = useState(true);
+  const { speakEnglish, speakChinese } = useSpeechSynthesis();
 
   const filteredTopics = useMemo(() => {
     return wordBook.map((topic) => {
@@ -216,13 +218,33 @@ export default function WordBookPage() {
                         <div className={`${isFullscreen ? 'text-center' : 'text-center sm:text-left'} mb-8`}>
                           <div className="text-7xl sm:text-8xl mb-6 inline-block">{currentWord.emoji}</div>
                           
-                          <h2 className="text-5xl sm:text-6xl font-extrabold mb-4 tracking-tight">
-                            {currentWord.english}
-                          </h2>
+                          <div className="flex items-center gap-3 flex-wrap justify-center sm:justify-start">
+                            <h2 className="text-5xl sm:text-6xl font-extrabold mb-4 tracking-tight">
+                              {currentWord.english}
+                            </h2>
+                            <Button
+                              variant="ghost"
+                              size="icon"
+                              className="h-10 w-10"
+                              onClick={() => speakEnglish(currentWord.english)}
+                            >
+                              <Volume2 className="h-5 w-5" />
+                            </Button>
+                          </div>
                           
-                          <p className="text-4xl sm:text-5xl font-bold text-indigo-600 dark:text-indigo-400 mb-3">
-                            {currentWord.chinese}
-                          </p>
+                          <div className="flex items-center gap-3 flex-wrap justify-center sm:justify-start">
+                            <p className="text-4xl sm:text-5xl font-bold text-indigo-600 dark:text-indigo-400 mb-3">
+                              {currentWord.chinese}
+                            </p>
+                            <Button
+                              variant="ghost"
+                              size="icon"
+                              className="h-10 w-10"
+                              onClick={() => speakChinese(currentWord.chinese)}
+                            >
+                              <Volume2 className="h-5 w-5" />
+                            </Button>
+                          </div>
                           
                           <p className="text-xl text-muted-foreground mb-6">{currentWord.pinyin}</p>
                         </div>
@@ -239,8 +261,28 @@ export default function WordBookPage() {
 
                             <div className="p-5 bg-blue-50 dark:bg-blue-950/20 rounded-xl">
                               <p className="font-semibold text-blue-600 dark:text-blue-400 mb-2 text-sm uppercase tracking-wider">Example</p>
-                              <p className="text-lg italic mb-2">"{currentWord.exampleEn}"</p>
-                              <p className="text-muted-foreground">{currentWord.exampleZh}</p>
+                              <div className="flex items-center gap-2">
+                                <p className="text-lg italic mb-2">"{currentWord.exampleEn}"</p>
+                                <Button
+                                  variant="ghost"
+                                  size="icon"
+                                  className="h-8 w-8"
+                                  onClick={() => speakEnglish(currentWord.exampleEn)}
+                                >
+                                  <Volume2 className="h-4 w-4" />
+                                </Button>
+                              </div>
+                              <div className="flex items-center gap-2">
+                                <p className="text-muted-foreground">{currentWord.exampleZh}</p>
+                                <Button
+                                  variant="ghost"
+                                  size="icon"
+                                  className="h-8 w-8"
+                                  onClick={() => speakChinese(currentWord.exampleZh)}
+                                >
+                                  <Volume2 className="h-4 w-4" />
+                                </Button>
+                              </div>
                             </div>
                           </div>
 
@@ -387,16 +429,44 @@ export default function WordBookPage() {
                     className="h-full overflow-hidden transition-all hover:shadow-xl hover:-translate-y-1 cursor-pointer group border-2 hover:border-indigo-200"
                     onClick={() => setCurrentWordIndex(wordIndex)}
                   >
-                    <div className="p-6 text-center">
-                      <div className="text-4xl mb-3 group-hover:scale-110 transition-transform">
-                        {word.emoji}
-                      </div>
-                      
-                      <h3 className="text-xl font-bold mb-1">{word.english}</h3>
-                      <p className="text-2xl font-medium text-indigo-600 dark:text-indigo-400 mb-2">
-                        {word.chinese}
-                      </p>
-                      <p className="text-sm text-muted-foreground mb-3">{word.pinyin}</p>
+                     <div className="p-6 text-center">
+                       <div className="text-4xl mb-3 group-hover:scale-110 transition-transform">
+                         {word.emoji}
+                       </div>
+                       
+                       <div className="flex items-center justify-center gap-2 mb-1">
+                         <h3 className="text-xl font-bold">{word.english}</h3>
+                         <Button
+                           variant="ghost"
+                           size="icon"
+                           className="h-7 w-7 opacity-0 group-hover:opacity-100 transition-opacity"
+                           onClick={(e) => {
+                             e.stopPropagation();
+                             speakEnglish(word.english);
+                           }}
+                         >
+                           <Volume2 className="h-3.5 w-3.5" />
+                         </Button>
+                       </div>
+                       
+                       <div className="flex items-center justify-center gap-2 mb-2">
+                         <p className="text-2xl font-medium text-indigo-600 dark:text-indigo-400">
+                           {word.chinese}
+                         </p>
+                         <Button
+                           variant="ghost"
+                           size="icon"
+                           className="h-7 w-7 opacity-0 group-hover:opacity-100 transition-opacity"
+                           onClick={(e) => {
+                             e.stopPropagation();
+                             speakChinese(word.chinese);
+                           }}
+                         >
+                           <Volume2 className="h-3.5 w-3.5" />
+                         </Button>
+                       </div>
+                       
+                       <p className="text-sm text-muted-foreground mb-3">{word.pinyin}</p>
                       
                       <div className="flex flex-wrap justify-center gap-2 mb-4">
                         <Badge variant="secondary" className="text-xs">
