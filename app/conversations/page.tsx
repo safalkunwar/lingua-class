@@ -6,9 +6,8 @@ import { conversations } from "@/data/conversations";
 import { useState, useMemo } from "react";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
-import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Search, MessageCircle, Clock } from "lucide-react";
+import { MessageCircle, Clock } from "lucide-react";
 import Link from "next/link";
 
 type LevelFilter = "all" | "A1" | "A2" | "B1" | "B2";
@@ -98,7 +97,7 @@ export default function ConversationsPage() {
           </div>
         </motion.div>
 
-        {/* Collapsible Search and Filters */}
+        {/* Search and Filters - Collapsible */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -138,43 +137,35 @@ export default function ConversationsPage() {
           </details>
         </motion.div>
 
-        {/* Collapsible Category Chips */}
+        {/* Category Chips - Horizontal Scroll */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
           className="mb-8"
         >
-          <details className="group">
-            <summary className="list-none flex items-center justify-center cursor-pointer text-sm text-muted-foreground hover:text-foreground transition-colors">
-              <span className="group-open:rotate-90 transition-transform mr-1">▶</span>
-              Browse by Category
-            </summary>
-            <div className="mt-4">
-              <div className="flex gap-2 overflow-x-auto pb-3 -mx-4 px-4 sm:mx-0 sm:px-0 sm:justify-center sm:flex-wrap">
+          <div className="flex gap-2 overflow-x-auto pb-3 -mx-4 px-4 sm:mx-0 sm:px-0 sm:justify-center sm:flex-wrap">
+            <button
+              onClick={() => setSelectedCategory("all")}
+              className={cnChip(selectedCategory === "all")}
+            >
+              📋 All
+            </button>
+            {conversations.map((topic) => {
+              const cat = CATEGORY_ICONS[topic.id] || { icon: topic.emoji, label: topic.title };
+              const isSelected = selectedCategory === topic.id;
+              return (
                 <button
-                  onClick={() => setSelectedCategory("all")}
-                  className={cnChip(selectedCategory === "all")}
+                  key={topic.id}
+                  onClick={() => setSelectedCategory(topic.id)}
+                  className={cnChip(isSelected)}
                 >
-                  📋 All
+                  <span>{cat.icon}</span>
+                  <span className="hidden sm:inline">{cat.label}</span>
                 </button>
-                {conversations.map((topic) => {
-                  const cat = CATEGORY_ICONS[topic.id] || { icon: topic.emoji, label: topic.title };
-                  const isSelected = selectedCategory === topic.id;
-                  return (
-                    <button
-                      key={topic.id}
-                      onClick={() => setSelectedCategory(topic.id)}
-                      className={cnChip(isSelected)}
-                    >
-                      <span>{cat.icon}</span>
-                      <span>{cat.label}</span>
-                    </button>
-                  );
-                })}
-              </div>
-            </div>
-          </details>
+              );
+            })}
+          </div>
         </motion.div>
 
         {/* Selected Category Preview or Grid */}
@@ -184,7 +175,7 @@ export default function ConversationsPage() {
             animate={{ opacity: 1, y: 0 }}
             className="mb-8"
           >
-            <Card className="overflow-hidden border-2 border-indigo-200 dark:border-indigo-800">
+            <div className="rounded-xl border-2 border-indigo-200 dark:border-indigo-800 bg-card overflow-hidden">
               <Link href={`/conversations/${selectedTopic.id}`}>
                 <div className="p-6 sm:p-8">
                   <div className="flex items-start gap-4">
@@ -207,7 +198,7 @@ export default function ConversationsPage() {
                   </div>
                 </div>
               </Link>
-            </Card>
+            </div>
             <Button
               variant="ghost"
               size="sm"
@@ -241,7 +232,7 @@ export default function ConversationsPage() {
                       transition={{ delay: index * 0.03 }}
                     >
                       <Link href={`/conversations/${topic.id}`}>
-                        <Card className="h-full overflow-hidden transition-all hover:shadow-lg hover:-translate-y-0.5 cursor-pointer group border-2 hover:border-indigo-200">
+                        <div className="h-full rounded-xl border-2 hover:border-indigo-200 dark:hover:border-indigo-800 bg-card overflow-hidden transition-all hover:shadow-lg hover:-translate-y-0.5 cursor-pointer group">
                           <div className="p-5">
                             <div className="flex items-center gap-3 mb-3">
                               <span className="text-3xl group-hover:scale-110 transition-transform">
@@ -273,7 +264,7 @@ export default function ConversationsPage() {
                               </Badge>
                             </div>
                           </div>
-                        </Card>
+                        </div>
                       </Link>
                     </motion.div>
                   );

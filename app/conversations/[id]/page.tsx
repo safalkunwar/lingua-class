@@ -4,22 +4,14 @@ import { notFound } from "next/navigation";
 import { StudentSidebar } from "@/components/layout/sidebar";
 import { conversations } from "@/data/conversations";
 import { use } from "react";
-import { motion } from "framer-motion";
-import { ConversationReader } from "@/components/conversations/ConversationReader";
-import { CategorySidebar } from "@/components/conversations/CategorySidebar";
-import { AudioController } from "@/components/conversations/AudioController";
-import { PracticeBlock } from "@/components/conversations/PracticeBlock";
+import { LessonLayout } from "@/components/conversations/LessonLayout";
 import { PresentationMode } from "@/components/conversations/PresentationMode";
-import { ReadingModeToggle } from "@/components/conversations/ReadingModeToggle";
-import { TeacherModeToggle } from "@/components/conversations/TeacherModeToggle";
-import { ChevronLeft, ChevronRight, Search, MessageCircle, Clock } from "lucide-react";
-import { useState, useCallback, useRef, useEffect } from "react";
-import { Input } from "@/components/ui/input";
-import { Badge } from "@/components/ui/badge";
+import { StickyToolbar } from "@/components/conversations/StickyToolbar";
+import { ChevronLeft, ChevronRight, Maximize, BookOpen } from "lucide-react";
+import { useState, useCallback, useEffect, useMemo } from "react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-
-type ReadingMode = "normal" | "focused";
+import { speak } from "@/lib/speech";
 
 export default function ConversationDetailPage({ params }: { params: Promise<{ id: string }> }) {
   const resolvedParams = use(params);
@@ -33,24 +25,18 @@ export default function ConversationDetailPage({ params }: { params: Promise<{ i
   const prevTopic = topicIndex > 0 ? conversations[topicIndex - 1] : null;
   const nextTopic = topicIndex < conversations.length - 1 ? conversations[topicIndex + 1] : null;
 
-  const [readingMode, setReadingMode] = useState<ReadingMode>("normal");
-  const [teacherMode, setTeacherMode] = useState(false);
   const [viewMode, setViewMode] = useState<"read" | "presentation">("read");
   const [favorites, setFavorites] = useState<Set<string>>(new Set());
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentLine, setCurrentLine] = useState(0);
-  const [playbackRate, setPlaybackRate] = useState(1);
   const [autoPlay, setAutoPlay] = useState(false);
-  const [searchQuery, setSearchQuery] = useState("");
-  const [levelFilter, setLevelFilter] = useState("all");
-  const [currentLineText, setCurrentLineText] = useState("");
-  const [audioLanguage, setAudioLanguage] = useState<"en" | "zh">("en");
+  const [showChinese, setShowChinese] = useState(true);
 
-  const audioRef = useRef<SpeechSynthesisUtterance | null>(null);
+  const chineseTranslation = topic.chineseTranslation || [];
+  const lines = useMemo(() => topic.conversation || [], [topic.conversation]);
 
-  const toggleFavorite = useCallback((lineIndex: number) => {
+  const toggleFavorite = useCallback((key: string) => {
     setFavorites((prev) => {
-      const key = `${topic.id}-${lineIndex}`;
       const next = new Set(prev);
       if (next.has(key)) {
         next.delete(key);
@@ -59,250 +45,221 @@ export default function ConversationDetailPage({ params }: { params: Promise<{ i
       }
       return next;
     });
-  }, [topic.id]);
+  }, []);
 
-  const playAudio = useCallback(() => {
+  const playEnglish = useCallback((text: string) => {
     if ("speechSynthesis" in window) {
       window.speechSynthesis.cancel();
-      const lines = topic.conversation || [];
-      const line = lines[currentLine];
-      if (line) {
-        setCurrentLineText(line.line);
-        setAudioLanguage("en");
-        const utterance = new SpeechSynthesisUtterance(line.line);
-        const englishVoice = window.speechSynthesis.getVoices().find(v => v.lang.startsWith("en"));
-        if (englishVoice) utterance.voice = englishVoice;
-        utterance.rate = playbackRate;
-        utterance.onend = () => {
-          if (autoPlay && currentLine < lines.length - 1) {
-            setCurrentLine((prev) => prev + 1);
-            setTimeout(() => playAudio(), 500);
-          } else {
-            setIsPlaying(false);
-            setCurrentLineText("");
-          }
-        };
-        audioRef.current = utterance;
-        window.speechSynthesis.speak(utterance);
-        setIsPlaying(true);
-      }
-    }
-  }, [topic, currentLine, playbackRate, autoPlay]);
-
-  const playChineseAudio = useCallback((text: string) => {
-    if ("speechSynthesis" in window) {
-      window.speechSynthesis.cancel();
-      setCurrentLineText(text);
-      setAudioLanguage("zh");
-      const utterance = new SpeechSynthesisUtterance(text);
-      const chineseVoice = window.speechSynthesis.getVoices().find(v => v.lang.startsWith("zh"));
-      if (chineseVoice) utterance.voice = chineseVoice;
-      utterance.rate = playbackRate;
-      utterance.onend = () => {
-        setIsPlaying(false);
-        setCurrentLineText("");
-      };
-      audioRef.current = utterance;
-      window.speechSynthesis.speak(utterance);
+      speak(text, "en-US");
       setIsPlaying(true);
-    }
-  }, [playbackRate]);
-
-  const pauseAudio = useCallback(() => {
-    if ("speechSynthesis" in window) {
-      window.speechSynthesis.cancel();
-      setIsPlaying(false);
-      setCurrentLineText("");
     }
   }, []);
 
-  const handlePlaybackRateChange = useCallback((rate: number) => {
-    setPlaybackRate(rate);
-    if (isPlaying) {
-      pauseAudio();
-      setTimeout(playAudio, 100);
+  const playChinese = useCallback((text: string) => {
+    if ("speechSynthesis" in window) {
+      window.speechSynthesis.cancel();
+      speak(text, "zh-CN");
+      setIsPlaying(true);
     }
-  }, [isPlaying, pauseAudio, playAudio]);
+  }, []);
+
+  const stopAudio = useCallback(() => {
+    if ("speechSynthesis" in window) {
+      window.speechSynthesis.cancel();
+      setIsPlaying(false);
+    }
+  }, []);
+
+  const toggleAutoPlay = useCallback(() => {
+    setAutoPlay((a) => !a);
+  }, []);
+
+  useEffect(() => {
+    if (!autoPlay) return;
+    let cancelled = false;
+
+    const playNext = () => {
+      if (cancelled) return;
+      setCurrentLine((prev) => {
+        if (prev >= lines.length - 1) {
+          setAutoPlay(false);
+          return prev;
+        }
+        const next = prev + 1;
+        const line = lines[next];
+        if (line) {
+          speak(line.line, "en-US");
+        }
+        return next;
+      });
+    };
+
+    const timer = setInterval(playNext, 3000);
+    return () => {
+      cancelled = true;
+      clearInterval(timer);
+    };
+  }, [autoPlay, lines]);
+
+  useEffect(() => {
+    const handleEnd = () => {
+      setIsPlaying(false);
+    };
+
+    if ("speechSynthesis" in window) {
+      const checkEnd = setInterval(() => {
+        if (!window.speechSynthesis.speaking) {
+          handleEnd();
+        }
+      }, 500);
+
+      return () => clearInterval(checkEnd);
+    }
+  }, [currentLine]);
+
+  const handlePrevLine = useCallback(() => {
+    setCurrentLine((prev) => Math.max(0, prev - 1));
+  }, []);
+
+  const handleNextLine = useCallback(() => {
+    setCurrentLine((prev) => Math.min(lines.length - 1, prev + 1));
+  }, [lines.length]);
 
   return (
     <div className="flex min-h-screen">
       <StudentSidebar />
-      <div className="flex-1 flex">
-        {/* Desktop Category Sidebar */}
-        <CategorySidebar
-          topics={conversations}
-          activeTopicId={topic.id}
-          onSelectTopic={(id) => {
-            if (id !== topic.id) {
-              window.location.href = `/conversations/${id}`;
-            }
-          }}
-          searchQuery={searchQuery}
-          onSearchChange={setSearchQuery}
-          levelFilter={levelFilter}
-          onLevelFilterChange={setLevelFilter}
-        />
 
-        {/* Main Content */}
-        <main className="flex-1 min-w-0 pb-24">
-          {/* Header */}
-          <div className="sticky top-0 z-30 bg-background/95 backdrop-blur border-b">
-            <div className="flex items-center justify-between px-4 sm:px-6 py-3">
+      <main className="flex-1 min-w-0">
+        {/* Top Navigation Bar */}
+        <div className="sticky top-0 z-30 bg-background/95 backdrop-blur border-b">
+          <div className="flex items-center justify-between px-4 sm:px-6 py-3">
+            <div className="flex items-center gap-2">
               <Link href="/conversations">
                 <Button variant="ghost" size="sm">
                   <ChevronLeft className="w-4 h-4 mr-1" />
                   Back
                 </Button>
               </Link>
-              <div className="flex items-center gap-2">
-                <ReadingModeToggle mode={readingMode} onToggle={() => setReadingMode((m) => m === "normal" ? "focused" : "normal")} />
-                <TeacherModeToggle enabled={teacherMode} onToggle={() => setTeacherMode((t) => !t)} />
-                <Button
-                  variant="outline"
-                  size="sm"
-                  onClick={() => setViewMode("presentation")}
-                >
-                  🖥️ Present
-                </Button>
+              <div className="hidden sm:flex items-center gap-2">
+                {prevTopic && (
+                  <Link href={`/conversations/${prevTopic.id}`}>
+                    <Button variant="ghost" size="sm">
+                      <ChevronLeft className="w-4 h-4" />
+                      {prevTopic.emoji}
+                    </Button>
+                  </Link>
+                )}
+                {nextTopic && (
+                  <Link href={`/conversations/${nextTopic.id}`}>
+                    <Button variant="ghost" size="sm">
+                      {nextTopic.emoji}
+                      <ChevronRight className="w-4 h-4" />
+                    </Button>
+                  </Link>
+                )}
               </div>
             </div>
-          </div>
 
-          {/* Topic Header */}
-          <div className="px-4 sm:px-6 py-6 border-b">
-            <div className="flex items-start gap-4">
-              <span className="text-4xl sm:text-5xl">{topic.emoji}</span>
-              <div className="flex-1 min-w-0">
-                <h1 className="text-2xl sm:text-3xl font-bold tracking-tight">{topic.title}</h1>
-                <p className="text-muted-foreground mt-1">{topic.description}</p>
-                <div className="flex flex-wrap gap-2 mt-3">
-                  <Badge variant="secondary">{topic.level}</Badge>
-                  <Badge variant="outline" className="flex items-center gap-1">
-                    <Clock className="w-3 h-3" />
-                    {topic.estimatedTime}
-                  </Badge>
-                  <Badge variant="outline" className="flex items-center gap-1">
-                    <MessageCircle className="w-3 h-3" />
-                    {topic.conversation.length} lines
-                  </Badge>
-                </div>
-              </div>
+            <div className="flex items-center gap-2">
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={() => setShowChinese((s) => !s)}
+                className="gap-1.5"
+              >
+                <BookOpen className="w-4 h-4" />
+                {showChinese ? "Hide Chinese" : "Show Chinese"}
+              </Button>
+              <Button
+                variant="default"
+                size="sm"
+                onClick={() => setViewMode("presentation")}
+                className="gap-1.5"
+              >
+                <Maximize className="w-4 h-4" />
+                <span className="hidden sm:inline">Present</span>
+              </Button>
             </div>
           </div>
+        </div>
 
-          {/* Conversation Reader */}
-          <div className="px-4 sm:px-6 py-6">
-          <ConversationReader
+        {/* Lesson Layout */}
+        <div className="px-4 sm:px-6 py-6 sm:py-8">
+          <LessonLayout
             topic={topic}
-            readingMode={readingMode}
-            teacherMode={teacherMode}
-            viewMode={viewMode}
+            chineseTranslation={chineseTranslation}
+            currentLineIndex={currentLine}
+            isPlaying={isPlaying}
+            showChinese={showChinese}
             favorites={favorites}
             onToggleFavorite={toggleFavorite}
-            onToggleTeacherMode={() => setTeacherMode((t) => !t)}
-            onToggleReadingMode={() => setReadingMode((m) => m === "normal" ? "focused" : "normal")}
-            onTogglePresentationMode={() => setViewMode("presentation")}
-            onPlayAudio={playAudio}
-            onPauseAudio={pauseAudio}
-            audioPlaying={isPlaying}
-            playbackRate={playbackRate}
-            onPlaybackRateChange={handlePlaybackRateChange}
-            autoPlay={autoPlay}
-            onToggleAutoPlay={() => setAutoPlay((a) => !a)}
-            chineseTranslation={topic.chineseTranslation}
-            onPlayChineseAudio={playChineseAudio}
-            currentLine={currentLine}
+            onPlayEnglish={playEnglish}
+            onPlayChinese={playChinese}
+            onCopy={(text) => {
+              navigator.clipboard.writeText(text);
+            }}
           />
-          </div>
+        </div>
 
-          {/* Bottom Navigation */}
-          <div className="px-4 sm:px-6 py-6 flex justify-between items-center border-t">
-            {prevTopic ? (
+        {/* Mobile Bottom Nav */}
+        <div className="fixed bottom-0 left-0 right-0 z-40 sm:hidden bg-background/95 backdrop-blur border-t">
+          <div className="flex items-center justify-around py-2">
+            {prevTopic && (
               <Link href={`/conversations/${prevTopic.id}`}>
-                <Button variant="outline">
-                  <ChevronLeft className="w-4 h-4 mr-2" />
-                  {prevTopic.emoji} {prevTopic.title}
+                <Button variant="ghost" size="sm">
+                  <ChevronLeft className="w-4 h-4" />
                 </Button>
               </Link>
-            ) : (
-              <div />
             )}
-            {nextTopic ? (
+            <span className="text-xs text-muted-foreground">
+              {currentLine + 1}/{lines.length}
+            </span>
+            {nextTopic && (
               <Link href={`/conversations/${nextTopic.id}`}>
-                <Button variant="outline">
-                  {nextTopic.emoji} {nextTopic.title}
-                  <ChevronRight className="w-4 h-4 ml-2" />
+                <Button variant="ghost" size="sm">
+                  <ChevronRight className="w-4 h-4" />
                 </Button>
               </Link>
-            ) : (
-              <div />
             )}
           </div>
-        </main>
+        </div>
 
-        {/* Audio Controller */}
-        <AudioController
+        {/* Sticky Toolbar */}
+        <StickyToolbar
           isPlaying={isPlaying}
-          onPlay={playAudio}
-          onPause={pauseAudio}
-          playbackRate={playbackRate}
-          onPlaybackRateChange={handlePlaybackRateChange}
-          autoPlay={autoPlay}
-          onToggleAutoPlay={() => setAutoPlay((a) => !a)}
-          currentLine={currentLine}
-          totalLines={topic.conversation.length}
-          currentText={currentLineText}
-          language={audioLanguage}
+          onPlay={() => lines[currentLine] && playEnglish(lines[currentLine].line)}
+          onPause={stopAudio}
+          onReplay={() => lines[currentLine] && playEnglish(lines[currentLine].line)}
+          showChinese={showChinese}
+          onToggleChinese={() => setShowChinese((s) => !s)}
+          favoritesCount={favorites.size}
+          onToggleFavorites={() => {}}
+          onSearch={() => {}}
+          onDictionary={() => {}}
         />
 
-        {/* Presentation Mode Overlay */}
+        {/* Presentation Mode */}
         <PresentationMode
           isOpen={viewMode === "presentation"}
           onClose={() => setViewMode("read")}
-        >
-          <div className="max-w-4xl mx-auto px-4 py-8">
-            <ConversationReader
-              topic={topic}
-              readingMode={readingMode}
-              teacherMode={teacherMode}
-              viewMode="presentation"
-              favorites={favorites}
-              onToggleFavorite={toggleFavorite}
-              onToggleTeacherMode={() => setTeacherMode((t) => !t)}
-              onToggleReadingMode={() => setReadingMode((m) => m === "normal" ? "focused" : "normal")}
-              onTogglePresentationMode={() => setViewMode("read")}
-              onPlayAudio={playAudio}
-              onPauseAudio={pauseAudio}
-              audioPlaying={isPlaying}
-              playbackRate={playbackRate}
-              onPlaybackRateChange={handlePlaybackRateChange}
-              autoPlay={autoPlay}
-              onToggleAutoPlay={() => setAutoPlay((a) => !a)}
-              chineseTranslation={topic.chineseTranslation}
-              onPlayChineseAudio={playChineseAudio}
-              currentLine={currentLine}
-            />
-          </div>
-          {/* Audio Controller in Presentation Mode */}
-          <div className="border-t bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-            <div className="max-w-4xl mx-auto px-4 py-3">
-              <AudioController
-                isPlaying={isPlaying}
-                onPlay={playAudio}
-                onPause={pauseAudio}
-                playbackRate={playbackRate}
-                onPlaybackRateChange={handlePlaybackRateChange}
-                autoPlay={autoPlay}
-                onToggleAutoPlay={() => setAutoPlay((a) => !a)}
-                currentLine={currentLine}
-                totalLines={topic.conversation.length}
-                currentText={currentLineText}
-                language={audioLanguage}
-              />
-            </div>
-          </div>
-        </PresentationMode>
-      </div>
+          topic={topic}
+          chineseTranslation={chineseTranslation}
+          currentLineIndex={currentLine}
+          isPlaying={isPlaying}
+          playbackRate={1}
+          showChinese={showChinese}
+          favorites={favorites}
+          onToggleFavorite={toggleFavorite}
+          onPlayEnglish={playEnglish}
+          onPlayChinese={playChinese}
+          onPrevLine={handlePrevLine}
+          onNextLine={handleNextLine}
+          onToggleChinese={() => setShowChinese((s) => !s)}
+          autoPlay={autoPlay}
+          onToggleAutoPlay={toggleAutoPlay}
+          onPlaybackRateChange={() => {}}
+        />
+      </main>
     </div>
   );
 }

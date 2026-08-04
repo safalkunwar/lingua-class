@@ -11,13 +11,13 @@ export interface VocabWord {
   word: string;
   phonetic: string;
   chinese: string;
-  pinyin: string;
+  pinyin?: string;
   partOfSpeech: string;
-  definitionEn: string;
-  definitionZh: string;
-  exampleEn: string;
-  exampleZh: string;
-  register: RegisterLevel;
+  definitionEn?: string;
+  definitionZh?: string;
+  exampleEn?: string;
+  exampleZh?: string;
+  register?: RegisterLevel;
 }
 
 export interface DailyExpression {
@@ -62,7 +62,15 @@ export interface ChineseLine {
 export interface GrammarPoint {
   title: string;
   explanation: string;
+  explanationZh?: string;
   examples: string[];
+  examplesZh?: string[];
+  miniExercise?: {
+    question: string;
+    questionZh?: string;
+    options?: string[];
+    correct?: string;
+  };
 }
 
 export interface PronunciationTip {
@@ -115,6 +123,50 @@ export interface HumorNote {
   explanation: string;
 }
 
+export type Difficulty = "beginner" | "elementary" | "intermediate" | "upper-intermediate" | "advanced";
+
+export interface LearningObjective {
+  objective: string;
+  objectiveZh: string;
+  completed?: boolean;
+}
+
+export interface SentencePattern {
+  pattern: string;
+  meaning: string;
+  meaningZh: string;
+  usage: string;
+  variations: string[];
+  examples: { situation: string; sentence: string }[];
+}
+
+export interface CulturalNote {
+  title: string;
+  content: string;
+  contentZh: string;
+  icon?: string;
+}
+
+export interface PracticeActivity {
+  id: string;
+  type: "fill-blank" | "rearrange" | "match" | "listening" | "translation" | "shadowing" | "role-play" | "speaking" | "discussion";
+  title: string;
+  titleZh: string;
+  instructions: string;
+  instructionsZh: string;
+  content: string;
+  contentZh?: string;
+  options?: string[];
+  correctAnswer?: string | number;
+  hints?: string[];
+}
+
+export interface LessonSection {
+  title: string;
+  titleZh: string;
+  icon: string;
+}
+
 export interface ConversationTopic {
   id: string;
   title: string;
@@ -122,7 +174,11 @@ export interface ConversationTopic {
   description: string;
   color: string;
   level: string;
+  cefr?: string;
+  difficulty?: Difficulty;
   estimatedTime: string;
+  learningObjectives?: LearningObjective[];
+  objectives?: LearningObjective[];
   registerMarkers?: RegisterMarker[];
   warmUp?: {
     title: string;
@@ -130,6 +186,10 @@ export interface ConversationTopic {
     contentZh: string;
   };
   vocabulary?: VocabWord[];
+  vocabularySection?: {
+    title: string;
+    words: VocabWord[];
+  };
   dailyExpressions?: {
     title: string;
     items: DailyExpression[];
@@ -138,10 +198,35 @@ export interface ConversationTopic {
   conversation: ConversationLine[];
   chineseTranslation: ChineseLine[];
   grammarInContext?: GrammarPoint[];
+  grammarFocus?: {
+    title: string;
+    explanation: string;
+    explanationZh: string;
+    examples: string[];
+    examplesZh?: string[];
+    miniExercise?: {
+      question: string;
+      questionZh: string;
+      options?: string[];
+      correct?: string;
+    };
+  }[];
   pronunciation?: PronunciationTip[];
+  pronunciationTips?: {
+    tip: string;
+    example: string;
+    exampleZh?: string;
+  }[];
   shadowing?: ShadowingLine[];
+  shadowingPractice?: string[];
   speakingPractice?: SpeakingPractice;
   rolePlay?: RolePlay;
+  rolePlayPractice?: {
+    scenario: string;
+    scenarioZh?: string;
+    prompts: string[];
+    partnerLines?: string[];
+  }[];
   homework?: Homework;
   quiz?: QuizItem[];
   review?: ReviewItem[];
@@ -149,12 +234,17 @@ export interface ConversationTopic {
   usefulExpressions?: {
     expression: string;
     meaning: string;
+    meaningZh?: string;
     usage: string;
+    formality?: string;
+    commonMistakes?: { mistake: string; correction: string; explanation: string; explanationZh?: string }[];
+    alternatives?: string[];
   }[];
   commonMistakes?: {
     mistake: string;
     correction: string;
     explanation: string;
+    explanationZh?: string;
   }[];
   vocabularyExpansion?: {
     word: string;
@@ -164,7 +254,9 @@ export interface ConversationTopic {
   }[];
   speakingChallenge?: {
     instruction: string;
+    instructionZh?: string;
     hints: string[];
+    hintsZh?: string[];
   };
   vocabularyPreview?: {
     word: string;
@@ -172,25 +264,17 @@ export interface ConversationTopic {
     chinese: string;
     partOfSpeech: string;
   }[];
-  grammarFocus?: {
-    title: string;
-    explanation: string;
-    examples: string[];
-  }[];
   collocationsAndChunks?: {
     chunk: string;
     meaning: string;
+    meaningZh: string;
     example: string;
+    exampleZh?: string;
   }[];
-  pronunciationTips?: {
-    tip: string;
-    example: string;
-  }[];
-  rolePlayPractice?: {
-    scenario: string;
-    prompts: string[];
-  }[];
-  shadowingPractice?: string[];
+  sentencePatterns?: SentencePattern[];
+  culturalNotes?: CulturalNote[];
+  practiceActivities?: PracticeActivity[];
+  lessonSections?: LessonSection[];
 }
 
 export type SlangLevel = "safe" | "internet" | "street" | "rough";
