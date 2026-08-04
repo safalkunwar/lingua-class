@@ -9,9 +9,6 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Switch } from "@/components/ui/switch";
-import { Badge } from "@/components/ui/badge";
-import { Separator } from "@/components/ui/separator";
 import {
   Select,
   SelectContent,
@@ -23,10 +20,8 @@ import {
   Moon,
   Sun,
   Languages,
-  Bell,
   Target,
   Trash2,
-  Volume2,
   type LucideIcon,
 } from "lucide-react";
 import { usePreferencesStore } from "@/stores/preferences-store";
