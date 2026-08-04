@@ -7,8 +7,9 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
-import { Sparkles, Trophy, RotateCcw, Lightbulb, Star, MessageCircle, Mic, ArrowRight, PartyPopper, Frown, HelpCircle, Undo2, Redo2 } from "lucide-react";
+import { Sparkles, Trophy, RotateCcw, Lightbulb, Star, MessageCircle, Mic, ArrowRight, PartyPopper, Frown, HelpCircle, Undo2, Redo2, Volume2 } from "lucide-react";
 import { StudentSidebar } from "@/components/layout/sidebar";
+import { useSpeechSynthesis } from "@/hooks/use-speech-synthesis";
 
 type GameState = "start" | "playing" | "revealed";
 
@@ -28,6 +29,7 @@ export default function ImageGuessingPage() {
   const [hintUsed, setHintUsed] = useState(false);
   const [history, setHistory] = useState<number[]>([]);
   const [historyIndex, setHistoryIndex] = useState(-1);
+  const { speakEnglish } = useSpeechSynthesis();
 
   const category = selectedCategory
     ? imageGuessingCategories.find((c) => c.id === selectedCategory)
@@ -234,8 +236,16 @@ export default function ImageGuessingPage() {
               {!isCorrect && (
                 <p className="text-lg text-muted-foreground mb-2">
                   The answer was:{" "}
-                  <span className="font-bold text-foreground">
+                  <span className="font-bold text-foreground flex items-center justify-center gap-2">
                     {currentItem?.answer}
+                    <Button
+                      variant="ghost"
+                      size="icon"
+                      className="h-8 w-8 inline-flex"
+                      onClick={() => speakEnglish(currentItem?.answer || "")}
+                    >
+                      <Volume2 className="h-4 w-4" />
+                    </Button>
                   </span>
                 </p>
               )}
