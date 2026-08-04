@@ -5067,6 +5067,48 @@ export const wordBook: WordBookTopic[] = [
         commonMistakes: [{ mistake: "Using 'discourse' for casual talk", correction: "Use for formal, structured communication." }],
         pronunciationTips: "Stress first syllable: DIS-kors.",
         memoryTrick: "Dis = apart, course = path. A structured path of words."
+      },
+      {
+        id: "ac-9", topic: "Advanced Communication", level: "C2", category: "Nuance",
+        english: "Subtext", word: "subtext", partOfSpeech: "noun",
+        breakdown: "SUB-tekst", chinese: "潜台词", pinyin: "qián tái cí",
+        emoji: "📖", imageKeyword: "hidden meaning subtext",
+        definitionEn: "The underlying meaning or theme in a conversation or text.",
+        definitionZh: "对话或文本中的隐含意义或主题。",
+        detailsEn: "Common: romantic subtext, political subtext, subtext in literature.",
+        detailsZh: "常见：romantic subtext、political subtext、literature subtext。",
+        exampleEn: "The subtext of his comment was that he was unhappy.",
+        exampleZh: "他评论的潜台词是他不高兴。",
+        examples: [
+          { en: "She picked up on the subtext immediately.", zh: "她立刻就察觉到了潜台词。" },
+          { en: "The subtext suggests a deeper conflict.", zh: "潜台词暗示了更深层的冲突。" }
+        ],
+        collocations: ["underlying subtext", "political subtext", "romantic subtext", "hidden subtext"],
+        synonyms: ["implication", "underlying meaning", "hidden message"], antonyms: ["explicit meaning", "surface meaning"],
+        commonMistakes: [{ mistake: "Using 'subtext' for literal text", correction: "Subtext means the hidden meaning beneath the surface." }],
+        pronunciationTips: "Stress first syllable: SUB-tekst.",
+        memoryTrick: "Sub = under, text = words. The meaning under the words."
+      },
+      {
+        id: "ac-10", topic: "Advanced Communication", level: "C2", category: "Argumentation",
+        english: "Fallacy", word: "fallacy", partOfSpeech: "noun",
+        breakdown: "FAL-uh-see", chinese: "谬论", pinyin: "miù lùn",
+        emoji: "⚠️", imageKeyword: "logical fallacy error",
+        definitionEn: "A mistaken belief or argument based on unsound reasoning.",
+        definitionZh: "基于不健全推理的错误信念或论点。",
+        detailsEn: "Common: logical fallacy, common fallacy, argument fallacy.",
+        detailsZh: "常见：logical fallacy、common fallacy、argument fallacy。",
+        exampleEn: "That argument is based on a logical fallacy.",
+        exampleZh: "那个论点基于一个逻辑谬误。",
+        examples: [
+          { en: "He pointed out the fallacy in her reasoning.", zh: "他指出了她推理中的谬误。" },
+          { en: "Avoiding fallacies strengthens your argument.", zh: "避免谬误会加强你的论点。" }
+        ],
+        collocations: ["logical fallacy", "common fallacy", "argument fallacy", "reasoning fallacy"],
+        synonyms: ["misconception", "error", "mistake"], antonyms: ["truth", "fact", "valid reasoning"],
+        commonMistakes: [{ mistake: "Using 'fallacy' for any mistake", correction: "A fallacy is specifically a flaw in reasoning or argument." }],
+        pronunciationTips: "Stress first syllable: FAL-uh-see.",
+        memoryTrick: "Fall = error, acy = noun. A wrong way of thinking."
       }
     ]
   }
