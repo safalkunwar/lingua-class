@@ -827,6 +827,59 @@ export const slangAcademy: SlangLevelData[] = [
         ],
         culturalNotes: "Common in school bullying. Should be avoided in adult professional contexts. Can be playful among friends depending on tone.",
         warning: "WARNING: 'Loser' can be bullying language. Using it toward someone who is struggling is cruel."
+      },
+      {
+        id: "rough-8",
+        word: "Idiot",
+        chinese: "白痴/笨蛋",
+        pinyin: "bái chǐ / běn dàn",
+        meaning: "Stupid person (insult)",
+        example: "You idiot! You locked the keys in the car again.",
+        exampleZh: "你个笨蛋！你又把钥匙锁在车里了。",
+        whoSaysIt: "Everyone when frustrated",
+        ageGroup: "Teens and above",
+        region: "All English-speaking countries",
+        isOffensive: true,
+        offensiveLevel: 3,
+        safeAlternatives: ["Silly", "Careless", "Unwise", "That was a mistake"],
+        conversation: [
+          { speaker: "Alex", line: "You idiot! You deleted the whole folder!" },
+          { speaker: "Jordan", line: "I know, I'm so sorry. It was an accident." },
+          { speaker: "Alex", line: "Whatever. Just don't be such a jerk next time." }
+        ],
+        chineseTranslation: [
+          { speaker: "Alex", line: "你个白痴！你把整个文件夹都删了！" },
+          { speaker: "Jordan", line: "我知道，对不起。那是意外。" },
+          { speaker: "Alex", line: "算了。下次别那么混蛋。" }
+        ],
+        culturalNotes: "Mild-to-moderate insult. Less severe than some other words but still rude. Common in everyday speech among friends."
+      },
+      {
+        id: "rough-9",
+        word: "Drop dead",
+        chinese: "去死吧",
+        pinyin: "qù sǐ ba",
+        meaning: "Go away / Leave me alone (very rude)",
+        example: "Drop dead! I don't want to talk to you.",
+        exampleZh: "去死吧！我不想和你说话。",
+        whoSaysIt: "Angry people, bullies",
+        ageGroup: "Teens and above",
+        region: "All English-speaking countries",
+        isOffensive: true,
+        offensiveLevel: 5,
+        safeAlternatives: ["I don't want to talk", "Leave me alone", "I'm not interested", "Go away"],
+        conversation: [
+          { speaker: "Alex", line: "I don't want to see you here again." },
+          { speaker: "Sam", line: "Drop dead! I wasn't even talking to you." },
+          { speaker: "Alex", line: "Watch your mouth." }
+        ],
+        chineseTranslation: [
+          { speaker: "Alex", line: "我不想再在这里看到你。" },
+          { speaker: "Sam", line: "去死吧！我甚至没在和你说话。" },
+          { speaker: "Alex", line: "注意你的嘴巴。" }
+        ],
+        culturalNotes: "Extremely rude. Considered a serious insult. Can be considered harassment. Students should understand it but never use it.",
+        warning: "EXTREME WARNING: 'Drop dead' is one of the rudest expressions in English. It can be considered a threat. Never use this expression."
       }
     ]
   }
