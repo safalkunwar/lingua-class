@@ -2,21 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import {
-  BookOpen,
-  Mic,
-  Headphones,
-  BookText,
-  PenTool,
-  BarChart3,
-  Layers,
-  Home,
-  Presentation,
-  GraduationCap,
-  MessageSquare,
-  Sparkles,
-  Flame,
-} from "lucide-react";
+import { GraduationCap } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
@@ -24,7 +10,6 @@ import { Separator } from "@/components/ui/separator";
 interface SidebarLink {
   href: string;
   label: string;
-  icon: React.ElementType;
   emoji?: string;
 }
 
@@ -32,16 +17,16 @@ export function StudentSidebar() {
   const pathname = usePathname();
 
   const links: SidebarLink[] = [
-    { href: "/vocabulary", label: "Vocabulary", icon: BookOpen, emoji: "📚" },
-    { href: "/word-book", label: "Word Book", icon: BookText, emoji: "📖" },
-    { href: "/conversations", label: "Conversations", icon: MessageSquare, emoji: "💬" },
-    { href: "/image-guessing", label: "Image Guessing", icon: Sparkles, emoji: "🖼️" },
-    { href: "/flashcards", label: "Flashcards", icon: Layers, emoji: "🃏" },
-    { href: "/speaking", label: "Speaking", icon: Mic, emoji: "🎤" },
-    { href: "/listening", label: "Listening", icon: Headphones, emoji: "🎧" },
-    { href: "/reading", label: "Reading", icon: BookText, emoji: "📖" },
-    { href: "/writing", label: "Writing", icon: PenTool, emoji: "✍️" },
-    { href: "/slang-module", label: "Slang Module", icon: Flame, emoji: "🗣️" },
+    { href: "/vocabulary", label: "Vocabulary", emoji: "📚" },
+    { href: "/word-book", label: "Word Book", emoji: "📖" },
+    { href: "/conversations", label: "Conversations", emoji: "💬" },
+    { href: "/image-guessing", label: "Image Guessing", emoji: "🖼️" },
+    { href: "/flashcards", label: "Flashcards", emoji: "🃏" },
+    { href: "/speaking", label: "Speaking", emoji: "🎤" },
+    { href: "/listening", label: "Listening", emoji: "🎧" },
+    { href: "/reading", label: "Reading", emoji: "📖" },
+    { href: "/writing", label: "Writing", emoji: "✍️" },
+    { href: "/slang-module", label: "Slang Module", emoji: "🗣️" },
   ];
 
   return (
@@ -83,9 +68,9 @@ export function TeacherSidebar() {
   const pathname = usePathname();
 
   const links: SidebarLink[] = [
-    { href: "/teacher", label: "Dashboard", icon: Home, emoji: "🏠" },
-    { href: "/classroom", label: "Classroom", icon: Presentation, emoji: "🏫" },
-    { href: "/vocabulary", label: "Lesson Content", icon: BookOpen, emoji: "📚" },
+    { href: "/teacher", label: "Dashboard", emoji: "🏠" },
+    { href: "/classroom", label: "Classroom", emoji: "🏫" },
+    { href: "/vocabulary", label: "Lesson Content", emoji: "📚" },
   ];
 
   return (
@@ -95,7 +80,6 @@ export function TeacherSidebar() {
           Teacher Tools
         </h3>
         {links.map((link) => {
-          const Icon = link.icon;
           const isActive = pathname === link.href;
           return (
             <Link key={link.href} href={link.href}>
