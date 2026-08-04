@@ -451,6 +451,58 @@ export const slangAcademy: SlangLevelData[] = [
           { speaker: "Tom", line: "好吧，你说得对。" }
         ],
         culturalNotes: "Popularized by social media and hip-hop. A 'clap back' is a sharp, often public, response to criticism."
+      },
+      {
+        id: "street-4",
+        word: "Flex",
+        chinese: "炫耀/展示",
+        pinyin: "xuàn yào / zhǎn shì",
+        meaning: "To show off or display something proudly",
+        example: "He's just flexing his new watch.",
+        exampleZh: "他只是在炫耀他的新手表。",
+        whoSaysIt: "Teens, young adults",
+        ageGroup: "13-35",
+        region: "All English-speaking countries",
+        isOffensive: false,
+        offensiveLevel: 1,
+        safeAlternatives: ["Show off", "Display", "Share", "Be proud of"],
+        conversation: [
+          { speaker: "Jake", line: "Did you see his new car?" },
+          { speaker: "Mia", line: "He's been flexing it all week." },
+          { speaker: "Jake", line: "I know, right? Just let him have his moment." }
+        ],
+        chineseTranslation: [
+          { speaker: "Jake", line: "你看到他的新车了吗？" },
+          { speaker: "Mia", line: "他整个星期都在炫耀。" },
+          { speaker: "Jake", line: "是吧？就让他得意一下吧。" }
+        ],
+        culturalNotes: "Can be positive or negative depending on context. 'Flex' alone is often negative, but 'flex your skills' can be positive."
+      },
+      {
+        id: "street-5",
+        word: "Deadass",
+        chinese: "说真的/真的假的",
+        pinyin: "shuō zhēn de / zhēn de jiǎ de",
+        meaning: "Seriously / For real / I'm not joking",
+        example: "Deadass? You're going to travel the world?",
+        exampleZh: "说真的？你要去环游世界？",
+        whoSaysIt: "Teens, young adults",
+        ageGroup: "13-30",
+        region: "American (originally AAVE), now global",
+        isOffensive: false,
+        offensiveLevel: 1,
+        safeAlternatives: ["Really?", "Are you serious?", "For real?", "No way"],
+        conversation: [
+          { speaker: "Jake", line: "I'm actually moving to Japan next month." },
+          { speaker: "Mia", line: "Deadass? That's wild!" },
+          { speaker: "Jake", line: "Deadass. I already quit my job." }
+        ],
+        chineseTranslation: [
+          { speaker: "Jake", line: "我下个月真的要搬到日本去了。" },
+          { speaker: "Mia", line: "说真的？太疯狂了！" },
+          { speaker: "Jake", line: "说真的。我已经辞职了。" }
+        ],
+        culturalNotes: "Originated in African American Vernacular English (AAVE). Now used widely but still associated with AAVE."
       }
     ]
   },
