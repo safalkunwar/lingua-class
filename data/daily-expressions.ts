@@ -507,6 +507,94 @@ export const dailyExpressions: DailyExpression[] = [
       { question: "'It's not my thing' means:", options: ["I'm not interested in that", "I love it", "I don't understand", "I'm confused"], correct: 0 }
     ],
     register: "neutral"
+  },
+  {
+    id: "dne-im-looking-forward-to-it",
+    expression: "I'm looking forward to it",
+    chinese: "我很期待",
+    pinyin: "wǒ hěn qī dài",
+    meaning: "I'm excited about something that will happen in the future",
+    whenToUse: "Expressing anticipation or excitement about a future event.",
+    whenNotToUse: "Don't use for past events. Use 'I enjoyed it' or 'It was great' for past events.",
+    nativeFrequency: "Very common in both casual and professional settings.",
+    commonMistakes: [
+      { mistake: "Using 'looking forward' without 'to'", correction: "Always use 'to' after 'looking forward'" }
+    ],
+    pronunciation: "/aɪm ˈlʊkɪŋ ˈfɔːrwərd tu ɪt/",
+    funnyExample: "A: Are you excited for the party? B: I'm looking forward to it. A: ...It's tomorrow. B: ...I'm still looking forward to it.",
+    memoryTrick: "Think: 'LOOKING FORWARD = anticipating = excited about the future.'",
+    relatedExpressions: ["Can't wait", "Excited", "Anticipating", "Eager"],
+    collocations: ["looking forward to it", "looking forward to seeing", "really looking forward to"],
+    miniQuiz: [
+      { question: "'I'm looking forward to it' means:", options: ["I'm excited about a future event", "I'm looking backward", "I'm disappointed", "I don't care"], correct: 0 }
+    ],
+    register: "neutral"
+  },
+  {
+    id: "dne-it-depends",
+    expression: "It depends",
+    chinese: "看情况/不一定",
+    pinyin: "kàn qíng kuàng / bù yī dìng",
+    meaning: "The answer varies based on circumstances",
+    whenToUse: "When the answer to a question isn't a simple yes or no. Very common in decision-making.",
+    whenNotToUse: "Can sound evasive if you use it too much. Be more specific when possible.",
+    nativeFrequency: "Extremely common. One of the most useful phrases in English.",
+    commonMistakes: [
+      { mistake: "Using 'it depends' without explaining what it depends on", correction: "Add 'on...' to be helpful: 'It depends on the weather.'" }
+    ],
+    pronunciation: "/ɪt dɪˈpendz/",
+    funnyExample: "A: Do you like pizza? B: It depends. A: ...On what? B: On the pizza. A: ...Fair.",
+    memoryTrick: "Think: 'DEPENDS = varies = answer changes based on situation.'",
+    relatedExpressions: ["It varies", "It depends on", "That depends", "Depending on"],
+    collocations: ["it depends on", "it depends", "depends on the"],
+    miniQuiz: [
+      { question: "'It depends' means:", options: ["The answer varies", "Yes, always", "No, never", "I don't know"], correct: 0 }
+    ],
+    register: "neutral"
+  },
+  {
+    id: "dne-no-big-deal",
+    expression: "No big deal",
+    chinese: "没什么大不了的",
+    pinyin: "méi shén me dà bù liǎo de",
+    meaning: "It's not important / It doesn't matter",
+    whenToUse: "Downplaying something or reassuring someone that something isn't serious.",
+    whenNotToUse: "Can sound dismissive if someone is sharing something important. Use 'I understand' or 'That sounds tough' instead.",
+    nativeFrequency: "Very common in casual American English.",
+    commonMistakes: [
+      { mistake: "Using when someone shares something emotional", correction: "Acknowledge their feelings first before saying 'no big deal'" }
+    ],
+    pronunciation: "/noʊ bɪɡ diːl/",
+    funnyExample: "A: I accidentally texted my boss a meme. B: No big deal. A: ...It was a meme about my boss. B: ...That's a big deal.",
+    memoryTrick: "Think: 'NO BIG DEAL = not important = it's okay.'",
+    relatedExpressions: ["It's fine", "Don't worry about it", "No problem", "It's okay"],
+    collocations: ["no big deal", "it's no big deal", "not a big deal"],
+    miniQuiz: [
+      { question: "'No big deal' means:", options: ["It's not important", "It's very important", "I'm confused", "I agree"], correct: 0 }
+    ],
+    register: "casual"
+  },
+  {
+    id: "dne-it-is-what-it-is",
+    expression: "It is what it is",
+    chinese: "事实就是这样/没办法",
+    pinyin: "shì shí jiù shì zhè yàng / méi bàn fǎ",
+    meaning: "Accepting a situation that can't be changed",
+    whenToUse: "Expressing resignation or acceptance of an unchangeable situation.",
+    whenNotToUse: "Can sound cold or dismissive if someone is upset. Use 'I understand' or 'That's tough' to show empathy first.",
+    nativeFrequency: "Very common. A staple of casual American English.",
+    commonMistakes: [
+      { mistake: "Using when someone needs emotional support", correction: "Show empathy first, then use this phrase if appropriate" }
+    ],
+    pronunciation: "/ɪt ɪz wɒt ɪt ɪz/",
+    funnyExample: "A: My flight was canceled. B: It is what it is. A: ...You could say 'I'm sorry' first. B: ...It is what it is.",
+    memoryTrick: "Think: 'IT IS WHAT IT IS = accept reality = can't change it.'",
+    relatedExpressions: ["That's life", "What can you do", "C'est la vie", "Can't change it"],
+    collocations: ["it is what it is", "it is what it is, unfortunately"],
+    miniQuiz: [
+      { question: "'It is what it is' means:", options: ["Accepting an unchangeable situation", "Everything is perfect", "I'm confused", "I disagree"], correct: 0 }
+    ],
+    register: "neutral"
   }
 ];
 
