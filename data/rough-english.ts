@@ -479,6 +479,87 @@ export const roughEnglish: SlangItem[] = [
       { speaker: "Mia", line: "没什么。我只是需要一些时间。" }
     ],
     culturalNotes: "Not inherently offensive, but the tone matters. Can sound harsh if said aggressively. Often used when someone needs emotional space."
+  },
+  {
+    id: "rough-19",
+    word: "Back off",
+    chinese: "退后/别靠近",
+    pinyin: "tuì hòu / bié kàn jìn",
+    meaning: "Move away / Stop approaching / Give me space",
+    example: "Back off! This is my desk.",
+    exampleZh: "退后！这是我的桌子。",
+    whoSaysIt: "Everyone when someone is too close or invading personal space",
+    ageGroup: "Teens and above",
+    region: "All English-speaking countries",
+    isOffensive: true,
+    offensiveLevel: 3,
+    safeAlternatives: ["Please move back", "Give me some space", "Step back", "I need room"],
+    conversation: [
+      { speaker: "Alex", line: "Back off, this is my desk." },
+      { speaker: "Sam", line: "I was just looking at the computer." },
+      { speaker: "Alex", line: "Then ask before you touch it." }
+    ],
+    chineseTranslation: [
+      { speaker: "Alex", line: "退后，这是我的桌子。" },
+      { speaker: "Sam", line: "我只是看看电脑。" },
+      { speaker: "Alex", line: "那也要先问一下再碰。" }
+    ],
+    culturalNotes: "Common command when someone is invading personal space or crossing boundaries. Can be playful among friends depending on tone.",
+    warning: "WARNING: 'Back off' is a command to create distance. Using it aggressively can be intimidating."
+  },
+  {
+    id: "rough-20",
+    word: "Buzz off",
+    chinese: "走开/滚开",
+    pinyin: "zǒu kāi / gǔn kāi",
+    meaning: "Go away / Leave me alone (informal, rude)",
+    example: "Buzz off! I don't have time for you.",
+    exampleZh: "走开！我没时间理你。",
+    whoSaysIt: "Angry people, bullies",
+    ageGroup: "Teens and above",
+    region: "British, Australian (less common in American)",
+    isOffensive: true,
+    offensiveLevel: 3,
+    safeAlternatives: ["Go away", "Leave me alone", "Please leave", "I don't want to talk"],
+    conversation: [
+      { speaker: "Emma", line: "Buzz off, I'm busy." },
+      { speaker: "Jake", line: "I just wanted to ask a question." },
+      { speaker: "Emma", line: "Then ask nicely. Don't just stand there." }
+    ],
+    chineseTranslation: [
+      { speaker: "Emma", line: "走开，我很忙。" },
+      { speaker: "Jake", line: "我只是想问个问题。" },
+      { speaker: "Emma", line: "那就好好问。别就这么站着。" }
+    ],
+    culturalNotes: "Informal and rude. More common in British and Australian English. Similar to 'get lost' but slightly less severe.",
+    warning: "WARNING: 'Buzz off' is rude and dismissive. Avoid using it with people you don't know well."
+  },
+  {
+    id: "rough-21",
+    word: "Get bent",
+    chinese: "去死吧/滚一边去",
+    pinyin: "qù sǐ ba / gǔn yī biān qù",
+    meaning: "Go away / I hate you / Leave me alone (very rude)",
+    example: "Get bent! I don't need your help.",
+    exampleZh: "去死吧！我不需要你的帮助。",
+    whoSaysIt: "Angry people, bullies",
+    ageGroup: "Teens and above",
+    region: "British, Australian",
+    isOffensive: true,
+    offensiveLevel: 4,
+    safeAlternatives: ["I don't need your help", "I'm fine on my own", "Please leave me alone", "I can handle this"],
+    conversation: [
+      { speaker: "Tom", line: "You messed up again." },
+      { speaker: "Lisa", line: "Get bent! At least I tried." },
+      { speaker: "Tom", line: "That's not the point." }
+    ],
+    chineseTranslation: [
+      { speaker: "Tom", line: "你又搞砸了。" },
+      { speaker: "Lisa", line: "去死吧！至少我试过了。" },
+      { speaker: "Tom", line: "这不是重点。" }
+    ],
+    culturalNotes: "Very rude expression. Common in British and Australian English. Considered a serious insult.",
+    warning: "EXTREME WARNING: 'Get bent' is extremely rude and offensive. It can end relationships. Never use this expression."
   }
 ];
 
