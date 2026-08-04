@@ -1133,6 +1133,86 @@ export const slangModule: SlangModule = {
           exampleZh: "那家餐厅的食物很糟糕。",
           category: "casual-connectors",
         },
+        {
+          id: "i-mean",
+          english: "I mean",
+          chinese: "我的意思是/就是说",
+          pinyin: "wǒ de yì si / jiù shì shuō",
+          pronunciation: "ai mean",
+          literalMeaning: "I intend to say",
+          actualMeaning: "Filler used to clarify or soften a statement",
+          detailsEn:
+            "Very common filler phrase. Used to clarify what you mean or to soften what you're saying.",
+          detailsZh: "非常常见的填充短语。用于澄清你的意思或缓和你说的话。",
+          intensity: 1,
+          safetyLabels: [
+            { label: "Very Safe", icon: "✅", settings: ["All settings"] },
+          ],
+          regionalVariations: [
+            { region: "American", usage: "I mean, it's not that bad.", note: "Very common" },
+            { region: "British", usage: "I mean, it's not that bad.", note: "Common" },
+            { region: "Australian", usage: "I mean, it's not that bad.", note: "Common" },
+          ],
+          demographics: {
+            ageGroup: "All ages",
+            tone: "Neutral",
+            genderNeutral: true,
+          },
+          nonVerbalCues: {
+            facialExpression: "Neutral or slightly thoughtful",
+            bodyLanguage: "Hand gesture while speaking",
+          },
+          comparative: {
+            commonMistakes: ["Using too much in formal settings"],
+            saferAlternatives: ["Actually", "What I mean is", "To clarify"],
+            similarWords: ["Like", "You know", "Basically"],
+            culturalNotes:
+              "One of the most common filler phrases in English. Overusing it can make you sound uncertain.",
+          },
+          exampleEn: "I mean, it's not the best option, but it'll work.",
+          exampleZh: "我的意思是，这不是最好的选择，但它能用。",
+          category: "casual-connectors",
+        },
+        {
+          id: "you-know",
+          english: "You know",
+          chinese: "你知道的/就是说",
+          pinyin: "nǐ zhī dào de / jiù shì shuō",
+          pronunciation: "yu no",
+          literalMeaning: "You have knowledge",
+          actualMeaning: "Filler used to engage the listener or soften a statement",
+          detailsEn:
+            "Extremely common filler phrase. Used to check if the listener understands or agrees.",
+          detailsZh: "极其常见的填充短语。用于检查听者是否理解或同意。",
+          intensity: 1,
+          safetyLabels: [
+            { label: "Very Safe", icon: "✅", settings: ["All settings"] },
+          ],
+          regionalVariations: [
+            { region: "American", usage: "You know, it was really fun.", note: "Very common" },
+            { region: "British", usage: "You know, it was really fun.", note: "Common" },
+            { region: "Australian", usage: "You know, it was really fun.", note: "Common" },
+          ],
+          demographics: {
+            ageGroup: "All ages",
+            tone: "Friendly",
+            genderNeutral: true,
+          },
+          nonVerbalCues: {
+            facialExpression: "Engaging eye contact",
+            bodyLanguage: "Nodding or open hand gesture",
+          },
+          comparative: {
+            commonMistakes: ["Using too much in formal settings"],
+            saferAlternatives: ["Right?", "Correct?", "Don't you think?"],
+            similarWords: ["I mean", "Like", "Basically"],
+            culturalNotes:
+              "One of the most overused filler phrases in English. Native speakers use it constantly without realizing it.",
+          },
+          exampleEn: "You know, I think we should leave early.",
+          exampleZh: "你知道的，我觉得我们应该早点走。",
+          category: "casual-connectors",
+        },
       ],
       dialogues: [
         {
@@ -1383,6 +1463,87 @@ export const slangModule: SlangModule = {
           },
           exampleEn: "He's just flexing his new watch.",
           exampleZh: "他只是在炫耀他的新手表。",
+          category: "street-slang",
+        },
+        {
+          id: "mad",
+          english: "Mad",
+          chinese: "非常/很",
+          pinyin: "fēi cháng / hěn",
+          pronunciation: "mad",
+          literalMeaning: "Angry",
+          actualMeaning: "Very, extremely, or a lot",
+          detailsEn:
+            "Common intensifier in casual speech. Means 'very' or 'extremely.'",
+          detailsZh: "在 casual speech 中常见的强调词。意为'非常'或'极其'。",
+          intensity: 1,
+          safetyLabels: [
+            { label: "Very Safe", icon: "✅", settings: ["All settings"] },
+          ],
+          regionalVariations: [
+            { region: "American", usage: "That's mad good!", note: "Very common" },
+            { region: "British", usage: "That's mad good!", note: "Common" },
+            { region: "Australian", usage: "That's mad good!", note: "Common" },
+          ],
+          demographics: {
+            ageGroup: "Teens and above",
+            tone: "Excited",
+            genderNeutral: true,
+          },
+          nonVerbalCues: {
+            facialExpression: "Wide eyes or excited expression",
+            bodyLanguage: "Emphatic hand gestures",
+          },
+          comparative: {
+            commonMistakes: ["Using in formal settings"],
+            saferAlternatives: ["Very", "Extremely", "Really", "A lot"],
+            similarWords: ["Hecka", "Hecka", "Super"],
+            culturalNotes:
+              "Originally meant 'angry' but evolved to mean 'very' in casual speech. Common in AAVE and now widespread.",
+          },
+          exampleEn: "That concert was mad fun!",
+          exampleZh: "那场演唱会超级好玩！",
+          category: "street-slang",
+        },
+        {
+          id: "on-god",
+          english: "On god",
+          chinese: "真的/我发誓",
+          pinyin: "zhēn de / wǒ fā shì",
+          pronunciation: "on gad",
+          literalMeaning: "Swearing on God",
+          actualMeaning: "I swear / For real / I'm not lying",
+          detailsEn:
+            "Used to emphasize that you're being truthful. Very common among young people.",
+          detailsZh: "用于强调你是认真的。在年轻人中非常常见。",
+          intensity: 2,
+          safetyLabels: [
+            { label: "Mostly Safe", icon: "✅", settings: ["Casual", "Friends"] },
+            { label: "Caution", icon: "⚠️", settings: ["Formal settings", "Religious contexts"] },
+          ],
+          regionalVariations: [
+            { region: "American", usage: "On god, I saw it!", note: "Very common" },
+            { region: "British", usage: "On god, I saw it!", note: "Less common" },
+            { region: "Australian", usage: "On god, I saw it!", note: "Uncommon" },
+          ],
+          demographics: {
+            ageGroup: "Teens and above",
+            tone: "Serious",
+            genderNeutral: true,
+          },
+          nonVerbalCues: {
+            facialExpression: "Serious or intense",
+            bodyLanguage: "Hand on chest or direct eye contact",
+          },
+          comparative: {
+            commonMistakes: ["Using in formal settings", "Using in religious contexts"],
+            saferAlternatives: ["I swear", "For real", " Seriously", "I promise"],
+            similarWords: ["Deadass", "Fr", "No cap"],
+            culturalNotes:
+              "Originated as a way to swear truthfully without using actual profanity. Avoid in religious or formal contexts.",
+          },
+          exampleEn: "On god, I'm not lying. I saw it with my own eyes.",
+          exampleZh: "真的，我没撒谎。我亲眼看到的。",
           category: "street-slang",
         },
       ],
