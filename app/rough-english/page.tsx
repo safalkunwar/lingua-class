@@ -17,9 +17,11 @@ import {
   BookOpen,
 } from "lucide-react";
 import { SlangItem } from "@/types/conversations";
+import { useSpeechSynthesis } from "@/hooks/use-speech-synthesis";
 
 export default function RoughEnglishPage() {
   const [selectedItem, setSelectedItem] = useState<SlangItem | null>(null);
+  const { speakEnglish, speakChinese } = useSpeechSynthesis();
 
   const getOffensiveBadge = (level: number) => {
     if (level === 0) return <Badge className="bg-green-100 text-green-800 border-green-200">Safe</Badge>;
@@ -90,14 +92,44 @@ export default function RoughEnglishPage() {
                 <div className="p-5">
                   <div className="flex items-start justify-between gap-2 mb-2">
                     <div>
-                      <h3 className="font-bold text-lg">{item.word}</h3>
-                      <p className="text-sm text-indigo-600 dark:text-indigo-400">{item.chinese}</p>
+                      <div className="flex items-center gap-2">
+                        <h3 className="font-bold text-lg">{item.word}</h3>
+                        <Button
+                          variant="ghost"
+                          size="icon"
+                          className="h-7 w-7"
+                          onClick={() => speakEnglish(item.word)}
+                        >
+                          <Volume2 className="h-3.5 w-3.5" />
+                        </Button>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <p className="text-sm text-indigo-600 dark:text-indigo-400">{item.chinese}</p>
+                        <Button
+                          variant="ghost"
+                          size="icon"
+                          className="h-7 w-7"
+                          onClick={() => speakChinese(item.chinese)}
+                        >
+                          <Volume2 className="h-3.5 w-3.5" />
+                        </Button>
+                      </div>
                       <p className="text-xs text-muted-foreground">{item.pinyin}</p>
                     </div>
                     {getOffensiveBadge(item.offensiveLevel)}
                   </div>
                   <p className="text-sm text-muted-foreground mb-3">{item.meaning}</p>
-                  <p className="text-xs text-muted-foreground italic">"{item.example}"</p>
+                  <div className="flex items-center gap-2">
+                    <p className="text-xs text-muted-foreground italic">"{item.example}"</p>
+                    <Button
+                      variant="ghost"
+                      size="icon"
+                      className="h-7 w-7"
+                      onClick={() => speakEnglish(item.example)}
+                    >
+                      <Volume2 className="h-3.5 w-3.5" />
+                    </Button>
+                  </div>
 
                   {selectedItem?.id === item.id && (
                     <motion.div
@@ -108,15 +140,35 @@ export default function RoughEnglishPage() {
                       <div className="p-3 bg-blue-50 dark:bg-blue-950/20 rounded-lg">
                         <p className="text-xs font-medium text-blue-900 dark:text-blue-100 mb-1">Conversation</p>
                         {item.conversation.map((line, idx) => (
-                          <p key={idx} className="text-sm mb-1">
-                            <strong>{line.speaker}:</strong> {line.line}
-                          </p>
+                          <div key={idx} className="flex items-center gap-2 mb-1">
+                            <p className="text-sm">
+                              <strong>{line.speaker}:</strong> {line.line}
+                            </p>
+                            <Button
+                              variant="ghost"
+                              size="icon"
+                              className="h-7 w-7"
+                              onClick={() => speakEnglish(line.line)}
+                            >
+                              <Volume2 className="h-3.5 w-3.5" />
+                            </Button>
+                          </div>
                         ))}
                         <div className="mt-2 space-y-1">
                           {item.chineseTranslation.map((line, idx) => (
-                            <p key={idx} className="text-xs text-muted-foreground">
-                              {line.speaker}: {line.line}
-                            </p>
+                            <div key={idx} className="flex items-center gap-2">
+                              <p className="text-xs text-muted-foreground">
+                                {line.speaker}: {line.line}
+                              </p>
+                              <Button
+                                variant="ghost"
+                                size="icon"
+                                className="h-7 w-7"
+                                onClick={() => speakChinese(line.line)}
+                              >
+                                <Volume2 className="h-3.5 w-3.5" />
+                              </Button>
+                            </div>
                           ))}
                         </div>
                       </div>

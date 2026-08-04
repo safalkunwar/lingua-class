@@ -20,6 +20,7 @@ import {
 } from "lucide-react";
 import { slangModule } from "@/data/slang-module";
 import { useLearningStore } from "@/stores/learning-store";
+import { useSpeechSynthesis } from "@/hooks/use-speech-synthesis";
 
 type Tab = "terms" | "dialogues" | "practice" | "quiz";
 
@@ -32,6 +33,7 @@ export default function SlangModulePage() {
 
   const { updateLevelProgress, addXp, incrementStreak, incrementWeeklyProgress } =
     useLearningStore();
+  const { speakEnglish, speakChinese } = useSpeechSynthesis();
 
   const lesson = slangModule.lessons[lessonIndex];
   const terms = lesson.terms;
@@ -205,9 +207,29 @@ export default function SlangModulePage() {
                     }`}
                   >
                     <div className="mb-2 flex items-start justify-between gap-2">
-                      <div>
-                        <h3 className="font-semibold">{term.english}</h3>
-                        <p className="text-xs text-muted-foreground">{term.chinese}</p>
+                      <div className="flex-1">
+                        <div className="flex items-center gap-2">
+                          <h3 className="font-semibold">{term.english}</h3>
+                          <Button
+                            variant="ghost"
+                            size="icon"
+                            className="h-7 w-7"
+                            onClick={() => speakEnglish(term.english)}
+                          >
+                            <Volume2 className="h-3.5 w-3.5" />
+                          </Button>
+                        </div>
+                        <div className="flex items-center gap-2 mt-0.5">
+                          <p className="text-xs text-muted-foreground">{term.chinese}</p>
+                          <Button
+                            variant="ghost"
+                            size="icon"
+                            className="h-7 w-7"
+                            onClick={() => speakChinese(term.chinese)}
+                          >
+                            <Volume2 className="h-3.5 w-3.5" />
+                          </Button>
+                        </div>
                       </div>
                       <span
                         className={`rounded-full border px-2 py-0.5 text-xs font-medium ${intensityColor(
@@ -231,8 +253,28 @@ export default function SlangModulePage() {
                         </div>
                         <div>
                           <p className="text-xs font-medium text-muted-foreground">Example</p>
-                          <p className="text-sm italic">"{term.exampleEn}"</p>
-                          <p className="text-xs text-muted-foreground">{term.exampleZh}</p>
+                          <div className="flex items-center gap-2">
+                            <p className="text-sm italic">"{term.exampleEn}"</p>
+                            <Button
+                              variant="ghost"
+                              size="icon"
+                              className="h-7 w-7"
+                              onClick={() => speakEnglish(term.exampleEn)}
+                            >
+                              <Volume2 className="h-3.5 w-3.5" />
+                            </Button>
+                          </div>
+                          <div className="flex items-center gap-2 mt-1">
+                            <p className="text-xs text-muted-foreground">{term.exampleZh}</p>
+                            <Button
+                              variant="ghost"
+                              size="icon"
+                              className="h-7 w-7"
+                              onClick={() => speakChinese(term.exampleZh)}
+                            >
+                              <Volume2 className="h-3.5 w-3.5" />
+                            </Button>
+                          </div>
                         </div>
                         <div>
                           <p className="text-xs font-medium text-muted-foreground">Safety</p>
@@ -281,8 +323,28 @@ export default function SlangModulePage() {
                           </div>
                           <div className="flex-1">
                             <p className="text-sm font-medium">{line.speaker}</p>
-                            <p className="text-sm">{line.english}</p>
-                            <p className="text-xs text-muted-foreground">{line.chinese}</p>
+                            <div className="flex items-center gap-2">
+                              <p className="text-sm">{line.english}</p>
+                              <Button
+                                variant="ghost"
+                                size="icon"
+                                className="h-7 w-7"
+                                onClick={() => speakEnglish(line.english)}
+                              >
+                                <Volume2 className="h-3.5 w-3.5" />
+                              </Button>
+                            </div>
+                            <div className="flex items-center gap-2">
+                              <p className="text-xs text-muted-foreground">{line.chinese}</p>
+                              <Button
+                                variant="ghost"
+                                size="icon"
+                                className="h-7 w-7"
+                                onClick={() => speakChinese(line.chinese)}
+                              >
+                                <Volume2 className="h-3.5 w-3.5" />
+                              </Button>
+                            </div>
                           </div>
                         </div>
                       ))}
