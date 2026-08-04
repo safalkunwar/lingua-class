@@ -399,6 +399,86 @@ export const roughEnglish: SlangItem[] = [
     ],
     culturalNotes: "Very strong expression. Rarely literal among friends, but still hurtful. Among teens, it's often dramatic and temporary. Adults should avoid using it.",
     warning: "WARNING: 'I hate you' is extremely hurtful. Even when said in anger, it can cause lasting emotional damage. Never use this expression lightly."
+  },
+  {
+    id: "rough-16",
+    word: "Shut up",
+    chinese: "闭嘴",
+    pinyin: "bì zuǐ",
+    meaning: "Stop talking / Be quiet (rude command)",
+    example: "Shut up! I'm trying to study.",
+    exampleZh: "闭嘴！我在学习。",
+    whoSaysIt: "Angry people, bullies, frustrated friends",
+    ageGroup: "Teens and above",
+    region: "All English-speaking countries",
+    isOffensive: true,
+    offensiveLevel: 3,
+    safeAlternatives: ["Be quiet", "Stop talking", "Please be quiet", "I need quiet"],
+    conversation: [
+      { speaker: "Emma", line: "Shut up! I'm on the phone." },
+      { speaker: "Jake", line: "Sorry, I didn't know." },
+      { speaker: "Emma", line: "Just keep it down next time." }
+    ],
+    chineseTranslation: [
+      { speaker: "Emma", line: "闭嘴！我在打电话。" },
+      { speaker: "Jake", line: "对不起，我不知道。" },
+      { speaker: "Emma", line: "下次小声点。" }
+    ],
+    culturalNotes: "Very common but rude. Among close friends with playful tone, it can mean 'wow, that's surprising.' Never use with strangers or in formal settings.",
+    warning: "WARNING: 'Shut up' is a rude command. Using it toward strangers, teachers, or bosses is extremely disrespectful."
+  },
+  {
+    id: "rough-17",
+    word: "Get out",
+    chinese: "滚出去/走开",
+    pinyin: "gǔn chū qù / zǒu kāi",
+    meaning: "Leave immediately / Go away (very rude)",
+    example: "Get out of my room! Now!",
+    exampleZh: "滚出我的房间！现在！",
+    whoSaysIt: "Angry people, authority figures",
+    ageGroup: "Teens and above",
+    region: "All English-speaking countries",
+    isOffensive: true,
+    offensiveLevel: 4,
+    safeAlternatives: ["Please leave", "I need you to go", "Leave me alone", "Go away"],
+    conversation: [
+      { speaker: "Alex", line: "Get out of my room!" },
+      { speaker: "Sam", line: "I was just bringing you food." },
+      { speaker: "Alex", line: "I said get out! I'll get it myself." }
+    ],
+    chineseTranslation: [
+      { speaker: "Alex", line: "滚出我的房间！" },
+      { speaker: "Sam", line: "我只是来给你送食物。" },
+      { speaker: "Alex", line: "我说了滚出去！我自己来。" }
+    ],
+    culturalNotes: "Very rude command. Shows extreme anger or frustration. Can be used playfully among very close friends but is usually serious.",
+    warning: "WARNING: 'Get out' is a harsh command. Using it toward family members or friends can cause serious emotional harm."
+  },
+  {
+    id: "rough-18",
+    word: "Leave me alone",
+    chinese: "别烦我/让我静静",
+    pinyin: "bié fán wǒ / ràng wǒ jìng jìng",
+    meaning: "Stop bothering me / I want privacy",
+    example: "I'm in a bad mood. Leave me alone.",
+    exampleZh: "我心情不好。别烦我。",
+    whoSaysIt: "Everyone when frustrated or upset",
+    ageGroup: "All ages",
+    region: "All English-speaking countries",
+    isOffensive: false,
+    offensiveLevel: 1,
+    safeAlternatives: ["I need some space", "I want to be alone", "I need quiet time", "Please give me privacy"],
+    conversation: [
+      { speaker: "Mia", line: "Leave me alone right now." },
+      { speaker: "Jake", line: "What's wrong? Did I do something?" },
+      { speaker: "Mia", line: "Nothing. I just need some time." }
+    ],
+    chineseTranslation: [
+      { speaker: "Mia", line: "现在别烦我。" },
+      { speaker: "Jake", line: "怎么了？我做了什么吗？" },
+      { speaker: "Mia", line: "没什么。我只是需要一些时间。" }
+    ],
+    culturalNotes: "Not inherently offensive, but the tone matters. Can sound harsh if said aggressively. Often used when someone needs emotional space."
   }
 ];
 
