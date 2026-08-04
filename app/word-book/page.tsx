@@ -9,7 +9,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ChevronLeft, ChevronRight, Search, Maximize2, Minimize2, List, Grid3X3, Volume2 } from "lucide-react";
 import { useSpeechSynthesis } from "@/hooks/use-speech-synthesis";
 

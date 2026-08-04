@@ -28,7 +28,7 @@ export default function FlashcardViewerPage() {
 
   const { updateLevelProgress, addXp, incrementStreak, incrementWeeklyProgress, unlockAchievement } =
     useLearningStore();
-  const { speakEnglish, speakChinese } = useSpeechSynthesis();
+  const { speakEnglish } = useSpeechSynthesis();
 
   if (!level) notFound();
 

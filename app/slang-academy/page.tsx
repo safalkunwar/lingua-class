@@ -3,12 +3,12 @@
 import { useState } from "react";
 import { StudentSidebar } from "@/components/layout/sidebar";
 import { slangAcademy } from "@/data/slang-academy";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import Link from "next/link";
-import { AlertTriangle, Shield, BookOpen, Users, Volume2, MessageCircle, Globe } from "lucide-react";
+import { AlertTriangle, Volume2 } from "lucide-react";
 import { SlangLevelData, SlangItem } from "@/types/conversations";
 import { useSpeechSynthesis } from "@/hooks/use-speech-synthesis";
 

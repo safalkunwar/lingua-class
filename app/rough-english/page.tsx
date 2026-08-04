@@ -3,18 +3,14 @@
 import { useState } from "react";
 import { StudentSidebar } from "@/components/layout/sidebar";
 import { roughEnglish } from "@/data/rough-english";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import Link from "next/link";
 import {
   AlertTriangle,
-  Shield,
-  MessageCircle,
   Volume2,
-  Users,
-  BookOpen,
 } from "lucide-react";
 import { SlangItem } from "@/types/conversations";
 import { useSpeechSynthesis } from "@/hooks/use-speech-synthesis";

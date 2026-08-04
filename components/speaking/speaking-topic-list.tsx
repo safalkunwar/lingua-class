@@ -4,9 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { IELTSTopic } from "@/types/ielts-speaking";
 import { ieltsSpeakingPart1 } from "@/data/ielts-speaking-part1";
-import { usePathname } from "next/navigation";
 
 const topicColors: Record<string, string> = {
   hometown: "from-amber-400 to-orange-400",
@@ -20,7 +18,6 @@ const topicColors: Record<string, string> = {
 };
 
 export function IELSSpeakingTopicList() {
-  const pathname = usePathname();
   const topics = ieltsSpeakingPart1.topics;
 
   return (

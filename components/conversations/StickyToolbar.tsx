@@ -1,6 +1,5 @@
 "use client";
 
-import { useState, useCallback } from "react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import {
@@ -11,7 +10,6 @@ import {
   Star,
   Search,
   BookOpen,
-  Volume2,
   X,
 } from "lucide-react";
 

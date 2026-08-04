@@ -15,7 +15,7 @@ interface FlashcardProps {
 
 export function Flashcard({ item, cardNumber, total }: FlashcardProps) {
   const [flipped, setFlipped] = useState(false);
-  const { speakEnglish, speakChinese } = useSpeechSynthesis();
+  const { speakChinese } = useSpeechSynthesis();
 
   const handleFlip = () => setFlipped(!flipped);
 

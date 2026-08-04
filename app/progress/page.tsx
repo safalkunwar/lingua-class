@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import dynamic from "next/dynamic";
 import { StudentSidebar } from "@/components/layout/sidebar";
 import {
   Card,

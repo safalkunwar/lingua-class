@@ -3,8 +3,7 @@
 import { useEffect, useState, useCallback } from "react";
 import { Button } from "@/components/ui/button";
 import { ConversationTopic, ChineseLine } from "@/types/conversations";
-import { DialogueBlock } from "@/components/conversations/DialogueBlock";
-import { X, ChevronLeft, ChevronRight, Eye, EyeOff, Volume2, Maximize, Minimize, Languages } from "lucide-react";
+import { X, ChevronLeft, ChevronRight, Eye, EyeOff, Volume2, Maximize, Minimize } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 interface PresentationModeProps {
@@ -14,10 +13,7 @@ interface PresentationModeProps {
   chineseTranslation: ChineseLine[];
   currentLineIndex: number;
   isPlaying: boolean;
-  playbackRate: number;
   showChinese: boolean;
-  favorites: Set<string>;
-  onToggleFavorite: (key: string) => void;
   onPlayEnglish: (text: string) => void;
   onPlayChinese: (text: string) => void;
   onPrevLine: () => void;
@@ -25,7 +21,6 @@ interface PresentationModeProps {
   onToggleChinese: () => void;
   autoPlay: boolean;
   onToggleAutoPlay: () => void;
-  onPlaybackRateChange: (rate: number) => void;
 }
 
 const TEACHER_SPEAKERS = new Set(["Teacher", "Waiter", "Driver", "Agent", "Receptionist", "Waiter", "Clerk"]);
@@ -38,10 +33,7 @@ export function PresentationMode({
   chineseTranslation,
   currentLineIndex,
   isPlaying,
-  playbackRate,
   showChinese,
-  favorites,
-  onToggleFavorite,
   onPlayEnglish,
   onPlayChinese,
   onPrevLine,
@@ -49,7 +41,6 @@ export function PresentationMode({
   onToggleChinese,
   autoPlay,
   onToggleAutoPlay,
-  onPlaybackRateChange,
 }: PresentationModeProps) {
   const [isFullscreen, setIsFullscreen] = useState(false);
   const [showControls, setShowControls] = useState(true);

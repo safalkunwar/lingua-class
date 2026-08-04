@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
 import { CheckCircle2, Circle, ChevronRight } from "lucide-react";
 import { PracticeActivity } from "@/types/conversations";
@@ -10,7 +9,6 @@ import { PracticeActivity } from "@/types/conversations";
 interface PracticeSectionProps {
   activities: PracticeActivity[];
   title?: string;
-  onPlayAudio?: (text: string) => void;
 }
 
 const ACTIVITY_ICONS: Record<string, string> = {
@@ -25,7 +23,7 @@ const ACTIVITY_ICONS: Record<string, string> = {
   discussion: "💬",
 };
 
-export function PracticeSection({ activities, title = "Practice Activities", onPlayAudio }: PracticeSectionProps) {
+export function PracticeSection({ activities, title = "Practice Activities" }: PracticeSectionProps) {
   const [completed, setCompleted] = useState<Set<string>>(new Set());
   const [selectedActivity, setSelectedActivity] = useState<string | null>(null);
 

@@ -108,7 +108,6 @@ export function Features() {
           className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4"
         >
           {features.map((feature) => {
-            const Icon = feature.icon;
             return (
               <motion.div key={feature.title} variants={item}>
                 <Card className="group h-full border-border/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-indigo-500/5 hover:border-indigo-200 dark:hover:border-indigo-500/30">

@@ -4,7 +4,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
   BookOpen,
-  MessageCircle,
   Mic,
   Headphones,
   BookText,
@@ -13,7 +12,6 @@ import {
   Layers,
   Home,
   Presentation,
-  Volume2,
   GraduationCap,
   MessageSquare,
   Sparkles,
@@ -53,7 +51,6 @@ export function StudentSidebar() {
           Learning Tools
         </h3>
         {links.map((link) => {
-          const Icon = link.icon;
           const isActive = pathname === link.href || pathname.startsWith(link.href + "/");
           return (
             <Link key={link.href} href={link.href}>

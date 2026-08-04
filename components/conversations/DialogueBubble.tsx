@@ -1,18 +1,15 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import { Button } from "@/components/ui/button";
 import { ConversationLine } from "@/types/conversations";
 import { ReadingMode, ViewMode } from "./ConversationReader";
 
 interface DialogueBubbleProps {
   line: ConversationLine;
   index: number;
-  topicId: string;
   readingMode: ReadingMode;
   viewMode: ViewMode;
   teacherMode: boolean;
-  favorites: Set<string>;
   onToggleFavorite: (lineIndex: number) => void;
   onPlayAudio: () => void;
   onPlayChineseAudio?: () => void;
@@ -48,11 +45,9 @@ function getSpeakerColor(speaker: string): string {
 export function DialogueBubble({
   line,
   index,
-  topicId,
   readingMode,
   viewMode,
   teacherMode,
-  favorites,
   onToggleFavorite,
   onPlayAudio,
   onPlayChineseAudio,

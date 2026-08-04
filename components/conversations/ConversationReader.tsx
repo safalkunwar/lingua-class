@@ -19,12 +19,6 @@ interface ConversationReaderProps {
   onToggleReadingMode: () => void;
   onTogglePresentationMode: () => void;
   onPlayAudio: () => void;
-  onPauseAudio: () => void;
-  audioPlaying: boolean;
-  playbackRate: number;
-  onPlaybackRateChange: (rate: number) => void;
-  autoPlay: boolean;
-  onToggleAutoPlay: () => void;
   chineseTranslation?: { speaker: string; line: string }[];
   onPlayChineseAudio?: (text: string) => void;
   currentLine?: number;
@@ -41,18 +35,11 @@ export function ConversationReader({
   onToggleReadingMode,
   onTogglePresentationMode,
   onPlayAudio,
-  onPauseAudio,
-  audioPlaying,
-  playbackRate,
-  onPlaybackRateChange,
-  autoPlay,
-  onToggleAutoPlay,
   chineseTranslation = [],
   onPlayChineseAudio,
   currentLine = 0,
 }: ConversationReaderProps) {
   const conversation = topic.conversation || [];
-  const showChinese = readingMode !== "focused";
 
   return (
     <div className="flex flex-col lg:flex-row gap-6">

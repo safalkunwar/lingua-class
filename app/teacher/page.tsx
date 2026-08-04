@@ -18,9 +18,7 @@ import {
   FileText,
   ClipboardCheck,
   Presentation,
-  ArrowRight,
   Lightbulb,
-  ClipboardList,
 } from "lucide-react";
 import { curriculum } from "@/data/curriculum";
 

@@ -13,44 +13,6 @@ interface CategorySidebarProps {
   onLevelFilterChange: (level: string) => void;
 }
 
-const CATEGORY_ICONS: Record<string, { icon: string; label: string }> = {
-  "first-meeting": { icon: "🤝", label: "Meeting" },
-  "ordering-restaurant": { icon: "🍽️", label: "Restaurant" },
-  "coffee-shop": { icon: "☕", label: "Coffee" },
-  "coffee-shop-basics": { icon: "☕", label: "Coffee" },
-  "coffee-shop-meeting": { icon: "☕", label: "Coffee" },
-  "grocery-shopping": { icon: "🛒", label: "Shopping" },
-  "shopping-basics": { icon: "🛍️", label: "Shopping" },
-  "supermarket-shopping": { icon: "🛒", label: "Shopping" },
-  "airport-checkin": { icon: "✈️", label: "Airport" },
-  "taxi-ride": { icon: "🚕", label: "Taxi" },
-  "public-transport": { icon: "🚌", label: "Transport" },
-  "asking-directions": { icon: "🗺️", label: "Directions" },
-  "weekend-plans": { icon: "📅", label: "Social" },
-  "making-cancelling-plans": { icon: "📅", label: "Social" },
-  "family-talk": { icon: "👨‍👩‍👧‍👦", label: "Family" },
-  "meeting-neighbors": { icon: "🏘️", label: "Social" },
-  "daily-small-talk": { icon: "💬", label: "Small Talk" },
-  "coworkers-small-talk": { icon: "💼", label: "Office" },
-  "greeting-people": { icon: "👋", label: "Greetings" },
-  "phone-calls-basics": { icon: "📞", label: "Phone" },
-  "asking-for-help": { icon: "🙋", label: "Help" },
-  "weather-chat": { icon: "🌤️", label: "Weather" },
-  "internet-social-media": { icon: "📱", label: "Digital" },
-  "bank-basics": { icon: "🏦", label: "Bank" },
-  "doctor-visit": { icon: "🏥", label: "Health" },
-  "pharmacy": { icon: "💊", label: "Health" },
-  "making-appointments": { icon: "📆", label: "Appointments" },
-  "hotel-checkin": { icon: "🏨", label: "Hotel" },
-  "post-office": { icon: "📮", label: "Post Office" },
-  "at-the-gym": { icon: "🏋️", label: "Gym" },
-  "at-the-gym-beginner": { icon: "🏋️", label: "Gym" },
-  "at-laundromat": { icon: "🧺", label: "Laundromat" },
-  "pet-store": { icon: "🐾", label: "Pet Store" },
-  "library-visit": { icon: "📚", label: "Library" },
-  "hair-salon": { icon: "💇", label: "Salon" },
-};
-
 export function CategorySidebar({
   topics,
   activeTopicId,
@@ -127,9 +89,8 @@ export function CategorySidebar({
           </div>
           <div className="max-h-[calc(100vh-300px)] overflow-y-auto p-2">
             <div className="space-y-0.5">
-              {filteredTopics.map((topic) => {
-                const cat = CATEGORY_ICONS[topic.id] || { icon: topic.emoji, label: topic.title };
-                const isActive = activeTopicId === topic.id;
+               {filteredTopics.map((topic) => {
+                 const isActive = activeTopicId === topic.id;
 
                 return (
                   <button
