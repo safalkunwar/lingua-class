@@ -17,6 +17,7 @@ import {
   GraduationCap,
   MessageSquare,
   Sparkles,
+  Flame,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
@@ -42,6 +43,7 @@ export function StudentSidebar() {
     { href: "/listening", label: "Listening", icon: Headphones, emoji: "🎧" },
     { href: "/reading", label: "Reading", icon: BookText, emoji: "📖" },
     { href: "/writing", label: "Writing", icon: PenTool, emoji: "✍️" },
+    { href: "/slang-module", label: "Slang Module", icon: Flame, emoji: "🗣️" },
   ];
 
   return (

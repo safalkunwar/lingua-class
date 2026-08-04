@@ -25,6 +25,7 @@ import {
   Star,
   Zap,
   TrendingUp,
+  MessageSquare,
 } from "lucide-react";
 import { useLearningStore } from "@/stores/learning-store";
 import { curriculum } from "@/data/curriculum";
@@ -90,6 +91,35 @@ export default function StudentDashboard() {
                 <Link href={`/vocabulary/${todayLevel.id}`}>
                   <Button className="gap-2 bg-indigo-500 hover:bg-indigo-600">
                     Continue Lesson
+                    <ArrowRight className="h-4 w-4" />
+                  </Button>
+                </Link>
+              </CardContent>
+            </Card>
+          </motion.div>
+
+          {/* Slang Module */}
+          <motion.div variants={item} className="md:col-span-2 xl:col-span-1">
+            <Card className="overflow-hidden border-rose-200 bg-gradient-to-br from-rose-50 to-orange-50 dark:border-rose-500/30 dark:from-rose-950/30 dark:to-orange-950/20">
+              <CardHeader className="pb-3">
+                <div className="flex items-center justify-between">
+                  <CardTitle className="flex items-center gap-2">
+                    <MessageSquare className="h-5 w-5 text-rose-500" />
+                    Slang Module
+                  </CardTitle>
+                  <Badge variant="secondary" className="bg-rose-100 text-rose-700 dark:bg-rose-500/20 dark:text-rose-300">
+                    🗣️ Real English
+                  </Badge>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <h3 className="mb-1 text-xl font-bold">Real English: Slang & Offensive Language</h3>
+                <p className="mb-4 text-sm text-muted-foreground">
+                  Master contextual usage, intensity awareness, and cultural nuances of English slang.
+                </p>
+                <Link href="/slang-module">
+                  <Button className="gap-2 bg-rose-500 hover:bg-rose-600">
+                    Start Learning
                     <ArrowRight className="h-4 w-4" />
                   </Button>
                 </Link>
