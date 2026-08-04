@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ConversationLine, ChineseLine } from "@/types/conversations";
-import { Copy, Star, Volume2, VolumeX, Repeat } from "lucide-react";
+import { Copy, Star, Volume2, Repeat, Languages } from "lucide-react";
 
 interface DialogueBlockProps {
   line: ConversationLine;
@@ -65,7 +65,6 @@ export function DialogueBlock({
   onCopy,
   speakerColor,
 }: DialogueBlockProps) {
-  const [showActions, setShowActions] = useState(false);
   const color = speakerColor || getSpeakerColor(line.speaker);
   const chineseText = chineseLine?.line || "";
   const favKey = `${topicId}-${index}`;
@@ -74,26 +73,21 @@ export function DialogueBlock({
     <div
       id={`line-${index}`}
       className={cn(
-        "group relative rounded-2xl border bg-card p-5 sm:p-6 transition-all duration-300",
+        "rounded-2xl border bg-card transition-all duration-300",
         isCurrentLine && "ring-2 ring-primary/30 shadow-lg bg-primary/[0.02]"
       )}
-      onMouseEnter={() => setShowActions(true)}
-      onMouseLeave={() => setShowActions(false)}
     >
-      <div className="flex items-start gap-4">
-        {/* Speaker Avatar */}
-        <div
-          className="shrink-0 rounded-full flex items-center justify-center text-white font-bold shadow-md w-10 h-10 sm:w-12 sm:h-12 text-base sm:text-lg"
-          style={{ backgroundColor: color }}
-        >
-          {line.speaker.charAt(0).toUpperCase()}
-        </div>
-
-        {/* Content */}
-        <div className="flex-1 min-w-0">
-          {/* Speaker Name */}
-          <div className="flex items-center gap-2 mb-2">
-            <span className="font-semibold text-sm" style={{ color }}>
+      <div className="p-5 sm:p-6">
+        {/* Speaker Avatar + Name */}
+        <div className="flex items-center gap-3 mb-4">
+          <div
+            className="shrink-0 rounded-full flex items-center justify-center text-white font-bold shadow-md w-10 h-10 sm:w-12 sm:h-12 text-base sm:text-lg"
+            style={{ backgroundColor: color }}
+          >
+            {line.speaker.charAt(0).toUpperCase()}
+          </div>
+          <div className="flex items-center gap-2">
+            <span className="font-semibold text-sm sm:text-base" style={{ color }}>
               {line.speaker}
             </span>
             {line.register && (
@@ -107,98 +101,88 @@ export function DialogueBlock({
               </span>
             )}
           </div>
+        </div>
 
-          {/* English Text */}
-          <div className="space-y-1">
-            <p className="text-lg sm:text-xl leading-relaxed text-foreground">
-              {line.line}
+        {/* English Text */}
+        <p className="text-lg sm:text-xl leading-relaxed text-foreground mb-3">
+          {line.line}
+        </p>
+
+        {/* Chinese Translation */}
+        {showChinese && chineseText && (
+          <div className="mb-4 p-3 rounded-xl bg-muted/30 border border-dashed border-muted-foreground/20">
+            <p className="text-base sm:text-lg leading-relaxed text-muted-foreground">
+              {chineseText}
             </p>
-
-            {/* Chinese Translation */}
-            {showChinese && chineseText && (
-              <div className="pt-2 border-t border-dashed border-muted-foreground/20">
-                <p className="text-base sm:text-lg leading-relaxed text-muted-foreground">
-                  {chineseText}
-                </p>
-              </div>
-            )}
           </div>
+        )}
 
-          {/* Actions */}
-          <div
-            className={cn(
-              "flex items-center gap-1 mt-4 pt-3 border-t border-muted-foreground/10",
-              "opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity"
-            )}
+        {/* Actions */}
+        <div className="flex items-center gap-2 pt-3 border-t border-muted-foreground/10">
+          <Button
+            size="sm"
+            variant="ghost"
+            onClick={() => onPlayEnglish(line.line)}
+            className="h-10 px-3 text-xs font-medium gap-1.5"
+            title="Play English audio"
           >
-            {/* Play English */}
+            <Volume2 className="w-3.5 h-3.5" />
+            <span className="hidden sm:inline">English</span>
+          </Button>
+
+          {chineseText && (
             <Button
               size="sm"
               variant="ghost"
-              onClick={() => onPlayEnglish(line.line)}
-              className="h-9 px-3 text-xs font-medium gap-1.5"
-              title="Play English audio"
+              onClick={() => onPlayChinese(chineseText)}
+              className="h-10 px-3 text-xs font-medium gap-1.5"
+              title="Play Chinese audio"
             >
-              <Volume2 className="w-3.5 h-3.5" />
-              <span className="hidden sm:inline">English</span>
+              <Languages className="w-3.5 h-3.5" />
+              <span className="hidden sm:inline">中文</span>
             </Button>
+          )}
 
-            {/* Play Chinese */}
-            {chineseText && (
-              <Button
-                size="sm"
-                variant="ghost"
-                onClick={() => onPlayChinese(chineseText)}
-                className="h-9 px-3 text-xs font-medium gap-1.5"
-                title="Play Chinese audio"
-              >
-                <VolumeX className="w-3.5 h-3.5 rotate-180" />
-                <span className="hidden sm:inline">中文</span>
-              </Button>
-            )}
-
-            {/* Replay */}
-            {onReplay && (
-              <Button
-                size="sm"
-                variant="ghost"
-                onClick={onReplay}
-                className="h-9 px-3 text-xs font-medium"
-                title="Replay"
-              >
-                <Repeat className="w-3.5 h-3.5" />
-              </Button>
-            )}
-
-            {/* Copy */}
-            {onCopy && (
-              <Button
-                size="sm"
-                variant="ghost"
-                onClick={() => onCopy(line.line)}
-                className="h-9 px-3 text-xs font-medium gap-1.5"
-                title="Copy text"
-              >
-                <Copy className="w-3.5 h-3.5" />
-                <span className="hidden sm:inline">Copy</span>
-              </Button>
-            )}
-
-            {/* Favorite */}
+          {onReplay && (
             <Button
               size="sm"
               variant="ghost"
-              onClick={() => onToggleFavorite(favKey)}
-              className={cn(
-                "h-9 px-3 text-xs font-medium gap-1.5 ml-auto",
-                isFavorited && "text-amber-500"
-              )}
-              title="Favorite"
+              onClick={onReplay}
+              className="h-10 px-3 text-xs font-medium"
+              title="Replay"
             >
-              <Star className={cn("w-3.5 h-3.5", isFavorited && "fill-current")} />
-              <span className="hidden sm:inline">{isFavorited ? "Saved" : "Save"}</span>
+              <Repeat className="w-3.5 h-3.5" />
             </Button>
-          </div>
+          )}
+
+          {onCopy && (
+            <Button
+              size="sm"
+              variant="ghost"
+              onClick={() => onCopy(line.line)}
+              className="h-10 px-3 text-xs font-medium gap-1.5"
+              title="Copy text"
+            >
+              <Copy className="w-3.5 h-3.5" />
+              <span className="hidden sm:inline">Copy</span>
+            </Button>
+          )}
+
+          <div className="flex-1" />
+
+          <Button
+            size="sm"
+            variant="ghost"
+            onClick={() => onToggleFavorite(favKey)}
+            className={cn(
+              "h-10 px-3 text-xs font-medium gap-1.5",
+              isFavorited && "text-amber-500"
+            )}
+            title="Favorite"
+          >
+            <Star className={cn("w-3.5 h-3.5", isFavorited && "fill-current")} />
+            <span className="hidden sm:inline">{isFavorited ? "Saved" : "Save"}</span>
+          </Button>
         </div>
       </div>
     </div>

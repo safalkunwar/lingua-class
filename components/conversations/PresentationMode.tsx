@@ -4,7 +4,7 @@ import { useEffect, useState, useCallback } from "react";
 import { Button } from "@/components/ui/button";
 import { ConversationTopic, ChineseLine } from "@/types/conversations";
 import { DialogueBlock } from "@/components/conversations/DialogueBlock";
-import { X, ChevronLeft, ChevronRight, Eye, EyeOff, Volume2, Maximize, Minimize } from "lucide-react";
+import { X, ChevronLeft, ChevronRight, Eye, EyeOff, Volume2, Maximize, Minimize, Languages } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 interface PresentationModeProps {
@@ -27,6 +27,9 @@ interface PresentationModeProps {
   onToggleAutoPlay: () => void;
   onPlaybackRateChange: (rate: number) => void;
 }
+
+const TEACHER_SPEAKERS = new Set(["Teacher", "Waiter", "Driver", "Agent", "Receptionist", "Waiter", "Clerk"]);
+const CUSTOMER_SPEAKERS = new Set(["Customer", "Passenger", "Jenny", "Sarah", "Alex", "Mike", "Emma", "Anna", "Ben"]);
 
 export function PresentationMode({
   isOpen,
@@ -80,6 +83,8 @@ export function PresentationMode({
         toggleFullscreen();
       } else if (e.key === "c" || e.key === "C") {
         onToggleChinese();
+      } else if (e.key === "h" || e.key === "H") {
+        setShowControls((s) => !s);
       }
     };
 
@@ -97,14 +102,16 @@ export function PresentationMode({
 
   if (!isOpen) return null;
 
+  const isTeacher = currentLine ? TEACHER_SPEAKERS.has(currentLine.speaker) : false;
+
   return (
     <div className="fixed inset-0 z-50 bg-background flex flex-col">
       {/* Header */}
       {showControls && (
-        <div className="flex items-center justify-between p-4 border-b shrink-0">
+        <div className="flex items-center justify-between px-4 sm:px-8 py-4 border-b shrink-0">
           <div className="flex items-center gap-3">
-            <span className="text-lg font-semibold">🎓 Presentation Mode</span>
-            <span className="text-sm text-muted-foreground">
+            <span className="text-xl font-semibold">🎓 Presentation Mode</span>
+            <span className="text-sm text-muted-foreground hidden sm:inline">
               {topic.title}
             </span>
           </div>
@@ -113,7 +120,7 @@ export function PresentationMode({
               variant="ghost"
               size="icon"
               onClick={() => setShowControls(!showControls)}
-              title="Toggle controls"
+              title="Toggle controls (H)"
             >
               {showControls ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
             </Button>
@@ -121,7 +128,7 @@ export function PresentationMode({
               variant="ghost"
               size="icon"
               onClick={toggleFullscreen}
-              title="Toggle fullscreen"
+              title="Fullscreen (F)"
             >
               {isFullscreen ? <Minimize className="w-4 h-4" /> : <Maximize className="w-4 h-4" />}
             </Button>
@@ -139,7 +146,7 @@ export function PresentationMode({
           <div className="text-center mb-8 sm:mb-12">
             <span className="text-4xl sm:text-5xl block mb-3">{topic.emoji}</span>
             <h1 className="text-2xl sm:text-3xl font-bold mb-2">{topic.title}</h1>
-            <p className="text-muted-foreground">{topic.description}</p>
+            <p className="text-muted-foreground text-sm sm:text-base">{topic.description}</p>
             <div className="flex justify-center gap-3 mt-4">
               <span className="text-sm font-medium px-3 py-1 rounded-full bg-primary/10 text-primary">
                 {topic.level}
@@ -150,7 +157,7 @@ export function PresentationMode({
             </div>
           </div>
 
-          {/* Current Dialogue Block - Large Format */}
+          {/* Current Dialogue - Large Format */}
           {currentLine && (
             <div className="max-w-4xl mx-auto mb-8">
               <div className="rounded-3xl border bg-card p-6 sm:p-10 shadow-xl">
@@ -158,12 +165,7 @@ export function PresentationMode({
                   <div
                     className="w-16 h-16 sm:w-20 sm:h-20 rounded-full flex items-center justify-center text-white text-2xl sm:text-3xl font-bold shadow-lg shrink-0"
                     style={{
-                      backgroundColor:
-                        (currentLine.speaker === "Teacher" || currentLine.speaker === "Waiter" || currentLine.speaker === "Driver")
-                          ? "#10b981"
-                          : currentLine.speaker === "Customer" || currentLine.speaker === "Passenger" || currentLine.speaker === "Jenny"
-                            ? "#6366f1"
-                            : "#6b7280",
+                      backgroundColor: isTeacher ? "#10b981" : "#6366f1",
                     }}
                   >
                     {currentLine.speaker.charAt(0).toUpperCase()}
@@ -229,45 +231,43 @@ export function PresentationMode({
               {topic.conversation.map((line, idx) => {
                 const isCurrent = idx === currentLineIndex;
                 const chineseLine = chineseTranslation[idx];
-                const isTeacher = line.speaker === "Teacher" || line.speaker === "Waiter" || line.speaker === "Driver" || line.speaker === "Agent";
-                const isCustomer = line.speaker === "Customer" || line.speaker === "Passenger" || line.speaker === "Jenny";
+                const isTeacher = TEACHER_SPEAKERS.has(line.speaker);
+                const isCustomer = CUSTOMER_SPEAKERS.has(line.speaker);
 
                 return (
                   <div
                     key={idx}
                     className={cn(
                       "grid gap-4 transition-all",
-                      isCurrent && "opacity-100",
-                      !isCurrent && "opacity-40 hover:opacity-70"
+                      isCurrent ? "opacity-100" : "opacity-40 hover:opacity-70"
                     )}
                     style={{
-                      gridTemplateColumns: isTeacher ? "1fr 1fr" : isCustomer ? "1fr 1fr" : "1fr",
+                      gridTemplateColumns: "auto 1fr",
                     }}
                   >
-                    {/* Teacher/Customer side */}
+                    {/* Speaker indicator */}
+                    <div className="flex flex-col items-center gap-1">
+                      <div
+                        className="w-10 h-10 rounded-full flex items-center justify-center text-white text-sm font-bold shrink-0"
+                        style={{
+                          backgroundColor: isTeacher ? "#10b981" : isCustomer ? "#6366f1" : "#6b7280",
+                        }}
+                      >
+                        {line.speaker.charAt(0)}
+                      </div>
+                      <span className="text-[10px] text-muted-foreground text-center leading-tight">
+                        {isTeacher ? "Teacher" : isCustomer ? "Student" : line.speaker}
+                      </span>
+                    </div>
+
+                    {/* Dialogue content */}
                     <div
                       className={cn(
                         "p-4 rounded-xl",
-                        isTeacher && "text-left",
-                        isCustomer && "text-right ml-auto",
-                        !isTeacher && !isCustomer && "col-span-2 text-center"
+                        isTeacher && "text-left bg-muted/20",
+                        isCustomer && "text-left bg-primary/5"
                       )}
                     >
-                      <div className="flex items-center gap-2 mb-1 justify-start">
-                        <span
-                          className="w-8 h-8 rounded-full flex items-center justify-center text-white text-sm font-bold shrink-0"
-                          style={{
-                            backgroundColor: isTeacher
-                              ? "#10b981"
-                              : isCustomer
-                                ? "#6366f1"
-                                : "#6b7280",
-                          }}
-                        >
-                          {line.speaker.charAt(0)}
-                        </span>
-                        <span className="font-medium text-sm">{line.speaker}</span>
-                      </div>
                       <p className={cn("text-sm sm:text-base", isCurrent && "text-primary font-medium")}>
                         {line.line}
                       </p>
@@ -286,56 +286,58 @@ export function PresentationMode({
       </div>
 
       {/* Footer Controls */}
-      <div className="border-t bg-background/95 backdrop-blur p-4 shrink-0">
-        <div className="max-w-4xl mx-auto flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <Button
-              variant="outline"
-              size="sm"
-              onClick={onPrevLine}
-              disabled={currentLineIndex === 0}
-              className="gap-1"
-            >
-              <ChevronLeft className="w-4 h-4" />
-              Previous
-            </Button>
-            <Button
-              variant="outline"
-              size="sm"
-              onClick={onNextLine}
-              disabled={currentLineIndex >= topic.conversation.length - 1}
-              className="gap-1"
-            >
-              Next
-              <ChevronRight className="w-4 h-4" />
-            </Button>
-          </div>
+      {showControls && (
+        <div className="border-t bg-background/95 backdrop-blur p-4 shrink-0">
+          <div className="max-w-4xl mx-auto flex items-center justify-between">
+            <div className="flex items-center gap-2">
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={onPrevLine}
+                disabled={currentLineIndex === 0}
+                className="gap-1"
+              >
+                <ChevronLeft className="w-4 h-4" />
+                Previous
+              </Button>
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={onNextLine}
+                disabled={currentLineIndex >= topic.conversation.length - 1}
+                className="gap-1"
+              >
+                Next
+                <ChevronRight className="w-4 h-4" />
+              </Button>
+            </div>
 
-          <div className="text-sm text-muted-foreground">
-            Line {currentLineIndex + 1} / {topic.conversation.length}
-          </div>
+            <div className="text-sm text-muted-foreground">
+              Line {currentLineIndex + 1} / {topic.conversation.length}
+            </div>
 
-          <div className="flex items-center gap-2">
-            <Button
-              variant="ghost"
-              size="sm"
-              onClick={onToggleChinese}
-              className="gap-1.5"
-            >
-              {showChinese ? <Eye className="w-4 h-4" /> : <EyeOff className="w-4 h-4" />}
-              Chinese
-            </Button>
-            <Button
-              variant={autoPlay ? "default" : "ghost"}
-              size="sm"
-              onClick={onToggleAutoPlay}
-              className="gap-1.5"
-            >
-              Auto: {autoPlay ? "ON" : "OFF"}
-            </Button>
+            <div className="flex items-center gap-2">
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={onToggleChinese}
+                className="gap-1.5"
+              >
+                {showChinese ? <Eye className="w-4 h-4" /> : <EyeOff className="w-4 h-4" />}
+                <span className="hidden sm:inline">Chinese</span>
+              </Button>
+              <Button
+                variant={autoPlay ? "default" : "ghost"}
+                size="sm"
+                onClick={onToggleAutoPlay}
+                className="gap-1.5"
+              >
+                Auto: {autoPlay ? "ON" : "OFF"}
+              </Button>
+            </div>
           </div>
         </div>
-      </div>
+      )}
     </div>
   );
 }

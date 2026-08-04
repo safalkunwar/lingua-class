@@ -201,29 +201,6 @@ export default function ConversationDetailPage({ params }: { params: Promise<{ i
           />
         </div>
 
-        {/* Mobile Bottom Nav */}
-        <div className="fixed bottom-0 left-0 right-0 z-40 sm:hidden bg-background/95 backdrop-blur border-t">
-          <div className="flex items-center justify-around py-2">
-            {prevTopic && (
-              <Link href={`/conversations/${prevTopic.id}`}>
-                <Button variant="ghost" size="sm">
-                  <ChevronLeft className="w-4 h-4" />
-                </Button>
-              </Link>
-            )}
-            <span className="text-xs text-muted-foreground">
-              {currentLine + 1}/{lines.length}
-            </span>
-            {nextTopic && (
-              <Link href={`/conversations/${nextTopic.id}`}>
-                <Button variant="ghost" size="sm">
-                  <ChevronRight className="w-4 h-4" />
-                </Button>
-              </Link>
-            )}
-          </div>
-        </div>
-
         {/* Sticky Toolbar */}
         <StickyToolbar
           isPlaying={isPlaying}
