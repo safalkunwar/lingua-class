@@ -419,6 +419,94 @@ export const dailyExpressions: DailyExpression[] = [
       { question: "'Sorry' is used to:", options: ["Apologize or show empathy", "Say hello", "Express joy", "Ask questions"], correct: 0 }
     ],
     register: "neutral"
+  },
+  {
+    id: "dne-no-worries",
+    expression: "No worries",
+    chinese: "没关系/不用担心",
+    pinyin: "méi guān xi / bù yòng dān xīn",
+    meaning: "You're welcome / It's okay / No problem",
+    whenToUse: "Responding to 'thank you' or apologizing. Very common in casual settings.",
+    whenNotToUse: "Too casual for formal settings. Use 'you're welcome' or 'my pleasure' in professional contexts.",
+    nativeFrequency: "Extremely common. The default casual response to thanks in Australian and American English.",
+    commonMistakes: [
+      { mistake: "Using in formal business settings", correction: "Use 'you're welcome' or 'my pleasure' in formal settings" }
+    ],
+    pronunciation: "/noʊ ˈwɜːriz/",
+    funnyExample: "A: Sorry I'm late! B: No worries. A: ...I'm an hour late. B: ...No worries.",
+    memoryTrick: "Think: 'NO WORRIES = everything is fine = you're welcome.'",
+    relatedExpressions: ["No problem", "You're welcome", "Don't worry about it", "All good"],
+    collocations: ["no worries at all", "absolutely no worries", "sure, no worries"],
+    miniQuiz: [
+      { question: "'No worries' means:", options: ["You're welcome / it's okay", "I'm worried", "Goodbye", "Hello"], correct: 0 }
+    ],
+    register: "casual"
+  },
+  {
+    id: "dne-i-have-no-idea",
+    expression: "I have no idea",
+    chinese: "我不知道",
+    pinyin: "wǒ bù zhī dào",
+    meaning: "I don't know / I have no clue",
+    whenToUse: "When you genuinely don't know the answer to something.",
+    whenNotToUse: "Can sound dismissive if someone is asking for help. Use 'I'm not sure' or 'Let me find out' instead.",
+    nativeFrequency: "Very common. More casual than 'I don't know.'",
+    commonMistakes: [
+      { mistake: "Using when someone asks for help", correction: "Try to help or say 'Let me check' instead of just 'I have no idea'" }
+    ],
+    pronunciation: "/aɪ hæv noʊ aɪˈdɪə/",
+    funnyExample: "A: What time is the meeting? B: I have no idea. A: ...You're the organizer. B: ...I have no idea.",
+    memoryTrick: "Think: 'NO IDEA = no knowledge = I don't know.'",
+    relatedExpressions: ["I don't know", "I'm not sure", "Beats me", "Your guess is as good as mine"],
+    collocations: ["have no idea", "I have no idea what", "no idea at all"],
+    miniQuiz: [
+      { question: "'I have no idea' means:", options: ["I don't know", "I know everything", "I'm confused", "I agree"], correct: 0 }
+    ],
+    register: "neutral"
+  },
+  {
+    id: "dne-i-couldnt-agree-more",
+    expression: "I couldn't agree more",
+    chinese: "我完全同意",
+    pinyin: "wǒ wán quán tóng yì",
+    meaning: "I completely agree with you",
+    whenToUse: "Expressing strong agreement with someone's opinion or statement.",
+    whenNotToUse: "Too formal for very casual settings. Use 'same' or 'totally' with close friends.",
+    nativeFrequency: "Common in both casual and professional settings.",
+    commonMistakes: [
+      { mistake: "Using when you don't actually agree", correction: "Only use when you genuinely strongly agree" }
+    ],
+    pronunciation: "/aɪ ˈkʊdnt əˈɡriː mɔːr/",
+    funnyExample: "A: Pizza is the best food. B: I couldn't agree more. A: ...We should get married. B: ...Slow down.",
+    memoryTrick: "Think: 'COULDN'T AGREE MORE = maximum agreement = I completely agree.'",
+    relatedExpressions: ["I completely agree", "Totally", "Same here", "You're absolutely right"],
+    collocations: ["couldn't agree more", "I couldn't agree with you more"],
+    miniQuiz: [
+      { question: "'I couldn't agree more' means:", options: ["I completely agree", "I disagree", "I don't know", "I'm confused"], correct: 0 }
+    ],
+    register: "neutral"
+  },
+  {
+    id: "dne-its-not-my-thing",
+    expression: "It's not my thing",
+    chinese: "这不是我喜欢的/我不感兴趣",
+    pinyin: "zhè bú shì wǒ xǐ huan de / wǒ bù gǎn xìng qù",
+    meaning: "I'm not interested in that / That's not my preference",
+    whenToUse: "Politely declining or expressing lack of interest in something.",
+    whenNotToUse: "Can sound dismissive if someone is excited about something. Use 'I'm not really into it' for a softer approach.",
+    nativeFrequency: "Common in casual speech.",
+    commonMistakes: [
+      { mistake: "Using when rejecting an invitation harshly", correction: "Use 'I'm not in the mood' or 'Maybe another time' for invitations" }
+    ],
+    pronunciation: "/ɪts nɒt maɪ θɪŋ/",
+    funnyExample: "A: Want to go skydiving? B: It's not my thing. A: ...It's literally falling with a parachute. B: ...Still not my thing.",
+    memoryTrick: "Think: 'NOT MY THING = not my preference = I'm not interested.'",
+    relatedExpressions: ["I'm not into that", "Not really my thing", "I'll pass", "I'm not interested"],
+    collocations: ["not my thing", "it's not really my thing", "that's not my thing"],
+    miniQuiz: [
+      { question: "'It's not my thing' means:", options: ["I'm not interested in that", "I love it", "I don't understand", "I'm confused"], correct: 0 }
+    ],
+    register: "neutral"
   }
 ];
 
