@@ -727,6 +727,116 @@ export const dailyExpressions: DailyExpression[] = [
       { question: "'Count me in' means:", options: ["I want to participate", "I want to leave", "I don't know", "I'm counting"], correct: 0 }
     ],
     register: "casual"
+  },
+  {
+    id: "dne-im-in",
+    expression: "I'm in",
+    chinese: "算我一个/我参加",
+    pinyin: "suàn wǒ yī gè / wǒ cān jiā",
+    meaning: "I want to participate / Count me in",
+    whenToUse: "Expressing enthusiasm to join an activity or plan.",
+    whenNotToUse: "Don't use if you're not actually interested. Be honest about your availability.",
+    nativeFrequency: "Very common in casual speech.",
+    commonMistakes: [
+      { mistake: "Saying 'I'm in' when you can't actually participate", correction: "Only say it if you're genuinely interested and available" }
+    ],
+    pronunciation: "/aɪm ɪn/",
+    funnyExample: "A: We're going to the beach! B: I'm in! A: ...It's a work meeting. B: ...I'm still in.",
+    memoryTrick: "Think: 'I'M IN = I'm participating = count me in.'",
+    relatedExpressions: ["Count me in", "I'll join", "Sign me up", "I want to come"],
+    collocations: ["I'm in", "count me in", "I'm in if you are"],
+    miniQuiz: [
+      { question: "'I'm in' means:", options: ["I want to participate", "I want to leave", "I don't know", "I'm confused"], correct: 0 }
+    ],
+    register: "casual"
+  },
+  {
+    id: "dne-same-here",
+    expression: "Same here",
+    chinese: "我也是/同样",
+    pinyin: "wǒ yě shì / tóng yàng",
+    meaning: "I feel the same way / Me too",
+    whenToUse: "Agreeing with someone or sharing the same experience/feeling.",
+    whenNotToUse: "Too casual for formal settings. Use 'I agree' or 'I feel the same way' in professional contexts.",
+    nativeFrequency: "Very common in casual speech.",
+    commonMistakes: [
+      { mistake: "Using in formal settings", correction: "Use 'I agree' or 'I feel the same way' in formal settings" }
+    ],
+    pronunciation: "/seɪm hɪr/",
+    funnyExample: "A: I'm so hungry. B: Same here. A: ...We just ate. B: ...Same here.",
+    memoryTrick: "Think: 'SAME HERE = me too = I agree/feel the same.'",
+    relatedExpressions: ["Me too", "I agree", "Same", "Likewise"],
+    collocations: ["same here", "same here, thanks", "feeling the same here"],
+    miniQuiz: [
+      { question: "'Same here' means:", options: ["I feel the same way", "I disagree", "I don't know", "I'm confused"], correct: 0 }
+    ],
+    register: "casual"
+  },
+  {
+    id: "dne-no-way",
+    expression: "No way",
+    chinese: "不会吧/真的吗",
+    pinyin: "bú huì ba / zhēn de ma",
+    meaning: "Really? / That's surprising / I don't believe it",
+    whenToUse: "Expressing surprise, disbelief, or shock.",
+    whenNotToUse: "Can sound dismissive if someone is sharing something serious. Use 'Really?' or 'I see' for more neutral responses.",
+    nativeFrequency: "Extremely common. Used constantly in casual speech.",
+    commonMistakes: [
+      { mistake: "Using when someone shares serious news", correction: "Use 'Really?' or 'I'm sorry to hear that' for serious situations" }
+    ],
+    pronunciation: "/noʊ weɪ/",
+    funnyExample: "A: I won the lottery! B: No way! A: ...I did! B: ...No way.",
+    memoryTrick: "Think: 'NO WAY = impossible = I don't believe it.'",
+    relatedExpressions: ["Really?", "Are you serious?", "No kidding", "Get out"],
+    collocations: ["no way", "no way! really?", "no way, that's amazing"],
+    miniQuiz: [
+      { question: "'No way' means:", options: ["I don't believe it", "I agree", "I'm confused", "I'm angry"], correct: 0 }
+    ],
+    register: "casual"
+  },
+  {
+    id: "dne-really",
+    expression: "Really?",
+    chinese: "真的吗？/是吗？",
+    pinyin: "zhēn de ma? / shì ma?",
+    meaning: "Is that true? / Please tell me more",
+    whenToUse: "Asking for confirmation or showing interest in what someone is saying.",
+    whenNotToUse: "Can sound sarcastic if tone is wrong. Make sure your tone matches your intention.",
+    nativeFrequency: "Extremely common. One of the most useful questions in English.",
+    commonMistakes: [
+      { mistake: "Using 'really' sarcastically when you don't mean it", correction: "Only use 'really' when you genuinely want to know more" }
+    ],
+    pronunciation: "/ˈrɪli/",
+    funnyExample: "A: I can speak 5 languages. B: Really? A: ...No. B: ...Really?",
+    memoryTrick: "Think: 'REALLY = is it true? = tell me more.'",
+    relatedExpressions: ["Is that so?", "You don't say", "No way", "Interesting"],
+    collocations: ["really?", "really, tell me more", "is that really true?"],
+    miniQuiz: [
+      { question: "'Really?' is used to:", options: ["Ask for confirmation", "Say goodbye", "Express anger", "Thank someone"], correct: 0 }
+    ],
+    register: "neutral"
+  },
+  {
+    id: "dne-thats-awesome",
+    expression: "That's awesome",
+    chinese: "太棒了/真好",
+    pinyin: "tài bàng le / zhēn hǎo",
+    meaning: "That's great / I'm impressed",
+    whenToUse: "Responding to good news or achievements. More enthusiastic than 'that's good.'",
+    whenNotToUse: "Can sound insincere if overused. Use 'congratulations' for formal achievements.",
+    nativeFrequency: "Very common in casual speech.",
+    commonMistakes: [
+      { mistake: "Using 'awesome' for everything", correction: "Reserve 'awesome' for genuinely impressive things, use 'great' or 'good' for smaller things" }
+    ],
+    pronunciation: "/ðæts ˈɔːsəm/",
+    funnyExample: "A: I got a promotion! B: That's awesome! A: ...For a junior position. B: ...Still awesome.",
+    memoryTrick: "Think: 'AWESOME = full of awe = very impressive.'",
+    relatedExpressions: ["That's great", "Congratulations", "Amazing", "Fantastic"],
+    collocations: ["that's awesome", "that's so awesome", "awesome job"],
+    miniQuiz: [
+      { question: "'That's awesome' means:", options: ["That's very impressive", "That's terrible", "That's boring", "That's confusing"], correct: 0 }
+    ],
+    register: "casual"
   }
 ];
 
