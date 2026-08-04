@@ -19,6 +19,7 @@ import {
   Search,
 } from "lucide-react";
 import { DailyExpression } from "@/types/conversations";
+import { useSpeechSynthesis } from "@/hooks/use-speech-synthesis";
 
 type Tab = "all" | "formal" | "neutral" | "casual" | "slang" | "very-informal";
 
@@ -26,6 +27,7 @@ export default function DailyExpressionsPage() {
   const [search, setSearch] = useState("");
   const [tab, setTab] = useState<Tab>("all");
   const [selectedExpr, setSelectedExpr] = useState<DailyExpression | null>(null);
+  const { speakEnglish, speakChinese } = useSpeechSynthesis();
 
   const filtered = dailyExpressions.filter((expr) => {
     const matchesSearch =
@@ -131,8 +133,28 @@ export default function DailyExpressionsPage() {
                   <div className="p-6">
                     <div className="flex items-start justify-between gap-2 mb-3">
                       <div>
-                        <h3 className="text-xl font-bold">"{expr.expression}"</h3>
-                        <p className="text-sm text-indigo-600 dark:text-indigo-400">{expr.chinese}</p>
+                        <div className="flex items-center gap-2">
+                          <h3 className="text-xl font-bold">"{expr.expression}"</h3>
+                          <Button
+                            variant="ghost"
+                            size="icon"
+                            className="h-7 w-7"
+                            onClick={() => speakEnglish(expr.expression)}
+                          >
+                            <Volume2 className="h-3.5 w-3.5" />
+                          </Button>
+                        </div>
+                        <div className="flex items-center gap-2 mt-1">
+                          <p className="text-sm text-indigo-600 dark:text-indigo-400">{expr.chinese}</p>
+                          <Button
+                            variant="ghost"
+                            size="icon"
+                            className="h-7 w-7"
+                            onClick={() => speakChinese(expr.chinese)}
+                          >
+                            <Volume2 className="h-3.5 w-3.5" />
+                          </Button>
+                        </div>
                         <p className="text-xs text-muted-foreground">{expr.pinyin}</p>
                       </div>
                       <Badge className={`${getRegisterBadgeColor(expr.register)}`}>
@@ -165,7 +187,17 @@ export default function DailyExpressionsPage() {
                         </div>
                         <div>
                           <p className="text-xs font-medium text-muted-foreground uppercase">Funny Example</p>
-                          <p className="text-sm italic">"{expr.funnyExample}"</p>
+                          <div className="flex items-center gap-2">
+                            <p className="text-sm italic">"{expr.funnyExample}"</p>
+                            <Button
+                              variant="ghost"
+                              size="icon"
+                              className="h-7 w-7"
+                              onClick={() => speakEnglish(expr.funnyExample)}
+                            >
+                              <Volume2 className="h-3.5 w-3.5" />
+                            </Button>
+                          </div>
                         </div>
                         <div>
                           <p className="text-xs font-medium text-muted-foreground uppercase">Related Expressions</p>
