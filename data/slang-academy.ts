@@ -311,6 +311,58 @@ export const slangAcademy: SlangLevelData[] = [
           { speaker: "Lisa", line: "罪有应得。我受不了错过的想法。" }
         ],
         culturalNotes: "Very common in social media and modern life. Often used as a noun."
+      },
+      {
+        id: "internet-8",
+        word: "Slaps",
+        chinese: "超棒/好听到爆",
+        pinyin: "chāo bàng / hǎo tīng dào bào",
+        meaning: "Really good, especially music or food",
+        example: "This new album slaps!",
+        exampleZh: "这张新专辑超棒！",
+        whoSaysIt: "Teens, young adults",
+        ageGroup: "13-30",
+        region: "American, British, Australian",
+        isOffensive: false,
+        offensiveLevel: 0,
+        safeAlternatives: ["Great", "Amazing", "Fantastic", "Really good"],
+        conversation: [
+          { speaker: "Casey", line: "Have you heard the new track?" },
+          { speaker: "Morgan", line: "Yeah, it slaps! Been on repeat all day." },
+          { speaker: "Casey", line: "Right? The beat is insane." }
+        ],
+        chineseTranslation: [
+          { speaker: "Casey", line: "你听新歌了吗？" },
+          { speaker: "Morgan", line: "听了，超棒！今天一直在循环播放。" },
+          { speaker: "Casey", line: "是吧？节奏太疯狂了。" }
+        ],
+        culturalNotes: "'Slaps' is modern slang meaning something is exceptionally good. Originated in music culture but now used for food, fashion, and more."
+      },
+      {
+        id: "internet-9",
+        word: "Vibe check",
+        chinese: "氛围检查/察言观色",
+        pinyin: "fēn wéi jiǎn chá / chá yán guān sè",
+        meaning: "Assessing the mood or atmosphere of a situation",
+        example: "I need to do a quick vibe check before I go in there.",
+        exampleZh: "进去之前我需要先察言观色一下。",
+        whoSaysIt: "Teens, young adults",
+        ageGroup: "13-35",
+        region: "All English-speaking countries",
+        isOffensive: false,
+        offensiveLevel: 0,
+        safeAlternatives: ["Check the mood", "Read the room", "See how people feel", "Assess the situation"],
+        conversation: [
+          { speaker: "Taylor", line: "Should we go in?" },
+          { speaker: "Jordan", line: "Hold on, let me do a vibe check first." },
+          { speaker: "Taylor", line: "Good call. Looks like they're having a meeting." }
+        ],
+        chineseTranslation: [
+          { speaker: "Taylor", line: "我们该进去吗？" },
+          { speaker: "Jordan", line: "等等，我先察言观色一下。" },
+          { speaker: "Taylor", line: "好主意。看起来他们正在开会。" }
+        ],
+        culturalNotes: "'Vibe check' became popular on social media around 2019. It means assessing whether the mood is positive, negative, or tense."
       }
     ]
   },
@@ -399,58 +451,6 @@ export const slangAcademy: SlangLevelData[] = [
           { speaker: "Tom", line: "好吧，你说得对。" }
         ],
         culturalNotes: "Popularized by social media and hip-hop. A 'clap back' is a sharp, often public, response to criticism."
-      },
-      {
-        id: "internet-8",
-        word: "Slaps",
-        chinese: "超棒/好听到爆",
-        pinyin: "chāo bàng / hǎo tīng dào bào",
-        meaning: "Really good, especially music or food",
-        example: "This new album slaps!",
-        exampleZh: "这张新专辑超棒！",
-        whoSaysIt: "Teens, young adults",
-        ageGroup: "13-30",
-        region: "American, British, Australian",
-        isOffensive: false,
-        offensiveLevel: 0,
-        safeAlternatives: ["Great", "Amazing", "Fantastic", "Really good"],
-        conversation: [
-          { speaker: "Casey", line: "Have you heard the new track?" },
-          { speaker: "Morgan", line: "Yeah, it slaps! Been on repeat all day." },
-          { speaker: "Casey", line: "Right? The beat is insane." }
-        ],
-        chineseTranslation: [
-          { speaker: "Casey", line: "你听新歌了吗？" },
-          { speaker: "Morgan", line: "听了，超棒！今天一直在循环播放。" },
-          { speaker: "Casey", line: "是吧？节奏太疯狂了。" }
-        ],
-        culturalNotes: "'Slaps' is modern slang meaning something is exceptionally good. Originated in music culture but now used for food, fashion, and more."
-      },
-      {
-        id: "internet-9",
-        word: "Vibe check",
-        chinese: "氛围检查/察言观色",
-        pinyin: "fēn wéi jiǎn chá / chá yán guān sè",
-        meaning: "Assessing the mood or atmosphere of a situation",
-        example: "I need to do a quick vibe check before I go in there.",
-        exampleZh: "进去之前我需要先察言观色一下。",
-        whoSaysIt: "Teens, young adults",
-        ageGroup: "13-35",
-        region: "All English-speaking countries",
-        isOffensive: false,
-        offensiveLevel: 0,
-        safeAlternatives: ["Check the mood", "Read the room", "See how people feel", "Assess the situation"],
-        conversation: [
-          { speaker: "Taylor", line: "Should we go in?" },
-          { speaker: "Jordan", line: "Hold on, let me do a vibe check first." },
-          { speaker: "Taylor", line: "Good call. Looks like they're having a meeting." }
-        ],
-        chineseTranslation: [
-          { speaker: "Taylor", line: "我们该进去吗？" },
-          { speaker: "Jordan", line: "等等，我先察言观色一下。" },
-          { speaker: "Taylor", line: "好主意。看起来他们正在开会。" }
-        ],
-        culturalNotes: "'Vibe check' became popular on social media around 2019. It means assessing whether the mood is positive, negative, or tense."
       }
     ]
   },
@@ -592,6 +592,59 @@ export const slangAcademy: SlangLevelData[] = [
         ],
         culturalNotes: "Very strong expression. Rarely literal among friends, but still hurtful. Among teens, it's often dramatic and temporary. Adults should avoid using it.",
         warning: "WARNING: 'I hate you' is extremely hurtful. Even when said in anger, it can cause lasting emotional damage. Never use this expression lightly."
+      },
+      {
+        id: "rough-6",
+        word: "Jerk",
+        chinese: "混蛋",
+        pinyin: "hún dàn",
+        meaning: "Rude or unpleasant person",
+        example: "The guy who cut in line is such a jerk.",
+        exampleZh: "那个插队的人真是个混蛋。",
+        whoSaysIt: "Everyone",
+        ageGroup: "Teens and above",
+        region: "All English-speaking countries",
+        isOffensive: true,
+        offensiveLevel: 3,
+        safeAlternatives: ["Rude person", "Unpleasant person", "Unkind person", "That person was rude"],
+        conversation: [
+          { speaker: "Amy", line: "Did you see that guy cut in line?" },
+          { speaker: "John", line: "Yeah, what a jerk." },
+          { speaker: "Amy", line: "I should have said something." }
+        ],
+        chineseTranslation: [
+          { speaker: "Amy", line: "你看到那个插队的人了吗？" },
+          { speaker: "John", line: "看到了，真是个混蛋。" },
+          { speaker: "Amy", line: "我应该说点什么的。" }
+        ],
+        culturalNotes: "One of the most common mild insults in American English. Still rude but widely used among friends to describe others."
+      },
+      {
+        id: "rough-7",
+        word: "Loser",
+        chinese: "失败者",
+        pinyin: "shī bài zhě",
+        meaning: "Unsuccessful or pathetic person",
+        example: "Oh, you lost again? Typical loser.",
+        exampleZh: "哦，你又输了？典型的失败者。",
+        whoSaysIt: "Bullies, angry people, teasing friends",
+        ageGroup: "All ages (especially school)",
+        region: "All English-speaking countries",
+        isOffensive: true,
+        offensiveLevel: 4,
+        safeAlternatives: ["Unlucky", "Unsuccessful", "Having a rough time", "That was tough"],
+        conversation: [
+          { speaker: "Sam", line: "Loser! Get better at the game." },
+          { speaker: "Riley", line: "Shut up, weirdo. Rematch!" },
+          { speaker: "Sam", line: "You're just mad because I won." }
+        ],
+        chineseTranslation: [
+          { speaker: "Sam", line: "失败者！游戏练好点。" },
+          { speaker: "Riley", line: "闭嘴，怪人。再来一局！" },
+          { speaker: "Sam", line: "你只是因为我赢了才生气。" }
+        ],
+        culturalNotes: "Common in school bullying. Should be avoided in adult professional contexts. Can be playful among friends depending on tone.",
+        warning: "WARNING: 'Loser' can be bullying language. Using it toward someone who is struggling is cruel."
       }
     ]
   }
