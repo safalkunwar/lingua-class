@@ -641,6 +641,85 @@ export const roughEnglish: SlangItem[] = [
     ],
     culturalNotes: "Expresses satisfaction when someone who did something wrong faces consequences. Can be playful among friends or serious depending on context.",
     warning: "WARNING: 'Get wrecked' can sound cruel when someone is actually suffering. Use with caution."
+  },
+  {
+    id: "rough-25",
+    word: "Shut your mouth",
+    chinese: "闭上你的嘴",
+    pinyin: "bì shàng nǐ de zuǐ",
+    meaning: "Stop talking / Be quiet (rude, stronger than 'shut up')",
+    example: "Shut your mouth! I don't want to hear your excuses.",
+    exampleZh: "闭上你的嘴！我不想听你的借口。",
+    whoSaysIt: "Angry people, authority figures",
+    ageGroup: "Teens and above",
+    region: "All English-speaking countries",
+    isOffensive: true,
+    offensiveLevel: 4,
+    safeAlternatives: ["Be quiet", "Stop talking", "Please be quiet", "I don't want to hear it"],
+    conversation: [
+      { speaker: "Alex", line: "Shut your mouth! I'm tired of your lies." },
+      { speaker: "Sam", line: "I'm not lying! You just don't understand." },
+      { speaker: "Alex", line: "Then explain. Don't yell." }
+    ],
+    chineseTranslation: [
+      { speaker: "Alex", line: "闭上你的嘴！我受够了你的谎言。" },
+      { speaker: "Sam", line: "我没撒谎！你只是不理解。" },
+      { speaker: "Alex", line: "那解释一下。别大喊大叫。" }
+    ],
+    culturalNotes: "Stronger and more aggressive than 'shut up.' Often used in arguments or confrontations. Can be considered verbally abusive if used repeatedly.",
+    warning: "WARNING: 'Shut your mouth' is a very aggressive command. Using it toward others is disrespectful and can be considered verbal abuse."
+  },
+  {
+    id: "rough-26",
+    word: "I don't care",
+    chinese: "我不在乎/关我屁事",
+    pinyin: "wǒ bù zài hū / guān wǒ pì shì",
+    meaning: "I have no interest / It doesn't matter to me",
+    example: "I don't care what you think. I'm doing it my way.",
+    exampleZh: "我不在乎你怎么想。我要按我的方式做。",
+    whoSaysIt: "Everyone when dismissive or angry",
+    ageGroup: "All ages",
+    region: "All English-speaking countries",
+    isOffensive: false,
+    offensiveLevel: 1,
+    safeAlternatives: ["I'm not interested", "It doesn't matter to me", "I have my own opinion", "Let's agree to disagree"],
+    conversation: [
+      { speaker: "Mia", line: "I don't care what everyone else says. I'm going." },
+      { speaker: "Jake", line: "But it's dangerous!" },
+      { speaker: "Mia", line: "I don't care. I've already made up my mind." }
+    ],
+    chineseTranslation: [
+      { speaker: "Mia", line: "我不在乎别人怎么说。我要去。" },
+      { speaker: "Jake", line: "但那很危险！" },
+      { speaker: "Mia", line: "我不在乎。我已经决定了。" }
+    ],
+    culturalNotes: "Can sound very dismissive or rude depending on tone and context. Often used in arguments. 'I don't care' can hurt feelings even when not intended."
+  },
+  {
+    id: "rough-27",
+    word: "So what?",
+    chinese: "那又怎样/管我屁事",
+    pinyin: "nà yòu zěn yàng / guǎn wǒ pì shì",
+    meaning: "I don't see why that matters / That doesn't change anything",
+    example: "So what if I'm late? You're always late too.",
+    exampleZh: "我迟到又怎样？你总是也迟到。",
+    whoSaysIt: "Everyone when defensive or dismissive",
+    ageGroup: "All ages",
+    region: "All English-speaking countries",
+    isOffensive: false,
+    offensiveLevel: 1,
+    safeAlternatives: ["That doesn't matter", "It's not a big deal", "That doesn't change anything", "I don't see the problem"],
+    conversation: [
+      { speaker: "Alex", line: "You forgot our meeting again!" },
+      { speaker: "Sam", line: "So what? You've forgotten before." },
+      { speaker: "Alex", line: "That's not the point. You should apologize." }
+    ],
+    chineseTranslation: [
+      { speaker: "Alex", line: "你又忘了我们的会议！" },
+      { speaker: "Sam", line: "那又怎样？你以前也忘过。" },
+      { speaker: "Alex", line: "这不是重点。你应该道歉。" }
+    ],
+    culturalNotes: "Dismissive and often confrontational. Can escalate arguments. While not a 'swear word,' it's considered rude in many contexts because it minimizes the other person's concerns."
   }
 ];
 
