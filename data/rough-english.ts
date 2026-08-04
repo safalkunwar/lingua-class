@@ -882,6 +882,114 @@ export const roughEnglish: SlangItem[] = [
     ],
     culturalNotes: "Common expression of frustration. Less severe than 'holy shit' or 'fuck off' but still considered profane. Some religious people find it offensive because it uses God's name in vain.",
     warning: "WARNING: 'Goddammit' is considered blasphemous by some religious people. Use 'darn it' or 'shoot' if you're around sensitive audiences."
+  },
+  {
+    id: "rough-34",
+    word: "Cunt",
+    chinese: "贱人/婊子（极度粗俗）",
+    pinyin: "jiàn rén / biāo zi (jí dù cū sú)",
+    meaning: "Extremely vulgar insult for a person (often misogynistic)",
+    example: "What a cunt! She lied to my face.",
+    exampleZh: "真是个贱人！她当着我面撒谎。",
+    whoSaysIt: "Extremely angry people; mostly adults",
+    ageGroup: "Adults only",
+    region: "British, Australian, Irish; very offensive in American English",
+    isOffensive: true,
+    offensiveLevel: 5,
+    safeAlternatives: ["Jerk", "Idiot", "Rude person", "Fool"],
+    conversation: [
+      { speaker: "Mia", line: "She promised to help and then bailed." },
+      { speaker: "Jake", line: "What a cunt. I can't trust her." },
+      { speaker: "Mia", line: "I know. She's the worst." }
+    ],
+    chineseTranslation: [
+      { speaker: "Mia", line: "她答应帮忙然后跑了。" },
+      { speaker: "Jake", line: "贱人。我不能信任她。" },
+      { speaker: "Mia", line: "我知道。她最差了。" }
+    ],
+    culturalNotes: "In British/Australian/Irish English it is one of the strongest insults, often misogynistic. In American English it is even more taboo and rarely used outside of hostile conflict. Avoid in nearly all contexts.",
+    warning: "WARNING: 'Cunt' is among the most offensive words in English, especially in the US. It is often considered misogynistic. Using it can end relationships and careers. DO NOT use this word."
+  },
+  {
+    id: "rough-35",
+    word: "Motherfucker",
+    chinese: "狗娘养的/操你妈",
+    pinyin: "gǒu niáng yǎng de / cāo nǐ mā",
+    meaning: "Extremely vulgar insult or exclamation",
+    example: "That motherfucker cut me off in traffic!",
+    exampleZh: "那个狗娘养的在交通中超我车！",
+    whoSaysIt: "Very angry people; mostly adults",
+    ageGroup: "Adults only",
+    region: "All English-speaking countries",
+    isOffensive: true,
+    offensiveLevel: 5,
+    safeAlternatives: ["Jerk", "Idiot", "Asshole", "Fool"],
+    conversation: [
+      { speaker: "Alex", line: "That motherfucker stole my bike!" },
+      { speaker: "Sam", line: "No way. Are you serious?" },
+      { speaker: "Alex", line: "Yes! I'm going to call the police." }
+    ],
+    chineseTranslation: [
+      { speaker: "Alex", line: "那个狗娘养的偷了我的自行车！" },
+      { speaker: "Sam", line: "不会吧。你认真的吗？" },
+      { speaker: "Alex", line: "真的！我要报警。" }
+    ],
+    culturalNotes: "One of the strongest insults and expletives in English. Can be used as an insult toward a person or as a general expletive. Extremely vulgar and unacceptable in polite company.",
+    warning: "WARNING: 'Motherfucker' is extremely vulgar and offensive. It insults someone's family and implies incest. Using this word is likely to provoke violence or severe social consequences."
+  },
+  {
+    id: "rough-36",
+    word: "Bastard",
+    chinese: "私生子/王八蛋",
+    pinyin: "sī shēng zǐ / wáng bā dàn",
+    meaning: "Insulting term for an unpleasant or dishonest person",
+    example: "He's a lying bastard. Don't trust him.",
+    exampleZh: "他是个撒谎的王八蛋。别相信他。",
+    whoSaysIt: "Everyone when insulting someone they dislike",
+    ageGroup: "Teens and above",
+    region: "British, Australian, Irish; milder in American English",
+    isOffensive: true,
+    offensiveLevel: 3,
+    safeAlternatives: ["Jerk", "Rascal", "Cheat", "Untrustworthy person"],
+    conversation: [
+      { speaker: "Mia", line: "He cheated on the test and blamed me." },
+      { speaker: "Jake", line: "What a bastard." },
+      { speaker: "Mia", line: "I know. He's always like this." }
+    ],
+    chineseTranslation: [
+      { speaker: "Mia", line: "他考试作弊然后嫁祸给我。" },
+      { speaker: "Jake", line: "真是个王八蛋。" },
+      { speaker: "Mia", line: "我知道。他总是这样。" }
+    ],
+    culturalNotes: "Historically meant 'illegitimate child' and was extremely offensive. Today it's commonly used as a general insult, especially in British English. In American English it's considered milder but still rude.",
+    warning: "WARNING: 'Bastard' can be offensive because of its historical meaning. While commonly used as an insult in some countries, it can still deeply hurt people, especially those born outside of marriage."
+  },
+  {
+    id: "rough-37",
+    word: "Piss off",
+    chinese: "滚开/讨厌",
+    pinyin: "gǔn kāi / tǎo yàn",
+    meaning: "Go away / leave me alone (British, vulgar)",
+    example: "Piss off! I'm busy right now.",
+    exampleZh: "滚开！我现在很忙。",
+    whoSaysIt: "Angry or annoyed people",
+    ageGroup: "Teens and above",
+    region: "British, Irish, Australian, New Zealand",
+    isOffensive: true,
+    offensiveLevel: 4,
+    safeAlternatives: ["Go away", "Leave me alone", "I'm busy", "Please leave"],
+    conversation: [
+      { speaker: "Alex", line: "Piss off! I told you I'm working." },
+      { speaker: "Sam", line: "I just wanted to ask a question." },
+      { speaker: "Alex", line: "Not now. Leave me alone." }
+    ],
+    chineseTranslation: [
+      { speaker: "Alex", line: "滚开！我告诉过你我在工作。" },
+      { speaker: "Sam", line: "我只是想问个问题。" },
+      { speaker: "Alex", line: "现在不行。让我一个人待着。" }
+    ],
+    culturalNotes: "Common British/Australian/Irish expression meaning 'go away' or expressing annoyance. While vulgar, it's less aggressive than 'fuck off.' Equivalent to 'bugger off' in some regions.",
+    warning: "WARNING: 'Piss off' is vulgar and rude. While common in British English, it's still offensive. Use 'go away' or 'leave me alone' in polite company."
   }
 ];
 
