@@ -1720,6 +1720,346 @@ export const slangModule: SlangModule = {
         },
       ],
     },
+    {
+      id: "emotional-expressions",
+      title: "Emotional Expressions & Reactions",
+      description:
+        "Hyperbolic and exaggerated expressions used to show strong emotions online and in casual speech. Learn when these are playful and when they might confuse older generations.",
+      emoji: "😭",
+      category: "emotional-expressions",
+      terms: [
+        {
+          id: "im-dead",
+          english: "I'm dead / I'm crying",
+          chinese: "笑死我了/我哭了",
+          pinyin: "xiào sǐ wǒ le / wǒ kū le",
+          pronunciation: "aym ded",
+          literalMeaning: "I have died / I am weeping",
+          actualMeaning: "That's extremely funny / I'm laughing hard",
+          detailsEn:
+            "Exaggerated expression of laughter. Common in text and casual speech. Means something is hilarious.",
+          detailsZh: "夸张的笑声表达。在文本和 casual speech 中很常见。意为某事物非常搞笑。",
+          intensity: 1,
+          safetyLabels: [
+            { label: "Very Safe", icon: "✅", settings: ["All settings"] },
+          ],
+          regionalVariations: [
+            { region: "American", usage: "I'm dead! That video was hilarious.", note: "Very common" },
+            { region: "British", usage: "I'm crying! That's so funny.", note: "Common" },
+            { region: "Australian", usage: "I'm dead! That's hilarious.", note: "Common" },
+          ],
+          demographics: {
+            ageGroup: "Teens and above",
+            tone: "Funny",
+            genderNeutral: true,
+          },
+          nonVerbalCues: {
+            facialExpression: "Laughing or crying emoji face",
+            bodyLanguage: "Laughing or clutching stomach",
+          },
+          comparative: {
+            commonMistakes: ["Using in formal settings", "Using with people who don't understand internet slang"],
+            saferAlternatives: ["That's hilarious", "I'm laughing so hard", "That's so funny"],
+            similarWords: ["I'm screaming", "I can't breathe", "I'm deceased"],
+            culturalNotes:
+              "Originated from social media and texting. 'I'm dead' means 'I'm laughing so hard I could die.' 'I'm crying' means 'that's so funny I'm crying.'",
+          },
+          exampleEn: "That TikTok had me dead! I couldn't stop laughing.",
+          exampleZh: "那个TikTok笑死我了！我停不下来。",
+          category: "emotional-expressions",
+        },
+        {
+          id: "i-cant-even",
+          english: "I can't even",
+          chinese: "我简直无语了/我受不了了",
+          pinyin: "wǒ jiǎn zhí wú yǔ le / wǒ shòu bù liǎo le",
+          pronunciation: "ay kant ee-ven",
+          literalMeaning: "I cannot even [do something]",
+          actualMeaning: "I'm overwhelmed / I don't know how to respond / That's too much",
+          detailsEn:
+            "Exaggerated expression of being overwhelmed. Used when something is too much to handle or too funny to respond to.",
+          detailsZh: "夸张的表达，表示不知所措。用于某事物太多或太搞笑而无法回应时。",
+          intensity: 1,
+          safetyLabels: [
+            { label: "Very Safe", icon: "✅", settings: ["All settings"] },
+          ],
+          regionalVariations: [
+            { region: "American", usage: "I can't even with this weather.", note: "Very common" },
+            { region: "British", usage: "I can't even with this weather.", note: "Common" },
+            { region: "Australian", usage: "I can't even with this weather.", note: "Common" },
+          ],
+          demographics: {
+            ageGroup: "Teens and above",
+            tone: "Frustrated",
+            genderNeutral: true,
+          },
+          nonVerbalCues: {
+            facialExpression: "Hands on head or eyes rolling",
+            bodyLanguage: "Exaggerated sigh or walking away",
+          },
+          comparative: {
+            commonMistakes: ["Using in formal settings", "Using without context"],
+            saferAlternatives: ["I'm overwhelmed", "I don't know how to respond", "That's too much"],
+            similarWords: ["I'm done", "I can't deal", "It's too much"],
+            culturalNotes:
+              "The 'even' is intentionally left vague. It implies 'I can't even [begin to process this].' Very common in social media captions.",
+          },
+          exampleEn: "I can't even with how hot it is today.",
+          exampleZh: "今天这么热我简直无语了。",
+          category: "emotional-expressions",
+        },
+        {
+          id: "send-help",
+          english: "Send help",
+          chinese: "救命/快来帮我",
+          pinyin: "jiù mìng / kuài lái bāng wǒ",
+          pronunciation: "send help",
+          literalMeaning: "Please send assistance",
+          actualMeaning: "I'm in a difficult or funny situation (usually joking)",
+          detailsEn:
+            "Joking expression used when you're in a mildly difficult or embarrassing situation. Usually not serious.",
+          detailsZh: "开玩笑的表达，用于你处于轻微困难或尴尬情况时。通常不是认真的。",
+          intensity: 1,
+          safetyLabels: [
+            { label: "Very Safe", icon: "✅", settings: ["All settings"] },
+          ],
+          regionalVariations: [
+            { region: "American", usage: "Send help, I'm stuck in traffic.", note: "Very common" },
+            { region: "British", usage: "Send help, I'm stuck in traffic.", note: "Common" },
+            { region: "Australian", usage: "Send help, I'm stuck in traffic.", note: "Common" },
+          ],
+          demographics: {
+            ageGroup: "Teens and above",
+            tone: "Funny",
+            genderNeutral: true,
+          },
+          nonVerbalCues: {
+            facialExpression: "Exaggerated panic or distressed face",
+            bodyLanguage: "Dramatic gestures or pretending to be in danger",
+          },
+          comparative: {
+            commonMistakes: ["Using for real emergencies", "Using with people who don't understand the joke"],
+            saferAlternatives: ["I need help", "This is difficult", "I'm struggling"],
+            similarWords: ["Help me", "I'm doomed", "I'm done for"],
+            culturalNotes:
+              "Common in social media and texting. Usually exaggerated for comedic effect. Rarely used for actual emergencies.",
+          },
+          exampleEn: "Send help, I have 17 unread texts and no idea how to respond.",
+          exampleZh: "救命，我有17条未读短信，不知道该怎么回。",
+          category: "emotional-expressions",
+        },
+        {
+          id: "obsessed",
+          english: "I'm obsessed",
+          chinese: "我超爱/我沉迷了",
+          pinyin: "wǒ chāo ài / wǒ chén mí le",
+          pronunciation: "aym ub-sest",
+          literalMeaning: "I am fixated on something",
+          actualMeaning: "I love this so much / This is my new favorite thing",
+          detailsEn:
+            "Strong expression of liking something. Means you love it and can't stop thinking about it.",
+          detailsZh: "强烈的喜欢表达。意为你喜欢某事物并且无法停止想它。",
+          intensity: 1,
+          safetyLabels: [
+            { label: "Very Safe", icon: "✅", settings: ["All settings"] },
+          ],
+          regionalVariations: [
+            { region: "American", usage: "I'm obsessed with this new show!", note: "Very common" },
+            { region: "British", usage: "I'm obsessed with this new show!", note: "Common" },
+            { region: "Australian", usage: "I'm obsessed with this new show!", note: "Common" },
+          ],
+          demographics: {
+            ageGroup: "Teens and above",
+            tone: "Excited",
+            genderNeutral: true,
+          },
+          nonVerbalCues: {
+            facialExpression: "Eyes wide or starry-eyed",
+            bodyLanguage: "Bouncing or excited gestures",
+          },
+          comparative: {
+            commonMistakes: ["Using for people (can sound intense)", "Using for too many things at once"],
+            saferAlternatives: ["I love this", "This is my favorite", "I really like it"],
+            similarWords: ["I'm in love", "I'm hooked", "I'm a fan"],
+            culturalNotes:
+              "Originally meant 'fixated in an unhealthy way' but now means 'I love this.' Common in social media and fan culture.",
+          },
+          exampleEn: "I'm obsessed with this coffee shop. I go there every day.",
+          exampleZh: "我超爱这家咖啡店。我每天都去。",
+          category: "emotional-expressions",
+        },
+        {
+          id: "its-giving",
+          english: "It's giving...",
+          chinese: "这感觉像.../这让我想到...",
+          pinyin: "zhè gǎn jué xiàng... / zhè ràng wǒ xiǎng dào...",
+          pronunciation: "its giv-ing",
+          literalMeaning: "It is giving off a vibe",
+          actualMeaning: "It gives me the impression of / It reminds me of",
+          detailsEn:
+            "Modern slang for describing the vibe or impression something gives. Very popular on social media.",
+          detailsZh: "描述氛围或印象的现代俚语。在社交媒体上非常流行。",
+          intensity: 1,
+          safetyLabels: [
+            { label: "Very Safe", icon: "✅", settings: ["All settings"] },
+          ],
+          regionalVariations: [
+            { region: "American", usage: "It's giving 90s nostalgia.", note: "Very common" },
+            { region: "British", usage: "It's giving 90s nostalgia.", note: "Common" },
+            { region: "Australian", usage: "It's giving 90s nostalgia.", note: "Common" },
+          ],
+          demographics: {
+            ageGroup: "Teens and above",
+            tone: "Neutral",
+            genderNeutral: true,
+          },
+          nonVerbalCues: {
+            facialExpression: "Thoughtful or impressed",
+            bodyLanguage: "Gesturing toward the thing being described",
+          },
+          comparative: {
+            commonMistakes: ["Using in formal settings", "Using without context"],
+            saferAlternatives: ["It reminds me of", "It feels like", "The vibe is"],
+            similarWords: ["Vibes", "Giving", "Energy"],
+            culturalNotes:
+              "Popularized by Black Twitter and TikTok around 2020-2021. Now widespread but still associated with internet culture.",
+          },
+          exampleEn: "This outfit? It's giving main character energy.",
+          exampleZh: "这身衣服？感觉像是主角光环。",
+          category: "emotional-expressions",
+        },
+      ],
+      dialogues: [
+        {
+          id: "d1",
+          context: "Friends reacting to a funny video",
+          lines: [
+            {
+              speaker: "Casey",
+              english: "You have to see this video!",
+              chinese: "你必须看这个视频！",
+              pinyin: "nǐ bì xū kàn zhè gè shì pín!",
+            },
+            {
+              speaker: "Morgan",
+              english: "Oh my god, I'm dead! That cat is so funny!",
+              chinese: "哦我的天，笑死我了！那只猫太搞笑了！",
+              pinyin: "o wǒ de tiān, xiào sǐ wǒ le! nà zhī māo tài gǎo xiào le!",
+            },
+            {
+              speaker: "Casey",
+              english: "Right? I can't even. I watched it 10 times.",
+              chinese: "是吧？我简直无语了。我看了10遍。",
+              pinyin: "shì ba? wǒ jiǎn zhí wú yǔ le. wǒ kàn le 10 biàn.",
+            },
+          ],
+          comprehensionNote:
+            "Shows how exaggerated emotional expressions are used naturally among friends. These are playful and not meant literally.",
+        },
+        {
+          id: "d2",
+          context: "Friends discussing a new restaurant",
+          lines: [
+            {
+              speaker: "Taylor",
+              english: "Have you tried that new pasta place?",
+              chinese: "你试过那家新意大利面店了吗？",
+              pinyin: "nǐ shì guò nà jiā xīn yì dà lì miàn diàn le ma?",
+            },
+            {
+              speaker: "Jordan",
+              english: "Yes! I'm obsessed. The carbonara is insane.",
+              chinese: "试过了！我超爱。那个培根蛋酱意面太疯狂了。",
+              pinyin: "shì guò le! wǒ chāo ài. nà gè péi bāi dàn jiàng yì miàn tài fēng kuáng le.",
+            },
+            {
+              speaker: "Taylor",
+              english: "It's giving fancy but affordable. Let's go this weekend!",
+              chinese: "感觉高档但实惠。这周末我们去！",
+              pinyin: "gǎn jué gāo dàng dàn shí huì. zhè zhōu mò wǒ men qù!",
+            },
+          ],
+          comprehensionNote:
+            "Shows how 'obsessed' and 'it's giving' are used to express enthusiasm. Both are very common in casual speech.",
+        },
+      ],
+      practiceDrills: [
+        {
+          id: "p1",
+          type: "register-comparison",
+          title: "Formal vs. Emotional",
+          instructions: "Rewrite these sentences using emotional expressions.",
+          instructionsZh: "使用 emotional expressions 改写这些句子。",
+          content: "1. 'That comedy show was hilarious.' 2. 'I love this song so much.' 3. 'This situation is overwhelming.'",
+          contentZh: "1. '那个喜剧节目太搞笑了。' 2. '我超爱这首歌。' 3. '这情况太 overwhelming 了。'",
+          answer:
+            "1. 'That show had me dead!' 2. 'I'm obsessed with this song.' 3. 'I can't even with this situation.'",
+          answerZh: "1. '那个节目笑死我了！' 2. '我超爱这首歌。' 3. '这情况我简直无语了。'",
+        },
+        {
+          id: "p2",
+          type: "situational-judgment",
+          title: "When to Use",
+          instructions: "When is it appropriate to say 'I'm dead'?",
+          instructionsZh: "什么时候适合说'I'm dead'？",
+          content: "A) When someone tells you a family member passed away B) When a friend sends you a hilarious meme C) In a business presentation D) With a stranger on the street",
+          contentZh: "A) 当有人告诉你家人去世时 B) 当朋友给你发了一个好笑的梗图时 C) 在商业演示中 D) 在街上和陌生人",
+          options: [
+            { label: "A) When someone tells you a family member passed away", labelZh: "A) 当有人告诉你家人去世时", correct: false },
+            { label: "B) When a friend sends you a hilarious meme", labelZh: "B) 当朋友给你发了一个好笑的梗图时", correct: true },
+            { label: "C) In a business presentation", labelZh: "C) 在商业演示中", correct: false },
+            { label: "D) With a stranger on the street", labelZh: "D) 在街上和陌生人", correct: false },
+          ],
+          answer:
+            "B only. 'I'm dead' is playful slang for 'that's hilarious.' Never use it for actual death or serious situations.",
+          answerZh: "仅B。'I'm dead'是'那很好笑'的 playful slang。绝不要用于实际死亡或严肃场合。",
+        },
+      ],
+      quiz: [
+        {
+          id: "q1",
+          question: "What does 'I'm dead' mean?",
+          questionZh: "'I'm dead'是什么意思？",
+          options: [
+            { label: "A) I am literally deceased", labelZh: "A) 我字面意思上死了", correct: false },
+            { label: "B) That's extremely funny", labelZh: "B) 那非常搞笑", correct: true },
+            { label: "C) I am tired", labelZh: "C) 我累了", correct: false },
+            { label: "D) I am angry", labelZh: "D) 我生气了", correct: false },
+          ],
+          explanation:
+            "'I'm dead' means 'that's extremely funny.' It's exaggerated slang for laughing hard. Never use it for actual death.",
+          explanationZh: "'I'm dead'意为'那非常搞笑。'它是笑得很厉害的夸张俚语。绝不要用于实际死亡。",
+        },
+        {
+          id: "q2",
+          question: "What does 'I can't even' mean?",
+          questionZh: "'I can't even'是什么意思？",
+          options: [
+            { label: "A) I physically cannot do something", labelZh: "A) 我身体上无法做某事", correct: false },
+            { label: "B) I'm overwhelmed / That's too much", labelZh: "B) 我不知所措/那太多了", correct: true },
+            { label: "C) I don't know how to do it", labelZh: "C) 我不知道怎么做", correct: false },
+            { label: "D) I'm giving up", labelZh: "D) 我放弃了", correct: false },
+          ],
+          explanation:
+            "'I can't even' means you're overwhelmed or that something is too much to handle. The 'even' is intentionally left vague.",
+          explanationZh: "'I can't even'意味着你不知所措或某事物太多无法处理。'even'故意被省略。",
+        },
+        {
+          id: "q3",
+          question: "What does 'I'm obsessed' mean?",
+          questionZh: "'I'm obsessed'是什么意思？",
+          options: [
+            { label: "A) I have a mental health condition", labelZh: "A) 我有心理健康问题", correct: false },
+            { label: "B) I love this so much", labelZh: "B) 我超爱这个", correct: true },
+            { label: "C) I'm confused", labelZh: "C) 我困惑", correct: false },
+            { label: "D) I'm angry", labelZh: "D) 我生气了", correct: false },
+          ],
+          explanation:
+            "'I'm obsessed' means you love something intensely. It's hyperbolic but common in casual speech. Originally meant 'unhealthily fixated' but now means 'I love this.'",
+          explanationZh: "'I'm obsessed'意味着你 intensely 喜欢某事物。它是夸张的但在 casual speech 中很常见。最初意为'不健康地迷恋'但现在意为'我超爱这个。'",
+        },
+      ],
+    },
   ],
 };
 
