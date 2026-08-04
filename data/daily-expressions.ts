@@ -331,6 +331,94 @@ export const dailyExpressions: DailyExpression[] = [
       { question: "'Anytime' means:", options: ["You're welcome / happy to help", "See you later", "I don't know", "Goodbye"], correct: 0 }
     ],
     register: "casual"
+  },
+  {
+    id: "dne-thank-you",
+    expression: "Thank you",
+    chinese: "谢谢",
+    pinyin: "xiè xie",
+    meaning: "Gratitude / appreciation for someone's help or kindness.",
+    whenToUse: "When someone does something nice for you. The most basic and important polite expression in English.",
+    whenNotToUse: "Rarely misused, but can sound sarcastic if tone is wrong. Use 'thanks' for casual settings.",
+    nativeFrequency: "Extremely common. Used constantly in both casual and professional settings.",
+    commonMistakes: [
+      { mistake: "Not saying thank you when someone helps you", correction: "Always say 'thank you' or 'thanks' when someone helps you" }
+    ],
+    pronunciation: "/θæŋk ju/",
+    funnyExample: "A: Thank you! B: For what? A: For existing. B: ...You're welcome?",
+    memoryTrick: "Think: 'THANK = gratitude = I appreciate you.'",
+    relatedExpressions: ["Thanks", "Thank you so much", "I appreciate it", "Much obliged"],
+    collocations: ["thank you very much", "thank you for", "thanks a lot"],
+    miniQuiz: [
+      { question: "'Thank you' is:", options: ["A basic polite expression", "A greeting", "A question", "An insult"], correct: 0 }
+    ],
+    register: "neutral"
+  },
+  {
+    id: "dne-please",
+    expression: "Please",
+    chinese: "请",
+    pinyin: "qǐng",
+    meaning: "Polite request or marker of courtesy.",
+    whenToUse: "Making requests, asking for help, or being polite. Essential in formal and casual settings.",
+    whenNotToUse: "Don't overuse - too many 'pleases' can sound insincere. One 'please' per request is enough.",
+    nativeFrequency: "Extremely common. The cornerstone of polite English.",
+    commonMistakes: [
+      { mistake: "Saying 'can you' without 'please'", correction: "Add 'please' to make requests polite: 'Can you help me, please?'" }
+    ],
+    pronunciation: "/pliːz/",
+    funnyExample: "A: Can you pass the salt? B: Can I? A: Please. B: ...Can I pass the salt? A: ...Just pass it.",
+    memoryTrick: "Think: 'PLEASE = polite = make me happy.'",
+    relatedExpressions: ["If you could", "Would you mind", "I'd appreciate it"],
+    collocations: ["please help", "please pass", "could you please", "please and thank you"],
+    miniQuiz: [
+      { question: "'Please' is used to:", options: ["Make polite requests", "Say goodbye", "Express anger", "Ask questions"], correct: 0 }
+    ],
+    register: "neutral"
+  },
+  {
+    id: "dne-excuse-me",
+    expression: "Excuse me",
+    chinese: "打扰一下/借过",
+    pinyin: "dǎ rǎo yī xià / jiè guò",
+    meaning: "Polite attention-getter or apology for minor inconvenience.",
+    whenToUse: "Getting someone's attention, passing through a crowd, or apologizing for a small interruption.",
+    whenNotToUse: "Don't use for serious interruptions or when you've done something wrong - use 'I'm sorry' instead.",
+    nativeFrequency: "Very common. Essential for polite public behavior.",
+    commonMistakes: [
+      { mistake: "Using 'excuse me' when you've bumped into someone hard", correction: "Use 'I'm sorry' for accidents, 'excuse me' for getting attention" }
+    ],
+    pronunciation: "/ɪkˈskjuːz mi/",
+    funnyExample: "A: Excuse me. B: Yes? A: I just wanted to say excuse me. B: ...For what? A: I don't know, I just wanted your attention.",
+    memoryTrick: "Think: 'EXCUSE = forgive me / get my attention = polite interruption.'",
+    relatedExpressions: ["Sorry", "Pardon me", "I beg your pardon"],
+    collocations: ["excuse me for", "excuse me, but", "if you'll excuse me"],
+    miniQuiz: [
+      { question: "'Excuse me' is used to:", options: ["Get attention politely", "Say goodbye", "Express anger", "Thank someone"], correct: 0 }
+    ],
+    register: "neutral"
+  },
+  {
+    id: "dne-sorry",
+    expression: "Sorry",
+    chinese: "对不起/抱歉",
+    pinyin: "duì bu qǐ / bào qiàn",
+    meaning: "Apology or expression of regret.",
+    whenToUse: "When you've made a mistake, bumped into someone, or want to show empathy. The most common apology.",
+    whenNotToUse: "Don't overuse - saying 'sorry' too much can make you seem insecure. Use 'I apologize' for formal settings.",
+    nativeFrequency: "Extremely common. Used constantly in daily life.",
+    commonMistakes: [
+      { mistake: "Saying 'sorry' for things that aren't your fault", correction: "Reserve 'sorry' for actual mistakes or empathy" }
+    ],
+    pronunciation: "/ˈsɑːri/",
+    funnyExample: "A: Sorry! B: For what? A: I don't know, I just automatically say sorry. B: ...Sorry for being sorry?",
+    memoryTrick: "Think: 'SORRY = I feel bad = I apologize.'",
+    relatedExpressions: ["I apologize", "My bad", "Excuse me", "Pardon"],
+    collocations: ["sorry about", "sorry for", "I'm so sorry", "sorry to bother you"],
+    miniQuiz: [
+      { question: "'Sorry' is used to:", options: ["Apologize or show empathy", "Say hello", "Express joy", "Ask questions"], correct: 0 }
+    ],
+    register: "neutral"
   }
 ];
 
