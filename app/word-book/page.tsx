@@ -261,9 +261,9 @@ export default function WordBookPage() {
 
                             <div className="p-5 bg-blue-50 dark:bg-blue-950/20 rounded-xl">
                               <p className="font-semibold text-blue-600 dark:text-blue-400 mb-2 text-sm uppercase tracking-wider">Example</p>
-                              <div className="flex items-center gap-2">
-                                <p className="text-lg italic mb-2">"{currentWord.exampleEn}"</p>
-                                <Button
+                               <div className="flex items-center gap-2">
+                                 <p className="text-lg italic mb-2">&ldquo;{currentWord.exampleEn}&rdquo;</p>
+                                 <Button
                                   variant="ghost"
                                   size="icon"
                                   className="h-8 w-8"
@@ -484,11 +484,11 @@ export default function WordBookPage() {
                           <p className="text-muted-foreground text-xs mt-1">{word.definitionZh}</p>
                         </div>
 
-                        <div className="p-3 bg-blue-50 dark:bg-blue-950/20 rounded-lg">
-                          <p className="font-semibold text-blue-600 dark:text-blue-400 mb-1">Example</p>
-                          <p className="text-foreground italic">"{word.exampleEn}"</p>
-                          <p className="text-muted-foreground text-xs mt-1">{word.exampleZh}</p>
-                        </div>
+                         <div className="p-3 bg-blue-50 dark:bg-blue-950/20 rounded-lg">
+                           <p className="font-semibold text-blue-600 dark:text-blue-400 mb-1">Example</p>
+                           <p className="text-foreground italic">&ldquo;{word.exampleEn}&rdquo;</p>
+                           <p className="text-muted-foreground text-xs mt-1">{word.exampleZh}</p>
+                         </div>
 
                         {word.collocations.length > 0 && (
                           <div>

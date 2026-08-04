@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { imageGuessingCategories } from "@/data/image-guessing";
 import { Button } from "@/components/ui/button";
@@ -35,13 +35,6 @@ export default function ImageGuessingPage() {
     ? imageGuessingCategories.find((c) => c.id === selectedCategory)
     : null;
   const currentItem = category?.items[currentIndex];
-
-  useEffect(() => {
-    if (category && currentIndex >= category.items.length) {
-      setGameState("start");
-      setSelectedCategory(null);
-    }
-  }, [currentIndex, category]);
 
   const startGame = (categoryId: string) => {
     setSelectedCategory(categoryId);

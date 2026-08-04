@@ -9,14 +9,14 @@ import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import Link from "next/link";
 import { AlertTriangle, Shield, BookOpen, Users, Volume2, MessageCircle, Globe } from "lucide-react";
-import { SlangLevelData } from "@/types/conversations";
+import { SlangLevelData, SlangItem } from "@/types/conversations";
 import { useSpeechSynthesis } from "@/hooks/use-speech-synthesis";
 
 type LevelFilter = "all" | "safe" | "internet" | "street" | "rough";
 
 export default function SlangAcademyPage() {
   const [filter, setFilter] = useState<LevelFilter>("all");
-  const [selectedItem, setSelectedItem] = useState<{ level: SlangLevelData; item: any } | null>(null);
+  const [selectedItem, setSelectedItem] = useState<{ level: SlangLevelData; item: SlangItem } | null>(null);
   const { speakEnglish, speakChinese } = useSpeechSynthesis();
 
   const filtered = filter === "all"
@@ -137,9 +137,9 @@ export default function SlangAcademyPage() {
                         {getOffensiveBadge(item.offensiveLevel)}
                       </div>
                       <p className="text-sm text-muted-foreground mb-3">{item.meaning}</p>
-                      <div className="flex items-center gap-2">
-                        <p className="text-xs text-muted-foreground italic">"{item.example}"</p>
-                        <Button
+                       <div className="flex items-center gap-2">
+                         <p className="text-xs text-muted-foreground italic">&ldquo;{item.example}&rdquo;</p>
+                         <Button
                           variant="ghost"
                           size="icon"
                           className="h-7 w-7"

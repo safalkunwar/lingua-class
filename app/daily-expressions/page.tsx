@@ -133,9 +133,9 @@ export default function DailyExpressionsPage() {
                   <div className="p-6">
                     <div className="flex items-start justify-between gap-2 mb-3">
                       <div>
-                        <div className="flex items-center gap-2">
-                          <h3 className="text-xl font-bold">"{expr.expression}"</h3>
-                          <Button
+                         <div className="flex items-center gap-2">
+                           <h3 className="text-xl font-bold">&ldquo;{expr.expression}&rdquo;</h3>
+                           <Button
                             variant="ghost"
                             size="icon"
                             className="h-7 w-7"
@@ -187,9 +187,9 @@ export default function DailyExpressionsPage() {
                         </div>
                         <div>
                           <p className="text-xs font-medium text-muted-foreground uppercase">Funny Example</p>
-                          <div className="flex items-center gap-2">
-                            <p className="text-sm italic">"{expr.funnyExample}"</p>
-                            <Button
+                           <div className="flex items-center gap-2">
+                             <p className="text-sm italic">&ldquo;{expr.funnyExample}&rdquo;</p>
+                             <Button
                               variant="ghost"
                               size="icon"
                               className="h-7 w-7"

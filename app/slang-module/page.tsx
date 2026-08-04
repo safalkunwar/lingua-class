@@ -15,7 +15,6 @@ import {
   MessageSquare,
   Target,
   HelpCircle,
-  Sparkles,
   BookOpen,
 } from "lucide-react";
 import { slangModule } from "@/data/slang-module";
@@ -29,7 +28,6 @@ export default function SlangModulePage() {
   const [tab, setTab] = useState<Tab>("terms");
   const [selectedTerm, setSelectedTerm] = useState<string | null>(null);
   const [quizAnswers, setQuizAnswers] = useState<Record<string, number>>({});
-  const [showQuizResults, setShowQuizResults] = useState(false);
 
   const { updateLevelProgress, addXp, incrementStreak, incrementWeeklyProgress } =
     useLearningStore();
@@ -37,14 +35,12 @@ export default function SlangModulePage() {
 
   const lesson = slangModule.lessons[lessonIndex];
   const terms = lesson.terms;
-  const selectedTermData = terms.find((t) => t.id === selectedTerm);
 
   const goNext = () => {
     if (lessonIndex < slangModule.lessons.length - 1) {
       setLessonIndex(lessonIndex + 1);
       setTab("terms");
       setSelectedTerm(null);
-      setShowQuizResults(false);
       setQuizAnswers({});
     }
   };
@@ -54,7 +50,6 @@ export default function SlangModulePage() {
       setLessonIndex(lessonIndex - 1);
       setTab("terms");
       setSelectedTerm(null);
-      setShowQuizResults(false);
       setQuizAnswers({});
     }
   };
@@ -254,7 +249,7 @@ export default function SlangModulePage() {
                         <div>
                           <p className="text-xs font-medium text-muted-foreground">Example</p>
                           <div className="flex items-center gap-2">
-                            <p className="text-sm italic">"{term.exampleEn}"</p>
+                            <p className="text-sm italic">&ldquo;{term.exampleEn}&rdquo;</p>
                             <Button
                               variant="ghost"
                               size="icon"
@@ -413,7 +408,6 @@ export default function SlangModulePage() {
               <div className="space-y-6">
                 {lesson.quiz.map((q, idx) => {
                   const isAnswered = quizAnswers[q.id] !== undefined;
-                  const isCorrect = isAnswered && lesson.quiz[idx].options[quizAnswers[q.id]]?.correct;
 
                   return (
                     <motion.div

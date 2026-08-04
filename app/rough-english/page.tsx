@@ -119,9 +119,9 @@ export default function RoughEnglishPage() {
                     {getOffensiveBadge(item.offensiveLevel)}
                   </div>
                   <p className="text-sm text-muted-foreground mb-3">{item.meaning}</p>
-                  <div className="flex items-center gap-2">
-                    <p className="text-xs text-muted-foreground italic">"{item.example}"</p>
-                    <Button
+                   <div className="flex items-center gap-2">
+                     <p className="text-xs text-muted-foreground italic">&ldquo;{item.example}&rdquo;</p>
+                     <Button
                       variant="ghost"
                       size="icon"
                       className="h-7 w-7"
