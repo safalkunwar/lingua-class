@@ -2362,6 +2362,478 @@ export const slangModule: SlangModule = {
         },
       ],
     },
+    {
+      id: "media-entertainment-slang",
+      title: "Slang in Media & Entertainment",
+      description:
+        "Slang from movies, TV shows, music, and pop culture that has entered everyday speech. Learn the language of fandoms, streaming, and viral moments.",
+      emoji: "🎬",
+      category: "media-entertainment",
+      terms: [
+        {
+          id: "stan",
+          english: "Stan",
+          chinese: "狂热粉丝",
+          pinyin: "kuáng rè fěn sī",
+          pronunciation: "stan",
+          literalMeaning: "Portmanteau of 'stalker' and 'fan'",
+          actualMeaning: "An extremely devoted or enthusiastic fan",
+          detailsEn:
+            "Popularized by the Eminem song 'Stan.' Now means an overly enthusiastic or devoted fan. Can be positive or negative depending on context.",
+          detailsZh: "由Eminem的歌曲'Stan'推广。现在意为过度热情或忠诚的粉丝。根据语境可以是积极的或消极的。",
+          intensity: 1,
+          safetyLabels: [
+            { label: "Very Safe", icon: "✅", settings: ["All settings"] },
+          ],
+          regionalVariations: [
+            { region: "American", usage: "I stan this band so much.", note: "Very common" },
+            { region: "British", usage: "I'm a total stan for that show.", note: "Common" },
+            { region: "Australian", usage: "Stan culture is huge here.", note: "Common" },
+          ],
+          demographics: {
+            ageGroup: "Teens and above",
+            tone: "Excited",
+            genderNeutral: true,
+          },
+          nonVerbalCues: {
+            facialExpression: "Starstruck or enthusiastic",
+            bodyLanguage: "Excited gestures or fan merchandise",
+          },
+          comparative: {
+            commonMistakes: ["Using for casual liking", "Using to describe yourself as a stalker"],
+            saferAlternatives: ["Fan", "Supporter", "Enthusiast", "Admirer"],
+            similarWords: ["Fan", "Superfan", "Fanatic"],
+            culturalNotes:
+              "Originated from the Eminem song about an obsessed fan. Now mainstream. 'Stan' can be a noun or verb: 'I stan this artist.'",
+          },
+          exampleEn: "I stan BTS so much. I have all their albums.",
+          exampleZh: "我超爱BTS。我有他们所有的专辑。",
+          category: "media-entertainment",
+        },
+        {
+          id: "fandom",
+          english: "Fandom",
+          chinese: "粉丝群体/粉丝文化",
+          pinyin: "fěn sī qún tǐ / fěn sī wén huà",
+          pronunciation: "fan-dom",
+          literalMeaning: "The community of fans",
+          actualMeaning: "The collective community of fans of a particular show, movie, band, or artist",
+          detailsEn:
+            "Refers to the entire community of fans. Can be positive (supportive community) or negative (toxic behavior).",
+          detailsZh: "指整个粉丝社区。可以是积极的（支持的社区）或消极的（有毒的行为）。",
+          intensity: 1,
+          safetyLabels: [
+            { label: "Very Safe", icon: "✅", settings: ["All settings"] },
+          ],
+          regionalVariations: [
+            { region: "American", usage: "The Marvel fandom is huge.", note: "Very common" },
+            { region: "British", usage: "Harry Potter fandom", note: "Common" },
+            { region: "Australian", usage: "The K-pop fandom here is strong.", note: "Common" },
+          ],
+          demographics: {
+            ageGroup: "Teens and above",
+            tone: "Neutral",
+            genderNeutral: true,
+          },
+          nonVerbalCues: {
+            facialExpression: "Proud or excited",
+            bodyLanguage: "Collecting merchandise or attending events",
+          },
+          comparative: {
+            commonMistakes: ["Using for a single fan", "Confusing with 'fan'"],
+            saferAlternatives: ["Fan community", "Fan base", "Supporters"],
+            similarWords: ["Fanbase", "Fan community", "Supporters"],
+            culturalNotes:
+              "Short for 'fan domain.' Can refer to any passionate fan community. 'Fandom' can be positive (supportive) or negative (toxic, argumentative).",
+          },
+          exampleEn: "The fandom is waiting for the new season.",
+          exampleZh: "粉丝群体正在等待新一季。",
+          category: "media-entertainment",
+        },
+        {
+          id: "spoiler",
+          english: "Spoiler",
+          chinese: "剧透",
+          pinyin: "jù tòu",
+          pronunciation: "spoy-ler",
+          literalMeaning: "Something that spoils",
+          actualMeaning: "Information that reveals key plot points and ruins the experience",
+          detailsEn:
+            "One of the most important words in entertainment culture. Revealing plot details without warning is considered very rude.",
+          detailsZh: "娱乐文化中最重要的词之一。未经警告透露情节细节被认为是非常不礼貌的。",
+          intensity: 1,
+          safetyLabels: [
+            { label: "Very Safe", icon: "✅", settings: ["All settings"] },
+          ],
+          regionalVariations: [
+            { region: "American", usage: "No spoilers! I haven't seen it yet.", note: "Very common" },
+            { region: "British", usage: "Spoiler alert!", note: "Very common" },
+            { region: "Australian", usage: "No spoilers, mate.", note: "Common" },
+          ],
+          demographics: {
+            ageGroup: "All ages",
+            tone: "Serious",
+            genderNeutral: true,
+          },
+          nonVerbalCues: {
+            facialExpression: "Worried or urgent",
+            bodyLanguage: "Covering ears or waving hands",
+          },
+          comparative: {
+            commonMistakes: ["Giving spoilers without warning", "Asking for spoilers when you want to be surprised"],
+            saferAlternatives: ["Plot reveal", "Key detail", "Ending"],
+            similarWords: ["Plot reveal", "Ending spoiler", "Key moment"],
+            culturalNotes:
+              "Spoiler culture is huge online. 'Spoiler alert' or 'spoiler warning' is used before revealing plot details. Never spoil without warning.",
+          },
+          exampleEn: "Spoiler alert: The main character dies in the end.",
+          exampleZh: "剧透警告：主角最后死了。",
+          category: "media-entertainment",
+        },
+        {
+          id: "plot-twist",
+          english: "Plot twist",
+          chinese: "剧情反转",
+          pinyin: "jù qíng fǎn zhuǎn",
+          pronunciation: "plot twist",
+          literalMeaning: "A twist in the plot",
+          actualMeaning: "An unexpected development that changes the direction of the story",
+          detailsEn:
+            "Common phrase for unexpected story developments. Can be positive ('amazing twist') or negative ('terrible twist').",
+          detailsZh: "意外的故事发展的常用短语。可以是积极的（' amazing 的反转'）或消极的（'糟糕的反转'）。",
+          intensity: 1,
+          safetyLabels: [
+            { label: "Very Safe", icon: "✅", settings: ["All settings"] },
+          ],
+          regionalVariations: [
+            { region: "American", usage: "That movie had such a good plot twist.", note: "Very common" },
+            { region: "British", usage: "I didn't see that twist coming.", note: "Very common" },
+            { region: "Australian", usage: "What a plot twist!", note: "Common" },
+          ],
+          demographics: {
+            ageGroup: "All ages",
+            tone: "Surprised",
+            genderNeutral: true,
+          },
+          nonVerbalCues: {
+            facialExpression: "Shocked or wide-eyed",
+            bodyLanguage: "Gasps or leaning forward",
+          },
+          comparative: {
+            commonMistakes: ["Using for minor surprises", "Giving away plot twists without warning"],
+            saferAlternatives: ["Surprise ending", "Unexpected turn", "Twist ending"],
+            similarWords: ["Twist", "Surprise", "Shock", "Turn"],
+            culturalNotes:
+              "Essential vocabulary for discussing movies, books, and TV shows. 'Plot twist' is one of the most commonly used entertainment slang terms.",
+          },
+          exampleEn: "I didn't see that plot twist coming!",
+          exampleZh: "我没预料到那个剧情反转！",
+          category: "media-entertainment",
+        },
+        {
+          id: "binge-watch",
+          english: "Binge-watch",
+          chinese: "刷剧/一口气看完",
+          pinyin: "shuā jù / yī kǒu qì kàn wán",
+          pronunciation: "binj watch",
+          literalMeaning: "To watch excessively",
+          actualMeaning: "To watch multiple episodes of a show in one sitting",
+          detailsEn:
+            "Very common in the streaming era. Means watching many episodes consecutively. Can be positive (fun) or negative (unhealthy habit).",
+          detailsZh: "在 streaming 时代非常常见。意为连续观看多集。可以是积极的（有趣的）或消极的（不健康的习惯）。",
+          intensity: 1,
+          safetyLabels: [
+            { label: "Very Safe", icon: "✅", settings: ["All settings"] },
+          ],
+          regionalVariations: [
+            { region: "American", usage: "I binge-watched the whole season last night.", note: "Very common" },
+            { region: "British", usage: "I binged that show in one day.", note: "Very common" },
+            { region: "Australian", usage: "I binge-watched it all weekend.", note: "Common" },
+          ],
+          demographics: {
+            ageGroup: "Teens and above",
+            tone: "Friendly",
+            genderNeutral: true,
+          },
+          nonVerbalCues: {
+            facialExpression: "Tired but satisfied",
+            bodyLanguage: "Rubbing eyes or slumping on couch",
+          },
+          comparative: {
+            commonMistakes: ["Using for reading books", "Confusing with 'binge' alone"],
+            saferAlternatives: ["Watch a lot", "Watch multiple episodes", "Marathon watch"],
+            similarWords: ["Marathon", "Binge", "Watch all day"],
+            culturalNotes:
+              "Born from Netflix and streaming culture. 'Binge-watch' is now a standard verb. Can also be used for other activities: 'binge-read,' 'binge-listen.'",
+          },
+          exampleEn: "I binge-watched the whole series in one weekend.",
+          exampleZh: "我整个周末刷完了整部剧。",
+          category: "media-entertainment",
+        },
+        {
+          id: "ship",
+          english: "Ship",
+          chinese: "配对/嗑CP",
+          pinyin: "pèi duì / kè CP",
+          pronunciation: "ship",
+          literalMeaning: "Relationship (from 'relationship')",
+          actualMeaning: "To support a romantic pairing between characters or people",
+          detailsEn:
+            "Common in fandoms and social media. Means you want two people to be together romantically. Can be fictional characters or real people.",
+          detailsZh: "在 fandoms 和社交媒体中很常见。意味着你想要两个人在一起。可以是虚构的角色或真实的人。",
+          intensity: 1,
+          safetyLabels: [
+            { label: "Very Safe", icon: "✅", settings: ["All settings"] },
+          ],
+          regionalVariations: [
+            { region: "American", usage: "I ship them so much!", note: "Very common" },
+            { region: "British", usage: "I ship those two.", note: "Common" },
+            { region: "Australian", usage: "Ship them!", note: "Common" },
+          ],
+          demographics: {
+            ageGroup: "Teens and above",
+            tone: "Excited",
+            genderNeutral: true,
+          },
+          nonVerbalCues: {
+            facialExpression: "Excited or dreamy",
+            bodyLanguage: "Heart hands or squealing",
+          },
+          comparative: {
+            commonMistakes: ["Using for real people without consent", "Shipping toxic relationships"],
+            saferAlternatives: ["Support", "Root for", "Want them together"],
+            similarWords: ["Pairing", "Couple", "Relationship"],
+            culturalNotes:
+              "From 'relationship.' Extremely common in fandoms. 'Ship' can be a verb ('I ship them') or noun ('that's my ship'). 'Canon' means it's official, 'non-canon' means it's not.",
+          },
+          exampleEn: "Everyone ships those two characters. They're the best couple.",
+          exampleZh: "大家都嗑这两个角色。他们是最好的情侣。",
+          category: "media-entertainment",
+        },
+        {
+          id: "cliffhanger",
+          english: "Cliffhanger",
+          chinese: "悬念/吊胃口",
+          pinyin: "xuán niàn / diào wèi kǒu",
+          pronunciation: "klif-hang-er",
+          literalMeaning: "Hanging from a cliff",
+          actualMeaning: "An ending that leaves you in suspense, wanting more",
+          detailsEn:
+            "Common in TV shows, books, and movies. Refers to endings that leave you desperate for the next installment.",
+          detailsZh: "在电视剧、书籍和电影中很常见。指让你迫切想知道下一部分的结局。",
+          intensity: 1,
+          safetyLabels: [
+            { label: "Very Safe", icon: "✅", settings: ["All settings"] },
+          ],
+          regionalVariations: [
+            { region: "American", usage: "That episode ended on such a cliffhanger!", note: "Very common" },
+            { region: "British", usage: "What a cliffhanger!", note: "Very common" },
+            { region: "Australian", usage: "That's a real cliffhanger.", note: "Common" },
+          ],
+          demographics: {
+            ageGroup: "All ages",
+            tone: "Excited",
+            genderNeutral: true,
+          },
+          nonVerbalCues: {
+            facialExpression: "Shocked or desperate",
+            bodyLanguage: "Leaning forward or gasping",
+          },
+          comparative: {
+            commonMistakes: ["Using for minor uncertainties", "Using for resolved endings"],
+            saferAlternatives: ["Suspense", "Unresolved ending", "Open ending"],
+            similarWords: ["Suspense", "Open ending", "To be continued"],
+            culturalNotes:
+              "Originated from serialized fiction where episodes would end with characters literally hanging from cliffs. Now used for any suspenseful unresolved ending.",
+          },
+          exampleEn: "That season finale was a total cliffhanger. I can't wait for the next one.",
+          exampleZh: "那季终集完全是悬念。我等不及下一季了。",
+          category: "media-entertainment",
+        },
+        {
+          id: "canon",
+          english: "Canon",
+          chinese: "正典/官方设定",
+          pinyin: "zhèng diǎn / guān fāng shè dìng",
+          pronunciation: "ka-non",
+          literalMeaning: "Official or established",
+          actualMeaning: "Official/confirmed part of the story or universe",
+          detailsEn:
+            "From literary theory. In fandoms, 'canon' means official/confirmed events. 'Non-canon' means fanfiction or speculation.",
+          detailsZh: "来自文学理论。在粉丝文化中，'canon'意为官方/确认的事件。'Non-canon'意为粉丝小说或推测。",
+          intensity: 1,
+          safetyLabels: [
+            { label: "Very Safe", icon: "✅", settings: ["All settings"] },
+          ],
+          regionalVariations: [
+            { region: "American", usage: "That's canon now. The creator confirmed it.", note: "Very common" },
+            { region: "British", usage: "It's canon!", note: "Common" },
+            { region: "Australian", usage: "That's canon.", note: "Common" },
+          ],
+          demographics: {
+            ageGroup: "Teens and above",
+            tone: "Neutral",
+            genderNeutral: true,
+          },
+          nonVerbalCues: {
+            facialExpression: "Serious or excited",
+            bodyLanguage: "Pointing or showing evidence",
+          },
+          comparative: {
+            commonMistakes: ["Using for personal headcanon", "Confusing canon with fan theories"],
+            saferAlternatives: ["Official", "Confirmed", "Established", "Real"],
+            similarWords: ["Official", "Confirmed", "Headcanon", "Lore"],
+            culturalNotes:
+              "Essential fandom vocabulary. 'Headcanon' = personal belief, 'canon' = official. 'Canon' can also be used outside fandoms: 'That's not canon history.'",
+          },
+          exampleEn: "The director confirmed that ending is canon.",
+          exampleZh: "导演确认那个结局是官方设定。",
+          category: "media-entertainment",
+        },
+      ],
+      dialogues: [
+        {
+          id: "d1",
+          context: "Friends discussing a TV show",
+          lines: [
+            {
+              speaker: "Casey",
+              english: "Did you see the new episode?",
+              chinese: "你看新一集了吗？",
+              pinyin: "nǐ kàn xīn yī jí le ma?",
+            },
+            {
+              speaker: "Morgan",
+              english: "Yes! That plot twist was insane! I did not see it coming.",
+              chinese: "看了！那个剧情反转太疯狂了！我完全没想到。",
+              pinyin: "kàn le! nà gè jù qíng fǎn zhuǎn tài fēng kuáng le! wǒ wán quán méi xiǎng dào.",
+            },
+            {
+              speaker: "Casey",
+              english: "Right? I'm still processing it. The writers are genius.",
+              chinese: "是吧？我还在消化。编剧们是天才。",
+              pinyin: "shì ba? wǒ hái zài xiāo huà. biān jù men shì tiān cái.",
+            },
+          ],
+          comprehensionNote:
+            "Shows how 'plot twist' and 'canon' are used naturally in conversation about TV shows.",
+        },
+        {
+          id: "d2",
+          context: "Friends discussing a band",
+          lines: [
+            {
+              speaker: "Taylor",
+              english: "Have you heard their new album?",
+              chinese: "你听他们的新专辑了吗？",
+              pinyin: "nǐ tīng tā men de xīn zhuān jí le ma?",
+            },
+            {
+              speaker: "Jordan",
+              english: "I binge-listened to it last night. I'm a total stan now.",
+              chinese: "我昨晚一口气听完了。我现在是超级粉丝。",
+              pinyin: "wǒ zuò wǎn yī kǒu qì tīng wán le. wǒ xiàn zài shì chāo jí fěn sī.",
+            },
+            {
+              speaker: "Taylor",
+              english: "Same! Their fandom is so supportive. No spoilers for the music video though!",
+              chinese: "我也是！他们的粉丝群体好 supportive。但音乐视频不要剧透！",
+              pinyin: "wǒ yě shì! tā men de fěn sī qún tǐ hǎo supportive. dàn yīn yuè shì pín bú yào jù tòu!",
+            },
+          ],
+          comprehensionNote:
+            "Shows how 'stan,' 'fandom,' and 'spoiler' are used in casual conversation about music and entertainment.",
+        },
+      ],
+      practiceDrills: [
+        {
+          id: "p1",
+          type: "register-comparison",
+          title: "Formal vs. Entertainment Slang",
+          instructions: "Rewrite these sentences using media slang.",
+          instructionsZh: "使用 media slang 改写这些句子。",
+          content: "1. 'I really like that show.' 2. 'That story had an unexpected ending.' 3. 'I watched many episodes in one day.'",
+          contentZh: "1. '我真的很喜欢那个节目。' 2. '那个故事有一个意外的结局。' 3. '我一天看了很多集。'",
+          answer:
+            "1. 'I stan that show.' 2. 'That show had such a good plot twist.' 3. 'I binge-watched the whole series.'",
+          answerZh: "1. '我超爱那个节目。' 2. '那个节目有个很好的剧情反转。' 3. '我刷完了整部剧。'",
+        },
+        {
+          id: "p2",
+          type: "situational-judgment",
+          title: "When to Use",
+          instructions: "When is it appropriate to say 'spoiler alert'?",
+          instructionsZh: "什么时候适合说'剧透警告'？",
+          content: "A) Before revealing a movie ending B) When greeting someone C) In a formal presentation D) When ordering food",
+          contentZh: "A) 在透露电影结局前 B) 在问候别人时 C) 在正式演示中 D) 在点餐时",
+          options: [
+            { label: "A) Before revealing a movie ending", labelZh: "A) 在透露电影结局前", correct: true },
+            { label: "B) When greeting someone", labelZh: "B) 在问候别人时", correct: false },
+            { label: "C) In a formal presentation", labelZh: "C) 在正式演示中", correct: false },
+            { label: "D) When ordering food", labelZh: "D) 在点餐时", correct: false },
+          ],
+          answer:
+            "A only. 'Spoiler alert' is used before revealing plot details. Never spoil without warning.",
+          answerZh: "仅A。'剧透警告'在透露情节细节前使用。绝不要无警告地剧透。",
+        },
+        {
+          id: "p3",
+          type: "emotional-intelligence",
+          title: "Empathy Response",
+          instructions: "Your friend is upset because someone spoiled their favorite show. Respond appropriately.",
+          instructionsZh: "你的朋友因为有人剧透了他们最喜欢的节目而难过。恰当地回应。",
+          content: "Use entertainment slang to show you understand and care.",
+          contentZh: "使用 entertainment slang 表示你理解并关心。",
+          answer:
+            "Example: 'I'm so sorry! That's the worst. Want to talk about it? We can stan other shows instead.'",
+          answerZh: "示例：'对不起！太糟了。想聊聊吗？我们可以粉其他节目。'",
+        },
+      ],
+      quiz: [
+        {
+          id: "q1",
+          question: "What does 'stan' mean?",
+          questionZh: "'Stan'是什么意思？",
+          options: [
+            { label: "A) A stalker", labelZh: "A) 跟踪狂", correct: false },
+            { label: "B) An extremely devoted fan", labelZh: "B) 极度忠诚的粉丝", correct: true },
+            { label: "C) A movie genre", labelZh: "C) 电影类型", correct: false },
+            { label: "D) A type of music", labelZh: "D) 一种音乐", correct: false },
+          ],
+          explanation:
+            "'Stan' means an extremely devoted or enthusiastic fan. It originated from an Eminem song but is now mainstream slang for any devoted fan.",
+          explanationZh: "'Stan'意为极度忠诚或热情的歌迷。它起源于Eminem的一首歌，但现在是任何忠诚粉丝的主流俚语。",
+        },
+        {
+          id: "q2",
+          question: "What does 'binge-watch' mean?",
+          questionZh: "'Binge-watch'是什么意思？",
+          options: [
+            { label: "A) To watch one episode", labelZh: "A) 看一集", correct: false },
+            { label: "B) To watch multiple episodes in one sitting", labelZh: "B) 一次性看很多集", correct: true },
+            { label: "C) To watch a movie", labelZh: "C) 看电影", correct: false },
+            { label: "D) To watch with friends", labelZh: "D) 和朋友一起看", correct: false },
+          ],
+          explanation:
+            "'Binge-watch' means to watch multiple episodes of a show consecutively, often in one sitting. Very common in the streaming era.",
+          explanationZh: "'Binge-watch'意为连续观看多集，通常一次性看完。在 streaming 时代非常常见。",
+        },
+        {
+          id: "q3",
+          question: "What is a 'spoiler'?",
+          questionZh: "'Spoiler'是什么？",
+          options: [
+            { label: "A) A movie recommendation", labelZh: "A) 电影推荐", correct: false },
+            { label: "B) Information that reveals key plot points", labelZh: "B) 透露关键情节的信息", correct: true },
+            { label: "C) A type of snack", labelZh: "C) 一种零食", correct: false },
+            { label: "D) A fan community", labelZh: "D) 粉丝社区", correct: false },
+          ],
+          explanation:
+            "A 'spoiler' is information that reveals key plot points and ruins the experience for those who haven't seen/read it yet. Always warn before giving spoilers.",
+          explanationZh: "'Spoiler'是透露关键情节的信息，会破坏还没看过/读过的人的体验。透露前一定要警告。",
+        },
+      ],
+    },
   ],
 };
 
