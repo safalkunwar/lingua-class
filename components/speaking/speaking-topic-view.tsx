@@ -20,6 +20,7 @@ export function SpeakingTopicView({ topic, activeMockId }: SpeakingTopicViewProp
   const audioChunksRef = useRef<Blob[]>([]);
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setTranscript(mock?.transcript || "");
   }, [mock?.id, mock?.transcript]);
 
