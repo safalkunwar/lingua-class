@@ -76,6 +76,7 @@ export interface GrammarPoint {
 export interface PronunciationTip {
   tip: string;
   example: string;
+  exampleZh?: string;
   reduction?: string;
 }
 

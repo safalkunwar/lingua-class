@@ -6,7 +6,7 @@ import { VocabularySection } from "@/components/conversations/VocabularySection"
 import { GrammarSection } from "@/components/conversations/GrammarSection";
 import { PracticeSection } from "@/components/conversations/PracticeSection";
 import { Badge } from "@/components/ui/badge";
-import { Clock, BarChart3, Target, BookOpen, Sparkles } from "lucide-react";
+import { Clock, BarChart3, Target } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 interface LessonLayoutProps {
@@ -285,7 +285,7 @@ export function LessonLayout({
                   &ldquo;{tip.example || tip.tip}&rdquo;
                 </p>
                 {"exampleZh" in tip && tip.exampleZh && (
-                  <p className="text-xs sm:text-sm text-muted-foreground mt-1">{(tip as any).exampleZh}</p>
+                  <p className="text-xs sm:text-sm text-muted-foreground mt-1">{tip.exampleZh}</p>
                 )}
                 {"reduction" in tip && tip.reduction && (
                   <p className="text-xs sm:text-sm text-muted-foreground mt-1">

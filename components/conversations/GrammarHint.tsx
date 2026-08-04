@@ -24,7 +24,7 @@ export function GrammarHint({ grammar }: GrammarHintProps) {
           <div className="space-y-1.5">
             {grammar.examples.map((example, i) => (
               <p key={i} className="text-sm italic text-muted-foreground">
-                "{example}"
+                &ldquo;{example}&rdquo;
               </p>
             ))}
           </div>

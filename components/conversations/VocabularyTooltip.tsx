@@ -39,7 +39,7 @@ export function VocabularyTooltip({ word }: VocabularyTooltipProps) {
             </div>
             <div className="pt-2 border-t">
               <p className="text-xs text-muted-foreground">
-                <span className="font-medium">Example:</span> "{word.exampleEn}"
+                <span className="font-medium">Example:</span> &ldquo;{word.exampleEn}&rdquo;
               </p>
               <p className="text-xs text-muted-foreground mt-1">{word.exampleZh}</p>
             </div>

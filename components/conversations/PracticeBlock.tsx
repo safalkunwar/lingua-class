@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { ConversationTopic } from "@/types/conversations";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
 
 interface PracticeBlockProps {
   topic: ConversationTopic;
@@ -45,22 +44,31 @@ const PRACTICE_TYPES = [
 
 export function PracticeBlock({ topic, startIndex }: PracticeBlockProps) {
   const [selectedType, setSelectedType] = useState<string | null>(null);
-  const [answers, setAnswers] = useState<Record<string, string>>({});
   const [showResult, setShowResult] = useState(false);
+  const [shuffledWords, setShuffledWords] = useState<string[]>([]);
 
   const lines = topic.conversation || [];
   const currentLine = lines[startIndex];
 
   if (!currentLine) return null;
 
-  const handleAnswer = (type: string, answer: string) => {
-    setAnswers((prev) => ({ ...prev, [type]: answer }));
+  const shuffleWords = () => {
+    const words = currentLine.line.split(" ");
+    for (let i = words.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [words[i], words[j]] = [words[j], words[i]];
+    }
+    setShuffledWords(words);
+  };
+
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const handleAnswer = (_type: string, _answer: string) => {
     setShowResult(true);
   };
 
   const resetPractice = () => {
-    setAnswers({});
     setShowResult(false);
+    setShuffledWords([]);
   };
 
   return (
@@ -77,7 +85,7 @@ export function PracticeBlock({ topic, startIndex }: PracticeBlockProps) {
           {PRACTICE_TYPES.map((type) => (
             <button
               key={type.id}
-              onClick={() => setSelectedType(type.id)}
+              onClick={() => { setSelectedType(type.id); if (type.id === "rearrange") shuffleWords(); }}
               className="rounded-lg border bg-card p-3 text-sm font-medium hover:bg-muted transition-colors text-left"
             >
               <span className="text-lg block mb-1">{type.icon}</span>
@@ -101,7 +109,7 @@ export function PracticeBlock({ topic, startIndex }: PracticeBlockProps) {
 
           <div className="p-4 bg-card rounded-lg border">
             <p className="text-xs text-muted-foreground mb-2">Practice with this sentence:</p>
-            <p className="text-lg font-medium italic">"{currentLine.line}"</p>
+            <p className="text-lg font-medium italic">&ldquo;{currentLine.line}&rdquo;</p>
           </div>
 
           {/* Practice Content based on type */}
@@ -160,7 +168,7 @@ export function PracticeBlock({ topic, startIndex }: PracticeBlockProps) {
             <div className="space-y-3">
               <p className="text-sm">Rearrange the words to form a correct sentence:</p>
               <div className="flex flex-wrap gap-2">
-                {currentLine.line.split(" ").sort(() => Math.random() - 0.5).map((word, i) => (
+                {shuffledWords.map((word, i) => (
                   <span
                     key={i}
                     className="px-3 py-1.5 rounded-lg border bg-card text-sm cursor-move"
@@ -192,7 +200,7 @@ export function PracticeBlock({ topic, startIndex }: PracticeBlockProps) {
             <div className="space-y-3">
               <p className="text-sm">Translate this sentence to Chinese:</p>
               <p className="text-lg font-medium p-3 bg-muted/50 rounded-lg">
-                "{currentLine.line}"
+                &ldquo;{currentLine.line}&rdquo;
               </p>
               <textarea
                 className="w-full rounded-lg border p-3 min-h-[100px]"
