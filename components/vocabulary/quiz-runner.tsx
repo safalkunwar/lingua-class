@@ -5,9 +5,10 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Check, X, Trophy, RotateCw } from "lucide-react";
+import { Check, X, Trophy, RotateCw, Volume2 } from "lucide-react";
 import { VocabItem } from "@/types/curriculum";
 import { cn } from "@/lib/utils";
+import { useSpeechSynthesis } from "@/hooks/use-speech-synthesis";
 
 interface QuizRunnerProps {
   items: VocabItem[];
@@ -45,6 +46,7 @@ export function QuizRunner({ items, allItems, onComplete, onRestart }: QuizRunne
   const [currentIdx, setCurrentIdx] = useState(0);
   const [score, setScore] = useState(0);
   const [finished, setFinished] = useState(false);
+  const { speakEnglish, speakChinese } = useSpeechSynthesis();
 
   const total = quiz.length;
   const current = quiz[currentIdx];
@@ -164,12 +166,32 @@ export function QuizRunner({ items, allItems, onComplete, onRestart }: QuizRunne
               <h2 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">
                 What is the English for
               </h2>
-              <p className="mt-2 text-3xl font-extrabold text-pink-500">
-                {current.correct.chinese}
-              </p>
-              <p className="mt-1 text-base text-muted-foreground">
-                {current.correct.pinyin}
-              </p>
+              <div className="mt-2 flex items-center justify-center gap-2">
+                <p className="text-3xl font-extrabold text-pink-500">
+                  {current.correct.chinese}
+                </p>
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="h-8 w-8"
+                  onClick={() => speakChinese(current.correct.chinese)}
+                >
+                  <Volume2 className="h-4 w-4" />
+                </Button>
+              </div>
+              <div className="mt-1 flex items-center justify-center gap-2">
+                <p className="text-base text-muted-foreground">
+                  {current.correct.pinyin}
+                </p>
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="h-8 w-8"
+                  onClick={() => speakEnglish(current.correct.english)}
+                >
+                  <Volume2 className="h-4 w-4" />
+                </Button>
+              </div>
             </CardContent>
           </Card>
 
