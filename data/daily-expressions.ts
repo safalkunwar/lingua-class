@@ -111,6 +111,116 @@ export const dailyExpressions: DailyExpression[] = [
       { question: "'Sounds good' is used to:", options: ["Show agreement", "Express disagreement", "Ask a question", "Give an order"], correct: 0 }
     ],
     register: "neutral"
+  },
+  {
+    id: "dne-got-it",
+    expression: "Got it",
+    chinese: "知道了/明白了",
+    pinyin: "zhī dào le / míng bái le",
+    meaning: "I understand / I understand the instructions",
+    whenToUse: "When someone explains something or gives instructions. Extremely common in work, school, and daily life.",
+    whenNotToUse: "Don't use when someone is sharing personal feelings — it can sound dismissive.",
+    nativeFrequency: "Extremely common — used multiple times daily.",
+    commonMistakes: [
+      { mistake: "Using when someone shares emotions", correction: "Use 'I understand' or 'That makes sense' for emotional contexts" }
+    ],
+    pronunciation: "/ɡɒt ɪt/",
+    funnyExample: "A: The meeting is at 3 PM. B: Got it. A: Also, bring your laptop. B: Got it. A: Also, your shoes are untied. B: ...Got it.",
+    memoryTrick: "Think: 'I have GOT the information = I understand.'",
+    relatedExpressions: ["I understand", "I see", "That makes sense", "Understood"],
+    collocations: ["got it", "got it, thanks", "I got it"],
+    miniQuiz: [
+      { question: "'Got it' is used to:", options: ["Show understanding", "Ask a question", "Express anger", "Give an order"], correct: 0 }
+    ],
+    register: "neutral"
+  },
+  {
+    id: "dne-ill-let-you-know",
+    expression: "I'll let you know",
+    chinese: "我会通知你",
+    pinyin: "wǒ huì tōng zhī nǐ",
+    meaning: "I will inform you later / I'll give you an answer later",
+    whenToUse: "When you can't commit to a plan or answer right now. Very common in scheduling and planning.",
+    whenNotToUse: "Don't use if you actually mean 'no' — be direct if you're rejecting.",
+    nativeFrequency: "Very common in professional and social planning.",
+    commonMistakes: [
+      { mistake: "Using as a soft 'no' when you mean 'no'", correction: "Be direct: 'I can't make it' or 'No, thank you'" }
+    ],
+    pronunciation: "/aɪl let juː noʊ/",
+    funnyExample: "A: Will you come to my party? B: I'll let you know. A: ...It's tomorrow. B: ...Then no.",
+    memoryTrick: "Think: 'I will LET you KNOW when I decide.'",
+    relatedExpressions: ["I'll get back to you", "I'll check and confirm", "I'll update you"],
+    collocations: ["let you know", "let me know", "I'll let you know"],
+    miniQuiz: [
+      { question: "'I'll let you know' means:", options: ["I will inform you later", "I don't know", "I agree", "I'm not interested"], correct: 0 }
+    ],
+    register: "neutral"
+  },
+  {
+    id: "dne-what-do-you-recommend",
+    expression: "What do you recommend?",
+    chinese: "你推荐什么？",
+    pinyin: "nǐ tuī jiàn shén me?",
+    meaning: "Asking for someone's suggestion or opinion, especially when choosing food or services.",
+    whenToUse: "At restaurants, when shopping, or anytime you want expert advice.",
+    whenNotToUse: "Don't use when you already know what you want — just order it.",
+    nativeFrequency: "Extremely common at restaurants and service situations.",
+    commonMistakes: [
+      { mistake: "Using 'What is good here?' which is okay but less polite", correction: "'What do you recommend?' is more polite and professional" }
+    ],
+    pronunciation: "/wɒt duː juː rekəˈmend/",
+    funnyExample: "A: What do you recommend? B: The chicken. A: Is it fresh? B: ...It was alive this morning. A: ...Perfect.",
+    memoryTrick: "Think: 'RECOMMEND = give advice about what to choose.'",
+    relatedExpressions: ["What's good here?", "What would you suggest?", "What's the specialty?"],
+    collocations: ["recommend", "recommend something", "highly recommend"],
+    miniQuiz: [
+      { question: "'What do you recommend?' is used when:", options: ["Asking for suggestions", "Giving orders", "Complaining", "Leaving"], correct: 0 }
+    ],
+    register: "neutral"
+  },
+  {
+    id: "dne-thats-not-what-i-meant",
+    expression: "That's not what I meant",
+    chinese: "我不是那个意思",
+    pinyin: "wǒ bú shì nà gè yì si",
+    meaning: "Clarifying that your words were misunderstood.",
+    whenToUse: "When someone misunderstands what you said. Very common in conversations and negotiations.",
+    whenNotToUse: "Don't use when you're caught saying something wrong — that's making an excuse.",
+    nativeFrequency: "Very common in daily communication.",
+    commonMistakes: [
+      { mistake: "Using to cover up a mistake", correction: "Use only when there's genuine misunderstanding, not when you're caught" }
+    ],
+    pronunciation: "/ðæts nɒt wɒt aɪ ment/",
+    funnyExample: "A: You called me lazy. B: That's not what I meant. A: Then what did you mean? B: ...I meant you're... efficient. A: ...Keep going.",
+    memoryTrick: "Think: 'That's NOT what I MEANT = my words were MISUNDERSTOOD.'",
+    relatedExpressions: ["I didn't mean that", "That came out wrong", "Let me rephrase", "What I meant was"],
+    collocations: ["not what I meant", "that's not what I said", "misunderstood"],
+    miniQuiz: [
+      { question: "'That's not what I meant' is used to:", options: ["Clarify a misunderstanding", "Apologize", "Agree", "Disagree"], correct: 0 }
+    ],
+    register: "neutral"
+  },
+  {
+    id: "dne-i-appreciate-it",
+    expression: "I appreciate it",
+    chinese: "我很感激",
+    pinyin: "wǒ hěn gǎn jī",
+    meaning: "Thank you / I'm grateful for your help or kindness.",
+    whenToUse: "When someone does something nice for you. More sincere than 'thanks' in many contexts.",
+    whenNotToUse: "Don't overuse — reserve for when someone actually does something for you.",
+    nativeFrequency: "Very common in both casual and professional settings.",
+    commonMistakes: [
+      { mistake: "Using for trivial things", correction: "Reserve 'I appreciate it' for meaningful help, not small gestures" }
+    ],
+    pronunciation: "/aɪ əˈpriːʃieɪt ɪt/",
+    funnyExample: "A: I appreciate it. B: I just held the door. A: ...I appreciate the door holding. B: ...You're welcome.",
+    memoryTrick: "Think: 'APPRECIATE = value highly = I'm truly thankful.'",
+    relatedExpressions: ["Thank you", "Thanks", "I'm grateful", "That means a lot"],
+    collocations: ["appreciate it", "really appreciate", "appreciate your help"],
+    miniQuiz: [
+      { question: "'I appreciate it' is:", options: ["A sincere thank you", "A greeting", "A question", "A rejection"], correct: 0 }
+    ],
+    register: "neutral"
   }
 ];
 

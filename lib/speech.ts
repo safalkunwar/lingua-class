@@ -1,10 +1,22 @@
 "use client";
 
 let voices: SpeechSynthesisVoice[] = [];
+let voicesLoaded = false;
 
 export function loadVoices(): SpeechSynthesisVoice[] {
   if (typeof window === "undefined" || !window.speechSynthesis) return [];
-  voices = window.speechSynthesis.getVoices();
+
+  const load = () => {
+    voices = window.speechSynthesis.getVoices();
+    voicesLoaded = voices.length > 0;
+  };
+
+  load();
+
+  if (!voicesLoaded) {
+    window.speechSynthesis.addEventListener("voiceschanged", load, { once: true });
+  }
+
   return voices;
 }
 
@@ -13,8 +25,8 @@ export function speak(text: string, lang: string): void {
 
   window.speechSynthesis.cancel();
 
-  if (!voices.length) {
-    voices = window.speechSynthesis.getVoices();
+  if (!voicesLoaded || !voices.length) {
+    loadVoices();
   }
 
   const utter = new SpeechSynthesisUtterance(text);

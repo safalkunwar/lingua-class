@@ -211,6 +211,114 @@ export const roughEnglish: SlangItem[] = [
       { speaker: "Mike", line: "别这么吝啬。才5美元。" }
     ],
     culturalNotes: "Common insult among friends. Can be playful or serious depending on tone. 'Frugal' is the neutral/positive version."
+  },
+  {
+    id: "rough-9",
+    word: "Drop dead",
+    chinese: "去死吧",
+    pinyin: "qù sǐ ba",
+    meaning: "Go away / Leave me alone (very rude)",
+    example: "Drop dead! I don't want to talk to you.",
+    exampleZh: "去死吧！我不想和你说话。",
+    whoSaysIt: "Angry people, bullies",
+    ageGroup: "Teens and above",
+    region: "All English-speaking countries",
+    isOffensive: true,
+    offensiveLevel: 5,
+    safeAlternatives: ["Leave me alone", "Go away", "I don't want to talk", "Please leave"],
+    conversation: [
+      { speaker: "Alex", line: "I don't want to see you here again." },
+      { speaker: "Sam", line: "Drop dead! I wasn't even talking to you." },
+      { speaker: "Alex", line: "Watch your mouth." }
+    ],
+    chineseTranslation: [
+      { speaker: "Alex", line: "我不想再在这里看到你。" },
+      { speaker: "Sam", line: "去死吧！我甚至没在和你说话。" },
+      { speaker: "Alex", line: "注意你的嘴巴。" }
+    ],
+    culturalNotes: "Extremely rude. Considered a serious insult. Can be considered harassment. Students should understand it but never use it.",
+    warning: "EXTREME WARNING: 'Drop dead' is one of the rudest expressions in English. It can be considered a threat. Never use this expression."
+  },
+  {
+    id: "rough-10",
+    word: "Screw you",
+    chinese: "去你的",
+    pinyin: "qù nǐ de",
+    meaning: "Go away / I hate you / You're worthless (very rude)",
+    example: "Screw you! I don't need your help anyway.",
+    exampleZh: "去你的！反正我不需要你的帮助。",
+    whoSaysIt: "Angry people, bullies",
+    ageGroup: "Teens and above",
+    region: "All English-speaking countries",
+    isOffensive: true,
+    offensiveLevel: 5,
+    safeAlternatives: ["I don't need your help", "I'm fine on my own", "I can handle this myself"],
+    conversation: [
+      { speaker: "Lisa", line: "You messed up again." },
+      { speaker: "Tom", line: "Screw you! At least I tried." },
+      { speaker: "Lisa", line: "That's not the point." }
+    ],
+    chineseTranslation: [
+      { speaker: "Lisa", line: "你又搞砸了。" },
+      { speaker: "Tom", line: "去你的！至少我试过了。" },
+      { speaker: "Lisa", line: "这不是重点。" }
+    ],
+    culturalNotes: "Very offensive. Can end relationships. Sometimes used jokingly among very close friends, but still risky.",
+    warning: "EXTREME WARNING: 'Screw you' is extremely offensive and can destroy relationships. Never use this expression."
+  },
+  {
+    id: "rough-11",
+    word: "Wipe that smile off your face",
+    chinese: "把那个笑容从你脸上抹去",
+    pinyin: "bǎ nà gè xiào róng cóng nǐ liǎn shàng mǒ qù",
+    meaning: "Stop smiling / Stop being smug (threatening)",
+    example: "Wipe that smile off your face before I do it for you.",
+    exampleZh: "在我替你抹去之前，把你脸上的笑容抹去。",
+    whoSaysIt: "Bullies, angry authority figures",
+    ageGroup: "Teens and above",
+    region: "All English-speaking countries",
+    isOffensive: true,
+    offensiveLevel: 4,
+    safeAlternatives: ["Stop smiling", "This isn't funny", "Take this seriously", "Stop being smug"],
+    conversation: [
+      { speaker: "Bully", line: "Wipe that smile off your face." },
+      { speaker: "Student", line: "I wasn't doing anything." },
+      { speaker: "Bully", line: "Don't make me repeat myself." }
+    ],
+    chineseTranslation: [
+      { speaker: "Bully", line: "把你脸上的笑容抹去。" },
+      { speaker: "Student", line: "我什么都没做。" },
+      { speaker: "Bully", line: "别让我重复一遍。" }
+    ],
+    culturalNotes: "Threatening phrase often used by bullies. Can be a precursor to physical violence. Students should understand it as a threat.",
+    warning: "WARNING: This phrase is often used by bullies and can indicate physical danger. If someone says this to you, seek help from an adult or authority figure."
+  },
+  {
+    id: "rough-12",
+    word: "You're dead meat",
+    chinese: "你死定了",
+    pinyin: "nǐ sǐ dìng le",
+    meaning: "You're in serious trouble / I'm going to get you back (threatening)",
+    example: "You're dead meat when the boss finds out.",
+    exampleZh: "老板发现的话你就死定了。",
+    whoSaysIt: "Angry people, bullies, authority figures",
+    ageGroup: "Teens and above",
+    region: "All English-speaking countries",
+    isOffensive: true,
+    offensiveLevel: 4,
+    safeAlternatives: ["You're in trouble", "You're going to pay for this", "This isn't good for you"],
+    conversation: [
+      { speaker: "Teacher", line: "You cheated on the test?" },
+      { speaker: "Student", line: "You're dead meat if you tell anyone." },
+      { speaker: "Teacher", line: "That's not how this works." }
+    ],
+    chineseTranslation: [
+      { speaker: "Teacher", line: "你考试作弊了？" },
+      { speaker: "Student", line: "如果你告诉任何人你就死定了。" },
+      { speaker: "Teacher", line: "事情不是这样的。" }
+    ],
+    culturalNotes: "Common threat phrase among students. Can be serious or playful depending on context. In schools, this should be reported to teachers.",
+    warning: "WARNING: This is a threatening phrase. If someone says this to you, especially in school, report it to a teacher or authority figure."
   }
 ];
 

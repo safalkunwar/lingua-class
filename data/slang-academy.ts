@@ -207,6 +207,58 @@ export const slangAcademy: SlangLevelData[] = [
           { speaker: "Sam", line: "我们先做点调查吧。" }
         ],
         culturalNotes: "Popularized by the game 'Among Us' in 2020. Shortened from 'suspicious'."
+      },
+      {
+        id: "internet-3",
+        word: "GOAT",
+        chinese: "史上最伟大的",
+        pinyin: "shǐ shàng zuì wěi dà de",
+        meaning: "Greatest Of All Time",
+        example: "Messi is the GOAT of football.",
+        exampleZh: "梅西是足球史上最伟大的球员。",
+        whoSaysIt: "Sports fans, social media users, teens",
+        ageGroup: "Teens and above",
+        region: "All English-speaking countries",
+        isOffensive: false,
+        offensiveLevel: 0,
+        safeAlternatives: ["The best ever", "Greatest of all time", "Legend"],
+        conversation: [
+          { speaker: "Jake", line: "Did you see that match? LeBron is the GOAT." },
+          { speaker: "Mia", line: "I think Jordan is better, but respect." },
+          { speaker: "Jake", line: "We can agree to disagree." }
+        ],
+        chineseTranslation: [
+          { speaker: "Jake", line: "你看到那场比赛了吗？勒布朗是史上最伟大的。" },
+          { speaker: "Mia", line: "我觉得乔丹更棒，但respect。" },
+          { speaker: "Jake", line: "我们求同存异吧。" }
+        ],
+        culturalNotes: "Very common in sports and social media. Written in all caps."
+      },
+      {
+        id: "internet-4",
+        word: "FOMO",
+        chinese: "错失恐惧症",
+        pinyin: "cuò shī kǒng jù zhèng",
+        meaning: "Fear Of Missing Out — anxiety that you're missing out on something others are doing",
+        example: "I went to the party even though I was tired because of FOMO.",
+        exampleZh: "我尽管很累还是去了派对，因为怕错过。",
+        whoSaysIt: "Everyone, especially young adults",
+        ageGroup: "Teens to 40s",
+        region: "All English-speaking countries",
+        isOffensive: false,
+        offensiveLevel: 0,
+        safeAlternatives: ["Fear of missing out", "Not wanting to miss out", "Keeping up with others"],
+        conversation: [
+          { speaker: "Lisa", line: "I'm exhausted but I have to go to this concert." },
+          { speaker: "Tom", line: "FOMO?" },
+          { speaker: "Lisa", line: "Guilty. I can't stand the thought of missing it." }
+        ],
+        chineseTranslation: [
+          { speaker: "Lisa", line: "我累死了，但必须去看这个演唱会。" },
+          { speaker: "Tom", line: "怕错过？" },
+          { speaker: "Lisa", line: "罪有应得。我受不了错过的想法。" }
+        ],
+        culturalNotes: "Very common in social media and modern life. Often used as a noun."
       }
     ]
   },
@@ -243,6 +295,58 @@ export const slangAcademy: SlangLevelData[] = [
         ],
         culturalNotes: "Originated in African American Vernacular English (AAVE) and hip-hop culture. Important to recognize its origins and use respectfully.",
         warning: "Be aware of AAVE origins. Don't mock AAVE while using its slang."
+      },
+      {
+        id: "street-2",
+        word: "Salty",
+        chinese: "恼怒的/酸的",
+        pinyin: "nǎo nǎo de / suān de",
+        meaning: "Bitter, annoyed, or upset, especially about a small defeat",
+        example: "He's still salty about losing the game yesterday.",
+        exampleZh: "他还在为昨天输掉比赛而恼怒。",
+        whoSaysIt: "Teens, young adults, gamers",
+        ageGroup: "13-30",
+        region: "American, Australian, British",
+        isOffensive: false,
+        offensiveLevel: 1,
+        safeAlternatives: ["Annoyed", "Bitter", "Upset", "Frustrated"],
+        conversation: [
+          { speaker: "Jake", line: "You're still mad I beat you?" },
+          { speaker: "Mia", line: "I'm not mad, just a little salty." },
+          { speaker: "Jake", line: "Rematch? I'll go easy on you." }
+        ],
+        chineseTranslation: [
+          { speaker: "Jake", line: "你还在为我赢了你而生气吗？" },
+          { speaker: "Mia", line: "我没生气，只是有点恼怒。" },
+          { speaker: "Jake", line: "再来一局？我会让着你的。" }
+        ],
+        culturalNotes: "Common in gaming and competitive contexts. Can be playful among friends."
+      },
+      {
+        id: "street-3",
+        word: "Clap back",
+        chinese: "反驳/回击",
+        pinyin: "fǎn bó / huí jī",
+        meaning: "To respond sharply or win an argument with a comeback",
+        example: "She clapped back so hard he couldn't say anything else.",
+        exampleZh: "她反驳得太厉害，他再也说不出什么了。",
+        whoSaysIt: "Teens, young adults, social media users",
+        ageGroup: "13-35",
+        region: "American, British",
+        isOffensive: false,
+        offensiveLevel: 1,
+        safeAlternatives: ["Comeback", "Sharp reply", "Witty response", "Retort"],
+        conversation: [
+          { speaker: "Tom", line: "You're not good enough for this team." },
+          { speaker: "Lisa", line: "Says the guy who missed every shot yesterday. Clap back." },
+          { speaker: "Tom", line: "Okay, that was fair." }
+        ],
+        chineseTranslation: [
+          { speaker: "Tom", line: "你不够好进这个队。" },
+          { speaker: "Lisa", line: "那个昨天每次都投丢的人这么说。反驳。" },
+          { speaker: "Tom", line: "好吧，你说得对。" }
+        ],
+        culturalNotes: "Popularized by social media and hip-hop. A 'clap back' is a sharp, often public, response to criticism."
       }
     ]
   },
@@ -305,6 +409,32 @@ export const slangAcademy: SlangLevelData[] = [
           { speaker: "Tom", line: "我以为充了。唉，太糟了。" }
         ],
         culturalNotes: "'Heck' is a family-friendly alternative to 'hell'. Safe for all ages."
+      },
+      {
+        id: "rough-3",
+        word: "Freaking",
+        chinese: "该死的/该死的",
+        pinyin: "gāi sǐ de",
+        meaning: "Intensifier for frustration (mild profanity)",
+        example: "Where are my freaking keys?",
+        exampleZh: "我该死的钥匙在哪？",
+        whoSaysIt: "Teens, young adults",
+        ageGroup: "Teens and above",
+        region: "American, Australian",
+        isOffensive: true,
+        offensiveLevel: 2,
+        safeAlternatives: ["Darn", "Dang", "Flipping", "Shoot"],
+        conversation: [
+          { speaker: "Lisa", line: "I can't find my freaking charger." },
+          { speaker: "Tom", line: "Did you check your bag?" },
+          { speaker: "Lisa", line: "Yes! This is so frustrating." }
+        ],
+        chineseTranslation: [
+          { speaker: "Lisa", line: "我找不到我该死的充电器了。" },
+          { speaker: "Tom", line: "你检查过你的包了吗？" },
+          { speaker: "Lisa", line: "检查过了！太令人沮丧了。" }
+        ],
+        culturalNotes: "Milder than 'f***ing' but still considered profanity by some. Common in casual speech."
       }
     ]
   }
