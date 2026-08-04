@@ -560,6 +560,87 @@ export const roughEnglish: SlangItem[] = [
     ],
     culturalNotes: "Very rude expression. Common in British and Australian English. Considered a serious insult.",
     warning: "EXTREME WARNING: 'Get bent' is extremely rude and offensive. It can end relationships. Never use this expression."
+  },
+  {
+    id: "rough-22",
+    word: "Sod off",
+    chinese: "滚开/走开",
+    pinyin: "gǔn kāi / zǒu kāi",
+    meaning: "Go away / Leave me alone (British, rude)",
+    example: "Sod off! I'm busy.",
+    exampleZh: "滚开！我很忙。",
+    whoSaysIt: "Angry people, British speakers",
+    ageGroup: "Teens and above",
+    region: "British, Australian",
+    isOffensive: true,
+    offensiveLevel: 3,
+    safeAlternatives: ["Go away", "Leave me alone", "Please leave", "I'm busy"],
+    conversation: [
+      { speaker: "Emma", line: "Sod off, I'm in the middle of something." },
+      { speaker: "Jake", line: "I just wanted to ask a quick question." },
+      { speaker: "Emma", line: "Then wait until I'm done." }
+    ],
+    chineseTranslation: [
+      { speaker: "Emma", line: "滚开，我正在忙。" },
+      { speaker: "Jake", line: "我只是想问个 quick question。" },
+      { speaker: "Emma", line: "那就等我忙完。" }
+    ],
+    culturalNotes: "British slang for 'go away.' Mild compared to some other expressions but still rude. Common in the UK and Australia.",
+    warning: "WARNING: 'Sod off' is rude and dismissive. Avoid using it with people you don't know well."
+  },
+  {
+    id: "rough-23",
+    word: "Kick rocks",
+    chinese: "滚蛋/走开",
+    pinyin: "gǔn dàn / zǒu kāi",
+    meaning: "Go away / Leave me alone (informal, rude)",
+    example: "Kick rocks! I don't have time for your nonsense.",
+    exampleZh: "滚蛋！我没时间听你胡说八道。",
+    whoSaysIt: "Angry people, frustrated friends",
+    ageGroup: "Teens and above",
+    region: "American",
+    isOffensive: true,
+    offensiveLevel: 3,
+    safeAlternatives: ["Go away", "Leave me alone", "I don't have time", "Please go"],
+    conversation: [
+      { speaker: "Alex", line: "Kick rocks! I'm done listening to you." },
+      { speaker: "Sam", line: "I was just trying to help." },
+      { speaker: "Alex", line: "I didn't ask for your help." }
+    ],
+    chineseTranslation: [
+      { speaker: "Alex", line: "滚蛋！我受够听你说话了。" },
+      { speaker: "Sam", line: "我只是想帮忙。" },
+      { speaker: "Alex", line: "我没要你帮忙。" }
+    ],
+    culturalNotes: "Informal and rude. American slang for telling someone to go away. Less severe than some other expressions but still disrespectful.",
+    warning: "WARNING: 'Kick rocks' is rude and dismissive. Using it toward friends or family can hurt feelings."
+  },
+  {
+    id: "rough-24",
+    word: "Get wrecked",
+    chinese: "活该/遭报应",
+    pinyin: "huó gāi / zāo bào yìng",
+    meaning: "You deserve what happened to you / That serves you right",
+    example: "He cheated on the test and got caught. Get wrecked!",
+    exampleZh: "他考试作弊被抓了。活该！",
+    whoSaysIt: "Angry people, people who enjoy schadenfreude",
+    ageGroup: "Teens and above",
+    region: "All English-speaking countries",
+    isOffensive: true,
+    offensiveLevel: 3,
+    safeAlternatives: ["That serves you right", "You deserved that", "That's what you get", "Serves you right"],
+    conversation: [
+      { speaker: "Jake", line: "He cheated on the test and got a zero." },
+      { speaker: "Mia", line: "Get wrecked! That's what he gets." },
+      { speaker: "Jake", line: "I know, but still. That's harsh." }
+    ],
+    chineseTranslation: [
+      { speaker: "Jake", line: "他考试作弊得了零分。" },
+      { speaker: "Mia", line: "活该！那是他应得的。" },
+      { speaker: "Jake", line: "我知道，但还是。那太 harsh 了。" }
+    ],
+    culturalNotes: "Expresses satisfaction when someone who did something wrong faces consequences. Can be playful among friends or serious depending on context.",
+    warning: "WARNING: 'Get wrecked' can sound cruel when someone is actually suffering. Use with caution."
   }
 ];
 
