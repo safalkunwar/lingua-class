@@ -1006,6 +1006,255 @@ export const slangModule: SlangModule = {
         },
       ],
     },
+    {
+      id: "casual-connectors",
+      title: "Casual Connectors & Fillers",
+      description:
+        "Common words and phrases that make speech flow naturally. Learn when to use fillers, connectors, and casual markers in everyday conversation.",
+      emoji: "💬",
+      category: "casual-connectors",
+      terms: [
+        {
+          id: "bet",
+          english: "Bet",
+          chinese: "一言为定/没问题",
+          pinyin: "yī yán wéi dìng / méi wèn tí",
+          pronunciation: "bet",
+          literalMeaning: "A wager or bet",
+          actualMeaning: "Agreement, confirmation, or 'okay'",
+          detailsEn:
+            "Common in casual speech, especially among young people. Means 'agreed' or 'okay'.",
+          detailsZh: "在 casual speech 中很常见，尤其是年轻人之间。意为'同意'或'好的'。",
+          intensity: 1,
+          safetyLabels: [
+            { label: "Very Safe", icon: "✅", settings: ["All settings"] },
+          ],
+          regionalVariations: [
+            { region: "American", usage: "Bet!", note: "Very common" },
+            { region: "British", usage: "Bet!", note: "Common" },
+            { region: "Australian", usage: "Bet!", note: "Common" },
+          ],
+          demographics: {
+            ageGroup: "Teens and above",
+            tone: "Friendly",
+            genderNeutral: true,
+          },
+          nonVerbalCues: {
+            facialExpression: "Nod or smile",
+            bodyLanguage: "Thumbs up or relaxed posture",
+          },
+          comparative: {
+            commonMistakes: ["Using in formal business settings"],
+            saferAlternatives: ["Sure", "Okay", "Agreed", "Sounds good"],
+            similarWords: ["Okay", "Sure", "Alright"],
+            culturalNotes:
+              "Originally from gambling ('I bet'), now means 'agreed' in casual speech.",
+          },
+          exampleEn: "We meeting at 5? — Bet.",
+          exampleZh: "我们5点见面？——一言为定。",
+          category: "casual-connectors",
+        },
+        {
+          id: "slaps",
+          english: "Slaps",
+          chinese: "超棒/好听到爆",
+          pinyin: "chāo bàng / hǎo tīng dào bào",
+          pronunciation: "slaps",
+          literalMeaning: "To hit or slap",
+          actualMeaning: "Really good, especially music, food, or experiences",
+          detailsEn:
+            "Modern slang meaning something is exceptionally good. Popularized by music and social media.",
+          detailsZh: "现代俚语，意为某事物非常好。由音乐和社交媒体推广。",
+          intensity: 1,
+          safetyLabels: [
+            { label: "Very Safe", icon: "✅", settings: ["All settings"] },
+          ],
+          regionalVariations: [
+            { region: "American", usage: "This song slaps!", note: "Very common" },
+            { region: "British", usage: "This slaps!", note: "Common" },
+            { region: "Australian", usage: "This slaps!", note: "Common" },
+          ],
+          demographics: {
+            ageGroup: "Teens and above",
+            tone: "Excited",
+            genderNeutral: true,
+          },
+          nonVerbalCues: {
+            facialExpression: "Wide eyes or smile",
+            bodyLanguage: "Nodding head or bobbing to music",
+          },
+          comparative: {
+            commonMistakes: ["Using for serious or formal contexts"],
+            saferAlternatives: ["Great", "Amazing", "Fantastic", "Really good"],
+            similarWords: ["Fire", "Lit", "Dope"],
+            culturalNotes:
+              "Originated in music culture around 2015-2016. Now used for food, fashion, and experiences too.",
+          },
+          exampleEn: "This new album slaps! Been on repeat all day.",
+          exampleZh: "这张新专辑超棒！今天一直在循环播放。",
+          category: "casual-connectors",
+        },
+        {
+          id: "whack",
+          english: "Whack",
+          chinese: "糟糕的/不行的",
+          pinyin: "zāo gāo de / bù xíng de",
+          pronunciation: "whak",
+          literalMeaning: "To hit or strike",
+          actualMeaning: "Bad, terrible, or unsatisfactory",
+          detailsEn: "Opposite of 'slaps.' Means something is bad or disappointing.",
+          detailsZh: "'Slaps'的反义词。意为某事物不好或令人失望。",
+          intensity: 1,
+          safetyLabels: [
+            { label: "Very Safe", icon: "✅", settings: ["All settings"] },
+          ],
+          regionalVariations: [
+            { region: "American", usage: "That movie was whack.", note: "Common" },
+            { region: "British", usage: "That's whack.", note: "Common" },
+            { region: "Australian", usage: "That's whack.", note: "Common" },
+          ],
+          demographics: {
+            ageGroup: "Teens and above",
+            tone: "Disappointed",
+            genderNeutral: true,
+          },
+          nonVerbalCues: {
+            facialExpression: "Frown or disappointed look",
+            bodyLanguage: "Head shake or shrug",
+          },
+          comparative: {
+            commonMistakes: ["Using in formal contexts"],
+            saferAlternatives: ["Bad", "Terrible", "Disappointing", "Not good"],
+            similarWords: ["Lame", "Wack", "Trash"],
+            culturalNotes:
+              "Common in casual speech. 'Whack' means bad, 'slaps' means good. They're opposites.",
+          },
+          exampleEn: "The food at that restaurant was whack.",
+          exampleZh: "那家餐厅的食物很糟糕。",
+          category: "casual-connectors",
+        },
+      ],
+      dialogues: [
+        {
+          id: "d1",
+          context: "Friends discussing a new song",
+          lines: [
+            {
+              speaker: "Casey",
+              english: "Have you heard the new track?",
+              chinese: "你听新歌了吗？",
+              pinyin: "nǐ tīng xīn gē le ma?",
+            },
+            {
+              speaker: "Morgan",
+              english: "Yeah, it slaps! Been on repeat all day.",
+              chinese: "听了，超棒！今天一直在循环播放。",
+              pinyin: "tīng le, chāo bàng! jīn tiān yī zhí zài xún huán bō fàng.",
+            },
+            {
+              speaker: "Casey",
+              english: "Right? The beat is insane.",
+              chinese: "是吧？节奏太疯狂了。",
+              pinyin: "shì ba? jié zòu tài fēng kuáng le.",
+            },
+          ],
+          comprehensionNote:
+            "Shows how 'slaps' is used naturally to express enthusiasm about music.",
+        },
+        {
+          id: "d2",
+          context: "Friends discussing a bad movie",
+          lines: [
+            {
+              speaker: "Taylor",
+              english: "Did you see that new action movie?",
+              chinese: "你看那部新动作片了吗？",
+              pinyin: "nǐ kàn nà bù xīn dòng zuò piàn le ma?",
+            },
+            {
+              speaker: "Jordan",
+              english: "Yeah, it was so whack. The plot made no sense.",
+              chinese: "看了，太糟糕了。剧情完全说不通。",
+              pinyin: "kàn le, tài zāo gāo le. ju qíng wán quán shuō bù tōng.",
+            },
+            {
+              speaker: "Taylor",
+              english: "I know, right? Waste of money.",
+              chinese: "是吧？浪费钱。",
+              pinyin: "shì ba? làng fèi qián.",
+            },
+          ],
+          comprehensionNote:
+            "Shows how 'whack' is used to express disappointment. It's the opposite of 'slaps'.",
+        },
+      ],
+      practiceDrills: [
+        {
+          id: "p1",
+          type: "register-comparison",
+          title: "Formal vs. Casual",
+          instructions: "Rewrite these sentences using casual connectors.",
+          instructionsZh: "使用 casual connectors 改写这些句子。",
+          content: "1. 'That concert was amazing.' 2. 'I agree with your plan.' 3. 'The food was terrible.'",
+          contentZh: "1. '那场演唱会太精彩了。' 2. '我同意你的计划。' 3. '那食物很糟糕。'",
+          answer:
+            "1. 'That concert slaps!' 2. 'Bet, let's do it.' 3. 'The food was whack.'",
+          answerZh: "1. '那场演唱会超棒！' 2. '一言为定，就这么办。' 3. '那食物很糟糕。'",
+        },
+        {
+          id: "p2",
+          type: "situational-judgment",
+          title: "When to Use",
+          instructions: "When is it appropriate to say 'slaps'?",
+          instructionsZh: "什么时候适合说'slaps'？",
+          content: "A) At a business meeting B) With friends discussing music C) In a formal essay D) With a stranger",
+          contentZh: "A) 在商务会议上 B) 和朋友讨论音乐 C) 在正式论文中 D) 和陌生人",
+          options: [
+            { label: "A) At a business meeting", labelZh: "A) 在商务会议上", correct: false },
+            {
+              label: "B) With friends discussing music",
+              labelZh: "B) 和朋友讨论音乐",
+              correct: true,
+            },
+            { label: "C) In a formal essay", labelZh: "C) 在正式论文中", correct: false },
+            { label: "D) With a stranger", labelZh: "D) 和陌生人", correct: false },
+          ],
+          answer:
+            "B only. 'Slaps' is very casual and should only be used with friends in informal settings.",
+          answerZh: "仅B。'Slaps'非常 casual，只应在非正式场合和朋友一起使用。",
+        },
+      ],
+      quiz: [
+        {
+          id: "q1",
+          question: "What does 'slaps' mean?",
+          questionZh: "'Slaps'是什么意思？",
+          options: [
+            { label: "A) To hit someone", labelZh: "A) 打某人", correct: false },
+            { label: "B) Really good", labelZh: "B) 超棒", correct: true },
+            { label: "C) To agree", labelZh: "C) 同意", correct: false },
+            { label: "D) Bad or terrible", labelZh: "D) 糟糕的", correct: false },
+          ],
+          explanation:
+            "'Slaps' means something is really good, especially music, food, or experiences. It's modern slang from the 2010s.",
+          explanationZh: "'Slaps'意为某事物非常好，尤其是音乐、食物或体验。它是2010年代的现代俚语。",
+        },
+        {
+          id: "q2",
+          question: "What does 'whack' mean?",
+          questionZh: "'Whack'是什么意思？",
+          options: [
+            { label: "A) To hit someone", labelZh: "A) 打某人", correct: false },
+            { label: "B) Really good", labelZh: "B) 超棒", correct: false },
+            { label: "C) Bad or terrible", labelZh: "C) 糟糕的", correct: true },
+            { label: "D) To agree", labelZh: "D) 同意", correct: false },
+          ],
+          explanation:
+            "'Whack' means something is bad, terrible, or disappointing. It's the opposite of 'slaps.'",
+          explanationZh: "'Whack'意为某事物糟糕、糟糕或令人失望。它是'slaps'的反义词。",
+        },
+      ],
+    },
   ],
 };
 
