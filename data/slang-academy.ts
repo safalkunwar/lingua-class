@@ -633,6 +633,59 @@ export const slangAcademy: SlangLevelData[] = [
           { speaker: "Jake", line: "说真的。我已经辞职了。" }
         ],
         culturalNotes: "Originated in African American Vernacular English (AAVE). Now used widely but still associated with AAVE."
+      },
+      {
+        id: "street-6",
+        word: "Bussin'",
+        chinese: "好吃到爆/棒极了",
+        pinyin: "hǎo chī dào bào / bàng jí le",
+        meaning: "Really good, especially food",
+        example: "This mac and cheese is bussin'!",
+        exampleZh: "这通心粉和奶酪好吃到爆！",
+        whoSaysIt: "Teens, young adults",
+        ageGroup: "13-30",
+        region: "American, British, Australian",
+        isOffensive: false,
+        offensiveLevel: 0,
+        safeAlternatives: ["Delicious", "Amazing", "Great", "Fantastic"],
+        conversation: [
+          { speaker: "Taylor", line: "Try the wings! They're bussin'!" },
+          { speaker: "Jordan", line: "Wow, you're right. This is amazing." },
+          { speaker: "Taylor", line: "Told you! Best wings in the city." }
+        ],
+        chineseTranslation: [
+          { speaker: "Taylor", line: "尝尝鸡翅！好吃到爆！" },
+          { speaker: "Jordan", line: "哇，你说得对。这太棒了。" },
+          { speaker: "Taylor", line: "跟你说过了！城里最好的鸡翅。" }
+        ],
+        culturalNotes: "Popular slang for food that tastes amazing. Originated in African American communities but now widely used."
+      },
+      {
+        id: "street-7",
+        word: "No cap",
+        chinese: "真的/没骗你",
+        pinyin: "zhēn de / méi piāo nǐ",
+        meaning: "No lie / For real / Honestly",
+        example: "No cap, I studied for 10 hours for that test.",
+        exampleZh: "真的，我为那次考试学习了10个小时。",
+        whoSaysIt: "Teens, young adults, hip-hop culture",
+        ageGroup: "13-30",
+        region: "American (originally AAVE), now global",
+        isOffensive: false,
+        offensiveLevel: 0,
+        safeAlternatives: ["Honestly", "For real", "I promise", "Truth"],
+        conversation: [
+          { speaker: "Jake", line: "No cap, that was the best concert ever." },
+          { speaker: "Mia", line: "I know! The energy was insane." },
+          { speaker: "Jake", line: "We have to go to their next show." }
+        ],
+        chineseTranslation: [
+          { speaker: "Jake", line: "真的，那是史上最棒的演唱会。" },
+          { speaker: "Mia", line: "我知道！现场气氛太疯狂了。" },
+          { speaker: "Jake", line: "我们一定要去看他们的下一场演出。" }
+        ],
+        culturalNotes: "Originated in African American Vernacular English (AAVE) and hip-hop culture. Important to recognize its origins and use respectfully.",
+        warning: "Be aware of AAVE origins. Don't mock AAVE while using its slang."
       }
     ]
   },
