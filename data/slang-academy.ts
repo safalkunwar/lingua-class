@@ -146,6 +146,58 @@ export const slangAcademy: SlangLevelData[] = [
           { speaker: "Tom", line: "我们下次可以再来。" }
         ],
         culturalNotes: "'Fair enough' is a very common way to acknowledge someone else's point even if you disagree."
+      },
+      {
+        id: "safe-5",
+        word: "No biggie",
+        chinese: "没什么大不了的",
+        pinyin: "méi shén me dà bù liǎo de",
+        meaning: "No problem / It's not a big deal",
+        example: "Sorry I'm late! — No biggie.",
+        exampleZh: "对不起我迟到了！——没什么大不了的。",
+        whoSaysIt: "Everyone",
+        ageGroup: "All ages",
+        region: "All English-speaking countries",
+        isOffensive: false,
+        offensiveLevel: 0,
+        safeAlternatives: ["No problem", "It's okay", "Don't worry about it", "No worries"],
+        conversation: [
+          { speaker: "Amy", line: "I'm sorry I forgot your birthday." },
+          { speaker: "John", line: "No biggie, let's celebrate this weekend instead." },
+          { speaker: "Amy", line: "You're the best. Dinner is on me!" }
+        ],
+        chineseTranslation: [
+          { speaker: "Amy", line: "对不起我忘了你的生日。" },
+          { speaker: "John", line: "没什么大不了的，我们这周末再庆祝吧。" },
+          { speaker: "Amy", line: "你真好。我请客吃饭！" }
+        ],
+        culturalNotes: "'No biggie' is casual American slang for 'no problem.' It's very common in the US and now understood everywhere."
+      },
+      {
+        id: "safe-6",
+        word: "Hang out",
+        chinese: "闲逛/出去玩",
+        pinyin: "xián guàng / chū qù wán",
+        meaning: "Spend time together casually",
+        example: "Do you want to hang out after school?",
+        exampleZh: "放学后想一起玩吗？",
+        whoSaysIt: "Everyone, especially young people",
+        ageGroup: "All ages",
+        region: "All English-speaking countries",
+        isOffensive: false,
+        offensiveLevel: 0,
+        safeAlternatives: ["Spend time together", "Meet up", "Get together", "Hang"],
+        conversation: [
+          { speaker: "Lisa", line: "We should hang out sometime." },
+          { speaker: "Tom", line: "Sure! How about this weekend?" },
+          { speaker: "Lisa", line: "Perfect. I'll text you the details." }
+        ],
+        chineseTranslation: [
+          { speaker: "Lisa", line: "我们 sometime 一起玩吧。" },
+          { speaker: "Tom", line: "好啊！这周末怎么样？" },
+          { speaker: "Lisa", line: "完美。我会发信息给你详情。" }
+        ],
+        culturalNotes: "'Hang out' is the standard phrase for casual time with friends. It has no romantic implication unless context suggests otherwise."
       }
     ]
   },
@@ -347,6 +399,58 @@ export const slangAcademy: SlangLevelData[] = [
           { speaker: "Tom", line: "好吧，你说得对。" }
         ],
         culturalNotes: "Popularized by social media and hip-hop. A 'clap back' is a sharp, often public, response to criticism."
+      },
+      {
+        id: "internet-8",
+        word: "Slaps",
+        chinese: "超棒/好听到爆",
+        pinyin: "chāo bàng / hǎo tīng dào bào",
+        meaning: "Really good, especially music or food",
+        example: "This new album slaps!",
+        exampleZh: "这张新专辑超棒！",
+        whoSaysIt: "Teens, young adults",
+        ageGroup: "13-30",
+        region: "American, British, Australian",
+        isOffensive: false,
+        offensiveLevel: 0,
+        safeAlternatives: ["Great", "Amazing", "Fantastic", "Really good"],
+        conversation: [
+          { speaker: "Casey", line: "Have you heard the new track?" },
+          { speaker: "Morgan", line: "Yeah, it slaps! Been on repeat all day." },
+          { speaker: "Casey", line: "Right? The beat is insane." }
+        ],
+        chineseTranslation: [
+          { speaker: "Casey", line: "你听新歌了吗？" },
+          { speaker: "Morgan", line: "听了，超棒！今天一直在循环播放。" },
+          { speaker: "Casey", line: "是吧？节奏太疯狂了。" }
+        ],
+        culturalNotes: "'Slaps' is modern slang meaning something is exceptionally good. Originated in music culture but now used for food, fashion, and more."
+      },
+      {
+        id: "internet-9",
+        word: "Vibe check",
+        chinese: "氛围检查/察言观色",
+        pinyin: "fēn wéi jiǎn chá / chá yán guān sè",
+        meaning: "Assessing the mood or atmosphere of a situation",
+        example: "I need to do a quick vibe check before I go in there.",
+        exampleZh: "进去之前我需要先察言观色一下。",
+        whoSaysIt: "Teens, young adults",
+        ageGroup: "13-35",
+        region: "All English-speaking countries",
+        isOffensive: false,
+        offensiveLevel: 0,
+        safeAlternatives: ["Check the mood", "Read the room", "See how people feel", "Assess the situation"],
+        conversation: [
+          { speaker: "Taylor", line: "Should we go in?" },
+          { speaker: "Jordan", line: "Hold on, let me do a vibe check first." },
+          { speaker: "Taylor", line: "Good call. Looks like they're having a meeting." }
+        ],
+        chineseTranslation: [
+          { speaker: "Taylor", line: "我们该进去吗？" },
+          { speaker: "Jordan", line: "等等，我先察言观色一下。" },
+          { speaker: "Taylor", line: "好主意。看起来他们正在开会。" }
+        ],
+        culturalNotes: "'Vibe check' became popular on social media around 2019. It means assessing whether the mood is positive, negative, or tense."
       }
     ]
   },
@@ -435,6 +539,59 @@ export const slangAcademy: SlangLevelData[] = [
           { speaker: "Lisa", line: "检查过了！太令人沮丧了。" }
         ],
         culturalNotes: "Milder than 'f***ing' but still considered profanity by some. Common in casual speech."
+      },
+      {
+        id: "rough-4",
+        word: "Dumb",
+        chinese: "愚蠢的/笨蛋",
+        pinyin: "yú chǔn / běn dàn",
+        meaning: "Stupid or foolish (insult)",
+        example: "That was a dumb idea.",
+        exampleZh: "那是个愚蠢的主意。",
+        whoSaysIt: "Everyone when frustrated",
+        ageGroup: "Teens and above",
+        region: "All English-speaking countries",
+        isOffensive: true,
+        offensiveLevel: 2,
+        safeAlternatives: ["Unwise", "Not the best idea", "Careless", "That wasn't smart"],
+        conversation: [
+          { speaker: "Tom", line: "Why did you do that? That was so dumb." },
+          { speaker: "Lisa", line: "I know, I wasn't thinking." },
+          { speaker: "Tom", line: "Just be more careful next time." }
+        ],
+        chineseTranslation: [
+          { speaker: "Tom", line: "你为什么要那样做？太蠢了。" },
+          { speaker: "Lisa", line: "我知道，我没想清楚。" },
+          { speaker: "Tom", line: "下次小心点。" }
+        ],
+        culturalNotes: "Common mild insult. Less severe than 'idiot' but still rude. Often used to describe actions rather than people."
+      },
+      {
+        id: "rough-5",
+        word: "Hate you",
+        chinese: "讨厌你/恨你",
+        pinyin: "tǎo yàn nǐ / hèn nǐ",
+        meaning: "I strongly dislike you (very strong, often not literal)",
+        example: "I hate you! You ruined my party.",
+        exampleZh: "我讨厌你！你毁了我的派对。",
+        whoSaysIt: "Angry people, upset friends, dramatic teens",
+        ageGroup: "Teens and above",
+        region: "All English-speaking countries",
+        isOffensive: true,
+        offensiveLevel: 4,
+        safeAlternatives: ["I'm really upset with you", "I'm angry", "That hurt my feelings", "I'm disappointed"],
+        conversation: [
+          { speaker: "Mia", line: "I hate you! You told everyone my secret!" },
+          { speaker: "Jake", line: "I'm sorry, it slipped out." },
+          { speaker: "Mia", line: "That's not okay. I need you to apologize." }
+        ],
+        chineseTranslation: [
+          { speaker: "Mia", line: "我讨厌你！你把我的秘密告诉所有人了！" },
+          { speaker: "Jake", line: "对不起，我脱口而出了。" },
+          { speaker: "Mia", line: "这不行。你需要道歉。" }
+        ],
+        culturalNotes: "Very strong expression. Rarely literal among friends, but still hurtful. Among teens, it's often dramatic and temporary. Adults should avoid using it.",
+        warning: "WARNING: 'I hate you' is extremely hurtful. Even when said in anger, it can cause lasting emotional damage. Never use this expression lightly."
       }
     ]
   }
