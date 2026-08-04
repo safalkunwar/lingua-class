@@ -782,6 +782,88 @@ export const slangModule: SlangModule = {
           exampleZh: "那个随机TikTok太Skibidi了，我笑得停不下来。",
           category: "internet-digital-slang",
         },
+        {
+          id: "npc",
+          english: "NPC",
+          chinese: "NPC/没有独立思想的人",
+          pinyin: "NPC / méi yǒu dú lì sī xiǎng de rén",
+          pronunciation: "en-pee-see",
+          literalMeaning: "Non-Player Character (from video games)",
+          actualMeaning: "Someone who acts without original thought, following trends or scripts mindlessly",
+          detailsEn:
+            "Used to describe people who seem to lack independent thought or creativity. Often used in political or social commentary.",
+          detailsZh: "用于描述似乎缺乏独立思想或创造力的人。常用于政治或社会评论。",
+          intensity: 2,
+          safetyLabels: [
+            { label: "Caution", icon: "⚠️", settings: ["Casual", "Online"] },
+            { label: "Avoid", icon: "❌", settings: ["In-person", "Formal"] },
+          ],
+          regionalVariations: [
+            { region: "American", usage: "Don't be an NPC, think for yourself.", note: "Very common" },
+            { region: "British", usage: "He's such an NPC.", note: "Common" },
+            { region: "Australian", usage: "NPC energy.", note: "Common" },
+          ],
+          demographics: {
+            ageGroup: "Teens and above",
+            tone: "Sarcastic",
+            genderNeutral: true,
+          },
+          nonVerbalCues: {
+            facialExpression: "Blank or robotic expression",
+            bodyLanguage: "Stiff or repetitive movements",
+          },
+          comparative: {
+            commonMistakes: ["Using in formal settings", "Using to describe people face-to-face"],
+            saferAlternatives: ["Unoriginal", "Following the crowd", "Lacking creativity"],
+            similarWords: ["Sheep", "Follower", "Basic"],
+            culturalNotes:
+              "Originally from gaming. Now used as an insult for people perceived as lacking independent thought. Can be offensive depending on context.",
+          },
+          exampleEn: "Everyone is wearing the same outfit today. NPC behavior.",
+          exampleZh: "每个人都穿着同样的衣服。NPC行为。",
+          category: "internet-digital-slang",
+        },
+        {
+          id: "touch-grass",
+          english: "Touch grass",
+          chinese: "去接触现实/出门走走",
+          pinyin: "qù jiē chù xiàn shí / chū mén zǒu zou",
+          pronunciation: "tuch grass",
+          literalMeaning: "Physically touch grass outdoors",
+          actualMeaning: "Go outside and experience real life, stop being online so much",
+          detailsEn:
+            "Common insult/telling someone to get offline and experience the real world. Implies the person is too online or detached from reality.",
+          detailsZh: "常见的 insult/telling someone to get offline and experience the real world。意味着这个人太 online 或脱离现实。",
+          intensity: 2,
+          safetyLabels: [
+            { label: "Mostly Safe", icon: "✅", settings: ["Casual", "Online"] },
+            { label: "Caution", icon: "⚠️", settings: ["In-person"] },
+          ],
+          regionalVariations: [
+            { region: "American", usage: "Touch grass, you're online too much.", note: "Very common" },
+            { region: "British", usage: "Touch grass.", note: "Common" },
+            { region: "Australian", usage: "Touch grass.", note: "Common" },
+          ],
+          demographics: {
+            ageGroup: "Teens and above",
+            tone: "Sarcastic",
+            genderNeutral: true,
+          },
+          nonVerbalCues: {
+            facialExpression: "Exasperated or mocking",
+            bodyLanguage: "Pointing toward door or outside",
+          },
+          comparative: {
+            commonMistakes: ["Using with people who are actually busy working online"],
+            saferAlternatives: ["Take a break", "Go outside", "Get some fresh air"],
+            similarWords: ["Get outside", "Touch some grass", "Reality check"],
+            culturalNotes:
+              "Common response to people who are overly argumentative or invested in online drama. Can be playful or genuinely insulting depending on tone.",
+          },
+          exampleEn: "You're arguing with strangers on Twitter at 3am. Touch grass.",
+          exampleZh: "你凌晨3点还在Twitter上和陌生人吵架。去接触现实吧。",
+          category: "internet-digital-slang",
+        },
       ],
       dialogues: [
         {
