@@ -236,6 +236,32 @@ export default function ConversationDetailPage({ params }: { params: Promise<{ i
           onToggleAutoPlay={toggleAutoPlay}
           onPlaybackRateChange={() => {}}
         />
+
+        {/* Next/Previous Navigation */}
+        <div className="px-4 sm:px-6 py-6 sm:py-8">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+            {prevTopic ? (
+              <Link href={`/conversations/${prevTopic.id}`} className="w-full sm:w-auto">
+                <Button variant="outline" className="w-full sm:w-auto gap-2">
+                  <ChevronLeft className="w-4 h-4" />
+                  {prevTopic.emoji} {prevTopic.title}
+                </Button>
+              </Link>
+            ) : (
+              <div className="hidden sm:block" />
+            )}
+            {nextTopic ? (
+              <Link href={`/conversations/${nextTopic.id}`} className="w-full sm:w-auto">
+                <Button className="w-full sm:w-auto gap-2">
+                  {nextTopic.emoji} {nextTopic.title}
+                  <ChevronRight className="w-4 h-4" />
+                </Button>
+              </Link>
+            ) : (
+              <div className="hidden sm:block" />
+            )}
+          </div>
+        </div>
       </main>
     </div>
   );

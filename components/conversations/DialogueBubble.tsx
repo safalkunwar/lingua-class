@@ -7,14 +7,17 @@ import { ReadingMode, ViewMode } from "./ConversationReader";
 interface DialogueBubbleProps {
   line: ConversationLine;
   index: number;
+  topicId: string;
   readingMode: ReadingMode;
   viewMode: ViewMode;
   teacherMode: boolean;
+  favorites: Set<string>;
   onToggleFavorite: (lineIndex: number) => void;
   onPlayAudio: () => void;
   onPlayChineseAudio?: () => void;
   isFav: boolean;
   isCurrentLine?: boolean;
+  chineseLine?: string;
 }
 
 const SPEAKER_COLORS: Record<string, string> = {
@@ -45,6 +48,7 @@ function getSpeakerColor(speaker: string): string {
 export function DialogueBubble({
   line,
   index,
+  topicId,
   readingMode,
   viewMode,
   teacherMode,
@@ -53,6 +57,7 @@ export function DialogueBubble({
   onPlayChineseAudio,
   isFav,
   isCurrentLine = false,
+  chineseLine,
 }: DialogueBubbleProps) {
   const speakerColor = getSpeakerColor(line.speaker);
   const isFocused = readingMode === "focused";
@@ -61,7 +66,7 @@ export function DialogueBubble({
   return (
     <div
       className={cn(
-        "flex gap-3 transition-all duration-300",
+        "flex gap-3 transition-all duration-300 w-full",
         isPresentation && "min-h-[60vh] items-center",
         isCurrentLine && "scale-[1.01]"
       )}
@@ -81,7 +86,7 @@ export function DialogueBubble({
       {/* Bubble */}
       <div
         className={cn(
-          "flex-1 rounded-2xl shadow-sm transition-all",
+          "flex-1 rounded-2xl shadow-sm transition-all w-full min-w-0",
           isPresentation ? "rounded-3xl p-8" : "p-4",
           isCurrentLine && "ring-2 ring-primary/20 shadow-md"
         )}
@@ -89,7 +94,7 @@ export function DialogueBubble({
           backgroundColor: `${speakerColor}14`,
         }}
       >
-        <div className="flex items-center gap-2 mb-1.5">
+        <div className="flex items-center gap-2 mb-1.5 flex-wrap">
           <span className="font-semibold text-sm" style={{ color: speakerColor }}>
             {line.speaker}
           </span>
@@ -108,7 +113,7 @@ export function DialogueBubble({
         {!isFocused && (
           <p
             className={cn(
-              "text-foreground leading-relaxed",
+              "text-foreground leading-relaxed break-words",
               isPresentation ? "text-3xl" : "text-lg"
             )}
           >
@@ -119,7 +124,7 @@ export function DialogueBubble({
         {isFocused && (
           <p
             className={cn(
-              "text-foreground leading-relaxed cursor-pointer",
+              "text-foreground leading-relaxed cursor-pointer break-words",
               isPresentation ? "text-3xl" : "text-lg"
             )}
             onClick={() => {}}
@@ -128,8 +133,14 @@ export function DialogueBubble({
           </p>
         )}
 
+        {chineseLine && (
+          <p className="mt-2 text-base text-muted-foreground leading-relaxed break-words">
+            {chineseLine}
+          </p>
+        )}
+
         {/* Inline Actions */}
-        <div className="flex items-center gap-1 mt-3">
+        <div className="flex items-center gap-1 mt-3 flex-wrap">
           <button
             onClick={onPlayAudio}
             className="p-3 rounded-lg hover:bg-muted/50 transition-all min-w-[44px] min-h-[44px] flex items-center justify-center group"

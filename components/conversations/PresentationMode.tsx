@@ -13,7 +13,10 @@ interface PresentationModeProps {
   chineseTranslation: ChineseLine[];
   currentLineIndex: number;
   isPlaying: boolean;
+  playbackRate: number;
   showChinese: boolean;
+  favorites: Set<string>;
+  onToggleFavorite: (key: string) => void;
   onPlayEnglish: (text: string) => void;
   onPlayChinese: (text: string) => void;
   onPrevLine: () => void;
@@ -21,6 +24,7 @@ interface PresentationModeProps {
   onToggleChinese: () => void;
   autoPlay: boolean;
   onToggleAutoPlay: () => void;
+  onPlaybackRateChange: (rate: number) => void;
 }
 
 const TEACHER_SPEAKERS = new Set(["Teacher", "Waiter", "Driver", "Agent", "Receptionist", "Waiter", "Clerk"]);
@@ -146,11 +150,35 @@ export function PresentationMode({
                 {topic.estimatedTime}
               </span>
             </div>
+
+            {/* Progress Bar */}
+            <div className="mt-4 max-w-md mx-auto">
+              <div className="flex items-center justify-between text-xs text-muted-foreground mb-1">
+                <span>Progress</span>
+                <span>{Math.round(((currentLineIndex + 1) / topic.conversation.length) * 100)}%</span>
+              </div>
+              <div className="h-2 bg-muted rounded-full overflow-hidden">
+                <div
+                  className="h-full bg-primary rounded-full transition-all duration-300"
+                  style={{ width: `${((currentLineIndex + 1) / topic.conversation.length) * 100}%` }}
+                />
+              </div>
+              <div className="text-center text-xs text-muted-foreground mt-1">
+                Dialogue {currentLineIndex + 1} of {topic.conversation.length}
+              </div>
+            </div>
           </div>
 
           {/* Current Dialogue - Large Format */}
           {currentLine && (
-            <div className="max-w-4xl mx-auto mb-8">
+            <div
+              className="max-w-4xl mx-auto mb-8 cursor-pointer"
+              onClick={(e) => {
+                if (e.target === e.currentTarget || (e.target as HTMLElement).tagName === "BUTTON") {
+                  onNextLine();
+                }
+              }}
+            >
               <div className="rounded-3xl border bg-card p-6 sm:p-10 shadow-xl">
                 <div className="flex items-center gap-4 mb-6">
                   <div
@@ -275,6 +303,33 @@ export function PresentationMode({
           </div>
         </div>
       </div>
+
+      {/* Completion Screen */}
+      {currentLineIndex >= topic.conversation.length - 1 && (
+        <div className="max-w-4xl mx-auto px-4 sm:px-8 py-12 text-center">
+          <div className="text-6xl mb-4">🎉</div>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4">Lesson Complete!</h2>
+          <p className="text-lg text-muted-foreground mb-8">
+            Great job! You've completed this conversation.
+          </p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <Button
+              variant="outline"
+              size="lg"
+              onClick={onPrevLine}
+            >
+              Review Again
+            </Button>
+            <Button
+              variant="default"
+              size="lg"
+              onClick={onClose}
+            >
+              Return to Dashboard
+            </Button>
+          </div>
+        </div>
+      )}
 
       {/* Footer Controls */}
       {showControls && (

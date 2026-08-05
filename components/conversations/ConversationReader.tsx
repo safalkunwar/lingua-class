@@ -198,6 +198,7 @@ export function ConversationReader({
                   onPlayChineseAudio={chineseLine && onPlayChineseAudio ? () => onPlayChineseAudio(chineseLine) : undefined}
                   isFav={isFav}
                   isCurrentLine={currentLine === index}
+                  chineseLine={chineseLine}
                 />
               );
             })}
