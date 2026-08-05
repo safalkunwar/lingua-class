@@ -33,7 +33,13 @@
 - `61c7261` feat: add more vulgar expressions to rough english
 - `8560010` feat: add text-speak short forms category to slang academy
 
+**Merges:**
+- Merged `data/slang-academy.ts` into `data/slang-module.ts` as `levels` property
+- `slang-academy.ts` now re-exports academy data but imports types from central `types/slang-module.ts`
+- `app/slang-academy/page.tsx` now imports from `@/data/slang-module` instead of `@/data/slang-academy`
+- `data/rough-english.ts` now imports `SlangItem` from `@/types/slang-module`
+- Single source of truth for all slang content in `data/slang-module.ts`
+
 **Pending Work:**
-- Merge slang-module and slang-academy into single unified module
 - Resolve remaining TypeScript errors in conversations components
 - Consider replacing <img> with next/image for better optimization
