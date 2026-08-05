@@ -32,6 +32,11 @@
 - `f8b5bee` feat: add more vulgar expressions to rough english
 - `61c7261` feat: add more vulgar expressions to rough english
 - `8560010` feat: add text-speak short forms category to slang academy
+- `ba6db8f` fix: resolve TypeScript errors in conversations and speech hook
+- `b005040` fix: responsive layout and overflow cleanup in conversation pages
+- `e2152cb` feat: improve Chinese voice detection and caching in speech synthesis
+- `c6a2fce` feat: enhance presentation mode completion screen with stats
+- `e2a6b70` feat: lazy-load heavy conversation components with next/dynamic
 
 **Merges:**
 - Merged `data/slang-academy.ts` into `data/slang-module.ts` as `levels` property
@@ -49,9 +54,16 @@
 - Added completion screen when reaching end of conversation
 - Improved keyboard accessibility in PresentationMode
 - Resolved TypeScript errors in conversations components and speech hook
+- Fixed completion screen layout in PresentationMode (moved inside scrollable area)
+- Added bottom padding to conversation page for StickyToolbar
+- Added `break-words` to DialogueBlock text for overflow safety
+- Enhanced completion screen with vocabulary, grammar, and mastery stats
+- Lazy-loaded LessonLayout, PresentationMode, and StickyToolbar with next/dynamic
+
+**Speech Synthesis Improvements:**
+- Added voice cache keyed by language for faster lookups
+- Improved Chinese voice detection with provider preference
+- Better fallback handling when voices are not yet loaded
 
 **Pending Work:**
-- Responsive layout/overflow cleanup across conversation pages
-- Chinese audio voice detection and caching improvements
-- End-screen enhancements (vocabulary learned, grammar points, mastery estimate)
-- Performance/lazy-loading passes
+- None - all priority items completed
