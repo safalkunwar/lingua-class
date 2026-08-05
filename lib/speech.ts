@@ -2,6 +2,41 @@
 
 let voices: SpeechSynthesisVoice[] = [];
 let voicesLoaded = false;
+const voiceCache = new Map<string, SpeechSynthesisVoice | null>();
+
+function getLangPrefix(lang: string): string {
+  return lang.split("-")[0];
+}
+
+function findVoiceForLang(lang: string): SpeechSynthesisVoice | null {
+  const currentVoices = window.speechSynthesis.getVoices();
+  if (!currentVoices.length) return null;
+
+  const prefix = getLangPrefix(lang);
+  const normalizedLang = lang.toLowerCase();
+
+  const candidates = currentVoices.filter((v) => {
+    const vl = v.lang.replace("_", "-").toLowerCase();
+    const vp = vl.split("-")[0];
+
+    if (prefix === "zh") {
+      return (
+        vl === normalizedLang ||
+        vl.startsWith(`${prefix}-`) ||
+        vp === "zh" ||
+        vp === "cmn"
+      );
+    }
+    return vl === normalizedLang || vl.startsWith(`${prefix}-`);
+  });
+
+  if (!candidates.length) return null;
+
+  const preferred = candidates.find((v) =>
+    /google|microsoft|apple|samsung|huawei/i.test(v.name)
+  );
+  return preferred || candidates[0];
+}
 
 export function loadVoices(): SpeechSynthesisVoice[] {
   if (typeof window === "undefined" || !window.speechSynthesis) return [];
@@ -9,6 +44,9 @@ export function loadVoices(): SpeechSynthesisVoice[] {
   const load = () => {
     voices = window.speechSynthesis.getVoices();
     voicesLoaded = voices.length > 0;
+    if (voicesLoaded) {
+      voiceCache.clear();
+    }
   };
 
   load();
@@ -33,31 +71,12 @@ export function speak(text: string, lang: string): void {
   utter.lang = lang;
   utter.rate = 0.85;
 
-  const prefix = lang.split("-")[0];
-  let voice: SpeechSynthesisVoice | null = null;
+  let voice = voiceCache.get(lang) ?? null;
 
-  const tryFindVoice = (): SpeechSynthesisVoice | null => {
-    const currentVoices = window.speechSynthesis.getVoices();
-    if (!currentVoices.length) return null;
-
-    const candidates = currentVoices.filter((v) => {
-      const vl = v.lang.replace("_", "-").toLowerCase();
-      const vp = vl.split("-")[0];
-      if (prefix === "zh") {
-        return (
-          vl === lang ||
-          vl.startsWith(`${prefix}-`) ||
-          vp === "zh" ||
-          vp === "cmn"
-        );
-      }
-      return vl === lang || vl.startsWith(`${prefix}-`);
-    });
-
-    return candidates[0] || null;
-  };
-
-  voice = tryFindVoice();
+  if (!voice) {
+    voice = findVoiceForLang(lang);
+    voiceCache.set(lang, voice);
+  }
 
   if (voice) {
     utter.voice = voice;
