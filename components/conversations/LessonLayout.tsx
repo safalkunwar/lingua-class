@@ -284,14 +284,14 @@ export function LessonLayout({
                 <p className="text-xs sm:text-sm text-muted-foreground italic">
                   &ldquo;{tip.example || tip.tip}&rdquo;
                 </p>
-                {"exampleZh" in tip && tip.exampleZh && (
+                {"exampleZh" in tip && tip.exampleZh ? (
                   <p className="text-xs sm:text-sm text-muted-foreground mt-1">{tip.exampleZh}</p>
-                )}
-                {"reduction" in tip && tip.reduction && (
+                ) : null}
+                {"reduction" in tip && (tip as any).reduction ? (
                   <p className="text-xs sm:text-sm text-muted-foreground mt-1">
-                    Reduction: {tip.reduction}
+                    Reduction: {(tip as any).reduction}
                   </p>
-                )}
+                ) : null}
               </div>
             ))}
           </div>

@@ -9,6 +9,7 @@ import { PracticeActivity } from "@/types/conversations";
 interface PracticeSectionProps {
   activities: PracticeActivity[];
   title?: string;
+  onPlayAudio?: (text: string) => void;
 }
 
 const ACTIVITY_ICONS: Record<string, string> = {
