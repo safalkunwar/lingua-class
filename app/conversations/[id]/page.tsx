@@ -1,17 +1,19 @@
 "use client";
 
 import { notFound } from "next/navigation";
+import dynamic from "next/dynamic";
 import { StudentSidebar } from "@/components/layout/sidebar";
 import { conversations } from "@/data/conversations";
 import { use } from "react";
-import { LessonLayout } from "@/components/conversations/LessonLayout";
-import { PresentationMode } from "@/components/conversations/PresentationMode";
-import { StickyToolbar } from "@/components/conversations/StickyToolbar";
 import { ChevronLeft, ChevronRight, Maximize, BookOpen } from "lucide-react";
 import { useState, useCallback, useEffect, useMemo } from "react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { speak } from "@/lib/speech";
+
+const LessonLayout = dynamic(() => import("@/components/conversations/LessonLayout").then(m => m.LessonLayout));
+const PresentationMode = dynamic(() => import("@/components/conversations/PresentationMode").then(m => m.PresentationMode));
+const StickyToolbar = dynamic(() => import("@/components/conversations/StickyToolbar").then(m => m.StickyToolbar));
 
 export default function ConversationDetailPage({ params }: { params: Promise<{ id: string }> }) {
   const resolvedParams = use(params);
