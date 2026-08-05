@@ -1,4 +1,4 @@
-export type SlangLevel = "safe" | "internet" | "street" | "rough";
+export type SlangLevel = "safe" | "internet" | "street" | "rough" | "text-speak";
 
 export interface SlangItem {
   id: string;
@@ -1013,7 +1013,1317 @@ export const slangAcademy: SlangLevelData[] = [
         warning: "EXTREME WARNING: 'Drop dead' is one of the rudest expressions in English. It can be considered a threat. Never use this expression."
       }
     ]
+  },
+  {
+    level: "text-speak",
+    title: "Text Speak & Short Forms",
+    description: "Common abbreviations, acronyms, and short forms used in texting, social media, and online communication.",
+    emoji: "📱",
+    color: "from-blue-400 to-cyan-400",
+    items: [
+      {
+        id: "text-1",
+        word: "IDK",
+        chinese: "我不知道",
+        pinyin: "wǒ bù zhī dào",
+        meaning: "I don't know",
+        example: "IDK what time the movie starts.",
+        exampleZh: "我不知道电影什么时候开始。",
+        whoSaysIt: "Everyone",
+        ageGroup: "All ages",
+        region: "All English-speaking countries",
+        isOffensive: false,
+        offensiveLevel: 0,
+        safeAlternatives: ["I don't know", "I'm not sure", "I have no idea"],
+        conversation: [
+          { speaker: "Amy", line: "What time is the movie?" },
+          { speaker: "John", line: "IDK, let me check." },
+          { speaker: "Amy", line: "Okay, let me know." }
+        ],
+        chineseTranslation: [
+          { speaker: "Amy", line: "电影几点？" },
+          { speaker: "John", line: "我不知道，我查一下。" },
+          { speaker: "Amy", line: "好的，告诉我。" }
+        ],
+        culturalNotes: "One of the most common text abbreviations. Used in casual writing and speech."
+      },
+      {
+        id: "text-2",
+        word: "OMG",
+        chinese: "我的天哪",
+        pinyin: "wǒ de tiān ne",
+        meaning: "Oh my God",
+        example: "OMG! I just won tickets to the concert!",
+        exampleZh: "我的天哪！我刚赢得了演唱会门票！",
+        whoSaysIt: "Everyone",
+        ageGroup: "All ages",
+        region: "All English-speaking countries",
+        isOffensive: false,
+        offensiveLevel: 1,
+        safeAlternatives: ["Oh my goodness", "Wow", "Oh no"],
+        conversation: [
+          { speaker: "Amy", line: "I got the job!" },
+          { speaker: "John", line: "OMG! That's amazing!" },
+          { speaker: "Amy", line: "I know! I'm so excited." }
+        ],
+        chineseTranslation: [
+          { speaker: "Amy", line: "我得到那份工作了！" },
+          { speaker: "John", line: "我的天哪！太棒了！" },
+          { speaker: "Amy", line: "我知道！我太兴奋了。" }
+        ],
+        culturalNotes: "Extremely common exclamation. Originally from texting, now common in speech. Some religious people find it offensive."
+      },
+      {
+        id: "text-3",
+        word: "LOL",
+        chinese: "大笑/笑死我了",
+        pinyin: "dà xiào / xiào sǐ wǒ le",
+        meaning: "Laugh out loud",
+        example: "That meme made me LOL.",
+        exampleZh: "那个表情包让我大笑。",
+        whoSaysIt: "Everyone",
+        ageGroup: "All ages",
+        region: "All English-speaking countries",
+        isOffensive: false,
+        offensiveLevel: 0,
+        safeAlternatives: ["Haha", "Hehe", "That's funny"],
+        conversation: [
+          { speaker: "John", line: "Did you see that video?" },
+          { speaker: "Amy", line: "LOL! That was hilarious." },
+          { speaker: "John", line: "I know! I couldn't stop laughing." }
+        ],
+        chineseTranslation: [
+          { speaker: "John", line: "你看到那个视频了吗？" },
+          { speaker: "Amy", line: "大笑！那太搞笑了。" },
+          { speaker: "John", line: "我知道！我忍不住笑。" }
+        ],
+        culturalNotes: "One of the oldest text abbreviations. Often used even when not literally laughing. Can be used ironically."
+      },
+      {
+        id: "text-4",
+        word: "BRB",
+        chinese: "马上回来",
+        pinyin: "mǎ shàng huí lái",
+        meaning: "Be right back",
+        example: "BRB, my phone is dying.",
+        exampleZh: "马上回来，我手机快没电了。",
+        whoSaysIt: "Everyone",
+        ageGroup: "All ages",
+        region: "All English-speaking countries",
+        isOffensive: false,
+        offensiveLevel: 0,
+        safeAlternatives: ["Be right back", "I'll be back shortly"],
+        conversation: [
+          { speaker: "Amy", line: "Where are you going?" },
+          { speaker: "John", line: "BRB, need to charge my phone." },
+          { speaker: "Amy", line: "Hurry back!" }
+        ],
+        chineseTranslation: [
+          { speaker: "Amy", line: "你去哪？" },
+          { speaker: "John", line: "马上回来，我需要给手机充电。" },
+          { speaker: "Amy", line: "快点回来！" }
+        ],
+        culturalNotes: "Common in online chat and gaming. Indicates temporary absence."
+      },
+      {
+        id: "text-5",
+        word: "BTW",
+        chinese: "顺便说一下",
+        pinyin: "shùn biàn shuō yī xià",
+        meaning: "By the way",
+        example: "BTW, did you finish the report?",
+        exampleZh: "顺便说一下，你完成报告了吗？",
+        whoSaysIt: "Everyone",
+        ageGroup: "All ages",
+        region: "All English-speaking countries",
+        isOffensive: false,
+        offensiveLevel: 0,
+        safeAlternatives: ["By the way", "Incidentally"],
+        conversation: [
+          { speaker: "John", line: "I finished the project." },
+          { speaker: "Amy", line: "BTW, the meeting is moved to 3pm." },
+          { speaker: "John", line: "Thanks for letting me know." }
+        ],
+        chineseTranslation: [
+          { speaker: "John", line: "我完成了项目。" },
+          { speaker: "Amy", line: "顺便说一下，会议改到下午3点了。" },
+          { speaker: "John", line: "谢谢告诉我。" }
+        ],
+        culturalNotes: "One of the most useful transition phrases. Appropriate in most contexts."
+      },
+      {
+        id: "text-6",
+        word: "TBH",
+        chinese: "说实话",
+        pinyin: "shuō shí huà",
+        meaning: "To be honest",
+        example: "TBH, I didn't enjoy that restaurant.",
+        exampleZh: "说实话，我不喜欢那家餐厅。",
+        whoSaysIt: "Everyone",
+        ageGroup: "Teens and above",
+        region: "All English-speaking countries",
+        isOffensive: false,
+        offensiveLevel: 0,
+        safeAlternatives: ["To be honest", "Frankly", "Honestly"],
+        conversation: [
+          { speaker: "Amy", line: "What did you think of the movie?" },
+          { speaker: "John", line: "TBH, it was a bit boring." },
+          { speaker: "Amy", line: "I agree, it was too long." }
+        ],
+        chineseTranslation: [
+          { speaker: "Amy", line: "你觉得电影怎么样？" },
+          { speaker: "John", line: "说实话，有点无聊。" },
+          { speaker: "Amy", line: "我同意，太长了。" }
+        ],
+        culturalNotes: "Often used before an opinion that might be unpopular or critical."
+      },
+      {
+        id: "text-7",
+        word: "IDC",
+        chinese: "我不在乎",
+        pinyin: "wǒ bù zài hū",
+        meaning: "I don't care",
+        example: "IDC where we eat. You choose.",
+        exampleZh: "我不在乎我们在哪里吃。你选吧。",
+        whoSaysIt: "Everyone",
+        ageGroup: "Teens and above",
+        region: "All English-speaking countries",
+        isOffensive: false,
+        offensiveLevel: 1,
+        safeAlternatives: ["I don't mind", "It doesn't matter", "Whatever you prefer"],
+        conversation: [
+          { speaker: "Amy", line: "Where do you want to go?" },
+          { speaker: "John", line: "IDC, you pick." },
+          { speaker: "Amy", line: "Okay, let's try the new place." }
+        ],
+        chineseTranslation: [
+          { speaker: "Amy", line: "你想去哪？" },
+          { speaker: "John", line: "我不在乎，你选。" },
+          { speaker: "Amy", line: "好的，我们去新地方吧。" }
+        ],
+        culturalNotes: "Can sound dismissive. Use 'I don't mind' in polite company."
+      },
+      {
+        id: "text-8",
+        word: "SMH",
+        chinese: "摇头",
+        pinyin: "yáo tóu",
+        meaning: "Shaking my head",
+        example: "SMH, they canceled the show again.",
+        exampleZh: "摇头，他们又取消了节目。",
+        whoSaysIt: "Everyone",
+        ageGroup: "Teens and above",
+        region: "All English-speaking countries",
+        isOffensive: false,
+        offensiveLevel: 1,
+        safeAlternatives: ["I'm disappointed", "That's unfortunate"],
+        conversation: [
+          { speaker: "John", line: "They canceled the show again." },
+          { speaker: "Amy", line: "SMH, I'm so tired of this." },
+          { speaker: "John", line: "Me too. I was really excited." }
+        ],
+        chineseTranslation: [
+          { speaker: "John", line: "他们又取消了节目。" },
+          { speaker: "Amy", line: "摇头，我烦透了。" },
+          { speaker: "John", line: "我也是。我本来很期待。" }
+        ],
+        culturalNotes: "Common in social media comments. Expresses disappointment or disbelief."
+      },
+      {
+        id: "text-9",
+        word: "TTYL",
+        chinese: "待会见",
+        pinyin: "dài huì jiàn",
+        meaning: "Talk to you later",
+        example: "I have to go now. TTYL!",
+        exampleZh: "我得走了。待会见！",
+        whoSaysIt: "Everyone",
+        ageGroup: "All ages",
+        region: "All English-speaking countries",
+        isOffensive: false,
+        offensiveLevel: 0,
+        safeAlternatives: ["Talk to you later", "See you later", "Goodbye for now"],
+        conversation: [
+          { speaker: "Amy", line: "I have to go now." },
+          { speaker: "John", line: "TTYL! Text me later." },
+          { speaker: "Amy", line: "Will do! Bye!" }
+        ],
+        chineseTranslation: [
+          { speaker: "Amy", line: "我得走了。" },
+          { speaker: "John", line: "待会见！稍后发信息给我。" },
+          { speaker: "Amy", line: "好的！再见！" }
+        ],
+        culturalNotes: "From early internet chat culture. Still widely recognized and used."
+      },
+      {
+        id: "text-10",
+        word: "NP",
+        chinese: "没问题",
+        pinyin: "méi wèn tí",
+        meaning: "No problem",
+        example: "Thanks for the help! — NP!",
+        exampleZh: "谢谢帮忙！——没问题！",
+        whoSaysIt: "Everyone",
+        ageGroup: "All ages",
+        region: "All English-speaking countries",
+        isOffensive: false,
+        offensiveLevel: 0,
+        safeAlternatives: ["No problem", "You're welcome", "It's okay"],
+        conversation: [
+          { speaker: "John", line: "Thanks for the help!" },
+          { speaker: "Amy", line: "NP! Anytime." },
+          { speaker: "John", line: "You're the best." }
+        ],
+        chineseTranslation: [
+          { speaker: "John", line: "谢谢帮忙！" },
+          { speaker: "Amy", line: "没问题！随时效劳。" },
+          { speaker: "John", line: "你最好。" }
+        ],
+        culturalNotes: "Very common response to 'thank you' or apologies."
+      },
+      {
+        id: "text-11",
+        word: "THX",
+        chinese: "谢谢",
+        pinyin: "xiè xiè",
+        meaning: "Thanks",
+        example: "Thx for picking me up!",
+        exampleZh: "谢谢来接我！",
+        whoSaysIt: "Everyone",
+        ageGroup: "All ages",
+        region: "All English-speaking countries",
+        isOffensive: false,
+        offensiveLevel: 0,
+        safeAlternatives: ["Thank you", "Thanks", "I appreciate it"],
+        conversation: [
+          { speaker: "Amy", line: "Thanks for the ride!" },
+          { speaker: "John", line: "Thx for coming!" },
+          { speaker: "Amy", line: "Of course!" }
+        ],
+        chineseTranslation: [
+          { speaker: "Amy", line: "谢谢载我！" },
+          { speaker: "John", line: "谢谢你来！" },
+          { speaker: "Amy", line: "当然！" }
+        ],
+        culturalNotes: "Casual abbreviation of 'thanks.' Common in text and informal notes."
+      },
+      {
+        id: "text-12",
+        word: "PLS",
+        chinese: "请",
+        pinyin: "qǐng",
+        meaning: "Please",
+        example: "Pls send me the file when you can.",
+        exampleZh: "请你能的时候把文件发给我。",
+        whoSaysIt: "Everyone",
+        ageGroup: "All ages",
+        region: "All English-speaking countries",
+        isOffensive: false,
+        offensiveLevel: 0,
+        safeAlternatives: ["Please", "Kindly", "If you could"],
+        conversation: [
+          { speaker: "John", line: "Can you send me the file?" },
+          { speaker: "Amy", line: "Pls send it when you can." },
+          { speaker: "John", line: "Will do!" }
+        ],
+        chineseTranslation: [
+          { speaker: "John", line: "你能发给我文件吗？" },
+          { speaker: "Amy", line: "请你能的时候发给我。" },
+          { speaker: "John", line: "好的！" }
+        ],
+        culturalNotes: "Casual version of 'please.' Common in digital communication."
+      },
+      {
+        id: "text-13",
+        word: "ASAP",
+        chinese: "尽快",
+        pinyin: "jǐn kuài",
+        meaning: "As soon as possible",
+        example: "Please respond ASAP. We have a deadline.",
+        exampleZh: "请尽快回复。我们有截止日期。",
+        whoSaysIt: "Everyone",
+        ageGroup: "Teens and above",
+        region: "All English-speaking countries",
+        isOffensive: false,
+        offensiveLevel: 1,
+        safeAlternatives: ["As soon as possible", "At your earliest convenience", "Promptly"],
+        conversation: [
+          { speaker: "Amy", line: "I need that report ASAP!" },
+          { speaker: "John", line: "I'm working on it now." },
+          { speaker: "Amy", line: "Thanks, the deadline is today." }
+        ],
+        chineseTranslation: [
+          { speaker: "Amy", line: "我需要那份报告尽快！" },
+          { speaker: "John", line: "我正在做。" },
+          { speaker: "Amy", line: "谢谢，截止日期是今天。" }
+        ],
+        culturalNotes: "Very common in workplace communication. Implies urgency."
+      },
+      {
+        id: "text-14",
+        word: "FYI",
+        chinese: "供参考",
+        pinyin: "gòng cān kǎo",
+        meaning: "For your information",
+        example: "FYI, the office will be closed tomorrow.",
+        exampleZh: "通知你一下，办公室明天将关闭。",
+        whoSaysIt: "Everyone",
+        ageGroup: "All ages",
+        region: "All English-speaking countries",
+        isOffensive: false,
+        offensiveLevel: 0,
+        safeAlternatives: ["For your information", "Just so you know", "Heads up"],
+        conversation: [
+          { speaker: "John", line: "FYI, the meeting is at 2pm." },
+          { speaker: "Amy", line: "Thanks for the heads up." },
+          { speaker: "John", line: "No problem!" }
+        ],
+        chineseTranslation: [
+          { speaker: "John", line: "通知你一下，会议在下午2点。" },
+          { speaker: "Amy", line: "谢谢提醒。" },
+          { speaker: "John", line: "不客气！" }
+        ],
+        culturalNotes: "Common in text and business communication. Neutral tone."
+      },
+      {
+        id: "text-15",
+        word: "GTG",
+        chinese: "我得走了",
+        pinyin: "wǒ děi zǒu le",
+        meaning: "Got to go",
+        example: "GTG, my ride is here.",
+        exampleZh: "我得走了，我的车来了。",
+        whoSaysIt: "Everyone",
+        ageGroup: "All ages",
+        region: "All English-speaking countries",
+        isOffensive: false,
+        offensiveLevel: 0,
+        safeAlternatives: ["Got to go", "I have to leave", "I need to go now"],
+        conversation: [
+          { speaker: "Amy", line: "I have to leave now." },
+          { speaker: "John", line: "GTG, talk later!" },
+          { speaker: "Amy", line: "Bye!" }
+        ],
+        chineseTranslation: [
+          { speaker: "Amy", line: "我得走了。" },
+          { speaker: "John", line: "得走了，待会见！" },
+          { speaker: "Amy", line: "再见！" }
+        ],
+        culturalNotes: "Common in text and chat. Indicates departure."
+      },
+      {
+        id: "text-16",
+        word: "BFF",
+        chinese: "最好的朋友",
+        pinyin: "zuì hǎo de péng yǒu",
+        meaning: "Best friend forever",
+        example: "We've been BFFs since elementary school.",
+        exampleZh: "我们从小学就是最好的朋友了。",
+        whoSaysIt: "Everyone",
+        ageGroup: "Kids-Teens",
+        region: "All English-speaking countries",
+        isOffensive: false,
+        offensiveLevel: 0,
+        safeAlternatives: ["Best friend", "Close friend", "Bestie"],
+        conversation: [
+          { speaker: "Amy", line: "You're my BFF!" },
+          { speaker: "John", line: "Aww, you're mine too!" },
+          { speaker: "Amy", line: "Friends forever!" }
+        ],
+        chineseTranslation: [
+          { speaker: "Amy", line: "你是我最好的朋友！" },
+          { speaker: "John", line: "哇，你也是我的！" },
+          { speaker: "Amy", line: "永远的朋友！" }
+        ],
+        culturalNotes: "Common in text and social media. Expresses close friendship."
+      },
+      {
+        id: "text-17",
+        word: "ROFL",
+        chinese: "笑得在地上打滚",
+        pinyin: "xiào de zài dì shàng dǎ gǔn",
+        meaning: "Rolling on floor laughing",
+        example: "That video had me ROFL.",
+        exampleZh: "那个视频让我笑得在地上打滚。",
+        whoSaysIt: "Everyone",
+        ageGroup: "All ages",
+        region: "All English-speaking countries",
+        isOffensive: false,
+        offensiveLevel: 0,
+        safeAlternatives: ["LOL", "Haha", "That's funny"],
+        conversation: [
+          { speaker: "John", line: "Did you see that cat video?" },
+          { speaker: "Amy", line: "ROFL! That was amazing." },
+          { speaker: "John", line: "I know! So funny." }
+        ],
+        chineseTranslation: [
+          { speaker: "John", line: "你看到那个猫视频了吗？" },
+          { speaker: "Amy", line: "笑得在地上打滚！太棒了。" },
+          { speaker: "John", line: "我知道！太好笑了。" }
+        ],
+        culturalNotes: "Similar to LOL but stronger. Can be used ironically."
+      },
+      {
+        id: "text-18",
+        word: "LMAO",
+        chinese: "笑死我了",
+        pinyin: "xiào sǐ wǒ le",
+        meaning: "Laughing my ass off",
+        example: "LMAO, I can't stop watching that video.",
+        exampleZh: "笑死我了，我忍不住看那个视频。",
+        whoSaysIt: "Everyone",
+        ageGroup: "Teens and above",
+        region: "All English-speaking countries",
+        isOffensive: false,
+        offensiveLevel: 1,
+        safeAlternatives: ["LOL", "Haha", "That's funny", "ROFL"],
+        conversation: [
+          { speaker: "Amy", line: "That meme is so funny." },
+          { speaker: "John", line: "LMAO! I can't breathe." },
+          { speaker: "Amy", line: "Same! It's hilarious." }
+        ],
+        chineseTranslation: [
+          { speaker: "Amy", line: "那个表情包太好笑了。" },
+          { speaker: "John", line: "笑死我了！我喘不过气。" },
+          { speaker: "Amy", line: "一样！太搞笑了。" }
+        ],
+        culturalNotes: "Stronger version of LOL. Contains mild profanity ('ass'). Avoid in formal contexts."
+      },
+      {
+        id: "text-19",
+        word: "STFU",
+        chinese: "闭嘴",
+        pinyin: "bì zuǐ",
+        meaning: "Shut the fuck up",
+        example: "STFU! I'm trying to concentrate.",
+        exampleZh: "闭嘴！我在努力集中注意力。",
+        whoSaysIt: "Angry people",
+        ageGroup: "Teens and above",
+        region: "All English-speaking countries",
+        isOffensive: true,
+        offensiveLevel: 4,
+        safeAlternatives: ["Be quiet", "Stop talking", "Please be quiet"],
+        conversation: [
+          { speaker: "John", line: "STFU! I'm trying to study." },
+          { speaker: "Amy", line: "Sorry, I didn't know." },
+          { speaker: "John", line: "It's okay, just be quiet." }
+        ],
+        chineseTranslation: [
+          { speaker: "John", line: "闭嘴！我在学习。" },
+          { speaker: "Amy", line: "对不起，我不知道。" },
+          { speaker: "John", line: "没关系，只要安静。" }
+        ],
+        culturalNotes: "Very rude and aggressive. Can lead to conflicts. Never use in professional or public settings.",
+        warning: "WARNING: 'STFU' is extremely offensive. It combines a sexual profanity with a command. Using it can end relationships and careers."
+      },
+      {
+        id: "text-20",
+        word: "WTF",
+        chinese: "什么鬼",
+        pinyin: "shén me guǐ",
+        meaning: "What the fuck",
+        example: "WTF? I didn't order that!",
+        exampleZh: "什么鬼？我没点那个！",
+        whoSaysIt: "Everyone when shocked",
+        ageGroup: "Teens and above",
+        region: "All English-speaking countries",
+        isOffensive: true,
+        offensiveLevel: 4,
+        safeAlternatives: ["What the heck", "What on earth", "What happened"],
+        conversation: [
+          { speaker: "Amy", line: "WTF? Where's my food?" },
+          { speaker: "John", line: "I don't know, maybe they forgot." },
+          { speaker: "Amy", line: "This is ridiculous." }
+        ],
+        chineseTranslation: [
+          { speaker: "Amy", line: "什么鬼？我的食物呢？" },
+          { speaker: "John", line: "我不知道，也许他们忘了。" },
+          { speaker: "Amy", line: "这太荒谬了。" }
+        ],
+        culturalNotes: "Extremely vulgar but very common. The minced version 'WTH' is slightly less offensive.",
+        warning: "WARNING: 'WTF' is highly offensive. Avoid in formal settings and with people you don't know well."
+      },
+      {
+        id: "text-21",
+        word: "TL;DR",
+        chinese: "太长不看",
+        pinyin: "tài cháng bù kàn",
+        meaning: "Too long; didn't read",
+        example: "TL;DR: I'm moving to another city.",
+        exampleZh: "太长不看：我要搬到另一个城市了。",
+        whoSaysIt: "Everyone online",
+        ageGroup: "Teens and above",
+        region: "All English-speaking countries",
+        isOffensive: false,
+        offensiveLevel: 0,
+        safeAlternatives: ["Summary", "In short", "Briefly", "Long story short"],
+        conversation: [
+          { speaker: "John", line: "I wrote a long post about my trip." },
+          { speaker: "Amy", line: "TL;DR: Did you have fun?" },
+          { speaker: "John", line: "Haha, yes! It was amazing." }
+        ],
+        chineseTranslation: [
+          { speaker: "John", line: "我写了一个关于我旅行的长帖子。" },
+          { speaker: "Amy", line: "太长不看：你玩得开心吗？" },
+          { speaker: "John", line: "哈哈，是的！太棒了。" }
+        ],
+        culturalNotes: "Essential for online communication. Can be used as a noun or verb."
+      },
+      {
+        id: "text-22",
+        word: "AMA",
+        chinese: "问我任何问题",
+        pinyin: "wèn wǒ rèn hé wèn tí",
+        meaning: "Ask me anything",
+        example: "I just finished a marathon. AMA!",
+        exampleZh: "我刚完成马拉松。问我任何问题！",
+        whoSaysIt: "Everyone on social media",
+        ageGroup: "Teens and above",
+        region: "All English-speaking countries",
+        isOffensive: false,
+        offensiveLevel: 0,
+        safeAlternatives: ["Ask me anything", "Q&A session", "Feel free to ask"],
+        conversation: [
+          { speaker: "John", line: "I'm a doctor. AMA!" },
+          { speaker: "Amy", line: "What's the most common illness you see?" },
+          { speaker: "John", line: "The common cold, surprisingly." }
+        ],
+        chineseTranslation: [
+          { speaker: "John", line: "我是医生。问我任何问题！" },
+          { speaker: "Amy", line: "你最常见的是什么病？" },
+          { speaker: "John", line: " surprisingly，是普通感冒。" }
+        ],
+        culturalNotes: "Popularized by Reddit. Common on social media for Q&A sessions."
+      },
+      {
+        id: "text-23",
+        word: "FOMO",
+        chinese: "错失恐惧症",
+        pinyin: "cuò shī kǒng jù zhèng",
+        meaning: "Fear of missing out",
+        example: "I stayed home but had major FOMO seeing all the party photos.",
+        exampleZh: "我呆在家里但看到所有派对照片后非常错失恐惧。",
+        whoSaysIt: "Everyone, especially young people",
+        ageGroup: "Teens and above",
+        region: "All English-speaking countries",
+        isOffensive: false,
+        offensiveLevel: 0,
+        safeAlternatives: ["I wish I was there", "I don't want to miss out"],
+        conversation: [
+          { speaker: "Amy", line: "I didn't go to the party." },
+          { speaker: "John", line: "FOMO? I saw the photos." },
+          { speaker: "Amy", line: "Yeah, major FOMO." }
+        ],
+        chineseTranslation: [
+          { speaker: "Amy", line: "我没去派对。" },
+          { speaker: "John", line: "错失恐惧？我看到了照片。" },
+          { speaker: "Amy", line: "是的，非常错失恐惧。" }
+        ],
+        culturalNotes: "Became mainstream around 2011-2013. Related to social media and constant connectivity."
+      },
+      {
+        id: "text-24",
+        word: "YOLO",
+        chinese: "你只活一次",
+        pinyin: "nǐ zhǐ huó yī cì",
+        meaning: "You only live once",
+        example: "YOLO! Let's book the trip.",
+        exampleZh: "你只活一次！我们订行程吧。",
+        whoSaysIt: "Everyone, especially young people",
+        ageGroup: "Teens and above",
+        region: "All English-speaking countries",
+        isOffensive: false,
+        offensiveLevel: 0,
+        safeAlternatives: ["Carpe diem", "Live life", "Seize the day"],
+        conversation: [
+          { speaker: "John", line: "Should we book the trip?" },
+          { speaker: "Amy", line: "YOLO! Let's do it!" },
+          { speaker: "John", line: "Okay, I'm booking it now." }
+        ],
+        chineseTranslation: [
+          { speaker: "John", line: "我们应该订行程吗？" },
+          { speaker: "Amy", line: "你只活一次！我们做吧！" },
+          { speaker: "John", line: "好的，我现在订。" }
+        ],
+        culturalNotes: "Popularized by Drake. Encourages seizing the moment."
+      },
+      {
+        id: "text-25",
+        word: "BAE",
+        chinese: "宝贝/亲爱的",
+        pinyin: "bǎo bèi / qīn ài de",
+        meaning: "Before anyone else / romantic partner",
+        example: "Going to dinner with my bae tonight.",
+        exampleZh: "今晚和我亲爱的去吃饭。",
+        whoSaysIt: "Everyone, especially young people",
+        ageGroup: "Teens and above",
+        region: "All English-speaking countries",
+        isOffensive: false,
+        offensiveLevel: 0,
+        safeAlternatives: ["Baby", "Honey", "Sweetheart", "Dear"],
+        conversation: [
+          { speaker: "Amy", line: "Who are you meeting tonight?" },
+          { speaker: "John", line: "My bae! We're going to dinner." },
+          { speaker: "Amy", line: "Have fun!" }
+        ],
+        chineseTranslation: [
+          { speaker: "Amy", line: "你今晚见谁？" },
+          { speaker: "John", line: "我的亲爱的！我们要去吃饭。" },
+          { speaker: "Amy", line: "玩得开心！" }
+        ],
+        culturalNotes: "Term of endearment from social media. Often used for romantic partners."
+      },
+      {
+        id: "text-26",
+        word: "FAM",
+        chinese: "家人/好兄弟",
+        pinyin: "jiā rén / hǎo xiōng dì",
+        meaning: "Family / close friends",
+        example: "Hey fam, long time no see!",
+        exampleZh: "嘿家人，好久不见！",
+        whoSaysIt: "Everyone, especially young people",
+        ageGroup: "Teens and above",
+        region: "All English-speaking countries",
+        isOffensive: false,
+        offensiveLevel: 0,
+        safeAlternatives: ["Friend", "Brother", "Sister", "Close friend"],
+        conversation: [
+          { speaker: "John", line: "What's up, fam?" },
+          { speaker: "Amy", line: "Not much! How are you?" },
+          { speaker: "John", line: "Doing good, thanks!" }
+        ],
+        chineseTranslation: [
+          { speaker: "John", line: "怎么了，家人？" },
+          { speaker: "Amy", line: "没什么！你好吗？" },
+          { speaker: "John", line: "很好，谢谢！" }
+        ],
+        culturalNotes: "From African American Vernacular English. Now widely used across all communities."
+      },
+      {
+        id: "text-27",
+        word: "IRL",
+        chinese: "在现实中",
+        pinyin: "zài xiàn shí zhōng",
+        meaning: "In real life",
+        example: "We've been friends online for years but never met IRL.",
+        exampleZh: "我们网上认识几年了但从没见过面。",
+        whoSaysIt: "Everyone online",
+        ageGroup: "Teens and above",
+        region: "All English-speaking countries",
+        isOffensive: false,
+        offensiveLevel: 0,
+        safeAlternatives: ["In person", "Face to face", "In the real world"],
+        conversation: [
+          { speaker: "Amy", line: "Have you met your online friend?" },
+          { speaker: "John", line: "Not yet, we're planning to meet IRL." },
+          { speaker: "Amy", line: "That's exciting!" }
+        ],
+        chineseTranslation: [
+          { speaker: "Amy", line: "你见过你的网友吗？" },
+          { speaker: "John", line: "还没有，我们计划在现实中见面。" },
+          { speaker: "Amy", line: "那太令人兴奋了！" }
+        ],
+        culturalNotes: "From early internet/gaming culture. Now mainstream."
+      },
+      {
+        id: "text-28",
+        word: "NVM",
+        chinese: "算了",
+        pinyin: "suàn le",
+        meaning: "Never mind",
+        example: "NVM, I found it.",
+        exampleZh: "算了，我找到了。",
+        whoSaysIt: "Everyone",
+        ageGroup: "All ages",
+        region: "All English-speaking countries",
+        isOffensive: false,
+        offensiveLevel: 0,
+        safeAlternatives: ["Never mind", "Forget it", "It doesn't matter"],
+        conversation: [
+          { speaker: "John", line: "NVM, I don't need your help anymore." },
+          { speaker: "Amy", line: "Okay, let me know if you change your mind." },
+          { speaker: "John", line: "Will do." }
+        ],
+        chineseTranslation: [
+          { speaker: "John", line: "算了，我不需要你帮忙了。" },
+          { speaker: "Amy", line: "好的，如果你改变主意告诉我。" },
+          { speaker: "John", line: "好的。" }
+        ],
+        culturalNotes: "Very common in digital communication. Can sometimes sound dismissive."
+      },
+      {
+        id: "text-29",
+        word: "OFC",
+        chinese: "当然",
+        pinyin: "dāng rán",
+        meaning: "Of course",
+        example: "OFC I remember your birthday!",
+        exampleZh: "我当然记得你的生日！",
+        whoSaysIt: "Everyone",
+        ageGroup: "All ages",
+        region: "All English-speaking countries",
+        isOffensive: false,
+        offensiveLevel: 0,
+        safeAlternatives: ["Of course", "Certainly", "Obviously"],
+        conversation: [
+          { speaker: "Amy", line: "Do you remember my birthday?" },
+          { speaker: "John", line: "OFC! It's next month." },
+          { speaker: "Amy", line: "You're the best!" }
+        ],
+        chineseTranslation: [
+          { speaker: "Amy", line: "你记得我的生日吗？" },
+          { speaker: "John", line: "当然！下个月。" },
+          { speaker: "Amy", line: "你最好！" }
+        ],
+        culturalNotes: "Casual but widely understood. Can be used sarcastically."
+      },
+      {
+        id: "text-30",
+        word: "OP",
+        chinese: "楼主",
+        pinyin: "lóu zhǔ",
+        meaning: "Original poster",
+        example: "OP mentioned they've never been to Paris.",
+        exampleZh: "楼主提到他们从未去过巴黎。",
+        whoSaysIt: "Everyone on forums",
+        ageGroup: "Teens and above",
+        region: "All English-speaking countries",
+        isOffensive: false,
+        offensiveLevel: 0,
+        safeAlternatives: ["Original poster", "Thread starter", "The person who posted this"],
+        conversation: [
+          { speaker: "John", line: "OP said they need help." },
+          { speaker: "Amy", line: "I saw that. Let's help them." },
+          { speaker: "John", line: "Good idea." }
+        ],
+        chineseTranslation: [
+          { speaker: "John", line: "楼主说他们需要帮助。" },
+          { speaker: "Amy", line: "我看到了。我们帮帮他们。" },
+          { speaker: "John", line: "好主意。" }
+        ],
+        culturalNotes: "Essential forum terminology. Also used on Reddit and social media."
+      },
+      {
+        id: "text-31",
+        word: "TMI",
+        chinese: "信息过量",
+        pinyin: "xìn xī guò liàng",
+        meaning: "Too much information",
+        example: "TMI! I didn't need to know that.",
+        exampleZh: "信息过量！我不想知道那个。",
+        whoSaysIt: "Everyone",
+        ageGroup: "Teens and above",
+        region: "All English-speaking countries",
+        isOffensive: false,
+        offensiveLevel: 0,
+        safeAlternatives: ["That's too much", "I didn't need to know that"],
+        conversation: [
+          { speaker: "Amy", line: "And then the doctor said..." },
+          { speaker: "John", line: "TMI! Please stop." },
+          { speaker: "Amy", line: "Sorry, I got carried away." }
+        ],
+        chineseTranslation: [
+          { speaker: "Amy", line: "然后医生说..." },
+          { speaker: "John", line: "信息过量！请停下来。" },
+          { speaker: "Amy", line: "对不起，我太投入了。" }
+        ],
+        culturalNotes: "Often used humorously among friends but can be hurtful if serious."
+      },
+      {
+        id: "text-32",
+        word: "WTH",
+        chinese: "搞什么鬼",
+        pinyin: "gǎo shén me guǐ",
+        meaning: "What the hell",
+        example: "WTH? Why is the door locked?",
+        exampleZh: "搞什么鬼？为什么门锁了？",
+        whoSaysIt: "Everyone",
+        ageGroup: "Teens and above",
+        region: "All English-speaking countries",
+        isOffensive: false,
+        offensiveLevel: 1,
+        safeAlternatives: ["What on earth", "What the heck", "What happened"],
+        conversation: [
+          { speaker: "John", line: "WTH? The door is locked." },
+          { speaker: "Amy", line: "Maybe they locked it early." },
+          { speaker: "John", line: "But it's not even 6pm yet." }
+        ],
+        chineseTranslation: [
+          { speaker: "John", line: "搞什么鬼？门锁了。" },
+          { speaker: "Amy", line: "也许他们早锁了。" },
+          { speaker: "John", line: "但还没到6点呢。" }
+        ],
+        culturalNotes: "Milder version of WTF. Still informal but less offensive."
+      },
+      {
+        id: "text-33",
+        word: "WYD",
+        chinese: "你在干嘛",
+        pinyin: "nǐ zài gàn má",
+        meaning: "What you doing",
+        example: "WYD? I'm bored.",
+        exampleZh: "你在干嘛？我很无聊。",
+        whoSaysIt: "Everyone",
+        ageGroup: "Teens and above",
+        region: "All English-speaking countries",
+        isOffensive: false,
+        offensiveLevel: 0,
+        safeAlternatives: ["What are you doing?", "What's up?", "How are you?"],
+        conversation: [
+          { speaker: "Amy", line: "WYD?" },
+          { speaker: "John", line: "Nothing much, just chilling." },
+          { speaker: "Amy", line: "Want to hang out?" }
+        ],
+        chineseTranslation: [
+          { speaker: "Amy", line: "你在干嘛？" },
+          { speaker: "John", line: "没什么，只是放松。" },
+          { speaker: "Amy", line: "想一起玩吗？" }
+        ],
+        culturalNotes: "Very casual greeting in text. Best used with friends."
+      },
+      {
+        id: "text-34",
+        word: "WBY",
+        chinese: "你呢",
+        pinyin: "nǐ ne",
+        meaning: "What about you",
+        example: "I'm good, WBY?",
+        exampleZh: "我很好，你呢？",
+        whoSaysIt: "Everyone",
+        ageGroup: "All ages",
+        region: "All English-speaking countries",
+        isOffensive: false,
+        offensiveLevel: 0,
+        safeAlternatives: ["What about you?", "How about you?", "And you?"],
+        conversation: [
+          { speaker: "John", line: "I'm good, WBY?" },
+          { speaker: "Amy", line: "Same here!" },
+          { speaker: "John", line: "Cool!" }
+        ],
+        chineseTranslation: [
+          { speaker: "John", line: "我很好，你呢？" },
+          { speaker: "Amy", line: "我也是！" },
+          { speaker: "John", line: "酷！" }
+        ],
+        culturalNotes: "Very common in casual conversation and text."
+      },
+      {
+        id: "text-35",
+        word: "HBU",
+        chinese: "你呢",
+        pinyin: "nǐ ne",
+        meaning: "How about you",
+        example: "I'm fine, HBU?",
+        exampleZh: "我很好，你呢？",
+        whoSaysIt: "Everyone",
+        ageGroup: "All ages",
+        region: "All English-speaking countries",
+        isOffensive: false,
+        offensiveLevel: 0,
+        safeAlternatives: ["How about you?", "What about you?", "And you?"],
+        conversation: [
+          { speaker: "Amy", line: "I'm fine, HBU?" },
+          { speaker: "John", line: "Doing good, thanks!" },
+          { speaker: "Amy", line: "Great to hear!" }
+        ],
+        chineseTranslation: [
+          { speaker: "Amy", line: "我很好，你呢？" },
+          { speaker: "John", line: "很好，谢谢！" },
+          { speaker: "Amy", line: "太好了！" }
+        ],
+        culturalNotes: "Less common than WBY but still widely understood."
+      },
+      {
+        id: "text-36",
+        word: "JK",
+        chinese: "开玩笑",
+        pinyin: "kāi wán xiào",
+        meaning: "Just kidding",
+        example: "I ate your fries! — JK, they're still there.",
+        exampleZh: "我吃了你的薯条！——开玩笑，还在呢。",
+        whoSaysIt: "Everyone",
+        ageGroup: "All ages",
+        region: "All English-speaking countries",
+        isOffensive: false,
+        offensiveLevel: 0,
+        safeAlternatives: ["Just kidding", "I'm joking", "I was being sarcastic"],
+        conversation: [
+          { speaker: "John", line: "I ate your fries!" },
+          { speaker: "Amy", line: "JK, they're still there." },
+          { speaker: "John", line: "You scared me!" }
+        ],
+        chineseTranslation: [
+          { speaker: "John", line: "我吃了你的薯条！" },
+          { speaker: "Amy", line: "开玩笑，还在呢。" },
+          { speaker: "John", line: "你吓到我了！" }
+        ],
+        culturalNotes: "Can also be written as J/K. Sometimes overused to backtrack from offensive comments."
+      },
+      {
+        id: "text-37",
+        word: "SMFH",
+        chinese: "摇头",
+        pinyin: "yáo tóu",
+        meaning: "Shaking my fucking head",
+        example: "SMFH, he did it again.",
+        exampleZh: "摇头，他又做了。",
+        whoSaysIt: "Angry people",
+        ageGroup: "Teens and above",
+        region: "All English-speaking countries",
+        isOffensive: true,
+        offensiveLevel: 4,
+        safeAlternatives: ["SMH", "I'm disappointed", "That's unfortunate"],
+        conversation: [
+          { speaker: "Amy", line: "He did it again." },
+          { speaker: "John", line: "SMFH, I can't believe it." },
+          { speaker: "Amy", line: "I know, it's so frustrating." }
+        ],
+        chineseTranslation: [
+          { speaker: "Amy", line: "他又做了。" },
+          { speaker: "John", line: "摇头，我无法相信。" },
+          { speaker: "Amy", line: "我知道，太令人沮丧了。" }
+        ],
+        culturalNotes: "Stronger version of SMH. Contains profanity. Avoid in most contexts.",
+        warning: "WARNING: 'SMFH' contains profanity. It is very offensive. Use 'SMH' instead."
+      },
+      {
+        id: "text-38",
+        word: "TFW",
+        chinese: "那种感觉",
+        pinyin: "nà zhǒng gǎn jué",
+        meaning: "That feel when",
+        example: "TFW you realize it's Monday tomorrow.",
+        exampleZh: "那种感觉当你意识到明天是周一。",
+        whoSaysIt: "Everyone on social media",
+        ageGroup: "Teens and above",
+        region: "All English-speaking countries",
+        isOffensive: false,
+        offensiveLevel: 0,
+        safeAlternatives: ["When you...", "That moment when", "The feeling when"],
+        conversation: [
+          { speaker: "John", line: "TFW you realize it's Monday tomorrow." },
+          { speaker: "Amy", line: "No! I'm not ready." },
+          { speaker: "John", line: "Weekends go too fast." }
+        ],
+        chineseTranslation: [
+          { speaker: "John", line: "那种感觉当你意识到明天是周一。" },
+          { speaker: "Amy", line: "不！我还没准备好。" },
+          { speaker: "John", line: "周末过得太快了。" }
+        ],
+        culturalNotes: "Essential meme format. Often used with images or GIFs."
+      },
+      {
+        id: "text-39",
+        word: "YW",
+        chinese: "不客气",
+        pinyin: "bú kè qì",
+        meaning: "You're welcome",
+        example: "Thanks for the help! — YW!",
+        exampleZh: "谢谢帮忙！——不客气！",
+        whoSaysIt: "Everyone",
+        ageGroup: "All ages",
+        region: "All English-speaking countries",
+        isOffensive: false,
+        offensiveLevel: 0,
+        safeAlternatives: ["You're welcome", "No problem", "No worries"],
+        conversation: [
+          { speaker: "Amy", line: "Thanks for the help!" },
+          { speaker: "John", line: "YW!" },
+          { speaker: "Amy", line: "You're a lifesaver!" }
+        ],
+        chineseTranslation: [
+          { speaker: "Amy", line: "谢谢帮忙！" },
+          { speaker: "John", line: "不客气！" },
+          { speaker: "Amy", line: "你救了我一命！" }
+        ],
+        culturalNotes: "Casual but polite. Widely acceptable in most contexts."
+      },
+      {
+        id: "text-40",
+        word: "TY",
+        chinese: "谢谢",
+        pinyin: "xiè xiè",
+        meaning: "Thank you",
+        example: "TY for the ride!",
+        exampleZh: "谢谢载我！",
+        whoSaysIt: "Everyone",
+        ageGroup: "All ages",
+        region: "All English-speaking countries",
+        isOffensive: false,
+        offensiveLevel: 0,
+        safeAlternatives: ["Thank you", "Thanks", "I appreciate it"],
+        conversation: [
+          { speaker: "John", line: "TY for the help!" },
+          { speaker: "Amy", line: "YW!" },
+          { speaker: "John", line: "Have a good one!" }
+        ],
+        chineseTranslation: [
+          { speaker: "John", line: "谢谢帮忙！" },
+          { speaker: "Amy", line: "不客气！" },
+          { speaker: "John", line: "祝你愉快！" }
+        ],
+        culturalNotes: "Very casual. Best used with friends or in informal contexts."
+      },
+      {
+        id: "text-41",
+        word: "G2G",
+        chinese: "得走了",
+        pinyin: "děi zǒu le",
+        meaning: "Got to go",
+        example: "G2G, my mom is calling.",
+        exampleZh: "得走了，我妈妈在叫我。",
+        whoSaysIt: "Everyone",
+        ageGroup: "All ages",
+        region: "All English-speaking countries",
+        isOffensive: false,
+        offensiveLevel: 0,
+        safeAlternatives: ["Got to go", "I have to leave", "I need to go now"],
+        conversation: [
+          { speaker: "Amy", line: "I have to leave now." },
+          { speaker: "John", line: "G2G, talk later!" },
+          { speaker: "Amy", line: "Bye!" }
+        ],
+        chineseTranslation: [
+          { speaker: "Amy", line: "我得走了。" },
+          { speaker: "John", line: "得走了，待会见！" },
+          { speaker: "Amy", line: "再见！" }
+        ],
+        culturalNotes: "Similar to GTG. Common in text and chat."
+      },
+      {
+        id: "text-42",
+        word: "CU",
+        chinese: "再见",
+        pinyin: "zài jiàn",
+        meaning: "See you",
+        example: "CU tomorrow!",
+        exampleZh: "明天见！",
+        whoSaysIt: "Everyone",
+        ageGroup: "All ages",
+        region: "All English-speaking countries",
+        isOffensive: false,
+        offensiveLevel: 0,
+        safeAlternatives: ["See you", "See you later", "Goodbye", "Bye"],
+        conversation: [
+          { speaker: "John", line: "CU tomorrow!" },
+          { speaker: "Amy", line: "See you then!" },
+          { speaker: "John", line: "Bye!" }
+        ],
+        chineseTranslation: [
+          { speaker: "John", line: "明天见！" },
+          { speaker: "Amy", line: "到时候见！" },
+          { speaker: "John", line: "再见！" }
+        ],
+        culturalNotes: "Very casual goodbye. From early text messaging culture."
+      },
+      {
+        id: "text-43",
+        word: "GN",
+        chinese: "晚安",
+        pinyin: "wǎn ān",
+        meaning: "Good night",
+        example: "GN! Talk to you tomorrow.",
+        exampleZh: "晚安！明天聊。",
+        whoSaysIt: "Everyone",
+        ageGroup: "All ages",
+        region: "All English-speaking countries",
+        isOffensive: false,
+        offensiveLevel: 0,
+        safeAlternatives: ["Good night", "Goodnight", "Sleep well"],
+        conversation: [
+          { speaker: "Amy", line: "I'm going to bed." },
+          { speaker: "John", line: "GN! Sleep well." },
+          { speaker: "Amy", line: "Thanks! Night!" }
+        ],
+        chineseTranslation: [
+          { speaker: "Amy", line: "我去睡觉了。" },
+          { speaker: "John", line: "晚安！睡个好觉。" },
+          { speaker: "Amy", line: "谢谢！晚安！" }
+        ],
+        culturalNotes: "Very common in digital communication before bed."
+      },
+      {
+        id: "text-44",
+        word: "GB",
+        chinese: "再见",
+        pinyin: "zài jiàn",
+        meaning: "Goodbye",
+        example: "GB! Have a safe trip.",
+        exampleZh: "再见！旅途平安。",
+        whoSaysIt: "Everyone",
+        ageGroup: "All ages",
+        region: "All English-speaking countries",
+        isOffensive: false,
+        offensiveLevel: 0,
+        safeAlternatives: ["Goodbye", "Bye", "See you", "Take care"],
+        conversation: [
+          { speaker: "John", line: "GB! Have a safe trip." },
+          { speaker: "Amy", line: "Thanks! Bye!" },
+          { speaker: "John", line: "See you soon!" }
+        ],
+        chineseTranslation: [
+          { speaker: "John", line: "再见！旅途平安。" },
+          { speaker: "Amy", line: "谢谢！再见！" },
+          { speaker: "John", line: "很快见！" }
+        ],
+        culturalNotes: "Casual but polite. Widely understood."
+      },
+      {
+        id: "text-45",
+        word: "HMU",
+        chinese: "联系我",
+        pinyin: "lián xì wǒ",
+        meaning: "Hit me up",
+        example: "HMU when you're free!",
+        exampleZh: "你有空联系我！",
+        whoSaysIt: "Everyone",
+        ageGroup: "Teens and above",
+        region: "All English-speaking countries",
+        isOffensive: false,
+        offensiveLevel: 0,
+        safeAlternatives: ["Contact me", "Message me", "Call me", "Reach out"],
+        conversation: [
+          { speaker: "Amy", line: "HMU when you're free!" },
+          { speaker: "John", line: "Will do! Same here." },
+          { speaker: "Amy", line: "Cool, talk soon!" }
+        ],
+        chineseTranslation: [
+          { speaker: "Amy", line: "你有空联系我！" },
+          { speaker: "John", line: "好的！我也是。" },
+          { speaker: "Amy", line: "酷，待会见！" }
+        ],
+        culturalNotes: "Very casual. Best used with friends or people you know well."
+      },
+      {
+        id: "text-46",
+        word: "K",
+        chinese: "好的",
+        pinyin: "hǎo de",
+        meaning: "Okay",
+        example: "See you at 5. — K.",
+        exampleZh: "5点见。——好的。",
+        whoSaysIt: "Everyone",
+        ageGroup: "All ages",
+        region: "All English-speaking countries",
+        isOffensive: false,
+        offensiveLevel: 0,
+        safeAlternatives: ["Okay", "Sure", "Sounds good", "Got it"],
+        conversation: [
+          { speaker: "John", line: "See you at 5." },
+          { speaker: "Amy", line: "K." },
+          { speaker: "John", line: "Cool." }
+        ],
+        chineseTranslation: [
+          { speaker: "John", line: "5点见。" },
+          { speaker: "Amy", line: "好的。" },
+          { speaker: "John", line: "酷。" }
+        ],
+        culturalNotes: "Single 'K' can seem rude or dismissive. 'KK' or 'Okay' is friendlier."
+      },
+      {
+        id: "text-47",
+        word: "KK",
+        chinese: "好的",
+        pinyin: "hǎo de",
+        meaning: "Okay (friendlier)",
+        example: "I'll be there at 7. — KK!",
+        exampleZh: "我7点到。——好的！",
+        whoSaysIt: "Everyone",
+        ageGroup: "All ages",
+        region: "All English-speaking countries",
+        isOffensive: false,
+        offensiveLevel: 0,
+        safeAlternatives: ["Okay", "Sure", "Sounds good", "Got it"],
+        conversation: [
+          { speaker: "Amy", line: "I'll be there at 7." },
+          { speaker: "John", line: "KK!" },
+          { speaker: "Amy", line: "See you then!" }
+        ],
+        chineseTranslation: [
+          { speaker: "Amy", line: "我7点到。" },
+          { speaker: "John", line: "好的！" },
+          { speaker: "Amy", line: "到时候见！" }
+        ],
+        culturalNotes: "Warmer than single 'K'. Common in online chat and gaming."
+      },
+      {
+        id: "text-48",
+        word: "RN",
+        chinese: "现在",
+        pinyin: "xiàn zài",
+        meaning: "Right now",
+        example: "I'm so hungry RN!",
+        exampleZh: "我现在好饿！",
+        whoSaysIt: "Everyone",
+        ageGroup: "Teens and above",
+        region: "All English-speaking countries",
+        isOffensive: false,
+        offensiveLevel: 0,
+        safeAlternatives: ["Right now", "Currently", "At the moment", "Now"],
+        conversation: [
+          { speaker: "John", line: "I'm so hungry RN!" },
+          { speaker: "Amy", line: "Let's get food then." },
+          { speaker: "John", line: "Yes, please!" }
+        ],
+        chineseTranslation: [
+          { speaker: "John", line: "我现在好饿！" },
+          { speaker: "Amy", line: "那我们吃点东西吧。" },
+          { speaker: "John", line: "好的，请！" }
+        ],
+        culturalNotes: "Very common in social media captions and text. From 'right now.'"
+      },
+      {
+        id: "text-49",
+        word: "IMO",
+        chinese: "在我看来",
+        pinyin: "zài wǒ kàn lái",
+        meaning: "In my opinion",
+        example: "IMO, the movie was overrated.",
+        exampleZh: "在我看来，这部电影被高估了。",
+        whoSaysIt: "Everyone",
+        ageGroup: "Teens and above",
+        region: "All English-speaking countries",
+        isOffensive: false,
+        offensiveLevel: 0,
+        safeAlternatives: ["In my opinion", "I think", "I believe", "From my perspective"],
+        conversation: [
+          { speaker: "Amy", line: "What did you think of the movie?" },
+          { speaker: "John", line: "IMO, it was overrated." },
+          { speaker: "Amy", line: "I agree, it wasn't that great." }
+        ],
+        chineseTranslation: [
+          { speaker: "Amy", line: "你觉得电影怎么样？" },
+          { speaker: "John", line: "在我看来，它被高估了。" },
+          { speaker: "Amy", line: "我同意，没那么好。" }
+        ],
+        culturalNotes: "Essential for online discussions. Often used before controversial opinions."
+      },
+      {
+        id: "text-50",
+        word: "ICYMI",
+        chinese: "你可能错过了",
+        pinyin: "nǐ kě néng cuò guò le",
+        meaning: "In case you missed it",
+        example: "ICYMI, the concert was last night.",
+        exampleZh: "你可能错过了，演唱会昨晚举行了。",
+        whoSaysIt: "Everyone on social media",
+        ageGroup: "Teens and above",
+        region: "All English-speaking countries",
+        isOffensive: false,
+        offensiveLevel: 0,
+        safeAlternatives: ["In case you missed it", "Just in case", "For your awareness"],
+        conversation: [
+          { speaker: "John", line: "ICYMI, the concert was last night." },
+          { speaker: "Amy", line: "I missed it! Was it good?" },
+          { speaker: "John", line: "It was amazing!" }
+        ],
+        chineseTranslation: [
+          { speaker: "John", line: "你可能错过了，演唱会昨晚举行了。" },
+          { speaker: "Amy", line: "我错过了！好看吗？" },
+          { speaker: "John", line: "太棒了！" }
+        ],
+        culturalNotes: "Popular on Twitter and news aggregators. Helps catch up on trending topics."
+      }
+    ]
   }
 ];
-
-export default slangAcademy;

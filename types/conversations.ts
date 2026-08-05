@@ -278,7 +278,7 @@ export interface ConversationTopic {
   lessonSections?: LessonSection[];
 }
 
-export type SlangLevel = "safe" | "internet" | "street" | "rough";
+export type SlangLevel = "safe" | "internet" | "street" | "rough" | "text-speak";
 
 export interface SlangItem {
   id: string;
