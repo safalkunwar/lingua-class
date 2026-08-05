@@ -100,6 +100,43 @@ export interface SlangLesson {
   quiz: QuizQuestion[];
 }
 
+export type SlangLevel = "safe" | "internet" | "street" | "rough" | "text-speak";
+
+export interface SlangLevelData {
+  level: SlangLevel;
+  title: string;
+  description: string;
+  emoji: string;
+  color: string;
+  items: SlangItem[];
+}
+
+export interface SlangItem {
+  id: string;
+  word: string;
+  chinese: string;
+  pinyin: string;
+  meaning: string;
+  example: string;
+  exampleZh: string;
+  whoSaysIt: string;
+  ageGroup: string;
+  region: string;
+  isOffensive: boolean;
+  offensiveLevel: number;
+  safeAlternatives: string[];
+  conversation: {
+    speaker: string;
+    line: string;
+  }[];
+  chineseTranslation: {
+    speaker: string;
+    line: string;
+  }[];
+  culturalNotes: string;
+  warning?: string;
+}
+
 export interface SlangModule {
   id: string;
   title: string;
@@ -109,4 +146,5 @@ export interface SlangModule {
   safetyDisclaimer: string;
   safetyDisclaimerZh: string;
   lessons: SlangLesson[];
+  levels?: SlangLevelData[];
 }

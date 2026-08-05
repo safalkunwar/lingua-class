@@ -1,4 +1,5 @@
 import { SlangModule } from "@/types/slang-module";
+import { slangAcademy } from "./slang-academy";
 
 export const slangModule: SlangModule = {
   id: "real-english-slang",
@@ -2835,6 +2836,7 @@ export const slangModule: SlangModule = {
       ],
     },
   ],
+  levels: slangAcademy,
 };
 
 export default slangModule;

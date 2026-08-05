@@ -1,39 +1,4 @@
-export type SlangLevel = "safe" | "internet" | "street" | "rough" | "text-speak";
-
-export interface SlangItem {
-  id: string;
-  word: string;
-  chinese: string;
-  pinyin: string;
-  meaning: string;
-  example: string;
-  exampleZh: string;
-  whoSaysIt: string;
-  ageGroup: string;
-  region: string;
-  isOffensive: boolean;
-  offensiveLevel: number;
-  safeAlternatives: string[];
-  conversation: {
-    speaker: string;
-    line: string;
-  }[];
-  chineseTranslation: {
-    speaker: string;
-    line: string;
-  }[];
-  culturalNotes: string;
-  warning?: string;
-}
-
-export interface SlangLevelData {
-  level: SlangLevel;
-  title: string;
-  description: string;
-  emoji: string;
-  color: string;
-  items: SlangItem[];
-}
+import { SlangLevel, SlangItem, SlangLevelData } from "@/types/slang-module";
 
 export const slangAcademy: SlangLevelData[] = [
   {

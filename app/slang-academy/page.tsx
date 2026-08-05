@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { StudentSidebar } from "@/components/layout/sidebar";
-import { slangAcademy } from "@/data/slang-academy";
+import { slangModule } from "@/data/slang-module";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -12,16 +12,17 @@ import { AlertTriangle, Volume2 } from "lucide-react";
 import { SlangLevelData, SlangItem } from "@/types/conversations";
 import { useSpeechSynthesis } from "@/hooks/use-speech-synthesis";
 
-type LevelFilter = "all" | "safe" | "internet" | "street" | "rough";
+type LevelFilter = "all" | "safe" | "internet" | "street" | "rough" | "text-speak";
 
 export default function SlangAcademyPage() {
   const [filter, setFilter] = useState<LevelFilter>("all");
   const [selectedItem, setSelectedItem] = useState<{ level: SlangLevelData; item: SlangItem } | null>(null);
   const { speakEnglish, speakChinese } = useSpeechSynthesis();
 
+  const levels = slangModule.levels || [];
   const filtered = filter === "all"
-    ? slangAcademy
-    : slangAcademy.filter((l) => l.level === filter);
+    ? levels
+    : levels.filter((l) => l.level === filter);
 
   const getOffensiveBadge = (level: number) => {
     if (level === 0) return <Badge className="bg-green-100 text-green-800 border-green-200">Safe</Badge>;
@@ -63,6 +64,7 @@ export default function SlangAcademyPage() {
             { key: "internet", label: "Internet", emoji: "📱" },
             { key: "street", label: "Street", emoji: "🏙️" },
             { key: "rough", label: "Rough", emoji: "⚠️" },
+            { key: "text-speak", label: "Text Speak", emoji: "📱" },
           ].map((level) => (
             <Button
               key={level.key}

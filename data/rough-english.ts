@@ -1,4 +1,4 @@
-import { SlangItem } from "./slang-academy";
+import { SlangItem } from "@/types/slang-module";
 
 export const roughEnglish: SlangItem[] = [
   {
