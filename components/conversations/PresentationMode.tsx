@@ -137,6 +137,33 @@ export function PresentationMode({
       {/* Main Presentation Area */}
       <div className="flex-1 overflow-y-auto">
         <div className="max-w-5xl mx-auto px-4 sm:px-8 py-8 sm:py-12">
+          {/* Completion Screen */}
+          {currentLineIndex >= topic.conversation.length - 1 && (
+            <div className="max-w-4xl mx-auto px-4 sm:px-8 py-12 text-center">
+              <div className="text-6xl mb-4">🎉</div>
+              <h2 className="text-3xl sm:text-4xl font-bold mb-4">Lesson Complete!</h2>
+              <p className="text-lg text-muted-foreground mb-8">
+                Great job! You've completed this conversation.
+              </p>
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <Button
+                  variant="outline"
+                  size="lg"
+                  onClick={onPrevLine}
+                >
+                  Review Again
+                </Button>
+                <Button
+                  variant="default"
+                  size="lg"
+                  onClick={onClose}
+                >
+                  Return to Dashboard
+                </Button>
+              </div>
+            </div>
+          )}
+
           {/* Topic Header */}
           <div className="text-center mb-8 sm:mb-12">
             <span className="text-4xl sm:text-5xl block mb-3">{topic.emoji}</span>
@@ -303,33 +330,6 @@ export function PresentationMode({
           </div>
         </div>
       </div>
-
-      {/* Completion Screen */}
-      {currentLineIndex >= topic.conversation.length - 1 && (
-        <div className="max-w-4xl mx-auto px-4 sm:px-8 py-12 text-center">
-          <div className="text-6xl mb-4">🎉</div>
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4">Lesson Complete!</h2>
-          <p className="text-lg text-muted-foreground mb-8">
-            Great job! You've completed this conversation.
-          </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button
-              variant="outline"
-              size="lg"
-              onClick={onPrevLine}
-            >
-              Review Again
-            </Button>
-            <Button
-              variant="default"
-              size="lg"
-              onClick={onClose}
-            >
-              Return to Dashboard
-            </Button>
-          </div>
-        </div>
-      )}
 
       {/* Footer Controls */}
       {showControls && (

@@ -48,7 +48,10 @@
 - Added click-anywhere-to-advance in PresentationMode
 - Added completion screen when reaching end of conversation
 - Improved keyboard accessibility in PresentationMode
+- Resolved TypeScript errors in conversations components and speech hook
 
 **Pending Work:**
-- Resolve remaining TypeScript errors in conversations components
-- Consider replacing <img> with next/image for better optimization
+- Responsive layout/overflow cleanup across conversation pages
+- Chinese audio voice detection and caching improvements
+- End-screen enhancements (vocabulary learned, grammar points, mastery estimate)
+- Performance/lazy-loading passes

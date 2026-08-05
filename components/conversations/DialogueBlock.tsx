@@ -103,14 +103,14 @@ export function DialogueBlock({
         </div>
 
         {/* English Text */}
-        <p className="text-lg sm:text-xl leading-relaxed text-foreground mb-3">
+        <p className="text-lg sm:text-xl leading-relaxed text-foreground mb-3 break-words">
           {line.line}
         </p>
 
         {/* Chinese Translation */}
         {showChinese && chineseText && (
           <div className="mb-4 p-3 rounded-xl bg-muted/30 border border-dashed border-muted-foreground/20">
-            <p className="text-base sm:text-lg leading-relaxed text-muted-foreground">
+            <p className="text-base sm:text-lg leading-relaxed text-muted-foreground break-words">
               {chineseText}
             </p>
           </div>

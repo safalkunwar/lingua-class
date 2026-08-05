@@ -129,7 +129,7 @@ export default function ConversationDetailPage({ params }: { params: Promise<{ i
     <div className="flex min-h-screen">
       <StudentSidebar />
 
-      <main className="flex-1 min-w-0">
+      <main className="flex-1 min-w-0 pb-14">
         {/* Top Navigation Bar */}
         <div className="sticky top-0 z-30 bg-background/95 backdrop-blur border-b">
           <div className="flex items-center justify-between px-4 sm:px-6 py-3">
