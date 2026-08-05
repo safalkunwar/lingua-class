@@ -3,7 +3,7 @@
 import { useEffect, useState, useCallback } from "react";
 import { Button } from "@/components/ui/button";
 import { ConversationTopic, ChineseLine } from "@/types/conversations";
-import { X, ChevronLeft, ChevronRight, Eye, EyeOff, Volume2, Maximize, Minimize } from "lucide-react";
+import { X, ChevronLeft, ChevronRight, Eye, EyeOff, Volume2, Maximize, Minimize, BookOpen, Lightbulb, Trophy } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 interface PresentationModeProps {
@@ -138,31 +138,56 @@ export function PresentationMode({
       <div className="flex-1 overflow-y-auto">
         <div className="max-w-5xl mx-auto px-4 sm:px-8 py-8 sm:py-12">
           {/* Completion Screen */}
-          {currentLineIndex >= topic.conversation.length - 1 && (
-            <div className="max-w-4xl mx-auto px-4 sm:px-8 py-12 text-center">
-              <div className="text-6xl mb-4">🎉</div>
-              <h2 className="text-3xl sm:text-4xl font-bold mb-4">Lesson Complete!</h2>
-              <p className="text-lg text-muted-foreground mb-8">
-                Great job! You've completed this conversation.
-              </p>
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <Button
-                  variant="outline"
-                  size="lg"
-                  onClick={onPrevLine}
-                >
-                  Review Again
-                </Button>
-                <Button
-                  variant="default"
-                  size="lg"
-                  onClick={onClose}
-                >
-                  Return to Dashboard
-                </Button>
+          {currentLineIndex >= topic.conversation.length - 1 && (() => {
+            const vocabWords = (topic.vocabulary?.length || 0) + (topic.vocabularySection?.words?.length || 0) + (topic.dailyExpressions?.items?.length || 0) + (topic.nativeChunks?.length || 0);
+            const grammarPoints = (topic.grammarFocus?.length || 0) + (topic.grammarInContext?.length || 0);
+            const mastery = Math.min(100, Math.round(((currentLineIndex + 1) / topic.conversation.length) * 100) + (vocabWords > 0 ? 5 : 0) + (grammarPoints > 0 ? 5 : 0));
+
+            return (
+              <div className="max-w-4xl mx-auto px-4 sm:px-8 py-12 text-center">
+                <div className="text-6xl mb-4">🎉</div>
+                <h2 className="text-3xl sm:text-4xl font-bold mb-4">Lesson Complete!</h2>
+                <p className="text-lg text-muted-foreground mb-8">
+                  Great job! You've completed this conversation.
+                </p>
+
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8 max-w-2xl mx-auto">
+                  <div className="p-4 rounded-xl border bg-card">
+                    <BookOpen className="w-6 h-6 mx-auto mb-2 text-primary" />
+                    <div className="text-2xl font-bold">{vocabWords}</div>
+                    <div className="text-xs text-muted-foreground">Vocabulary Learned</div>
+                  </div>
+                  <div className="p-4 rounded-xl border bg-card">
+                    <Lightbulb className="w-6 h-6 mx-auto mb-2 text-amber-500" />
+                    <div className="text-2xl font-bold">{grammarPoints}</div>
+                    <div className="text-xs text-muted-foreground">Grammar Points</div>
+                  </div>
+                  <div className="p-4 rounded-xl border bg-card">
+                    <Trophy className="w-6 h-6 mx-auto mb-2 text-orange-500" />
+                    <div className="text-2xl font-bold">{mastery}%</div>
+                    <div className="text-xs text-muted-foreground">Mastery Estimate</div>
+                  </div>
+                </div>
+
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+                  <Button
+                    variant="outline"
+                    size="lg"
+                    onClick={onPrevLine}
+                  >
+                    Review Again
+                  </Button>
+                  <Button
+                    variant="default"
+                    size="lg"
+                    onClick={onClose}
+                  >
+                    Return to Dashboard
+                  </Button>
+                </div>
               </div>
-            </div>
-          )}
+            );
+          })()}
 
           {/* Topic Header */}
           <div className="text-center mb-8 sm:mb-12">
