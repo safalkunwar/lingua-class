@@ -40,6 +40,15 @@
 - `data/rough-english.ts` now imports `SlangItem` from `@/types/slang-module`
 - Single source of truth for all slang content in `data/slang-module.ts`
 
+**Conversation Module Improvements:**
+- Fixed missing Chinese translations in DialogueBubble component
+- Added `topicId` and `chineseLine` props to DialogueBubble
+- Added Next/Previous conversation navigation buttons at bottom of conversation page
+- Added progress bar to PresentationMode
+- Added click-anywhere-to-advance in PresentationMode
+- Added completion screen when reaching end of conversation
+- Improved keyboard accessibility in PresentationMode
+
 **Pending Work:**
 - Resolve remaining TypeScript errors in conversations components
 - Consider replacing <img> with next/image for better optimization
