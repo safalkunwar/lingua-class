@@ -1,5 +1,5 @@
 # lingua-class
-
+here's the link enjoy the view : https://safalkunwar-lingua-class-five.vercel.app/
 A modern language learning application built with Next.js and TypeScript. lingua-class provides interactive lessons, flashcards, speech-based exercises, and classroom features to help learners practice reading, listening, speaking, and writing.
 
 > NOTE: This README was generated and improved automatically — please review and customize any project-specific details (license, demo links, env variables, or scripts) as needed.
