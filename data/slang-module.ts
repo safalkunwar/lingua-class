@@ -1654,6 +1654,10 @@ export const slangModule: SlangModule = {
           exampleEn: "Deadass? You're going to travel the world?",
           exampleZh: "说真的？你要去环游世界？",
           category: "street-slang",
+          intensityNote: "Level 2/5: Mildly intense. Can be seen as aggressive if used with the wrong tone. Best with close friends.",
+          usageContext: "Casual conversations, asking for confirmation, expressing seriousness. Common among teens and young adults.",
+          formality: "casual",
+          audioAvailable: true
         },
         {
           id: "bussin",
@@ -1694,6 +1698,10 @@ export const slangModule: SlangModule = {
           exampleEn: "This mac and cheese is bussin'!",
           exampleZh: "这通心粉和奶酪好吃到爆！",
           category: "street-slang",
+          intensityNote: "Level 1/5: Not offensive. Positive and enthusiastic. Originated in AAVE but now widely used.",
+          usageContext: "Talking about food, music, or experiences with friends. Very casual and enthusiastic.",
+          formality: "casual",
+          audioAvailable: true
         },
         {
           id: "flex",
@@ -1735,6 +1743,10 @@ export const slangModule: SlangModule = {
           exampleEn: "He's just flexing his new watch.",
           exampleZh: "他只是在炫耀他的新手表。",
           category: "street-slang",
+          intensityNote: "Level 1/5: Not offensive. Can be playful or critical depending on context.",
+          usageContext: "Casual conversation, social media, describing someone showing off possessions or achievements.",
+          formality: "casual",
+          audioAvailable: true
         },
         {
           id: "mad",
@@ -1775,6 +1787,10 @@ export const slangModule: SlangModule = {
           exampleEn: "That concert was mad fun!",
           exampleZh: "那场演唱会超级好玩！",
           category: "street-slang",
+          intensityNote: "Level 1/5: Not offensive. Very common intensifier in casual speech, especially among younger speakers.",
+          usageContext: "Casual conversation, social media, texting. Used as an intensifier meaning 'very' or 'extremely'.",
+          formality: "casual",
+          audioAvailable: true
         },
         {
           id: "on-god",
@@ -1816,6 +1832,10 @@ export const slangModule: SlangModule = {
           exampleEn: "On god, I'm not lying. I saw it with my own eyes.",
           exampleZh: "真的，我没撒谎。我亲眼看到的。",
           category: "street-slang",
+          intensityNote: "Level 2/5: Mildly intense. Avoid in religious contexts where it may be seen as blasphemous. Common among young people.",
+          usageContext: "Casual conversations, emphasizing truthfulness, among friends. Very common in Gen Z speech.",
+          formality: "casual",
+          audioAvailable: true
         },
       ],
       dialogues: [
