@@ -1,0 +1,1661 @@
+import { EverydayEnglishSection } from "@/types/everyday-english";
+
+export const everydayEnglishSections: EverydayEnglishSection[] = [
+  {
+    id: "numbers-quantity",
+    title: "Numbers & Quantity",
+    titleZh: "数字与数量",
+    emoji: "🔢",
+    description: "Master the difference between a few, few, many, much, and other quantity expressions native speakers use daily.",
+    descriptionZh: "掌握 a few、few、many、much 等数量表达的区别，这些都是母语者日常使用的。",
+    difficulty: "beginner",
+    patterns: [
+      {
+        id: "nq-a-few",
+        term: "a few",
+        chinese: "几个；一些",
+        pinyin: "jǐ gè / yī xiē",
+        meaning: "A small number of something, but enough. Has a positive connotation.",
+        category: "numbers-quantity",
+        difficulty: "A1",
+        examples: [
+          { en: "I have a few questions.", zh: "我有几个问题。" },
+          { en: "She brought a few friends.", zh: "她带了几位朋友来。" },
+          { en: "There are a few options available.", zh: "有几个可选的方案。" }
+        ],
+        commonMistakes: [
+          { mistake: "I have few questions. (when you mean 'some')", correction: "Use 'a few' for a positive small number." },
+          { mistake: "I have a few questions... actually, I have none.", correction: "'A few' implies you have some." }
+        ],
+        relatedTerms: ["few", "a couple of", "several"],
+        register: "neutral",
+        audioAvailable: true
+      },
+      {
+        id: "nq-few",
+        term: "few",
+        chinese: "很少；几乎没有",
+        pinyin: "hěn shǎo / jī hū méi yǒu",
+        meaning: "Not many. Has a negative connotation — emphasizes the small number.",
+        category: "numbers-quantity",
+        difficulty: "A2",
+        examples: [
+          { en: "Few people attended the meeting.", zh: "几乎没几个人来开会。" },
+          { en: "She has few friends in this city.", zh: "她在这个城市几乎没有朋友。" },
+          { en: "Few opportunities came his way.", zh: "他几乎没有遇到什么机会。" }
+        ],
+        commonMistakes: [
+          { mistake: "Few people came to my party. (when you had many)", correction: "Use 'a few' if some people came." },
+          { mistake: "I have few money.", correction: "Use 'little' with uncountable nouns like money." }
+        ],
+        relatedTerms: ["a few", "little", "a little"],
+        register: "neutral",
+        audioAvailable: true
+      },
+      {
+        id: "nq-many",
+        term: "many",
+        chinese: "许多（修饰可数名词）",
+        pinyin: "xǔ duō",
+        meaning: "A large number of countable things. Usually used in questions and negatives, or with 'too/so/as'.",
+        category: "numbers-quantity",
+        difficulty: "A1",
+        examples: [
+          { en: "How many books do you have?", zh: "你有多少本书？" },
+          { en: "I don't have many options.", zh: "我没有太多选择。" },
+          { en: "Too many people are here.", zh: "这里人太多了。" }
+        ],
+        commonMistakes: [
+          { mistake: "I have many books. (in positive statements)", correction: "Use 'a lot of' or 'lots of' in positive statements." },
+          { mistake: "How much books?", correction: "Use 'many' with countable nouns like books." }
+        ],
+        relatedTerms: ["much", "a lot of", "lots of"],
+        register: "neutral",
+        audioAvailable: true
+      },
+      {
+        id: "nq-much",
+        term: "much",
+        chinese: "许多（修饰不可数名词）",
+        pinyin: "xǔ duō",
+        meaning: "A large amount of uncountable things. Used in questions and negatives.",
+        category: "numbers-quantity",
+        difficulty: "A1",
+        examples: [
+          { en: "How much water do you need?", zh: "你需要多少水？" },
+          { en: "I don't have much time.", zh: "我没有太多时间。" },
+          { en: "There isn't much sugar left.", zh: "没剩下多少糖了。" }
+        ],
+        commonMistakes: [
+          { mistake: "How much books?", correction: "Use 'many' for countable nouns." },
+          { mistake: "I have much money. (positive statement)", correction: "Use 'a lot of' or 'lots of' in positive statements." }
+        ],
+        relatedTerms: ["many", "a lot of", "lots of"],
+        register: "neutral",
+        audioAvailable: true
+      },
+      {
+        id: "nq-a-lot-of",
+        term: "a lot of / lots of",
+        chinese: "许多；大量",
+        pinyin: "xǔ duō",
+        meaning: "A large number or amount. Used in positive, negative, and question statements. Informal.",
+        category: "numbers-quantity",
+        difficulty: "A1",
+        examples: [
+          { en: "I have a lot of work to do.", zh: "我有很多工作要做。" },
+          { en: "Lots of people came to the party.", zh: "很多人来参加了派对。" },
+          { en: "Do you have a lot of friends?", zh: "你有很多朋友吗？" }
+        ],
+        commonMistakes: [
+          { mistake: "I have many work to do.", correction: "Use 'a lot of' with both countable and uncountable nouns." }
+        ],
+        relatedTerms: ["many", "much", "plenty of", "loads of"],
+        register: "casual",
+        audioAvailable: true
+      },
+      {
+        id: "nq-plenty-of",
+        term: "plenty of",
+        chinese: "充足；大量",
+        pinyin: "chōng zú / dà liàng",
+        meaning: "Enough or more than enough. More confident and positive than 'a lot of'.",
+        category: "numbers-quantity",
+        difficulty: "B1",
+        examples: [
+          { en: "There's plenty of food for everyone.", zh: "有足够的食物给大家。" },
+          { en: "We have plenty of time.", zh: "我们时间充足。" },
+          { en: "Plenty of opportunities exist here.", zh: "这里有很多机会。" }
+        ],
+        commonMistakes: [
+          { mistake: "Using 'plenty of' in very formal writing", correction: "In formal writing, use 'numerous' or 'a substantial number of'." }
+        ],
+        relatedTerms: ["a lot of", "lots of", "loads of"],
+        register: "neutral",
+        audioAvailable: true
+      },
+      {
+        id: "nq-dozens-of",
+        term: "dozens of",
+        chinese: "几十； dozens of",
+        pinyin: "jǐ shí",
+        meaning: "More than two dozen (24) of something. Used for large but vague quantities.",
+        category: "numbers-quantity",
+        difficulty: "B1",
+        examples: [
+          { en: "Dozens of people attended the concert.", zh: "几十人参加了音乐会。" },
+          { en: "I've told you dozens of times.", zh: "我已经告诉过你几十次了。" },
+          { en: "Dozens of options are available.", zh: "有几十个选项可选。" }
+        ],
+        commonMistakes: [
+          { mistake: "I have dozens of money.", correction: "Use 'dozens of' only with countable plural nouns." }
+        ],
+        relatedTerms: ["hundreds of", "thousands of", "millions of"],
+        register: "neutral",
+        audioAvailable: true
+      }
+    ],
+    exercises: [
+      {
+        id: "nq-ex-1",
+        type: "fill-blank",
+        question: "I have ___ questions. (a few / few)",
+        questionZh: "我有___问题。",
+        options: ["a few", "few"],
+        correctAnswer: "a few",
+        hint: "'A few' has a positive meaning — you have some questions.",
+        hintZh: "'A few' 是积极含义——你有一些问题。"
+      },
+      {
+        id: "nq-ex-2",
+        type: "error-correction",
+        question: "Correct the mistake: 'I have many work to do.'",
+        questionZh: "改正错误：'I have many work to do.'",
+        options: ["I have a lot of work to do.", "I have much work to do.", "I have many works to do."],
+        correctAnswer: "I have a lot of work to do.",
+        hint: "Use 'a lot of' with uncountable nouns in positive statements.",
+        hintZh: "在肯定句中使用 'a lot of' 修饰不可数名词。"
+      },
+      {
+        id: "nq-ex-3",
+        type: "translation",
+        question: "Translate: 我几乎没有时间去那里。",
+        questionZh: "翻译：我几乎没有时间去那里。",
+        options: ["I have few time to go there.", "I have little time to go there.", "I have a little time to go there."],
+        correctAnswer: "I have little time to go there.",
+        hint: "'Time' is uncountable. Use 'little' for negative meaning.",
+        hintZh: "'Time' 是不可数名词。用 'little' 表示否定含义。"
+      }
+    ],
+    teacherPanel: {
+      simpleExplanation: "The difference between 'a few' and 'few' is like the difference between 'some' and 'almost none'. The 'a' changes everything.",
+      chineseExplanation: "'A few' 和 'few' 的区别就像 'some' 和 'almost none' 的区别。那个 'a' 改变了整句话的含义。",
+      learnerDifficulty: "Chinese learners often confuse these because Chinese doesn't have this exact distinction. They translate both as '一些'.",
+      teachingTip: "Use a visual: show 3 apples. 'A few apples' = I have some (positive). 'Few apples' = I don't have many (negative). Draw a smiley face vs sad face.",
+      drills: [
+        "Teacher: 'A few?' Student: 'Some, positive.'",
+        "Teacher: 'Few?' Student: 'Not many, negative.'",
+        "Teacher: 'Many people came.' Student: 'A lot of people came.'",
+        "Teacher: 'How many?' Student: 'Question, countable.'",
+        "Teacher: 'How much?' Student: 'Question, uncountable.'"
+      ]
+    }
+  },
+  {
+    id: "multipliers",
+    title: "Single / Double / Triple / Quadruple",
+    titleZh: "单倍、双倍、三倍、四倍",
+    emoji: "✖️",
+    description: "Learn how to express multiplication and multiples in natural English.",
+    descriptionZh: "学习如何用自然英语表达倍数和乘法。",
+    difficulty: "intermediate",
+    patterns: [
+      {
+        id: "mlt-double",
+        term: "double",
+        chinese: "双倍；两倍",
+        pinyin: "shuāng bèi",
+        meaning: "Two times as much or as many. Can be a verb, adjective, or noun.",
+        category: "multipliers",
+        difficulty: "A2",
+        examples: [
+          { en: "I ordered a double espresso.", zh: "我点了一杯双份浓缩咖啡。" },
+          { en: "The price doubled in five years.", zh: "价格在五年内翻了一番。" },
+          { en: "She paid double the price.", zh: "她付了双倍的价格。" }
+        ],
+        commonMistakes: [
+          { mistake: "I want a doubles coffee.", correction: "Use 'double' as an adjective: 'a double espresso'." },
+          { mistake: "It's two times more expensive.", correction: "Use 'twice as expensive' or 'double the price'." }
+        ],
+        relatedTerms: ["twice", "twofold", "two times"],
+        register: "neutral",
+        audioAvailable: true
+      },
+      {
+        id: "mlt-triple",
+        term: "triple",
+        chinese: "三倍",
+        pinyin: "sān bèi",
+        meaning: "Three times as much or as many.",
+        category: "multipliers",
+        difficulty: "B1",
+        examples: [
+          { en: "The company saw triple growth.", zh: "公司实现了三倍增长。" },
+          { en: "My phone battery lasts triple the time.", zh: "我的手机电池续航是三倍。" },
+          { en: "Triple the amount of sugar was added.", zh: "添加了 triple 量的糖。" }
+        ],
+        commonMistakes: [
+          { mistake: "It's three times more.", correction: "Use 'triple' or 'three times as much' in formal contexts." }
+        ],
+        relatedTerms: ["three times", "threefold"],
+        register: "neutral",
+        audioAvailable: true
+      },
+      {
+        id: "mlt-quadruple",
+        term: "quadruple",
+        chinese: "四倍",
+        pinyin: "sì bèi",
+        meaning: "Four times as much or as many. Common in business and academic writing.",
+        category: "multipliers",
+        difficulty: "B2",
+        examples: [
+          { en: "Sales increased fourfold.", zh: "销售额增长了四倍。" },
+          { en: "The number of users quadrupled.", zh: "用户数量翻了两翻（变为四倍）。" }
+        ],
+        commonMistakes: [
+          { mistake: "It's four times more.", correction: "Both are okay, but 'quadruple' is more precise." }
+        ],
+        relatedTerms: ["four times", "fourfold"],
+        register: "formal",
+        audioAvailable: true
+      },
+      {
+        id: "mlt-thrice",
+        term: "thrice",
+        chinese: "三次（正式/古语）",
+        pinyin: "sān cì",
+        meaning: "Three times. Grammatically correct but uncommon in modern everyday conversation.",
+        category: "multipliers",
+        difficulty: "C1",
+        examples: [
+          { en: "I've asked you thrice.", zh: "我已经问过你三次了。" },
+          { en: "He knocked thrice before entering.", zh: "他敲了三下门才进去。" }
+        ],
+        commonMistakes: [
+          { mistake: "Using 'thrice' in casual conversation", correction: "Use 'three times' instead. 'Thrice' sounds formal or old-fashioned." }
+        ],
+        relatedTerms: ["three times", "triple"],
+        register: "formal",
+        audioAvailable: true
+      }
+    ],
+    exercises: [
+      {
+        id: "mlt-ex-1",
+        type: "fill-blank",
+        question: "The price ___ in one year. (double / twice)",
+        questionZh: "价格在一年内___。",
+        options: ["doubled", "twiced"],
+        correctAnswer: "doubled",
+        hint: "'Double' can be a verb meaning 'to become two times'.",
+        hintZh: "'Double' 可以作为动词，表示 '变成两倍'。"
+      },
+      {
+        id: "mlt-ex-2",
+        type: "error-correction",
+        question: "Correct: 'This room is two times larger than mine.'",
+        questionZh: "改正：'This room is two times larger than mine.'",
+        options: ["This room is twice as large as mine.", "This room is two times larger than mine.", "This room is double larger than mine."],
+        correctAnswer: "This room is twice as large as mine.",
+        hint: "Use 'twice as + adjective + as' for comparisons.",
+        hintZh: "用 'twice as + 形容词 + as' 表示比较。"
+      },
+      {
+        id: "mlt-ex-3",
+        type: "translation",
+        question: "Translate: 我的工资是三倍他的工资。",
+        questionZh: "翻译：我的工资是三倍他的工资。",
+        options: ["I earn triple his salary.", "I earn three times his salary.", "I earn thrice his salary."],
+        correctAnswer: "I earn triple his salary.",
+        hint: "Both 'triple' and 'three times' work, but 'triple' is more concise.",
+        hintZh: "'Triple' 和 'three times' 都可以，但 'triple' 更简洁。"
+      }
+    ],
+    teacherPanel: {
+      simpleExplanation: "'Double' means 2x, 'triple' means 3x, 'quadruple' means 4x. These are precise. 'Twice' means 2 times, and is more conversational.",
+      chineseExplanation: "'Double' 表示 2 倍，'triple' 表示 3 倍，'quadruple' 表示 4 倍。这些很精确。'Twice' 表示 2 次，更口语化。",
+      learnerDifficulty: "Chinese learners say 'two times' instead of 'twice' and 'three times' instead of 'thrice' (which is actually rare). They also confuse 'double' as noun vs adjective.",
+      teachingTip: "Create a chart: 2x = double/twice/two times, 3x = triple/three times, 4x = quadruple/four times. Drill: show a picture, student says all three forms.",
+      drills: [
+        "Teacher: 'Double?' Student: 'Two times / 2x'",
+        "Teacher: 'Triple?' Student: 'Three times / 3x'",
+        "Teacher: 'Quadruple?' Student: 'Four times / 4x'",
+        "Teacher: 'Show 2x with your fingers.' Student: [shows 2] 'Double / twice.'",
+        "Teacher: 'Show 3x with your fingers.' Student: [shows 3] 'Triple / three times.'"
+      ]
+    }
+  },
+  {
+    id: "frequency",
+    title: "Once / Twice / Three Times",
+    titleZh: "一次、两次、三次",
+    emoji: "🔁",
+    description: "Master frequency expressions native speakers use every day.",
+    descriptionZh: "掌握母语者每天使用的频率表达。",
+    difficulty: "beginner",
+    patterns: [
+      {
+        id: "frq-once",
+        term: "once",
+        chinese: "一次",
+        pinyin: "yī cì",
+        meaning: "One time. The standard way to say 'one time' for frequency.",
+        category: "frequency",
+        difficulty: "A1",
+        examples: [
+          { en: "I've been there once.", zh: "我去过那里一次。" },
+          { en: "I met him once at a conference.", zh: "我在一次会议上见过他。" }
+        ],
+        commonMistakes: [
+          { mistake: "I went there one time. (when meaning frequency)", correction: "Use 'once' for frequency. 'One time' is used for storytelling." }
+        ],
+        relatedTerms: ["twice", "three times", "thrice"],
+        register: "neutral",
+        audioAvailable: true
+      },
+      {
+        id: "frq-twice",
+        term: "twice",
+        chinese: "两次",
+        pinyin: "liǎng cì",
+        meaning: "Two times. The standard and most natural way to express 'two times'.",
+        category: "frequency",
+        difficulty: "A1",
+        examples: [
+          { en: "I've called him twice.", zh: "我给他打过两次电话。" },
+          { en: "I've seen that movie twice.", zh: "那部电影我看过两次。" }
+        ],
+        commonMistakes: [
+          { mistake: "I called him two times.", correction: "'Twice' is more natural and common." }
+        ],
+        relatedTerms: ["once", "three times", "double"],
+        register: "neutral",
+        audioAvailable: true
+      },
+      {
+        id: "frq-several-times",
+        term: "several times",
+        chinese: "几次；好几回",
+        pinyin: "jǐ cì",
+        meaning: "More than two but not many times.",
+        category: "frequency",
+        difficulty: "A2",
+        examples: [
+          { en: "I've been there several times.", zh: "我去过那里好几次。" },
+          { en: "She called me several times yesterday.", zh: "她昨天给我打了好几次电话。" }
+        ],
+        commonMistakes: [
+          { mistake: "I went there several time.", correction: "Use plural 'times' after 'several'." }
+        ],
+        relatedTerms: ["many times", "countless times"],
+        register: "neutral",
+        audioAvailable: true
+      },
+      {
+        id: "frq-countless",
+        term: "countless times",
+        chinese: "无数次",
+        pinyin: "wú shù cì",
+        meaning: "So many times that it's impossible to count.",
+        category: "frequency",
+        difficulty: "B1",
+        examples: [
+          { en: "I've told you countless times.", zh: "我已经告诉过你无数次了。" },
+          { en: "We've met countless times.", zh: "我们见过无数次面。" }
+        ],
+        commonMistakes: [
+          { mistake: "I told you uncountable times.", correction: "Use 'countless', not 'uncountable'." }
+        ],
+        relatedTerms: ["many times", "several times"],
+        register: "neutral",
+        audioAvailable: true
+      }
+    ],
+    exercises: [
+      {
+        id: "frq-ex-1",
+        type: "fill-blank",
+        question: "I've been there ___. (once / one time)",
+        questionZh: "我去过那里___。",
+        options: ["once", "one time"],
+        correctAnswer: "once",
+        hint: "'Once' is the standard frequency expression for 'one time'.",
+        hintZh: "'Once' 是表示 '一次' 的标准频率表达。"
+      },
+      {
+        id: "frq-ex-2",
+        type: "error-correction",
+        question: "Correct: 'I called him two times yesterday.'",
+        questionZh: "改正：'I called him two times yesterday.'",
+        options: ["I called him twice yesterday.", "I called him two times yesterday.", "I called him twicely yesterday."],
+        correctAnswer: "I called him twice yesterday.",
+        hint: "'Twice' is the natural way to say 'two times'.",
+        hintZh: "'Twice' 是表达 '两次' 最自然的方式。"
+      },
+      {
+        id: "frq-ex-3",
+        type: "translation",
+        question: "Translate: 我已经告诉过你三次了。",
+        questionZh: "翻译：我已经告诉过你三次了。",
+        options: ["I've told you three times.", "I've told you thrice.", "I've told you three time."],
+        correctAnswer: "I've told you three times.",
+        hint: "'Three times' is the most natural. 'Thrice' is correct but rare in speech.",
+        hintZh: "'Three times' 最自然。'Thrice' 正确但很少用于口语。"
+      }
+    ],
+    teacherPanel: {
+      simpleExplanation: "'Once' = 1x, 'twice' = 2x, 'three times' = 3x. After 3, we say 'four times', 'five times', etc. 'Thrice' exists but sounds old-fashioned.",
+      chineseExplanation: "'Once' = 1 次，'twice' = 2 次，'three times' = 3 次。3 以后我们说 'four times'、'five times' 等。'Thrice' 存在但听起来过时。",
+      learnerDifficulty: "Chinese learners say 'one time' instead of 'once', and 'two times' instead of 'twice'. They also overuse 'thrice' thinking it's common.",
+      teachingTip: "Drill rhythmically: tap once, say 'once'; tap twice, say 'twice'. Then speed up. Make it physical.",
+      drills: [
+        "Teacher: 'One time?' Student: 'Once.'",
+        "Teacher: 'Two times?' Student: 'Twice.'",
+        "Teacher: 'Three times?' Student: 'Three times.'",
+        "Teacher: 'Four times?' Student: 'Four times.'",
+        "Teacher: 'How many times did you watch it?' Student: 'Once / Twice / Three times...'"
+      ]
+    }
+  },
+  {
+    id: "time-dates",
+    title: "Time & Dates",
+    titleZh: "时间与日期",
+    emoji: "📅",
+    description: "Learn English time expressions from seconds to millennia, plus how to say dates naturally.",
+    descriptionZh: "学习从秒到千年的英语时间表达，以及如何自然地表达日期。",
+    difficulty: "beginner",
+    patterns: [
+      {
+        id: "td-second",
+        term: "second / minute / hour",
+        chinese: "秒 / 分钟 / 小时",
+        pinyin: "miǎo / fēn zhōng / xiǎo shí",
+        meaning: "Basic units of time. 'Second' is the smallest common unit.",
+        category: "time-dates",
+        difficulty: "A1",
+        examples: [
+          { en: "Wait a second.", zh: "等一下。" },
+          { en: "It takes five minutes.", zh: "这需要五分钟。" },
+          { en: "The meeting lasts one hour.", zh: "会议持续一小时。" }
+        ],
+        commonMistakes: [
+          { mistake: "Wait a second, please. (in very formal contexts)", correction: "Use 'one moment please' in formal settings." }
+        ],
+        relatedTerms: ["day", "week", "month"],
+        register: "neutral",
+        audioAvailable: true
+      },
+      {
+        id: "td-fortnight",
+        term: "fortnight",
+        chinese: "两周；十四天",
+        pinyin: "liǎng zhōu",
+        meaning: "A period of two weeks. Common in British English.",
+        category: "time-dates",
+        difficulty: "B1",
+        examples: [
+          { en: "I'll be back in a fortnight.", zh: "我两周后回来。" },
+          { en: "She finished the project in a fortnight.", zh: "她在两周内完成了项目。" }
+        ],
+        commonMistakes: [
+          { mistake: "Using 'fortnight' in American English", correction: "Americans usually say 'two weeks' instead." }
+        ],
+        relatedTerms: ["week", "two weeks"],
+        register: "neutral",
+        audioAvailable: true
+      },
+      {
+        id: "td-decade",
+        term: "decade / century / millennium",
+        chinese: "十年 / 世纪 / 千年",
+        pinyin: "shí nián / shì jì / qiān nián",
+        meaning: "Larger units of time. A decade = 10 years, a century = 100 years, a millennium = 1000 years.",
+        category: "time-dates",
+        difficulty: "B1",
+        examples: [
+          { en: "The 1990s was a great decade.", zh: "1990年代是一个很好的十年。" },
+          { en: "This century has seen huge changes.", zh: "这个世纪发生了巨大变化。" },
+          { en: "The millennium was celebrated in 2000.", zh: "千禧年在2000年庆祝。" }
+        ],
+        commonMistakes: [
+          { mistake: "A decade means 100 years.", correction: "A decade = 10 years. A century = 100 years." }
+        ],
+        relatedTerms: ["year", "age", "era"],
+        register: "neutral",
+        audioAvailable: true
+      }
+    ],
+    exercises: [
+      {
+        id: "td-ex-1",
+        type: "fill-blank",
+        question: "A ___ is two weeks. (fortnight / month)",
+        questionZh: "___ 是两周。",
+        options: ["fortnight", "month"],
+        correctAnswer: "fortnight",
+        hint: "'Fortnight' comes from Old English 'fourteen nights'.",
+        hintZh: "'Fortnight' 来自古英语 '十四夜'。"
+      },
+      {
+        id: "td-ex-2",
+        type: "fill-blank",
+        question: "A ___ is 10 years. (decade / century)",
+        questionZh: "___ 是10年。",
+        options: ["decade", "century"],
+        correctAnswer: "decade",
+        hint: "Deca = 10 in Greek.",
+        hintZh: "Deca = 希腊语中的 10。"
+      },
+      {
+        id: "td-ex-3",
+        type: "translation",
+        question: "Translate: 我两周后回来。",
+        questionZh: "翻译：我两周后回来。",
+        options: ["I'll be back in a fortnight.", "I'll be back in a month.", "I'll be back in a decade."],
+        correctAnswer: "I'll be back in a fortnight.",
+        hint: "Use 'fortnight' for two weeks.",
+        hintZh: "用 'fortnight' 表示两周。"
+      }
+    ],
+    teacherPanel: {
+      simpleExplanation: "Time words are organized in a hierarchy: second → minute → hour → day → week → month → year → decade → century → millennium.",
+      chineseExplanation: "时间词有层次：秒 → 分钟 → 小时 → 天 → 周 → 月 → 年 → 十年 → 世纪 → 千年。",
+      learnerDifficulty: "Chinese learners often confuse 'fortnight' and 'century'. They also struggle with 'in a fortnight' vs 'after a fortnight'.",
+      teachingTip: "Draw a timeline on the board from seconds to millennium. Ask students to place words. Then drill with 'How long?' questions.",
+      drills: [
+        "Teacher: 'Two weeks?' Student: 'A fortnight.'",
+        "Teacher: '10 years?' Student: 'A decade.'",
+        "Teacher: '100 years?' Student: 'A century.'",
+        "Teacher: '1000 years?' Student: 'A millennium.'",
+        "Teacher: 'Shortest unit?' Student: 'Second.'"
+      ]
+    }
+  },
+  {
+    id: "scheduling",
+    title: "Scheduling",
+    titleZh: "日程与频率",
+    emoji: "📆",
+    description: "Learn daily, weekly, monthly, quarterly, and other time schedule expressions.",
+    descriptionZh: "学习每日、每周、每月、每季度等时间表表达。",
+    difficulty: "intermediate",
+    patterns: [
+      {
+        id: "sch-daily",
+        term: "daily / weekly / monthly",
+        chinese: "每日的 / 每周的 / 每月的",
+        pinyin: "měi rì / měi zhōu / měi yuè",
+        meaning: "Happening every day/week/month.",
+        category: "scheduling",
+        difficulty: "A2",
+        examples: [
+          { en: "I check my email daily.", zh: "我每天查邮件。" },
+          { en: "We have a weekly meeting.", zh: "我们每周开一次会。" },
+          { en: "The report is generated monthly.", zh: "报告每月生成一次。" }
+        ],
+        commonMistakes: [
+          { mistake: "I go there every daily.", correction: "Use 'every day' or 'daily', not 'every daily'." }
+        ],
+        relatedTerms: ["quarterly", "yearly", "annually"],
+        register: "neutral",
+        audioAvailable: true
+      },
+      {
+        id: "sch-quarterly",
+        term: "quarterly",
+        chinese: "每季度；每三个月",
+        pinyin: "měi jì dù",
+        meaning: "Every three months. Common in business and finance.",
+        category: "scheduling",
+        difficulty: "B1",
+        examples: [
+          { en: "We have quarterly meetings.", zh: "我们每季度开一次会。" },
+          { en: "The report is published quarterly.", zh: "报告每季度发布一次。" }
+        ],
+        commonMistakes: [
+          { mistake: "Quarterly = every 3 months. Some think it means 4 times a month.", correction: "Quarterly = every 3 months (4 times per year)." }
+        ],
+        relatedTerms: ["monthly", "annually", "yearly"],
+        register: "formal",
+        audioAvailable: true
+      },
+      {
+        id: "sch-biweekly",
+        term: "biweekly / bimonthly",
+        chinese: "每两周的 / 每月的（易混淆）",
+        pinyin: "měi liǎng zhōu de / měi yuè de",
+        meaning: "AMBIGUOUS: can mean 'every two weeks' or 'twice a week'. Avoid in formal contexts.",
+        category: "scheduling",
+        difficulty: "B2",
+        examples: [
+          { en: "The magazine is published biweekly. (could mean every 2 weeks OR twice a week)", zh: "杂志每两周出版一次。（也可能表示每周两次）" },
+          { en: "I get paid bimonthly. (usually means every 2 months)", zh: "我每两个月领一次工资。" }
+        ],
+        commonMistakes: [
+          { mistake: "Using 'biweekly' when precision matters", correction: "Say 'every two weeks' or 'twice a week' to avoid confusion." }
+        ],
+        relatedTerms: ["semiweekly", "bimonthly", "biannual"],
+        register: "neutral",
+        audioAvailable: true
+      },
+      {
+        id: "sch-every-other",
+        term: "every other day / week",
+        chinese: "每隔一天 / 每隔一周",
+        pinyin: "měi gé yī tiān / měi gé yī zhōu",
+        meaning: "On alternate days or weeks. Day 1, skip day 2, day 3, skip day 4, etc.",
+        category: "scheduling",
+        difficulty: "B1",
+        examples: [
+          { en: "I go to the gym every other day.", zh: "我每隔一天去一次健身房。" },
+          { en: "We have meetings every other week.", zh: "我们每隔一周开一次会。" }
+        ],
+        commonMistakes: [
+          { mistake: "I go every two days. (this means the same, but 'every other day' is more natural)", correction: "Both are correct. 'Every other day' is more conversational." }
+        ],
+        relatedTerms: ["alternate days", "every two days"],
+        register: "neutral",
+        audioAvailable: true
+      }
+    ],
+    exercises: [
+      {
+        id: "sch-ex-1",
+        type: "fill-blank",
+        question: "We have ___ meetings. (quarterly / weekly)",
+        questionZh: "我们___开会。",
+        options: ["quarterly", "weekly"],
+        correctAnswer: "quarterly",
+        hint: "'Quarterly' means every three months.",
+        hintZh: "'Quarterly' 表示每三个月。"
+      },
+      {
+        id: "sch-ex-2",
+        type: "error-correction",
+        question: "Correct: 'I get paid biweekly. (I mean every two weeks)'",
+        questionZh: "改正：'I get paid biweekly. (我意思是每两周)'",
+        options: ["I get paid every two weeks.", "I get paid biweekly.", "I get paid twice a month."],
+        correctAnswer: "I get paid every two weeks.",
+        hint: "Use 'every two weeks' instead of the ambiguous 'biweekly'.",
+        hintZh: "用 'every two weeks' 代替有歧义的 'biweekly'。"
+      },
+      {
+        id: "sch-ex-3",
+        type: "translation",
+        question: "Translate: 我每隔一天去一次健身房。",
+        questionZh: "翻译：我每隔一天去一次健身房。",
+        options: ["I go to the gym every other day.", "I go to the gym every two days.", "I go to the gym every day."],
+        correctAnswer: "I go to the gym every other day.",
+        hint: "'Every other day' = skip one day in between.",
+        hintZh: "'Every other day' = 中间跳过一天。"
+      }
+    ],
+    teacherPanel: {
+      simpleExplanation: "'Daily' = every day, 'weekly' = every week, 'monthly' = every month, 'quarterly' = every 3 months, 'yearly' = every year.",
+      chineseExplanation: "'Daily' = 每天，'weekly' = 每周，'monthly' = 每月，'quarterly' = 每 3 个月，'yearly' = 每年。",
+      learnerDifficulty: "Chinese learners confuse 'quarterly' with 'every 3 months'. They also struggle with 'every other day' vs 'every two days'.",
+      teachingTip: "Use a calendar. Color every other day. Ask: 'What do we call this pattern?' Then drill with personal schedules.",
+      drills: [
+        "Teacher: 'Every day?' Student: 'Daily.'",
+        "Teacher: 'Every week?' Student: 'Weekly.'",
+        "Teacher: 'Every 3 months?' Student: 'Quarterly.'",
+        "Teacher: 'Every other day?' Student: 'Alternate days.'",
+        "Teacher: 'How often do you shower?' Student: 'Daily / Every other day...'"
+      ]
+    }
+  },
+  {
+    id: "approximation",
+    title: "Approximation",
+    titleZh: "约数表达",
+    emoji: "〰️",
+    description: "Learn how native speakers express approximate numbers and quantities naturally.",
+    descriptionZh: "学习母语者如何自然地表达约数和数量。",
+    difficulty: "intermediate",
+    patterns: [
+      {
+        id: "app-about",
+        term: "about / around / roughly",
+        chinese: "大约；大概",
+        pinyin: "dà yuē",
+        meaning: "Approximately. 'About' is most common, 'around' is casual, 'roughly' is more precise.",
+        category: "approximation",
+        difficulty: "A2",
+        examples: [
+          { en: "It costs about $50.", zh: "这大约要50美元。" },
+          { en: "There were roughly 200 people.", zh: "大约有200人。" },
+          { en: "It takes around 10 minutes.", zh: "大约需要10分钟。" }
+        ],
+        commonMistakes: [
+          { mistake: "I'll be there in about 10 minutes. (in very formal writing)", correction: "Use 'approximately' or 'approximately 10 minutes' in formal writing." }
+        ],
+        relatedTerms: ["approximately", "nearly", "almost"],
+        register: "neutral",
+        audioAvailable: true
+      },
+      {
+        id: "app-or-so",
+        term: "... or so",
+        chinese: "...左右",
+        pinyin: "... zuǒ yòu",
+        meaning: "Approximately. Added after a number or time expression.",
+        category: "approximation",
+        difficulty: "B1",
+        examples: [
+          { en: "It costs $50 or so.", zh: "大概需要50美元左右。" },
+          { en: "I'll be there in an hour or so.", zh: "我一小时左右到。" },
+          { en: "There were 20 people or so.", zh: "有20人左右。" }
+        ],
+        commonMistakes: [
+          { mistake: "It costs or so $50.", correction: "Put the number first: '$50 or so'." }
+        ],
+        relatedTerms: ["about", "around", "roughly"],
+        register: "casual",
+        audioAvailable: true
+      },
+      {
+        id: "app-give-or-take",
+        term: "give or take",
+        chinese: "上下浮动；左右",
+        pinyin: "shàng xià fú dòng",
+        meaning: "Approximately, allowing for a small margin of error.",
+        category: "approximation",
+        difficulty: "B2",
+        examples: [
+          { en: "It takes 2 hours, give or take.", zh: "大约需要2小时，上下浮动。" },
+          { en: "The price is $100, give or take $10.", zh: "价格大约100美元，上下10美元。" }
+        ],
+        commonMistakes: [
+          { mistake: "It costs give or take $50.", correction: "State the number first, then 'give or take'." }
+        ],
+        relatedTerms: ["about", "around", "or so"],
+        register: "neutral",
+        audioAvailable: true
+      }
+    ],
+    exercises: [
+      {
+        id: "app-ex-1",
+        type: "fill-blank",
+        question: "I'll be there in ___ 10 minutes. (about / exact)",
+        questionZh: "我大约___10分钟后到。",
+        options: ["about", "exactly"],
+        correctAnswer: "about",
+        hint: "Use 'about' for approximation.",
+        hintZh: "用 'about' 表示约数。"
+      },
+      {
+        id: "app-ex-2",
+        type: "error-correction",
+        question: "Correct: 'It costs or so $50.'",
+        questionZh: "改正：'It costs or so $50.'",
+        options: ["It costs $50 or so.", "It costs or so $50.", "It costs about or so $50."],
+        correctAnswer: "It costs $50 or so.",
+        hint: "Put the number before 'or so'.",
+        hintZh: "把数字放在 'or so' 前面。"
+      },
+      {
+        id: "app-ex-3",
+        type: "translation",
+        question: "Translate: 这大约需要2小时，上下浮动。",
+        questionZh: "翻译：这大约需要2小时，上下浮动。",
+        options: ["It takes 2 hours, give or take.", "It takes give or take 2 hours.", "It takes about 2 hours."],
+        correctAnswer: "It takes 2 hours, give or take.",
+        hint: "'Give or take' comes after the number.",
+        hintZh: "'Give or take' 放在数字后面。"
+      }
+    ],
+    teacherPanel: {
+      simpleExplanation: "When you don't know the exact number, use 'about', 'around', 'roughly', or 'or so'. For more precision, use 'give or take'.",
+      chineseExplanation: "当你不确定确切数字时，用 'about'、'around'、'roughly' 或 'or so'。需要更精确时，用 'give or take'。",
+      learnerDifficulty: "Chinese learners often use 'about' with uncountable nouns incorrectly, or forget to put the number before 'or so'.",
+      teachingTip: "Play a guessing game: 'How many people are in this room?' Students guess. Then reveal the real number. Drill 'about', 'around', 'roughly'.",
+      drills: [
+        "Teacher: 'About 50?' Student: 'Roughly 50.'",
+        "Teacher: 'Around 100?' Student: 'About 100.'",
+        "Teacher: '$50 or so?' Student: 'Around $50.'",
+        "Teacher: 'Give or take 10?' Student: 'Approximately 10.'",
+        "Teacher: 'How much?' Student: 'About / Around / Roughly...'"
+      ]
+    }
+  },
+  {
+    id: "measurements",
+    title: "Measurements",
+    titleZh: "量词与度量",
+    emoji: "📏",
+    description: "Learn English measure words: a cup of, a piece of, a pair of, and more.",
+    descriptionZh: "学习英语量词：a cup of、a piece of、a pair of 等。",
+    difficulty: "intermediate",
+    patterns: [
+      {
+        id: "msr-piece-of",
+        term: "a piece of",
+        chinese: "一片/一块/一则（用于不可数名词）",
+        pinyin: "yī piàn / yī kuài",
+        meaning: "Used with uncountable nouns to make them countable. One of the most common measure phrases.",
+        category: "measurements",
+        difficulty: "A2",
+        examples: [
+          { en: "a piece of advice", zh: "一条建议" },
+          { en: "a piece of paper", zh: "一张纸" },
+          { en: "a piece of information", zh: "一条信息" }
+        ],
+        commonMistakes: [
+          { mistake: "an advice", correction: "Advice is uncountable. Use 'a piece of advice'." },
+          { mistake: "two pieces of advices", correction: "Use 'two pieces of advice' (no 's' on advice)." }
+        ],
+        relatedTerms: ["a slice of", "a bit of", "a little"],
+        register: "neutral",
+        audioAvailable: true
+      },
+      {
+        id: "msr-pair-of",
+        term: "a pair of",
+        chinese: "一双；一对",
+        pinyin: "yī shuāng / yī duì",
+        meaning: "Two items that go together. The verb can be singular or plural.",
+        category: "measurements",
+        difficulty: "A2",
+        examples: [
+          { en: "a pair of shoes", zh: "一双鞋" },
+          { en: "a pair of glasses", zh: "一副眼镜" },
+          { en: "a pair of scissors", zh: "一把剪刀" }
+        ],
+        commonMistakes: [
+          { mistake: "a pair of shoe", correction: "Use plural: 'a pair of shoes'." },
+          { mistake: "The pair of shoes is new. (British: OK, American: also OK)", correction: "Both singular and plural verbs work with 'pair'." }
+        ],
+        relatedTerms: ["a set of", "a couple of"],
+        register: "neutral",
+        audioAvailable: true
+      },
+      {
+        id: "msr-cup-glass",
+        term: "a cup of / a glass of",
+        chinese: "一杯（液体）",
+        pinyin: "yī bēi",
+        meaning: "A cup (usually with a handle) or a glass (without a handle) of a drink.",
+        category: "measurements",
+        difficulty: "A1",
+        examples: [
+          { en: "a cup of coffee", zh: "一杯咖啡" },
+          { en: "a glass of water", zh: "一杯水" },
+          { en: "a glass of milk", zh: "一杯牛奶" }
+        ],
+        commonMistakes: [
+          { mistake: "a coffee", correction: "'A coffee' is okay in cafes, but 'a cup of coffee' is more precise." }
+        ],
+        relatedTerms: ["a bottle of", "a can of"],
+        register: "neutral",
+        audioAvailable: true
+      }
+    ],
+    exercises: [
+      {
+        id: "msr-ex-1",
+        type: "fill-blank",
+        question: "I need ___ advice. (a / an / a piece of)",
+        questionZh: "我需要___建议。",
+        options: ["a", "an", "a piece of"],
+        correctAnswer: "a piece of",
+        hint: "'Advice' is uncountable. Use 'a piece of'.",
+        hintZh: "'Advice' 不可数。用 'a piece of'。"
+      },
+      {
+        id: "msr-ex-2",
+        type: "error-correction",
+        question: "Correct: 'I bought a new pair of shoe.'",
+        questionZh: "改正：'I bought a new pair of shoe.'",
+        options: ["I bought a new pair of shoes.", "I bought a new pair of shoe.", "I bought a new shoes."],
+        correctAnswer: "I bought a new pair of shoes.",
+        hint: "Use plural after 'a pair of'.",
+        hintZh: "'A pair of' 后面用复数。"
+      },
+      {
+        id: "msr-ex-3",
+        type: "translation",
+        question: "Translate: 我需要一杯咖啡。",
+        questionZh: "翻译：我需要一杯咖啡。",
+        options: ["I need a cup of coffee.", "I need a coffee.", "I need one coffee."],
+        correctAnswer: "I need a cup of coffee.",
+        hint: "Use 'a cup of' for precise measurement.",
+        hintZh: "用 'a cup of' 表示精确的量。"
+      }
+    ],
+    teacherPanel: {
+      simpleExplanation: "English uses measure words with uncountable nouns: 'a piece of advice', 'a cup of coffee', 'a pair of shoes'.",
+      chineseExplanation: "英语对不可数名词用量词：'a piece of advice'、'a cup of coffee'、'a pair of shoes'。",
+      learnerDifficulty: "Chinese learners say 'an advice' or 'two advices' because Chinese doesn't mark countability the same way.",
+      teachingTip: "Show objects: one shoe, two shoes, a pair of shoes. Then: one advice (X), two advices (X), a piece of advice (OK). Make it visual.",
+      drills: [
+        "Teacher: 'One advice?' Student: 'A piece of advice.'",
+        "Teacher: 'One shoe?' Student: 'A pair of shoes.'",
+        "Teacher: 'One coffee?' Student: 'A cup of coffee.'",
+        "Teacher: 'Two glasses of water?' Student: 'Two glasses of water.'",
+        "Teacher: 'A pair of what?' Student: 'Shoes / glasses / scissors...'"
+      ]
+    }
+  },
+  {
+    id: "comparisons",
+    title: "Comparisons",
+    titleZh: "比较结构",
+    emoji: "⚖️",
+    description: "Master as...as, twice as much, and other comparison structures.",
+    descriptionZh: "掌握 as...as、twice as much 等比较结构。",
+    difficulty: "intermediate",
+    patterns: [
+      {
+        id: "cmp-as-as",
+        term: "as + adjective + as",
+        chinese: "和...一样...",
+        pinyin: "hé ... yī yàng",
+        meaning: "Equal comparison. X is the same as Y.",
+        category: "comparisons",
+        difficulty: "A2",
+        examples: [
+          { en: "He's as tall as his brother.", zh: "他和他哥哥一样高。" },
+          { en: "This phone is as expensive as that one.", zh: "这部手机和那部一样贵。" }
+        ],
+        commonMistakes: [
+          { mistake: "He is more tall as his brother.", correction: "Use 'as tall as' for equal comparison." }
+        ],
+        relatedTerms: ["twice as", "three times as"],
+        register: "neutral",
+        audioAvailable: true
+      },
+      {
+        id: "cmp-twice-as",
+        term: "twice as + adjective + as",
+        chinese: "是...的两倍",
+        pinyin: "shì ... de liǎng bèi",
+        meaning: "Double comparison. X is two times Y.",
+        category: "comparisons",
+        difficulty: "B1",
+        examples: [
+          { en: "She works twice as hard as I do.", zh: "她工作的努力程度是我的两倍。" },
+          { en: "This room is twice as large as mine.", zh: "这个房间是我的房间的两倍大。" }
+        ],
+        commonMistakes: [
+          { mistake: "She works more hard than me.", correction: "Use 'twice as hard as' for 2x comparison." }
+        ],
+        relatedTerms: ["double", "three times as", "as...as"],
+        register: "neutral",
+        audioAvailable: true
+      },
+      {
+        id: "cmp-three-times-as",
+        term: "three times as + adjective + as",
+        chinese: "是...的三倍",
+        pinyin: "shì ... de sān bèi",
+        meaning: "Triple comparison. X is three times Y.",
+        category: "comparisons",
+        difficulty: "B1",
+        examples: [
+          { en: "This building is three times as tall as that one.", zh: "这栋楼是那栋的三倍高。" }
+        ],
+        commonMistakes: [
+          { mistake: "This building is three times taller than that one.", correction: "Both work! 'Three times as tall as' and 'three times taller than' are both acceptable." }
+        ],
+        relatedTerms: ["twice as", "triple", "as...as"],
+        register: "neutral",
+        audioAvailable: true
+      }
+    ],
+    exercises: [
+      {
+        id: "cmp-ex-1",
+        type: "fill-blank",
+        question: "He's ___ tall as his brother. (as / than)",
+        questionZh: "他和他哥哥___高。",
+        options: ["as", "than"],
+        correctAnswer: "as",
+        hint: "Use 'as...as' for equal comparison.",
+        hintZh: "用 'as...as' 表示同等比较。"
+      },
+      {
+        id: "cmp-ex-2",
+        type: "error-correction",
+        question: "Correct: 'This room is more large than mine.'",
+        questionZh: "改正：'This room is more large than mine.'",
+        options: ["This room is larger than mine.", "This room is more large than mine.", "This room is as large than mine."],
+        correctAnswer: "This room is larger than mine.",
+        hint: "Use 'larger than' for comparative, not 'more large than'.",
+        hintZh: "用 'larger than' 表示比较级，不用 'more large than'。"
+      },
+      {
+        id: "cmp-ex-3",
+        type: "translation",
+        question: "Translate: 她的工资是我的两倍。",
+        questionZh: "翻译：她的工资是我的两倍。",
+        options: ["She earns twice as much as I do.", "She earns two times much than me.", "She earns double than me."],
+        correctAnswer: "She earns twice as much as I do.",
+        hint: "Use 'twice as much as' for double comparison.",
+        hintZh: "用 'twice as much as' 表示两倍比较。"
+      }
+    ],
+    teacherPanel: {
+      simpleExplanation: "'As + adj + as' means equal. 'Twice as + adj + as' means 2x. 'Three times as + adj + as' means 3x.",
+      chineseExplanation: "'As + 形容词 + as' 表示同等。'Twice as + 形容词 + as' 表示 2 倍。'Three times as + 形容词 + as' 表示 3 倍。",
+      learnerDifficulty: "Chinese learners confuse 'as tall as' with 'taller than'. They also say 'more tall' instead of 'taller'.",
+      teachingTip: "Draw two sticks side by side. Label them. Then draw one twice as long. Drill: 'As long as' vs 'twice as long as'.",
+      drills: [
+        "Teacher: 'Equal?' Student: 'As tall as.'",
+        "Teacher: 'Double?' Student: 'Twice as tall as.'",
+        "Teacher: 'Triple?' Student: 'Three times as tall as.'",
+        "Teacher: 'Comparative?' Student: 'Taller than.'",
+        "Teacher: 'Superlative?' Student: 'The tallest.'"
+      ]
+    }
+  },
+  {
+    id: "word-patterns",
+    title: "Common Word Patterns",
+    titleZh: "常用词搭配模式",
+    emoji: "🧩",
+    description: "Master the high-frequency word patterns native speakers use without thinking.",
+    descriptionZh: "掌握母语者脱口而出的高频词搭配模式。",
+    difficulty: "intermediate",
+    patterns: [
+      {
+        id: "wp-a-lot-of",
+        term: "a lot of / lots of",
+        chinese: "许多；大量",
+        pinyin: "xǔ duō",
+        meaning: "A large quantity. Very common in speech and informal writing.",
+        category: "word-patterns",
+        difficulty: "A1",
+        examples: [
+          { en: "I have a lot of work.", zh: "我有很多工作。" },
+          { en: "Lots of people agree.", zh: "很多人同意。" }
+        ],
+        commonMistakes: [
+          { mistake: "I have many work.", correction: "Use 'a lot of' with uncountable nouns in positive statements." }
+        ],
+        relatedTerms: ["plenty of", "loads of", "tons of"],
+        register: "casual",
+        audioAvailable: true
+      },
+      {
+        id: "wp-a-great-deal-of",
+        term: "a great deal of",
+        chinese: "大量的（正式）",
+        pinyin: "dà liàng de",
+        meaning: "A large amount. More formal than 'a lot of'. Used with uncountable nouns.",
+        category: "word-patterns",
+        difficulty: "B2",
+        examples: [
+          { en: "She has a great deal of experience.", zh: "她有丰富的经验。" },
+          { en: "It took a great deal of time.", zh: "这花了大量时间。" }
+        ],
+        commonMistakes: [
+          { mistake: "a great deal of books", correction: "Use 'a great deal of' with uncountable nouns only." }
+        ],
+        relatedTerms: ["a lot of", "a substantial amount of"],
+        register: "formal",
+        audioAvailable: true
+      },
+      {
+        id: "wp-a-number-of",
+        term: "a number of / the number of",
+        chinese: "许多；...的数量",
+        pinyin: "xǔ duō / ... de shù liàng",
+        meaning: "'A number of' = many. 'The number of' = the quantity. Opposite meanings!",
+        category: "word-patterns",
+        difficulty: "B2",
+        examples: [
+          { en: "A number of students passed. (= Many students passed)", zh: "许多学生通过了。" },
+          { en: "The number of students is increasing. (= The quantity is growing)", zh: "学生数量在增加。" }
+        ],
+        commonMistakes: [
+          { mistake: "A number of students is here.", correction: "'A number of' takes a plural verb: 'A number of students ARE here.'" }
+        ],
+        relatedTerms: ["a lot of", "several"],
+        register: "neutral",
+        audioAvailable: true
+      },
+      {
+        id: "wp-kind-of",
+        term: "kind of / sort of",
+        chinese: "有点；稍微",
+        pinyin: "yǒu diǎn",
+        meaning: "Somewhat; slightly. Very common in informal speech.",
+        category: "word-patterns",
+        difficulty: "B1",
+        examples: [
+          { en: "I'm kind of tired.", zh: "我有点累。" },
+          { en: "It's sort of expensive.", zh: "这有点贵。" }
+        ],
+        commonMistakes: [
+          { mistake: "Using 'kind of' in formal writing", correction: "Use 'somewhat' or 'rather' in formal contexts." }
+        ],
+        relatedTerms: ["a little", "a bit", "slightly"],
+        register: "casual",
+        audioAvailable: true
+      }
+    ],
+    exercises: [
+      {
+        id: "wp-ex-1",
+        type: "fill-blank",
+        question: "I have ___ work to do. (a number of / a great deal of)",
+        questionZh: "我有___工作要做。",
+        options: ["a number of", "a great deal of"],
+        correctAnswer: "a great deal of",
+        hint: "Use 'a great deal of' with uncountable nouns like 'work'.",
+        hintZh: "用 'a great deal of' 修饰不可数名词如 'work'。"
+      },
+      {
+        id: "wp-ex-2",
+        type: "error-correction",
+        question: "Correct: 'A number of students is here.'",
+        questionZh: "改正：'A number of students is here.'",
+        options: ["A number of students are here.", "The number of students are here.", "A number of students is here."],
+        correctAnswer: "A number of students are here.",
+        hint: "'A number of' means 'many' and takes a plural verb.",
+        hintZh: "'A number of' 表示 '许多'，谓语用复数。"
+      },
+      {
+        id: "wp-ex-3",
+        type: "translation",
+        question: "Translate: 我有点累。",
+        questionZh: "翻译：我有点累。",
+        options: ["I'm kind of tired.", "I'm a lot of tired.", "I'm very kind tired."],
+        correctAnswer: "I'm kind of tired.",
+        hint: "'Kind of' = '有点' in casual speech.",
+        hintZh: "'Kind of' = '有点'，用于口语。"
+      }
+    ],
+    teacherPanel: {
+      simpleExplanation: "'A lot of' is casual, 'a great deal of' is formal. 'A number of' = many (plural verb). 'The number of' = quantity (singular verb).",
+      chineseExplanation: "'A lot of' 口语化，'a great deal of' 正式。'A number of' = 许多（复数动词）。'The number of' = 数量（单数动词）。",
+      learnerDifficulty: "Chinese learners confuse 'a number of' with 'the number of'. They also overuse 'a lot of' in formal writing.",
+      teachingTip: "Write both phrases on the board. Underline 'a' vs 'the'. Explain that 'the' changes the meaning completely. Drill with true/false.",
+      drills: [
+        "Teacher: 'A number of = many?' Student: 'Yes, plural verb.'",
+        "Teacher: 'The number of = quantity?' Student: 'Yes, singular verb.'",
+        "Teacher: 'Casual many?' Student: 'A lot of / lots of.'",
+        "Teacher: 'Formal many?' Student: 'A great deal of / numerous.'",
+        "Teacher: 'Kind of = ?' Student: 'Somewhat / 有点.'"
+      ]
+    }
+  },
+  {
+    id: "everyday-grammar",
+    title: "Everyday Grammar",
+    titleZh: "日常语法",
+    emoji: "📝",
+    description: "Practical grammar for fractions, articles, and common structures.",
+    descriptionZh: "实用的语法知识：分数、冠词和常用结构。",
+    difficulty: "intermediate",
+    patterns: [
+      {
+        id: "eg-half",
+        term: "half (of)",
+        chinese: "一半",
+        pinyin: "yī bàn",
+        meaning: "50% of something. 'Of' is optional but common.",
+        category: "everyday-grammar",
+        difficulty: "A1",
+        examples: [
+          { en: "Half of the students passed.", zh: "一半的学生通过了。" },
+          { en: "Half the pizza is gone.", zh: "一半的披萨没了。" },
+          { en: "I'll be there in half an hour.", zh: "我半小时后到。" }
+        ],
+        commonMistakes: [
+          { mistake: "Half of students passed.", correction: "Use 'Half of the students' or 'Half the students'." }
+        ],
+        relatedTerms: ["one-third", "one-quarter", "three-quarters"],
+        register: "neutral",
+        audioAvailable: true
+      },
+      {
+        id: "eg-fractions",
+        term: "one-third / one-quarter / three-quarters",
+        chinese: "三分之一 / 四分之一 / 四分之三",
+        pinyin: "sān fēn zhī yī / sì fēn zhī yī / sì fēn zhī sān",
+        meaning: "Fraction expressions. Use 'of' with nouns.",
+        category: "everyday-grammar",
+        difficulty: "A2",
+        examples: [
+          { en: "One-third of the work is done.", zh: "三分之一的工作已完成。" },
+          { en: "Three-quarters of the class passed.", zh: "四分之三的学生通过了。" },
+          { en: "A quarter of an hour = 15 minutes.", zh: "一刻钟 = 15分钟。" }
+        ],
+        commonMistakes: [
+          { mistake: "I ate three quarter of the cake.", correction: "Use 'three-quarters' with hyphen and plural 'quarters'." }
+        ],
+        relatedTerms: ["half", "a dozen", "a half"],
+        register: "neutral",
+        audioAvailable: true
+      }
+    ],
+    exercises: [
+      {
+        id: "eg-ex-1",
+        type: "fill-blank",
+        question: "___ of the students passed. (Half / A half)",
+        questionZh: "___学生通过了。",
+        options: ["Half", "A half"],
+        correctAnswer: "Half",
+        hint: "Use 'Half of the...' not 'A half of the...'",
+        hintZh: "用 'Half of the...' 不用 'A half of the...'"
+      },
+      {
+        id: "eg-ex-2",
+        type: "error-correction",
+        question: "Correct: 'Three quarter of the work is done.'",
+        questionZh: "改正：'Three quarter of the work is done.'",
+        options: ["Three-quarters of the work are done.", "Three-quarters of the work is done.", "Three quarter of the work is done."],
+        correctAnswer: "Three-quarters of the work is done.",
+        hint: "Use 'three-quarters' with hyphen and plural 'quarters'.",
+        hintZh: "用 'three-quarters' 加连字符且 'quarters' 用复数。"
+      },
+      {
+        id: "eg-ex-3",
+        type: "translation",
+        question: "Translate: 四分之三的工作已经完成。",
+        questionZh: "翻译：四分之三的工作已经完成。",
+        options: ["Three-quarters of the work is done.", "Three quarter of the work is done.", "Three of the work is done."],
+        correctAnswer: "Three-quarters of the work is done.",
+        hint: "Use 'three-quarters' with hyphen.",
+        hintZh: "用 'three-quarters' 加连字符。"
+      }
+    ],
+    teacherPanel: {
+      simpleExplanation: "Fractions: half, one-third, one-quarter, three-quarters. Use 'of' before nouns. 'A quarter of an hour' = 15 minutes.",
+      chineseExplanation: "分数表达：half、one-third、one-quarter、three-quarters。名词前用 'of'。'A quarter of an hour' = 15 分钟。",
+      learnerDifficulty: "Chinese learners say 'three quarter' instead of 'three-quarters'. They also forget 'of' before nouns.",
+      teachingTip: "Draw a circle. Cut it into halves, thirds, quarters. Label them. Then write fraction sentences on the board.",
+      drills: [
+        "Teacher: 'Half of what?' Student: 'Half of the students.'",
+        "Teacher: 'One-third of what?' Student: 'One-third of the work.'",
+        "Teacher: '15 minutes?' Student: 'A quarter of an hour.'",
+        "Teacher: 'Three-quarters = ?' Student: '75% / 四分之三'",
+        "Teacher: 'Half of 100?' Student: '50.'"
+      ]
+    }
+  },
+  {
+    id: "native-expressions",
+    title: "Native Expressions",
+    titleZh: "母语者常用表达",
+    emoji: "🗣️",
+    description: "Learn time and situation expressions native speakers use without thinking.",
+    descriptionZh: "学习母语者脱口而出的时间和情境表达。",
+    difficulty: "intermediate",
+    patterns: [
+      {
+        id: "ne-in-a-minute",
+        term: "in a minute / in a moment",
+        chinese: "马上；立刻",
+        pinyin: "mǎ shàng",
+        meaning: "Very soon; in a short time.",
+        category: "native-expressions",
+        difficulty: "A2",
+        examples: [
+          { en: "I'll be there in a minute.", zh: "我马上到。" },
+          { en: "Wait in a moment.", zh: "等一下。" }
+        ],
+        commonMistakes: [
+          { mistake: "I come in a minute.", correction: "Use future: 'I'll be there in a minute.'" }
+        ],
+        relatedTerms: ["right now", "in a while"],
+        register: "neutral",
+        audioAvailable: true
+      },
+      {
+        id: "ne-for-a-while",
+        term: "for a while / a while ago",
+        chinese: "持续一段时间 / 不久前",
+        pinyin: "chí xù yī duàn shí jiān / bù jiǔ qián",
+        meaning: "'For a while' = duration. 'A while ago' = past time.",
+        category: "native-expressions",
+        difficulty: "B1",
+        examples: [
+          { en: "I haven't seen her for a while.", zh: "我有一段时间没见她了。" },
+          { en: "I saw her a while ago.", zh: "我不久前见过她。" },
+          { en: "It happened a while back.", zh: "这发生前不久。" }
+        ],
+        commonMistakes: [
+          { mistake: "I saw her for a while ago.", correction: "Use 'a while ago' for past, not 'for a while ago'." }
+        ],
+        relatedTerms: ["in a while", "just now", "lately"],
+        register: "neutral",
+        audioAvailable: true
+      },
+      {
+        id: "ne-eventually",
+        term: "eventually / finally",
+        chinese: "最终；最后",
+        pinyin: "zuì zhōng",
+        meaning: "After a long time or process. 'Eventually' implies a journey, 'finally' implies an ending.",
+        category: "native-expressions",
+        difficulty: "B1",
+        examples: [
+          { en: "Eventually, I understood the lesson.", zh: "最终，我理解了这堂课。" },
+          { en: "We finally arrived home.", zh: "我们终于到家了。" }
+        ],
+        commonMistakes: [
+          { mistake: "Eventually I went to home.", correction: "Use 'arrived home' or 'went home', not 'went to home'." }
+        ],
+        relatedTerms: ["finally", "ultimately", "in the end"],
+        register: "neutral",
+        audioAvailable: true
+      },
+      {
+        id: "ne-meanwhile",
+        term: "meanwhile / subsequently",
+        chinese: "同时；随后",
+        pinyin: "tóng shí / suí hòu",
+        meaning: "'Meanwhile' = at the same time. 'Subsequently' = after that.",
+        category: "native-expressions",
+        difficulty: "B2",
+        examples: [
+          { en: "I cooked dinner. Meanwhile, she set the table.", zh: "我做晚饭。与此同时，她摆好了餐具。" },
+          { en: "He graduated and subsequently moved abroad.", zh: "他毕业后随即移居国外。" }
+        ],
+        commonMistakes: [
+          { mistake: "Using 'meanwhile' for sequential actions", correction: "Use 'meanwhile' for simultaneous actions. Use 'then' or 'subsequently' for sequence." }
+        ],
+        relatedTerms: ["at the same time", "afterwards", "later"],
+        register: "neutral",
+        audioAvailable: true
+      }
+    ],
+    exercises: [
+      {
+        id: "ne-ex-1",
+        type: "fill-blank",
+        question: "I'll be there ___. (in a minute / for a minute)",
+        questionZh: "我___到。",
+        options: ["in a minute", "for a minute"],
+        correctAnswer: "in a minute",
+        hint: "'In a minute' means soon. 'For a minute' means duration.",
+        hintZh: "'In a minute' 表示马上。'For a minute' 表示持续时间。"
+      },
+      {
+        id: "ne-ex-2",
+        type: "error-correction",
+        question: "Correct: 'I saw her for a while ago.'",
+        questionZh: "改正：'I saw her for a while ago.'",
+        options: ["I saw her a while ago.", "I saw her for a while ago.", "I saw her in a while ago."],
+        correctAnswer: "I saw her a while ago.",
+        hint: "Use 'a while ago' for past time, not 'for a while ago'.",
+        hintZh: "用 'a while ago' 表示过去时间，不用 'for a while ago'。"
+      },
+      {
+        id: "ne-ex-3",
+        type: "translation",
+        question: "Translate: 与此同时，她在看书。",
+        questionZh: "翻译：与此同时，她在看书。",
+        options: ["Meanwhile, she was reading.", "Meanwhile, she is reading.", "Subsequently, she read."],
+        correctAnswer: "Meanwhile, she was reading.",
+        hint: "'Meanwhile' = at the same time.",
+        hintZh: "'Meanwhile' = 与此同时。"
+      }
+    ],
+    teacherPanel: {
+      simpleExplanation: "'In a minute' = soon. 'For a while' = duration. 'A while ago' = past. 'Meanwhile' = at the same time. 'Eventually' = after time.",
+      chineseExplanation: "'In a minute' = 马上。'For a while' = 持续一段时间。'A while ago' = 不久前。'Meanwhile' = 与此同时。'Eventually' = 最终。",
+      learnerDifficulty: "Chinese learners confuse 'in a minute' with 'for a minute'. They also use 'meanwhile' incorrectly for sequential actions.",
+      teachingTip: "Draw a timeline. Place 'a while ago', 'meanwhile', 'eventually', 'finally' on it. Then have students make sentences for each point.",
+      drills: [
+        "Teacher: 'Soon?' Student: 'In a minute / Right now.'",
+        "Teacher: 'Duration?' Student: 'For a while.'",
+        "Teacher: 'Past?' Student: 'A while ago / Just now.'",
+        "Teacher: 'Same time?' Student: 'Meanwhile.'",
+        "Teacher: 'After time?' Student: 'Eventually / Finally.'"
+      ]
+    }
+  },
+  {
+    id: "common-mistakes",
+    title: "Common Mistakes",
+    titleZh: "常见错误",
+    emoji: "⚠️",
+    description: "Fix the most common mistakes Chinese learners make with quantities, time, and patterns.",
+    descriptionZh: "纠正中国学习者在数量、时间和模式方面的常见错误。",
+    difficulty: "intermediate",
+    patterns: [
+      {
+        id: "cm-many-much",
+        term: "Many vs Much",
+        chinese: "Many 与 Much 的区别",
+        pinyin: "Many hé Much de qū bié",
+        meaning: "Many = countable. Much = uncountable. In positive statements, use 'a lot of' for both.",
+        category: "common-mistakes",
+        difficulty: "A1",
+        examples: [
+          { en: "Many books / Much water / A lot of time", zh: "Many 修饰可数 / Much 修饰不可数 / A lot of 两者皆可" }
+        ],
+        commonMistakes: [
+          { mistake: "I have many water.", correction: "Use 'much' or 'a lot of' with uncountable nouns." },
+          { mistake: "I have much books.", correction: "Use 'many' or 'a lot of' with countable nouns." }
+        ],
+        relatedTerms: ["a lot of", "few", "little"],
+        register: "neutral",
+        audioAvailable: true
+      },
+      {
+        id: "cm-few-little",
+        term: "Few vs Little",
+        chinese: "Few 与 Little 的区别",
+        pinyin: "Few hé Little de qū bié",
+        meaning: "Few = countable, negative. Little = uncountable, negative. 'A few/a little' = positive.",
+        category: "common-mistakes",
+        difficulty: "A2",
+        examples: [
+          { en: "Few people came. / Little water remains.", zh: "Few 修饰可数（否定）/ Little 修饰不可数（否定）" }
+        ],
+        commonMistakes: [
+          { mistake: "I have few money.", correction: "Use 'little' with uncountable nouns." }
+        ],
+        relatedTerms: ["a few", "a little", "many", "much"],
+        register: "neutral",
+        audioAvailable: true
+      },
+      {
+        id: "cm-twice-two-times",
+        term: "Twice vs Two Times",
+        chinese: "Twice 与 Two Times",
+        pinyin: "Twice yǔ Two Times",
+        meaning: "'Twice' is more natural for frequency. 'Two times' is used for emphasis or storytelling.",
+        category: "common-mistakes",
+        difficulty: "A2",
+        examples: [
+          { en: "I've called twice. (natural)", zh: "我打过两次电话。（自然）" },
+          { en: "One time, I met a celebrity. (storytelling)", zh: "有一次，我遇到了一位名人。（讲故事）" }
+        ],
+        commonMistakes: [
+          { mistake: "I called him two times.", correction: "Use 'twice' for frequency." }
+        ],
+        relatedTerms: ["once", "thrice", "three times"],
+        register: "neutral",
+        audioAvailable: true
+      },
+      {
+        id: "cm-biweekly",
+        term: "Biweekly Ambiguity",
+        chinese: "Biweekly 的歧义",
+        pinyin: "Biweekly de yì yì",
+        meaning: "'Biweekly' can mean 'every two weeks' OR 'twice a week'. Avoid in precise contexts.",
+        category: "common-mistakes",
+        difficulty: "B2",
+        examples: [
+          { en: "Better: 'every two weeks' instead of 'biweekly'", zh: "更好：用 'every two weeks' 代替 'biweekly'" }
+        ],
+        commonMistakes: [
+          { mistake: "The meeting is biweekly. (ambiguous)", correction: "Say 'every two weeks' or 'twice a month' for clarity." }
+        ],
+        relatedTerms: ["bimonthly", "semiweekly", "biannual"],
+        register: "neutral",
+        audioAvailable: true
+      }
+    ],
+    exercises: [
+      {
+        id: "cm-ex-1",
+        type: "error-correction",
+        question: "Correct: 'I have many informations.'",
+        questionZh: "改正：'I have many informations.'",
+        options: ["I have a lot of information.", "I have many informations.", "I have much informations."],
+        correctAnswer: "I have a lot of information.",
+        hint: "'Information' is uncountable. No plural form.",
+        hintZh: "'Information' 不可数。没有复数形式。"
+      },
+      {
+        id: "cm-ex-2",
+        type: "fill-blank",
+        question: "___ people came to the party. (Few / A few)",
+        questionZh: "___人来了派对。",
+        options: ["Few", "A few"],
+        correctAnswer: "A few",
+        hint: "Use 'a few' for positive meaning (some people came).",
+        hintZh: "用 'a few' 表示积极含义（有些人来了）。"
+      },
+      {
+        id: "cm-ex-3",
+        type: "translation",
+        question: "Translate: 我几乎没有时间。",
+        questionZh: "翻译：我几乎没有时间。",
+        options: ["I have few time.", "I have little time.", "I have a little time."],
+        correctAnswer: "I have little time.",
+        hint: "'Time' is uncountable. Use 'little' for negative meaning.",
+        hintZh: "'Time' 不可数。用 'little' 表示否定含义。"
+      }
+    ],
+    teacherPanel: {
+      simpleExplanation: "The most common mistake: countable vs uncountable. 'Many/few' = countable. 'Much/little' = uncountable. In positive statements, 'a lot of' works for both.",
+      chineseExplanation: "最常见的错误：可数与不可数。'Many/few' = 可数。'Much/little' = 不可数。在肯定句中，'a lot of' 两者皆可。",
+      learnerDifficulty: "Chinese learners treat all nouns as countable. They say 'informations', 'advices', 'furnitures'.",
+      teachingTip: "Create two columns: Countable vs Uncountable. Put nouns in the right column. Then drill with 'many/much/a lot of'.",
+      drills: [
+        "Teacher: 'Books - countable?' Student: 'Yes, many / a lot of.'",
+        "Teacher: 'Water - countable?' Student: 'No, much / a lot of.'",
+        "Teacher: 'Information - countable?' Student: 'No, uncountable.'",
+        "Teacher: 'Few people?' Student: 'Negative, countable.'",
+        "Teacher: 'Little time?' Student: 'Negative, uncountable.'"
+      ]
+    }
+  },
+  {
+    id: "practice-lab",
+    title: "Practice Lab",
+    titleZh: "练习实验室",
+    emoji: "🧪",
+    description: "Mixed exercises from all sections to test your everyday English knowledge.",
+    descriptionZh: "来自所有章节的混合练习，测试你的日常英语知识。",
+    difficulty: "intermediate",
+    patterns: [
+      {
+        id: "pl-review-1",
+        term: "Mixed Review 1",
+        chinese: "综合复习 1",
+        pinyin: "zōng hé fù xī 1",
+        meaning: "A review of key concepts from all sections.",
+        category: "practice-lab",
+        difficulty: "B1",
+        examples: [
+          { en: "I go to the gym three times a week.", zh: "我每周去三次健身房。" },
+          { en: "She earns twice as much as me.", zh: "她挣的钱是我的两倍。" },
+          { en: "I'll be there in about 10 minutes.", zh: "我大约10分钟后到。" }
+        ],
+        commonMistakes: [
+          { mistake: "Multiple common mistakes from all sections", correction: "Review all sections before attempting." }
+        ],
+        relatedTerms: ["all sections"],
+        register: "neutral",
+        audioAvailable: true
+      }
+    ],
+    exercises: [
+      {
+        id: "pl-ex-1",
+        type: "fill-blank",
+        question: "I go to the gym ___ times a week. (once / twice / quarterly)",
+        questionZh: "我每周去___次健身房。",
+        options: ["once", "twice", "quarterly"],
+        correctAnswer: "twice",
+        hint: "Use frequency adverbs for regular activities.",
+        hintZh: "对规律性活动用频率副词。"
+      },
+      {
+        id: "pl-ex-2",
+        type: "error-correction",
+        question: "Correct: 'I go there two times every week.'",
+        questionZh: "改正：'I go there two times every week.'",
+        options: ["I go there twice a week.", "I go there two times a week.", "I go there two times every week."],
+        correctAnswer: "I go there twice a week.",
+        hint: "'Twice a week' is more natural than 'two times every week'.",
+        hintZh: "'Twice a week' 比 'two times every week' 更自然。"
+      },
+      {
+        id: "pl-ex-3",
+        type: "translation",
+        question: "Translate: 我每隔一天去一次健身房。",
+        questionZh: "翻译：我每隔一天去一次健身房。",
+        options: ["I go to the gym every other day.", "I go to the gym every two days.", "I go to the gym every day."],
+        correctAnswer: "I go to the gym every other day.",
+        hint: "'Every other day' = skip one day in between.",
+        hintZh: "'Every other day' = 中间跳过一天。"
+      },
+      {
+        id: "pl-ex-4",
+        type: "sentence-builder",
+        question: "Build: 'She / visits / her parents / twice / a month.'",
+        questionZh: "连词成句：'She / visits / her parents / twice / a month.'",
+        options: ["She visits her parents twice a month.", "She twice visits her parents a month.", "Twice a month she visits her parents."],
+        correctAnswer: "She visits her parents twice a month.",
+        hint: "Standard word order: Subject + Verb + Object + Frequency.",
+        hintZh: "标准语序：主语 + 动词 + 宾语 + 频率。"
+      },
+      {
+        id: "pl-ex-5",
+        type: "fill-blank",
+        question: "There's ___ food for everyone. (plenty of / many)",
+        questionZh: "有___食物给大家。",
+        options: ["plenty of", "many"],
+        correctAnswer: "plenty of",
+        hint: "'Food' is uncountable. Use 'plenty of'.",
+        hintZh: "'Food' 不可数。用 'plenty of'。"
+      },
+      {
+        id: "pl-ex-6",
+        type: "error-correction",
+        question: "Correct: 'The number of students are increasing.'",
+        questionZh: "改正：'The number of students are increasing.'",
+        options: ["The number of students is increasing.", "The number of students are increasing.", "A number of students is increasing."],
+        correctAnswer: "The number of students is increasing.",
+        hint: "'The number of' takes a singular verb.",
+        hintZh: "'The number of' 谓语用单数。"
+      }
+    ],
+    teacherPanel: {
+      simpleExplanation: "This lab combines all key concepts: quantity, frequency, time, comparisons, and patterns.",
+      chineseExplanation: "本实验室综合所有关键概念：数量、频率、时间、比较和搭配模式。",
+      learnerDifficulty: "Students often mix up patterns from different sections. They need to recognize which pattern applies in which context.",
+      teachingTip: "Give mixed exercises. Ask students to identify which section each question belongs to. Then have them explain the rule.",
+      drills: [
+        "Teacher: 'Quantity - countable?' Student: 'Many / few / a few.'",
+        "Teacher: 'Quantity - uncountable?' Student: 'Much / little / a little.'",
+        "Teacher: 'Frequency - 1x?' Student: 'Once.'",
+        "Teacher: 'Frequency - 2x?' Student: 'Twice.'",
+        "Teacher: 'Comparison - equal?' Student: 'As...as.'"
+      ]
+    }
+  }
+];

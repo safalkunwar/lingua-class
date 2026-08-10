@@ -27,6 +27,7 @@ export function StudentSidebar() {
     { href: "/reading", label: "Reading", emoji: "📖" },
     { href: "/writing", label: "Writing", emoji: "✍️" },
     { href: "/slang-module", label: "Slang Module", emoji: "🗣️" },
+    { href: "/everyday-english", label: "Everyday English", emoji: "🛠️" },
   ];
 
   return (
