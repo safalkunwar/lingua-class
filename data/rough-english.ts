@@ -827,7 +827,11 @@ export const roughEnglish: SlangItem[] = [
       { speaker: "Sam", line: "那又怎样？你以前也忘过。" },
       { speaker: "Alex", line: "这不是重点。你应该道歉。" }
     ],
-    culturalNotes: "Dismissive and often confrontational. Can escalate arguments. While not a 'swear word,' it's considered rude in many contexts because it minimizes the other person's concerns."
+    culturalNotes: "Dismissive and often confrontational. Can escalate arguments. While not a 'swear word,' it's considered rude in many contexts because it minimizes the other person's concerns.",
+    intensityNote: "Level 1/5: Not inherently offensive but very dismissive. Can escalate arguments and hurt feelings.",
+    usageContext: "Defensive situations, arguments, dismissive responses. Common but can be very rude depending on tone.",
+    formality: "casual",
+    audioAvailable: true
   },
   {
     id: "rough-28",
@@ -854,7 +858,11 @@ export const roughEnglish: SlangItem[] = [
       { speaker: "Jake", line: "我们必须去冲浪！" }
     ],
     culturalNotes: "Extremely common expletive expressing shock, surprise, or disbelief. Very vulgar but widely used. Avoid in polite company, at work, or around children.",
-    warning: "WARNING: 'Holy shit' is highly offensive and vulgar. It combines a religious term with a profanity. Never use in formal settings or with people you don't know well."
+    warning: "WARNING: 'Holy shit' is highly offensive and vulgar. It combines a religious term with a profanity. Never use in formal settings or with people you don't know well.",
+    intensityNote: "Level 4/5: Very offensive and vulgar. Combines religious term with profanity. Never use in formal settings or with people you don't know well.",
+    usageContext: "Extreme surprise, shock, or disbelief. Common but very vulgar. Never in polite company, at work, or around children.",
+    formality: "vulgar",
+    audioAvailable: true
   },
   {
     id: "rough-29",
@@ -881,7 +889,11 @@ export const roughEnglish: SlangItem[] = [
       { speaker: "Alex", line: "我没要你帮忙。滚开！" }
     ],
     culturalNotes: "One of the most aggressive and offensive phrases in English. Combines a sexual profanity with a command to leave. Can be considered verbal abuse. Almost never acceptable in any context.",
-    warning: "WARNING: 'Fuck off' is extremely vulgar and aggressive. It is considered verbal abuse in many contexts. Using this toward someone can result in serious consequences, including legal action in some places. NEVER use this phrase."
+    warning: "WARNING: 'Fuck off' is extremely vulgar and aggressive. It is considered verbal abuse in many contexts. Using this toward someone can result in serious consequences, including legal action in some places. NEVER use this phrase.",
+    intensityNote: "Level 5/5: Maximum offensiveness. One of the most aggressive phrases in English. Can be considered verbal abuse. Never use this phrase.",
+    usageContext: "Extreme anger, intense arguments. Almost never acceptable. Can result in serious consequences including legal action in some places.",
+    formality: "vulgar",
+    audioAvailable: true
   },
   {
     id: "rough-30",
@@ -908,7 +920,11 @@ export const roughEnglish: SlangItem[] = [
       { speaker: "Jake", line: "我知道。他总是抢功劳。" }
     ],
     culturalNotes: "Common expression for calling out lies or nonsense. While vulgar, it's very common in casual speech. Can also mean 'nonsense' in a lighter way among close friends.",
-    warning: "WARNING: 'Bullshit' is vulgar and offensive in formal settings. Use 'nonsense' or 'that's not true' in polite company."
+    warning: "WARNING: 'Bullshit' is vulgar and offensive in formal settings. Use 'nonsense' or 'that's not true' in polite company.",
+    intensityNote: "Level 3/5: Moderately offensive. Common in casual speech but vulgar. Avoid in formal settings.",
+    usageContext: "Calling out lies or nonsense. Common in casual speech among friends. Avoid in formal or professional settings.",
+    formality: "rude",
+    audioAvailable: true
   },
   {
     id: "rough-31",
@@ -935,7 +951,11 @@ export const roughEnglish: SlangItem[] = [
       { speaker: "Mia", line: "我知道。他总是这样。" }
     ],
     culturalNotes: "Common insult for someone who is rude or unpleasant. While vulgar, it's widely used. Can be used playfully among very close friends, but usually indicates genuine anger.",
-    warning: "WARNING: 'Asshole' is a vulgar insult. Using it directly to someone's face is extremely rude and can lead to conflicts."
+    warning: "WARNING: 'Asshole' is a vulgar insult. Using it directly to someone's face is extremely rude and can lead to conflicts.",
+    intensityNote: "Level 4/5: Very offensive. Common insult but vulgar. Avoid using directly to someone's face.",
+    usageContext: "Describing rude or unpleasant people. Common in casual speech but avoid using directly to someone's face.",
+    formality: "vulgar",
+    audioAvailable: true
   },
   {
     id: "rough-32",
@@ -962,7 +982,11 @@ export const roughEnglish: SlangItem[] = [
       { speaker: "Alex", line: "我知道。我得去修一下。" }
     ],
     culturalNotes: "Common expression of frustration. The literal meaning is offensive, but it's often used as a general expletive. Can be directed at a person as a severe insult.",
-    warning: "WARNING: 'Son of a bitch' is very vulgar. The literal meaning is deeply offensive. Use milder alternatives like 'damn it' or 'shoot' in most situations."
+    warning: "WARNING: 'Son of a bitch' is very vulgar. The literal meaning is deeply offensive. Use milder alternatives like 'damn it' or 'shoot' in most situations.",
+    intensityNote: "Level 4/5: Very offensive. Can be used as general expletive or severe insult. Avoid in formal settings.",
+    usageContext: "Extreme frustration, anger. Common but very vulgar. Avoid in formal settings or around sensitive audiences.",
+    formality: "vulgar",
+    audioAvailable: true
   },
   {
     id: "rough-33",
@@ -989,7 +1013,11 @@ export const roughEnglish: SlangItem[] = [
       { speaker: "Jake", line: "谢谢。我明天还你。" }
     ],
     culturalNotes: "Common expression of frustration. Less severe than 'holy shit' or 'fuck off' but still considered profane. Some religious people find it offensive because it uses God's name in vain.",
-    warning: "WARNING: 'Goddammit' is considered blasphemous by some religious people. Use 'darn it' or 'shoot' if you're around sensitive audiences."
+    warning: "WARNING: 'Goddammit' is considered blasphemous by some religious people. Use 'darn it' or 'shoot' if you're around sensitive audiences.",
+    intensityNote: "Level 2/5: Mildly offensive. Considered blasphemous by some religious people. Use milder alternatives around sensitive audiences.",
+    usageContext: "Expressing frustration or anger. Common but consider your audience. Avoid around religious people or sensitive audiences.",
+    formality: "casual",
+    audioAvailable: true
   },
   {
     id: "rough-34",
@@ -1016,7 +1044,11 @@ export const roughEnglish: SlangItem[] = [
       { speaker: "Mia", line: "我知道。她最差了。" }
     ],
     culturalNotes: "In British/Australian/Irish English it is one of the strongest insults, often misogynistic. In American English it is even more taboo and rarely used outside of hostile conflict. Avoid in nearly all contexts.",
-    warning: "WARNING: 'Cunt' is among the most offensive words in English, especially in the US. It is often considered misogynistic. Using it can end relationships and careers. DO NOT use this word."
+    warning: "WARNING: 'Cunt' is among the most offensive words in English, especially in the US. It is often considered misogynistic. Using it can end relationships and careers. DO NOT use this word.",
+    intensityNote: "Level 5/5: Maximum offensiveness. Among the most offensive words in English, especially in the US. Often considered misogynistic. DO NOT use this word.",
+    usageContext: "Extremely limited contexts only. In British/Australian/Irish English it is one of the strongest insults. In American English it is almost never acceptable. Avoid in nearly all contexts.",
+    formality: "vulgar",
+    audioAvailable: true
   },
   {
     id: "rough-35",
@@ -1043,7 +1075,11 @@ export const roughEnglish: SlangItem[] = [
       { speaker: "Alex", line: "真的！我要报警。" }
     ],
     culturalNotes: "One of the strongest insults and expletives in English. Can be used as an insult toward a person or as a general expletive. Extremely vulgar and unacceptable in polite company.",
-    warning: "WARNING: 'Motherfucker' is extremely vulgar and offensive. It insults someone's family and implies incest. Using this word is likely to provoke violence or severe social consequences."
+    warning: "WARNING: 'Motherfucker' is extremely vulgar and offensive. It insults someone's family and implies incest. Using this word is likely to provoke violence or severe social consequences.",
+    intensityNote: "Level 5/5: Maximum offensiveness. One of the strongest insults in English. Insults someone's family and implies incest. Likely to provoke violence or severe social consequences.",
+    usageContext: "Extreme anger, hostile conflict. Extremely vulgar. Unacceptable in polite company. Can provoke violence or severe social consequences.",
+    formality: "vulgar",
+    audioAvailable: true
   },
   {
     id: "rough-36",
@@ -1070,7 +1106,11 @@ export const roughEnglish: SlangItem[] = [
       { speaker: "Mia", line: "我知道。他总是这样。" }
     ],
     culturalNotes: "Historically meant 'illegitimate child' and was extremely offensive. Today it's commonly used as a general insult, especially in British English. In American English it's considered milder but still rude.",
-    warning: "WARNING: 'Bastard' can be offensive because of its historical meaning. While commonly used as an insult in some countries, it can still deeply hurt people, especially those born outside of marriage."
+    warning: "WARNING: 'Bastard' can be offensive because of its historical meaning. While commonly used as an insult in some countries, it can still deeply hurt people, especially those born outside of marriage.",
+    intensityNote: "Level 3/5: Moderately offensive. Historically meant 'illegitimate child.' Commonly used as general insult in British English, milder in American English.",
+    usageContext: "Insulting someone who is unpleasant or dishonest. Common in British English, milder in American English. Still can deeply hurt some people.",
+    formality: "rude",
+    audioAvailable: true
   },
   {
     id: "rough-37",
@@ -1097,7 +1137,11 @@ export const roughEnglish: SlangItem[] = [
       { speaker: "Alex", line: "现在不行。让我一个人待着。" }
     ],
     culturalNotes: "Common British/Australian/Irish expression meaning 'go away' or expressing annoyance. While vulgar, it's less aggressive than 'fuck off.' Equivalent to 'bugger off' in some regions.",
-    warning: "WARNING: 'Piss off' is vulgar and rude. While common in British English, it's still offensive. Use 'go away' or 'leave me alone' in polite company."
+    warning: "WARNING: 'Piss off' is vulgar and rude. While common in British English, it's still offensive. Use 'go away' or 'leave me alone' in polite company.",
+    intensityNote: "Level 4/5: Very offensive. Common British/Australian/Irish expression. Less aggressive than 'fuck off' but still vulgar.",
+    usageContext: "Angry or annoyed. Common in British, Irish, Australian, and New Zealand English. Avoid in formal or polite contexts.",
+    formality: "vulgar",
+    audioAvailable: true
   },
   {
     id: "rough-38",

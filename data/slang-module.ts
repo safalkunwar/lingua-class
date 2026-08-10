@@ -167,6 +167,10 @@ export const slangModule: SlangModule = {
           exampleEn: "Dang, I spilled coffee on my shirt.",
           exampleZh: "哎呀，我把咖啡洒在衬衫上了。",
           category: "mild-interjections",
+          intensityNote: "Level 1/5: Very mild. The softest option in this category. Safe for all settings including around children.",
+          usageContext: "Everyday frustration, minor mistakes. Safe for all ages and settings. Often used as a substitute for stronger words when children are present.",
+          formality: "casual",
+          audioAvailable: true
         },
         {
           id: "darn",
@@ -197,6 +201,10 @@ export const slangModule: SlangModule = {
           exampleEn: "Darn, I missed the bus again.",
           exampleZh: "可恶，我又错过公交车了。",
           category: "mild-interjections",
+          intensityNote: "Level 1/5: Very mild. Classic family-friendly alternative to stronger words. Safe for all settings.",
+          usageContext: "Everyday frustration, minor mistakes. Common in American English. Safe around children and in formal settings.",
+          formality: "casual",
+          audioAvailable: true
         },
         {
           id: "shoot",
@@ -227,6 +235,10 @@ export const slangModule: SlangModule = {
           exampleEn: "Shoot, I forgot my keys again.",
           exampleZh: "哎呀，我又忘记带钥匙了。",
           category: "mild-interjections",
+          intensityNote: "Level 1/5: Very mild. The softest option. Safe for all ages and all settings including formal ones.",
+          usageContext: "Everyday frustration, minor mistakes. Safe for all ages and settings. Often used by people who avoid stronger language entirely.",
+          formality: "casual",
+          audioAvailable: true
         },
         {
           id: "heck",
@@ -257,6 +269,10 @@ export const slangModule: SlangModule = {
           exampleEn: "What the heck? I just parked here!",
           exampleZh: "搞什么？我刚刚停在这的！",
           category: "mild-interjections",
+          intensityNote: "Level 1/5: Very mild. Family-friendly alternative to 'hell'. Safe for all ages and settings.",
+          usageContext: "Expressing surprise, frustration, or disbelief. Common among children and adults. Safe for all settings.",
+          formality: "casual",
+          audioAvailable: true
         },
       ],
       dialogues: [
@@ -1244,6 +1260,10 @@ export const slangModule: SlangModule = {
           exampleEn: "We meeting at 5? — Bet.",
           exampleZh: "我们5点见面？——一言为定。",
           category: "casual-connectors",
+          intensityNote: "Level 1/5: Not offensive. Very common casual agreement marker. Common among young people.",
+          usageContext: "Casual conversations, text messages, social media. Expressing agreement or confirmation. Very common among teens and young adults.",
+          formality: "casual",
+          audioAvailable: true
         },
         {
           id: "slaps",
@@ -1284,6 +1304,10 @@ export const slangModule: SlangModule = {
           exampleEn: "This new album slaps! Been on repeat all day.",
           exampleZh: "这张新专辑超棒！今天一直在循环播放。",
           category: "casual-connectors",
+          intensityNote: "Level 1/5: Not offensive. Positive expression. Very common in modern casual speech, especially among young people.",
+          usageContext: "Casual conversation, social media, music discussions. Expressing that something is really good, especially music, food, or experiences.",
+          formality: "casual",
+          audioAvailable: true
         },
         {
           id: "whack",
@@ -1323,6 +1347,10 @@ export const slangModule: SlangModule = {
           exampleEn: "The food at that restaurant was whack.",
           exampleZh: "那家餐厅的食物很糟糕。",
           category: "casual-connectors",
+          intensityNote: "Level 1/5: Not offensive. Negative expression but not rude. Opposite of 'slaps'.",
+          usageContext: "Casual conversation, expressing disappointment. Common among young people. Opposite of 'slaps'.",
+          formality: "casual",
+          audioAvailable: true
         },
         {
           id: "i-mean",
@@ -1363,6 +1391,10 @@ export const slangModule: SlangModule = {
           exampleEn: "I mean, it's not the best option, but it'll work.",
           exampleZh: "我的意思是，这不是最好的选择，但它能用。",
           category: "casual-connectors",
+          intensityNote: "Level 1/5: Not offensive. One of the most common filler phrases in English. Overusing can make you sound uncertain.",
+          usageContext: "Casual conversation, clarifying statements, softening opinions. Common among all ages. One of the most common filler phrases.",
+          formality: "neutral",
+          audioAvailable: true
         },
         {
           id: "you-know",
@@ -1403,6 +1435,10 @@ export const slangModule: SlangModule = {
           exampleEn: "You know, I think we should leave early.",
           exampleZh: "你知道的，我觉得我们应该早点走。",
           category: "casual-connectors",
+          intensityNote: "Level 1/5: Not offensive. One of the most overused filler phrases in English. Native speakers use it constantly.",
+          usageContext: "Casual conversation, engaging listeners, softening statements. Common among all ages. Overusing can make you sound uncertain.",
+          formality: "neutral",
+          audioAvailable: true
         },
         {
           id: "literally",
@@ -1443,6 +1479,10 @@ export const slangModule: SlangModule = {
           exampleEn: "I'm literally so hungry I could eat a horse.",
           exampleZh: "我 literally 饿得能吃下一匹马。",
           category: "casual-connectors",
+          intensityNote: "Level 1/5: Not offensive. One of the most overused words in English. Can be used as intensifier or to mean 'actually'.",
+          usageContext: "Casual conversation, emphasizing points, expressing strong feelings. Common among all ages but overuse can sound immature.",
+          formality: "neutral",
+          audioAvailable: true
         },
         {
           id: "actually",
@@ -1483,6 +1523,10 @@ export const slangModule: SlangModule = {
           exampleEn: "Actually, I think we should take a different route.",
           exampleZh: "实际上，我觉得我们应该走另一条路。",
           category: "casual-connectors",
+          intensityNote: "Level 1/5: Not offensive. One of the most common filler words in English. Can sound aggressive if used with wrong tone.",
+          usageContext: "Casual conversation, politely disagreeing, correcting or adding information. Common among all ages.",
+          formality: "neutral",
+          audioAvailable: true
         },
       ],
       dialogues: [
@@ -2322,6 +2366,10 @@ export const slangModule: SlangModule = {
           exampleEn: "I'm screaming! That TikTok had me in tears.",
           exampleZh: "我笑死了！那个TikTok让我笑出眼泪。",
           category: "emotional-expressions",
+          intensityNote: "Level 1/5: Not offensive. Exaggerated expression of laughter. Common in social media and texting.",
+          usageContext: "Social media, texting, casual conversations. Expressing extreme amusement or laughter. Common among teens and young adults.",
+          formality: "casual",
+          audioAvailable: true
         },
       ],
       dialogues: [
