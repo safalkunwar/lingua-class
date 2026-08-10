@@ -863,6 +863,10 @@ export const slangModule: SlangModule = {
           exampleEn: "Everyone is wearing the same outfit today. NPC behavior.",
           exampleZh: "每个人都穿着同样的衣服。NPC行为。",
           category: "internet-digital-slang",
+          intensityNote: "Level 2/5: Moderately offensive. Implies lack of intelligence or originality. Can be insulting depending on context.",
+          usageContext: "Online discussions, social media, gaming communities. Used to criticize people perceived as lacking independent thought.",
+          formality: "casual",
+          audioAvailable: true
         },
         {
           id: "touch-grass",
@@ -904,6 +908,10 @@ export const slangModule: SlangModule = {
           exampleEn: "You're arguing with strangers on Twitter at 3am. Touch grass.",
           exampleZh: "你凌晨3点还在Twitter上和陌生人吵架。去接触现实吧。",
           category: "internet-digital-slang",
+          intensityNote: "Level 2/5: Mildly offensive. Can be playful banter or a genuine insult depending on tone and context.",
+          usageContext: "Online arguments, social media, gaming chats. Used to tell someone they're too invested in online drama or need to experience real life.",
+          formality: "casual",
+          audioAvailable: true
         },
       ],
       dialogues: [
