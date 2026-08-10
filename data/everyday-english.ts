@@ -1763,6 +1763,44 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         relatedTerms: ["at the same time", "afterwards", "later"],
         register: "neutral",
         audioAvailable: true
+      },
+      {
+        id: "ne-right-now",
+        term: "right now / just now",
+        chinese: "现在 / 刚才",
+        pinyin: "xiàn zài / gāng cái",
+        meaning: "'Right now' = at this exact moment. 'Just now' = a moment ago.",
+        category: "native-expressions",
+        difficulty: "A2",
+        examples: [
+          { en: "I'm busy right now.", zh: "我现在很忙。" },
+          { en: "I saw her just now.", zh: "我刚才见过她。" }
+        ],
+        commonMistakes: [
+          { mistake: "I did it right now. (for past)", correction: "Use 'just now' for past, 'right now' for present." }
+        ],
+        relatedTerms: ["now", "currently", "at the moment"],
+        register: "neutral",
+        audioAvailable: true
+      },
+      {
+        id: "ne-later-on",
+        term: "later on / sooner or later",
+        chinese: "稍后 / 迟早",
+        pinyin: "shāo hòu / chí zǎo",
+        meaning: "'Later on' = at a later time. 'Sooner or later' = eventually, inevitably.",
+        category: "native-expressions",
+        difficulty: "B1",
+        examples: [
+          { en: "We'll discuss that later on.", zh: "我们稍后再讨论那个。" },
+          { en: "Sooner or later, you'll understand.", zh: "你迟早会明白的。" }
+        ],
+        commonMistakes: [
+          { mistake: "Using 'sooner or later' for immediate future", correction: "Use 'soon' or 'shortly' for immediate future." }
+        ],
+        relatedTerms: ["eventually", "finally", "afterwards"],
+        register: "neutral",
+        audioAvailable: true
       }
     ],
     exercises: [
@@ -1912,6 +1950,44 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
           { mistake: "The meeting is biweekly. (ambiguous)", correction: "Say 'every two weeks' or 'twice a month' for clarity." }
         ],
         relatedTerms: ["bimonthly", "semiweekly", "biannual"],
+        register: "neutral",
+        audioAvailable: true
+      },
+      {
+        id: "cm-half",
+        term: "Half vs A half",
+        chinese: "Half 与 A half 的区别",
+        pinyin: "Half hé A half de qū bié",
+        meaning: "'Half of the...' is standard. 'A half of the...' is possible but less common.",
+        category: "common-mistakes",
+        difficulty: "A2",
+        examples: [
+          { en: "Half of the students passed. (correct)", zh: "一半的学生通过了。（正确）" },
+          { en: "A half of the students passed. (less common)", zh: "一半的学生通过了。（较少见）" }
+        ],
+        commonMistakes: [
+          { mistake: "A half of students passed.", correction: "Use 'Half of the students' or 'Half the students'." }
+        ],
+        relatedTerms: ["one-third", "one-quarter", "three-quarters"],
+        register: "neutral",
+        audioAvailable: true
+      },
+      {
+        id: "cm-a-number-of",
+        term: "A number of vs The number of",
+        chinese: "A number of 与 The number of 的区别",
+        pinyin: "A number of hé The number of de qū bié",
+        meaning: "'A number of' = many (plural verb). 'The number of' = quantity (singular verb).",
+        category: "common-mistakes",
+        difficulty: "B2",
+        examples: [
+          { en: "A number of students are here. (= Many students are here)", zh: "许多学生在这里。（= Many students are here）" },
+          { en: "The number of students is increasing. (= The quantity is growing)", zh: "学生数量在增加。（= The quantity is growing）" }
+        ],
+        commonMistakes: [
+          { mistake: "A number of students is here.", correction: "Use plural verb with 'a number of': 'A number of students ARE here.'" }
+        ],
+        relatedTerms: ["a lot of", "several"],
         register: "neutral",
         audioAvailable: true
       }
