@@ -24,8 +24,13 @@ const getAiImageUrl = (item: { id: string; answer: string }): string => {
 
 const getItemImageSrc = (item?: { image?: string; id: string; answer: string }): string => {
   if (!item) return "";
-  if (item.image && (item.image.startsWith("http") || item.image.startsWith("data:"))) {
-    return item.image;
+  if (item.image) {
+    if (item.image.startsWith("http") || item.image.startsWith("data:")) {
+      return item.image;
+    }
+    if (item.image.trim().startsWith("<svg")) {
+      return svgToDataUri(item.image);
+    }
   }
   return getAiImageUrl(item);
 };
