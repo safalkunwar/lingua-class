@@ -2678,6 +2678,10 @@ export const slangModule: SlangModule = {
           exampleEn: "I binge-watched the whole series in one weekend.",
           exampleZh: "我整个周末刷完了整部剧。",
           category: "media-entertainment",
+          intensityNote: "Level 1/5: Not offensive. Common entertainment term. Can imply excessive behavior depending on context.",
+          usageContext: "Discussing TV shows, movies, streaming services. Common in the streaming era.",
+          formality: "casual",
+          audioAvailable: true
         },
         {
           id: "ship",
@@ -2718,6 +2722,10 @@ export const slangModule: SlangModule = {
           exampleEn: "Everyone ships those two characters. They're the best couple.",
           exampleZh: "大家都嗑这两个角色。他们是最好的情侣。",
           category: "media-entertainment",
+          intensityNote: "Level 1/5: Not offensive. Common fandom term. Be respectful when shipping real people.",
+          usageContext: "Fandoms, social media, entertainment discussions. Describing support for romantic pairings.",
+          formality: "casual",
+          audioAvailable: true
         },
         {
           id: "cliffhanger",
@@ -2758,6 +2766,10 @@ export const slangModule: SlangModule = {
           exampleEn: "That season finale was a total cliffhanger. I can't wait for the next one.",
           exampleZh: "那季终集完全是悬念。我等不及下一季了。",
           category: "media-entertainment",
+          intensityNote: "Level 1/5: Not offensive. Common entertainment term. Can be positive (exciting) or negative (frustrating).",
+          usageContext: "Discussing TV shows, movies, books, and entertainment. Describing endings that leave you wanting more.",
+          formality: "neutral",
+          audioAvailable: true
         },
         {
           id: "canon",
@@ -2798,6 +2810,10 @@ export const slangModule: SlangModule = {
           exampleEn: "The director confirmed that ending is canon.",
           exampleZh: "导演确认那个结局是官方设定。",
           category: "media-entertainment",
+          intensityNote: "Level 1/5: Not offensive. Essential fandom vocabulary. Distinguishes official content from fan theories.",
+          usageContext: "Fandoms, entertainment discussions, social media. Describing official or confirmed story elements.",
+          formality: "neutral",
+          audioAvailable: true
         },
       ],
       dialogues: [
