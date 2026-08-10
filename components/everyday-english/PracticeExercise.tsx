@@ -5,8 +5,9 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import { PracticeExercise, ExerciseType } from "@/types/everyday-english";
-import { CheckCircle2, XCircle, Lightbulb, Volume2 } from "lucide-react";
+import { CheckCircle2, XCircle, Lightbulb, Volume2, Mic, MicOff } from "lucide-react";
 import { useSpeechSynthesis } from "@/hooks/use-speech-synthesis";
+import { useSpeechRecognition } from "@/hooks/use-speech-recognition";
 import { cn } from "@/lib/utils";
 
 interface PracticeExerciseProps {
@@ -36,7 +37,10 @@ export function ExerciseCard({ exercise, onComplete }: PracticeExerciseProps) {
   const [selectedAnswer, setSelectedAnswer] = useState<string | number | null>(null);
   const [showHint, setShowHint] = useState(false);
   const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
+  const [listeningPlayed, setListeningPlayed] = useState(false);
+  const [speakerTranscript, setSpeakerTranscript] = useState("");
   const { speakEnglish, speakChinese } = useSpeechSynthesis();
+  const { isListening, transcript, startListening, stopListening, isSupported: speechRecognitionSupported } = useSpeechRecognition();
 
   const handleSubmit = () => {
     if (selectedAnswer === null) return;
@@ -49,11 +53,41 @@ export function ExerciseCard({ exercise, onComplete }: PracticeExerciseProps) {
     setSelectedAnswer(null);
     setIsCorrect(null);
     setShowHint(false);
+    setListeningPlayed(false);
+    setSpeakerTranscript("");
   };
 
   const handlePlayQuestion = () => {
     speakEnglish(exercise.question);
   };
+
+  const handlePlayAudio = () => {
+    if (exercise.audioText) {
+      speakEnglish(exercise.audioText);
+      setListeningPlayed(true);
+    }
+  };
+
+  const handleStartSpeaking = () => {
+    setSpeakerTranscript("");
+    startListening("en-US");
+  };
+
+  const handleStopSpeaking = () => {
+    stopListening();
+  };
+
+  const handleCheckSpeaking = () => {
+    const spoken = transcript.toLowerCase().trim();
+    const correct = exercise.correctAnswer.toString().toLowerCase();
+    const isMatch = spoken.includes(correct) || correct.includes(spoken);
+    setIsCorrect(isMatch);
+    setSpeakerTranscript(transcript);
+    onComplete?.(isMatch);
+  };
+
+  const isListeningExercise = exercise.type === "listening";
+  const isSpeakingExercise = exercise.type === "speaking";
 
   return (
     <Card className="p-5 sm:p-6">
@@ -78,7 +112,72 @@ export function ExerciseCard({ exercise, onComplete }: PracticeExerciseProps) {
         </div>
       </div>
 
-      {exercise.options && (
+      {isListeningExercise && exercise.audioText && (
+        <div className="mb-4 p-3 rounded-lg bg-orange-50 dark:bg-orange-950/20 border border-orange-200 dark:border-orange-800">
+          <div className="flex items-center gap-2 mb-2">
+            <Volume2 className="w-4 h-4 text-orange-600" />
+            <p className="text-sm font-medium text-orange-800 dark:text-orange-300">Listen to the audio</p>
+          </div>
+          <Button
+            onClick={handlePlayAudio}
+            disabled={listeningPlayed && isCorrect !== null}
+            className="gap-2"
+          >
+            <Volume2 className="w-4 h-4" />
+            {listeningPlayed ? "Play Again" : "Play Audio"}
+          </Button>
+          {listeningPlayed && (
+            <p className="text-xs text-orange-600 dark:text-orange-400 mt-2">Audio played. Now select your answer below.</p>
+          )}
+        </div>
+      )}
+
+      {isSpeakingExercise && (
+        <div className="mb-4 p-3 rounded-lg bg-pink-50 dark:bg-pink-950/20 border border-pink-200 dark:border-pink-800">
+          <div className="flex items-center gap-2 mb-2">
+            <Mic className="w-4 h-4 text-pink-600" />
+            <p className="text-sm font-medium text-pink-800 dark:text-pink-300">Speak your answer</p>
+          </div>
+          {speechRecognitionSupported ? (
+            <div className="space-y-2">
+              <Button
+                onClick={isListening ? handleStopSpeaking : handleStartSpeaking}
+                variant={isListening ? "destructive" : "default"}
+                className="gap-2"
+              >
+                {isListening ? (
+                  <>
+                    <MicOff className="w-4 h-4" />
+                    Stop Recording
+                  </>
+                ) : (
+                  <>
+                    <Mic className="w-4 h-4" />
+                    Start Recording
+                  </>
+                )}
+              </Button>
+              {transcript && (
+                <div className="p-2 rounded bg-white dark:bg-black/20 border">
+                  <p className="text-xs text-muted-foreground">You said:</p>
+                  <p className="text-sm font-medium">{transcript}</p>
+                </div>
+              )}
+              {transcript && !isListening && (
+                <Button onClick={handleCheckSpeaking} className="gap-2">
+                  Check My Answer
+                </Button>
+              )}
+            </div>
+          ) : (
+            <p className="text-sm text-pink-700 dark:text-pink-300">
+              Speech recognition is not supported in this browser. Please try Chrome or Edge.
+            </p>
+          )}
+        </div>
+      )}
+
+      {(exercise.options && (!isListeningExercise || listeningPlayed)) && (
         <div className="space-y-2 mb-4">
           {exercise.options.map((option, idx) => {
             let optionClass = "w-full text-left p-3 rounded-lg border hover:bg-muted/50 transition-all";
@@ -96,7 +195,7 @@ export function ExerciseCard({ exercise, onComplete }: PracticeExerciseProps) {
               <button
                 key={idx}
                 onClick={() => setSelectedAnswer(idx)}
-                disabled={isCorrect !== null}
+                disabled={isCorrect !== null || (isListeningExercise && !listeningPlayed)}
                 className={optionClass}
               >
                 <div className="flex items-center gap-2">
@@ -119,13 +218,25 @@ export function ExerciseCard({ exercise, onComplete }: PracticeExerciseProps) {
 
       <div className="flex items-center gap-2">
         {isCorrect === null ? (
-          <Button
-            onClick={handleSubmit}
-            disabled={selectedAnswer === null}
-            className="gap-2"
-          >
-            Check Answer
-          </Button>
+          <>
+            {!isListeningExercise && !isSpeakingExercise && (
+              <Button
+                onClick={handleSubmit}
+                disabled={selectedAnswer === null}
+                className="gap-2"
+              >
+                Check Answer
+              </Button>
+            )}
+            {isSpeakingExercise && transcript && !isListening && (
+              <Button
+                onClick={handleCheckSpeaking}
+                className="gap-2"
+              >
+                Check My Answer
+              </Button>
+            )}
+          </>
         ) : (
           <Button
             variant="outline"
@@ -166,7 +277,9 @@ export function ExerciseCard({ exercise, onComplete }: PracticeExerciseProps) {
           ) : (
             <>
               <XCircle className="w-5 h-5 text-red-600" />
-              <p className="text-sm font-medium text-red-800 dark:text-red-300">Not quite. The correct answer is highlighted above.</p>
+              <p className="text-sm font-medium text-red-800 dark:text-red-300">
+                {isSpeakingExercise ? "Not quite. Try again!" : "Not quite. The correct answer is highlighted above."}
+              </p>
             </>
           )}
         </div>

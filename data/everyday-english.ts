@@ -452,6 +452,27 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         correctAnswer: "I've told you three times.",
         hint: "'Three times' is the most natural. 'Thrice' is correct but rare in speech.",
         hintZh: "'Three times' 最自然。'Thrice' 正确但很少用于口语。"
+      },
+      {
+        id: "frq-ex-4",
+        type: "listening",
+        question: "Listen and choose: How many times did the speaker go?",
+        questionZh: "听并选择：说话者去了多少次？",
+        options: ["Once", "Twice", "Three times"],
+        correctAnswer: "Twice",
+        hint: "Listen for 'twice' in the audio.",
+        hintZh: "听音频中的 'twice'。",
+        audioText: "I've been there twice. It's a beautiful place."
+      },
+      {
+        id: "frq-ex-5",
+        type: "speaking",
+        question: "Say how often you exercise. Use a frequency expression.",
+        questionZh: "说出你多久锻炼一次。使用频率表达。",
+        options: [],
+        correctAnswer: "three times a week",
+        hint: "Try saying: 'I exercise three times a week.'",
+        hintZh: "试着说：'I exercise three times a week.'"
       }
     ],
     teacherPanel: {
@@ -1406,6 +1427,27 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         correctAnswer: "Meanwhile, she was reading.",
         hint: "'Meanwhile' = at the same time.",
         hintZh: "'Meanwhile' = 与此同时。"
+      },
+      {
+        id: "ne-ex-4",
+        type: "listening",
+        question: "Listen and choose: What time expression did the speaker use?",
+        questionZh: "听并选择：说话者使用了什么时间表达？",
+        options: ["In a minute", "For a while", "Meanwhile"],
+        correctAnswer: "In a minute",
+        hint: "Listen for the phrase meaning 'soon'.",
+        hintZh: "听表示 '马上' 的短语。",
+        audioText: "I'll be there in a minute. Just finishing up!"
+      },
+      {
+        id: "ne-ex-5",
+        type: "speaking",
+        question: "Say a sentence using 'eventually'.",
+        questionZh: "用 'eventually' 说一个句子。",
+        options: [],
+        correctAnswer: "eventually",
+        hint: "Try saying: 'Eventually, I understood the lesson.'",
+        hintZh: "试着说：'Eventually, I understood the lesson.'"
       }
     ],
     teacherPanel: {

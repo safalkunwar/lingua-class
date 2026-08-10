@@ -30,6 +30,7 @@ export interface PracticeExercise {
   correctAnswer: string | number;
   hint: string;
   hintZh: string;
+  audioText?: string;
 }
 
 export interface TeacherPanel {
