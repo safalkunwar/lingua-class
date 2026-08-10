@@ -1306,6 +1306,44 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         relatedTerms: ["twice as", "triple", "as...as"],
         register: "neutral",
         audioAvailable: true
+      },
+      {
+        id: "cmp-comparative",
+        term: "comparative adjectives (-er / more)",
+        chinese: "比较级形容词",
+        pinyin: "bǐ jiào jí xíng róng cí",
+        meaning: "Use -er for short adjectives (taller), more for longer adjectives (more beautiful).",
+        category: "comparisons",
+        difficulty: "A2",
+        examples: [
+          { en: "She is taller than me.", zh: "她比我高。" },
+          { en: "This is more expensive than that.", zh: "这个比那个贵。" }
+        ],
+        commonMistakes: [
+          { mistake: "She is more tall than me.", correction: "Use 'taller' for short adjectives, 'more tall' is wrong." }
+        ],
+        relatedTerms: ["superlative", "as...as"],
+        register: "neutral",
+        audioAvailable: true
+      },
+      {
+        id: "cmp-superlative",
+        term: "superlative adjectives (-est / most)",
+        chinese: "最高级形容词",
+        pinyin: "zuì gāo jí xíng róng cí",
+        meaning: "Use -est for short adjectives (tallest), most for longer adjectives (most beautiful).",
+        category: "comparisons",
+        difficulty: "B1",
+        examples: [
+          { en: "She is the tallest in the class.", zh: "她是班里最高的。" },
+          { en: "This is the most beautiful city.", zh: "这是最美的城市。" }
+        ],
+        commonMistakes: [
+          { mistake: "She is the most tall.", correction: "Use 'the tallest' for short adjectives." }
+        ],
+        relatedTerms: ["comparative", "as...as"],
+        register: "neutral",
+        audioAvailable: true
       }
     ],
     exercises: [
