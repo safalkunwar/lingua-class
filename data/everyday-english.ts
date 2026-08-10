@@ -2204,6 +2204,37 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         correctAnswer: "The number of students is increasing.",
         hint: "'The number of' takes a singular verb.",
         hintZh: "'The number of' 谓语用单数。"
+      },
+      {
+        id: "pl-ex-7",
+        type: "listening",
+        question: "Listen and choose: How often does the speaker exercise?",
+        questionZh: "听并选择：说话者多久锻炼一次？",
+        options: ["Twice a week", "Every day", "Once a month"],
+        correctAnswer: "Twice a week",
+        hint: "Listen for the frequency expression.",
+        hintZh: "听频率表达。",
+        audioText: "I exercise twice a week. It keeps me healthy."
+      },
+      {
+        id: "pl-ex-8",
+        type: "speaking",
+        question: "Say how often you visit your parents.",
+        questionZh: "说出你多久看望一次父母。",
+        options: [],
+        correctAnswer: "every other week",
+        hint: "Try saying: 'I visit my parents every other week.'",
+        hintZh: "试着说：'I visit my parents every other week.'"
+      },
+      {
+        id: "pl-ex-9",
+        type: "fill-blank",
+        question: "The population grew ___ in ten years. (fivefold / five times)",
+        questionZh: "人口在十年内增长了___。",
+        options: ["fivefold", "five times"],
+        correctAnswer: "fivefold",
+        hint: "Both are correct, but 'fivefold' is more concise.",
+        hintZh: "两者都对，但 'fivefold' 更简洁。"
       }
     ],
     teacherPanel: {
