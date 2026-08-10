@@ -553,6 +553,10 @@ export const slangModule: SlangModule = {
           exampleEn: "We went on three dates and then he started ghosting me.",
           exampleZh: "我们约会了三次，然后他就突然不回我消息了。",
           category: "internet-digital-slang",
+          intensityNote: "Level 2/5: Not offensive to the speaker, but describes behavior that can be hurtful. Use carefully when discussing relationships.",
+          usageContext: "Discussing modern dating, friendships, and digital communication. Common in social media and conversations about relationships.",
+          formality: "casual",
+          audioAvailable: true
         },
         {
           id: "cap-fr",
@@ -597,6 +601,10 @@ export const slangModule: SlangModule = {
           exampleEn: "No cap, I studied for 10 hours for that test.",
           exampleZh: "真的，我为那次考试学习了10个小时。",
           category: "internet-digital-slang",
+          intensityNote: "Level 1/5: Not offensive. Culturally specific but widely understood among younger generations.",
+          usageContext: "Casual conversations, social media, texting with friends. Common among Gen Z and young millennials.",
+          formality: "casual",
+          audioAvailable: true
         },
         {
           id: "yeet",
@@ -630,6 +638,10 @@ export const slangModule: SlangModule = {
           exampleEn: "He yeeted the empty bottle into the recycling bin.",
           exampleZh: "他把空瓶子用力扔进了回收箱。",
           category: "internet-digital-slang",
+          intensityNote: "Level 1/5: Not offensive. Playful and energetic. May confuse older generations.",
+          usageContext: "Playful contexts, social media, gaming, among teens and young adults. Not appropriate for formal settings.",
+          formality: "casual",
+          audioAvailable: true
         },
         {
           id: "sus",
@@ -665,6 +677,10 @@ export const slangModule: SlangModule = {
           exampleEn: "He said he was working late but I saw him at the movies. That's sus.",
           exampleZh: "他说他在加班，但我看到他在电影院。这很可疑。",
           category: "internet-digital-slang",
+          intensityNote: "Level 1/5: Not offensive. Very common among teens and young adults. May not be understood by older generations.",
+          usageContext: "Casual conversation, social media, gaming, texting friends. Describes behavior that seems suspicious or questionable.",
+          formality: "casual",
+          audioAvailable: true
         },
         {
           id: "rizz",
@@ -709,6 +725,10 @@ export const slangModule: SlangModule = {
           exampleEn: "She has serious rizz - everyone falls for her.",
           exampleZh: "她真的有魅力——每个人都被她吸引。",
           category: "internet-digital-slang",
+          intensityNote: "Level 1/5: Not offensive. Playful and modern. May not be understood by older generations.",
+          usageContext: "Casual conversation, social media, dating contexts, among teens and young adults. Describes someone's romantic charm or ability to attract others.",
+          formality: "casual",
+          audioAvailable: true
         },
         {
           id: "simping",
