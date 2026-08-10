@@ -1668,6 +1668,44 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         relatedTerms: ["half", "a dozen", "a half"],
         register: "neutral",
         audioAvailable: true
+      },
+      {
+        id: "eg-dozen",
+        term: "a dozen / half a dozen",
+        chinese: "一打（12个）/ 半打",
+        pinyin: "yī dǎ / bàn dǎ",
+        meaning: "A dozen = 12. Half a dozen = 6. Common in cooking, shopping, and everyday speech.",
+        category: "everyday-grammar",
+        difficulty: "A2",
+        examples: [
+          { en: "I bought a dozen eggs.", zh: "我买了十二个鸡蛋。" },
+          { en: "I need half a dozen apples.", zh: "我需要半打苹果。" }
+        ],
+        commonMistakes: [
+          { mistake: "I bought dozens of eggs. (when you mean exactly 12)", correction: "Use 'a dozen' for exactly 12, 'dozens of' for many." }
+        ],
+        relatedTerms: ["half", "a couple of", "several"],
+        register: "neutral",
+        audioAvailable: true
+      },
+      {
+        id: "eg-a-third",
+        term: "a third of / a quarter of",
+        chinese: "三分之一 / 四分之一",
+        pinyin: "sān fēn zhī yī / sì fēn zhī yī",
+        meaning: "Fractions used with 'of' before nouns.",
+        category: "everyday-grammar",
+        difficulty: "A2",
+        examples: [
+          { en: "A third of the class is absent.", zh: "三分之一的学生缺席了。" },
+          { en: "A quarter of the budget was spent.", zh: "四分之一的预算已用完。" }
+        ],
+        commonMistakes: [
+          { mistake: "I ate a quarter cake.", correction: "Use 'a quarter of the cake'." }
+        ],
+        relatedTerms: ["half", "three-quarters", "one-third"],
+        register: "neutral",
+        audioAvailable: true
       }
     ],
     exercises: [
