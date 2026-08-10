@@ -34,6 +34,7 @@ export const slangModule: SlangModule = {
             "A softened alternative to stronger profanity. Common among all ages.",
           detailsZh: "较强脏话的软化替代品。各年龄段普遍使用。",
           intensity: 2,
+          intensityNote: "Level 2/5: Very mild. Generally acceptable in most casual and semi-formal settings.",
           safetyLabels: [
             { label: "Family Friendly", icon: "✅", settings: ["Work", "School", "Family"] },
             { label: "Mild Caution", icon: "⚠️", settings: ["Formal settings"] },
@@ -59,6 +60,9 @@ export const slangModule: SlangModule = {
           exampleEn: "Oh crap! I forgot my keys at home again.",
           exampleZh: "该死！我又把钥匙忘在家里了。",
           category: "mild-interjections",
+          usageContext: "Everyday frustration, minor mistakes, casual settings. Safe for most situations except very formal ones.",
+          formality: "casual",
+          audioAvailable: true
         },
         {
           id: "damn",
