@@ -153,6 +153,82 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         relatedTerms: ["hundreds of", "thousands of", "millions of"],
         register: "neutral",
         audioAvailable: true
+      },
+      {
+        id: "nq-a-couple-of",
+        term: "a couple of",
+        chinese: "两个；几个",
+        pinyin: "liǎng gè / jǐ gè",
+        meaning: "Two or a few. Informal. Slightly more than 'a couple' in American English.",
+        category: "numbers-quantity",
+        difficulty: "A2",
+        examples: [
+          { en: "I need a couple of minutes.", zh: "我需要几分钟。" },
+          { en: "A couple of friends are coming.", zh: "有几个朋友要来。" }
+        ],
+        commonMistakes: [
+          { mistake: "Using 'a couple of' in very formal writing", correction: "Use 'a few' or 'several' in formal contexts." }
+        ],
+        relatedTerms: ["a few", "several", "a couple"],
+        register: "casual",
+        audioAvailable: true
+      },
+      {
+        id: "nq-several",
+        term: "several",
+        chinese: "几个；若干",
+        pinyin: "jǐ gè / ruò gān",
+        meaning: "More than two but not many. Formal alternative to 'a few'.",
+        category: "numbers-quantity",
+        difficulty: "B1",
+        examples: [
+          { en: "I've read several books on this topic.", zh: "我读过几本关于这个主题的书。" },
+          { en: "Several people objected to the plan.", zh: "几个人反对这个计划。" }
+        ],
+        commonMistakes: [
+          { mistake: "Several people was here.", correction: "Use plural verb: 'Several people were here.'" }
+        ],
+        relatedTerms: ["a few", "a number of", "numerous"],
+        register: "neutral",
+        audioAvailable: true
+      },
+      {
+        id: "nq-loads-of",
+        term: "loads of",
+        chinese: "大量（口语）",
+        pinyin: "dà liàng",
+        meaning: "A large amount. Very informal. Similar to 'a lot of' but more casual.",
+        category: "numbers-quantity",
+        difficulty: "B1",
+        examples: [
+          { en: "There are loads of restaurants here.", zh: "这里有很多餐馆。" },
+          { en: "I've got loads of work.", zh: "我有很多工作。" }
+        ],
+        commonMistakes: [
+          { mistake: "Using 'loads of' in formal writing", correction: "Use 'a large number of' or 'numerous' in formal contexts." }
+        ],
+        relatedTerms: ["a lot of", "lots of", "plenty of"],
+        register: "casual",
+        audioAvailable: true
+      },
+      {
+        id: "nq-hundreds-of",
+        term: "hundreds of / thousands of / millions of",
+        chinese: "数百/数千/数百万",
+        pinyin: "shù bǎi / shù qiān / shù bǎi wàn",
+        meaning: "Large vague quantities. Used for emphasis or when exact numbers aren't known.",
+        category: "numbers-quantity",
+        difficulty: "B1",
+        examples: [
+          { en: "Hundreds of people attended.", zh: "数百人参加了。" },
+          { en: "Thousands of fans waited outside.", zh: "数千名粉丝在门外等候。" }
+        ],
+        commonMistakes: [
+          { mistake: "I have hundreds of money.", correction: "Use with countable plural nouns only." }
+        ],
+        relatedTerms: ["dozens of", "loads of"],
+        register: "neutral",
+        audioAvailable: true
       }
     ],
     exercises: [
@@ -185,6 +261,27 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         correctAnswer: "I have little time to go there.",
         hint: "'Time' is uncountable. Use 'little' for negative meaning.",
         hintZh: "'Time' 是不可数名词。用 'little' 表示否定含义。"
+      },
+      {
+        id: "nq-ex-4",
+        type: "listening",
+        question: "Listen and choose: How many people came?",
+        questionZh: "听并选择：来了多少人？",
+        options: ["A few", "Few", "Many"],
+        correctAnswer: "A few",
+        hint: "Listen for the positive small number expression.",
+        hintZh: "听表示积极小数量的表达。",
+        audioText: "A few people came to the party. It was nice."
+      },
+      {
+        id: "nq-ex-5",
+        type: "speaking",
+        question: "Say a sentence using 'a lot of'.",
+        questionZh: "用 'a lot of' 说一个句子。",
+        options: [],
+        correctAnswer: "a lot of",
+        hint: "Try saying: 'I have a lot of work to do.'",
+        hintZh: "试着说：'I have a lot of work to do.'"
       }
     ],
     teacherPanel: {
