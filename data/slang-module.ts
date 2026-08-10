@@ -2058,6 +2058,10 @@ export const slangModule: SlangModule = {
           exampleEn: "That TikTok had me dead! I couldn't stop laughing.",
           exampleZh: "那个TikTok笑死我了！我停不下来。",
           category: "emotional-expressions",
+          intensityNote: "Level 1/5: Not offensive. Exaggerated expression of laughter. Very common among teens and young adults.",
+          usageContext: "Social media, texting, casual conversations. Expressing extreme amusement or laughter.",
+          formality: "casual",
+          audioAvailable: true
         },
         {
           id: "i-cant-even",
@@ -2098,6 +2102,10 @@ export const slangModule: SlangModule = {
           exampleEn: "I can't even with how hot it is today.",
           exampleZh: "今天这么热我简直无语了。",
           category: "emotional-expressions",
+          intensityNote: "Level 1/5: Not offensive. Exaggerated expression of being overwhelmed. Very common on social media.",
+          usageContext: "Casual conversation, social media captions, texting. Expressing frustration, amusement, or being overwhelmed.",
+          formality: "casual",
+          audioAvailable: true
         },
         {
           id: "send-help",
@@ -2138,6 +2146,10 @@ export const slangModule: SlangModule = {
           exampleEn: "Send help, I have 17 unread texts and no idea how to respond.",
           exampleZh: "救命，我有17条未读短信，不知道该怎么回。",
           category: "emotional-expressions",
+          intensityNote: "Level 1/5: Not offensive. Exaggerated for comedic effect. Common on social media.",
+          usageContext: "Social media, texting, casual conversations. Used humorously to describe minor difficulties or overwhelming situations.",
+          formality: "casual",
+          audioAvailable: true
         },
         {
           id: "obsessed",
@@ -2178,6 +2190,10 @@ export const slangModule: SlangModule = {
           exampleEn: "I'm obsessed with this coffee shop. I go there every day.",
           exampleZh: "我超爱这家咖啡店。我每天都去。",
           category: "emotional-expressions",
+          intensityNote: "Level 1/5: Not offensive. Strong positive expression. Very common in social media and casual speech.",
+          usageContext: "Social media, casual conversations, expressing strong liking for something. Common among teens and young adults.",
+          formality: "casual",
+          audioAvailable: true
         },
         {
           id: "its-giving",
@@ -2218,6 +2234,10 @@ export const slangModule: SlangModule = {
           exampleEn: "This outfit? It's giving main character energy.",
           exampleZh: "这身衣服？感觉像是主角光环。",
           category: "emotional-expressions",
+          intensityNote: "Level 1/5: Not offensive. Very popular on social media, especially TikTok. May not be understood by older generations.",
+          usageContext: "Social media, fashion, music, casual conversations. Describing the vibe or impression something gives.",
+          formality: "casual",
+          audioAvailable: true
         },
         {
           id: "im-shook",
@@ -2258,6 +2278,10 @@ export const slangModule: SlangModule = {
           exampleEn: "I'm shook! Did you see that goal?",
           exampleZh: "我震惊了！你看到那个进球了吗？",
           category: "emotional-expressions",
+          intensityNote: "Level 1/5: Not offensive. Expression of strong surprise or shock. Very common in casual speech and social media.",
+          usageContext: "Casual conversation, social media, reacting to surprising news or events. Common among all ages online.",
+          formality: "casual",
+          audioAvailable: true
         },
         {
           id: "im-screaming",
