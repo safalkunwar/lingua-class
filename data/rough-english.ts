@@ -7,6 +7,8 @@ export const roughEnglish: SlangItem[] = [
     chinese: "闭嘴",
     pinyin: "bì zuǐ",
     meaning: "Be quiet / Stop talking",
+    detailsEn: "A direct command to stop speaking. Can also be an exclamation of surprise or disbelief when said with an excited tone.",
+    detailsZh: "直接命令对方停止说话。当用兴奋的语气说时，也可以表示惊讶或 disbelief 的感叹。",
     example: "Oh my god, shut up! That's amazing!",
     exampleZh: "哦我的天，闭嘴！那太棒了！",
     whoSaysIt: "Everyone, but tone matters hugely",
@@ -14,6 +16,7 @@ export const roughEnglish: SlangItem[] = [
     region: "All English-speaking countries",
     isOffensive: true,
     offensiveLevel: 3,
+    intensityNote: "Level 3/5: Moderately offensive when used literally. Can be playful among close friends.",
     safeAlternatives: ["Be quiet", "Stop talking", "Quiet please", "Hang on"],
     conversation: [
       { speaker: "Emma", line: "You won't believe what happened..." },
@@ -26,7 +29,10 @@ export const roughEnglish: SlangItem[] = [
       { speaker: "Emma", line: "我知道！你能相信吗？" }
     ],
     culturalNotes: "Among friends, 'shut up' can mean 'wow, that's shocking/exciting!' Never use with strangers, superiors, or in formal settings.",
-    warning: "WARNING: 'Shut up' is rude when used literally. Among friends with excited tone, it can mean 'wow!' When in doubt, don't use it."
+    usageContext: "Close friends, casual settings, expressing surprise. Never in professional or formal contexts.",
+    formality: "rude",
+    warning: "WARNING: 'Shut up' is rude when used literally. Among friends with excited tone, it can mean 'wow!' When in doubt, don't use it.",
+    audioAvailable: true
   },
   {
     id: "rough-2",
@@ -34,6 +40,8 @@ export const roughEnglish: SlangItem[] = [
     chinese: "别闹了",
     pinyin: "bié nào le",
     meaning: "Stop doing that / Stop it",
+    detailsEn: "A direct command to stop an annoying or inappropriate behavior. Softer than 'shut up' but still firm.",
+    detailsZh: "直接命令停止令人讨厌或不当的行为。比 'shut up' 温和，但仍然坚定。",
     example: "Knock it off! You're being annoying.",
     exampleZh: "别闹了！你真的很烦。",
     whoSaysIt: "Parents, teachers, authority figures",
@@ -41,6 +49,7 @@ export const roughEnglish: SlangItem[] = [
     region: "American, British, Australian",
     isOffensive: true,
     offensiveLevel: 2,
+    intensityNote: "Level 2/5: Mildly offensive. Firm but not vulgar. Common in family settings.",
     safeAlternatives: ["Stop it", "Please stop", "That's enough", "Cut it out"],
     conversation: [
       { speaker: "Mom", line: "Knock it off! You two are driving me crazy." },
@@ -52,7 +61,10 @@ export const roughEnglish: SlangItem[] = [
       { speaker: "Kid 1", line: "但是他先开始的！" },
       { speaker: "Mom", line: "我不在乎谁先开始的。现在就别闹了。" }
     ],
-    culturalNotes: "Common phrase used by authority figures. Stronger than 'stop it' but not as offensive as some other phrases."
+    culturalNotes: "Common in American English. Slightly softer than 'shut up'. Used when someone is being annoying, not when you want them to be completely silent.",
+    usageContext: "Family settings, schools, casual authority figures. Not for formal or professional settings.",
+    formality: "rude",
+    audioAvailable: true
   },
   {
     id: "rough-3",
@@ -990,6 +1002,137 @@ export const roughEnglish: SlangItem[] = [
     ],
     culturalNotes: "Common British/Australian/Irish expression meaning 'go away' or expressing annoyance. While vulgar, it's less aggressive than 'fuck off.' Equivalent to 'bugger off' in some regions.",
     warning: "WARNING: 'Piss off' is vulgar and rude. While common in British English, it's still offensive. Use 'go away' or 'leave me alone' in polite company."
+  },
+  {
+    id: "rough-38",
+    word: "WTF",
+    chinese: "搞什么鬼（粗俗缩写）",
+    pinyin: "gǎo shén me guǐ",
+    meaning: "What the f*** - expression of shock, anger, or confusion",
+    detailsEn: "Abbreviation of 'What the fuck'. Used in text messages, social media, and casual speech to express strong surprise, disbelief, or frustration.",
+    detailsZh: "'What the fuck' 的缩写。用于短信、社交媒体和口语中，表达强烈的惊讶、 disbelief 或沮丧。",
+    example: "WTF is going on here?",
+    exampleZh: "这他妈是怎么回事？",
+    whoSaysIt: "Teens, young adults, people texting",
+    ageGroup: "Teens to 30s",
+    region: "All English-speaking countries, especially in digital communication",
+    isOffensive: true,
+    offensiveLevel: 4,
+    intensityNote: "Level 4/5: Very offensive in formal contexts. Common and almost expected in informal digital communication among peers.",
+    safeAlternatives: ["What the heck", "What is going on", "What's happening", "I'm confused"],
+    conversation: [
+      { speaker: "Jordan", line: "WTF? I just got a text from the bank." },
+      { speaker: "Taylor", line: "What happened?" },
+      { speaker: "Jordan", line: "They said my account is overdrawn. I don't even use it!" }
+    ],
+    chineseTranslation: [
+      { speaker: "Jordan", line: "搞什么鬼？我刚收到银行的短信。" },
+      { speaker: "Taylor", line: "发生了什么？" },
+      { speaker: "Jordan", line: "他们说我的账户透支了。我根本不用！" }
+    ],
+    culturalNotes: "Extremely common in text messaging and social media. While offensive in formal contexts, it's widely accepted among younger people in casual digital communication. The written form 'WTF' is often considered less offensive than saying the full phrase.",
+    usageContext: "Text messages, social media, casual conversations with friends. Never in professional emails, meetings, or formal settings.",
+    formality: "vulgar",
+    warning: "WARNING: 'WTF' contains a severe profanity. While common in digital communication, avoid in any professional or formal context. The full phrase 'What the fuck' is extremely offensive.",
+    audioAvailable: true
+  },
+  {
+    id: "rough-39",
+    word: "Stfu",
+    chinese: "闭嘴（粗俗网络用语）",
+    pinyin: "bì zuǐ",
+    meaning: "Shut the f*** up - extremely rude way to tell someone to be quiet",
+    detailsEn: "Abbreviation of 'Shut the fuck up'. Used primarily in text messages and online to aggressively tell someone to stop talking.",
+    detailsZh: "'Shut the fuck up' 的缩写。主要用于短信和网络， aggressive 地告诉某人停止说话。",
+    example: "Stfu! I'm trying to watch this.",
+    exampleZh: "闭嘴！我在看这个。",
+    whoSaysIt: "People online, angry texters, teens",
+    ageGroup: "Teens to 30s",
+    region: "Global, especially in English-speaking countries",
+    isOffensive: true,
+    offensiveLevel: 5,
+    intensityNote: "Level 5/5: Maximum offensiveness. One of the rudest things you can say. Use only with close friends who you know won't be offended, never with strangers.",
+    safeAlternatives: ["Be quiet", "Stop talking", "Please be quiet", "I'm trying to concentrate"],
+    conversation: [
+      { speaker: "Riley", line: "Stfu! I'm watching the game." },
+      { speaker: "Casey", line: "I was just asking a question!" },
+      { speaker: "Riley", line: "Not now. I'm busy." }
+    ],
+    chineseTranslation: [
+      { speaker: "Riley", line: "闭嘴！我在看比赛。" },
+      { speaker: "Casey", line: "我只是问个问题！" },
+      { speaker: "Riley", line: "现在不行。我很忙。" }
+    ],
+    culturalNotes: "Common in online gaming, social media arguments, and angry text messages. Considered one of the most offensive abbreviations. The full form 'Shut the fuck up' is extremely vulgar.",
+    usageContext: "Online arguments, gaming, extremely casual settings with close friends only. Never in any professional or polite context.",
+    formality: "vulgar",
+    warning: "WARNING: 'STFU' is one of the most offensive expressions in English. It contains a severe profanity and should be avoided in all but the most casual, private conversations with close friends.",
+    audioAvailable: true
+  },
+  {
+    id: "rough-40",
+    word: "FML",
+    chinese: "我真是倒霉（粗俗缩写）",
+    pinyin: "wǒ zhēn shì dǎo méi",
+    meaning: "F*** my life - expression of extreme frustration or embarrassment",
+    detailsEn: "Abbreviation of 'Fuck my life'. Used to express frustration, embarrassment, or when something embarrassing or frustrating happens.",
+    detailsZh: "'Fuck my life' 的缩写。用于表达沮丧、尴尬，或当某些尴尬或令人沮丧的事情发生时。",
+    example: "FML, I forgot my keys again.",
+    exampleZh: "我真是倒霉，我又把钥匙忘了。",
+    whoSaysIt: "Teens, young adults, people on social media",
+    ageGroup: "Teens to 30s",
+    region: "All English-speaking countries",
+    isOffensive: true,
+    offensiveLevel: 4,
+    intensityNote: "Level 4/5: Very offensive due to the profanity, but commonly used as an exaggerated expression of frustration among young people.",
+    safeAlternatives: ["This sucks", "I'm so unlucky", "Not again", "This is frustrating"],
+    conversation: [
+      { speaker: "Avery", line: "FML! I just failed my driving test." },
+      { speaker: "Quinn", line: "Oh no! When can you retake it?" },
+      { speaker: "Avery", line: "Not for two weeks. This is the worst." }
+    ],
+    chineseTranslation: [
+      { speaker: "Avery", line: "我真是倒霉！我刚驾照考试挂了。" },
+      { speaker: "Quinn", line: "不会吧！你什么时候可以重考？" },
+      { speaker: "Avery", line: "要等两周。这太糟了。" }
+    ],
+    culturalNotes: "Extremely common on social media, especially Instagram and Twitter. While offensive due to the profanity, it's often used humorously or hyperbolically among young people. Not appropriate for professional or formal contexts.",
+    usageContext: "Social media posts, text messages to close friends, casual conversation. Never in professional settings or with people you don't know well.",
+    formality: "vulgar",
+    warning: "WARNING: 'FML' contains a severe profanity. While commonly used by young people on social media, it's still offensive and should be avoided in professional or formal contexts.",
+    audioAvailable: true
+  },
+  {
+    id: "rough-41",
+    word: "BFF",
+    chinese: "最好的朋友",
+    pinyin: "zuì hǎo de péng yǒu",
+    meaning: "Best friend forever",
+    detailsEn: "Abbreviation of 'Best Friends Forever'. Used to describe a very close, long-term friendship. Common in text messages and social media.",
+    detailsZh: "'Best Friends Forever' 的缩写。用于描述非常亲密、长期的朋友关系。常见于短信和社交媒体。",
+    example: "She's my BFF. We've known each other since kindergarten.",
+    exampleZh: "她是我最好的朋友。我们从幼儿园就认识了。",
+    whoSaysIt: "Everyone, especially teens and young adults",
+    ageGroup: "All ages, especially teens and young adults",
+    region: "All English-speaking countries",
+    isOffensive: false,
+    offensiveLevel: 0,
+    intensityNote: "Level 0/5: Not offensive at all. A cute, friendly term.",
+    safeAlternatives: ["Best friend", "Close friend", "Bestie", "Best friend forever"],
+    conversation: [
+      { speaker: "Lily", line: "Have you met my BFF, Sarah?" },
+      { speaker: "Sarah", line: "We've been friends since we were 5." },
+      { speaker: "Lily", line: "Yeah, she's basically my sister." }
+    ],
+    chineseTranslation: [
+      { speaker: "Lily", line: "你见过我最好的朋友莎拉吗？" },
+      { speaker: "Sarah", line: "我们从5岁就认识了。" },
+      { speaker: "Lily", line: "是啊，她 basically 是我妹妹。" }
+    ],
+    culturalNotes: "Very common in American English, especially among young people. While originally a teen slang term, it's now used by adults too, often humorously or sincerely. The term has evolved from 'Best Friends Forever' to just meaning 'very close friend'.",
+    usageContext: "Text messages, social media, casual conversation. Can be used sincerely or playfully. Appropriate in most informal contexts.",
+    formality: "casual",
+    audioAvailable: true
   }
 ];
 

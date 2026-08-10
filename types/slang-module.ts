@@ -44,6 +44,7 @@ export interface SlangTerm {
   detailsEn: string;
   detailsZh: string;
   intensity: IntensityLevel;
+  intensityNote?: string;
   safetyLabels: SafetyLabel[];
   regionalVariations: RegionalVariation[];
   demographics: Demographics;
@@ -52,6 +53,9 @@ export interface SlangTerm {
   exampleEn: string;
   exampleZh: string;
   category: string;
+  usageContext?: string;
+  formality?: "casual" | "neutral" | "formal" | "rude" | "vulgar";
+  audioAvailable?: boolean;
 }
 
 export interface DialogueExample {
@@ -117,6 +121,8 @@ export interface SlangItem {
   chinese: string;
   pinyin: string;
   meaning: string;
+  detailsEn?: string;
+  detailsZh?: string;
   example: string;
   exampleZh: string;
   whoSaysIt: string;
@@ -124,6 +130,7 @@ export interface SlangItem {
   region: string;
   isOffensive: boolean;
   offensiveLevel: number;
+  intensityNote?: string;
   safeAlternatives: string[];
   conversation: {
     speaker: string;
@@ -134,7 +141,10 @@ export interface SlangItem {
     line: string;
   }[];
   culturalNotes: string;
+  usageContext?: string;
+  formality?: "casual" | "neutral" | "formal" | "rude" | "vulgar";
   warning?: string;
+  audioAvailable?: boolean;
 }
 
 export interface SlangModule {
