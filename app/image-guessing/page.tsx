@@ -17,6 +17,19 @@ function svgToDataUri(svgString: string): string {
   return `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svgString)}`;
 }
 
+const getAiImageUrl = (item: { id: string; answer: string }): string => {
+  const prompt = encodeURIComponent(`${item.answer} colorful illustration for kids learning english`);
+  return `https://image.pollinations.ai/prompt/${prompt}?width=400&height=300&nologo=true&seed=${item.id}`;
+};
+
+const getItemImageSrc = (item?: { image?: string; id: string; answer: string }): string => {
+  if (!item) return "";
+  if (item.image && (item.image.startsWith("http") || item.image.startsWith("data:"))) {
+    return item.image;
+  }
+  return getAiImageUrl(item);
+};
+
 export default function ImageGuessingPage() {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -128,13 +141,11 @@ export default function ImageGuessingPage() {
     setGameState("start");
   };
 
-  const itemImageSrc = currentItem?.image
-    ? svgToDataUri(currentItem.image)
-    : "";
+  const itemImageSrc = getItemImageSrc(currentItem);
 
   const previewImageSrc = (cat: typeof imageGuessingCategories[0]) => {
     const first = cat.items[0];
-    return first?.image ? svgToDataUri(first.image) : "";
+    return getItemImageSrc(first);
   };
 
   if (gameState === "start" || !category) {

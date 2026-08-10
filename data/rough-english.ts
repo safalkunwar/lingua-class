@@ -91,7 +91,11 @@ export const roughEnglish: SlangItem[] = [
       { speaker: "Alex", line: "我没让你帮忙。" }
     ],
     culturalNotes: "Quite rude. Can be considered bullying if used repeatedly. Students should understand it but avoid using it.",
-    warning: "WARNING: 'Get lost' is very rude and can be considered harassment. Use 'Leave me alone' instead."
+    warning: "WARNING: 'Get lost' is very rude and can be considered harassment. Use 'Leave me alone' instead.",
+    intensityNote: "Level 4/5: Very offensive. Can be considered verbal harassment. Avoid in all contexts.",
+    usageContext: "Angry confrontations, bullying. Never appropriate in normal social interactions.",
+    formality: "vulgar",
+    audioAvailable: true
   },
   {
     id: "rough-4",
@@ -117,7 +121,11 @@ export const roughEnglish: SlangItem[] = [
       { speaker: "Tom", line: "饶了我吧！我上周也加班了。" },
       { speaker: "Lisa", line: "那太不公平了。你应该和你老板谈谈。" }
     ],
-    culturalNotes: "Common expression of frustration. Can be used humorously among friends."
+    culturalNotes: "Common expression of frustration. Can be used humorously among friends.",
+    intensityNote: "Level 2/5: Mildly offensive when frustrated. Can be playful among friends. Context and tone matter a lot.",
+    usageContext: "Expressing frustration, disbelief, or that something is unreasonable. Common among friends and in casual settings.",
+    formality: "casual",
+    audioAvailable: true
   },
   {
     id: "rough-5",
@@ -143,7 +151,11 @@ export const roughEnglish: SlangItem[] = [
       { speaker: "John", line: "看到了，真是个混蛋。" },
       { speaker: "Amy", line: "我应该说点什么的。" }
     ],
-    culturalNotes: "One of the most common mild insults in American English. Still rude but widely used among friends to describe others."
+    culturalNotes: "One of the most common mild insults in American English. Still rude but widely used among friends to describe others.",
+    intensityNote: "Level 3/5: Moderately offensive. Common insult but still rude. Avoid using directly to someone's face.",
+    usageContext: "Describing rude or unpleasant people. Common in casual conversation but avoid using to someone's face.",
+    formality: "rude",
+    audioAvailable: true
   },
   {
     id: "rough-6",
@@ -170,7 +182,11 @@ export const roughEnglish: SlangItem[] = [
       { speaker: "Sam", line: "你只是因为我赢了才生气。" }
     ],
     culturalNotes: "Common in school bullying. Should be avoided in adult professional contexts. Can be playful among friends depending on tone.",
-    warning: "WARNING: 'Loser' can be bullying language. Using it toward someone who is struggling is cruel."
+    warning: "WARNING: 'Loser' can be bullying language. Using it toward someone who is struggling is cruel.",
+    intensityNote: "Level 4/5: Very offensive when used as an insult. Can be playful among close friends depending on tone.",
+    usageContext: "School settings, casual insults, gaming. Avoid in professional or formal contexts. Can be teasing among friends.",
+    formality: "rude",
+    audioAvailable: true
   },
   {
     id: "rough-7",
@@ -196,7 +212,11 @@ export const roughEnglish: SlangItem[] = [
       { speaker: "Jordan", line: "我知道，对不起。那是意外。" },
       { speaker: "Alex", line: "算了。下次别那么混蛋。" }
     ],
-    culturalNotes: "Mild-to-moderate insult. Less severe than some other words but still rude. Common in everyday speech among friends."
+    culturalNotes: "Mild-to-moderate insult. Less severe than some other words but still rude. Common in everyday speech among friends.",
+    intensityNote: "Level 3/5: Moderately offensive. Common frustration word. Can be playful among close friends but rude with strangers.",
+    usageContext: "Expressing frustration with friends or when someone makes a mistake. Avoid in formal or professional settings.",
+    formality: "rude",
+    audioAvailable: true
   },
   {
     id: "rough-8",
@@ -222,7 +242,11 @@ export const roughEnglish: SlangItem[] = [
       { speaker: "Sam", line: "我这周没钱了。" },
       { speaker: "Mike", line: "别这么吝啬。才5美元。" }
     ],
-    culturalNotes: "Common insult among friends. Can be playful or serious depending on tone. 'Frugal' is the neutral/positive version."
+    culturalNotes: "Common insult among friends. Can be playful or serious depending on tone. 'Frugal' is the neutral/positive version.",
+    intensityNote: "Level 2/5: Mildly offensive. Can be playful teasing among friends or a genuine criticism depending on tone.",
+    usageContext: "Among friends, casual settings. Can be playful teasing or criticism of spending habits. Avoid in formal contexts.",
+    formality: "casual",
+    audioAvailable: true
   },
   {
     id: "rough-9",
@@ -249,7 +273,11 @@ export const roughEnglish: SlangItem[] = [
       { speaker: "Alex", line: "注意你的嘴巴。" }
     ],
     culturalNotes: "Extremely rude. Considered a serious insult. Can be considered harassment. Students should understand it but never use it.",
-    warning: "EXTREME WARNING: 'Drop dead' is one of the rudest expressions in English. It can be considered a threat. Never use this expression."
+    warning: "EXTREME WARNING: 'Drop dead' is one of the rudest expressions in English. It can be considered a threat. Never use this expression.",
+    intensityNote: "Level 5/5: Maximum offensiveness. Can be interpreted as a threat. Never use this expression.",
+    usageContext: "Angry confrontations, extreme frustration. Never appropriate in normal social interactions.",
+    formality: "vulgar",
+    audioAvailable: true
   },
   {
     id: "rough-10",
@@ -276,7 +304,11 @@ export const roughEnglish: SlangItem[] = [
       { speaker: "Lisa", line: "这不是重点。" }
     ],
     culturalNotes: "Very offensive. Can end relationships. Sometimes used jokingly among very close friends, but still risky.",
-    warning: "EXTREME WARNING: 'Screw you' is extremely offensive and can destroy relationships. Never use this expression."
+    warning: "EXTREME WARNING: 'Screw you' is extremely offensive and can destroy relationships. Never use this expression.",
+    intensityNote: "Level 5/5: Maximum offensiveness. Can seriously damage relationships. Never use this expression.",
+    usageContext: "Angry confrontations, extreme frustration. Never appropriate in normal social interactions. Can end friendships.",
+    formality: "vulgar",
+    audioAvailable: true
   },
   {
     id: "rough-11",
@@ -303,7 +335,11 @@ export const roughEnglish: SlangItem[] = [
       { speaker: "Bully", line: "别让我重复一遍。" }
     ],
     culturalNotes: "Threatening phrase often used by bullies. Can be a precursor to physical violence. Students should understand it as a threat.",
-    warning: "WARNING: This phrase is often used by bullies and can indicate physical danger. If someone says this to you, seek help from an adult or authority figure."
+    warning: "WARNING: This phrase is often used by bullies and can indicate physical danger. If someone says this to you, seek help from an adult or authority figure.",
+    intensityNote: "Level 4/5: Very offensive and threatening. Often used by bullies. Can indicate physical danger. Report to authorities if directed at you.",
+    usageContext: "Bullying, threatening situations. Never appropriate in normal social interactions. Can be a precursor to physical violence.",
+    formality: "vulgar",
+    audioAvailable: true
   },
   {
     id: "rough-12",
@@ -330,7 +366,11 @@ export const roughEnglish: SlangItem[] = [
       { speaker: "Teacher", line: "事情不是这样的。" }
     ],
     culturalNotes: "Common threat phrase among students. Can be serious or playful depending on context. In schools, this should be reported to teachers.",
-    warning: "WARNING: This is a threatening phrase. If someone says this to you, especially in school, report it to a teacher or authority figure."
+    warning: "WARNING: This is a threatening phrase. If someone says this to you, especially in school, report it to a teacher or authority figure.",
+    intensityNote: "Level 4/5: Very offensive and threatening. Common in school settings. Should be reported if used as a threat.",
+    usageContext: "Student settings, threatening situations. Can be playful banter among friends or genuine threat depending on context.",
+    formality: "vulgar",
+    audioAvailable: true
   },
   {
     id: "rough-13",
@@ -354,10 +394,14 @@ export const roughEnglish: SlangItem[] = [
     chineseTranslation: [
       { speaker: "Emma", line: "闭嘴！我在打电话。" },
       { speaker: "Jake", line: "对不起，我不知道。" },
-      { speaker: "Emma", line: "下次小声点。" }
+       { speaker: "Emma", line: "下次小声点。" }
     ],
     culturalNotes: "Very common but rude. Among close friends with playful tone, it can mean 'wow, that's surprising.' Never use with strangers or in formal settings.",
-    warning: "WARNING: 'Shut up' is a rude command. Using it toward strangers, teachers, or bosses is extremely disrespectful."
+    warning: "WARNING: 'Shut up' is a rude command. Using it toward strangers, teachers, or bosses is extremely disrespectful.",
+    intensityNote: "Level 3/5: Moderately offensive. Can be playful among close friends but rude with strangers or in formal settings.",
+    usageContext: "Casual settings, among friends. Can be playful or rude depending on tone and context. Never with strangers or authority figures.",
+    formality: "rude",
+    audioAvailable: true
   },
   {
     id: "rough-14",
@@ -383,7 +427,11 @@ export const roughEnglish: SlangItem[] = [
       { speaker: "Lisa", line: "我知道，我没想清楚。" },
       { speaker: "Tom", line: "下次小心点。" }
     ],
-    culturalNotes: "Common mild insult. Less severe than 'idiot' but still rude. Often used to describe actions rather than people."
+    culturalNotes: "Common mild insult. Less severe than 'idiot' but still rude. Often used to describe actions rather than people.",
+    intensityNote: "Level 2/5: Mildly offensive. Very common in casual speech. Often used to describe actions rather than people directly.",
+    usageContext: "Casual settings, expressing frustration with actions or ideas. Common among friends but avoid in formal settings.",
+    formality: "casual",
+    audioAvailable: true
   },
   {
     id: "rough-15",
@@ -410,7 +458,11 @@ export const roughEnglish: SlangItem[] = [
       { speaker: "Mia", line: "这不行。你需要道歉。" }
     ],
     culturalNotes: "Very strong expression. Rarely literal among friends, but still hurtful. Among teens, it's often dramatic and temporary. Adults should avoid using it.",
-    warning: "WARNING: 'I hate you' is extremely hurtful. Even when said in anger, it can cause lasting emotional damage. Never use this expression lightly."
+    warning: "WARNING: 'I hate you' is extremely hurtful. Even when said in anger, it can cause lasting emotional damage. Never use this expression lightly.",
+    intensityNote: "Level 4/5: Very offensive and emotionally damaging. Can cause lasting harm even when not meant literally. Avoid in all contexts.",
+    usageContext: "Extreme anger, deep betrayal, emotional outbursts. Rarely literal but still very hurtful. Never appropriate in normal interactions.",
+    formality: "vulgar",
+    audioAvailable: true
   },
   {
     id: "rough-16",
@@ -437,7 +489,11 @@ export const roughEnglish: SlangItem[] = [
       { speaker: "Emma", line: "下次小声点。" }
     ],
     culturalNotes: "Very common but rude. Among close friends with playful tone, it can mean 'wow, that's surprising.' Never use with strangers or in formal settings.",
-    warning: "WARNING: 'Shut up' is a rude command. Using it toward strangers, teachers, or bosses is extremely disrespectful."
+    warning: "WARNING: 'Shut up' is a rude command. Using it toward strangers, teachers, or bosses is extremely disrespectful.",
+    intensityNote: "Level 3/5: Moderately offensive. Can be playful among close friends but rude with strangers or in formal settings.",
+    usageContext: "Casual settings, among friends. Can be playful or rude depending on tone and context. Never with strangers or authority figures.",
+    formality: "rude",
+    audioAvailable: true
   },
   {
     id: "rough-17",
@@ -464,7 +520,11 @@ export const roughEnglish: SlangItem[] = [
       { speaker: "Alex", line: "我说了滚出去！我自己来。" }
     ],
     culturalNotes: "Very rude command. Shows extreme anger or frustration. Can be used playfully among very close friends but is usually serious.",
-    warning: "WARNING: 'Get out' is a harsh command. Using it toward family members or friends can cause serious emotional harm."
+    warning: "WARNING: 'Get out' is a harsh command. Using it toward family members or friends can cause serious emotional harm.",
+    intensityNote: "Level 4/5: Very offensive and harsh. Can cause serious emotional harm. Avoid using toward people you care about.",
+    usageContext: "Extreme anger, frustration, asserting boundaries. Never appropriate in normal social interactions. Can damage relationships.",
+    formality: "rude",
+    audioAvailable: true
   },
   {
     id: "rough-18",
@@ -490,7 +550,11 @@ export const roughEnglish: SlangItem[] = [
       { speaker: "Jake", line: "怎么了？我做了什么吗？" },
       { speaker: "Mia", line: "没什么。我只是需要一些时间。" }
     ],
-    culturalNotes: "Not inherently offensive, but the tone matters. Can sound harsh if said aggressively. Often used when someone needs emotional space."
+    culturalNotes: "Not inherently offensive, but the tone matters. Can sound harsh if said aggressively. Often used when someone needs emotional space.",
+    intensityNote: "Level 1/5: Not offensive when used to set boundaries. Can sound harsh depending on tone. A healthy way to ask for space.",
+    usageContext: "Setting boundaries, needing privacy or emotional space. Common and acceptable in most contexts when said respectfully.",
+    formality: "neutral",
+    audioAvailable: true
   },
   {
     id: "rough-19",
@@ -517,7 +581,11 @@ export const roughEnglish: SlangItem[] = [
       { speaker: "Alex", line: "那也要先问一下再碰。" }
     ],
     culturalNotes: "Common command when someone is invading personal space or crossing boundaries. Can be playful among friends depending on tone.",
-    warning: "WARNING: 'Back off' is a command to create distance. Using it aggressively can be intimidating."
+    warning: "WARNING: 'Back off' is a command to create distance. Using it aggressively can be intimidating.",
+    intensityNote: "Level 3/5: Moderately offensive. Used to assert boundaries. Can be intimidating when said aggressively.",
+    usageContext: "Asserting personal boundaries, when someone is invading personal space. Can be playful among friends or serious depending on tone.",
+    formality: "rude",
+    audioAvailable: true
   },
   {
     id: "rough-20",
@@ -544,7 +612,11 @@ export const roughEnglish: SlangItem[] = [
       { speaker: "Emma", line: "那就好好问。别就这么站着。" }
     ],
     culturalNotes: "Informal and rude. More common in British and Australian English. Similar to 'get lost' but slightly less severe.",
-    warning: "WARNING: 'Buzz off' is rude and dismissive. Avoid using it with people you don't know well."
+    warning: "WARNING: 'Buzz off' is rude and dismissive. Avoid using it with people you don't know well.",
+    intensityNote: "Level 3/5: Moderately offensive. Informal and dismissive. Common in British and Australian English. Avoid with strangers.",
+    usageContext: "Casual dismissals, among friends. More common in British and Australian English. Avoid in formal or polite contexts.",
+    formality: "rude",
+    audioAvailable: true
   },
   {
     id: "rough-21",
@@ -571,7 +643,11 @@ export const roughEnglish: SlangItem[] = [
       { speaker: "Tom", line: "这不是重点。" }
     ],
     culturalNotes: "Very rude expression. Common in British and Australian English. Considered a serious insult.",
-    warning: "EXTREME WARNING: 'Get bent' is extremely rude and offensive. It can end relationships. Never use this expression."
+    warning: "EXTREME WARNING: 'Get bent' is extremely rude and offensive. It can end relationships. Never use this expression.",
+    intensityNote: "Level 4/5: Very offensive. Can end relationships. Common in British and Australian English. Never use this expression.",
+    usageContext: "Angry confrontations, extreme frustration. Common in British and Australian English. Never appropriate in normal social interactions.",
+    formality: "vulgar",
+    audioAvailable: true
   },
   {
     id: "rough-22",
@@ -598,7 +674,11 @@ export const roughEnglish: SlangItem[] = [
       { speaker: "Emma", line: "那就等我忙完。" }
     ],
     culturalNotes: "British slang for 'go away.' Mild compared to some other expressions but still rude. Common in the UK and Australia.",
-    warning: "WARNING: 'Sod off' is rude and dismissive. Avoid using it with people you don't know well."
+    warning: "WARNING: 'Sod off' is rude and dismissive. Avoid using it with people you don't know well.",
+    intensityNote: "Level 3/5: Moderately offensive. British slang for 'go away.' Less severe than stronger expressions but still rude.",
+    usageContext: "Casual dismissals, British and Australian English. Common among friends but avoid in formal contexts.",
+    formality: "rude",
+    audioAvailable: true
   },
   {
     id: "rough-23",
@@ -625,7 +705,11 @@ export const roughEnglish: SlangItem[] = [
       { speaker: "Alex", line: "我没要你帮忙。" }
     ],
     culturalNotes: "Informal and rude. American slang for telling someone to go away. Less severe than some other expressions but still disrespectful.",
-    warning: "WARNING: 'Kick rocks' is rude and dismissive. Using it toward friends or family can hurt feelings."
+    warning: "WARNING: 'Kick rocks' is rude and dismissive. Using it toward friends or family can hurt feelings.",
+    intensityNote: "Level 3/5: Moderately offensive. American slang for 'go away.' Informal and dismissive.",
+    usageContext: "Casual dismissals, American English. Common among friends but avoid in formal or polite contexts.",
+    formality: "rude",
+    audioAvailable: true
   },
   {
     id: "rough-24",
@@ -652,7 +736,11 @@ export const roughEnglish: SlangItem[] = [
       { speaker: "Jake", line: "我知道，但还是。那太 harsh 了。" }
     ],
     culturalNotes: "Expresses satisfaction when someone who did something wrong faces consequences. Can be playful among friends or serious depending on context.",
-    warning: "WARNING: 'Get wrecked' can sound cruel when someone is actually suffering. Use with caution."
+    warning: "WARNING: 'Get wrecked' can sound cruel when someone is actually suffering. Use with caution.",
+    intensityNote: "Level 3/5: Moderately offensive. Expresses schadenfreude. Can sound cruel when someone is actually suffering.",
+    usageContext: "When someone faces consequences for their actions. Can be playful banter or serious depending on context. Avoid when someone is actually suffering.",
+    formality: "casual",
+    audioAvailable: true
   },
   {
     id: "rough-25",
@@ -679,7 +767,11 @@ export const roughEnglish: SlangItem[] = [
       { speaker: "Alex", line: "那解释一下。别大喊大叫。" }
     ],
     culturalNotes: "Stronger and more aggressive than 'shut up.' Often used in arguments or confrontations. Can be considered verbally abusive if used repeatedly.",
-    warning: "WARNING: 'Shut your mouth' is a very aggressive command. Using it toward others is disrespectful and can be considered verbal abuse."
+    warning: "WARNING: 'Shut your mouth' is a very aggressive command. Using it toward others is disrespectful and can be considered verbal abuse.",
+    intensityNote: "Level 4/5: Very offensive and aggressive. Can be considered verbal abuse. Never use this expression.",
+    usageContext: "Arguments, confrontations, extreme anger. Can be considered verbal abuse. Never appropriate in normal social interactions.",
+    formality: "vulgar",
+    audioAvailable: true
   },
   {
     id: "rough-26",
@@ -705,7 +797,11 @@ export const roughEnglish: SlangItem[] = [
       { speaker: "Jake", line: "但那很危险！" },
       { speaker: "Mia", line: "我不在乎。我已经决定了。" }
     ],
-    culturalNotes: "Can sound very dismissive or rude depending on tone and context. Often used in arguments. 'I don't care' can hurt feelings even when not intended."
+    culturalNotes: "Can sound very dismissive or rude depending on tone and context. Often used in arguments. 'I don't care' can hurt feelings even when not intended.",
+    intensityNote: "Level 1/5: Not inherently offensive but can be very hurtful when used dismissively. Context and tone are crucial.",
+    usageContext: "Expressing independence, setting boundaries, or dismissiveness. Can be healthy boundary-setting or rude dismissal depending on context.",
+    formality: "neutral",
+    audioAvailable: true
   },
   {
     id: "rough-27",
