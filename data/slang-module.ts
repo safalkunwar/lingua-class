@@ -76,6 +76,7 @@ export const slangModule: SlangModule = {
             "Versatile mild profanity. Can express frustration or emphasis. Slightly stronger than 'crap'.",
           detailsZh: "versatile的轻度脏话。可表达沮丧或强调。比'crap'稍强。",
           intensity: 2,
+          intensityNote: "Level 2/5: Mild. Acceptable in most casual settings. Avoid in very formal or religious contexts.",
           safetyLabels: [
             { label: "Mostly Safe", icon: "✅", settings: ["Casual", "Friends", "Family"] },
             { label: "Caution", icon: "⚠️", settings: ["Formal meetings", "With strangers"] },
@@ -96,6 +97,9 @@ export const slangModule: SlangModule = {
           exampleEn: "Damn, that was an amazing concert!",
           exampleZh: "该死，那场演唱会太精彩了！",
           category: "mild-interjections",
+          usageContext: "Casual settings, among friends, expressing mild frustration or strong positive emotion. Avoid in formal business or religious contexts.",
+          formality: "casual",
+          audioAvailable: true
         },
         {
           id: "hell",
@@ -109,6 +113,7 @@ export const slangModule: SlangModule = {
             "Very mild by modern standards. 'What the hell' is extremely common.",
           detailsZh: "按现代标准非常轻微。'What the hell'非常常见。",
           intensity: 1,
+          intensityNote: "Level 1/5: Very mild. Almost universally acceptable except in very religious contexts.",
           safetyLabels: [
             { label: "Very Safe", icon: "✅", settings: ["All settings"] },
             { label: "Mild Caution", icon: "⚠️", settings: ["Religious contexts"] },
@@ -129,6 +134,9 @@ export const slangModule: SlangModule = {
           exampleEn: "What the hell is going on here?",
           exampleZh: "这里到底是怎么回事？",
           category: "mild-interjections",
+          usageContext: "Expressing surprise, frustration, or emphasis in casual settings. Generally acceptable in most contexts except religious or very formal ones.",
+          formality: "casual",
+          audioAvailable: true
         },
         {
           id: "dang",
