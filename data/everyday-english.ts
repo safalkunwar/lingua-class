@@ -691,6 +691,44 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         relatedTerms: ["year", "age", "era"],
         register: "neutral",
         audioAvailable: true
+      },
+      {
+        id: "td-quarter",
+        term: "quarter",
+        chinese: "一刻钟；四分之一",
+        pinyin: "yī kè zhōng / sì fēn zhī yī",
+        meaning: "15 minutes (time) or one-fourth (fraction). Context determines meaning.",
+        category: "time-dates",
+        difficulty: "A2",
+        examples: [
+          { en: "I'll be there in a quarter.", zh: "我15分钟后到。" },
+          { en: "A quarter of the class passed.", zh: "四分之一的学生通过了。" }
+        ],
+        commonMistakes: [
+          { mistake: "Using 'quarter' for 15 minutes in formal contexts", correction: "Say '15 minutes' in very formal contexts." }
+        ],
+        relatedTerms: ["half", "hour", "minute"],
+        register: "neutral",
+        audioAvailable: true
+      },
+      {
+        id: "td-century",
+        term: "century / millennium",
+        chinese: "世纪 / 千年",
+        pinyin: "shì jì / qiān nián",
+        meaning: "Century = 100 years. Millennium = 1000 years.",
+        category: "time-dates",
+        difficulty: "B1",
+        examples: [
+          { en: "This century has seen huge changes.", zh: "这个世纪发生了巨大变化。" },
+          { en: "The millennium was celebrated in 2000.", zh: "千禧年在2000年庆祝。" }
+        ],
+        commonMistakes: [
+          { mistake: "A century means 1000 years.", correction: "A century = 100 years. A millennium = 1000 years." }
+        ],
+        relatedTerms: ["decade", "year", "era"],
+        register: "neutral",
+        audioAvailable: true
       }
     ],
     exercises: [
@@ -822,6 +860,45 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
           { mistake: "I go every two days. (this means the same, but 'every other day' is more natural)", correction: "Both are correct. 'Every other day' is more conversational." }
         ],
         relatedTerms: ["alternate days", "every two days"],
+        register: "neutral",
+        audioAvailable: true
+      },
+      {
+        id: "sch-weekly",
+        term: "weekly / monthly / yearly",
+        chinese: "每周的 / 每月的 / 每年的",
+        pinyin: "měi zhōu de / měi yuè de / měi nián de",
+        meaning: "Happening every week/month/year. Common in schedules and reports.",
+        category: "scheduling",
+        difficulty: "A2",
+        examples: [
+          { en: "I have a weekly meeting.", zh: "我每周开一次会。" },
+          { en: "The report is generated monthly.", zh: "报告每月生成一次。" },
+          { en: "We take a yearly vacation.", zh: "我们每年度假一次。" }
+        ],
+        commonMistakes: [
+          { mistake: "I go there every weekly.", correction: "Use 'every week' or 'weekly', not 'every weekly'." }
+        ],
+        relatedTerms: ["daily", "quarterly", "annually"],
+        register: "neutral",
+        audioAvailable: true
+      },
+      {
+        id: "sch-annually",
+        term: "annually / yearly",
+        chinese: "每年",
+        pinyin: "měi nián",
+        meaning: "Once every year. 'Annually' is more formal, 'yearly' is more common in speech.",
+        category: "scheduling",
+        difficulty: "B1",
+        examples: [
+          { en: "The conference is held annually.", zh: "会议每年举行一次。" },
+          { en: "We review our goals yearly.", zh: "我们每年回顾目标。" }
+        ],
+        commonMistakes: [
+          { mistake: "Using 'annually' in casual conversation", correction: "Use 'yearly' in speech, 'annually' in formal writing." }
+        ],
+        relatedTerms: ["yearly", "monthly", "quarterly"],
         register: "neutral",
         audioAvailable: true
       }
@@ -1055,6 +1132,66 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
           { mistake: "a coffee", correction: "'A coffee' is okay in cafes, but 'a cup of coffee' is more precise." }
         ],
         relatedTerms: ["a bottle of", "a can of"],
+        register: "neutral",
+        audioAvailable: true
+      },
+      {
+        id: "msr-bottle-of",
+        term: "a bottle of / a can of",
+        chinese: "一瓶 / 一罐",
+        pinyin: "yī píng / yī guàn",
+        meaning: "A bottle or can of a drink or food.",
+        category: "measurements",
+        difficulty: "A1",
+        examples: [
+          { en: "a bottle of water", zh: "一瓶水" },
+          { en: "a can of soda", zh: "一罐苏打水" },
+          { en: "a can of beans", zh: "一罐豆子" }
+        ],
+        commonMistakes: [
+          { mistake: "a water", correction: "Use 'a bottle of water' for precise quantity." }
+        ],
+        relatedTerms: ["a cup of", "a glass of"],
+        register: "neutral",
+        audioAvailable: true
+      },
+      {
+        id: "msr-slice-of",
+        term: "a slice of / a loaf of",
+        chinese: "一片 / 一条",
+        pinyin: "yī piàn / yī tiáo",
+        meaning: "A slice = one piece cut from a larger item. A loaf = a whole loaf of bread.",
+        category: "measurements",
+        difficulty: "A2",
+        examples: [
+          { en: "a slice of bread", zh: "一片面包" },
+          { en: "a loaf of bread", zh: "一条面包" },
+          { en: "a slice of cake", zh: "一块蛋糕" }
+        ],
+        commonMistakes: [
+          { mistake: "a bread", correction: "Use 'a loaf of bread' or 'a slice of bread'." }
+        ],
+        relatedTerms: ["a piece of", "a chunk of"],
+        register: "neutral",
+        audioAvailable: true
+      },
+      {
+        id: "msr-bunch-of",
+        term: "a bunch of / a handful of",
+        chinese: "一串 / 一把",
+        pinyin: "yī chuàn / yī bǎ",
+        meaning: "A bunch = a group of things held together. A handful = what fits in your hand.",
+        category: "measurements",
+        difficulty: "B1",
+        examples: [
+          { en: "a bunch of grapes", zh: "一串葡萄" },
+          { en: "a handful of nuts", zh: "一把坚果" },
+          { en: "a bunch of flowers", zh: "一束花" }
+        ],
+        commonMistakes: [
+          { mistake: "a bunch of rice", correction: "Use 'a bunch of' with items that grow together or are held together." }
+        ],
+        relatedTerms: ["a pair of", "a set of"],
         register: "neutral",
         audioAvailable: true
       }
