@@ -37,6 +37,17 @@
 - `e2152cb` feat: improve Chinese voice detection and caching in speech synthesis
 - `c6a2fce` feat: enhance presentation mode completion screen with stats
 - `e2a6b70` feat: lazy-load heavy conversation components with next/dynamic
+- `8b6df76` feat: add Everyday English Toolkit with 13 sections
+- `783b333` feat: implement listening and speaking exercise types
+- `569f7bf` feat: add more patterns and listening/speaking exercises to Everyday English
+- `2600b39` feat: add more multiplier patterns to Everyday English
+- `4fd2c52` feat: add more time-dates, scheduling, and measurement patterns
+- `95c26e2` feat: add more comparison patterns to Everyday English
+- `57c2bcd` feat: add more word patterns to Everyday English
+- `c4e0d7e` feat: add more native expressions and common mistakes patterns
+- `a908257` feat: add more approximation patterns to Everyday English
+- `3b47d39` feat: add more everyday grammar patterns
+- `4b29c43` feat: expand Everyday English content with more patterns and exercises
 
 **Merges:**
 - Merged `data/slang-academy.ts` into `data/slang-module.ts` as `levels` property
@@ -73,9 +84,21 @@
 - Created pages: hub, section view, pattern detail
 - Added sidebar navigation link
 - Sections: Numbers & Quantity, Multipliers, Frequency, Time & Dates, Scheduling, Approximation, Measurements, Comparisons, Common Word Patterns, Everyday Grammar, Native Expressions, Common Mistakes, Practice Lab
+- Implemented listening exercises with audio playback and multiple choice
+- Implemented speaking exercises with speech recognition
+- Added more patterns to Numbers & Quantity: a couple of, several, loads of, hundreds of
+- Added more patterns to Multipliers: fivefold, tenfold, multiple
+- Added more patterns to Time & Dates: quarter, century, millennium
+- Added more patterns to Scheduling: weekly, monthly, yearly, annually
+- Added more patterns to Measurements: a bottle of, a slice of, a bunch of
+- Added more patterns to Comparisons: comparative adjectives, superlative adjectives
+- Added more patterns to Word Patterns: a little, a range of, a series of
+- Added more patterns to Native Expressions: right now, later on
+- Added more patterns to Common Mistakes: half vs a half, a number of vs the number of
+- Added more patterns to Approximation: nearly, almost, more or less
+- Added more patterns to Everyday Grammar: a dozen, a third of, a quarter of
+- Added more exercises to Practice Lab: listening, speaking, fill-in-blank
 
 **Pending Work:**
-- Add more content to existing sections (currently 6-8 patterns per section)
-- Add listening and speaking exercise types (currently placeholder)
 - Implement search indexing for better performance
 - Add spaced repetition integration
