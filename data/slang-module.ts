@@ -773,6 +773,10 @@ export const slangModule: SlangModule = {
           exampleEn: "He bought her a $200 gift after one date - total simp move.",
           exampleZh: "一次约会后他就给她买了200美元的礼物——典型的舔狗行为。",
           category: "internet-digital-slang",
+          intensityNote: "Level 3/5: Moderately offensive. Used as an insult implying lack of self-respect. Avoid using to describe someone directly.",
+          usageContext: "Online discussions, social media, casual conversations among peers. Used to criticize perceived excessive devotion to someone.",
+          formality: "rude",
+          audioAvailable: true
         },
         {
           id: "skibidi",
@@ -814,6 +818,10 @@ export const slangModule: SlangModule = {
           exampleEn: "That random TikTok was so skibidi, I couldn't stop laughing.",
           exampleZh: "那个随机TikTok太Skibidi了，我笑得停不下来。",
           category: "internet-digital-slang",
+          intensityNote: "Level 1/5: Not offensive. Highly niche and generational. Only understood by Gen Z and active internet users.",
+          usageContext: "Meme culture, gaming, social media, among Gen Z. Used ironically or to describe something absurd.",
+          formality: "casual",
+          audioAvailable: true
         },
         {
           id: "npc",
