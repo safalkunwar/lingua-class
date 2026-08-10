@@ -1016,6 +1016,44 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         relatedTerms: ["about", "around", "or so"],
         register: "neutral",
         audioAvailable: true
+      },
+      {
+        id: "app-nearly",
+        term: "nearly / almost",
+        chinese: "几乎；差不多",
+        pinyin: "jī hū / chà bù duō",
+        meaning: "Close to 100%. 'Nearly' is slightly more formal, 'almost' is more common.",
+        category: "approximation",
+        difficulty: "A2",
+        examples: [
+          { en: "I've nearly finished.", zh: "我差不多做完了。" },
+          { en: "It's almost 5 o'clock.", zh: "差不多5点了。" }
+        ],
+        commonMistakes: [
+          { mistake: "I nearly died of laughter. (meaning 'almost died')", correction: "This is actually correct! 'Nearly' can mean 'almost' in both positive and negative contexts." }
+        ],
+        relatedTerms: ["about", "around", "practically"],
+        register: "neutral",
+        audioAvailable: true
+      },
+      {
+        id: "app-more-or-less",
+        term: "more or less",
+        chinese: "或多或少；基本上",
+        pinyin: "duō huò shào / jī běn shàng",
+        meaning: "Approximately; basically. Used to soften statements.",
+        category: "approximation",
+        difficulty: "B1",
+        examples: [
+          { en: "More or less, I agree with you.", zh: "我基本上同意你的看法。" },
+          { en: "It takes more or less an hour.", zh: "这大约需要一个小时。" }
+        ],
+        commonMistakes: [
+          { mistake: "Using 'more or less' in very formal writing", correction: "Use 'approximately' or 'essentially' in formal contexts." }
+        ],
+        relatedTerms: ["about", "roughly", "basically"],
+        register: "neutral",
+        audioAvailable: true
       }
     ],
     exercises: [
