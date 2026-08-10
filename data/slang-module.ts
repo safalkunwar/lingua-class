@@ -2502,6 +2502,10 @@ export const slangModule: SlangModule = {
           exampleEn: "I stan BTS so much. I have all their albums.",
           exampleZh: "我超爱BTS。我有他们所有的专辑。",
           category: "media-entertainment",
+          intensityNote: "Level 1/5: Not offensive. Positive expression of being a devoted fan. Can be used as noun or verb.",
+          usageContext: "Social media, fan communities, casual conversations about celebrities, shows, or artists.",
+          formality: "casual",
+          audioAvailable: true
         },
         {
           id: "fandom",
@@ -2542,6 +2546,10 @@ export const slangModule: SlangModule = {
           exampleEn: "The fandom is waiting for the new season.",
           exampleZh: "粉丝群体正在等待新一季。",
           category: "media-entertainment",
+          intensityNote: "Level 1/5: Not offensive. Neutral term for fan communities. Can be positive or negative depending on context.",
+          usageContext: "Discussing TV shows, movies, books, music, or any fan community. Common in entertainment journalism and social media.",
+          formality: "neutral",
+          audioAvailable: true
         },
         {
           id: "spoiler",
@@ -2582,6 +2590,10 @@ export const slangModule: SlangModule = {
           exampleEn: "Spoiler alert: The main character dies in the end.",
           exampleZh: "剧透警告：主角最后死了。",
           category: "media-entertainment",
+          intensityNote: "Level 1/5: Not offensive. Important etiquette term in entertainment culture. Spoiling without warning is considered rude.",
+          usageContext: "Entertainment discussions, social media, reviews. Always use 'spoiler alert' before revealing plot details.",
+          formality: "neutral",
+          audioAvailable: true
         },
         {
           id: "plot-twist",
@@ -2622,6 +2634,10 @@ export const slangModule: SlangModule = {
           exampleEn: "I didn't see that plot twist coming!",
           exampleZh: "我没预料到那个剧情反转！",
           category: "media-entertainment",
+          intensityNote: "Level 1/5: Not offensive. Essential entertainment vocabulary. Very common among all ages.",
+          usageContext: "Discussing movies, TV shows, books, and entertainment. Describing unexpected story developments.",
+          formality: "neutral",
+          audioAvailable: true
         },
         {
           id: "binge-watch",
