@@ -385,6 +385,44 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         relatedTerms: ["three times", "triple"],
         register: "formal",
         audioAvailable: true
+      },
+      {
+        id: "mlt-fivefold",
+        term: "fivefold / tenfold",
+        chinese: "五倍 / 十倍",
+        pinyin: "wǔ bèi / shí bèi",
+        meaning: "Five times / ten times. Common in business and academic contexts.",
+        category: "multipliers",
+        difficulty: "B2",
+        examples: [
+          { en: "The population grew fivefold.", zh: "人口增长了五倍。" },
+          { en: "Profits increased tenfold.", zh: "利润增长了十倍。" }
+        ],
+        commonMistakes: [
+          { mistake: "It's five times more.", correction: "Both work, but 'fivefold' is more concise in formal contexts." }
+        ],
+        relatedTerms: ["five times", "ten times"],
+        register: "formal",
+        audioAvailable: true
+      },
+      {
+        id: "mlt-multiple",
+        term: "multiple",
+        chinese: "多个；多倍的",
+        pinyin: "duō gè / duō bèi de",
+        meaning: "Several or many. Can be used as an adjective or noun.",
+        category: "multipliers",
+        difficulty: "B2",
+        examples: [
+          { en: "He has multiple degrees.", zh: "他有多个学位。" },
+          { en: "The issue has multiple causes.", zh: "这个问题有多个原因。" }
+        ],
+        commonMistakes: [
+          { mistake: "Using 'multiple' when you mean 'double' or 'triple'", correction: "Use 'multiple' for 'several' or 'many', not exact multiples." }
+        ],
+        relatedTerms: ["several", "many", "numerous"],
+        register: "formal",
+        audioAvailable: true
       }
     ],
     exercises: [
