@@ -1476,6 +1476,64 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         relatedTerms: ["a little", "a bit", "slightly"],
         register: "casual",
         audioAvailable: true
+      },
+      {
+        id: "wp-a-little",
+        term: "a little / a bit / a little bit",
+        chinese: "一点点；稍微",
+        pinyin: "yī diǎn diǎn / shāo wēi",
+        meaning: "A small amount. Used with uncountable nouns or as adverbs.",
+        category: "word-patterns",
+        difficulty: "A2",
+        examples: [
+          { en: "I'm a little tired.", zh: "我有点累。" },
+          { en: "Can I have a bit of water?", zh: "能给我一点水吗？" },
+          { en: "It's a little bit expensive.", zh: "这有点贵。" }
+        ],
+        commonMistakes: [
+          { mistake: "I have a little informations.", correction: "'Information' is uncountable. Use 'a little information'." }
+        ],
+        relatedTerms: ["kind of", "sort of", "slightly"],
+        register: "neutral",
+        audioAvailable: true
+      },
+      {
+        id: "wp-a-range-of",
+        term: "a range of / a variety of",
+        chinese: "一系列 / 各种各样的",
+        pinyin: "yī xì liè / gè zhǒng gè yàng de",
+        meaning: "Different types of something. 'Range' suggests variety, 'variety' suggests diversity.",
+        category: "word-patterns",
+        difficulty: "B2",
+        examples: [
+          { en: "We offer a range of services.", zh: "我们提供一系列服务。" },
+          { en: "A variety of options are available.", zh: "有各种各样的选项。" }
+        ],
+        commonMistakes: [
+          { mistake: "Using 'a range of' with singular verb", correction: "'A range of' takes a plural verb: 'A range of options ARE available.'" }
+        ],
+        relatedTerms: ["a number of", "several", "various"],
+        register: "neutral",
+        audioAvailable: true
+      },
+      {
+        id: "wp-a-series-of",
+        term: "a series of",
+        chinese: "一系列；一连串",
+        pinyin: "yī xì liè / yī lián chuàn",
+        meaning: "A number of related things happening in sequence. Takes a singular verb when referring to the series as a unit.",
+        category: "word-patterns",
+        difficulty: "B2",
+        examples: [
+          { en: "A series of events led to the decision.", zh: "一系列事件导致了这一决定。" },
+          { en: "The TV series is popular.", zh: "这部电视剧很受欢迎。" }
+        ],
+        commonMistakes: [
+          { mistake: "A series of events were shocking.", correction: "When emphasizing the series as a unit, use singular verb: 'A series of events WAS shocking.'" }
+        ],
+        relatedTerms: ["a range of", "a number of"],
+        register: "formal",
+        audioAvailable: true
       }
     ],
     exercises: [
