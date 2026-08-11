@@ -35,7 +35,8 @@ export const roughEnglish: SlangItem[] = [
     audioAvailable: true
   },
   {
-    id: "rough-2",
+       warning: "WARNING: 'Knock it off' is a firm command. While softer than 'shut up', it can still sound harsh. Use 'please stop' in polite company.",
+     id: "rough-2",
     word: "Knock it off",
     chinese: "别闹了",
     pinyin: "bié nào le",
@@ -98,7 +99,8 @@ export const roughEnglish: SlangItem[] = [
     audioAvailable: true
   },
   {
-    id: "rough-4",
+       warning: "WARNING: 'Give me a break' expresses frustration. Can sound dismissive. Use 'that's not fair' or 'come on' in polite contexts.",
+     id: "rough-4",
     word: "Give me a break",
     chinese: "算了吧/饶了我吧",
     pinyin: "suàn le ba / ráo le wǒ ba",
@@ -128,7 +130,8 @@ export const roughEnglish: SlangItem[] = [
     audioAvailable: true
   },
   {
-    id: "rough-5",
+       warning: "WARNING: 'Jerk' is a common but rude insult. Avoid using it directly to someone's face. Use 'that person was rude' instead.",
+     id: "rough-5",
     word: "Jerk",
     chinese: "混蛋",
     pinyin: "hún dàn",
@@ -189,7 +192,8 @@ export const roughEnglish: SlangItem[] = [
     audioAvailable: true
   },
   {
-    id: "rough-7",
+       warning: "WARNING: 'Idiot' is an insult. While common among friends, it's rude when used to describe someone directly. Use 'that was careless' instead.",
+     id: "rough-7",
     word: "Idiot",
     chinese: "白痴/笨蛋",
     pinyin: "bái chǐ / bèn dàn",
@@ -219,7 +223,8 @@ export const roughEnglish: SlangItem[] = [
     audioAvailable: true
   },
   {
-    id: "rough-8",
+       warning: "WARNING: 'Cheapskate' is an insult about spending habits. Can hurt feelings. Use 'frugal' or 'budget-conscious' as neutral alternatives.",
+     id: "rough-8",
     word: "Cheapskate",
     chinese: "吝啬鬼",
     pinyin: "lìn sè guǐ",
@@ -404,7 +409,8 @@ export const roughEnglish: SlangItem[] = [
     audioAvailable: true
   },
   {
-    id: "rough-14",
+       warning: "WARNING: 'Dumb' is often used to describe actions, but calling someone dumb is rude. Use 'unwise' or 'not the best idea' instead.",
+     id: "rough-14",
     word: "Dumb",
     chinese: "愚蠢的/笨蛋",
     pinyin: "yú chǔn / běn dàn",
