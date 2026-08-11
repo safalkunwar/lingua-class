@@ -29,6 +29,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["few", "a couple of", "several"],
         register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       },
       {
@@ -50,6 +53,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["a few", "little", "a little"],
         register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       },
       {
@@ -71,6 +77,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["much", "a lot of", "lots of"],
         register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       },
       {
@@ -92,6 +101,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["many", "a lot of", "lots of"],
         register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       },
       {
@@ -112,6 +124,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["many", "much", "plenty of", "loads of"],
         register: "casual",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       },
       {
@@ -132,6 +147,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["a lot of", "lots of", "loads of"],
         register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       },
       {
@@ -152,6 +170,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["hundreds of", "thousands of", "millions of"],
         register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       },
       {
@@ -171,6 +192,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["a few", "several", "a couple"],
         register: "casual",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       },
       {
@@ -190,6 +214,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["a few", "a number of", "numerous"],
         register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       },
       {
@@ -209,6 +236,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["a lot of", "lots of", "plenty of"],
         register: "casual",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       },
       {
@@ -228,6 +258,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["dozens of", "loads of"],
         register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       }
     ],
@@ -326,6 +359,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["twice", "twofold", "two times"],
         register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       },
       {
@@ -346,6 +382,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["three times", "threefold"],
         register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       },
       {
@@ -365,6 +404,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["four times", "fourfold"],
         register: "formal",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       },
       {
@@ -384,6 +426,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["three times", "triple"],
         register: "formal",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       },
       {
@@ -403,6 +448,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["five times", "ten times"],
         register: "formal",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       },
       {
@@ -422,6 +470,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["several", "many", "numerous"],
         register: "formal",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       }
     ],
@@ -497,6 +548,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["twice", "three times", "thrice"],
         register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       },
       {
@@ -516,6 +570,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["once", "three times", "double"],
         register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       },
       {
@@ -535,6 +592,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["many times", "countless times"],
         register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       },
       {
@@ -554,6 +614,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["many times", "several times"],
         register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       }
     ],
@@ -651,6 +714,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["day", "week", "month"],
         register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       },
       {
@@ -670,6 +736,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["week", "two weeks"],
         register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       },
       {
@@ -690,6 +759,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["year", "age", "era"],
         register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       },
       {
@@ -709,6 +781,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["half", "hour", "minute"],
         register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       },
       {
@@ -728,6 +803,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["decade", "year", "era"],
         register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       }
     ],
@@ -804,6 +882,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["quarterly", "yearly", "annually"],
         register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       },
       {
@@ -823,6 +904,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["monthly", "annually", "yearly"],
         register: "formal",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       },
       {
@@ -842,6 +926,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["semiweekly", "bimonthly", "biannual"],
         register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       },
       {
@@ -861,6 +948,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["alternate days", "every two days"],
         register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       },
       {
@@ -881,6 +971,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["daily", "quarterly", "annually"],
         register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       },
       {
@@ -900,6 +993,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["yearly", "monthly", "quarterly"],
         register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       }
     ],
@@ -976,6 +1072,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["approximately", "nearly", "almost"],
         register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       },
       {
@@ -996,6 +1095,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["about", "around", "roughly"],
         register: "casual",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       },
       {
@@ -1015,6 +1117,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["about", "around", "or so"],
         register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       },
       {
@@ -1034,6 +1139,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["about", "around", "practically"],
         register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       },
       {
@@ -1053,6 +1161,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["about", "roughly", "basically"],
         register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       }
     ],
@@ -1130,6 +1241,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["a slice of", "a bit of", "a little"],
         register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       },
       {
@@ -1151,6 +1265,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["a set of", "a couple of"],
         register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       },
       {
@@ -1171,6 +1288,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["a bottle of", "a can of"],
         register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       },
       {
@@ -1191,6 +1311,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["a cup of", "a glass of"],
         register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       },
       {
@@ -1211,6 +1334,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["a piece of", "a chunk of"],
         register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       },
       {
@@ -1231,6 +1357,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["a pair of", "a set of"],
         register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       }
     ],
@@ -1306,6 +1435,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["twice as", "three times as"],
         register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       },
       {
@@ -1325,6 +1457,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["double", "three times as", "as...as"],
         register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       },
       {
@@ -1343,6 +1478,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["twice as", "triple", "as...as"],
         register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       },
       {
@@ -1362,6 +1500,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["superlative", "as...as"],
         register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       },
       {
@@ -1381,6 +1522,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["comparative", "as...as"],
         register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       }
     ],
@@ -1456,6 +1600,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["plenty of", "loads of", "tons of"],
         register: "casual",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       },
       {
@@ -1475,6 +1622,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["a lot of", "a substantial amount of"],
         register: "formal",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       },
       {
@@ -1494,6 +1644,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["a lot of", "several"],
         register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       },
       {
@@ -1513,6 +1666,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["a little", "a bit", "slightly"],
         register: "casual",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       },
       {
@@ -1533,6 +1689,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["kind of", "sort of", "slightly"],
         register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       },
       {
@@ -1552,6 +1711,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["a number of", "several", "various"],
         register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       },
       {
@@ -1571,6 +1733,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["a range of", "a number of"],
         register: "formal",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       }
     ],
@@ -1647,6 +1812,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["one-third", "one-quarter", "three-quarters"],
         register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       },
       {
@@ -1667,6 +1835,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["half", "a dozen", "a half"],
         register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       },
       {
@@ -1686,6 +1857,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["half", "a couple of", "several"],
         register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       },
       {
@@ -1705,6 +1879,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["half", "three-quarters", "one-third"],
         register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       }
     ],
@@ -1780,6 +1957,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["right now", "in a while"],
         register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       },
       {
@@ -1800,6 +1980,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["in a while", "just now", "lately"],
         register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       },
       {
@@ -1819,6 +2002,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["finally", "ultimately", "in the end"],
         register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       },
       {
@@ -1838,6 +2024,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["at the same time", "afterwards", "later"],
         register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       },
       {
@@ -1857,6 +2046,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["now", "currently", "at the moment"],
         register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       },
       {
@@ -1876,6 +2068,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["eventually", "finally", "afterwards"],
         register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       }
     ],
@@ -1972,6 +2167,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["a lot of", "few", "little"],
         register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       },
       {
@@ -1990,6 +2188,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["a few", "a little", "many", "much"],
         register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       },
       {
@@ -2009,6 +2210,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["once", "thrice", "three times"],
         register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       },
       {
@@ -2027,6 +2231,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["bimonthly", "semiweekly", "biannual"],
         register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       },
       {
@@ -2046,6 +2253,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["one-third", "one-quarter", "three-quarters"],
         register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       },
       {
@@ -2065,6 +2275,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["a lot of", "several"],
         register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       }
     ],
@@ -2141,6 +2354,9 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         ],
         relatedTerms: ["all sections"],
         register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
         audioAvailable: true
       }
     ],

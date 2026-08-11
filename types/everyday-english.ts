@@ -10,6 +10,9 @@ export interface PatternEntry {
   commonMistakes: { mistake: string; correction: string }[];
   relatedTerms: string[];
   register: "neutral" | "casual" | "formal";
+  intensityNote: string;
+  usageContext: string;
+  formality: string;
   audioAvailable: boolean;
 }
 
