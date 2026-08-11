@@ -35,7 +35,6 @@ export const roughEnglish: SlangItem[] = [
     audioAvailable: true
   },
   {
-       warning: "WARNING: 'Knock it off' is a firm command. While softer than 'shut up', it can still sound harsh. Use 'please stop' in polite company.",
      id: "rough-2",
     word: "Knock it off",
     chinese: "别闹了",
@@ -65,6 +64,7 @@ export const roughEnglish: SlangItem[] = [
     culturalNotes: "Common in American English. Slightly softer than 'shut up'. Used when someone is being annoying, not when you want them to be completely silent.",
     usageContext: "Family settings, schools, casual authority figures. Not for formal or professional settings.",
     formality: "rude",
+        warning: "WARNING: 'Knock it off' is a firm command. While softer than 'shut up', it can still sound harsh. Use 'please stop' in polite company.",
     audioAvailable: true
   },
   {
@@ -99,7 +99,6 @@ export const roughEnglish: SlangItem[] = [
     audioAvailable: true
   },
   {
-       warning: "WARNING: 'Give me a break' expresses frustration. Can sound dismissive. Use 'that's not fair' or 'come on' in polite contexts.",
      id: "rough-4",
     word: "Give me a break",
     chinese: "算了吧/饶了我吧",
@@ -127,10 +126,10 @@ export const roughEnglish: SlangItem[] = [
     intensityNote: "Level 2/5: Mildly offensive when frustrated. Can be playful among friends. Context and tone matter a lot.",
     usageContext: "Expressing frustration, disbelief, or that something is unreasonable. Common among friends and in casual settings.",
     formality: "casual",
+        warning: "WARNING: 'Give me a break' expresses frustration. Can sound dismissive. Use 'that's not fair' or 'come on' in polite contexts.",
     audioAvailable: true
   },
   {
-       warning: "WARNING: 'Jerk' is a common but rude insult. Avoid using it directly to someone's face. Use 'that person was rude' instead.",
      id: "rough-5",
     word: "Jerk",
     chinese: "混蛋",
@@ -158,6 +157,7 @@ export const roughEnglish: SlangItem[] = [
     intensityNote: "Level 3/5: Moderately offensive. Common insult but still rude. Avoid using directly to someone's face.",
     usageContext: "Describing rude or unpleasant people. Common in casual conversation but avoid using to someone's face.",
     formality: "rude",
+        warning: "WARNING: 'Jerk' is a common but rude insult. Avoid using it directly to someone's face. Use 'that person was rude' instead.",
     audioAvailable: true
   },
   {
@@ -192,7 +192,6 @@ export const roughEnglish: SlangItem[] = [
     audioAvailable: true
   },
   {
-       warning: "WARNING: 'Idiot' is an insult. While common among friends, it's rude when used to describe someone directly. Use 'that was careless' instead.",
      id: "rough-7",
     word: "Idiot",
     chinese: "白痴/笨蛋",
@@ -220,10 +219,10 @@ export const roughEnglish: SlangItem[] = [
     intensityNote: "Level 3/5: Moderately offensive. Common frustration word. Can be playful among close friends but rude with strangers.",
     usageContext: "Expressing frustration with friends or when someone makes a mistake. Avoid in formal or professional settings.",
     formality: "rude",
+        warning: "WARNING: 'Idiot' is an insult. While common among friends, it's rude when used to describe someone directly. Use 'that was careless' instead.",
     audioAvailable: true
   },
   {
-       warning: "WARNING: 'Cheapskate' is an insult about spending habits. Can hurt feelings. Use 'frugal' or 'budget-conscious' as neutral alternatives.",
      id: "rough-8",
     word: "Cheapskate",
     chinese: "吝啬鬼",
@@ -251,6 +250,7 @@ export const roughEnglish: SlangItem[] = [
     intensityNote: "Level 2/5: Mildly offensive. Can be playful teasing among friends or a genuine criticism depending on tone.",
     usageContext: "Among friends, casual settings. Can be playful teasing or criticism of spending habits. Avoid in formal contexts.",
     formality: "casual",
+        warning: "WARNING: 'Cheapskate' is an insult about spending habits. Can hurt feelings. Use 'frugal' or 'budget-conscious' as neutral alternatives.",
     audioAvailable: true
   },
   {
@@ -409,7 +409,6 @@ export const roughEnglish: SlangItem[] = [
     audioAvailable: true
   },
   {
-       warning: "WARNING: 'Dumb' is often used to describe actions, but calling someone dumb is rude. Use 'unwise' or 'not the best idea' instead.",
      id: "rough-14",
     word: "Dumb",
     chinese: "愚蠢的/笨蛋",
@@ -437,6 +436,7 @@ export const roughEnglish: SlangItem[] = [
     intensityNote: "Level 2/5: Mildly offensive. Very common in casual speech. Often used to describe actions rather than people directly.",
     usageContext: "Casual settings, expressing frustration with actions or ideas. Common among friends but avoid in formal settings.",
     formality: "casual",
+        warning: "WARNING: 'Dumb' is often used to describe actions, but calling someone dumb is rude. Use 'unwise' or 'not the best idea' instead.",
     audioAvailable: true
   },
   {
