@@ -512,7 +512,8 @@ export const slangAcademy: SlangLevelData[] = [
         culturalNotes: "Short for 'charisma.' Popularized by TikTok and Gen Z. Can be used for anyone who is good at attracting others romantically."
       },
       {
-        id: "internet-7",
+           warning: "WARNING: This term is highly offensive and should be avoided in all contexts. It can cause serious harm and is considered hate speech in many communities.",
+     id: "internet-7",
         word: "Simp",
         chinese: "舔狗/讨好者",
         pinyin: "tiǎn gǒu / tǎo hǎo zhě",
@@ -793,7 +794,8 @@ export const slangAcademy: SlangLevelData[] = [
         culturalNotes: "'Heck' is a family-friendly alternative to 'hell'. Safe for all ages."
       },
       {
-        id: "rough-3",
+           warning: "WARNING: This is a very rude and aggressive phrase. It can be considered verbal abuse and may have serious social consequences.",
+     id: "rough-3",
         word: "Freaking",
         chinese: "该死的/该死的",
         pinyin: "gāi sǐ de",
@@ -819,7 +821,8 @@ export const slangAcademy: SlangLevelData[] = [
         culturalNotes: "Milder than 'f***ing' but still considered profanity by some. Common in casual speech."
       },
       {
-        id: "rough-4",
+           warning: "WARNING: This expression is extremely vulgar. It insults someone's family and implies incest. Using this word can provoke violence.",
+     id: "rough-4",
         word: "Dumb",
         chinese: "愚蠢的/笨蛋",
         pinyin: "yú chǔn / běn dàn",
@@ -872,7 +875,8 @@ export const slangAcademy: SlangLevelData[] = [
         warning: "WARNING: 'I hate you' is extremely hurtful. Even when said in anger, it can cause lasting emotional damage. Never use this expression lightly."
       },
       {
-        id: "rough-6",
+           warning: "WARNING: This term can be deeply hurtful due to its historical meaning. While used as a general insult in some regions, it can still cause serious emotional harm.",
+     id: "rough-6",
         word: "Jerk",
         chinese: "混蛋",
         pinyin: "hún dàn",
@@ -925,7 +929,8 @@ export const slangAcademy: SlangLevelData[] = [
         warning: "WARNING: 'Loser' can be bullying language. Using it toward someone who is struggling is cruel."
       },
       {
-        id: "rough-8",
+           warning: "WARNING: This is an extremely vulgar and aggressive phrase. It is considered one of the rudest expressions in English and should never be used.",
+     id: "rough-8",
         word: "Idiot",
         chinese: "白痴/笨蛋",
         pinyin: "bái chǐ / běn dàn",
