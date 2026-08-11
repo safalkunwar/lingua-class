@@ -1,5 +1,7 @@
 "use client";
 
+import React from "react";
+import { useState } from "react";
 import { StudentSidebar } from "@/components/layout/sidebar";
 import { everydayEnglishSections } from "@/data/everyday-english";
 import { Button } from "@/components/ui/button";
@@ -10,7 +12,6 @@ import { ExerciseCard } from "@/components/everyday-english/PracticeExercise";
 import { TeacherModePanel } from "@/components/everyday-english/TeacherModePanel";
 import { Volume2, ChevronLeft, Lightbulb, BookOpen, Link2, GraduationCap } from "lucide-react";
 import { useSpeechSynthesis } from "@/hooks/use-speech-synthesis";
-import { useState } from "react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 
@@ -23,9 +24,10 @@ const DIFFICULTY_COLORS: Record<string, string> = {
   C2: "bg-rose-900 text-rose-100 border-rose-700",
 };
 
-export default function PatternDetailPage({ params }: { params: { sectionId: string; patternId: string } }) {
-  const section = everydayEnglishSections.find((s) => s.id === params.sectionId);
-  const pattern = section?.patterns.find((p) => p.id === params.patternId);
+export default function PatternDetailPage({ params }: { params: Promise<{ sectionId: string; patternId: string }> }) {
+  const { sectionId, patternId } = React.use(params);
+  const section = everydayEnglishSections.find((s) => s.id === sectionId);
+  const pattern = section?.patterns.find((p) => p.id === patternId);
 
   const [showTeacherMode, setShowTeacherMode] = useState(false);
   const { speakEnglish, speakChinese } = useSpeechSynthesis();

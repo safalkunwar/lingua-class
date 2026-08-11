@@ -1,12 +1,15 @@
 "use client";
 
+import React from "react";
+import { useState } from "react";
 import { StudentSidebar } from "@/components/layout/sidebar";
 import { everydayEnglishSections } from "@/data/everyday-english";
 import { SectionView } from "@/components/everyday-english/SectionView";
 import { PatternEntry } from "@/types/everyday-english";
 
-export default function SectionPage({ params }: { params: { sectionId: string } }) {
-  const section = everydayEnglishSections.find((s) => s.id === params.sectionId);
+export default function SectionPage({ params }: { params: Promise<{ sectionId: string }> }) {
+  const { sectionId } = React.use(params);
+  const section = everydayEnglishSections.find((s) => s.id === sectionId);
 
   if (!section) {
     return (
