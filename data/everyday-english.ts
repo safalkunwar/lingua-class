@@ -22,16 +22,22 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
           { en: "I have a few questions.", zh: "我有几个问题。" },
           { en: "She brought a few friends.", zh: "她带了几位朋友来。" },
           { en: "There are a few options available.", zh: "有几个可选的方案。" }
-        ],
+        ,
+          { en: "I've lived here for a few years.", zh: "我在这里住了几年了。" },
+          { en: "A few moments later, he returned.", zh: "过了一会儿，他回来了。" }],
         commonMistakes: [
           { mistake: "I have few questions. (when you mean 'some')", correction: "Use 'a few' for a positive small number." },
           { mistake: "I have a few questions... actually, I have none.", correction: "'A few' implies you have some." }
-        ],
+        ,
+          { mistake: "I have a few informations.", correction: "'Information' is uncountable. Use 'a piece of information'." }],
         relatedTerms: ["few", "a couple of", "several"],
         register: "neutral",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "Chinese learners often translate 一些 as both 'a few' and 'few'. Emphasize that 'a' changes the meaning to positive.",
+        warning: "Don't drop the 'a'. 'Few questions' sounds negative, like 'almost no questions'.",
+        safeAlternatives: [],
         audioAvailable: true
       },
       {
@@ -46,16 +52,22 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
           { en: "Few people attended the meeting.", zh: "几乎没几个人来开会。" },
           { en: "She has few friends in this city.", zh: "她在这个城市几乎没有朋友。" },
           { en: "Few opportunities came his way.", zh: "他几乎没有遇到什么机会。" }
-        ],
+        ,
+          { en: "Few rivers in the world flow north.", zh: "世界上很少有河向北流。" },
+          { en: "Few people know the real story.", zh: "很少有人知道真相。" }],
         commonMistakes: [
           { mistake: "Few people came to my party. (when you had many)", correction: "Use 'a few' if some people came." },
           { mistake: "I have few money.", correction: "Use 'little' with uncountable nouns like money." }
-        ],
+        ,
+          { mistake: "Few people came, it was a great party.", correction: "If the party was great, use 'a few people came'. 'Few' means disappointment." }],
         relatedTerms: ["a few", "little", "a little"],
         register: "neutral",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "Chinese learners find the negative connotation of 'few' confusing because Chinese 很少 doesn't strongly emphasize scarcity.",
+        warning: "'Few' implies disappointment or insufficiency. Be careful with tone.",
+        safeAlternatives: [],
         audioAvailable: true
       },
       {
@@ -70,16 +82,22 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
           { en: "How many books do you have?", zh: "你有多少本书？" },
           { en: "I don't have many options.", zh: "我没有太多选择。" },
           { en: "Too many people are here.", zh: "这里人太多了。" }
-        ],
+        ,
+          { en: "Many hands make light work.", zh: "众人拾柴火焰高。" },
+          { en: "Many years have passed since then.", zh: "从那以后很多年过去了。" }],
         commonMistakes: [
           { mistake: "I have many books. (in positive statements)", correction: "Use 'a lot of' or 'lots of' in positive statements." },
           { mistake: "How much books?", correction: "Use 'many' with countable nouns like books." }
-        ],
+        ,
+          { mistake: "I have many informations.", correction: "'Information' is uncountable. Use 'much' or 'a lot of'." }],
         relatedTerms: ["much", "a lot of", "lots of"],
         register: "neutral",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "In Chinese, 许多 works for both countable and uncountable, but English separates them with 'many' and 'much'.",
+        warning: "In positive statements, use 'a lot of' instead of 'many' for more natural speech.",
+        safeAlternatives: [],
         audioAvailable: true
       },
       {
@@ -94,16 +112,22 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
           { en: "How much water do you need?", zh: "你需要多少水？" },
           { en: "I don't have much time.", zh: "我没有太多时间。" },
           { en: "There isn't much sugar left.", zh: "没剩下多少糖了。" }
-        ],
+        ,
+          { en: "There isn't much time left.", zh: "剩下的时间不多了。" },
+          { en: "You don't need much to be happy.", zh: "快乐不需要太多东西。" }],
         commonMistakes: [
           { mistake: "How much books?", correction: "Use 'many' for countable nouns." },
           { mistake: "I have much money. (positive statement)", correction: "Use 'a lot of' or 'lots of' in positive statements." }
-        ],
+        ,
+          { mistake: "Much people came.", correction: "Use 'many' with countable nouns like people." }],
         relatedTerms: ["many", "a lot of", "lots of"],
         register: "neutral",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "Chinese learners often overuse 'many' and forget 'much' for uncountable nouns.",
+        warning: "Much is rare in positive statements. Use 'a lot of' instead.",
+        safeAlternatives: [],
         audioAvailable: true
       },
       {
@@ -118,15 +142,21 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
           { en: "I have a lot of work to do.", zh: "我有很多工作要做。" },
           { en: "Lots of people came to the party.", zh: "很多人来参加了派对。" },
           { en: "Do you have a lot of friends?", zh: "你有很多朋友吗？" }
-        ],
+        ,
+          { en: "We have a lot of work to do today.", zh: "我们今天有很多工作要做。" },
+          { en: "She has a lot of friends.", zh: "她有很多朋友。" }],
         commonMistakes: [
           { mistake: "I have many work to do.", correction: "Use 'a lot of' with both countable and uncountable nouns." }
-        ],
+        ,
+          { mistake: "I have a lot of informations.", correction: "'Information' is uncountable. Use 'a lot of information'." }],
         relatedTerms: ["many", "much", "plenty of", "loads of"],
         register: "casual",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "Very common in spoken English. Avoid in very formal writing where 'much' or 'many' is preferred.",
+        warning: "Avoid in very formal writing. Use 'much/many' or specific quantifiers instead.",
+        safeAlternatives: [],
         audioAvailable: true
       },
       {
@@ -141,15 +171,21 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
           { en: "There's plenty of food for everyone.", zh: "有足够的食物给大家。" },
           { en: "We have plenty of time.", zh: "我们时间充足。" },
           { en: "Plenty of opportunities exist here.", zh: "这里有很多机会。" }
-        ],
+        ,
+          { en: "There's plenty of food for everyone.", zh: "有足够的食物给大家。" },
+          { en: "You have plenty of time to finish.", zh: "你有足够的时间完成。" }],
         commonMistakes: [
           { mistake: "Using 'plenty of' in very formal writing", correction: "In formal writing, use 'numerous' or 'a substantial number of'." }
-        ],
+        ,
+          { mistake: "Plenty of informations were shared.", correction: "'Information' is uncountable. Use 'plenty of information'." }],
         relatedTerms: ["a lot of", "lots of", "loads of"],
         register: "neutral",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "Common in British English. Americans might prefer 'a lot of' or 'lots of'.",
+        warning: "Informal. Avoid in formal academic writing.",
+        safeAlternatives: [],
         audioAvailable: true
       },
       {
@@ -164,15 +200,21 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
           { en: "Dozens of people attended the concert.", zh: "几十人参加了音乐会。" },
           { en: "I've told you dozens of times.", zh: "我已经告诉过你几十次了。" },
           { en: "Dozens of options are available.", zh: "有几十个选项可选。" }
-        ],
+        ,
+          { en: "Dozens of people attended the concert.", zh: "几十个人参加了音乐会。" },
+          { en: "Dozens of emails came in overnight.", zh: "一夜之间收到了几十封邮件。" }],
         commonMistakes: [
           { mistake: "I have dozens of money.", correction: "Use 'dozens of' only with countable plural nouns." }
-        ],
+        ,
+          { mistake: "Dozens of peoples came.", correction: "Use 'dozens of people', not 'peoples'." }],
         relatedTerms: ["hundreds of", "thousands of", "millions of"],
         register: "neutral",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "Used for approximate large numbers. Chinese learners might say '几十个' which is similar but less common in formal English.",
+        warning: "Approximate only. Don't use for exact numbers.",
+        safeAlternatives: [],
         audioAvailable: true
       },
       {
@@ -186,15 +228,21 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         examples: [
           { en: "I need a couple of minutes.", zh: "我需要几分钟。" },
           { en: "A couple of friends are coming.", zh: "有几个朋友要来。" }
-        ],
+        ,
+          { en: "I need a couple of minutes.", zh: "我需要几分钟。" },
+          { en: "A couple of days off would be nice.", zh: "休息几天就好了。" }],
         commonMistakes: [
           { mistake: "Using 'a couple of' in very formal writing", correction: "Use 'a few' or 'several' in formal contexts." }
-        ],
+        ,
+          { mistake: "I'll be there in a couple of minutes.", correction: "This is actually correct! 'A couple of' means roughly two or a small number." }],
         relatedTerms: ["a few", "several", "a couple"],
         register: "casual",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "Informal. In formal contexts, use 'two' or 'a small number of'.",
+        warning: "Informal. In formal contexts, use 'two' or 'a small number of'.",
+        safeAlternatives: [],
         audioAvailable: true
       },
       {
@@ -208,15 +256,21 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         examples: [
           { en: "I've read several books on this topic.", zh: "我读过几本关于这个主题的书。" },
           { en: "Several people objected to the plan.", zh: "几个人反对这个计划。" }
-        ],
+        ,
+          { en: "Several students failed the exam.", zh: "几个学生考试不及格。" },
+          { en: "I've been there several times.", zh: "我去过那里好几次了。" }],
         commonMistakes: [
           { mistake: "Several people was here.", correction: "Use plural verb: 'Several people were here.'" }
-        ],
+        ,
+          { mistake: "Several informations were leaked.", correction: "'Information' is uncountable. Use 'several pieces of information'." }],
         relatedTerms: ["a few", "a number of", "numerous"],
         register: "neutral",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "More formal than 'a few'. Good for written English.",
+        warning: "More formal than 'a few'. Good for written English.",
+        safeAlternatives: [],
         audioAvailable: true
       },
       {
@@ -230,15 +284,21 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         examples: [
           { en: "There are loads of restaurants here.", zh: "这里有很多餐馆。" },
           { en: "I've got loads of work.", zh: "我有很多工作。" }
-        ],
+        ,
+          { en: "We've got loads of time.", zh: "我们有很多时间。" },
+          { en: "There are loads of shops nearby.", zh: "附近有很多商店。" }],
         commonMistakes: [
           { mistake: "Using 'loads of' in formal writing", correction: "Use 'a large number of' or 'numerous' in formal contexts." }
-        ],
+        ,
+          { mistake: "Loads of people are here, isn't it?", correction: "Use 'aren't they?' or 'aren't there?' with plural subjects." }],
         relatedTerms: ["a lot of", "lots of", "plenty of"],
         register: "casual",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "Very informal British English. Avoid in formal contexts.",
+        warning: "Very informal British slang. Avoid in formal contexts.",
+        safeAlternatives: [],
         audioAvailable: true
       },
       {
@@ -252,15 +312,21 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         examples: [
           { en: "Hundreds of people attended.", zh: "数百人参加了。" },
           { en: "Thousands of fans waited outside.", zh: "数千名粉丝在门外等候。" }
-        ],
+        ,
+          { en: "Hundreds of people gathered for the event.", zh: "数百人聚集参加活动。" },
+          { en: "Hundreds of species are endangered.", zh: "数百个物种濒临灭绝。" }],
         commonMistakes: [
           { mistake: "I have hundreds of money.", correction: "Use with countable plural nouns only." }
-        ],
+        ,
+          { mistake: "Hundreds of peoples attended.", correction: "Use 'hundreds of people', not 'peoples'." }],
         relatedTerms: ["dozens of", "loads of"],
         register: "neutral",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "Similar to Chinese '数百个'. Used for large approximate numbers.",
+        warning: "Approximate only. For exact numbers, use 'hundred' without -s: 'two hundred'.",
+        safeAlternatives: [],
         audioAvailable: true
       }
     ],
@@ -352,16 +418,22 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
           { en: "I ordered a double espresso.", zh: "我点了一杯双份浓缩咖啡。" },
           { en: "The price doubled in five years.", zh: "价格在五年内翻了一番。" },
           { en: "She paid double the price.", zh: "她付了双倍的价格。" }
-        ],
+        ,
+          { en: "Double the recipe if you have guests.", zh: "如果有客人，把食谱加倍。" },
+          { en: "My salary doubled after the promotion.", zh: "升职后我的工资翻倍了。" }],
         commonMistakes: [
           { mistake: "I want a doubles coffee.", correction: "Use 'double' as an adjective: 'a double espresso'." },
           { mistake: "It's two times more expensive.", correction: "Use 'twice as expensive' or 'double the price'." }
-        ],
+        ,
+          { mistake: "Double the price is too high.", correction: "Use 'Double the price' as a phrase, or 'The price doubled'." }],
         relatedTerms: ["twice", "twofold", "two times"],
         register: "neutral",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "Common in business and everyday speech. In Chinese, 两倍 is used similarly.",
+        warning: "'Double' can be a verb, adjective, or noun. Be careful with word order.",
+        safeAlternatives: [],
         audioAvailable: true
       },
       {
@@ -376,15 +448,21 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
           { en: "The company saw triple growth.", zh: "公司实现了三倍增长。" },
           { en: "My phone battery lasts triple the time.", zh: "我的手机电池续航是三倍。" },
           { en: "Triple the amount of sugar was added.", zh: "添加了 triple 量的糖。" }
-        ],
+        ,
+          { en: "The number of users tripled in a year.", zh: "一年内用户数量翻了两翻。" },
+          { en: "She ordered a triple espresso.", zh: "她点了一杯三份浓缩咖啡。" }],
         commonMistakes: [
           { mistake: "It's three times more.", correction: "Use 'triple' or 'three times as much' in formal contexts." }
-        ],
+        ,
+          { mistake: "Triple the amount are needed.", correction: "Use 'is needed' — 'amount' is singular." }],
         relatedTerms: ["three times", "threefold"],
         register: "neutral",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "Less common than 'double'. In formal contexts, use 'three times'.",
+        warning: "Less common than 'double'. Consider using 'three times' instead.",
+        safeAlternatives: [],
         audioAvailable: true
       },
       {
@@ -398,15 +476,21 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         examples: [
           { en: "Sales increased fourfold.", zh: "销售额增长了四倍。" },
           { en: "The number of users quadrupled.", zh: "用户数量翻了两翻（变为四倍）。" }
-        ],
+        ,
+          { en: "Profits quadrupled after the update.", zh: "更新后利润翻了两翻。" },
+          { en: "The capacity was quadrupled.", zh: "容量翻了两翻。" }],
         commonMistakes: [
           { mistake: "It's four times more.", correction: "Both are okay, but 'quadruple' is more precise." }
-        ],
+        ,
+          { mistake: "Quadruple the time is required.", correction: "Use 'is required' — 'time' is uncountable." }],
         relatedTerms: ["four times", "fourfold"],
         register: "formal",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "Rare in everyday speech. Prefer 'four times' or 'a fourfold increase'.",
+        warning: "Very formal. 'Four times' is more common in speech.",
+        safeAlternatives: [],
         audioAvailable: true
       },
       {
@@ -420,15 +504,21 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         examples: [
           { en: "I've asked you thrice.", zh: "我已经问过你三次了。" },
           { en: "He knocked thrice before entering.", zh: "他敲了三下门才进去。" }
-        ],
+        ,
+          { en: "I've told you thrice already.", zh: "我已经告诉过你三次了。" },
+          { en: "He checked thrice before leaving.", zh: "他离开前检查了三次。" }],
         commonMistakes: [
           { mistake: "Using 'thrice' in casual conversation", correction: "Use 'three times' instead. 'Thrice' sounds formal or old-fashioned." }
-        ],
+        ,
+          { mistake: "Thrice is more common than twice.", correction: "'Thrice' is old-fashioned. Use 'three times' instead." }],
         relatedTerms: ["three times", "triple"],
         register: "formal",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "Old-fashioned. Most native speakers say 'three times'. Chinese learners might overuse this.",
+        warning: "Old-fashioned. Use 'three times' in modern English.",
+        safeAlternatives: [],
         audioAvailable: true
       },
       {
@@ -442,15 +532,21 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         examples: [
           { en: "The population grew fivefold.", zh: "人口增长了五倍。" },
           { en: "Profits increased tenfold.", zh: "利润增长了十倍。" }
-        ],
+        ,
+          { en: "The return was fivefold.", zh: "回报是五倍的。" },
+          { en: "Investment increased fivefold.", zh: "投资增长了五倍。" }],
         commonMistakes: [
           { mistake: "It's five times more.", correction: "Both work, but 'fivefold' is more concise in formal contexts." }
-        ],
+        ,
+          { mistake: "Fivefold more people came.", correction: "Use 'Five times as many people came' or 'The number increased fivefold'." }],
         relatedTerms: ["five times", "ten times"],
         register: "formal",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "Formal. Used in business and academic contexts. Chinese: 五倍.",
+        warning: "Very formal. Use 'five times' in casual speech.",
+        safeAlternatives: [],
         audioAvailable: true
       },
       {
@@ -464,15 +560,21 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         examples: [
           { en: "He has multiple degrees.", zh: "他有多个学位。" },
           { en: "The issue has multiple causes.", zh: "这个问题有多个原因。" }
-        ],
+        ,
+          { en: "The problem has multiple causes.", zh: "这个问题有多个原因。" },
+          { en: "She has multiple skills.", zh: "她有多种技能。" }],
         commonMistakes: [
           { mistake: "Using 'multiple' when you mean 'double' or 'triple'", correction: "Use 'multiple' for 'several' or 'many', not exact multiples." }
-        ],
+        ,
+          { mistake: "Multiple reasons are why I'm here.", correction: "Use 'Multiple reasons are the reason' or 'For multiple reasons'." }],
         relatedTerms: ["several", "many", "numerous"],
         register: "formal",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "Common in business and academic writing. Chinese: 多个.",
+        warning: "Often used in business. Can sound vague without specifics.",
+        safeAlternatives: [],
         audioAvailable: true
       }
     ],
@@ -542,15 +644,21 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         examples: [
           { en: "I've been there once.", zh: "我去过那里一次。" },
           { en: "I met him once at a conference.", zh: "我在一次会议上见过他。" }
-        ],
+        ,
+          { en: "I've only been there once.", zh: "我只去过那里一次。" },
+          { en: "Once is enough for me.", zh: "一次对我来说就够了。" }],
         commonMistakes: [
           { mistake: "I went there one time. (when meaning frequency)", correction: "Use 'once' for frequency. 'One time' is used for storytelling." }
-        ],
+        ,
+          { mistake: "Once I go to the store.", correction: "Use 'Once I go' only in conditional sentences. For past: 'I once went to the store.'" }],
         relatedTerms: ["twice", "three times", "thrice"],
         register: "neutral",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "In Chinese, 一次 is used similarly. Note word order: 'I've been there once' not 'Once I've been there' (unless conditional).",
+        warning: "Word order matters: 'I've been there once' not 'once I've been there' (unless conditional).",
+        safeAlternatives: [],
         audioAvailable: true
       },
       {
@@ -564,15 +672,21 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         examples: [
           { en: "I've called him twice.", zh: "我给他打过两次电话。" },
           { en: "I've seen that movie twice.", zh: "那部电影我看过两次。" }
-        ],
+        ,
+          { en: "I called twice but no answer.", zh: "我打了两次电话但没人接。" },
+          { en: "Twice a week is ideal.", zh: "一周两次是理想的。" }],
         commonMistakes: [
           { mistake: "I called him two times.", correction: "'Twice' is more natural and common." }
-        ],
+        ,
+          { mistake: "Twice I've seen that movie.", correction: "Use 'I've seen that movie twice' — adverb placement matters." }],
         relatedTerms: ["once", "three times", "double"],
         register: "neutral",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "Very common. Chinese learners might say 'two times' which is understood but less natural.",
+        warning: "Natural in speech. 'Two times' is understood but less common.",
+        safeAlternatives: [],
         audioAvailable: true
       },
       {
@@ -586,15 +700,21 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         examples: [
           { en: "I've been there several times.", zh: "我去过那里好几次。" },
           { en: "She called me several times yesterday.", zh: "她昨天给我打了好几次电话。" }
-        ],
+        ,
+          { en: "I've seen that movie several times.", zh: "那部电影我看了好几遍。" },
+          { en: "She called several times today.", zh: "她今天打了好几次电话。" }],
         commonMistakes: [
           { mistake: "I went there several time.", correction: "Use plural 'times' after 'several'." }
-        ],
+        ,
+          { mistake: "Several times I tried.", correction: "Use 'I tried several times' or 'Several times, I tried' with a comma." }],
         relatedTerms: ["many times", "countless times"],
         register: "neutral",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "More formal than 'a few times'. Good for written English.",
+        warning: "More formal than 'a few times'. Good for written English.",
+        safeAlternatives: [],
         audioAvailable: true
       },
       {
@@ -608,15 +728,21 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         examples: [
           { en: "I've told you countless times.", zh: "我已经告诉过你无数次了。" },
           { en: "We've met countless times.", zh: "我们见过无数次面。" }
-        ],
+        ,
+          { en: "I've told you countless times.", zh: "我告诉过你无数次了。" },
+          { en: "Countless stars filled the sky.", zh: "无数的星星布满了天空。" }],
         commonMistakes: [
           { mistake: "I told you uncountable times.", correction: "Use 'countless', not 'uncountable'." }
-        ],
+        ,
+          { mistake: "Countless peoples were affected.", correction: "Use 'countless people', not 'peoples'." }],
         relatedTerms: ["many times", "several times"],
         register: "neutral",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "Literally means 'too many to count'. Chinese: 无数的. Hyperbole common in both languages.",
+        warning: "Hyperbole. Don't use for literal counting.",
+        safeAlternatives: [],
         audioAvailable: true
       }
     ],
@@ -708,15 +834,21 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
           { en: "Wait a second.", zh: "等一下。" },
           { en: "It takes five minutes.", zh: "这需要五分钟。" },
           { en: "The meeting lasts one hour.", zh: "会议持续一小时。" }
-        ],
+        ,
+          { en: "Wait a second.", zh: "等一下。" },
+          { en: "I'll be there in a second.", zh: "我马上就到。" }],
         commonMistakes: [
           { mistake: "Wait a second, please. (in very formal contexts)", correction: "Use 'one moment please' in formal settings." }
-        ],
+        ,
+          { mistake: "Wait second.", correction: "Use 'Wait a second' or 'Wait a second please'." }],
         relatedTerms: ["day", "week", "month"],
         register: "neutral",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "In Chinese, 秒 is the unit, but 'second' is used for short time: 'Wait a second'.",
+        warning: "Informal when used for short time: 'Wait a second'.",
+        safeAlternatives: [],
         audioAvailable: true
       },
       {
@@ -730,15 +862,21 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         examples: [
           { en: "I'll be back in a fortnight.", zh: "我两周后回来。" },
           { en: "She finished the project in a fortnight.", zh: "她在两周内完成了项目。" }
-        ],
+        ,
+          { en: "The meeting is in a fortnight.", zh: "会议在两周后举行。" },
+          { en: "I get paid every fortnight.", zh: "我每两周领一次工资。" }],
         commonMistakes: [
           { mistake: "Using 'fortnight' in American English", correction: "Americans usually say 'two weeks' instead." }
-        ],
+        ,
+          { mistake: "See you in a fortnight!", correction: "'Fortnight' is British English. Americans may not understand. Use 'two weeks' for clarity." }],
         relatedTerms: ["week", "two weeks"],
         register: "neutral",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "British English. Americans might say 'two weeks'. Chinese learners should be aware of this regional difference.",
+        warning: "British English. Americans may say 'two weeks'.",
+        safeAlternatives: [],
         audioAvailable: true
       },
       {
@@ -753,15 +891,21 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
           { en: "The 1990s was a great decade.", zh: "1990年代是一个很好的十年。" },
           { en: "This century has seen huge changes.", zh: "这个世纪发生了巨大变化。" },
           { en: "The millennium was celebrated in 2000.", zh: "千禧年在2000年庆祝。" }
-        ],
+        ,
+          { en: "This decade has seen great change.", zh: "这十年发生了巨大变化。" },
+          { en: "She lived there for a decade.", zh: "她在那里住了十年。" }],
         commonMistakes: [
           { mistake: "A decade means 100 years.", correction: "A decade = 10 years. A century = 100 years." }
-        ],
+        ,
+          { mistake: "I lived there for ten years, a decade.", correction: "Use 'for a decade' or 'for ten years', not both together." }],
         relatedTerms: ["year", "age", "era"],
         register: "neutral",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "Formal. In Chinese, 十年 or 一个年代. Used for historical periods.",
+        warning: "Formal. In speech, say 'ten years'.",
+        safeAlternatives: [],
         audioAvailable: true
       },
       {
@@ -775,15 +919,21 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         examples: [
           { en: "I'll be there in a quarter.", zh: "我15分钟后到。" },
           { en: "A quarter of the class passed.", zh: "四分之一的学生通过了。" }
-        ],
+        ,
+          { en: "The report is due next quarter.", zh: "报告下个季度到期。" },
+          { en: "Sales rose in the last quarter.", zh: "上个季度销售额上升了。" }],
         commonMistakes: [
           { mistake: "Using 'quarter' for 15 minutes in formal contexts", correction: "Say '15 minutes' in very formal contexts." }
-        ],
+        ,
+          { mistake: "Quarter to five means 4:45.", correction: "Correct! But remember: 'Quarter past five' is 5:15." }],
         relatedTerms: ["half", "hour", "minute"],
         register: "neutral",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "Common in business: 'quarterly report'. In Chinese, 季度.",
+        warning: "Business term. In casual speech, say 'three months'.",
+        safeAlternatives: [],
         audioAvailable: true
       },
       {
@@ -797,15 +947,21 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         examples: [
           { en: "This century has seen huge changes.", zh: "这个世纪发生了巨大变化。" },
           { en: "The millennium was celebrated in 2000.", zh: "千禧年在2000年庆祝。" }
-        ],
+        ,
+          { en: "This castle is centuries old.", zh: "这座城堡有几个世纪的历史了。" },
+          { en: "The 21st century began in 2001.", zh: "21世纪始于2001年。" }],
         commonMistakes: [
           { mistake: "A century means 1000 years.", correction: "A century = 100 years. A millennium = 1000 years." }
-        ],
+        ,
+          { mistake: "The 20th century started in 1900.", correction: "The 20th century started in 1901. The year 1900 was the last year of the 19th century." }],
         relatedTerms: ["decade", "year", "era"],
         register: "neutral",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "Formal. Used for historical periods. Chinese: 世纪.",
+        warning: "Very formal. In casual speech, say '100 years'.",
+        safeAlternatives: [],
         audioAvailable: true
       }
     ],
@@ -876,15 +1032,21 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
           { en: "I check my email daily.", zh: "我每天查邮件。" },
           { en: "We have a weekly meeting.", zh: "我们每周开一次会。" },
           { en: "The report is generated monthly.", zh: "报告每月生成一次。" }
-        ],
+        ,
+          { en: "I check my email daily.", zh: "我每天查看邮件。" },
+          { en: "Daily practice improves skills.", zh: "每日练习提高技能。" }],
         commonMistakes: [
           { mistake: "I go there every daily.", correction: "Use 'every day' or 'daily', not 'every daily'." }
-        ],
+        ,
+          { mistake: "I go there daily since 2020.", correction: "Use 'I have gone there daily since 2020' or 'I went there daily from 2020'." }],
         relatedTerms: ["quarterly", "yearly", "annually"],
         register: "neutral",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "Can be adjective or adverb: 'daily newspaper' or 'I exercise daily'.",
+        warning: "Can be adjective or adverb. 'Daily newspaper' vs 'I exercise daily'.",
+        safeAlternatives: [],
         audioAvailable: true
       },
       {
@@ -898,15 +1060,21 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         examples: [
           { en: "We have quarterly meetings.", zh: "我们每季度开一次会。" },
           { en: "The report is published quarterly.", zh: "报告每季度发布一次。" }
-        ],
+        ,
+          { en: "We publish quarterly reports.", zh: "我们每季度发布报告。" },
+          { en: "The magazine is issued quarterly.", zh: "这本杂志每季度发行一次。" }],
         commonMistakes: [
           { mistake: "Quarterly = every 3 months. Some think it means 4 times a month.", correction: "Quarterly = every 3 months (4 times per year)." }
-        ],
+        ,
+          { mistake: "Quarterly means every three months.", correction: "Actually quarterly means every 3 months, while 'every quarter' is the same. Be precise with business contexts." }],
         relatedTerms: ["monthly", "annually", "yearly"],
         register: "formal",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "Business term. In Chinese, 季度的. Common in financial contexts.",
+        warning: "Business/financial term. In casual speech, say 'every three months'.",
+        safeAlternatives: [],
         audioAvailable: true
       },
       {
@@ -920,15 +1088,21 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         examples: [
           { en: "The magazine is published biweekly. (could mean every 2 weeks OR twice a week)", zh: "杂志每两周出版一次。（也可能表示每周两次）" },
           { en: "I get paid bimonthly. (usually means every 2 months)", zh: "我每两个月领一次工资。" }
-        ],
+        ,
+          { en: "The newsletter is sent biweekly.", zh: "简报每两周发送一次。" },
+          { en: "Biweekly meetings keep everyone updated.", zh: "每两周一次的会议让每个人了解最新情况。" }],
         commonMistakes: [
           { mistake: "Using 'biweekly' when precision matters", correction: "Say 'every two weeks' or 'twice a week' to avoid confusion." }
-        ],
+        ,
+          { mistake: "Biweekly clearly means every two weeks.", correction: "Biweekly is ambiguous! It can mean 'twice a week' or 'every two weeks'. Use 'every two weeks' for clarity." }],
         relatedTerms: ["semiweekly", "bimonthly", "biannual"],
         register: "neutral",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "Ambiguous! Always clarify whether you mean 'twice a week' or 'every two weeks'.",
+        warning: "Ambiguous! Always clarify to avoid misunderstandings.",
+        safeAlternatives: [],
         audioAvailable: true
       },
       {
@@ -942,15 +1116,21 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         examples: [
           { en: "I go to the gym every other day.", zh: "我每隔一天去一次健身房。" },
           { en: "We have meetings every other week.", zh: "我们每隔一周开一次会。" }
-        ],
+        ,
+          { en: "I visit my parents every other week.", zh: "我每隔一周去看望父母一次。" },
+          { en: "We have meetings every other Monday.", zh: "我们每隔一个周一开会。" }],
         commonMistakes: [
           { mistake: "I go every two days. (this means the same, but 'every other day' is more natural)", correction: "Both are correct. 'Every other day' is more conversational." }
-        ],
+        ,
+          { mistake: "Every other day means twice a day.", correction: "No! 'Every other day' means 'every second day', i.e., Monday, Wednesday, Friday..." }],
         relatedTerms: ["alternate days", "every two days"],
         register: "neutral",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "Clear and unambiguous. Chinese: 每隔一个.",
+        warning: "Clear and unambiguous. Good for formal and informal contexts.",
+        safeAlternatives: [],
         audioAvailable: true
       },
       {
@@ -965,15 +1145,21 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
           { en: "I have a weekly meeting.", zh: "我每周开一次会。" },
           { en: "The report is generated monthly.", zh: "报告每月生成一次。" },
           { en: "We take a yearly vacation.", zh: "我们每年度假一次。" }
-        ],
+        ,
+          { en: "The team has a weekly meeting.", zh: "团队每周开会。" },
+          { en: "I go grocery shopping weekly.", zh: "我每周去一次杂货店。" }],
         commonMistakes: [
           { mistake: "I go there every weekly.", correction: "Use 'every week' or 'weekly', not 'every weekly'." }
-        ],
+        ,
+          { mistake: "Weekly means every week.", correction: "Correct! But note: 'on a weekly basis' is more formal." }],
         relatedTerms: ["daily", "quarterly", "annually"],
         register: "neutral",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "Common in scheduling. Chinese: 每周的.",
+        warning: "Common in scheduling. Note: 'on a weekly basis' is more formal.",
+        safeAlternatives: [],
         audioAvailable: true
       },
       {
@@ -987,15 +1173,21 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         examples: [
           { en: "The conference is held annually.", zh: "会议每年举行一次。" },
           { en: "We review our goals yearly.", zh: "我们每年回顾目标。" }
-        ],
+        ,
+          { en: "The conference is held annually.", zh: "会议每年举行一次。" },
+          { en: "We review the budget annually.", zh: "我们每年审查预算。" }],
         commonMistakes: [
           { mistake: "Using 'annually' in casual conversation", correction: "Use 'yearly' in speech, 'annually' in formal writing." }
-        ],
+        ,
+          { mistake: "Annually means every year.", correction: "Correct! But 'annual' is more common as an adjective: 'annual report'." }],
         relatedTerms: ["yearly", "monthly", "quarterly"],
         register: "neutral",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "Formal. 'Yearly' is more common in speech. Chinese: 每年的.",
+        warning: "Formal. 'Yearly' is more common in speech.",
+        safeAlternatives: [],
         audioAvailable: true
       }
     ],
@@ -1066,15 +1258,21 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
           { en: "It costs about $50.", zh: "这大约要50美元。" },
           { en: "There were roughly 200 people.", zh: "大约有200人。" },
           { en: "It takes around 10 minutes.", zh: "大约需要10分钟。" }
-        ],
+        ,
+          { en: "It's about 10 minutes away.", zh: "大约10分钟路程。" },
+          { en: "There were about 20 people there.", zh: "那里大约有20个人。" }],
         commonMistakes: [
           { mistake: "I'll be there in about 10 minutes. (in very formal writing)", correction: "Use 'approximately' or 'approximately 10 minutes' in formal writing." }
-        ],
+        ,
+          { mistake: "About 100 people came to my party.", correction: "This is fine in speech. In formal writing, use 'approximately 100 people'." }],
         relatedTerms: ["approximately", "nearly", "almost"],
         register: "neutral",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "Very common in speech. Chinese: 大约. In formal writing, use 'approximately'.",
+        warning: "Approximation. In formal writing, use 'approximately' or 'roughly'.",
+        safeAlternatives: [],
         audioAvailable: true
       },
       {
@@ -1089,15 +1287,21 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
           { en: "It costs $50 or so.", zh: "大概需要50美元左右。" },
           { en: "I'll be there in an hour or so.", zh: "我一小时左右到。" },
           { en: "There were 20 people or so.", zh: "有20人左右。" }
-        ],
+        ,
+          { en: "Give me a minute or so.", zh: "给我大约一分钟。" },
+          { en: "It costs $20 or so.", zh: "大约20美元。" }],
         commonMistakes: [
           { mistake: "It costs or so $50.", correction: "Put the number first: '$50 or so'." }
-        ],
+        ,
+          { mistake: "It costs $20 or so.", correction: "This is informal. In formal contexts, use 'approximately $20'." }],
         relatedTerms: ["about", "around", "roughly"],
         register: "casual",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "Informal. Chinese: 左右. Avoid in formal contexts.",
+        warning: "Informal. Avoid in formal contexts.",
+        safeAlternatives: [],
         audioAvailable: true
       },
       {
@@ -1111,15 +1315,21 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         examples: [
           { en: "It takes 2 hours, give or take.", zh: "大约需要2小时，上下浮动。" },
           { en: "The price is $100, give or take $10.", zh: "价格大约100美元，上下10美元。" }
-        ],
+        ,
+          { en: "It's 50 kilometers, give or take.", zh: "大约50公里，上下浮动。" },
+          { en: "Give or take a few dollars.", zh: "上下几美元。" }],
         commonMistakes: [
           { mistake: "It costs give or take $50.", correction: "State the number first, then 'give or take'." }
-        ],
+        ,
+          { mistake: "Give or take is very formal.", correction: "It's actually informal. Use 'approximately' or 'roughly' in formal writing." }],
         relatedTerms: ["about", "around", "or so"],
         register: "neutral",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "Informal. Chinese: 上下浮动. Better for speech than formal writing.",
+        warning: "Informal. Better for speech than writing.",
+        safeAlternatives: [],
         audioAvailable: true
       },
       {
@@ -1133,15 +1343,21 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         examples: [
           { en: "I've nearly finished.", zh: "我差不多做完了。" },
           { en: "It's almost 5 o'clock.", zh: "差不多5点了。" }
-        ],
+        ,
+          { en: "It's nearly midnight.", zh: "快半夜了。" },
+          { en: "She's nearly finished.", zh: "她差不多完成了。" }],
         commonMistakes: [
           { mistake: "I nearly died of laughter. (meaning 'almost died')", correction: "This is actually correct! 'Nearly' can mean 'almost' in both positive and negative contexts." }
-        ],
+        ,
+          { mistake: "Nearly all people agree.", correction: "This is fine. But 'almost all' is more common in spoken English." }],
         relatedTerms: ["about", "around", "practically"],
         register: "neutral",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "Slightly formal. Chinese: 几乎. Good for both speech and writing.",
+        warning: "Slightly formal. Good for both speech and writing.",
+        safeAlternatives: [],
         audioAvailable: true
       },
       {
@@ -1155,15 +1371,21 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         examples: [
           { en: "More or less, I agree with you.", zh: "我基本上同意你的看法。" },
           { en: "It takes more or less an hour.", zh: "这大约需要一个小时。" }
-        ],
+        ,
+          { en: "It's more or less the same.", zh: "差不多一样。" },
+          { en: "More or less, I agree.", zh: "差不多，我同意。" }],
         commonMistakes: [
           { mistake: "Using 'more or less' in very formal writing", correction: "Use 'approximately' or 'essentially' in formal contexts." }
-        ],
+        ,
+          { mistake: "More or less is formal.", correction: "It's informal. Use 'approximately' or 'virtually' in formal contexts." }],
         relatedTerms: ["about", "roughly", "basically"],
         register: "neutral",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "Informal. Chinese: 或多或少. Use 'approximately' in formal contexts.",
+        warning: "Informal. Use 'approximately' in formal contexts.",
+        safeAlternatives: [],
         audioAvailable: true
       }
     ],
@@ -1234,16 +1456,22 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
           { en: "a piece of advice", zh: "一条建议" },
           { en: "a piece of paper", zh: "一张纸" },
           { en: "a piece of information", zh: "一条信息" }
-        ],
+        ,
+          { en: "A piece of cake is on the plate.", zh: "盘子里有一块蛋糕。" },
+          { en: "I need a piece of paper.", zh: "我需要一张纸。" }],
         commonMistakes: [
           { mistake: "an advice", correction: "Advice is uncountable. Use 'a piece of advice'." },
           { mistake: "two pieces of advices", correction: "Use 'two pieces of advice' (no 's' on advice)." }
-        ],
+        ,
+          { mistake: "A piece of informations.", correction: "'Information' is uncountable. Use 'a piece of information'." }],
         relatedTerms: ["a slice of", "a bit of", "a little"],
         register: "neutral",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "Used for uncountable nouns. Chinese: 片/块/张 depending on context.",
+        warning: "Used for uncountable nouns. The specific word for the piece varies by context.",
+        safeAlternatives: [],
         audioAvailable: true
       },
       {
@@ -1258,16 +1486,22 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
           { en: "a pair of shoes", zh: "一双鞋" },
           { en: "a pair of glasses", zh: "一副眼镜" },
           { en: "a pair of scissors", zh: "一把剪刀" }
-        ],
+        ,
+          { en: "I bought a pair of shoes.", zh: "我买了一双鞋。" },
+          { en: "A pair of glasses was on the table.", zh: "桌子上有一副眼镜。" }],
         commonMistakes: [
           { mistake: "a pair of shoe", correction: "Use plural: 'a pair of shoes'." },
           { mistake: "The pair of shoes is new. (British: OK, American: also OK)", correction: "Both singular and plural verbs work with 'pair'." }
-        ],
+        ,
+          { mistake: "A pair of glasses are on the table.", correction: "Use 'is': 'A pair of glasses is on the table.' 'Pair' is the subject, which is singular." }],
         relatedTerms: ["a set of", "a couple of"],
         register: "neutral",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "Note: 'pair' is singular, so it takes a singular verb. Chinese learners often miss this.",
+        warning: "Singular verb required: 'A pair of shoes IS...' not 'ARE'.",
+        safeAlternatives: [],
         audioAvailable: true
       },
       {
@@ -1282,15 +1516,21 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
           { en: "a cup of coffee", zh: "一杯咖啡" },
           { en: "a glass of water", zh: "一杯水" },
           { en: "a glass of milk", zh: "一杯牛奶" }
-        ],
+        ,
+          { en: "Can I have a cup of tea?", zh: "能给我一杯茶吗？" },
+          { en: "He drank a glass of milk.", zh: "他喝了一杯牛奶。" }],
         commonMistakes: [
           { mistake: "a coffee", correction: "'A coffee' is okay in cafes, but 'a cup of coffee' is more precise." }
-        ],
+        ,
+          { mistake: "A cup of coffees.", correction: "Use 'a cup of coffee' (uncountable)." }],
         relatedTerms: ["a bottle of", "a can of"],
         register: "neutral",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "'Cup' is more general, 'glass' is specifically for glass containers. Chinese: 杯.",
+        warning: "'Cup' is general, 'glass' is specific. Don't say 'a glass of coffee'.",
+        safeAlternatives: [],
         audioAvailable: true
       },
       {
@@ -1305,15 +1545,21 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
           { en: "a bottle of water", zh: "一瓶水" },
           { en: "a can of soda", zh: "一罐苏打水" },
           { en: "a can of beans", zh: "一罐豆子" }
-        ],
+        ,
+          { en: "I brought a bottle of water.", zh: "我带了一瓶水。" },
+          { en: "A bottle of wine is on the table.", zh: "桌上有一瓶酒。" }],
         commonMistakes: [
           { mistake: "a water", correction: "Use 'a bottle of water' for precise quantity." }
-        ],
+        ,
+          { mistake: "A bottle of waters.", correction: "Use 'a bottle of water' (uncountable)." }],
         relatedTerms: ["a cup of", "a glass of"],
         register: "neutral",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "Used for liquids. Chinese: 瓶. 'Bottle' can also be a verb: 'to bottle up emotions'.",
+        warning: "For liquids. Note: 'bottle' can also be a verb meaning to suppress emotions.",
+        safeAlternatives: [],
         audioAvailable: true
       },
       {
@@ -1328,15 +1574,21 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
           { en: "a slice of bread", zh: "一片面包" },
           { en: "a loaf of bread", zh: "一条面包" },
           { en: "a slice of cake", zh: "一块蛋糕" }
-        ],
+        ,
+          { en: "Can I have a slice of pizza?", zh: "能给我一片披萨吗？" },
+          { en: "She ate a slice of bread.", zh: "她吃了一片面包。" }],
         commonMistakes: [
           { mistake: "a bread", correction: "Use 'a loaf of bread' or 'a slice of bread'." }
-        ],
+        ,
+          { mistake: "A slice of breads.", correction: "Use 'a slice of bread' (uncountable)." }],
         relatedTerms: ["a piece of", "a chunk of"],
         register: "neutral",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "Used for flat, thin things. Chinese: 片. Common for food.",
+        warning: "For flat, thin items. Common for bread, cake, pizza.",
+        safeAlternatives: [],
         audioAvailable: true
       },
       {
@@ -1351,15 +1603,21 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
           { en: "a bunch of grapes", zh: "一串葡萄" },
           { en: "a handful of nuts", zh: "一把坚果" },
           { en: "a bunch of flowers", zh: "一束花" }
-        ],
+        ,
+          { en: "I picked a bunch of flowers.", zh: "我摘了一束花。" },
+          { en: "A bunch of keys was on the hook.", zh: "钩子上挂着一串钥匙。" }],
         commonMistakes: [
           { mistake: "a bunch of rice", correction: "Use 'a bunch of' with items that grow together or are held together." }
-        ],
+        ,
+          { mistake: "A bunch of keys were on the hook.", correction: "Use 'was': 'A bunch of keys was on the hook.' 'Bunch' is the subject." }],
         relatedTerms: ["a pair of", "a set of"],
         register: "neutral",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "Note: 'bunch' is singular. Chinese: 束/串. Common for grapes, keys, flowers.",
+        warning: "Singular verb required: 'A bunch of keys WAS...' not 'WERE'.",
+        safeAlternatives: [],
         audioAvailable: true
       }
     ],
@@ -1429,15 +1687,21 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         examples: [
           { en: "He's as tall as his brother.", zh: "他和他哥哥一样高。" },
           { en: "This phone is as expensive as that one.", zh: "这部手机和那部一样贵。" }
-        ],
+        ,
+          { en: "He is as tall as his father.", zh: "他和他爸爸一样高。" },
+          { en: "It's not as easy as it looks.", zh: "它不像看起来那么容易。" }],
         commonMistakes: [
           { mistake: "He is more tall as his brother.", correction: "Use 'as tall as' for equal comparison." }
-        ],
+        ,
+          { mistake: "He is as taller as me.", correction: "Use the base form: 'He is as tall as me' or 'He is as tall as I am'." }],
         relatedTerms: ["twice as", "three times as"],
         register: "neutral",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "Chinese learners often say 'more tall' instead of 'taller'. Remember: comparative adjectives usually take -er.",
+        warning: "Use base adjective form, not comparative: 'as tall as' not 'as taller as'.",
+        safeAlternatives: [],
         audioAvailable: true
       },
       {
@@ -1451,15 +1715,21 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         examples: [
           { en: "She works twice as hard as I do.", zh: "她工作的努力程度是我的两倍。" },
           { en: "This room is twice as large as mine.", zh: "这个房间是我的房间的两倍大。" }
-        ],
+        ,
+          { en: "She is twice as old as me.", zh: "她比我大两倍。" },
+          { en: "This car is twice as expensive.", zh: "这辆车贵一倍。" }],
         commonMistakes: [
           { mistake: "She works more hard than me.", correction: "Use 'twice as hard as' for 2x comparison." }
-        ],
+        ,
+          { mistake: "Twice as taller as me.", correction: "Use base form: 'Twice as tall as me'." }],
         relatedTerms: ["double", "three times as", "as...as"],
         register: "neutral",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "In Chinese, 两倍 is placed differently. English puts 'twice' before the adjective.",
+        warning: "Base form required: 'twice as tall as' not 'twice as taller as'.",
+        safeAlternatives: [],
         audioAvailable: true
       },
       {
@@ -1472,15 +1742,21 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         difficulty: "B1",
         examples: [
           { en: "This building is three times as tall as that one.", zh: "这栋楼是那栋的三倍高。" }
-        ],
+        ,
+          { en: "He earns three times as much.", zh: "他挣三倍的钱。" },
+          { en: "This room is three times as big.", zh: "这个房间大三倍。" }],
         commonMistakes: [
           { mistake: "This building is three times taller than that one.", correction: "Both work! 'Three times as tall as' and 'three times taller than' are both acceptable." }
-        ],
+        ,
+          { mistake: "Three times as more expensive.", correction: "Use base form: 'Three times as expensive' or 'Three times more expensive'." }],
         relatedTerms: ["twice as", "triple", "as...as"],
         register: "neutral",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "Similar to 'twice as'. Chinese learners might say 'three times more' which is also correct but different emphasis.",
+        warning: "Can also say 'three times more expensive' — different emphasis.",
+        safeAlternatives: [],
         audioAvailable: true
       },
       {
@@ -1494,15 +1770,21 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         examples: [
           { en: "She is taller than me.", zh: "她比我高。" },
           { en: "This is more expensive than that.", zh: "这个比那个贵。" }
-        ],
+        ,
+          { en: "This book is better than that one.", zh: "这本书比那本好。" },
+          { en: "She runs faster than me.", zh: "她比我跑得快。" }],
         commonMistakes: [
           { mistake: "She is more tall than me.", correction: "Use 'taller' for short adjectives, 'more tall' is wrong." }
-        ],
+        ,
+          { mistake: "He is more tall than me.", correction: "Use 'taller' (one-syllable) or 'more tall' is incorrect for most adjectives." }],
         relatedTerms: ["superlative", "as...as"],
         register: "neutral",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "Chinese has 比 for comparisons, but English uses -er or 'more' directly.",
+        warning: "Most one-syllable adjectives take -er. Two+ syllables use 'more'.",
+        safeAlternatives: [],
         audioAvailable: true
       },
       {
@@ -1516,15 +1798,21 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         examples: [
           { en: "She is the tallest in the class.", zh: "她是班里最高的。" },
           { en: "This is the most beautiful city.", zh: "这是最美的城市。" }
-        ],
+        ,
+          { en: "This is the best day ever.", zh: "这是有史以来最好的一天。" },
+          { en: "She is the tallest in the class.", zh: "她是班上最高的。" }],
         commonMistakes: [
           { mistake: "She is the most tall.", correction: "Use 'the tallest' for short adjectives." }
-        ],
+        ,
+          { mistake: "He is the most tall.", correction: "Use 'tallest' for most one-syllable adjectives. 'Most tall' is incorrect." }],
         relatedTerms: ["comparative", "as...as"],
         register: "neutral",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "Chinese uses 最 for superlatives. English uses -est or 'most'. Irregular forms must be memorized.",
+        warning: "Most one-syllable adjectives take -est. Two+ syllables use 'most'.",
+        safeAlternatives: [],
         audioAvailable: true
       }
     ],
@@ -1594,15 +1882,21 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         examples: [
           { en: "I have a lot of work.", zh: "我有很多工作。" },
           { en: "Lots of people agree.", zh: "很多人同意。" }
-        ],
+        ,
+          { en: "A lot of people agree.", zh: "很多人同意。" },
+          { en: "There's a lot of work left.", zh: "还有很多工作要做。" }],
         commonMistakes: [
           { mistake: "I have many work.", correction: "Use 'a lot of' with uncountable nouns in positive statements." }
-        ],
+        ,
+          { mistake: "A lot of people is here.", correction: "Use 'are': 'A lot of people are here.'" }],
         relatedTerms: ["plenty of", "loads of", "tons of"],
         register: "casual",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "Very common in speech. Chinese: 很多. Avoid in very formal writing.",
+        warning: "Informal. Avoid in very formal writing.",
+        safeAlternatives: [],
         audioAvailable: true
       },
       {
@@ -1616,15 +1910,21 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         examples: [
           { en: "She has a great deal of experience.", zh: "她有丰富的经验。" },
           { en: "It took a great deal of time.", zh: "这花了大量时间。" }
-        ],
+        ,
+          { en: "She has a great deal of experience.", zh: "她有很多经验。" },
+          { en: "It takes a great deal of patience.", zh: "这需要极大的耐心。" }],
         commonMistakes: [
           { mistake: "a great deal of books", correction: "Use 'a great deal of' with uncountable nouns only." }
-        ],
+        ,
+          { mistake: "A great deal of time are needed.", correction: "Use 'is': 'A great deal of time is needed.' 'Deal' is singular." }],
         relatedTerms: ["a lot of", "a substantial amount of"],
         register: "formal",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "Formal. Used with uncountable nouns. Chinese: 大量的.",
+        warning: "Formal. Used with uncountable nouns only.",
+        safeAlternatives: [],
         audioAvailable: true
       },
       {
@@ -1638,15 +1938,21 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         examples: [
           { en: "A number of students passed. (= Many students passed)", zh: "许多学生通过了。" },
           { en: "The number of students is increasing. (= The quantity is growing)", zh: "学生数量在增加。" }
-        ],
+        ,
+          { en: "A number of students were absent.", zh: "一些学生缺席了。" },
+          { en: "A number of options were considered.", zh: "考虑了一些选项。" }],
         commonMistakes: [
           { mistake: "A number of students is here.", correction: "'A number of' takes a plural verb: 'A number of students ARE here.'" }
-        ],
+        ,
+          { mistake: "A number of students is here.", correction: "Use plural verb: 'A number of students ARE here.'" }],
         relatedTerms: ["a lot of", "several"],
         register: "neutral",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "Note: takes a plural verb. Chinese learners might treat it as singular like in Chinese.",
+        warning: "Takes plural verb. Similar to 'several' but more formal.",
+        safeAlternatives: [],
         audioAvailable: true
       },
       {
@@ -1660,15 +1966,21 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         examples: [
           { en: "I'm kind of tired.", zh: "我有点累。" },
           { en: "It's sort of expensive.", zh: "这有点贵。" }
-        ],
+        ,
+          { en: "I'm kind of tired.", zh: "我有点累。" },
+          { en: "She's kind of busy right now.", zh: "她现在有点忙。" }],
         commonMistakes: [
           { mistake: "Using 'kind of' in formal writing", correction: "Use 'somewhat' or 'rather' in formal contexts." }
-        ],
+        ,
+          { mistake: "Kind of is formal.", correction: "It's informal. Use 'rather' or 'somewhat' in formal writing." }],
         relatedTerms: ["a little", "a bit", "slightly"],
         register: "casual",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "Very informal. Chinese: 有点. Use 'rather' or 'somewhat' in formal contexts.",
+        warning: "Very informal. Use 'rather' or 'somewhat' in formal contexts.",
+        safeAlternatives: [],
         audioAvailable: true
       },
       {
@@ -1683,15 +1995,21 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
           { en: "I'm a little tired.", zh: "我有点累。" },
           { en: "Can I have a bit of water?", zh: "能给我一点水吗？" },
           { en: "It's a little bit expensive.", zh: "这有点贵。" }
-        ],
+        ,
+          { en: "Can you speak a little slower?", zh: "你能说慢一点吗？" },
+          { en: "I feel a little better now.", zh: "我现在感觉好一点了。" }],
         commonMistakes: [
           { mistake: "I have a little informations.", correction: "'Information' is uncountable. Use 'a little information'." }
-        ],
+        ,
+          { mistake: "A little people came.", correction: "Use 'A few people' for countable nouns. 'A little' is for uncountable." }],
         relatedTerms: ["kind of", "sort of", "slightly"],
         register: "neutral",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "Used with uncountable nouns. Chinese learners often confuse with 'a few' for countable nouns.",
+        warning: "For uncountable nouns only. Use 'a few' for countable.",
+        safeAlternatives: [],
         audioAvailable: true
       },
       {
@@ -1705,15 +2023,21 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         examples: [
           { en: "We offer a range of services.", zh: "我们提供一系列服务。" },
           { en: "A variety of options are available.", zh: "有各种各样的选项。" }
-        ],
+        ,
+          { en: "We offer a range of services.", zh: "我们提供一系列服务。" },
+          { en: "The store has a wide range of products.", zh: "这家商店有各种各样的产品。" }],
         commonMistakes: [
           { mistake: "Using 'a range of' with singular verb", correction: "'A range of' takes a plural verb: 'A range of options ARE available.'" }
-        ],
+        ,
+          { mistake: "A range of options are available.", correction: "Use 'is': 'A range of options is available.' 'Range' is singular." }],
         relatedTerms: ["a number of", "several", "various"],
         register: "neutral",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "Formal/business English. Chinese: 一系列. Takes a singular verb.",
+        warning: "Formal/business. Takes singular verb: 'A range IS available'.",
+        safeAlternatives: [],
         audioAvailable: true
       },
       {
@@ -1727,15 +2051,21 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         examples: [
           { en: "A series of events led to the decision.", zh: "一系列事件导致了这一决定。" },
           { en: "The TV series is popular.", zh: "这部电视剧很受欢迎。" }
-        ],
+        ,
+          { en: "A series of events led to this.", zh: "一系列事件导致了这一点。" },
+          { en: "There was a series of unfortunate incidents.", zh: "发生了一系列不幸的事件。" }],
         commonMistakes: [
           { mistake: "A series of events were shocking.", correction: "When emphasizing the series as a unit, use singular verb: 'A series of events WAS shocking.'" }
-        ],
+        ,
+          { mistake: "A series of events are unfolding.", correction: "Use 'is': 'A series of events is unfolding.' 'Series' is singular." }],
         relatedTerms: ["a range of", "a number of"],
         register: "formal",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "Formal. Chinese: 一系列. Takes a singular verb. Often used in storytelling.",
+        warning: "Formal. Takes singular verb: 'A series IS unfolding'.",
+        safeAlternatives: [],
         audioAvailable: true
       }
     ],
@@ -1806,15 +2136,21 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
           { en: "Half of the students passed.", zh: "一半的学生通过了。" },
           { en: "Half the pizza is gone.", zh: "一半的披萨没了。" },
           { en: "I'll be there in half an hour.", zh: "我半小时后到。" }
-        ],
+        ,
+          { en: "Half the time I don't know what he means.", zh: "我有一半时间不知道他在说什么。" },
+          { en: "Half of the students passed.", zh: "一半的学生通过了。" }],
         commonMistakes: [
           { mistake: "Half of students passed.", correction: "Use 'Half of the students' or 'Half the students'." }
-        ],
+        ,
+          { mistake: "Half people agreed.", correction: "Use 'Half the people' or 'Half of the people'." }],
         relatedTerms: ["one-third", "one-quarter", "three-quarters"],
         register: "neutral",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "Note: 'half of the + noun' or 'half the + noun'. Chinese: 一半.",
+        warning: "Can be used as adjective: 'half price' or 'half empty'.",
+        safeAlternatives: [],
         audioAvailable: true
       },
       {
@@ -1829,15 +2165,21 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
           { en: "One-third of the work is done.", zh: "三分之一的工作已完成。" },
           { en: "Three-quarters of the class passed.", zh: "四分之三的学生通过了。" },
           { en: "A quarter of an hour = 15 minutes.", zh: "一刻钟 = 15分钟。" }
-        ],
+        ,
+          { en: "One third of the cake is gone.", zh: "三分之一的蛋糕没了。" },
+          { en: "Three quarters of the work is done.", zh: "四分之三的工作完成了。" }],
         commonMistakes: [
           { mistake: "I ate three quarter of the cake.", correction: "Use 'three-quarters' with hyphen and plural 'quarters'." }
-        ],
+        ,
+          { mistake: "I ate one third of the cake.", correction: "This is correct! But in formal writing: 'one-third of the cake'." }],
         relatedTerms: ["half", "a dozen", "a half"],
         register: "neutral",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "In formal writing, write fractions as words: 'one-third' not '1/3' in prose.",
+        warning: "In formal writing, spell out fractions: 'one-third' not '1/3'.",
+        safeAlternatives: [],
         audioAvailable: true
       },
       {
@@ -1851,15 +2193,21 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         examples: [
           { en: "I bought a dozen eggs.", zh: "我买了十二个鸡蛋。" },
           { en: "I need half a dozen apples.", zh: "我需要半打苹果。" }
-        ],
+        ,
+          { en: "I bought a dozen eggs.", zh: "我买了一打鸡蛋。" },
+          { en: "There are a dozen reasons why.", zh: "有十几个原因。" }],
         commonMistakes: [
           { mistake: "I bought dozens of eggs. (when you mean exactly 12)", correction: "Use 'a dozen' for exactly 12, 'dozens of' for many." }
-        ],
+        ,
+          { mistake: "A dozen of eggs.", correction: "Use 'a dozen eggs' without 'of'." }],
         relatedTerms: ["half", "a couple of", "several"],
         register: "neutral",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "Note: 'a dozen' not 'a dozen of' unless followed by 'the/these/those'.",
+        warning: "Don't use 'of' unless with 'the/these/those': 'a dozen eggs' not 'a dozen of eggs'.",
+        safeAlternatives: [],
         audioAvailable: true
       },
       {
@@ -1873,15 +2221,21 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         examples: [
           { en: "A third of the class is absent.", zh: "三分之一的学生缺席了。" },
           { en: "A quarter of the budget was spent.", zh: "四分之一的预算已用完。" }
-        ],
+        ,
+          { en: "A third of the group agreed.", zh: "三分之一的人同意了。" },
+          { en: "About a third of the time.", zh: "大约三分之一的时间。" }],
         commonMistakes: [
           { mistake: "I ate a quarter cake.", correction: "Use 'a quarter of the cake'." }
-        ],
+        ,
+          { mistake: "A third people agreed.", correction: "Use 'A third of the people' or 'A third of them'." }],
         relatedTerms: ["half", "three-quarters", "one-third"],
         register: "neutral",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "Similar to 'half'. Chinese: 三分之一. Always use 'of': 'a third of the...'",
+        warning: "Always use 'of': 'a third of the students'.",
+        safeAlternatives: [],
         audioAvailable: true
       }
     ],
@@ -1951,15 +2305,21 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         examples: [
           { en: "I'll be there in a minute.", zh: "我马上到。" },
           { en: "Wait in a moment.", zh: "等一下。" }
-        ],
+        ,
+          { en: "I'll be there in a minute.", zh: "我马上就到。" },
+          { en: "Just a minute, please.", zh: "请稍等片刻。" }],
         commonMistakes: [
           { mistake: "I come in a minute.", correction: "Use future: 'I'll be there in a minute.'" }
-        ],
+        ,
+          { mistake: "In a minute means immediately.", correction: "It means 'soon' or 'in a short time', not necessarily immediately." }],
         relatedTerms: ["right now", "in a while"],
         register: "neutral",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "British English. Americans might say 'in a second' or 'in a minute' similarly.",
+        warning: "British English. Americans might say 'in a second'.",
+        safeAlternatives: [],
         audioAvailable: true
       },
       {
@@ -1974,15 +2334,21 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
           { en: "I haven't seen her for a while.", zh: "我有一段时间没见她了。" },
           { en: "I saw her a while ago.", zh: "我不久前见过她。" },
           { en: "It happened a while back.", zh: "这发生前不久。" }
-        ],
+        ,
+          { en: "I've been waiting for a while.", zh: "我已经等了一会儿了。" },
+          { en: "Stay for a while longer.", zh: "再待一会儿。" }],
         commonMistakes: [
           { mistake: "I saw her for a while ago.", correction: "Use 'a while ago' for past, not 'for a while ago'." }
-        ],
+        ,
+          { mistake: "For a while means permanently.", correction: "It means 'for a short time', not permanently." }],
         relatedTerms: ["in a while", "just now", "lately"],
         register: "neutral",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "Chinese: 一会儿. Note the preposition 'for' is often dropped in informal speech.",
+        warning: "Informal. In formal contexts, use 'for some time'.",
+        safeAlternatives: [],
         audioAvailable: true
       },
       {
@@ -1996,15 +2362,21 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         examples: [
           { en: "Eventually, I understood the lesson.", zh: "最终，我理解了这堂课。" },
           { en: "We finally arrived home.", zh: "我们终于到家了。" }
-        ],
+        ,
+          { en: "Eventually, they reached an agreement.", zh: "最终他们达成了协议。" },
+          { en: "She'll eventually understand.", zh: "她最终会明白的。" }],
         commonMistakes: [
           { mistake: "Eventually I went to home.", correction: "Use 'arrived home' or 'went home', not 'went to home'." }
-        ],
+        ,
+          { mistake: "Eventually means immediately.", correction: "It means 'in the end' or 'after some time', not immediately." }],
         relatedTerms: ["finally", "ultimately", "in the end"],
         register: "neutral",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "Chinese: 最终. Implies something took longer than expected.",
+        warning: "Implies a process or delay. Not immediate.",
+        safeAlternatives: [],
         audioAvailable: true
       },
       {
@@ -2018,15 +2390,21 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         examples: [
           { en: "I cooked dinner. Meanwhile, she set the table.", zh: "我做晚饭。与此同时，她摆好了餐具。" },
           { en: "He graduated and subsequently moved abroad.", zh: "他毕业后随即移居国外。" }
-        ],
+        ,
+          { en: "Meanwhile, let's have some coffee.", zh: "Meanwhile，我们喝点咖啡吧。" },
+          { en: "Meanwhile, the situation changed.", zh: "与此同时，情况发生了变化。" }],
         commonMistakes: [
           { mistake: "Using 'meanwhile' for sequential actions", correction: "Use 'meanwhile' for simultaneous actions. Use 'then' or 'subsequently' for sequence." }
-        ],
+        ,
+          { mistake: "Meanwhile means 'at the same moment'.", correction: "It means 'during the same period' — things happening simultaneously over time." }],
         relatedTerms: ["at the same time", "afterwards", "later"],
         register: "neutral",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "Chinese: 与此同时. Used to describe simultaneous actions.",
+        warning: "Used for simultaneous actions. Don't use for sequential actions.",
+        safeAlternatives: [],
         audioAvailable: true
       },
       {
@@ -2040,15 +2418,21 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         examples: [
           { en: "I'm busy right now.", zh: "我现在很忙。" },
           { en: "I saw her just now.", zh: "我刚才见过她。" }
-        ],
+        ,
+          { en: "I need it right now.", zh: "我现在就需要。" },
+          { en: "Stop talking right now!", zh: "现在就别说了！" }],
         commonMistakes: [
           { mistake: "I did it right now. (for past)", correction: "Use 'just now' for past, 'right now' for present." }
-        ],
+        ,
+          { mistake: "Right now can mean 'in a moment'.", correction: "It means 'at this exact moment' — immediate." }],
         relatedTerms: ["now", "currently", "at the moment"],
         register: "neutral",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "Chinese: 现在. Emphasizes immediate action.",
+        warning: "Immediate. Stronger than 'now'.",
+        safeAlternatives: [],
         audioAvailable: true
       },
       {
@@ -2062,15 +2446,21 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         examples: [
           { en: "We'll discuss that later on.", zh: "我们稍后再讨论那个。" },
           { en: "Sooner or later, you'll understand.", zh: "你迟早会明白的。" }
-        ],
+        ,
+          { en: "We can discuss it later on.", zh: "我们可以稍后再讨论。" },
+          { en: "Later on, she changed her mind.", zh: "后来她改变了主意。" }],
         commonMistakes: [
           { mistake: "Using 'sooner or later' for immediate future", correction: "Use 'soon' or 'shortly' for immediate future." }
-        ],
+        ,
+          { mistake: "Later on means 'right now'.", correction: "It means 'at a later time', not immediately." }],
         relatedTerms: ["eventually", "finally", "afterwards"],
         register: "neutral",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "Chinese: 稍后. Informal. Use 'later' in formal contexts.",
+        warning: "Informal. In formal contexts, use 'later' or 'at a later time'.",
+        safeAlternatives: [],
         audioAvailable: true
       }
     ],
@@ -2160,16 +2550,22 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         difficulty: "A1",
         examples: [
           { en: "Many books / Much water / A lot of time", zh: "Many 修饰可数 / Much 修饰不可数 / A lot of 两者皆可" }
-        ],
+        ,
+          { en: "Many people enjoy learning languages.", zh: "很多人喜欢学习语言。" },
+          { en: "There isn't much information available.", zh: "没有太多信息。" }],
         commonMistakes: [
           { mistake: "I have many water.", correction: "Use 'much' or 'a lot of' with uncountable nouns." },
           { mistake: "I have much books.", correction: "Use 'many' or 'a lot of' with countable nouns." }
-        ],
+        ,
+          { mistake: "I have many informations.", correction: "'Information' is uncountable. Use 'much information' or 'a lot of information'." }],
         relatedTerms: ["a lot of", "few", "little"],
         register: "neutral",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "The #1 mistake Chinese learners make. Chinese doesn't distinguish countable/uncountable with 'many/much'.",
+        warning: "The #1 mistake Chinese learners make. Chinese doesn't have this distinction.",
+        safeAlternatives: [],
         audioAvailable: true
       },
       {
@@ -2182,15 +2578,21 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         difficulty: "A2",
         examples: [
           { en: "Few people came. / Little water remains.", zh: "Few 修饰可数（否定）/ Little 修饰不可数（否定）" }
-        ],
+        ,
+          { en: "Few students knew the answer.", zh: "几乎没有学生知道答案。" },
+          { en: "There's little hope now.", zh: "现在几乎没有希望了。" }],
         commonMistakes: [
           { mistake: "I have few money.", correction: "Use 'little' with uncountable nouns." }
-        ],
+        ,
+          { mistake: "I have few money.", correction: "Use 'little money' with uncountable nouns." }],
         relatedTerms: ["a few", "a little", "many", "much"],
         register: "neutral",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "Chinese learners often confuse 'few/little' and 'a few/a little'. The 'a' makes it positive.",
+        warning: "The 'a' changes everything: 'a few' = positive, 'few' = negative.",
+        safeAlternatives: [],
         audioAvailable: true
       },
       {
@@ -2204,15 +2606,21 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         examples: [
           { en: "I've called twice. (natural)", zh: "我打过两次电话。（自然）" },
           { en: "One time, I met a celebrity. (storytelling)", zh: "有一次，我遇到了一位名人。（讲故事）" }
-        ],
+        ,
+          { en: "Twice is better than once.", zh: "两次比一次好。" },
+          { en: "I've called twice already.", zh: "我已经打了两次电话了。" }],
         commonMistakes: [
           { mistake: "I called him two times.", correction: "Use 'twice' for frequency." }
-        ],
+        ,
+          { mistake: "I called him two times.", correction: "Use 'twice' for frequency in natural English." }],
         relatedTerms: ["once", "thrice", "three times"],
         register: "neutral",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "'Twice' is more natural in English. 'Two times' sounds mechanical to native speakers.",
+        warning: "'Twice' is natural. 'Two times' sounds mechanical to native speakers.",
+        safeAlternatives: [],
         audioAvailable: true
       },
       {
@@ -2225,15 +2633,21 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         difficulty: "B2",
         examples: [
           { en: "Better: 'every two weeks' instead of 'biweekly'", zh: "更好：用 'every two weeks' 代替 'biweekly'" }
-        ],
+        ,
+          { en: "The biweekly report is due Monday.", zh: "双周报告周一到期。" },
+          { en: "They meet biweekly.", zh: "他们每两周见一次面。" }],
         commonMistakes: [
           { mistake: "The meeting is biweekly. (ambiguous)", correction: "Say 'every two weeks' or 'twice a month' for clarity." }
-        ],
+        ,
+          { mistake: "Biweekly clearly means every two weeks.", correction: "Biweekly is ambiguous! Use 'every two weeks' or 'twice a week' for clarity." }],
         relatedTerms: ["bimonthly", "semiweekly", "biannual"],
         register: "neutral",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "This word causes real business misunderstandings! Always clarify.",
+        warning: "This word causes real business misunderstandings! Always clarify.",
+        safeAlternatives: [],
         audioAvailable: true
       },
       {
@@ -2247,15 +2661,21 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         examples: [
           { en: "Half of the students passed. (correct)", zh: "一半的学生通过了。（正确）" },
           { en: "A half of the students passed. (less common)", zh: "一半的学生通过了。（较少见）" }
-        ],
+        ,
+          { en: "Half of the pizza is left.", zh: "一半披萨还剩着。" },
+          { en: "Half the class is absent.", zh: "一半学生缺席了。" }],
         commonMistakes: [
           { mistake: "A half of students passed.", correction: "Use 'Half of the students' or 'Half the students'." }
-        ],
+        ,
+          { mistake: "Half of students passed.", correction: "Use 'Half of the students' or 'Half the students'." }],
         relatedTerms: ["one-third", "one-quarter", "three-quarters"],
         register: "neutral",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "Chinese: 一半. Note the difference between 'half of the + noun' and 'half the + noun'.",
+        warning: "'Half of the + noun' is standard. 'A half of' is less common.",
+        safeAlternatives: [],
         audioAvailable: true
       },
       {
@@ -2269,15 +2689,21 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         examples: [
           { en: "A number of students are here. (= Many students are here)", zh: "许多学生在这里。（= Many students are here）" },
           { en: "The number of students is increasing. (= The quantity is growing)", zh: "学生数量在增加。（= The quantity is growing）" }
-        ],
+        ,
+          { en: "A number of factors influenced the decision.", zh: "多个因素影响了决定。" },
+          { en: "A number of issues remain unresolved.", zh: "一些问题仍未解决。" }],
         commonMistakes: [
           { mistake: "A number of students is here.", correction: "Use plural verb with 'a number of': 'A number of students ARE here.'" }
-        ],
+        ,
+          { mistake: "A number of students is here.", correction: "Use plural verb: 'A number of students ARE here.'" }],
         relatedTerms: ["a lot of", "several"],
         register: "neutral",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "Chinese learners often treat this as singular, but English requires a plural verb.",
+        warning: "Takes plural verb. Chinese learners often treat it as singular.",
+        safeAlternatives: [],
         audioAvailable: true
       }
     ],
@@ -2348,15 +2774,21 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
           { en: "I go to the gym three times a week.", zh: "我每周去三次健身房。" },
           { en: "She earns twice as much as me.", zh: "她挣的钱是我的两倍。" },
           { en: "I'll be there in about 10 minutes.", zh: "我大约10分钟后到。" }
-        ],
+        ,
+          { en: "Review all patterns before the test.", zh: "考试前复习所有模式。" },
+          { en: "Mixed review helps retention.", zh: "混合复习有助于记忆。" }],
         commonMistakes: [
           { mistake: "Multiple common mistakes from all sections", correction: "Review all sections before attempting." }
-        ],
+        ,
+          { mistake: "Reviewing is not important.", correction: "Reviewing is crucial for retention and mastery." }],
         relatedTerms: ["all sections"],
         register: "neutral",
         intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
         usageContext: "Everyday speech and writing. Suitable for all contexts.",
         formality: "neutral",
+        culturalNotes: "Reviewing regularly helps move patterns from short-term to long-term memory.",
+        warning: "Regular review is essential for long-term retention.",
+        safeAlternatives: [],
         audioAvailable: true
       }
     ],

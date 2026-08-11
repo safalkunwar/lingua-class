@@ -13,6 +13,9 @@ export interface PatternEntry {
   intensityNote: string;
   usageContext: string;
   formality: string;
+  culturalNotes?: string;
+  warning?: string;
+  safeAlternatives?: string[];
   audioAvailable: boolean;
 }
 

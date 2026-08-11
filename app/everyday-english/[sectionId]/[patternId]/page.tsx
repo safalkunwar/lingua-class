@@ -1,6 +1,5 @@
 "use client";
 
-import { notFound } from "next/navigation";
 import { StudentSidebar } from "@/components/layout/sidebar";
 import { everydayEnglishSections } from "@/data/everyday-english";
 import { Button } from "@/components/ui/button";
@@ -32,7 +31,18 @@ export default function PatternDetailPage({ params }: { params: { sectionId: str
   const { speakEnglish, speakChinese } = useSpeechSynthesis();
 
   if (!section || !pattern) {
-    notFound();
+    return (
+      <div className="flex">
+        <StudentSidebar />
+        <div className="flex-1 p-4 sm:p-6 lg:p-8">
+          <div className="max-w-2xl mx-auto text-center py-20">
+            <h1 className="text-3xl font-bold mb-4">Pattern not found</h1>
+            <p className="text-muted-foreground mb-6">The everyday English pattern you are looking for does not exist.</p>
+            <Link href="/everyday-english" className="text-primary underline">Back to Everyday English</Link>
+          </div>
+        </div>
+      </div>
+    );
   }
 
   const relatedPatterns = section.patterns.filter((p) =>
