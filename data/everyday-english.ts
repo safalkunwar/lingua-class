@@ -4472,5 +4472,189 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         "Teacher: 'Far?' Student: 'Is it walking distance?'"
       ]
     }
+  },
+  {
+    id: "home-life",
+    title: "Home Life",
+    titleZh: "居家生活",
+    emoji: "🏠",
+    description: "Daily English for home activities: chores, cooking, cleaning, and household routines.",
+    descriptionZh: "家庭日常活动英语：家务、做饭、打扫和居家 routine。",
+    difficulty: "beginner",
+    patterns: [
+      {
+        id: "hl-chores",
+        term: "daily chores",
+        chinese: "日常家务",
+        pinyin: "rì cháng jiā wù",
+        meaning: "Common household tasks that keep a home running smoothly.",
+        category: "home-life",
+        difficulty: "A1",
+        examples: [
+          { en: "I need to do the laundry.", zh: "我需要洗衣服。" },
+          { en: "Let's take out the trash.", zh: "我们去倒垃圾吧。" },
+          { en: "I'll wash the dishes after dinner.", zh: "晚饭后我来洗碗。" },
+          { en: "Can you feed the cat?", zh: "你能喂猫吗？" },
+          { en: "I need to do the laundry.", zh: "我需要洗衣服。" },
+          { en: "Let's take out the trash.", zh: "我们去倒垃圾吧。" },
+          { en: "I'll wash the dishes after dinner.", zh: "晚饭后我来洗碗。" },
+          { en: "Can you feed the cat?", zh: "你能喂猫吗？" }
+        ],
+        commonMistakes: [
+          { mistake: "Saying 'I do the housework' for specific tasks", correction: "Be specific: 'I'm doing laundry' or 'I'm washing dishes.'" },
+          { mistake: "Forgetting to use 'the' with chores.", correction: "Say 'do the laundry', 'take out the trash', 'wash the dishes.'" }
+        ],
+        relatedTerms: ["cleaning", "cooking", "laundry", "trash", "dishes"],
+        register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
+        culturalNotes: "Chinese learners often say 'do housework' instead of specific chores. Be precise in English.",
+        warning: "Be specific with chores. 'Housework' is too general for daily conversation.",
+        safeAlternatives: [],
+        audioAvailable: true
+      },
+      {
+        id: "hl-cooking",
+        term: "cooking & kitchen",
+        chinese: "做饭与厨房",
+        pinyin: "zuò fàn yǔ chú fáng",
+        meaning: "Words and phrases used in the kitchen and for preparing meals.",
+        category: "home-life",
+        difficulty: "A2",
+        examples: [
+          { en: "I'm making pasta for dinner.", zh: "我晚饭要做意大利面。" },
+          { en: "Could you pass me the salt?", zh: "你能把盐递给我吗？" },
+          { en: "The oven is preheated to 180 degrees.", zh: "烤箱已预热到180度。" },
+          { en: "I'll chop the vegetables while you prepare the meat.", zh: "你准备肉的时候我来切菜。" },
+          { en: "I'm making pasta for dinner.", zh: "我晚饭要做意大利面。" },
+          { en: "Could you pass me the salt?", zh: "你能把盐递给我吗？" },
+          { en: "The oven is preheated to 180 degrees.", zh: "烤箱已预热到180度。" },
+          { en: "I'll chop the vegetables while you prepare the meat.", zh: "你准备肉的时候我来切菜。" }
+        ],
+        commonMistakes: [
+          { mistake: "Saying 'I cook dinner' instead of 'I'm cooking' or 'I'll cook'", correction: "Use present continuous for now: 'I'm cooking.' Use 'I'll cook' for future." },
+          { mistake: "Confusing 'heat' and 'hot'.", correction: "'Heat' is a verb or noun: 'Heat the soup.' 'Hot' is an adjective: 'The soup is hot.'" }
+        ],
+        relatedTerms: ["kitchen", "oven", "stove", "recipe", "ingredients"],
+        register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
+        culturalNotes: "Cooking terms vary by dialect. 'Oven' is standard; some say 'cooker' for stove in British English.",
+        warning: "'Cooker' in British English means the stove, not the person who cooks.",
+        safeAlternatives: [],
+        audioAvailable: true
+      },
+      {
+        id: "hl-cleaning",
+        term: "cleaning & tidying",
+        chinese: "打扫与整理",
+        pinyin: "dǎ sǎo yǔ zhěng lǐ",
+        meaning: "Verbs and expressions for cleaning and organizing spaces.",
+        category: "home-life",
+        difficulty: "A2",
+        examples: [
+          { en: "I need to vacuum the living room.", zh: "我需要吸客厅的地。" },
+          { en: "Let's tidy up before guests arrive.", zh: "客人来之前我们整理一下。" },
+          { en: "I'll take out the recycling.", zh: "我去倒可回收垃圾。" },
+          { en: "The bathroom needs a good clean.", zh: "浴室需要好好打扫一下。" },
+          { en: "I need to vacuum the living room.", zh: "我需要吸客厅的地。" },
+          { en: "Let's tidy up before guests arrive.", zh: "客人来之前我们整理一下。" },
+          { en: "I'll take out the recycling.", zh: "我去倒可回收垃圾。" },
+          { en: "The bathroom needs a good clean.", zh: "浴室需要好好打扫一下。" }
+        ],
+        commonMistakes: [
+          { mistake: "Saying 'I clean my house' for all cleaning", correction: "Be specific: 'I'm vacuuming', 'I'm mopping', 'I'm dusting.'" },
+          { mistake: "Using 'clean' and 'tidy' interchangeably.", correction: "'Clean' = remove dirt. 'Tidy' = organize things. Both are important." }
+        ],
+        relatedTerms: ["vacuum", "mop", "dust", "recycle", "tidy"],
+        register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
+        culturalNotes: "Chinese often uses 打扫 for both cleaning and tidying. English separates these clearly.",
+        warning: "'Clean' removes dirt. 'Tidy' organizes. Don't mix them up.",
+        safeAlternatives: [],
+        audioAvailable: true
+      },
+      {
+        id: "hl-relaxing",
+        term: "relaxing at home",
+        chinese: "在家放松",
+        pinyin: "zài jiā fàng sōng",
+        meaning: "Casual words for resting and enjoying free time at home.",
+        category: "home-life",
+        difficulty: "A1",
+        examples: [
+          { en: "I'm just going to chill tonight.", zh: "我今晚只想放松一下。" },
+          { en: "Let's binge-watch a new series.", zh: "我们追个新剧吧。" },
+          { en: "I'm reading a book before bed.", zh: "我睡前在看本书。" },
+          { en: "I need to unwind after work.", zh: "下班后我需要放松一下。" },
+          { en: "I'm just going to chill tonight.", zh: "我今晚只想放松一下。" },
+          { en: "Let's binge-watch a new series.", zh: "我们追个新剧吧。" },
+          { en: "I'm reading a book before bed.", zh: "我睡前在看本书。" },
+          { en: "I need to unwind after work.", zh: "下班后我需要放松一下。" }
+        ],
+        commonMistakes: [
+          { mistake: "Saying 'I'm boring' when you mean 'I'm bored'", correction: "'Boring' = you are dull. 'Bored' = you feel uninterested. 'I'm bored' is correct." },
+          { mistake: "Using 'chill' in formal contexts.", correction: "'Chill' is casual. Use 'relax' in formal settings." }
+        ],
+        relatedTerms: ["relax", "unwind", "chill", "hobby", "leisure"],
+        register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
+        culturalNotes: "'Chill' and 'unwind' are very common in casual English. 'Bored' vs 'boring' is a classic learner mistake.",
+        warning: "'Chill' is informal. Use 'relax' in formal contexts.",
+        safeAlternatives: [],
+        audioAvailable: true
+      }
+    ],
+    exercises: [
+      {
+        id: "hl-ex-1",
+        type: "fill-blank",
+        question: "Complete: 'I need to ___ the laundry.'",
+        questionZh: "完成：'我需要___衣服。'",
+        options: ["do", "make", "take", "go"],
+        correctAnswer: "do",
+        hint: "'Do the laundry' is the standard phrase for washing clothes.",
+        hintZh: "'Do the laundry' 是洗衣服的标准说法。"
+      },
+      {
+        id: "hl-ex-2",
+        type: "error-correction",
+        question: "Correct: 'I boring tonight.'",
+        questionZh: "改正：'I boring tonight.'",
+        options: ["I'm bored tonight.", "I boring tonight.", "I'm boring tonight."],
+        correctAnswer: "I'm bored tonight.",
+        hint: "Use 'I'm bored' (feeling) not 'I'm boring' (causing boredom).",
+        hintZh: "用 'I'm bored'（感到无聊）不用 'I'm boring'（让别人无聊）。"
+      },
+      {
+        id: "hl-ex-3",
+        type: "translation",
+        question: "Translate: 我晚饭后洗碗。",
+        questionZh: "翻译：我晚饭后洗碗。",
+        options: ["I'll wash the dishes after dinner.", "I wash the dishes after dinner.", "I do the dishes after dinner."],
+        correctAnswer: "I'll wash the dishes after dinner.",
+        hint: "'Wash the dishes' is the standard phrase.",
+        hintZh: "'Wash the dishes' 是标准说法。"
+      }
+    ],
+    teacherPanel: {
+      simpleExplanation: "Chores: do the laundry, take out the trash, wash the dishes. Cooking: make pasta, pass the salt. Cleaning: vacuum, tidy up. Relaxing: chill, unwind, binge-watch.",
+      chineseExplanation: "家务：do the laundry, take out the trash, wash the dishes。做饭：make pasta, pass the salt。打扫：vacuum, tidy up。放松：chill, unwind, binge-watch。",
+      learnerDifficulty: "Chinese learners say 'do housework' instead of specific chores. They also confuse 'clean' and 'tidy'.",
+      teachingTip: "Make a chore chart. Students match verbs to rooms: vacuum the living room, mop the kitchen, dust the bedroom. Then role-play sharing chores.",
+      drills: [
+        "Teacher: 'Laundry?' Student: 'Do the laundry.'",
+        "Teacher: 'Trash?' Student: 'Take out the trash.'",
+        "Teacher: 'Dishes?' Student: 'Wash the dishes.'",
+        "Teacher: 'Relax?' Student: 'Chill / Unwind / Binge-watch.'",
+        "Teacher: 'Kitchen?' Student: 'Pass me the salt / Chop vegetables.'"
+      ]
+    }
   }
 ];
