@@ -20,14 +20,17 @@ export function StudentSidebar() {
     { href: "/vocabulary", label: "Vocabulary", emoji: "📚" },
     { href: "/word-book", label: "Word Book", emoji: "📖" },
     { href: "/conversations", label: "Conversations", emoji: "💬" },
+    { href: "/everyday-english", label: "Everyday English", emoji: "🛠️" },
+    { href: "/rough-english", label: "Rough English", emoji: "⚠️" },
+    { href: "/daily-expressions", label: "Daily Expressions", emoji: "📚" },
+    { href: "/slang-academy", label: "Slang Academy", emoji: "🎭" },
+    { href: "/slang-module", label: "Slang Module", emoji: "🗣️" },
     { href: "/image-guessing", label: "Image Guessing", emoji: "🖼️" },
     { href: "/flashcards", label: "Flashcards", emoji: "🃏" },
     { href: "/speaking", label: "Speaking", emoji: "🎤" },
     { href: "/listening", label: "Listening", emoji: "🎧" },
     { href: "/reading", label: "Reading", emoji: "📖" },
     { href: "/writing", label: "Writing", emoji: "✍️" },
-    { href: "/slang-module", label: "Slang Module", emoji: "🗣️" },
-    { href: "/everyday-english", label: "Everyday English", emoji: "🛠️" },
   ];
 
   return (
