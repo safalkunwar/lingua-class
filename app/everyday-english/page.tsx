@@ -89,24 +89,32 @@ export default function EverydayEnglishPage() {
           className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3"
         >
           {filtered.map((section, idx) => (
-            <Link key={section.id} href={`/everyday-english/${section.id}`}>
-              <Card className="p-5 sm:p-6 hover:shadow-lg transition-all cursor-pointer h-full hover:border-primary/50 group">
-                <div className="flex items-start gap-3 mb-3">
-                  <span className="text-3xl sm:text-4xl group-hover:scale-110 transition-transform">{section.emoji}</span>
-                  <div className="flex-1 min-w-0">
-                    <h3 className="font-bold text-base sm:text-lg leading-tight group-hover:text-primary transition-colors">{section.title}</h3>
-                    <p className="text-xs text-muted-foreground">{section.titleZh}</p>
+            <div key={section.id} className="h-full">
+              <Link href={`/everyday-english/${section.id}`}>
+                <Card className="p-5 sm:p-6 hover:shadow-lg transition-all cursor-pointer h-full hover:border-primary/50 group">
+                  <div className="flex items-start gap-3 mb-3">
+                    <span className="text-3xl sm:text-4xl group-hover:scale-110 transition-transform">{section.emoji}</span>
+                    <div className="flex-1 min-w-0">
+                      <h3 className="font-bold text-base sm:text-lg leading-tight group-hover:text-primary transition-colors">{section.title}</h3>
+                      <p className="text-xs text-muted-foreground">{section.titleZh}</p>
+                    </div>
                   </div>
-                </div>
-                <p className="text-sm text-muted-foreground mb-3 line-clamp-2">{section.descriptionZh}</p>
-                <div className="flex flex-wrap gap-1.5">
-                  <Badge variant="secondary" className="text-xs">{section.patterns.length} patterns</Badge>
-                  <Badge variant="outline" className={cn("text-xs capitalize", DIFFICULTY_COLORS[section.difficulty])}>
-                    {section.difficulty}
-                  </Badge>
-                </div>
-              </Card>
-            </Link>
+                  <p className="text-sm text-muted-foreground mb-3 line-clamp-2">{section.descriptionZh}</p>
+                  <div className="flex flex-wrap gap-1.5">
+                    <Badge variant="secondary" className="text-xs">{section.patterns.length} patterns</Badge>
+                    <Badge variant="outline" className={cn("text-xs capitalize", DIFFICULTY_COLORS[section.difficulty])}>
+                      {section.difficulty}
+                    </Badge>
+                  </div>
+                </Card>
+              </Link>
+              <Link href={`/everyday-english/${section.id}/read`} className="block mt-2">
+                <Button variant="outline" className="w-full gap-2" size="sm">
+                  <BookOpen className="w-4 h-4" />
+                  Read Mode
+                </Button>
+              </Link>
+            </div>
           ))}
         </motion.div>
 
