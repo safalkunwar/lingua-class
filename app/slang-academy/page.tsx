@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import Link from "next/link";
-import { AlertTriangle, Volume2 } from "lucide-react";
+import { AlertTriangle, Volume2, BookOpen } from "lucide-react";
 import { SlangLevelData, SlangItem } from "@/types/conversations";
 import { useSpeechSynthesis } from "@/hooks/use-speech-synthesis";
 
@@ -50,6 +50,14 @@ export default function SlangAcademyPage() {
           <p className="mt-2 text-muted-foreground max-w-2xl mx-auto">
             Learn slang by level. Know when to use it, when to avoid it, and how to sound natural.
           </p>
+          <div className="mt-4">
+            <Link href="/slang-academy/read">
+              <Button variant="default" className="gap-2">
+                <BookOpen className="w-4 h-4" />
+                Read Mode — View All Details
+              </Button>
+            </Link>
+          </div>
         </motion.div>
 
         <motion.div
@@ -161,7 +169,7 @@ export default function SlangAcademyPage() {
                             <p className="text-xs font-medium text-blue-900 dark:text-blue-100 mb-1">Conversation</p>
                             {item.conversation.map((line, idx) => (
                               <div key={idx} className="flex items-center gap-2 mb-1">
-                                <p key={idx} className="text-sm">
+                                <p className="text-sm">
                                   <strong>{line.speaker}:</strong> {line.line}
                                 </p>
                                 <Button
