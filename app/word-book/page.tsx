@@ -10,8 +10,9 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { ChevronLeft, ChevronRight, Search, Maximize2, Minimize2, List, Grid3X3, Volume2 } from "lucide-react";
+import { ChevronLeft, ChevronRight, Search, Maximize2, Minimize2, List, Grid3X3, Volume2, BookOpen } from "lucide-react";
 import { useSpeechSynthesis } from "@/hooks/use-speech-synthesis";
+import Link from "next/link";
 
 type ViewMode = "presentation" | "grid";
 type LevelFilter = "all" | "A1" | "A2" | "B1" | "B2" | "C1" | "C2";
@@ -125,6 +126,12 @@ export default function WordBookPage() {
                   {isFullscreen ? <Minimize2 className="w-4 h-4 mr-2" /> : <Maximize2 className="w-4 h-4 mr-2" />}
                   {isFullscreen ? "Exit Fullscreen" : "Fullscreen"}
                 </Button>
+                <Link href="/word-book/read">
+                  <Button variant="default" size="sm" className="gap-2">
+                    <BookOpen className="w-4 h-4" />
+                    Read Mode
+                  </Button>
+                </Link>
               </div>
               <div className="flex gap-2 flex-wrap justify-center">
                 {(["all", "A1", "A2", "B1", "B2", "C1", "C2"] as LevelFilter[]).map((level) => (
