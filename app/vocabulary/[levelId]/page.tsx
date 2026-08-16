@@ -14,6 +14,7 @@ import {
   ChevronRight,
   FileQuestion,
   Volume2,
+  BookOpen,
 } from "lucide-react";
 import { curriculum } from "@/data/curriculum";
 import { useLearningStore } from "@/stores/learning-store";
@@ -78,9 +79,17 @@ export default function FlashcardViewerPage() {
         </Link>
 
         {/* Header */}
-        <div className="mb-6">
-          <h1 className="text-2xl font-extrabold sm:text-3xl">{level!.title}</h1>
-          <p className="mt-1 text-muted-foreground">{level!.description}</p>
+        <div className="mb-6 flex items-center justify-between">
+          <div>
+            <h1 className="text-2xl font-extrabold sm:text-3xl">{level!.title}</h1>
+            <p className="mt-1 text-muted-foreground">{level!.description}</p>
+          </div>
+          <Link href={`/vocabulary/${level!.id}/read`}>
+            <Button variant="default" className="gap-2">
+              <BookOpen className="w-4 h-4" />
+              Read Mode
+            </Button>
+          </Link>
         </div>
 
         {/* Progress bar */}
