@@ -11,6 +11,7 @@ import Link from "next/link";
 import {
   AlertTriangle,
   Volume2,
+  BookOpen,
 } from "lucide-react";
 import { SlangItem } from "@/types/conversations";
 import { useSpeechSynthesis } from "@/hooks/use-speech-synthesis";
@@ -52,6 +53,14 @@ export default function RoughEnglishPage() {
             <Badge variant="outline" className="text-sm px-3 py-1">
               For comprehension, not encouragement
             </Badge>
+          </div>
+          <div className="mt-4">
+            <Link href="/rough-english/read">
+              <Button variant="default" className="gap-2">
+                <BookOpen className="w-4 h-4" />
+                Read Mode — View All Details
+              </Button>
+            </Link>
           </div>
         </motion.div>
 
