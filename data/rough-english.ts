@@ -21,12 +21,18 @@ export const roughEnglish: SlangItem[] = [
     conversation: [
       { speaker: "Emma", line: "You won't believe what happened..." },
       { speaker: "Jake", line: "Oh my god, shut up! That's amazing!" },
-      { speaker: "Emma", line: "I know! Can you believe it?" }
+      { speaker: "Emma", line: "I know! Can you believe it?" },
+      { speaker: "Jake", line: "Wait, what happened exactly?" },
+      { speaker: "Emma", line: "I got the job! The one at the coffee shop downtown." },
+      { speaker: "Jake", line: "No way! That's incredible. We have to celebrate." }
     ],
     chineseTranslation: [
       { speaker: "Emma", line: "你绝对不会相信发生了什么..." },
       { speaker: "Jake", line: "哦我的天，闭嘴！那太棒了！" },
-      { speaker: "Emma", line: "我知道！你能相信吗？" }
+      { speaker: "Emma", line: "我知道！你能相信吗？" },
+      { speaker: "Jake", line: "等等，到底发生了什么？" },
+      { speaker: "Emma", line: "我得到那份工作了！市中心咖啡店的那份。" },
+      { speaker: "Jake", line: "不会吧！太不可思议了。我们得庆祝一下。" }
     ],
     culturalNotes: "Among friends, 'shut up' can mean 'wow, that's shocking/exciting!' Never use with strangers, superiors, or in formal settings.",
     usageContext: "Close friends, casual settings, expressing surprise. Never in professional or formal contexts.",
@@ -54,12 +60,20 @@ export const roughEnglish: SlangItem[] = [
     conversation: [
       { speaker: "Mom", line: "Knock it off! You two are driving me crazy." },
       { speaker: "Kid 1", line: "But he started it!" },
-      { speaker: "Mom", line: "I don't care who started it. Knock it off now." }
+      { speaker: "Mom", line: "I don't care who started it. Knock it off now." },
+      { speaker: "Kid 2", line: "He took my toy first!" },
+      { speaker: "Mom", line: "I said knock it off. Both of you, go to your rooms for 10 minutes." },
+      { speaker: "Kid 1", line: "That's not fair! He started it." },
+      { speaker: "Kid 2", line: "Fine, but he owes me a new toy." }
     ],
     chineseTranslation: [
       { speaker: "Mom", line: "别闹了！你们俩快把我逼疯了。" },
       { speaker: "Kid 1", line: "但是他先开始的！" },
-      { speaker: "Mom", line: "我不在乎谁先开始的。现在就别闹了。" }
+      { speaker: "Mom", line: "我不在乎谁先开始的。现在就别闹了。" },
+      { speaker: "Kid 2", line: "他先抢了我的玩具！" },
+      { speaker: "Mom", line: "我说了别闹了。你们两个，去自己房间待10分钟。" },
+      { speaker: "Kid 1", line: "这不公平！他先开始的。" },
+      { speaker: "Kid 2", line: "好吧，但是他欠我一个新玩具。" }
     ],
     culturalNotes: "Common in American English. Slightly softer than 'shut up'. Used when someone is being annoying, not when you want them to be completely silent.",
     usageContext: "Family settings, schools, casual authority figures. Not for formal or professional settings.",
@@ -84,12 +98,18 @@ export const roughEnglish: SlangItem[] = [
     conversation: [
       { speaker: "Alex", line: "Get lost! I don't need your advice." },
       { speaker: "Sam", line: "Fine, be that way. I was just trying to help." },
-      { speaker: "Alex", line: "I didn't ask for your help." }
+      { speaker: "Alex", line: "I didn't ask for your help." },
+      { speaker: "Sam", line: "You know what? Next time I'll let you figure it out yourself." },
+      { speaker: "Alex", line: "Good. I don't need you anyway." },
+      { speaker: "Sam", line: "Whatever. When you're stuck, don't come crying to me." }
     ],
     chineseTranslation: [
       { speaker: "Alex", line: "走开！我不需要你的建议。" },
       { speaker: "Sam", line: "好吧，随便你。我只是想帮忙。" },
-      { speaker: "Alex", line: "我没让你帮忙。" }
+      { speaker: "Alex", line: "我没让你帮忙。" },
+      { speaker: "Sam", line: "你知道吗？下次我会让你自己解决。" },
+      { speaker: "Alex", line: "很好。反正我不需要你。" },
+      { speaker: "Sam", line: "随便你。当你遇到困难时，别来跟我哭。" }
     ],
     culturalNotes: "Quite rude. Can be considered bullying if used repeatedly. Students should understand it but avoid using it.",
     warning: "WARNING: 'Get lost' is very rude and can be considered harassment. Use 'Leave me alone' instead.",
@@ -115,12 +135,18 @@ export const roughEnglish: SlangItem[] = [
     conversation: [
       { speaker: "Lisa", line: "You have to work overtime again?" },
       { speaker: "Tom", line: "Give me a break! I worked late last week too." },
-      { speaker: "Lisa", line: "That's so unfair. You should talk to your boss." }
+      { speaker: "Lisa", line: "That's so unfair. You should talk to your boss." },
+      { speaker: "Tom", line: "I did. He said it's 'critical for the project.'" },
+      { speaker: "Lisa", line: "That's such a lame excuse. You need a break." },
+      { speaker: "Tom", line: "Tell me about it. I'm this close to quitting." }
     ],
     chineseTranslation: [
       { speaker: "Lisa", line: "你又要加班了？" },
       { speaker: "Tom", line: "饶了我吧！我上周也加班了。" },
-      { speaker: "Lisa", line: "那太不公平了。你应该和你老板谈谈。" }
+      { speaker: "Lisa", line: "那太不公平了。你应该和你老板谈谈。" },
+      { speaker: "Tom", line: "我谈过了。他说这对项目很'关键'。" },
+      { speaker: "Lisa", line: "这借口太烂了。你需要休息。" },
+      { speaker: "Tom", line: "可不是嘛。我差点就辞职了。" }
     ],
     culturalNotes: "Common expression of frustration. Can be used humorously among friends.",
     intensityNote: "Level 2/5: Mildly offensive when frustrated. Can be playful among friends. Context and tone matter a lot.",
@@ -146,12 +172,18 @@ export const roughEnglish: SlangItem[] = [
     conversation: [
       { speaker: "Amy", line: "Did you see that guy cut in line?" },
       { speaker: "John", line: "Yeah, what a jerk." },
-      { speaker: "Amy", line: "I should have said something." }
+      { speaker: "Amy", line: "I should have said something." },
+      { speaker: "John", line: "I almost did. He looked like he didn't care." },
+      { speaker: "Amy", line: "People like that make me so angry." },
+      { speaker: "John", line: "Tell me about it. If he does it again, I'll say something." }
     ],
     chineseTranslation: [
       { speaker: "Amy", line: "你看到那个插队的人了吗？" },
       { speaker: "John", line: "看到了，真是个混蛋。" },
-      { speaker: "Amy", line: "我应该说点什么的。" }
+      { speaker: "Amy", line: "我应该说点什么的。" },
+      { speaker: "John", line: "我差点就说了。他看起来一点都不在乎。" },
+      { speaker: "Amy", line: "那样的人真让我生气。" },
+      { speaker: "John", line: "可不是嘛。如果他再这样，我会说的。" }
     ],
     culturalNotes: "One of the most common mild insults in American English. Still rude but widely used among friends to describe others.",
     intensityNote: "Level 3/5: Moderately offensive. Common insult but still rude. Avoid using directly to someone's face.",
@@ -177,12 +209,18 @@ export const roughEnglish: SlangItem[] = [
     conversation: [
       { speaker: "Sam", line: "Loser! Get better at the game." },
       { speaker: "Riley", line: "Shut up, weirdo. Rematch!" },
-      { speaker: "Sam", line: "You're just mad because I won." }
+      { speaker: "Sam", line: "You're just mad because I won." },
+      { speaker: "Riley", line: "No, I just got unlucky. One more game." },
+      { speaker: "Sam", line: "Fine, but if I win again, you owe me dinner." },
+      { speaker: "Riley", line: "Deal. But if I win, you owe me a drink." }
     ],
     chineseTranslation: [
       { speaker: "Sam", line: "失败者！游戏练好点。" },
       { speaker: "Riley", line: "闭嘴，怪人。再来一局！" },
-      { speaker: "Sam", line: "你只是因为我赢了才生气。" }
+      { speaker: "Sam", line: "你只是因为我赢了才生气。" },
+      { speaker: "Riley", line: "不是，我只是运气不好。再来一局。" },
+      { speaker: "Sam", line: "好吧，但如果我又赢了，你欠我一顿饭。" },
+      { speaker: "Riley", line: "成交。但如果我赢了，你欠我一杯饮料。" }
     ],
     culturalNotes: "Common in school bullying. Should be avoided in adult professional contexts. Can be playful among friends depending on tone.",
     warning: "WARNING: 'Loser' can be bullying language. Using it toward someone who is struggling is cruel.",
@@ -208,12 +246,18 @@ export const roughEnglish: SlangItem[] = [
     conversation: [
       { speaker: "Alex", line: "You idiot! You deleted the whole folder!" },
       { speaker: "Jordan", line: "I know, I'm so sorry. It was an accident." },
-      { speaker: "Alex", line: "Whatever. Just don't be such a jerk next time." }
+      { speaker: "Alex", line: "Whatever. Just don't be such a jerk next time." },
+      { speaker: "Jordan", line: "I won't. I'll be more careful, I promise." },
+      { speaker: "Alex", line: "Can you recover it? Maybe from the recycle bin?" },
+      { speaker: "Jordan", line: "I already checked. It's gone. I'll help you recreate it tonight." }
     ],
     chineseTranslation: [
       { speaker: "Alex", line: "你个白痴！你把整个文件夹都删了！" },
       { speaker: "Jordan", line: "我知道，对不起。那是意外。" },
-      { speaker: "Alex", line: "算了。下次别那么混蛋。" }
+      { speaker: "Alex", line: "算了。下次别那么混蛋。" },
+      { speaker: "Jordan", line: "不会了。我会更小心的，我保证。" },
+      { speaker: "Alex", line: "你能恢复吗？也许从回收站？" },
+      { speaker: "Jordan", line: "我查过了。没了。我今晚帮你重新做一遍。" }
     ],
     culturalNotes: "Mild-to-moderate insult. Less severe than some other words but still rude. Common in everyday speech among friends.",
     intensityNote: "Level 3/5: Moderately offensive. Common frustration word. Can be playful among close friends but rude with strangers.",
@@ -239,12 +283,18 @@ export const roughEnglish: SlangItem[] = [
     conversation: [
       { speaker: "Mike", line: "You're not paying for the taxi?" },
       { speaker: "Sam", line: "I'm broke this week." },
-      { speaker: "Mike", line: "Don't be a cheapskate. It's only $5." }
+      { speaker: "Mike", line: "Don't be a cheapskate. It's only $5." },
+      { speaker: "Sam", line: "I know, but rent is due tomorrow." },
+      { speaker: "Mike", line: "Fair enough. I'll cover it this time." },
+      { speaker: "Sam", line: "Thanks, man. I'll get you back next week, I promise." }
     ],
     chineseTranslation: [
       { speaker: "Mike", line: "你不付出租车费吗？" },
       { speaker: "Sam", line: "我这周没钱了。" },
-      { speaker: "Mike", line: "别这么吝啬。才5美元。" }
+      { speaker: "Mike", line: "别这么吝啬。才5美元。" },
+      { speaker: "Sam", line: "我知道，但是明天要交房租了。" },
+      { speaker: "Mike", line: "好吧。这次我来付。" },
+      { speaker: "Sam", line: "谢谢，兄弟。我下周还你，我保证。" }
     ],
     culturalNotes: "Common insult among friends. Can be playful or serious depending on tone. 'Frugal' is the neutral/positive version.",
     intensityNote: "Level 2/5: Mildly offensive. Can be playful teasing among friends or a genuine criticism depending on tone.",
@@ -270,12 +320,18 @@ export const roughEnglish: SlangItem[] = [
     conversation: [
       { speaker: "Alex", line: "I don't want to see you here again." },
       { speaker: "Sam", line: "Drop dead! I wasn't even talking to you." },
-      { speaker: "Alex", line: "Watch your mouth." }
+      { speaker: "Alex", line: "Watch your mouth." },
+      { speaker: "Sam", line: "Make me. I'm not scared of you." },
+      { speaker: "Alex", line: "You should be. This isn't over." },
+      { speaker: "Sam", line: "Yeah, yeah. Come at me then." }
     ],
     chineseTranslation: [
       { speaker: "Alex", line: "我不想再在这里看到你。" },
       { speaker: "Sam", line: "去死吧！我甚至没在和你说话。" },
-      { speaker: "Alex", line: "注意你的嘴巴。" }
+      { speaker: "Alex", line: "注意你的嘴巴。" },
+      { speaker: "Sam", line: "有本事来啊。我不怕你。" },
+      { speaker: "Alex", line: "你应该怕的。这事还没完。" },
+      { speaker: "Sam", line: "是是是。那就来吧。" }
     ],
     culturalNotes: "Extremely rude. Considered a serious insult. Can be considered harassment. Students should understand it but never use it.",
     warning: "EXTREME WARNING: 'Drop dead' is one of the rudest expressions in English. It can be considered a threat. Never use this expression.",
@@ -301,12 +357,18 @@ export const roughEnglish: SlangItem[] = [
     conversation: [
       { speaker: "Lisa", line: "You messed up again." },
       { speaker: "Tom", line: "Screw you! At least I tried." },
-      { speaker: "Lisa", line: "That's not the point." }
+      { speaker: "Lisa", line: "That's not the point." },
+      { speaker: "Tom", line: "What's the point then? You're never happy." },
+      { speaker: "Lisa", line: "The point is you need to take responsibility." },
+      { speaker: "Tom", line: "I did. But you don't have to rub it in my face." }
     ],
     chineseTranslation: [
       { speaker: "Lisa", line: "你又搞砸了。" },
       { speaker: "Tom", line: "去你的！至少我试过了。" },
-      { speaker: "Lisa", line: "这不是重点。" }
+      { speaker: "Lisa", line: "这不是重点。" },
+      { speaker: "Tom", line: "那重点是什么？你永远都不满意。" },
+      { speaker: "Lisa", line: "重点是你需要承担责任。" },
+      { speaker: "Tom", line: "我承担了。但你不必揪着不放。" }
     ],
     culturalNotes: "Very offensive. Can end relationships. Sometimes used jokingly among very close friends, but still risky.",
     warning: "EXTREME WARNING: 'Screw you' is extremely offensive and can destroy relationships. Never use this expression.",
@@ -332,12 +394,18 @@ export const roughEnglish: SlangItem[] = [
     conversation: [
       { speaker: "Bully", line: "Wipe that smile off your face." },
       { speaker: "Student", line: "I wasn't doing anything." },
-      { speaker: "Bully", line: "Don't make me repeat myself." }
+      { speaker: "Bully", line: "Don't make me repeat myself." },
+      { speaker: "Student", line: "I'm just waiting for the bus. What do you want?" },
+      { speaker: "Bully", line: "I want you to look at me when I'm talking to you." },
+      { speaker: "Student", line: "Fine. What do you need?" }
     ],
     chineseTranslation: [
       { speaker: "Bully", line: "把你脸上的笑容抹去。" },
       { speaker: "Student", line: "我什么都没做。" },
-      { speaker: "Bully", line: "别让我重复一遍。" }
+      { speaker: "Bully", line: "别让我重复一遍。" },
+      { speaker: "Student", line: "我只是在等公交车。你想要什么？" },
+      { speaker: "Bully", line: "我要你跟我说话的时候看着我。" },
+      { speaker: "Student", line: "好吧。你需要什么？" }
     ],
     culturalNotes: "Threatening phrase often used by bullies. Can be a precursor to physical violence. Students should understand it as a threat.",
     warning: "WARNING: This phrase is often used by bullies and can indicate physical danger. If someone says this to you, seek help from an adult or authority figure.",
@@ -363,12 +431,18 @@ export const roughEnglish: SlangItem[] = [
     conversation: [
       { speaker: "Teacher", line: "You cheated on the test?" },
       { speaker: "Student", line: "You're dead meat if you tell anyone." },
-      { speaker: "Teacher", line: "That's not how this works." }
+      { speaker: "Teacher", line: "That's not how this works." },
+      { speaker: "Student", line: "Please, just give me another chance. I'll retake it." },
+      { speaker: "Teacher", line: "I have to report this. But I'll talk to the principal on your behalf." },
+      { speaker: "Student", line: "Thank you. I won't let you down again." }
     ],
     chineseTranslation: [
       { speaker: "Teacher", line: "你考试作弊了？" },
       { speaker: "Student", line: "如果你告诉任何人你就死定了。" },
-      { speaker: "Teacher", line: "事情不是这样的。" }
+      { speaker: "Teacher", line: "事情不是这样的。" },
+      { speaker: "Student", line: "求你了，再给我一次机会。我会重考。" },
+      { speaker: "Teacher", line: "我得上报。但我会替你跟校长说。" },
+      { speaker: "Student", line: "谢谢你。我不会再让你失望了。" }
     ],
     culturalNotes: "Common threat phrase among students. Can be serious or playful depending on context. In schools, this should be reported to teachers.",
     warning: "WARNING: This is a threatening phrase. If someone says this to you, especially in school, report it to a teacher or authority figure.",
@@ -425,12 +499,18 @@ export const roughEnglish: SlangItem[] = [
     conversation: [
       { speaker: "Tom", line: "Why did you do that? That was so dumb." },
       { speaker: "Lisa", line: "I know, I wasn't thinking." },
-      { speaker: "Tom", line: "Just be more careful next time." }
+      { speaker: "Tom", line: "Just be more careful next time." },
+      { speaker: "Lisa", line: "I know. It was really stupid of me." },
+      { speaker: "Tom", line: "It happens. Just don't do it again." },
+      { speaker: "Lisa", line: "I won't. I promise I'll be more careful." }
     ],
     chineseTranslation: [
       { speaker: "Tom", line: "你为什么要那样做？太蠢了。" },
       { speaker: "Lisa", line: "我知道，我没想清楚。" },
-      { speaker: "Tom", line: "下次小心点。" }
+      { speaker: "Tom", line: "下次小心点。" },
+      { speaker: "Lisa", line: "我知道。我真的很蠢。" },
+      { speaker: "Tom", line: "人都会犯错。别再这样就行了。" },
+      { speaker: "Lisa", line: "不会了。我保证会更小心。" }
     ],
     culturalNotes: "Common mild insult. Less severe than 'idiot' but still rude. Often used to describe actions rather than people.",
     intensityNote: "Level 2/5: Mildly offensive. Very common in casual speech. Often used to describe actions rather than people directly.",
@@ -456,12 +536,18 @@ export const roughEnglish: SlangItem[] = [
     conversation: [
       { speaker: "Mia", line: "I hate you! You told everyone my secret!" },
       { speaker: "Jake", line: "I'm sorry, it slipped out." },
-      { speaker: "Mia", line: "That's not okay. I need you to apologize." }
+      { speaker: "Mia", line: "That's not okay. I need you to apologize." },
+      { speaker: "Jake", line: "I did. What more do you want?" },
+      { speaker: "Mia", line: "I want you to tell them it was private." },
+      { speaker: "Jake", line: "Fine. I'll text them right now." }
     ],
     chineseTranslation: [
       { speaker: "Mia", line: "我讨厌你！你把我的秘密告诉所有人了！" },
       { speaker: "Jake", line: "对不起，我脱口而出了。" },
-      { speaker: "Mia", line: "这不行。你需要道歉。" }
+      { speaker: "Mia", line: "这不行。你需要道歉。" },
+      { speaker: "Jake", line: "我道了。你还想怎么样？" },
+      { speaker: "Mia", line: "我要你告诉他们那是私事。" },
+      { speaker: "Jake", line: "好吧。我马上给他们发消息。" }
     ],
     culturalNotes: "Very strong expression. Rarely literal among friends, but still hurtful. Among teens, it's often dramatic and temporary. Adults should avoid using it.",
     warning: "WARNING: 'I hate you' is extremely hurtful. Even when said in anger, it can cause lasting emotional damage. Never use this expression lightly.",
@@ -487,12 +573,18 @@ export const roughEnglish: SlangItem[] = [
     conversation: [
       { speaker: "Emma", line: "Shut up! I'm on the phone." },
       { speaker: "Jake", line: "Sorry, I didn't know." },
-      { speaker: "Emma", line: "Just keep it down next time." }
+      { speaker: "Emma", line: "Just keep it down next time." },
+      { speaker: "Jake", line: "I will. Who are you talking to?" },
+      { speaker: "Emma", line: "My boss. She's pretty upset with me." },
+      { speaker: "Jake", line: "Oh no. Do you need a hug after?" }
     ],
     chineseTranslation: [
       { speaker: "Emma", line: "闭嘴！我在打电话。" },
       { speaker: "Jake", line: "对不起，我不知道。" },
-      { speaker: "Emma", line: "下次小声点。" }
+      { speaker: "Emma", line: "下次小声点。" },
+      { speaker: "Jake", line: "我会的。你在跟谁打电话？" },
+      { speaker: "Emma", line: "我老板。她对我很生气。" },
+      { speaker: "Jake", line: "哦不。你需要一个拥抱吗？" }
     ],
     culturalNotes: "Very common but rude. Among close friends with playful tone, it can mean 'wow, that's surprising.' Never use with strangers or in formal settings.",
     warning: "WARNING: 'Shut up' is a rude command. Using it toward strangers, teachers, or bosses is extremely disrespectful.",
@@ -518,12 +610,18 @@ export const roughEnglish: SlangItem[] = [
     conversation: [
       { speaker: "Alex", line: "Get out of my room!" },
       { speaker: "Sam", line: "I was just bringing you food." },
-      { speaker: "Alex", line: "I said get out! I'll get it myself." }
+      { speaker: "Alex", line: "I said get out! I'll get it myself." },
+      { speaker: "Sam", line: "Fine. Be that way. See if I care." },
+      { speaker: "Alex", line: "Good. Leave it outside my door then." },
+      { speaker: "Sam", line: "Whatever. Your loss." }
     ],
     chineseTranslation: [
       { speaker: "Alex", line: "滚出我的房间！" },
       { speaker: "Sam", line: "我只是来给你送食物。" },
-      { speaker: "Alex", line: "我说了滚出去！我自己来。" }
+      { speaker: "Alex", line: "我说了滚出去！我自己来。" },
+      { speaker: "Sam", line: "好吧。随便你。看看我是否在乎。" },
+      { speaker: "Alex", line: "很好。那把它放在我门口。" },
+      { speaker: "Sam", line: "随便你。你亏大了。" }
     ],
     culturalNotes: "Very rude command. Shows extreme anger or frustration. Can be used playfully among very close friends but is usually serious.",
     warning: "WARNING: 'Get out' is a harsh command. Using it toward family members or friends can cause serious emotional harm.",
@@ -549,12 +647,18 @@ export const roughEnglish: SlangItem[] = [
     conversation: [
       { speaker: "Mia", line: "Leave me alone right now." },
       { speaker: "Jake", line: "What's wrong? Did I do something?" },
-      { speaker: "Mia", line: "Nothing. I just need some time." }
+      { speaker: "Mia", line: "Nothing. I just need some time." },
+      { speaker: "Jake", line: "Okay, but I'm here if you need me." },
+      { speaker: "Mia", line: "I know. Thanks. Just give me an hour." },
+      { speaker: "Jake", line: "Sure. I'll be in the living room." }
     ],
     chineseTranslation: [
       { speaker: "Mia", line: "现在别烦我。" },
       { speaker: "Jake", line: "怎么了？我做了什么吗？" },
-      { speaker: "Mia", line: "没什么。我只是需要一些时间。" }
+      { speaker: "Mia", line: "没什么。我只是需要一些时间。" },
+      { speaker: "Jake", line: "好吧，但如果你需要我，我就在这。" },
+      { speaker: "Mia", line: "我知道。谢谢。就给我一小时。" },
+      { speaker: "Jake", line: "当然。我在客厅。" }
     ],
     culturalNotes: "Not inherently offensive, but the tone matters. Can sound harsh if said aggressively. Often used when someone needs emotional space.",
     intensityNote: "Level 1/5: Not offensive when used to set boundaries. Can sound harsh depending on tone. A healthy way to ask for space.",
@@ -579,12 +683,18 @@ export const roughEnglish: SlangItem[] = [
     conversation: [
       { speaker: "Alex", line: "Back off, this is my desk." },
       { speaker: "Sam", line: "I was just looking at the computer." },
-      { speaker: "Alex", line: "Then ask before you touch it." }
+      { speaker: "Alex", line: "Then ask before you touch it." },
+      { speaker: "Sam", line: "I wasn't going to touch it. Just looking." },
+      { speaker: "Alex", line: "Well, it's my desk. Respect my space." },
+      { speaker: "Sam", line: "Fine. Next time I'll ask first." }
     ],
     chineseTranslation: [
       { speaker: "Alex", line: "退后，这是我的桌子。" },
       { speaker: "Sam", line: "我只是看看电脑。" },
-      { speaker: "Alex", line: "那也要先问一下再碰。" }
+      { speaker: "Alex", line: "那也要先问一下再碰。" },
+      { speaker: "Sam", line: "我没打算碰。只是看看。" },
+      { speaker: "Alex", line: "好吧，但这是我的桌子。尊重我的空间。" },
+      { speaker: "Sam", line: "好吧。下次我会先问。" }
     ],
     culturalNotes: "Common command when someone is invading personal space or crossing boundaries. Can be playful among friends depending on tone.",
     warning: "WARNING: 'Back off' is a command to create distance. Using it aggressively can be intimidating.",
@@ -610,12 +720,18 @@ export const roughEnglish: SlangItem[] = [
     conversation: [
       { speaker: "Emma", line: "Buzz off, I'm busy." },
       { speaker: "Jake", line: "I just wanted to ask a question." },
-      { speaker: "Emma", line: "Then ask nicely. Don't just stand there." }
+      { speaker: "Emma", line: "Then ask nicely. Don't just stand there." },
+      { speaker: "Jake", line: "Sorry. Can you help me with this report?" },
+      { speaker: "Emma", line: "I can look at it in 10 minutes. Right now I'm swamped." },
+      { speaker: "Jake", line: "Thanks. I'll be at my desk." }
     ],
     chineseTranslation: [
       { speaker: "Emma", line: "走开，我很忙。" },
       { speaker: "Jake", line: "我只是想问个问题。" },
-      { speaker: "Emma", line: "那就好好问。别就这么站着。" }
+      { speaker: "Emma", line: "那就好好问。别就这么站着。" },
+      { speaker: "Jake", line: "对不起。你能帮我看看这个报告吗？" },
+      { speaker: "Emma", line: "我10分钟后可以看。现在我很忙。" },
+      { speaker: "Jake", line: "谢谢。我在座位上等你。" }
     ],
     culturalNotes: "Informal and rude. More common in British and Australian English. Similar to 'get lost' but slightly less severe.",
     warning: "WARNING: 'Buzz off' is rude and dismissive. Avoid using it with people you don't know well.",
@@ -641,12 +757,18 @@ export const roughEnglish: SlangItem[] = [
     conversation: [
       { speaker: "Tom", line: "You messed up again." },
       { speaker: "Lisa", line: "Get bent! At least I tried." },
-      { speaker: "Tom", line: "That's not the point." }
+      { speaker: "Tom", line: "That's not the point." },
+      { speaker: "Lisa", line: "Then what is? You're never satisfied." },
+      { speaker: "Tom", line: "The point is you need to plan better." },
+      { speaker: "Lisa", line: "Easy for you to say. You never make mistakes." }
     ],
     chineseTranslation: [
       { speaker: "Tom", line: "你又搞砸了。" },
       { speaker: "Lisa", line: "去死吧！至少我试过了。" },
-      { speaker: "Tom", line: "这不是重点。" }
+      { speaker: "Tom", line: "这不是重点。" },
+      { speaker: "Lisa", line: "那重点是什么？你永远都不满意。" },
+      { speaker: "Tom", line: "重点是你需要更好地计划。" },
+      { speaker: "Lisa", line: "你说得容易。你从来不会犯错。" }
     ],
     culturalNotes: "Very rude expression. Common in British and Australian English. Considered a serious insult.",
     warning: "EXTREME WARNING: 'Get bent' is extremely rude and offensive. It can end relationships. Never use this expression.",
@@ -672,12 +794,18 @@ export const roughEnglish: SlangItem[] = [
     conversation: [
       { speaker: "Emma", line: "Sod off, I'm in the middle of something." },
       { speaker: "Jake", line: "I just wanted to ask a quick question." },
-      { speaker: "Emma", line: "Then wait until I'm done." }
+      { speaker: "Emma", line: "Then wait until I'm done." },
+      { speaker: "Jake", line: "It's kind of urgent. It'll take 2 seconds." },
+      { speaker: "Emma", line: "Fine, make it quick. What is it?" },
+      { speaker: "Jake", line: "Where's the printer? I need to print a report." }
     ],
     chineseTranslation: [
       { speaker: "Emma", line: "滚开，我正在忙。" },
       { speaker: "Jake", line: "我只是想问个 quick question。" },
-      { speaker: "Emma", line: "那就等我忙完。" }
+      { speaker: "Emma", line: "那就等我忙完。" },
+      { speaker: "Jake", line: "有点紧急。就2秒钟。" },
+      { speaker: "Emma", line: "好吧，快点。什么事？" },
+      { speaker: "Jake", line: "打印机在哪？我需要打印一份报告。" }
     ],
     culturalNotes: "British slang for 'go away.' Mild compared to some other expressions but still rude. Common in the UK and Australia.",
     warning: "WARNING: 'Sod off' is rude and dismissive. Avoid using it with people you don't know well.",
@@ -703,12 +831,18 @@ export const roughEnglish: SlangItem[] = [
     conversation: [
       { speaker: "Alex", line: "Kick rocks! I'm done listening to you." },
       { speaker: "Sam", line: "I was just trying to help." },
-      { speaker: "Alex", line: "I didn't ask for your help." }
+      { speaker: "Alex", line: "I didn't ask for your help." },
+      { speaker: "Sam", line: "You know what? Fine. Next time don't come crying to me." },
+      { speaker: "Alex", line: "I won't. I can handle this myself." },
+      { speaker: "Sam", line: "Yeah, sure you can. That's why you're in this mess." }
     ],
     chineseTranslation: [
       { speaker: "Alex", line: "滚蛋！我受够听你说话了。" },
       { speaker: "Sam", line: "我只是想帮忙。" },
-      { speaker: "Alex", line: "我没要你帮忙。" }
+      { speaker: "Alex", line: "我没要你帮忙。" },
+      { speaker: "Sam", line: "你知道吗？好吧。下次别来跟我哭。" },
+      { speaker: "Alex", line: "不会的。我自己能处理。" },
+      { speaker: "Sam", line: "是是是。所以你才搞成这样。" }
     ],
     culturalNotes: "Informal and rude. American slang for telling someone to go away. Less severe than some other expressions but still disrespectful.",
     warning: "WARNING: 'Kick rocks' is rude and dismissive. Using it toward friends or family can hurt feelings.",
@@ -734,12 +868,18 @@ export const roughEnglish: SlangItem[] = [
     conversation: [
       { speaker: "Jake", line: "He cheated on the test and got a zero." },
       { speaker: "Mia", line: "Get wrecked! That's what he gets." },
-      { speaker: "Jake", line: "I know, but still. That's harsh." }
+      { speaker: "Jake", line: "I know, but still. That's harsh." },
+      { speaker: "Mia", line: "Harsh? He cheated and got caught. That's what you call karma." },
+      { speaker: "Jake", line: "True. I just feel bad for him." },
+      { speaker: "Mia", line: "Don't. He made his bed, now he has to lie in it." }
     ],
     chineseTranslation: [
       { speaker: "Jake", line: "他考试作弊得了零分。" },
       { speaker: "Mia", line: "活该！那是他应得的。" },
-      { speaker: "Jake", line: "我知道，但还是。那太 harsh 了。" }
+      { speaker: "Jake", line: "我知道，但还是。那太 harsh 了。" },
+      { speaker: "Mia", line: "Harsh？他作弊被抓了。这叫因果报应。" },
+      { speaker: "Jake", line: "也是。我就是觉得他有点可怜。" },
+      { speaker: "Mia", line: "别。他自己造的孽，自己受着吧。" }
     ],
     culturalNotes: "Expresses satisfaction when someone who did something wrong faces consequences. Can be playful among friends or serious depending on context.",
     warning: "WARNING: 'Get wrecked' can sound cruel when someone is actually suffering. Use with caution.",
@@ -765,12 +905,18 @@ export const roughEnglish: SlangItem[] = [
     conversation: [
       { speaker: "Alex", line: "Shut your mouth! I'm tired of your lies." },
       { speaker: "Sam", line: "I'm not lying! You just don't understand." },
-      { speaker: "Alex", line: "Then explain. Don't yell." }
+      { speaker: "Alex", line: "Then explain. Don't yell." },
+      { speaker: "Sam", line: "I'm not yelling. You're the one yelling." },
+      { speaker: "Alex", line: "Just explain yourself clearly." },
+      { speaker: "Sam", line: "Fine. Let me start from the beginning." }
     ],
     chineseTranslation: [
       { speaker: "Alex", line: "闭上你的嘴！我受够了你的谎言。" },
       { speaker: "Sam", line: "我没撒谎！你只是不理解。" },
-      { speaker: "Alex", line: "那解释一下。别大喊大叫。" }
+      { speaker: "Alex", line: "那解释一下。别大喊大叫。" },
+      { speaker: "Sam", line: "我没大喊大叫。大喊大叫的是你。" },
+      { speaker: "Alex", line: "那就清楚地说清楚。" },
+      { speaker: "Sam", line: "好吧。让我从头开始说。" }
     ],
     culturalNotes: "Stronger and more aggressive than 'shut up.' Often used in arguments or confrontations. Can be considered verbally abusive if used repeatedly.",
     warning: "WARNING: 'Shut your mouth' is a very aggressive command. Using it toward others is disrespectful and can be considered verbal abuse.",
@@ -796,12 +942,18 @@ export const roughEnglish: SlangItem[] = [
     conversation: [
       { speaker: "Mia", line: "I don't care what everyone else says. I'm going." },
       { speaker: "Jake", line: "But it's dangerous!" },
-      { speaker: "Mia", line: "I don't care. I've already made up my mind." }
+      { speaker: "Mia", line: "I don't care. I've already made up my mind." },
+      { speaker: "Jake", line: "Fine, but at least take a phone with you." },
+      { speaker: "Mia", line: "I will. Don't worry so much." },
+      { speaker: "Jake", line: "I can't help it. You mean everything to me." }
     ],
     chineseTranslation: [
       { speaker: "Mia", line: "我不在乎别人怎么说。我要去。" },
       { speaker: "Jake", line: "但那很危险！" },
-      { speaker: "Mia", line: "我不在乎。我已经决定了。" }
+      { speaker: "Mia", line: "我不在乎。我已经决定了。" },
+      { speaker: "Jake", line: "好吧，但至少带个手机。" },
+      { speaker: "Mia", line: "我会的。别这么担心。" },
+      { speaker: "Jake", line: "我忍不住。你对我意味着一切。" }
     ],
     culturalNotes: "Can sound very dismissive or rude depending on tone and context. Often used in arguments. 'I don't care' can hurt feelings even when not intended.",
     intensityNote: "Level 1/5: Not inherently offensive but can be very hurtful when used dismissively. Context and tone are crucial.",
@@ -826,12 +978,18 @@ export const roughEnglish: SlangItem[] = [
     conversation: [
       { speaker: "Alex", line: "You forgot our meeting again!" },
       { speaker: "Sam", line: "So what? You've forgotten before." },
-      { speaker: "Alex", line: "That's not the point. You should apologize." }
+      { speaker: "Alex", line: "That's not the point. You should apologize." },
+      { speaker: "Sam", line: "Fine, I'm sorry. But you've done it too." },
+      { speaker: "Alex", line: "I know, but two wrongs don't make a right." },
+      { speaker: "Sam", line: "Alright, you're right. I'll set a reminder this time." }
     ],
     chineseTranslation: [
       { speaker: "Alex", line: "你又忘了我们的会议！" },
       { speaker: "Sam", line: "那又怎样？你以前也忘过。" },
-      { speaker: "Alex", line: "这不是重点。你应该道歉。" }
+      { speaker: "Alex", line: "这不是重点。你应该道歉。" },
+      { speaker: "Sam", line: "好吧，对不起。但你也做过。" },
+      { speaker: "Alex", line: "我知道，但错上加错不能变成对的。" },
+      { speaker: "Sam", line: "好吧，你是对的。这次我会设个提醒。" }
     ],
     culturalNotes: "Dismissive and often confrontational. Can escalate arguments. While not a 'swear word,' it's considered rude in many contexts because it minimizes the other person's concerns.",
     intensityNote: "Level 1/5: Not inherently offensive but very dismissive. Can escalate arguments and hurt feelings.",
@@ -856,12 +1014,18 @@ export const roughEnglish: SlangItem[] = [
     conversation: [
       { speaker: "Jake", line: "Holy shit! Look at the size of that wave!" },
       { speaker: "Mia", line: "I know! It's massive!" },
-      { speaker: "Jake", line: "We have to surf it!" }
+      { speaker: "Jake", line: "We have to surf it!" },
+      { speaker: "Mia", line: "Are you crazy? It's huge!" },
+      { speaker: "Jake", line: "Come on, it'll be the best ride of our lives." },
+      { speaker: "Mia", line: "Okay, but if we wipe out, I'm blaming you." }
     ],
     chineseTranslation: [
       { speaker: "Jake", line: "我靠！看那个浪有多大！" },
       { speaker: "Mia", line: "我知道！它太大了！" },
-      { speaker: "Jake", line: "我们必须去冲浪！" }
+      { speaker: "Jake", line: "我们必须去冲浪！" },
+      { speaker: "Mia", line: "你疯了吗？浪太大了！" },
+      { speaker: "Jake", line: "来吧，这会是我们这辈子最棒的冲浪体验。" },
+      { speaker: "Mia", line: "好吧，但如果我们摔了，我怪你。" }
     ],
     culturalNotes: "Extremely common expletive expressing shock, surprise, or disbelief. Very vulgar but widely used. Avoid in polite company, at work, or around children.",
     warning: "WARNING: 'Holy shit' is highly offensive and vulgar. It combines a religious term with a profanity. Never use in formal settings or with people you don't know well.",
@@ -887,12 +1051,18 @@ export const roughEnglish: SlangItem[] = [
     conversation: [
       { speaker: "Alex", line: "Fuck off! I'm done with your nonsense." },
       { speaker: "Sam", line: "I was just trying to help." },
-      { speaker: "Alex", line: "I didn't ask for your help. Fuck off!" }
+      { speaker: "Alex", line: "I didn't ask for your help. Fuck off!" },
+      { speaker: "Sam", line: "You know what? Fine. I'm leaving." },
+      { speaker: "Alex", line: "Good. Don't come back." },
+      { speaker: "Sam", line: "Don't worry, I won't. You can deal with this alone." }
     ],
     chineseTranslation: [
       { speaker: "Alex", line: "滚开！我受够了你的胡说八道。" },
       { speaker: "Sam", line: "我只是想帮忙。" },
-      { speaker: "Alex", line: "我没要你帮忙。滚开！" }
+      { speaker: "Alex", line: "我没要你帮忙。滚开！" },
+      { speaker: "Sam", line: "你知道吗？好吧。我走了。" },
+      { speaker: "Alex", line: "很好。别再回来。" },
+      { speaker: "Sam", line: "放心，不会的。你自己解决吧。" }
     ],
     culturalNotes: "One of the most aggressive and offensive phrases in English. Combines a sexual profanity with a command to leave. Can be considered verbal abuse. Almost never acceptable in any context.",
     warning: "WARNING: 'Fuck off' is extremely vulgar and aggressive. It is considered verbal abuse in many contexts. Using this toward someone can result in serious consequences, including legal action in some places. NEVER use this phrase.",
@@ -918,12 +1088,18 @@ export const roughEnglish: SlangItem[] = [
     conversation: [
       { speaker: "Jake", line: "He said he finished the project alone." },
       { speaker: "Mia", line: "Bullshit! I helped him the whole time." },
-      { speaker: "Jake", line: "I know. He always takes credit." }
+      { speaker: "Jake", line: "I know. He always takes credit." },
+      { speaker: "Mia", line: "That's such a terrible thing to do." },
+      { speaker: "Jake", line: "Tell me about it. I'm going to talk to the manager." },
+      { speaker: "Mia", line: "Good. He needs to learn that honesty matters." }
     ],
     chineseTranslation: [
       { speaker: "Jake", line: "他说他独自完成了项目。" },
       { speaker: "Mia", line: "狗屁！我一直在帮他。" },
-      { speaker: "Jake", line: "我知道。他总是抢功劳。" }
+      { speaker: "Jake", line: "我知道。他总是抢功劳。" },
+      { speaker: "Mia", line: "这样做太卑鄙了。" },
+      { speaker: "Jake", line: "可不是嘛。我要去跟经理谈谈。" },
+      { speaker: "Mia", line: "好。他得知道诚实很重要。" }
     ],
     culturalNotes: "Common expression for calling out lies or nonsense. While vulgar, it's very common in casual speech. Can also mean 'nonsense' in a lighter way among close friends.",
     warning: "WARNING: 'Bullshit' is vulgar and offensive in formal settings. Use 'nonsense' or 'that's not true' in polite company.",
@@ -949,12 +1125,18 @@ export const roughEnglish: SlangItem[] = [
     conversation: [
       { speaker: "Mia", line: "Did you see what he did?" },
       { speaker: "Jake", line: "Yeah, what an asshole." },
-      { speaker: "Mia", line: "I know. He's always like this." }
+      { speaker: "Mia", line: "I know. He's always like this." },
+      { speaker: "Jake", line: "Someone should teach him a lesson." },
+      { speaker: "Mia", line: "I agree. But we should stay calm." },
+      { speaker: "Jake", line: "You're right. Violence isn't the answer." }
     ],
     chineseTranslation: [
       { speaker: "Mia", line: "你看到他所做的了吗？" },
       { speaker: "Jake", line: "看到了，真是个混蛋。" },
-      { speaker: "Mia", line: "我知道。他总是这样。" }
+      { speaker: "Mia", line: "我知道。他总是这样。" },
+      { speaker: "Jake", line: "有人应该给他点教训。" },
+      { speaker: "Mia", line: "我同意。但我们应该保持冷静。" },
+      { speaker: "Jake", line: "你说得对。暴力不是答案。" }
     ],
     culturalNotes: "Common insult for someone who is rude or unpleasant. While vulgar, it's widely used. Can be used playfully among very close friends, but usually indicates genuine anger.",
     warning: "WARNING: 'Asshole' is a vulgar insult. Using it directly to someone's face is extremely rude and can lead to conflicts.",
@@ -980,12 +1162,18 @@ export const roughEnglish: SlangItem[] = [
     conversation: [
       { speaker: "Alex", line: "Son of a bitch! My car won't start." },
       { speaker: "Sam", line: "Again? That's rough." },
-      { speaker: "Alex", line: "I know. I need to get it fixed." }
+      { speaker: "Alex", line: "I know. I need to get it fixed." },
+      { speaker: "Sam", line: "Want me to give you a ride to work?" },
+      { speaker: "Alex", line: "That would be great. Thanks, man." },
+      { speaker: "Sam", line: "No problem. We've all been there." }
     ],
     chineseTranslation: [
       { speaker: "Alex", line: "他妈了个巴子！我的车发动不了了。" },
       { speaker: "Sam", line: "又来了？那太糟糕了。" },
-      { speaker: "Alex", line: "我知道。我得去修一下。" }
+      { speaker: "Alex", line: "我知道。我得去修一下。" },
+      { speaker: "Sam", line: "要我送你去上班吗？" },
+      { speaker: "Alex", line: "那太好了。谢了，兄弟。" },
+      { speaker: "Sam", line: "没问题。我们都经历过。" }
     ],
     culturalNotes: "Common expression of frustration. The literal meaning is offensive, but it's often used as a general expletive. Can be directed at a person as a severe insult.",
     warning: "WARNING: 'Son of a bitch' is very vulgar. The literal meaning is deeply offensive. Use milder alternatives like 'damn it' or 'shoot' in most situations.",
@@ -1011,12 +1199,18 @@ export const roughEnglish: SlangItem[] = [
     conversation: [
       { speaker: "Jake", line: "Goddammit! I forgot my wallet." },
       { speaker: "Mia", line: "I can lend you some money." },
-      { speaker: "Jake", line: "Thanks. I'll pay you back tomorrow." }
+      { speaker: "Jake", line: "Thanks. I'll pay you back tomorrow." },
+      { speaker: "Mia", line: "No rush. Do you want me to call the restaurant and explain?" },
+      { speaker: "Jake", line: "Yeah, that would help. I feel so stupid." },
+      { speaker: "Mia", line: "Don't. It happens to the best of us." }
     ],
     chineseTranslation: [
       { speaker: "Jake", line: "该死！我忘了带钱包。" },
       { speaker: "Mia", line: "我可以借你一些钱。" },
-      { speaker: "Jake", line: "谢谢。我明天还你。" }
+      { speaker: "Jake", line: "谢谢。我明天还你。" },
+      { speaker: "Mia", line: "不急。要我打电话给餐厅解释一下吗？" },
+      { speaker: "Jake", line: "好啊，那有帮助。我觉得自己好蠢。" },
+      { speaker: "Mia", line: "别。这种事发生在每个人身上。" }
     ],
     culturalNotes: "Common expression of frustration. Less severe than 'holy shit' or 'fuck off' but still considered profane. Some religious people find it offensive because it uses God's name in vain.",
     warning: "WARNING: 'Goddammit' is considered blasphemous by some religious people. Use 'darn it' or 'shoot' if you're around sensitive audiences.",
@@ -1042,12 +1236,18 @@ export const roughEnglish: SlangItem[] = [
     conversation: [
       { speaker: "Mia", line: "She promised to help and then bailed." },
       { speaker: "Jake", line: "What a cunt. I can't trust her." },
-      { speaker: "Mia", line: "I know. She's the worst." }
+      { speaker: "Mia", line: "I know. She's the worst." },
+      { speaker: "Jake", line: "Should we confront her?" },
+      { speaker: "Mia", line: "No, it's not worth it. Let's just move on." },
+      { speaker: "Jake", line: "You're right. She's not worth our time." }
     ],
     chineseTranslation: [
       { speaker: "Mia", line: "她答应帮忙然后跑了。" },
       { speaker: "Jake", line: "贱人。我不能信任她。" },
-      { speaker: "Mia", line: "我知道。她最差了。" }
+      { speaker: "Mia", line: "我知道。她最差了。" },
+      { speaker: "Jake", line: "我们应该找她算账吗？" },
+      { speaker: "Mia", line: "不用，不值得。我们继续前进吧。" },
+      { speaker: "Jake", line: "你说得对。她不值得我们的时间。" }
     ],
     culturalNotes: "In British/Australian/Irish English it is one of the strongest insults, often misogynistic. In American English it is even more taboo and rarely used outside of hostile conflict. Avoid in nearly all contexts.",
     warning: "WARNING: 'Cunt' is among the most offensive words in English, especially in the US. It is often considered misogynistic. Using it can end relationships and careers. DO NOT use this word.",
@@ -1073,12 +1273,18 @@ export const roughEnglish: SlangItem[] = [
     conversation: [
       { speaker: "Alex", line: "That motherfucker stole my bike!" },
       { speaker: "Sam", line: "No way. Are you serious?" },
-      { speaker: "Alex", line: "Yes! I'm going to call the police." }
+      { speaker: "Alex", line: "Yes! I'm going to call the police." },
+      { speaker: "Sam", line: "Good idea. Do you have a description?" },
+      { speaker: "Alex", line: "Yeah, I got it on my security camera." },
+      { speaker: "Sam", line: "Perfect. Let's go file the report." }
     ],
     chineseTranslation: [
       { speaker: "Alex", line: "那个狗娘养的偷了我的自行车！" },
       { speaker: "Sam", line: "不会吧。你认真的吗？" },
-      { speaker: "Alex", line: "真的！我要报警。" }
+      { speaker: "Alex", line: "真的！我要报警。" },
+      { speaker: "Sam", line: "好主意。你有他的描述吗？" },
+      { speaker: "Alex", line: "有，我的监控摄像头拍到了。" },
+      { speaker: "Sam", line: "完美。我们去报案吧。" }
     ],
     culturalNotes: "One of the strongest insults and expletives in English. Can be used as an insult toward a person or as a general expletive. Extremely vulgar and unacceptable in polite company.",
     warning: "WARNING: 'Motherfucker' is extremely vulgar and offensive. It insults someone's family and implies incest. Using this word is likely to provoke violence or severe social consequences.",
@@ -1104,12 +1310,18 @@ export const roughEnglish: SlangItem[] = [
     conversation: [
       { speaker: "Mia", line: "He cheated on the test and blamed me." },
       { speaker: "Jake", line: "What a bastard." },
-      { speaker: "Mia", line: "I know. He's always like this." }
+      { speaker: "Mia", line: "I know. He's always like this." },
+      { speaker: "Jake", line: "Have you told the teacher?" },
+      { speaker: "Mia", line: "Not yet. I'm gathering evidence first." },
+      { speaker: "Jake", line: "Smart. Let me know if you need help." }
     ],
     chineseTranslation: [
       { speaker: "Mia", line: "他考试作弊然后嫁祸给我。" },
       { speaker: "Jake", line: "真是个王八蛋。" },
-      { speaker: "Mia", line: "我知道。他总是这样。" }
+      { speaker: "Mia", line: "我知道。他总是这样。" },
+      { speaker: "Jake", line: "你告诉老师了吗？" },
+      { speaker: "Mia", line: "还没有。我先收集证据。" },
+      { speaker: "Jake", line: "聪明。需要帮忙就告诉我。" }
     ],
     culturalNotes: "Historically meant 'illegitimate child' and was extremely offensive. Today it's commonly used as a general insult, especially in British English. In American English it's considered milder but still rude.",
     warning: "WARNING: 'Bastard' can be offensive because of its historical meaning. While commonly used as an insult in some countries, it can still deeply hurt people, especially those born outside of marriage.",
@@ -1135,12 +1347,18 @@ export const roughEnglish: SlangItem[] = [
     conversation: [
       { speaker: "Alex", line: "Piss off! I told you I'm working." },
       { speaker: "Sam", line: "I just wanted to ask a question." },
-      { speaker: "Alex", line: "Not now. Leave me alone." }
+      { speaker: "Alex", line: "Not now. Leave me alone." },
+      { speaker: "Sam", line: "Fine. I'll ask later." },
+      { speaker: "Alex", line: "Thanks. I'll come find you when I'm done." },
+      { speaker: "Sam", line: "Cool. I'll be at my desk." }
     ],
     chineseTranslation: [
       { speaker: "Alex", line: "滚开！我告诉过你我在工作。" },
       { speaker: "Sam", line: "我只是想问个问题。" },
-      { speaker: "Alex", line: "现在不行。让我一个人待着。" }
+      { speaker: "Alex", line: "现在不行。让我一个人待着。" },
+      { speaker: "Sam", line: "好吧。我晚点再问。" },
+      { speaker: "Alex", line: "谢谢。我忙完去找你。" },
+      { speaker: "Sam", line: "好的。我在座位上。" }
     ],
     culturalNotes: "Common British/Australian/Irish expression meaning 'go away' or expressing annoyance. While vulgar, it's less aggressive than 'fuck off.' Equivalent to 'bugger off' in some regions.",
     warning: "WARNING: 'Piss off' is vulgar and rude. While common in British English, it's still offensive. Use 'go away' or 'leave me alone' in polite company.",
@@ -1169,12 +1387,18 @@ export const roughEnglish: SlangItem[] = [
     conversation: [
       { speaker: "Jordan", line: "WTF? I just got a text from the bank." },
       { speaker: "Taylor", line: "What happened?" },
-      { speaker: "Jordan", line: "They said my account is overdrawn. I don't even use it!" }
+      { speaker: "Jordan", line: "They said my account is overdrawn. I don't even use it!" },
+      { speaker: "Taylor", line: "Maybe there's a fraudulent charge?" },
+      { speaker: "Jordan", line: "Good idea. I'll call them first thing tomorrow." },
+      { speaker: "Taylor", line: "Let me know if you need anything." }
     ],
     chineseTranslation: [
       { speaker: "Jordan", line: "搞什么鬼？我刚收到银行的短信。" },
       { speaker: "Taylor", line: "发生了什么？" },
-      { speaker: "Jordan", line: "他们说我的账户透支了。我根本不用！" }
+      { speaker: "Jordan", line: "他们说我的账户透支了。我根本不用！" },
+      { speaker: "Taylor", line: "也许有欺诈性消费？" },
+      { speaker: "Jordan", line: "好主意。我明天第一时间给他们打电话。" },
+      { speaker: "Taylor", line: "需要什么就告诉我。" }
     ],
     culturalNotes: "Extremely common in text messaging and social media. While offensive in formal contexts, it's widely accepted among younger people in casual digital communication. The written form 'WTF' is often considered less offensive than saying the full phrase.",
     usageContext: "Text messages, social media, casual conversations with friends. Never in professional emails, meetings, or formal settings.",
@@ -1202,12 +1426,18 @@ export const roughEnglish: SlangItem[] = [
     conversation: [
       { speaker: "Riley", line: "Stfu! I'm watching the game." },
       { speaker: "Casey", line: "I was just asking a question!" },
-      { speaker: "Riley", line: "Not now. I'm busy." }
+      { speaker: "Riley", line: "Not now. I'm busy." },
+      { speaker: "Casey", line: "Fine, but you could at least be polite." },
+      { speaker: "Riley", line: "You're right. Sorry. What did you need?" },
+      { speaker: "Casey", line: "Where's the remote? I want to change the channel." }
     ],
     chineseTranslation: [
       { speaker: "Riley", line: "闭嘴！我在看比赛。" },
       { speaker: "Casey", line: "我只是问个问题！" },
-      { speaker: "Riley", line: "现在不行。我很忙。" }
+      { speaker: "Riley", line: "现在不行。我很忙。" },
+      { speaker: "Casey", line: "好吧，但你好歹客气一点。" },
+      { speaker: "Riley", line: "你说得对。对不起。你需要什么？" },
+      { speaker: "Casey", line: "遥控器在哪？我想换个台。" }
     ],
     culturalNotes: "Common in online gaming, social media arguments, and angry text messages. Considered one of the most offensive abbreviations. The full form 'Shut the fuck up' is extremely vulgar.",
     usageContext: "Online arguments, gaming, extremely casual settings with close friends only. Never in any professional or polite context.",
@@ -1235,12 +1465,18 @@ export const roughEnglish: SlangItem[] = [
     conversation: [
       { speaker: "Avery", line: "FML! I just failed my driving test." },
       { speaker: "Quinn", line: "Oh no! When can you retake it?" },
-      { speaker: "Avery", line: "Not for two weeks. This is the worst." }
+      { speaker: "Avery", line: "Not for two weeks. This is the worst." },
+      { speaker: "Quinn", line: "You'll do better next time. I know it." },
+      { speaker: "Avery", line: "Thanks. I was so nervous I forgot how to parallel park." },
+      { speaker: "Quinn", line: "That happens. Let's practice this weekend, okay?" }
     ],
     chineseTranslation: [
       { speaker: "Avery", line: "我真是倒霉！我刚驾照考试挂了。" },
       { speaker: "Quinn", line: "不会吧！你什么时候可以重考？" },
-      { speaker: "Avery", line: "要等两周。这太糟了。" }
+      { speaker: "Avery", line: "要等两周。这太糟了。" },
+      { speaker: "Quinn", line: "你下次会更好的。我相信你。" },
+      { speaker: "Avery", line: "谢谢。我太紧张了，都忘了怎么侧方停车。" },
+      { speaker: "Quinn", line: "这很正常。这周末我们练习吧，好吗？" }
     ],
     culturalNotes: "Extremely common on social media, especially Instagram and Twitter. While offensive due to the profanity, it's often used humorously or hyperbolically among young people. Not appropriate for professional or formal contexts.",
     usageContext: "Social media posts, text messages to close friends, casual conversation. Never in professional settings or with people you don't know well.",
@@ -1268,12 +1504,18 @@ export const roughEnglish: SlangItem[] = [
     conversation: [
       { speaker: "Lily", line: "Have you met my BFF, Sarah?" },
       { speaker: "Sarah", line: "We've been friends since we were 5." },
-      { speaker: "Lily", line: "Yeah, she's basically my sister." }
+      { speaker: "Lily", line: "Yeah, she's basically my sister." },
+      { speaker: "Sarah", line: "And she's the only person I trust with my secrets." },
+      { speaker: "Lily", line: "Same here. We tell each other everything." },
+      { speaker: "Sarah", line: "BFFs forever, right?" }
     ],
     chineseTranslation: [
       { speaker: "Lily", line: "你见过我最好的朋友莎拉吗？" },
       { speaker: "Sarah", line: "我们从5岁就认识了。" },
-      { speaker: "Lily", line: "是啊，她 basically 是我妹妹。" }
+      { speaker: "Lily", line: "是啊，她 basically 是我妹妹。" },
+      { speaker: "Sarah", line: "我也是唯一一个敢把秘密告诉她的人。" },
+      { speaker: "Lily", line: "我也是。我们什么都告诉对方。" },
+      { speaker: "Sarah", line: "最好的朋友 forever，对吧？" }
     ],
     culturalNotes: "Very common in American English, especially among young people. While originally a teen slang term, it's now used by adults too, often humorously or sincerely. The term has evolved from 'Best Friends Forever' to just meaning 'very close friend'.",
     usageContext: "Text messages, social media, casual conversation. Can be used sincerely or playfully. Appropriate in most informal contexts.",
