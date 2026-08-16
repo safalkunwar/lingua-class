@@ -3070,5 +3070,694 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         "Teacher: 'Comparison - equal?' Student: 'As...as.'"
       ]
     }
+  },
+  {
+    id: "social-interactions",
+    title: "Social Interactions",
+    titleZh: "社交互动",
+    emoji: "🤝",
+    description: "Master greetings, small talk, plans, and compliments in everyday social situations.",
+    descriptionZh: "掌握日常社交场合的问候、闲聊、计划和赞美表达。",
+    difficulty: "beginner",
+    patterns: [
+      {
+        id: "si-greetings",
+        term: "greeting patterns",
+        chinese: "问候模式",
+        pinyin: "wèn hòu",
+        meaning: "Common ways to greet people at different times and contexts.",
+        category: "social-interactions",
+        difficulty: "A1",
+        examples: [
+          { en: "Hey, how's it going?", zh: "嘿，最近怎么样？" },
+          { en: "Good morning! How are you today?", zh: "早上好！你今天怎么样？" },
+          { en: "Long time no see!", zh: "好久不见！" },
+          { en: "What's up?", zh: "怎么了？/ 在干嘛？" },
+          { en: "Hey, long time no see!", zh: "嘿，好久不见！" },
+          { en: "Good afternoon! How's your day going?", zh: "下午好！今天过得怎么样？" },
+          { en: "Nice to see you again.", zh: "很高兴再次见到你。" },
+          { en: "How have you been lately?", zh: "你最近怎么样？" }],
+        commonMistakes: [
+          { mistake: "Using 'What's up?' with strangers", correction: "Use 'How are you?' with people you don't know well." }
+        ,
+          { mistake: "Saying 'Good morning' in the afternoon.", correction: "Match the greeting to the time of day." }],
+        relatedTerms: ["small talk", "introductions", "farewells"],
+        register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
+        culturalNotes: "Greetings vary by region and closeness. 'What's up?' is casual; 'How are you?' is safer with strangers.",
+        warning: "Match greeting formality to your relationship.",
+        safeAlternatives: [],
+        audioAvailable: true
+      },
+      {
+        id: "si-small-talk",
+        term: "small talk topics",
+        chinese: "闲聊话题",
+        pinyin: "xián liáo",
+        meaning: "Safe, light topics for casual conversation with acquaintances or strangers.",
+        category: "social-interactions",
+        difficulty: "A2",
+        examples: [
+          { en: "How's the weather been lately?", zh: "最近天气怎么样？" },
+          { en: "Did you watch the game last night?", zh: "你昨晚看比赛了吗？" },
+          { en: "Are you from around here?", zh: "你是本地人吗？" },
+          { en: "What kind of music do you like?", zh: "你喜欢什么类型的音乐？" },
+          { en: "How's the weather been this week?", zh: "这周天气怎么样？" },
+          { en: "Do you have any plans for the weekend?", zh: "你周末有什么计划吗？" },
+          { en: "Is this your first time here?", zh: "你第一次来这里吗？" },
+          { en: "What brings you here today?", zh: "你今天来这里有什么事？" }],
+        commonMistakes: [
+          { mistake: "Asking about salary or age too early", correction: "Stick to safe topics: weather, weekend plans, food, travel." }
+        ,
+          { mistake: "Talking only about yourself.", correction: "Ask questions and listen. Good small talk is balanced." }],
+        relatedTerms: ["conversation starters", "ice breakers"],
+        register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
+        culturalNotes: "Small talk is an art in English-speaking cultures. It builds rapport before serious topics.",
+        warning: "Avoid controversial topics: politics, religion, money, unless you know the person well.",
+        safeAlternatives: [],
+        audioAvailable: true
+      },
+      {
+        id: "si-making-plans",
+        term: "making plans",
+        chinese: "约定计划",
+        pinyin: "yuē dìng jì huà",
+        meaning: "Suggesting, accepting, and changing social plans naturally.",
+        category: "social-interactions",
+        difficulty: "A2",
+        examples: [
+          { en: "Do you want to grab coffee later?", zh: "你待会儿想喝杯咖啡吗？" },
+          { en: "That sounds great, let's do it!", zh: "听起来不错，就这么定了！" },
+          { en: "I'm busy tonight, can we do tomorrow?", zh: "我今晚没空，我们可以改明天吗？" },
+          { en: "Are you free this weekend?", zh: "你这周末有空吗？" },
+          { en: "Do you want to grab coffee after work?", zh: "下班后想喝杯咖啡吗？" },
+          { en: "Let's meet at 7 PM at the usual place.", zh: "我们晚上7点在老地方见。" },
+          { en: "I'm busy this afternoon, can we reschedule?", zh: "我今天下午没空，能改期吗？" },
+          { en: "How does Saturday work for you?", zh: "周六对你来说方便吗？" }],
+        commonMistakes: [
+          { mistake: "Being too direct: 'We meet at 7.'", correction: "Use suggestions: 'Do you want to meet at 7?' or 'How about 7?'" }
+        ,
+          { mistake: "Saying 'I can't come' without an alternative.", correction: "Offer a new time: 'I can't make it tonight, but how about tomorrow?'" }],
+        relatedTerms: ["invitations", "scheduling", "availability"],
+        register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
+        culturalNotes: "English speakers often use questions to make plans rather than commands. Politeness is important.",
+        warning: "Always confirm plans clearly to avoid confusion.",
+        safeAlternatives: [],
+        audioAvailable: true
+      },
+      {
+        id: "si-compliments",
+        term: "giving & receiving compliments",
+        chinese: "给予和接受赞美",
+        pinyin: "jǐ yǔ hé jiē shòu zàn měi",
+        meaning: "How to praise someone and respond politely in English.",
+        category: "social-interactions",
+        difficulty: "B1",
+        examples: [
+          { en: "That shirt looks great on you!", zh: "那件衬衫你穿起来很好看！" },
+          { en: "Thanks! I got it last week.", zh: "谢谢！我上周买的。" },
+          { en: "You did an amazing job on this project.", zh: "你在这个项目上做得太棒了。" },
+          { en: "Oh, stop it! You're making me blush.", zh: "哦，别说了！你让我脸红了。" },
+          { en: "I love your new haircut!", zh: "我喜欢你的新发型！" },
+          { en: "Thanks! It was a risky change, but I'm happy with it.", zh: "谢谢！这是个大胆的改变，但我觉得很满意。" },
+          { en: "You're a great cook.", zh: "你做饭真好吃。/ 你是个很棒的厨师。" },
+          { en: "That's very kind of you to say.", zh: "你这么说真是太好了。" }],
+        commonMistakes: [
+          { mistake: "Being too modest or denying compliments", correction: "A simple 'Thank you' is the best response in English." }
+        ,
+          { mistake: "Over-complimenting strangers.", correction: "Keep compliments genuine and appropriate to the relationship." }],
+        relatedTerms: ["praise", "encouragement", "flattery"],
+        register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
+        culturalNotes: "Native speakers accept compliments with 'Thank you' rather than denying them. Over-modesty can seem insincere.",
+        warning: "Compliments should be genuine. Overdoing it can seem fake.",
+        safeAlternatives: [],
+        audioAvailable: true
+      }
+    ],
+    exercises: [
+      {
+        id: "si-ex-1",
+        type: "fill-blank",
+        question: "Complete the greeting: '___! Long time no see.'",
+        questionZh: "完成问候：'___！好久不见。'",
+        options: ["Hey", "Goodbye", "Sorry", "Wait"],
+        correctAnswer: "Hey",
+        hint: "'Long time no see' is a casual greeting for someone you haven't seen in a while.",
+        hintZh: "'Long time no see' 是用来问候很久没见的人的 casual 表达。"
+      },
+      {
+        id: "si-ex-2",
+        type: "error-correction",
+        question: "Correct: 'What's up?' when meeting your boss for the first time.",
+        questionZh: "改正：第一次见老板时用 'What's up?'。",
+        options: ["Use 'How are you?' instead", "'What's up?' is fine", "Use 'What's new?' instead"],
+        correctAnswer: "Use 'How are you?' instead",
+        hint: "'What's up?' is too casual for formal or first meetings.",
+        hintZh: "'What's up?' 太随意了，不适合正式或第一次见面。"
+      },
+      {
+        id: "si-ex-3",
+        type: "translation",
+        question: "Translate: 你这周末有空吗？",
+        questionZh: "翻译：你这周末有空吗？",
+        options: ["Are you free this weekend?", "Do you have time this weekend?", "Are you busy this weekend?"],
+        correctAnswer: "Are you free this weekend?",
+        hint: "'Are you free...?' is the most natural way to ask about availability.",
+        hintZh: "'Are you free...?' 是询问对方是否有空最自然的说法。"
+      }
+    ],
+    teacherPanel: {
+      simpleExplanation: "Greetings set the tone. 'What's up?' is casual, 'How are you?' is safe. Small talk topics: weather, weekend, food. Accept compliments with 'Thank you.'",
+      chineseExplanation: "问候定下基调。'What's up?' 随意，'How are you?' 安全。闲聊话题：天气、周末、食物。接受赞美时说 'Thank you'。",
+      learnerDifficulty: "Chinese learners often skip small talk and go straight to business. They also reject compliments instead of accepting them politely.",
+      teachingTip: "Role-play: Student A greets Student B. Then small talk. Then make plans. Switch roles. Focus on tone and body language.",
+      drills: [
+        "Teacher: 'Casual greeting?' Student: 'What's up? / Hey!'",
+        "Teacher: 'Safe greeting?' Student: 'How are you?'",
+        "Teacher: 'Small talk topic?' Student: 'Weather / Weekend / Food.'",
+        "Teacher: 'Compliment response?' Student: 'Thank you!'",
+        "Teacher: 'Making plans?' Student: 'Do you want to...? / How about...?'"
+      ]
+    }
+  },
+  {
+    id: "dining-food",
+    title: "Dining & Food",
+    titleZh: "餐饮与食物",
+    emoji: "🍽️",
+    description: "Order food, express preferences, and handle restaurant situations confidently.",
+    descriptionZh: "自信地点餐、表达偏好并应对餐厅场景。",
+    difficulty: "beginner",
+    patterns: [
+      {
+        id: "df-ordering",
+        term: "ordering food",
+        chinese: "点餐",
+        pinyin: "diǎn cān",
+        meaning: "How to order at a restaurant or cafe naturally.",
+        category: "dining-food",
+        difficulty: "A1",
+        examples: [
+          { en: "I'll have the chicken salad, please.", zh: "我要鸡肉沙拉。" },
+          { en: "Can I get the steak medium rare?", zh: "我能要一份三分熟的牛排吗？" },
+          { en: "Could I see the menu, please?", zh: "请给我看看菜单。" },
+          { en: "What do you recommend?", zh: "你推荐什么？" },
+          { en: "I'll have the pasta, please.", zh: "我要意大利面。" },
+          { en: "Can I get a cheeseburger with extra cheese?", zh: "我能要一个多加芝士的芝士汉堡吗？" },
+          { en: "Could I see the dessert menu?", zh: "请给我看看甜品菜单。" },
+          { en: "I'll start with the soup, then the main course.", zh: "我先点汤，然后主菜。" }],
+        commonMistakes: [
+          { mistake: "Saying 'I want...' to the waiter", correction: "Use 'I'll have...' or 'I'd like...' for politeness." }
+        ,
+          { mistake: "Pointing silently at the menu.", correction: "Make eye contact and speak clearly when ordering." }],
+        relatedTerms: ["menu", "waiter", "bill", "tip"],
+        register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
+        culturalNotes: "Tipping culture varies by country. In the US, 15-20% is standard. In China, tipping is less common.",
+        warning: "Be polite to waitstaff. 'I'll have...' is better than 'I want...'",
+        safeAlternatives: [],
+        audioAvailable: true
+      },
+      {
+        id: "df-dietary",
+        term: "dietary preferences & allergies",
+        chinese: "饮食偏好与过敏",
+        pinyin: "yǐn shí piān hào yǔ guò mǐn",
+        meaning: "Expressing what you can or cannot eat.",
+        category: "dining-food",
+        difficulty: "A2",
+        examples: [
+          { en: "I'm allergic to peanuts.", zh: "我对花生过敏。" },
+          { en: "I'm vegetarian, no meat please.", zh: "我是素食者，请别放肉。" },
+          { en: "Is this dish gluten-free?", zh: "这道菜无麸质吗？" },
+          { en: "I don't eat pork.", zh: "我不吃猪肉。" },
+          { en: "I'm allergic to shellfish.", zh: "我对贝类过敏。" },
+          { en: "Can I have this without onions?", zh: "这个能不放洋葱吗？" },
+          { en: "I'm vegan, so no dairy or eggs.", zh: "我是纯素食者，所以不要奶制品或鸡蛋。" },
+          { en: "How spicy is this dish?", zh: "这道菜辣不辣？" }],
+        commonMistakes: [
+          { mistake: "Saying 'I don't like...' when you're allergic", correction: "Be clear: 'I'm allergic to...' — this is a health issue, not a preference." }
+        ,
+          { mistake: "Assuming all restaurants know your dietary needs.", correction: "Always tell the server clearly when ordering." }],
+        relatedTerms: ["allergy", "vegetarian", "vegan", "gluten-free"],
+        register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
+        culturalNotes: "Allergies are taken seriously in English-speaking countries. Always inform the restaurant.",
+        warning: "Serious allergies can be life-threatening. Be very clear when communicating them.",
+        safeAlternatives: [],
+        audioAvailable: true
+      },
+      {
+        id: "df-paying",
+        term: "paying the bill",
+        chinese: "结账",
+        pinyin: "jié zhàng",
+        meaning: "How to ask for and handle the bill at a restaurant.",
+        category: "dining-food",
+        difficulty: "A2",
+        examples: [
+          { en: "Could we have the bill, please?", zh: "请给我们结账。" },
+          { en: "I'll get this one / my treat.", zh: "我来付/我请客。" },
+          { en: "Do you want to split the bill?", zh: "你想AA吗？" },
+          { en: "Can I pay by card?", zh: "我能刷卡吗？" },
+          { en: "Could we have the check, please?", zh: "请给我们账单。" },
+          { en: "I'll get this one, you can get the coffee later.", zh: "这顿我来，你可以下次请咖啡。" },
+          { en: "Do you want to go Dutch?", zh: "你想AA吗？" },
+          { en: "Is service included in the bill?", zh: "账单包含服务费吗？" }],
+        commonMistakes: [
+          { mistake: "Saying 'Can I have the money?'", correction: "Use 'Could we have the bill/check?' or 'Can we pay?'" }
+        ,
+          { mistake: "Assuming everyone wants to split.", correction: "Ask first: 'Do you want to split the bill?'" }],
+        relatedTerms: ["tip", "split", "treat", "card", "cash"],
+        register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
+        culturalNotes: "'Bill' is common in British English, 'check' in American. Tipping is expected in the US but not in all countries.",
+        warning: "Check if service charge is already included before tipping.",
+        safeAlternatives: [],
+        audioAvailable: true
+      },
+      {
+        id: "df-reservations",
+        term: "making reservations",
+        chinese: "预订座位",
+        pinyin: "yù dìng zuò wèi",
+        meaning: "How to book a table at a restaurant by phone or online.",
+        category: "dining-food",
+        difficulty: "B1",
+        examples: [
+          { en: "I'd like to book a table for two at 7 PM.", zh: "我想预订一张晚上7点的两人桌。" },
+          { en: "Do you have any openings tonight?", zh: "今晚还有空位吗？" },
+          { en: "Can we have a table by the window?", zh: "我们能要一张靠窗的桌子吗？" },
+          { en: "I need to cancel my reservation.", zh: "我需要取消预订。" },
+          { en: "I'd like to book a table for four, please.", zh: "我想预订一张四人桌。" },
+          { en: "Do you have availability for lunch tomorrow?", zh: "明天中午有空位吗？" },
+          { en: "Can we have a table outside?", zh: "我们能要一张户外的桌子吗？" },
+          { en: "What's your cancellation policy?", zh: "你们的取消政策是什么？" }],
+        commonMistakes: [
+          { mistake: "Saying 'I want a table'", correction: "Use 'I'd like to book/reserve a table...' for politeness." }
+        ,
+          { mistake: "Not confirming the time clearly.", correction: "Repeat the time: '7 PM, for two people. Is that correct?'" }],
+        relatedTerms: ["booking", "availability", "cancellation", "waitlist"],
+        register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
+        culturalNotes: "Reservations are common for popular restaurants. Always call ahead on weekends.",
+        warning: "Cancel at least a few hours in advance if you can't make it.",
+        safeAlternatives: [],
+        audioAvailable: true
+      }
+    ],
+    exercises: [
+      {
+        id: "df-ex-1",
+        type: "fill-blank",
+        question: "Order politely: '___ the steak, please.'",
+        questionZh: "礼貌地点餐：'___ 牛排。'",
+        options: ["I'll have", "I want", "Give me", "I need"],
+        correctAnswer: "I'll have",
+        hint: "'I'll have...' is polite. 'I want...' can sound demanding.",
+        hintZh: "'I'll have...' 礼貌。'I want...' 可能听起来像命令。"
+      },
+      {
+        id: "df-ex-2",
+        type: "error-correction",
+        question: "Correct: 'I don't like peanuts' when you have an allergy.",
+        questionZh: "改正：对花生过敏时说 'I don't like peanuts'。",
+        options: ["I'm allergic to peanuts.", "I don't like peanuts.", "I hate peanuts."],
+        correctAnswer: "I'm allergic to peanuts.",
+        hint: "Allergies are health issues, not preferences. Be clear and direct.",
+        hintZh: "过敏是健康问题，不是偏好。要清楚直接。"
+      },
+      {
+        id: "df-ex-3",
+        type: "translation",
+        question: "Translate: 请给我们账单。",
+        questionZh: "翻译：请给我们账单。",
+        options: ["Could we have the bill, please?", "Give me the money.", "I want to pay now."],
+        correctAnswer: "Could we have the bill, please?",
+        hint: "'Could we have the bill/check?' is the standard way to ask for the bill.",
+        hintZh: "'Could we have the bill/check?' 是要求结账的标准说法。"
+      }
+    ],
+    teacherPanel: {
+      simpleExplanation: "Order with 'I'll have...' or 'I'd like...'. Mention allergies clearly. Ask for 'the bill/check'. Split with 'Do you want to go Dutch?'",
+      chineseExplanation: "用 'I'll have...' 或 'I'd like...' 点餐。清楚说明过敏。要 'the bill/check'。AA用 'Do you want to go Dutch?'",
+      learnerDifficulty: "Chinese learners say 'I want...' instead of 'I'll have...'. They also confuse 'bill' (British) and 'check' (American).",
+      teachingTip: "Simulate a restaurant in class. One student is the waiter, one is the customer. Practice ordering, asking about ingredients, and paying.",
+      drills: [
+        "Teacher: 'Order?' Student: 'I'll have the...'",
+        "Teacher: 'Allergy?' Student: 'I'm allergic to...'",
+        "Teacher: 'Bill?' Student: 'Could we have the bill?'",
+        "Teacher: 'Split?' Student: 'Do you want to go Dutch?'",
+        "Teacher: 'Reservation?' Student: 'I'd like to book a table for...'"
+      ]
+    }
+  },
+  {
+    id: "shopping-money",
+    title: "Shopping & Money",
+    titleZh: "购物与金钱",
+    emoji: "🛍️",
+    description: "Ask about prices, payment methods, discounts, and returns while shopping.",
+    descriptionZh: "购物时询问价格、付款方式、折扣和退货。",
+    difficulty: "beginner",
+    patterns: [
+      {
+        id: "sm-asking-price",
+        term: "asking about price",
+        chinese: "询问价格",
+        pinyin: "xùn wèn jià gé",
+        meaning: "How to ask how much something costs politely.",
+        category: "shopping-money",
+        difficulty: "A1",
+        examples: [
+          { en: "How much is this shirt?", zh: "这件衬衫多少钱？" },
+          { en: "Do you have this in a smaller size?", zh: "这个有小一点的吗？" },
+          { en: "Is this on sale?", zh: "这个打折吗？" },
+          { en: "Can I try this on?", zh: "我能试穿这个吗？" },
+          { en: "How much are these shoes?", zh: "这双鞋多少钱？" },
+          { en: "Do you have this in a different color?", zh: "这个有其他颜色吗？" },
+          { en: "Is there a student discount?", zh: "有学生折扣吗？" },
+          { en: "What's your return policy?", zh: "你们的退货政策是什么？" }],
+        commonMistakes: [
+          { mistake: "Saying 'How much cost this?'", correction: "Use 'How much is this?' or 'What does this cost?'" }
+        ,
+          { mistake: "Being too pushy when bargaining.", correction: "In most English-speaking stores, haggling is not common. Ask politely about sales or discounts." }],
+        relatedTerms: ["price", "discount", "sale", "size", "color"],
+        register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
+        culturalNotes: "Prices are usually fixed in department stores. Haggling is more common at markets.",
+        warning: "Don't haggle in regular stores — it's considered rude in many English-speaking countries.",
+        safeAlternatives: [],
+        audioAvailable: true
+      },
+      {
+        id: "sm-payment",
+        term: "payment methods",
+        chinese: "付款方式",
+        pinyin: "fù kuǎn fāng shì",
+        meaning: "How to pay: cash, card, or digital wallets.",
+        category: "shopping-money",
+        difficulty: "A2",
+        examples: [
+          { en: "I'll pay by card, please.", zh: "我刷卡。" },
+          { en: "Do you accept contactless payment?", zh: "你们接受非接触式支付吗？" },
+          { en: "Can I pay with cash?", zh: "我能用现金付吗？" },
+          { en: "I'll pay by cash.", zh: "我用现金付。" },
+          { en: "Do you take Apple Pay or Google Pay?", zh: "你们接受 Apple Pay 或 Google Pay 吗？" },
+          { en: "Can I split the payment between cash and card?", zh: "我能现金和刷卡分开付吗？" },
+          { en: "Do you accept credit cards?", zh: "你们接受信用卡吗？" },
+          { en: "I'll pay for it online.", zh: "我线上付款。" }],
+        commonMistakes: [
+          { mistake: "Saying 'I pay by card' instead of 'I'll pay'", correction: "Use future tense: 'I'll pay by card' or 'I'm paying by card.'" }
+        ,
+          { mistake: "Assuming all places accept the same payment.", correction: "Always ask: 'Do you accept...?'" }],
+        relatedTerms: ["cash", "card", "digital wallet", "contactless"],
+        register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
+        culturalNotes: "Contactless payment is very common. Some small shops may have a minimum for card payments.",
+        warning: "Carry some cash as backup — not all places accept cards.",
+        safeAlternatives: [],
+        audioAvailable: true
+      },
+      {
+        id: "sm-discounts",
+        term: "discounts & deals",
+        chinese: "折扣与优惠",
+        pinyin: "zhé kòu yǔ yōu huì",
+        meaning: "How to ask about and understand discounts.",
+        category: "shopping-money",
+        difficulty: "B1",
+        examples: [
+          { en: "Is this item on sale?", zh: "这个商品打折吗？" },
+          { en: "What's the discount for students?", zh: "学生折扣是多少？" },
+          { en: "Do you have any promotions today?", zh: "今天有什么促销活动吗？" },
+          { en: "The original price is $100, but it's 50% off.", zh: "原价100美元，现在五折。" },
+          { en: "Is there a buy-one-get-one deal?", zh: "有买一送一的活动吗？" },
+          { en: "Do you offer any loyalty discounts?", zh: "你们有会员折扣吗？" },
+          { en: "The sale ends tomorrow, so hurry up!", zh: "促销明天结束，快点！" },
+          { en: "Can I use multiple discounts?", zh: "我能叠加使用折扣吗？" }],
+        commonMistakes: [
+          { mistake: "Saying 'How much discount?'", correction: "Use 'What's the discount?' or 'How much is the discount?'" }
+        ,
+          { mistake: "Asking for a discount in chain stores.", correction: "Discounts are usually fixed in chain stores. Ask about sales instead." }],
+        relatedTerms: ["sale", "promotion", "coupon", "deal"],
+        register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
+        culturalNotes: "Seasonal sales are big in English-speaking countries: Black Friday, end-of-season sales.",
+        warning: "Don't ask for discounts in regular retail stores — it's considered rude.",
+        safeAlternatives: [],
+        audioAvailable: true
+      },
+      {
+        id: "sm-returns",
+        term: "returns & exchanges",
+        chinese: "退货与换货",
+        pinyin: "tuì huò yǔ huàn huò",
+        meaning: "How to return or exchange items at a store.",
+        category: "shopping-money",
+        difficulty: "B1",
+        examples: [
+          { en: "I'd like to return this, please.", zh: "我想退这个。" },
+          { en: "Do you have a receipt?", zh: "你有收据吗？" },
+          { en: "Can I exchange this for a different size?", zh: "我能换一个不同尺寸的吗？" },
+          { en: "What's your return policy?", zh: "你们的退货政策是什么？" },
+          { en: "I'd like to return this shirt. It doesn't fit.", zh: "我想退这件衬衫，不合身。" },
+          { en: "Do I need the original packaging?", zh: "需要原包装吗？" },
+          { en: "Can I get a refund or store credit?", zh: "我能退款还是只能换货？" },
+          { en: "The item is defective, can I get a replacement?", zh: "这个商品有缺陷，能换一个新的吗？" }],
+        commonMistakes: [
+          { mistake: "Saying 'I want my money back' aggressively", correction: "Be polite: 'I'd like to return this. Could I get a refund?'" }
+        ,
+          { mistake: "Forgetting to bring the receipt or packaging.", correction: "Always keep receipts and original packaging until you're sure you'll keep the item." }],
+        relatedTerms: ["refund", "exchange", "receipt", "warranty"],
+        register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
+        culturalNotes: "Return policies vary. Some stores offer 30 days, others are final sale.",
+        warning: "Be polite when returning items. Staff are usually happy to help if you're reasonable.",
+        safeAlternatives: [],
+        audioAvailable: true
+      }
+    ],
+    exercises: [
+      {
+        id: "sm-ex-1",
+        type: "fill-blank",
+        question: "Ask the price: '___ is this bag?'",
+        questionZh: "问价格：'这个包___？'",
+        options: ["How much", "How many", "How big", "How old"],
+        correctAnswer: "How much",
+        hint: "'How much' is used for uncountable nouns and prices.",
+        hintZh: "'How much' 用于不可数名词和价格。"
+      },
+      {
+        id: "sm-ex-2",
+        type: "error-correction",
+        question: "Correct: 'I want the chicken.' (ordering at a restaurant)",
+        questionZh: "改正：在餐厅说 'I want the chicken.'",
+        options: ["I'll have the chicken, please.", "I want the chicken.", "Give me the chicken."],
+        correctAnswer: "I'll have the chicken, please.",
+        hint: "'I'll have...' or 'I'd like...' is polite when ordering.",
+        hintZh: "点餐时用 'I'll have...' 或 'I'd like...' 更礼貌。"
+      },
+      {
+        id: "sm-ex-3",
+        type: "translation",
+        question: "Translate: 我能用信用卡付吗？",
+        questionZh: "翻译：我能用信用卡付吗？",
+        options: ["Can I pay by credit card?", "Can I pay by cash?", "Do you accept credit cards?"],
+        correctAnswer: "Can I pay by credit card?",
+        hint: "'Pay by card' is the standard phrase.",
+        hintZh: "'Pay by card' 是标准说法。"
+      }
+    ],
+    teacherPanel: {
+      simpleExplanation: "Ask prices with 'How much is...?'. Pay with 'I'll pay by...'. Ask about sales with 'Is this on sale?'. Returns need receipts.",
+      chineseExplanation: "用 'How much is...?' 问价格。用 'I'll pay by...' 付款。用 'Is this on sale?' 问打折。退货需要收据。",
+      learnerDifficulty: "Chinese learners confuse 'how much' and 'how many'. They also say 'I want...' instead of 'I'll have...' when ordering.",
+      teachingTip: "Set up a mini-market in class. Students practice asking prices, paying, and returning items. Use play money for realism.",
+      drills: [
+        "Teacher: 'Price?' Student: 'How much is...?'",
+        "Teacher: 'Order?' Student: 'I'll have...'",
+        "Teacher: 'Pay?' Student: 'I'll pay by card/cash.'",
+        "Teacher: 'Return?' Student: 'I'd like to return...'",
+        "Teacher: 'Discount?' Student: 'Is this on sale?'"
+      ]
+    }
+  },
+  {
+    id: "travel-directions",
+    title: "Travel & Directions",
+    titleZh: "出行与问路",
+    emoji: "🗺️",
+    description: "Ask for directions, understand transport options, and handle travel situations.",
+    descriptionZh: "问路、理解交通方式并应对出行场景。",
+    difficulty: "intermediate",
+    patterns: [
+      {
+        id: "td-asking-directions",
+        term: "asking for directions",
+        chinese: "问路",
+        pinyin: "wèn lù",
+        meaning: "How to ask for and understand directions politely.",
+        category: "travel-directions",
+        difficulty: "A2",
+        examples: [
+          { en: "Excuse me, how do I get to the station?", zh: "打扰一下，怎么去车站？" },
+          { en: "Is it far from here?", zh: "离这儿远吗？" },
+          { en: "Could you point it out on the map?", zh: "你能在地图上指给我看吗？" },
+          { en: "Which way is the museum?", zh: "博物馆在哪个方向？" },
+          { en: "Excuse me, how do I get to the nearest metro?", zh: "打扰一下，怎么去最近的地铁站？" },
+          { en: "Is it walking distance?", zh: "走路能到吗？" },
+          { en: "Can you recommend a good route?", zh: "你能推荐一条好路线吗？" },
+          { en: "How long does it take to get there?", zh: "到那里要多久？" }],
+        commonMistakes: [
+          { mistake: "Saying 'Where is...?' without 'Excuse me'", correction: "Always start politely: 'Excuse me, where is...?'" }
+        ,
+          { mistake: "Not saying thank you after receiving directions.", correction: "Always thank the person: 'Thank you so much!'" }],
+        relatedTerms: ["map", "route", "distance", "landmark"],
+        register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
+        culturalNotes: "People in English-speaking countries are usually happy to help with directions. Be polite and clear.",
+        warning: "Always say 'Excuse me' before asking strangers for help.",
+        safeAlternatives: [],
+        audioAvailable: true
+      },
+      {
+        id: "td-transportation",
+        term: "transportation options",
+        chinese: "交通方式",
+        pinyin: "jiāo tōng fāng shì",
+        meaning: "How to talk about different ways to travel.",
+        category: "travel-directions",
+        difficulty: "A2",
+        examples: [
+          { en: "I'll take the subway.", zh: "我坐地铁。" },
+          { en: "The bus arrives in 10 minutes.", zh: "公交车10分钟后到。" },
+          { en: "I prefer to walk when it's nice out.", zh: "天气好时我喜欢走路。" },
+          { en: "How much is a taxi to the airport?", zh: "打车去机场多少钱？" },
+          { en: "I'll take the subway to downtown.", zh: "我坐地铁去市中心。" },
+          { en: "The train is delayed by 20 minutes.", zh: "火车晚点了20分钟。" },
+          { en: "I usually drive to work.", zh: "我通常开车上班。" },
+          { en: "Is there a bike-sharing station nearby?", zh: "附近有共享单车吗？" }],
+        commonMistakes: [
+          { mistake: "Saying 'I go by car' instead of 'I drive' or 'I take a taxi'", correction: "Use 'drive', 'take a taxi/bus/train', or 'ride a bike'." }
+        ,
+          { mistake: "Confusing 'metro', 'subway', and 'underground'.", correction: "They all mean the same thing! Use whichever is local." }],
+        relatedTerms: ["bus", "train", "taxi", "subway", "walk"],
+        register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
+        culturalNotes: "Transportation terms vary: 'subway' (US), 'underground' (UK), 'metro' (Europe/Asia).",
+        warning: "Check local transport apps for real-time schedules.",
+        safeAlternatives: [],
+        audioAvailable: true
+      },
+      {
+        id: "td-checkin",
+        term: "hotel check-in & check-out",
+        chinese: "酒店入住与退房",
+        pinyin: "jiǔ diàn rù zhù yǔ tuì fáng",
+        meaning: "How to check in and out of a hotel.",
+        category: "travel-directions",
+        difficulty: "B1",
+        examples: [
+          { en: "I have a reservation under the name Smith.", zh: "我有一张以Smith名义预订的房间。" },
+          { en: "What time is check-out?", zh: "退房时间是几点？" },
+          { en: "Can I have a late check-out?", zh: "我能晚一点退房吗？" },
+          { en: "Where is the nearest ATM?", zh: "最近的ATM在哪里？" },
+          { en: "I have a reservation under the name Lee.", zh: "我有一张以Lee名义预订的房间。" },
+          { en: "What time is breakfast served?", zh: "早餐几点供应？" },
+          { en: "Can I store my luggage after check-out?", zh: "退房后我能寄存行李吗？" },
+          { en: "Is breakfast included in the price?", zh: "价格包含早餐吗？" }],
+        commonMistakes: [
+          { mistake: "Saying 'I booked a room' without confirmation", correction: "Bring your booking reference: 'I have a reservation under the name...'" }
+        ,
+          { mistake: "Not asking about extra fees.", correction: "Ask: 'Are there any extra charges?' or 'Is breakfast included?'" }],
+        relatedTerms: ["reservation", "luggage", "room key", "amenities"],
+        register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
+        culturalNotes: "Hotel staff are trained to be helpful. Always have your booking confirmation ready.",
+        warning: "Check the check-out time to avoid extra charges.",
+        safeAlternatives: [],
+        audioAvailable: true
+      }
+    ],
+    exercises: [
+      {
+        id: "td-ex-1",
+        type: "fill-blank",
+        question: "Ask politely: '___ me, where is the subway?'",
+        questionZh: "礼貌地问：'___ 一下，地铁在哪里？'",
+        options: ["Excuse", "Sorry", "Hey", "Wait"],
+        correctAnswer: "Excuse",
+        hint: "Always say 'Excuse me' before asking strangers for help.",
+        hintZh: "向陌生人求助前总是说 'Excuse me'。"
+      },
+      {
+        id: "td-ex-2",
+        type: "error-correction",
+        question: "Correct: 'I want go to the museum.'",
+        questionZh: "改正：'I want go to the museum.'",
+        options: ["I want to go to the museum.", "I want go to the museum.", "I want going to the museum."],
+        correctAnswer: "I want to go to the museum.",
+        hint: "Use 'want to + verb' for desires.",
+        hintZh: "表达愿望用 'want to + 动词'。"
+      },
+      {
+        id: "td-ex-3",
+        type: "translation",
+        question: "Translate: 我坐地铁去市中心。",
+        questionZh: "翻译：我坐地铁去市中心。",
+        options: ["I'll take the subway to downtown.", "I take the subway to downtown.", "I go by subway downtown."],
+        correctAnswer: "I'll take the subway to downtown.",
+        hint: "'Take the subway' is the natural way to say you're traveling by subway.",
+        hintZh: "'Take the subway' 是表达坐地铁出行的自然说法。"
+      }
+    ],
+    teacherPanel: {
+      simpleExplanation: "Ask directions with 'Excuse me, how do I get to...?'. Say 'I'll take the subway/bus'. Check in with 'I have a reservation under...'.",
+      chineseExplanation: "用 'Excuse me, how do I get to...?' 问路。说 'I'll take the subway/bus'。入住时说 'I have a reservation under...'。",
+      learnerDifficulty: "Chinese learners say 'How much is the museum?' instead of 'Where is the museum?'. They also confuse transport terms.",
+      teachingTip: "Use a map. Student A asks for directions to a landmark. Student B gives directions using 'turn left', 'go straight', 'it's on the right'.",
+      drills: [
+        "Teacher: 'Ask direction?' Student: 'Excuse me, where is...?'",
+        "Teacher: 'Take bus?' Student: 'I'll take the bus.'",
+        "Teacher: 'Hotel check-in?' Student: 'I have a reservation...'",
+        "Teacher: 'Check-out time?' Student: 'What time is check-out?'",
+        "Teacher: 'Far?' Student: 'Is it walking distance?'"
+      ]
+    }
   }
 ];
