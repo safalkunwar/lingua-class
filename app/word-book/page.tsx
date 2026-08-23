@@ -217,13 +217,12 @@ export default function WordBookPage() {
             )}
 
             <div className="flex-1 flex items-center justify-center">
-              <AnimatePresence mode="wait">
+              <AnimatePresence>
                 {currentWord && (
                   <motion.div
                     key={currentWord.id}
                     initial={{ opacity: 0, x: 100 }}
                     animate={{ opacity: 1, x: 0 }}
-                    exit={{ opacity: 0, x: -100 }}
                     transition={{ duration: 0.3 }}
                     className="w-full max-w-5xl"
                   >
