@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
@@ -20,6 +21,8 @@ import {
   MessageSquare,
   BookMarked,
   AlertTriangle,
+  LogOut,
+  User,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { usePreferencesStore } from "@/stores/preferences-store";
@@ -50,9 +53,31 @@ const teacherLinks = [
 export function Navbar() {
   const pathname = usePathname();
   const { theme, toggleTheme } = usePreferencesStore();
+  const [user, setUser] = useState<{ username: string } | null>(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetch("/api/auth/session")
+      .then((res) => res.json())
+      .then((data) => {
+        setUser(data.user);
+        setLoading(false);
+      })
+      .catch(() => setLoading(false));
+  }, []);
+
+  if (pathname === "/login") {
+    return null;
+  }
 
   const isTeacher = pathname.startsWith("/teacher") || pathname.startsWith("/classroom");
   const links = isTeacher ? teacherLinks : studentLinks;
+
+  async function handleLogout() {
+    await fetch("/api/auth/logout", { method: "POST" });
+    setUser(null);
+    window.location.href = "/login";
+  }
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/80 backdrop-blur-xl">
@@ -100,6 +125,26 @@ export function Navbar() {
               <Settings className="h-4 w-4" />
             </Button>
           </Link>
+
+          {!loading && (
+            <>
+              {user ? (
+                <div className="flex items-center gap-2">
+                  <div className="flex items-center gap-2 rounded-lg bg-muted px-2 py-1 text-sm">
+                    <User className="h-4 w-4" />
+                    <span className="hidden sm:inline">{user.username}</span>
+                  </div>
+                  <Button variant="ghost" size="icon" onClick={handleLogout} title="Logout">
+                    <LogOut className="h-4 w-4" />
+                  </Button>
+                </div>
+              ) : (
+                <Link href="/login">
+                  <Button size="sm">Sign in</Button>
+                </Link>
+              )}
+            </>
+          )}
         </div>
       </div>
     </header>
