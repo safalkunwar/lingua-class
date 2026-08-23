@@ -24,6 +24,7 @@ export function StudentSidebar() {
     { href: "/rough-english", label: "Rough English", emoji: "⚠️" },
     { href: "/daily-expressions", label: "Daily Expressions", emoji: "📚" },
     { href: "/slang-academy", label: "Slang Academy", emoji: "🎭" },
+    { href: "/business-english", label: "Business English", emoji: "💼" },
     { href: "/slang-module", label: "Slang Module", emoji: "🗣️" },
     { href: "/image-guessing", label: "Image Guessing", emoji: "🖼️" },
     { href: "/flashcards", label: "Flashcards", emoji: "🃏" },
