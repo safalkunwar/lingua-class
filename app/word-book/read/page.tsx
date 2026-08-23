@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { Suspense } from "react";
 import { StudentSidebar } from "@/components/layout/sidebar";
 import { wordBook } from "@/data/word-book";
 import { Card } from "@/components/ui/card";
@@ -40,7 +40,7 @@ function WordBookReadModeContent() {
       <StudentSidebar />
       <div className="flex-1 p-4 sm:p-6 lg:p-8">
         <div className="max-w-4xl mx-auto">
-          <div className="flex justify-between items-center mb-6">
+          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6">
             <Link href="/word-book">
               <Button variant="ghost">
                 <ChevronLeft className="w-4 h-4 mr-1" />
@@ -58,7 +58,7 @@ function WordBookReadModeContent() {
           </div>
 
           <div className="mb-6 space-y-4">
-            <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
+            <div className="flex flex-wrap gap-2 items-center justify-center">
               <div className="flex gap-2 flex-wrap justify-center">
                 {wordBook.map((topic) => (
                   <Button
@@ -73,6 +73,7 @@ function WordBookReadModeContent() {
                   </Button>
                 ))}
               </div>
+              <div className="h-5 w-px bg-border hidden sm:block" />
               <div className="sm:max-w-md w-full">
                 <div className="relative">
                   <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
@@ -99,7 +100,7 @@ function WordBookReadModeContent() {
                         size="icon"
                         variant="ghost"
                         onClick={() => speakEnglish(word.english)}
-                        className="h-8 w-8"
+                        className="h-8 w-8 opacity-70 hover:opacity-100"
                       >
                         <Volume2 className="w-4 h-4" />
                       </Button>
@@ -110,7 +111,7 @@ function WordBookReadModeContent() {
                         size="icon"
                         variant="ghost"
                         onClick={() => speakChinese(word.chinese)}
-                        className="h-8 w-8"
+                        className="h-8 w-8 opacity-70 hover:opacity-100"
                       >
                         <Volume2 className="w-4 h-4" />
                       </Button>
@@ -136,7 +137,7 @@ function WordBookReadModeContent() {
                       <Button
                         variant="ghost"
                         size="icon"
-                        className="h-7 w-7 shrink-0"
+                        className="h-7 w-7 shrink-0 opacity-70 hover:opacity-100"
                         onClick={() => speakEnglish(word.exampleEn)}
                       >
                         <Volume2 className="h-3.5 w-3.5" />
@@ -213,8 +214,8 @@ function WordBookReadModeContent() {
 
 export default function WordBookReadModePage() {
   return (
-    <React.Suspense fallback={<div className="flex items-center justify-center min-h-screen">Loading...</div>}>
+    <Suspense fallback={<div className="flex items-center justify-center min-h-screen">Loading...</div>}>
       <WordBookReadModeContent />
-    </React.Suspense>
+    </Suspense>
   );
 }
