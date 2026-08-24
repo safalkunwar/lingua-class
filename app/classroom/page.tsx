@@ -58,7 +58,7 @@ export default function ClassroomPage() {
 
         <div className="flex items-center gap-2">
           <Select value={levelId} onValueChange={handleLevelChange}>
-            <SelectTrigger className="w-[200px] border-white/20 bg-slate-700 text-white">
+            <SelectTrigger className="w-[180px] sm:w-[200px] border-white/20 bg-slate-700 text-white">
               <SelectValue placeholder="Select Level" />
             </SelectTrigger>
             <SelectContent>

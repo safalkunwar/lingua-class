@@ -27,6 +27,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { usePreferencesStore } from "@/stores/preferences-store";
 import { cn } from "@/lib/utils";
+import { MobileNav } from "@/components/layout/mobile-nav";
 
 const studentLinks = [
   { href: "/student", label: "Dashboard", icon: LayoutDashboard },
@@ -81,19 +82,20 @@ export function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/80 backdrop-blur-xl">
-      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        {/* Logo */}
-        <Link href="/" className="flex items-center gap-2.5">
-          <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-indigo-500 to-purple-600 text-white">
-            <GraduationCap className="h-5 w-5" />
-          </div>
-          <span className="text-xl font-extrabold tracking-tight">
-            Lingua<span className="text-indigo-500">Class</span>
-          </span>
-        </Link>
+      <div className="mx-auto flex h-16 items-center justify-between px-3 sm:px-4 lg:px-6 xl:px-8">
+        <div className="flex items-center gap-2">
+          <MobileNav />
+          <Link href="/" className="flex items-center gap-2.5">
+            <div className="flex h-8 w-8 sm:h-9 sm:w-9 items-center justify-center rounded-xl bg-gradient-to-br from-indigo-500 to-purple-600 text-white">
+              <GraduationCap className="h-4 w-4 sm:h-5 sm:w-5" />
+            </div>
+            <span className="text-lg sm:text-xl font-extrabold tracking-tight">
+              Lingua<span className="text-indigo-500">Class</span>
+            </span>
+          </Link>
+        </div>
 
-        {/* Navigation */}
-        <nav className="hidden items-center gap-1 md:flex">
+        <nav className="hidden md:flex items-center gap-1">
           {links.map((link) => {
             const Icon = link.icon;
             const isActive = pathname === link.href || (link.href !== "/student" && pathname.startsWith(link.href));
@@ -115,13 +117,12 @@ export function Navbar() {
           })}
         </nav>
 
-        {/* Right side */}
-        <div className="flex items-center gap-2">
-          <Button variant="ghost" size="icon" onClick={toggleTheme}>
+        <div className="flex items-center gap-1 sm:gap-2">
+          <Button variant="ghost" size="icon" onClick={toggleTheme} className="h-9 w-9">
             {theme === "dark" ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
           </Button>
-          <Link href="/settings">
-            <Button variant="ghost" size="icon">
+          <Link href="/settings" className="hidden sm:flex">
+            <Button variant="ghost" size="icon" className="h-9 w-9">
               <Settings className="h-4 w-4" />
             </Button>
           </Link>
@@ -129,18 +130,18 @@ export function Navbar() {
           {!loading && (
             <>
               {user ? (
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-1 sm:gap-2">
                   <div className="flex items-center gap-2 rounded-lg bg-muted px-2 py-1 text-sm">
                     <User className="h-4 w-4" />
-                    <span className="hidden sm:inline">{user.username}</span>
+                    <span className="hidden lg:inline">{user.username}</span>
                   </div>
-                  <Button variant="ghost" size="icon" onClick={handleLogout} title="Logout">
+                  <Button variant="ghost" size="icon" onClick={handleLogout} title="Logout" className="h-9 w-9">
                     <LogOut className="h-4 w-4" />
                   </Button>
                 </div>
               ) : (
                 <Link href="/login">
-                  <Button size="sm">Sign in</Button>
+                  <Button size="sm" className="hidden sm:flex">Sign in</Button>
                 </Link>
               )}
             </>

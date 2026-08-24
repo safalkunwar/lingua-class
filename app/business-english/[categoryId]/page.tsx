@@ -33,7 +33,7 @@ export default function BusinessCategoryPage() {
   return (
     <div className="flex">
       <StudentSidebar />
-      <div className="flex-1 p-4 sm:p-6 lg:p-8">
+      <div className="flex-1 min-w-0 p-4 sm:p-6 lg:p-8">
         <div className="max-w-4xl mx-auto">
             <div className="flex justify-between items-center mb-6">
             <Link href="/business-english">

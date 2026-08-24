@@ -177,6 +177,8 @@ export default function ConversationDetailPage({ params }: { params: Promise<{ i
                 size="sm"
                 onClick={() => setViewMode("presentation")}
                 className="gap-1.5"
+                aria-label="Present"
+                title="Present"
               >
                 <Maximize className="w-4 h-4" />
                 <span className="hidden sm:inline">Present</span>

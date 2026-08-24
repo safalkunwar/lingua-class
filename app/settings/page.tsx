@@ -59,8 +59,8 @@ export default function SettingsPage() {
                 Choose light or dark mode
               </div>
             </div>
-            <Select value={theme} onValueChange={(v) => setTheme(v as "light" | "dark" | "system")}>
-              <SelectTrigger className="w-[140px]">
+             <Select value={theme} onValueChange={(v) => setTheme(v as "light" | "dark" | "system")}>
+              <SelectTrigger className="w-[140px] sm:w-auto">
                 <SelectValue />
               </SelectTrigger>
               <SelectContent>
@@ -86,8 +86,8 @@ export default function SettingsPage() {
                 What language are you learning?
               </div>
             </div>
-            <Select value={languageMode} onValueChange={(v) => setLanguageMode(v as "en" | "zh")}>
-              <SelectTrigger className="w-[220px]">
+             <Select value={languageMode} onValueChange={(v) => setLanguageMode(v as "en" | "zh")}>
+              <SelectTrigger className="w-full sm:w-[220px]">
                 <SelectValue />
               </SelectTrigger>
               <SelectContent>
@@ -112,8 +112,8 @@ export default function SettingsPage() {
                 How many XP points to earn each week
               </div>
             </div>
-            <Select value={String(weeklyGoal)} onValueChange={(v) => setWeeklyGoal(Number(v))}>
-              <SelectTrigger className="w-[120px]">
+             <Select value={String(weeklyGoal)} onValueChange={(v) => setWeeklyGoal(Number(v))}>
+              <SelectTrigger className="w-full sm:w-[120px]">
                 <SelectValue />
               </SelectTrigger>
               <SelectContent>

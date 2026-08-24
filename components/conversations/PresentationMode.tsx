@@ -305,17 +305,15 @@ export function PresentationMode({
                 const isTeacher = TEACHER_SPEAKERS.has(line.speaker);
                 const isCustomer = CUSTOMER_SPEAKERS.has(line.speaker);
 
-                return (
-                  <div
-                    key={idx}
-                    className={cn(
-                      "grid gap-4 transition-all",
-                      isCurrent ? "opacity-100" : "opacity-40 hover:opacity-70"
-                    )}
-                    style={{
-                      gridTemplateColumns: "auto 1fr",
-                    }}
-                  >
+                 return (
+                   <div
+                     key={idx}
+                     className={cn(
+                       "grid gap-3 sm:gap-4 transition-all",
+                       "grid-cols-[auto_1fr] sm:grid-cols-[auto_1fr]",
+                       isCurrent ? "opacity-100" : "opacity-40 hover:opacity-70"
+                     )}
+                   >
                     {/* Speaker indicator */}
                     <div className="flex flex-col items-center gap-1">
                       <div

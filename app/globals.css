@@ -129,4 +129,42 @@
   html {
     @apply font-sans;
   }
+
+  /* LinguaClass responsive & overflow safety */
+  html, body {
+    overflow-x: hidden;
+    min-width: 0;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  img, svg, video, canvas, audio, iframe, embed, object {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+  }
+
+  p, li, td, th {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  input, textarea, select {
+    max-width: 100%;
+  }
+
+  [role="dialog"],
+  [role="alertdialog"] {
+    max-width: min(100vw - 32px, 960px);
+  }
 }
