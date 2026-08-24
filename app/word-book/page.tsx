@@ -89,7 +89,7 @@ export default function WordBookPage() {
   }, [isFullscreen, currentTopic, currentWordIndex]);
 
   return (
-    <div className={`flex ${isFullscreen ? 'fixed inset-0 bg-white dark:bg-gray-950 z-50' : ''}`}>
+    <div className={`flex ${isFullscreen ? 'fixed inset-0 bg-white dark:bg-gray-950 z-[60]' : ''}`}>
       {!isFullscreen && <StudentSidebar />}
       
       <div className={`flex-1 ${isFullscreen ? 'p-4 sm:p-8' : 'p-6 sm:p-8'} flex flex-col min-h-screen`}>
@@ -195,7 +195,7 @@ export default function WordBookPage() {
                     <TabsTrigger
                       key={topic.id}
                       value={topic.id}
-                      className="data-[state=active]:bg-indigo-500 data-[state=active]:text-white"
+                      className="data-active:bg-indigo-500 data-active:text-white data-active:border-indigo-500"
                     >
                       <span className="mr-1">{topic.emoji}</span>
                       <span className="hidden sm:inline">{topic.title}</span>
@@ -426,7 +426,7 @@ export default function WordBookPage() {
                     <TabsTrigger
                       key={topic.id}
                       value={topic.id}
-                      className="data-[state=active]:bg-indigo-500 data-[state=active]:text-white"
+                      className="data-active:bg-indigo-500 data-active:text-white data-active:border-indigo-500"
                     >
                       <span className="mr-1">{topic.emoji}</span>
                       <span className="hidden sm:inline">{topic.title}</span>
