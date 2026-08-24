@@ -1,21 +1,29 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
-import { ALLOWED_USERS, isAuthenticated } from "@/lib/auth";
+import { verifySessionToken } from "@/lib/session";
 
-export function middleware(request: NextRequest) {
-  const session = request.cookies.get("session")?.value;
+export async function middleware(request: NextRequest) {
+  const token = request.cookies.get("session")?.value;
+  const session = await verifySessionToken(token);
   const { pathname } = request.nextUrl;
 
-  const isAuth = isAuthenticated(session);
+  const isAdminApi = pathname.startsWith("/api/admin");
+  if (isAdminApi && (!session || session.role !== "admin")) {
+    return NextResponse.json({ error: "Admin access required." }, { status: 403 });
+  }
 
   const publicPaths = ["/login", "/", "/api/auth/logout"];
   const isPublic = publicPaths.some((path) => pathname === path || pathname.startsWith(path + "/"));
 
-  if (!isAuth && !isPublic) {
+  if (!session && !isPublic) {
     return NextResponse.redirect(new URL("/login", request.url));
   }
 
-  if (isAuth && pathname === "/login") {
+  if (session && pathname === "/login") {
+    return NextResponse.redirect(new URL("/", request.url));
+  }
+
+  if ((pathname === "/admin" || pathname.startsWith("/admin/")) && session?.role !== "admin") {
     return NextResponse.redirect(new URL("/", request.url));
   }
 

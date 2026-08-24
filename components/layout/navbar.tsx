@@ -23,6 +23,7 @@ import {
   AlertTriangle,
   LogOut,
   User,
+  Shield,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { usePreferencesStore } from "@/stores/preferences-store";
@@ -54,7 +55,7 @@ const teacherLinks = [
 export function Navbar() {
   const pathname = usePathname();
   const { theme, toggleTheme } = usePreferencesStore();
-  const [user, setUser] = useState<{ username: string } | null>(null);
+  const [user, setUser] = useState<{ username: string; name?: string; role?: string } | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -118,6 +119,18 @@ export function Navbar() {
         </nav>
 
         <div className="flex items-center gap-1 sm:gap-2">
+          {user?.role === "admin" && (
+            <Link href="/admin">
+              <Button
+                variant={pathname.startsWith("/admin") ? "secondary" : "ghost"}
+                size="sm"
+                className="gap-2 text-rose-600 dark:text-rose-400"
+              >
+                <Shield className="h-4 w-4" />
+                <span className="hidden lg:inline">Admin</span>
+              </Button>
+            </Link>
+          )}
           <Button variant="ghost" size="icon" onClick={toggleTheme} className="h-9 w-9">
             {theme === "dark" ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
           </Button>
@@ -133,7 +146,7 @@ export function Navbar() {
                 <div className="flex items-center gap-1 sm:gap-2">
                   <div className="flex items-center gap-2 rounded-lg bg-muted px-2 py-1 text-sm">
                     <User className="h-4 w-4" />
-                    <span className="hidden lg:inline">{user.username}</span>
+                    <span className="hidden lg:inline">{user.name || user.username}</span>
                   </div>
                   <Button variant="ghost" size="icon" onClick={handleLogout} title="Logout" className="h-9 w-9">
                     <LogOut className="h-4 w-4" />

@@ -1,9 +1,9 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { GraduationCap, BookOpen, MessageCircle, Mic, Headphones, BookText, PenTool, BarChart3, Settings, MonitorPlay, LayoutDashboard, Layers, MessageSquare, BookMarked, AlertTriangle } from "lucide-react";
+import { GraduationCap, Shield, MonitorPlay, LayoutDashboard, Layers, MessageSquare, BookMarked, AlertTriangle, BookOpen, Mic, Headphones, BookText, PenTool, BarChart3 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
@@ -12,7 +12,7 @@ const studentLinks = [
   { href: "/student", label: "Dashboard", icon: LayoutDashboard },
   { href: "/vocabulary", label: "Vocabulary", icon: BookOpen },
   { href: "/flashcards", label: "Flashcards", icon: Layers },
-  { href: "/conversations", label: "Conversations", icon: MessageCircle },
+  { href: "/conversations", label: "Conversations", icon: MessageSquare },
   { href: "/daily-expressions", label: "Daily Expressions", icon: BookMarked },
   { href: "/slang-academy", label: "Slang Academy", icon: MessageSquare },
   { href: "/rough-english", label: "Rough English", icon: AlertTriangle },
@@ -30,10 +30,31 @@ const teacherLinks = [
   { href: "/progress", label: "Progress", icon: BarChart3 },
 ];
 
+type SessionUser = { username: string; name?: string; role?: string } | null;
+
 export function MobileNav() {
   const pathname = usePathname();
+  const [user, setUser] = useState<SessionUser>(null);
   const isTeacher = pathname.startsWith("/teacher") || pathname.startsWith("/classroom");
   const links = isTeacher ? teacherLinks : studentLinks;
+
+  useEffect(() => {
+    let cancelled = false;
+    fetch("/api/auth/session")
+      .then((res) => res.json())
+      .then((data) => {
+        if (!cancelled) setUser(data.user ?? null);
+      })
+      .catch(() => {});
+    return () => {
+      cancelled = true;
+    };
+  }, [pathname]);
+
+  const allLinks =
+    user?.role === "admin"
+      ? [{ href: "/admin", label: "Admin Panel", icon: Shield as typeof LayoutDashboard }, ...links]
+      : links;
 
   return (
     <Sheet>
@@ -59,16 +80,17 @@ export function MobileNav() {
           </SheetTitle>
         </SheetHeader>
         <nav className="flex flex-col gap-1 p-3 overflow-y-auto">
-          {links.map((link) => {
+          {allLinks.map((link) => {
             const Icon = link.icon;
-            const isActive = pathname === link.href || (link.href !== "/student" && pathname.startsWith(link.href));
+            const isActive = pathname === link.href || (link.href !== "/student" && link.href !== "/admin" && pathname.startsWith(link.href));
             return (
               <Link key={link.href} href={link.href}>
                 <Button
                   variant={isActive ? "secondary" : "ghost"}
                   className={cn(
                     "w-full justify-start gap-3 h-10",
-                    isActive && "bg-indigo-50 text-indigo-700 dark:bg-indigo-500/10 dark:text-indigo-300"
+                    isActive && "bg-indigo-50 text-indigo-700 dark:bg-indigo-500/10 dark:text-indigo-300",
+                    link.href === "/admin" && "text-rose-600 dark:text-rose-400"
                   )}
                 >
                   <Icon className="h-4 w-4" />
@@ -78,6 +100,12 @@ export function MobileNav() {
             );
           })}
         </nav>
+        {user && (
+          <div className="border-t px-4 py-3 text-sm text-muted-foreground">
+            Signed in as <span className="font-medium text-foreground">{user.name || user.username}</span>
+            {user.role && <span className="ml-1.5 capitalize">({user.role})</span>}
+          </div>
+        )}
       </SheetContent>
     </Sheet>
   );
