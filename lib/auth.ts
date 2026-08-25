@@ -19,6 +19,8 @@ export type PublicUser = Omit<StoredUser, "passwordHash">;
 const DATA_DIR = path.join(process.cwd(), ".data");
 const USERS_FILE = path.join(DATA_DIR, "users.json");
 
+let memoryFallback: StoredUser[] | null = null;
+
 const SEED_USERS: Array<Pick<StoredUser, "username" | "displayName" | "role"> & { password: string }> = [
   { username: "admin", displayName: "Admin", role: "admin", password: "admin123" },
   { username: "teacher", displayName: "Teacher", role: "teacher", password: "teacher123" },
@@ -46,6 +48,7 @@ function toPublicUser(user: StoredUser): PublicUser {
 }
 
 async function readStore(): Promise<StoredUser[]> {
+  if (memoryFallback) return memoryFallback;
   try {
     const raw = await fs.readFile(USERS_FILE, "utf-8");
     const parsed = JSON.parse(raw);
@@ -57,8 +60,14 @@ async function readStore(): Promise<StoredUser[]> {
 }
 
 async function writeStore(users: StoredUser[]) {
-  await fs.mkdir(DATA_DIR, { recursive: true });
-  await fs.writeFile(USERS_FILE, JSON.stringify({ users }, null, 2), "utf-8");
+  try {
+    await fs.mkdir(DATA_DIR, { recursive: true });
+    await fs.writeFile(USERS_FILE, JSON.stringify({ users }, null, 2), "utf-8");
+    memoryFallback = null;
+  } catch {
+    // read-only filesystem (e.g. serverless): keep accounts in-process
+    memoryFallback = users;
+  }
 }
 
 async function ensureSeeded(): Promise<StoredUser[]> {

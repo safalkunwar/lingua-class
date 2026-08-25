@@ -12,7 +12,7 @@ export async function middleware(request: NextRequest) {
     return NextResponse.json({ error: "Admin access required." }, { status: 403 });
   }
 
-  const publicPaths = ["/login", "/", "/api/auth/logout"];
+  const publicPaths = ["/login", "/", "/api/auth/session", "/api/auth/logout"];
   const isPublic = publicPaths.some((path) => pathname === path || pathname.startsWith(path + "/"));
 
   if (!session && !isPublic) {
