@@ -8,7 +8,6 @@ import { Button } from "@/components/ui/button";
 import { Volume2, ChevronLeft, Lightbulb, MessageSquare, BookOpen } from "lucide-react";
 import { useSpeechSynthesis } from "@/hooks/use-speech-synthesis";
 import Link from "next/link";
-import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 
 export default function BusinessIdiomsPage() {
   const { speakEnglish, speakChinese } = useSpeechSynthesis();
@@ -17,24 +16,24 @@ export default function BusinessIdiomsPage() {
     <div className="flex">
       <StudentSidebar />
       <div className="flex-1 p-4 sm:p-6 lg:p-8">
-          <div className="max-w-4xl mx-auto">
-            <div className="flex justify-between items-center mb-6">
-              <Link href="/business-english">
-                <Button variant="ghost">
-                  <ChevronLeft className="w-4 h-4 mr-1" />
-                  Back to Business English
+        <div className="max-w-4xl mx-auto">
+          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 mb-6">
+            <Link href="/business-english">
+              <Button variant="ghost">
+                <ChevronLeft className="w-4 h-4 mr-1" />
+                Back to Business English
+              </Button>
+            </Link>
+            <div className="flex gap-2">
+              <Badge variant="outline" className="text-sm">Idioms & Decoder</Badge>
+              <Link href="/business-english/read">
+                <Button variant="secondary" size="sm" className="gap-2">
+                  <BookOpen className="w-4 h-4" />
+                  Read Mode
                 </Button>
               </Link>
-              <div className="flex gap-2">
-                <Badge variant="outline" className="text-sm">Idioms & Decoder</Badge>
-                <Link href="/business-english/read">
-                  <Button variant="secondary" size="sm" className="gap-2">
-                    <BookOpen className="w-4 h-4" />
-                    Read Mode
-                  </Button>
-                </Link>
-              </div>
             </div>
+          </div>
 
           <div className="text-center mb-8">
             <h1 className="text-3xl sm:text-4xl font-bold mb-2">🎭 Business Idioms & Corporate Decoder</h1>
@@ -43,19 +42,13 @@ export default function BusinessIdiomsPage() {
             </p>
           </div>
 
-          <Tabs defaultValue="idioms" className="mb-8">
-            <TabsList className="flex-wrap justify-center gap-2">
-              <TabsTrigger value="idioms" className="gap-2">
-                <Lightbulb className="w-4 h-4" />
-                Idioms
-              </TabsTrigger>
-              <TabsTrigger value="decoder" className="gap-2">
-                <MessageSquare className="w-4 h-4" />
-                Corporate Decoder
-              </TabsTrigger>
-            </TabsList>
-
-            <TabsContent value="idioms" className="mt-6">
+          <div className="space-y-8">
+            <div>
+              <div className="flex items-center gap-2 mb-4">
+                <Lightbulb className="h-5 w-5 text-indigo-500" />
+                <h2 className="text-xl font-bold">Idioms</h2>
+                <Badge variant="secondary" className="ml-auto">{businessEnglishData.idioms.length}</Badge>
+              </div>
               <div className="space-y-4">
                 {businessEnglishData.idioms.map((idiom) => (
                   <Card key={idiom.id} className="p-5 sm:p-6">
@@ -101,7 +94,7 @@ export default function BusinessIdiomsPage() {
                           <Volume2 className="h-3.5 w-3.5" />
                         </Button>
                       </div>
-                      <p className="text-xs text-muted-foreground">{idiom.exampleZh}</p>
+                      <p className="text-xs text-muted-foreground mt-1">{idiom.exampleZh}</p>
                     </div>
 
                     <div className="p-3 rounded-lg bg-amber-50 dark:bg-amber-950/20 border border-amber-200 mb-4">
@@ -117,7 +110,7 @@ export default function BusinessIdiomsPage() {
                           <Volume2 className="h-3.5 w-3.5" />
                         </Button>
                       </div>
-                      <p className="text-xs text-muted-foreground">{idiom.businessExampleZh}</p>
+                      <p className="text-xs text-muted-foreground mt-1">{idiom.businessExampleZh}</p>
                     </div>
 
                     <div className="flex flex-wrap gap-2">
@@ -127,9 +120,14 @@ export default function BusinessIdiomsPage() {
                   </Card>
                 ))}
               </div>
-            </TabsContent>
+            </div>
 
-            <TabsContent value="decoder" className="mt-6">
+            <div>
+              <div className="flex items-center gap-2 mb-4">
+                <MessageSquare className="h-5 w-5 text-indigo-500" />
+                <h2 className="text-xl font-bold">Corporate Decoder</h2>
+                <Badge variant="secondary" className="ml-auto">{businessEnglishData.corporateDecoder.length}</Badge>
+              </div>
               <div className="space-y-4">
                 {businessEnglishData.corporateDecoder.map((item) => (
                   <Card key={item.id} className="p-5 sm:p-6">
@@ -185,8 +183,8 @@ export default function BusinessIdiomsPage() {
                   </Card>
                 ))}
               </div>
-            </TabsContent>
-          </Tabs>
+            </div>
+          </div>
 
           <div className="pt-8 border-t mt-8">
             <Link href="/business-english">

@@ -7,7 +7,6 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, BookOpen } from "lucide-react";
 import Link from "next/link";
-import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 
 export default function BusinessEmailsPage() {
   const emails = businessEnglishData.emailTemplates;
@@ -16,24 +15,24 @@ export default function BusinessEmailsPage() {
     <div className="flex">
       <StudentSidebar />
       <div className="flex-1 p-4 sm:p-6 lg:p-8">
-          <div className="max-w-4xl mx-auto">
-            <div className="flex justify-between items-center mb-6">
-              <Link href="/business-english">
-                <Button variant="ghost">
-                  <ChevronLeft className="w-4 h-4 mr-1" />
-                  Back to Business English
+        <div className="max-w-4xl mx-auto">
+          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 mb-6">
+            <Link href="/business-english">
+              <Button variant="ghost">
+                <ChevronLeft className="w-4 h-4 mr-1" />
+                Back to Business English
+              </Button>
+            </Link>
+            <div className="flex gap-2">
+              <Badge variant="outline" className="text-sm">Email Templates</Badge>
+              <Link href="/business-english/read">
+                <Button variant="secondary" size="sm" className="gap-2">
+                  <BookOpen className="w-4 h-4" />
+                  Read Mode
                 </Button>
               </Link>
-              <div className="flex gap-2">
-                <Badge variant="outline" className="text-sm">Email Templates</Badge>
-                <Link href="/business-english/read">
-                  <Button variant="secondary" size="sm" className="gap-2">
-                    <BookOpen className="w-4 h-4" />
-                    Read Mode
-                  </Button>
-                </Link>
-              </div>
             </div>
+          </div>
 
           <div className="text-center mb-8">
             <h1 className="text-3xl sm:text-4xl font-bold mb-2">📧 Business Email Templates</h1>
@@ -42,18 +41,10 @@ export default function BusinessEmailsPage() {
             </p>
           </div>
 
-          <Tabs defaultValue={emails[0]?.id} className="mb-8">
-            <TabsList className="flex-wrap justify-center gap-2">
-              {emails.map((email) => (
-                <TabsTrigger key={email.id} value={email.id} className="text-xs sm:text-sm">
-                  {email.categoryZh}
-                </TabsTrigger>
-              ))}
-            </TabsList>
-
+          <div className="space-y-10">
             {emails.map((email) => (
-              <TabsContent key={email.id} value={email.id} className="mt-6">
-                <div className="mb-6">
+              <div key={email.id}>
+                <div className="mb-4">
                   <h2 className="text-2xl font-bold mb-2">{email.situation}</h2>
                   <p className="text-muted-foreground">{email.situationZh}</p>
                 </div>
@@ -84,14 +75,14 @@ export default function BusinessEmailsPage() {
                   <p className="text-xs text-muted-foreground">{email.explanationZh}</p>
                 </Card>
 
-                <Card className="p-5">
+                <Card className="p-5 mb-6">
                   <h3 className="font-bold mb-2">Template</h3>
                   <pre className="text-sm whitespace-pre-wrap bg-muted/50 p-4 rounded-lg">{email.template}</pre>
                   <p className="text-xs text-muted-foreground mt-2 whitespace-pre-wrap">{email.templateZh}</p>
                 </Card>
-              </TabsContent>
+              </div>
             ))}
-          </Tabs>
+          </div>
 
           <div className="pt-8 border-t mt-8">
             <Link href="/business-english">
