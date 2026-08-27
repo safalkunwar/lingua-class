@@ -208,15 +208,15 @@ export default function EnglishBoostPage() {
 
   if (gameState === "menu") {
     return (
-      <div className="flex">
+      <div className="flex min-w-0">
         <StudentSidebar />
-        <div className="flex-1 p-4 sm:p-6 lg:p-8">
+        <div className="flex-1 min-w-0 p-4 sm:p-6 lg:p-8">
           <motion.div
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
-            className="mb-8 text-center"
+            className="mb-6 text-center"
           >
-            <h1 className="text-4xl font-extrabold tracking-tight">🎮 English Quest</h1>
+            <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight">🎮 English Quest</h1>
             <p className="mt-2 text-muted-foreground max-w-2xl mx-auto">
               Learn English. Survive awkward situations. Become dangerously fluent. 😂
             </p>
@@ -229,7 +229,7 @@ export default function EnglishBoostPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-5xl mx-auto"
+            className="grid gap-4 sm:gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-5xl mx-auto"
           >
             {englishBoostChapters.map((chapter, idx) => (
               <motion.div
@@ -237,9 +237,10 @@ export default function EnglishBoostPage() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: idx * 0.05 }}
+                className="min-w-0"
               >
                 <Card className="h-full cursor-pointer transition-all hover:shadow-xl hover:-translate-y-1 border-2 hover:border-indigo-300 dark:hover:border-indigo-700 group">
-                  <div className="p-6">
+                  <div className="p-5 sm:p-6">
                     <div className="flex items-center gap-3 mb-3">
                       <span className="text-4xl group-hover:scale-110 transition-transform">{chapter.emoji}</span>
                       <div>
@@ -278,11 +279,11 @@ export default function EnglishBoostPage() {
   if (!chapter || !scene) return null;
 
   return (
-    <div className="flex">
+    <div className="flex min-w-0">
       <StudentSidebar />
-      <div className="flex-1 p-4 sm:p-6 lg:p-8">
-        <div className="max-w-3xl mx-auto">
-          <div className="flex items-center justify-between mb-4">
+      <div className="flex-1 min-w-0 p-4 sm:p-6 lg:p-8">
+        <div className="max-w-4xl mx-auto min-w-0">
+          <div className="flex items-center justify-between mb-3 sm:mb-4">
             <Button variant="ghost" onClick={backToMenu}>
               <ArrowLeft className="h-4 w-4 mr-1" />
               Quests
@@ -299,10 +300,10 @@ export default function EnglishBoostPage() {
             </div>
           </div>
 
-          <Progress value={progress} className="mb-4 h-2" />
+          <Progress value={progress} className="mb-3 sm:mb-4 h-2" />
 
           {scene?.timeLimit && gameState === "playing" && (
-            <div className="mb-6">
+            <div className="mb-4 sm:mb-6">
               <div className="flex items-center justify-between mb-2">
                 <div className="flex items-center gap-2 text-sm font-medium">
                   <Clock className="h-4 w-4" />
@@ -326,9 +327,9 @@ export default function EnglishBoostPage() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.25 }}
-              className="space-y-6"
+              className="space-y-4 sm:space-y-6 min-w-0"
             >
-              <Card className="p-6 sm:p-8 border-indigo-200 dark:border-indigo-800 bg-gradient-to-br from-indigo-50/60 to-purple-50/60 dark:from-indigo-950/20 dark:to-purple-950/20">
+              <Card className="p-5 sm:p-6 border-indigo-200 dark:border-indigo-800 bg-gradient-to-br from-indigo-50/60 to-purple-50/60 dark:from-indigo-950/20 dark:to-purple-950/20">
                 <div className="flex items-center gap-2 mb-3">
                   <span className="text-2xl">{chapter.emoji}</span>
                   <div>
@@ -342,7 +343,7 @@ export default function EnglishBoostPage() {
                 )}
 
                 {scene.chaosEvent && (
-                  <div className="mb-4 p-4 rounded-xl bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800">
+                  <div className="mb-4 p-4 rounded-xl bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800 min-w-0">
                     <div className="flex items-center gap-2 mb-1">
                       <AlertTriangle className="h-4 w-4 text-amber-700 dark:text-amber-300" />
                       <p className="text-sm font-semibold text-amber-900 dark:text-amber-100">{scene.chaosEvent}</p>
@@ -351,7 +352,7 @@ export default function EnglishBoostPage() {
                 )}
 
                 {scene.translationTrap && (
-                  <div className="mb-4 p-4 rounded-xl bg-red-50 dark:bg-red-950/20 border border-red-200 dark:border-red-800">
+                  <div className="mb-4 p-4 rounded-xl bg-red-50 dark:bg-red-950/20 border border-red-200 dark:border-red-800 min-w-0">
                     <div className="flex items-center gap-2 mb-2">
                       <Lightbulb className="h-4 w-4 text-red-700 dark:text-red-300" />
                       <p className="text-sm font-semibold text-red-900 dark:text-red-100">Translation Trap</p>
@@ -363,7 +364,7 @@ export default function EnglishBoostPage() {
                 )}
 
                 {scene.stealPhrase && showStealPhrase && (
-                  <div className="mb-4 p-4 rounded-xl bg-emerald-50 dark:bg-emerald-950/20 border border-emerald-200 dark:border-emerald-800">
+                  <div className="mb-4 p-4 rounded-xl bg-emerald-50 dark:bg-emerald-950/20 border border-emerald-200 dark:border-emerald-800 min-w-0">
                     <div className="flex items-center gap-2 mb-1">
                       <Sparkles className="h-4 w-4 text-emerald-700 dark:text-emerald-300" />
                       <p className="text-sm font-semibold text-emerald-900 dark:text-emerald-100">💎 Steal This Phrase</p>
@@ -376,7 +377,7 @@ export default function EnglishBoostPage() {
                 )}
 
                 {scene.dialogue && (
-                  <div className="mb-4 p-4 rounded-xl bg-white/70 dark:bg-black/20 border border-border">
+                  <div className="mb-4 p-4 rounded-xl bg-white/70 dark:bg-black/20 border border-border min-w-0">
                     <div className="flex items-center gap-2 mb-1">
                       <span className="text-lg">{scene.characterEmoji}</span>
                       <p className="text-sm font-semibold">{scene.character}</p>
@@ -396,18 +397,19 @@ export default function EnglishBoostPage() {
                 )}
               </Card>
 
-              <div className="space-y-3">
+              <div className="space-y-3 min-w-0">
                 {scene.choices.map((choice) => (
-                  <motion.div key={choice.id} whileHover={{ scale: 1.01 }} whileTap={{ scale: 0.99 }}>
-                    <Card className="p-4 cursor-pointer hover:border-indigo-300 dark:hover:border-indigo-700 transition-colors">
+                  <motion.div key={choice.id} whileHover={{ scale: 1.01 }} whileTap={{ scale: 0.99 }} className="min-w-0">
+                    <Card className="p-3 sm:p-4 cursor-pointer hover:border-indigo-300 dark:hover:border-indigo-700 transition-colors min-w-0">
                       <Button
                         variant="ghost"
-                        className="w-full justify-between text-left h-auto py-2"
+                        className="w-full justify-between text-left h-auto py-2 min-w-0"
                         onClick={() => handleChoice(choice)}
                       >
-                        <span className="text-sm sm:text-base">{choice.text}</span>
-                        <span className="text-xs text-muted-foreground ml-2">{choice.textZh}</span>
+                        <span className="text-sm sm:text-base break-words text-left">{choice.text}</span>
+                        <span className="text-xs text-muted-foreground ml-2 break-words text-right hidden sm:inline">{choice.textZh}</span>
                       </Button>
+                      <p className="text-xs text-muted-foreground mt-1 sm:hidden break-words">{choice.textZh}</p>
                     </Card>
                   </motion.div>
                 ))}
@@ -419,7 +421,7 @@ export default function EnglishBoostPage() {
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0 }}
-                    className="p-4 rounded-xl bg-indigo-50 dark:bg-indigo-950/20 border border-indigo-200 dark:border-indigo-800"
+                    className="p-4 rounded-xl bg-indigo-50 dark:bg-indigo-950/20 border border-indigo-200 dark:border-indigo-800 min-w-0"
                   >
                     <p className="text-sm font-medium text-indigo-900 dark:text-indigo-100">{lastFeedback.text}</p>
                     {lastFeedback.zh && <p className="text-xs text-muted-foreground mt-1">{lastFeedback.zh}</p>}
@@ -433,14 +435,14 @@ export default function EnglishBoostPage() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              className="mt-8 text-center space-y-4"
+              className="mt-6 sm:mt-8 text-center space-y-4 min-w-0"
             >
-              <Card className="p-6 sm:p-8 border-emerald-200 dark:border-emerald-800 bg-gradient-to-br from-emerald-50 to-teal-50 dark:from-emerald-950/20 dark:to-teal-950/20">
+              <Card className="p-5 sm:p-6 border-emerald-200 dark:border-emerald-800 bg-gradient-to-br from-emerald-50 to-teal-50 dark:from-emerald-950/20 dark:to-teal-950/20 min-w-0">
                 <div className="text-4xl mb-2">🎉</div>
                 <h3 className="text-2xl font-bold mb-2">MISSION COMPLETE</h3>
                 <p className="text-sm text-muted-foreground mb-4">You survived {chapter.title}!</p>
 
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-6">
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mb-4 sm:mb-6">
                   <div className="text-center">
                     <div className="text-2xl font-extrabold text-emerald-700 dark:text-emerald-300">+{chapter.xpReward + xpEarned}</div>
                     <div className="text-xs text-muted-foreground">Total XP</div>
@@ -487,7 +489,7 @@ export default function EnglishBoostPage() {
           )}
 
           {gameState !== "won" && (
-            <div className="mt-6 text-center">
+            <div className="mt-4 sm:mt-6 text-center">
               <Button variant="ghost" onClick={backToMenu}>
                 <ArrowLeft className="h-4 w-4 mr-1" />
                 Back to Quests
