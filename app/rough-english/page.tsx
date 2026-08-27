@@ -17,6 +17,7 @@ import { SlangItem } from "@/types/conversations";
 import { useSpeechSynthesis } from "@/hooks/use-speech-synthesis";
 
 export default function RoughEnglishPage() {
+  const [selectedItem, setSelectedItem] = useState<SlangItem | null>(null);
   const { speakEnglish, speakChinese } = useSpeechSynthesis();
 
   const getOffensiveBadge = (level: number) => {
@@ -81,7 +82,7 @@ export default function RoughEnglishPage() {
           </div>
         </motion.div>
 
-        <div className="space-y-6">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {roughEnglish.map((item, index) => (
             <motion.div
               key={item.id}
@@ -89,126 +90,130 @@ export default function RoughEnglishPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.05 }}
             >
-              <Card className="p-5 sm:p-6">
-                <div className="flex items-start justify-between gap-3 mb-3">
-                  <div>
-                    <div className="flex items-center gap-2 mb-1">
-                      <h3 className="text-xl font-bold">{item.word}</h3>
-                      {getOffensiveBadge(item.offensiveLevel)}
-                    </div>
-                    <p className="text-base text-indigo-600 dark:text-indigo-400">{item.chinese}</p>
-                    <p className="text-xs text-muted-foreground">{item.pinyin}</p>
-                  </div>
-                  <div className="flex gap-1 shrink-0">
-                    {item.audioAvailable && (
-                      <>
+              <Card
+                className="h-full cursor-pointer transition-all hover:shadow-lg hover:-translate-y-1 border-2 hover:border-indigo-200"
+                onClick={() => setSelectedItem(selectedItem?.id === item.id ? null : item)}
+              >
+                <div className="p-5">
+                  <div className="flex items-start justify-between gap-2 mb-2">
+                    <div>
+                      <div className="flex items-center gap-2">
+                        <h3 className="font-bold text-lg">{item.word}</h3>
                         <Button
-                          size="icon"
                           variant="ghost"
+                          size="icon"
+                          className="h-7 w-7"
                           onClick={() => speakEnglish(item.word)}
-                          title="Play English"
-                          className="h-9 w-9"
-                        >
-                          <Volume2 className="w-4 h-4" />
-                        </Button>
-                        <Button
-                          size="icon"
-                          variant="ghost"
-                          onClick={() => speakChinese(item.chinese)}
-                          title="Play Chinese"
-                          className="h-9 w-9"
-                        >
-                          <span className="text-sm">🇨🇳</span>
-                        </Button>
-                      </>
-                    )}
-                  </div>
-                </div>
-
-                <p className="text-sm sm:text-base text-muted-foreground mb-4">{item.meaning}</p>
-
-                <div className="p-3 rounded-lg bg-muted/30 mb-4">
-                  <p className="text-xs font-medium text-muted-foreground uppercase mb-1">Example</p>
-                  <p className="text-sm font-medium">&ldquo;{item.example}&rdquo;</p>
-                  <p className="text-xs text-muted-foreground">{item.exampleZh}</p>
-                </div>
-
-                <div className="p-3 rounded-lg bg-blue-50 dark:bg-blue-950/20 border border-blue-200 mb-4">
-                  <p className="text-xs font-medium text-blue-900 dark:text-blue-100 mb-2">Conversation</p>
-                  {item.conversation.map((line, idx) => (
-                    <div key={idx} className="flex items-start justify-between gap-2 mb-1">
-                      <p className="text-sm">
-                        <strong>{line.speaker}:</strong> {line.line}
-                      </p>
-                      <Button
-                        variant="ghost"
-                        size="icon"
-                        className="h-7 w-7 shrink-0"
-                        onClick={() => speakEnglish(line.line)}
-                      >
-                        <Volume2 className="h-3.5 w-3.5" />
-                      </Button>
-                    </div>
-                  ))}
-                  <div className="mt-2 space-y-1">
-                    {item.chineseTranslation.map((line, idx) => (
-                      <div key={idx} className="flex items-start justify-between gap-2">
-                        <p className="text-xs text-muted-foreground">
-                          {line.speaker}: {line.line}
-                        </p>
-                        <Button
-                          variant="ghost"
-                          size="icon"
-                          className="h-7 w-7 shrink-0"
-                          onClick={() => speakChinese(line.line)}
                         >
                           <Volume2 className="h-3.5 w-3.5" />
                         </Button>
                       </div>
-                    ))}
-                  </div>
-                </div>
-
-                <div className="grid gap-3 sm:grid-cols-2 mb-4">
-                  <div>
-                    <p className="text-xs font-medium text-muted-foreground uppercase">Who Says It</p>
-                    <p className="text-sm">{item.whoSaysIt}</p>
-                    <p className="text-xs text-muted-foreground">Age: {item.ageGroup}</p>
-                    <p className="text-xs text-muted-foreground">Region: {item.region}</p>
-                  </div>
-                  <div>
-                    <p className="text-xs font-medium text-muted-foreground uppercase">Safe Alternatives</p>
-                    <div className="flex flex-wrap gap-1 mt-1">
-                      {item.safeAlternatives.map((alt, idx) => (
-                        <Badge key={idx} variant="outline" className="text-xs">{alt}</Badge>
-                      ))}
+                      <div className="flex items-center gap-2">
+                        <p className="text-sm text-indigo-600 dark:text-indigo-400">{item.chinese}</p>
+                        <Button
+                          variant="ghost"
+                          size="icon"
+                          className="h-7 w-7"
+                          onClick={() => speakChinese(item.chinese)}
+                        >
+                          <Volume2 className="h-3.5 w-3.5" />
+                        </Button>
+                      </div>
+                      <p className="text-xs text-muted-foreground">{item.pinyin}</p>
                     </div>
+                    {getOffensiveBadge(item.offensiveLevel)}
                   </div>
-                </div>
-
-                {item.warning && (
-                  <div className="p-3 bg-red-50 dark:bg-red-950/20 border border-red-200 rounded-lg mb-4">
-                    <p className="text-xs font-medium text-red-900 dark:text-red-100 flex items-center gap-1">
-                      <AlertTriangle className="h-3 w-3" />
-                      Warning
-                    </p>
-                    <p className="text-sm text-red-800 dark:text-red-200 mt-1">{item.warning}</p>
+                  <p className="text-sm text-muted-foreground mb-3">{item.meaning}</p>
+                   <div className="flex items-center gap-2">
+                    <p className="text-xs text-muted-foreground italic">&ldquo;{item.example}&rdquo;</p>
+                    <Button
+                      variant="ghost"
+                      size="icon"
+                      className="h-7 w-7"
+                      onClick={() => speakEnglish(item.example)}
+                    >
+                      <Volume2 className="h-3.5 w-3.5" />
+                    </Button>
                   </div>
-                )}
 
-                <div>
-                  <p className="text-xs font-medium text-muted-foreground uppercase mb-1">Cultural Notes</p>
-                  <p className="text-sm">{item.culturalNotes}</p>
+                  {selectedItem?.id === item.id && (
+                    <motion.div
+                      initial={{ opacity: 0, height: 0 }}
+                      animate={{ opacity: 1, height: "auto" }}
+                      className="mt-4 space-y-3 border-t border-border pt-4"
+                    >
+                      <div className="p-3 bg-blue-50 dark:bg-blue-950/20 rounded-lg">
+                        <p className="text-xs font-medium text-blue-900 dark:text-blue-100 mb-1">Conversation</p>
+                        {item.conversation.map((line, idx) => (
+                          <div key={idx} className="flex items-center gap-2 mb-1">
+                            <p className="text-sm">
+                              <strong>{line.speaker}:</strong> {line.line}
+                            </p>
+                            <Button
+                              variant="ghost"
+                              size="icon"
+                              className="h-7 w-7"
+                              onClick={() => speakEnglish(line.line)}
+                            >
+                              <Volume2 className="h-3.5 w-3.5" />
+                            </Button>
+                          </div>
+                        ))}
+                        <div className="mt-2 space-y-1">
+                          {item.chineseTranslation.map((line, idx) => (
+                            <div key={idx} className="flex items-center gap-2">
+                              <p className="text-xs text-muted-foreground">
+                                {line.speaker}: {line.line}
+                              </p>
+                              <Button
+                                variant="ghost"
+                                size="icon"
+                                className="h-7 w-7"
+                                onClick={() => speakChinese(line.line)}
+                              >
+                                <Volume2 className="h-3.5 w-3.5" />
+                              </Button>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+
+                      <div>
+                        <p className="text-xs font-medium text-muted-foreground uppercase">Who Says It</p>
+                        <p className="text-sm">{item.whoSaysIt}</p>
+                        <p className="text-xs text-muted-foreground">Age: {item.ageGroup}</p>
+                        <p className="text-xs text-muted-foreground">Region: {item.region}</p>
+                      </div>
+
+                      {item.warning && (
+                        <div className="p-3 bg-red-50 dark:bg-red-950/20 border border-red-200 rounded-lg">
+                          <p className="text-xs font-medium text-red-900 dark:text-red-100 flex items-center gap-1">
+                            <AlertTriangle className="h-3 w-3" />
+                            Warning
+                          </p>
+                          <p className="text-sm text-red-800 dark:text-red-200 mt-1">{item.warning}</p>
+                        </div>
+                      )}
+
+                      <div>
+                        <p className="text-xs font-medium text-muted-foreground uppercase">Safe Alternatives</p>
+                        <div className="flex flex-wrap gap-1 mt-1">
+                          {item.safeAlternatives.map((alt, idx) => (
+                            <Badge key={idx} variant="outline" className="text-xs">{alt}</Badge>
+                          ))}
+                        </div>
+                      </div>
+
+                      <div>
+                        <p className="text-xs font-medium text-muted-foreground uppercase">Cultural Notes</p>
+                        <p className="text-sm">{item.culturalNotes}</p>
+                      </div>
+                    </motion.div>
+                  )}
                 </div>
               </Card>
             </motion.div>
           ))}
-        </div>
-
-        <div className="pt-8 border-t mt-8">
-          <Link href="/rough-english/read">
-            <Button variant="ghost">← Back to Rough English</Button>
-          </Link>
         </div>
       </div>
     </div>
