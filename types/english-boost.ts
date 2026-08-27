@@ -43,6 +43,7 @@ export interface Scene {
     situation: string;
     formality: string;
   };
+  timeLimit?: number;
   xpReward: number;
 }
 

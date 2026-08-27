@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { StudentSidebar } from "@/components/layout/sidebar";
 import { Button } from "@/components/ui/button";
@@ -25,6 +25,7 @@ import {
   Sparkles,
   ChevronRight,
   RotateCcw,
+  Clock,
 } from "lucide-react";
 
 type GameState = "menu" | "playing" | "won";
@@ -39,6 +40,10 @@ export default function EnglishBoostPage() {
   const [lastFeedback, setLastFeedback] = useState<{ text: string; zh: string } | null>(null);
   const [showStealPhrase, setShowStealPhrase] = useState(false);
   const [chaosTriggered, setChaosTriggered] = useState(false);
+  const [timeLeft, setTimeLeft] = useState(0);
+  const [timerActive, setTimerActive] = useState(false);
+  const [timeoutTriggered, setTimeoutTriggered] = useState(false);
+  const [fastAnswerCount, setFastAnswerCount] = useState(0);
 
   const { addXp, incrementStreak, incrementWeeklyProgress, updateLevelProgress } = useLearningStore();
   const { speakEnglish, speakChinese } = useSpeechSynthesis();
@@ -49,6 +54,44 @@ export default function EnglishBoostPage() {
   const totalScenes = chapter?.scenes.length || 0;
   const currentIndex = chapter?.scenes.findIndex((s) => s.id === currentSceneId) ?? -1;
   const progress = totalScenes > 0 ? Math.max(0, Math.min(100, ((currentIndex + 1) / totalScenes) * 100)) : 0;
+
+  const stopTimer = useCallback(() => {
+    setTimerActive(false);
+  }, []);
+
+  useEffect(() => {
+    if (!timerActive || timeLeft <= 0) {
+      if (timerActive && timeLeft <= 0) {
+        setTimeoutTriggered(true);
+      }
+      stopTimer();
+      return;
+    }
+
+    const timer = setInterval(() => {
+      setTimeLeft((prev) => prev - 1);
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, [timerActive, timeLeft, stopTimer]);
+
+  useEffect(() => {
+    if (timeoutTriggered && scene && scene.choices.length > 0 && gameState === "playing") {
+      const fallback = scene.choices[0];
+      handleChoice(fallback, true);
+      setTimeoutTriggered(false);
+    }
+  }, [timeoutTriggered, scene, gameState]);
+
+  useEffect(() => {
+    if (scene && scene.timeLimit && gameState === "playing") {
+      setTimeLeft(scene.timeLimit);
+      setTimerActive(true);
+      setLastFeedback(null);
+      setShowStealPhrase(false);
+      setChaosTriggered(false);
+    }
+  }, [currentSceneId, gameState, scene]);
 
   const startChapter = (chapterId: string) => {
     const chapterData = englishBoostChapters.find((c) => c.id === chapterId);
@@ -62,16 +105,32 @@ export default function EnglishBoostPage() {
     setLastFeedback(null);
     setShowStealPhrase(false);
     setChaosTriggered(false);
+    setTimeoutTriggered(false);
+    setFastAnswerCount(0);
   };
 
-  const handleChoice = (choice: { nextScene: string; xp: number; feedback?: string; feedbackZh?: string }) => {
+  const handleChoice = (choice: { nextScene: string; xp: number; feedback?: string; feedbackZh?: string }, isTimeout = false) => {
     if (!chapter) return;
 
     const nextSceneData = chapter.scenes.find((s) => s.id === choice.nextScene);
     const isEnding = !choice.nextScene || choice.nextScene === "" || !nextSceneData;
 
-    setXpEarned((prev) => prev + choice.xp);
-    setLastFeedback(choice.feedback ? { text: choice.feedback, zh: choice.feedbackZh || "" } : null);
+    const remaining = scene?.timeLimit ? timeLeft : 0;
+    const timeBonus = remaining > 0 ? Math.min(remaining, 10) : 0;
+    const awardedXp = isTimeout ? Math.max(1, choice.xp - 3) : choice.xp + timeBonus;
+
+    setXpEarned((prev) => prev + awardedXp);
+    if (timeBonus > 0 && !isTimeout) {
+      setFastAnswerCount((prev) => prev + 1);
+    }
+
+    setLastFeedback(
+      isTimeout
+        ? { text: "⏰ Time's up! Auto-selected the first option.", zh: "⏰ 时间到！已自动选择第一个选项。" }
+        : choice.feedback
+          ? { text: choice.feedback, zh: choice.feedbackZh || "" }
+          : null
+    );
 
     if (nextSceneData?.stealPhrase && !unlockedPhrases.includes(nextSceneData.stealPhrase.phrase)) {
       setUnlockedPhrases((prev) => [...prev, nextSceneData.stealPhrase!.phrase]);
@@ -81,6 +140,8 @@ export default function EnglishBoostPage() {
     if (nextSceneData?.chaosEvent && !chaosTriggered) {
       setChaosTriggered(true);
     }
+
+    stopTimer();
 
     if (isEnding) {
       addXp(chapter.xpReward + xpEarned);
@@ -108,6 +169,8 @@ export default function EnglishBoostPage() {
     setLastFeedback(null);
     setShowStealPhrase(false);
     setChaosTriggered(false);
+    setTimeoutTriggered(false);
+    setFastAnswerCount(0);
   };
 
   const backToMenu = () => {
@@ -120,6 +183,10 @@ export default function EnglishBoostPage() {
     setLastFeedback(null);
     setShowStealPhrase(false);
     setChaosTriggered(false);
+    stopTimer();
+    setTimeLeft(0);
+    setTimeoutTriggered(false);
+    setFastAnswerCount(0);
   };
 
   const speakScene = () => {
@@ -232,7 +299,25 @@ export default function EnglishBoostPage() {
             </div>
           </div>
 
-          <Progress value={progress} className="mb-6 h-2" />
+          <Progress value={progress} className="mb-4 h-2" />
+
+          {scene?.timeLimit && gameState === "playing" && (
+            <div className="mb-6">
+              <div className="flex items-center justify-between mb-2">
+                <div className="flex items-center gap-2 text-sm font-medium">
+                  <Clock className="h-4 w-4" />
+                  <span>Time Left</span>
+                </div>
+                <span className={`text-sm font-bold ${timeLeft <= 5 ? "text-red-600 dark:text-red-400" : "text-foreground"}`}>
+                  {timeLeft}s
+                </span>
+              </div>
+              <Progress
+                value={scene.timeLimit ? (timeLeft / scene.timeLimit) * 100 : 100}
+                className={`h-2 ${timeLeft <= 5 ? "text-red-500" : "text-indigo-500"}`}
+              />
+            </div>
+          )}
 
           <AnimatePresence mode="wait">
             <motion.div
@@ -369,8 +454,8 @@ export default function EnglishBoostPage() {
                     <div className="text-xs text-muted-foreground">Phrases Stolen</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-2xl font-extrabold">1</div>
-                    <div className="text-xs text-muted-foreground">Chaos Survived</div>
+                    <div className="text-2xl font-extrabold">{fastAnswerCount}</div>
+                    <div className="text-xs text-muted-foreground">Fast Answers</div>
                   </div>
                 </div>
 

@@ -27,6 +27,7 @@ export const englishBoostChapters: EnglishBoostChapter[] = [
           { id: "c3", text: "Give me a coffee.", textZh: "给我一杯咖啡。", nextScene: "scene-2", xp: 2, isCorrect: true, feedback: "Grammatically OK, but sounds demanding here.", feedbackZh: "语法上没问题，但在这里听起来很 demanding。" },
         ],
         xpReward: 10,
+        timeLimit: 18,
       },
       {
         id: "scene-2",
@@ -43,6 +44,7 @@ export const englishBoostChapters: EnglishBoostChapter[] = [
           { id: "c3", text: "Medium cup.", textZh: "中杯。", nextScene: "scene-3", xp: 3, feedback: "A bit robotic. Native speakers usually say 'medium' alone or 'a medium, please.'", feedbackZh: "有点机器人。母语者通常只说 'medium' 或 'a medium, please.'" },
         ],
         xpReward: 10,
+        timeLimit: 15,
       },
       {
         id: "scene-3",
@@ -59,6 +61,7 @@ export const englishBoostChapters: EnglishBoostChapter[] = [
           { id: "c3", text: "Give me iced.", textZh: "给我冰的。", nextScene: "scene-4", xp: 2, feedback: "Too direct for a friendly barista.", feedbackZh: "对友好的咖啡师来说太直接了。" },
         ],
         xpReward: 10,
+        timeLimit: 12,
       },
       {
         id: "scene-4",
@@ -76,6 +79,7 @@ export const englishBoostChapters: EnglishBoostChapter[] = [
           { id: "c3", text: "I don't want fries!", textZh: "我不要薯条！", nextScene: "scene-5", xp: 3, feedback: "A little too strong for a friendly coffee shop.", feedbackZh: "对友好的咖啡店来说有点太 strong 了。" },
         ],
         xpReward: 15,
+        timeLimit: 10,
       },
       {
         id: "scene-5",
@@ -92,6 +96,7 @@ export const englishBoostChapters: EnglishBoostChapter[] = [
           { id: "c2", text: "I very like this place.", textZh: "我 very like 这个地方。", nextScene: "scene-6", xp: 2, feedback: "🚨 TRAP! Native speakers don't say 'very like.'", feedbackZh: "🚨 陷阱！母语者不说 'very like'。" },
         ],
         xpReward: 10,
+        timeLimit: 14,
         stealPhrase: {
           phrase: "I'm not really into that.",
           chinese: "我其实不太喜欢那个。",
@@ -113,6 +118,7 @@ export const englishBoostChapters: EnglishBoostChapter[] = [
           { id: "c2", text: "That's expensive, but okay.", textZh: "有点贵，但好吧。", nextScene: "scene-7", xp: 15, isCorrect: true, feedback: "Calm and natural. You handled the surprise well.", feedbackZh: "冷静自然。你很好地处理了惊讶。" },
         ],
         xpReward: 15,
+        timeLimit: 10,
       },
       {
         id: "scene-7",
