@@ -32,6 +32,7 @@ export function StudentSidebar() {
     { href: "/listening", label: "Listening", emoji: "🎧" },
     { href: "/reading", label: "Reading", emoji: "📖" },
     { href: "/writing", label: "Writing", emoji: "✍️" },
+    { href: "/english-boost", label: "English Boost", emoji: "🚀" },
   ];
 
   return (
