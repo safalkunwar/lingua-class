@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { GraduationCap, Shield, MonitorPlay, LayoutDashboard, Layers, MessageSquare, BookMarked, AlertTriangle, BookOpen, Mic, Headphones, BookText, PenTool, BarChart3, Rocket } from "lucide-react";
+import { GraduationCap, Shield, MonitorPlay, LayoutDashboard, Layers, MessageSquare, BookMarked, AlertTriangle, BookOpen, Mic, Headphones, BookText, PenTool, BarChart3, Rocket, Puzzle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
@@ -21,6 +21,7 @@ const studentLinks = [
   { href: "/reading", label: "Reading", icon: BookText },
   { href: "/writing", label: "Writing", icon: PenTool },
   { href: "/english-boost", label: "English Boost", icon: Rocket },
+  { href: "/english-decoder", label: "English Decoder", icon: Puzzle },
   { href: "/progress", label: "Progress", icon: BarChart3 },
 ];
 
