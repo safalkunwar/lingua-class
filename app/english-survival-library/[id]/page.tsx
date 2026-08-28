@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useCallback } from "react";
 import { StudentSidebar } from "@/components/layout/sidebar";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -12,7 +12,7 @@ import { useSpeechSynthesis } from "@/hooks/use-speech-synthesis";
 import { survivalResources } from "@/data/english-survival-library";
 import { SurvivalResource, MiniDrill } from "@/types/english-survival-library";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowLeft, Volume2, Zap, Lightbulb, AlertTriangle, Sparkles, BookOpen, RotateCcw, HelpCircle } from "lucide-react";
+import { ArrowLeft, Volume2, Zap, Lightbulb, AlertTriangle, Sparkles, BookOpen, RotateCcw, HelpCircle, Download, Printer } from "lucide-react";
 import Link from "next/link";
 import { use } from "react";
 
@@ -28,6 +28,112 @@ export default function EnglishSurvivalLibraryDetailPage({ params }: { params: P
 
   const { addXp, incrementStreak, incrementWeeklyProgress, updateLevelProgress } = useLearningStore();
   const { speakEnglish, speakChinese } = useSpeechSynthesis();
+
+  const downloadPrintable = useCallback(() => {
+    if (!resource) return;
+    const html = `<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>${resource.title} - English Survival Library</title>
+<style>
+  @page { size: A4; margin: 2cm; }
+  body { font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: #111; line-height: 1.6; max-width: 900px; margin: 0 auto; padding: 20px; }
+  h1 { font-size: 26px; margin-bottom: 4px; }
+  h2 { font-size: 18px; margin-top: 28px; margin-bottom: 10px; color: #1f2937; }
+  .meta { color: #555; font-size: 13px; margin-bottom: 18px; }
+  .badge { display: inline-block; padding: 3px 10px; border-radius: 999px; background: #eef2ff; color: #1e3a8a; font-size: 12px; margin-right: 6px; margin-bottom: 6px; }
+  .section { margin-top: 22px; padding: 14px; border-radius: 10px; background: #f8fafc; border: 1px solid #e5e7eb; }
+  .example { padding: 12px; border-radius: 8px; background: #ffffff; border: 1px solid #e5e7eb; margin-bottom: 10px; }
+  .en { font-size: 15px; font-weight: 600; color: #0f172a; }
+  .zh { font-size: 13px; color: #475569; margin-top: 4px; }
+  .explanation { font-size: 13px; color: #1e40af; background: #eef2ff; padding: 10px; border-radius: 8px; margin-top: 8px; border-left: 3px solid #1e40af; }
+  .mistake { text-decoration: line-through; color: #b91c1c; font-size: 14px; }
+  .correction { color: #047857; font-size: 14px; }
+  .chunk { display: inline-block; padding: 6px 10px; border-radius: 8px; background: #ecfdf5; color: #064e3b; font-size: 13px; margin: 4px 6px 4px 0; }
+  table { width: 100%; border-collapse: collapse; margin-top: 8px; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #e5e7eb; font-size: 13px; }
+  th { background: #f1f5f9; color: #334155; }
+  .footer { margin-top: 30px; font-size: 12px; color: #9ca3af; text-align: center; }
+</style>
+</head>
+<body>
+  <h1>${resource.title}</h1>
+  <div class="meta">${resource.titleZh} · ${resource.difficulty} · ${resource.category}</div>
+  <div>
+    <span class="badge">${resource.difficulty}</span>
+    <span class="badge">${resource.xpReward} XP</span>
+    <span class="badge">${resource.category}</span>
+  </div>
+
+  <div class="section">
+    <h2>Explanation</h2>
+    <p>${resource.explanation}</p>
+    <p style="color:#475569">${resource.explanationZh}</p>
+  </div>
+
+  <h2>Examples</h2>
+  ${resource.examples.map(ex => `<div class="example">
+    <div class="en">${ex.en}</div>
+    <div class="zh">${ex.zh}</div>
+    ${ex.explanation ? `<div class="explanation">${ex.explanation}</div>` : ''}
+  </div>`).join('')}
+
+  ${resource.commonMistakes ? `<h2>Common Mistakes</h2>
+  <div class="section">
+    ${resource.commonMistakes.map(m => `<div style="margin-bottom:10px">
+      <div class="mistake">❌ ${m.mistake}</div>
+      <div class="correction">✅ ${m.correction}</div>
+      <div style="font-size:12px;color:#64748b">${m.correctionZh}</div>
+    </div>`).join('')}
+  </div>` : ''}
+
+  ${resource.chunks ? `<h2>Chunks</h2>
+  <div class="section">
+    ${resource.chunks.map(c => `<div style="margin-bottom:8px">
+      <span class="chunk">${c.chunk}</span>
+      <span style="font-size:13px;color:#334155;margin-left:6px">${c.meaning} · ${c.chinese}</span>
+      <div style="font-size:12px;color:#64748b;margin-top:2px">"${c.example}"</div>
+    </div>`).join('')}
+  </div>` : ''}
+
+  ${resource.comparisonTable ? `<h2>Comparison</h2>
+  <div class="section">
+    <table>
+      <tr><th>Term</th><th>Meaning</th><th>Situation</th></tr>
+      ${resource.comparisonTable.map(row => `<tr>
+        <td><strong>${row.term}</strong></td>
+        <td>${row.meaning} · ${row.chinese}</td>
+        <td style="color:#64748b">${row.situation}</td>
+      </tr>`).join('')}
+    </table>
+  </div>` : ''}
+
+  ${resource.pronunciation ? `<h2>Pronunciation</h2>
+  <div class="section">
+    <p><strong>${resource.pronunciation.phonetic}</strong></p>
+    <p style="color:#334155">${resource.pronunciation.tip}</p>
+    <p style="color:#64748b">${resource.pronunciation.tipZh}</p>
+  </div>` : ''}
+
+  <div class="footer">Generated from English Survival Library · ${new Date().toLocaleDateString()}</div>
+</body>
+</html>`;
+
+    const blob = new Blob([html], { type: 'text/html' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `${resource.id}-${resource.title.replace(/[^a-z0-9]+/gi, '-').toLowerCase()}.html`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  }, [resource]);
+
+  const printPage = useCallback(() => {
+    window.print();
+  }, []);
 
   if (!resource) {
     return (
@@ -103,13 +209,22 @@ export default function EnglishSurvivalLibraryDetailPage({ params }: { params: P
       <StudentSidebar />
       <div className="flex-1 min-w-0 p-4 sm:p-6 lg:p-8">
         <div className="max-w-3xl mx-auto min-w-0">
-          <div className="mb-4">
+          <div className="mb-4 flex items-center gap-2">
             <Link href="/english-survival-library">
               <Button variant="ghost">
                 <ArrowLeft className="h-4 w-4 mr-1" />
                 Library
               </Button>
             </Link>
+            <div className="flex-1" />
+            <Button variant="outline" size="sm" onClick={printPage} className="gap-2">
+              <Printer className="h-4 w-4" />
+              Print
+            </Button>
+            <Button variant="default" size="sm" onClick={downloadPrintable} className="gap-2">
+              <Download className="h-4 w-4" />
+              Download
+            </Button>
           </div>
 
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="mb-6">

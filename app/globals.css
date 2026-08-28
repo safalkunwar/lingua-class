@@ -175,3 +175,20 @@
     max-width: min(100vw - 32px, 960px);
   }
 }
+
+@media print {
+  body {
+    background: #fff !important;
+    color: #000 !important;
+  }
+  nav, aside, header, .no-print {
+    display: none !important;
+  }
+  main {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .print-break-inside-avoid {
+    break-inside: avoid;
+  }
+}

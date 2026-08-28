@@ -176,8 +176,9 @@ export const survivalResources: SurvivalResource[] = [
     explanation: "English sentences almost always need both a subject (who or what) and a verb (action or state). Unlike Chinese, English does not allow dropping the subject even when it's obvious from context.",
     explanationZh: "英文句子几乎总是需要主语（谁或什么）和动词（动作或状态）。与中文不同，即使上下文明显，英文也不能省略主语。",
     examples: [
-      { en: "It rains.", zh: "下雨了。（it 不能省略）" },
-      { en: "She speaks English.", zh: "她说英语。" },
+      { en: "It rains.", zh: "下雨了。（it 不能省略）", explanation: "English needs a subject for every sentence. 'It' is a dummy subject used when there is no real 'who' or 'what' doing the action." },
+      { en: "She speaks English.", zh: "她说英语。", explanation: "The subject 'She' tells us who does the action. The verb 'speaks' must agree with the subject (third person singular adds -s)." },
+      { en: "There is a cat on the roof.", zh: "屋顶上有一只猫。", explanation: "'There is/are' is another way to give a subject when the real subject comes later. It emphasizes existence, not action." },
     ],
     commonMistakes: [
       { mistake: "Raining.", correction: "It is raining.", correctionZh: "英文需要完整主语和动词，不能只说 'Raining'。" },
@@ -485,6 +486,7 @@ export const survivalResources: SurvivalResource[] = [
     examples: [
       { en: "light /laɪt/ vs right /raɪt/", zh: "光 vs 正确", explanation: "The only difference is the first sound. 'Light' uses L (tongue touches ridge). 'Right' uses R (tongue curls back)." },
       { en: "lake /leɪk/ vs rake /reɪk/", zh: "湖 vs 耙子", explanation: "Same vowel and ending. The L/R swap changes the whole word meaning. Practice these pairs slowly to feel the tongue position." },
+      { en: "play /pleɪ/ vs pray /preɪ/", zh: "玩 vs 祈祷", explanation: "Another minimal pair. The L and R sounds are at the beginning, making the contrast very clear." },
     ],
     pronunciation: { phonetic: "/l/ and /r/", tip: "For L: tongue touches the ridge. For R: tongue curls back, lips slightly rounded.", tipZh: "L：舌头接触牙龈。R：舌头向后卷，嘴唇微圆。" },
     chunks: [
@@ -805,6 +807,7 @@ export const survivalResources: SurvivalResource[] = [
     examples: [
       { en: "You should see a doctor.", zh: "你应该看医生。", explanation: "'Should' is the most common way to give advice. It is less formal than 'ought to' and works in almost every situation." },
       { en: "You ought to see a doctor.", zh: "你应该看医生。（更正式）", explanation: "'Ought to' means the same as 'should' but sounds more formal. Notice it always needs 'to' after it." },
+      { en: "You shouldn't eat so much sugar.", zh: "你不应该吃这么多糖。", explanation: "'Shouldn't' is the negative form. It is common in both spoken and written advice." },
     ],
     comparisonTable: [
       { term: "should", meaning: "应该", chinese: "常用建议", situation: "You should try it." },
@@ -830,8 +833,9 @@ export const survivalResources: SurvivalResource[] = [
     explanation: "'May' suggests a reasonable possibility. 'Might' suggests a smaller or more uncertain possibility. In modern English, the difference is subtle and often ignored. 'May' is slightly more formal.",
     explanationZh: "'May' 表示合理的可能性。'Might' 表示更小或更不确定的可能性。在现代英语中，区别很微妙，常被忽略。'May' 稍正式。",
     examples: [
-      { en: "It may rain later.", zh: "稍后可能下雨。（较可能）", explanation: "'May' suggests a reasonable chance based on evidence or general knowledge. It is slightly more formal than 'might'." },
+      { en: "It may rain later.", zh: "稍后可能下雨。（较可能）", explanation: "'May' suggests a reasonable possibility based on evidence or general knowledge. It is slightly more formal than 'might'." },
       { en: "It might rain later.", zh: "稍后可能会下雨。（较不确定）", explanation: "'Might' suggests a smaller or more uncertain possibility. The difference is subtle and often ignored in modern English." },
+      { en: "She may come to the party.", zh: "她可能会来参加派对。", explanation: "'May' can also be used for permission in formal contexts, but here it shows possibility." },
     ],
     comparisonTable: [
       { term: "may", meaning: "可能", chinese: "较可能", situation: "It may be true." },
@@ -859,6 +863,7 @@ export const survivalResources: SurvivalResource[] = [
     examples: [
       { en: "I'll answer the phone. (spontaneous)", zh: "我去接电话。（即时决定）", explanation: "'Will' is often used for decisions made at the moment of speaking. You did not plan to answer it; you decided right now." },
       { en: "I'm going to study medicine. (plan)", zh: "我打算学医。（计划）", explanation: "'Going to' is used for plans or intentions that existed before the moment of speaking. You thought about it earlier." },
+      { en: "Look out! The car is coming!", zh: "小心！车来了！", explanation: "Here 'will' is NOT used for a plan—it is a spontaneous prediction based on what you see right now." },
     ],
     comparisonTable: [
       { term: "will", meaning: "将来", chinese: "即时决定/预测", situation: "I'll help you." },
@@ -886,6 +891,7 @@ export const survivalResources: SurvivalResource[] = [
     examples: [
       { en: "Can I use your phone?", zh: "我可以用你的手机吗？（非正式）", explanation: "'Can' is commonly used for permission in casual speech. It is quick, friendly, and universally understood." },
       { en: "May I come in?", zh: "我可以进来吗？（正式）", explanation: "'May' is the traditional formal choice for permission. It is common in classrooms, meetings, and polite social situations." },
+      { en: "Can I borrow your pen?", zh: "我可以用你的笔吗？（日常）", explanation: "In everyday situations, 'can' is the most natural choice. Native speakers rarely use 'may' in casual conversation." },
     ],
     miniDrills: [
       { type: "choose", question: "Formal permission:", questionZh: "正式许可：", options: [{ text: "Can I leave?", textZh: "Can I leave?", isCorrect: false }, { text: "May I leave?", textZh: "May I leave?", isCorrect: true }] },
@@ -909,6 +915,7 @@ export const survivalResources: SurvivalResource[] = [
     examples: [
       { en: "Could you help me?", zh: "你能帮我吗？（礼貌）", explanation: "'Could' softens the request. It is polite but still common in everyday situations." },
       { en: "Would you mind closing the door?", zh: "你介意关一下门吗？（最礼貌）", explanation: "'Would you mind' is the most polite structure. It literally asks if the action would bother the person, giving them an easy way to say no." },
+      { en: "Could you pass the salt?", zh: "你能把盐递给我吗？（日常礼貌）", explanation: "'Could you' is the sweet spot for most situations—polite enough for strangers, casual enough for friends." },
     ],
     comparisonTable: [
       { term: "Can you...?", meaning: "直接请求", chinese: "不太礼貌", situation: "Asking friends" },
@@ -991,6 +998,7 @@ export const survivalResources: SurvivalResource[] = [
     examples: [
       { en: "It's May 1st.", zh: "今天是5月1日。", explanation: "Dates use ordinal numbers: 1st, 2nd, 3rd, 4th. In American English, we usually say the month before the day." },
       { en: "My birthday is on the 15th of June.", zh: "我的生日是6月15日。", explanation: "In British English, the day often comes before the month. Both orders are correct, but the preposition 'on' is always used with specific dates." },
+      { en: "Today is March 3rd, 2024.", zh: "今天是2024年3月3日。", explanation: "When including the year, American English puts month-day-year, while British English often uses day-month-year." },
     ],
     chunks: [
       { chunk: "the 1st", meaning: "第一天", chinese: "序数词", example: "It's the 1st of January." },
@@ -1343,6 +1351,7 @@ export const survivalResources: SurvivalResource[] = [
     examples: [
       { en: "Subject: Meeting Request - Project Update", zh: "主题：会议请求 - 项目更新", explanation: "A clear subject line tells the reader what the email is about and why it matters. Avoid vague subjects like 'Hello' or 'Update'." },
       { en: "I'm writing to request a meeting about...", zh: "我写邮件请求关于...的会议。", explanation: "'I'm writing to' is a standard professional opening. It states your purpose immediately without unnecessary introduction." },
+      { en: "Please let me know if you're available.", zh: "请告诉我你是否方便。", explanation: "Ending with a clear call to action tells the reader exactly what to do next. Vague endings like 'Thanks' leave the reader unsure." },
     ],
     chunks: [
       { chunk: "I'm writing to", meaning: "我写邮件是为了", chinese: "邮件开场", example: "I'm writing to ask about..." },
@@ -1397,6 +1406,8 @@ export const survivalResources: SurvivalResource[] = [
     explanationZh: "使用 STAR 方法：情境、任务、行动、结果。回答控制在2分钟以内。用具体数字和结果说明。永远准备2-3个问题问面试官。",
     examples: [
       { en: "In my previous role, I increased sales by 20% over six months.", zh: "在之前的岗位上，我在六个月内将销售额提高了20%。", explanation: "This answer uses the STAR method: Situation (previous role), Task (increase sales), Action (strategy), Result (20% growth)." },
+      { en: "Tell me about a challenge you faced.", zh: "告诉我你面临的一个挑战。", explanation: "Use STAR here too: describe the Situation, the Task you had, the Action you took, and the Result you achieved." },
+      { en: "Why do you want this job?", zh: "你为什么想要这份工作？", explanation: "Connect your skills to the company's needs. Mention specific projects or values that match your experience." },
     ],
     chunks: [
       { chunk: "In my previous role", meaning: "在我之前的岗位上", chinese: "STAR 开场", example: "In my previous role, I led a team." },
@@ -1424,6 +1435,7 @@ export const survivalResources: SurvivalResource[] = [
     examples: [
       { en: "If we can agree on price, we can sign today.", zh: "如果价格能达成一致，我们今天就能签约。", explanation: "This opens with a condition ('if') and shows willingness to move forward. It frames negotiation as collaboration." },
       { en: "That's a bit higher than our budget.", zh: "这比我们的预算高一点。", explanation: "This is diplomatic language. 'A bit higher' is softer than 'too expensive', keeping the relationship positive." },
+      { en: "What if we meet in the middle on price?", zh: "如果我们价格上各让一步呢？", explanation: "'Meet in the middle' is a common negotiation phrase. It suggests compromise without surrendering your position." },
     ],
     chunks: [
       { chunk: "If we can agree on X", meaning: "如果X能达成一致", chinese: "条件句开场", example: "If we can agree on delivery..." },
