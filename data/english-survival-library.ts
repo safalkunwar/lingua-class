@@ -35,8 +35,10 @@ export const survivalResources: SurvivalResource[] = [
     explanation: "Use 'a' before consonant sounds, 'an' before vowel sounds, and 'the' for specific things. No articles are used for general plural or uncountable nouns.",
     explanationZh: "辅音音素前用 'a'，元音音素前用 'an'，特定事物前用 'the'。泛指复数或不可数名词时不加冠词。",
     examples: [
-      { en: "I ate an apple.", zh: "我吃了一个苹果。（正确）" },
-      { en: "The apple was delicious.", zh: "这个苹果很好吃。（特指）" },
+      { en: "I ate an apple.", zh: "我吃了一个苹果。（正确）", explanation: "'Apple' starts with a vowel sound /æ/, so we use 'an' before it. The article agrees with the sound, not the letter." },
+      { en: "The apple was delicious.", zh: "这个苹果很好吃。（特指）", explanation: "'The' is used because we are talking about a specific apple that both the speaker and listener know about." },
+      { en: "She goes to a university.", zh: "她上了一所大学。", explanation: "Even though 'university' starts with the letter 'u', it begins with a consonant sound /j/, so we use 'a'." },
+      { en: "Water is important.", zh: "水很重要。", explanation: "No article is needed here because 'water' is an uncountable noun used in a general sense." },
     ],
     commonMistakes: [
       { mistake: "I ate a apple.", correction: "I ate an apple.", correctionZh: "apple 以元音音素开头，用 an。" },
@@ -68,9 +70,10 @@ export const survivalResources: SurvivalResource[] = [
     explanation: "'At' for specific points, 'on' for surfaces/days, 'in' for longer periods, enclosed spaces, or cities/countries.",
     explanationZh: "'At' 用于具体时间点，'on' 用于表面/日期，'in' 用于较长时间段、封闭空间或城市/国家。",
     examples: [
-      { en: "at 5:00", zh: "在5点" },
-      { en: "on Monday", zh: "在周一" },
-      { en: "in China", zh: "在中国" },
+      { en: "at 5:00", zh: "在5点", explanation: "'At' is used for precise clock times. Think of it as a pinpoint on a map." },
+      { en: "on Monday", zh: "在周一", explanation: "'On' is used for days and dates because they are like a surface or line in the calendar." },
+      { en: "in China", zh: "在中国", explanation: "'In' is used for larger enclosed spaces like countries, cities, and months." },
+      { en: "at the weekend", zh: "在周末", explanation: "British English uses 'at' for weekend, while American English often uses 'on'." },
     ],
     commonMistakes: [
       { mistake: "in Monday", correction: "on Monday", correctionZh: "具体某一天用 on。" },
@@ -106,8 +109,9 @@ export const survivalResources: SurvivalResource[] = [
     explanation: "'Can' expresses ability or possibility in the present. 'Could' is the past form or a softer, more polite version. Use 'could' when asking for favors or making polite requests.",
     explanationZh: "'Can' 表示现在的能力或可能性。'Could' 是过去式或更柔和、更礼貌的版本。请求帮忙或礼貌要求时用 'could'。",
     examples: [
-      { en: "I can swim.", zh: "我会游泳。" },
-      { en: "Could you help me?", zh: "你能帮我吗？（更礼貌）" },
+      { en: "I can swim.", zh: "我会游泳。", explanation: "'Can' expresses present ability. It is followed directly by the base verb 'swim' with no 'to'." },
+      { en: "Could you help me?", zh: "你能帮我吗？（更礼貌）", explanation: "'Could' softens the request. It makes the same question feel more polite and less demanding." },
+      { en: "I couldn't do it yesterday.", zh: "我昨天做不到。", explanation: "'Could' is also the past tense of 'can', used to talk about past ability." },
     ],
     commonMistakes: [
       { mistake: "Can you to help me?", correction: "Can you help me?", correctionZh: "情态动词后接动词原形，不加 to。" },
@@ -137,8 +141,10 @@ export const survivalResources: SurvivalResource[] = [
     explanation: "Chinese learners often transfer sentence structures directly from Chinese. These five mistakes are extremely common and easy to fix once you notice them.",
     explanationZh: "中文学习者常直接把中文句式翻译成英文。这五个错误非常常见，一旦注意就很容易改正。",
     examples: [
-      { en: "I very like it. ❌", zh: "我 very like 它。❌" },
-      { en: "I really like it. ✅", zh: "我真的很喜欢它。✅" },
+      { en: "I very like it. ❌", zh: "我 very like 它。❌", explanation: "Chinese word order is transferred directly. In English, adverbs like 'very' cannot modify verbs like 'like'." },
+      { en: "I really like it. ✅", zh: "我真的很喜欢它。✅", explanation: "'Really' is the correct adverb to modify 'like'. It strengthens the verb naturally in English." },
+      { en: "He is tall than me. ❌", zh: "他比我高。❌", explanation: "Comparatives need the '-er' suffix or 'more'. 'Tall' becomes 'taller' when comparing two people." },
+      { en: "I go to home. ❌", zh: "我回家。❌", explanation: "'Home' acts as an adverb here, not a noun. Adverbs of place do not need 'to' before them." },
     ],
     commonMistakes: [
       { mistake: "I very like it.", correction: "I really like it.", correctionZh: "'very' 不能直接修饰动词 'like'，要用 'really'。" },
@@ -200,8 +206,9 @@ export const survivalResources: SurvivalResource[] = [
     explanation: "English starts with Subject + Verb + Object (SVO). You can expand with adjectives, adverbs, and clauses. The key is adding information step by step rather than stacking it.",
     explanationZh: "英文以主语+动词+宾语（SVO）为基础。你可以用形容词、副词和从句来扩展。关键是逐步添加信息，而不是堆叠。",
     examples: [
-      { en: "I ate pizza.", zh: "我吃了披萨。（基础）" },
-      { en: "I ate a delicious pepperoni pizza at Mario's last night.", zh: "我昨晚在 Mario 家吃了一个美味的意式辣香肠披萨。（扩展）" },
+      { en: "I ate pizza.", zh: "我吃了披萨。（基础）", explanation: "The simplest sentence has only Subject (I) + Verb (ate) + Object (pizza). Everything else is optional." },
+      { en: "I ate a delicious pepperoni pizza at Mario's last night.", zh: "我昨晚在 Mario 家吃了一个美味的意式辣香肠披萨。（扩展）", explanation: "This adds an article (a), adjective (delicious), another adjective (pepperoni), place (at Mario's), and time (last night). English builds by adding details step by step." },
+      { en: "She speaks English every morning.", zh: "她每天早上说英语。", explanation: "Here we add frequency (every morning) to the basic SVO structure. Notice the verb stays in the same position." },
     ],
     chunks: [
       { chunk: "S + V + O", meaning: "主谓宾", chinese: "最基础句型", example: "I love English." },
@@ -227,8 +234,9 @@ export const survivalResources: SurvivalResource[] = [
     explanation: "Use 'do/does/did' to make questions and negatives in the simple tenses. The main verb stays in base form. 'Be' verbs move before the subject in questions.",
     explanationZh: "简单时态中用 'do/does/did' 构成疑问句和否定句。主要动词保持原形。'Be' 动词在疑问句中移到主语前。",
     examples: [
-      { en: "Do you like coffee?", zh: "你喜欢咖啡吗？" },
-      { en: "She doesn't like coffee.", zh: "她不喜欢咖啡。" },
+      { en: "Do you like coffee?", zh: "你喜欢咖啡吗？", explanation: "To make a yes/no question in simple present, we use 'Do/Does' at the beginning, then the subject, then the base verb." },
+      { en: "She doesn't like coffee.", zh: "她不喜欢咖啡。", explanation: "To make a negative, use 'Do/Does + not' before the base verb. 'Does not' contracts to 'doesn't'." },
+      { en: "Is she coming?", zh: "她来吗？", explanation: "With 'be' verbs, we simply move the verb before the subject. No 'do/does' is needed." },
     ],
     commonMistakes: [
       { mistake: "Do you likes coffee?", correction: "Do you like coffee?", correctionZh: "do/does 后面用动词原形。" },
@@ -253,8 +261,9 @@ export const survivalResources: SurvivalResource[] = [
     explanation: "Clauses add extra information to a main sentence. Use 'because' for reasons, 'when' for time, 'if' for conditions, and 'although' for contrast. Each clause needs its own subject and verb.",
     explanationZh: "从句为主句添加额外信息。'because' 表示原因，'when' 表示时间，'if' 表示条件，'although' 表示对比。每个从句都需要自己的主语和动词。",
     examples: [
-      { en: "I stayed home because it rained.", zh: "我待在家里因为下雨了。" },
-      { en: "Although it rained, I went out.", zh: "虽然下雨了，我还是出去了。" },
+      { en: "I stayed home because it rained.", zh: "我待在家里因为下雨了。", explanation: "'Because' introduces a reason clause. The clause 'because it rained' needs its own subject (it) and verb (rained)." },
+      { en: "Although it rained, I went out.", zh: "虽然下雨了，我还是出去了。", explanation: "'Although' shows contrast. The main clause and the although-clause can be in either order. Notice the comma when 'although' starts the sentence." },
+      { en: "I'll call you when I arrive.", zh: "我到了就给你打电话。", explanation: "'When' connects two events in time. The future tense is not needed after 'when'; we use present simple ('arrive') to refer to the future." },
     ],
     miniDrills: [
       { type: "choose", question: "___ it was late, I kept working.", questionZh: "虽然已经很晚了，我还是继续工作。", options: [{ text: "Because", textZh: "Because", isCorrect: false }, { text: "Although", textZh: "Although", isCorrect: true }, { text: "When", textZh: "When", isCorrect: false }] },
@@ -276,8 +285,9 @@ export const survivalResources: SurvivalResource[] = [
     explanation: "Native speakers use filler phrases naturally. These give you time to organize thoughts without sounding lost. The trick is using them lightly and moving quickly to your answer.",
     explanationZh: "母语者自然地使用填充短语。这些让你有时间整理思路，同时不会显得不知所措。关键在于轻描淡写地使用它们，然后快速转到你的答案。",
     examples: [
-      { en: "That's a good question. Let me think...", zh: "好问题。让我想想..." },
-      { en: "I've never thought about it that way, but...", zh: "我从没那样想过，但是..." },
+      { en: "That's a good question. Let me think...", zh: "好问题。让我想想...", explanation: "This phrase buys you 2-3 seconds while organizing your thoughts. It shows you take the question seriously." },
+      { en: "I've never thought about it that way, but...", zh: "我从没那样想过，但是...", explanation: "This acknowledges the other person's point before adding your own view. It keeps the conversation respectful." },
+      { en: "That's interesting. Tell me more.", zh: "有意思。多告诉我一些。", explanation: "A simple way to keep the conversation going without committing to a specific opinion yet." },
     ],
     chunks: [
       { chunk: "That's interesting", meaning: "有意思", chinese: "通用回应", example: "That's interesting. I'd like to hear more." },
@@ -303,8 +313,9 @@ export const survivalResources: SurvivalResource[] = [
     explanation: "Instead of blunt 'yes' or 'no', use phrases that show how strongly you feel. Strong agreement uses 'exactly' or 'absolutely'. Disagreement can be softened with 'I see your point, but...'",
     explanationZh: "与其直白地说 'yes' 或 'no'，不如使用表达你感受程度的短语。强烈同意用 'exactly' 或 'absolutely'。反对可以用 'I see your point, but...' 来软化。",
     examples: [
-      { en: "I totally agree.", zh: "我完全同意。" },
-      { en: "I see what you mean, but...", zh: "我明白你的意思，但是..." },
+      { en: "I totally agree.", zh: "我完全同意。", explanation: "'Totally' adds strong emphasis. Use this when you fully support the other person's idea." },
+      { en: "I see what you mean, but...", zh: "我明白你的意思，但是...", explanation: "This softens disagreement by first acknowledging the other person's perspective before introducing your own." },
+      { en: "Absolutely!", zh: "绝对！", explanation: "A short, strong agreement. It works well in both formal and casual conversations." },
     ],
     chunks: [
       { chunk: "I totally agree", meaning: "我完全同意", chinese: "强烈同意", example: "I totally agree with you on this." },
@@ -330,8 +341,9 @@ export const survivalResources: SurvivalResource[] = [
     explanation: "If you're not sure you understood, use clarification phrases. This shows engagement, not confusion. Native speakers do this all the time in meetings and conversations.",
     explanationZh: "如果你不确定是否听懂了，使用澄清短语。这表示你在参与，而不是困惑。母语者在会议和对话中经常这样做。",
     examples: [
-      { en: "So, if I understand correctly...", zh: "所以，如果我理解正确的话..." },
-      { en: "Just to be clear, you mean...?", zh: "确认一下，你的意思是...？" },
+      { en: "So, if I understand correctly...", zh: "所以，如果我理解正确的话...", explanation: "This phrase buys you time and confirms you are following. It shows active listening, not confusion." },
+      { en: "Just to be clear, you mean...?", zh: "确认一下，你的意思是...？", explanation: "Use this in meetings or important conversations to avoid mistakes. It restates what you heard in your own words." },
+      { en: "Could you repeat that last part?", zh: "你能重复一下最后那部分吗？", explanation: "A polite way to ask for clarification without sounding like you weren't paying attention." },
     ],
     chunks: [
       { chunk: "So you mean...", meaning: "所以你的意思是", chinese: "确认理解", example: "So you mean we should start on Monday?" },
@@ -357,8 +369,9 @@ export const survivalResources: SurvivalResource[] = [
     explanation: "When you miss something, don't panic. Native speakers miss things all the time. These phrases are polite, honest, and universally understood.",
     explanationZh: "没听清时不要慌。母语者也经常漏听。这些表达既礼貌又诚实，且 universally understood。",
     examples: [
-      { en: "Sorry, I didn't catch that.", zh: "抱歉，我没听清。" },
-      { en: "Could you say that one more time?", zh: "你能再说一遍吗？" },
+      { en: "Sorry, I didn't catch that.", zh: "抱歉，我没听清。", explanation: "A polite and honest way to admit you missed something. Native speakers use this naturally—it does not make you look weak." },
+      { en: "Could you say that one more time?", zh: "你能再说一遍吗？", explanation: "This is more specific than just 'what?' It asks for a full repetition, which helps you hear the missing words in context." },
+      { en: "I missed that last part. Could you repeat it?", zh: "我没听清最后那部分。你能重复一下吗？", explanation: "Being specific about what you missed ('the last part') makes it easier for the speaker to help you." },
     ],
     chunks: [
       { chunk: "I didn't catch that", meaning: "我没听清", chinese: "最常用的表达", example: "Sorry, I didn't catch that." },
@@ -384,8 +397,9 @@ export const survivalResources: SurvivalResource[] = [
     explanation: "You have every right to ask for slower speech. It's not rude—it shows you want to understand. Add 'please' to keep it friendly.",
     explanationZh: "你有权利要求对方放慢语速。这不粗鲁——这表示你想理解。加上 'please' 让它保持友好。",
     examples: [
-      { en: "Could you speak more slowly, please?", zh: "你能说慢一点吗？" },
-      { en: "I'm still learning English.", zh: "我还在学英语。" },
+      { en: "Could you speak more slowly, please?", zh: "你能说慢一点吗？", explanation: "This is the most common and polite request. Adding 'please' keeps the tone friendly even when asking someone to change their speech." },
+      { en: "I'm still learning English.", zh: "我还在学英语。", explanation: "Giving a reason makes your request feel more natural. It shows you are trying, not just being difficult." },
+      { en: "Could you slow down a little?", zh: "你能放慢一点吗？", explanation: "'A little' softens the request. It implies you are following mostly, but need help with the speed." },
     ],
     chunks: [
       { chunk: "Speak more slowly", meaning: "说慢一点", chinese: "直接请求", example: "Could you speak more slowly?" },
@@ -411,8 +425,9 @@ export const survivalResources: SurvivalResource[] = [
     explanation: "When someone uses a word or phrase you don't know, ask for its meaning. You can also ask them to use simpler words. This is a normal part of learning.",
     explanationZh: "当别人用了你不懂的单词或短语时，询问它的意思。你也可以要求对方用更简单的词。这是学习的正常部分。",
     examples: [
-      { en: "What does that word mean?", zh: "那个单词是什么意思？" },
-      { en: "Can you say it in simpler words?", zh: "你能用更简单的词说吗？" },
+      { en: "What does that word mean?", zh: "那个单词是什么意思？", explanation: "The most direct way to ask for a definition. Use it when you hear a single unfamiliar word." },
+      { en: "Can you say it in simpler words?", zh: "你能用更简单的词说吗？", explanation: "This asks the speaker to rephrase, not just define. It is useful when the whole sentence is confusing." },
+      { en: "What do you mean by 'procrastinate'?", zh: "你说'拖延'是什么意思？", explanation: "Putting the word in quotes makes it clear which exact word you are asking about." },
     ],
     chunks: [
       { chunk: "What does X mean?", meaning: "X 是什么意思？", chinese: "问词义", example: "What does 'procrastinate' mean?" },
@@ -438,8 +453,10 @@ export const survivalResources: SurvivalResource[] = [
     explanation: "Place your tongue between your teeth and blow air for unvoiced TH (think, three). Add vibration from your throat for voiced TH (this, that). This sound does not exist in Chinese, so it takes practice.",
     explanationZh: "把舌头放在牙齿之间，吹气发清音 TH（think, three）。加一点喉咙振动发浊音 TH（this, that）。中文里没有这个音，所以需要练习。",
     examples: [
-      { en: "think /θɪŋk/", zh: "想（清音 TH）" },
-      { en: "this /ðɪs/", zh: "这个（浊音 TH）" },
+      { en: "think /θɪŋk/", zh: "想（清音 TH）", explanation: "The /θ/ sound is made by placing the tongue between the teeth and blowing air without using the voice box." },
+      { en: "this /ðɪs/", zh: "这个（浊音 TH）", explanation: "The /ð/ sound uses the same tongue position, but adds vibration from the throat. That vibration is the difference." },
+      { en: "three /θriː/", zh: "三（清音 TH）", explanation: "Same sound as 'think'. If you can say 'think', you can say 'three'." },
+      { en: "that /ðæt/", zh: "那个（浊音 TH）", explanation: "Same sound as 'this'. The vowel changes, but the TH sound stays the same." },
     ],
     pronunciation: { phonetic: "/θ/ and /ð/", tip: "Stick your tongue slightly between your teeth. Blow gently for /θ/. Add voice (throat vibration) for /ð/.", tipZh: "把舌头轻轻放在牙齿之间。轻轻吹气发 /θ/。加一点喉咙振动发 /ð/。", audioText: "think, this, three, that" },
     chunks: [
@@ -466,8 +483,8 @@ export const survivalResources: SurvivalResource[] = [
     explanation: "For L, the tongue touches the ridge behind your upper teeth. For R, the tongue curls back and does not touch anything. Practice minimal pairs to build muscle memory.",
     explanationZh: "发 L 时，舌头接触上排牙齿后面的牙龈。发 R 时，舌头向后卷，不接触任何东西。练习最小对立体来建立肌肉记忆。",
     examples: [
-      { en: "light /laɪt/ vs right /raɪt/", zh: "光 vs 正确" },
-      { en: "lake /leɪk/ vs rake /reɪk/", zh: "湖 vs 耙子" },
+      { en: "light /laɪt/ vs right /raɪt/", zh: "光 vs 正确", explanation: "The only difference is the first sound. 'Light' uses L (tongue touches ridge). 'Right' uses R (tongue curls back)." },
+      { en: "lake /leɪk/ vs rake /reɪk/", zh: "湖 vs 耙子", explanation: "Same vowel and ending. The L/R swap changes the whole word meaning. Practice these pairs slowly to feel the tongue position." },
     ],
     pronunciation: { phonetic: "/l/ and /r/", tip: "For L: tongue touches the ridge. For R: tongue curls back, lips slightly rounded.", tipZh: "L：舌头接触牙龈。R：舌头向后卷，嘴唇微圆。" },
     chunks: [
@@ -494,8 +511,9 @@ export const survivalResources: SurvivalResource[] = [
     explanation: "Written English keeps full forms. Spoken English uses contractions, drops letters, and links words. 'I want to' often sounds like 'I wanna'. Train your ear by listening for these changes.",
     explanationZh: "书面英语保留完整形式。口语英语使用缩略形式、省略字母并连读单词。'I want to' 常听起来像 'I wanna'。通过听这些变化来训练你的耳朵。",
     examples: [
-      { en: "I want to → I wanna", zh: "口语连读" },
-      { en: "Do you want to → D'you wanna", zh: "快速口语" },
+      { en: "I want to → I wanna", zh: "口语连读", explanation: "'Want to' becomes 'wanna' in fast speech. The 't' sound disappears and the vowel changes. This is extremely common in casual conversation." },
+      { en: "Do you want to → D'you wanna", zh: "快速口语", explanation: "When speaking quickly, 'Do you' often reduces to 'D'you'. Listen for these reduced forms to improve comprehension." },
+      { en: "I'm going to → I'm gonna", zh: "将来口语", explanation: "'Going to' reduces to 'gonna' in spoken English. It still means future intention, even though the form changes." },
     ],
     chunks: [
       { chunk: "wanna", meaning: "想要", chinese: "want to 的口语形式", example: "I wanna go home." },
@@ -521,8 +539,9 @@ export const survivalResources: SurvivalResource[] = [
     explanation: "In English, stressed syllables are longer and louder. Unstressed syllables become weak and fast. This is why 'I don't know' sounds like 'I donno'. Listen for stress patterns, not every word.",
     explanationZh: "在英语中，重读音节更长更响。非重读音节变得弱而快。这就是为什么 'I don't know' 听起来像 'I donno'。听重音模式，而不是每个单词。",
     examples: [
-      { en: "I don't know → /aɪ doʊnoʊ/", zh: "弱读和连读" },
-      { en: "What are you doing? → /ˈwʌt ə yə ˈduɪŋ/", zh: "弱读形式" },
+      { en: "I don't know → /aɪ doʊnoʊ/", zh: "弱读和连读", explanation: "'Don't know' merges into one syllable. The 't' disappears and 'know' reduces. Native speakers do this automatically." },
+      { en: "What are you doing? → /ˈwʌt ə yə ˈduɪŋ/", zh: "弱读形式", explanation: "'Are' and 'you' become weak schwa sounds /ə/. Only the stressed words remain clear: WHAT and DOING." },
+      { en: "I'm gonna call you → /aɪm ˈɡʌnə ˈkɔːl ju/", zh: "节奏模式", explanation: "English has a rhythm of stressed-unstressed-stressed-unstressed. Tapping your foot to the stressed words helps you hear the pattern." },
     ],
     pronunciation: { phonetic: "/ˈwʌt ə yə ˈduːɪŋ/", tip: "Focus on the stressed words. Weak words like 'are' and 'you' become schwa /ə/.", tipZh: "注意重读单词。'are' 和 'you' 等弱词变成 schwa /ə/。" },
     miniDrills: [
@@ -545,8 +564,10 @@ export const survivalResources: SurvivalResource[] = [
     explanation: "If something causes the feeling, it's -ing. If you feel the emotion, it's -ed. 'The movie is interesting' (the movie causes interest). 'I am interested' (you feel interest).",
     explanationZh: "如果某物引起感受，用 -ing。如果你感受到情绪，用 -ed。'The movie is interesting'（电影引起兴趣）。'I am interested'（你感到兴趣）。",
     examples: [
-      { en: "The book is boring.", zh: "这本书很无聊。（书导致无聊）" },
-      { en: "I am bored.", zh: "我很无聊。（我感到无聊）" },
+      { en: "The book is boring.", zh: "这本书很无聊。（书导致无聊）", explanation: "'Boring' describes the book's effect on people. The book causes the feeling, so we use the -ing form." },
+      { en: "I am bored.", zh: "我很无聊。（我感到无聊）", explanation: "'Bored' describes your feeling. You experience the emotion, so we use the -ed form." },
+      { en: "The movie was exciting.", zh: "电影很刺激。（电影导致兴奋）", explanation: "The movie causes excitement, so we use the -ing adjective to describe it." },
+      { en: "I was excited.", zh: "我很兴奋。（我感到兴奋）", explanation: "You feel the excitement, so we use the -ed adjective to describe your state." },
     ],
     comparisonTable: [
       { term: "interesting", meaning: "有趣的", chinese: "描述事物", situation: "The book is interesting." },
@@ -574,8 +595,9 @@ export const survivalResources: SurvivalResource[] = [
     explanation: "Use 'say' when the words matter: 'He said hello.' Use 'tell' when there is a person receiving information: 'He told me a story.' Common pattern: tell + someone + something.",
     explanationZh: "当话的内容重要时用 'say'：'He said hello.' 当有人接收信息时用 'tell'：'He told me a story.' 常见模式：tell + 某人 + 某事。",
     examples: [
-      { en: "He said he was tired.", zh: "他说他累了。（内容）" },
-      { en: "He told me he was tired.", zh: "他告诉我他累了。（+ 接收者）" },
+      { en: "He said he was tired.", zh: "他说他累了。（内容）", explanation: "'Say' focuses on the words spoken. We use it when the exact message matters more than who received it." },
+      { en: "He told me he was tired.", zh: "他告诉我他累了。（+ 接收者）", explanation: "'Tell' always involves someone receiving information. The pattern is: tell + person + information." },
+      { en: "She said 'hello'.", zh: "她说'你好'。", explanation: "When quoting exact words, 'say' is the natural choice. 'Tell' would need an object: 'She told me hello' is unusual." },
     ],
     comparisonTable: [
       { term: "say", meaning: "说（内容）", chinese: "强调内容", situation: "He said 'hello'." },
@@ -602,8 +624,10 @@ export const survivalResources: SurvivalResource[] = [
     explanation: "'Make' is used for creating or producing something. 'Do' is used for tasks, jobs, or actions. Collocations matter: make a plan, do homework, make coffee, do laundry.",
     explanationZh: "'Make' 用于创造或生产某物。'Do' 用于任务、工作或行动。搭配很重要：make a plan, do homework, make coffee, do laundry。",
     examples: [
-      { en: "I made coffee.", zh: "我煮了咖啡。（创造）" },
-      { en: "I did my homework.", zh: "我做了作业。（任务）" },
+      { en: "I made coffee.", zh: "我煮了咖啡。（创造）", explanation: "'Make' is used when you create or produce something. Coffee did not exist before you made it." },
+      { en: "I did my homework.", zh: "我做了作业。（任务）", explanation: "'Do' is used for tasks, activities, and jobs. Homework is a task you complete, not something you create." },
+      { en: "She made a plan.", zh: "她做了一个计划。", explanation: "A plan is a created document or idea, so 'make' is correct." },
+      { en: "He did the laundry.", zh: "他洗了衣服。", explanation: "Laundry is a household task, so 'do' is the natural collocation." },
     ],
     comparisonTable: [
       { term: "make", meaning: "创造", chinese: "制造", situation: "make coffee / make a plan" },
@@ -629,8 +653,9 @@ export const survivalResources: SurvivalResource[] = [
     explanation: "From the giver's perspective, you lend. From the receiver's perspective, you borrow. The direction matters. Lend goes out, borrow comes in.",
     explanationZh: "从借出者的角度，用 lend。从借入者的角度，用 borrow。方向很重要。Lend 是出去，borrow 是进来。",
     examples: [
-      { en: "Can you lend me $10?", zh: "你能借给我10美元吗？（借出者说）" },
-      { en: "Can I borrow your pen?", zh: "我能借你的笔吗？（借入者说）" },
+      { en: "Can you lend me $10?", zh: "你能借给我10美元吗？（借出者说）", explanation: "The speaker is asking YOU to give money. From the giver's perspective, the word is 'lend'." },
+      { en: "Can I borrow your pen?", zh: "我能借你的笔吗？（借入者说）", explanation: "The speaker wants to take something. From the receiver's perspective, the word is 'borrow'." },
+      { en: "The bank lends money.", zh: "银行借钱出去。", explanation: "Banks give money to people, so they 'lend'. The direction is out from the bank." },
     ],
     miniDrills: [
       { type: "choose", question: "You give money. You ___ it.", questionZh: "你给钱。你___它。", options: [{ text: "lend", textZh: "lend", isCorrect: true }, { text: "borrow", textZh: "borrow", isCorrect: false }] },
@@ -652,8 +677,9 @@ export const survivalResources: SurvivalResource[] = [
     explanation: "British English often uses 'have' where American English uses 'be': 'I've got a car' vs 'I have a car'. Both are correct, but 'have got' is more common in spoken British English.",
     explanationZh: "英式英语常使用 'have' 而美式英语使用 'be'：'I've got a car' vs 'I have a car'。两者都正确，但 'have got' 在英式口语中更常见。",
     examples: [
-      { en: "I've got a new job.", zh: "我有新工作了。（英式）" },
-      { en: "I have a new job.", zh: "我有新工作了。（美式）" },
+      { en: "I've got a new job.", zh: "我有新工作了。（英式）", explanation: "In British English, 'have got' is common in spoken language. It means the same as 'have' but sounds more conversational." },
+      { en: "I have a new job.", zh: "我有新工作了。（美式）", explanation: "In American English, 'have' alone is the standard way to express possession or state." },
+      { en: "Have you got a minute?", zh: "你有空吗？（英式）", explanation: "British English often uses 'have got' for questions about possession or time." },
     ],
     miniDrills: [
       { type: "choose", question: "British: 'I've ___ a car.'", questionZh: "英式：", options: [{ text: "got", textZh: "got", isCorrect: true }, { text: "be", textZh: "be", isCorrect: false }] },
@@ -675,9 +701,9 @@ export const survivalResources: SurvivalResource[] = [
     explanation: "Use 'some' in positive sentences and offers. Use 'any' in questions and negatives. But when offering or requesting, 'some' is common even in questions because you expect a positive answer.",
     explanationZh: "肯定句和提供时用 'some'。疑问句和否定句用 'any'。但在提供或请求时，即使是在疑问句中，'some' 也很常见，因为期望得到肯定回答。",
     examples: [
-      { en: "I have some money.", zh: "我有一些钱。（肯定）" },
-      { en: "Do you have any money?", zh: "你有钱吗？（疑问）" },
-      { en: "Would you like some coffee?", zh: "你想喝点咖啡吗？（提供，用 some）" },
+      { en: "I have some money.", zh: "我有一些钱。（肯定）", explanation: "'Some' is used in positive sentences to indicate an indefinite quantity." },
+      { en: "Do you have any money?", zh: "你有钱吗？（疑问）", explanation: "'Any' is the standard choice for questions. It suggests the speaker is unsure about the existence of money." },
+      { en: "Would you like some coffee?", zh: "你想喝点咖啡吗？（提供，用 some）", explanation: "Even though this is a question, we use 'some' because we expect a positive answer. It is an offer, not a real question about existence." },
     ],
     miniDrills: [
       { type: "choose", question: "I have ___ apples.", questionZh: "我有一些苹果。", options: [{ text: "some", textZh: "some", isCorrect: true }, { text: "any", textZh: "any", isCorrect: false }] },
@@ -699,8 +725,10 @@ export const survivalResources: SurvivalResource[] = [
     explanation: "Place 'too' before adjectives/adverbs: 'too hot'. Place 'enough' after adjectives/adverbs: 'hot enough'. 'Too' means excessive. 'Enough' means sufficient.",
     explanationZh: "'Too' 放在形容词/副词前面：'too hot'。'Enough' 放在形容词/副词后面：'hot enough'。'Too' 表示过多。'Enough' 表示足够。",
     examples: [
-      { en: "It's too hot.", zh: "太热了。（过多）" },
-      { en: "It's hot enough.", zh: "足够热。（充足）" },
+      { en: "It's too hot.", zh: "太热了。（过多）", explanation: "'Too' comes BEFORE the adjective and means 'more than needed'. It implies a problem or impossibility." },
+      { en: "It's hot enough.", zh: "足够热。（充足）", explanation: "'Enough' comes AFTER the adjective and means 'sufficient'. It implies the standard is met." },
+      { en: "He is too young to drive.", zh: "他太年轻了，不能开车。", explanation: "'Too + adjective + to' means the action is impossible because of the quality. He cannot drive because of his age." },
+      { en: "He is old enough to drive.", zh: "他足够大了，可以开车。", explanation: "'Adjective + enough + to' means the action is possible because the standard is met." },
     ],
     miniDrills: [
       { type: "choose", question: "The coffee is ___ hot.", questionZh: "咖啡太烫了。", options: [{ text: "too", textZh: "too", isCorrect: true }, { text: "enough", textZh: "enough", isCorrect: false }] },
@@ -722,8 +750,9 @@ export const survivalResources: SurvivalResource[] = [
     explanation: "'Other' refers to an additional or different item. 'Another' is 'an + other', meaning one more or a different one. 'Other' is usually plural or with 'the'. 'Another' is always singular.",
     explanationZh: "'Other' 指另一个或不同的项目。'Another' 是 'an + other'，表示再一个或另一个不同的。'Other' 通常用复数或加 'the'。'Another' 永远是单数。",
     examples: [
-      { en: "I want another coffee.", zh: "我想再来一杯咖啡。（+1）" },
-      { en: "I want other options.", zh: "我想要其他选项。（不同的）" },
+      { en: "I want another coffee.", zh: "我想再来一杯咖啡。（+1）", explanation: "'Another' = 'an + other'. It means one more of the same thing. It is always singular." },
+      { en: "I want other options.", zh: "我想要其他选项。（不同的）", explanation: "'Other' means different or additional. It is usually used with plural nouns or with 'the'." },
+      { en: "I have another idea.", zh: "我有一个新想法。", explanation: "'Another' can also mean 'an additional' or 'a different' when used with singular countable nouns." },
     ],
     miniDrills: [
       { type: "choose", question: "Can I have ___ cookie?", questionZh: "我能再来一块饼干吗？", options: [{ text: "other", textZh: "other", isCorrect: false }, { text: "another", textZh: "another", isCorrect: true }] },
@@ -745,8 +774,9 @@ export const survivalResources: SurvivalResource[] = [
     explanation: "'Must' expresses the speaker's personal belief or strong necessity. 'Have to' expresses external rules, laws, or other people's requirements. 'Don't have to' means it's optional, not forbidden.",
     explanationZh: "'Must' 表达说话人的个人信念或强烈必要性。'Have to' 表达外部规则、法律或他人的要求。'Don't have to' 表示可选，不是禁止。",
     examples: [
-      { en: "I must study.", zh: "我必须学习。（主观）" },
-      { en: "I have to wear a uniform.", zh: "我必须穿制服。（外部规则）" },
+      { en: "I must study.", zh: "我必须学习。（主观）", explanation: "'Must' comes from the speaker's internal feeling. No one else is forcing this; you feel it is necessary." },
+      { en: "I have to wear a uniform.", zh: "我必须穿制服。（外部规则）", explanation: "'Have to' is imposed by outside rules or authority. The speaker does not control this requirement." },
+      { en: "You don't have to come.", zh: "你不想来就不用来。", explanation: "'Don't have to' means it is optional. It is the opposite of obligation—it is freedom, not prohibition." },
     ],
     comparisonTable: [
       { term: "must", meaning: "主观必须", chinese: "个人强烈感觉", situation: "I must call my mom." },
@@ -773,8 +803,8 @@ export const survivalResources: SurvivalResource[] = [
     explanation: "'Should' is the standard advice modal. 'Ought to' is more formal and less common in speech. 'Ought to' always needs 'to' after it. 'Should not' is 'shouldn't'; 'ought not to' is rarely contracted.",
     explanationZh: "'Should' 是标准建议情态动词。'Ought to' 更正式，在口语中不太常见。'Ought to' 后面必须加 'to'。'Should not' 常缩写为 'shouldn't'；'ought not to' 很少缩写。",
     examples: [
-      { en: "You should see a doctor.", zh: "你应该看医生。" },
-      { en: "You ought to see a doctor.", zh: "你应该看医生。（更正式）" },
+      { en: "You should see a doctor.", zh: "你应该看医生。", explanation: "'Should' is the most common way to give advice. It is less formal than 'ought to' and works in almost every situation." },
+      { en: "You ought to see a doctor.", zh: "你应该看医生。（更正式）", explanation: "'Ought to' means the same as 'should' but sounds more formal. Notice it always needs 'to' after it." },
     ],
     comparisonTable: [
       { term: "should", meaning: "应该", chinese: "常用建议", situation: "You should try it." },
@@ -800,8 +830,8 @@ export const survivalResources: SurvivalResource[] = [
     explanation: "'May' suggests a reasonable possibility. 'Might' suggests a smaller or more uncertain possibility. In modern English, the difference is subtle and often ignored. 'May' is slightly more formal.",
     explanationZh: "'May' 表示合理的可能性。'Might' 表示更小或更不确定的可能性。在现代英语中，区别很微妙，常被忽略。'May' 稍正式。",
     examples: [
-      { en: "It may rain later.", zh: "稍后可能下雨。（较可能）" },
-      { en: "It might rain later.", zh: "稍后可能会下雨。（较不确定）" },
+      { en: "It may rain later.", zh: "稍后可能下雨。（较可能）", explanation: "'May' suggests a reasonable chance based on evidence or general knowledge. It is slightly more formal than 'might'." },
+      { en: "It might rain later.", zh: "稍后可能会下雨。（较不确定）", explanation: "'Might' suggests a smaller or more uncertain possibility. The difference is subtle and often ignored in modern English." },
     ],
     comparisonTable: [
       { term: "may", meaning: "可能", chinese: "较可能", situation: "It may be true." },
@@ -827,8 +857,8 @@ export const survivalResources: SurvivalResource[] = [
     explanation: "'Will' is often used for spontaneous decisions at the moment of speaking. 'Going to' is used for plans or evidence that something will happen. Both can often be interchanged for future predictions.",
     explanationZh: "'Will' 常用于说话时的即时决定。'Going to' 用于计划或有证据表明某事会发生。两者在将来预测中常可互换。",
     examples: [
-      { en: "I'll answer the phone. (spontaneous)", zh: "我去接电话。（即时决定）" },
-      { en: "I'm going to study medicine. (plan)", zh: "我打算学医。（计划）" },
+      { en: "I'll answer the phone. (spontaneous)", zh: "我去接电话。（即时决定）", explanation: "'Will' is often used for decisions made at the moment of speaking. You did not plan to answer it; you decided right now." },
+      { en: "I'm going to study medicine. (plan)", zh: "我打算学医。（计划）", explanation: "'Going to' is used for plans or intentions that existed before the moment of speaking. You thought about it earlier." },
     ],
     comparisonTable: [
       { term: "will", meaning: "将来", chinese: "即时决定/预测", situation: "I'll help you." },
@@ -854,8 +884,8 @@ export const survivalResources: SurvivalResource[] = [
     explanation: "In informal speech, 'can' is commonly used for permission. In formal situations, 'may' is preferred. 'Could' and 'would you mind' are even more polite for asking permission.",
     explanationZh: "非正式口语中，'can' 常用于请求许可。正式场合中，'May' 更合适。'Could' 和 'Would you mind' 在请求许可时更礼貌。",
     examples: [
-      { en: "Can I use your phone?", zh: "我可以用你的手机吗？（非正式）" },
-      { en: "May I come in?", zh: "我可以进来吗？（正式）" },
+      { en: "Can I use your phone?", zh: "我可以用你的手机吗？（非正式）", explanation: "'Can' is commonly used for permission in casual speech. It is quick, friendly, and universally understood." },
+      { en: "May I come in?", zh: "我可以进来吗？（正式）", explanation: "'May' is the traditional formal choice for permission. It is common in classrooms, meetings, and polite social situations." },
     ],
     miniDrills: [
       { type: "choose", question: "Formal permission:", questionZh: "正式许可：", options: [{ text: "Can I leave?", textZh: "Can I leave?", isCorrect: false }, { text: "May I leave?", textZh: "May I leave?", isCorrect: true }] },
@@ -877,8 +907,8 @@ export const survivalResources: SurvivalResource[] = [
     explanation: "'Could you...?' is polite and common. 'Would you...?' is even more polite and often used in formal requests. 'Would you mind...?' is the most polite of all. 'Can you...?' is the least polite and most direct.",
     explanationZh: "'Could you...?' 礼貌且常用。'Would you...?' 更礼貌，常用于正式请求。'Would you mind...?' 是最礼貌的。'Can you...?' 最不礼貌且最直接。",
     examples: [
-      { en: "Could you help me?", zh: "你能帮我吗？（礼貌）" },
-      { en: "Would you mind closing the door?", zh: "你介意关一下门吗？（最礼貌）" },
+      { en: "Could you help me?", zh: "你能帮我吗？（礼貌）", explanation: "'Could' softens the request. It is polite but still common in everyday situations." },
+      { en: "Would you mind closing the door?", zh: "你介意关一下门吗？（最礼貌）", explanation: "'Would you mind' is the most polite structure. It literally asks if the action would bother the person, giving them an easy way to say no." },
     ],
     comparisonTable: [
       { term: "Can you...?", meaning: "直接请求", chinese: "不太礼貌", situation: "Asking friends" },
@@ -905,9 +935,10 @@ export const survivalResources: SurvivalResource[] = [
     explanation: "'At' for clock times and festivals. 'On' for days and dates. 'In' for months, years, seasons, and longer periods. Weekend is special: 'at the weekend' (UK), 'on the weekend' (US).",
     explanationZh: "'At' 用于具体时刻和节日。'On' 用于天和日期。'In' 用于月份、年份、季节和较长时间段。周末特殊：'at the weekend'（英式），'on the weekend'（美式）。",
     examples: [
-      { en: "at 8:00", zh: "在8点" },
-      { en: "on Monday", zh: "在周一" },
-      { en: "in July", zh: "在七月" },
+      { en: "at 8:00", zh: "在8点", explanation: "'At' is used for specific clock times because they are precise points, like a dot on a map." },
+      { en: "on Monday", zh: "在周一", explanation: "'On' is used for days because they are like a surface in the calendar. Think of Monday as a block on the calendar." },
+      { en: "in July", zh: "在七月", explanation: "'In' is used for larger time containers: months, years, seasons, and parts of the day like 'in the morning'." },
+      { en: "at the weekend", zh: "在周末", explanation: "British English uses 'at' for weekend. American English often uses 'on the weekend'. Both are correct." },
     ],
     comparisonTable: [
       { term: "at", meaning: "时刻", chinese: "具体点", situation: "at 5:00 / at night" },
@@ -934,8 +965,9 @@ export const survivalResources: SurvivalResource[] = [
     explanation: "Frequency adverbs go before the main verb but after 'be'. 'Always' (100%), 'usually' (80%), 'often' (60%), 'sometimes' (40%), 'rarely' (20%), 'never' (0%).",
     explanationZh: "频率副词放在主动词前，但放在 'be' 之后。'Always'（100%），'usually'（80%），'often'（60%），'sometimes'（40%），'rarely'（20%），'never'（0%）。",
     examples: [
-      { en: "I always drink coffee.", zh: "我总是喝咖啡。" },
-      { en: "She is never late.", zh: "她从不迟到。" },
+      { en: "I always drink coffee.", zh: "我总是喝咖啡。", explanation: "'Always' goes before the main verb. It means 100% of the time. Notice it comes after 'am' in 'She is always late'." },
+      { en: "She is never late.", zh: "她从不迟到。", explanation: "Frequency adverbs come AFTER 'be' verbs. 'Never' means 0% of the time." },
+      { en: "He sometimes eats breakfast.", zh: "他有时吃早餐。", explanation: "'Sometimes' means about 40% of the time. It goes before the main verb 'eats'." },
     ],
     miniDrills: [
       { type: "choose", question: "I ___ go to the gym.", questionZh: "我经常去健身房。", options: [{ text: "always", textZh: "always", isCorrect: false }, { text: "often", textZh: "often", isCorrect: true }, { text: "never", textZh: "never", isCorrect: false }] },
@@ -957,8 +989,8 @@ export const survivalResources: SurvivalResource[] = [
     explanation: "Use ordinal numbers for dates: 'the 1st of May' or 'May 1st'. In American English, it's usually 'Month + Day + Year'. In British English, it's 'Day + Month + Year'. Months are always capitalized.",
     explanationZh: "日期用序数词：'the 1st of May' 或 'May 1st'。美式英语中，通常是 '月+日+年'。英式英语中，是 '日+月+年'。月份首字母永远大写。",
     examples: [
-      { en: "It's May 1st.", zh: "今天是5月1日。" },
-      { en: "My birthday is on the 15th of June.", zh: "我的生日是6月15日。" },
+      { en: "It's May 1st.", zh: "今天是5月1日。", explanation: "Dates use ordinal numbers: 1st, 2nd, 3rd, 4th. In American English, we usually say the month before the day." },
+      { en: "My birthday is on the 15th of June.", zh: "我的生日是6月15日。", explanation: "In British English, the day often comes before the month. Both orders are correct, but the preposition 'on' is always used with specific dates." },
     ],
     chunks: [
       { chunk: "the 1st", meaning: "第一天", chinese: "序数词", example: "It's the 1st of January." },
@@ -984,8 +1016,10 @@ export const survivalResources: SurvivalResource[] = [
     explanation: "Use 'for' with a duration: 'for two hours'. Use 'since' with a specific start point: 'since 9:00'. Use 'until' or 'till' with an end point: 'until Friday'. 'By' means no later than a deadline: 'by Friday'.",
     explanationZh: "时间段用 'for'：'for two hours'。具体开始点用 'since'：'since 9:00'。结束点用 'until' 或 'till'：'until Friday'。'By' 表示不晚于截止日期：'by Friday'。",
     examples: [
-      { en: "I've lived here for 3 years.", zh: "我在这里住了3年。" },
-      { en: "I've lived here since 2021.", zh: "我自2021年住在这里。" },
+      { en: "I've lived here for 3 years.", zh: "我在这里住了3年。", explanation: "'For' + duration tells us how long something lasted. The focus is on the length of time." },
+      { en: "I've lived here since 2021.", zh: "我自2021年住在这里。", explanation: "'Since' + start point tells us when something began. The focus is on the starting moment." },
+      { en: "I'll wait until 6:00.", zh: "我会等到6点。", explanation: "'Until' marks the end point of an action. The waiting stops at 6:00." },
+      { en: "I need it by Friday.", zh: "我周五前需要它。", explanation: "'By' means 'no later than'. The deadline is Friday; it can arrive any time before then." },
     ],
     comparisonTable: [
       { term: "for", meaning: "持续", chinese: "时间段", situation: "for 2 hours / for a week" },
@@ -1013,8 +1047,10 @@ export const survivalResources: SurvivalResource[] = [
     explanation: "Collocations are words that naturally go together. 'Make' goes with 'decision', 'do' goes with 'homework'. Learning collocations makes your English sound more natural because native speakers expect these pairings.",
     explanationZh: "搭配是自然一起使用的单词。'Make' 和 'decision' 搭配，'do' 和 'homework' 搭配。学习搭配让你的英语更自然，因为母语者期望这些配对。",
     examples: [
-      { en: "make a decision", zh: "做决定" },
-      { en: "do homework", zh: "做作业" },
+      { en: "make a decision", zh: "做决定", explanation: "'Make' creates something new. A decision did not exist before you made it, so 'make' is the natural choice." },
+      { en: "do homework", zh: "做作业", explanation: "'Do' is used for tasks and activities. Homework is a task to complete, not something to create." },
+      { en: "make coffee", zh: "煮咖啡", explanation: "You are creating the coffee from beans or grounds, so 'make' is correct." },
+      { en: "do laundry", zh: "洗衣服", explanation: "Laundry is a household chore or task, so 'do' is the standard collocation." },
     ],
     chunks: [
       { chunk: "make a decision", meaning: "做决定", chinese: "make + decision", example: "I need to make a decision." },
@@ -1040,8 +1076,9 @@ export const survivalResources: SurvivalResource[] = [
     explanation: "Some adjectives are always followed by specific prepositions: 'afraid of', 'interested in', 'good at'. These pairs are fixed and must be learned together.",
     explanationZh: "一些形容词后面永远跟特定介词：'afraid of', 'interested in', 'good at'。这些配对是固定的，必须一起学习。",
     examples: [
-      { en: "I'm interested in music.", zh: "我对音乐感兴趣。" },
-      { en: "She's good at math.", zh: "她擅长数学。" },
+      { en: "I'm interested in music.", zh: "我对音乐感兴趣。", explanation: "'Interested' is always followed by 'in'. This is a fixed collocation—learn it as a chunk." },
+      { en: "She's good at math.", zh: "她擅长数学。", explanation: "'Good' is followed by 'at' when talking about skills or abilities." },
+      { en: "I'm afraid of spiders.", zh: "我怕蜘蛛。", explanation: "'Afraid' is followed by 'of'. The preposition is part of the adjective's meaning." },
     ],
     miniDrills: [
       { type: "choose", question: "I'm good ___ math.", questionZh: "我擅长数学。", options: [{ text: "at", textZh: "at", isCorrect: true }, { text: "in", textZh: "in", isCorrect: false }, { text: "on", textZh: "on", isCorrect: false }] },
@@ -1063,8 +1100,9 @@ export const survivalResources: SurvivalResource[] = [
     explanation: "Common verb-adverb pairs include 'speak fluently', 'listen carefully', 'work hard'. These combinations sound natural to native speakers but must be memorized.",
     explanationZh: "常见的动词-副词搭配包括 'speak fluently', 'listen carefully', 'work hard'。这些组合在母语者听起来自然，但必须记忆。",
     examples: [
-      { en: "He speaks fluently.", zh: "他说得很流利。" },
-      { en: "Please listen carefully.", zh: "请仔细听。" },
+      { en: "He speaks fluently.", zh: "他说得很流利。", explanation: "'Fluent' is an adjective; 'fluently' is the adverb. Verbs like 'speak' need adverbs, not adjectives." },
+      { en: "Please listen carefully.", zh: "请仔细听。", explanation: "'Careful' is an adjective; 'carefully' is the adverb. After verbs like 'listen', we use adverbs." },
+      { en: "She works hard.", zh: "她工作努力。", explanation: "'Hard' can be both an adjective and an adverb. As an adverb, it means 'with effort'." },
     ],
     miniDrills: [
       { type: "choose", question: "Speak ___.", questionZh: "说得流利。", options: [{ text: "fluently", textZh: "fluently", isCorrect: true }, { text: "fluent", textZh: "fluent", isCorrect: false }] },
@@ -1086,8 +1124,9 @@ export const survivalResources: SurvivalResource[] = [
     explanation: "Phrasal verbs combine a verb with a particle to create a new meaning. 'Get up', 'turn off', 'look for'. They are extremely common in spoken English and often have meanings that are not obvious from the individual words.",
     explanationZh: "短语动词将动词和小品词组合成新含义。'Get up', 'turn off', 'look for'。它们在口语中极为常见，且含义常不能从单个词推断。",
     examples: [
-      { en: "I get up at 7.", zh: "我7点起床。" },
-      { en: "Please turn off the light.", zh: "请关灯。" },
+      { en: "I get up at 7.", zh: "我7点起床。", explanation: "'Get up' means to rise from bed. It is one of the most common phrasal verbs in daily conversation." },
+      { en: "Please turn off the light.", zh: "请关灯。", explanation: "'Turn off' means to stop the operation of a device. The particle 'off' changes the meaning of 'turn' completely." },
+      { en: "I'm looking for my keys.", zh: "我在找我的钥匙。", explanation: "'Look for' means to search. Without the particle 'for', 'look' just means to use your eyes." },
     ],
     chunks: [
       { chunk: "get up", meaning: "起床", chinese: "日常动作", example: "I get up early." },
@@ -1113,8 +1152,9 @@ export const survivalResources: SurvivalResource[] = [
     explanation: "Separable phrasal verbs allow the object between the verb and particle: 'turn it off'. Inseparable phrasal verbs keep the verb and particle together: 'look after'. If the object is a pronoun, separable verbs must split: 'turn it off', not 'turn off it'.",
     explanationZh: "可分离短语动词允许宾语放在动词和小品词之间：'turn it off'。不可分离短语动词保持动词和小品词在一起：'look after'。如果宾语是代词，可分离动词必须拆分：'turn it off'，不是 'turn off it'。",
     examples: [
-      { en: "turn it off (separable)", zh: "关掉它（可分离）" },
-      { en: "look after it (inseparable)", zh: "照顾它（不可分离）" },
+      { en: "turn it off (separable)", zh: "关掉它（可分离）", explanation: "The object 'it' goes between the verb and particle. This is the natural position for pronouns." },
+      { en: "turn off the light (separable)", zh: "关掉灯（可分离）", explanation: "With a full noun phrase like 'the light', you can also say 'turn the light off'. Both are correct." },
+      { en: "look after it (inseparable)", zh: "照顾它（不可分离）", explanation: "'Look after' means to take care of. The particle cannot separate from the verb, even with a pronoun." },
     ],
     miniDrills: [
       { type: "choose", question: "Correct: 'Please turn ___ the light.'", questionZh: "正确：", options: [{ text: "off", textZh: "off", isCorrect: true }, { text: "on", textZh: "on", isCorrect: false }] },
@@ -1136,8 +1176,9 @@ export const survivalResources: SurvivalResource[] = [
     explanation: "Textbooks teach formal, correct English. Real speech is shorter, more emotional, and uses filler words. Both are useful. Learn textbook English for exams, natural English for real life.",
     explanationZh: "课本教正式、正确的英语。真实口语更短、更有感情、使用填充词。两者都有用。学课本英语应付考试，学地道英语应对真实生活。",
     examples: [
-      { en: "Textbook: 'I am very hungry.'", zh: "课本：我很饿。" },
-      { en: "Natural: 'I'm starving!'", zh: "地道：我饿死了！" },
+      { en: "Textbook: 'I am very tired.'", zh: "课本：我很累。", explanation: "This is grammatically perfect but sounds stiff in casual conversation. It is useful for exams and formal writing." },
+      { en: "Natural: 'I'm exhausted!'", zh: "地道：我累死了！", explanation: "'Exhausted' is a stronger, more natural word than 'very tired'. Native speakers use vivid vocabulary in speech." },
+      { en: "Casual: 'I'm beat.'", zh: "随意：我累趴了。", explanation: "'Beat' is slang for very tired. Use it only with close friends, not in professional settings." },
     ],
     comparisonTable: [
       { term: "Textbook", meaning: "正式", chinese: "考试/写作", situation: "I am very tired." },
@@ -1164,8 +1205,9 @@ export const survivalResources: SurvivalResource[] = [
     explanation: "Native speakers often reply with just a few words. 'Not bad', 'I know, right?', 'No way!'. These short replies show you understand and keep the conversation flowing.",
     explanationZh: "母语者常只用几个词回应。'Not bad', 'I know, right?', 'No way!'。这些简短回应表示你听懂了，并保持对话流畅。",
     examples: [
-      { en: "How are you? → Not bad.", zh: "你好吗？→ 还不错。" },
-      { en: "That's amazing! → I know, right?", zh: "太棒了！→ 我知道，对吧？" },
+      { en: "How are you? → Not bad.", zh: "你好吗？→ 还不错。", explanation: "'Not bad' is a safe, neutral reply. It means things are okay without going into detail." },
+      { en: "That's amazing! → I know, right?", zh: "太棒了！→ 我知道，对吧？", explanation: "'I know, right?' shows agreement and shared excitement. It is a common casual pattern." },
+      { en: "Long time no see! → Long time no see!", zh: "好久不见！→ 好久不见！", explanation: "Sometimes the best reply is to mirror the other person's phrase. It creates instant connection." },
     ],
     chunks: [
       { chunk: "Not bad", meaning: "还不错", chinese: "通用回应", example: "How's work? Not bad." },
@@ -1191,8 +1233,9 @@ export const survivalResources: SurvivalResource[] = [
     explanation: "Native speakers often use vague language to avoid being exact: 'around 5', 'kind of', 'stuff like that'. This is not imprecise; it's conversational style. It makes you sound more natural.",
     explanationZh: "母语者常使用模糊语言避免精确：'around 5', 'kind of', 'stuff like that'。这不是不精确；这是对话风格。这让你听起来更自然。",
     examples: [
-      { en: "I'll be there around 5.", zh: "我大概5点到。" },
-      { en: "It's kind of expensive.", zh: "它有点贵。" },
+      { en: "I'll be there around 5.", zh: "我大概5点到。", explanation: "'Around' makes the time approximate. Native speakers rarely give exact times unless it is important." },
+      { en: "It's kind of expensive.", zh: "它有点贵。", explanation: "'Kind of' softens the statement. It means 'somewhat' or 'a little', making the opinion less blunt." },
+      { en: "There were like 50 people.", zh: "大概有50人吧。", explanation: "'Like' is often used as a filler for approximation in casual speech. It means 'approximately'." },
     ],
     chunks: [
       { chunk: "around X", meaning: "大概X", chinese: "模糊时间", example: "I'll be there around 5." },
@@ -1218,8 +1261,9 @@ export const survivalResources: SurvivalResource[] = [
     explanation: "Imagine a clock. 12 = future, 3 = present, 6 = past. Past perfect is before 6, future perfect is after 12. This simple mental model helps you choose the right tense quickly.",
     explanationZh: "想象一个时钟。12 = 将来，3 = 现在，6 = 过去。过去完成时在6之前，将来完成时在12之后。这个简单的心理模型帮助你快速选择正确的时态。",
     examples: [
-      { en: "At 6:00 → I had eaten. (past perfect)", zh: "在6点 → 我已经吃了。（过去完成时）" },
-      { en: "At 3:00 → I am eating. (present continuous)", zh: "在3点 → 我正在吃。（现在进行时）" },
+      { en: "At 6:00 → I had eaten. (past perfect)", zh: "在6点 → 我已经吃了。（过去完成时）", explanation: "Imagine 6:00 on the clock as deep in the past. Past perfect describes something that happened BEFORE that point." },
+      { en: "At 3:00 → I am eating. (present continuous)", zh: "在3点 → 我正在吃。（现在进行时）", explanation: "3:00 is the present moment on our clock. Present continuous describes an action happening right now." },
+      { en: "At 12:00 → I will have finished. (future perfect)", zh: "在12点 → 我将已经完成了。（将来完成时）", explanation: "12:00 is the future. Future perfect describes something that will be COMPLETE before that future point." },
     ],
     miniDrills: [
       { type: "choose", question: "Past perfect time:", questionZh: "过去完成时的时间：", options: [{ text: "Before 6:00", textZh: "6点之前", isCorrect: true }, { text: "At 3:00", textZh: "3点", isCorrect: false }] },
@@ -1241,8 +1285,9 @@ export const survivalResources: SurvivalResource[] = [
     explanation: "Active: Subject → Verb → Object. Passive: Object → be + past participle → (by Subject). The object becomes the subject. Use passive when the action matters more than who did it, or when the doer is unknown.",
     explanationZh: "主动：主语 → 动词 → 宾语。被动：宾语 → be + 过去分词 →（by 主语）。宾语变成主语。当动作比执行者更重要，或执行者未知时，使用被动语态。",
     examples: [
-      { en: "Active: The chef cooked the meal.", zh: "主动：厨师做了饭。" },
-      { en: "Passive: The meal was cooked (by the chef).", zh: "被动：饭被做了（被厨师）。" },
+      { en: "Active: The chef cooked the meal.", zh: "主动：厨师做了饭。", explanation: "In active voice, the subject (chef) does the action. The object (meal) receives it." },
+      { en: "Passive: The meal was cooked (by the chef).", zh: "被动：饭被做了（被厨师）。", explanation: "In passive voice, the object (meal) becomes the subject. The doer can be added with 'by' or omitted if unknown." },
+      { en: "The window was broken.", zh: "窗户被打碎了。", explanation: "When the doer is unknown or unimportant, passive voice is perfect. We focus on the result, not who did it." },
     ],
     chunks: [
       { chunk: "was cooked", meaning: "被做了", chinese: "be + 过去分词", example: "The meal was cooked." },
@@ -1268,8 +1313,9 @@ export const survivalResources: SurvivalResource[] = [
     explanation: "When reporting what someone said, shift the tense back: 'I am hungry' → He said he was hungry. Pronouns also change: 'I' → 'he/she'. Time words change: 'today' → 'that day', 'now' → 'then'.",
     explanationZh: "转述某人说的话时，时态要后退：'I am hungry' → He said he was hungry。代词也要变：'I' → 'he/she'。时间词要变：'today' → 'that day', 'now' → 'then'。",
     examples: [
-      { en: "Direct: 'I am tired.'", zh: "直接：我很累。" },
-      { en: "Reported: She said she was tired.", zh: "间接：她说她很累。" },
+      { en: "Direct: 'I am tired.'", zh: "直接：我很累。", explanation: "This is the original statement in present tense with first person." },
+      { en: "Reported: She said she was tired.", zh: "间接：她说她很累。", explanation: "When reporting, present ('am') shifts to past ('was'), and 'I' shifts to 'she'. The reporting verb 'said' stays in the past." },
+      { en: "Direct: 'I like coffee.' → Reported: She said she liked coffee.", zh: "间接：她说她喜欢咖啡。", explanation: "Even though 'like' is a state verb, it still shifts back in reported speech: 'like' → 'liked'." },
     ],
     chunks: [
       { chunk: "said that", meaning: "说", chinese: "引导词", example: "He said that he was coming." },
@@ -1295,8 +1341,8 @@ export const survivalResources: SurvivalResource[] = [
     explanation: "A good business email has: subject line, greeting, opening line, body, closing. Use clear subject lines. Start with the main point. Keep paragraphs short. End with a clear next step or question.",
     explanationZh: "一封好的商务邮件有：主题行、称呼、开场白、正文、结尾。使用清晰的主题行。开门见山。段落要短。以明确的下一步或问题结尾。",
     examples: [
-      { en: "Subject: Meeting Request - Project Update", zh: "主题：会议请求 - 项目更新" },
-      { en: "I'm writing to request a meeting about...", zh: "我写邮件请求关于...的会议。" },
+      { en: "Subject: Meeting Request - Project Update", zh: "主题：会议请求 - 项目更新", explanation: "A clear subject line tells the reader what the email is about and why it matters. Avoid vague subjects like 'Hello' or 'Update'." },
+      { en: "I'm writing to request a meeting about...", zh: "我写邮件请求关于...的会议。", explanation: "'I'm writing to' is a standard professional opening. It states your purpose immediately without unnecessary introduction." },
     ],
     chunks: [
       { chunk: "I'm writing to", meaning: "我写邮件是为了", chinese: "邮件开场", example: "I'm writing to ask about..." },
@@ -1322,8 +1368,9 @@ export const survivalResources: SurvivalResource[] = [
     explanation: "Meetings have their own language. Use 'I'd like to add...' to contribute. 'Could we revisit...?' to change topics. 'I'm afraid that's not possible' to disagree politely. These phrases make you look prepared and professional.",
     explanationZh: "会议有自己的语言。用 'I'd like to add...' 来贡献观点。'Could we revisit...?' 来改变话题。'I'm afraid that's not possible' 来礼貌反对。这些短语让你看起来有准备且专业。",
     examples: [
-      { en: "I'd like to add something.", zh: "我想补充一点。" },
-      { en: "Could we revisit this point?", zh: "我们能不能再讨论这一点？" },
+      { en: "I'd like to add something.", zh: "我想补充一点。", explanation: "This is a polite way to contribute in a meeting. It shows respect for the speaker while making your point." },
+      { en: "Could we revisit this point?", zh: "我们能不能再讨论这一点？", explanation: "'Revisit' is a professional way to suggest returning to a topic. It sounds collaborative, not critical." },
+      { en: "I'm afraid that's not possible.", zh: "恐怕那是不可能的。", explanation: "'I'm afraid' softens a negative response. It keeps the tone polite while being clear about the limitation." },
     ],
     chunks: [
       { chunk: "I'd like to add", meaning: "我想补充", chinese: "贡献观点", example: "I'd like to add that..." },
@@ -1349,7 +1396,7 @@ export const survivalResources: SurvivalResource[] = [
     explanation: "Use the STAR method: Situation, Task, Action, Result. Keep answers under 2 minutes. Be specific with numbers and outcomes. Always prepare 2-3 questions to ask the interviewer.",
     explanationZh: "使用 STAR 方法：情境、任务、行动、结果。回答控制在2分钟以内。用具体数字和结果说明。永远准备2-3个问题问面试官。",
     examples: [
-      { en: "In my previous role, I increased sales by 20% over six months.", zh: "在之前的岗位上，我在六个月内将销售额提高了20%。" },
+      { en: "In my previous role, I increased sales by 20% over six months.", zh: "在之前的岗位上，我在六个月内将销售额提高了20%。", explanation: "This answer uses the STAR method: Situation (previous role), Task (increase sales), Action (strategy), Result (20% growth)." },
     ],
     chunks: [
       { chunk: "In my previous role", meaning: "在我之前的岗位上", chinese: "STAR 开场", example: "In my previous role, I led a team." },
@@ -1375,8 +1422,8 @@ export const survivalResources: SurvivalResource[] = [
     explanation: "Negotiation is about finding overlap. Start with 'If we can agree on X, we could...'. Use 'That's a bit higher than we expected' instead of 'Too expensive'. Always look for win-win outcomes.",
     explanationZh: "谈判是找到重叠点。以 'If we can agree on X, we could...' 开头。用 'That's a bit higher than we expected' 代替 'Too expensive'。永远寻找双赢结果。",
     examples: [
-      { en: "If we can agree on price, we can sign today.", zh: "如果价格能达成一致，我们今天就能签约。" },
-      { en: "That's a bit higher than our budget.", zh: "这比我们的预算高一点。" },
+      { en: "If we can agree on price, we can sign today.", zh: "如果价格能达成一致，我们今天就能签约。", explanation: "This opens with a condition ('if') and shows willingness to move forward. It frames negotiation as collaboration." },
+      { en: "That's a bit higher than our budget.", zh: "这比我们的预算高一点。", explanation: "This is diplomatic language. 'A bit higher' is softer than 'too expensive', keeping the relationship positive." },
     ],
     chunks: [
       { chunk: "If we can agree on X", meaning: "如果X能达成一致", chinese: "条件句开场", example: "If we can agree on delivery..." },
@@ -1402,8 +1449,9 @@ export const survivalResources: SurvivalResource[] = [
     explanation: "Small talk is not about the topic; it's about connection. Weather, weekend plans, and food are safe topics. Avoid asking about salary, age, or relationship status early in Western contexts. Listen more than you speak.",
     explanationZh: "闲聊不在于话题；而在于建立联系。天气、周末计划、食物是安全话题。在西方语境中，早期避免询问薪水、年龄、感情状况。多听少说。",
     examples: [
-      { en: "How was your weekend?", zh: "你周末过得怎么样？" },
-      { en: "This weather is something, isn't it?", zh: "这天气真是的，是吧？" },
+      { en: "How was your weekend?", zh: "你周末过得怎么样？", explanation: "This is the most common safe topic. It shows interest in the person's life without getting too personal." },
+      { en: "This weather is something, isn't it?", zh: "这天气真是的，是吧？", explanation: "Weather is universal small talk. Adding 'isn't it?' turns it into a question that invites the other person to agree." },
+      { en: "Crazy traffic today!", zh: "今天交通疯了！", explanation: "Complaining about shared experiences like traffic or queues builds connection. It says 'we are both in the same situation'." },
     ],
     chunks: [
       { chunk: "How was your weekend?", meaning: "你周末过得怎么样", chinese: "常见开场", example: "How was your weekend?" },
@@ -1429,8 +1477,9 @@ export const survivalResources: SurvivalResource[] = [
     explanation: "In English-speaking cultures, people often refuse once or twice before accepting, to seem polite. 'Oh, you shouldn't have' is common when receiving gifts. When refusing invitations, give a reason and suggest an alternative.",
     explanationZh: "在英语文化中，人们常在接受前拒绝一两次，以示礼貌。收到礼物时常说 'Oh, you shouldn't have'。拒绝邀请时，给出理由并提出替代方案。",
     examples: [
-      { en: "Oh, you shouldn't have!", zh: "哦，你真是不必这么客气！" },
-      { en: "I'd love to, but I have another commitment.", zh: "我很想去，但我已经有其他安排了。" },
+      { en: "Oh, you shouldn't have!", zh: "哦，你真是不必这么客气！", explanation: "This is the standard polite response when receiving a gift or favor. It shows modesty and appreciation." },
+      { en: "I'd love to, but I have another commitment.", zh: "我很想去，但我已经有其他安排了。", explanation: "This politely declines while showing you would have liked to go. Giving a reason softens the refusal." },
+      { en: "Thank you so much, that's very kind of you.", zh: "非常感谢，你真好。", explanation: "Accepting a compliment or gift with grace is important in English cultures. Deflecting too much can seem insincere." },
     ],
     chunks: [
       { chunk: "You shouldn't have", meaning: "你不必这么客气", chinese: "收到礼物", example: "Oh, you shouldn't have!" },
@@ -1456,8 +1505,9 @@ export const survivalResources: SurvivalResource[] = [
     explanation: "American English tends to be more direct. British English uses more hedging and understatement. Australian English is informal and friendly. Canadian English is polite and moderate. Adapt your style when traveling or working internationally.",
     explanationZh: "美式英语趋向更直接。英式英语使用更多缓冲和轻描淡写。澳式英语非正式且友好。加式英语礼貌且适度。在出国或国际工作时调整你的风格。",
     examples: [
-      { en: "American: 'I disagree.'", zh: "美式：我不同意。" },
-      { en: "British: 'I see your point, but...'", zh: "英式：我明白你的意思，但是..." },
+      { en: "American: 'I disagree.'", zh: "美式：我不同意。", explanation: "American English values directness. Saying exactly what you think is seen as honest and efficient." },
+      { en: "British: 'I see your point, but...'", zh: "英式：我明白你的意思，但是...", explanation: "British English often uses hedging and understatement. Acknowledging the other person first maintains harmony." },
+      { en: "Australian: 'Nah, I'm not sure about that.'", zh: "澳式：嗯，我不确定那个。", explanation: "Australian English is informal and friendly. Even disagreement sounds casual and relaxed." },
     ],
     comparisonTable: [
       { term: "American", meaning: "较直接", chinese: "美国", situation: "Business meetings" },
@@ -1484,8 +1534,9 @@ export const survivalResources: SurvivalResource[] = [
     explanation: "Strong opinions: 'I strongly believe...', 'In my opinion...'. Softer opinions: 'I think...', 'It seems to me...'. To ask: 'What do you think?', 'How do you feel about...?' Mix strong and soft depending on the situation.",
     explanationZh: "强烈观点：'I strongly believe...', 'In my opinion...'。柔和观点：'I think...', 'It seems to me...'。询问：'What do you think?', 'How do you feel about...?' 根据情况混合使用强烈和柔和的表达。",
     examples: [
-      { en: "In my opinion, we should wait.", zh: "依我看，我们应该等等。" },
-      { en: "I strongly believe this is the right choice.", zh: "我坚信这是正确的选择。" },
+      { en: "In my opinion, we should wait.", zh: "依我看，我们应该等等。", explanation: "'In my opinion' is a standard, neutral way to introduce your view. It works in both formal and casual settings." },
+      { en: "I strongly believe this is the right choice.", zh: "我坚信这是正确的选择。", explanation: "'Strongly believe' shows high confidence. Use it when you are sure and want to persuade others." },
+      { en: "It seems to me that we need more data.", zh: "在我看来，我们需要更多数据。", explanation: "'It seems to me' is softer and more tentative. It invites discussion rather than demanding agreement." },
     ],
     chunks: [
       { chunk: "In my opinion", meaning: "依我看", chinese: "标准观点", example: "In my opinion, we should go." },
@@ -1511,8 +1562,9 @@ export const survivalResources: SurvivalResource[] = [
     explanation: "Full agreement: 'I totally agree', 'Absolutely!'. Partial agreement: 'I see your point, but...', 'That's true, however...'. Disagreement: 'I'm afraid I disagree', 'I see it differently'. Always soften disagreement in professional settings.",
     explanationZh: "完全同意：'I totally agree', 'Absolutely!'。部分同意：'I see your point, but...', 'That's true, however...'。反对：'I'm afraid I disagree', 'I see it differently'。在专业场合永远软化反对意见。",
     examples: [
-      { en: "I totally agree with you.", zh: "我完全同意你的看法。" },
-      { en: "I see your point, but I'm not sure.", zh: "我明白你的意思，但我不确定。" },
+      { en: "I totally agree with you.", zh: "我完全同意你的看法。", explanation: "'Totally' adds strong emphasis. Use this when you fully support the idea and want to show enthusiasm." },
+      { en: "I see your point, but I'm not sure.", zh: "我明白你的意思，但我不确定。", explanation: "This first acknowledges the other person ('I see your point'), then gently introduces doubt. It keeps the conversation respectful." },
+      { en: "I'm afraid I see it differently.", zh: "恐怕我看法不同。", explanation: "'I'm afraid' is a polite hedge before disagreement. It softens the blow and maintains professionalism." },
     ],
     chunks: [
       { chunk: "I totally agree", meaning: "我完全同意", chinese: "强烈同意", example: "I totally agree with you." },
@@ -1538,8 +1590,9 @@ export const survivalResources: SurvivalResource[] = [
     explanation: "Making suggestions: 'How about...?', 'What if we...?', 'Let's...'. Responding: 'That's a great idea!', 'I'm not sure about that', 'I'd rather...'. Use 'Let's' for quick, shared decisions.",
     explanationZh: "提出建议：'How about...?', 'What if we...?', 'Let's...'。回应：'That's a great idea!', 'I'm not sure about that', 'I'd rather...'。用 'Let's' 做快速、共同的决策。",
     examples: [
-      { en: "How about we go Friday?", zh: "我们周五去怎么样？" },
-      { en: "Let's grab coffee.", zh: "我们去喝杯咖啡吧。" },
+      { en: "How about we go Friday?", zh: "我们周五去怎么样？", explanation: "'How about' is followed by a noun or gerund. It is a gentle way to propose an alternative." },
+      { en: "Let's grab coffee.", zh: "我们去喝杯咖啡吧。", explanation: "'Let's' includes yourself in the suggestion. It is great for quick, shared decisions with friends or team members." },
+      { en: "What if we try a different approach?", zh: "如果换个方法会怎样？", explanation: "'What if' introduces a hypothetical idea. It is useful for brainstorming and creative suggestions." },
     ],
     chunks: [
       { chunk: "How about", meaning: "...怎么样", chinese: "建议", example: "How about we meet at 3?" },
@@ -1565,8 +1618,9 @@ export const survivalResources: SurvivalResource[] = [
     explanation: "Start with a positive or neutral statement. Describe the problem, not the person. Use 'I' statements: 'I was disappointed that...' instead of 'You did...'. End with what you want: 'Could we...?'",
     explanationZh: "以积极或中性的陈述开头。描述问题，不是人。用 'I' 陈述：'I was disappointed that...' 而不是 'You did...'。以你想要的结果结尾：'Could we...?'",
     examples: [
-      { en: "I enjoyed the meal, but the soup was cold.", zh: "我很喜欢这顿饭，但汤是冷的。" },
-      { en: "I was disappointed that the room wasn't ready.", zh: "我很失望房间还没准备好。" },
+      { en: "I enjoyed the meal, but the soup was cold.", zh: "我很喜欢这顿饭，但汤是冷的。", explanation: "Start with something positive ('I enjoyed the meal'), then state the problem. This makes the complaint sound fair, not aggressive." },
+      { en: "I was disappointed that the room wasn't ready.", zh: "我很失望房间还没准备好。", explanation: "'I was disappointed' uses an 'I' statement to describe your feeling. It focuses on the experience, not the person's fault." },
+      { en: "Could we try again tomorrow?", zh: "我们能不能明天再试一次？", explanation: "Ending with a solution ('Could we...') turns a complaint into a request for improvement." },
     ],
     chunks: [
       { chunk: "I was disappointed that", meaning: "我很失望...", chinese: "I 陈述", example: "I was disappointed that the flight was delayed." },
@@ -1592,8 +1646,9 @@ export const survivalResources: SurvivalResource[] = [
     explanation: "Common responses: 'You're welcome', 'No problem', 'Anytime', 'My pleasure'. In formal situations, use 'You're welcome' or 'I'm glad I could help'. In casual situations, 'No problem' or 'Anytime' are more natural.",
     explanationZh: "常见回应：'You're welcome', 'No problem', 'Anytime', 'My pleasure'。正式场合用 'You're welcome' 或 'I'm glad I could help'。非正式场合用 'No problem' 或 'Anytime' 更自然。",
     examples: [
-      { en: "Thanks! → You're welcome.", zh: "谢谢！→ 不客气。" },
-      { en: "Thanks! → No problem!", zh: "谢谢！→ 没问题！" },
+      { en: "Thanks! → You're welcome.", zh: "谢谢！→ 不客气。", explanation: "'You're welcome' is the standard, polite response. It works in every situation from casual to formal." },
+      { en: "Thanks! → No problem!", zh: "谢谢！→ 没问题！", explanation: "'No problem' is casual and friendly. It is common among friends and in relaxed professional settings." },
+      { en: "Thank you! → Anytime.", zh: "谢谢你！→ 随时乐意帮忙。", explanation: "'Anytime' implies you would help again without hesitation. It is warm and relationship-building." },
     ],
     chunks: [
       { chunk: "You're welcome", meaning: "不客气", chinese: "标准回应", example: "You're welcome." },
@@ -1619,8 +1674,9 @@ export const survivalResources: SurvivalResource[] = [
     explanation: "Common responses: 'No problem', 'It's okay', 'Don't worry about it', 'Apology accepted'. For serious mistakes, use 'I appreciate the apology' or 'Thank you for saying that'. Always acknowledge the apology before moving on.",
     explanationZh: "常见回应：'No problem', 'It's okay', 'Don't worry about it', 'Apology accepted'。对于严重的错误，用 'I appreciate the apology' 或 'Thank you for saying that'。永远先认可道歉再继续。",
     examples: [
-      { en: "Sorry I'm late. → No problem.", zh: "对不起我迟到了。→ 没问题。" },
-      { en: "I was wrong. → I appreciate the apology.", zh: "我错了。→ 我感谢你的道歉。" },
+      { en: "Sorry I'm late. → No problem.", zh: "对不起我迟到了。→ 没问题。", explanation: "'No problem' is the most common response. It accepts the apology and moves on quickly." },
+      { en: "I was wrong. → I appreciate the apology.", zh: "我错了。→ 我感谢你的道歉。", explanation: "'I appreciate the apology' is more formal. It acknowledges the effort to make things right and rebuilds trust." },
+      { en: "My bad! → No worries.", zh: "我的错！→ 别担心。", explanation: "'No worries' is casual and reassuring. It matches the informal tone of 'my bad'." },
     ],
     chunks: [
       { chunk: "No problem", meaning: "没问题", chinese: "接受道歉", example: "No problem at all." },
@@ -1646,8 +1702,9 @@ export const survivalResources: SurvivalResource[] = [
     explanation: "When someone compliments you, say 'Thank you' or 'That's kind of you'. Avoid deflecting with 'Oh, it's nothing' because it can sound dismissive. If you want to be humble, add 'Thank you, I worked hard on it'.",
     explanationZh: "当别人赞美你时，说 'Thank you' 或 'That's kind of you'。避免用 'Oh, it's nothing' 推辞，因为这可能显得轻视。如果你想谦虚，可以说 'Thank you, I worked hard on it'。",
     examples: [
-      { en: "Nice shirt! → Thank you!", zh: " nice 衬衫！→ 谢谢！" },
-      { en: "Great presentation! → Thank you, I prepared a lot.", zh: "精彩的演示！→ 谢谢，我准备了很多。" },
+      { en: "Nice shirt! → Thank you!", zh: " nice 衬衫！→ 谢谢！", explanation: "'Thank you' is the simplest and most natural response. It accepts the compliment without deflecting or arguing." },
+      { en: "Great presentation! → Thank you, I prepared a lot.", zh: "精彩的演示！→ 谢谢，我准备了很多。", explanation: "Adding 'I prepared a lot' shows humility while still accepting the compliment. It credits your effort." },
+      { en: "You're so smart! → That's kind of you to say.", zh: "你真聪明！→ 你真好。", explanation: "'That's kind of you to say' is a graceful way to accept a compliment. It focuses on the giver's kindness." },
     ],
     chunks: [
       { chunk: "Thank you", meaning: "谢谢", chinese: "接受赞美", example: "Thank you, that's kind of you." },
@@ -1673,8 +1730,9 @@ export const survivalResources: SurvivalResource[] = [
     explanation: "Accepting: 'I'd love to!', 'Sounds great, see you then!'. Declining: 'I'm sorry, I can't make it', 'I wish I could, but I have another commitment'. Always suggest an alternative if you want to reschedule.",
     explanationZh: "接受：'I'd love to!', 'Sounds great, see you then!'。拒绝：'I'm sorry, I can't make it', 'I wish I could, but I have another commitment'。如果你想改期，永远提出替代方案。",
     examples: [
-      { en: "Want to come? → I'd love to!", zh: "想来的吗？→ 我很想去！" },
-      { en: "Can you make it? → I'm sorry, I can't.", zh: "你能来吗？→ 对不起，我来不了。" },
+      { en: "Want to come? → I'd love to!", zh: "想来的吗？→ 我很想去！", explanation: "'I'd love to' is enthusiastic acceptance. It shows you are happy about the invitation." },
+      { en: "Can you make it? → I'm sorry, I can't.", zh: "你能来吗？→ 对不起，我来不了。", explanation: "'I'm sorry, I can't' is a clear but polite decline. Adding 'I have another commitment' gives context without over-explaining." },
+      { en: "Do you want to join? → Sounds great, see you then!", zh: "你想加入吗？→ 听起来不错，到时候见！", explanation: "'Sounds great, see you then!' confirms attendance and ends the conversation on a positive note." },
     ],
     chunks: [
       { chunk: "I'd love to", meaning: "我很想去", chinese: "接受邀请", example: "I'd love to come!" },

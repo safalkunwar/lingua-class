@@ -24,7 +24,7 @@ export interface SurvivalResource {
   summaryZh: string;
   explanation: string;
   explanationZh: string;
-  examples: { en: string; zh: string }[];
+  examples: { en: string; zh: string; explanation?: string }[];
   commonMistakes?: { mistake: string; correction: string; correctionZh: string }[];
   chunks?: { chunk: string; meaning: string; chinese: string; example: string }[];
   comparisonTable?: { term: string; meaning: string; chinese: string; situation: string }[];

@@ -140,11 +140,14 @@ export default function EnglishSurvivalLibraryDetailPage({ params }: { params: P
                 <p className="text-sm sm:text-base mb-2">{resource.explanation}</p>
                 <p className="text-xs text-muted-foreground mb-4">{resource.explanationZh}</p>
 
-                <div className="space-y-2 mb-4">
+                <div className="space-y-3 mb-4">
                   {resource.examples.map((ex, idx) => (
-                    <div key={idx} className="p-3 rounded-lg bg-white/70 dark:bg-black/20 border border-border">
-                      <p className="text-sm font-medium">{ex.en}</p>
-                      <p className="text-xs text-muted-foreground">{ex.zh}</p>
+                    <div key={idx} className="p-4 rounded-lg bg-white/70 dark:bg-black/20 border border-border">
+                      <p className="text-sm font-medium mb-1">{ex.en}</p>
+                      <p className="text-xs text-muted-foreground mb-2">{ex.zh}</p>
+                      {ex.explanation && (
+                        <p className="text-xs text-indigo-600 dark:text-indigo-400 border-t border-border pt-2 mt-2">{ex.explanation}</p>
+                      )}
                     </div>
                   ))}
                 </div>
@@ -242,121 +245,31 @@ export default function EnglishSurvivalLibraryDetailPage({ params }: { params: P
                 )}
               </div>
 
-              {!selectedDrill && (
-                <div className="text-center">
-                  <Button onClick={startDrills} className="gap-2">
-                    <BookOpen className="h-4 w-4" />
-                    Start Drills
-                  </Button>
+              <div className="mt-8">
+                <div className="flex items-center gap-2 mb-4">
+                  <BookOpen className="h-5 w-5 text-indigo-500" />
+                  <h2 className="text-xl font-bold">Examples & Detailed Explanations</h2>
                 </div>
-              )}
-
-              {selectedDrill && (
-                <div className="mt-6">
-                  <div className="mb-4">
-                    <div className="flex items-center justify-between mb-2">
-                      <p className="text-sm font-medium">Drill Progress</p>
-                      <p className="text-xs text-muted-foreground">{totalDrills + 1} / {resource.miniDrills.length}</p>
-                    </div>
-                    <Progress value={progress} className="h-2" />
-                  </div>
-
-                  <Card className="p-5 sm:p-6 border-indigo-200 dark:border-indigo-800 min-w-0">
-                    <div className="flex items-center gap-2 mb-3">
-                      <Lightbulb className="h-4 w-4 text-indigo-500" />
-                      <p className="text-sm font-semibold">{selectedDrill.question}</p>
-                    </div>
-                    <p className="text-xs text-muted-foreground mb-3">{selectedDrill.questionZh}</p>
-
-                    {selectedDrill.type === "listen" && selectedDrill.audioText && (
-                      <Button variant="outline" size="sm" className="mb-4 gap-2" onClick={() => speakEnglish(selectedDrill.audioText || "")}>
-                        <Volume2 className="h-3.5 w-3.5" />
-                        Play Audio
-                      </Button>
-                    )}
-
-                    {selectedDrill.type === "speak" && (
-                      <div className="mb-4">
-                        <Button variant="default" className="gap-2" onClick={() => speakEnglish(selectedDrill.audioText || selectedDrill.question)}>
-                          <Volume2 className="h-3.5 w-3.5" />
-                          Practice Speaking
-                        </Button>
+                <div className="space-y-4">
+                  {resource.examples.map((ex, idx) => (
+                    <Card key={idx} className="p-5 border-indigo-100 dark:border-indigo-900">
+                      <div className="flex items-start gap-3">
+                        <span className="text-lg font-bold text-indigo-500 mt-0.5">{idx + 1}.</span>
+                        <div className="flex-1">
+                          <p className="text-base font-medium mb-1">{ex.en}</p>
+                          <p className="text-sm text-muted-foreground mb-3">{ex.zh}</p>
+                          {ex.explanation && (
+                            <div className="p-3 rounded-lg bg-indigo-50 dark:bg-indigo-950/20 border border-indigo-100 dark:border-indigo-900">
+                              <p className="text-xs font-semibold text-indigo-700 dark:text-indigo-300 mb-1">Why this works:</p>
+                              <p className="text-xs text-indigo-900 dark:text-indigo-100">{ex.explanation}</p>
+                            </div>
+                          )}
+                        </div>
                       </div>
-                    )}
-
-                    {selectedDrill.options && (
-                      <div className="space-y-2">
-                        {selectedDrill.options.map((option, idx) => (
-                          <Button
-                            key={idx}
-                            variant={drillAnswer === option.text ? (option.isCorrect ? "default" : "destructive") : "outline"}
-                            className="w-full justify-start text-left h-auto py-2 min-w-0"
-                            onClick={() => !drillAnswer && handleDrillAnswer(selectedDrill, option.text)}
-                            disabled={!!drillAnswer}
-                          >
-                            <span className="text-sm break-words">{option.text}</span>
-                            <span className="text-xs text-muted-foreground ml-2 break-words hidden sm:inline">{option.textZh}</span>
-                          </Button>
-                        ))}
-                      </div>
-                    )}
-
-                    {selectedDrill.type === "fill-blank" && (
-                      <div className="flex gap-2">
-                        <Input
-                          value={drillAnswer}
-                          onChange={(e) => setDrillAnswer(e.target.value)}
-                          placeholder={selectedDrill.blank}
-                          className="flex-1"
-                        />
-                        <Button onClick={() => handleDrillAnswer(selectedDrill, drillAnswer)} disabled={!drillAnswer}>
-                          Check
-                        </Button>
-                      </div>
-                    )}
-
-                    {selectedDrill.type === "rewrite" && (
-                      <div className="flex flex-col gap-2">
-                        <Input
-                          value={drillAnswer}
-                          onChange={(e) => setDrillAnswer(e.target.value)}
-                          placeholder="Type your answer..."
-                          className="flex-1"
-                        />
-                        <Button onClick={() => handleDrillAnswer(selectedDrill, drillAnswer)} disabled={!drillAnswer}>
-                          Check
-                        </Button>
-                      </div>
-                    )}
-
-                    {drillFeedback && (
-                      <div className={`mt-4 p-3 rounded-lg ${drillFeedback.text.startsWith("✅") ? "bg-green-50 dark:bg-green-950/20 border border-green-200" : "bg-red-50 dark:bg-red-950/20 border border-red-200"}`}>
-                        <p className="text-sm font-medium">{drillFeedback.text}</p>
-                        <p className="text-xs text-muted-foreground mt-1">{drillFeedback.zh}</p>
-                      </div>
-                    )}
-
-                    {drillAnswer && (
-                      <div className="mt-4 text-center">
-                        <Button onClick={nextDrill} className="gap-2">
-                          {totalDrills + 1 < resource.miniDrills.length ? "Next Drill" : "Finish"}
-                        </Button>
-                      </div>
-                    )}
-                  </Card>
+                    </Card>
+                  ))}
                 </div>
-              )}
-
-              {!selectedDrill && totalDrills === 0 && (
-                <div className="mt-6 text-center">
-                  <div className="flex flex-wrap gap-2 justify-center">
-                    <Button variant="outline" size="sm" className="gap-2" onClick={() => setShowRescue(!showRescue)}>
-                      <HelpCircle className="h-3.5 w-3.5" />
-                      Survival Rescue
-                    </Button>
-                  </div>
-                </div>
-              )}
+              </div>
 
               <AnimatePresence>
                 {showRescue && (
