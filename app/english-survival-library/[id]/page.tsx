@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { StudentSidebar } from "@/components/layout/sidebar";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -14,9 +14,11 @@ import { SurvivalResource, MiniDrill } from "@/types/english-survival-library";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowLeft, Volume2, Zap, Lightbulb, AlertTriangle, Sparkles, BookOpen, RotateCcw, HelpCircle } from "lucide-react";
 import Link from "next/link";
+import { use } from "react";
 
-export default function EnglishSurvivalLibraryDetailPage({ params }: { params: { id: string } }) {
-  const resource = survivalResources.find((r) => r.id === params.id) || null;
+export default function EnglishSurvivalLibraryDetailPage({ params }: { params: Promise<{ id: string }> }) {
+  const resolvedParams = use(params);
+  const resource = survivalResources.find((r) => r.id === resolvedParams.id) || null;
   const [selectedDrill, setSelectedDrill] = useState<MiniDrill | null>(null);
   const [drillAnswer, setDrillAnswer] = useState<string>("");
   const [drillFeedback, setDrillFeedback] = useState<{ text: string; zh: string } | null>(null);
