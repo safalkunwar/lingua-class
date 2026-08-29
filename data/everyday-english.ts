@@ -397,7 +397,26 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         hint: "Try saying: 'I have a lot of work to do.'",
         hintZh: "试着说：'I have a lot of work to do.'"
       }
-    ],
+    ,
+      {
+        id: "nq-ex-6",
+        type: "fill-blank",
+        question: "I have _____ books on my shelf. (a few / few)",
+        questionZh: "我书架上_____书。（a few / few）",
+        options: ["a few", "few"],
+        correctAnswer: "a few",
+        hint: "Positive meaning = a few",
+        hintZh: "积极含义 = a few"
+      },
+      {
+        id: "nq-ex-7",
+        type: "translation",
+        question: "Translate: 我没有太多时间。",
+        questionZh: "翻译：我没有太多时间。",
+        correctAnswer: "I don't have much time.",
+        hint: "Use \"much\" with uncountable nouns",
+        hintZh: "不可数名词用 much"
+      }],
     teacherPanel: {
       simpleExplanation: "The difference between 'a few' and 'few' is like the difference between 'some' and 'almost none'. The 'a' changes everything.",
       chineseExplanation: "'A few' 和 'few' 的区别就像 'some' 和 'almost none' 的区别。那个 'a' 改变了整句话的含义。",
@@ -634,7 +653,26 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         hint: "Both 'triple' and 'three times' work, but 'triple' is more concise.",
         hintZh: "'Triple' 和 'three times' 都可以，但 'triple' 更简洁。"
       }
-    ],
+    ,
+      {
+        id: "mlt-ex-4",
+        type: "fill-blank",
+        question: "The price _____ since last year. (doubled / twice)",
+        questionZh: "价格自去年以来_____。（doubled / twice）",
+        options: ["doubled", "twice"],
+        correctAnswer: "doubled",
+        hint: "Verb form needed",
+        hintZh: "需要动词形式"
+      },
+      {
+        id: "mlt-ex-5",
+        type: "translation",
+        question: "Translate: 利润增长了两倍。",
+        questionZh: "翻译：利润增长了两倍。",
+        correctAnswer: "Profits tripled.",
+        hint: "Use \"tripled\" for 增长了三倍",
+        hintZh: "增长了三倍用 tripled"
+      }],
     teacherPanel: {
       simpleExplanation: "'Double' means 2x, 'triple' means 3x, 'quadruple' means 4x. These are precise. 'Twice' means 2 times, and is more conversational.",
       chineseExplanation: "'Double' 表示 2 倍，'triple' 表示 3 倍，'quadruple' 表示 4 倍。这些很精确。'Twice' 表示 2 次，更口语化。",
@@ -781,7 +819,69 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         safeAlternatives: [],
         audioAvailable: true
       }
-    ],
+    ,
+      {
+        id: "frq-monthly",
+        term: "monthly",
+        chinese: "每月；月刊",
+        pinyin: "měi yuè",
+        meaning: "Happening every month. Can be an adjective or adverb.",
+        category: "frequency",
+        difficulty: "A2",
+        examples: [
+          { en: "I get a monthly salary.", zh: "我拿月薪。" },
+          { en: "The magazine is published monthly.", zh: "这本杂志每月出版。" },
+          { en: "We have a monthly meeting.", zh: "我们有一个月会。" },
+          { en: "Monthly payments are more manageable.", zh: "月付更容易管理。" },
+          { en: "The rent is due monthly.", zh: "租金每月到期。" },
+          { en: "She visits her parents monthly.", zh: "她每月去看望父母。" },
+          { en: "Monthly subscriptions are popular now.", zh: "月度订阅现在很流行。" },
+        ],
+        commonMistakes: [
+          { mistake: "I go there monthly. (when you mean once a month)", correction: "\"Monthly\" is correct for once a month." },
+          { mistake: "Monthly means every two months.", correction: "Monthly = every month. Bi-monthly can mean every two months OR twice a month (ambiguous)." },
+        ],
+        relatedTerms: ["weekly", "annually", "quarterly"],
+        register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
+        culturalNotes: "Common in business and scheduling contexts.",
+        warning: "Avoid ambiguity: \"bi-monthly\" can mean twice a month OR every two months.",
+        safeAlternatives: [],
+        audioAvailable: true
+      },
+      {
+        id: "frq-rarely",
+        term: "rarely",
+        chinese: "很少；不常",
+        pinyin: "hěn shǎo",
+        meaning: "Not often. Almost never. Formal way to say \"not often\".",
+        category: "frequency",
+        difficulty: "B1",
+        examples: [
+          { en: "I rarely eat fast food.", zh: "我很少吃快餐。" },
+          { en: "She rarely goes to the cinema.", zh: "她很少去电影院。" },
+          { en: "It rarely snows here in winter.", zh: "这里冬天很少下雪。" },
+          { en: "He rarely misses a day of work.", zh: "他很少缺勤。" },
+          { en: "We rarely see such beautiful sunsets.", zh: "我们很少看到如此美丽的日落。" },
+          { en: "Rarely do I see such kindness.", zh: "我很少见到如此的善意。" },
+          { en: "Rarely has something affected me so deeply.", zh: "很少有事情如此深刻地影响我。" },
+        ],
+        commonMistakes: [
+          { mistake: "I rarely go to school.", correction: "\"Rarely\" is correct but formal. \"I hardly ever go\" is more casual." },
+          { mistake: "Rarely I see him.", correction: "With negative adverbs like rarely, use inversion: \"Rarely do I see him.\"" },
+        ],
+        relatedTerms: ["occasionally", "frequently", "seldom"],
+        register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
+        culturalNotes: "More formal than \"hardly ever\". Chinese: 很少.",
+        warning: "In formal writing, \"rarely\" is preferred. In speech, \"hardly ever\" is more common.",
+        safeAlternatives: [],
+        audioAvailable: true
+      }],
     exercises: [
       {
         id: "frq-ex-1",
@@ -834,7 +934,26 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         hint: "Try saying: 'I exercise three times a week.'",
         hintZh: "试着说：'I exercise three times a week.'"
       }
-    ],
+    ,
+      {
+        id: "frq-ex-6",
+        type: "fill-blank",
+        question: "I go to the gym _____. (once / twice)",
+        questionZh: "我去健身房_____。（once / twice）",
+        options: ["once", "twice"],
+        correctAnswer: "once",
+        hint: "One time per week = once",
+        hintZh: "每周一次 = once"
+      },
+      {
+        id: "frq-ex-7",
+        type: "error-correction",
+        question: "Correct: \"I have been there several times.\"",
+        questionZh: "改正：\"I have been there several times.\"",
+        correctAnswer: "I have been there several times.",
+        hint: "This sentence is correct",
+        hintZh: "这个句子是正确的"
+      }],
     teacherPanel: {
       simpleExplanation: "'Once' = 1x, 'twice' = 2x, 'three times' = 3x. After 3, we say 'four times', 'five times', etc. 'Thrice' exists but sounds old-fashioned.",
       chineseExplanation: "'Once' = 1 次，'twice' = 2 次，'three times' = 3 次。3 以后我们说 'four times'、'five times' 等。'Thrice' 存在但听起来过时。",
@@ -1013,7 +1132,69 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         safeAlternatives: [],
         audioAvailable: true
       }
-    ],
+    ,
+      {
+        id: "td-millennium",
+        term: "millennium",
+        chinese: "千年；千禧年",
+        pinyin: "qiān nián",
+        meaning: "A period of 1000 years. Often used for major historical milestones.",
+        category: "time-dates",
+        difficulty: "B2",
+        examples: [
+          { en: "The new millennium began in 2001.", zh: "新的千禧年始于2001年。" },
+          { en: "This millennium has seen huge technological changes.", zh: "这个千年见证了巨大的技术变革。" },
+          { en: "The millennium celebration was broadcast worldwide.", zh: "千禧年庆典向全球转播。" },
+          { en: "We are living in the third millennium.", zh: "我们生活在第三个千年。" },
+          { en: "A millennium is a very long time.", zh: "一千年是很长的时间。" },
+          { en: "The millennium bridge in London opened in 2000.", zh: "伦敦的千禧桥于2000年开放。" },
+          { en: "Many cultures celebrate the millennium.", zh: "许多文化都庆祝千禧年。" },
+        ],
+        commonMistakes: [
+          { mistake: "Millennium means 100 years.", correction: "Millennium = 1000 years. Century = 100 years." },
+          { mistake: "The new millennium started in 2000.", correction: "Technically it started in 2001, but 2000 is widely celebrated." },
+        ],
+        relatedTerms: ["century", "decade"],
+        register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
+        culturalNotes: "Common in historical and formal contexts.",
+        warning: "Formal word. In casual speech, say \"a thousand years\".",
+        safeAlternatives: [],
+        audioAvailable: true
+      },
+      {
+        id: "td-noon",
+        term: "noon",
+        chinese: "中午；正午",
+        pinyin: "zhōng wǔ",
+        meaning: "12:00 PM, midday. The middle of the day.",
+        category: "time-dates",
+        difficulty: "A1",
+        examples: [
+          { en: "Let's meet at noon.", zh: "我们中午见面吧。" },
+          { en: "The sun is highest at noon.", zh: "太阳在中午最高。" },
+          { en: "I have a lunch break at noon.", zh: "我中午有午休时间。" },
+          { en: "Noon is exactly 12 PM.", zh: "中午正好是下午12点。" },
+          { en: "We arrived at noon sharp.", zh: "我们正午到达。" },
+          { en: "The meeting starts at noon.", zh: "会议中午开始。" },
+          { en: "It's almost noon.", zh: "快到中午了。" },
+        ],
+        commonMistakes: [
+          { mistake: "Noon means 12 AM.", correction: "Noon = 12 PM (midday). Midnight = 12 AM." },
+          { mistake: "Let's meet at dinner.", correction: "Dinner is in the evening. Use \"lunch\" for noon." },
+        ],
+        relatedTerms: ["midnight", "dawn", "dusk"],
+        register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
+        culturalNotes: "Common in scheduling. Chinese: 中午.",
+        warning: "Not to be confused with \"midnight\" which is 12 AM.",
+        safeAlternatives: [],
+        audioAvailable: true
+      }],
     exercises: [
       {
         id: "td-ex-1",
@@ -1045,7 +1226,26 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         hint: "Use 'fortnight' for two weeks.",
         hintZh: "用 'fortnight' 表示两周。"
       }
-    ],
+    ,
+      {
+        id: "td-ex-4",
+        type: "fill-blank",
+        question: "A _____ is 10 years. (decade / century)",
+        questionZh: "_____是10年。（decade / century）",
+        options: ["decade", "century"],
+        correctAnswer: "decade",
+        hint: "10 years = decade",
+        hintZh: "10年 = decade"
+      },
+      {
+        id: "td-ex-5",
+        type: "translation",
+        question: "Translate: 我两周后回来。",
+        questionZh: "翻译：我两周后回来。",
+        correctAnswer: "I'll be back in a fortnight.",
+        hint: " fortnight = 两周",
+        hintZh: " fortnight = 两周"
+      }],
     teacherPanel: {
       simpleExplanation: "Time words are organized in a hierarchy: second → minute → hour → day → week → month → year → decade → century → millennium.",
       chineseExplanation: "时间词有层次：秒 → 分钟 → 小时 → 天 → 周 → 月 → 年 → 十年 → 世纪 → 千年。",
@@ -1289,7 +1489,26 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         hint: "'Every other day' = skip one day in between.",
         hintZh: "'Every other day' = 中间跳过一天。"
       }
-    ],
+    ,
+      {
+        id: "sch-ex-4",
+        type: "fill-blank",
+        question: "The magazine is published _____. (weekly / daily)",
+        questionZh: "这本杂志_____出版。（weekly / daily）",
+        options: ["weekly", "daily"],
+        correctAnswer: "weekly",
+        hint: "Magazines are usually weekly or monthly",
+        hintZh: "杂志通常是每周或每月"
+      },
+      {
+        id: "sch-ex-5",
+        type: "translation",
+        question: "Translate: 我们每两周开一次会。",
+        questionZh: "翻译：我们每两周开一次会。",
+        correctAnswer: "We meet biweekly.",
+        hint: "Biweekly = 每两周",
+        hintZh: "Biweekly = 每两周"
+      }],
     teacherPanel: {
       simpleExplanation: "'Daily' = every day, 'weekly' = every week, 'monthly' = every month, 'quarterly' = every 3 months, 'yearly' = every year.",
       chineseExplanation: "'Daily' = 每天，'weekly' = 每周，'monthly' = 每月，'quarterly' = 每 3 个月，'yearly' = 每年。",
@@ -1502,7 +1721,26 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         hint: "'Give or take' comes after the number.",
         hintZh: "'Give or take' 放在数字后面。"
       }
-    ],
+    ,
+      {
+        id: "app-ex-4",
+        type: "fill-blank",
+        question: "It costs about $20, _____ $5. (give or take / or so)",
+        questionZh: "大约20美元，_____5美元。（give or take / or so）",
+        options: ["give or take", "or so"],
+        correctAnswer: "give or take",
+        hint: "Give or take shows approximate range",
+        hintZh: "Give or take 表示大约范围"
+      },
+      {
+        id: "app-ex-5",
+        type: "translation",
+        question: "Translate: 大约100人参加了会议。",
+        questionZh: "翻译：大约100人参加了会议。",
+        correctAnswer: "About 100 people attended the meeting.",
+        hint: "Use \"about\" for approximation",
+        hintZh: "大约用 about"
+      }],
     teacherPanel: {
       simpleExplanation: "When you don't know the exact number, use 'about', 'around', 'roughly', or 'or so'. For more precision, use 'give or take'.",
       chineseExplanation: "当你不确定确切数字时，用 'about'、'around'、'roughly' 或 'or so'。需要更精确时，用 'give or take'。",
@@ -1751,7 +1989,26 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         hint: "Use 'a cup of' for precise measurement.",
         hintZh: "用 'a cup of' 表示精确的量。"
       }
-    ],
+    ,
+      {
+        id: "msr-ex-4",
+        type: "fill-blank",
+        question: "I bought _____ of apples. (a bunch of / a slice of)",
+        questionZh: "我买了_____苹果。（a bunch of / a slice of）",
+        options: ["a bunch of", "a slice of"],
+        correctAnswer: "a bunch of",
+        hint: "Apples come in bunches",
+        hintZh: "苹果用 bunch"
+      },
+      {
+        id: "msr-ex-5",
+        type: "translation",
+        question: "Translate: 一对新鞋。",
+        questionZh: "翻译：一对新鞋。",
+        correctAnswer: "A pair of new shoes.",
+        hint: "Shoes come in pairs",
+        hintZh: "鞋子成双成对"
+      }],
     teacherPanel: {
       simpleExplanation: "English uses measure words with uncountable nouns: 'a piece of advice', 'a cup of coffee', 'a pair of shoes'.",
       chineseExplanation: "英语对不可数名词用量词：'a piece of advice'、'a cup of coffee'、'a pair of shoes'。",
@@ -1925,7 +2182,69 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         safeAlternatives: [],
         audioAvailable: true
       }
-    ],
+    ,
+      {
+        id: "cmp-prefer",
+        term: "prefer",
+        chinese: "更喜欢；宁愿",
+        pinyin: "gèng xǐ huān",
+        meaning: "To like one thing more than another. Followed by \"to\" or \"rather than\".",
+        category: "comparisons",
+        difficulty: "A2",
+        examples: [
+          { en: "I prefer tea to coffee.", zh: "我更喜欢茶而不是咖啡。" },
+          { en: "She prefers walking to driving.", zh: "她更喜欢步行而不是开车。" },
+          { en: "I prefer staying home.", zh: "我宁愿待在家里。" },
+          { en: "They prefer the earlier train.", zh: "他们更喜欢早班的火车。" },
+          { en: "I would prefer not to say.", zh: "我宁愿不说。" },
+          { en: "He prefers his coffee black.", zh: "他更喜欢黑咖啡。" },
+          { en: "I prefer reading to watching TV.", zh: "我更喜欢阅读而不是看电视。" },
+        ],
+        commonMistakes: [
+          { mistake: "I prefer tea than coffee.", correction: "Use \"to\" after prefer: \"I prefer tea to coffee.\"" },
+          { mistake: "I prefer to stay home than go out.", correction: "Use \"rather than\": \"I prefer to stay home rather than go out.\"" },
+        ],
+        relatedTerms: ["rather than", "like better", "would rather"],
+        register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
+        culturalNotes: "Common in expressing preferences. Chinese: 更喜欢.",
+        warning: "Followed by \"to\" (not \"than\"). Use \"rather than\" for \"than\".",
+        safeAlternatives: [],
+        audioAvailable: true
+      },
+      {
+        id: "cmp-rather-than",
+        term: "rather than",
+        chinese: "而不是；宁可",
+        pinyin: "ér bù shì",
+        meaning: "Used to show preference for one thing over another.",
+        category: "comparisons",
+        difficulty: "B1",
+        examples: [
+          { en: "I'd rather stay home than go out.", zh: "我宁愿待在家里也不愿出去。" },
+          { en: "She works to live rather than lives to work.", zh: "她工作是为了生活，而不是活着为了工作。" },
+          { en: "I'd rather read a book than watch TV.", zh: "我宁愿看书也不愿看电视。" },
+          { en: "He is kind rather than handsome.", zh: "他和蔼可亲，而不是英俊。" },
+          { en: "I would say it's difficult rather than impossible.", zh: "我会说这很难，而不是不可能。" },
+          { en: "She chose to resign rather than be fired.", zh: "她选择辞职而不是被解雇。" },
+          { en: "I'd rather walk than wait for a bus.", zh: "我宁愿走路也不愿等公交车。" },
+        ],
+        commonMistakes: [
+          { mistake: "I rather stay home.", correction: "Use \"I'd rather\" (I would rather) for preference." },
+          { mistake: "Rather then I go home.", correction: "\"Rather than\" is two words. \"Then\" is for time." },
+        ],
+        relatedTerms: ["prefer", "would rather", "instead of"],
+        register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
+        culturalNotes: "Common in expressing preferences and contrasts.",
+        warning: "Not \"rather then\". \"Than\" is for comparison.",
+        safeAlternatives: [],
+        audioAvailable: true
+      }],
     exercises: [
       {
         id: "cmp-ex-1",
@@ -1957,7 +2276,26 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         hint: "Use 'twice as much as' for double comparison.",
         hintZh: "用 'twice as much as' 表示两倍比较。"
       }
-    ],
+    ,
+      {
+        id: "cmp-ex-4",
+        type: "fill-blank",
+        question: "She is _____ her mother. (as tall as / taller than)",
+        questionZh: "她_____她妈妈。（as tall as / taller than）",
+        options: ["as tall as", "taller than"],
+        correctAnswer: "as tall as",
+        hint: "Equal comparison uses as...as",
+        hintZh: "相等比较用 as...as"
+      },
+      {
+        id: "cmp-ex-5",
+        type: "translation",
+        question: "Translate: 这本书比那本书有趣多了。",
+        questionZh: "翻译：这本书比那本书有趣多了。",
+        correctAnswer: "This book is much more interesting than that one.",
+        hint: "Use \"much more interesting than\"",
+        hintZh: "用 much more interesting than"
+      }],
     teacherPanel: {
       simpleExplanation: "'As + adj + as' means equal. 'Twice as + adj + as' means 2x. 'Three times as + adj + as' means 3x.",
       chineseExplanation: "'As + 形容词 + as' 表示同等。'Twice as + 形容词 + as' 表示 2 倍。'Three times as + 形容词 + as' 表示 3 倍。",
@@ -2224,7 +2562,26 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         hint: "'Kind of' = '有点' in casual speech.",
         hintZh: "'Kind of' = '有点'，用于口语。"
       }
-    ],
+    ,
+      {
+        id: "wp-ex-4",
+        type: "fill-blank",
+        question: "_____ people attended the concert. (A number of / The number of)",
+        questionZh: "_____人参加了音乐会。（A number of / The number of）",
+        options: ["A number of", "The number of"],
+        correctAnswer: "A number of",
+        hint: "A number of = many (plural verb)",
+        hintZh: "A number of = 许多（复数动词）"
+      },
+      {
+        id: "wp-ex-5",
+        type: "translation",
+        question: "Translate: 他有点累。",
+        questionZh: "翻译：他有点累。",
+        correctAnswer: "He's a little tired.",
+        hint: "Use \"a little\" with adjectives",
+        hintZh: "形容词前用 a little"
+      }],
     teacherPanel: {
       simpleExplanation: "'A lot of' is casual, 'a great deal of' is formal. 'A number of' = many (plural verb). 'The number of' = quantity (singular verb).",
       chineseExplanation: "'A lot of' 口语化，'a great deal of' 正式。'A number of' = 许多（复数动词）。'The number of' = 数量（单数动词）。",
@@ -2370,7 +2727,69 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         safeAlternatives: [],
         audioAvailable: true
       }
-    ],
+    ,
+      {
+        id: "eg-percent",
+        term: "percent",
+        chinese: "百分比；百分之…",
+        pinyin: "bǎi fēn bǐ",
+        meaning: "Out of 100. Used with numbers. \"Per cent\" = British spelling.",
+        category: "everyday-grammar",
+        difficulty: "A2",
+        examples: [
+          { en: "50 percent of students passed.", zh: "50%的学生通过了。" },
+          { en: "The price increased by 10 percent.", zh: "价格上涨了10%。" },
+          { en: "About 30 percent of the time, it rains.", zh: "大约30%的时间会下雨。" },
+          { en: "100 percent sure", zh: "100%确定" },
+          { en: "A small percent of the population...", zh: "一小部分人口……" },
+          { en: "The discount is 20 percent.", zh: "折扣是20%。" },
+          { en: "What percentage is correct?", zh: "正确的百分比是多少？" },
+        ],
+        commonMistakes: [
+          { mistake: "50 percents passed.", correction: "\"Percent\" is usually singular. Use \"50 percent\"." },
+          { mistake: "He is 100 percent sure.", correction: "This is correct. But in formal writing, \"per cent\" (two words) is British style." },
+        ],
+        relatedTerms: ["percentage", "fraction", "ratio"],
+        register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
+        culturalNotes: "Common in statistics and business. Chinese: 百分比.",
+        warning: "American: \"percent\". British: \"per cent\". Both are correct.",
+        safeAlternatives: [],
+        audioAvailable: true
+      },
+      {
+        id: "eg-should",
+        term: "should",
+        chinese: "应该；应当",
+        pinyin: "yīng gāi",
+        meaning: "Gives advice or says what is correct. Less strong than \"must\".",
+        category: "everyday-grammar",
+        difficulty: "A1",
+        examples: [
+          { en: "You should study harder.", zh: "你应该更努力学习。" },
+          { en: "Should I call him?", zh: "我应该给他打电话吗？" },
+          { en: "You should see a doctor.", zh: "你应该去看医生。" },
+          { en: "I should have left earlier.", zh: "我本该早点离开的。" },
+          { en: "Should we book in advance?", zh: "我们应该提前预订吗？" },
+          { en: "You shouldn't eat too much sugar.", zh: "你不应该吃太多糖。" },
+          { en: "Should I bring anything?", zh: "我应该带点什么吗？" },
+        ],
+        commonMistakes: [
+          { mistake: "You should to study.", correction: "After \"should\", use base verb: \"You should study.\"" },
+          { mistake: "Should I to go?", correction: "After \"should\", use base verb: \"Should I go?\"" },
+        ],
+        relatedTerms: ["must", "ought to", "had better"],
+        register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
+        culturalNotes: "Common for advice. Weaker than \"must\". Chinese: 应该.",
+        warning: "Not followed by \"to\". Use base verb after should.",
+        safeAlternatives: [],
+        audioAvailable: true
+      }],
     exercises: [
       {
         id: "eg-ex-1",
@@ -2402,7 +2821,26 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         hint: "Use 'three-quarters' with hyphen.",
         hintZh: "用 'three-quarters' 加连字符。"
       }
-    ],
+    ,
+      {
+        id: "eg-ex-4",
+        type: "fill-blank",
+        question: "_____ of the students passed the test. (Half / A half)",
+        questionZh: "_____学生通过了考试。（Half / A half）",
+        options: ["Half", "A half"],
+        correctAnswer: "Half",
+        hint: "Half of + noun",
+        hintZh: "Half of + 名词"
+      },
+      {
+        id: "eg-ex-5",
+        type: "translation",
+        question: "Translate: 四分之三的 butter。",
+        questionZh: "翻译：四分之三的黄油。",
+        correctAnswer: "Three-quarters of the butter.",
+        hint: "Three-quarters = 3/4",
+        hintZh: "Three-quarters = 3/4"
+      }],
     teacherPanel: {
       simpleExplanation: "Fractions: half, one-third, one-quarter, three-quarters. Use 'of' before nouns. 'A quarter of an hour' = 15 minutes.",
       chineseExplanation: "分数表达：half、one-third、one-quarter、three-quarters。名词前用 'of'。'A quarter of an hour' = 15 分钟。",
@@ -2659,7 +3097,26 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         hint: "Try saying: 'Eventually, I understood the lesson.'",
         hintZh: "试着说：'Eventually, I understood the lesson.'"
       }
-    ],
+    ,
+      {
+        id: "ne-ex-6",
+        type: "fill-blank",
+        question: "I'll do it _____. (in a minute / for a while)",
+        questionZh: "我_____做。（in a minute / for a while）",
+        options: ["in a minute", "for a while"],
+        correctAnswer: "in a minute",
+        hint: "In a minute = soon",
+        hintZh: "In a minute = 很快"
+      },
+      {
+        id: "ne-ex-7",
+        type: "translation",
+        question: "Translate: 与此同时，她在做饭。",
+        questionZh: "翻译：与此同时，她在做饭。",
+        correctAnswer: "Meanwhile, she was cooking.",
+        hint: "Meanwhile = 与此同时",
+        hintZh: "Meanwhile = 与此同时"
+      }],
     teacherPanel: {
       simpleExplanation: "'In a minute' = soon. 'For a while' = duration. 'A while ago' = past. 'Meanwhile' = at the same time. 'Eventually' = after time.",
       chineseExplanation: "'In a minute' = 马上。'For a while' = 持续一段时间。'A while ago' = 不久前。'Meanwhile' = 与此同时。'Eventually' = 最终。",
@@ -2907,7 +3364,25 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         hint: "'Time' is uncountable. Use 'little' for negative meaning.",
         hintZh: "'Time' 不可数。用 'little' 表示否定含义。"
       }
-    ],
+    ,
+      {
+        id: "cm-ex-4",
+        type: "error-correction",
+        question: "Correct: \"He is more taller than me.\"",
+        questionZh: "改正：\"He is more taller than me.\"",
+        correctAnswer: "He is taller than me.",
+        hint: "Comparative adjectives use -er, not more + -er",
+        hintZh: "比较级用 -er，不用 more + -er"
+      },
+      {
+        id: "cm-ex-5",
+        type: "translation",
+        question: "Translate: 我下周会见你。",
+        questionZh: "翻译：我下周会见你。",
+        correctAnswer: "I'll meet you next week.",
+        hint: "Simple future with will",
+        hintZh: "将来时用 will"
+      }],
     teacherPanel: {
       simpleExplanation: "The most common mistake: countable vs uncountable. 'Many/few' = countable. 'Much/little' = uncountable. In positive statements, 'a lot of' works for both.",
       chineseExplanation: "最常见的错误：可数与不可数。'Many/few' = 可数。'Much/little' = 不可数。在肯定句中，'a lot of' 两者皆可。",
@@ -2963,7 +3438,162 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         safeAlternatives: [],
         audioAvailable: true
       }
-    ],
+    ,
+      {
+        id: "pl-review-2",
+        term: "Review Challenge",
+        chinese: "复习挑战",
+        pinyin: "fù xí tiǎo zhàn",
+        meaning: "A comprehensive review of key patterns from all sections.",
+        category: "practice-lab",
+        difficulty: "B1",
+        examples: [
+          { en: "Let's review what we learned today.", zh: "让我们复习今天学的内容。" },
+          { en: "The review session was helpful.", zh: "复习环节很有帮助。" },
+          { en: "I need to review my notes before the test.", zh: "考试前我需要复习笔记。" },
+          { en: "Regular review improves memory.", zh: "定期复习提高记忆力。" },
+          { en: "Can we review this grammar point?", zh: "我们能复习这个语法点吗？" },
+          { en: "The review covered all major topics.", zh: "复习涵盖了所有主要话题。" },
+          { en: "Review is the key to mastery.", zh: "复习是掌握的关键。" },
+        ],
+        commonMistakes: [
+          { mistake: "Let me review it.", correction: "Correct, but \"review\" can also be a noun: \"I need a review.\"" },
+          { mistake: "Review means to see again.", correction: "True! \"Review\" comes from \"re-\" (again) + \"view\" (see)." },
+        ],
+        relatedTerms: ["revise", "recap", "go over"],
+        register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
+        culturalNotes: "Common in educational contexts. Chinese: 复习.",
+        warning: "American English: \"review\". British English: \"revise\" (for exam prep).",
+        safeAlternatives: [],
+        audioAvailable: true
+      },
+      {
+        id: "pl-review-3",
+        term: "Pattern Recognition",
+        chinese: "模式识别",
+        pinyin: "mó shì shí bié",
+        meaning: "The ability to identify and use English patterns correctly.",
+        category: "practice-lab",
+        difficulty: "B2",
+        examples: [
+          { en: "Pattern recognition helps with fluency.", zh: "模式识别有助于流利度。" },
+          { en: "English has many word patterns.", zh: "英语有很多单词模式。" },
+          { en: "Recognizing patterns speeds up learning.", zh: "识别模式加速学习。" },
+          { en: "Pattern recognition is key to reading.", zh: "模式识别是阅读的关键。" },
+          { en: "Can you identify the pattern here?", zh: "你能识别这里的模式吗？" },
+          { en: "Practice helps with pattern recognition.", zh: "练习有助于模式识别。" },
+          { en: "Native speakers use patterns automatically.", zh: "母语者自动使用模式。" },
+        ],
+        commonMistakes: [
+          { mistake: "English has no patterns.", correction: "English has many patterns! Recognizing them helps learning." },
+          { mistake: "Pattern recognition is only for advanced learners.", correction: "Beginners benefit most from pattern recognition." },
+        ],
+        relatedTerms: ["structure", "framework", "template"],
+        register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
+        culturalNotes: "Common in educational and cognitive science contexts.",
+        warning: "Over-reliance on patterns can lead to rigid thinking. Balance with creativity.",
+        safeAlternatives: [],
+        audioAvailable: true
+      },
+      {
+        id: "pl-review-4",
+        term: "Context Clues",
+        chinese: "语境线索",
+        pinyin: "yǔ jìng xiàn suǒ",
+        meaning: "Using surrounding words and sentences to guess meaning.",
+        category: "practice-lab",
+        difficulty: "B1",
+        examples: [
+          { en: "Use context clues to understand new words.", zh: "用语境线索理解生词。" },
+          { en: "Context clues help with reading comprehension.", zh: "语境线索有助于阅读理解。" },
+          { en: "Look for context clues in the sentence.", zh: "在句子中寻找语境线索。" },
+          { en: "Context clues include examples and definitions.", zh: "语境线索包括例子和定义。" },
+          { en: "Skilled readers use context clues naturally.", zh: "熟练的读者自然地使用语境线索。" },
+          { en: "Context clues reduce the need for a dictionary.", zh: "语境线索减少查字典的需要。" },
+          { en: "Always check context clues before guessing.", zh: "猜测前总是检查语境线索。" },
+        ],
+        commonMistakes: [
+          { mistake: "Context means only the topic.", correction: "Context includes surrounding words, tone, and situation." },
+          { mistake: "Context clues are always enough.", correction: "Sometimes context is ambiguous. Use a dictionary if unsure." },
+        ],
+        relatedTerms: ["inference", "implication", "surroundings"],
+        register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
+        culturalNotes: "Essential skill for reading comprehension.",
+        warning: "Context clues can be misleading. Verify with a dictionary when possible.",
+        safeAlternatives: [],
+        audioAvailable: true
+      },
+      {
+        id: "pl-review-5",
+        term: "Error Correction",
+        chinese: "纠错",
+        pinyin: "jiū cuò",
+        meaning: "Identifying and fixing mistakes in English sentences.",
+        category: "practice-lab",
+        difficulty: "B1",
+        examples: [
+          { en: "Error correction improves accuracy.", zh: "纠错提高准确性。" },
+          { en: "Learn from your errors.", zh: "从错误中学习。" },
+          { en: "Error correction is part of learning.", zh: "纠错是学习的一部分。" },
+          { en: "The teacher did error correction on the board.", zh: "老师在黑板上进行了纠错。" },
+          { en: "Self-error correction is a useful skill.", zh: "自我纠错是一项有用的技能。" },
+          { en: "Error correction helps build confidence.", zh: "纠错有助于建立信心。" },
+          { en: "Regular error correction prevents bad habits.", zh: "定期纠错防止坏习惯。" },
+        ],
+        commonMistakes: [
+          { mistake: "Error correction is only for beginners.", correction: "All levels benefit from error correction." },
+          { mistake: "I should correct every single error.", correction: "Focus on high-frequency errors. Small errors are okay in casual speech." },
+        ],
+        relatedTerms: ["mistake", "correction", "feedback"],
+        register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
+        culturalNotes: "Essential part of language learning. Chinese: 纠错.",
+        warning: "Don't over-correct. Communication is more important than perfection.",
+        safeAlternatives: [],
+        audioAvailable: true
+      },
+      {
+        id: "pl-review-6",
+        term: "Fluency Builder",
+        chinese: "流利度提升",
+        pinyin: "liú lì dù tí shēng",
+        meaning: "Exercises and techniques to improve speaking and writing flow.",
+        category: "practice-lab",
+        difficulty: "B2",
+        examples: [
+          { en: "Fluency is more important than perfection.", zh: "流利度比完美更重要。" },
+          { en: "Fluency builders include speaking practice.", zh: "流利度提升包括口语练习。" },
+          { en: "Reading aloud builds fluency.", zh: "大声朗读提升流利度。" },
+          { en: "Fluency comes with practice.", zh: "流利度来自练习。" },
+          { en: "This is a fluency building exercise.", zh: "这是一个流利度提升练习。" },
+          { en: "Fluency allows natural conversation.", zh: "流利度允许自然的对话。" },
+          { en: "Don't sacrifice fluency for accuracy.", zh: "不要为了准确性牺牲流利度。" },
+        ],
+        commonMistakes: [
+          { mistake: "Fluency means speaking fast.", correction: "Fluency means smooth, natural speech, not necessarily fast." },
+          { mistake: "I need perfect fluency before speaking.", correction: "Fluency comes from speaking, not before it." },
+        ],
+        relatedTerms: ["flow", "coherence", "articulation"],
+        register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
+        culturalNotes: "Key goal for many English learners. Chinese: 流利度.",
+        warning: "Fluency without accuracy can create bad habits. Balance both.",
+        safeAlternatives: [],
+        audioAvailable: true
+      }],
     exercises: [
       {
         id: "pl-ex-1",
@@ -3056,7 +3686,26 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         hint: "Both are correct, but 'fivefold' is more concise.",
         hintZh: "两者都对，但 'fivefold' 更简洁。"
       }
-    ],
+    ,
+      {
+        id: "pl-ex-10",
+        type: "fill-blank",
+        question: "How _____ students are in your class?",
+        questionZh: "你们班有多少学生？",
+        options: ["many", "much"],
+        correctAnswer: "many",
+        hint: "Countable noun = many",
+        hintZh: "可数名词用 many"
+      },
+      {
+        id: "pl-ex-11",
+        type: "translation",
+        question: "Translate: 我昨天买了很多东西。",
+        questionZh: "翻译：我昨天买了很多东西。",
+        correctAnswer: "I bought a lot of things yesterday.",
+        hint: "A lot of = 很多",
+        hintZh: "A lot of = 很多"
+      }],
     teacherPanel: {
       simpleExplanation: "This lab combines all key concepts: quantity, frequency, time, comparisons, and patterns.",
       chineseExplanation: "本实验室综合所有关键概念：数量、频率、时间、比较和搭配模式。",
@@ -3422,7 +4071,26 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         hint: "'Are you free...?' is the most natural way to ask about availability.",
         hintZh: "'Are you free...?' 是询问对方是否有空最自然的说法。"
       }
-    ],
+    ,
+      {
+        id: "si-ex-4",
+        type: "fill-blank",
+        question: "_____ do you do? (What / How)",
+        questionZh: "你是做什么的？（What / How）",
+        options: ["What", "How"],
+        correctAnswer: "What",
+        hint: "Asking about job = What do you do?",
+        hintZh: "问工作用 What do you do?"
+      },
+      {
+        id: "si-ex-5",
+        type: "translation",
+        question: "Translate: 很高兴认识你。",
+        questionZh: "翻译：很高兴认识你。",
+        correctAnswer: "Nice to meet you.",
+        hint: "Standard greeting",
+        hintZh: "标准问候语"
+      }],
     teacherPanel: {
       simpleExplanation: "Greetings set the tone. 'What's up?' is casual, 'How are you?' is safe. Small talk topics: weather, weekend, food. Accept compliments with 'Thank you.'",
       chineseExplanation: "问候定下基调。'What's up?' 随意，'How are you?' 安全。闲聊话题：天气、周末、食物。接受赞美时说 'Thank you'。",
@@ -3757,7 +4425,26 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         hint: "'Could we have the bill/check?' is the standard way to ask for the bill.",
         hintZh: "'Could we have the bill/check?' 是要求结账的标准说法。"
       }
-    ],
+    ,
+      {
+        id: "df-ex-4",
+        type: "fill-blank",
+        question: "I'll have the _____, please. (steak / bill)",
+        questionZh: "我要_____，谢谢。（steak / bill）",
+        options: ["steak", "bill"],
+        correctAnswer: "steak",
+        hint: "Bill comes at the end",
+        hintZh: "Bill 在最后"
+      },
+      {
+        id: "df-ex-5",
+        type: "translation",
+        question: "Translate: 请给我账单。",
+        questionZh: "翻译：请给我账单。",
+        correctAnswer: "Could I have the bill, please?",
+        hint: "Bill = 账单",
+        hintZh: "Bill = 账单"
+      }],
     teacherPanel: {
       simpleExplanation: "Order with 'I'll have...' or 'I'd like...'. Mention allergies clearly. Ask for 'the bill/check'. Split with 'Do you want to go Dutch?'",
       chineseExplanation: "用 'I'll have...' 或 'I'd like...' 点餐。清楚说明过敏。要 'the bill/check'。AA用 'Do you want to go Dutch?'",
@@ -4123,7 +4810,26 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         hint: "'Pay by card' is the standard phrase.",
         hintZh: "'Pay by card' 是标准说法。"
       }
-    ],
+    ,
+      {
+        id: "sm-ex-4",
+        type: "fill-blank",
+        question: "Is this item _____ sale? (on / in)",
+        questionZh: "这个商品_____打折吗？（on / in）",
+        options: ["on", "in"],
+        correctAnswer: "on",
+        hint: "On sale = 打折",
+        hintZh: "On sale = 打折"
+      },
+      {
+        id: "sm-ex-5",
+        type: "translation",
+        question: "Translate: 这个能退货吗？",
+        questionZh: "翻译：这个能退货吗？",
+        correctAnswer: "Can I return this?",
+        hint: "Return = 退货",
+        hintZh: "Return = 退货"
+      }],
     teacherPanel: {
       simpleExplanation: "Ask prices with 'How much is...?'. Pay with 'I'll pay by...'. Ask about sales with 'Is this on sale?'. Returns need receipts.",
       chineseExplanation: "用 'How much is...?' 问价格。用 'I'll pay by...' 付款。用 'Is this on sale?' 问打折。退货需要收据。",
@@ -4458,7 +5164,26 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         hint: "'Take the subway' is the natural way to say you're traveling by subway.",
         hintZh: "'Take the subway' 是表达坐地铁出行的自然说法。"
       }
-    ],
+    ,
+      {
+        id: "td-ex-4",
+        type: "fill-blank",
+        question: "Excuse me, how do I get to the _____? (station / stay)",
+        questionZh: "请问，我怎么去_____？（station / stay）",
+        options: ["station", "stay"],
+        correctAnswer: "station",
+        hint: "Get to + destination",
+        hintZh: "Get to + 目的地"
+      },
+      {
+        id: "td-ex-5",
+        type: "translation",
+        question: "Translate: 我想预订一个双人房。",
+        questionZh: "翻译：我想预订一个双人房。",
+        correctAnswer: "I'd like to book a double room.",
+        hint: "Book a room = 预订房间",
+        hintZh: "Book a room = 预订房间"
+      }],
     teacherPanel: {
       simpleExplanation: "Ask directions with 'Excuse me, how do I get to...?'. Say 'I'll take the subway/bus'. Check in with 'I have a reservation under...'.",
       chineseExplanation: "用 'Excuse me, how do I get to...?' 问路。说 'I'll take the subway/bus'。入住时说 'I have a reservation under...'。",
@@ -4610,7 +5335,69 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         safeAlternatives: [],
         audioAvailable: true
       }
-    ],
+    ,
+      {
+        id: "hl-groceries",
+        term: "groceries",
+        chinese: "食品杂货",
+        pinyin: "shí pǐn zá huò",
+        meaning: "Food and household items bought at a grocery store.",
+        category: "home-life",
+        difficulty: "A2",
+        examples: [
+          { en: "I need to buy groceries.", zh: "我需要买食品杂货。" },
+          { en: "The groceries are on the table.", zh: "食品杂货在桌子上。" },
+          { en: "Online groceries delivery is popular.", zh: "在线食品杂货配送很流行。" },
+          { en: "I forgot to pick up the groceries.", zh: "我忘了去取食品杂货。" },
+          { en: "The grocery store is on Main Street.", zh: "杂货店在主街上。" },
+          { en: "We need more groceries for the week.", zh: "我们这周需要更多食品杂货。" },
+          { en: "He carried the groceries upstairs.", zh: "他把食品杂货搬上楼。" },
+        ],
+        commonMistakes: [
+          { mistake: "I need to buy grocery.", correction: "\"Groceries\" is plural. Use \"I need to buy groceries.\"" },
+          { mistake: "Grocery means the store.", correction: "\"Grocery\" can mean the store, but \"groceries\" means the items." },
+        ],
+        relatedTerms: ["supermarket", "fresh produce", "pantry"],
+        register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
+        culturalNotes: "Common in daily life. Chinese: 食品杂货.",
+        warning: "Usually plural: \"groceries\" not \"grocery\" (unless referring to the store).",
+        safeAlternatives: [],
+        audioAvailable: true
+      },
+      {
+        id: "hl-maintenance",
+        term: "maintenance",
+        chinese: "维护；保养",
+        pinyin: "wéi hù",
+        meaning: "The process of keeping something in good condition. Regular upkeep.",
+        category: "home-life",
+        difficulty: "B1",
+        examples: [
+          { en: "Home maintenance is expensive.", zh: "房屋维护很贵。" },
+          { en: "The building needs maintenance.", zh: "这栋楼需要维护。" },
+          { en: "Regular maintenance extends the life of appliances.", zh: "定期保养延长电器的使用寿命。" },
+          { en: "Maintenance workers fix the elevator.", zh: "维修工人修理电梯。" },
+          { en: "The maintenance fee covers repairs.", zh: "维护费包含维修。" },
+          { en: "Preventive maintenance saves money.", zh: "预防性维护省钱。" },
+          { en: "Car maintenance is my responsibility.", zh: "汽车维护是我的责任。" },
+        ],
+        commonMistakes: [
+          { mistake: "I need to maintenance my car.", correction: "\"Maintenance\" is a noun. Use \"I need to maintain my car.\"" },
+          { mistake: "Maintenance means fixing only.", correction: "Maintenance includes both fixing AND regular upkeep." },
+        ],
+        relatedTerms: ["repair", "upkeep", "renovation"],
+        register: "neutral",
+        intensityNote: "Level 0/5: Not offensive. Neutral everyday English pattern.",
+        usageContext: "Everyday speech and writing. Suitable for all contexts.",
+        formality: "neutral",
+        culturalNotes: "Common in housing and property contexts.",
+        warning: "Noun form only. The verb is \"maintain\".",
+        safeAlternatives: [],
+        audioAvailable: true
+      }],
     exercises: [
       {
         id: "hl-ex-1",
@@ -4642,7 +5429,26 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
         hint: "'Wash the dishes' is the standard phrase.",
         hintZh: "'Wash the dishes' 是标准说法。"
       }
-    ],
+    ,
+      {
+        id: "hl-ex-4",
+        type: "fill-blank",
+        question: "I need to _____ the dishes. (do / make)",
+        questionZh: "我需要_____碗。（do / make）",
+        options: ["do", "make"],
+        correctAnswer: "do",
+        hint: "Do the dishes",
+        hintZh: "Do the dishes"
+      },
+      {
+        id: "hl-ex-5",
+        type: "translation",
+        question: "Translate: 我需要吸尘。",
+        questionZh: "翻译：我需要吸尘。",
+        correctAnswer: "I need to vacuum.",
+        hint: "Vacuum = 用吸尘器打扫",
+        hintZh: "Vacuum = 用吸尘器打扫"
+      }],
     teacherPanel: {
       simpleExplanation: "Chores: do the laundry, take out the trash, wash the dishes. Cooking: make pasta, pass the salt. Cleaning: vacuum, tidy up. Relaxing: chill, unwind, binge-watch.",
       chineseExplanation: "家务：do the laundry, take out the trash, wash the dishes。做饭：make pasta, pass the salt。打扫：vacuum, tidy up。放松：chill, unwind, binge-watch。",
