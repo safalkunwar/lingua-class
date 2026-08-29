@@ -30,6 +30,9 @@ export interface SurvivalResource {
   comparisonTable?: { term: string; meaning: string; chinese: string; situation: string }[];
   pronunciation?: { phonetic: string; tip: string; tipZh: string; audioText?: string };
   audioText?: string;
+  funnyMoments?: { title: string; titleZh: string; situation: string; dialogue: string; punchline: string; lesson: string }[];
+  structures?: { name: string; nameZh: string; formula: string; example: string; tip: string }[];
+  techniques?: { name: string; description: string; tip: string }[];
   miniDrills: MiniDrill[];
   teacherNotes?: string;
   teacherNotesZh?: string;
