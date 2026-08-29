@@ -54,30 +54,7 @@ export const survivalResources: SurvivalResource[] = [
       { type: "choose", question: "___ sun is hot.", questionZh: "太阳很热。", options: [{ text: "A", textZh: "A", isCorrect: false }, { text: "An", textZh: "An", isCorrect: false }, { text: "The", textZh: "The", isCorrect: true }] },
       { type: "fill-blank", question: "She is ___ engineer.", questionZh: "她是一名工程师。", answer: "an", blank: "___" },
     ],
-        funnyMoments: [
-      { title: "The Parking Ticket Story", titleZh: "停车罚单", situation: "At a café with friends.",
-        dialogue: "A: 'How was your weekend?' B: 'I go to park. Car get ticket. Very angry.'", punchline: "'I go to park' sounds like a science experiment! Need: 'I went to the park.'", lesson: "Articles and tenses are not optional." },
-      { title: "Restaurant Confusion", titleZh: "餐厅混乱", situation: "Ordering at a restaurant.",
-        dialogue: "Customer: 'I want eat chicken.' Waiter: 'Here's the raw chicken!'", punchline: "Without the right structure, you get raw chicken! Use 'I'd like to have...'", lesson: "Sentence structure determines meaning." },
-      { title: "The Grandmother Call", titleZh: "给奶奶打电话", situation: "Calling grandma with errors.",
-        dialogue: "You: 'I am going market tomorrow.' Grandma: 'The market is closed.'", punchline: "Grandma thinks you're planning a heist! Need 'to the' and proper tense.", lesson: "Small grammar errors cause big misunderstandings." }
-    ],
-    structures: [
-      { name: "Basic Sentence", nameZh: "基础句子", formula: "Subject + Verb + Object",
-        example: "I ate pizza yesterday.", tip: "Every complete sentence needs at least a subject and verb." },
-      { name: "With Time", nameZh: "添加时间", formula: "S + V + O + Time",
-        example: "I study English every morning.", tip: "Time goes at the beginning or end." },
-      { name: "With Place", nameZh: "添加地点", formula: "S + V + O + Place",
-        example: "She lives in Beijing.", tip: "Place usually comes after the verb." },
-      { name: "Questions", nameZh: "疑问句", formula: "Do/Does + S + V + ...?",
-        example: "Do you like coffee?", tip: "Use do/does for present simple questions." }
-    ],
-    techniques: [
-      { name: "Sentence Building Blocks", description: "Build sentences by stacking: Subject → Verb → Object → Extra.", tip: "Practice 5 sentences per day, each adding one block." },
-      { name: "Shadowing Technique", description: "Listen to a native speaker and repeat exactly.", tip: "Start with 5-10 word sentences, then increase length." },
-      { name: "Color Coding", description: "Red for subjects, blue for verbs, green for objects.", tip: "Visual learners remember patterns better with colors." }
-    ],
-xpReward: 30,
+    xpReward: 30,
   },
   {
     id: "foundation-prepositions",
@@ -116,30 +93,7 @@ xpReward: 30,
       { type: "fill-blank", question: "The cat is ___ the table.", questionZh: "猫在桌子上。", answer: "on", blank: "___" },
       { type: "match", question: "Match time expressions with prepositions.", questionZh: "把时间表达和介词配对。", pairs: [{ left: "5:00", right: "at" }, { left: "Monday", right: "on" }, { left: "July", right: "in" }] },
     ],
-        funnyMoments: [
-      { title: "The Parking Ticket Story", titleZh: "停车罚单", situation: "At a café with friends.",
-        dialogue: "A: 'How was your weekend?' B: 'I go to park. Car get ticket. Very angry.'", punchline: "'I go to park' sounds like a science experiment! Need: 'I went to the park.'", lesson: "Articles and tenses are not optional." },
-      { title: "Restaurant Confusion", titleZh: "餐厅混乱", situation: "Ordering at a restaurant.",
-        dialogue: "Customer: 'I want eat chicken.' Waiter: 'Here's the raw chicken!'", punchline: "Without the right structure, you get raw chicken! Use 'I'd like to have...'", lesson: "Sentence structure determines meaning." },
-      { title: "The Grandmother Call", titleZh: "给奶奶打电话", situation: "Calling grandma with errors.",
-        dialogue: "You: 'I am going market tomorrow.' Grandma: 'The market is closed.'", punchline: "Grandma thinks you're planning a heist! Need 'to the' and proper tense.", lesson: "Small grammar errors cause big misunderstandings." }
-    ],
-    structures: [
-      { name: "Basic Sentence", nameZh: "基础句子", formula: "Subject + Verb + Object",
-        example: "I ate pizza yesterday.", tip: "Every complete sentence needs at least a subject and verb." },
-      { name: "With Time", nameZh: "添加时间", formula: "S + V + O + Time",
-        example: "I study English every morning.", tip: "Time goes at the beginning or end." },
-      { name: "With Place", nameZh: "添加地点", formula: "S + V + O + Place",
-        example: "She lives in Beijing.", tip: "Place usually comes after the verb." },
-      { name: "Questions", nameZh: "疑问句", formula: "Do/Does + S + V + ...?",
-        example: "Do you like coffee?", tip: "Use do/does for present simple questions." }
-    ],
-    techniques: [
-      { name: "Sentence Building Blocks", description: "Build sentences by stacking: Subject → Verb → Object → Extra.", tip: "Practice 5 sentences per day, each adding one block." },
-      { name: "Shadowing Technique", description: "Listen to a native speaker and repeat exactly.", tip: "Start with 5-10 word sentences, then increase length." },
-      { name: "Color Coding", description: "Red for subjects, blue for verbs, green for objects.", tip: "Visual learners remember patterns better with colors." }
-    ],
-xpReward: 30,
+    xpReward: 30,
   },
   {
     id: "foundation-modal-can-could",
@@ -171,30 +125,7 @@ xpReward: 30,
       { type: "choose", question: "___ you pass me the salt?", questionZh: "请把盐递给我好吗？", options: [{ text: "Can", textZh: "Can", isCorrect: true }, { text: "Could", textZh: "Could", isCorrect: true }, { text: "Can to", textZh: "Can to", isCorrect: false }] },
       { type: "rewrite", question: "Make this more polite: 'Give me that.'", questionZh: "让这句话更有礼貌。", answer: "Could you give me that, please?", blank: "Could you ___ that, please?" },
     ],
-        funnyMoments: [
-      { title: "The Parking Ticket Story", titleZh: "停车罚单", situation: "At a café with friends.",
-        dialogue: "A: 'How was your weekend?' B: 'I go to park. Car get ticket. Very angry.'", punchline: "'I go to park' sounds like a science experiment! Need: 'I went to the park.'", lesson: "Articles and tenses are not optional." },
-      { title: "Restaurant Confusion", titleZh: "餐厅混乱", situation: "Ordering at a restaurant.",
-        dialogue: "Customer: 'I want eat chicken.' Waiter: 'Here's the raw chicken!'", punchline: "Without the right structure, you get raw chicken! Use 'I'd like to have...'", lesson: "Sentence structure determines meaning." },
-      { title: "The Grandmother Call", titleZh: "给奶奶打电话", situation: "Calling grandma with errors.",
-        dialogue: "You: 'I am going market tomorrow.' Grandma: 'The market is closed.'", punchline: "Grandma thinks you're planning a heist! Need 'to the' and proper tense.", lesson: "Small grammar errors cause big misunderstandings." }
-    ],
-    structures: [
-      { name: "Basic Sentence", nameZh: "基础句子", formula: "Subject + Verb + Object",
-        example: "I ate pizza yesterday.", tip: "Every complete sentence needs at least a subject and verb." },
-      { name: "With Time", nameZh: "添加时间", formula: "S + V + O + Time",
-        example: "I study English every morning.", tip: "Time goes at the beginning or end." },
-      { name: "With Place", nameZh: "添加地点", formula: "S + V + O + Place",
-        example: "She lives in Beijing.", tip: "Place usually comes after the verb." },
-      { name: "Questions", nameZh: "疑问句", formula: "Do/Does + S + V + ...?",
-        example: "Do you like coffee?", tip: "Use do/does for present simple questions." }
-    ],
-    techniques: [
-      { name: "Sentence Building Blocks", description: "Build sentences by stacking: Subject → Verb → Object → Extra.", tip: "Practice 5 sentences per day, each adding one block." },
-      { name: "Shadowing Technique", description: "Listen to a native speaker and repeat exactly.", tip: "Start with 5-10 word sentences, then increase length." },
-      { name: "Color Coding", description: "Red for subjects, blue for verbs, green for objects.", tip: "Visual learners remember patterns better with colors." }
-    ],
-xpReward: 30,
+    xpReward: 30,
   },
   {
     id: "foundation-common-mistakes",
@@ -229,30 +160,7 @@ xpReward: 30,
       { type: "choose", question: "I ___ like chocolate.", questionZh: "我真的很喜欢巧克力。", options: [{ text: "very", textZh: "very", isCorrect: false }, { text: "really", textZh: "really", isCorrect: true }] },
       { type: "rewrite", question: "Fix this sentence: 'She don't know.'", questionZh: "改正这个句子。", answer: "She doesn't know.", blank: "She ___ know." },
     ],
-        funnyMoments: [
-      { title: "The Parking Ticket Story", titleZh: "停车罚单", situation: "At a café with friends.",
-        dialogue: "A: 'How was your weekend?' B: 'I go to park. Car get ticket. Very angry.'", punchline: "'I go to park' sounds like a science experiment! Need: 'I went to the park.'", lesson: "Articles and tenses are not optional." },
-      { title: "Restaurant Confusion", titleZh: "餐厅混乱", situation: "Ordering at a restaurant.",
-        dialogue: "Customer: 'I want eat chicken.' Waiter: 'Here's the raw chicken!'", punchline: "Without the right structure, you get raw chicken! Use 'I'd like to have...'", lesson: "Sentence structure determines meaning." },
-      { title: "The Grandmother Call", titleZh: "给奶奶打电话", situation: "Calling grandma with errors.",
-        dialogue: "You: 'I am going market tomorrow.' Grandma: 'The market is closed.'", punchline: "Grandma thinks you're planning a heist! Need 'to the' and proper tense.", lesson: "Small grammar errors cause big misunderstandings." }
-    ],
-    structures: [
-      { name: "Basic Sentence", nameZh: "基础句子", formula: "Subject + Verb + Object",
-        example: "I ate pizza yesterday.", tip: "Every complete sentence needs at least a subject and verb." },
-      { name: "With Time", nameZh: "添加时间", formula: "S + V + O + Time",
-        example: "I study English every morning.", tip: "Time goes at the beginning or end." },
-      { name: "With Place", nameZh: "添加地点", formula: "S + V + O + Place",
-        example: "She lives in Beijing.", tip: "Place usually comes after the verb." },
-      { name: "Questions", nameZh: "疑问句", formula: "Do/Does + S + V + ...?",
-        example: "Do you like coffee?", tip: "Use do/does for present simple questions." }
-    ],
-    techniques: [
-      { name: "Sentence Building Blocks", description: "Build sentences by stacking: Subject → Verb → Object → Extra.", tip: "Practice 5 sentences per day, each adding one block." },
-      { name: "Shadowing Technique", description: "Listen to a native speaker and repeat exactly.", tip: "Start with 5-10 word sentences, then increase length." },
-      { name: "Color Coding", description: "Red for subjects, blue for verbs, green for objects.", tip: "Visual learners remember patterns better with colors." }
-    ],
-xpReward: 30,
+    xpReward: 30,
   },
   {
     id: "foundation-sv",
@@ -283,30 +191,7 @@ xpReward: 30,
       { type: "choose", question: "___ cold today.", questionZh: "今天很冷。", options: [{ text: "It's", textZh: "It's", isCorrect: true }, { text: "Is", textZh: "Is", isCorrect: false }, { text: "Cold", textZh: "Cold", isCorrect: false }] },
       { type: "fill-blank", question: "I ___ English every day.", questionZh: "我每天都学英语。", answer: "speak", blank: "___" },
     ],
-        funnyMoments: [
-      { title: "The Parking Ticket Story", titleZh: "停车罚单", situation: "At a café with friends.",
-        dialogue: "A: 'How was your weekend?' B: 'I go to park. Car get ticket. Very angry.'", punchline: "'I go to park' sounds like a science experiment! Need: 'I went to the park.'", lesson: "Articles and tenses are not optional." },
-      { title: "Restaurant Confusion", titleZh: "餐厅混乱", situation: "Ordering at a restaurant.",
-        dialogue: "Customer: 'I want eat chicken.' Waiter: 'Here's the raw chicken!'", punchline: "Without the right structure, you get raw chicken! Use 'I'd like to have...'", lesson: "Sentence structure determines meaning." },
-      { title: "The Grandmother Call", titleZh: "给奶奶打电话", situation: "Calling grandma with errors.",
-        dialogue: "You: 'I am going market tomorrow.' Grandma: 'The market is closed.'", punchline: "Grandma thinks you're planning a heist! Need 'to the' and proper tense.", lesson: "Small grammar errors cause big misunderstandings." }
-    ],
-    structures: [
-      { name: "Basic Sentence", nameZh: "基础句子", formula: "Subject + Verb + Object",
-        example: "I ate pizza yesterday.", tip: "Every complete sentence needs at least a subject and verb." },
-      { name: "With Time", nameZh: "添加时间", formula: "S + V + O + Time",
-        example: "I study English every morning.", tip: "Time goes at the beginning or end." },
-      { name: "With Place", nameZh: "添加地点", formula: "S + V + O + Place",
-        example: "She lives in Beijing.", tip: "Place usually comes after the verb." },
-      { name: "Questions", nameZh: "疑问句", formula: "Do/Does + S + V + ...?",
-        example: "Do you like coffee?", tip: "Use do/does for present simple questions." }
-    ],
-    techniques: [
-      { name: "Sentence Building Blocks", description: "Build sentences by stacking: Subject → Verb → Object → Extra.", tip: "Practice 5 sentences per day, each adding one block." },
-      { name: "Shadowing Technique", description: "Listen to a native speaker and repeat exactly.", tip: "Start with 5-10 word sentences, then increase length." },
-      { name: "Color Coding", description: "Red for subjects, blue for verbs, green for objects.", tip: "Visual learners remember patterns better with colors." }
-    ],
-xpReward: 25,
+    xpReward: 25,
   },
   {
     id: "sentence-basic-to-advanced",
@@ -334,30 +219,7 @@ xpReward: 25,
       { type: "match", question: "Match sentence parts.", questionZh: "匹配句子成分。", pairs: [{ left: "I (S)", right: "subject" }, { left: "ate (V)", right: "verb" }, { left: "pizza (O)", right: "object" }] },
       { type: "rewrite", question: "Expand: 'I read.'", questionZh: "扩展句子。", answer: "I read interesting books every evening.", blank: "I read ___ every evening." },
     ],
-        funnyMoments: [
-      { title: "The Parking Ticket Story", titleZh: "停车罚单", situation: "At a café with friends.",
-        dialogue: "A: 'How was your weekend?' B: 'I go to park. Car get ticket. Very angry.'", punchline: "'I go to park' sounds like a science experiment! Need: 'I went to the park.'", lesson: "Articles and tenses are not optional." },
-      { title: "Restaurant Confusion", titleZh: "餐厅混乱", situation: "Ordering at a restaurant.",
-        dialogue: "Customer: 'I want eat chicken.' Waiter: 'Here's the raw chicken!'", punchline: "Without the right structure, you get raw chicken! Use 'I'd like to have...'", lesson: "Sentence structure determines meaning." },
-      { title: "The Grandmother Call", titleZh: "给奶奶打电话", situation: "Calling grandma with errors.",
-        dialogue: "You: 'I am going market tomorrow.' Grandma: 'The market is closed.'", punchline: "Grandma thinks you're planning a heist! Need 'to the' and proper tense.", lesson: "Small grammar errors cause big misunderstandings." }
-    ],
-    structures: [
-      { name: "Basic Sentence", nameZh: "基础句子", formula: "Subject + Verb + Object",
-        example: "I ate pizza yesterday.", tip: "Every complete sentence needs at least a subject and verb." },
-      { name: "With Time", nameZh: "添加时间", formula: "S + V + O + Time",
-        example: "I study English every morning.", tip: "Time goes at the beginning or end." },
-      { name: "With Place", nameZh: "添加地点", formula: "S + V + O + Place",
-        example: "She lives in Beijing.", tip: "Place usually comes after the verb." },
-      { name: "Questions", nameZh: "疑问句", formula: "Do/Does + S + V + ...?",
-        example: "Do you like coffee?", tip: "Use do/does for present simple questions." }
-    ],
-    techniques: [
-      { name: "Sentence Building Blocks", description: "Build sentences by stacking: Subject → Verb → Object → Extra.", tip: "Practice 5 sentences per day, each adding one block." },
-      { name: "Shadowing Technique", description: "Listen to a native speaker and repeat exactly.", tip: "Start with 5-10 word sentences, then increase length." },
-      { name: "Color Coding", description: "Red for subjects, blue for verbs, green for objects.", tip: "Visual learners remember patterns better with colors." }
-    ],
-xpReward: 30,
+    xpReward: 30,
   },
   {
     id: "sentence-questions-negatives",
@@ -384,30 +246,7 @@ xpReward: 30,
       { type: "choose", question: "___ you like pizza?", questionZh: "你喜欢披萨吗？", options: [{ text: "Do", textZh: "Do", isCorrect: true }, { text: "Does", textZh: "Does", isCorrect: false }, { text: "Is", textZh: "Is", isCorrect: false }] },
       { type: "fill-blank", question: "She ___ not like coffee.", questionZh: "她不喜欢咖啡。", answer: "does", blank: "___" },
     ],
-        funnyMoments: [
-      { title: "The Parking Ticket Story", titleZh: "停车罚单", situation: "At a café with friends.",
-        dialogue: "A: 'How was your weekend?' B: 'I go to park. Car get ticket. Very angry.'", punchline: "'I go to park' sounds like a science experiment! Need: 'I went to the park.'", lesson: "Articles and tenses are not optional." },
-      { title: "Restaurant Confusion", titleZh: "餐厅混乱", situation: "Ordering at a restaurant.",
-        dialogue: "Customer: 'I want eat chicken.' Waiter: 'Here's the raw chicken!'", punchline: "Without the right structure, you get raw chicken! Use 'I'd like to have...'", lesson: "Sentence structure determines meaning." },
-      { title: "The Grandmother Call", titleZh: "给奶奶打电话", situation: "Calling grandma with errors.",
-        dialogue: "You: 'I am going market tomorrow.' Grandma: 'The market is closed.'", punchline: "Grandma thinks you're planning a heist! Need 'to the' and proper tense.", lesson: "Small grammar errors cause big misunderstandings." }
-    ],
-    structures: [
-      { name: "Basic Sentence", nameZh: "基础句子", formula: "Subject + Verb + Object",
-        example: "I ate pizza yesterday.", tip: "Every complete sentence needs at least a subject and verb." },
-      { name: "With Time", nameZh: "添加时间", formula: "S + V + O + Time",
-        example: "I study English every morning.", tip: "Time goes at the beginning or end." },
-      { name: "With Place", nameZh: "添加地点", formula: "S + V + O + Place",
-        example: "She lives in Beijing.", tip: "Place usually comes after the verb." },
-      { name: "Questions", nameZh: "疑问句", formula: "Do/Does + S + V + ...?",
-        example: "Do you like coffee?", tip: "Use do/does for present simple questions." }
-    ],
-    techniques: [
-      { name: "Sentence Building Blocks", description: "Build sentences by stacking: Subject → Verb → Object → Extra.", tip: "Practice 5 sentences per day, each adding one block." },
-      { name: "Shadowing Technique", description: "Listen to a native speaker and repeat exactly.", tip: "Start with 5-10 word sentences, then increase length." },
-      { name: "Color Coding", description: "Red for subjects, blue for verbs, green for objects.", tip: "Visual learners remember patterns better with colors." }
-    ],
-xpReward: 30,
+    xpReward: 30,
   },
   {
     id: "sentence-clauses",
@@ -431,30 +270,7 @@ xpReward: 30,
       { type: "choose", question: "___ it was late, I kept working.", questionZh: "虽然已经很晚了，我还是继续工作。", options: [{ text: "Because", textZh: "Because", isCorrect: false }, { text: "Although", textZh: "Although", isCorrect: true }, { text: "When", textZh: "When", isCorrect: false }] },
       { type: "fill-blank", question: "I'll call you ___ I arrive.", questionZh: "我到了就给你打电话。", answer: "when", blank: "___" },
     ],
-        funnyMoments: [
-      { title: "The Parking Ticket Story", titleZh: "停车罚单", situation: "At a café with friends.",
-        dialogue: "A: 'How was your weekend?' B: 'I go to park. Car get ticket. Very angry.'", punchline: "'I go to park' sounds like a science experiment! Need: 'I went to the park.'", lesson: "Articles and tenses are not optional." },
-      { title: "Restaurant Confusion", titleZh: "餐厅混乱", situation: "Ordering at a restaurant.",
-        dialogue: "Customer: 'I want eat chicken.' Waiter: 'Here's the raw chicken!'", punchline: "Without the right structure, you get raw chicken! Use 'I'd like to have...'", lesson: "Sentence structure determines meaning." },
-      { title: "The Grandmother Call", titleZh: "给奶奶打电话", situation: "Calling grandma with errors.",
-        dialogue: "You: 'I am going market tomorrow.' Grandma: 'The market is closed.'", punchline: "Grandma thinks you're planning a heist! Need 'to the' and proper tense.", lesson: "Small grammar errors cause big misunderstandings." }
-    ],
-    structures: [
-      { name: "Basic Sentence", nameZh: "基础句子", formula: "Subject + Verb + Object",
-        example: "I ate pizza yesterday.", tip: "Every complete sentence needs at least a subject and verb." },
-      { name: "With Time", nameZh: "添加时间", formula: "S + V + O + Time",
-        example: "I study English every morning.", tip: "Time goes at the beginning or end." },
-      { name: "With Place", nameZh: "添加地点", formula: "S + V + O + Place",
-        example: "She lives in Beijing.", tip: "Place usually comes after the verb." },
-      { name: "Questions", nameZh: "疑问句", formula: "Do/Does + S + V + ...?",
-        example: "Do you like coffee?", tip: "Use do/does for present simple questions." }
-    ],
-    techniques: [
-      { name: "Sentence Building Blocks", description: "Build sentences by stacking: Subject → Verb → Object → Extra.", tip: "Practice 5 sentences per day, each adding one block." },
-      { name: "Shadowing Technique", description: "Listen to a native speaker and repeat exactly.", tip: "Start with 5-10 word sentences, then increase length." },
-      { name: "Color Coding", description: "Red for subjects, blue for verbs, green for objects.", tip: "Visual learners remember patterns better with colors." }
-    ],
-xpReward: 35,
+    xpReward: 35,
   },
   {
     id: "speaking-buying-time",
@@ -482,30 +298,7 @@ xpReward: 35,
       { type: "choose", question: "Choose a natural buying-time phrase:", questionZh: "选择一个自然的争取时间短语：", options: [{ text: "Hmm, that's interesting.", textZh: "嗯，有意思。", isCorrect: true }, { text: "I don't know anything.", textZh: "我什么都不知道。", isCorrect: false }, { text: "No.", textZh: "不。", isCorrect: false }] },
       { type: "rewrite", question: "Make this more natural: 'I don't know.'", questionZh: "让这句话更自然。", answer: "That's a good question. I think...", blank: "___ I think..." },
     ],
-        funnyMoments: [
-      { title: "The Thank You Trap", titleZh: "谢谢陷阱", situation: "Someone compliments you.",
-        dialogue: "A: 'Great presentation!' You: 'No, it was terrible.'", punchline: "You rejected their kindness! 'Thank you' is the safe response.", lesson: "Accept compliments gracefully." },
-      { title: "Apology Overload", titleZh: "过度道歉", situation: "You bump into someone.",
-        dialogue: "You: 'I'm so sorry! I'm so sorry!' Stranger: 'Why 10 seconds?'", punchline: "One sincere apology is enough.", lesson: "One 'sorry' with eye contact is enough." },
-      { title: "The Compliment Rejection", titleZh: "拒绝赞美", situation: "A friend compliments your outfit.",
-        dialogue: "Friend: 'Nice shirt!' You: 'Oh, this old thing?'", punchline: "You argued with their compliment! Just say 'Thanks!'", lesson: "Compliments are gifts. Say thank you." }
-    ],
-    structures: [
-      { name: "Thanks", nameZh: "感谢", formula: "Thank you / Thanks a lot / I appreciate it",
-        example: "Thanks a lot for your help!", tip: "Add 'for + specific thing' for genuine thanks." },
-      { name: "Apology", nameZh: "道歉", formula: "I'm sorry / My apologies / I apologize for...",
-        example: "I'm sorry I'm late. The traffic was bad.", tip: "Brief apology + reason + what you'll do next." },
-      { name: "Compliment", nameZh: "赞美", formula: "Great job / Nice work / I like your...",
-        example: "Great job on the presentation!", tip: "Be specific for sincerity." },
-      { name: "Declining", nameZh: "委婉拒绝", formula: "I appreciate it, but... / I wish I could, but...",
-        example: "I appreciate the invite, but I have a prior commitment.", tip: "Always start with appreciation." }
-    ],
-    techniques: [
-      { name: "The 3-Part Apology", description: "1) Apologize, 2) Explain briefly, 3) Offer solution.", tip: "'I'm sorry I'm late. Traffic was bad. I'll make up the time.'" },
-      { name: "Compliment Echo", description: "When someone compliments you, compliment them back.", tip: "'Thanks! I like your shoes too.'" },
-      { name: "Gratitude Journal", description: "Write 3 things you're grateful for each morning in English.", tip: "Builds positive vocabulary." }
-    ],
-xpReward: 30,
+    xpReward: 30,
   },
   {
     id: "speaking-agreeing",
@@ -533,30 +326,7 @@ xpReward: 30,
       { type: "choose", question: "Strong agreement:", questionZh: "强烈同意：", options: [{ text: "Maybe.", textZh: "也许。", isCorrect: false }, { text: "Absolutely!", textZh: "绝对！", isCorrect: true }, { text: "No way.", textZh: "不可能。", isCorrect: false }] },
       { type: "rewrite", question: "Softly disagree: 'You are wrong.'", questionZh: "委婉反对：", answer: "I see your point, but I have a different view.", blank: "I see your point, but ___" },
     ],
-        funnyMoments: [
-      { title: "The Thank You Trap", titleZh: "谢谢陷阱", situation: "Someone compliments you.",
-        dialogue: "A: 'Great presentation!' You: 'No, it was terrible.'", punchline: "You rejected their kindness! 'Thank you' is the safe response.", lesson: "Accept compliments gracefully." },
-      { title: "Apology Overload", titleZh: "过度道歉", situation: "You bump into someone.",
-        dialogue: "You: 'I'm so sorry! I'm so sorry!' Stranger: 'Why 10 seconds?'", punchline: "One sincere apology is enough.", lesson: "One 'sorry' with eye contact is enough." },
-      { title: "The Compliment Rejection", titleZh: "拒绝赞美", situation: "A friend compliments your outfit.",
-        dialogue: "Friend: 'Nice shirt!' You: 'Oh, this old thing?'", punchline: "You argued with their compliment! Just say 'Thanks!'", lesson: "Compliments are gifts. Say thank you." }
-    ],
-    structures: [
-      { name: "Thanks", nameZh: "感谢", formula: "Thank you / Thanks a lot / I appreciate it",
-        example: "Thanks a lot for your help!", tip: "Add 'for + specific thing' for genuine thanks." },
-      { name: "Apology", nameZh: "道歉", formula: "I'm sorry / My apologies / I apologize for...",
-        example: "I'm sorry I'm late. The traffic was bad.", tip: "Brief apology + reason + what you'll do next." },
-      { name: "Compliment", nameZh: "赞美", formula: "Great job / Nice work / I like your...",
-        example: "Great job on the presentation!", tip: "Be specific for sincerity." },
-      { name: "Declining", nameZh: "委婉拒绝", formula: "I appreciate it, but... / I wish I could, but...",
-        example: "I appreciate the invite, but I have a prior commitment.", tip: "Always start with appreciation." }
-    ],
-    techniques: [
-      { name: "The 3-Part Apology", description: "1) Apologize, 2) Explain briefly, 3) Offer solution.", tip: "'I'm sorry I'm late. Traffic was bad. I'll make up the time.'" },
-      { name: "Compliment Echo", description: "When someone compliments you, compliment them back.", tip: "'Thanks! I like your shoes too.'" },
-      { name: "Gratitude Journal", description: "Write 3 things you're grateful for each morning in English.", tip: "Builds positive vocabulary." }
-    ],
-xpReward: 30,
+    xpReward: 30,
   },
   {
     id: "speaking-clarifying",
@@ -584,30 +354,7 @@ xpReward: 30,
       { type: "choose", question: "Clarify this: 'We'll launch next month.'", questionZh: "澄清这句话：", options: [{ text: "So you mean next month?", textZh: "所以你是说下个月？", isCorrect: true }, { text: "No.", textZh: "不。", isCorrect: false }, { text: "OK.", textZh: "好的。", isCorrect: false }] },
       { type: "speak", question: "Practice confirming: 'Are you saying...?'", questionZh: "练习确认：", audioText: "Are you saying that we need more time?" },
     ],
-        funnyMoments: [
-      { title: "The Thank You Trap", titleZh: "谢谢陷阱", situation: "Someone compliments you.",
-        dialogue: "A: 'Great presentation!' You: 'No, it was terrible.'", punchline: "You rejected their kindness! 'Thank you' is the safe response.", lesson: "Accept compliments gracefully." },
-      { title: "Apology Overload", titleZh: "过度道歉", situation: "You bump into someone.",
-        dialogue: "You: 'I'm so sorry! I'm so sorry!' Stranger: 'Why 10 seconds?'", punchline: "One sincere apology is enough.", lesson: "One 'sorry' with eye contact is enough." },
-      { title: "The Compliment Rejection", titleZh: "拒绝赞美", situation: "A friend compliments your outfit.",
-        dialogue: "Friend: 'Nice shirt!' You: 'Oh, this old thing?'", punchline: "You argued with their compliment! Just say 'Thanks!'", lesson: "Compliments are gifts. Say thank you." }
-    ],
-    structures: [
-      { name: "Thanks", nameZh: "感谢", formula: "Thank you / Thanks a lot / I appreciate it",
-        example: "Thanks a lot for your help!", tip: "Add 'for + specific thing' for genuine thanks." },
-      { name: "Apology", nameZh: "道歉", formula: "I'm sorry / My apologies / I apologize for...",
-        example: "I'm sorry I'm late. The traffic was bad.", tip: "Brief apology + reason + what you'll do next." },
-      { name: "Compliment", nameZh: "赞美", formula: "Great job / Nice work / I like your...",
-        example: "Great job on the presentation!", tip: "Be specific for sincerity." },
-      { name: "Declining", nameZh: "委婉拒绝", formula: "I appreciate it, but... / I wish I could, but...",
-        example: "I appreciate the invite, but I have a prior commitment.", tip: "Always start with appreciation." }
-    ],
-    techniques: [
-      { name: "The 3-Part Apology", description: "1) Apologize, 2) Explain briefly, 3) Offer solution.", tip: "'I'm sorry I'm late. Traffic was bad. I'll make up the time.'" },
-      { name: "Compliment Echo", description: "When someone compliments you, compliment them back.", tip: "'Thanks! I like your shoes too.'" },
-      { name: "Gratitude Journal", description: "Write 3 things you're grateful for each morning in English.", tip: "Builds positive vocabulary." }
-    ],
-xpReward: 30,
+    xpReward: 30,
   },
   {
     id: "survival-didnt-catch",
@@ -635,30 +382,7 @@ xpReward: 30,
       { type: "choose", question: "You didn't hear. What do you say?", questionZh: "你没听清，你说什么？", options: [{ text: "Sorry, I didn't catch that.", textZh: "抱歉，我没听清。", isCorrect: true }, { text: "You are wrong.", textZh: "你错了。", isCorrect: false }, { text: "I don't like it.", textZh: "我不喜欢。", isCorrect: false }] },
       { type: "speak", question: "Practice asking to repeat:", questionZh: "练习请求重复：", audioText: "Could you say that one more time?" },
     ],
-        funnyMoments: [
-      { title: "The Lost Tourist", titleZh: "迷路的游客", situation: "You're lost in a foreign city.",
-        dialogue: "You: 'Sorry, where is the... um... the place where you eat?' Local: 'You mean a restaurant?'", punchline: "You took 10 seconds! Survival phrases are short.", lesson: "Prepare simple phrases in advance." },
-      { title: "The Phone Call", titleZh: "电话", situation: "Receiving a phone call in English.",
-        dialogue: "You: [silence] Caller: 'Hello? Are you there?' You: 'Yes! I am here!'", punchline: "You panicked! Just say 'Speaking' or 'This is [name].'", lesson: "Phone English has its own mini-script." },
-      { title: "The Emergency", titleZh: "紧急情况", situation: "You need urgent help at a pharmacy.",
-        dialogue: "You: 'I have pain in my... the thing in my head...' Pharmacist: 'A headache?'", punchline: "You tried to describe anatomy! Use 'headache'.", lesson: "Memorize emergency phrases." }
-    ],
-    structures: [
-      { name: "Asking for Help", nameZh: "请求帮助", formula: "Excuse me / Can you help me? / I need... / Where is...?",
-        example: "Excuse me, can you help me?", tip: "Start with 'Excuse me' to get attention politely." },
-      { name: "Emergency", nameZh: "紧急情况", formula: "Help! / Call an ambulance / I need a doctor",
-        example: "Call an ambulance, please!", tip: "Keep emergency phrases short and shoutable." },
-      { name: "Phone Calls", nameZh: "打电话", formula: "Hello? / Speaking / This is [name] / Can I take a message?",
-        example: "Hello? Yes, speaking.", tip: "Phone English is formulaic. Learn the script." },
-      { name: "Shopping", nameZh: "购物", formula: "How much is this? / Can I try it on?",
-        example: "How much is this, please?", tip: "Polite phrases make transactions smooth." }
-    ],
-    techniques: [
-      { name: "Phrasebook Method", description: "Create your own mini-phrasebook for daily situations.", tip: "Translate your most common needs into 3-5 phrases each." },
-      { name: "Emergency Flashcards", description: "Make flashcards with ONLY the English phrase.", tip: "No translations. Your brain needs to react instantly." },
-      { name: "Role Play", description: "Practice survival scenarios with a partner.", tip: "Act out being lost, ordering food. Muscle memory saves you." }
-    ],
-xpReward: 25,
+    xpReward: 25,
   },
   {
     id: "survival-slow-down",
@@ -686,30 +410,7 @@ xpReward: 25,
       { type: "choose", question: "Someone speaks too fast. You say:", questionZh: "有人说太快了，你说：", options: [{ text: "Could you speak more slowly?", textZh: "你能说慢一点吗？", isCorrect: true }, { text: "Stop talking!", textZh: "别说了！", isCorrect: false }, { text: "I am fast.", textZh: "我很快。", isCorrect: false }] },
       { type: "speak", question: "Practice: 'Could you speak more slowly, please?'", questionZh: "练习：", audioText: "Could you speak more slowly, please?" },
     ],
-        funnyMoments: [
-      { title: "The Lost Tourist", titleZh: "迷路的游客", situation: "You're lost in a foreign city.",
-        dialogue: "You: 'Sorry, where is the... um... the place where you eat?' Local: 'You mean a restaurant?'", punchline: "You took 10 seconds! Survival phrases are short.", lesson: "Prepare simple phrases in advance." },
-      { title: "The Phone Call", titleZh: "电话", situation: "Receiving a phone call in English.",
-        dialogue: "You: [silence] Caller: 'Hello? Are you there?' You: 'Yes! I am here!'", punchline: "You panicked! Just say 'Speaking' or 'This is [name].'", lesson: "Phone English has its own mini-script." },
-      { title: "The Emergency", titleZh: "紧急情况", situation: "You need urgent help at a pharmacy.",
-        dialogue: "You: 'I have pain in my... the thing in my head...' Pharmacist: 'A headache?'", punchline: "You tried to describe anatomy! Use 'headache'.", lesson: "Memorize emergency phrases." }
-    ],
-    structures: [
-      { name: "Asking for Help", nameZh: "请求帮助", formula: "Excuse me / Can you help me? / I need... / Where is...?",
-        example: "Excuse me, can you help me?", tip: "Start with 'Excuse me' to get attention politely." },
-      { name: "Emergency", nameZh: "紧急情况", formula: "Help! / Call an ambulance / I need a doctor",
-        example: "Call an ambulance, please!", tip: "Keep emergency phrases short and shoutable." },
-      { name: "Phone Calls", nameZh: "打电话", formula: "Hello? / Speaking / This is [name] / Can I take a message?",
-        example: "Hello? Yes, speaking.", tip: "Phone English is formulaic. Learn the script." },
-      { name: "Shopping", nameZh: "购物", formula: "How much is this? / Can I try it on?",
-        example: "How much is this, please?", tip: "Polite phrases make transactions smooth." }
-    ],
-    techniques: [
-      { name: "Phrasebook Method", description: "Create your own mini-phrasebook for daily situations.", tip: "Translate your most common needs into 3-5 phrases each." },
-      { name: "Emergency Flashcards", description: "Make flashcards with ONLY the English phrase.", tip: "No translations. Your brain needs to react instantly." },
-      { name: "Role Play", description: "Practice survival scenarios with a partner.", tip: "Act out being lost, ordering food. Muscle memory saves you." }
-    ],
-xpReward: 25,
+    xpReward: 25,
   },
   {
     id: "survival-meaning",
@@ -737,30 +438,7 @@ xpReward: 25,
       { type: "choose", question: "You don't understand a word. You ask:", questionZh: "你不懂一个词，你问：", options: [{ text: "What does that mean?", textZh: "那是什么意思？", isCorrect: true }, { text: "Tell me everything.", textZh: "告诉我所有事。", isCorrect: false }, { text: "It's fine.", textZh: "没关系。", isCorrect: false }] },
       { type: "speak", question: "Practice: 'What does that mean?'", questionZh: "练习：", audioText: "What does that mean?" },
     ],
-        funnyMoments: [
-      { title: "The Lost Tourist", titleZh: "迷路的游客", situation: "You're lost in a foreign city.",
-        dialogue: "You: 'Sorry, where is the... um... the place where you eat?' Local: 'You mean a restaurant?'", punchline: "You took 10 seconds! Survival phrases are short.", lesson: "Prepare simple phrases in advance." },
-      { title: "The Phone Call", titleZh: "电话", situation: "Receiving a phone call in English.",
-        dialogue: "You: [silence] Caller: 'Hello? Are you there?' You: 'Yes! I am here!'", punchline: "You panicked! Just say 'Speaking' or 'This is [name].'", lesson: "Phone English has its own mini-script." },
-      { title: "The Emergency", titleZh: "紧急情况", situation: "You need urgent help at a pharmacy.",
-        dialogue: "You: 'I have pain in my... the thing in my head...' Pharmacist: 'A headache?'", punchline: "You tried to describe anatomy! Use 'headache'.", lesson: "Memorize emergency phrases." }
-    ],
-    structures: [
-      { name: "Asking for Help", nameZh: "请求帮助", formula: "Excuse me / Can you help me? / I need... / Where is...?",
-        example: "Excuse me, can you help me?", tip: "Start with 'Excuse me' to get attention politely." },
-      { name: "Emergency", nameZh: "紧急情况", formula: "Help! / Call an ambulance / I need a doctor",
-        example: "Call an ambulance, please!", tip: "Keep emergency phrases short and shoutable." },
-      { name: "Phone Calls", nameZh: "打电话", formula: "Hello? / Speaking / This is [name] / Can I take a message?",
-        example: "Hello? Yes, speaking.", tip: "Phone English is formulaic. Learn the script." },
-      { name: "Shopping", nameZh: "购物", formula: "How much is this? / Can I try it on?",
-        example: "How much is this, please?", tip: "Polite phrases make transactions smooth." }
-    ],
-    techniques: [
-      { name: "Phrasebook Method", description: "Create your own mini-phrasebook for daily situations.", tip: "Translate your most common needs into 3-5 phrases each." },
-      { name: "Emergency Flashcards", description: "Make flashcards with ONLY the English phrase.", tip: "No translations. Your brain needs to react instantly." },
-      { name: "Role Play", description: "Practice survival scenarios with a partner.", tip: "Act out being lost, ordering food. Muscle memory saves you." }
-    ],
-xpReward: 25,
+    xpReward: 25,
   },
   {
     id: "pronunciation-th",
@@ -790,28 +468,7 @@ xpReward: 25,
       { type: "listen", question: "Listen and identify the TH sound:", questionZh: "听并识别 TH 音：", audioText: "think this three that", options: [{ text: "Voiceless: think, three", textZh: "清音：think, three", isCorrect: true }, { text: "Voiced: think, three", textZh: "浊音：think, three", isCorrect: false }] },
       { type: "speak", question: "Practice TH sounds:", questionZh: "练习 TH 音：", audioText: "think, this, three, that" },
     ],
-        funnyMoments: [
-      { title: "The Sheep/Ship Problem", titleZh: "绵羊/船只", situation: "Talking about animals and transportation.",
-        dialogue: "You: 'I see a sheep!' (pointing at a ship) Friend: 'That's a very expensive sheep.'", punchline: "'Sheep' and 'ship' differ only in the middle vowel!", lesson: "One vowel change can change the meaning completely." },
-      { title: "The Beach/Bitch Confusion", titleZh: "海滩/母狗", situation: "Inviting someone to the beach.",
-        dialogue: "You: 'Let's go to the bitch!' Friend: 'I beg your pardon?!'", punchline: "One wrong vowel sound and you invited someone to a very different place!", lesson: "Practice 'ee' vs 'i'. Smile wide for 'ee'." },
-      { title: "The Three Disaster", titleZh: "Three 灾难", situation: "Talking about numbers.",
-        dialogue: "You: 'I have three dollars.' (you mean xpReward: 30,3) Cashier: 'That's not enough.'", punchline: "'Three' and 'thirteen' sound almost identical!", lesson: "Stress matters! 'THIR-teen' has stress on first syllable." }
-    ],
-    structures: [
-      { name: "Vowel Pairs", nameZh: "元音对", formula: "ship (ɪ) vs sheep (iː) / bit (ɪ) vs beat (iː)",
-        example: "I ship sheep to the beat.", tip: "Smile wide for long 'ee'. Neutral for short 'i'." },
-      { name: "Consonant Pairs", nameZh: "辅音对", formula: "think (θ) vs sink (s) / van (v) vs fan (f)",
-        example: "I think before I sink.", tip: "Put tongue between teeth for 'th'." },
-      { name: "Word Stress", nameZh: "单词重音", formula: "PHOtograph / phoTOgraphy / phoTOGrapher",
-        example: "PHO-to-graph.", tip: "Stress changes meaning. Listen and mimic." }
-    ],
-    techniques: [
-      { name: "Minimal Pair Marathon", description: "Practice pairs that differ by ONE sound.", tip: "Record yourself. If you can't hear it, natives can't either." },
-      { name: "Shadowing", description: "Listen and repeat in real-time.", tip: "Focus on SOUNDS, not meaning." },
-      { name: "The Mirror Technique", description: "Watch your mouth in a mirror.", tip: "Check: lips round for 'oo'? Teeth touching for 'f'?" }
-    ],
-xpReward: 30,
+    xpReward: 30,
   },
   {
     id: "pronunciation-r-l",
@@ -840,28 +497,7 @@ xpReward: 30,
       { type: "listen", question: "Which word has L?", questionZh: "哪个词有 L？", audioText: "light right lake rake", options: [{ text: "light, lake", textZh: "light, lake", isCorrect: true }, { text: "right, rake", textZh: "right, rake", isCorrect: false }] },
       { type: "match", question: "Match words to sounds.", questionZh: "把单词和音配对。", pairs: [{ left: "light", right: "L" }, { left: "right", right: "R" }, { left: "lake", right: "L" }, { left: "rake", right: "R" }] },
     ],
-        funnyMoments: [
-      { title: "The Sheep/Ship Problem", titleZh: "绵羊/船只", situation: "Talking about animals and transportation.",
-        dialogue: "You: 'I see a sheep!' (pointing at a ship) Friend: 'That's a very expensive sheep.'", punchline: "'Sheep' and 'ship' differ only in the middle vowel!", lesson: "One vowel change can change the meaning completely." },
-      { title: "The Beach/Bitch Confusion", titleZh: "海滩/母狗", situation: "Inviting someone to the beach.",
-        dialogue: "You: 'Let's go to the bitch!' Friend: 'I beg your pardon?!'", punchline: "One wrong vowel sound and you invited someone to a very different place!", lesson: "Practice 'ee' vs 'i'. Smile wide for 'ee'." },
-      { title: "The Three Disaster", titleZh: "Three 灾难", situation: "Talking about numbers.",
-        dialogue: "You: 'I have three dollars.' (you mean xpReward: 30,3) Cashier: 'That's not enough.'", punchline: "'Three' and 'thirteen' sound almost identical!", lesson: "Stress matters! 'THIR-teen' has stress on first syllable." }
-    ],
-    structures: [
-      { name: "Vowel Pairs", nameZh: "元音对", formula: "ship (ɪ) vs sheep (iː) / bit (ɪ) vs beat (iː)",
-        example: "I ship sheep to the beat.", tip: "Smile wide for long 'ee'. Neutral for short 'i'." },
-      { name: "Consonant Pairs", nameZh: "辅音对", formula: "think (θ) vs sink (s) / van (v) vs fan (f)",
-        example: "I think before I sink.", tip: "Put tongue between teeth for 'th'." },
-      { name: "Word Stress", nameZh: "单词重音", formula: "PHOtograph / phoTOgraphy / phoTOGrapher",
-        example: "PHO-to-graph.", tip: "Stress changes meaning. Listen and mimic." }
-    ],
-    techniques: [
-      { name: "Minimal Pair Marathon", description: "Practice pairs that differ by ONE sound.", tip: "Record yourself. If you can't hear it, natives can't either." },
-      { name: "Shadowing", description: "Listen and repeat in real-time.", tip: "Focus on SOUNDS, not meaning." },
-      { name: "The Mirror Technique", description: "Watch your mouth in a mirror.", tip: "Check: lips round for 'oo'? Teeth touching for 'f'?" }
-    ],
-xpReward: 30,
+    xpReward: 30,
   },
   {
     id: "listening-written-vs-spoken",
@@ -889,28 +525,7 @@ xpReward: 30,
       { type: "listen", question: "Listen: 'I wanna go.' What does it mean?", questionZh: "听：", audioText: "I wanna go.", options: [{ text: "I want to go.", textZh: "I want to go.", isCorrect: true }, { text: "I won't go.", textZh: "I won't go.", isCorrect: false }] },
       { type: "choose", question: "Which is spoken form?", questionZh: "哪个是口语形式？", options: [{ text: "gonna", textZh: "gonna", isCorrect: true }, { text: "going to", textZh: "going to", isCorrect: false }] },
     ],
-        funnyMoments: [
-      { title: "The Connected Speech Fail", titleZh: "连读失败", situation: "Watching a movie with subtitles off.",
-        dialogue: "You hear: 'Whatchadoin?' You write: 'What cha doin'?'", punchline: "Native speakers link: 'What are you doing' → 'Whatchadoin'.", lesson: "Train your ear to hear the original words." },
-      { title: "The Accent Shock", titleZh: "口音震惊", situation: "You understand British English but not your American teacher.",
-        dialogue: "Teacher: 'Wanna go get some coffee?' You: 'I'm sorry, what?'", punchline: "'Wanna' and 'gonna' are casual forms. Natives use them constantly!", lesson: "Learn both formal and casual forms." },
-      { title: "The Speed Run", titleZh: "快语速", situation: "Watching a native comedy show.",
-        dialogue: "You hear rapid-fire jokes. You laugh 3 seconds after everyone.", punchline: "Comedians speak at 180+ words per minute!", lesson: "Process words as chunks, not individually." }
-    ],
-    structures: [
-      { name: "Connected Speech", nameZh: "连读", formula: "Word + Word → Linked sound\n'What are you' → 'Whatchoo'",
-        example: "I'm gonna get some water.", tip: "Common links: t+a → cha, d+you → jyou." },
-      { name: "Weak Forms", nameZh: "弱读", formula: "Function words shrink: to → tə, for → fə",
-        example: "I wanna get some water.", tip: "Small words get smaller in fast speech." },
-      { name: "Sentence Stress", nameZh: "句子重音", formula: "Content words = stressed\nFunction words = weak",
-        example: "I WANT to GO to the STORE.", tip: "English has rhythm: stressed-unstressed-stressed-unstressed." }
-    ],
-    techniques: [
-      { name: "Dictation Practice", description: "Listen to 30 seconds and write every word.", tip: "Play 3-5 times. Gist → details → check." },
-      { name: "Subtitle Strategy", description: "Watch with English subtitles first, then without.", tip: "Subtitles connect hearing with reading." },
-      { name: "Slow Down Audio", description: "Use 0.5x or 0.75x speed.", tip: "YouTube and podcast apps have speed controls." }
-    ],
-xpReward: 35,
+    xpReward: 35,
   },
   {
     id: "listening-stress-rhythm",
@@ -935,28 +550,7 @@ xpReward: 35,
       { type: "listen", question: "Listen for stress:", questionZh: "听重音：", audioText: "I don't know what you mean.", options: [{ text: "Stress: don't, know, what, mean", textZh: "重音：don't, know, what, mean", isCorrect: true }, { text: "Every word is equal", textZh: "每个词都一样", isCorrect: false }] },
       { type: "speak", question: "Practice: 'I don't know.'", questionZh: "练习：", audioText: "I don't know." },
     ],
-        funnyMoments: [
-      { title: "The Connected Speech Fail", titleZh: "连读失败", situation: "Watching a movie with subtitles off.",
-        dialogue: "You hear: 'Whatchadoin?' You write: 'What cha doin'?'", punchline: "Native speakers link: 'What are you doing' → 'Whatchadoin'.", lesson: "Train your ear to hear the original words." },
-      { title: "The Accent Shock", titleZh: "口音震惊", situation: "You understand British English but not your American teacher.",
-        dialogue: "Teacher: 'Wanna go get some coffee?' You: 'I'm sorry, what?'", punchline: "'Wanna' and 'gonna' are casual forms. Natives use them constantly!", lesson: "Learn both formal and casual forms." },
-      { title: "The Speed Run", titleZh: "快语速", situation: "Watching a native comedy show.",
-        dialogue: "You hear rapid-fire jokes. You laugh 3 seconds after everyone.", punchline: "Comedians speak at 180+ words per minute!", lesson: "Process words as chunks, not individually." }
-    ],
-    structures: [
-      { name: "Connected Speech", nameZh: "连读", formula: "Word + Word → Linked sound\n'What are you' → 'Whatchoo'",
-        example: "I'm gonna get some water.", tip: "Common links: t+a → cha, d+you → jyou." },
-      { name: "Weak Forms", nameZh: "弱读", formula: "Function words shrink: to → tə, for → fə",
-        example: "I wanna get some water.", tip: "Small words get smaller in fast speech." },
-      { name: "Sentence Stress", nameZh: "句子重音", formula: "Content words = stressed\nFunction words = weak",
-        example: "I WANT to GO to the STORE.", tip: "English has rhythm: stressed-unstressed-stressed-unstressed." }
-    ],
-    techniques: [
-      { name: "Dictation Practice", description: "Listen to 30 seconds and write every word.", tip: "Play 3-5 times. Gist → details → check." },
-      { name: "Subtitle Strategy", description: "Watch with English subtitles first, then without.", tip: "Subtitles connect hearing with reading." },
-      { name: "Slow Down Audio", description: "Use 0.5x or 0.75x speed.", tip: "YouTube and podcast apps have speed controls." }
-    ],
-xpReward: 35,
+    xpReward: 35,
   },
   {
     id: "confusing-interesting-interested",
@@ -987,30 +581,7 @@ xpReward: 35,
       { type: "choose", question: "The movie is ___.", questionZh: "这部电影很无聊。", options: [{ text: "boring", textZh: "boring", isCorrect: true }, { text: "bored", textZh: "bored", isCorrect: false }] },
       { type: "fill-blank", question: "I am ___ in art.", questionZh: "我对艺术感兴趣。", answer: "interested", blank: "___" },
     ],
-        funnyMoments: [
-      { title: "The Bank Incident", titleZh: "银行事件", situation: "You ask the bank for money.",
-        dialogue: "You: 'Can you borrow me xpReward: 30,00?' Banker: 'I'm not lending FROM you!'", punchline: "You made the banker sound like the borrower! Lend = give, borrow = take.", lesson: "Think about the direction of money flow." },
-      { title: "Beach Day Disaster", titleZh: "海滩日灾难", situation: "Talking about yesterday's beach trip.",
-        dialogue: "A: 'Did you have fun?' B: 'Yes! I swim in ocean!'", punchline: "'I swim' sounds like a job! Past: 'I swam.'", lesson: "Verb tenses change the timeline." },
-      { title: "The Make/Do Mix-up", titleZh: "Make/DO 搞混", situation: "Writing about your day.",
-        dialogue: "You post: 'I did a decision... and make a shower.'", punchline: "'Make a shower' sounds like manufacturing one! Use 'take a shower.'", lesson: "Collocations are fixed—learn them as chunks." }
-    ],
-    structures: [
-      { name: "Question Form", nameZh: "疑问句结构", formula: "Wh- word + do/does + S + V + ...?",
-        example: "Where do you live?", tip: "Wh- words always start the question." },
-      { name: "Negative Form", nameZh: "否定句结构", formula: "S + don't/doesn't + V + ...",
-        example: "She doesn't like coffee.", tip: "don't with I/you/we/they, doesn't with he/she/it." },
-      { name: "Past Simple", nameZh: "一般过去时", formula: "S + V-ed / irregular past",
-        example: "I visited Paris last year.", tip: "Use time markers: yesterday, last week." },
-      { name: "Comparison", nameZh: "比较结构", formula: "A is taller than B",
-        example: "She is taller than me.", tip: "-er for short words, more + adj for long words." }
-    ],
-    techniques: [
-      { name: "Mnemonics", description: "Create memory hooks: \"Borrow has 'bor' like 'in'.\"", tip: "Silly mnemonics stick better than textbook rules." },
-      { name: "Minimal Pairs", description: "Practice words that differ by one sound: ship/sheep.", tip: "Record and compare with native audio." },
-      { name: "Error Journal", description: "Write down every mistake and the correction.", tip: "Review weekly. Patterns will emerge." }
-    ],
-xpReward: 30,
+    xpReward: 30,
   },
   {
     id: "confusing-say-tell",
@@ -1039,30 +610,7 @@ xpReward: 30,
       { type: "choose", question: "He ___ me the truth.", questionZh: "他告诉了我真相。", options: [{ text: "said", textZh: "said", isCorrect: false }, { text: "told", textZh: "told", isCorrect: true }, { text: "speaked", textZh: "speaked", isCorrect: false }] },
       { type: "fill-blank", question: "She said ___ 'Good luck!'", questionZh: "她说'祝你好运！'", answer: "", blank: "___" },
     ],
-        funnyMoments: [
-      { title: "The Bank Incident", titleZh: "银行事件", situation: "You ask the bank for money.",
-        dialogue: "You: 'Can you borrow me xpReward: 30,00?' Banker: 'I'm not lending FROM you!'", punchline: "You made the banker sound like the borrower! Lend = give, borrow = take.", lesson: "Think about the direction of money flow." },
-      { title: "Beach Day Disaster", titleZh: "海滩日灾难", situation: "Talking about yesterday's beach trip.",
-        dialogue: "A: 'Did you have fun?' B: 'Yes! I swim in ocean!'", punchline: "'I swim' sounds like a job! Past: 'I swam.'", lesson: "Verb tenses change the timeline." },
-      { title: "The Make/Do Mix-up", titleZh: "Make/DO 搞混", situation: "Writing about your day.",
-        dialogue: "You post: 'I did a decision... and make a shower.'", punchline: "'Make a shower' sounds like manufacturing one! Use 'take a shower.'", lesson: "Collocations are fixed—learn them as chunks." }
-    ],
-    structures: [
-      { name: "Question Form", nameZh: "疑问句结构", formula: "Wh- word + do/does + S + V + ...?",
-        example: "Where do you live?", tip: "Wh- words always start the question." },
-      { name: "Negative Form", nameZh: "否定句结构", formula: "S + don't/doesn't + V + ...",
-        example: "She doesn't like coffee.", tip: "don't with I/you/we/they, doesn't with he/she/it." },
-      { name: "Past Simple", nameZh: "一般过去时", formula: "S + V-ed / irregular past",
-        example: "I visited Paris last year.", tip: "Use time markers: yesterday, last week." },
-      { name: "Comparison", nameZh: "比较结构", formula: "A is taller than B",
-        example: "She is taller than me.", tip: "-er for short words, more + adj for long words." }
-    ],
-    techniques: [
-      { name: "Mnemonics", description: "Create memory hooks: \"Borrow has 'bor' like 'in'.\"", tip: "Silly mnemonics stick better than textbook rules." },
-      { name: "Minimal Pairs", description: "Practice words that differ by one sound: ship/sheep.", tip: "Record and compare with native audio." },
-      { name: "Error Journal", description: "Write down every mistake and the correction.", tip: "Review weekly. Patterns will emerge." }
-    ],
-xpReward: 30,
+    xpReward: 30,
   },
   {
     id: "confusing-make-do",
@@ -1091,30 +639,7 @@ xpReward: 30,
       { type: "choose", question: "I ___ coffee.", questionZh: "我煮咖啡。", options: [{ text: "do", textZh: "do", isCorrect: false }, { text: "make", textZh: "make", isCorrect: true }] },
       { type: "fill-blank", question: "She ___ her homework.", questionZh: "她做作业。", answer: "did", blank: "___" },
     ],
-        funnyMoments: [
-      { title: "The Bank Incident", titleZh: "银行事件", situation: "You ask the bank for money.",
-        dialogue: "You: 'Can you borrow me xpReward: 30,00?' Banker: 'I'm not lending FROM you!'", punchline: "You made the banker sound like the borrower! Lend = give, borrow = take.", lesson: "Think about the direction of money flow." },
-      { title: "Beach Day Disaster", titleZh: "海滩日灾难", situation: "Talking about yesterday's beach trip.",
-        dialogue: "A: 'Did you have fun?' B: 'Yes! I swim in ocean!'", punchline: "'I swim' sounds like a job! Past: 'I swam.'", lesson: "Verb tenses change the timeline." },
-      { title: "The Make/Do Mix-up", titleZh: "Make/DO 搞混", situation: "Writing about your day.",
-        dialogue: "You post: 'I did a decision... and make a shower.'", punchline: "'Make a shower' sounds like manufacturing one! Use 'take a shower.'", lesson: "Collocations are fixed—learn them as chunks." }
-    ],
-    structures: [
-      { name: "Question Form", nameZh: "疑问句结构", formula: "Wh- word + do/does + S + V + ...?",
-        example: "Where do you live?", tip: "Wh- words always start the question." },
-      { name: "Negative Form", nameZh: "否定句结构", formula: "S + don't/doesn't + V + ...",
-        example: "She doesn't like coffee.", tip: "don't with I/you/we/they, doesn't with he/she/it." },
-      { name: "Past Simple", nameZh: "一般过去时", formula: "S + V-ed / irregular past",
-        example: "I visited Paris last year.", tip: "Use time markers: yesterday, last week." },
-      { name: "Comparison", nameZh: "比较结构", formula: "A is taller than B",
-        example: "She is taller than me.", tip: "-er for short words, more + adj for long words." }
-    ],
-    techniques: [
-      { name: "Mnemonics", description: "Create memory hooks: \"Borrow has 'bor' like 'in'.\"", tip: "Silly mnemonics stick better than textbook rules." },
-      { name: "Minimal Pairs", description: "Practice words that differ by one sound: ship/sheep.", tip: "Record and compare with native audio." },
-      { name: "Error Journal", description: "Write down every mistake and the correction.", tip: "Review weekly. Patterns will emerge." }
-    ],
-xpReward: 30,
+    xpReward: 30,
   },
   {
     id: "confusing-lend-borrow",
@@ -1138,30 +663,7 @@ xpReward: 30,
       { type: "choose", question: "You give money. You ___ it.", questionZh: "你给钱。你___它。", options: [{ text: "lend", textZh: "lend", isCorrect: true }, { text: "borrow", textZh: "borrow", isCorrect: false }] },
       { type: "fill-blank", question: "Can I ___ your book?", questionZh: "我能借你的书吗？", answer: "borrow", blank: "___" },
     ],
-        funnyMoments: [
-      { title: "The Bank Incident", titleZh: "银行事件", situation: "You ask the bank for money.",
-        dialogue: "You: 'Can you borrow me xpReward: 30,00?' Banker: 'I'm not lending FROM you!'", punchline: "You made the banker sound like the borrower! Lend = give, borrow = take.", lesson: "Think about the direction of money flow." },
-      { title: "Beach Day Disaster", titleZh: "海滩日灾难", situation: "Talking about yesterday's beach trip.",
-        dialogue: "A: 'Did you have fun?' B: 'Yes! I swim in ocean!'", punchline: "'I swim' sounds like a job! Past: 'I swam.'", lesson: "Verb tenses change the timeline." },
-      { title: "The Make/Do Mix-up", titleZh: "Make/DO 搞混", situation: "Writing about your day.",
-        dialogue: "You post: 'I did a decision... and make a shower.'", punchline: "'Make a shower' sounds like manufacturing one! Use 'take a shower.'", lesson: "Collocations are fixed—learn them as chunks." }
-    ],
-    structures: [
-      { name: "Question Form", nameZh: "疑问句结构", formula: "Wh- word + do/does + S + V + ...?",
-        example: "Where do you live?", tip: "Wh- words always start the question." },
-      { name: "Negative Form", nameZh: "否定句结构", formula: "S + don't/doesn't + V + ...",
-        example: "She doesn't like coffee.", tip: "don't with I/you/we/they, doesn't with he/she/it." },
-      { name: "Past Simple", nameZh: "一般过去时", formula: "S + V-ed / irregular past",
-        example: "I visited Paris last year.", tip: "Use time markers: yesterday, last week." },
-      { name: "Comparison", nameZh: "比较结构", formula: "A is taller than B",
-        example: "She is taller than me.", tip: "-er for short words, more + adj for long words." }
-    ],
-    techniques: [
-      { name: "Mnemonics", description: "Create memory hooks: \"Borrow has 'bor' like 'in'.\"", tip: "Silly mnemonics stick better than textbook rules." },
-      { name: "Minimal Pairs", description: "Practice words that differ by one sound: ship/sheep.", tip: "Record and compare with native audio." },
-      { name: "Error Journal", description: "Write down every mistake and the correction.", tip: "Review weekly. Patterns will emerge." }
-    ],
-xpReward: 30,
+    xpReward: 30,
   },
   {
     id: "confusing-be-have",
@@ -1185,30 +687,7 @@ xpReward: 30,
       { type: "choose", question: "British: 'I've ___ a car.'", questionZh: "英式：", options: [{ text: "got", textZh: "got", isCorrect: true }, { text: "be", textZh: "be", isCorrect: false }] },
       { type: "rewrite", question: "Change to British: 'I have a headache.'", questionZh: "改成英式：", answer: "I've got a headache.", blank: "I've ___ a headache." },
     ],
-        funnyMoments: [
-      { title: "The Bank Incident", titleZh: "银行事件", situation: "You ask the bank for money.",
-        dialogue: "You: 'Can you borrow me xpReward: 30,00?' Banker: 'I'm not lending FROM you!'", punchline: "You made the banker sound like the borrower! Lend = give, borrow = take.", lesson: "Think about the direction of money flow." },
-      { title: "Beach Day Disaster", titleZh: "海滩日灾难", situation: "Talking about yesterday's beach trip.",
-        dialogue: "A: 'Did you have fun?' B: 'Yes! I swim in ocean!'", punchline: "'I swim' sounds like a job! Past: 'I swam.'", lesson: "Verb tenses change the timeline." },
-      { title: "The Make/Do Mix-up", titleZh: "Make/DO 搞混", situation: "Writing about your day.",
-        dialogue: "You post: 'I did a decision... and make a shower.'", punchline: "'Make a shower' sounds like manufacturing one! Use 'take a shower.'", lesson: "Collocations are fixed—learn them as chunks." }
-    ],
-    structures: [
-      { name: "Question Form", nameZh: "疑问句结构", formula: "Wh- word + do/does + S + V + ...?",
-        example: "Where do you live?", tip: "Wh- words always start the question." },
-      { name: "Negative Form", nameZh: "否定句结构", formula: "S + don't/doesn't + V + ...",
-        example: "She doesn't like coffee.", tip: "don't with I/you/we/they, doesn't with he/she/it." },
-      { name: "Past Simple", nameZh: "一般过去时", formula: "S + V-ed / irregular past",
-        example: "I visited Paris last year.", tip: "Use time markers: yesterday, last week." },
-      { name: "Comparison", nameZh: "比较结构", formula: "A is taller than B",
-        example: "She is taller than me.", tip: "-er for short words, more + adj for long words." }
-    ],
-    techniques: [
-      { name: "Mnemonics", description: "Create memory hooks: \"Borrow has 'bor' like 'in'.\"", tip: "Silly mnemonics stick better than textbook rules." },
-      { name: "Minimal Pairs", description: "Practice words that differ by one sound: ship/sheep.", tip: "Record and compare with native audio." },
-      { name: "Error Journal", description: "Write down every mistake and the correction.", tip: "Review weekly. Patterns will emerge." }
-    ],
-xpReward: 30,
+    xpReward: 30,
   },
   {
     id: "confusing-some-any",
@@ -1232,30 +711,7 @@ xpReward: 30,
       { type: "choose", question: "I have ___ apples.", questionZh: "我有一些苹果。", options: [{ text: "some", textZh: "some", isCorrect: true }, { text: "any", textZh: "any", isCorrect: false }] },
       { type: "fill-blank", question: "Do you have ___ questions?", questionZh: "你有问题吗？", answer: "any", blank: "___" },
     ],
-        funnyMoments: [
-      { title: "The Bank Incident", titleZh: "银行事件", situation: "You ask the bank for money.",
-        dialogue: "You: 'Can you borrow me xpReward: 30,00?' Banker: 'I'm not lending FROM you!'", punchline: "You made the banker sound like the borrower! Lend = give, borrow = take.", lesson: "Think about the direction of money flow." },
-      { title: "Beach Day Disaster", titleZh: "海滩日灾难", situation: "Talking about yesterday's beach trip.",
-        dialogue: "A: 'Did you have fun?' B: 'Yes! I swim in ocean!'", punchline: "'I swim' sounds like a job! Past: 'I swam.'", lesson: "Verb tenses change the timeline." },
-      { title: "The Make/Do Mix-up", titleZh: "Make/DO 搞混", situation: "Writing about your day.",
-        dialogue: "You post: 'I did a decision... and make a shower.'", punchline: "'Make a shower' sounds like manufacturing one! Use 'take a shower.'", lesson: "Collocations are fixed—learn them as chunks." }
-    ],
-    structures: [
-      { name: "Question Form", nameZh: "疑问句结构", formula: "Wh- word + do/does + S + V + ...?",
-        example: "Where do you live?", tip: "Wh- words always start the question." },
-      { name: "Negative Form", nameZh: "否定句结构", formula: "S + don't/doesn't + V + ...",
-        example: "She doesn't like coffee.", tip: "don't with I/you/we/they, doesn't with he/she/it." },
-      { name: "Past Simple", nameZh: "一般过去时", formula: "S + V-ed / irregular past",
-        example: "I visited Paris last year.", tip: "Use time markers: yesterday, last week." },
-      { name: "Comparison", nameZh: "比较结构", formula: "A is taller than B",
-        example: "She is taller than me.", tip: "-er for short words, more + adj for long words." }
-    ],
-    techniques: [
-      { name: "Mnemonics", description: "Create memory hooks: \"Borrow has 'bor' like 'in'.\"", tip: "Silly mnemonics stick better than textbook rules." },
-      { name: "Minimal Pairs", description: "Practice words that differ by one sound: ship/sheep.", tip: "Record and compare with native audio." },
-      { name: "Error Journal", description: "Write down every mistake and the correction.", tip: "Review weekly. Patterns will emerge." }
-    ],
-xpReward: 30,
+    xpReward: 30,
   },
   {
     id: "confusing-too-enough",
@@ -1280,30 +736,7 @@ xpReward: 30,
       { type: "choose", question: "The coffee is ___ hot.", questionZh: "咖啡太烫了。", options: [{ text: "too", textZh: "too", isCorrect: true }, { text: "enough", textZh: "enough", isCorrect: false }] },
       { type: "fill-blank", question: "You are old ___ to drive.", questionZh: "你足够大可以开车了。", answer: "enough", blank: "___" },
     ],
-        funnyMoments: [
-      { title: "The Bank Incident", titleZh: "银行事件", situation: "You ask the bank for money.",
-        dialogue: "You: 'Can you borrow me xpReward: 30,00?' Banker: 'I'm not lending FROM you!'", punchline: "You made the banker sound like the borrower! Lend = give, borrow = take.", lesson: "Think about the direction of money flow." },
-      { title: "Beach Day Disaster", titleZh: "海滩日灾难", situation: "Talking about yesterday's beach trip.",
-        dialogue: "A: 'Did you have fun?' B: 'Yes! I swim in ocean!'", punchline: "'I swim' sounds like a job! Past: 'I swam.'", lesson: "Verb tenses change the timeline." },
-      { title: "The Make/Do Mix-up", titleZh: "Make/DO 搞混", situation: "Writing about your day.",
-        dialogue: "You post: 'I did a decision... and make a shower.'", punchline: "'Make a shower' sounds like manufacturing one! Use 'take a shower.'", lesson: "Collocations are fixed—learn them as chunks." }
-    ],
-    structures: [
-      { name: "Question Form", nameZh: "疑问句结构", formula: "Wh- word + do/does + S + V + ...?",
-        example: "Where do you live?", tip: "Wh- words always start the question." },
-      { name: "Negative Form", nameZh: "否定句结构", formula: "S + don't/doesn't + V + ...",
-        example: "She doesn't like coffee.", tip: "don't with I/you/we/they, doesn't with he/she/it." },
-      { name: "Past Simple", nameZh: "一般过去时", formula: "S + V-ed / irregular past",
-        example: "I visited Paris last year.", tip: "Use time markers: yesterday, last week." },
-      { name: "Comparison", nameZh: "比较结构", formula: "A is taller than B",
-        example: "She is taller than me.", tip: "-er for short words, more + adj for long words." }
-    ],
-    techniques: [
-      { name: "Mnemonics", description: "Create memory hooks: \"Borrow has 'bor' like 'in'.\"", tip: "Silly mnemonics stick better than textbook rules." },
-      { name: "Minimal Pairs", description: "Practice words that differ by one sound: ship/sheep.", tip: "Record and compare with native audio." },
-      { name: "Error Journal", description: "Write down every mistake and the correction.", tip: "Review weekly. Patterns will emerge." }
-    ],
-xpReward: 30,
+    xpReward: 30,
   },
   {
     id: "confusing-other-another",
@@ -1327,30 +760,7 @@ xpReward: 30,
       { type: "choose", question: "Can I have ___ cookie?", questionZh: "我能再来一块饼干吗？", options: [{ text: "other", textZh: "other", isCorrect: false }, { text: "another", textZh: "another", isCorrect: true }] },
       { type: "fill-blank", question: "We need ___ approach.", questionZh: "我们需要另一种方法。", answer: "another", blank: "___" },
     ],
-        funnyMoments: [
-      { title: "The Bank Incident", titleZh: "银行事件", situation: "You ask the bank for money.",
-        dialogue: "You: 'Can you borrow me xpReward: 30,00?' Banker: 'I'm not lending FROM you!'", punchline: "You made the banker sound like the borrower! Lend = give, borrow = take.", lesson: "Think about the direction of money flow." },
-      { title: "Beach Day Disaster", titleZh: "海滩日灾难", situation: "Talking about yesterday's beach trip.",
-        dialogue: "A: 'Did you have fun?' B: 'Yes! I swim in ocean!'", punchline: "'I swim' sounds like a job! Past: 'I swam.'", lesson: "Verb tenses change the timeline." },
-      { title: "The Make/Do Mix-up", titleZh: "Make/DO 搞混", situation: "Writing about your day.",
-        dialogue: "You post: 'I did a decision... and make a shower.'", punchline: "'Make a shower' sounds like manufacturing one! Use 'take a shower.'", lesson: "Collocations are fixed—learn them as chunks." }
-    ],
-    structures: [
-      { name: "Question Form", nameZh: "疑问句结构", formula: "Wh- word + do/does + S + V + ...?",
-        example: "Where do you live?", tip: "Wh- words always start the question." },
-      { name: "Negative Form", nameZh: "否定句结构", formula: "S + don't/doesn't + V + ...",
-        example: "She doesn't like coffee.", tip: "don't with I/you/we/they, doesn't with he/she/it." },
-      { name: "Past Simple", nameZh: "一般过去时", formula: "S + V-ed / irregular past",
-        example: "I visited Paris last year.", tip: "Use time markers: yesterday, last week." },
-      { name: "Comparison", nameZh: "比较结构", formula: "A is taller than B",
-        example: "She is taller than me.", tip: "-er for short words, more + adj for long words." }
-    ],
-    techniques: [
-      { name: "Mnemonics", description: "Create memory hooks: \"Borrow has 'bor' like 'in'.\"", tip: "Silly mnemonics stick better than textbook rules." },
-      { name: "Minimal Pairs", description: "Practice words that differ by one sound: ship/sheep.", tip: "Record and compare with native audio." },
-      { name: "Error Journal", description: "Write down every mistake and the correction.", tip: "Review weekly. Patterns will emerge." }
-    ],
-xpReward: 30,
+    xpReward: 30,
   },
   {
     id: "modal-must-have-to",
@@ -1379,30 +789,7 @@ xpReward: 30,
       { type: "choose", question: "I ___ wear a seatbelt. (Law)", questionZh: "我必须系安全带。（法律）", options: [{ text: "must", textZh: "must", isCorrect: false }, { text: "have to", textZh: "have to", isCorrect: true }] },
       { type: "fill-blank", question: "You ___ come if you don't want.", questionZh: "你不想来就不用来。", answer: "don't have to", blank: "___" },
     ],
-        funnyMoments: [
-      { title: "The Permission Request", titleZh: "请求许可", situation: "Asking your boss for time off.",
-        dialogue: "You: 'Can I leave early?' Boss: 'Yes.' You: [leaves immediately]", punchline: "You used 'can' casually! 'Could I' or 'May I' sounds professional.", lesson: "Modals carry politeness levels." },
-      { title: "The Obligation", titleZh: "义务", situation: "Talking about your homework.",
-        dialogue: "You: 'I must do my homework.' Friend: 'Wow, disciplined!' You: 'No, my mom said I must!'", punchline: "'Must' sounds internal. For external rules, use 'have to'!", lesson: "'Must' = internal drive. 'Have to' = external rule." },
-      { title: "The Possibility", titleZh: "可能性", situation: "Predicting the weather.",
-        dialogue: "You: 'It must rain tomorrow.' Friend: 'Are you the weather god?'", punchline: "'Must' is 90-100% certainty. Use 'might' (30-50%) for predictions.", lesson: "Match the modal to your confidence level." }
-    ],
-    structures: [
-      { name: "Permission", nameZh: "许可", formula: "Can I...? / Could I...? / May I...?",
-        example: "Could I borrow your notes?", tip: "Use 'could'/'may' for formal, 'can' for casual." },
-      { name: "Obligation", nameZh: "义务", formula: "Must / Have to / Need to / Should",
-        example: "You have to wear a seatbelt.", tip: "'Must' = internal. 'Have to' = external. 'Should' = advice." },
-      { name: "Possibility", nameZh: "可能性", formula: "Might / Could / May / Can't",
-        example: "It might rain later.", tip: "Might = 30-50%. Could = 10-30%. May = 50-70%. Can't = 0-10%." },
-      { name: "Ability", nameZh: "能力", formula: "Can / Could / Be able to",
-        example: "I can swim. I could run fast when young.", tip: "'Can' = present. 'Could' = past or polite request." }
-    ],
-    techniques: [
-      { name: "Modal Probability Chart", description: "Draw a chart of probability ranges.", tip: "Must = 90-100%, Should = 70-90%, May = 50-70%, Might = 30-50%." },
-      { name: "Politeness Ladder", description: "Rank: May I → Could I → Can I.", tip: "More indirect = more polite." },
-      { name: "Obligation Source Check", description: "Ask: Is this rule from inside me or outside?", tip: "Inside = must. Outside = have to." }
-    ],
-xpReward: 35,
+    xpReward: 35,
   },
   {
     id: "modal-should-ought",
@@ -1430,30 +817,7 @@ xpReward: 35,
       { type: "choose", question: "More common advice:", questionZh: "更常用的建议：", options: [{ text: "You should call.", textZh: "You should call.", isCorrect: true }, { text: "You ought call.", textZh: "You ought call.", isCorrect: false }] },
       { type: "rewrite", question: "Make formal: 'You should apologize.'", questionZh: "改成正式：", answer: "You ought to apologize.", blank: "You ought ___ apologize." },
     ],
-        funnyMoments: [
-      { title: "The Permission Request", titleZh: "请求许可", situation: "Asking your boss for time off.",
-        dialogue: "You: 'Can I leave early?' Boss: 'Yes.' You: [leaves immediately]", punchline: "You used 'can' casually! 'Could I' or 'May I' sounds professional.", lesson: "Modals carry politeness levels." },
-      { title: "The Obligation", titleZh: "义务", situation: "Talking about your homework.",
-        dialogue: "You: 'I must do my homework.' Friend: 'Wow, disciplined!' You: 'No, my mom said I must!'", punchline: "'Must' sounds internal. For external rules, use 'have to'!", lesson: "'Must' = internal drive. 'Have to' = external rule." },
-      { title: "The Possibility", titleZh: "可能性", situation: "Predicting the weather.",
-        dialogue: "You: 'It must rain tomorrow.' Friend: 'Are you the weather god?'", punchline: "'Must' is 90-100% certainty. Use 'might' (30-50%) for predictions.", lesson: "Match the modal to your confidence level." }
-    ],
-    structures: [
-      { name: "Permission", nameZh: "许可", formula: "Can I...? / Could I...? / May I...?",
-        example: "Could I borrow your notes?", tip: "Use 'could'/'may' for formal, 'can' for casual." },
-      { name: "Obligation", nameZh: "义务", formula: "Must / Have to / Need to / Should",
-        example: "You have to wear a seatbelt.", tip: "'Must' = internal. 'Have to' = external. 'Should' = advice." },
-      { name: "Possibility", nameZh: "可能性", formula: "Might / Could / May / Can't",
-        example: "It might rain later.", tip: "Might = 30-50%. Could = 10-30%. May = 50-70%. Can't = 0-10%." },
-      { name: "Ability", nameZh: "能力", formula: "Can / Could / Be able to",
-        example: "I can swim. I could run fast when young.", tip: "'Can' = present. 'Could' = past or polite request." }
-    ],
-    techniques: [
-      { name: "Modal Probability Chart", description: "Draw a chart of probability ranges.", tip: "Must = 90-100%, Should = 70-90%, May = 50-70%, Might = 30-50%." },
-      { name: "Politeness Ladder", description: "Rank: May I → Could I → Can I.", tip: "More indirect = more polite." },
-      { name: "Obligation Source Check", description: "Ask: Is this rule from inside me or outside?", tip: "Inside = must. Outside = have to." }
-    ],
-xpReward: 35,
+    xpReward: 35,
   },
   {
     id: "modal-may-might",
@@ -1481,30 +845,7 @@ xpReward: 35,
       { type: "choose", question: "Lower chance:", questionZh: "更低的机会：", options: [{ text: "It may happen.", textZh: "It may happen.", isCorrect: false }, { text: "It might happen.", textZh: "It might happen.", isCorrect: true }] },
       { type: "fill-blank", question: "She ___ know the answer.", questionZh: "她可能知道答案。", answer: "might", blank: "___" },
     ],
-        funnyMoments: [
-      { title: "The Permission Request", titleZh: "请求许可", situation: "Asking your boss for time off.",
-        dialogue: "You: 'Can I leave early?' Boss: 'Yes.' You: [leaves immediately]", punchline: "You used 'can' casually! 'Could I' or 'May I' sounds professional.", lesson: "Modals carry politeness levels." },
-      { title: "The Obligation", titleZh: "义务", situation: "Talking about your homework.",
-        dialogue: "You: 'I must do my homework.' Friend: 'Wow, disciplined!' You: 'No, my mom said I must!'", punchline: "'Must' sounds internal. For external rules, use 'have to'!", lesson: "'Must' = internal drive. 'Have to' = external rule." },
-      { title: "The Possibility", titleZh: "可能性", situation: "Predicting the weather.",
-        dialogue: "You: 'It must rain tomorrow.' Friend: 'Are you the weather god?'", punchline: "'Must' is 90-100% certainty. Use 'might' (30-50%) for predictions.", lesson: "Match the modal to your confidence level." }
-    ],
-    structures: [
-      { name: "Permission", nameZh: "许可", formula: "Can I...? / Could I...? / May I...?",
-        example: "Could I borrow your notes?", tip: "Use 'could'/'may' for formal, 'can' for casual." },
-      { name: "Obligation", nameZh: "义务", formula: "Must / Have to / Need to / Should",
-        example: "You have to wear a seatbelt.", tip: "'Must' = internal. 'Have to' = external. 'Should' = advice." },
-      { name: "Possibility", nameZh: "可能性", formula: "Might / Could / May / Can't",
-        example: "It might rain later.", tip: "Might = 30-50%. Could = 10-30%. May = 50-70%. Can't = 0-10%." },
-      { name: "Ability", nameZh: "能力", formula: "Can / Could / Be able to",
-        example: "I can swim. I could run fast when young.", tip: "'Can' = present. 'Could' = past or polite request." }
-    ],
-    techniques: [
-      { name: "Modal Probability Chart", description: "Draw a chart of probability ranges.", tip: "Must = 90-100%, Should = 70-90%, May = 50-70%, Might = 30-50%." },
-      { name: "Politeness Ladder", description: "Rank: May I → Could I → Can I.", tip: "More indirect = more polite." },
-      { name: "Obligation Source Check", description: "Ask: Is this rule from inside me or outside?", tip: "Inside = must. Outside = have to." }
-    ],
-xpReward: 35,
+    xpReward: 35,
   },
   {
     id: "modal-will-going-to",
@@ -1532,30 +873,7 @@ xpReward: 35,
       { type: "choose", question: "Spontaneous decision:", questionZh: "即时决定：", options: [{ text: "I'll get it.", textZh: "I'll get it.", isCorrect: true }, { text: "I'm gonna get it.", textZh: "I'm gonna get it.", isCorrect: false }] },
       { type: "fill-blank", question: "We ___ visit Japan next year. (plan)", questionZh: "我们明年打算去日本。（计划）", answer: "are going to", blank: "___" },
     ],
-        funnyMoments: [
-      { title: "The Permission Request", titleZh: "请求许可", situation: "Asking your boss for time off.",
-        dialogue: "You: 'Can I leave early?' Boss: 'Yes.' You: [leaves immediately]", punchline: "You used 'can' casually! 'Could I' or 'May I' sounds professional.", lesson: "Modals carry politeness levels." },
-      { title: "The Obligation", titleZh: "义务", situation: "Talking about your homework.",
-        dialogue: "You: 'I must do my homework.' Friend: 'Wow, disciplined!' You: 'No, my mom said I must!'", punchline: "'Must' sounds internal. For external rules, use 'have to'!", lesson: "'Must' = internal drive. 'Have to' = external rule." },
-      { title: "The Possibility", titleZh: "可能性", situation: "Predicting the weather.",
-        dialogue: "You: 'It must rain tomorrow.' Friend: 'Are you the weather god?'", punchline: "'Must' is 90-100% certainty. Use 'might' (30-50%) for predictions.", lesson: "Match the modal to your confidence level." }
-    ],
-    structures: [
-      { name: "Permission", nameZh: "许可", formula: "Can I...? / Could I...? / May I...?",
-        example: "Could I borrow your notes?", tip: "Use 'could'/'may' for formal, 'can' for casual." },
-      { name: "Obligation", nameZh: "义务", formula: "Must / Have to / Need to / Should",
-        example: "You have to wear a seatbelt.", tip: "'Must' = internal. 'Have to' = external. 'Should' = advice." },
-      { name: "Possibility", nameZh: "可能性", formula: "Might / Could / May / Can't",
-        example: "It might rain later.", tip: "Might = 30-50%. Could = 10-30%. May = 50-70%. Can't = 0-10%." },
-      { name: "Ability", nameZh: "能力", formula: "Can / Could / Be able to",
-        example: "I can swim. I could run fast when young.", tip: "'Can' = present. 'Could' = past or polite request." }
-    ],
-    techniques: [
-      { name: "Modal Probability Chart", description: "Draw a chart of probability ranges.", tip: "Must = 90-100%, Should = 70-90%, May = 50-70%, Might = 30-50%." },
-      { name: "Politeness Ladder", description: "Rank: May I → Could I → Can I.", tip: "More indirect = more polite." },
-      { name: "Obligation Source Check", description: "Ask: Is this rule from inside me or outside?", tip: "Inside = must. Outside = have to." }
-    ],
-xpReward: 35,
+    xpReward: 35,
   },
   {
     id: "modal-can-may",
@@ -1579,30 +897,7 @@ xpReward: 35,
       { type: "choose", question: "Formal permission:", questionZh: "正式许可：", options: [{ text: "Can I leave?", textZh: "Can I leave?", isCorrect: false }, { text: "May I leave?", textZh: "May I leave?", isCorrect: true }] },
       { type: "speak", question: "Practice asking permission:", questionZh: "练习请求许可：", audioText: "May I borrow your pen?" },
     ],
-        funnyMoments: [
-      { title: "The Permission Request", titleZh: "请求许可", situation: "Asking your boss for time off.",
-        dialogue: "You: 'Can I leave early?' Boss: 'Yes.' You: [leaves immediately]", punchline: "You used 'can' casually! 'Could I' or 'May I' sounds professional.", lesson: "Modals carry politeness levels." },
-      { title: "The Obligation", titleZh: "义务", situation: "Talking about your homework.",
-        dialogue: "You: 'I must do my homework.' Friend: 'Wow, disciplined!' You: 'No, my mom said I must!'", punchline: "'Must' sounds internal. For external rules, use 'have to'!", lesson: "'Must' = internal drive. 'Have to' = external rule." },
-      { title: "The Possibility", titleZh: "可能性", situation: "Predicting the weather.",
-        dialogue: "You: 'It must rain tomorrow.' Friend: 'Are you the weather god?'", punchline: "'Must' is 90-100% certainty. Use 'might' (30-50%) for predictions.", lesson: "Match the modal to your confidence level." }
-    ],
-    structures: [
-      { name: "Permission", nameZh: "许可", formula: "Can I...? / Could I...? / May I...?",
-        example: "Could I borrow your notes?", tip: "Use 'could'/'may' for formal, 'can' for casual." },
-      { name: "Obligation", nameZh: "义务", formula: "Must / Have to / Need to / Should",
-        example: "You have to wear a seatbelt.", tip: "'Must' = internal. 'Have to' = external. 'Should' = advice." },
-      { name: "Possibility", nameZh: "可能性", formula: "Might / Could / May / Can't",
-        example: "It might rain later.", tip: "Might = 30-50%. Could = 10-30%. May = 50-70%. Can't = 0-10%." },
-      { name: "Ability", nameZh: "能力", formula: "Can / Could / Be able to",
-        example: "I can swim. I could run fast when young.", tip: "'Can' = present. 'Could' = past or polite request." }
-    ],
-    techniques: [
-      { name: "Modal Probability Chart", description: "Draw a chart of probability ranges.", tip: "Must = 90-100%, Should = 70-90%, May = 50-70%, Might = 30-50%." },
-      { name: "Politeness Ladder", description: "Rank: May I → Could I → Can I.", tip: "More indirect = more polite." },
-      { name: "Obligation Source Check", description: "Ask: Is this rule from inside me or outside?", tip: "Inside = must. Outside = have to." }
-    ],
-xpReward: 30,
+    xpReward: 30,
   },
   {
     id: "modal-could-would",
@@ -1631,30 +926,7 @@ xpReward: 30,
       { type: "choose", question: "Most polite request:", questionZh: "最礼貌的请求：", options: [{ text: "Can you help?", textZh: "Can you help?", isCorrect: false }, { text: "Would you mind helping?", textZh: "Would you mind helping?", isCorrect: true }] },
       { type: "rewrite", question: "Make polite: 'Give me that.'", questionZh: "改礼貌：", answer: "Could you give me that, please?", blank: "Could you ___ that, please?" },
     ],
-        funnyMoments: [
-      { title: "The Permission Request", titleZh: "请求许可", situation: "Asking your boss for time off.",
-        dialogue: "You: 'Can I leave early?' Boss: 'Yes.' You: [leaves immediately]", punchline: "You used 'can' casually! 'Could I' or 'May I' sounds professional.", lesson: "Modals carry politeness levels." },
-      { title: "The Obligation", titleZh: "义务", situation: "Talking about your homework.",
-        dialogue: "You: 'I must do my homework.' Friend: 'Wow, disciplined!' You: 'No, my mom said I must!'", punchline: "'Must' sounds internal. For external rules, use 'have to'!", lesson: "'Must' = internal drive. 'Have to' = external rule." },
-      { title: "The Possibility", titleZh: "可能性", situation: "Predicting the weather.",
-        dialogue: "You: 'It must rain tomorrow.' Friend: 'Are you the weather god?'", punchline: "'Must' is 90-100% certainty. Use 'might' (30-50%) for predictions.", lesson: "Match the modal to your confidence level." }
-    ],
-    structures: [
-      { name: "Permission", nameZh: "许可", formula: "Can I...? / Could I...? / May I...?",
-        example: "Could I borrow your notes?", tip: "Use 'could'/'may' for formal, 'can' for casual." },
-      { name: "Obligation", nameZh: "义务", formula: "Must / Have to / Need to / Should",
-        example: "You have to wear a seatbelt.", tip: "'Must' = internal. 'Have to' = external. 'Should' = advice." },
-      { name: "Possibility", nameZh: "可能性", formula: "Might / Could / May / Can't",
-        example: "It might rain later.", tip: "Might = 30-50%. Could = 10-30%. May = 50-70%. Can't = 0-10%." },
-      { name: "Ability", nameZh: "能力", formula: "Can / Could / Be able to",
-        example: "I can swim. I could run fast when young.", tip: "'Can' = present. 'Could' = past or polite request." }
-    ],
-    techniques: [
-      { name: "Modal Probability Chart", description: "Draw a chart of probability ranges.", tip: "Must = 90-100%, Should = 70-90%, May = 50-70%, Might = 30-50%." },
-      { name: "Politeness Ladder", description: "Rank: May I → Could I → Can I.", tip: "More indirect = more polite." },
-      { name: "Obligation Source Check", description: "Ask: Is this rule from inside me or outside?", tip: "Inside = must. Outside = have to." }
-    ],
-xpReward: 35,
+    xpReward: 35,
   },
   {
     id: "time-prepositions",
@@ -1684,30 +956,7 @@ xpReward: 35,
       { type: "choose", question: "I'll see you ___ Friday.", questionZh: "我周五见你。", options: [{ text: "in", textZh: "in", isCorrect: false }, { text: "on", textZh: "on", isCorrect: true }, { text: "at", textZh: "at", isCorrect: false }] },
       { type: "fill-blank", question: "The party is ___ 7:00.", questionZh: "派对在7点。", answer: "at", blank: "___" },
     ],
-        funnyMoments: [
-      { title: "The Late Meeting", titleZh: "迟到的会议", situation: "You tell your team when you'll arrive.",
-        dialogue: "You: 'I'll be there in 5 minutes.' (You need 20) Team: [waits 20]", punchline: "'5 minutes' can mean 'soon'! But your team took it literally!", lesson: "Be precise when it matters." },
-      { title: "Frequency Confusion", titleZh: "频率混淆", situation: "Describing your exercise habits.",
-        dialogue: "You: 'I always go to the gym.' (You went once) Friend: 'Always?'", punchline: "'Always' = 100%. Once = 'sometimes' or 'rarely'.", lesson: "Frequency adverbs have specific ranges." },
-      { title: "The Date Mix-up", titleZh: "日期搞混", situation: "Writing the date in an email.",
-        dialogue: "You write: '04/05/2026' American: 'April 5' British: 'May 4'", punchline: "Date formats differ! Spell out the month.", lesson: "Write 'May 4th, 2026' to avoid confusion." }
-    ],
-    structures: [
-      { name: "Present Simple", nameZh: "一般现在时", formula: "S + V (base) + ... (habit)",
-        example: "I drink coffee every morning.", tip: "Use for habits, routines, permanent situations." },
-      { name: "Present Continuous", nameZh: "现在进行时", formula: "S + am/is/are + V-ing (now)",
-        example: "I'm drinking coffee right now.", tip: "Use for actions happening now." },
-      { name: "Future with Will", nameZh: "将来时 will", formula: "S + will + V (prediction/decision)",
-        example: "I will help you tomorrow.", tip: "Use for spontaneous decisions." },
-      { name: "Future with Going To", nameZh: "将来时 going to", formula: "S + am/is/are + going to + V (plan)",
-        example: "I'm going to study tonight.", tip: "Use for plans made before speaking." }
-    ],
-    techniques: [
-      { name: "Time Marker Sorting", description: "Sort time expressions into past, present, future.", tip: "Visual sorting builds associations faster than lists." },
-      { name: "Timeline Drawing", description: "Draw a timeline and place verbs on it.", tip: "Color-code: red = past, green = present, blue = future." },
-      { name: "Frequency Chart", description: "Map frequency adverbs to percentages.", tip: "Always = 100%, Usually = 80%, Often = 60%, Sometimes = 40%, Rarely = 20%." }
-    ],
-xpReward: 30,
+    xpReward: 30,
   },
   {
     id: "time-frequency",
@@ -1731,30 +980,7 @@ xpReward: 30,
       { type: "choose", question: "I ___ go to the gym.", questionZh: "我经常去健身房。", options: [{ text: "always", textZh: "always", isCorrect: false }, { text: "often", textZh: "often", isCorrect: true }, { text: "never", textZh: "never", isCorrect: false }] },
       { type: "fill-blank", question: "He ___ eats breakfast.", questionZh: "他从不吃早餐。", answer: "never", blank: "___" },
     ],
-        funnyMoments: [
-      { title: "The Late Meeting", titleZh: "迟到的会议", situation: "You tell your team when you'll arrive.",
-        dialogue: "You: 'I'll be there in 5 minutes.' (You need 20) Team: [waits 20]", punchline: "'5 minutes' can mean 'soon'! But your team took it literally!", lesson: "Be precise when it matters." },
-      { title: "Frequency Confusion", titleZh: "频率混淆", situation: "Describing your exercise habits.",
-        dialogue: "You: 'I always go to the gym.' (You went once) Friend: 'Always?'", punchline: "'Always' = 100%. Once = 'sometimes' or 'rarely'.", lesson: "Frequency adverbs have specific ranges." },
-      { title: "The Date Mix-up", titleZh: "日期搞混", situation: "Writing the date in an email.",
-        dialogue: "You write: '04/05/2026' American: 'April 5' British: 'May 4'", punchline: "Date formats differ! Spell out the month.", lesson: "Write 'May 4th, 2026' to avoid confusion." }
-    ],
-    structures: [
-      { name: "Present Simple", nameZh: "一般现在时", formula: "S + V (base) + ... (habit)",
-        example: "I drink coffee every morning.", tip: "Use for habits, routines, permanent situations." },
-      { name: "Present Continuous", nameZh: "现在进行时", formula: "S + am/is/are + V-ing (now)",
-        example: "I'm drinking coffee right now.", tip: "Use for actions happening now." },
-      { name: "Future with Will", nameZh: "将来时 will", formula: "S + will + V (prediction/decision)",
-        example: "I will help you tomorrow.", tip: "Use for spontaneous decisions." },
-      { name: "Future with Going To", nameZh: "将来时 going to", formula: "S + am/is/are + going to + V (plan)",
-        example: "I'm going to study tonight.", tip: "Use for plans made before speaking." }
-    ],
-    techniques: [
-      { name: "Time Marker Sorting", description: "Sort time expressions into past, present, future.", tip: "Visual sorting builds associations faster than lists." },
-      { name: "Timeline Drawing", description: "Draw a timeline and place verbs on it.", tip: "Color-code: red = past, green = present, blue = future." },
-      { name: "Frequency Chart", description: "Map frequency adverbs to percentages.", tip: "Always = 100%, Usually = 80%, Often = 60%, Sometimes = 40%, Rarely = 20%." }
-    ],
-xpReward: 30,
+    xpReward: 30,
   },
   {
     id: "time-dates",
@@ -1782,30 +1008,7 @@ xpReward: 30,
       { type: "choose", question: "Today is ___ 20th.", questionZh: "今天是7月20日。", options: [{ text: "July", textZh: "July", isCorrect: true }, { text: "july", textZh: "july", isCorrect: false }] },
       { type: "fill-blank", question: "My birthday is ___ the 3rd of March.", questionZh: "我的生日是3月3日。", answer: "on", blank: "___" },
     ],
-        funnyMoments: [
-      { title: "The Late Meeting", titleZh: "迟到的会议", situation: "You tell your team when you'll arrive.",
-        dialogue: "You: 'I'll be there in 5 minutes.' (You need 20) Team: [waits 20]", punchline: "'5 minutes' can mean 'soon'! But your team took it literally!", lesson: "Be precise when it matters." },
-      { title: "Frequency Confusion", titleZh: "频率混淆", situation: "Describing your exercise habits.",
-        dialogue: "You: 'I always go to the gym.' (You went once) Friend: 'Always?'", punchline: "'Always' = 100%. Once = 'sometimes' or 'rarely'.", lesson: "Frequency adverbs have specific ranges." },
-      { title: "The Date Mix-up", titleZh: "日期搞混", situation: "Writing the date in an email.",
-        dialogue: "You write: '04/05/2026' American: 'April 5' British: 'May 4'", punchline: "Date formats differ! Spell out the month.", lesson: "Write 'May 4th, 2026' to avoid confusion." }
-    ],
-    structures: [
-      { name: "Present Simple", nameZh: "一般现在时", formula: "S + V (base) + ... (habit)",
-        example: "I drink coffee every morning.", tip: "Use for habits, routines, permanent situations." },
-      { name: "Present Continuous", nameZh: "现在进行时", formula: "S + am/is/are + V-ing (now)",
-        example: "I'm drinking coffee right now.", tip: "Use for actions happening now." },
-      { name: "Future with Will", nameZh: "将来时 will", formula: "S + will + V (prediction/decision)",
-        example: "I will help you tomorrow.", tip: "Use for spontaneous decisions." },
-      { name: "Future with Going To", nameZh: "将来时 going to", formula: "S + am/is/are + going to + V (plan)",
-        example: "I'm going to study tonight.", tip: "Use for plans made before speaking." }
-    ],
-    techniques: [
-      { name: "Time Marker Sorting", description: "Sort time expressions into past, present, future.", tip: "Visual sorting builds associations faster than lists." },
-      { name: "Timeline Drawing", description: "Draw a timeline and place verbs on it.", tip: "Color-code: red = past, green = present, blue = future." },
-      { name: "Frequency Chart", description: "Map frequency adverbs to percentages.", tip: "Always = 100%, Usually = 80%, Often = 60%, Sometimes = 40%, Rarely = 20%." }
-    ],
-xpReward: 30,
+    xpReward: 30,
   },
   {
     id: "time-durations",
@@ -1836,30 +1039,7 @@ xpReward: 30,
       { type: "choose", question: "I'll wait ___ 6:00.", questionZh: "我会等到6点。", options: [{ text: "for", textZh: "for", isCorrect: false }, { text: "until", textZh: "until", isCorrect: true }, { text: "since", textZh: "since", isCorrect: false }] },
       { type: "fill-blank", question: "I've studied English ___ 5 years.", questionZh: "我学了5年英语。", answer: "for", blank: "___" },
     ],
-        funnyMoments: [
-      { title: "The Late Meeting", titleZh: "迟到的会议", situation: "You tell your team when you'll arrive.",
-        dialogue: "You: 'I'll be there in 5 minutes.' (You need 20) Team: [waits 20]", punchline: "'5 minutes' can mean 'soon'! But your team took it literally!", lesson: "Be precise when it matters." },
-      { title: "Frequency Confusion", titleZh: "频率混淆", situation: "Describing your exercise habits.",
-        dialogue: "You: 'I always go to the gym.' (You went once) Friend: 'Always?'", punchline: "'Always' = 100%. Once = 'sometimes' or 'rarely'.", lesson: "Frequency adverbs have specific ranges." },
-      { title: "The Date Mix-up", titleZh: "日期搞混", situation: "Writing the date in an email.",
-        dialogue: "You write: '04/05/2026' American: 'April 5' British: 'May 4'", punchline: "Date formats differ! Spell out the month.", lesson: "Write 'May 4th, 2026' to avoid confusion." }
-    ],
-    structures: [
-      { name: "Present Simple", nameZh: "一般现在时", formula: "S + V (base) + ... (habit)",
-        example: "I drink coffee every morning.", tip: "Use for habits, routines, permanent situations." },
-      { name: "Present Continuous", nameZh: "现在进行时", formula: "S + am/is/are + V-ing (now)",
-        example: "I'm drinking coffee right now.", tip: "Use for actions happening now." },
-      { name: "Future with Will", nameZh: "将来时 will", formula: "S + will + V (prediction/decision)",
-        example: "I will help you tomorrow.", tip: "Use for spontaneous decisions." },
-      { name: "Future with Going To", nameZh: "将来时 going to", formula: "S + am/is/are + going to + V (plan)",
-        example: "I'm going to study tonight.", tip: "Use for plans made before speaking." }
-    ],
-    techniques: [
-      { name: "Time Marker Sorting", description: "Sort time expressions into past, present, future.", tip: "Visual sorting builds associations faster than lists." },
-      { name: "Timeline Drawing", description: "Draw a timeline and place verbs on it.", tip: "Color-code: red = past, green = present, blue = future." },
-      { name: "Frequency Chart", description: "Map frequency adverbs to percentages.", tip: "Always = 100%, Usually = 80%, Often = 60%, Sometimes = 40%, Rarely = 20%." }
-    ],
-xpReward: 35,
+    xpReward: 35,
   },
   {
     id: "collocation-verb-noun",
@@ -1888,30 +1068,7 @@ xpReward: 35,
       { type: "choose", question: "___ a decision.", questionZh: "做决定。", options: [{ text: "Do", textZh: "Do", isCorrect: false }, { text: "Make", textZh: "Make", isCorrect: true }] },
       { type: "fill-blank", question: "I need to ___ a choice.", questionZh: "我需要做个选择。", answer: "make", blank: "___" },
     ],
-        funnyMoments: [
-      { title: "The Food Disaster", titleZh: "食物灾难", situation: "Describing your cooking to a date.",
-        dialogue: "You: 'I make good food!' Date: 'So what did you make?' You: 'I... did a cake?'", punchline: "'Did a cake' sounds like you performed one! Correct: 'made a cake.'", lesson: "'Make' goes with food, 'do' goes with tasks." },
-      { title: "Weather Small Talk", titleZh: "天气闲聊", situation: "Breaking the ice with a colleague.",
-        dialogue: "You: 'Do you make rain?' Colleague: 'I'm not God.'", punchline: "You confused 'make rain' with 'take a shower'!", lesson: "Learn verb pairs as fixed chunks." },
-      { title: "Job Interview", titleZh: "工作面试", situation: "Talking about your work experience.",
-        dialogue: "You: 'I did a lot of reports and made coffee.'", punchline: "'Made coffee' sounds like an intern! But wait—that's actually correct. 😅", lesson: "Some collocations are right, some are wrong. Context matters!" }
-    ],
-    structures: [
-      { name: "Verb + Noun", nameZh: "动词+名词", formula: "make + decision/coffee/plan\ndo + homework/laundry",
-        example: "I made a decision to do my homework.", tip: "Make = create. Do = tasks." },
-      { name: "Adj + Preposition", nameZh: "形容词+介词", formula: "afraid OF / good AT / interested IN",
-        example: "She's interested in music.", tip: "Fixed—learn as chunks." },
-      { name: "Verb + Adverb", nameZh: "动词+副词", formula: "speak fluently / listen carefully / work hard",
-        example: "Please listen carefully.", tip: "Adverbs modify verbs, adjectives modify nouns." },
-      { name: "Noun + Preposition", nameZh: "名词+介词", formula: "reason FOR / need FOR / interest IN",
-        example: "The key to success is practice.", tip: "These noun-preposition pairs are fixed." }
-    ],
-    techniques: [
-      { name: "Collocation Dictionary", description: "Use a collocation dictionary, not a regular one.", tip: "Look up 'decision'—it shows 'make a decision', not 'do a decision'." },
-      { name: "Chunk Learning", description: "Learn phrases as single units.", tip: "When learning a new word, ask: What words go with it?" },
-      { name: "Reading for Collocations", description: "Read native materials and highlight collocations.", tip: "Keep a collocation notebook. Review before writing." }
-    ],
-xpReward: 30,
+    xpReward: 30,
   },
   {
     id: "collocation-adj-prep",
@@ -1935,30 +1092,7 @@ xpReward: 30,
       { type: "choose", question: "I'm good ___ math.", questionZh: "我擅长数学。", options: [{ text: "at", textZh: "at", isCorrect: true }, { text: "in", textZh: "in", isCorrect: false }, { text: "on", textZh: "on", isCorrect: false }] },
       { type: "fill-blank", question: "She's afraid ___ spiders.", questionZh: "她怕蜘蛛。", answer: "of", blank: "___" },
     ],
-        funnyMoments: [
-      { title: "The Food Disaster", titleZh: "食物灾难", situation: "Describing your cooking to a date.",
-        dialogue: "You: 'I make good food!' Date: 'So what did you make?' You: 'I... did a cake?'", punchline: "'Did a cake' sounds like you performed one! Correct: 'made a cake.'", lesson: "'Make' goes with food, 'do' goes with tasks." },
-      { title: "Weather Small Talk", titleZh: "天气闲聊", situation: "Breaking the ice with a colleague.",
-        dialogue: "You: 'Do you make rain?' Colleague: 'I'm not God.'", punchline: "You confused 'make rain' with 'take a shower'!", lesson: "Learn verb pairs as fixed chunks." },
-      { title: "Job Interview", titleZh: "工作面试", situation: "Talking about your work experience.",
-        dialogue: "You: 'I did a lot of reports and made coffee.'", punchline: "'Made coffee' sounds like an intern! But wait—that's actually correct. 😅", lesson: "Some collocations are right, some are wrong. Context matters!" }
-    ],
-    structures: [
-      { name: "Verb + Noun", nameZh: "动词+名词", formula: "make + decision/coffee/plan\ndo + homework/laundry",
-        example: "I made a decision to do my homework.", tip: "Make = create. Do = tasks." },
-      { name: "Adj + Preposition", nameZh: "形容词+介词", formula: "afraid OF / good AT / interested IN",
-        example: "She's interested in music.", tip: "Fixed—learn as chunks." },
-      { name: "Verb + Adverb", nameZh: "动词+副词", formula: "speak fluently / listen carefully / work hard",
-        example: "Please listen carefully.", tip: "Adverbs modify verbs, adjectives modify nouns." },
-      { name: "Noun + Preposition", nameZh: "名词+介词", formula: "reason FOR / need FOR / interest IN",
-        example: "The key to success is practice.", tip: "These noun-preposition pairs are fixed." }
-    ],
-    techniques: [
-      { name: "Collocation Dictionary", description: "Use a collocation dictionary, not a regular one.", tip: "Look up 'decision'—it shows 'make a decision', not 'do a decision'." },
-      { name: "Chunk Learning", description: "Learn phrases as single units.", tip: "When learning a new word, ask: What words go with it?" },
-      { name: "Reading for Collocations", description: "Read native materials and highlight collocations.", tip: "Keep a collocation notebook. Review before writing." }
-    ],
-xpReward: 30,
+    xpReward: 30,
   },
   {
     id: "collocation-verb-adv",
@@ -1982,30 +1116,7 @@ xpReward: 30,
       { type: "choose", question: "Speak ___.", questionZh: "说得流利。", options: [{ text: "fluently", textZh: "fluently", isCorrect: true }, { text: "fluent", textZh: "fluent", isCorrect: false }] },
       { type: "fill-blank", question: "Work ___.", questionZh: "努力工作。", answer: "hard", blank: "___" },
     ],
-        funnyMoments: [
-      { title: "The Food Disaster", titleZh: "食物灾难", situation: "Describing your cooking to a date.",
-        dialogue: "You: 'I make good food!' Date: 'So what did you make?' You: 'I... did a cake?'", punchline: "'Did a cake' sounds like you performed one! Correct: 'made a cake.'", lesson: "'Make' goes with food, 'do' goes with tasks." },
-      { title: "Weather Small Talk", titleZh: "天气闲聊", situation: "Breaking the ice with a colleague.",
-        dialogue: "You: 'Do you make rain?' Colleague: 'I'm not God.'", punchline: "You confused 'make rain' with 'take a shower'!", lesson: "Learn verb pairs as fixed chunks." },
-      { title: "Job Interview", titleZh: "工作面试", situation: "Talking about your work experience.",
-        dialogue: "You: 'I did a lot of reports and made coffee.'", punchline: "'Made coffee' sounds like an intern! But wait—that's actually correct. 😅", lesson: "Some collocations are right, some are wrong. Context matters!" }
-    ],
-    structures: [
-      { name: "Verb + Noun", nameZh: "动词+名词", formula: "make + decision/coffee/plan\ndo + homework/laundry",
-        example: "I made a decision to do my homework.", tip: "Make = create. Do = tasks." },
-      { name: "Adj + Preposition", nameZh: "形容词+介词", formula: "afraid OF / good AT / interested IN",
-        example: "She's interested in music.", tip: "Fixed—learn as chunks." },
-      { name: "Verb + Adverb", nameZh: "动词+副词", formula: "speak fluently / listen carefully / work hard",
-        example: "Please listen carefully.", tip: "Adverbs modify verbs, adjectives modify nouns." },
-      { name: "Noun + Preposition", nameZh: "名词+介词", formula: "reason FOR / need FOR / interest IN",
-        example: "The key to success is practice.", tip: "These noun-preposition pairs are fixed." }
-    ],
-    techniques: [
-      { name: "Collocation Dictionary", description: "Use a collocation dictionary, not a regular one.", tip: "Look up 'decision'—it shows 'make a decision', not 'do a decision'." },
-      { name: "Chunk Learning", description: "Learn phrases as single units.", tip: "When learning a new word, ask: What words go with it?" },
-      { name: "Reading for Collocations", description: "Read native materials and highlight collocations.", tip: "Keep a collocation notebook. Review before writing." }
-    ],
-xpReward: 30,
+    xpReward: 30,
   },
   {
     id: "phrasal-verbs-everyday",
@@ -2033,30 +1144,7 @@ xpReward: 30,
       { type: "choose", question: "I ___ at 7am.", questionZh: "我早上7点起床。", options: [{ text: "get up", textZh: "get up", isCorrect: true }, { text: "get on", textZh: "get on", isCorrect: false }] },
       { type: "fill-blank", question: "Please ___ the lights.", questionZh: "请关灯。", answer: "turn off", blank: "___" },
     ],
-        funnyMoments: [
-      { title: "The Break-Up", titleZh: "分手现场", situation: "Talking about your relationship.",
-        dialogue: "You: 'I broke up with my boyfriend.' Friend: 'You broke UP or broke IN?'", punchline: "'Broke in' = entered by force! 'Broke up' = ended relationship.", lesson: "The particle completely changes the meaning." },
-      { title: "The Job Situation", titleZh: "工作状况", situation: "Describing your workday.",
-        dialogue: "You: 'I gave up my job today.' Friend: 'Wait, I thought you got promoted?'", punchline: "You said 'gave up' (quit)! Friend heard 'gave out' (distributed).", lesson: "Particle must stay with the verb with pronouns." },
-      { title: "The Party", titleZh: "派对", situation: "Planning your weekend.",
-        dialogue: "You: 'I'm going to turn off the party.'", punchline: "'Turn off' means stop! You told everyone to cancel!", lesson: "Phrasal verbs need context to make sense." }
-    ],
-    structures: [
-      { name: "Inseparable", nameZh: "不可拆分", formula: "Verb + Particle + Object",
-        example: "look after + someone", tip: "Object goes AFTER the particle." },
-      { name: "Semi-Separable", nameZh: "半可拆分", formula: "Verb + Particle + Object (noun)\nVerb + Object + Particle (pronoun)",
-        example: "pick up the book / pick it up", tip: "With pronoun, particle MUST go at end." },
-      { name: "Fully Separable", nameZh: "完全可拆分", formula: "Verb + Object + Particle\nVerb + Particle + Object",
-        example: "turn off the light / turn the light off", tip: "Both orders work with nouns." },
-      { name: "Idiomatic", nameZh: "习语", formula: "Verb + Particle = New meaning",
-        example: "give up (quit), run into (meet by chance)", tip: "You must memorize these. Can't guess from words." }
-    ],
-    techniques: [
-      { name: "Particle Focus", description: "Group by particle (up, out, on, off) to see patterns.", tip: "Verbs with 'out' often mean remove/extinguish/exhaust." },
-      { name: "Visual Mapping", description: "Draw a mind map with verb in center, particles branching.", tip: "Color-code: red = stop, green = start, blue = continue." },
-      { name: "Act It Out", description: "Physically act out phrasal verbs.", tip: "'Get up'—stand up. Your body remembers movements." }
-    ],
-xpReward: 30,
+    xpReward: 30,
   },
   {
     id: "phrasal-verbs-separable",
@@ -2080,30 +1168,7 @@ xpReward: 30,
       { type: "choose", question: "Correct: 'Please turn ___ the light.'", questionZh: "正确：", options: [{ text: "off", textZh: "off", isCorrect: true }, { text: "on", textZh: "on", isCorrect: false }] },
       { type: "fill-blank", question: "Please turn the light ___.", questionZh: "请关灯。", answer: "off", blank: "___" },
     ],
-        funnyMoments: [
-      { title: "The Break-Up", titleZh: "分手现场", situation: "Talking about your relationship.",
-        dialogue: "You: 'I broke up with my boyfriend.' Friend: 'You broke UP or broke IN?'", punchline: "'Broke in' = entered by force! 'Broke up' = ended relationship.", lesson: "The particle completely changes the meaning." },
-      { title: "The Job Situation", titleZh: "工作状况", situation: "Describing your workday.",
-        dialogue: "You: 'I gave up my job today.' Friend: 'Wait, I thought you got promoted?'", punchline: "You said 'gave up' (quit)! Friend heard 'gave out' (distributed).", lesson: "Particle must stay with the verb with pronouns." },
-      { title: "The Party", titleZh: "派对", situation: "Planning your weekend.",
-        dialogue: "You: 'I'm going to turn off the party.'", punchline: "'Turn off' means stop! You told everyone to cancel!", lesson: "Phrasal verbs need context to make sense." }
-    ],
-    structures: [
-      { name: "Inseparable", nameZh: "不可拆分", formula: "Verb + Particle + Object",
-        example: "look after + someone", tip: "Object goes AFTER the particle." },
-      { name: "Semi-Separable", nameZh: "半可拆分", formula: "Verb + Particle + Object (noun)\nVerb + Object + Particle (pronoun)",
-        example: "pick up the book / pick it up", tip: "With pronoun, particle MUST go at end." },
-      { name: "Fully Separable", nameZh: "完全可拆分", formula: "Verb + Object + Particle\nVerb + Particle + Object",
-        example: "turn off the light / turn the light off", tip: "Both orders work with nouns." },
-      { name: "Idiomatic", nameZh: "习语", formula: "Verb + Particle = New meaning",
-        example: "give up (quit), run into (meet by chance)", tip: "You must memorize these. Can't guess from words." }
-    ],
-    techniques: [
-      { name: "Particle Focus", description: "Group by particle (up, out, on, off) to see patterns.", tip: "Verbs with 'out' often mean remove/extinguish/exhaust." },
-      { name: "Visual Mapping", description: "Draw a mind map with verb in center, particles branching.", tip: "Color-code: red = stop, green = start, blue = continue." },
-      { name: "Act It Out", description: "Physically act out phrasal verbs.", tip: "'Get up'—stand up. Your body remembers movements." }
-    ],
-xpReward: 35,
+    xpReward: 35,
   },
   {
     id: "natural-vs-textbook",
@@ -2132,31 +1197,7 @@ xpReward: 35,
       { type: "choose", question: "More natural: 'I'm very tired.'", questionZh: "更地道：", options: [{ text: "I'm exhausted.", textZh: "I'm exhausted.", isCorrect: true }, { text: "I am very tired.", textZh: "I am very tired.", isCorrect: false }] },
       { type: "rewrite", question: "Make natural: 'I am very hungry.'", questionZh: "改地道：", answer: "I'm starving!", blank: "I'm ___!" },
     ],
-        funnyMoments: [
-      { title: "Textbook Robot", titleZh: "课本机器人", situation: "You meet a native speaker with textbook English.",
-        dialogue: "You: 'How are you?' ... 'I am fine, thank you. And you?' Friend: '...Are you a chatbot?'", punchline: "Native speakers use shortcuts: 'I'm good, you?' Textbook sounds robotic.", lesson: "Natural English is shorter and more flexible." },
-      { title: "The Over-Explainer", titleZh: "过度解释者", situation: "Someone asks you a simple question.",
-        dialogue: "A: 'Can you pass the salt?' You: 'Yes, certainly, I would be happy to...'", punchline: "10-word answer to a 5-word request! Say 'Here you go.'", lesson: "Natural replies are short, warm, efficient." },
-      { title: "The Vague Artist", titleZh: "模糊艺术家", situation: "A friend asks when you'll arrive.",
-        dialogue: "You: 'I will arrive at 3:47 PM exactly.' Friend: 'Do you have a GPS on your soul?'", punchline: "Say 'around 3:30' or 'in a bit.' Exact numbers sound suspicious.", lesson: "Vague language makes you sound natural." }
-    ],
-    structures: [
-      { name: "Short Replies", nameZh: "简短回答", formula: "Not bad / Pretty good / Same here / I know, right?",
-        example: "A: 'Long time no see!' B: 'Same here!'", tip: "Match the energy and length of the other person." },
-      { name: "Tag Questions", nameZh: "标签问句", formula: "Statement + tag?",
-        example: "It's cold, isn't it?", tip: "Use tags to confirm or keep conversation going." },
-      { name: "Vague Language", nameZh: "模糊语言", formula: "around X / kind of / like X / in a bit",
-        example: "I'll be there around 5.", tip: "Exact numbers sound robotic." },
-      { name: "Fillers", nameZh: "填充词", formula: "Well... / You know... / I mean... / Like...",
-        example: "Well, it's kind of complicated.", tip: "Fillers give thinking time and sound natural." }
-    ],
-    techniques: [
-      { name: "The 3-Second Rule", description: "Respond within 3 seconds.", tip: "Use fillers to bridge the gap naturally." },
-      { name: "Intonation Matching", description: "Copy the intonation of the person you're talking to.", tip: "Match their speed and pitch." },
-      { name: "Conversation Sandwich", description: "Greeting → Topic → Closing.", tip: "Warm up with small talk first." },
-      { name: "The 'Yeah' Technique", description: "Start agreements with 'Yeah' or 'Right.'", tip: "'Yeah, I totally agree' > 'I agree with you completely.'" }
-    ],
-xpReward: 35,
+    xpReward: 35,
   },
   {
     id: "natural-replies",
@@ -2184,31 +1225,7 @@ xpReward: 35,
       { type: "choose", question: "Natural reply to 'Long time no see!'", questionZh: "对'好久不见！'的回应：", options: [{ text: "Long time no see!", textZh: "好久不见！", isCorrect: true }, { text: "Yes, I am long.", textZh: "是的，我很长。", isCorrect: false }] },
       { type: "speak", question: "Practice: 'Not bad.'", questionZh: "练习：", audioText: "Not bad." },
     ],
-        funnyMoments: [
-      { title: "Textbook Robot", titleZh: "课本机器人", situation: "You meet a native speaker with textbook English.",
-        dialogue: "You: 'How are you?' ... 'I am fine, thank you. And you?' Friend: '...Are you a chatbot?'", punchline: "Native speakers use shortcuts: 'I'm good, you?' Textbook sounds robotic.", lesson: "Natural English is shorter and more flexible." },
-      { title: "The Over-Explainer", titleZh: "过度解释者", situation: "Someone asks you a simple question.",
-        dialogue: "A: 'Can you pass the salt?' You: 'Yes, certainly, I would be happy to...'", punchline: "10-word answer to a 5-word request! Say 'Here you go.'", lesson: "Natural replies are short, warm, efficient." },
-      { title: "The Vague Artist", titleZh: "模糊艺术家", situation: "A friend asks when you'll arrive.",
-        dialogue: "You: 'I will arrive at 3:47 PM exactly.' Friend: 'Do you have a GPS on your soul?'", punchline: "Say 'around 3:30' or 'in a bit.' Exact numbers sound suspicious.", lesson: "Vague language makes you sound natural." }
-    ],
-    structures: [
-      { name: "Short Replies", nameZh: "简短回答", formula: "Not bad / Pretty good / Same here / I know, right?",
-        example: "A: 'Long time no see!' B: 'Same here!'", tip: "Match the energy and length of the other person." },
-      { name: "Tag Questions", nameZh: "标签问句", formula: "Statement + tag?",
-        example: "It's cold, isn't it?", tip: "Use tags to confirm or keep conversation going." },
-      { name: "Vague Language", nameZh: "模糊语言", formula: "around X / kind of / like X / in a bit",
-        example: "I'll be there around 5.", tip: "Exact numbers sound robotic." },
-      { name: "Fillers", nameZh: "填充词", formula: "Well... / You know... / I mean... / Like...",
-        example: "Well, it's kind of complicated.", tip: "Fillers give thinking time and sound natural." }
-    ],
-    techniques: [
-      { name: "The 3-Second Rule", description: "Respond within 3 seconds.", tip: "Use fillers to bridge the gap naturally." },
-      { name: "Intonation Matching", description: "Copy the intonation of the person you're talking to.", tip: "Match their speed and pitch." },
-      { name: "Conversation Sandwich", description: "Greeting → Topic → Closing.", tip: "Warm up with small talk first." },
-      { name: "The 'Yeah' Technique", description: "Start agreements with 'Yeah' or 'Right.'", tip: "'Yeah, I totally agree' > 'I agree with you completely.'" }
-    ],
-xpReward: 30,
+    xpReward: 30,
   },
   {
     id: "natural-vague",
@@ -2236,31 +1253,7 @@ xpReward: 30,
       { type: "choose", question: "Natural vague reply:", questionZh: "自然地道的模糊回应：", options: [{ text: "Around 50 people.", textZh: "大概50人。", isCorrect: true }, { text: "Exactly 53 people.", textZh: "正好53人。", isCorrect: false }] },
       { type: "rewrite", question: "Make vague: 'It is 3 kilometers.'", questionZh: "改模糊：", answer: "It's around 3 kilometers.", blank: "It's ___ 3 kilometers." },
     ],
-        funnyMoments: [
-      { title: "Textbook Robot", titleZh: "课本机器人", situation: "You meet a native speaker with textbook English.",
-        dialogue: "You: 'How are you?' ... 'I am fine, thank you. And you?' Friend: '...Are you a chatbot?'", punchline: "Native speakers use shortcuts: 'I'm good, you?' Textbook sounds robotic.", lesson: "Natural English is shorter and more flexible." },
-      { title: "The Over-Explainer", titleZh: "过度解释者", situation: "Someone asks you a simple question.",
-        dialogue: "A: 'Can you pass the salt?' You: 'Yes, certainly, I would be happy to...'", punchline: "10-word answer to a 5-word request! Say 'Here you go.'", lesson: "Natural replies are short, warm, efficient." },
-      { title: "The Vague Artist", titleZh: "模糊艺术家", situation: "A friend asks when you'll arrive.",
-        dialogue: "You: 'I will arrive at 3:47 PM exactly.' Friend: 'Do you have a GPS on your soul?'", punchline: "Say 'around 3:30' or 'in a bit.' Exact numbers sound suspicious.", lesson: "Vague language makes you sound natural." }
-    ],
-    structures: [
-      { name: "Short Replies", nameZh: "简短回答", formula: "Not bad / Pretty good / Same here / I know, right?",
-        example: "A: 'Long time no see!' B: 'Same here!'", tip: "Match the energy and length of the other person." },
-      { name: "Tag Questions", nameZh: "标签问句", formula: "Statement + tag?",
-        example: "It's cold, isn't it?", tip: "Use tags to confirm or keep conversation going." },
-      { name: "Vague Language", nameZh: "模糊语言", formula: "around X / kind of / like X / in a bit",
-        example: "I'll be there around 5.", tip: "Exact numbers sound robotic." },
-      { name: "Fillers", nameZh: "填充词", formula: "Well... / You know... / I mean... / Like...",
-        example: "Well, it's kind of complicated.", tip: "Fillers give thinking time and sound natural." }
-    ],
-    techniques: [
-      { name: "The 3-Second Rule", description: "Respond within 3 seconds.", tip: "Use fillers to bridge the gap naturally." },
-      { name: "Intonation Matching", description: "Copy the intonation of the person you're talking to.", tip: "Match their speed and pitch." },
-      { name: "Conversation Sandwich", description: "Greeting → Topic → Closing.", tip: "Warm up with small talk first." },
-      { name: "The 'Yeah' Technique", description: "Start agreements with 'Yeah' or 'Right.'", tip: "'Yeah, I totally agree' > 'I agree with you completely.'" }
-    ],
-xpReward: 35,
+    xpReward: 35,
   },
   {
     id: "grammar-tense-clock",
@@ -2284,30 +1277,7 @@ xpReward: 35,
       { type: "choose", question: "Past perfect time:", questionZh: "过去完成时的时间：", options: [{ text: "Before 6:00", textZh: "6点之前", isCorrect: true }, { text: "At 3:00", textZh: "3点", isCorrect: false }] },
       { type: "fill-blank", question: "I ___ finished by 5pm. (past perfect)", questionZh: "我5点前已经完成了。", answer: "had", blank: "___" },
     ],
-        funnyMoments: [
-      { title: "The Photo Story", titleZh: "照片故事", situation: "Looking at old photos.",
-        dialogue: "You: 'Look! I go to beach!' Friend: 'Did you time travel?'", punchline: "'I go' = habit. Past = 'I went.' Tense mismatch = time travel!", lesson: "Match verb tense to time frame." },
-      { title: "Passive Confusion", titleZh: "被动语态混乱", situation: "Talking about a movie.",
-        dialogue: "You: 'The movie watched by millions.'", punchline: "You made the movie the watcher! Need: 'was watched.'", lesson: "Passive = be + past participle." },
-      { title: "Reported Speech Fail", titleZh: "间接引语失败", situation: "Gossiping about your friend.",
-        dialogue: "You: 'She said she is coming.' Friend: 'That was yesterday!'", punchline: "Shift back: 'is' → 'was'. Sounds like it's happening now.", lesson: "Present → past, will → would, can → could." }
-    ],
-    structures: [
-      { name: "Tense Formula", nameZh: "时态公式", formula: "Time marker + Subject + correct tense verb",
-        example: "Yesterday, I ate pizza.", tip: "Find the time marker first." },
-      { name: "Passive Voice", nameZh: "被动语态", formula: "be (was/were) + past participle + by ...",
-        example: "The letter was written by John.", tip: "Use when you don't know/care who did it." },
-      { name: "Reported Speech", nameZh: "间接引语", formula: "S + said + S + past tense verb ...",
-        example: "She said she liked coffee.", tip: "Backshift: present → past, will → would." },
-      { name: "Conditionals", nameZh: "条件句", formula: "If + past simple, would + verb",
-        example: "If I had money, I would travel.", tip: "Second conditional = unreal present/future." }
-    ],
-    techniques: [
-      { name: "Tense Timeline", description: "Draw a timeline with past, present, future.", tip: "Color-code: red = past, green = present, blue = future." },
-      { name: "Passive Transformation", description: "Convert active to passive: 'John wrote it' → 'It was written by John.'", tip: "Object becomes subject. Subject becomes optional." },
-      { name: "Reported Speech Practice", description: "Convert: 'I like coffee' → 'She said she liked coffee.'", tip: "Always shift tense back one step." }
-    ],
-xpReward: 35,
+    xpReward: 35,
   },
   {
     id: "grammar-passive-visual",
@@ -2335,30 +1305,7 @@ xpReward: 35,
       { type: "choose", question: "Passive: 'The letter ___ yesterday.'", questionZh: "被动：", options: [{ text: "was written", textZh: "was written", isCorrect: true }, { text: "wrote", textZh: "wrote", isCorrect: false }] },
       { type: "rewrite", question: "Make passive: 'Someone stole the bike.'", questionZh: "改成被动：", answer: "The bike was stolen.", blank: "The bike ___ stolen." },
     ],
-        funnyMoments: [
-      { title: "The Photo Story", titleZh: "照片故事", situation: "Looking at old photos.",
-        dialogue: "You: 'Look! I go to beach!' Friend: 'Did you time travel?'", punchline: "'I go' = habit. Past = 'I went.' Tense mismatch = time travel!", lesson: "Match verb tense to time frame." },
-      { title: "Passive Confusion", titleZh: "被动语态混乱", situation: "Talking about a movie.",
-        dialogue: "You: 'The movie watched by millions.'", punchline: "You made the movie the watcher! Need: 'was watched.'", lesson: "Passive = be + past participle." },
-      { title: "Reported Speech Fail", titleZh: "间接引语失败", situation: "Gossiping about your friend.",
-        dialogue: "You: 'She said she is coming.' Friend: 'That was yesterday!'", punchline: "Shift back: 'is' → 'was'. Sounds like it's happening now.", lesson: "Present → past, will → would, can → could." }
-    ],
-    structures: [
-      { name: "Tense Formula", nameZh: "时态公式", formula: "Time marker + Subject + correct tense verb",
-        example: "Yesterday, I ate pizza.", tip: "Find the time marker first." },
-      { name: "Passive Voice", nameZh: "被动语态", formula: "be (was/were) + past participle + by ...",
-        example: "The letter was written by John.", tip: "Use when you don't know/care who did it." },
-      { name: "Reported Speech", nameZh: "间接引语", formula: "S + said + S + past tense verb ...",
-        example: "She said she liked coffee.", tip: "Backshift: present → past, will → would." },
-      { name: "Conditionals", nameZh: "条件句", formula: "If + past simple, would + verb",
-        example: "If I had money, I would travel.", tip: "Second conditional = unreal present/future." }
-    ],
-    techniques: [
-      { name: "Tense Timeline", description: "Draw a timeline with past, present, future.", tip: "Color-code: red = past, green = present, blue = future." },
-      { name: "Passive Transformation", description: "Convert active to passive: 'John wrote it' → 'It was written by John.'", tip: "Object becomes subject. Subject becomes optional." },
-      { name: "Reported Speech Practice", description: "Convert: 'I like coffee' → 'She said she liked coffee.'", tip: "Always shift tense back one step." }
-    ],
-xpReward: 40,
+    xpReward: 40,
   },
   {
     id: "grammar-reported",
@@ -2386,30 +1333,7 @@ xpReward: 40,
       { type: "choose", question: "Reported: 'I like coffee.' → She said she ___ coffee.", questionZh: "间接引语：", options: [{ text: "liked", textZh: "liked", isCorrect: true }, { text: "likes", textZh: "likes", isCorrect: false }] },
       { type: "fill-blank", question: "He said he ___ tired.", questionZh: "他说他很累。", answer: "was", blank: "___" },
     ],
-        funnyMoments: [
-      { title: "The Photo Story", titleZh: "照片故事", situation: "Looking at old photos.",
-        dialogue: "You: 'Look! I go to beach!' Friend: 'Did you time travel?'", punchline: "'I go' = habit. Past = 'I went.' Tense mismatch = time travel!", lesson: "Match verb tense to time frame." },
-      { title: "Passive Confusion", titleZh: "被动语态混乱", situation: "Talking about a movie.",
-        dialogue: "You: 'The movie watched by millions.'", punchline: "You made the movie the watcher! Need: 'was watched.'", lesson: "Passive = be + past participle." },
-      { title: "Reported Speech Fail", titleZh: "间接引语失败", situation: "Gossiping about your friend.",
-        dialogue: "You: 'She said she is coming.' Friend: 'That was yesterday!'", punchline: "Shift back: 'is' → 'was'. Sounds like it's happening now.", lesson: "Present → past, will → would, can → could." }
-    ],
-    structures: [
-      { name: "Tense Formula", nameZh: "时态公式", formula: "Time marker + Subject + correct tense verb",
-        example: "Yesterday, I ate pizza.", tip: "Find the time marker first." },
-      { name: "Passive Voice", nameZh: "被动语态", formula: "be (was/were) + past participle + by ...",
-        example: "The letter was written by John.", tip: "Use when you don't know/care who did it." },
-      { name: "Reported Speech", nameZh: "间接引语", formula: "S + said + S + past tense verb ...",
-        example: "She said she liked coffee.", tip: "Backshift: present → past, will → would." },
-      { name: "Conditionals", nameZh: "条件句", formula: "If + past simple, would + verb",
-        example: "If I had money, I would travel.", tip: "Second conditional = unreal present/future." }
-    ],
-    techniques: [
-      { name: "Tense Timeline", description: "Draw a timeline with past, present, future.", tip: "Color-code: red = past, green = present, blue = future." },
-      { name: "Passive Transformation", description: "Convert active to passive: 'John wrote it' → 'It was written by John.'", tip: "Object becomes subject. Subject becomes optional." },
-      { name: "Reported Speech Practice", description: "Convert: 'I like coffee' → 'She said she liked coffee.'", tip: "Always shift tense back one step." }
-    ],
-xpReward: 40,
+    xpReward: 40,
   },
   {
     id: "business-emails",
@@ -2437,30 +1361,7 @@ xpReward: 40,
       { type: "choose", question: "Business email subject should be:", questionZh: "商务邮件主题应该是：", options: [{ text: "Clear and specific", textZh: "清晰具体", isCorrect: true }, { text: "Very short only", textZh: "非常短", isCorrect: false }] },
       { type: "rewrite", question: "Start a request: 'I need the report.'", questionZh: "开始请求：", answer: "I'm writing to request the report.", blank: "I'm writing to ___ the report." },
     ],
-        funnyMoments: [
-      { title: "The Email Disaster", titleZh: "邮件灾难", situation: "Writing a formal business email.",
-        dialogue: "You: 'Dear Sir, I write to inform you... I am very happy to work with you guys.' Client: '...Sir? Guys?'", punchline: "You mixed casual ('guys') with formal ('Dear Sir')!", lesson: "Choose one register and stick to it." },
-      { title: "Meeting Mayhem", titleZh: "会议混乱", situation: "Your first international meeting.",
-        dialogue: "You: 'I think maybe possibly we could perhaps...' Everyone: [stares]", punchline: "Too many hedges! Natives use 1-2 softeners max.", lesson: "Over-hedging kills confidence." },
-      { title: "Negotiation Fail", titleZh: "谈判失败", situation: "Trying to negotiate a price.",
-        dialogue: "You: 'I want 20% discount!' ... You: 'Okay, I take it.'", punchline: "You caved! 'I take it' means you accept. Buy time: 'Let me think about it.'", lesson: "Never say 'I take it' until you're sure." }
-    ],
-    structures: [
-      { name: "Email Structure", nameZh: "邮件结构", formula: "Greeting → Purpose → Details → Action → Closing",
-        example: "Dear Ms. Lee, I'm writing regarding...", tip: "State purpose in the first sentence." },
-      { name: "Meeting Phrases", nameZh: "会议用语", formula: "I'd like to... / Could we... / Let's...",
-        example: "Let's move on to the next item.", tip: "Use 'Let's' to take control politely." },
-      { name: "Negotiation Language", nameZh: "谈判语言", formula: "We propose... / That's a bit high / Meet halfway",
-        example: "That's a bit high. Could we meet halfway?", tip: "Use 'we' not 'you'. Stay collaborative." },
-      { name: "Agreement", nameZh: "同意", formula: "I agree / That's a great point / I'm with you",
-        example: "That's a great point. Let's go with that.", tip: "Show you listened before agreeing." }
-    ],
-    techniques: [
-      { name: "PREP Method", description: "Point, Reason, Example, Point.", tip: "State your point first, then back it up." },
-      { name: "Softening Language", description: "Use hedges: 'I was wondering if...' instead of 'I want...'", tip: "Modal verbs make requests softer and professional." },
-      { name: "Email Templates", description: "Memorize templates for common situations.", tip: "Have templates for: requesting, confirming, apologizing, declining." }
-    ],
-xpReward: 40,
+    xpReward: 40,
   },
   {
     id: "business-meetings",
@@ -2488,30 +1389,7 @@ xpReward: 40,
       { type: "choose", question: "Polite disagreement in meeting:", questionZh: "会议中礼貌反对：", options: [{ text: "That's wrong.", textZh: "那是错的。", isCorrect: false }, { text: "I'm afraid I see it differently.", textZh: "恐怕我看法不同。", isCorrect: true }] },
       { type: "speak", question: "Practice: 'I'd like to add...'", questionZh: "练习：", audioText: "I'd like to add something to that." },
     ],
-        funnyMoments: [
-      { title: "The Email Disaster", titleZh: "邮件灾难", situation: "Writing a formal business email.",
-        dialogue: "You: 'Dear Sir, I write to inform you... I am very happy to work with you guys.' Client: '...Sir? Guys?'", punchline: "You mixed casual ('guys') with formal ('Dear Sir')!", lesson: "Choose one register and stick to it." },
-      { title: "Meeting Mayhem", titleZh: "会议混乱", situation: "Your first international meeting.",
-        dialogue: "You: 'I think maybe possibly we could perhaps...' Everyone: [stares]", punchline: "Too many hedges! Natives use 1-2 softeners max.", lesson: "Over-hedging kills confidence." },
-      { title: "Negotiation Fail", titleZh: "谈判失败", situation: "Trying to negotiate a price.",
-        dialogue: "You: 'I want 20% discount!' ... You: 'Okay, I take it.'", punchline: "You caved! 'I take it' means you accept. Buy time: 'Let me think about it.'", lesson: "Never say 'I take it' until you're sure." }
-    ],
-    structures: [
-      { name: "Email Structure", nameZh: "邮件结构", formula: "Greeting → Purpose → Details → Action → Closing",
-        example: "Dear Ms. Lee, I'm writing regarding...", tip: "State purpose in the first sentence." },
-      { name: "Meeting Phrases", nameZh: "会议用语", formula: "I'd like to... / Could we... / Let's...",
-        example: "Let's move on to the next item.", tip: "Use 'Let's' to take control politely." },
-      { name: "Negotiation Language", nameZh: "谈判语言", formula: "We propose... / That's a bit high / Meet halfway",
-        example: "That's a bit high. Could we meet halfway?", tip: "Use 'we' not 'you'. Stay collaborative." },
-      { name: "Agreement", nameZh: "同意", formula: "I agree / That's a great point / I'm with you",
-        example: "That's a great point. Let's go with that.", tip: "Show you listened before agreeing." }
-    ],
-    techniques: [
-      { name: "PREP Method", description: "Point, Reason, Example, Point.", tip: "State your point first, then back it up." },
-      { name: "Softening Language", description: "Use hedges: 'I was wondering if...' instead of 'I want...'", tip: "Modal verbs make requests softer and professional." },
-      { name: "Email Templates", description: "Memorize templates for common situations.", tip: "Have templates for: requesting, confirming, apologizing, declining." }
-    ],
-xpReward: 40,
+    xpReward: 40,
   },
   {
     id: "business-interviews",
@@ -2539,30 +1417,7 @@ xpReward: 40,
       { type: "choose", question: "STAR method stands for:", questionZh: "STAR 方法代表：", options: [{ text: "Situation, Task, Action, Result", textZh: "情境、任务、行动、结果", isCorrect: true }, { text: "Simple, Test, Ask, Reply", textZh: "简单、测试、问、回复", isCorrect: false }] },
       { type: "rewrite", question: "Add structure: 'I improved the process.'", questionZh: "加结构：", answer: "In my previous role, I improved the process, which saved 10 hours a week.", blank: "In my previous role, I improved the process, ___ saved 10 hours a week." },
     ],
-        funnyMoments: [
-      { title: "The Email Disaster", titleZh: "邮件灾难", situation: "Writing a formal business email.",
-        dialogue: "You: 'Dear Sir, I write to inform you... I am very happy to work with you guys.' Client: '...Sir? Guys?'", punchline: "You mixed casual ('guys') with formal ('Dear Sir')!", lesson: "Choose one register and stick to it." },
-      { title: "Meeting Mayhem", titleZh: "会议混乱", situation: "Your first international meeting.",
-        dialogue: "You: 'I think maybe possibly we could perhaps...' Everyone: [stares]", punchline: "Too many hedges! Natives use 1-2 softeners max.", lesson: "Over-hedging kills confidence." },
-      { title: "Negotiation Fail", titleZh: "谈判失败", situation: "Trying to negotiate a price.",
-        dialogue: "You: 'I want 20% discount!' ... You: 'Okay, I take it.'", punchline: "You caved! 'I take it' means you accept. Buy time: 'Let me think about it.'", lesson: "Never say 'I take it' until you're sure." }
-    ],
-    structures: [
-      { name: "Email Structure", nameZh: "邮件结构", formula: "Greeting → Purpose → Details → Action → Closing",
-        example: "Dear Ms. Lee, I'm writing regarding...", tip: "State purpose in the first sentence." },
-      { name: "Meeting Phrases", nameZh: "会议用语", formula: "I'd like to... / Could we... / Let's...",
-        example: "Let's move on to the next item.", tip: "Use 'Let's' to take control politely." },
-      { name: "Negotiation Language", nameZh: "谈判语言", formula: "We propose... / That's a bit high / Meet halfway",
-        example: "That's a bit high. Could we meet halfway?", tip: "Use 'we' not 'you'. Stay collaborative." },
-      { name: "Agreement", nameZh: "同意", formula: "I agree / That's a great point / I'm with you",
-        example: "That's a great point. Let's go with that.", tip: "Show you listened before agreeing." }
-    ],
-    techniques: [
-      { name: "PREP Method", description: "Point, Reason, Example, Point.", tip: "State your point first, then back it up." },
-      { name: "Softening Language", description: "Use hedges: 'I was wondering if...' instead of 'I want...'", tip: "Modal verbs make requests softer and professional." },
-      { name: "Email Templates", description: "Memorize templates for common situations.", tip: "Have templates for: requesting, confirming, apologizing, declining." }
-    ],
-xpReward: 45,
+    xpReward: 45,
   },
   {
     id: "business-negotiations",
@@ -2590,30 +1445,7 @@ xpReward: 45,
       { type: "choose", question: "Polite negotiation:", questionZh: "礼貌谈判：", options: [{ text: "Too expensive!", textZh: "太贵了！", isCorrect: false }, { text: "That's above our budget.", textZh: "这超过了我们的预算。", isCorrect: true }] },
       { type: "rewrite", question: "Make diplomatic: 'I want lower price.'", questionZh: "改委婉：", answer: "If we could adjust the price, we could move forward.", blank: "If we could adjust the price, we could ___ forward." },
     ],
-        funnyMoments: [
-      { title: "The Email Disaster", titleZh: "邮件灾难", situation: "Writing a formal business email.",
-        dialogue: "You: 'Dear Sir, I write to inform you... I am very happy to work with you guys.' Client: '...Sir? Guys?'", punchline: "You mixed casual ('guys') with formal ('Dear Sir')!", lesson: "Choose one register and stick to it." },
-      { title: "Meeting Mayhem", titleZh: "会议混乱", situation: "Your first international meeting.",
-        dialogue: "You: 'I think maybe possibly we could perhaps...' Everyone: [stares]", punchline: "Too many hedges! Natives use 1-2 softeners max.", lesson: "Over-hedging kills confidence." },
-      { title: "Negotiation Fail", titleZh: "谈判失败", situation: "Trying to negotiate a price.",
-        dialogue: "You: 'I want 20% discount!' ... You: 'Okay, I take it.'", punchline: "You caved! 'I take it' means you accept. Buy time: 'Let me think about it.'", lesson: "Never say 'I take it' until you're sure." }
-    ],
-    structures: [
-      { name: "Email Structure", nameZh: "邮件结构", formula: "Greeting → Purpose → Details → Action → Closing",
-        example: "Dear Ms. Lee, I'm writing regarding...", tip: "State purpose in the first sentence." },
-      { name: "Meeting Phrases", nameZh: "会议用语", formula: "I'd like to... / Could we... / Let's...",
-        example: "Let's move on to the next item.", tip: "Use 'Let's' to take control politely." },
-      { name: "Negotiation Language", nameZh: "谈判语言", formula: "We propose... / That's a bit high / Meet halfway",
-        example: "That's a bit high. Could we meet halfway?", tip: "Use 'we' not 'you'. Stay collaborative." },
-      { name: "Agreement", nameZh: "同意", formula: "I agree / That's a great point / I'm with you",
-        example: "That's a great point. Let's go with that.", tip: "Show you listened before agreeing." }
-    ],
-    techniques: [
-      { name: "PREP Method", description: "Point, Reason, Example, Point.", tip: "State your point first, then back it up." },
-      { name: "Softening Language", description: "Use hedges: 'I was wondering if...' instead of 'I want...'", tip: "Modal verbs make requests softer and professional." },
-      { name: "Email Templates", description: "Memorize templates for common situations.", tip: "Have templates for: requesting, confirming, apologizing, declining." }
-    ],
-xpReward: 45,
+    xpReward: 45,
   },
   {
     id: "cultural-small-talk",
@@ -2641,28 +1473,7 @@ xpReward: 45,
       { type: "choose", question: "Safe small talk topic:", questionZh: "安全的闲聊话题：", options: [{ text: "How was your trip?", textZh: "你旅行怎么样？", isCorrect: true }, { text: "How much do you earn?", textZh: "你赚多少？", isCorrect: false }] },
       { type: "speak", question: "Practice: 'How's it going?'", questionZh: "练习：", audioText: "How's it going?" },
     ],
-        funnyMoments: [
-      { title: "The Gift Trap", titleZh: "礼物陷阱", situation: "Receiving a gift from your boss.",
-        dialogue: "You: [opens immediately] 'Oh wow!' Colleague: [whispers] 'Don't open it!'", punchline: "In some cultures, opening immediately is rude!", lesson: "When in doubt, watch and mimic the locals." },
-      { title: "Small Talk Overload", titleZh: "闲聊过多", situation: "Meeting your British colleague at the pub.",
-        dialogue: "You: 'How's business?' Colleague: 'Not bad. Did you see the rain?'", punchline: "You asked about work immediately! British do weather first.", lesson: "Small talk topics have an invisible order." },
-      { title: "Directness Clash", titleZh: "直接性冲突", situation: "Giving feedback to a Japanese colleague.",
-        dialogue: "You: 'This report is terrible. Rewrite it.' Colleague: [silence]", punchline: "Direct negative feedback causes extreme discomfort!", lesson: "Softens feedback in high-context cultures." }
-    ],
-    structures: [
-      { name: "Small Talk Chain", nameZh: "闲聊链", formula: "Weather → Weekend → Hobbies → Work",
-        example: "Nice weather! Did you do anything fun?", tip: "Never jump to the deepest topic first." },
-      { name: "Politeness Levels", nameZh: "礼貌等级", formula: "High-context: Indirect, relationship-first\nLow-context: Direct, task-first",
-        example: "US: 'Can you send that?' Japan: 'I was wondering if...'", tip: "Match indirectness to the culture." },
-      { name: "Feedback Sandwich", nameZh: "反馈三明治", formula: "Praise → Criticism → Praise",
-        example: "Great job. Let's tweak the data. Overall excellent.", tip: "Wrap criticism between compliments." }
-    ],
-    techniques: [
-      { name: "Cultural Mirroring", description: "Observe how locals interact and mirror them.", tip: "Watch: How close? Do they touch? How loud?" },
-      { name: "Topic Progression", description: "Learn the natural topic order for each culture.", tip: "US: weather → sports → work. UK: weather → complaining → pub." },
-      { name: "Silence Comfort", description: "Some cultures are comfortable with silence.", tip: "If silence feels awkward, it's probably cultural, not communication failure." }
-    ],
-xpReward: 30,
+    xpReward: 30,
   },
   {
     id: "cultural-gift-refusal",
@@ -2690,28 +1501,7 @@ xpReward: 30,
       { type: "choose", question: "Polite refusal:", questionZh: "礼貌拒绝：", options: [{ text: "No!", textZh: "不！", isCorrect: false }, { text: "I'd love to, but I have a prior commitment.", textZh: "我很想去，但我已有安排了。", isCorrect: true }] },
       { type: "rewrite", question: "Make polite: 'I can't come.'", questionZh: "改礼貌：", answer: "I'd love to, but I have another commitment.", blank: "I'd love to, but I have another ___." },
     ],
-        funnyMoments: [
-      { title: "The Gift Trap", titleZh: "礼物陷阱", situation: "Receiving a gift from your boss.",
-        dialogue: "You: [opens immediately] 'Oh wow!' Colleague: [whispers] 'Don't open it!'", punchline: "In some cultures, opening immediately is rude!", lesson: "When in doubt, watch and mimic the locals." },
-      { title: "Small Talk Overload", titleZh: "闲聊过多", situation: "Meeting your British colleague at the pub.",
-        dialogue: "You: 'How's business?' Colleague: 'Not bad. Did you see the rain?'", punchline: "You asked about work immediately! British do weather first.", lesson: "Small talk topics have an invisible order." },
-      { title: "Directness Clash", titleZh: "直接性冲突", situation: "Giving feedback to a Japanese colleague.",
-        dialogue: "You: 'This report is terrible. Rewrite it.' Colleague: [silence]", punchline: "Direct negative feedback causes extreme discomfort!", lesson: "Softens feedback in high-context cultures." }
-    ],
-    structures: [
-      { name: "Small Talk Chain", nameZh: "闲聊链", formula: "Weather → Weekend → Hobbies → Work",
-        example: "Nice weather! Did you do anything fun?", tip: "Never jump to the deepest topic first." },
-      { name: "Politeness Levels", nameZh: "礼貌等级", formula: "High-context: Indirect, relationship-first\nLow-context: Direct, task-first",
-        example: "US: 'Can you send that?' Japan: 'I was wondering if...'", tip: "Match indirectness to the culture." },
-      { name: "Feedback Sandwich", nameZh: "反馈三明治", formula: "Praise → Criticism → Praise",
-        example: "Great job. Let's tweak the data. Overall excellent.", tip: "Wrap criticism between compliments." }
-    ],
-    techniques: [
-      { name: "Cultural Mirroring", description: "Observe how locals interact and mirror them.", tip: "Watch: How close? Do they touch? How loud?" },
-      { name: "Topic Progression", description: "Learn the natural topic order for each culture.", tip: "US: weather → sports → work. UK: weather → complaining → pub." },
-      { name: "Silence Comfort", description: "Some cultures are comfortable with silence.", tip: "If silence feels awkward, it's probably cultural, not communication failure." }
-    ],
-xpReward: 35,
+    xpReward: 35,
   },
   {
     id: "cultural-directness",
@@ -2740,28 +1530,7 @@ xpReward: 35,
       { type: "choose", question: "More indirect:", questionZh: "更委婉：", options: [{ text: "That's wrong.", textZh: "那是错的。", isCorrect: false }, { text: "I'm not sure that's the best approach.", textZh: "我不确定那是最好的方法。", isCorrect: true }] },
       { type: "fill-blank", question: "British refusal: 'I'm afraid that's ___ possible.'", questionZh: "英式拒绝：", answer: "not", blank: "___" },
     ],
-        funnyMoments: [
-      { title: "The Gift Trap", titleZh: "礼物陷阱", situation: "Receiving a gift from your boss.",
-        dialogue: "You: [opens immediately] 'Oh wow!' Colleague: [whispers] 'Don't open it!'", punchline: "In some cultures, opening immediately is rude!", lesson: "When in doubt, watch and mimic the locals." },
-      { title: "Small Talk Overload", titleZh: "闲聊过多", situation: "Meeting your British colleague at the pub.",
-        dialogue: "You: 'How's business?' Colleague: 'Not bad. Did you see the rain?'", punchline: "You asked about work immediately! British do weather first.", lesson: "Small talk topics have an invisible order." },
-      { title: "Directness Clash", titleZh: "直接性冲突", situation: "Giving feedback to a Japanese colleague.",
-        dialogue: "You: 'This report is terrible. Rewrite it.' Colleague: [silence]", punchline: "Direct negative feedback causes extreme discomfort!", lesson: "Softens feedback in high-context cultures." }
-    ],
-    structures: [
-      { name: "Small Talk Chain", nameZh: "闲聊链", formula: "Weather → Weekend → Hobbies → Work",
-        example: "Nice weather! Did you do anything fun?", tip: "Never jump to the deepest topic first." },
-      { name: "Politeness Levels", nameZh: "礼貌等级", formula: "High-context: Indirect, relationship-first\nLow-context: Direct, task-first",
-        example: "US: 'Can you send that?' Japan: 'I was wondering if...'", tip: "Match indirectness to the culture." },
-      { name: "Feedback Sandwich", nameZh: "反馈三明治", formula: "Praise → Criticism → Praise",
-        example: "Great job. Let's tweak the data. Overall excellent.", tip: "Wrap criticism between compliments." }
-    ],
-    techniques: [
-      { name: "Cultural Mirroring", description: "Observe how locals interact and mirror them.", tip: "Watch: How close? Do they touch? How loud?" },
-      { name: "Topic Progression", description: "Learn the natural topic order for each culture.", tip: "US: weather → sports → work. UK: weather → complaining → pub." },
-      { name: "Silence Comfort", description: "Some cultures are comfortable with silence.", tip: "If silence feels awkward, it's probably cultural, not communication failure." }
-    ],
-xpReward: 35,
+    xpReward: 35,
   },
   {
     id: "formula-opinion",
@@ -2789,30 +1558,7 @@ xpReward: 35,
       { type: "choose", question: "Softer opinion:", questionZh: "柔和观点：", options: [{ text: "I think we should wait.", textZh: "我想我们应该等等。", isCorrect: true }, { text: "We must wait now!", textZh: "我们必须马上等！", isCorrect: false }] },
       { type: "speak", question: "Practice: 'In my opinion...'", questionZh: "练习：", audioText: "In my opinion, this is the best choice." },
     ],
-        funnyMoments: [
-      { title: "The Email Disaster", titleZh: "邮件灾难", situation: "Writing a formal business email.",
-        dialogue: "You: 'Dear Sir, I write to inform you... I am very happy to work with you guys.' Client: '...Sir? Guys?'", punchline: "You mixed casual ('guys') with formal ('Dear Sir')!", lesson: "Choose one register and stick to it." },
-      { title: "Meeting Mayhem", titleZh: "会议混乱", situation: "Your first international meeting.",
-        dialogue: "You: 'I think maybe possibly we could perhaps...' Everyone: [stares]", punchline: "Too many hedges! Natives use 1-2 softeners max.", lesson: "Over-hedging kills confidence." },
-      { title: "Negotiation Fail", titleZh: "谈判失败", situation: "Trying to negotiate a price.",
-        dialogue: "You: 'I want 20% discount!' ... You: 'Okay, I take it.'", punchline: "You caved! 'I take it' means you accept. Buy time: 'Let me think about it.'", lesson: "Never say 'I take it' until you're sure." }
-    ],
-    structures: [
-      { name: "Email Structure", nameZh: "邮件结构", formula: "Greeting → Purpose → Details → Action → Closing",
-        example: "Dear Ms. Lee, I'm writing regarding...", tip: "State purpose in the first sentence." },
-      { name: "Meeting Phrases", nameZh: "会议用语", formula: "I'd like to... / Could we... / Let's...",
-        example: "Let's move on to the next item.", tip: "Use 'Let's' to take control politely." },
-      { name: "Negotiation Language", nameZh: "谈判语言", formula: "We propose... / That's a bit high / Meet halfway",
-        example: "That's a bit high. Could we meet halfway?", tip: "Use 'we' not 'you'. Stay collaborative." },
-      { name: "Agreement", nameZh: "同意", formula: "I agree / That's a great point / I'm with you",
-        example: "That's a great point. Let's go with that.", tip: "Show you listened before agreeing." }
-    ],
-    techniques: [
-      { name: "PREP Method", description: "Point, Reason, Example, Point.", tip: "State your point first, then back it up." },
-      { name: "Softening Language", description: "Use hedges: 'I was wondering if...' instead of 'I want...'", tip: "Modal verbs make requests softer and professional." },
-      { name: "Email Templates", description: "Memorize templates for common situations.", tip: "Have templates for: requesting, confirming, apologizing, declining." }
-    ],
-xpReward: 30,
+    xpReward: 30,
   },
   {
     id: "formula-agreement",
@@ -2840,30 +1586,7 @@ xpReward: 30,
       { type: "choose", question: "Soft disagreement:", questionZh: "委婉反对：", options: [{ text: "You're wrong.", textZh: "你错了。", isCorrect: false }, { text: "I'm afraid I see it differently.", textZh: "恐怕我看法不同。", isCorrect: true }] },
       { type: "rewrite", question: "Make polite: 'You are wrong.'", questionZh: "改礼貌：", answer: "I'm afraid I see it differently.", blank: "I'm afraid I see it ___." },
     ],
-        funnyMoments: [
-      { title: "The Email Disaster", titleZh: "邮件灾难", situation: "Writing a formal business email.",
-        dialogue: "You: 'Dear Sir, I write to inform you... I am very happy to work with you guys.' Client: '...Sir? Guys?'", punchline: "You mixed casual ('guys') with formal ('Dear Sir')!", lesson: "Choose one register and stick to it." },
-      { title: "Meeting Mayhem", titleZh: "会议混乱", situation: "Your first international meeting.",
-        dialogue: "You: 'I think maybe possibly we could perhaps...' Everyone: [stares]", punchline: "Too many hedges! Natives use 1-2 softeners max.", lesson: "Over-hedging kills confidence." },
-      { title: "Negotiation Fail", titleZh: "谈判失败", situation: "Trying to negotiate a price.",
-        dialogue: "You: 'I want 20% discount!' ... You: 'Okay, I take it.'", punchline: "You caved! 'I take it' means you accept. Buy time: 'Let me think about it.'", lesson: "Never say 'I take it' until you're sure." }
-    ],
-    structures: [
-      { name: "Email Structure", nameZh: "邮件结构", formula: "Greeting → Purpose → Details → Action → Closing",
-        example: "Dear Ms. Lee, I'm writing regarding...", tip: "State purpose in the first sentence." },
-      { name: "Meeting Phrases", nameZh: "会议用语", formula: "I'd like to... / Could we... / Let's...",
-        example: "Let's move on to the next item.", tip: "Use 'Let's' to take control politely." },
-      { name: "Negotiation Language", nameZh: "谈判语言", formula: "We propose... / That's a bit high / Meet halfway",
-        example: "That's a bit high. Could we meet halfway?", tip: "Use 'we' not 'you'. Stay collaborative." },
-      { name: "Agreement", nameZh: "同意", formula: "I agree / That's a great point / I'm with you",
-        example: "That's a great point. Let's go with that.", tip: "Show you listened before agreeing." }
-    ],
-    techniques: [
-      { name: "PREP Method", description: "Point, Reason, Example, Point.", tip: "State your point first, then back it up." },
-      { name: "Softening Language", description: "Use hedges: 'I was wondering if...' instead of 'I want...'", tip: "Modal verbs make requests softer and professional." },
-      { name: "Email Templates", description: "Memorize templates for common situations.", tip: "Have templates for: requesting, confirming, apologizing, declining." }
-    ],
-xpReward: 30,
+    xpReward: 30,
   },
   {
     id: "formula-suggestion",
@@ -2891,30 +1614,7 @@ xpReward: 30,
       { type: "choose", question: "Making a suggestion:", questionZh: "提出建议：", options: [{ text: "How about pizza?", textZh: "吃披萨怎么样？", isCorrect: true }, { text: "You must eat pizza.", textZh: "你必须吃披萨。", isCorrect: false }] },
       { type: "speak", question: "Practice: 'Let's...'", questionZh: "练习：", audioText: "Let's get started." },
     ],
-        funnyMoments: [
-      { title: "The Email Disaster", titleZh: "邮件灾难", situation: "Writing a formal business email.",
-        dialogue: "You: 'Dear Sir, I write to inform you... I am very happy to work with you guys.' Client: '...Sir? Guys?'", punchline: "You mixed casual ('guys') with formal ('Dear Sir')!", lesson: "Choose one register and stick to it." },
-      { title: "Meeting Mayhem", titleZh: "会议混乱", situation: "Your first international meeting.",
-        dialogue: "You: 'I think maybe possibly we could perhaps...' Everyone: [stares]", punchline: "Too many hedges! Natives use 1-2 softeners max.", lesson: "Over-hedging kills confidence." },
-      { title: "Negotiation Fail", titleZh: "谈判失败", situation: "Trying to negotiate a price.",
-        dialogue: "You: 'I want 20% discount!' ... You: 'Okay, I take it.'", punchline: "You caved! 'I take it' means you accept. Buy time: 'Let me think about it.'", lesson: "Never say 'I take it' until you're sure." }
-    ],
-    structures: [
-      { name: "Email Structure", nameZh: "邮件结构", formula: "Greeting → Purpose → Details → Action → Closing",
-        example: "Dear Ms. Lee, I'm writing regarding...", tip: "State purpose in the first sentence." },
-      { name: "Meeting Phrases", nameZh: "会议用语", formula: "I'd like to... / Could we... / Let's...",
-        example: "Let's move on to the next item.", tip: "Use 'Let's' to take control politely." },
-      { name: "Negotiation Language", nameZh: "谈判语言", formula: "We propose... / That's a bit high / Meet halfway",
-        example: "That's a bit high. Could we meet halfway?", tip: "Use 'we' not 'you'. Stay collaborative." },
-      { name: "Agreement", nameZh: "同意", formula: "I agree / That's a great point / I'm with you",
-        example: "That's a great point. Let's go with that.", tip: "Show you listened before agreeing." }
-    ],
-    techniques: [
-      { name: "PREP Method", description: "Point, Reason, Example, Point.", tip: "State your point first, then back it up." },
-      { name: "Softening Language", description: "Use hedges: 'I was wondering if...' instead of 'I want...'", tip: "Modal verbs make requests softer and professional." },
-      { name: "Email Templates", description: "Memorize templates for common situations.", tip: "Have templates for: requesting, confirming, apologizing, declining." }
-    ],
-xpReward: 30,
+    xpReward: 30,
   },
   {
     id: "formula-complaint",
@@ -2942,30 +1642,7 @@ xpReward: 30,
       { type: "choose", question: "Polite complaint:", questionZh: "礼貌抱怨：", options: [{ text: "This is terrible!", textZh: "这太糟糕了！", isCorrect: false }, { text: "I was expecting something different.", textZh: "我期待的不一样。", isCorrect: true }] },
       { type: "rewrite", question: "Make polite: 'The food was cold.'", questionZh: "改礼貌：", answer: "I was disappointed that the food was cold.", blank: "I was disappointed ___ the food was cold." },
     ],
-        funnyMoments: [
-      { title: "The Email Disaster", titleZh: "邮件灾难", situation: "Writing a formal business email.",
-        dialogue: "You: 'Dear Sir, I write to inform you... I am very happy to work with you guys.' Client: '...Sir? Guys?'", punchline: "You mixed casual ('guys') with formal ('Dear Sir')!", lesson: "Choose one register and stick to it." },
-      { title: "Meeting Mayhem", titleZh: "会议混乱", situation: "Your first international meeting.",
-        dialogue: "You: 'I think maybe possibly we could perhaps...' Everyone: [stares]", punchline: "Too many hedges! Natives use 1-2 softeners max.", lesson: "Over-hedging kills confidence." },
-      { title: "Negotiation Fail", titleZh: "谈判失败", situation: "Trying to negotiate a price.",
-        dialogue: "You: 'I want 20% discount!' ... You: 'Okay, I take it.'", punchline: "You caved! 'I take it' means you accept. Buy time: 'Let me think about it.'", lesson: "Never say 'I take it' until you're sure." }
-    ],
-    structures: [
-      { name: "Email Structure", nameZh: "邮件结构", formula: "Greeting → Purpose → Details → Action → Closing",
-        example: "Dear Ms. Lee, I'm writing regarding...", tip: "State purpose in the first sentence." },
-      { name: "Meeting Phrases", nameZh: "会议用语", formula: "I'd like to... / Could we... / Let's...",
-        example: "Let's move on to the next item.", tip: "Use 'Let's' to take control politely." },
-      { name: "Negotiation Language", nameZh: "谈判语言", formula: "We propose... / That's a bit high / Meet halfway",
-        example: "That's a bit high. Could we meet halfway?", tip: "Use 'we' not 'you'. Stay collaborative." },
-      { name: "Agreement", nameZh: "同意", formula: "I agree / That's a great point / I'm with you",
-        example: "That's a great point. Let's go with that.", tip: "Show you listened before agreeing." }
-    ],
-    techniques: [
-      { name: "PREP Method", description: "Point, Reason, Example, Point.", tip: "State your point first, then back it up." },
-      { name: "Softening Language", description: "Use hedges: 'I was wondering if...' instead of 'I want...'", tip: "Modal verbs make requests softer and professional." },
-      { name: "Email Templates", description: "Memorize templates for common situations.", tip: "Have templates for: requesting, confirming, apologizing, declining." }
-    ],
-xpReward: 35,
+    xpReward: 35,
   },
   {
     id: "response-thanks",
@@ -2993,30 +1670,7 @@ xpReward: 35,
       { type: "choose", question: "Someone says 'Thanks!' You say:", questionZh: "有人说'谢谢！'你说：", options: [{ text: "You're welcome.", textZh: "不客气。", isCorrect: true }, { text: "Thank you.", textZh: "谢谢你。", isCorrect: false }] },
       { type: "speak", question: "Practice: 'You're welcome.'", questionZh: "练习：", audioText: "You're welcome." },
     ],
-        funnyMoments: [
-      { title: "The Thank You Trap", titleZh: "谢谢陷阱", situation: "Someone compliments you.",
-        dialogue: "A: 'Great presentation!' You: 'No, it was terrible.'", punchline: "You rejected their kindness! 'Thank you' is the safe response.", lesson: "Accept compliments gracefully." },
-      { title: "Apology Overload", titleZh: "过度道歉", situation: "You bump into someone.",
-        dialogue: "You: 'I'm so sorry! I'm so sorry!' Stranger: 'Why 10 seconds?'", punchline: "One sincere apology is enough.", lesson: "One 'sorry' with eye contact is enough." },
-      { title: "The Compliment Rejection", titleZh: "拒绝赞美", situation: "A friend compliments your outfit.",
-        dialogue: "Friend: 'Nice shirt!' You: 'Oh, this old thing?'", punchline: "You argued with their compliment! Just say 'Thanks!'", lesson: "Compliments are gifts. Say thank you." }
-    ],
-    structures: [
-      { name: "Thanks", nameZh: "感谢", formula: "Thank you / Thanks a lot / I appreciate it",
-        example: "Thanks a lot for your help!", tip: "Add 'for + specific thing' for genuine thanks." },
-      { name: "Apology", nameZh: "道歉", formula: "I'm sorry / My apologies / I apologize for...",
-        example: "I'm sorry I'm late. The traffic was bad.", tip: "Brief apology + reason + what you'll do next." },
-      { name: "Compliment", nameZh: "赞美", formula: "Great job / Nice work / I like your...",
-        example: "Great job on the presentation!", tip: "Be specific for sincerity." },
-      { name: "Declining", nameZh: "委婉拒绝", formula: "I appreciate it, but... / I wish I could, but...",
-        example: "I appreciate the invite, but I have a prior commitment.", tip: "Always start with appreciation." }
-    ],
-    techniques: [
-      { name: "The 3-Part Apology", description: "1) Apologize, 2) Explain briefly, 3) Offer solution.", tip: "'I'm sorry I'm late. Traffic was bad. I'll make up the time.'" },
-      { name: "Compliment Echo", description: "When someone compliments you, compliment them back.", tip: "'Thanks! I like your shoes too.'" },
-      { name: "Gratitude Journal", description: "Write 3 things you're grateful for each morning in English.", tip: "Builds positive vocabulary." }
-    ],
-xpReward: 25,
+    xpReward: 25,
   },
   {
     id: "response-apology",
@@ -3044,30 +1698,7 @@ xpReward: 25,
       { type: "choose", question: "Someone apologizes. You say:", questionZh: "有人道歉。你说：", options: [{ text: "It's okay.", textZh: "没关系。", isCorrect: true }, { text: "You are bad.", textZh: "你很差。", isCorrect: false }] },
       { type: "speak", question: "Practice: 'No worries.'", questionZh: "练习：", audioText: "No worries." },
     ],
-        funnyMoments: [
-      { title: "The Thank You Trap", titleZh: "谢谢陷阱", situation: "Someone compliments you.",
-        dialogue: "A: 'Great presentation!' You: 'No, it was terrible.'", punchline: "You rejected their kindness! 'Thank you' is the safe response.", lesson: "Accept compliments gracefully." },
-      { title: "Apology Overload", titleZh: "过度道歉", situation: "You bump into someone.",
-        dialogue: "You: 'I'm so sorry! I'm so sorry!' Stranger: 'Why 10 seconds?'", punchline: "One sincere apology is enough.", lesson: "One 'sorry' with eye contact is enough." },
-      { title: "The Compliment Rejection", titleZh: "拒绝赞美", situation: "A friend compliments your outfit.",
-        dialogue: "Friend: 'Nice shirt!' You: 'Oh, this old thing?'", punchline: "You argued with their compliment! Just say 'Thanks!'", lesson: "Compliments are gifts. Say thank you." }
-    ],
-    structures: [
-      { name: "Thanks", nameZh: "感谢", formula: "Thank you / Thanks a lot / I appreciate it",
-        example: "Thanks a lot for your help!", tip: "Add 'for + specific thing' for genuine thanks." },
-      { name: "Apology", nameZh: "道歉", formula: "I'm sorry / My apologies / I apologize for...",
-        example: "I'm sorry I'm late. The traffic was bad.", tip: "Brief apology + reason + what you'll do next." },
-      { name: "Compliment", nameZh: "赞美", formula: "Great job / Nice work / I like your...",
-        example: "Great job on the presentation!", tip: "Be specific for sincerity." },
-      { name: "Declining", nameZh: "委婉拒绝", formula: "I appreciate it, but... / I wish I could, but...",
-        example: "I appreciate the invite, but I have a prior commitment.", tip: "Always start with appreciation." }
-    ],
-    techniques: [
-      { name: "The 3-Part Apology", description: "1) Apologize, 2) Explain briefly, 3) Offer solution.", tip: "'I'm sorry I'm late. Traffic was bad. I'll make up the time.'" },
-      { name: "Compliment Echo", description: "When someone compliments you, compliment them back.", tip: "'Thanks! I like your shoes too.'" },
-      { name: "Gratitude Journal", description: "Write 3 things you're grateful for each morning in English.", tip: "Builds positive vocabulary." }
-    ],
-xpReward: 25,
+    xpReward: 25,
   },
   {
     id: "response-compliment",
@@ -3095,30 +1726,7 @@ xpReward: 25,
       { type: "choose", question: "Someone says 'Nice job!' You say:", questionZh: "有人说'做得好！'你说：", options: [{ text: "Thank you!", textZh: "谢谢！", isCorrect: true }, { text: "No, it was bad.", textZh: "不，很差。", isCorrect: false }] },
       { type: "speak", question: "Practice: 'Thank you, that's kind of you.'", questionZh: "练习：", audioText: "Thank you, that's kind of you." },
     ],
-        funnyMoments: [
-      { title: "The Thank You Trap", titleZh: "谢谢陷阱", situation: "Someone compliments you.",
-        dialogue: "A: 'Great presentation!' You: 'No, it was terrible.'", punchline: "You rejected their kindness! 'Thank you' is the safe response.", lesson: "Accept compliments gracefully." },
-      { title: "Apology Overload", titleZh: "过度道歉", situation: "You bump into someone.",
-        dialogue: "You: 'I'm so sorry! I'm so sorry!' Stranger: 'Why 10 seconds?'", punchline: "One sincere apology is enough.", lesson: "One 'sorry' with eye contact is enough." },
-      { title: "The Compliment Rejection", titleZh: "拒绝赞美", situation: "A friend compliments your outfit.",
-        dialogue: "Friend: 'Nice shirt!' You: 'Oh, this old thing?'", punchline: "You argued with their compliment! Just say 'Thanks!'", lesson: "Compliments are gifts. Say thank you." }
-    ],
-    structures: [
-      { name: "Thanks", nameZh: "感谢", formula: "Thank you / Thanks a lot / I appreciate it",
-        example: "Thanks a lot for your help!", tip: "Add 'for + specific thing' for genuine thanks." },
-      { name: "Apology", nameZh: "道歉", formula: "I'm sorry / My apologies / I apologize for...",
-        example: "I'm sorry I'm late. The traffic was bad.", tip: "Brief apology + reason + what you'll do next." },
-      { name: "Compliment", nameZh: "赞美", formula: "Great job / Nice work / I like your...",
-        example: "Great job on the presentation!", tip: "Be specific for sincerity." },
-      { name: "Declining", nameZh: "委婉拒绝", formula: "I appreciate it, but... / I wish I could, but...",
-        example: "I appreciate the invite, but I have a prior commitment.", tip: "Always start with appreciation." }
-    ],
-    techniques: [
-      { name: "The 3-Part Apology", description: "1) Apologize, 2) Explain briefly, 3) Offer solution.", tip: "'I'm sorry I'm late. Traffic was bad. I'll make up the time.'" },
-      { name: "Compliment Echo", description: "When someone compliments you, compliment them back.", tip: "'Thanks! I like your shoes too.'" },
-      { name: "Gratitude Journal", description: "Write 3 things you're grateful for each morning in English.", tip: "Builds positive vocabulary." }
-    ],
-xpReward: 25,
+    xpReward: 25,
   },
   {
     id: "response-invitation",
@@ -3146,29 +1754,6 @@ xpReward: 25,
       { type: "choose", question: "Accept an invitation:", questionZh: "接受邀请：", options: [{ text: "I'd love to!", textZh: "我很想去！", isCorrect: true }, { text: "No way.", textZh: "不可能。", isCorrect: false }] },
       { type: "rewrite", question: "Decline politely: 'I can't come.'", questionZh: "礼貌拒绝：", answer: "I'm sorry, I can't make it.", blank: "I'm sorry, I ___ make it." },
     ],
-        funnyMoments: [
-      { title: "The Thank You Trap", titleZh: "谢谢陷阱", situation: "Someone compliments you.",
-        dialogue: "A: 'Great presentation!' You: 'No, it was terrible.'", punchline: "You rejected their kindness! 'Thank you' is the safe response.", lesson: "Accept compliments gracefully." },
-      { title: "Apology Overload", titleZh: "过度道歉", situation: "You bump into someone.",
-        dialogue: "You: 'I'm so sorry! I'm so sorry!' Stranger: 'Why 10 seconds?'", punchline: "One sincere apology is enough.", lesson: "One 'sorry' with eye contact is enough." },
-      { title: "The Compliment Rejection", titleZh: "拒绝赞美", situation: "A friend compliments your outfit.",
-        dialogue: "Friend: 'Nice shirt!' You: 'Oh, this old thing?'", punchline: "You argued with their compliment! Just say 'Thanks!'", lesson: "Compliments are gifts. Say thank you." }
-    ],
-    structures: [
-      { name: "Thanks", nameZh: "感谢", formula: "Thank you / Thanks a lot / I appreciate it",
-        example: "Thanks a lot for your help!", tip: "Add 'for + specific thing' for genuine thanks." },
-      { name: "Apology", nameZh: "道歉", formula: "I'm sorry / My apologies / I apologize for...",
-        example: "I'm sorry I'm late. The traffic was bad.", tip: "Brief apology + reason + what you'll do next." },
-      { name: "Compliment", nameZh: "赞美", formula: "Great job / Nice work / I like your...",
-        example: "Great job on the presentation!", tip: "Be specific for sincerity." },
-      { name: "Declining", nameZh: "委婉拒绝", formula: "I appreciate it, but... / I wish I could, but...",
-        example: "I appreciate the invite, but I have a prior commitment.", tip: "Always start with appreciation." }
-    ],
-    techniques: [
-      { name: "The 3-Part Apology", description: "1) Apologize, 2) Explain briefly, 3) Offer solution.", tip: "'I'm sorry I'm late. Traffic was bad. I'll make up the time.'" },
-      { name: "Compliment Echo", description: "When someone compliments you, compliment them back.", tip: "'Thanks! I like your shoes too.'" },
-      { name: "Gratitude Journal", description: "Write 3 things you're grateful for each morning in English.", tip: "Builds positive vocabulary." }
-    ],
-xpReward: 25,
+    xpReward: 25,
   },
 ];
