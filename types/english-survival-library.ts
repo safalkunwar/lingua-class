@@ -37,6 +37,7 @@ export interface SurvivalResource {
   teacherNotes?: string;
   teacherNotesZh?: string;
   xpReward: number;
+  keyWords?: { word: string; meaning: string; meaningZh: string }[];
 }
 
 export interface SurvivalCategory {
