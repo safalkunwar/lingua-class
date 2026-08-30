@@ -153,11 +153,10 @@ export const survivalResources: SurvivalResource[] = [
     chunks: [
       { chunk: "at home", meaning: "在家", chinese: "具体小地点用 at", example: "I'm at home." },
       { chunk: "on Friday", meaning: "在周五", chinese: "具体某一天用 on", example: "Let's meet on Friday." },
-    
-      { chunk: "can swim", meaning: "会游泳", chinese: "能力", example: "I can swim." },
-      { chunk: "could help", meaning: "能帮忙", chinese: "礼貌请求", example: "Could you help me?" },
-      { chunk: "must go", meaning: "必须走", chinese: "strong obligation", example: "You must go now." },
-      { chunk: "should study", meaning: "应该学习", chinese: "建议", example: "You should study." }],
+      { chunk: "in China", meaning: "在中国", chinese: "大城市用 in", example: "I live in China." },
+      { chunk: "at 5:00", meaning: "在5点", chinese: "具体时间点用 at", example: "The class starts at 5:00." },
+      { chunk: "on the table", meaning: "在桌子上", chinese: "表面用 on", example: "The book is on the table." },
+      { chunk: "in the box", meaning: "在盒子里", chinese: "封闭空间用 in", example: "Put it in the box." }],
     comparisonTable: [
       { term: "at", meaning: "具体时间点", chinese: "具体点", situation: "at 5:00 / at home" },
       { term: "on", meaning: "表面/日期", chinese: "表面/日期", situation: "on Monday / on the table" },
@@ -1266,13 +1265,17 @@ xpReward: 30,
     teacherNotes: "Comparison charts. Color coding. Write sentences with each word.",
     teacherNotesZh: "对比表。颜色编码。用每个词造句。",
 
-    commonMistakes: [
-      { mistake: "I no like it.", correction: "I don't like it.", correctionZh: "否定句用 don't/doesn't。" },
-      { mistake: "She very likes it.", correction: "She likes it very much.", correctionZh: "Very much 放句末。" },
-      { mistake: "I want to go yesterday.", correction: "I wanted to go yesterday.", correctionZh: "Yesterday 用过去时。" },
-      { mistake: "He can to helps.", correction: "He can help.", correctionZh: "情态动词后接动词原形。" },
-      { mistake: "I am agree with you.", correction: "I agree with you.", correctionZh: "不用 be 动词。" }
-    ],
+        commonMistakes: [
+      { mistake: "Say me the truth.", correction: "Tell me the truth.", correctionZh: "Tell 需要宾语（人）。" },
+      { mistake: "He told 'hello' to me.", correction: "He said 'hello' to me.", correctionZh: "引用具体话语用 say。" },
+      { mistake: "She told she was tired.", correction: "She said she was tired.", correctionZh: "Tell 需要接人，不能直接接从句。" },
+      { mistake: "He said me a story.", correction: "He told me a story.", correctionZh: "Tell + 人 + 事。" },
+      { mistake: "I told to him the truth.", correction: "I told him the truth.", correctionZh: "Tell 直接加人，不加 to。" },
+      { mistake: "What did you tell?", correction: "What did you say?", correctionZh: "问说了什么用 say。" },
+      { mistake: "Say to me the truth.", correction: "Tell me the truth.", correctionZh: "Tell 更自然，say to 较正式。" },
+      { mistake: "He told that he was late.", correction: "He said that he was late.", correctionZh: "Tell 通常不直接接 that 从句。" },
+      { mistake: "She said me the answer.", correction: "She told me the answer.", correctionZh: "告诉某人某事用 tell。" },
+      { mistake: "I said him to go.", correction: "I told him to go.", correctionZh: "Tell + 人 + to do 是固定结构。" }],
     chunks: [
       { chunk: "example chunk 1", meaning: "意思 1", chinese: "中文 1", example: "Example sentence 1." },
       { chunk: "example chunk 2", meaning: "意思 2", chinese: "中文 2", example: "Example sentence 2." },
@@ -1281,7 +1284,7 @@ xpReward: 30,
       { chunk: "example chunk 5", meaning: "意思 5", chinese: "中文 5", example: "Example sentence 5." },
       { chunk: "example chunk 6", meaning: "意思 6", chinese: "中文 6", example: "Example sentence 6." }
     ],
-xpReward: 30,
+    xpReward: 30,
   },
   {
     id: "confusing-make-do",
@@ -1330,13 +1333,17 @@ xpReward: 30,
     teacherNotes: "Comparison charts. Color coding. Write sentences with each word.",
     teacherNotesZh: "对比表。颜色编码。用每个词造句。",
 
-    commonMistakes: [
-      { mistake: "I very like this.", correction: "I really like this.", correctionZh: "Very 修饰动词要用 really。" },
-      { mistake: "He don't like it.", correction: "He doesn't like it.", correctionZh: "第三人称单数用 doesn't。" },
-      { mistake: "She can to swim.", correction: "She can swim.", correctionZh: "情态动词后不加 to。" },
-      { mistake: "I am agree.", correction: "I agree.", correctionZh: "Agree 是动词，不用 be 动词。" },
-      { mistake: "He is go.", correction: "He goes.", correctionZh: "第三人称单数动词加 -s。" }
-    ],
+        commonMistakes: [
+      { mistake: "I make my homework.", correction: "I do my homework.", correctionZh: "做作业用 do。" },
+      { mistake: "Do a cake.", correction: "Make a cake.", correctionZh: "制作食物用 make。" },
+      { mistake: "I do a decision.", correction: "I make a decision.", correctionZh: "做决定用 make。" },
+      { mistake: "He does coffee.", correction: "He makes coffee.", correctionZh: "制作咖啡用 make。" },
+      { mistake: "I make a favor.", correction: "I do a favor.", correctionZh: "帮忙用 do a favor。" },
+      { mistake: "She did a phone call.", correction: "She made a phone call.", correctionZh: "打电话用 make a phone call。" },
+      { mistake: "He makes business.", correction: "He does business.", correctionZh: "做生意用 do business。" },
+      { mistake: "I make a mistake.", correction: "I made a mistake.", correctionZh: "犯错误用 make a mistake（过去式 made）。" },
+      { mistake: "Do good to others.", correction: "Do good to others.", correctionZh: "Do good = 做好事，正确。" },
+      { mistake: "Make homework now.", correction: "Do homework now.", correctionZh: "做作业用 do。" }],
     chunks: [
       { chunk: "example chunk 1", meaning: "意思 1", chinese: "中文 1", example: "Example sentence 1." },
       { chunk: "example chunk 2", meaning: "意思 2", chinese: "中文 2", example: "Example sentence 2." },
@@ -1345,7 +1352,7 @@ xpReward: 30,
       { chunk: "example chunk 5", meaning: "意思 5", chinese: "中文 5", example: "Example sentence 5." },
       { chunk: "example chunk 6", meaning: "意思 6", chinese: "中文 6", example: "Example sentence 6." }
     ],
-xpReward: 30,
+    xpReward: 30,
   },
   {
     id: "confusing-lend-borrow",
@@ -1390,13 +1397,17 @@ xpReward: 30,
     teacherNotes: "Comparison charts. Color coding. Write sentences with each word.",
     teacherNotesZh: "对比表。颜色编码。用每个词造句。",
 
-    commonMistakes: [
-      { mistake: "I no like it.", correction: "I don't like it.", correctionZh: "否定句用 don't/doesn't。" },
-      { mistake: "She very likes it.", correction: "She likes it very much.", correctionZh: "Very much 放句末。" },
-      { mistake: "I want to go yesterday.", correction: "I wanted to go yesterday.", correctionZh: "Yesterday 用过去时。" },
-      { mistake: "He can to helps.", correction: "He can help.", correctionZh: "情态动词后接动词原形。" },
-      { mistake: "I am agree with you.", correction: "I agree with you.", correctionZh: "不用 be 动词。" }
-    ],
+        commonMistakes: [
+      { mistake: "Can I borrow me your pen?", correction: "Can you lend me your pen?", correctionZh: "借出用 lend，借入用 borrow。" },
+      { mistake: "I borrowed him my book.", correction: "I lent him my book.", correctionZh: "Lend 给某人，borrow 从某人。" },
+      { mistake: "Can you borrow me your pen?", correction: "Can you lend me your pen?", correctionZh: "你借出用 lend。" },
+      { mistake: "He lent a book from the library.", correction: "He borrowed a book from the library.", correctionZh: "从图书馆借入用 borrow。" },
+      { mistake: "Can you lend me from your pen?", correction: "Can you lend me your pen?", correctionZh: "Lend 直接加物，不加 from。" },
+      { mistake: "I borrowed a book to him.", correction: "I lent a book to him.", correctionZh: "借出给某人用 lend to。" },
+      { mistake: "I lend a book from the library.", correction: "I borrow a book from the library.", correctionZh: "从图书馆借入用 borrow from。" },
+      { mistake: "She borrowed a book from me.", correction: "She borrowed a book from me.", correctionZh: "从我这里借入用 borrow from。" },
+      { mistake: "He borrowed me his car.", correction: "He lent me his car.", correctionZh: "借出给某人用 lend，不是 borrow。" },
+      { mistake: "I lent a book from the library.", correction: "I borrowed a book from the library.", correctionZh: "从图书馆借入用 borrow from。" }],
     chunks: [
       { chunk: "example chunk 1", meaning: "意思 1", chinese: "中文 1", example: "Example sentence 1." },
       { chunk: "example chunk 2", meaning: "意思 2", chinese: "中文 2", example: "Example sentence 2." },
@@ -1405,7 +1416,7 @@ xpReward: 30,
       { chunk: "example chunk 5", meaning: "意思 5", chinese: "中文 5", example: "Example sentence 5." },
       { chunk: "example chunk 6", meaning: "意思 6", chinese: "中文 6", example: "Example sentence 6." }
     ],
-xpReward: 30,
+    xpReward: 30,
   },
   {
     id: "confusing-be-have",
