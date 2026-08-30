@@ -10,11 +10,92 @@ import { Input } from "@/components/ui/input";
 import { useLearningStore } from "@/stores/learning-store";
 import { useSpeechSynthesis } from "@/hooks/use-speech-synthesis";
 import { survivalResources } from "@/data/english-survival-library";
-import { SurvivalResource, MiniDrill } from "@/types/english-survival-library";
+import { SurvivalResource, MiniDrill, MeaningCard, ExampleCategory, QuickSummaryItem } from "@/types/english-survival-library";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowLeft, Volume2, Zap, Lightbulb, AlertTriangle, Sparkles, BookOpen, RotateCcw, HelpCircle, Download, Printer, Laugh, Code, Target } from "lucide-react";
+import { ArrowLeft, Volume2, Zap, Lightbulb, AlertTriangle, Sparkles, BookOpen, RotateCcw, HelpCircle, Download, Printer, Laugh, Code, Target, ChevronDown, ChevronUp } from "lucide-react";
 import Link from "next/link";
 import { use } from "react";
+
+function MeaningCardComponent({ card }: { card: MeaningCard }) {
+  const colorMap = {
+    blue: "border-blue-200 dark:border-blue-800 bg-blue-50/50 dark:bg-blue-950/20",
+    green: "border-emerald-200 dark:border-emerald-800 bg-emerald-50/50 dark:bg-emerald-950/20",
+    yellow: "border-amber-200 dark:border-amber-800 bg-amber-50/50 dark:bg-amber-950/20",
+    purple: "border-purple-200 dark:border-purple-800 bg-purple-50/50 dark:bg-purple-950/20",
+    red: "border-red-200 dark:border-red-800 bg-red-50/50 dark:bg-red-950/20",
+    teal: "border-teal-200 dark:border-teal-800 bg-teal-50/50 dark:bg-teal-950/20",
+  };
+  const textColorMap = {
+    blue: "text-blue-900 dark:text-blue-100",
+    green: "text-emerald-900 dark:text-emerald-100",
+    yellow: "text-amber-900 dark:text-amber-100",
+    purple: "text-purple-900 dark:text-purple-100",
+    red: "text-red-900 dark:text-red-100",
+    teal: "text-teal-900 dark:text-teal-100",
+  };
+
+  return (
+    <Card className={`p-4 border ${colorMap[card.color || "blue"]}`}>
+      <h3 className={`text-sm font-semibold mb-1 ${textColorMap[card.color || "blue"]}`}>
+        {card.title} <span className="text-xs text-muted-foreground ml-1">{card.titleZh}</span>
+      </h3>
+      <p className="text-xs text-muted-foreground mb-2">{card.meaningZh}</p>
+      <div className="p-2 rounded bg-white/70 dark:bg-black/20 border border-border mb-2">
+        <p className="text-sm font-medium">{card.example}</p>
+        <p className="text-xs text-muted-foreground">{card.exampleZh}</p>
+      </div>
+      {card.situation && (
+        <p className="text-xs text-muted-foreground italic">💡 {card.situation}</p>
+      )}
+    </Card>
+  );
+}
+
+function ExampleGrid({ examples, title, titleZh }: { examples: { en: string; zh: string; explanation?: string }[]; title?: string; titleZh?: string }) {
+  return (
+    <div className="space-y-2">
+      {(title || titleZh) && (
+        <p className="text-xs font-semibold text-muted-foreground mb-2">
+          {title} {titleZh && <span className="ml-1">{titleZh}</span>}
+        </p>
+      )}
+      <div className="grid gap-2 sm:grid-cols-2">
+        {examples.map((ex, idx) => (
+          <div key={idx} className="p-3 rounded-lg bg-muted/30 border border-border">
+            <p className="text-sm font-medium">{ex.en}</p>
+            <p className="text-xs text-muted-foreground">{ex.zh}</p>
+            {ex.explanation && (
+              <p className="text-xs text-indigo-600 dark:text-indigo-400 mt-1 italic">{ex.explanation}</p>
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function CollapsibleSection({ title, titleZh, children, defaultOpen = false }: { title: string; titleZh?: string; children: React.ReactNode; defaultOpen?: boolean }) {
+  const [isOpen, setIsOpen] = useState(defaultOpen);
+
+  return (
+    <div className="mb-4 border border-border rounded-lg overflow-hidden">
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className="w-full flex items-center justify-between p-3 bg-muted/30 hover:bg-muted/50 transition-colors"
+      >
+        <span className="text-sm font-semibold">
+          {title} {titleZh && <span className="text-xs text-muted-foreground ml-1 font-normal">{titleZh}</span>}
+        </span>
+        {isOpen ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
+      </button>
+      {isOpen && (
+        <div className="p-3 bg-white/50 dark:bg-black/20">
+          {children}
+        </div>
+      )}
+    </div>
+  );
+}
 
 export default function EnglishSurvivalLibraryDetailPage({ params }: { params: Promise<{ id: string }> }) {
   const resolvedParams = use(params);
@@ -118,7 +199,7 @@ export default function EnglishSurvivalLibraryDetailPage({ params }: { params: P
       <div style="padding:8px;background:#dbeafe;border-radius:6px;font-family:monospace;font-size:12px;margin:6px 0">
         <span style="color:#1e3a8a">${s.formula}</span>
       </div>
-      <p style="font-size:12px;color:#1e3a8a">Example: "${s.example}"</p>
+      <p style="font-size:12px;color:#1e40af">Example: "${s.example}"</p>
       <p style="font-size:12px;color:#1e40af">💡 ${s.tip}</p>
     </div>`).join('')}
   </div>` : ''}
@@ -243,7 +324,7 @@ export default function EnglishSurvivalLibraryDetailPage({ params }: { params: P
     <div className="flex min-w-0">
       <StudentSidebar />
       <div className="flex-1 min-w-0 p-4 sm:p-6 lg:p-8">
-        <div className="max-w-3xl mx-auto min-w-0">
+        <div className="max-w-3xl mx-auto min-w-0 space-y-4">
           <div className="mb-4 flex items-center gap-2">
             <Link href="/english-survival-library">
               <Button variant="ghost">
@@ -262,8 +343,8 @@ export default function EnglishSurvivalLibraryDetailPage({ params }: { params: P
             </Button>
           </div>
 
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="mb-6">
-            <Card className="p-5 sm:p-6 border-indigo-200 dark:border-indigo-800 bg-gradient-to-br from-indigo-50/60 to-purple-50/60 dark:from-indigo-950/20 dark:to-purple-950/20 min-w-0">
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+            <Card className="p-5 sm:p-6 border-indigo-200 dark:border-indigo-800 bg-gradient-to-br from-indigo-50/60 to-purple-50/60 dark:from-indigo-950/20 dark:to-purple-950/20">
               <div className="flex items-center gap-3 mb-3">
                 <span className="text-3xl sm:text-4xl">{resource.emoji}</span>
                 <div>
@@ -273,7 +354,7 @@ export default function EnglishSurvivalLibraryDetailPage({ params }: { params: P
               </div>
               <p className="text-sm text-muted-foreground mb-2">{resource.summary}</p>
               <p className="text-xs text-muted-foreground mb-4">{resource.summaryZh}</p>
-              <div className="flex flex-wrap gap-2 mb-4">
+              <div className="flex flex-wrap gap-2">
                 <Badge variant="secondary" className="text-xs">
                   <Zap className="h-3 w-3 mr-1" />
                   {resource.xpReward} XP
@@ -285,221 +366,353 @@ export default function EnglishSurvivalLibraryDetailPage({ params }: { params: P
                   {resource.category}
                 </Badge>
               </div>
-
-              <div className="prose dark:prose-invert max-w-none mb-4">
-                <p className="text-sm sm:text-base mb-2">{resource.explanation}</p>
-                <p className="text-xs text-muted-foreground mb-4">{resource.explanationZh}</p>
-
-                <div className="space-y-3 mb-4">
-                  {resource.examples.map((ex, idx) => (
-                    <div key={idx} className="p-4 rounded-lg bg-white/70 dark:bg-black/20 border border-border">
-                      <p className="text-sm font-medium mb-1">{ex.en}</p>
-                      <p className="text-xs text-muted-foreground mb-2">{ex.zh}</p>
-                      {ex.explanation && (
-                        <p className="text-xs text-indigo-600 dark:text-indigo-400 border-t border-border pt-2 mt-2">{ex.explanation}</p>
-                      )}
-                    </div>
-                  ))}
-                </div>
-
-                 {resource.commonMistakes && (
-                   <div className="mb-4 p-4 rounded-xl bg-red-50 dark:bg-red-950/20 border border-red-200 dark:border-red-800">
-                     <div className="flex items-center gap-2 mb-2">
-                       <AlertTriangle className="h-4 w-4 text-red-700 dark:text-red-300" />
-                       <p className="text-sm font-semibold text-red-900 dark:text-red-100">Common Mistakes</p>
-                     </div>
-                     <div className="space-y-2">
-                       {resource.commonMistakes.map((m, idx) => (
-                         <div key={idx} className="text-sm">
-                           <p className="line-through text-red-700/80 dark:text-red-300/80">❌ {m.mistake}</p>
-                           <p className="text-green-700 dark:text-green-300">✅ {m.correction}</p>
-                           <p className="text-xs text-muted-foreground">{m.correctionZh}</p>
-                         </div>
-                       ))}
-                     </div>
-                   </div>
-                 )}
-
-                 {resource.funnyMoments && (
-                   <div className="mb-4 p-4 rounded-xl bg-yellow-50 dark:bg-yellow-950/20 border border-yellow-200 dark:border-yellow-800">
-                     <div className="flex items-center gap-2 mb-2">
-                       <Laugh className="h-4 w-4 text-yellow-700 dark:text-yellow-300" />
-                       <p className="text-sm font-semibold text-yellow-900 dark:text-yellow-100">Funny Moments</p>
-                     </div>
-                     <div className="space-y-3">
-                       {resource.funnyMoments.map((fm, idx) => (
-                         <div key={idx} className="text-sm">
-                           <p className="font-semibold text-yellow-800 dark:text-yellow-200">{fm.title}</p>
-                           <p className="text-xs text-muted-foreground mb-1">{fm.titleZh}</p>
-                           <p className="text-xs text-muted-foreground mb-2 italic">Situation: {fm.situation}</p>
-                           <div className="p-3 rounded-lg bg-white/70 dark:bg-black/20 border border-yellow-100 dark:border-yellow-900">
-                             <p className="text-sm font-medium mb-2">💬 {fm.dialogue}</p>
-                             <p className="text-xs font-semibold text-yellow-700 dark:text-yellow-300">😂 {fm.punchline}</p>
-                           </div>
-                           <p className="text-xs text-yellow-700 dark:text-yellow-300 mt-2">💡 {fm.lesson}</p>
-                         </div>
-                       ))}
-                     </div>
-                   </div>
-                 )}
-
-                {resource.chunks && (
-                  <div className="mb-4">
-                    <div className="flex items-center gap-2 mb-2">
-                      <Sparkles className="h-4 w-4 text-emerald-600" />
-                      <p className="text-sm font-semibold">Chunks</p>
-                    </div>
-                    <div className="grid gap-2 sm:grid-cols-2">
-                      {resource.chunks.map((chunk, idx) => (
-                        <div key={idx} className="p-3 rounded-lg bg-muted/30">
-                          <p className="text-sm font-medium">{chunk.chunk}</p>
-                          <p className="text-xs text-muted-foreground">{chunk.meaning} · {chunk.chinese}</p>
-                          <p className="text-xs italic mt-1">“{chunk.example}”</p>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                )}
-
-                 {resource.comparisonTable && (
-                   <div className="mb-4">
-                     <div className="flex items-center gap-2 mb-2">
-                       <Lightbulb className="h-4 w-4 text-amber-600" />
-                       <p className="text-sm font-semibold">Comparison</p>
-                     </div>
-                     <div className="overflow-x-auto">
-                       <table className="w-full text-sm">
-                         <thead>
-                           <tr className="border-b">
-                             <th className="text-left py-2 px-3">Term</th>
-                             <th className="text-left py-2 px-3">Meaning</th>
-                             <th className="text-left py-2 px-3">Situation</th>
-                           </tr>
-                         </thead>
-                         <tbody>
-                           {resource.comparisonTable.map((row, idx) => (
-                             <tr key={idx} className="border-b last:border-0">
-                               <td className="py-2 px-3 font-medium">{row.term}</td>
-                               <td className="py-2 px-3">{row.meaning} · {row.chinese}</td>
-                               <td className="py-2 px-3 text-xs text-muted-foreground">{row.situation}</td>
-                             </tr>
-                           ))}
-                         </tbody>
-                       </table>
-                     </div>
-                   </div>
-                 )}
-
-                 {resource.structures && (
-                   <div className="mb-4 p-4 rounded-xl bg-blue-50 dark:bg-blue-950/20 border border-blue-200 dark:border-blue-800">
-                     <div className="flex items-center gap-2 mb-2">
-                       <Code className="h-4 w-4 text-blue-700 dark:text-blue-300" />
-                       <p className="text-sm font-semibold text-blue-900 dark:text-blue-100">Structures & Templates</p>
-                     </div>
-                     <div className="space-y-3">
-                       {resource.structures.map((s, idx) => (
-                         <div key={idx} className="text-sm">
-                           <p className="font-semibold text-blue-800 dark:text-blue-200">{s.name} <span className="text-xs text-muted-foreground">{s.nameZh}</span></p>
-                           <div className="mt-1 p-2 rounded bg-blue-100 dark:bg-blue-900/30 font-mono text-xs">
-                             <span className="text-blue-700 dark:text-blue-300">{s.formula}</span>
-                           </div>
-                           <p className="text-xs mt-1 text-blue-900 dark:text-blue-100">Example: "{s.example}"</p>
-                           <p className="text-xs text-blue-700 dark:text-blue-300 mt-1">💡 {s.tip}</p>
-                         </div>
-                       ))}
-                     </div>
-                   </div>
-                 )}
-
-                 {resource.techniques && (
-                   <div className="mb-4 p-4 rounded-xl bg-purple-50 dark:bg-purple-950/20 border border-purple-200 dark:border-purple-800">
-                     <div className="flex items-center gap-2 mb-2">
-                       <Target className="h-4 w-4 text-purple-700 dark:text-purple-300" />
-                       <p className="text-sm font-semibold text-purple-900 dark:text-purple-100">Techniques & Tips</p>
-                     </div>
-                     <div className="space-y-3">
-                       {resource.techniques.map((t, idx) => (
-                         <div key={idx} className="text-sm">
-                           <p className="font-semibold text-purple-800 dark:text-purple-200">{t.name}</p>
-                           <p className="text-xs text-purple-900 dark:text-purple-100 mt-1">{t.description}</p>
-                           <p className="text-xs text-purple-700 dark:text-purple-300 mt-1">🎯 {t.tip}</p>
-                         </div>
-                       ))}
-                     </div>
-                   </div>
-                 )}
-
-                {resource.pronunciation && (
-                  <div className="mb-4 p-4 rounded-xl bg-teal-50 dark:bg-teal-950/20 border border-teal-200 dark:border-teal-800">
-                    <div className="flex items-center gap-2 mb-2">
-                      <Volume2 className="h-4 w-4 text-teal-700 dark:text-teal-300" />
-                      <p className="text-sm font-semibold text-teal-900 dark:text-teal-100">Pronunciation</p>
-                    </div>
-                    <p className="text-sm font-medium mb-1">{resource.pronunciation.phonetic}</p>
-                    <p className="text-xs text-muted-foreground mb-2">{resource.pronunciation.tip}</p>
-                    <p className="text-xs text-muted-foreground mb-3">{resource.pronunciation.tipZh}</p>
-                    {resource.pronunciation.audioText && (
-                      <Button variant="outline" size="sm" className="gap-2" onClick={() => speakEnglish(resource.pronunciation!.audioText || "")}>
-                        <Volume2 className="h-3.5 w-3.5" />
-                        Listen
-                      </Button>
-                    )}
-                  </div>
-                )}
-
-                {resource.audioText && !resource.pronunciation && (
-                  <div className="mb-4">
-                    <Button variant="outline" size="sm" className="gap-2" onClick={() => speakEnglish(resource.audioText || "")}>
-                      <Volume2 className="h-3.5 w-3.5" />
-                      Listen
-                    </Button>
-                  </div>
-                )}
-              </div>
-
-              <div className="mt-8">
-                <div className="flex items-center gap-2 mb-4">
-                  <BookOpen className="h-5 w-5 text-indigo-500" />
-                  <h2 className="text-xl font-bold">Examples & Detailed Explanations</h2>
-                </div>
-                <div className="space-y-4">
-                  {resource.examples.map((ex, idx) => (
-                    <Card key={idx} className="p-5 border-indigo-100 dark:border-indigo-900">
-                      <div className="flex items-start gap-3">
-                        <span className="text-lg font-bold text-indigo-500 mt-0.5">{idx + 1}.</span>
-                        <div className="flex-1">
-                          <p className="text-base font-medium mb-1">{ex.en}</p>
-                          <p className="text-sm text-muted-foreground mb-3">{ex.zh}</p>
-                          {ex.explanation && (
-                            <div className="p-3 rounded-lg bg-indigo-50 dark:bg-indigo-950/20 border border-indigo-100 dark:border-indigo-900">
-                              <p className="text-xs font-semibold text-indigo-700 dark:text-indigo-300 mb-1">Why this works:</p>
-                              <p className="text-xs text-indigo-900 dark:text-indigo-100">{ex.explanation}</p>
-                            </div>
-                          )}
-                        </div>
-                      </div>
-                    </Card>
-                  ))}
-                </div>
-              </div>
-
-              <AnimatePresence>
-                {showRescue && (
-                  <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} className="mt-4 p-4 rounded-xl bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-800">
-                    <p className="text-sm font-semibold mb-2">🛟 Conversation Rescue</p>
-                    <div className="flex flex-wrap gap-2">
-                      {["Sorry, I didn't catch that.", "Could you say that again?", "Could you speak more slowly?", "What do you mean?"].map((phrase) => (
-                        <Button key={phrase} variant="secondary" size="sm" className="gap-2" onClick={() => speakEnglish(phrase)}>
-                          <Volume2 className="h-3.5 w-3.5" />
-                          {phrase}
-                        </Button>
-                      ))}
-                    </div>
-                  </motion.div>
-                )}
-              </AnimatePresence>
             </Card>
           </motion.div>
+
+          {resource.quickSummary && (
+            <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.05 }}>
+              <Card className="p-4 border-amber-200 dark:border-amber-800 bg-amber-50/50 dark:bg-amber-950/20">
+                <div className="flex items-center gap-2 mb-3">
+                  <BookOpen className="h-4 w-4 text-amber-600" />
+                  <p className="text-sm font-semibold text-amber-900 dark:text-amber-100">🧠 In 30 Seconds</p>
+                </div>
+                <div className="overflow-x-auto">
+                  <table className="w-full text-sm">
+                    <thead>
+                      <tr className="border-b border-amber-200 dark:border-amber-700">
+                        <th className="text-left py-2 px-3 text-amber-800 dark:text-amber-200">Word</th>
+                        <th className="text-left py-2 px-3 text-amber-800 dark:text-amber-200">Main idea</th>
+                        <th className="text-left py-2 px-3 text-amber-800 dark:text-amber-200">中文</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {resource.quickSummary.map((item, idx) => (
+                        <tr key={idx} className="border-b border-amber-100 dark:border-amber-800 last:border-0">
+                          <td className="py-2 px-3 font-medium text-amber-900 dark:text-amber-100">{item.word}</td>
+                          <td className="py-2 px-3 text-amber-800 dark:text-amber-200">{item.mainIdea}</td>
+                          <td className="py-2 px-3 text-amber-700 dark:text-amber-300">{item.chinese}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </Card>
+            </motion.div>
+          )}
+
+          {resource.meaningCards && (
+            <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}>
+              <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                {resource.meaningCards.map((card, idx) => (
+                  <MeaningCardComponent key={idx} card={card} />
+                ))}
+              </div>
+            </motion.div>
+          )}
+
+          <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.15 }}>
+            <Card className="p-5 sm:p-6">
+              <div className="flex items-center gap-2 mb-3">
+                <Lightbulb className="h-4 w-4 text-indigo-600" />
+                <p className="text-sm font-semibold">Explanation</p>
+              </div>
+              <div className="prose dark:prose-invert max-w-none text-sm sm:text-base">
+                {resource.explanation.split('\n\n').map((paragraph, idx) => (
+                  <p key={idx} className="mb-3 last:mb-0">{paragraph}</p>
+                ))}
+              </div>
+              <p className="text-xs text-muted-foreground mt-3">{resource.explanationZh}</p>
+            </Card>
+          </motion.div>
+
+          {(resource.examples.length > 0 || resource.exampleCategories) && (
+            <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}>
+              <Card className="p-5 sm:p-6">
+                <div className="flex items-center gap-2 mb-4">
+                  <BookOpen className="h-4 w-4 text-indigo-600" />
+                  <p className="text-sm font-semibold">Examples</p>
+                </div>
+                {resource.exampleCategories ? (
+                  <div className="space-y-4">
+                    {resource.exampleCategories.map((cat, idx) => (
+                      <ExampleGrid
+                        key={idx}
+                        examples={cat.examples}
+                        title={cat.emoji + ' ' + cat.label}
+                        titleZh={cat.labelZh}
+                      />
+                    ))}
+                  </div>
+                ) : (
+                  <ExampleGrid examples={resource.examples} />
+                )}
+              </Card>
+            </motion.div>
+          )}
+
+          {resource.commonMistakes && resource.commonMistakes.length > 0 && (
+            <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.25 }}>
+              <Card className="p-5 sm:p-6 border-red-200 dark:border-red-800 bg-red-50/50 dark:bg-red-950/20">
+                <div className="flex items-center gap-2 mb-3">
+                  <AlertTriangle className="h-4 w-4 text-red-700 dark:text-red-300" />
+                  <p className="text-sm font-semibold text-red-900 dark:text-red-100">Common Mistakes</p>
+                </div>
+                <div className="space-y-2">
+                  {resource.commonMistakes.map((m, idx) => (
+                    <div key={idx} className="text-sm p-2 rounded bg-white/70 dark:bg-black/20 border border-red-100 dark:border-red-900">
+                      <p className="line-through text-red-700/80 dark:text-red-300/80">❌ {m.mistake}</p>
+                      <p className="text-green-700 dark:text-green-300">✅ {m.correction}</p>
+                      <p className="text-xs text-muted-foreground">{m.correctionZh}</p>
+                    </div>
+                  ))}
+                </div>
+              </Card>
+            </motion.div>
+          )}
+
+          {resource.comparisonTable && (
+            <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }}>
+              <Card className="p-5 sm:p-6">
+                <div className="flex items-center gap-2 mb-3">
+                  <Lightbulb className="h-4 w-4 text-amber-600" />
+                  <p className="text-sm font-semibold">Compare</p>
+                </div>
+                <div className="overflow-x-auto">
+                  <table className="w-full text-sm">
+                    <thead>
+                      <tr className="border-b">
+                        <th className="text-left py-2 px-3">Term</th>
+                        <th className="text-left py-2 px-3">Meaning</th>
+                        <th className="text-left py-2 px-3">Situation</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {resource.comparisonTable.map((row, idx) => (
+                        <tr key={idx} className="border-b last:border-0">
+                          <td className="py-2 px-3 font-medium">{row.term}</td>
+                          <td className="py-2 px-3">{row.meaning} · {row.chinese}</td>
+                          <td className="py-2 px-3 text-xs text-muted-foreground">{row.situation}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </Card>
+            </motion.div>
+          )}
+
+          {resource.chunks && (
+            <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.35 }}>
+              <Card className="p-5 sm:p-6">
+                <div className="flex items-center gap-2 mb-3">
+                  <Sparkles className="h-4 w-4 text-emerald-600" />
+                  <p className="text-sm font-semibold">Chunks</p>
+                </div>
+                <div className="grid gap-2 sm:grid-cols-2">
+                  {resource.chunks.map((chunk, idx) => (
+                    <div key={idx} className="p-3 rounded-lg bg-muted/30">
+                      <p className="text-sm font-medium">{chunk.chunk}</p>
+                      <p className="text-xs text-muted-foreground">{chunk.meaning} · {chunk.chinese}</p>
+                      <p className="text-xs italic mt-1">"{chunk.example}"</p>
+                    </div>
+                  ))}
+                </div>
+              </Card>
+            </motion.div>
+          )}
+
+          <CollapsibleSection title="Structures & Templates" titleZh="句式模板">
+            <div className="space-y-3">
+              {resource.structures?.map((s, idx) => (
+                <div key={idx} className="text-sm">
+                  <p className="font-semibold text-blue-800 dark:text-blue-200">{s.name} <span className="text-xs text-muted-foreground">{s.nameZh}</span></p>
+                  <div className="mt-1 p-2 rounded bg-blue-100 dark:bg-blue-900/30 font-mono text-xs">
+                    <span className="text-blue-700 dark:text-blue-300">{s.formula}</span>
+                  </div>
+                  <p className="text-xs mt-1 text-blue-900 dark:text-blue-100">Example: "{s.example}"</p>
+                  <p className="text-xs text-blue-700 dark:text-blue-300 mt-1">💡 {s.tip}</p>
+                </div>
+              ))}
+            </div>
+          </CollapsibleSection>
+
+          <CollapsibleSection title="Techniques & Tips" titleZh="技巧与提示">
+            <div className="space-y-3">
+              {resource.techniques?.map((t, idx) => (
+                <div key={idx} className="text-sm">
+                  <p className="font-semibold text-purple-800 dark:text-purple-200">{t.name}</p>
+                  <p className="text-xs text-purple-900 dark:text-purple-100 mt-1">{t.description}</p>
+                  <p className="text-xs text-purple-700 dark:text-purple-300 mt-1">🎯 {t.tip}</p>
+                </div>
+              ))}
+            </div>
+          </CollapsibleSection>
+
+          {resource.pronunciation && (
+            <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }}>
+              <Card className="p-5 sm:p-6 border-teal-200 dark:border-teal-800 bg-teal-50/50 dark:bg-teal-950/20">
+                <div className="flex items-center gap-2 mb-3">
+                  <Volume2 className="h-4 w-4 text-teal-700 dark:text-teal-300" />
+                  <p className="text-sm font-semibold text-teal-900 dark:text-teal-100">Pronunciation</p>
+                </div>
+                <p className="text-sm font-medium mb-1">{resource.pronunciation.phonetic}</p>
+                <p className="text-xs text-muted-foreground mb-2">{resource.pronunciation.tip}</p>
+                <p className="text-xs text-muted-foreground mb-3">{resource.pronunciation.tipZh}</p>
+                {resource.pronunciation.audioText && (
+                  <Button variant="outline" size="sm" className="gap-2" onClick={() => speakEnglish(resource.pronunciation!.audioText || "")}>
+                    <Volume2 className="h-3.5 w-3.5" />
+                    Listen
+                  </Button>
+                )}
+              </Card>
+            </motion.div>
+          )}
+
+          {resource.audioText && !resource.pronunciation && (
+            <div className="flex justify-end">
+              <Button variant="outline" size="sm" className="gap-2" onClick={() => speakEnglish(resource.audioText || "")}>
+                <Volume2 className="h-3.5 w-3.5" />
+                Listen
+              </Button>
+            </div>
+          )}
+
+          {resource.funnyMoments && resource.funnyMoments.length > 0 && (
+            <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.45 }}>
+              <Card className="p-5 sm:p-6 border-yellow-200 dark:border-yellow-800 bg-yellow-50/50 dark:bg-yellow-950/20">
+                <div className="flex items-center gap-2 mb-3">
+                  <Laugh className="h-4 w-4 text-yellow-700 dark:text-yellow-300" />
+                  <p className="text-sm font-semibold text-yellow-900 dark:text-yellow-100">Funny Moments</p>
+                </div>
+                <div className="space-y-3">
+                  {resource.funnyMoments.map((fm, idx) => (
+                    <div key={idx} className="text-sm p-3 rounded-lg bg-white/70 dark:bg-black/20 border border-yellow-100 dark:border-yellow-900">
+                      <p className="font-semibold text-yellow-800 dark:text-yellow-200">{fm.title} <span className="text-xs text-muted-foreground">{fm.titleZh}</span></p>
+                      <p className="text-xs text-muted-foreground mb-2 italic">Situation: {fm.situation}</p>
+                      <p className="text-sm font-medium mb-2">💬 {fm.dialogue}</p>
+                      <p className="text-xs font-semibold text-yellow-700 dark:text-yellow-300">😂 {fm.punchline}</p>
+                      <p className="text-xs text-yellow-700 dark:text-yellow-300 mt-2">💡 {fm.lesson}</p>
+                    </div>
+                  ))}
+                </div>
+              </Card>
+            </motion.div>
+          )}
+
+          <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.5 }}>
+            <Card className="p-5 sm:p-6 border-indigo-200 dark:border-indigo-800">
+              <div className="flex items-center gap-2 mb-4">
+                <BookOpen className="h-5 w-5 text-indigo-500" />
+                <h2 className="text-lg font-bold">Quick Drill</h2>
+                <span className="text-xs text-muted-foreground ml-2">{resource.miniDrills.length} questions</span>
+              </div>
+
+              {!selectedDrill ? (
+                <div className="text-center py-6">
+                  <p className="text-sm text-muted-foreground mb-4">Practice what you learned with quick exercises.</p>
+                  <Button onClick={startDrills} className="gap-2">
+                    <Target className="h-4 w-4" />
+                    Start Drills
+                  </Button>
+                </div>
+              ) : (
+                <div className="space-y-4">
+                  <div className="flex items-center justify-between">
+                    <span className="text-xs text-muted-foreground">
+                      Question {resource.miniDrills.findIndex((d) => d === selectedDrill) + 1} of {resource.miniDrills.length}
+                    </span>
+                    <span className="text-xs text-muted-foreground">Score: {score}</span>
+                  </div>
+
+                  <Progress value={progress} className="h-2" />
+
+                  <div className="p-4 rounded-lg bg-muted/30">
+                    <p className="text-sm font-medium mb-1">{selectedDrill.question}</p>
+                    <p className="text-xs text-muted-foreground">{selectedDrill.questionZh}</p>
+                  </div>
+
+                  {selectedDrill.type === "choose" && selectedDrill.options && (
+                    <div className="space-y-2">
+                      {selectedDrill.options.map((option, idx) => (
+                        <button
+                          key={idx}
+                          onClick={() => handleDrillAnswer(selectedDrill, option.text)}
+                          disabled={drillAnswer !== ""}
+                          className={`w-full text-left p-3 rounded-lg border transition-colors ${
+                            drillAnswer === option.text
+                              ? option.isCorrect
+                                ? "border-green-500 bg-green-50 dark:bg-green-950/20"
+                                : "border-red-500 bg-red-50 dark:bg-red-950/20"
+                              : "border-border hover:bg-muted/50"
+                          } ${drillAnswer !== "" ? "cursor-default" : "cursor-pointer"}`}
+                        >
+                          <p className="text-sm">{option.text}</p>
+                          <p className="text-xs text-muted-foreground">{option.textZh}</p>
+                        </button>
+                      ))}
+                    </div>
+                  )}
+
+                  {selectedDrill.type === "fill-blank" && (
+                    <div className="space-y-2">
+                      <Input
+                        value={drillAnswer}
+                        onChange={(e) => setDrillAnswer(e.target.value)}
+                        placeholder="Type your answer..."
+                        disabled={drillAnswer !== ""}
+                        onKeyDown={(e) => {
+                          if (e.key === "Enter" && !drillAnswer) {
+                            handleDrillAnswer(selectedDrill, drillAnswer);
+                          }
+                        }}
+                      />
+                      {drillAnswer && (
+                        <Button onClick={nextDrill} className="w-full">
+                          Next
+                        </Button>
+                      )}
+                    </div>
+                  )}
+
+                  {drillFeedback && (
+                    <motion.div
+                      initial={{ opacity: 0, y: 5 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      className={`p-3 rounded-lg text-sm ${
+                        drillFeedback.text.startsWith("✅")
+                          ? "bg-green-50 dark:bg-green-950/20 text-green-800 dark:text-green-200"
+                          : "bg-red-50 dark:bg-red-950/20 text-red-800 dark:text-red-200"
+                      }`}
+                    >
+                      <p>{drillFeedback.text}</p>
+                      <p className="text-xs mt-1">{drillFeedback.zh}</p>
+                      {!drillFeedback.text.startsWith("✅") && (
+                        <Button onClick={nextDrill} size="sm" className="mt-2">
+                          Next
+                        </Button>
+                      )}
+                    </motion.div>
+                  )}
+                </div>
+              )}
+            </Card>
+          </motion.div>
+
+          <AnimatePresence>
+            {showRescue && (
+              <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} className="p-4 rounded-xl bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-800">
+                <p className="text-sm font-semibold mb-2">🛟 Conversation Rescue</p>
+                <div className="flex flex-wrap gap-2">
+                  {["Sorry, I didn't catch that.", "Could you say that again?", "Could you speak more slowly?", "What do you mean?"].map((phrase) => (
+                    <Button key={phrase} variant="secondary" size="sm" className="gap-2" onClick={() => speakEnglish(phrase)}>
+                      <Volume2 className="h-3.5 w-3.5" />
+                      {phrase}
+                    </Button>
+                  ))}
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
       </div>
     </div>

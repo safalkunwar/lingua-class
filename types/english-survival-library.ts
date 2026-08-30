@@ -11,6 +11,30 @@ export interface MiniDrill {
   audioText?: string;
 }
 
+export interface MeaningCard {
+  title: string;
+  titleZh: string;
+  meaning: string;
+  meaningZh: string;
+  example: string;
+  exampleZh: string;
+  situation?: string;
+  color?: "blue" | "green" | "yellow" | "purple" | "red" | "teal";
+}
+
+export interface ExampleCategory {
+  label: string;
+  labelZh: string;
+  emoji: string;
+  examples: { en: string; zh: string; explanation?: string }[];
+}
+
+export interface QuickSummaryItem {
+  word: string;
+  mainIdea: string;
+  chinese: string;
+}
+
 export interface SurvivalResource {
   id: string;
   title: string;
@@ -38,6 +62,10 @@ export interface SurvivalResource {
   teacherNotesZh?: string;
   xpReward: number;
   keyWords?: { word: string; meaning: string; meaningZh: string }[];
+  quickSummary?: QuickSummaryItem[];
+  meaningCards?: MeaningCard[];
+  exampleCategories?: ExampleCategory[];
+  compareSection?: { title: string; titleZh: string; items: { label: string; labelZh: string; en: string; zh: string }[] };
 }
 
 export interface SurvivalCategory {
