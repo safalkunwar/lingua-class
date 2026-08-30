@@ -102,6 +102,7 @@ export default function EnglishSurvivalLibraryDetailPage({ params }: { params: P
   const resource = survivalResources.find((r) => r.id === resolvedParams.id) || null;
   const [selectedDrill, setSelectedDrill] = useState<MiniDrill | null>(null);
   const [drillAnswer, setDrillAnswer] = useState<string>("");
+  const [matchSelections, setMatchSelections] = useState<string[]>([]);
   const [drillFeedback, setDrillFeedback] = useState<{ text: string; zh: string } | null>(null);
   const [score, setScore] = useState(0);
   const [totalDrills, setTotalDrills] = useState(0);
@@ -319,6 +320,9 @@ export default function EnglishSurvivalLibraryDetailPage({ params }: { params: P
       isCorrect = answer.toLowerCase().trim() === drill.answer?.toLowerCase().trim();
     } else if (drill.type === "rewrite") {
       isCorrect = answer.toLowerCase().trim() === drill.answer?.toLowerCase().trim();
+    } else if (drill.type === "match") {
+      const userPairs = answer.split(",").map((s) => s.trim());
+      isCorrect = userPairs.every((ans, i) => ans === drill.pairs?.[i]?.right);
     } else if (drill.type === "speak") {
       isCorrect = true;
     }
@@ -336,6 +340,7 @@ export default function EnglishSurvivalLibraryDetailPage({ params }: { params: P
     if (currentIndex < resource.miniDrills.length - 1) {
       setSelectedDrill(resource.miniDrills[currentIndex + 1]);
       setDrillAnswer("");
+      setMatchSelections([]);
       setDrillFeedback(null);
     } else {
       addXp(resource.xpReward + score * 5);
@@ -355,6 +360,7 @@ export default function EnglishSurvivalLibraryDetailPage({ params }: { params: P
     setScore(0);
     setTotalDrills(0);
     setDrillAnswer("");
+    setMatchSelections([]);
     setDrillFeedback(null);
   };
 
@@ -737,16 +743,71 @@ export default function EnglishSurvivalLibraryDetailPage({ params }: { params: P
                           value={drillAnswer}
                           onChange={(e) => setDrillAnswer(e.target.value)}
                           placeholder="Type your answer..."
-                          disabled={drillAnswer !== ""}
+                          disabled={!!drillFeedback}
                           onKeyDown={(e) => {
-                            if (e.key === "Enter" && !drillAnswer && selectedDrill) {
+                            if (e.key === "Enter" && drillAnswer && selectedDrill && !drillFeedback) {
                               handleDrillAnswer(selectedDrill, drillAnswer);
                             }
                           }}
                         />
-                        {drillAnswer && (
-                          <Button onClick={nextDrill} className="w-full">
-                            Next
+                        {!drillFeedback && drillAnswer && (
+                          <Button onClick={() => handleDrillAnswer(selectedDrill, drillAnswer)} className="w-full">
+                            Submit
+                          </Button>
+                        )}
+                      </div>
+                    )}
+
+                    {selectedDrill.type === "rewrite" && (
+                      <div className="space-y-2">
+                        <p className="text-xs text-muted-foreground">{selectedDrill.blank}</p>
+                        <Input
+                          value={drillAnswer}
+                          onChange={(e) => setDrillAnswer(e.target.value)}
+                          placeholder="Type your answer..."
+                          disabled={!!drillFeedback}
+                          onKeyDown={(e) => {
+                            if (e.key === "Enter" && drillAnswer && selectedDrill && !drillFeedback) {
+                              handleDrillAnswer(selectedDrill, drillAnswer);
+                            }
+                          }}
+                        />
+                        {!drillFeedback && drillAnswer && (
+                          <Button onClick={() => handleDrillAnswer(selectedDrill, drillAnswer)} className="w-full">
+                            Submit
+                          </Button>
+                        )}
+                      </div>
+                    )}
+
+                    {selectedDrill.type === "match" && selectedDrill.pairs && (
+                      <div className="space-y-2">
+                        {selectedDrill.pairs.map((pair, idx) => (
+                          <div key={idx} className="flex items-center gap-2">
+                            <span className="text-sm font-medium flex-1">{pair.left}</span>
+                            <span className="text-sm">→</span>
+                            <select
+                              value={matchSelections[idx] || ""}
+                              onChange={(e) => {
+                                const newSelections = [...matchSelections];
+                                newSelections[idx] = e.target.value;
+                                setMatchSelections(newSelections);
+                              }}
+                              disabled={!!drillFeedback}
+                              className="text-sm border border-border rounded p-1 bg-background"
+                            >
+                              <option value="">...</option>
+                              {[...new Set(selectedDrill.pairs?.map((p) => p.right))].sort().map((right) => (
+                                <option key={right} value={right}>
+                                  {right}
+                                </option>
+                              ))}
+                            </select>
+                          </div>
+                        ))}
+                        {!drillFeedback && matchSelections.length === selectedDrill.pairs.length && matchSelections.every((s) => s) && (
+                          <Button onClick={() => handleDrillAnswer(selectedDrill, matchSelections.join(", "))} className="w-full">
+                            Submit
                           </Button>
                         )}
                       </div>
