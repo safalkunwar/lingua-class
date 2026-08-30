@@ -106,12 +106,21 @@ export default function EnglishSurvivalLibraryDetailPage({ params }: { params: P
   const [score, setScore] = useState(0);
   const [totalDrills, setTotalDrills] = useState(0);
   const [showRescue, setShowRescue] = useState(false);
+  const [drillMode, setDrillMode] = useState<"practice" | "review">("practice");
 
   const { addXp, incrementStreak, incrementWeeklyProgress, updateLevelProgress } = useLearningStore();
   const { speakEnglish, speakChinese } = useSpeechSynthesis();
 
   const downloadPrintable = useCallback(() => {
     if (!resource) return;
+    const drillsSection = resource.miniDrills.map((drill, idx) => `
+      <div class="example">
+        <div class="en"><strong>${idx + 1}. ${drill.question}</strong></div>
+        <div class="zh">${drill.questionZh}</div>
+        ${drill.options ? `<div>${drill.options.map(o => `<div>${o.text} - ${o.isCorrect ? '✓' : ''} ${o.textZh}</div>`).join('')}</div>` : ''}
+        ${drill.answer ? `<div class="explanation">Answer: ${drill.answer}</div>` : ''}
+      </div>`).join('');
+
     const html = `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -232,6 +241,11 @@ export default function EnglishSurvivalLibraryDetailPage({ params }: { params: P
     <p style="color:#64748b">${resource.pronunciation.tipZh}</p>
   </div>` : ''}
 
+  <h2>Quick Drills</h2>
+  <div class="section">
+    ${drillsSection}
+  </div>
+
   <div class="footer">Generated from English Survival Library · ${new Date().toLocaleDateString()}</div>
 </body>
 </html>`;
@@ -241,6 +255,30 @@ export default function EnglishSurvivalLibraryDetailPage({ params }: { params: P
     const a = document.createElement('a');
     a.href = url;
     a.download = `${resource.id}-${resource.title.replace(/[^a-z0-9]+/gi, '-').toLowerCase()}.html`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  }, [resource]);
+
+  const downloadDrills = useCallback(() => {
+    if (!resource) return;
+    const text = resource.miniDrills.map((drill, idx) => {
+      let q = `${idx + 1}. ${drill.question}\n   ${drill.questionZh}`;
+      if (drill.options) {
+        q += '\n   ' + drill.options.map(o => `${o.text} (${o.textZh})${o.isCorrect ? ' ✓' : ''}`).join('\n   ');
+      }
+      if (drill.answer) {
+        q += `\n   Answer: ${drill.answer}`;
+      }
+      return q;
+    }).join('\n\n');
+
+    const blob = new Blob([`${resource.title} - Quick Drills\n${resource.titleZh}\n\n${text}`], { type: 'text/plain' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `${resource.id}-drills.txt`;
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
@@ -599,101 +637,149 @@ export default function EnglishSurvivalLibraryDetailPage({ params }: { params: P
             </motion.div>
           )}
 
-          <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.5 }}>
-            <Card className="p-5 sm:p-6 border-indigo-200 dark:border-indigo-800">
-              <div className="flex items-center gap-2 mb-4">
-                <BookOpen className="h-5 w-5 text-indigo-500" />
-                <h2 className="text-lg font-bold">Quick Drill</h2>
-                <span className="text-xs text-muted-foreground ml-2">{resource.miniDrills.length} questions</span>
-              </div>
+           <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.5 }}>
+             <Card className="p-5 sm:p-6 border-indigo-200 dark:border-indigo-800">
+               <div className="flex items-center gap-2 mb-4">
+                 <BookOpen className="h-5 w-5 text-indigo-500" />
+                 <h2 className="text-lg font-bold">Quick Drill</h2>
+                 <span className="text-xs text-muted-foreground ml-2">{resource.miniDrills.length} questions</span>
+               </div>
 
-              {!selectedDrill ? (
-                <div className="text-center py-6">
-                  <p className="text-sm text-muted-foreground mb-4">Practice what you learned with quick exercises.</p>
-                  <Button onClick={startDrills} className="gap-2">
-                    <Target className="h-4 w-4" />
-                    Start Drills
-                  </Button>
-                </div>
-              ) : (
-                <div className="space-y-4">
-                  <div className="flex items-center justify-between">
-                    <span className="text-xs text-muted-foreground">
-                      Question {resource.miniDrills.findIndex((d) => d === selectedDrill) + 1} of {resource.miniDrills.length}
-                    </span>
-                    <span className="text-xs text-muted-foreground">Score: {score}</span>
-                  </div>
+               <div className="flex flex-wrap gap-2 mb-4">
+                 <Button variant={drillMode === "practice" ? "default" : "outline"} size="sm" onClick={() => setDrillMode("practice")}>
+                   Practice (one by one)
+                 </Button>
+                 <Button variant={drillMode === "review" ? "default" : "outline"} size="sm" onClick={() => setDrillMode("review")}>
+                   Review All
+                 </Button>
+                 <div className="flex-1" />
+                 <Button variant="secondary" size="sm" onClick={downloadDrills} className="gap-2">
+                   <Download className="h-4 w-4" />
+                   Download Drills
+                 </Button>
+               </div>
 
-                  <Progress value={progress} className="h-2" />
+               {drillMode === "review" ? (
+                 <div className="space-y-4">
+                   {resource.miniDrills.map((drill, idx) => (
+                     <div key={idx} className="p-4 rounded-lg bg-muted/30 border border-border">
+                       <div className="flex items-start gap-2 mb-2">
+                         <span className="text-sm font-bold text-indigo-500 mt-0.5">{idx + 1}.</span>
+                         <div className="flex-1">
+                           <p className="text-sm font-medium">{drill.question}</p>
+                           <p className="text-xs text-muted-foreground">{drill.questionZh}</p>
+                         </div>
+                       </div>
+                       {drill.type === "choose" && drill.options && (
+                         <div className="ml-6 mt-2 space-y-1">
+                           {drill.options.map((option, oidx) => (
+                             <div key={oidx} className={`text-sm p-2 rounded ${option.isCorrect ? "bg-green-50 dark:bg-green-950/20 text-green-800 dark:text-green-200" : ""}`}>
+                               {option.text} {option.isCorrect && "✓"}
+                               <span className="text-xs text-muted-foreground ml-1">{option.textZh}</span>
+                             </div>
+                           ))}
+                         </div>
+                       )}
+                       {drill.type === "fill-blank" && drill.answer && (
+                         <div className="ml-6 mt-2">
+                           <span className="text-sm font-medium text-green-700 dark:text-green-300">Answer: {drill.answer}</span>
+                         </div>
+                       )}
+                       {drill.type === "rewrite" && drill.answer && (
+                         <div className="ml-6 mt-2">
+                           <span className="text-sm font-medium text-green-700 dark:text-green-300">Answer: {drill.answer}</span>
+                         </div>
+                       )}
+                     </div>
+                   ))}
+                 </div>
+                ) : drillMode === "practice" && selectedDrill ? (
+                  <div className="space-y-4">
+                    <div className="flex items-center justify-between">
+                      <span className="text-xs text-muted-foreground">
+                        Question {resource.miniDrills.findIndex((d) => d === selectedDrill) + 1} of {resource.miniDrills.length}
+                      </span>
+                      <span className="text-xs text-muted-foreground">Score: {score}</span>
+                    </div>
 
-                  <div className="p-4 rounded-lg bg-muted/30">
-                    <p className="text-sm font-medium mb-1">{selectedDrill.question}</p>
-                    <p className="text-xs text-muted-foreground">{selectedDrill.questionZh}</p>
-                  </div>
+                    <Progress value={progress} className="h-2" />
 
-                  {selectedDrill.type === "choose" && selectedDrill.options && (
-                    <div className="space-y-2">
-                      {selectedDrill.options.map((option, idx) => (
-                        <button
-                          key={idx}
-                          onClick={() => handleDrillAnswer(selectedDrill, option.text)}
+                    <div className="p-4 rounded-lg bg-muted/30">
+                      <p className="text-sm font-medium mb-1">{selectedDrill.question}</p>
+                      <p className="text-xs text-muted-foreground">{selectedDrill.questionZh}</p>
+                    </div>
+
+                    {selectedDrill.type === "choose" && selectedDrill.options && (
+                      <div className="space-y-2">
+                        {selectedDrill.options.map((option, idx) => (
+                          <button
+                            key={idx}
+                            onClick={() => selectedDrill && handleDrillAnswer(selectedDrill, option.text)}
+                            disabled={drillAnswer !== ""}
+                            className={`w-full text-left p-3 rounded-lg border transition-colors ${
+                              drillAnswer === option.text
+                                ? option.isCorrect
+                                  ? "border-green-500 bg-green-50 dark:bg-green-950/20"
+                                  : "border-red-500 bg-red-50 dark:bg-red-950/20"
+                                : "border-border hover:bg-muted/50"
+                            } ${drillAnswer !== "" ? "cursor-default" : "cursor-pointer"}`}
+                          >
+                            <p className="text-sm">{option.text}</p>
+                            <p className="text-xs text-muted-foreground">{option.textZh}</p>
+                          </button>
+                        ))}
+                      </div>
+                    )}
+
+                    {selectedDrill.type === "fill-blank" && (
+                      <div className="space-y-2">
+                        <Input
+                          value={drillAnswer}
+                          onChange={(e) => setDrillAnswer(e.target.value)}
+                          placeholder="Type your answer..."
                           disabled={drillAnswer !== ""}
-                          className={`w-full text-left p-3 rounded-lg border transition-colors ${
-                            drillAnswer === option.text
-                              ? option.isCorrect
-                                ? "border-green-500 bg-green-50 dark:bg-green-950/20"
-                                : "border-red-500 bg-red-50 dark:bg-red-950/20"
-                              : "border-border hover:bg-muted/50"
-                          } ${drillAnswer !== "" ? "cursor-default" : "cursor-pointer"}`}
-                        >
-                          <p className="text-sm">{option.text}</p>
-                          <p className="text-xs text-muted-foreground">{option.textZh}</p>
-                        </button>
-                      ))}
-                    </div>
-                  )}
+                          onKeyDown={(e) => {
+                            if (e.key === "Enter" && !drillAnswer && selectedDrill) {
+                              handleDrillAnswer(selectedDrill, drillAnswer);
+                            }
+                          }}
+                        />
+                        {drillAnswer && (
+                          <Button onClick={nextDrill} className="w-full">
+                            Next
+                          </Button>
+                        )}
+                      </div>
+                    )}
 
-                  {selectedDrill.type === "fill-blank" && (
-                    <div className="space-y-2">
-                      <Input
-                        value={drillAnswer}
-                        onChange={(e) => setDrillAnswer(e.target.value)}
-                        placeholder="Type your answer..."
-                        disabled={drillAnswer !== ""}
-                        onKeyDown={(e) => {
-                          if (e.key === "Enter" && !drillAnswer) {
-                            handleDrillAnswer(selectedDrill, drillAnswer);
-                          }
-                        }}
-                      />
-                      {drillAnswer && (
-                        <Button onClick={nextDrill} className="w-full">
-                          Next
+                    {drillFeedback && (
+                      <motion.div
+                        initial={{ opacity: 0, y: 5 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        className={`p-3 rounded-lg text-sm ${
+                          drillFeedback.text.startsWith("✅")
+                            ? "bg-green-50 dark:bg-green-950/20 text-green-800 dark:text-green-200"
+                            : "bg-red-50 dark:bg-red-950/20 text-red-800 dark:text-red-200"
+                        }`}
+                      >
+                        <p>{drillFeedback.text}</p>
+                        <p className="text-xs mt-1">{drillFeedback.zh}</p>
+                        <Button onClick={nextDrill} size="sm" className="mt-2">
+                          {resource.miniDrills.findIndex((d) => d === selectedDrill) < resource.miniDrills.length - 1 ? "Next" : "Finish"}
                         </Button>
-                      )}
-                    </div>
-                  )}
-
-                  {drillFeedback && (
-                    <motion.div
-                      initial={{ opacity: 0, y: 5 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      className={`p-3 rounded-lg text-sm ${
-                        drillFeedback.text.startsWith("✅")
-                          ? "bg-green-50 dark:bg-green-950/20 text-green-800 dark:text-green-200"
-                          : "bg-red-50 dark:bg-red-950/20 text-red-800 dark:text-red-200"
-                      }`}
-                    >
-                      <p>{drillFeedback.text}</p>
-                      <p className="text-xs mt-1">{drillFeedback.zh}</p>
-                      <Button onClick={nextDrill} size="sm" className="mt-2">
-                        {resource.miniDrills.findIndex((d) => d === selectedDrill) < resource.miniDrills.length - 1 ? "Next" : "Finish"}
-                      </Button>
-                    </motion.div>
-                  )}
-                </div>
-              )}
-            </Card>
+                      </motion.div>
+                    )}
+                  </div>
+                ) : drillMode === "practice" ? (
+                  <div className="text-center py-6">
+                    <p className="text-sm text-muted-foreground mb-4">Practice what you learned with quick exercises.</p>
+                    <Button onClick={startDrills} className="gap-2">
+                      <Target className="h-4 w-4" />
+                      Start Drills
+                    </Button>
+                  </div>
+                ) : null}
+           </Card>
           </motion.div>
 
           <AnimatePresence>
