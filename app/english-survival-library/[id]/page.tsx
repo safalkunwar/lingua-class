@@ -686,11 +686,9 @@ export default function EnglishSurvivalLibraryDetailPage({ params }: { params: P
                     >
                       <p>{drillFeedback.text}</p>
                       <p className="text-xs mt-1">{drillFeedback.zh}</p>
-                      {!drillFeedback.text.startsWith("✅") && (
-                        <Button onClick={nextDrill} size="sm" className="mt-2">
-                          Next
-                        </Button>
-                      )}
+                      <Button onClick={nextDrill} size="sm" className="mt-2">
+                        {resource.miniDrills.findIndex((d) => d === selectedDrill) < resource.miniDrills.length - 1 ? "Next" : "Finish"}
+                      </Button>
                     </motion.div>
                   )}
                 </div>
