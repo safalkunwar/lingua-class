@@ -8,6 +8,7 @@ import {
   askingQuestionsDialogue,
   gameCommentaryDialogue,
   basketballSmallTalkDialogue,
+  basketballMemoryPhrases,
 } from "@/data/sports-basketball";
 import { notFound } from "next/navigation";
 import Link from "next/link";
@@ -16,7 +17,7 @@ import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, BookOpen, Volume2 } from "lucide-react";
+import { ArrowLeft, BookOpen, Volume2, Lightbulb } from "lucide-react";
 import { useState } from "react";
 
 const MODULE_META: Record<string, { emoji: string; color: string; type: string }> = {
@@ -43,6 +44,15 @@ const DIALOGUE_MAP: Record<string, { title: string; dialogue: { speaker: string;
   "basketball-small-talk": { title: "Basketball Small Talk Dialogue", dialogue: basketballSmallTalkDialogue },
 };
 
+const MEMORY_PHRASE_MAP: Record<string, { category: string; phrases: { en: string; zh: string; tip: string }[] }[]> = {
+  "watching-a-game": basketballMemoryPhrases.filter((m) => m.category === "Watching a Game"),
+  "talking-with-fans": basketballMemoryPhrases.filter((m) => m.category === "Talking With Fans"),
+  "talking-with-players": basketballMemoryPhrases.filter((m) => m.category === "Talking With Players"),
+  "asking-questions": basketballMemoryPhrases.filter((m) => m.category === "Asking Questions"),
+  "game-commentary": basketballMemoryPhrases.filter((m) => m.category === "Game Commentary"),
+  "basketball-small-talk": basketballMemoryPhrases.filter((m) => m.category === "Basketball Small Talk"),
+};
+
 function speak(text: string) {
   if (typeof window === "undefined" || !("speechSynthesis" in window)) return;
   window.speechSynthesis.cancel();
@@ -65,6 +75,7 @@ export default function BasketballModulePage({
 
   const meta = MODULE_META[module.id] || { emoji: "📚", color: "from-gray-400 to-slate-500", type: module.type };
   const dialogueData = DIALOGUE_MAP[module.id];
+  const memoryPhrases = MEMORY_PHRASE_MAP[module.id];
 
   return (
     <div className="flex">
@@ -99,7 +110,7 @@ export default function BasketballModulePage({
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}>
           <Card className="p-6 sm:p-8">
             {dialogueData ? (
-              <div className="space-y-6">
+              <div className="space-y-8">
                 <div className="flex items-center justify-between">
                   <h2 className="text-xl font-bold">{dialogueData.title}</h2>
                   <Button
@@ -133,6 +144,26 @@ export default function BasketballModulePage({
                     </div>
                   ))}
                 </div>
+
+                {memoryPhrases && memoryPhrases.length > 0 && (
+                  <div className="rounded-xl border border-amber-200 bg-amber-50 p-6 dark:border-amber-700 dark:bg-amber-950/30">
+                    <div className="mb-4 flex items-center gap-2">
+                      <Lightbulb className="h-5 w-5 text-amber-600 dark:text-amber-400" />
+                      <h3 className="text-lg font-bold text-amber-900 dark:text-amber-100">Easy to Remember</h3>
+                    </div>
+                    <div className="grid gap-4 sm:grid-cols-2">
+                      {memoryPhrases.flatMap((group) =>
+                        group.phrases.map((phrase, idx) => (
+                          <div key={idx} className="rounded-lg border border-amber-100 bg-white p-4 dark:border-amber-800 dark:bg-background">
+                            <p className="font-semibold text-amber-900 dark:text-amber-100">{phrase.en}</p>
+                            <p className="mt-1 text-sm text-amber-800 dark:text-amber-200">{phrase.zh}</p>
+                            <p className="mt-2 text-xs text-amber-700 dark:text-amber-300">💡 {phrase.tip}</p>
+                          </div>
+                        ))
+                      )}
+                    </div>
+                  </div>
+                )}
               </div>
             ) : (
               <div className="text-center py-12">
