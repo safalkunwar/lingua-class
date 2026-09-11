@@ -1394,37 +1394,45 @@ export const mayFavoritePlayerResponse = {
 };
 
 export const watchingAGameDialogue: CurryDialogueLine[] = [
-  { speaker: "A", line: "Did you see that three-pointer? It was incredible!", lineZh: "你看到那个三分球了吗？太不可思议了！" },
+  { speaker: "A", line: "🏟️ Did you see that three-pointer? It was incredible!", lineZh: "🏟️ 你看到那个三分球了吗？太不可思议了！" },
   { speaker: "B", line: "Yes! He shot it from half court!", lineZh: "看到了！他在半场投的！" },
   { speaker: "A", line: "The defense had no chance.", lineZh: "防守根本没办法。" },
   { speaker: "B", line: "I know. That's why he's the best shooter in the league.", lineZh: "我知道。这就是为什么他是联盟最好的投手。" },
-  { speaker: "A", line: "Do you want to grab a snack during the break?", lineZh: "休息时你想去吃点东西吗？" },
+  { speaker: "A", line: "🍿 Do you want to grab a snack during the break?", lineZh: "🍿 休息时你想去吃点东西吗？" },
   { speaker: "B", line: "Sure, let's go.", lineZh: "当然，走吧。" },
-  { speaker: "A", line: "Wow, did you see that dunk? The crowd went wild!", lineZh: "哇，你看到那个扣篮了吗？观众都沸腾了！" },
+  { speaker: "A", line: "😱 Wow, did you see that dunk? The crowd went wild!", lineZh: "😱 哇，你看到那个扣篮了吗？观众都沸腾了！" },
   { speaker: "B", line: "I know! I almost spilled my drink.", lineZh: "我知道！我差点把饮料洒了。" },
   { speaker: "A", line: "What's the score now?", lineZh: "现在比分是多少？" },
   { speaker: "B", line: "We're up by 10. But they're making a comeback.", lineZh: "我们领先10分。但他们正在追分。" },
   { speaker: "A", line: "Don't worry, our defense is solid.", lineZh: "别担心，我们的防守很稳固。" },
   { speaker: "B", line: "You're right. Let's enjoy the game!", lineZh: "你说得对。我们好好享受比赛吧！" },
+  { speaker: "A", line: "⏱️ There's only one minute left. This is intense!", lineZh: "⏱️ 只剩一分钟了。太紧张了！" },
+  { speaker: "B", line: "I can't watch. It's too stressful.", lineZh: "我都不敢看了。太紧张了。" },
+  { speaker: "A", line: "Come on, we got this! 🏆", lineZh: "加油，我们能赢！🏆" },
+  { speaker: "B", line: "YES! We won! What a game!", lineZh: "是的！我们赢了！多么精彩的比赛！" },
 ];
 
 export const talkingWithFansDialogue: CurryDialogueLine[] = [
-  { speaker: "Fan 1", line: "I've been a Warriors fan since 2015.", lineZh: "我从2015年就是勇士队的球迷了。" },
+  { speaker: "Fan 1", line: "🧢 I've been a Warriors fan since 2015.", lineZh: "🧢 我从2015年就是勇士队的球迷了。" },
   { speaker: "Fan 2", line: "Me too! I watched every playoff game that year.", lineZh: "我也是！那年我看了每一场季后赛。" },
-  { speaker: "Fan 1", line: "What do you think about their chances this season?", lineZh: "你觉得他们这赛季夺冠的几率怎么样？" },
+  { speaker: "Fan 1", line: "🏆 What do you think about their chances this season?", lineZh: "🏆 你觉得他们这赛季夺冠的几率怎么样？" },
   { speaker: "Fan 2", line: "I think they have a great shot if they stay healthy.", lineZh: "如果他们保持健康，我觉得他们机会很大。" },
   { speaker: "Fan 1", line: "Agreed. Their offense is unstoppable when they're clicking.", lineZh: "同意。当他们手感火热时，进攻是不可阻挡的。" },
   { speaker: "Fan 2", line: "Have you been to a live game before?", lineZh: "你以前看过现场比赛吗？" },
   { speaker: "Fan 1", line: "Once, in Oakland. The energy was amazing.", lineZh: "一次，在奥克兰。现场气氛太棒了。" },
   { speaker: "Fan 2", line: "I want to go to Chase Center someday.", lineZh: "我以后想去大通中心看一次。" },
+  { speaker: "Fan 1", line: "🎟️ I'm saving up for tickets right now.", lineZh: "🎟️ 我现在正在存钱买票。" },
+  { speaker: "Fan 2", line: "Same here! Maybe we can go together.", lineZh: "我也是！也许我们可以一起去。" },
   { speaker: "Fan 1", line: "Who's your favorite player?", lineZh: "你最喜欢的球员是谁？" },
   { speaker: "Fan 2", line: "Obviously Curry! His shooting is out of this world.", lineZh: "当然是库里！他的投篮简直不属于这个世界。" },
   { speaker: "Fan 1", line: "Same here. I even have his jersey.", lineZh: "我也是。我甚至还有他的球衣。" },
   { speaker: "Fan 2", line: "Nice! Let's plan a road trip to see them play.", lineZh: "不错！我们计划一次客场观赛之旅吧。" },
+  { speaker: "Fan 1", line: "📸 I want to get a photo with him so bad!", lineZh: "📸 我超级想和他拍张照！" },
+  { speaker: "Fan 2", line: "Me too! One day, we'll make it happen.", lineZh: "我也是！总有一天我们会实现的。" },
 ];
 
 export const talkingWithPlayersDialogue: CurryDialogueLine[] = [
-  { speaker: "Interviewer", line: "Congratulations on the win! How does it feel?", lineZh: "恭喜获胜！感觉怎么样？" },
+  { speaker: "Interviewer", line: "🎤 Congratulations on the win! How does it feel?", lineZh: "🎤 恭喜获胜！感觉怎么样？" },
   { speaker: "Player", line: "It feels great. The team played really well tonight.", lineZh: "感觉很好。球队今晚表现得非常出色。" },
   { speaker: "Interviewer", line: "What was going through your mind on that final shot?", lineZh: "最后一投时你在想什么？" },
   { speaker: "Player", line: "Just stay confident and let it fly. My teammates set me up perfectly.", lineZh: "保持自信，投出去就好。我的队友为我创造了完美的机会。" },
@@ -1436,10 +1444,14 @@ export const talkingWithPlayersDialogue: CurryDialogueLine[] = [
   { speaker: "Player", line: "Hard work and repetition. Every single day.", lineZh: "努力和重复。每一天。" },
   { speaker: "Interviewer", line: "Do you have any advice for young players?", lineZh: "对年轻球员有什么建议吗？" },
   { speaker: "Player", line: "Believe in yourself. And never stop practicing.", lineZh: "相信你自己。并且永远不要停止练习。" },
+  { speaker: "Interviewer", line: "🏀 What's your favorite move on the court?", lineZh: "🏀 你场上最喜欢什么动作？" },
+  { speaker: "Player", line: "I love the pull-up three. It's my signature move.", lineZh: "我喜欢急停三分。那是我的标志性动作。" },
+  { speaker: "Interviewer", line: "One last question: what's next for you?", lineZh: "最后一个问题：你接下来有什么计划？" },
+  { speaker: "Player", line: "Keep getting better. That's always the goal.", lineZh: "继续变得更好。那一直都是目标。" },
 ];
 
 export const askingQuestionsDialogue: CurryDialogueLine[] = [
-  { speaker: "Fan", line: "Excuse me, could I ask you a quick question?", lineZh: "打扰一下，我能问你一个快速问题吗？" },
+  { speaker: "Fan", line: "🙋 Excuse me, could I ask you a quick question?", lineZh: "🙋 打扰一下，我能问你一个快速问题吗？" },
   { speaker: "Player", line: "Of course, go ahead.", lineZh: "当然，请说。" },
   { speaker: "Fan", line: "What's your pre-game routine like?", lineZh: "你的赛前准备 routine 是什么样的？" },
   { speaker: "Player", line: "I usually shoot around for about 30 minutes and visualize the game.", lineZh: "我通常会先投篮热身30分钟，然后在脑海中模拟比赛。" },
@@ -1451,10 +1463,12 @@ export const askingQuestionsDialogue: CurryDialogueLine[] = [
   { speaker: "Player", line: "The competition and the team chemistry. It's a family.", lineZh: "竞争和团队化学反应。它就像一个家庭。" },
   { speaker: "Fan", line: "One last question: what's next for you?", lineZh: "最后一个问题：你接下来有什么计划？" },
   { speaker: "Player", line: "Keep getting better. That's always the goal.", lineZh: "继续变得更好。那一直都是目标。" },
+  { speaker: "Fan", line: "Thank you so much. You're an inspiration!", lineZh: "非常感谢。你是一个激励人心的人！" },
+  { speaker: "Player", line: "Thank you. It means a lot. 🏀", lineZh: "谢谢。这对我意义重大。🏀" },
 ];
 
 export const gameCommentaryDialogue: CurryDialogueLine[] = [
-  { speaker: "Commentator", line: "And Curry brings the ball up the court...", lineZh: "库里带球推进前场……" },
+  { speaker: "Commentator", line: "🏟️ And Curry brings the ball up the court...", lineZh: "🏟️ 库里带球推进前场……" },
   { speaker: "Commentator", line: "He looks left, then right — double team coming!", lineZh: "他向左看，然后向右——双人包夹来了！" },
   { speaker: "Commentator", line: "He passes to Thompson in the corner...", lineZh: "他传给底角的汤普森……" },
   { speaker: "Commentator", line: "Thompson for three — BANG! What a shot!", lineZh: "汤普森三分出手——进了！多么漂亮的投篮！" },
@@ -1462,10 +1476,13 @@ export const gameCommentaryDialogue: CurryDialogueLine[] = [
   { speaker: "Commentator", line: "Curry with the crossover — he's got space!", lineZh: "库里使用 crossover——他找到空间了！" },
   { speaker: "Commentator", line: "He releases the three... SWISH! Nothing but net!", lineZh: "他投出三分……空心入网！" },
   { speaker: "Commentator", line: "The crowd is on their feet! This is why we love basketball!", lineZh: "观众都站起来了！这就是我们热爱篮球的原因！" },
+  { speaker: "Commentator", line: "⏱️ Ten seconds left on the clock. This is it!", lineZh: "⏱️ 比赛还剩十秒。关键时刻来了！" },
+  { speaker: "Commentator", line: "Curry for the win... HE HITS IT! BUZZER BEATER!", lineZh: "库里出手绝杀……他进了！压哨绝杀！" },
+  { speaker: "Commentator", line: "🏆 Unbelievable! The Warriors win the championship!", lineZh: "🏆 难以置信！勇士队赢得了总冠军！" },
 ];
 
 export const basketballSmallTalkDialogue: CurryDialogueLine[] = [
-  { speaker: "A", line: "Did you watch the game last night?", lineZh: "你昨晚看比赛了吗？" },
+  { speaker: "A", line: "📺 Did you watch the game last night?", lineZh: "📺 你昨晚看比赛了吗？" },
   { speaker: "B", line: "Yeah! That last quarter was insane.", lineZh: "看了！最后一节太疯狂了。" },
   { speaker: "A", line: "I couldn't believe that comeback.", lineZh: "我简直不敢相信那个逆转。" },
   { speaker: "B", line: "Right? I was on the edge of my seat the whole time.", lineZh: "是吧？我全程都紧张得不敢坐稳。" },
@@ -1473,10 +1490,12 @@ export const basketballSmallTalkDialogue: CurryDialogueLine[] = [
   { speaker: "B", line: "I'm planning to go to the home opener. You?", lineZh: "我计划去看首场主场比赛。你呢？" },
   { speaker: "A", line: "I'm thinking about it. Maybe we can go together.", lineZh: "我在考虑。也许我们可以一起去。" },
   { speaker: "B", line: "That sounds like a plan!", lineZh: "听起来不错！" },
-  { speaker: "A", line: "By the way, did you see Curry's new signature shoe?", lineZh: "对了，你看到库里新出的签名鞋了吗？" },
+  { speaker: "A", line: "👟 By the way, did you see Curry's new signature shoe?", lineZh: "👟 对了，你看到库里新出的签名鞋了吗？" },
   { speaker: "B", line: "Yes! I want a pair so badly.", lineZh: "看到了！我超级想要一双。" },
   { speaker: "A", line: "Let's save up and buy them together.", lineZh: "我们一起存钱买吧。" },
   { speaker: "B", line: "Deal! But only if you buy the snacks at the game.", lineZh: "成交！但前提是你在比赛时负责买零食。" },
+  { speaker: "A", line: "🍿 Deal! I'll get the popcorn and soda.", lineZh: "🍿 成交！我来买爆米花和汽水。" },
+  { speaker: "B", line: "Perfect. It's going to be the best game ever!", lineZh: "完美。那将是有史以来最棒的比赛！" },
 ];
 
 export const basketballMemoryPhrases = [

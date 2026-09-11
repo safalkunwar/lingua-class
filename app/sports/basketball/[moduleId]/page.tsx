@@ -121,13 +121,29 @@ export default function BasketballModulePage({
                     {showZh ? "Hide Chinese" : "Show Chinese"}
                   </Button>
                 </div>
+
+                <div className="flex flex-wrap gap-2">
+                  {dialogueData.dialogue.reduce<string[]>((acc, line) => {
+                    if (line.line && line.line.match(/^[^\p{L}\p{N}]+/u)) {
+                      const emojiMatch = line.line.match(/^(\p{Emoji_Presentation}|\p{Extended_Pictographic})+/u);
+                      if (emojiMatch) acc.push(emojiMatch[0]);
+                    }
+                    return acc;
+                  }, []).filter((v, i, a) => a.indexOf(v) === i).map((emoji, idx) => (
+                    <span key={idx} className="text-3xl">{emoji}</span>
+                  ))}
+                </div>
+
                 <div className="space-y-4">
                   {dialogueData.dialogue.map((line, idx) => (
-                    <div key={idx} className="rounded-lg border border-border/60 bg-muted/30 p-4">
+                    <div key={idx} className="rounded-xl border border-border/60 bg-gradient-to-br from-muted/40 to-muted/10 p-4 sm:p-5">
                       <div className="flex items-start gap-3">
+                        <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 text-lg text-white">
+                          {line.speaker[0]}
+                        </div>
                         <div className="flex-1">
-                          <p className="font-semibold">{line.speaker}</p>
-                          <p className="mt-1">{line.line}</p>
+                          <p className="font-semibold text-sm text-indigo-700 dark:text-indigo-300">{line.speaker}</p>
+                          <p className="mt-1 text-base leading-relaxed">{line.line.replace(/^[^\p{L}\p{N}]+/u, '')}</p>
                           {showZh && line.lineZh && (
                             <p className="mt-1 text-sm text-muted-foreground">{line.lineZh}</p>
                           )}
@@ -135,8 +151,8 @@ export default function BasketballModulePage({
                         <Button
                           variant="ghost"
                           size="icon"
-                          className="h-8 w-8"
-                          onClick={() => speak(line.line)}
+                          className="h-9 w-9 shrink-0"
+                          onClick={() => speak(line.line.replace(/^[^\p{L}\p{N}]+/u, ''))}
                         >
                           <Volume2 className="h-4 w-4" />
                         </Button>
