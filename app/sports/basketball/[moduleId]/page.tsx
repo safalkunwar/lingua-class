@@ -17,8 +17,17 @@ import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, BookOpen, Volume2, Lightbulb } from "lucide-react";
+import { ArrowLeft, BookOpen, Volume2, Lightbulb, ImageIcon } from "lucide-react";
 import { useState } from "react";
+
+const SCENE_IMAGES: Record<string, { emoji: string; title: string; color: string; image: string }> = {
+  "watching-a-game": { emoji: "🏟️", title: "Basketball Stadium", color: "from-blue-500 to-cyan-500", image: "https://images.unsplash.com/photo-1546519638-68e109498ffc?w=800&h=400&fit=crop" },
+  "talking-with-fans": { emoji: "🗣️", title: "Fans Talking", color: "from-teal-500 to-green-500", image: "https://images.unsplash.com/photo-1504457038037-3f0cc2549ee7?w=800&h=400&fit=crop" },
+  "talking-with-players": { emoji: "🤝", title: "Interview Moment", color: "from-indigo-500 to-purple-500", image: "https://images.unsplash.com/photo-1519861531473-92002639313cc?w=800&h=400&fit=crop" },
+  "asking-questions": { emoji: "🙋", title: "Asking Questions", color: "from-pink-500 to-rose-500", image: "https://images.unsplash.com/photo-1579952363873-27f3bde9be0f?w=800&h=400&fit=crop" },
+  "game-commentary": { emoji: "🎙️", title: "Commentary Booth", color: "from-amber-500 to-yellow-500", image: "https://images.unsplash.com/photo-1516541196182-54bd7741596a?w=800&h=400&fit=crop" },
+  "basketball-small-talk": { emoji: "💬", title: "Casual Chat", color: "from-lime-500 to-green-500", image: "https://images.unsplash.com/photo-1526232761682-d26e03ac148e?w=800&h=400&fit=crop" },
+};
 
 const MODULE_META: Record<string, { emoji: string; color: string; type: string }> = {
   "basketball-basics": { emoji: "🏀", color: "from-blue-400 to-cyan-500", type: "vocabulary" },
@@ -76,6 +85,7 @@ export default function BasketballModulePage({
   const meta = MODULE_META[module.id] || { emoji: "📚", color: "from-gray-400 to-slate-500", type: module.type };
   const dialogueData = DIALOGUE_MAP[module.id];
   const memoryPhrases = MEMORY_PHRASE_MAP[module.id];
+  const scene = SCENE_IMAGES[module.id];
 
   return (
     <div className="flex">
@@ -107,6 +117,29 @@ export default function BasketballModulePage({
           </div>
         </motion.div>
 
+        {scene && (
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.05 }} className="mb-8">
+            <div className="relative overflow-hidden rounded-2xl border border-border/60 shadow-lg">
+              <img
+                src={scene.image}
+                alt={scene.title}
+                className="h-56 w-full object-cover sm:h-72"
+                loading="lazy"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-6">
+                <div className="flex items-center gap-3">
+                  <span className="text-4xl">{scene.emoji}</span>
+                  <div>
+                    <h2 className="text-lg font-bold text-white sm:text-xl">{scene.title}</h2>
+                    <p className="text-sm text-white/80">Real basketball situation — practice speaking like a pro</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        )}
+
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}>
           <Card className="p-6 sm:p-8">
             {dialogueData ? (
@@ -122,21 +155,22 @@ export default function BasketballModulePage({
                   </Button>
                 </div>
 
-                <div className="flex flex-wrap gap-2">
-                  {dialogueData.dialogue.reduce<string[]>((acc, line) => {
-                    if (line.line && line.line.match(/^[^\p{L}\p{N}]+/u)) {
-                      const emojiMatch = line.line.match(/^(\p{Emoji_Presentation}|\p{Extended_Pictographic})+/u);
-                      if (emojiMatch) acc.push(emojiMatch[0]);
-                    }
-                    return acc;
-                  }, []).filter((v, i, a) => a.indexOf(v) === i).map((emoji, idx) => (
-                    <span key={idx} className="text-3xl">{emoji}</span>
-                  ))}
-                </div>
+                {scene && (
+                  <div className="flex items-center gap-2 rounded-lg border border-border/50 bg-muted/30 p-3 text-sm text-muted-foreground">
+                    <ImageIcon className="h-4 w-4" />
+                    Scene: {scene.title} — Listen to each line and repeat after the speaker.
+                  </div>
+                )}
 
                 <div className="space-y-4">
                   {dialogueData.dialogue.map((line, idx) => (
-                    <div key={idx} className="rounded-xl border border-border/60 bg-gradient-to-br from-muted/40 to-muted/10 p-4 sm:p-5">
+                    <motion.div
+                      key={idx}
+                      initial={{ opacity: 0, x: -10 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ delay: idx * 0.03 }}
+                      className="rounded-xl border border-border/60 bg-gradient-to-br from-muted/40 to-muted/10 p-4 sm:p-5"
+                    >
                       <div className="flex items-start gap-3">
                         <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 text-lg text-white">
                           {line.speaker[0]}
@@ -157,7 +191,7 @@ export default function BasketballModulePage({
                           <Volume2 className="h-4 w-4" />
                         </Button>
                       </div>
-                    </div>
+                    </motion.div>
                   ))}
                 </div>
 
