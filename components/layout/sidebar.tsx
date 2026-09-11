@@ -16,27 +16,32 @@ interface SidebarLink {
 export function StudentSidebar() {
   const pathname = usePathname();
 
-  const links: SidebarLink[] = [
-    { href: "/vocabulary", label: "Vocabulary", emoji: "📚" },
-    { href: "/word-book", label: "Word Book", emoji: "📖" },
-    { href: "/conversations", label: "Conversations", emoji: "💬" },
-    { href: "/everyday-english", label: "Everyday English", emoji: "🛠️" },
-    { href: "/rough-english", label: "Rough English", emoji: "⚠️" },
-    { href: "/daily-expressions", label: "Daily Expressions", emoji: "📚" },
-    { href: "/slang-academy", label: "Slang Academy", emoji: "🎭" },
-    { href: "/business-english", label: "Business English", emoji: "💼" },
-    { href: "/slang-module", label: "Slang Module", emoji: "🗣️" },
-    { href: "/image-guessing", label: "Image Guessing", emoji: "🖼️" },
-    { href: "/flashcards", label: "Flashcards", emoji: "🃏" },
-    { href: "/speaking", label: "Speaking", emoji: "🎤" },
-    { href: "/listening", label: "Listening", emoji: "🎧" },
-    { href: "/reading", label: "Reading", emoji: "📖" },
-    { href: "/writing", label: "Writing", emoji: "✍️" },
-    { href: "/english-boost", label: "English Boost", emoji: "🚀" },
-    { href: "/english-decoder", label: "English Decoder", emoji: "🧩" },
+   const links: SidebarLink[] = [
+     { href: "/vocabulary", label: "Vocabulary", emoji: "📚" },
+     { href: "/word-book", label: "Word Book", emoji: "📖" },
+     { href: "/conversations", label: "Conversations", emoji: "💬" },
+     { href: "/everyday-english", label: "Everyday English", emoji: "🛠️" },
+     { href: "/rough-english", label: "Rough English", emoji: "⚠️" },
+     { href: "/daily-expressions", label: "Daily Expressions", emoji: "📚" },
+     { href: "/slang-academy", label: "Slang Academy", emoji: "🎭" },
+     { href: "/business-english", label: "Business English", emoji: "💼" },
+     { href: "/slang-module", label: "Slang Module", emoji: "🗣️" },
+     { href: "/image-guessing", label: "Image Guessing", emoji: "🖼️" },
+     { href: "/flashcards", label: "Flashcards", emoji: "🃏" },
+     { href: "/speaking", label: "Speaking", emoji: "🎤" },
+     { href: "/listening", label: "Listening", emoji: "🎧" },
+     { href: "/reading", label: "Reading", emoji: "📖" },
+     { href: "/writing", label: "Writing", emoji: "✍️" },
+     { href: "/english-boost", label: "English Boost", emoji: "🚀" },
+     { href: "/english-decoder", label: "English Decoder", emoji: "🧩" },
      { href: "/english-survival-library", label: "English Survival Library", emoji: "📚" },
-     { href: "/sports", label: "Sports", emoji: "🏅" },
      { href: "/progress", label: "Progress", emoji: "📊" },
+   ];
+
+  const sportsLinks: SidebarLink[] = [
+    { href: "/sports", label: "Sports", emoji: "🏅" },
+    { href: "/sports/basketball", label: "Basketball", emoji: "🏀" },
+    { href: "/sports/basketball/curry-mission", label: "Meet Stephen Curry", emoji: "⭐" },
   ];
 
   return (
@@ -62,6 +67,29 @@ export function StudentSidebar() {
             </Link>
           );
         })}
+
+        <Separator className="my-4" />
+        <h3 className="mb-2 px-3 text-sm font-semibold text-muted-foreground uppercase tracking-wider">
+          Sports
+        </h3>
+        {sportsLinks.map((link) => {
+          const isActive = pathname === link.href || pathname.startsWith(link.href + "/");
+          return (
+            <Link key={link.href} href={link.href}>
+              <Button
+                variant={isActive ? "secondary" : "ghost"}
+                className={cn(
+                  "w-full justify-start gap-3",
+                  isActive && "bg-indigo-50 text-indigo-700 dark:bg-indigo-500/10 dark:text-indigo-300"
+                )}
+              >
+                <span className="text-lg">{link.emoji}</span>
+                {link.label}
+              </Button>
+            </Link>
+          );
+        })}
+
         <Separator className="my-4" />
         <Link href="/lesson-library">
           <Button variant="ghost" className="w-full justify-start gap-3">
