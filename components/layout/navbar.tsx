@@ -100,7 +100,7 @@ export function Navbar() {
           </Link>
         </div>
 
-        <nav className="hidden md:flex items-center gap-1">
+        <nav className="hidden md:flex items-center gap-1 overflow-x-auto">
           {links.map((link) => {
             const Icon = link.icon;
             const isActive = pathname === link.href || (link.href !== "/student" && pathname.startsWith(link.href));
@@ -110,7 +110,7 @@ export function Navbar() {
                   variant={isActive ? "secondary" : "ghost"}
                   size="sm"
                   className={cn(
-                    "gap-2",
+                    "gap-2 shrink-0",
                     isActive && "bg-indigo-50 text-indigo-700 dark:bg-indigo-500/10 dark:text-indigo-300"
                   )}
                 >
