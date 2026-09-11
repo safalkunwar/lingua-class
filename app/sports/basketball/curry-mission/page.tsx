@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { StudentSidebar } from "@/components/layout/sidebar";
 import {
   safeDialogue,
@@ -69,10 +69,45 @@ import {
   Gamepad2,
   Sparkles,
   BookOpen,
+  ArrowLeft,
+  Save,
+  Play,
+  RotateCcw,
+  ChevronRight,
 } from "lucide-react";
 import Link from "next/link";
 
 type CurryLevel = "safe" | "natural" | "confident";
+
+function speak(text: string, rate = 1) {
+  if (typeof window === "undefined" || !window.speechSynthesis) return;
+  window.speechSynthesis.cancel();
+  const utter = new SpeechSynthesisUtterance(text);
+  utter.lang = "en-US";
+  utter.rate = rate;
+  window.speechSynthesis.speak(utter);
+}
+
+function useSavedSentences() {
+  const [saved, setSaved] = useState<string[]>([]);
+
+  useEffect(() => {
+    try {
+      const raw = localStorage.getItem("curry-saved-sentences");
+      if (raw) setSaved(JSON.parse(raw));
+    } catch {}
+  }, []);
+
+  const toggleSave = (sentence: string) => {
+    setSaved((prev) => {
+      const next = prev.includes(sentence) ? prev.filter((s) => s !== sentence) : [...prev, sentence];
+      localStorage.setItem("curry-saved-sentences", JSON.stringify(next));
+      return next;
+    });
+  };
+
+  return { saved, toggleSave };
+}
 
 export default function CurryMissionPage() {
   const [selectedLevel, setSelectedLevel] = useState<CurryLevel>("safe");
@@ -85,6 +120,11 @@ export default function CurryMissionPage() {
     basketball: 0,
     emergency: 0,
   });
+  const [quizActive, setQuizActive] = useState(false);
+  const [quizIndex, setQuizIndex] = useState(0);
+  const [quizScore, setQuizScore] = useState(0);
+  const [quizFinished, setQuizFinished] = useState(false);
+  const { saved, toggleSave } = useSavedSentences();
 
   const dialogues: Record<CurryLevel, typeof safeDialogue> = {
     safe: safeDialogue,
@@ -116,6 +156,43 @@ export default function CurryMissionPage() {
       readinessScores.emergency) /
       5
   );
+
+  const quizQuestions = [
+    { question: "Best default autograph request?", options: ["Give autograph.", "Would you mind signing this for me, please?", "Sign this."], correct: 1 },
+    { question: "What does 'make it out to May' mean?", options: ["Make the autograph personal for May", "Write 'out to May'", "Make it fast"], correct: 0 },
+    { question: "If you don't understand Curry, you should:", options: ["Nod and smile", "Say 'Sorry, I didn't catch that'", "Change the topic"], correct: 1 },
+    { question: "Which is natural?", options: ["I very like your basketball.", "I really like watching you play.", "I like you very much."], correct: 1 },
+    { question: "G-Q-R-A-T stands for:", options: ["Greet, Question, React, Autograph, Thank", "Go, Quick, Run, Ask, Talk", "Good, Question, Reply, Ask, Thank"], correct: 0 },
+    { question: "If staff says no autographs:", options: ["Argue politely", "Say 'No worries. Thank you anyway!'", "Keep asking"], correct: 1 },
+    { question: "Best 10-second mode greeting:", options: ["Hi! Nice to meet you.", "Steph! I'm a huge fan. It's amazing to meet you.", "Hello Curry."], correct: 1 },
+    { question: "How to ask for a photo?", options: ["Take photo?", "Would it be okay if we took a quick photo?", "Photo now!"], correct: 1 },
+  ];
+
+  const startQuiz = () => {
+    setQuizActive(true);
+    setQuizIndex(0);
+    setQuizScore(0);
+    setQuizFinished(false);
+  };
+
+  const answerQuiz = (optionIndex: number) => {
+    const current = quizQuestions[quizIndex];
+    if (optionIndex === current.correct) {
+      setQuizScore((prev) => prev + 1);
+    }
+    if (quizIndex + 1 < quizQuestions.length) {
+      setQuizIndex((prev) => prev + 1);
+    } else {
+      setQuizFinished(true);
+    }
+  };
+
+  const resetQuiz = () => {
+    setQuizActive(false);
+    setQuizIndex(0);
+    setQuizScore(0);
+    setQuizFinished(false);
+  };
 
   return (
     <div className="flex">
@@ -150,6 +227,38 @@ export default function CurryMissionPage() {
           <p className="text-xs text-muted-foreground mt-2">
             微笑 → 打招呼 → 说一句好话 → 问一个问题 → 要签名/拍照 → 感谢 → 自然离开
           </p>
+
+          {saved.length > 0 && (
+            <div className="mt-4 inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-yellow-50 dark:bg-yellow-950/30 border border-yellow-200 text-sm">
+              <Save className="w-4 h-4 text-yellow-600" />
+              <span className="font-medium text-yellow-700 dark:text-yellow-300">{saved.length} sentence{saved.length !== 1 ? "s" : ""} saved</span>
+            </div>
+          )}
+        </motion.div>
+
+        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}>
+          <Card className="p-4 sm:p-6 mb-6">
+            <h3 className="text-lg font-bold mb-3">📊 Curry Meeting Readiness</h3>
+            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
+              {curryMeetingReadiness.metrics.map((metric) => (
+                <div key={metric.label} className="p-3 rounded bg-muted/50 text-center">
+                  <div className="text-2xl mb-1">{metric.icon}</div>
+                  <p className="text-xs text-muted-foreground mb-1">{metric.labelZh}</p>
+                  <p className="text-sm font-medium">{metric.label}</p>
+                </div>
+              ))}
+            </div>
+            <div className="mt-4">
+              <div className="flex items-center justify-between mb-1">
+                <span className="text-sm font-medium">Overall readiness</span>
+                <span className="text-sm text-muted-foreground">{overallReadiness}%</span>
+              </div>
+              <Progress value={overallReadiness} className="h-3" />
+              <p className="text-xs text-muted-foreground mt-1">
+                {overallReadiness >= 80 ? "🔥 You're ready, May!" : overallReadiness >= 50 ? "💪 Keep practicing!" : "📚 Review the mission first."}
+              </p>
+            </div>
+          </Card>
         </motion.div>
 
         <Tabs defaultValue="emergency" className="w-full">
@@ -165,6 +274,7 @@ export default function CurryMissionPage() {
             <TabsTrigger value="emergencies" className="gap-2"><AlertTriangle className="w-4 h-4" />If...</TabsTrigger>
             <TabsTrigger value="drills" className="gap-2"><Target className="w-4 h-4" />Drills</TabsTrigger>
             <TabsTrigger value="roleplay" className="gap-2"><Users className="w-4 h-4" />Roleplay</TabsTrigger>
+            <TabsTrigger value="quiz" className="gap-2"><BookOpen className="w-4 h-4" />Quiz</TabsTrigger>
             <TabsTrigger value="final" className="gap-2"><Trophy className="w-4 h-4" />Final Exam</TabsTrigger>
           </TabsList>
 
@@ -187,8 +297,23 @@ export default function CurryMissionPage() {
                     { en: "Thank you so much. It was amazing meeting you!", zh: "非常感谢。见到你太棒了！" },
                   ].map((item, idx) => (
                     <Card key={idx} className="p-4">
-                      <p className="font-medium text-lg">{item.en}</p>
-                      <p className="text-muted-foreground">{item.zh}</p>
+                      <div className="flex items-start gap-3">
+                        <div className="flex-1">
+                          <p className="font-medium text-lg">{item.en}</p>
+                          <p className="text-muted-foreground">{item.zh}</p>
+                        </div>
+                        <div className="flex gap-2 shrink-0">
+                          <Button size="sm" variant="outline" onClick={() => speak(item.en)} title="Play normal">
+                            <Play className="w-4 h-4" />
+                          </Button>
+                          <Button size="sm" variant="outline" onClick={() => speak(item.en, 0.7)} title="Play slow">
+                            <Volume2 className="w-4 h-4" />
+                          </Button>
+                          <Button size="sm" variant={saved.includes(item.en) ? "default" : "outline"} onClick={() => toggleSave(item.en)} title="Save">
+                            <Save className="w-4 h-4" />
+                          </Button>
+                        </div>
+                      </div>
                     </Card>
                   ))}
                 </div>
@@ -233,7 +358,7 @@ export default function CurryMissionPage() {
                           : "bg-muted/50"
                       }`}
                     >
-                      <div className="flex items-center gap-2 mb-1">
+                       <div className="flex items-center gap-2 mb-1">
                         <Badge variant="secondary" className="text-xs">
                           {line.speaker === "May" ? "👤 May" : line.speaker === "Curry" ? "🏀 Curry" : "📢 " + line.speaker}
                         </Badge>
@@ -245,6 +370,19 @@ export default function CurryMissionPage() {
                       </div>
                       <p className="font-medium">{line.line}</p>
                       {line.lineZh && <p className="text-sm text-muted-foreground">{line.lineZh}</p>}
+                      <div className="flex gap-2 mt-2">
+                        <Button size="sm" variant="ghost" onClick={() => speak(line.line)}>
+                          <Play className="w-3 h-3 mr-1" /> Play
+                        </Button>
+                        <Button size="sm" variant="ghost" onClick={() => speak(line.line, 0.7)}>
+                          <Volume2 className="w-3 h-3 mr-1" /> Slow
+                        </Button>
+                        {line.speaker === "May" && (
+                          <Button size="sm" variant={saved.includes(line.line) ? "default" : "ghost"} onClick={() => toggleSave(line.line)}>
+                            <Save className="w-3 h-3 mr-1" /> {saved.includes(line.line) ? "Saved" : "Save"}
+                          </Button>
+                        )}
+                      </div>
                     </div>
                   ))}
                 </div>
@@ -849,6 +987,69 @@ export default function CurryMissionPage() {
                   </Card>
                 ))}
               </div>
+            </motion.div>
+          </TabsContent>
+
+          <TabsContent value="quiz">
+            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+              <Card className="p-6 sm:p-8">
+                <div className="flex items-center gap-3 mb-4">
+                  <BookOpen className="w-8 h-8 text-indigo-500" />
+                  <h2 className="text-2xl font-bold">📝 Curry Mission Quiz</h2>
+                </div>
+                <p className="text-muted-foreground mb-6">
+                  Test what you learned about meeting Curry, basketball English, and fan culture.
+                </p>
+
+                {!quizActive ? (
+                  <div className="text-center py-8">
+                    <p className="text-lg font-medium mb-2">Ready to test your knowledge?</p>
+                    <p className="text-sm text-muted-foreground mb-6">8 questions about the Curry mission and basketball English.</p>
+                    <Button onClick={startQuiz} size="lg" className="gap-2">
+                      Start Quiz <ChevronRight className="w-4 h-4" />
+                    </Button>
+                  </div>
+                ) : quizFinished ? (
+                  <div className="text-center py-8">
+                    <Trophy className="w-16 h-16 mx-auto mb-4 text-yellow-500" />
+                    <h3 className="text-2xl font-bold mb-2">Quiz Complete!</h3>
+                    <p className="text-lg mb-2">You scored {quizScore} out of {quizQuestions.length}</p>
+                    <p className="text-muted-foreground mb-6">
+                      {quizScore === quizQuestions.length ? "Perfect! You're Curry meeting ready! 🏆" : quizScore >= 6 ? "Great job! Keep practicing! 💪" : "Review the mission and try again! 📚"}
+                    </p>
+                    <Button onClick={resetQuiz} variant="outline" className="gap-2">
+                      <RotateCcw className="w-4 h-4" /> Retry Quiz
+                    </Button>
+                  </div>
+                ) : (
+                  <div className="max-w-2xl mx-auto">
+                    <div className="mb-6">
+                      <div className="flex items-center justify-between mb-2">
+                        <span className="text-sm text-muted-foreground">Question {quizIndex + 1} of {quizQuestions.length}</span>
+                        <span className="text-sm font-medium">Score: {quizScore}</span>
+                      </div>
+                      <Progress value={((quizIndex + 1) / quizQuestions.length) * 100} className="h-2" />
+                    </div>
+
+                    <Card className="p-6 mb-6">
+                      <p className="text-xl font-medium mb-6">{quizQuestions[quizIndex].question}</p>
+                      <div className="space-y-3">
+                        {quizQuestions[quizIndex].options.map((option, optionIdx) => (
+                          <Button
+                            key={optionIdx}
+                            variant="outline"
+                            className="w-full text-left justify-start h-auto py-3 px-4"
+                            onClick={() => answerQuiz(optionIdx)}
+                          >
+                            <span className="mr-3 text-lg">{String.fromCharCode(65 + optionIdx)}.</span>
+                            {option}
+                          </Button>
+                        ))}
+                      </div>
+                    </Card>
+                  </div>
+                )}
+              </Card>
             </motion.div>
           </TabsContent>
 

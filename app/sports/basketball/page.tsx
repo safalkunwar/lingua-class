@@ -25,6 +25,21 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { BookOpen, Mic, MessageCircle, Volume2, Star } from "lucide-react";
 import Link from "next/link";
 
+const MODULE_ROUTES: Record<string, string> = {
+  "basketball-basics": "/sports/basketball/basketball-basics",
+  "basketball-vocabulary": "/sports/basketball/basketball-vocabulary",
+  "basketball-positions": "/sports/basketball/basketball-positions",
+  "basketball-slang": "/sports/basketball/basketball-slang",
+  "watching-a-game": "/sports/basketball/watching-a-game",
+  "talking-with-fans": "/sports/basketball/talking-with-fans",
+  "talking-with-players": "/sports/basketball/talking-with-players",
+  "asking-questions": "/sports/basketball/asking-questions",
+  "basketball-pronunciation": "/sports/basketball/basketball-pronunciation",
+  "game-commentary": "/sports/basketball/game-commentary",
+  "basketball-small-talk": "/sports/basketball/basketball-small-talk",
+  "meet-stephen-curry": "/sports/basketball/curry-mission",
+};
+
 export default function BasketballPage() {
   return (
     <div className="flex">
@@ -68,19 +83,21 @@ export default function BasketballPage() {
               <p className="text-muted-foreground mb-6">篮球基础词汇 — 球场术语</p>
               <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                 {basketballCourtVocabulary.map((item) => (
-                  <Card key={item.id} className="p-4">
-                    <div className="flex items-start gap-3">
-                      <span className="text-2xl">{item.emoji}</span>
-                      <div className="flex-1 min-w-0">
-                        <h3 className="font-bold text-base">{item.english}</h3>
-                        <p className="text-xs text-muted-foreground">{item.chinese} · {item.pinyin}</p>
-                        <p className="text-xs text-muted-foreground mt-1 italic">{item.phonetic}</p>
-                        <p className="text-sm mt-2">{item.definitionZh}</p>
-                        <p className="text-sm text-muted-foreground mt-1 italic">"{item.exampleEn}"</p>
-                        <p className="text-xs text-muted-foreground">"{item.exampleZh}"</p>
+                  <Link key={item.id} href={MODULE_ROUTES["basketball-basics"]}>
+                    <Card className="p-4 hover:shadow-lg transition-all cursor-pointer h-full hover:border-primary/50 group">
+                      <div className="flex items-start gap-3">
+                        <span className="text-2xl">{item.emoji}</span>
+                        <div className="flex-1 min-w-0">
+                          <h3 className="font-bold text-base group-hover:text-primary transition-colors">{item.english}</h3>
+                          <p className="text-xs text-muted-foreground">{item.chinese} · {item.pinyin}</p>
+                          <p className="text-xs text-muted-foreground mt-1 italic">{item.phonetic}</p>
+                          <p className="text-sm mt-2">{item.definitionZh}</p>
+                          <p className="text-sm text-muted-foreground mt-1 italic">"{item.exampleEn}"</p>
+                          <p className="text-xs text-muted-foreground">"{item.exampleZh}"</p>
+                        </div>
                       </div>
-                    </div>
-                  </Card>
+                    </Card>
+                  </Link>
                 ))}
               </div>
             </motion.div>
@@ -92,19 +109,21 @@ export default function BasketballPage() {
               <p className="text-muted-foreground mb-6">篮球词汇 — 关键动作</p>
               <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                 {basketballActionVocabulary.map((item) => (
-                  <Card key={item.id} className="p-4">
-                    <div className="flex items-start gap-3">
-                      <span className="text-2xl">{item.emoji}</span>
-                      <div className="flex-1 min-w-0">
-                        <h3 className="font-bold text-base">{item.english}</h3>
-                        <p className="text-xs text-muted-foreground">{item.chinese} · {item.pinyin}</p>
-                        <p className="text-xs text-muted-foreground mt-1 italic">{item.phonetic}</p>
-                        <p className="text-sm mt-2">{item.definitionZh}</p>
-                        <p className="text-sm text-muted-foreground mt-1 italic">"{item.exampleEn}"</p>
-                        <p className="text-xs text-muted-foreground">"{item.exampleZh}"</p>
+                  <Link key={item.id} href={MODULE_ROUTES["basketball-vocabulary"]}>
+                    <Card className="p-4 hover:shadow-lg transition-all cursor-pointer h-full hover:border-primary/50 group">
+                      <div className="flex items-start gap-3">
+                        <span className="text-2xl">{item.emoji}</span>
+                        <div className="flex-1 min-w-0">
+                          <h3 className="font-bold text-base group-hover:text-primary transition-colors">{item.english}</h3>
+                          <p className="text-xs text-muted-foreground">{item.chinese} · {item.pinyin}</p>
+                          <p className="text-xs text-muted-foreground mt-1 italic">{item.phonetic}</p>
+                          <p className="text-sm mt-2">{item.definitionZh}</p>
+                          <p className="text-sm text-muted-foreground mt-1 italic">"{item.exampleEn}"</p>
+                          <p className="text-xs text-muted-foreground">"{item.exampleZh}"</p>
+                        </div>
                       </div>
-                    </div>
-                  </Card>
+                    </Card>
+                  </Link>
                 ))}
               </div>
             </motion.div>
@@ -116,19 +135,21 @@ export default function BasketballPage() {
               <p className="text-muted-foreground mb-6">重要位置 — 简单解释</p>
               <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                 {basketballPositionVocabulary.map((item) => (
-                  <Card key={item.id} className="p-4">
-                    <div className="flex items-start gap-3">
-                      <span className="text-2xl">{item.emoji}</span>
-                      <div className="flex-1 min-w-0">
-                        <h3 className="font-bold text-base">{item.english}</h3>
-                        <p className="text-xs text-muted-foreground">{item.chinese} · {item.pinyin}</p>
-                        <p className="text-xs text-muted-foreground mt-1 italic">{item.phonetic}</p>
-                        <p className="text-sm mt-2">{item.definitionZh}</p>
-                        <p className="text-sm text-muted-foreground mt-1 italic">"{item.exampleEn}"</p>
-                        <p className="text-xs text-muted-foreground">"{item.exampleZh}"</p>
+                  <Link key={item.id} href={MODULE_ROUTES["basketball-positions"]}>
+                    <Card className="p-4 hover:shadow-lg transition-all cursor-pointer h-full hover:border-primary/50 group">
+                      <div className="flex items-start gap-3">
+                        <span className="text-2xl">{item.emoji}</span>
+                        <div className="flex-1 min-w-0">
+                          <h3 className="font-bold text-base group-hover:text-primary transition-colors">{item.english}</h3>
+                          <p className="text-xs text-muted-foreground">{item.chinese} · {item.pinyin}</p>
+                          <p className="text-xs text-muted-foreground mt-1 italic">{item.phonetic}</p>
+                          <p className="text-sm mt-2">{item.definitionZh}</p>
+                          <p className="text-sm text-muted-foreground mt-1 italic">"{item.exampleEn}"</p>
+                          <p className="text-xs text-muted-foreground">"{item.exampleZh}"</p>
+                        </div>
                       </div>
-                    </div>
-                  </Card>
+                    </Card>
+                  </Link>
                 ))}
               </div>
             </motion.div>
@@ -140,21 +161,23 @@ export default function BasketballPage() {
               <p className="text-muted-foreground mb-6">像篮球迷一样说话 — 俚语</p>
               <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                 {basketballSlang.map((item) => (
-                  <Card key={item.id} className="p-4">
-                    <div className="flex items-start gap-3">
-                      <span className="text-2xl">🏀</span>
-                      <div className="flex-1 min-w-0">
-                        <h3 className="font-bold text-base">{item.term}</h3>
-                        <p className="text-xs text-muted-foreground">{item.chinese}</p>
-                        <p className="text-sm mt-1">{item.meaningZh}</p>
-                        <p className="text-sm text-muted-foreground mt-1 italic">"{item.exampleEn}"</p>
-                        <p className="text-xs text-muted-foreground">"{item.exampleZh}"</p>
-                        {item.warning && (
-                          <p className="text-xs text-amber-600 mt-2 font-medium">⚠️ {item.warningZh || item.warning}</p>
-                        )}
+                  <Link key={item.id} href={MODULE_ROUTES["basketball-slang"]}>
+                    <Card className="p-4 hover:shadow-lg transition-all cursor-pointer h-full hover:border-primary/50 group">
+                      <div className="flex items-start gap-3">
+                        <span className="text-2xl">🏀</span>
+                        <div className="flex-1 min-w-0">
+                          <h3 className="font-bold text-base group-hover:text-primary transition-colors">{item.term}</h3>
+                          <p className="text-xs text-muted-foreground">{item.chinese}</p>
+                          <p className="text-sm mt-1">{item.meaningZh}</p>
+                          <p className="text-sm text-muted-foreground mt-1 italic">"{item.exampleEn}"</p>
+                          <p className="text-xs text-muted-foreground">"{item.exampleZh}"</p>
+                          {item.warning && (
+                            <p className="text-xs text-amber-600 mt-2 font-medium">⚠️ {item.warningZh || item.warning}</p>
+                          )}
+                        </div>
                       </div>
-                    </div>
-                  </Card>
+                    </Card>
+                  </Link>
                 ))}
               </div>
 
