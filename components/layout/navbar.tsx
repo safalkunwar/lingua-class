@@ -25,7 +25,6 @@ import {
   User,
   Shield,
   Rocket,
-  Puzzle,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { usePreferencesStore } from "@/stores/preferences-store";
@@ -43,9 +42,8 @@ const studentLinks = [
   { href: "/listening", label: "Listening", icon: Headphones },
   { href: "/reading", label: "Reading", icon: BookText },
   { href: "/writing", label: "Writing", icon: PenTool },
-  { href: "/english-boost", label: "English Boost", icon: Rocket },
-  { href: "/english-decoder", label: "English Decoder", icon: Puzzle },
-  { href: "/progress", label: "Progress", icon: BarChart3 },
+      { href: "/english-boost", label: "English Boost", icon: Rocket },
+      { href: "/progress", label: "Progress", icon: BarChart3 },
 ];
 
 const teacherLinks = [
