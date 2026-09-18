@@ -2,7 +2,22 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { GraduationCap } from "lucide-react";
+import {
+  GraduationCap,
+  BookOpen,
+  MessageCircle,
+  BookMarked,
+  MessageSquare,
+  Briefcase,
+  Image,
+  Layers,
+  Mic,
+  Headphones,
+  BookText,
+  PenTool,
+  Rocket,
+  Trophy,
+} from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
@@ -10,34 +25,33 @@ import { Separator } from "@/components/ui/separator";
 interface SidebarLink {
   href: string;
   label: string;
-  emoji?: string;
+  icon: React.ComponentType<{ className?: string }>;
 }
 
 export function StudentSidebar() {
   const pathname = usePathname();
 
-   const links: SidebarLink[] = [
-     { href: "/vocabulary", label: "Vocabulary", emoji: "📚" },
-     { href: "/word-book", label: "Word Book", emoji: "📖" },
-     { href: "/conversations", label: "Conversations", emoji: "💬" },
-{ href: "/everyday-english", label: "Everyday English", emoji: "🛠️" },
-      { href: "/daily-expressions", label: "Daily Expressions", emoji: "📚" },
-     { href: "/slang-academy", label: "Slang Academy", emoji: "🎭" },
-     { href: "/business-english", label: "Business English", emoji: "💼" },
-     { href: "/image-guessing", label: "Image Guessing", emoji: "🖼️" },
-     { href: "/flashcards", label: "Flashcards", emoji: "🃏" },
-     { href: "/speaking", label: "Speaking", emoji: "🎤" },
-     { href: "/listening", label: "Listening", emoji: "🎧" },
-     { href: "/reading", label: "Reading", emoji: "📖" },
-     { href: "/writing", label: "Writing", emoji: "✍️" },
-{ href: "/english-boost", label: "English Boost", emoji: "🚀" },
-      { href: "/progress", label: "Progress", emoji: "📊" },
-   ];
+  const links: SidebarLink[] = [
+    { href: "/vocabulary", label: "Vocabulary", icon: BookOpen },
+    { href: "/word-book", label: "Word Book", icon: BookOpen },
+    { href: "/conversations", label: "Conversations", icon: MessageCircle },
+    { href: "/everyday-english", label: "Everyday English", icon: BookMarked },
+    { href: "/daily-expressions", label: "Daily Expressions", icon: BookMarked },
+    { href: "/slang-academy", label: "Slang Academy", icon: MessageSquare },
+    { href: "/business-english", label: "Business English", icon: Briefcase },
+    { href: "/image-guessing", label: "Image Guessing", icon: Image },
+    { href: "/flashcards", label: "Flashcards", icon: Layers },
+    { href: "/speaking", label: "Speaking", icon: Mic },
+    { href: "/listening", label: "Listening", icon: Headphones },
+    { href: "/reading", label: "Reading", icon: BookText },
+    { href: "/writing", label: "Writing", icon: PenTool },
+    { href: "/english-boost", label: "English Boost", icon: Rocket },
+  ];
 
   const sportsLinks: SidebarLink[] = [
-    { href: "/sports", label: "Sports", emoji: "🏅" },
-    { href: "/sports/basketball", label: "Basketball", emoji: "🏀" },
-    { href: "/sports/basketball/curry-mission", label: "Meet Stephen Curry", emoji: "⭐" },
+    { href: "/sports", label: "Sports", icon: Trophy },
+    { href: "/sports/basketball", label: "Basketball", icon: Trophy },
+    { href: "/sports/basketball/curry-mission", label: "Meet Stephen Curry", icon: Trophy },
   ];
 
   return (
@@ -47,6 +61,7 @@ export function StudentSidebar() {
           Learning Tools
         </h3>
         {links.map((link) => {
+          const Icon = link.icon;
           const isActive = pathname === link.href || pathname.startsWith(link.href + "/");
           return (
             <Link key={link.href} href={link.href}>
@@ -57,7 +72,7 @@ export function StudentSidebar() {
                   isActive && "bg-indigo-50 text-indigo-700 dark:bg-indigo-500/10 dark:text-indigo-300"
                 )}
               >
-                <span className="text-lg">{link.emoji}</span>
+                <Icon className="h-4 w-4" />
                 {link.label}
               </Button>
             </Link>
@@ -69,6 +84,7 @@ export function StudentSidebar() {
           Sports
         </h3>
         {sportsLinks.map((link) => {
+          const Icon = link.icon;
           const isActive = pathname === link.href || pathname.startsWith(link.href + "/");
           return (
             <Link key={link.href} href={link.href}>
@@ -79,7 +95,7 @@ export function StudentSidebar() {
                   isActive && "bg-indigo-50 text-indigo-700 dark:bg-indigo-500/10 dark:text-indigo-300"
                 )}
               >
-                <span className="text-lg">{link.emoji}</span>
+                <Icon className="h-4 w-4" />
                 {link.label}
               </Button>
             </Link>
@@ -102,9 +118,9 @@ export function TeacherSidebar() {
   const pathname = usePathname();
 
   const links: SidebarLink[] = [
-    { href: "/teacher", label: "Dashboard", emoji: "🏠" },
-    { href: "/classroom", label: "Classroom", emoji: "🏫" },
-    { href: "/vocabulary", label: "Lesson Content", emoji: "📚" },
+    { href: "/teacher", label: "Dashboard", icon: GraduationCap },
+    { href: "/classroom", label: "Classroom", icon: GraduationCap },
+    { href: "/vocabulary", label: "Lesson Content", icon: BookOpen },
   ];
 
   return (
@@ -114,6 +130,7 @@ export function TeacherSidebar() {
           Teacher Tools
         </h3>
         {links.map((link) => {
+          const Icon = link.icon;
           const isActive = pathname === link.href;
           return (
             <Link key={link.href} href={link.href}>
@@ -124,7 +141,7 @@ export function TeacherSidebar() {
                   isActive && "bg-indigo-50 text-indigo-700 dark:bg-indigo-500/10 dark:text-indigo-300"
                 )}
               >
-                <span className="text-lg">{link.emoji}</span>
+                <Icon className="h-4 w-4" />
                 {link.label}
               </Button>
             </Link>

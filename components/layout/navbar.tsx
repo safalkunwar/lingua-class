@@ -5,26 +5,13 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
   GraduationCap,
-  BookOpen,
-  MessageCircle,
-  Mic,
-  Headphones,
-  BookText,
-  PenTool,
+  LayoutDashboard,
   BarChart3,
   Settings,
   Sun,
   Moon,
-  MonitorPlay,
-  LayoutDashboard,
-  Layers,
-  MessageSquare,
-  BookMarked,
-  AlertTriangle,
   LogOut,
   User,
-  Shield,
-  Rocket,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { usePreferencesStore } from "@/stores/preferences-store";
@@ -33,23 +20,11 @@ import { MobileNav } from "@/components/layout/mobile-nav";
 
 const studentLinks = [
   { href: "/student", label: "Dashboard", icon: LayoutDashboard },
-  { href: "/vocabulary", label: "Vocabulary", icon: BookOpen },
-  { href: "/flashcards", label: "Flashcards", icon: Layers },
-  { href: "/conversations", label: "Conversations", icon: MessageCircle },
-  { href: "/daily-expressions", label: "Daily Expressions", icon: BookMarked },
-  { href: "/slang-academy", label: "Slang Academy", icon: MessageSquare },
-  { href: "/speaking", label: "Speaking", icon: Mic },
-  { href: "/listening", label: "Listening", icon: Headphones },
-  { href: "/reading", label: "Reading", icon: BookText },
-  { href: "/writing", label: "Writing", icon: PenTool },
-      { href: "/english-boost", label: "English Boost", icon: Rocket },
-      { href: "/progress", label: "Progress", icon: BarChart3 },
+  { href: "/progress", label: "Progress", icon: BarChart3 },
 ];
 
 const teacherLinks = [
   { href: "/teacher", label: "Dashboard", icon: LayoutDashboard },
-  { href: "/classroom", label: "Classroom", icon: MonitorPlay },
-  { href: "/vocabulary", label: "Lessons", icon: BookOpen },
   { href: "/progress", label: "Progress", icon: BarChart3 },
 ];
 
@@ -100,7 +75,7 @@ export function Navbar() {
         <nav className="hidden md:flex items-center gap-1 overflow-x-auto">
           {links.map((link) => {
             const Icon = link.icon;
-            const isActive = pathname === link.href || (link.href !== "/student" && pathname.startsWith(link.href));
+            const isActive = pathname === link.href || (link.href !== "/student" && link.href !== "/admin" && pathname.startsWith(link.href));
             return (
               <Link key={link.href} href={link.href}>
                 <Button
@@ -120,18 +95,6 @@ export function Navbar() {
         </nav>
 
         <div className="flex items-center gap-1 sm:gap-2">
-          {user?.role === "admin" && (
-            <Link href="/admin">
-              <Button
-                variant={pathname.startsWith("/admin") ? "secondary" : "ghost"}
-                size="sm"
-                className="gap-2 text-rose-600 dark:text-rose-400"
-              >
-                <Shield className="h-4 w-4" />
-                <span className="hidden lg:inline">Admin</span>
-              </Button>
-            </Link>
-          )}
           <Button variant="ghost" size="icon" onClick={toggleTheme} className="h-9 w-9">
             {theme === "dark" ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
           </Button>

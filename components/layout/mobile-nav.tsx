@@ -3,30 +3,18 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { GraduationCap, Shield, MonitorPlay, LayoutDashboard, Layers, MessageSquare, BookMarked, AlertTriangle, BookOpen, Mic, Headphones, BookText, PenTool, BarChart3, Rocket } from "lucide-react";
+import { GraduationCap, Shield, LayoutDashboard, BarChart3 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
 
 const studentLinks = [
   { href: "/student", label: "Dashboard", icon: LayoutDashboard },
-  { href: "/vocabulary", label: "Vocabulary", icon: BookOpen },
-  { href: "/flashcards", label: "Flashcards", icon: Layers },
-  { href: "/conversations", label: "Conversations", icon: MessageSquare },
-  { href: "/daily-expressions", label: "Daily Expressions", icon: BookMarked },
-  { href: "/slang-academy", label: "Slang Academy", icon: MessageSquare },
-  { href: "/speaking", label: "Speaking", icon: Mic },
-  { href: "/listening", label: "Listening", icon: Headphones },
-  { href: "/reading", label: "Reading", icon: BookText },
-  { href: "/writing", label: "Writing", icon: PenTool },
-{ href: "/english-boost", label: "English Boost", icon: Rocket },
-      { href: "/progress", label: "Progress", icon: BarChart3 },
+  { href: "/progress", label: "Progress", icon: BarChart3 },
 ];
 
 const teacherLinks = [
   { href: "/teacher", label: "Dashboard", icon: LayoutDashboard },
-  { href: "/classroom", label: "Classroom", icon: MonitorPlay },
-  { href: "/vocabulary", label: "Lessons", icon: BookOpen },
   { href: "/progress", label: "Progress", icon: BarChart3 },
 ];
 

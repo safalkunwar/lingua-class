@@ -8,6 +8,7 @@ import { EverydayEnglishSection, PatternEntry } from "@/types/everyday-english";
 import { PatternCard } from "@/components/everyday-english/PatternCard";
 import { ExerciseCard } from "@/components/everyday-english/PracticeExercise";
 import { TeacherModePanel } from "@/components/everyday-english/TeacherModePanel";
+import { PresentationModeView } from "@/components/everyday-english/PresentationModeView";
 import { Search, GraduationCap, BookOpen } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import Link from "next/link";
@@ -20,6 +21,7 @@ interface SectionViewProps {
 export function SectionView({ section, onPatternClick }: SectionViewProps) {
   const [search, setSearch] = useState("");
   const [showTeacherMode, setShowTeacherMode] = useState(false);
+  const [showPresentationMode, setShowPresentationMode] = useState(false);
 
   const filteredPatterns = section.patterns.filter((pattern) => {
     if (!search) return true;
@@ -66,49 +68,67 @@ export function SectionView({ section, onPatternClick }: SectionViewProps) {
             {showTeacherMode ? "Hide" : "Show"} Teacher Mode
           </Button>
         )}
+        {section.id === "grammar" && (
+          <Button
+            variant="outline"
+            onClick={() => setShowPresentationMode(!showPresentationMode)}
+            className="gap-2 w-full sm:w-auto"
+          >
+            <BookOpen className="w-4 h-4" />
+            {showPresentationMode ? "Hide" : "Show"} Presentation Mode
+          </Button>
+        )}
       </div>
 
-      {showTeacherMode && section.teacherPanel && (
-        <TeacherModePanel panel={section.teacherPanel} />
+      {showPresentationMode && (
+        <PresentationModeView section={section} onBack={() => setShowPresentationMode(false)} />
       )}
 
-      <Card className="p-6 sm:p-8">
-        <div className="flex items-center gap-2 mb-4">
-          <BookOpen className="w-5 h-5 text-indigo-500" />
-          <h2 className="text-xl font-bold">Patterns</h2>
-          <Badge variant="secondary" className="ml-auto">{filteredPatterns.length}</Badge>
-        </div>
-        <div className="grid gap-4 sm:grid-cols-2">
-          {filteredPatterns.map((pattern) => (
-            <PatternCard
-              key={pattern.id}
-              pattern={pattern}
-              onRelatedClick={(term) => {
-                setSearch(term);
-              }}
-            />
-          ))}
-        </div>
-        {filteredPatterns.length === 0 && (
-          <div className="text-center py-12 text-muted-foreground">
-            <p>No patterns found matching "{search}"</p>
-          </div>
-        )}
-      </Card>
+      {!showPresentationMode && (
+        <>
+          {showTeacherMode && section.teacherPanel && (
+            <TeacherModePanel panel={section.teacherPanel} />
+          )}
 
-      {section.exercises.length > 0 && (
-        <Card className="p-6 sm:p-8">
-          <div className="flex items-center gap-2 mb-4">
-            <BookOpen className="w-5 h-5 text-indigo-500" />
-            <h2 className="text-xl font-bold">Practice Exercises</h2>
-            <Badge variant="secondary" className="ml-auto">{section.exercises.length}</Badge>
-          </div>
-          <div className="space-y-4 max-w-3xl mx-auto">
-            {section.exercises.map((exercise) => (
-              <ExerciseCard key={exercise.id} exercise={exercise} />
-            ))}
-          </div>
-        </Card>
+          <Card className="p-6 sm:p-8">
+            <div className="flex items-center gap-2 mb-4">
+              <BookOpen className="w-5 h-5 text-indigo-500" />
+              <h2 className="text-xl font-bold">Patterns</h2>
+              <Badge variant="secondary" className="ml-auto">{filteredPatterns.length}</Badge>
+            </div>
+            <div className="grid gap-4 sm:grid-cols-2">
+              {filteredPatterns.map((pattern) => (
+                <PatternCard
+                  key={pattern.id}
+                  pattern={pattern}
+                  onRelatedClick={(term) => {
+                    setSearch(term);
+                  }}
+                />
+              ))}
+            </div>
+            {filteredPatterns.length === 0 && (
+              <div className="text-center py-12 text-muted-foreground">
+                <p>No patterns found matching "{search}"</p>
+              </div>
+            )}
+          </Card>
+
+          {section.exercises.length > 0 && (
+            <Card className="p-6 sm:p-8">
+              <div className="flex items-center gap-2 mb-4">
+                <BookOpen className="w-5 h-5 text-indigo-500" />
+                <h2 className="text-xl font-bold">Practice Exercises</h2>
+                <Badge variant="secondary" className="ml-auto">{section.exercises.length}</Badge>
+              </div>
+              <div className="space-y-4 max-w-3xl mx-auto">
+                {section.exercises.map((exercise) => (
+                  <ExerciseCard key={exercise.id} exercise={exercise} />
+                ))}
+              </div>
+            </Card>
+          )}
+        </>
       )}
 
       <div className="pt-8 border-t">
