@@ -1,95 +1,32 @@
 "use client";
 
-import { useState, useMemo, useCallback } from "react";
+import { useState, useCallback } from "react";
 import { StudentSidebar } from "@/components/layout/sidebar";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
-import { Input } from "@/components/ui/input";
 import { useLearningStore } from "@/stores/learning-store";
 import { useSpeechSynthesis } from "@/hooks/use-speech-synthesis";
-import { EnglishBoostChapter, Scene, Choice } from "@/types/english-boost";
+import { EnglishBoostChapter, Scene } from "@/types/english-boost";
 import { englishBoostChapters } from "@/data/english-boost";
-import { motion, AnimatePresence } from "framer-motion";
-import { ArrowLeft, Volume2, Zap, Lightbulb, AlertTriangle, Sparkles, BookOpen, RotateCcw, HelpCircle, Download, Printer, Laugh, Code, Target, ChevronDown, ChevronUp, Flame, Heart } from "lucide-react";
+import { ArrowLeft, Volume2, Zap, Lightbulb, AlertTriangle, Sparkles, BookOpen, Download, Printer, Flame, Heart, Target, RotateCcw, ChevronRight, ChevronDown, ChevronUp } from "lucide-react";
 import Link from "next/link";
 import { use } from "react";
 
-function MeaningCardComponent({ card }: { card: any }) {
-  const colorMap = {
-    blue: "border-blue-200 dark:border-blue-800 bg-blue-50/50 dark:bg-blue-950/20",
-    green: "border-emerald-200 dark:border-emerald-800 bg-emerald-50/50 dark:bg-emerald-950/20",
-    yellow: "border-amber-200 dark:border-amber-800 bg-amber-50/50 dark:bg-amber-950/20",
-    purple: "border-purple-200 dark:border-purple-800 bg-purple-50/50 dark:bg-purple-950/20",
-    red: "border-red-200 dark:border-red-800 bg-red-50/50 dark:bg-red-950/20",
-    teal: "border-teal-200 dark:border-teal-800 bg-teal-50/50 dark:bg-teal-950/20",
-  };
-  const textColorMap = {
-    blue: "text-blue-900 dark:text-blue-100",
-    green: "text-emerald-900 dark:text-emerald-100",
-    yellow: "text-amber-900 dark:text-amber-100",
-    purple: "text-purple-900 dark:text-purple-100",
-    red: "text-red-900 dark:text-red-100",
-    teal: "text-teal-900 dark:text-teal-100",
-  };
-
-  return (
-    <Card className={`p-4 border ${colorMap[card.color || "blue"]}`}>
-      <h3 className={`text-sm font-semibold mb-1 ${textColorMap[card.color || "blue"]}`}>
-        {card.title} <span className="text-xs text-muted-foreground ml-1">{card.titleZh}</span>
-      </h3>
-      <p className="text-xs text-muted-foreground mb-2">{card.meaningZh}</p>
-      <div className="p-2 rounded bg-white/70 dark:bg-black/20 border border-border mb-2">
-        <p className="text-sm font-medium">{card.example}</p>
-        <p className="text-xs text-muted-foreground">{card.exampleZh}</p>
-      </div>
-      {card.situation && (
-        <p className="text-xs text-muted-foreground italic">💡 {card.situation}</p>
-      )}
-    </Card>
-  );
-}
-
-function ExampleGrid({ examples, title, titleZh }: { examples: { en: string; zh: string; explanation?: string }[]; title?: string; titleZh?: string }) {
-  return (
-    <div className="space-y-2">
-      {(title || titleZh) && (
-        <p className="text-xs font-semibold text-muted-foreground mb-2">
-          {title} {titleZh && <span className="ml-1">{titleZh}</span>}
-        </p>
-      )}
-      <div className="grid gap-2 sm:grid-cols-2">
-        {examples.map((ex, idx) => (
-          <div key={idx} className="p-3 rounded-lg bg-muted/30 border border-border">
-            <p className="text-sm font-medium">{ex.en}</p>
-            <p className="text-xs text-muted-foreground">{ex.zh}</p>
-            {ex.explanation && (
-              <p className="text-xs text-indigo-600 dark:text-indigo-400 mt-1 italic">{ex.explanation}</p>
-            )}
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-}
-
 function CollapsibleSection({ title, titleZh, children, defaultOpen = false }: { title: string; titleZh?: string; children: React.ReactNode; defaultOpen?: boolean }) {
   const [isOpen, setIsOpen] = useState(defaultOpen);
-
   return (
-    <div className="mb-4 border border-border rounded-lg overflow-hidden">
+    <div className="mb-3 border border-border rounded-lg overflow-hidden">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="w-full flex items-center justify-between p-3 bg-muted/30 hover:bg-muted/50 transition-colors"
+        className="w-full flex items-center justify-between p-2 bg-muted/30 text-xs font-semibold"
       >
-        <span className="text-sm font-semibold">
-          {title} {titleZh && <span className="text-xs text-muted-foreground ml-1 font-normal">{titleZh}</span>}
-        </span>
-        {isOpen ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
+        <span>{title} {titleZh && <span className="text-xs text-muted-foreground font-normal">({titleZh})</span>}</span>
+        {isOpen ? <ChevronUp className="h-3 w-3" /> : <ChevronDown className="h-3 w-3" />}
       </button>
       {isOpen && (
-        <div className="p-3 bg-white/50 dark:bg-black/20">
+        <div className="p-2 bg-white/50 dark:bg-black/20 text-xs">
           {children}
         </div>
       )}
@@ -102,12 +39,10 @@ export default function EnglishBoostDetailPage({ params }: { params: Promise<{ i
   const chapter = englishBoostChapters.find((c) => c.id === resolvedParams.id) || null;
   const [selectedScene, setSelectedScene] = useState<Scene | null>(null);
   const [sceneAnswer, setSceneAnswer] = useState<string>("");
-  const [matchSelections, setMatchSelections] = useState<string[]>([]);
   const [sceneFeedback, setSceneFeedback] = useState<{ text: string; zh: string } | null>(null);
   const [score, setScore] = useState(0);
   const [totalScenes, setTotalScenes] = useState(0);
   const [showRescue, setShowRescue] = useState(false);
-  const [sceneMode, setSceneMode] = useState<"practice" | "review">("practice");
 
   const { addXp, incrementStreak, incrementWeeklyProgress, updateLevelProgress } = useLearningStore();
   const { speakEnglish, speakChinese } = useSpeechSynthesis();
@@ -130,13 +65,6 @@ export default function EnglishBoostDetailPage({ params }: { params: Promise<{ i
   .example { padding: 12px; border-radius: 8px; background: #ffffff; border: 1px solid #e5e7eb; margin-bottom: 10px; }
   .en { font-size: 15px; font-weight: 600; color: #0f172a; }
   .zh { font-size: 13px; color: #475569; margin-top: 4px; }
-  .explanation { font-size: 13px; color: #1e40af; background: #eef2ff; padding: 10px; border-radius: 8px; margin-top: 8px; border-left: 3px solid #1e40af; }
-  .mistake { text-decoration: line-through; color: #b91c1c; font-size: 14px; }
-  .correction { color: #047857; font-size: 14px; }
-  .chunk { display: inline-block; padding: 6px 10px; border-radius: 8px; background: #ecfdf5; color: #064e3b; font-size: 13px; margin: 4px 6px 4px 0; }
-  table { width: 100%; border-collapse: collapse; margin-top: 8px; }
-  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #e5e7eb; font-size: 13px; }
-  th { background: #f1f5f9; color: #334155; }
   .footer { margin-top: 30px; font-size: 12px; color: #9ca3af; text-align: center; }
 </style>
 </head>
@@ -206,13 +134,13 @@ export default function EnglishBoostDetailPage({ params }: { params: Promise<{ i
     window.print();
   }, []);
 
-  if (!chapter || !selectedScene) {
+  if (!chapter) {
     return (
       <div className="flex">
         <StudentSidebar />
-        <div className="flex-1 p-4 sm:p-6 lg:p-8">
+        <div className="flex-1 p-4">
           <div className="text-center">
-            <h1 className="text-2xl font-bold mb-2">Chapter not found</h1>
+            <h1 className="text-xl font-bold mb-2">Chapter not found</h1>
             <Link href="/english-boost">
               <Button>Back to English Boost</Button>
             </Link>
@@ -222,15 +150,13 @@ export default function EnglishBoostDetailPage({ params }: { params: Promise<{ i
     );
   }
 
-  const progress = selectedScene ? ((totalScenes + 1) / chapter.scenes.length) * 100 : 0;
-
   const handleSceneAnswer = (scene: Scene, answer: string) => {
     setSceneAnswer(answer);
     setTotalScenes((prev) => prev + 1);
 
     let isCorrect = false;
-    if (scene.type === "choose") {
-      const correctChoice = scene.choices?.find((c) => c.isCorrect && c.text === answer);
+    if (scene.choices && scene.choices.length > 0) {
+      const correctChoice = scene.choices.find((c) => c.isCorrect && c.text === answer);
       isCorrect = !!correctChoice;
     }
 
@@ -245,10 +171,9 @@ export default function EnglishBoostDetailPage({ params }: { params: Promise<{ i
 
   const nextScene = () => {
     const currentIndex = chapter.scenes.findIndex((s) => s === selectedScene);
-    if (currentIndex < chapter.scenes.length - 1) {
+    if (selectedScene && currentIndex < chapter.scenes.length - 1) {
       setSelectedScene(chapter.scenes[currentIndex + 1]);
       setSceneAnswer("");
-      setMatchSelections([]);
       setSceneFeedback(null);
     } else {
       addXp(chapter.xpReward + score * 5);
@@ -268,7 +193,6 @@ export default function EnglishBoostDetailPage({ params }: { params: Promise<{ i
     setScore(0);
     setTotalScenes(0);
     setSceneAnswer("");
-    setMatchSelections([]);
     setSceneFeedback(null);
   };
 
@@ -278,245 +202,169 @@ export default function EnglishBoostDetailPage({ params }: { params: Promise<{ i
     if (textToSpeak) speakEnglish(textToSpeak);
   };
 
+  const progress = selectedScene ? ((totalScenes + 1) / chapter.scenes.length) * 100 : 0;
+
   return (
     <div className="flex min-w-0">
       <StudentSidebar />
-      <div className="flex-1 min-w-0 p-4 sm:p-6 lg:p-8">
-        <div className="max-w-3xl mx-auto min-w-0 space-y-4">
-          <div className="mb-4 flex items-center gap-2">
+      <div className="flex-1 min-w-0 p-4">
+        <div className="max-w-2xl mx-auto min-w-0 space-y-3">
+          <div className="mb-3 flex items-center gap-2">
             <Link href="/english-boost">
-              <Button variant="ghost">
-                <ArrowLeft className="h-4 w-4 mr-1" />
+              <Button variant="ghost" size="sm" className="text-xs">
+                <ArrowLeft className="h-3 w-3 mr-1" />
                 Boost Academy
               </Button>
             </Link>
             <div className="flex-1" />
-            <Button variant="outline" size="sm" onClick={printPage} className="gap-2">
-              <Printer className="h-4 w-4" />
+            <Button variant="outline" size="sm" onClick={printPage} className="text-xs gap-1">
+              <Printer className="h-3 w-3" />
               Print
             </Button>
-            <Button variant="default" size="sm" onClick={downloadPrintable} className="gap-2">
-              <Download className="h-4 w-4" />
+            <Button variant="default" size="sm" onClick={downloadPrintable} className="text-xs gap-1">
+              <Download className="h-3 w-3" />
               Download
             </Button>
           </div>
 
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-            <Card className="p-5 sm:p-6 border-indigo-200 dark:border-indigo-800 bg-gradient-to-br from-indigo-50/60 to-purple-50/60 dark:from-indigo-950/20 dark:to-purple-950/20">
-              <div className="flex items-center gap-3 mb-3">
-                <span className="text-3xl sm:text-4xl">{chapter.emoji}</span>
-                <div>
-                  <h1 className="text-xl sm:text-2xl font-bold">{chapter.title}</h1>
-                  <p className="text-xs text-muted-foreground">{chapter.titleZh}</p>
-                </div>
+          <Card className="p-4 border-indigo-200 bg-indigo-50/30">
+            <div className="flex items-center gap-2 mb-2">
+              <span className="text-xl">{chapter.emoji}</span>
+              <div>
+                <h1 className="text-base font-bold">{chapter.title}</h1>
+                <p className="text-xs text-muted-foreground">{chapter.titleZh}</p>
               </div>
-              <p className="text-sm text-muted-foreground mb-2">{chapter.description}</p>
-              <p className="text-xs text-muted-foreground mb-4">{chapter.descriptionZh}</p>
-              <div className="flex flex-wrap gap-2">
-                <Badge variant="secondary" className="text-xs">
-                  <Flame className="h-3 w-3 mr-1" />
-                  {chapter.xpReward} XP
-                </Badge>
-                <Badge variant="outline" className="text-xs capitalize">{chapter.difficulty}</Badge>
-                <Badge variant="outline" className="text-xs">{chapter.theme}</Badge>
-              </div>
-            </Card>
-          </motion.div>
+            </div>
+            <p className="text-xs text-muted-foreground mb-2">{chapter.description}</p>
+            <p className="text-xs text-muted-foreground">{chapter.descriptionZh}</p>
+            <div className="flex flex-wrap gap-1">
+              <Badge variant="secondary" className="text-xs"><Flame className="h-2 w-2 mr-1" />{chapter.xpReward} XP</Badge>
+              <Badge variant="outline" className="text-xs capitalize">{chapter.difficulty}</Badge>
+              <Badge variant="outline" className="text-xs">{chapter.theme}</Badge>
+            </div>
+          </Card>
 
           {!selectedScene && (
-            <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}>
-              <Card className="p-5 sm:p-6">
-                <div className="text-center space-y-4">
-                  <h2 className="text-lg font-semibold">Ready to play this mission?</h2>
-                  <p className="text-sm text-muted-foreground">Navigate through {chapter.scenes.length} scenes and survive the English challenges!</p>
-                  <div className="flex flex-wrap gap-2 justify-center">
-                    <Badge variant="secondary" className="gap-1">
-                      <Zap className="h-3 w-3" />
-                      {chapter.scenes.length} Scenes
-                    </Badge>
-                    <Badge variant="outline" className="gap-1">
-                      <Heart className="h-3 w-3" />
-                      Theme: {chapter.theme}
-                    </Badge>
-                  </div>
-                  <Button onClick={startScenes} className="gap-2">
-                    <Target className="h-4 w-4" />
-                    Start Mission
-                  </Button>
-                </div>
-              </Card>
-            </motion.div>
+            <Card className="p-4 text-center">
+              <h2 className="text-sm font-semibold mb-2">Ready to play this mission?</h2>
+              <p className="text-xs text-muted-foreground mb-3">Navigate through {chapter.scenes.length} scenes and survive the English challenges!</p>
+              <Button onClick={startScenes} className="text-xs gap-1">
+                <Target className="h-3 w-3" />
+                Start Mission
+              </Button>
+            </Card>
           )}
 
           {selectedScene && (
-            <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}>
-              <Card className="p-5 sm:p-6 border-indigo-200 dark:border-indigo-800 bg-gradient-to-br from-indigo-50/60 to-purple-50/60 dark:from-indigo-950/20 dark:to-purple-950/20">
-                <div className="flex items-center gap-2 mb-3">
-                  <span className="text-xl sm:text-2xl">{chapter.emoji}</span>
-                  <div>
-                    <h2 className="text-lg font-bold">Scene {chapter.scenes.findIndex((s) => s === selectedScene) + 1} of {chapter.scenes.length}</h2>
-                    <p className="text-xs text-muted-foreground">Progress: {Math.round(progress)}%</p>
-                  </div>
+            <Card className="p-4 border-indigo-200 bg-indigo-50/30">
+              <div className="flex items-center gap-2 mb-2">
+                <span className="text-lg">{chapter.emoji}</span>
+                <div>
+                  <h2 className="text-sm font-bold">Scene {chapter.scenes.findIndex((s) => s === selectedScene) + 1} of {chapter.scenes.length}</h2>
+                  <p className="text-xs text-muted-foreground">Progress: {Math.round(progress)}%</p>
+                </div>
+              </div>
+
+              <Progress value={progress} className="mb-2 h-1.5" />
+
+              <div className="space-y-3">
+                <div>
+                  <p className="text-xs font-semibold mb-1">Narrative</p>
+                  <p className="text-xs">{selectedScene.narration}</p>
+                  <p className="text-xs text-muted-foreground">{selectedScene.narrationZh}</p>
                 </div>
 
-                <Progress value={progress} className="mb-4 h-2" />
-
-                <div className="space-y-4">
+                {selectedScene.dialogue && (
                   <div>
-                    <h3 className="text-sm font-semibold mb-2">Narrative</h3>
-                    <p className="text-sm">{selectedScene.narration}</p>
-                    <p className="text-xs text-muted-foreground">{selectedScene.narrationZh}</p>
+                    <p className="text-xs font-semibold mb-1">Dialogue</p>
+                    <div className="p-2 rounded bg-white/70 border border-border">
+                      <div className="flex items-center gap-1 mb-1">
+                        <span className="text-sm">{selectedScene.characterEmoji}</span>
+                        <p className="text-xs font-semibold">{selectedScene.character}</p>
+                      </div>
+                      <p className="text-sm font-medium">{selectedScene.dialogue}</p>
+                      <p className="text-xs text-muted-foreground">{selectedScene.dialogueZh}</p>
+                      <Button variant="ghost" size="sm" className="mt-1 text-xs gap-1" onClick={() => speakEnglish(selectedScene.dialogue || "")}>
+                        <Volume2 className="h-3 w-3" />
+                        Listen
+                      </Button>
+                    </div>
                   </div>
+                )}
 
-                  {selectedScene.dialogue && (
-                    <div>
-                      <h3 className="text-sm font-semibold mb-2">Dialogue</h3>
-                      <div className="p-3 rounded-lg bg-white/70 dark:bg-black/20 border border-border">
-                        <div className="flex items-center gap-2 mb-1">
-                          <span className="text-lg">{selectedScene.characterEmoji}</span>
-                          <p className="text-sm font-semibold">{selectedScene.character}</p>
-                        </div>
-                        <p className="text-base font-medium">{selectedScene.dialogue}</p>
-                        <p className="text-xs text-muted-foreground">{selectedScene.dialogueZh}</p>
-                        <Button variant="ghost" size="sm" className="mt-2 gap-2" onClick={() => speakEnglish(selectedScene.dialogue || "")}>
-                          <Volume2 className="h-3.5 w-3.5" />
-                          Listen
-                        </Button>
-                      </div>
+                {selectedScene.chaosEvent && (
+                  <div className="p-2 rounded bg-amber-50 border border-amber-200 text-xs">
+                    <span className="font-semibold text-amber-900">Chaos Event</span>
+                    <p>{selectedScene.chaosEvent}</p>
+                  </div>
+                )}
+
+                {selectedScene.translationTrap && (
+                  <div className="p-2 rounded bg-red-50 border border-red-200 text-xs">
+                    <span className="font-semibold text-red-900">Translation Trap</span>
+                    <p className="line-through text-red-700">❌ {selectedScene.translationTrap.literal}</p>
+                    <p className="font-medium text-green-700">✅ {selectedScene.translationTrap.natural}</p>
+                    <p className="text-muted-foreground">{selectedScene.translationTrap.explanation}</p>
+                  </div>
+                )}
+
+                {selectedScene.stealPhrase && (
+                  <div className="p-2 rounded bg-emerald-50 border border-emerald-200 text-xs">
+                    <span className="font-semibold text-emerald-900">Steal This Phrase</span>
+                    <p className="font-medium">{selectedScene.stealPhrase.phrase}</p>
+                    <p className="text-muted-foreground">{selectedScene.stealPhrase.chinese}</p>
+                    <p className="text-muted-foreground">Situation: {selectedScene.stealPhrase.situation}</p>
+                    <Badge variant="outline" className="text-xs mt-1 capitalize">{selectedScene.stealPhrase.formality}</Badge>
+                  </div>
+                )}
+
+                {selectedScene.choices && selectedScene.choices.length > 0 && (
+                  <div>
+                    <p className="text-xs font-semibold mb-1">Choose Your Response</p>
+                    <div className="space-y-1">
+                      {selectedScene.choices.map((choice) => (
+                        <Card key={choice.id} className="p-2 cursor-pointer hover:border-indigo-300">
+                          <Button
+                            variant="ghost"
+                            className="w-full justify-between text-left h-auto py-1 text-xs"
+                            onClick={() => handleSceneAnswer(selectedScene, choice.text)}
+                            disabled={!!sceneFeedback}
+                          >
+                            <span>{choice.text}</span>
+                            <span className="text-xs text-muted-foreground ml-2">{choice.textZh}</span>
+                          </Button>
+                        </Card>
+                      ))}
                     </div>
-                  )}
+                  </div>
+                )}
 
-                  {selectedScene.chaosEvent && (
-                    <div className="p-4 rounded-xl bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800">
-                      <div className="flex items-center gap-2 mb-1">
-                        <AlertTriangle className="h-4 w-4 text-amber-700 dark:text-amber-300" />
-                        <p className="text-sm font-semibold text-amber-900 dark:text-amber-100">Chaos Event</p>
-                      </div>
-                      <p className="text-sm">{selectedScene.chaosEvent}</p>
-                    </div>
-                  )}
-
-                  {selectedScene.translationTrap && (
-                    <div className="p-4 rounded-xl bg-red-50 dark:bg-red-950/20 border border-red-200 dark:border-red-800">
-                      <div className="flex items-center gap-2 mb-2">
-                        <Lightbulb className="h-4 w-4 text-red-700 dark:text-red-300" />
-                        <p className="text-sm font-semibold text-red-900 dark:text-red-100">Translation Trap</p>
-                      </div>
-                      <p className="text-sm line-through text-red-700/80 dark:text-red-300/80 mb-1">❌ {selectedScene.translationTrap.literal}</p>
-                      <p className="text-sm font-medium text-green-700 dark:text-green-300 mb-1">✅ {selectedScene.translationTrap.natural}</p>
-                      <p className="text-xs text-muted-foreground">{selectedScene.translationTrap.explanation}</p>
-                    </div>
-                  )}
-
-                  {selectedScene.stealPhrase && (
-                    <div className="p-4 rounded-xl bg-emerald-50 dark:bg-emerald-950/20 border border-emerald-200 dark:border-emerald-800">
-                      <div className="flex items-center gap-2 mb-1">
-                        <Sparkles className="h-4 w-4 text-emerald-700 dark:text-emerald-300" />
-                        <p className="text-sm font-semibold text-emerald-900 dark:text-emerald-100">💎 Steal This Phrase</p>
-                      </div>
-                      <p className="text-sm font-medium">{selectedScene.stealPhrase.phrase}</p>
-                      <p className="text-xs text-muted-foreground mb-1">{selectedScene.stealPhrase.chinese}</p>
-                      <p className="text-xs text-muted-foreground">Situation: {selectedScene.stealPhrase.situation}</p>
-                      <Badge variant="outline" className="text-xs mt-2 capitalize">{selectedScene.stealPhrase.formality}</Badge>
-                    </div>
-                  )}
-
-                  {selectedScene.choices && selectedScene.choices.length > 0 && (
-                    <div>
-                      <h3 className="text-sm font-semibold mb-3">Choose Your Response</h3>
-                      <div className="space-y-2">
-                        {selectedScene.choices.map((choice) => (
-                          <motion.div key={choice.id} whileHover={{ scale: 1.01 }} whileTap={{ scale: 0.99 }}>
-                            <Card className="p-3 cursor-pointer hover:border-indigo-300 dark:hover:border-indigo-700 transition-colors">
-                              <Button
-                                variant="ghost"
-                                className="w-full justify-between text-left h-auto py-2"
-                                onClick={() => handleSceneAnswer(selectedScene, choice.text)}
-                                disabled={!!sceneFeedback}
-                              >
-                                <span className="text-sm">{choice.text}</span>
-                                <span className="text-xs text-muted-foreground ml-2">{choice.textZh}</span>
-                              </Button>
-                              <p className="text-xs text-muted-foreground mt-1">{choice.feedback || ""}</p>
-                            </Card>
-                          </motion.div>
-                        ))}
-                      </div>
-                    </div>
-                  )}
-
-                  <AnimatePresence>
-                    {sceneFeedback && (
-                      <motion.div
-                        initial={{ opacity: 0, y: 10 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0 }}
-                        className={`p-4 rounded-xl text-sm ${sceneFeedback.text.startsWith("✅")
-                          ? "bg-green-50 dark:bg-green-950/20 text-green-800 dark:text-green-200"
-                          : "bg-red-50 dark:bg-red-950/20 text-red-800 dark:text-red-200"
-                        }`}
-                      >
-                        <p>{sceneFeedback.text}</p>
-                        <p className="text-xs mt-1">{sceneFeedback.zh}</p>
-                        <Button onClick={nextScene} size="sm" className="mt-2">
-                          {chapter.scenes.findIndex((s) => s === selectedScene) < chapter.scenes.length - 1 ? "Next Scene" : "Finish"}
-                        </Button>
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
-
-                  <div className="flex justify-between items-center pt-4">
-                    <div className="text-xs text-muted-foreground">
-                      Score: {score}/{chapter.scenes.length}
-                    </div>
-                    <Button variant="outline" size="sm" onClick={() => setShowRescue(!showRescue)} className="gap-2">
-                      <HelpCircle className="h-3.5 w-3.5" />
-                      Need Help
+                {sceneFeedback && (
+                  <div className={`p-3 rounded text-xs ${sceneFeedback.text.startsWith("✅") ? "bg-green-50 text-green-800" : "bg-red-50 text-red-800"}`}>
+                    <p>{sceneFeedback.text}</p>
+                    <p className="mt-1">{sceneFeedback.zh}</p>
+                    <Button onClick={nextScene} size="sm" className="mt-2 text-xs">
+                      {chapter.scenes.findIndex((s) => s === selectedScene) < chapter.scenes.length - 1 ? "Next" : "Finish"}
                     </Button>
                   </div>
-
-                  <AnimatePresence>
-                    {showRescue && (
-                      <motion.div
-                        initial={{ opacity: 0, y: 10 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0 }}
-                        className="p-4 rounded-xl bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-800"
-                      >
-                        <p className="text-sm font-semibold mb-2">🛟 Conversation Rescue</p>
-                        <div className="flex flex-wrap gap-2">
-                          {chapter.scenes.map((scene) => (
-                            scene.dialogue && (
-                              <Button key={scene.id} variant="secondary" size="sm" className="gap-2" onClick={() => speakEnglish(scene.dialogue || "")}>
-                                <Volume2 className="h-3.5 w-3.5" />
-                                {scene.dialogue}
-                              </Button>
-                            )
-                          ))}
-                        </div>
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
-                </div>
-              </Card>
-            </motion.div>
+                )}
+              </div>
+            </Card>
           )}
 
-          {selectedScene === null && chapter && (
-            <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }}>
-              <Card className="p-5 sm:p-6">
-                <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                  <Button onClick={() => setSelectedScene(chapter.scenes[0])} className="gap-2">
-                    <RotateCcw className="h-4 w-4" />
-                    Replay
-                  </Button>
-                  <Button variant="outline" onClick={downloadScenarios} className="gap-2">
-                    <Download className="h-4 w-4" />
-                    Download Scenarios
-                  </Button>
-                </div>
-              </Card>
-            </motion.div>
+          {selectedScene === null && (
+            <Card className="p-4">
+              <div className="flex gap-2 justify-center text-xs">
+                <Button onClick={() => setSelectedScene(chapter.scenes[0])} className="gap-1">
+                  <RotateCcw className="h-3 w-3" />
+                  Replay
+                </Button>
+                <Button variant="outline" onClick={downloadScenarios} className="gap-1">
+                  <Download className="h-3 w-3" />
+                  Download Scenarios
+                </Button>
+              </div>
+            </Card>
           )}
         </div>
       </div>
