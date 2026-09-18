@@ -605,6 +605,507 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
     }
   },
   {
+    id: "grammar",
+    title: "Grammar Mastery",
+    titleZh: "语法精通",
+    emoji: "📝",
+    description: "Complete breakdown of present, past, and future tenses with examples, funny conversations, and more.",
+    descriptionZh: "完成时态、过去时和将来时的全面解析，配有例句、有趣对话和其他语法主题。",
+    difficulty: "elementary",
+    patterns: [
+      {
+        id: "gram-present-intro",
+        term: "Present Tenses — Overview",
+        chinese: "现在时态概述",
+        pinyin: "xiànzài shízài",
+        meaning: "Present tenses describe habits, facts, current actions, and experiences.",
+        category: "grammar",
+        difficulty: "A1",
+        examples: [
+          { en: "I eat breakfast at 7 AM.", zh: "我早上7点吃早餐。" },
+          { en: "She is reading a book now.", zh: "她现在正在读书。" },
+          { en: "He has visited Japan three times.", zh: "他去过日本三次。" }
+        ],
+        commonMistakes: [
+          { mistake: "I am eat breakfast every day.", correction: "Use simple present for habits: 'I eat.'" },
+          { mistake: "He has visited Japan 3 times every year.", correction: "Use present perfect for life experience, not routine." }
+        ],
+        relatedTerms: ["simple present", "present continuous", "present perfect", "present perfect continuous"],
+        register: "neutral",
+        intensityNote: "Level 0/5: Not offensive.",
+        usageContext: "Daily routines, facts, experiences, ongoing actions.",
+        formality: "neutral",
+        culturalNotes: "Chinese learners often overuse '了' for completed actions — English uses past tense instead.",
+        warning: "Don't mix tenses — pick one time frame and stick with it.",
+        safeAlternatives: [],
+        audioAvailable: true
+      },
+      {
+        id: "gram-present-simple",
+        term: "Simple Present",
+        chinese: "一般现在时",
+        pinyin: "yībān xiànzài shí",
+        meaning: "Habits, facts, scheduled events, and permanent truths.",
+        category: "grammar",
+        difficulty: "A1",
+        examples: [
+          { en: "I walk to work every day.", zh: "我每天走路上班。" },
+          { en: "The sun rises in the east.", zh: "太阳从东边升起。" },
+          { en: "She doesn't like coffee.", zh: "她不喜欢咖啡。" },
+          { en: "Do they speak English here?", zh: "他们在这里说英语吗？" }
+        ],
+        commonMistakes: [
+          { mistake: "I walk to work everyday.", correction: "'Every day' is two words; 'everyday' means daily routine as an adjective." },
+          { mistake: "He don't like it.", correction: "Use 'doesn't' with he/she/it." }
+        ],
+        relatedTerms: ["habit", "frequency", "routine"],
+        register: "neutral",
+        intensityNote: "Level 0/5: Not offensive.",
+        usageContext: "Habits, facts, schedules, routines.",
+        formality: "neutral",
+        culturalNotes: "Chinese doesn't have verb conjugation — Chinese learners add '了' or omit the -s.",
+        warning: "Remember the -s for he/she/it.",
+        safeAlternatives: [],
+        audioAvailable: true
+      },
+      {
+        id: "gram-present-continuous",
+        term: "Present Continuous",
+        chinese: "现在进行时",
+        pinyin: "xiànzài jìnxíng shí",
+        meaning: "Actions happening right now, temporary situations, future plans.",
+        category: "grammar",
+        difficulty: "A2",
+        examples: [
+          { en: "I am eating lunch right now.", zh: "我正在吃午饭。" },
+          { en: "She is studying for her exam.", zh: "她正在为考试学习。" },
+          { en: "We are meeting them tomorrow.", zh: "我们明天要见他们。" }
+        ],
+        commonMistakes: [
+          { mistake: "I am eat lunch.", correction: "Use 'am eating' — need -ing form." },
+          { mistake: "I am knowing the answer.", correction: "Use stative verbs in simple: 'I know.'" }
+        ],
+        relatedTerms: ["right now", "at the moment", "temporary"],
+        register: "neutral",
+        intensityNote: "Level 0/5: Not offensive.",
+        usageContext: "Current actions, temporary changes, future arrangements.",
+        formality: "neutral",
+        culturalNotes: "Stative verbs (know, like, love, want) don't use continuous.",
+        warning: "Don't use continuous with stative verbs like 'know', 'love', 'want'.",
+        safeAlternatives: [],
+        audioAvailable: true
+      },
+      {
+        id: "gram-present-perfect",
+        term: "Present Perfect",
+        chinese: "现在完成时",
+        pinyin: "xiànzài wánchéng shí",
+        meaning: "Life experience, unfinished time, recent actions with present results.",
+        category: "grammar",
+        difficulty: "A2",
+        examples: [
+          { en: "I have visited Paris twice.", zh: "我去过巴黎两次。" },
+          { en: "She has just left.", zh: "她刚离开。" },
+          { en: "We have lived here for 5 years.", zh: "我们在这里住了5年。" }
+        ],
+        commonMistakes: [
+          { mistake: "I have visited Paris 2 times last year.", correction: "Don't use specific past time with present perfect." },
+          { mistake: "I have seen him yesterday.", correction: "Use past simple: 'I saw him yesterday.'" }
+        ],
+        relatedTerms: ["ever", "never", "just", "already", "yet", "for", "since"],
+        register: "neutral",
+        intensityNote: "Level 0/5: Not offensive.",
+        usageContext: "Experiences, unfinished time, recent actions.",
+        formality: "neutral",
+        culturalNotes: "Chinese '了' confuses learners — sometimes it's present perfect, sometimes past simple.",
+        warning: "No specific past time (yesterday, last year) with present perfect.",
+        safeAlternatives: [],
+        audioAvailable: true
+      },
+      {
+        id: "gram-present-perfect-continuous",
+        term: "Present Perfect Continuous",
+        chinese: "现在完成进行时",
+        pinyin: "xiànzài wánchéng jìnxíng shí",
+        meaning: "Actions that started in the past and continue now — emphasis on duration.",
+        category: "grammar",
+        difficulty: "B1",
+        examples: [
+          { en: "I have been learning English for 3 years.", zh: "I've been learning English for 3 years." },
+          { en: "She has been waiting since 9 AM.", zh: "她从早上9点一直在等。" },
+          { en: "We have been living here since 2020.", zh: "我们从2020年就一直住在这里。" }
+        ],
+        commonMistakes: [
+          { mistake: "I have been knowing her for years.", correction: "Stative verb — use 'I have known her.'" }
+        ],
+        relatedTerms: ["for", "since", "all day", "all morning"],
+        register: "neutral",
+        intensityNote: "Level 0/5: Not offensive.",
+        usageContext: "Duration of ongoing actions.",
+        formality: "neutral",
+        culturalNotes: "Chinese emphasizes duration with '了' — English uses perfect continuous for emphasis.",
+        warning: "Stative verbs can't be continuous.",
+        safeAlternatives: [],
+        audioAvailable: true
+      },
+      {
+        id: "gram-past-intro",
+        term: "Past Tenses — Overview",
+        chinese: "过去时态概述",
+        pinyin: "guòqù shízài",
+        meaning: "Past tenses describe completed actions, past habits, and past sequences.",
+        category: "grammar",
+        difficulty: "A1",
+        examples: [
+          { en: "I walked to work yesterday.", zh: "我昨天走路上班。" },
+          { en: "She was reading when I arrived.", zh: "我到的时候她正在读书。" },
+          { en: "He had finished before she came.", zh: "她来之前他已经完成了。" }
+        ],
+        commonMistakes: [
+          { mistake: "I did went there.", correction: "Use 'I went there' — did already marks past." },
+          { mistake: "I have seen him yesterday.", correction: "Use past simple with specific past time." }
+        ],
+        relatedTerms: ["simple past", "past continuous", "past perfect", "past perfect continuous"],
+        register: "neutral",
+        intensityNote: "Level 0/5: Not offensive.",
+        usageContext: "Completed actions, past situations, sequences.",
+        formality: "neutral",
+        culturalNotes: "Chinese '了' marks completion — English uses past tense.",
+        warning: "Don't use present perfect with specific past time.",
+        safeAlternatives: [],
+        audioAvailable: true
+      },
+      {
+        id: "gram-past-simple",
+        term: "Simple Past",
+        chinese: "一般过去时",
+        pinyin: "yībān guòqù shí",
+        meaning: "Completed actions at a specific time in the past.",
+        category: "grammar",
+        difficulty: "A1",
+        examples: [
+          { en: "I visited Beijing last year.", zh: "我去年参观了北京。" },
+          { en: "She didn't call me back.", zh: "她没有回我电话。" },
+          { en: "Did you eat breakfast?", zh: "你吃早餐了吗？" }
+        ],
+        commonMistakes: [
+          { mistake: "I did visited Beijing.", correction: "Use 'did visit' — did already marks past." }
+        ],
+        relatedTerms: ["yesterday", "last week", "ago", "in 2020"],
+        register: "neutral",
+        intensityNote: "Level 0/5: Not offensive.",
+        usageContext: "Completed past actions with specific time.",
+        formality: "neutral",
+        culturalNotes: "Chinese '了' maps to past simple — but English needs -ed for regular verbs.",
+        warning: "Irregular verbs are tricky: went, ate, saw, took.",
+        safeAlternatives: [],
+        audioAvailable: true
+      },
+      {
+        id: "gram-past-continuous",
+        term: "Past Continuous",
+        chinese: "过去进行时",
+        pinyin: "guòqù jìnxíng shí",
+        meaning: "Ongoing action at a specific past moment; interrupted by another action.",
+        category: "grammar",
+        difficulty: "A2",
+        examples: [
+          { en: "I was eating when she called.", zh: "她打电话时我正在吃饭。" },
+          { en: "She was reading a book at 8 PM.", zh: "她晚上8点在读书。" },
+          { en: "They were waiting for the bus.", zh: "他们在等公交车。" }
+        ],
+        commonMistakes: [
+          { mistake: "I was eat when she called.", correction: "Use 'was eating'." },
+          { mistake: "I was knowing her.", correction: "Stative verb — use 'I knew her.'" }
+        ],
+        relatedTerms: ["when", "while", "at that time"],
+        register: "neutral",
+        intensityNote: "Level 0/5: Not offensive.",
+        usageContext: "Background action, interrupted action.",
+        formality: "neutral",
+        culturalNotes: "Chinese doesn't distinguish continuous aspect — use '正在/在' for emphasis.",
+        warning: "Stative verbs don't use continuous.",
+        safeAlternatives: [],
+        audioAvailable: true
+      },
+      {
+        id: "gram-past-perfect",
+        term: "Past Perfect",
+        chinese: "过去完成时",
+        pinyin: "guòqù wánchéng shí",
+        meaning: "Action completed before another past action — the 'past of the past.'",
+        category: "grammar",
+        difficulty: "B1",
+        examples: [
+          { en: "She had left before I arrived.", zh: "我到之前她已经离开了。" },
+          { en: "I had never seen snow before 2020.", zh: "2020年之前我从未见过雪。" },
+          { en: "He had already eaten when we came.", zh: "我们到的时候他已经吃过了。" }
+        ],
+        commonMistakes: [
+          { mistake: "She left before I arrived.", correction: "Simple past works if sequence is clear by context." }
+        ],
+        relatedTerms: ["before", "after", "already", "by the time"],
+        register: "neutral",
+        intensityNote: "Level 0/5: Not offensive.",
+        usageContext: "Sequence of past events, emphasis on earlier action.",
+        formality: "neutral",
+        culturalNotes: "Chinese doesn't have a separate past perfect form — use '已经' to convey the same idea.",
+        warning: "Don't overuse — only when sequence matters.",
+        safeAlternatives: [],
+        audioAvailable: true
+      },
+      {
+        id: "gram-future-intro",
+        term: "Future Tenses — Overview",
+        chinese: "将来时态概述",
+        pinyin: "jiānglái shízài",
+        meaning: "Future tenses describe actions that will happen, plans, predictions, and future sequences.",
+        category: "grammar",
+        difficulty: "A2",
+        examples: [
+          { en: "I will call you tomorrow.", zh: "我明天给你打电话。" },
+          { en: "She is going to study abroad.", zh: "她打算出国学习。" },
+          { en: "They will be arriving at 5 PM.", zh: "他们将在下午5点到达。" }
+        ],
+        commonMistakes: [
+          { mistake: "I will go to school yesterday.", correction: "Will + base verb — no past meaning." }
+        ],
+        relatedTerms: ["will", "going to", "future continuous", "future perfect"],
+        register: "neutral",
+        intensityNote: "Level 0/5: Not offensive.",
+        usageContext: "Plans, predictions, promises, future events.",
+        formality: "neutral",
+        culturalNotes: "Chinese uses '要/会/将' — English learners confuse will vs. going to.",
+        warning: "Will for spontaneous decisions; going to for planned intentions.",
+        safeAlternatives: [],
+        audioAvailable: true
+      },
+      {
+        id: "gram-future-will",
+        term: "Will Future",
+        chinese: "will将来时",
+        pinyin: "will jiānglái shí",
+        meaning: "Spontaneous decisions, promises, predictions, offers.",
+        category: "grammar",
+        difficulty: "A2",
+        examples: [
+          { en: "I'll help you with that.", zh: "我会帮你做那件事。" },
+          { en: "It will rain tomorrow.", zh: "明天会下雨。" },
+          { en: "I promise I will call you.", zh: "我保证会给你打电话。" }
+        ],
+        commonMistakes: [
+          { mistake: "I will knowing the answer.", correction: "Stative verb — use 'I will know.'" }
+        ],
+        relatedTerms: ["spontaneous", "promise", "prediction", "offer"],
+        register: "neutral",
+        intensityNote: "Level 0/5: Not offensive.",
+        usageContext: "Spontaneous decisions, promises, predictions.",
+        formality: "neutral",
+        culturalNotes: "Chinese uses '会' for both ability and future — English distinguishes will for future only.",
+        warning: "Don't use 'will' for planned events — use 'going to'.",
+        safeAlternatives: [],
+        audioAvailable: true
+      },
+      {
+        id: "gram-future-going-to",
+        term: "Going to Future",
+        chinese: "be going to将来时",
+        pinyin: "be going to jiānglái shí",
+        meaning: "Planned intentions, predictions based on evidence.",
+        category: "grammar",
+        difficulty: "A2",
+        examples: [
+          { en: "I am going to study medicine.", zh: "我打算学医。" },
+          { en: "Look at those clouds — it is going to rain.", zh: "看那些云——要下雨了。" }
+        ],
+        commonMistakes: [
+          { mistake: "I am going to go there yesterday.", correction: "Going to is for future, not past." }
+        ],
+        relatedTerms: ["plan", "intention", "evidence", "prediction"],
+        register: "neutral",
+        intensityNote: "Level 0/5: Not offensive.",
+        usageContext: "Plans, evidence-based predictions.",
+        formality: "neutral",
+        culturalNotes: "Chinese '要' can map to both will and going to — context decides.",
+        warning: "Going to for plans; will for spontaneous decisions.",
+        safeAlternatives: [],
+        audioAvailable: true
+      },
+      {
+        id: "gram-future-continuous",
+        term: "Future Continuous",
+        chinese: "将来进行时",
+        pinyin: "jiānglái jìnxíng shí",
+        meaning: "Ongoing action at a specific future time; polite inquiry.",
+        category: "grammar",
+        difficulty: "B1",
+        examples: [
+          { en: "I will be studying at 8 PM tonight.", zh: "今晚8点我会在学习。" },
+          { en: "Will you be coming to the party?", zh: "你会来参加派对吗？" }
+        ],
+        commonMistakes: [
+          { mistake: "I will study at 8 PM.", correction: "For ongoing action at that time, use continuous." }
+        ],
+        relatedTerms: ["at 8 PM", "this time tomorrow", "will you be..."],
+        register: "neutral",
+        intensityNote: "Level 0/5: Not offensive.",
+        usageContext: "Background action in future, polite inquiry.",
+        formality: "neutral",
+        culturalNotes: "Chinese doesn't distinguish future continuous — use '正在/在' + future context.",
+        warning: "Use only for ongoing future actions, not one-time events.",
+        safeAlternatives: [],
+        audioAvailable: true
+      },
+      {
+        id: "gram-future-perfect",
+        term: "Future Perfect",
+        chinese: "将来完成时",
+        pinyin: "jiānglái wánchéng shí",
+        meaning: "Action completed before a specific future time — the 'past of the future.'",
+        category: "grammar",
+        difficulty: "B2",
+        examples: [
+          { en: "I will have finished by 5 PM.", zh: "我会在下午5点前完成。" },
+          { en: "She will have left by the time we arrive.", zh: "我们到的时候她就已经离开了。" }
+        ],
+        commonMistakes: [
+          { mistake: "I will finish by 5 PM.", correction: "For emphasis on completion before future time, use future perfect." }
+        ],
+        relatedTerms: ["by", "before", "by the time", "already"],
+        register: "neutral",
+        intensityNote: "Level 0/5: Not offensive.",
+        usageContext: "Completed action before future reference point.",
+        formality: "neutral",
+        culturalNotes: "Chinese uses '已经' + future context — English uses future perfect for clarity.",
+        warning: "Don't overuse — only when the completion before a future time matters.",
+        safeAlternatives: [],
+        audioAvailable: true
+      },
+      {
+        id: "gram-other-grammar",
+        term: "Other Grammar Topics",
+        chinese: "其他语法主题",
+        pinyin: "qítā yǔfǎ zhǔtí",
+        meaning: "Additional grammar topics beyond tenses.",
+        category: "grammar",
+        difficulty: "B1",
+        examples: [
+          { en: "If I were you, I would go.", zh: "如果我是你，我会去。" },
+          { en: "She has been studying for 2 hours.", zh: "她已经学习了2小时。" },
+          { en: "The book was written by him.", zh: "这本书是他写的。" }
+        ],
+        commonMistakes: [
+          { mistake: "If I am you, I will go.", correction: "Use subjunctive: 'If I were you.'"},
+          { mistake: "The book wrote by him.", correction: "Passive voice: 'was written by.'"}
+        ],
+        relatedTerms: ["conditionals", "passive voice", "reported speech", "modal verbs", "relative clauses"],
+        register: "neutral",
+        intensityNote: "Level 0/5: Not offensive.",
+        usageContext: "Complex sentences, hypotheticals, formal writing.",
+        formality: "neutral",
+        culturalNotes: "Chinese lacks passive voice and subjunctive mood — these are tough concepts.",
+        warning: "Master one concept at a time — don't try to learn everything at once.",
+        safeAlternatives: [],
+        audioAvailable: true
+      }
+    ],
+    exercises: [
+      {
+        id: "gram-ex-1",
+        type: "fill-blank",
+        question: "I ______ (eat) breakfast at 7 AM every day.",
+        questionZh: "我每天早上7点______早餐。",
+        options: ["eat", "am eating", "eats"],
+        correctAnswer: "eat",
+        hint: "Habitual action = simple present.",
+        hintZh: "习惯性动作 = 一般现在时。"
+      },
+      {
+        id: "gram-ex-2",
+        type: "fill-blank",
+        question: "She ______ (read) a book right now.",
+        questionZh: "她现在______一本书。",
+        options: ["reads", "is reading", "read"],
+        correctAnswer: "is reading",
+        hint: "Action happening now = present continuous.",
+        hintZh: "现在正在进行的动作 = 现在进行时。"
+      },
+      {
+        id: "gram-ex-3",
+        type: "fill-blank",
+        question: "I ______ (visit) Paris twice in my life.",
+        questionZh: "我一生中______巴黎两次。",
+        options: ["visited", "have visited", "was visiting"],
+        correctAnswer: "have visited",
+        hint: "Life experience = present perfect.",
+        hintZh: "人生经历 = 现在完成时。"
+      },
+      {
+        id: "gram-ex-4",
+        type: "fill-blank",
+        question: "She ______ (leave) before I arrived.",
+        questionZh: "我到之前她已经______了。",
+        options: ["left", "had left", "has left"],
+        correctAnswer: "had left",
+        hint: "Past of the past = past perfect.",
+        hintZh: "过去的过去 = 过去完成时。"
+      },
+      {
+        id: "gram-ex-5",
+        type: "fill-blank",
+        question: "I ______ (call) you tomorrow.",
+        questionZh: "我明天______你。",
+        options: ["call", "called", "will call"],
+        correctAnswer: "will call",
+        hint: "Future action = will + base verb.",
+        hintZh: "将来动作 = will + 动词原形。"
+      },
+      {
+        id: "gram-ex-6",
+        type: "fill-blank",
+        question: "I ______ (study) at 8 PM tonight.",
+        questionZh: "今晚8点我______学习。",
+        options: ["study", "am studying", "will be studying"],
+        correctAnswer: "will be studying",
+        hint: "Ongoing action at future time = future continuous.",
+        hintZh: "将来某个时间正在进行的动作 = 将来进行时。"
+      },
+      {
+        id: "gram-ex-7",
+        type: "translation",
+        question: "Translate: 我打算学医。",
+        questionZh: "翻译：我打算学医。",
+        options: ["I will study medicine.", "I am going to study medicine.", "I study medicine."],
+        correctAnswer: "I am going to study medicine.",
+        hint: "Planned intention = going to.",
+        hintZh: "计划意图 = going to。"
+      },
+      {
+        id: "gram-ex-8",
+        type: "translation",
+        question: "Translate: 我会帮你的。",
+        questionZh: "翻译：我会帮你的。",
+        options: ["I help you.", "I helped you.", "I'll help you."],
+        correctAnswer: "I'll help you.",
+        hint: "Offer/spontaneous decision = will.",
+        hintZh: "帮助/自发决定 = will。"
+      }
+    ],
+    teacherPanel: {
+      simpleExplanation: "Present = now. Past = before. Future = later. Each has 4 types — simple, continuous, perfect, perfect continuous.",
+      chineseExplanation: "现在=现在进行；过去=过去进行；将来=将来进行。每种有4种类型：一般、进行、完成、完成进行。",
+      learnerDifficulty: "Chinese learners confuse will vs. going to, and overuse '了' for all past tenses.",
+      teachingTip: "Use timeline visuals. Drill 'will vs. going to' with context. Practice past perfect with 'before/after' sequences.",
+      drills: [
+        "Teacher: 'I eat breakfast.' Student: 'I ate breakfast.'",
+        "Teacher: 'I am eating.' Student: 'I was eating.'",
+        "Teacher: 'I will go.' Student: 'I went.'",
+        "Teacher: 'She had left before I came.' Student: 'She left before I came.'",
+        "Teacher: 'I will be studying at 8.' Student: 'I am studying at 8.'"
+      ]
+    }
+  },
+  {
     id: "multipliers",
     title: "Single / Double / Triple / Quadruple",
     titleZh: "单倍、双倍、三倍、四倍",
