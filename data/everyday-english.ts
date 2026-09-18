@@ -432,6 +432,179 @@ export const everydayEnglishSections: EverydayEnglishSection[] = [
     }
   },
   {
+    id: "numbers-money",
+    title: "How to Spell Numbers & Money",
+    titleZh: "如何拼写数字和金额",
+    emoji: "🔢",
+    description: "Learn to spell out digits, decimal amounts, and monetary values correctly in English.",
+    descriptionZh: "学习正确拼写英文中的数字、小数金额和货币表达。",
+    difficulty: "elementary",
+    patterns: [
+      {
+        id: "nm-numbers",
+        term: "Cardinal & Ordinal Numbers",
+        chinese: "基数词与序数词",
+        pinyin: "jīshùcí yǔ xùshùcí",
+        meaning: "Cardinal numbers (one, two, three…) count; ordinal numbers (first, second, third…) rank.",
+        category: "numbers-money",
+        difficulty: "A1",
+        examples: [
+          { en: "Room 304 is on the third floor.", zh: "304号房位于三楼。" },
+          { en: "She finished first in the race.", zh: "她在比赛中名列第一。" },
+          { en: "The meeting is at four o'clock.", zh: "会议在四点钟举行。" }
+        ],
+        commonMistakes: [
+          { mistake: "She is the thirty first.", correction: "Use a hyphen: 'thirty-first'." },
+          { mistake: "One million dollar.", correction: "Make 'dollars' plural: 'one million dollars'." }
+        ],
+        relatedTerms: ["cardinal", "ordinal", "hyphen"],
+        register: "neutral",
+        intensityNote: "Level 0/5: Not offensive.",
+        usageContext: "Writing and formal speech for dates, room numbers, rankings, and addresses.",
+        formality: "neutral",
+        culturalNotes: "Use numerals 1, 2, 3 in technical contexts; spell out a, two, three below 10 in prose.",
+        warning: "Never mix spellings: '3999' or 'three thousand nine hundred ninety-nine' — pick one style and be consistent.",
+        safeAlternatives: [],
+        audioAvailable: true
+      },
+      {
+        id: "nm-decimals",
+        term: "Decimals & Fractions",
+        chinese: "小数与分数",
+        pinyin: "xiǎoshù yǔ fēnshù",
+        meaning: "Read decimals digit-by-digit after the point; fractions use 'over' or 'slash' form.",
+        category: "numbers-money",
+        difficulty: "A2",
+        examples: [
+          { en: "3.14 → three point one four.", zh: "3.14 → 三点一四。" },
+          { en: "5/8 → five over eight.", zh: "5/8 → 五分之八。" },
+          { en: "0.25 → zero point two five.", zh: "0.25 → 零点二五。" }
+        ],
+        commonMistakes: [
+          { mistake: "3.14 → 'three point fourteen'.", correction: "Say each digit: 'three point one four'." },
+          { mistake: "5/8 → 'five divide eight'.", correction: "Use 'five over eight' or 'five-eighths'." }
+        ],
+        relatedTerms: ["point", "over", "hyphen"],
+        register: "neutral",
+        intensityNote: "Level 0/5: Not offensive.",
+        usageContext: "Mathematics, cooking, measurements, and technical contexts.",
+        formality: "neutral",
+        culturalNotes: "In the US, read 0.50 as 'zero point five zero' or 'fifty cents' in money contexts.",
+        warning: "Trailing zeros matter in science but are dropped in casual speech.",
+        safeAlternatives: [],
+        audioAvailable: true
+      },
+      {
+        id: "nm-money-dollars",
+        term: "US Dollar Amounts",
+        chinese: "美元金额",
+        pinyin: "měiyuánròng jié",
+        meaning: "Whole dollar amounts are read as numbers; cents are written as decimals under the point.",
+        category: "numbers-money",
+        difficulty: "A2",
+        examples: [
+          { en: "$4.90 → four dollars and ninety cents.", zh: "$4.90 → 四美元九十美分。" },
+          { en: "$3,999 → three thousand nine hundred ninety-nine dollars.", zh: "$3,999 → 三千九百九十九美元。" },
+          { en: "$40.40 → forty dollars and forty cents.", zh: "$40.40 → 四十美元四十美分。" }
+        ],
+        commonMistakes: [
+          { mistake: "$4.90 → 'four point nine zero dollars'.", correction: "Say 'dollars and cents': 'four ninety'." },
+          { mistake: "Write '4 dollars 90 cents'.", correction: "Use decimals for the amount: $4.90." }
+        ],
+        relatedTerms: ["dollar", "cent", "decimal point"],
+        register: "neutral",
+        intensityNote: "Level 0/5: Not offensive.",
+        usageContext: "Prices, invoices, receipts, banking, and everyday shopping.",
+        formality: "neutral",
+        culturalNotes: "Americans often shorten '$4.90' to 'four ninety' in casual speech.",
+        warning: "Never say 'four point nine zero dollars' — use 'four dollars and ninety cents' or 'four ninety'.",
+        safeAlternatives: [],
+        audioAvailable: true
+      },
+      {
+        id: "nm-year-dates",
+        term: "Years & Dates",
+        chinese: "年份与日期",
+        pinyin: "niánfèn yǔ rìqī",
+        meaning: "Years are read in pairs (2024 = twenty-twenty-four); dates use month-day order.",
+        category: "numbers-money",
+        difficulty: "A1",
+        examples: [
+          { en: "2024 → twenty-twenty-four.", zh: "2024 → 二零二四。" },
+          { en: "October 4 → October fourth.", zh: "10月4日 → 十月四日。" },
+          { en: "1999 → nineteen ninety-nine.", zh: "1999 → 一九九九。" }
+        ],
+        commonMistakes: [
+          { mistake: "2024 → 'two thousand twenty-four'.", correction: "Use pair reading: 'twenty-twenty-four'. (Exception: 2000 = 'two thousand')" },
+          { mistake: "October 4 → 'October four'.", correction: "Use ordinal: 'October fourth'." }
+        ],
+        relatedTerms: ["pair reading", "ordinal", "month"],
+        register: "neutral",
+        intensityNote: "Level 0/5: Not offensive.",
+        usageContext: "Telling time, dates, historical years, anniversaries.",
+        formality: "neutral",
+        culturalNotes: "Years 2000-2009 use 'two thousand' (e.g., two thousand nine); 2010+ uses pair reading.",
+        warning: "Years 2000-2009 are exceptions to pair reading.",
+        safeAlternatives: [],
+        audioAvailable: true
+      }
+    ],
+    exercises: [
+      {
+        id: "nm-ex-1",
+        type: "fill-blank",
+        question: "How do you write '$4.90' in words?",
+        questionZh: "用英文拼写 '$4.90'?",
+        options: ["Four point ninety dollars", "Four dollars and ninety cents", "Four ninety dollars"],
+        correctAnswer: "Four dollars and ninety cents",
+        hint: "Use 'dollars and cents' for money amounts.",
+        hintZh: "金额用 'dollars and cents'。"
+      },
+      {
+        id: "nm-ex-2",
+        type: "fill-blank",
+        question: "Write 4040 in words.",
+        questionZh: "用英文拼写 4040?",
+        options: ["Four thousand forty", "Four thousand fourty", "Four thousands forty"],
+        correctAnswer: "Four thousand forty",
+        hint: "'Forty' has no 'u' — never 'fourty'.",
+        hintZh: "'Forty' 没有 'u' — 不是 'fourty'。"
+      },
+      {
+        id: "nm-ex-3",
+        type: "translation",
+        question: "Translate: 三千九百九十九美元。",
+        questionZh: "翻译：三千九百九十九美元。",
+        options: ["Three thousand nine hundred ninety-nine dollars", "Three thousands nine hundred ninety nine dollars", "Three thousand nine hundred and ninety-nine dollars"],
+        correctAnswer: "Three thousand nine hundred ninety-nine dollars",
+        hint: "No 'and' in American English number spelling.",
+        hintZh: "美式英语不用 'and'。"
+      },
+      {
+        id: "nm-ex-4",
+        type: "translation",
+        question: "Translate: 二零二四年十月四日。",
+        questionZh: "翻译：二零二四年十月四日。",
+        options: ["October fourth, twenty-twenty-four", "October fourth, two thousand twenty-four", "October the fourth, twenty-twenty-four"],
+        correctAnswer: "October fourth, twenty-twenty-four",
+        hint: "Years from 2010+ use pair reading.",
+        hintZh: "2010年后用拆读法。"
+      }
+    ],
+    teacherPanel: {
+      simpleExplanation: "Key spelling traps: 'forty' (no 'u'), use hyphens for compound numbers (twenty-one), and 'dollars and cents' for money.",
+      chineseExplanation: "拼写陷阱：'forty' 没有 'u'，复合数字用连字符（如 twenty-one），金额用 'dollars and cents'。",
+      learnerDifficulty: "Chinese learners often write 'fourty' instead of 'forty', and use 'and' in numbers like 'one hundred and one'.",
+      teachingTip: "Have students memorize 'forty' with flashcards. Drill the phrase 'dollars and cents' with pronunciation practice. Teach pair reading for years 2000-2099.",
+      drills: [
+        "Teacher: 'Spell 40.' Student: 'Four-ty, no U.'",
+        "Teacher: '$4.90' Student: 'Four dollars and ninety cents.'",
+        "Teacher: '2024' Student: 'Twenty-twenty-four.'",
+        "Teacher: 'How do you spell twenty-one?' Student: 'With a hyphen!'"
+      ]
+    }
+  },
+  {
     id: "multipliers",
     title: "Single / Double / Triple / Quadruple",
     titleZh: "单倍、双倍、三倍、四倍",
