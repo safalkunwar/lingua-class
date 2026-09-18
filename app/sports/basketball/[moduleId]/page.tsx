@@ -17,7 +17,9 @@ import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, BookOpen, Volume2, Lightbulb, ImageIcon } from "lucide-react";
+import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
+import { ArrowLeft, BookOpen, Volume2, Lightbulb, ImageIcon, Mic, Headphones, Waves, TrendingUp, MessageCircle } from "lucide-react";
+import { use } from "react";
 import { useState } from "react";
 
 const SCENE_IMAGES: Record<string, { emoji: string; title: string; color: string; image: string }> = {
@@ -73,9 +75,10 @@ function speak(text: string) {
 export default function BasketballModulePage({
   params,
 }: {
-  params: { moduleId: string };
+  params: Promise<{ moduleId: string }>;
 }) {
-  const module = basketballSubModules.find((m) => m.id === params.moduleId);
+  const { moduleId } = use(params);
+  const module = basketballSubModules.find((m) => m.id === moduleId);
   const [showZh, setShowZh] = useState(false);
 
   if (!module) {
@@ -141,93 +144,289 @@ export default function BasketballModulePage({
         )}
 
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}>
-          <Card className="p-6 sm:p-8">
-            {dialogueData ? (
-              <div className="space-y-8">
-                <div className="flex items-center justify-between">
-                  <h2 className="text-xl font-bold">{dialogueData.title}</h2>
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    onClick={() => setShowZh((v) => !v)}
-                  >
-                    {showZh ? "Hide Chinese" : "Show Chinese"}
-                  </Button>
-                </div>
-
-                {scene && (
-                  <div className="flex items-center gap-2 rounded-lg border border-border/50 bg-muted/30 p-3 text-sm text-muted-foreground">
-                    <ImageIcon className="h-4 w-4" />
-                    Scene: {scene.title} — Listen to each line and repeat after the speaker.
-                  </div>
+          <Card className="p-0 sm:p-0">
+            <Tabs defaultValue="content" className="w-full">
+              <TabsList className="flex flex-wrap gap-2 mb-0 bg-transparent">
+                {dialogueData ? (
+                  <>
+                    <TabsTrigger value="content" className="px-4 py-3 font-medium">
+                      📖 Dialogue Content
+                    </TabsTrigger>
+                    <TabsTrigger value="phrases" className="px-4 py-3 font-medium">
+                      💡 Key Phrases
+                    </TabsTrigger>
+                    <TabsTrigger value="practice" className="px-4 py-3 font-medium">
+                      🎯 Practice & Review
+                    </TabsTrigger>
+                  </>
+                ) : (
+                  <>
+                    <TabsTrigger value="content" className="px-4 py-3 font-medium">
+                      📖 Module Content
+                    </TabsTrigger>
+                  </>
                 )}
+              </TabsList>
 
-                <div className="space-y-4">
-                  {dialogueData.dialogue.map((line, idx) => (
-                    <motion.div
-                      key={idx}
-                      initial={{ opacity: 0, x: -10 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      transition={{ delay: idx * 0.03 }}
-                      className="rounded-xl border border-border/60 bg-gradient-to-br from-muted/40 to-muted/10 p-4 sm:p-5"
-                    >
-                      <div className="flex items-start gap-3">
-                        <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 text-lg text-white">
-                          {line.speaker[0]}
-                        </div>
-                        <div className="flex-1">
-                          <p className="font-semibold text-sm text-indigo-700 dark:text-indigo-300">{line.speaker}</p>
-                          <p className="mt-1 text-base leading-relaxed">{line.line.replace(/^[^\p{L}\p{N}]+/u, '')}</p>
-                          {showZh && line.lineZh && (
-                            <p className="mt-1 text-sm text-muted-foreground">{line.lineZh}</p>
-                          )}
-                        </div>
+              <TabsContent value="content" className="flex-1 p-6 sm:p-8">
+                {dialogueData ? (
+                  <div className="space-y-8">
+                    <div className="flex items-center justify-between mb-6">
+                      <h2 className="text-xl font-bold">{dialogueData.title}</h2>
+                      <div className="flex items-center gap-3">
+                        <Button
+                          variant="outline"
+                          size="sm"
+                          onClick={() => setShowZh((v) => !v)}
+                        >
+                          {showZh ? "Hide Chinese" : "Show Chinese"}
+                        </Button>
                         <Button
                           variant="ghost"
                           size="icon"
-                          className="h-9 w-9 shrink-0"
-                          onClick={() => speak(line.line.replace(/^[^\p{L}\p{N}]+/u, ''))}
+                          className="p-2"
+                          onClick={() => {
+                            // Play all dialogue lines sequentially
+                            const playAll = async () => {
+                              for (const line of dialogueData.dialogue) {
+                                speak(line.line.replace(/^[^\p{L}\p{N}]+/u, ''));
+                                await new Promise(resolve => setTimeout(resolve, 3000)); // 3 second delay between lines
+                              }
+                            };
+                            playAll();
+                          }}
                         >
-                          <Volume2 className="h-4 w-4" />
+                          <Mic className="h-4 w-4" />
                         </Button>
                       </div>
-                    </motion.div>
-                  ))}
-                </div>
-
-                {memoryPhrases && memoryPhrases.length > 0 && (
-                  <div className="rounded-xl border border-amber-200 bg-amber-50 p-6 dark:border-amber-700 dark:bg-amber-950/30">
-                    <div className="mb-4 flex items-center gap-2">
-                      <Lightbulb className="h-5 w-5 text-amber-600 dark:text-amber-400" />
-                      <h3 className="text-lg font-bold text-amber-900 dark:text-amber-100">Easy to Remember</h3>
                     </div>
-                    <div className="grid gap-4 sm:grid-cols-2">
-                      {memoryPhrases.flatMap((group) =>
-                        group.phrases.map((phrase, idx) => (
-                          <div key={idx} className="rounded-lg border border-amber-100 bg-white p-4 dark:border-amber-800 dark:bg-background">
-                            <p className="font-semibold text-amber-900 dark:text-amber-100">{phrase.en}</p>
-                            <p className="mt-1 text-sm text-amber-800 dark:text-amber-200">{phrase.zh}</p>
-                            <p className="mt-2 text-xs text-amber-700 dark:text-amber-300">💡 {phrase.tip}</p>
+
+                    {scene && (
+                      <div className="flex items-center gap-2 rounded-lg border border-border/50 bg-muted/30 p-4 text-sm text-muted-foreground">
+                        <ImageIcon className="h-5 w-5" />
+                        <span className="font-medium">Scene:</span> {scene.title} — Listen to each line and repeat after the speaker.
+                      </div>
+                    )}
+
+                    <div className="space-y-6">
+                      {dialogueData.dialogue.map((line, idx) => (
+                        <motion.div
+                          key={idx}
+                          initial={{ opacity: 0, x: -10, scale: 0.95 }}
+                          animate={{ opacity: 1, x: 0, scale: 1 }}
+                          transition={{ delay: idx * 0.03, type: "spring", stiffness: 300, damping: 20 }}
+                          className="rounded-xl border border-border/60 bg-gradient-to-br from-muted/50 to-muted/5 p-5 sm:p-6 hover:shadow-lg transition-shadow duration-300"
+                        >
+                          <div className="flex items-start gap-4">
+                            <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 text-xl text-white">
+                              {line.speaker[0]}
+                            </div>
+                            <div className="flex-1">
+                              <p className="font-semibold text-sm text-indigo-800 dark:text-indigo-200">{line.speaker}</p>
+                              <p className="mt-2 text-lg leading-relaxed break-words">{line.line.replace(/^[^\p{L}\p{N}]+/u, '')}</p>
+                              {showZh && line.lineZh && (
+                                <p className="mt-3 text-sm text-muted-foreground">{line.lineZh}</p>
+                              )}
+                            </div>
+                            <Button
+                              variant="ghost"
+                              size="icon"
+                              className="h-10 w-10 shrink-0 flex-shrink-0"
+                              onClick={() => speak(line.line.replace(/^[^\p{L}\p{N}]+/u, ''))}
+                            >
+                              <Volume2 className="h-4 w-4" />
+                            </Button>
                           </div>
-                        ))
-                      )}
+                        </motion.div>
+                      ))}
+                    </div>
+                  </div>
+                ) : (
+                  <div className="text-center py-16">
+                    <BookOpen className="w-20 h-20 mx-auto mb-6 text-muted-foreground" />
+                    <h2 className="text-2xl font-bold mb-4">Coming Soon</h2>
+                    <p className="text-muted-foreground max-w-2xl mx-auto">
+                      This module is being prepared. Check back soon for interactive lessons, audio practice, and quizzes!
+                    </p>
+                    <p className="text-sm text-muted-foreground mt-4">此模块正在准备中。敬请期待互动课程、音频练习和测验！</p>
+                    <div className="mt-8">
+                      <Link href="/sports/basketball">
+                        <Button className="mt-6 px-8 py-3">Explore Other Basketball Modules</Button>
+                      </Link>
                     </div>
                   </div>
                 )}
-              </div>
-            ) : (
-              <div className="text-center py-12">
-                <BookOpen className="w-16 h-16 mx-auto mb-4 text-muted-foreground" />
-                <h2 className="text-2xl font-bold mb-2">Coming Soon</h2>
-                <p className="text-muted-foreground max-w-md mx-auto">
-                  This module is being prepared. Check back soon for interactive lessons, audio practice, and quizzes!
-                </p>
-                <p className="text-sm text-muted-foreground mt-2">此模块正在准备中。敬请期待互动课程、音频练习和测验！</p>
-                <Link href="/sports/basketball">
-                  <Button className="mt-6">Explore Other Basketball Modules</Button>
-                </Link>
-              </div>
-            )}
+              </TabsContent>
+
+              <TabsContent value="phrases" className="flex-1 p-6 sm:p-8">
+                {memoryPhrases && memoryPhrases.length > 0 ? (
+                  <div className="space-y-8">
+                    <div className="flex items-center justify-between mb-6">
+                      <h2 className="text-xl font-bold">Easy to Remember Phrases</h2>
+                      <p className="text-muted-foreground">Key expressions to help you sound natural</p>
+                    </div>
+
+                    <div className="space-y-8">
+                      {memoryPhrases.map((group, groupIndex) => (
+                        <motion.div
+                          key={groupIndex}
+                          initial={{ opacity: 0, y: 20 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{ delay: groupIndex * 0.05 }}
+                          className="space-y-4"
+                        >
+                          <div className="flex items-center gap-3 mb-4">
+                            <Lightbulb className="h-5 w-5 text-amber-600" />
+                            <h3 className="text-lg font-bold text-amber-900">{group.category}</h3>
+                          </div>
+                          
+                          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+                            {group.phrases.map((phrase, phraseIndex) => (
+                              <motion.div
+                                key={phraseIndex}
+                                initial={{ opacity: 0, scale: 0.9 }}
+                                animate={{ opacity: 1, scale: 1 }}
+                                transition={{ delay: phraseIndex * 0.03 }}
+                                className="rounded-xl border border-amber-200 bg-amber-50 p-6 hover:border-amber-300 hover:bg-amber-100 transition-all duration-300"
+                              >
+                                <div className="space-y-3">
+                                  <p className="font-semibold text-amber-900 dark:text-amber-100">{phrase.en}</p>
+                                  <p className="mt-1 text-sm text-amber-800 dark:text-amber-200">{phrase.zh}</p>
+                                  <p className="mt-2 text-xs text-amber-700 dark:text-amber-300">
+                                    💡 {phrase.tip}
+                                  </p>
+                                </div>
+                              </motion.div>
+                            ))}
+                          </div>
+                        </motion.div>
+                      ))}
+                    </div>
+                  </div>
+                ) : (
+                  <div className="text-center py-16">
+                    <p className="text-muted-foreground">No key phrases available for this module.</p>
+                  </div>
+                )}
+              </TabsContent>
+
+              <TabsContent value="practice" className="flex-1 p-6 sm:p-8">
+                <div className="space-y-8">
+                  <div className="flex items-center justify-between mb-6">
+                    <h2 className="text-xl font-bold">Practice & Review</h2>
+                    <p className="text-muted-foreground">Reinforce your learning with interactive exercises</p>
+                  </div>
+                  
+                  {dialogueData ? (
+                    <>
+                      <div className="space-y-6">
+                        <h3 className="text-lg font-bold mb-4">Speaking Practice</h3>
+                        <p className="text-muted-foreground mb-4">
+                          Practice saying these key lines out loud to improve your pronunciation and fluency.
+                        </p>
+                        <div className="space-y-4">
+                          {dialogueData.dialogue.slice(0, 3).map((line, idx) => (
+                            <motion.div
+                              key={idx}
+                              initial={{ opacity: 0, y: 10 }}
+                              animate={{ opacity: 1, y: 0 }}
+                              transition={{ delay: idx * 0.05 }}
+                              className="rounded-xl border border-border/50 bg-muted/50 p-5"
+                            >
+                              <div className="flex items-start gap-3 mb-3">
+                                <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full from-indigo-500 to-purple-600 text-white">
+                                  {line.speaker[0]}
+                                </div>
+                                <div>
+                                  <p className="font-medium">{line.speaker}</p>
+                                  <p className="mt-1 text-sm text-muted-foreground">{line.line.replace(/^[^\p{L}\p{N}]+/u, '')}</p>
+                                </div>
+                              </div>
+                              <div className="flex items-center gap-3">
+                                <Button
+                                  variant="outline"
+                                  size="sm"
+                                  onClick={() => speak(line.line.replace(/^[^\p{L}\p{N}]+/u, ''))}
+                                >
+                                  🔊 Listen & Repeat
+                                </Button>
+                                <span className="text-xs text-muted-foreground">
+                                  Click to hear the pronunciation
+                                </span>
+                              </div>
+                            </motion.div>
+                          ))}
+                        </div>
+                      </div>
+                      
+                      <div className="space-y-6">
+                        <h3 className="text-lg font-bold mb-4">Fill-in-the-Blank Practice</h3>
+                        <p className="text-muted-foreground mb-4">
+                          Test your memory by filling in the missing words from key phrases.
+                        </p>
+                        {memoryPhrases.flatMap((group) => group.phrases).slice(0, 4).map((phrase, idx) => (
+                          <motion.div
+                            key={idx}
+                            initial={{ opacity: 0, y: 10 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: idx * 0.05 }}
+                            className="rounded-xl border border-gray-200 bg-white p-6"
+                          >
+                            <div className="mb-4">
+                              <p className="font-medium">{phrase.en}</p>
+                              <p className="text-sm text-muted-foreground">{phrase.zh}</p>
+                            </div>
+                            <div className="space-y-3">
+                              <label className="block text-sm font-medium mb-2">
+                                Fill in the blank: "{phrase.en.replace(phrase.en.split(' ')[0], '_____')}"
+                              </label>
+                              <input
+                                type="text"
+                                placeholder="Type your answer here..."
+                                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200"
+                              />
+                            </div>
+                          </motion.div>
+                        ))}
+                      </div>
+                      
+                      <div className="space-y-6">
+                        <h3 className="text-lg font-bold mb-4">Quick Review</h3>
+                        <p className="text-muted-foreground text-center mb-6">
+                          Review these essential basketball expressions
+                        </p>
+                        <div className="grid gap-4 sm:grid-cols-2">
+                          {[
+                            { en: "Did you see that...?", zh: "你看到那个……了吗？", tip: "Conversation starter" },
+                            { en: "The defense had no chance.", zh: "防守根本没办法。", tip: "Express dominance" },
+                            { en: "grab a snack during the break", zh: "休息时去买零食", tip: "Break time activity" },
+                            { en: "I was on the edge of my seat", zh: "我紧张得不敢坐稳", tip: "Express excitement" },
+                            { en: "The crowd went wild", zh: "观众沸腾了", tip: "Describe exciting moment" },
+                            { en: "We got this!", zh: "我们能赢！", tip: "Team encouragement" }
+                          ].map((item, idx) => (
+                            <motion.div
+                              key={idx}
+                              initial={{ opacity: 0, scale: 0.95 }}
+                              animate={{ opacity: 1, scale: 1 }}
+                              transition={{ delay: idx * 0.03 }}
+                              className="rounded-xl border border-amber-200 bg-amber-50 p-5 text-center"
+                            >
+                              <p className="font-semibold text-amber-900">{item.en}</p>
+                              <p className="mt-2 text-sm text-amber-800">{item.zh}</p>
+                              <p className="mt-1 text-xs text-amber-700 italic">💡 {item.tip}</p>
+                            </motion.div>
+                          ))}
+                        </div>
+                      </div>
+                    </>
+                  ) : (
+                    <div className="text-center py-12">
+                      <p className="text-muted-foreground">Practice exercises coming soon for this module.</p>
+                    </div>
+                  )}
+                </div>
+              </TabsContent>
+            </Tabs>
           </Card>
         </motion.div>
       </div>
