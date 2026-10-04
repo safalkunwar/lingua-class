@@ -35,6 +35,7 @@ export function StudentSidebar() {
     { href: "/vocabulary", label: "Vocabulary", icon: BookOpen },
     { href: "/word-book", label: "Word Book", icon: BookOpen },
     { href: "/conversations", label: "Conversations", icon: MessageCircle },
+    { href: "/grammar", label: "📐 Grammar", icon: BookMarked },
     { href: "/everyday-english", label: "Everyday English", icon: BookMarked },
     { href: "/daily-expressions", label: "Daily Expressions", icon: BookMarked },
     { href: "/slang-academy", label: "Slang Academy", icon: MessageSquare },

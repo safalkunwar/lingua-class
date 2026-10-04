@@ -12,7 +12,12 @@ export async function middleware(request: NextRequest) {
     return NextResponse.json({ error: "Admin access required." }, { status: 403 });
   }
 
-  const isPublic = pathname === "/" || pathname === "/login" || pathname.startsWith("/api/auth/") || pathname.startsWith("/sports/basketball");
+  const isPublic =
+    pathname === "/" ||
+    pathname === "/login" ||
+    pathname.startsWith("/api/auth/") ||
+    pathname.startsWith("/sports/basketball") ||
+    pathname.startsWith("/grammar");
 
   if (!session && !isPublic) {
     return NextResponse.redirect(new URL("/login", request.url));
