@@ -141,7 +141,7 @@ export function GrammarSlideViewer({ lesson }: GrammarSlideViewerProps) {
   }, [goToNextSlide, goToPrevSlide, currentSlideIndex, totalSlides]);
 
   const handleSpeak = (text?: string) => {
-    const target = text || currentSlide.audioText || currentSlide.content;
+    const target = text || currentSlide.audioText || currentSlide.content || "";
     speakEnglish(target);
   };
 
