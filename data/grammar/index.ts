@@ -1,6 +1,41 @@
 import { grammarCategories } from "./categories";
 import { verbSubcategories } from "./verbs";
-import { actionVerbsFoundationLesson } from "./verbs/action-verbs";
+import { tenseSubcategories } from "./tenses";
+import { nounsArticlesSubcategories } from "./nouns-articles";
+import { pronounsSubcategories } from "./pronouns";
+import {
+  actionVerbsFoundationLesson,
+  helpingVerbsLesson,
+  linkingVerbsLesson,
+  modalVerbsLesson,
+  transitiveVerbsLesson,
+  intransitiveVerbsLesson,
+  regularVerbsLesson,
+  irregularVerbsLesson,
+  stateVerbsLesson,
+} from "./verbs";
+import {
+  presentSimpleLesson,
+  presentContinuousLesson,
+  pastSimpleLesson,
+  futureWillLesson,
+  futureGoingToLesson,
+  presentPerfectLesson,
+  pastContinuousLesson,
+  pastPerfectLesson,
+  futureContinuousLesson,
+  presentPerfectContinuousLesson,
+  pastPerfectContinuousLesson,
+  futurePerfectLesson,
+  futurePerfectContinuousLesson,
+  tenseMasterChallenge,
+} from "./tenses";
+import {
+  countableUncountableLesson,
+} from "./nouns-articles";
+import {
+  subjectObjectLesson,
+} from "./pronouns";
 import {
   GrammarCategory,
   GrammarSubcategory,
@@ -10,11 +45,45 @@ import {
 // Subcategory registry map
 const subcategoryRegistry: Record<string, GrammarSubcategory[]> = {
   verbs: verbSubcategories,
+  tenses: tenseSubcategories,
+  "nouns-articles": nounsArticlesSubcategories,
+  "pronouns": pronounsSubcategories,
 };
 
 // Lesson registry map
 const lessonRegistry: Record<string, GrammarLesson> = {
+  // Verbs lessons
   "action-verbs-foundation": actionVerbsFoundationLesson,
+  "helping-verbs-foundation": helpingVerbsLesson,
+  "linking-verbs-foundation": linkingVerbsLesson,
+  "modal-verbs-foundation": modalVerbsLesson,
+  "transitive-verbs-foundation": transitiveVerbsLesson,
+  "intransitive-verbs-foundation": intransitiveVerbsLesson,
+  "regular-verbs-foundation": regularVerbsLesson,
+  "irregular-verbs-foundation": irregularVerbsLesson,
+  "state-verbs-foundation": stateVerbsLesson,
+
+  // Tenses lessons
+  "present-simple-foundation": presentSimpleLesson,
+  "present-continuous-foundation": presentContinuousLesson,
+  "past-simple-foundation": pastSimpleLesson,
+  "future-will-foundation": futureWillLesson,
+  "future-going-to-foundation": futureGoingToLesson,
+  "present-perfect-foundation": presentPerfectLesson,
+  "past-continuous-foundation": pastContinuousLesson,
+  "past-perfect-foundation": pastPerfectLesson,
+  "future-continuous-foundation": futureContinuousLesson,
+  "present-perfect-continuous-foundation": presentPerfectContinuousLesson,
+  "past-perfect-continuous-foundation": pastPerfectContinuousLesson,
+  "future-perfect-foundation": futurePerfectLesson,
+  "future-perfect-continuous-foundation": futurePerfectContinuousLesson,
+  "tense-master-challenge-final": tenseMasterChallenge,
+
+  // Nouns & Articles lessons
+  "countable-uncountable-foundation": countableUncountableLesson,
+
+  // Pronouns lessons
+  "subject-object-foundation": subjectObjectLesson,
 };
 
 export function getAllGrammarCategories(): GrammarCategory[] {
@@ -41,4 +110,41 @@ export function getGrammarLesson(lessonId: string): GrammarLesson | undefined {
   return lessonRegistry[lessonId];
 }
 
-export { grammarCategories, verbSubcategories, actionVerbsFoundationLesson };
+export {
+  grammarCategories,
+  verbSubcategories,
+  tenseSubcategories,
+  nounsArticlesSubcategories,
+  pronounsSubcategories,
+  actionVerbsFoundationLesson,
+  helpingVerbsLesson,
+  linkingVerbsLesson,
+  modalVerbsLesson,
+  transitiveVerbsLesson,
+  intransitiveVerbsLesson,
+  regularVerbsLesson,
+  irregularVerbsLesson,
+  stateVerbsLesson,
+  presentSimpleLesson,
+  presentContinuousLesson,
+  pastSimpleLesson,
+  futureWillLesson,
+  futureGoingToLesson,
+  presentPerfectLesson,
+  pastContinuousLesson,
+  pastPerfectLesson,
+  futureContinuousLesson,
+  presentPerfectContinuousLesson,
+  pastPerfectContinuousLesson,
+  futurePerfectLesson,
+  futurePerfectContinuousLesson,
+  tenseMasterChallenge,
+  countableUncountableLesson,
+};
+
+
+
+
+
+
+

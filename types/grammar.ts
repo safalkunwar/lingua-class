@@ -45,7 +45,7 @@ export interface GrammarLessonSummary {
   titleZh: string;
   level: CEFRLevel;
   estimatedMinutes: number;
-  slideCount: number;
+  slideCount?: number;
   description: string;
   descriptionZh: string;
 }
@@ -137,7 +137,7 @@ export interface GrammarQuestion {
   options: string[];
   correctIndex: number;
   explanation: string;
-  explanationZh: string;
+  explanationZh?: string;
   xpReward: number;
 }
 
@@ -146,7 +146,7 @@ export interface GrammarScenarioDialogueLine {
   speakerZh?: string;
   avatar?: string;
   en: string;
-  zh: string;
+  zh?: string;
   isTargetGrammar?: boolean;
 }
 
@@ -273,10 +273,10 @@ export interface ListeningDrillItem {
 export interface VocabularyItem {
   word: string;
   wordZh: string;
-  partOfSpeech: string;
+  partOfSpeech?: string;
   definition: string;
-  exampleSentence: string;
-  exampleSentenceZh: string;
+  exampleSentence?: string;
+  exampleSentenceZh?: string;
 }
 
 export interface HomeworkTask {
@@ -301,7 +301,7 @@ export interface GrammarSlide {
   badge?: string;
   title: string;
   titleZh?: string;
-  content: string;
+  content?: string;
   contentZh?: string;
   keyPoints?: string[];
 
