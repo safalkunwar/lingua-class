@@ -32,9 +32,21 @@ import {
 } from "./tenses";
 import {
   countableUncountableLesson,
+  pluralFormsLesson,
+  properNounsLesson,
+  articleALesson,
+  articleTheLesson,
+  zeroArticleLesson,
+  articleExceptionsLesson,
+  nounPhrasesLesson,
 } from "./nouns-articles";
 import {
   subjectObjectLesson,
+  possessiveLesson,
+  reflexiveLesson,
+  relativeLesson,
+  demonstrativeLesson,
+  indefiniteLesson,
 } from "./pronouns";
 import {
   GrammarCategory,
@@ -81,9 +93,21 @@ const lessonRegistry: Record<string, GrammarLesson> = {
 
   // Nouns & Articles lessons
   "countable-uncountable-foundation": countableUncountableLesson,
+  "plural-forms-foundation": pluralFormsLesson,
+  "proper-nouns-foundation": properNounsLesson,
+  "article-a-an-foundation": articleALesson,
+  "article-the-foundation": articleTheLesson,
+  "zero-article-foundation": zeroArticleLesson,
+  "article-exceptions-foundation": articleExceptionsLesson,
+  "noun-phrases-foundation": nounPhrasesLesson,
 
   // Pronouns lessons
   "subject-object-foundation": subjectObjectLesson,
+  "possessive-foundation": possessiveLesson,
+  "reflexive-foundation": reflexiveLesson,
+  "relative-foundation": relativeLesson,
+  "demonstrative-foundation": demonstrativeLesson,
+  "indefinite-foundation": indefiniteLesson,
 };
 
 export function getAllGrammarCategories(): GrammarCategory[] {
@@ -140,6 +164,19 @@ export {
   futurePerfectContinuousLesson,
   tenseMasterChallenge,
   countableUncountableLesson,
+  pluralFormsLesson,
+  properNounsLesson,
+  articleALesson,
+  articleTheLesson,
+  zeroArticleLesson,
+  articleExceptionsLesson,
+  nounPhrasesLesson,
+  subjectObjectLesson,
+  possessiveLesson,
+  reflexiveLesson,
+  relativeLesson,
+  demonstrativeLesson,
+  indefiniteLesson,
 };
 
 
