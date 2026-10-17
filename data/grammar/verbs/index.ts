@@ -1,4 +1,13 @@
 import { GrammarSubcategory } from "@/types/grammar";
+import { actionVerbsFoundationLesson } from "./action-verbs";
+import { helpingVerbsLesson } from "./helping-verbs";
+import { linkingVerbsLesson } from "./linking-verbs";
+import { modalVerbsLesson } from "./modal-verbs";
+import { transitiveVerbsLesson } from "./transitive-verbs";
+import { intransitiveVerbsLesson } from "./intransitive-verbs";
+import { regularVerbsLesson } from "./regular-verbs";
+import { irregularVerbsLesson } from "./irregular-verbs";
+import { stateVerbsLesson } from "./state-verbs";
 
 export const verbSubcategories: GrammarSubcategory[] = [
   {
@@ -392,3 +401,15 @@ export const verbSubcategories: GrammarSubcategory[] = [
     ],
   },
 ];
+
+export {
+  actionVerbsFoundationLesson,
+  helpingVerbsLesson,
+  linkingVerbsLesson,
+  modalVerbsLesson,
+  transitiveVerbsLesson,
+  intransitiveVerbsLesson,
+  regularVerbsLesson,
+  irregularVerbsLesson,
+  stateVerbsLesson,
+};
