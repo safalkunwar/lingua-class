@@ -48,6 +48,25 @@ import {
   demonstrativeLesson,
   indefiniteLesson,
 } from "./pronouns";
+import { adjectivesSubcategories } from "./adjectives";
+import { adverbsSubcategories } from "./adverbs";
+import {
+  basicAdjectivesLesson,
+  adjectiveOrderingLesson,
+  edVsIngAdjectivesLesson,
+  compoundAdjectivesLesson,
+  comparativesSuperlativesLesson,
+  participialAdjectivesLesson,
+  descriptiveAdjectivesLesson,
+} from "./adjectives";
+import {
+  adverbsMannerLesson,
+  adverbsFrequencyLesson,
+  adverbsTimeLesson,
+  adverbsDegreeLesson,
+  adverbsPlaceLesson,
+  adverbsMasterChallengeLesson,
+} from "./adverbs";
 import {
   GrammarCategory,
   GrammarSubcategory,
@@ -60,6 +79,8 @@ const subcategoryRegistry: Record<string, GrammarSubcategory[]> = {
   tenses: tenseSubcategories,
   "nouns-articles": nounsArticlesSubcategories,
   "pronouns": pronounsSubcategories,
+  adjectives: adjectivesSubcategories,
+  adverbs: adverbsSubcategories,
 };
 
 // Lesson registry map
@@ -108,6 +129,23 @@ const lessonRegistry: Record<string, GrammarLesson> = {
   "relative-foundation": relativeLesson,
   "demonstrative-foundation": demonstrativeLesson,
   "indefinite-foundation": indefiniteLesson,
+
+  // Adjectives lessons
+  "basic-adjectives-foundation": basicAdjectivesLesson,
+  "adjective-ordering-foundation": adjectiveOrderingLesson,
+  "ed-vs-ing-foundation": edVsIngAdjectivesLesson,
+  "compound-adjectives-foundation": compoundAdjectivesLesson,
+  "comparatives-superlatives-foundation": comparativesSuperlativesLesson,
+  "participial-adjectives-foundation": participialAdjectivesLesson,
+  "descriptive-adjectives-foundation": descriptiveAdjectivesLesson,
+
+  // Adverbs lessons
+  "adverbs-manner-foundation": adverbsMannerLesson,
+  "adverbs-frequency-foundation": adverbsFrequencyLesson,
+  "adverbs-time-foundation": adverbsTimeLesson,
+  "adverbs-degree-foundation": adverbsDegreeLesson,
+  "adverbs-place-foundation": adverbsPlaceLesson,
+  "adverbs-master-challenge-foundation": adverbsMasterChallengeLesson,
 };
 
 export function getAllGrammarCategories(): GrammarCategory[] {
@@ -140,6 +178,8 @@ export {
   tenseSubcategories,
   nounsArticlesSubcategories,
   pronounsSubcategories,
+  adjectivesSubcategories,
+  adverbsSubcategories,
   actionVerbsFoundationLesson,
   helpingVerbsLesson,
   linkingVerbsLesson,
@@ -177,11 +217,17 @@ export {
   relativeLesson,
   demonstrativeLesson,
   indefiniteLesson,
+  basicAdjectivesLesson,
+  adjectiveOrderingLesson,
+  edVsIngAdjectivesLesson,
+  compoundAdjectivesLesson,
+  comparativesSuperlativesLesson,
+  participialAdjectivesLesson,
+  descriptiveAdjectivesLesson,
+  adverbsMannerLesson,
+  adverbsFrequencyLesson,
+  adverbsTimeLesson,
+  adverbsDegreeLesson,
+  adverbsPlaceLesson,
+  adverbsMasterChallengeLesson,
 };
-
-
-
-
-
-
-
