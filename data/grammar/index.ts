@@ -190,6 +190,7 @@ export {
   pronounsSubcategories,
   adjectivesSubcategories,
   adverbsSubcategories,
+  prepositionsSubcategories,
   actionVerbsFoundationLesson,
   helpingVerbsLesson,
   linkingVerbsLesson,
@@ -240,4 +241,6 @@ export {
   adverbsDegreeLesson,
   adverbsPlaceLesson,
   adverbsMasterChallengeLesson,
+  timePrepositionsLesson,
+  placePrepositionsLesson,
 };
