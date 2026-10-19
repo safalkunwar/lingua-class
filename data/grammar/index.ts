@@ -50,6 +50,11 @@ import {
 } from "./pronouns";
 import { adjectivesSubcategories } from "./adjectives";
 import { adverbsSubcategories } from "./adverbs";
+import { prepositionsSubcategories } from "./prepositions";
+import {
+  timePrepositionsLesson,
+  placePrepositionsLesson,
+} from "./prepositions";
 import {
   basicAdjectivesLesson,
   adjectiveOrderingLesson,
@@ -81,6 +86,7 @@ const subcategoryRegistry: Record<string, GrammarSubcategory[]> = {
   "pronouns": pronounsSubcategories,
   adjectives: adjectivesSubcategories,
   adverbs: adverbsSubcategories,
+  prepositions: prepositionsSubcategories,
 };
 
 // Lesson registry map
@@ -146,6 +152,10 @@ const lessonRegistry: Record<string, GrammarLesson> = {
   "adverbs-degree-foundation": adverbsDegreeLesson,
   "adverbs-place-foundation": adverbsPlaceLesson,
   "adverbs-master-challenge-foundation": adverbsMasterChallengeLesson,
+
+  // Prepositions lessons
+  "time-prepositions-foundation": timePrepositionsLesson,
+  "place-prepositions-foundation": placePrepositionsLesson,
 };
 
 export function getAllGrammarCategories(): GrammarCategory[] {
