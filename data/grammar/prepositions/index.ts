@@ -1,6 +1,8 @@
 import { GrammarSubcategory, GrammarLessonSummary } from '@/types/grammar';
 import { timePrepositionsLesson } from './time-prepositions';
 import { placePrepositionsLesson } from './place-prepositions';
+import { directionPrepositionsLesson } from './direction-prepositions';
+import { prepositionalPhrasesLesson } from './prepositional-phrases';
 
 export const prepositionsSubcategories: GrammarSubcategory[] = [
   {
@@ -64,8 +66,12 @@ export const prepositionsSubcategories: GrammarSubcategory[] = [
 export const allPrepositionLessons: GrammarLessonSummary[] = [
   timePrepositionsLesson,
   placePrepositionsLesson,
+  directionPrepositionsLesson,
+  prepositionalPhrasesLesson,
 ];
 export {
   timePrepositionsLesson,
   placePrepositionsLesson,
+  directionPrepositionsLesson,
+  prepositionalPhrasesLesson,
 };

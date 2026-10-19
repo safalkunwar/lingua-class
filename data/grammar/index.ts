@@ -54,6 +54,8 @@ import { prepositionsSubcategories } from "./prepositions";
 import {
   timePrepositionsLesson,
   placePrepositionsLesson,
+  directionPrepositionsLesson,
+  prepositionalPhrasesLesson,
 } from "./prepositions";
 import {
   basicAdjectivesLesson,
@@ -156,6 +158,8 @@ const lessonRegistry: Record<string, GrammarLesson> = {
   // Prepositions lessons
   "time-prepositions-foundation": timePrepositionsLesson,
   "place-prepositions-foundation": placePrepositionsLesson,
+  "direction-prepositions-foundation": directionPrepositionsLesson,
+  "prepositional-phrases-foundation": prepositionalPhrasesLesson,
 };
 
 export function getAllGrammarCategories(): GrammarCategory[] {
