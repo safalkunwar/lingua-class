@@ -64,7 +64,7 @@ export const businessCategories: BusinessCategory[] = [
     title: "Sales",
     titleZh: "销售英语",
     emoji: "💰",
-    description: "Talking to customers and closing deals.",
+    description: "Talking to customers and closing the deals",
     descriptionZh: "与客户沟通并促成交易。",
     color: "from-emerald-500 to-teal-600",
     icon: "TrendingUp",
