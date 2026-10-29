@@ -51,6 +51,13 @@ import {
 import { adjectivesSubcategories } from "./adjectives";
 import { adverbsSubcategories } from "./adverbs";
 import { prepositionsSubcategories } from "./prepositions";
+import { pteGrammarSubcategories } from "./pte-grammar";
+import {
+  pteCollocationsLesson,
+  pteSentenceStructureLesson,
+  pteFillInBlanksLesson,
+  pteErrorCorrectionLesson,
+} from "./pte-grammar";
 import {
   timePrepositionsLesson,
   placePrepositionsLesson,
@@ -89,6 +96,7 @@ const subcategoryRegistry: Record<string, GrammarSubcategory[]> = {
   adjectives: adjectivesSubcategories,
   adverbs: adverbsSubcategories,
   prepositions: prepositionsSubcategories,
+  "pte-grammar": pteGrammarSubcategories,
 };
 
 // Lesson registry map
