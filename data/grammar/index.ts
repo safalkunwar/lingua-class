@@ -168,6 +168,10 @@ const lessonRegistry: Record<string, GrammarLesson> = {
   "place-prepositions-foundation": placePrepositionsLesson,
   "direction-prepositions-foundation": directionPrepositionsLesson,
   "prepositional-phrases-foundation": prepositionalPhrasesLesson,
+  "pte-collocations-foundation": pteCollocationsLesson,
+  "pte-sentence-structure-foundation": pteSentenceStructureLesson,
+  "pte-fill-in-blanks-foundation": pteFillInBlanksLesson,
+  "pte-error-correction-foundation": pteErrorCorrectionLesson,
 };
 
 export function getAllGrammarCategories(): GrammarCategory[] {
