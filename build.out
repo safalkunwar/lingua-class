@@ -1,0 +1,84 @@
+▲ Next.js 16.2.9 (Turbopack)
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 39.3s
+  Running TypeScript ...
+  Finished TypeScript in 43s ...
+  Collecting page data using 15 workers ...
+  Generating static pages using 15 workers (0/45) ...
+  Generating static pages using 15 workers (11/45) 
+  Generating static pages using 15 workers (22/45) 
+  Generating static pages using 15 workers (33/45) 
+✓ Generating static pages using 15 workers (45/45) in 1554ms
+  Finalizing page optimization ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ƒ /admin
+├ ƒ /api/admin/users
+├ ƒ /api/auth/logout
+├ ƒ /api/auth/session
+├ ○ /business-english
+├ ƒ /business-english/[categoryId]
+├ ƒ /business-english/[categoryId]/[lessonId]
+├ ○ /business-english/emails
+├ ○ /business-english/idioms
+├ ○ /business-english/read
+├ ○ /business-english/vocabulary
+├ ○ /classroom
+├ ○ /conversations
+├ ƒ /conversations/[id]
+├ ○ /daily-expressions
+├ ○ /daily-expressions/read
+├ ○ /english-boost
+├ ○ /english-boost.backup
+├ ƒ /english-boost/[id]
+├ ○ /english-decoder
+├ ○ /english-decoder.backup
+├ ○ /english-survival-library
+├ ○ /english-survival-library.backup
+├ ƒ /english-survival-library.backup/[id]
+├ ƒ /english-survival-library/[id]
+├ ○ /everyday-english
+├ ƒ /everyday-english/[sectionId]
+├ ƒ /everyday-english/[sectionId]/[patternId]
+├ ƒ /everyday-english/[sectionId]/read
+├ ○ /flashcards
+├ ○ /grammar
+├ ƒ /grammar/[categoryId]
+├ ƒ /grammar/[categoryId]/[subcategoryId]
+├ ƒ /grammar/[categoryId]/[subcategoryId]/[lessonId]
+├ ○ /image-guessing
+├ ○ /lesson-library
+├ ○ /listening
+├ ○ /login
+├ ○ /progress
+├ ○ /reading
+├ ƒ /reading/[id]
+├ ○ /settings
+├ ○ /slang-academy
+├ ○ /slang-academy/read
+├ ○ /speaking
+├ ƒ /speaking/[topicId]
+├ ○ /sports
+├ ○ /sports/basketball
+├ ƒ /sports/basketball/[moduleId]
+├ ○ /sports/basketball/curry-mission
+├ ○ /student
+├ ○ /teacher
+├ ƒ /teacher/lesson/[levelId]
+├ ○ /vocabulary
+├ ƒ /vocabulary/[levelId]
+├ ƒ /vocabulary/[levelId]/quiz
+├ ƒ /vocabulary/[levelId]/read
+├ ○ /word-book
+├ ○ /word-book/read
+└ ○ /writing
+
+
+ƒ Proxy (Middleware)
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+
