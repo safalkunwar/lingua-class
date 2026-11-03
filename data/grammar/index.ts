@@ -36,7 +36,6 @@ import {
   properNounsLesson,
   articleALesson,
   articleTheLesson,
-  zeroArticleLesson,
   articleExceptionsLesson,
   nounPhrasesLesson,
 } from "./nouns-articles";
@@ -51,6 +50,12 @@ import {
 import { adjectivesSubcategories } from "./adjectives";
 import { adverbsSubcategories } from "./adverbs";
 import { prepositionsSubcategories } from "./prepositions";
+import { articlesSubcategories } from "./articles";
+import {
+  indefiniteArticlesLesson,
+  definiteArticleLesson,
+  zeroArticleLesson,
+} from "./articles";
 import { pteGrammarSubcategories } from "./pte-grammar";
 import {
   pteCollocationsLesson,
@@ -235,7 +240,6 @@ export {
   properNounsLesson,
   articleALesson,
   articleTheLesson,
-  zeroArticleLesson,
   articleExceptionsLesson,
   nounPhrasesLesson,
   subjectObjectLesson,

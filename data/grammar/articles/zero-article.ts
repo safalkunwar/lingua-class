@@ -1,0 +1,46 @@
+import { GrammarLesson } from '@/types/grammar';
+
+export const zeroArticleLesson: GrammarLesson = {
+  id: 'zero-article-foundation',
+  subcategoryId: 'zero-article',
+  categoryId: 'articles',
+  title: 'Zero Article',
+  titleZh: '???',
+  level: 'A2',
+  estimatedMinutes: 35,
+  lessonIndex: 3,
+  totalLessonsInSubcategory: 3,
+  description: 'Learn when to use no article at all.',
+  descriptionZh: '??????????',
+  objectives: ['Know zero article rules'],
+  prerequisites: [],
+  slides: [
+    {
+      id: '1',
+      slideNumber: 1,
+      type: 'TITLE',
+      title: 'Zero Article',
+      titleZh: '???',
+      content: 'No article with general plural countable nouns, most uncountable nouns, proper nouns.',
+      contentZh: '??????????????????????????????',
+    },
+    {
+      id: '2',
+      slideNumber: 2,
+      type: 'EXAMPLE',
+      title: 'Examples',
+      titleZh: '??',
+      content: 'Dogs are loyal. / I like rice. / Beijing is beautiful.',
+      contentZh: '?????/ ??????/ ?????',
+    },
+    {
+      id: '3',
+      slideNumber: 3,
+      type: 'SUMMARY',
+      title: 'Key Takeaways',
+      titleZh: '????',
+      content: 'Omit article for general statements.',
+      contentZh: '????????',
+    },
+  ],
+};

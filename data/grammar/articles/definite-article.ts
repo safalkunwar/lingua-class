@@ -1,0 +1,46 @@
+import { GrammarLesson } from '@/types/grammar';
+
+export const definiteArticleLesson: GrammarLesson = {
+  id: 'definite-article-foundation',
+  subcategoryId: 'definite-article',
+  categoryId: 'articles',
+  title: 'Definite Article: the',
+  titleZh: '???:the',
+  level: 'A1',
+  estimatedMinutes: 40,
+  lessonIndex: 2,
+  totalLessonsInSubcategory: 3,
+  description: 'Learn when to use the for specific and known things.',
+  descriptionZh: '??????the??????????',
+  objectives: ['Use the correctly'],
+  prerequisites: [],
+  slides: [
+    {
+      id: '1',
+      slideNumber: 1,
+      type: 'TITLE',
+      title: 'Definite Article: the',
+      titleZh: '???:the',
+      content: 'Use the when both speaker and listener know what is being referred to.',
+      contentZh: '????????????????????,?the?',
+    },
+    {
+      id: '2',
+      slideNumber: 2,
+      type: 'EXAMPLE',
+      title: 'Uses of the',
+      titleZh: 'the???',
+      content: 'the sun, the Earth, the best student, the book on the table',
+      contentZh: '?????????????????',
+    },
+    {
+      id: '3',
+      slideNumber: 3,
+      type: 'SUMMARY',
+      title: 'Key Takeaways',
+      titleZh: '????',
+      content: 'Use the for something already mentioned or unique.',
+      contentZh: '??????????????????',
+    },
+  ],
+};
